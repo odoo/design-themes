@@ -1,19 +1,8 @@
 odoo.define('website_animate.o_animate_editor', function (require) {
 'use strict';
 
-var sOptions = require('web_editor.snippets.options');
+const options = require('web_editor.snippets.options');
 
-function forceAnimation() {
-    var $els = $();
-    _.each(arguments, function (el) {
-        $els = $els.add(el);
-    });
-    $els.css('animation-name', 'dummy');
-    void $els[0].offsetWidth;
-    $els.css('animation-name', '');
-}
-
-//  Animations
 options.registry.o_animate = options.Class.extend({
 
     //--------------------------------------------------------------------------
@@ -23,12 +12,26 @@ options.registry.o_animate = options.Class.extend({
     /**
      * @override
      */
-    selectClass: async function (previewMode, widgetValue, params) {
-        await this._super.apply(this, arguments);
-        forceAnimation(this.$target);
+    async selectClass(previewMode, widgetValue, params) {
+        await this._super(...arguments);
+        this._forceAnimation();
         if (params.isAnimationTypeSelection) {
-            this.$target.toggleClass('o_animate_preview o_animate', !!widgetValue);
+            this.$target.toggleClass('o_animate', !!widgetValue);
         }
+    },
+
+    //--------------------------------------------------------------------------
+    // Private
+    //--------------------------------------------------------------------------
+
+    /**
+     * @private
+     */
+    _forceAnimation() {
+        this.$target.css('animation-name', 'dummy');
+        // trigger a DOM reflow
+        void this.$target[0].offsetWidth;
+        this.$target.css('animation-name', '');
     },
 });
 });
