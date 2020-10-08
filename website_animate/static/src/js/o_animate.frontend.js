@@ -150,6 +150,14 @@ publicWidget.registry.WebsiteAnimate = publicWidget.Widget.extend({
     destroy: function () {
         WebsiteAnimate.$scrollingElement[0].classList.remove('o_wanim_overflow_x_hidden');
         this._super.apply(this, arguments);
+
+        this.$target.find('.o_animate')
+            .removeClass('o_animating o_animated o_animate_preview')
+            .css({
+                'animation-name': '',
+                'animation-play-state': '',
+                'visibility': '',
+            });
     },
 });
 
