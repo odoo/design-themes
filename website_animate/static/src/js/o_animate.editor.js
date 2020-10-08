@@ -21,25 +21,6 @@ sOptions.registry.o_animate = sOptions.Class.extend({
     onFocus: function () {
         this._setActive(); // Needed as in charge of hiding duration/delay/...
     },
-    /**
-     * @override
-     */
-    cleanForSave: function () {
-        // Clean elements
-        this.$target.removeClass('o_animating o_animated o_animate_preview')
-                    .css({
-                        'animation': '',
-                        'animation-name': '',
-                        'animation-play-state': '',
-                        'visibility': '',
-                    });
-        if (this.$target.hasClass('o_animate')) {
-            this.$target.css('animation-play-state', 'paused');
-        }
-
-        // Clean all inView elements
-        $('#wrapwrap').find('.o_animate').removeClass('o_visible');
-    },
 
     //--------------------------------------------------------------------------
     // Options
