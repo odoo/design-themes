@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_rating" inherit_id="website.s_rating">
+        <!-- Active stars -->
+        <xpath expr="//span[hasclass('s_rating_active_icons')]" position="attributes">
+            <attribute name="class" add="text-o-color-1" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

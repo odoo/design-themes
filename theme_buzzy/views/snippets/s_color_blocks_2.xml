@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2">
+        <!-- Left block -->
+        <xpath expr="//div[hasclass('row')]//div" position="attributes">
+            <attribute name="class" add="o_cc4" remove="o_cc3" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/11","flip":["y","x"]}</attribute>
+        </xpath>
+        <!-- Left block / add shape -->
+        <xpath expr="//div[hasclass('row')]//div//i" position="before">
+           <div class="o_we_shape o_web_editor_Wavy_11 o_we_flip_y o_we_flip_x"/>
+        </xpath>
+        <!-- Left block / replace icon -->
+        <xpath expr="//div[hasclass('row')]//div//i" position="replace">
+            <i class="fa fa-group fa-5x m-3"/>
+        </xpath>
+        <!-- Left block / title -->
+        <xpath expr="//div[hasclass('row')]//div//h2" position="replace">
+            <h2>Improve your efficiency</h2>
+        </xpath>
+        <!-- Left block / paragraph -->
+        <xpath expr="//div[hasclass('row')]//div//p" position="replace">
+            <p>It's not that easy to <b>be efficient</b> if we don't have <b>the correct tools</b> than we need. Can you imagine Batman saving Gotham City without his bat-tools? There is no magic, it's time to get the tools you deserve.</p>
+        </xpath>
+        <!-- Right block -->
+        <xpath expr="//div[hasclass('row')]//div[2]" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/11","flip":[]}</attribute>
+        </xpath>
+        <!-- Right block / add shape -->
+        <xpath expr="//div[hasclass('row')]//div[2]//i" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_11 o_second_extra_shape_mapping"/>
+        </xpath>
+        <!-- Right block / replace icon -->
+        <xpath expr="//div[hasclass('row')]//div[2]//i" position="replace">
+            <i class="fa fa-globe fa-5x m-3"/>
+        </xpath>
+        <!-- Right block / title -->
+        <xpath expr="//div[hasclass('row')]//div[2]//h2" position="replace">
+            <h2>A new open world</h2>
+        </xpath>
+        <!-- Right block / paragraph -->
+        <xpath expr="//div[hasclass('row')]//div[2]//p" position="replace">
+            <p>Working at the office is good, but working where we want without distraction is better. With our <b>Cloud service</b> accessing to your data has never been so easy. Get what you want, where and when you want.</p>
+        </xpath>
+    </template>
+</odoo>

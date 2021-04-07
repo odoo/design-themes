@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_masonry_block" inherit_id="website.s_masonry_block">        
+    <!-- Little block #01 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="class" add="o_cc5" remove="o_cc3" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/h3" position="replace">
+            <h3>Easy to use</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/p" position="replace">
+            <p>An intuitive interface</p>
+        </xpath>
+    <!-- Little block #02 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]" position="attributes">
+            <attribute name="class" add="o_cc4" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/h3" position="replace"> 
+            <h3>Faster</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/p" position="replace">
+            <p>More than Flash himself</p>
+        </xpath>
+    <!-- Little block #03 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]" position="attributes">
+            <attribute name="class" add="o_cc1" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/h3" position="replace">
+            <h3>Secure</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/p" position="replace">
+            <p>Work in peace</p>
+        </xpath>
+    <!-- Little block #04 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]" position="attributes">
+            <attribute name="class" add="o_cc5" remove="o_cc4" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/h3" position="replace">
+            <h3>Use the Cloud</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/p" position="replace">
+            <p>Work where you want</p>
+        </xpath>
+    </template>
+</odoo>

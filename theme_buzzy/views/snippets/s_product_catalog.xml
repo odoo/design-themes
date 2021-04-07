@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_product_catalog" inherit_id="website.s_product_catalog">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc4 pb88 pt88" remove="pb32 pt48" separator=" "/>
+            <attribute name="data-scroll-background-ratio" add="-2.4" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/07","flip":[]}</attribute>
+            <!-- Enable SVG dynamic color functionality -->
+            <attribute name="style">background-image: url('/web_editor/shape/theme_buzzy/s_product_catalog.svg?c1=%23637BBE'); background-position: 50% 0%;</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//section/*" position="before">
+            <div class="o_we_shape o_web_editor_Airy_07"/>
+        </xpath>
+        <!-- Title & subtitles -->
+        <xpath expr="//h2" position="replace">
+            <h2>Discover our modules</h2>
+        </xpath>
+        <xpath expr="(//h3)[2]" position="replace">
+            <h3>Advanced</h3>
+        </xpath>
+        <!-- Description -->
+        <xpath expr="//div[hasclass('container')]//p" position="replace">
+            <p>Add a description.</p>
+        </xpath>
+        <!-- List names left column -->
+        <xpath expr="//ul/t/t" position="replace">
+            <t t-set="name">Individual</t>
+        </xpath>
+        <xpath expr="//ul/t[2]/t" position="replace">
+            <t t-set="name">Small team</t>
+        </xpath>
+        <xpath expr="//ul/t[3]/t" position="replace">
+            <t t-set="name">Professional</t>
+        </xpath>
+        <!-- List names right column -->
+        <xpath expr="(//ul)[2]/t/t" position="replace">
+            <t t-set="name">Designer</t>
+        </xpath>
+        <xpath expr="(//ul)[2]/t[2]/t" position="replace">
+            <t t-set="name">Developer</t>
+        </xpath>
+        <xpath expr="(//ul)[2]/t[3]/t" position="replace">
+            <t t-set="name">Guru</t>
+        </xpath>
+    </template>
+</odoo>

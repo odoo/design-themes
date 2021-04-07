@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_features_grid" inherit_id="website.s_features_grid">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc2" separator=" "/>
+        </xpath>
+        <!-- Icons -->
+        <xpath expr="//i" position="attributes">
+            <attribute name="class" add="fa-windows bg-o-color-2" remove="fa-font-awesome fa-2x bg-o-color-1" separator=" "/>
+        </xpath>
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="fa-apple bg-o-color-2" remove="fa-files-o fa-2x bg-o-color-1" separator=" "/>
+        </xpath>
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="fa-linux bg-o-color-2" remove="fa-trash fa-2x bg-o-color-1" separator=" "/>
+        </xpath>
+        <xpath expr="(//i)[4]" position="attributes">
+            <attribute name="class" add="fa-desktop rounded-circle" remove="fa-magic rounded fa-2x" separator=" "/>
+        </xpath>
+        <xpath expr="(//i)[5]" position="attributes">
+            <attribute name="class" add="fa-tablet rounded-circle" remove="fa-eyedropper rounded fa-2x" separator=" "/>
+        </xpath>
+        <xpath expr="(//i)[6]" position="attributes">
+            <attribute name="class" add="fa-mobile-phone rounded-circle" remove="fa-picture-o rounded fa-2x" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

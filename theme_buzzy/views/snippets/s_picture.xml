@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_picture" inherit_id="website.s_picture">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc2" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;"><span style="font-size: 62px;">Improve your creativity</span></h2>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace">
+            <p style="text-align: center;">Every clever company deserve to work with clever tools. <br/>Start the journey with our amazing tools and collaborate no matter where you are.</p>
+        </xpath>
+        <!-- Figcaption -->
+        <xpath expr="//figcaption" position="replace">
+            <figcaption class="figure-caption text-muted py-3"><b>Accomplish tasks has never been easier.</b></figcaption>
+        </xpath>
+    </template>
+</odoo>

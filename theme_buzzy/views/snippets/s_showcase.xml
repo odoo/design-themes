@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_showcase" inherit_id="website.s_showcase">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="bg-o-color-3" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Blocks_03"/>
+        </xpath>
+    <!-- Item #01 -->
+        <!-- Icon -->
+        <xpath expr="//i" position="attributes">
+            <attribute name="class" add="text-o-color-1" remove="text-secondary" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h3" position="replace">
+            <h3>Easy to use</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace">
+            <p>Discover an intuitive interface.</p>
+        </xpath>
+    <!-- Item #02 -->
+        <!-- Icon -->
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="text-o-color-1" remove="text-secondary" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="(//h3)[2]" position="replace">
+            <h3>Customizable</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//p)[2]" position="replace">
+            <p>Develop your own branding.</p>
+        </xpath>
+    <!-- Item #03 -->
+        <!-- Icon -->
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="text-o-color-1" remove="text-secondary" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="(//h3)[3]" position="replace">
+            <h3>Made with love</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//p)[3]" position="replace">
+            <p>We build tools to help you.</p>
+        </xpath>
+    <!-- Item #04 -->
+        <!-- Icon -->
+        <xpath expr="(//i)[4]" position="attributes">
+            <attribute name="class" add="text-o-color-1" remove="text-secondary" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="(//h3)[4]" position="replace">
+            <h3>Secret gift</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//p)[4]" position="replace">
+            <p>Win a big price if you find it.</p>
+        </xpath>
+    </template>
+</odoo>

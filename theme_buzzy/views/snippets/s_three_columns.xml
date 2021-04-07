@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="bg-o-color-3" remove="bg-200" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Airy_12_001"/>
+        </xpath>
+    <!-- Card #01 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('card')]" position="attributes">
+            <attribute name="class" remove="bg-white" separator=" "/>
+            <attribute name="style" add="border-width: 0px !important; background-color: rgba(0, 0, 0, 0) !important;" separator=" "/>
+        </xpath>
+        <!-- Card Body -->
+        <xpath expr="//div[hasclass('card')]/div" position="attributes">
+            <attribute name="class" add="text-reset" separator=" "/>
+            <attribute name="style" add="background-color: rgba(255, 255, 255, 0) !important;" separator=" "/>
+        </xpath>
+        <!-- Img -->
+        <xpath expr="//div[hasclass('card')]//img" position="attributes">
+            <attribute name="class" add="padding-xl" separator=" "/>
+            <!-- Enable SVG dynamic color functionality -->
+            <attribute name="src">/web_editor/shape/theme_buzzy/s_three_columns-01.svg?c1=%23637BBE</attribute>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('card')]//h3" position="replace">
+            <h3 class="card-title">Built to <br/>your effigy</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('card')]//p" position="replace">
+            <p class="card-text">You will always find the ideal choice adapted to your needs. From the basic website based on our attractive templates to the tailor-made website, you will always benefit from our experience.</p>
+        </xpath>
+    <!-- Card #02 -->
+        <!-- Main div -->
+        <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+            <attribute name="class" remove="bg-white" separator=" "/>
+            <attribute name="style" add="border-width: 0px !important; background-color: rgba(0, 0, 0, 0) !important;" separator=" "/>
+        </xpath>
+        <!-- Card Body -->
+        <xpath expr="(//div[hasclass('card')])[2]/div" position="attributes">
+            <attribute name="class" add="text-reset" separator=" "/>
+            <attribute name="style" add="background-color: rgba(255, 255, 255, 0) !important;" separator=" "/>
+        </xpath>
+        <!-- Img -->
+        <xpath expr="(//div[hasclass('card')])[2]//img" position="attributes">
+            <attribute name="class" add="padding-xl" separator=" "/>
+            <!-- Enable SVG dynamic color functionality -->
+            <attribute name="src">/web_editor/shape/theme_buzzy/s_three_columns-02.svg?c1=%23637BBE</attribute>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="(//div[hasclass('card')])[2]//h3" position="replace">
+            <h3 class="card-title">Editable from <br/>A to Z</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//div[hasclass('card')])[2]//p" position="replace">
+            <p class="card-text">Feel free to edit your content the way like you want. You don't need to know any technical and complex computer language. You will helped by our intuitive tools.</p>
+        </xpath>
+    <!-- Card #03 -->
+        <!-- Main div -->
+        <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+            <attribute name="class" remove="bg-white" separator=" "/>
+            <attribute name="style" add="border-width: 0px !important; background-color: rgba(0, 0, 0, 0) !important;" separator=" "/>
+        </xpath>
+        <!-- Card Body -->
+        <xpath expr="(//div[hasclass('card')])[3]/div" position="attributes">
+            <attribute name="class" add="text-reset" separator=" "/>
+            <attribute name="style" add="background-color: rgba(255, 255, 255, 0) !important;" separator=" "/>
+        </xpath>
+        <!-- Img -->
+        <xpath expr="(//div[hasclass('card')])[3]//img" position="attributes">
+            <attribute name="class" add="padding-xl" separator=" "/>
+            <!-- Enable SVG dynamic color functionality -->
+            <attribute name="src">/web_editor/shape/theme_buzzy/s_three_columns-03.svg?c1=%23637BBE</attribute>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="(//div[hasclass('card')])[3]//h3" position="replace">
+            <h3 class="card-title">All data <br/>on your hands</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//div[hasclass('card')])[3]//p" position="replace">
+            <p class="card-text">Don't miss any data anymore and get all reports you need when and where you want. Analyze them easily with our friendly interface and grow your activity.</p>
+        </xpath>
+    </template>
+</odoo>
