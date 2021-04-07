@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_banner" inherit_id="website.s_banner">
+   <!-- Section -->
+   <xpath expr="//section" position="attributes">
+      <attribute name="class" add="pb120 pt256 oe_img_bg o_bg_img_center" remove="pt96 pb96 parallax s_parallax_is_fixed" separator=" "/>
+      <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
+      <attribute name="data-scroll-background-ratio">0</attribute>
+      <!-- Enable SVG dynamic color functionality -->
+      <attribute name="style">background-image:url('/web_editor/shape/theme_buzzy/s_banner.svg?c1=o-color-1'); background-position: 50% 37%</attribute>
+   </xpath>
+   <!-- Remove parallax -->
+   <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+   <!-- Shape -->
+   <xpath expr="//div[hasclass('container')]" position="before">
+      <div class="o_we_shape o_web_editor_Origins_02_001"/>
+   </xpath>
+   <!-- Jumbotron -->
+   <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+      <attribute name="class" add="shadow" separator=" "/>
+   </xpath>
+   <!-- Title -->
+   <xpath expr="//h1" position="replace" mode="inner">
+      Great software <br/>for great people
+   </xpath>
+   <!-- Paragraph -->
+   <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+      Every clever company deserve to work with clever tools.
+   </xpath>
+</template>
+
+</odoo>
