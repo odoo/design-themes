@@ -3,110 +3,52 @@
 //------------------------------------------------------------------------------
 
 // Theme colors
-$o-theme-color-palettes: (
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
-        'alpha': #ffffff,
-        'beta': #47464b,
-        'gamma': #f3997b,
-        'delta': #add3ce,
-        'epsilon': #a7c7d5,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #d699ae,
-        'gamma': #B24774,
-        'delta': #72c2d0,
-        'epsilon': #ed8354,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #79CCC2,
-        'gamma': #F05A12,
-        'delta': #C5FFF8,
-        'epsilon': #0F7F72,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #53a1cc,
-        'gamma': #116899,
-        'delta': #aab3ca,
-        'epsilon': #ffc9c1,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #3b2c3c,
-        'gamma': #D2546D,
-        'delta': #303347,
-        'epsilon': #171827,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #2F343B,
-        'gamma': #C77966,
-        'delta': #703030,
-        'epsilon': #E3CDA4,
-    ),
+        'kiddo-1': (
+            'alpha': #ffffff,
+            'beta': #47464b,
+            'gamma': #f3997b,
+            'delta': #add3ce,
+            'epsilon': #a7c7d5,
+        ),
+        'kiddo-2': (
+            'alpha': #ffffff,
+            'beta': #d699ae,
+            'gamma': #B24774,
+            'delta': #72c2d0,
+            'epsilon': #ed8354,
+        ),
+        'kiddo-3': (
+            'alpha': #ffffff,
+            'beta': #79CCC2,
+            'gamma': #F05A12,
+            'delta': #C5FFF8,
+            'epsilon': #0F7F72,
+        ),
+        'kiddo-4': (
+            'alpha': #ffffff,
+            'beta': #53a1cc,
+            'gamma': #116899,
+            'delta': #aab3ca,
+            'epsilon': #ffc9c1,
+        ),
+        'kiddo-5': (
+            'alpha': #ffffff,
+            'beta': #3b2c3c,
+            'gamma': #D2546D,
+            'delta': #303347,
+            'epsilon': #171827,
+        ),
+        'kiddo-6': (
+            'alpha': #ffffff,
+            'beta': #2F343B,
+            'gamma': #C77966,
+            'delta': #703030,
+            'epsilon': #E3CDA4,
+        ),
+    )
 );
-
-$o-color-palettes: (
-    (
-        'o-color-1': #f3997b,
-        'o-color-2': #99869e,
-        'o-color-3': #e3f0ee,
-        'o-color-4': #FFFFFF,
-        'o-color-5': #2c2927,
-
-        'o-cc2-headings': null,
-
-        'menu': 4,
-        'footer': 4,
-        'copyright': 4,
-    ),
-    (
-        'o-color-1': #637bbe,
-        'o-color-2': #8eb9c7,
-        'o-color-3': #f6f0ea,
-        'o-color-4': #FFFFFF,
-        'o-color-5': #343643,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #684672,
-        'o-color-2': #6ea29c,
-        'o-color-3': #f8ebd6,
-        'o-color-4': #FFFFFF,
-        'o-color-5': #302633,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #c54545,
-        'o-color-2': #364481,
-        'o-color-3': #ccd7c5,
-        'o-color-4': #ffffff,
-        'o-color-5': #1f2230,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-);
-
-// Grays
-$o-gray-color-palettes: ();
-@each $-palette in $o-theme-color-palettes {
-    $o-gray-color-palettes: append($o-gray-color-palettes, (
-        '900': lighten(#000, 20%),
-        '700': lighten(#000, 33.5%),
-        '600': lighten(#000, 46.7%),
-        '200': lighten(#000, 85%),
-    ));
-}
 
 //------------------------------------------------------------------------------
 // Fonts
@@ -176,12 +118,16 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'font-size-base': (14 / 16) * 1rem,
+        'color-palettes-name': 'kiddo-1',
+
+        'font-size-base': (14 / 16) * 1.075rem,
         'header-font-size': 1.25rem,
         'logo-height': 3rem,
         'fixed-logo-height': 3rem,
         'btn-border-radius': 2rem,
-        'font': 'MontSerrat',
+        'btn-padding-y': .75rem,
+        'btn-padding-x': 1.75rem,
+        'font': 'Montserrat',
         'headings-font': 'Bubblegum Sans',
         'navbar-font': 'Bubblegum Sans',
         'buttons-font': 'Bubblegum Sans',
@@ -189,4 +135,39 @@ $o-website-values-palettes: (
         'header-template': 'centered_logo',
         'footer-template': 'minimalist',
     ),
+);
+
+$o-palette-priority-prefix: 'kiddo';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'kiddo-1',
+    2: 'kiddo-2',
+    3: 'kiddo-3',
+    4: 'kiddo-4',
+    5: 'generic-1',
+    6: 'generic-2',
+    7: 'generic-3',
+    8: 'generic-4',
+    9: 'generic-5',
+    10: 'generic-6',
+    11: 'generic-7',
+    12: 'generic-8',
+    13: 'generic-9',
+    14: 'generic-10',
+    15: 'generic-11',
+    16: 'generic-12',
+    17: 'generic-13',
+    18: 'generic-14',
+    19: 'generic-15',
+    20: 'generic-16',
+    21: 'generic-17',
+);
+
+$o-gray-color-palettes-compatibility-indexes: (
+    1: 'kiddo-1',
+    2: 'kiddo-2',
+    3: 'kiddo-3',
+    4: 'kiddo-4',
+    5: 'kiddo-5',
+    6: 'kiddo-6',
 );

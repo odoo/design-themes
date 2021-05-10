@@ -4,6 +4,7 @@
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'zap-1',
         // Header
         'header-template':                  'hamburger',
         'logo-height':                      2.75rem,
@@ -114,157 +115,78 @@ $o-theme-btn-font-weight:                   400;
 // Colors
 //------------------------------------------------------------------------------//
 
-$o-color-palettes: (
-    ( // Palette 1
-        'o-color-1':                        #337ab7,
-        'o-color-2':                        #5cb85c,
-        'o-color-3':                        #eceef1,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #1d2127,
-
-        'o-cc1-text':                       'o-color-5',
-        'o-cc3-link':                       'o-color-4',
-        'o-cc4-link':                       'o-color-4',
-        'o-cc5-headings':                   'o-color-1',
-
-        'menu':                             2,
-        'footer':                           2,
-        'copyright':                        4,
-    ),
-    ( // Palette 2
-        'o-color-1':                        #ed8c2b,
-        'o-color-2':                        #a8c545,
-        'o-color-3':                        #8e3557,
-        'o-color-4':                        #efecca,
-        'o-color-5':                        #35203b,
-
-        'o-cc1-bg':                         #ffffff,
-        'o-cc1-text':                       #1d2127,
-        'o-cc3-link':                       'o-color-4',
-        'o-cc3-btn-primary':                'o-color-5',
-        'o-cc4-link':                       'o-color-4',
-
-        'menu':                             5,
-        'footer':                           5,
-        'copyright':                        4,
-    ),
-    ( // Palette 3
-        'o-color-1':                        #79bd8f,
-        'o-color-2':                        #046380,
-        'o-color-3':                        #beeb9f,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #000000,
-
-        'o-cc1-text':                       #222222,
-        'o-cc2-headings':                   'o-color-2',
-        'o-cc2-link':                       'o-color-2',
-        'o-cc4-link':                       'o-color-4',
-        'o-cc5-headings':                   'o-color-3',
-        'o-cc5-link':                       'o-color-3',
-
-        'menu':                             1,
-        'footer':                           5,
-        'copyright':                        4,
-    ),
-    ( // Palette 4
-        'o-color-1':                        #00b3c5,
-        'o-color-2':                        #d72d3c,
-        'o-color-3':                        #ebeef1,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #000000,
-
-        'o-cc1-text':                       #1d2127,
-        'o-cc2-headings':                   'o-cc1-text',
-        'o-cc3-link':                       'o-color-4',
-        'o-cc4-link':                       'o-color-4',
-
-        'menu':                             2,
-        'footer':                           2,
-        'copyright':                        4,
-    ),
-    ( // Palette 5
-        'o-color-1':                        #413659,
-        'o-color-2':                        #c9de55,
-        'o-color-3':                        #bdd4de,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #14212b,
-
-        'o-cc1-text':                       'o-color-5',
-        'o-cc2-btn-secondary':              'o-color-4',
-        'o-cc3-btn-secondary':              'o-color-4',
-        'o-cc4-btn-primary':                'o-color-2',
-        'o-cc4-btn-secondary':              'o-color-4',
-        'o-cc4-link':                       'o-color-3',
-        'o-cc5-headings':                   'o-color-2',
-        'o-cc5-btn-primary':                'o-color-4',
-        'o-cc5-btn-secondary':              'o-color-2',
-        'o-cc5-link':                       'o-color-3',
-
-        'menu':                             2,
-        'footer':                           2,
-        'copyright':                        4,
-    ),
-    ( // Palette 6
-        'o-color-1':                        #F25244,
-        'o-color-2':                        #45858C,
-        'o-color-3':                        #e8f1ff,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #000000,
-
-        'o-cc1-text':                       #323a49,
-        'o-cc2-headings':                   'o-cc1-text',
-        'o-cc3-link':                       'o-color-4',
-        'o-cc3-btn-primary':                'o-color-5',
-        'o-cc4-link':                       'o-color-4',
-
-        'menu':                             2,
-        'footer':                           5,
-        'copyright':                        4,
-    ),
+// Compatibility
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
+    (
+        'zap-1': (
+            'alpha':                            #337ab7,
+            'beta':                             #5cb85c,
+            'gamma':                            #5bc0de,
+            'delta':                            #f0ad4e,
+            'epsilon':                          #d9534f,
+        ),
+        'zap-2': (
+            'alpha':                            #ed8c2b,
+            'beta':                             #cf4a30,
+            'gamma':                            #911146,
+            'delta':                            #35203b,
+            'epsilon':                          #88a825,
+        ),
+        'zap-3': (
+            'alpha':                            #79bd8f,
+            'beta':                             #00a388,
+            'gamma':                            #046380,
+            'delta':                            #4bb5c1,
+            'epsilon':                          #beeb9f,
+        ),
+        'zap-4': (
+            'alpha':                            #16c6cc,
+            'beta':                             #d72d3C,
+            'gamma':                            #ff6d3b,
+            'delta':                            #ffb733,
+            'epsilon':                          #ffd55c,
+        ),
+        'zap-5': (
+            'alpha':                            #14212b,
+            'beta':                             #e6e2af,
+            'gamma':                            #c9de55,
+            'delta':                            #962d3e,
+            'epsilon':                          #413659,
+        ),
+        'zap-6': (
+            'alpha':                            #ee592f,
+            'beta':                             #59c1b0,
+            'gamma':                            #1fa58d,
+            'delta':                            #f8c63b,
+            'epsilon':                          #dcb038,
+        ),
+    )
 );
 
-// Compatibility
-$o-theme-color-palettes: (
-    (
-        'alpha':                            #337ab7,
-        'beta':                             #5cb85c,
-        'gamma':                            #5bc0de,
-        'delta':                            #f0ad4e,
-        'epsilon':                          #d9534f,
-    ),
-    (
-        'alpha':                            #ed8c2b,
-        'beta':                             #cf4a30,
-        'gamma':                            #911146,
-        'delta':                            #35203b,
-        'epsilon':                          #88a825,
-    ),
-    (
-        'alpha':                            #79bd8f,
-        'beta':                             #00a388,
-        'gamma':                            #046380,
-        'delta':                            #4bb5c1,
-        'epsilon':                          #beeb9f,
-    ),
-    (
-        'alpha':                            #16c6cc,
-        'beta':                             #d72d3C,
-        'gamma':                            #ff6d3b,
-        'delta':                            #ffb733,
-        'epsilon':                          #ffd55c,
-    ),
-    (
-        'alpha':                            #14212b,
-        'beta':                             #e6e2af,
-        'gamma':                            #c9de55,
-        'delta':                            #962d3e,
-        'epsilon':                          #413659,
-    ),
-    (
-        'alpha':                            #ee592f,
-        'beta':                             #59c1b0,
-        'gamma':                            #1fa58d,
-        'delta':                            #f8c63b,
-        'epsilon':                          #dcb038,
-    ),
+$o-palette-priority-prefix: 'zap';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'zap-1',
+    2: 'zap-2',
+    3: 'zap-3',
+    4: 'zap-4',
+    5: 'zap-5',
+    6: 'zap-6',
+    7: 'generic-1',
+    8: 'generic-2',
+    9: 'generic-3',
+    10: 'generic-4',
+    11: 'generic-5',
+    12: 'generic-6',
+    13: 'generic-7',
+    14: 'generic-8',
+    15: 'generic-9',
+    16: 'generic-10',
+    17: 'generic-11',
+    18: 'generic-12',
+    19: 'generic-13',
+    20: 'generic-14',
+    21: 'generic-15',
+    22: 'generic-16',
+    23: 'generic-17',
 );

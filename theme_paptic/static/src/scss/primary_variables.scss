@@ -1,35 +1,4 @@
 //------------------------------------------------------------------------------
-// Colors
-//------------------------------------------------------------------------------
-
-$o-color-palettes: (
-    (   // Palette 1
-        'o-color-1': #6772E5,
-        'o-color-2': #F5F9F9,
-        'o-color-3': #34B885,
-        'o-color-4': #ffffff,
-        'o-color-5': #9BA9BB,
-
-        'o-cc1-headings': 'o-color-5',
-        'o-cc1-link': 'o-color-1',
-        'o-cc1-btn-secondary': 'o-color-5',
-        'o-cc1-btn-secondary-border': 'o-color-5',
-
-        'o-cc2-headings': 'o-color-2',
-        'o-cc2-link': #40fffb,
-
-        'o-cc3-headings': 'o-color-3',
-
-        'o-cc4-link': #40fffb,
-        'o-cc5-link': #40fffb,
-
-        'header': 1,
-        'footer': 1,
-        'copyright': 3,
-    ),
-);
-
-//------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
 
@@ -64,6 +33,8 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'paptic-1',
+
         'font': 'Inter',
         'headings-font': 'Nunito',
         'navbar-font': 'Nunito',
@@ -84,4 +55,27 @@ $o-website-values-palettes: (
         'btn-padding-y-lg': 1rem,
         'btn-padding-x-lg': (28 / 16) * 1rem,
     ),
+);
+
+$o-palette-priority-prefix: 'paptic';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'paptic-1',
+    2: 'generic-1',
+    3: 'generic-2',
+    4: 'generic-3',
+    5: 'generic-4',
+    6: 'generic-5',
+    7: 'generic-6',
+    8: 'generic-7',
+    9: 'generic-8',
+    10: 'generic-9',
+    11: 'generic-10',
+    12: 'generic-11',
+    13: 'generic-12',
+    14: 'generic-13',
+    15: 'generic-14',
+    16: 'generic-15',
+    17: 'generic-16',
+    18: 'generic-17',
 );

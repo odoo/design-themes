@@ -1,56 +1,4 @@
 //------------------------------------------------------------------------------
-// Palette
-//------------------------------------------------------------------------------
-
-$o-color-palettes: (
-    (
-        'o-color-1': #539b80,
-        'o-color-2': #2e2e2e,
-        'o-color-3': #f4f4f4,
-        'o-color-4': #ffffff,
-        'o-color-5': #000000,
-
-        'o-cc1-btn-primary': #1ad68f,
-        'o-cc5-link': #1ad68f,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #006bff,
-        'o-color-2': #fda400,
-        'o-color-3': #F1F1F4,
-        'o-color-4': #ffffff,
-        'o-color-5': #2A2A33,
-
-        'footer': 1,
-        'copyright': 1,
-    ),
-    (
-        'o-color-1': #cddf66,
-        'o-color-2': #b62682,
-        'o-color-3': #f4f5f2,
-        'o-color-4': #ffffff,
-        'o-color-5': #000000,
-
-        'footer': 1,
-        'copyright': 1,
-    ),
-    (
-        'o-color-1': #007882,
-        'o-color-2': #48578a,
-        'o-color-3': #f4efeb,
-        'o-color-4': #ffffff,
-        'o-color-5': #33302e,
-
-        'o-cc5-link': #70c7cf,
-
-        'menu': 5,
-    ),
-);
-
-//------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
 
@@ -126,6 +74,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'real-estate-1',
         'header-font-size': (18 / 16) * 1rem,
         'font': 'Nunito',
         'headings-font': 'Nunito',
@@ -137,4 +86,30 @@ $o-website-values-palettes: (
         'hamburger-position': 'left',
         'footer-template': 'descriptive',
     ),
+);
+
+$o-palette-priority-prefix: 'real-estate';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'real-estate-1',
+    2: 'real-estate-2',
+    3: 'real-estate-3',
+    4: 'real-estate-4',
+    5: 'generic-1',
+    6: 'generic-2',
+    7: 'generic-3',
+    8: 'generic-4',
+    9: 'generic-5',
+    10: 'generic-6',
+    11: 'generic-7',
+    12: 'generic-8',
+    13: 'generic-9',
+    14: 'generic-10',
+    15: 'generic-11',
+    16: 'generic-12',
+    17: 'generic-13',
+    18: 'generic-14',
+    19: 'generic-15',
+    20: 'generic-16',
+    21: 'generic-17',
 );

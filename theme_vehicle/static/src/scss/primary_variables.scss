@@ -1,86 +1,50 @@
 // Theme colors
-$o-theme-color-palettes: (
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
-        'alpha': #ffffff,
-        'beta': #add3ce,
-        'gamma': #a7c7d5,
-        'delta': #47464b,
-        'epsilon': #f3997b,
-    ),
-    (
-        'alpha': #f8f1d4,
-        'beta': #5b4645,
-        'gamma': #ffffff,
-        'delta': #21263a,
-        'epsilon': #8f8747,
-    ),
-    (
-        'alpha': #dedede,
-        'beta': #adadad,
-        'gamma': #ffffff,
-        'delta': #3e3e3e,
-        'epsilon': #848f47,
-    ),
-    (
-        'alpha': #cfcfcf,
-        'beta': #2e2e2e,
-        'gamma': #ffffff,
-        'delta': #000000,
-        'epsilon': #1ad68f,
-    ),
-    (
-        'alpha': #9fcae2,
-        'beta': #bbc05c,
-        'gamma': #ffffff,
-        'delta': #112625,
-        'epsilon': #45b08c,
-    ),
-    (
-        'alpha': #fdeacc,
-        'beta': #e8cda2,
-        'gamma': #ffffff,
-        'delta': #3e3f43,
-        'epsilon': #e1444d,
-    ),
+        'vehicle-1': (
+            'alpha': #ffffff,
+            'beta': #add3ce,
+            'gamma': #a7c7d5,
+            'delta': #47464b,
+            'epsilon': #f3997b,
+        ),
+        'vehicle-2': (
+            'alpha': #f8f1d4,
+            'beta': #5b4645,
+            'gamma': #ffffff,
+            'delta': #21263a,
+            'epsilon': #8f8747,
+        ),
+        'vehicle-3': (
+            'alpha': #dedede,
+            'beta': #adadad,
+            'gamma': #ffffff,
+            'delta': #3e3e3e,
+            'epsilon': #848f47,
+        ),
+        'vehicle-4': (
+            'alpha': #cfcfcf,
+            'beta': #2e2e2e,
+            'gamma': #ffffff,
+            'delta': #000000,
+            'epsilon': #1ad68f,
+        ),
+        'vehicle-5': (
+            'alpha': #9fcae2,
+            'beta': #bbc05c,
+            'gamma': #ffffff,
+            'delta': #112625,
+            'epsilon': #45b08c,
+        ),
+        'vehicle-6': (
+            'alpha': #fdeacc,
+            'beta': #e8cda2,
+            'gamma': #ffffff,
+            'delta': #3e3f43,
+            'epsilon': #e1444d,
+        ),
+    )
 );
-
-// Grays
-$-gray-700: lighten(#000, 33.5%);
-$o-gray-color-palettes: ();
-@each $-palette in $o-theme-color-palettes {
-    $o-gray-color-palettes: append($o-gray-color-palettes, (
-        '900': lighten(#000000, 20%),
-        '700': $-gray-700,
-        '600': lighten(#000000, 46.7%),
-        '200': lighten(#000000, 85%),
-    ));
-}
-
-$o-color-palettes: (
-    (
-        'o-color-1': #9e160d,
-        'o-color-2': #543b3b,
-        'o-color-3': #f7f6f6,
-        'o-color-4': #ffffff,
-        'o-color-5': #242424,
-
-        'footer': 1,
-        'copyright': 1,
-    ),
-    (
-        'o-color-1': #3e7ae9,
-        'o-color-2': #000000,
-        'o-color-3': #f3f3f3,
-        'o-color-4': #ffffff,
-        'o-color-5': #222222,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-);
-
-
 
 //------------------------------------------------------------------------------
 // Fonts
@@ -169,6 +133,8 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'vehicle-1',
+
         'header-font-size': 1rem,
         'font': 'Droid Sans',
         'headings-font': 'Oswald',
@@ -194,4 +160,37 @@ $o-website-values-palettes: (
         'hamburger-position': 'left',
         'footer-template': 'minimalist',
     ),
+);
+
+$o-palette-priority-prefix: 'vehicle';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'vehicle-1',
+    2: 'vehicle-2',
+    3: 'generic-1',
+    4: 'generic-2',
+    5: 'generic-3',
+    6: 'generic-4',
+    7: 'generic-5',
+    8: 'generic-6',
+    9: 'generic-7',
+    10: 'generic-8',
+    11: 'generic-9',
+    12: 'generic-10',
+    13: 'generic-11',
+    14: 'generic-12',
+    15: 'generic-13',
+    16: 'generic-14',
+    17: 'generic-15',
+    18: 'generic-16',
+    19: 'generic-17',
+);
+
+$o-theme-color-palettes-compatibility-indexes: (
+    1: 'vehicle-1',
+    2: 'vehicle-2',
+    3: 'vehicle-3',
+    4: 'vehicle-4',
+    5: 'vehicle-5',
+    6: 'vehicle-6',
 );

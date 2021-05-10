@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images.xml',
 
         'views/snippets/s_banner.xml',
@@ -23,4 +23,9 @@
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-real-estate.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_real_estate/static/src/js/tour.js',
+        ],
+    }
 }

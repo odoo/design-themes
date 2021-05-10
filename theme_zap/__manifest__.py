@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images_library.xml',
 
         'views/snippets/s_banner.xml',
@@ -23,5 +23,10 @@
         'static/description/zap_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-zap.odoo.com'
+    'live_test_url': 'https://theme-zap.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_zap/static/src/js/tour.js',
+        ],
+    }
 }

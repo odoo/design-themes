@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images_library.xml',
 
         'views/snippets/s_banner.xml',
@@ -17,12 +17,16 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_call_to_action.xml',
 
-        'views/old_snippets/s_discount.xml',
-    ],
+        ],
     'images': [
         'static/description/Kiddo_description.png',
         'static/description/kiddo_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-kiddo.odoo.com'
+    'live_test_url': 'https://theme-kiddo.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_kiddo/static/src/js/tour.js',
+        ],
+    }
 }

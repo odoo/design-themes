@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['website'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images.xml',
         'views/customizations.xml',
     ],
@@ -17,5 +17,10 @@
         'static/description/paptic_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-paptic.odoo.com'
+    'live_test_url': 'https://theme-paptic.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_paptic/static/src/js/tour.js',
+        ],
+    }
 }

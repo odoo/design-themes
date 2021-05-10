@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images_library.xml',
 
         'views/snippets/s_carousel.xml',
@@ -22,5 +22,10 @@
         'static/description/nano_screenshot.jpeg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-nano.odoo.com'
+    'live_test_url': 'https://theme-nano.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_nano/static/src/js/tour.js',
+        ],
+    }
 }

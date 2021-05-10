@@ -27,125 +27,51 @@ $o-theme-bg-pattern-06: url("/theme_enark/static/src/img/backgrounds/bg_pattern_
 //------------------------------------------------------------------------------
 
 // Theme colors
-$o-theme-color-palettes: (
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
-        'alpha': #9ea5ab,
-        'beta': #b5c0c9,
-        'gamma': #778089,
-        'delta': #566b7f,
-        'epsilon': #28354d,
-    ),
-    (
-        'alpha': #2b6990,
-        'beta': #9ea5ab,
-        'gamma': #1fb1b0,
-        'delta': #324465,
-        'epsilon': #28354d,
-    ),
-    (
-        'alpha': #5a8eaf,
-        'beta': #2b6990,
-        'gamma': #566b7f,
-        'delta': #324465,
-        'epsilon': #28354d,
-    ),
-    (
-        'alpha': #1fb1b0,
-        'beta': #566b7f,
-        'gamma': #1b7f7e,
-        'delta': darken(#1b7f7e, 30%),
-        'epsilon': darken(#1b7f7e, 50%),
-    ),
-    (
-        'alpha': #5a8eaf,
-        'beta': #2b6990,
-        'gamma': #1fb1b0,
-        'delta': #324465,
-        'epsilon': #28354d,
-    ),
-    (
-        'alpha': lighten(#000, 45%),
-        'beta': lighten(#000, 80%),
-        'gamma': lighten(#000, 70%),
-        'delta': lighten(#000, 35%),
-        'epsilon': lighten(#000, 20%),
-    ),
-);
-
-// Grays
-$-gray-700: lighten(#000, 55%);
-$o-gray-color-palettes: ();
-@each $-palette in $o-theme-color-palettes {
-    $o-gray-color-palettes: append($o-gray-color-palettes, (
-        '900': lighten(#000, 40%),
-        '700': $-gray-700,
-        '600': lighten(#000, 70%),
-        '200': lighten(#000, 80%),
-    ));
-}
-
-// Colors
-$o-color-palettes: (
-    (
-        'o-color-1': #7b97af,
-        'o-color-2': #464d53,
-        'o-color-3': #f2f2f2,
-        'o-color-4': #FFFFFF,
-        'o-color-5': #191919,
-
-        'o-cc1-text': 'o-color-2',
-        'o-cc1-btn-primary': 'o-color-2',
-        'o-cc5-link': 'o-color-4',
-    ),
-    (
-        'o-color-1': #41cb7a,
-        'o-color-2': #0f4c26,
-        'o-color-3': #fafafa,
-        'o-color-4': #FFFFFF,
-        'o-color-5': #000000,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #F2A679,
-        'o-color-2': #4f6b8c,
-        'o-color-3': #f4f2f2,
-        'o-color-4': #FFFFFF,
-        'o-color-5': #000000,
-
-        'o-cc4-text': 'o-color-5',
-
-        'menu': 4,
-        'footer': 4,
-        'copyright': 4,
-    ),
-    (
-        'o-color-1': #FFC513,
-        'o-color-2': #022859,
-        'o-color-3': #f4f2f2,
-        'o-color-4': #FFFFFF,
-        'o-color-5': #000000,
-
-        'o-cc4-text': 'o-color-5',
-
-        'menu': 4,
-        'footer': 4,
-        'copyright': 4,
-    ),
-    (
-        'o-color-1': #41cbb4,
-        'o-color-2': #0f4c4c,
-        'o-color-3': #f2f2ef,
-        'o-color-4': #FFFFFF,
-        'o-color-5': #000000,
-
-        'o-cc4-text': 'o-color-5',
-
-        'footer': 4,
-        'copyright': 4,
-    ),
+        'enark-1': (
+            'alpha': #9ea5ab,
+            'beta': #b5c0c9,
+            'gamma': #778089,
+            'delta': #566b7f,
+            'epsilon': #28354d,
+        ),
+        'enark-2': (
+            'alpha': #2b6990,
+            'beta': #9ea5ab,
+            'gamma': #1fb1b0,
+            'delta': #324465,
+            'epsilon': #28354d,
+        ),
+        'enark-3': (
+            'alpha': #5a8eaf,
+            'beta': #2b6990,
+            'gamma': #566b7f,
+            'delta': #324465,
+            'epsilon': #28354d,
+        ),
+        'enark-4': (
+            'alpha': #1fb1b0,
+            'beta': #566b7f,
+            'gamma': #1b7f7e,
+            'delta': darken(#1b7f7e, 30%),
+            'epsilon': darken(#1b7f7e, 50%),
+        ),
+        'enark-5': (
+            'alpha': #5a8eaf,
+            'beta': #2b6990,
+            'gamma': #1fb1b0,
+            'delta': #324465,
+            'epsilon': #28354d,
+        ),
+        'enark-6': (
+            'alpha': lighten(#000, 45%),
+            'beta': lighten(#000, 80%),
+            'gamma': lighten(#000, 70%),
+            'delta': lighten(#000, 35%),
+            'epsilon': lighten(#000, 20%),
+        ),
+    )
 );
 
 //------------------------------------------------------------------------------
@@ -212,6 +138,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'enark-1',
         'header-font-size': 1.3rem,
         'font': 'Raleway',
         'headings-font': 'Abel',
@@ -222,4 +149,40 @@ $o-website-values-palettes: (
         'header-links-style': 'outline',
         'btn-primary-outline': 'true',
     ),
+);
+
+$o-palette-priority-prefix: 'enark';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'enark-1',
+    2: 'enark-2',
+    3: 'enark-3',
+    4: 'enark-4',
+    5: 'enark-5',
+    6: 'generic-1',
+    7: 'generic-2',
+    8: 'generic-3',
+    9: 'generic-4',
+    10: 'generic-5',
+    11: 'generic-6',
+    12: 'generic-7',
+    13: 'generic-8',
+    14: 'generic-9',
+    15: 'generic-10',
+    16: 'generic-11',
+    17: 'generic-12',
+    18: 'generic-13',
+    19: 'generic-14',
+    20: 'generic-15',
+    21: 'generic-16',
+    22: 'generic-17',
+);
+
+$o-theme-color-palettes-compatibility-indexes: (
+    1: 'enark-1',
+    2: 'enark-2',
+    3: 'enark-3',
+    4: 'enark-4',
+    5: 'enark-5',
+    6: 'enark-6',
 );

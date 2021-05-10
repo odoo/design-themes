@@ -4,6 +4,8 @@
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'bistro-5',
+
         // Header
         'header-template':                  'vertical',
         'hambuger-type':                    'off-canvas',
@@ -121,163 +123,77 @@ $o-theme-btn-font-weight:                   400;
 // Colors
 //------------------------------------------------------------------------------//
 
-$o-color-palette-number: 5;
-$o-color-palettes: (
-    ( // Palette 1
-        'o-color-1':                        #68b581,
-        'o-color-2':                        #046380,
-        'o-color-3':                        #e8e6d1,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #1d2127,
-
-        'o-cc1-text':                       'o-color-5',
-
-        'menu':                             1,
-        'footer':                           5,
-        'copyright':                        4,
-    ),
-    ( // Palette 2
-        'o-color-1':                        #8cc850,
-        'o-color-2':                        #cc4452,
-        'o-color-3':                        #f6f4e1,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #4c4545,
-
-        'o-cc1-text':                       'o-color-5',
-        'o-cc3-link':                       'o-color-4',
-        'o-cc4-link':                       'o-color-4',
-        'o-cc5-btn-secondary':              'o-color-2',
-
-        'menu':                             5,
-        'footer':                           5,
-        'copyright':                        4,
-    ),
-    ( // Palette 3
-        'o-color-1':                        #e2ad3b,
-        'o-color-2':                        #1a2a41,
-        'o-color-3':                        #f2ebd5,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #d26400,
-
-        'o-cc1-text':                       'o-color-2',
-        'o-cc2-headings':                   'o-color-2',
-        'o-cc2-link':                       'o-color-2',
-        'o-cc3-headings':                   'o-color-3',
-        'o-cc5-link':                       'o-color-3',
-
-        'menu':                             3,
-        'footer':                           3,
-        'copyright':                        4,
-    ),
-    ( // Palette 4
-        'o-color-1':                        #0092b2,
-        'o-color-2':                        #046380,
-        'o-color-3':                        #f2ebd5,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #a8c545,
-
-        'o-cc1-text':                       #002737,
-        'o-cc2-headings':                   'o-color-2',
-        'o-cc3-headings':                   'o-color-3',
-        'o-cc3-link':                       'o-color-3',
-        'o-cc4-link':                       'o-color-3',
-        'o-cc4-btn-primary':                'o-color-3',
-        'o-cc4-btn-secondary':              'o-color-2',
-        'o-cc5-link':                       'o-color-2',
-        'o-cc5-btn-secondary':              'o-color-2',
-
-        'preheader':                        4,
-        'menu':                             1,
-        'footer':                           3,
-        'copyright':                        4,
-    ),
-    ( // Palette 5
-        'o-color-1':                        #dd7e43,
-        'o-color-2':                        #658791,
-        'o-color-3':                        #9cc264,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #2b2d33,
-
-        'o-cc1-text':                       'o-color-5',
-        'o-cc2-headings':                   'o-color-4',
-        'o-cc2-btn-primary':                'o-color-4',
-        'o-cc2-link':                       'o-color-4',
-        'o-cc3-btn-primary':                'o-color-4',
-        'o-cc3-btn-secondary':              'o-color-5',
-        'o-cc3-link':                       'o-color-4',
-        'o-cc4-btn-primary':                'o-color-4',
-        'o-cc4-btn-secondary':              'o-color-5',
-        'o-cc4-link':                       'o-color-4',
-        'o-cc5-btn-secondary':              'o-color-2',
-        'o-cc5-link':                       'o-color-1',
-
-        'preheader':                        4,
-        'menu':                             5,
-        'footer':                           5,
-        'copyright':                        4,
-    ),
-    ( // Palette 6
-        'o-color-1':                        #92b475,
-        'o-color-2':                        #8c7d77,
-        'o-color-3':                        #efefed,
-        'o-color-4':                        #ffffff,
-        'o-color-5':                        #011a33,
-
-        'o-cc1-text':                       'o-color-5',
-        'o-cc3-link':                       'o-color-4',
-        'o-cc3-btn-secondary':              'o-color-4',
-        'o-cc4-link':                       'o-color-4',
-        'o-cc4-btn-secondary':              'o-color-4',
-        'o-cc5-btn-secondary':              'o-color-4',
-
-        'menu':                             2,
-        'footer':                           5,
-        'copyright':                        4,
-    ),
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
+    (
+        'bistro-1': (
+            'alpha':                            #68b581,
+            'beta':                             #00a388,
+            'gamma':                            #046380,
+            'delta':                            #4bb5c1,
+            'epsilon':                          #beeb9f,
+        ),
+        'bistro-2': (
+            'alpha':                            #a3cc52,
+            'beta':                             #cc4452,
+            'gamma':                            #8e3557,
+            'delta':                            #f7f2b2,
+            'epsilon':                          #4a1a2c,
+        ),
+        'bistro-3': (
+            'alpha':                            #eebf3e,
+            'beta':                             #e2ad3b,
+            'gamma':                            #bf5c00,
+            'delta':                            #77c4d3,
+            'epsilon':                          #901811,
+        ),
+        'bistro-4': (
+            'alpha':                            #0092b2,
+            'beta':                             #046380,
+            'gamma':                            #a8c545,
+            'delta':                            #fff6c5,
+            'epsilon':                          #ffd55c,
+        ),
+        'bistro-5': (
+            'alpha':                            #dd7e43,
+            'beta':                             #d45c45,
+            'gamma':                            #911146,
+            'delta':                            #9cc264,
+            'epsilon':                          #306e73,
+        ),
+        'bistro-6': (
+            'alpha':                            #b7ca79,
+            'beta':                             #677e52,
+            'gamma':                            #b0cc99,
+            'delta':                            #89725b,
+            'epsilon':                          #f6e8b1,
+        ),
+    )
 );
 
-// Compatibility
-$o-theme-color-palettes: (
-    (
-        'alpha':                            #68b581,
-        'beta':                             #00a388,
-        'gamma':                            #046380,
-        'delta':                            #4bb5c1,
-        'epsilon':                          #beeb9f,
-    ),
-    (
-        'alpha':                            #a3cc52,
-        'beta':                             #cc4452,
-        'gamma':                            #8e3557,
-        'delta':                            #f7f2b2,
-        'epsilon':                          #4a1a2c,
-    ),
-    (
-        'alpha':                            #eebf3e,
-        'beta':                             #e2ad3b,
-        'gamma':                            #bf5c00,
-        'delta':                            #77c4d3,
-        'epsilon':                          #901811,
-    ),
-    (
-        'alpha':                            #0092b2,
-        'beta':                             #046380,
-        'gamma':                            #a8c545,
-        'delta':                            #fff6c5,
-        'epsilon':                          #ffd55c,
-    ),
-    (
-        'alpha':                            #dd7e43,
-        'beta':                             #d45c45,
-        'gamma':                            #911146,
-        'delta':                            #9cc264,
-        'epsilon':                          #306e73,
-    ),
-    (
-        'alpha':                            #b7ca79,
-        'beta':                             #677e52,
-        'gamma':                            #b0cc99,
-        'delta':                            #89725b,
-        'epsilon':                          #f6e8b1,
-    ),
+$o-palette-priority-prefix: 'bistro';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'bistro-1',
+    2: 'bistro-2',
+    3: 'bistro-3',
+    4: 'bistro-4',
+    5: 'bistro-5',
+    6: 'bistro-6',
+    7: 'generic-1',
+    8: 'generic-2',
+    9: 'generic-3',
+    10: 'generic-4',
+    11: 'generic-5',
+    12: 'generic-6',
+    13: 'generic-7',
+    14: 'generic-8',
+    15: 'generic-9',
+    16: 'generic-10',
+    17: 'generic-11',
+    18: 'generic-12',
+    19: 'generic-13',
+    20: 'generic-14',
+    21: 'generic-15',
+    22: 'generic-16',
+    23: 'generic-17',
 );

@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common', 'website_animate'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images.xml',
 
         'views/snippets/s_cover.xml',
@@ -24,4 +24,9 @@
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-orchid.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_orchid/static/src/js/tour.js',
+        ],
+    }
 }

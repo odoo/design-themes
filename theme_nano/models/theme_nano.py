@@ -17,6 +17,7 @@ class ThemeNano(models.AbstractModel):
         self.enable_view('website.template_footer_slideout')
         self.enable_view('website.option_footer_scrolltop')
 
-        self.enable_view('website.option_ripple_effect')
+        self.enable_asset('website.ripple_effect_scss')
+        self.enable_asset('website.ripple_effect_js')
 
         self.disable_view('portal.footer_language_selector')

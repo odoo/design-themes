@@ -1,74 +1,3 @@
-$o-color-palettes: (
-    (
-        'o-color-1': #df699c,
-        'o-color-2': #590046,
-        'o-color-3': #dbe8ed,
-        'o-color-4': #ffffff,
-        'o-color-5': #222222,
-
-        'o-cc2-text': 'o-color-1',
-
-        'menu': 5,
-        'footer': 5,
-        'copyright': 5,
-    ),
-    (
-        'o-color-1': #4fda89,
-        'o-color-2': #714e9c,
-        'o-color-3': #dadbdb,
-        'o-color-4': #ffffff,
-        'o-color-5': #242327,
-
-        'o-cc2-link': 'o-color-5',
-
-        'menu': 4,
-        'footer': 4,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #009083,
-        'o-color-2': #8ba1a0,
-        'o-color-3': #e9e9e9,
-        'o-color-4': #ffffff,
-        'o-color-5': #1e222f,
-
-        'footer': 2,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #b6977d,
-        'o-color-2': #585832,
-        'o-color-3': #e7e5e5,
-        'o-color-4': #ffffff,
-        'o-color-5': #000000,
-
-        'footer': 1,
-        'copyright': 1,
-    ),
-    (
-        'o-color-1': #1ad68f,
-        'o-color-2': #2e2e2e,
-        'o-color-3': #e9e9e9,
-        'o-color-4': #ffffff,
-        'o-color-5': #000000,
-
-        'o-cc2-link': 'o-color-5',
-
-        'menu': 3,
-        'footer': 3,
-        'copyright': 3,
-    ),
-    (
-        'o-color-1': #b3b862,
-        'o-color-2': #1e493b,
-        'o-color-3': #e3e7e9,
-        'o-color-4': #ffffff,
-        'o-color-5': #112625,
-
-        'o-cc2-link': 'o-color-5',
-    ),
-);
-
 //------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
@@ -125,6 +54,8 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'beauty-1',
+
         'header-font-size': (18 / 16) * 1rem,
         'btn-border-radius': .3125rem,
         'btn-border-radius-lg': .3125rem,
@@ -137,4 +68,32 @@ $o-website-values-palettes: (
         'footer-template': 'default',
         'header-links-style': 'outline',
     ),
+);
+
+$o-palette-priority-prefix: 'beauty';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'beauty-1',
+    2: 'beauty-2',
+    3: 'beauty-3',
+    4: 'beauty-4',
+    5: 'beauty-5',
+    6: 'beauty-6',
+    7: 'generic-1',
+    8: 'generic-2',
+    9: 'generic-3',
+    10: 'generic-4',
+    11: 'generic-5',
+    12: 'generic-6',
+    13: 'generic-7',
+    14: 'generic-8',
+    15: 'generic-9',
+    16: 'generic-10',
+    17: 'generic-11',
+    18: 'generic-12',
+    19: 'generic-13',
+    20: 'generic-14',
+    21: 'generic-15',
+    22: 'generic-16',
+    23: 'generic-17',
 );

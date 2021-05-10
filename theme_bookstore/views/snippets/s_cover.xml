@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_cover" inherit_id="website.s_cover">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt64 pb64 o_half_screen_height s_parallax_no_overflow_hidden bg-black-50" remove="parallax s_parallax_is_fixed" separator=" "/>
+            <attribute name="data-scroll-background-ratio">0</attribute>
+            <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 55%;</attribute>
+        </xpath>
+        <!-- Parallax -->
+        <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+    </template>
+</odoo>

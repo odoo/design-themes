@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images.xml',
         'views/customizations.xml',
     ],
@@ -18,4 +18,9 @@
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-vehicle.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_vehicle/static/src/js/tour.js',
+        ],
+    }
 }

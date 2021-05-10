@@ -4,113 +4,51 @@
 //------------------------------------------------------------------------------
 
 // Theme colors
-$o-theme-color-palettes: (
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
-        'alpha': #ffffff,
-        'beta': #add3ce,
-        'gamma': #a7c7d5,
-        'delta': #47464b,
-        'epsilon': #f3997b,
-    ),
-    (
-        'alpha': #f8f1d4,
-        'beta': #5b4645,
-        'gamma': #ffffff,
-        'delta': #21263a,
-        'epsilon': #8f8747,
-    ),
-    (
-        'alpha': #dedede,
-        'beta': #adadad,
-        'gamma': #ffffff,
-        'delta': #3e3e3e,
-        'epsilon': #848f47,
-    ),
-    (
-        'alpha': #cfcfcf,
-        'beta': #2e2e2e,
-        'gamma': #ffffff,
-        'delta': #000000,
-        'epsilon': #1ad68f,
-    ),
-    (
-        'alpha': #9fcae2,
-        'beta': #bbc05c,
-        'gamma': #ffffff,
-        'delta': #112625,
-        'epsilon': #45b08c,
-    ),
-    (
-        'alpha': #fdeacc,
-        'beta': #e8cda2,
-        'gamma': #ffffff,
-        'delta': #3e3f43,
-        'epsilon': #e1444d,
-    ),
-);
-
-// Grays
-$-gray-700: lighten(#000, 33.5%);
-$o-gray-color-palettes: ();
-@each $-palette in $o-theme-color-palettes {
-    $o-gray-color-palettes: append($o-gray-color-palettes, (
-        '900': lighten(#000000, 20%),
-        '700': $-gray-700,
-        '600': lighten(#000000, 46.7%),
-        '200': lighten(#000000, 85%),
-    ));
-}
-
-// Colors
-$o-color-palettes: (
-    (
-        'o-color-1': #ed145b,
-        'o-color-2': #9CD6FA,
-        'o-color-3': #f5f5f5,
-        'o-color-4': #ffffff,
-        'o-color-5': #111111,
-    ),
-    (
-        'o-color-1': #8f8747,
-        'o-color-2': #5b4645,
-        'o-color-3': #f0ecdb,
-        'o-color-4': #ffffff,
-        'o-color-5': #21263a,
-    ),
-    (
-        'o-color-1': #c0ce75,
-        'o-color-2': #704562,
-        'o-color-3': #dedede,
-        'o-color-4': #ffffff,
-        'o-color-5': #3e3e3e,
-    ),
-    (
-        'o-color-1': #1ad68f,
-        'o-color-2': #2e2e2e,
-        'o-color-3': #cfcfcf,
-        'o-color-4': #ffffff,
-        'o-color-5': #000000,
-    ),
-    (
-        'o-color-1': #c5ca60,
-        'o-color-2': #40a181,
-        'o-color-3': #bfddec,
-        'o-color-4': #ffffff,
-        'o-color-5': #112625,
-
-        'footer': 1,
-        'copyright': 1,
-    ),
-    (
-        'o-color-1': #da557d,
-        'o-color-2': #6d4046,
-        'o-color-3': #fffddc,
-        'o-color-4': #ffffff,
-        'o-color-5': #3e3f43,
-
-        'footer': 1,
-        'copyright': 1,
-    ),
+        'monglia-1': (
+            'alpha': #ffffff,
+            'beta': #add3ce,
+            'gamma': #a7c7d5,
+            'delta': #47464b,
+            'epsilon': #f3997b,
+        ),
+        'monglia-2': (
+            'alpha': #f8f1d4,
+            'beta': #5b4645,
+            'gamma': #ffffff,
+            'delta': #21263a,
+            'epsilon': #8f8747,
+        ),
+        'monglia-3': (
+            'alpha': #dedede,
+            'beta': #adadad,
+            'gamma': #ffffff,
+            'delta': #3e3e3e,
+            'epsilon': #848f47,
+        ),
+        'monglia-4': (
+            'alpha': #cfcfcf,
+            'beta': #2e2e2e,
+            'gamma': #ffffff,
+            'delta': #000000,
+            'epsilon': #1ad68f,
+        ),
+        'monglia-5': (
+            'alpha': #9fcae2,
+            'beta': #bbc05c,
+            'gamma': #ffffff,
+            'delta': #112625,
+            'epsilon': #45b08c,
+        ),
+        'monglia-6': (
+            'alpha': #fdeacc,
+            'beta': #e8cda2,
+            'gamma': #ffffff,
+            'delta': #3e3f43,
+            'epsilon': #e1444d,
+        ),
+    )
 );
 
 //------------------------------------------------------------------------------
@@ -197,6 +135,8 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'monglia-1',
+
         'header-font-size': (18 / 16) * 1rem,
         'font': 'Roboto',
         'headings-font': 'Darker Grotesque',
@@ -217,4 +157,32 @@ $o-website-values-palettes: (
         'btn-padding-y-lg': .4rem,
         'btn-padding-x-lg': 2rem,
     ),
+);
+
+$o-palette-priority-prefix: 'monglia';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'monglia-1',
+    2: 'monglia-2',
+    3: 'monglia-3',
+    4: 'monglia-4',
+    5: 'monglia-5',
+    6: 'monglia-6',
+    7: 'generic-1',
+    8: 'generic-2',
+    9: 'generic-3',
+    10: 'generic-4',
+    11: 'generic-5',
+    12: 'generic-6',
+    13: 'generic-7',
+    14: 'generic-8',
+    15: 'generic-9',
+    16: 'generic-10',
+    17: 'generic-11',
+    18: 'generic-12',
+    19: 'generic-13',
+    20: 'generic-14',
+    21: 'generic-15',
+    22: 'generic-16',
+    23: 'generic-17',
 );

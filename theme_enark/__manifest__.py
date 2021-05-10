@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common', 'website_animate'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/snippets_options.xml',
         'views/image_library.xml',
 
@@ -18,15 +18,16 @@
         'views/snippets/s_media_list.xml',
         'views/snippets/s_call_to_action.xml',
 
-        'views/old_snippets/s_big_icons.xml',
-        'views/old_snippets/s_big_image.xml',
-        'views/old_snippets/s_big_image_parallax.xml',
-        'views/old_snippets/s_icon_box.xml',
-    ],
+        ],
     'images': [
         'static/description/enark_description.jpg',
         'static/description/enark_screenshot.jpg',
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-enark.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_enark/static/src/js/tour.js',
+        ],
+    }
 }

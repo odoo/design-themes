@@ -1,68 +1,3 @@
-// Colors
-$o-color-palettes: (
-    (
-        'o-color-1': #a1a52f,
-        'o-color-2': #66555c,
-        'o-color-3': #f7f7f7,
-        'o-color-4': #ffffff,
-        'o-color-5': #242327,
-
-        'footer': 4,
-        'copyright': 4,
-    ),
-    (
-        'o-color-1': #679b96,
-        'o-color-2': #345552,
-        'o-color-3': #e9e9e9,
-        'o-color-4': #ffffff,
-        'o-color-5': #1e222f,
-
-        'footer': 1,
-        'copyright': 4,
-    ),
-    (
-        'o-color-1': #df699c,
-        'o-color-2': #590046,
-        'o-color-3': #dbe8ed,
-        'o-color-4': #ffffff,
-        'o-color-5': #222222,
-
-        'footer': 1,
-        'copyright': 4,
-    ),
-    (
-        'o-color-1': #b29964,
-        'o-color-2': #62624c,
-        'o-color-3': #f5f4f4,
-        'o-color-4': #ffffff,
-        'o-color-5': #333333,
-
-        'footer': 1,
-        'copyright': 4,
-    ),
-    (
-        'o-color-1': #1ad68f,
-        'o-color-2': #2e2e2e,
-        'o-color-3': #f7f7f7,
-        'o-color-4': #ffffff,
-        'o-color-5': #000000,
-
-        'footer': 1,
-        'copyright': 4,
-    ),
-    (
-        'o-color-1': #cfd744,
-        'o-color-2': #3d504a,
-        'o-color-3': #f0f1f1,
-        'o-color-4': #ffffff,
-        'o-color-5': #112625,
-
-        'menu': 4,
-        'footer': 4,
-        'copyright': 5,
-    ),
-);
-
 //------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
@@ -119,6 +54,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'orchid-1',
         'font': 'Questrial',
         'headings-font': 'Questrial',
         'navbar-font': 'Questrial',
@@ -126,4 +62,32 @@ $o-website-values-palettes: (
         'header-template': 'default',
         'footer-template': 'descriptive',
     ),
+);
+
+$o-palette-priority-prefix: 'orchid';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'orchid-1',
+    2: 'orchid-2',
+    3: 'orchid-3',
+    4: 'orchid-4',
+    5: 'orchid-5',
+    6: 'orchid-6',
+    7: 'generic-1',
+    8: 'generic-2',
+    9: 'generic-3',
+    10: 'generic-4',
+    11: 'generic-5',
+    12: 'generic-6',
+    13: 'generic-7',
+    14: 'generic-8',
+    15: 'generic-9',
+    16: 'generic-10',
+    17: 'generic-11',
+    18: 'generic-12',
+    19: 'generic-13',
+    20: 'generic-14',
+    21: 'generic-15',
+    22: 'generic-16',
+    23: 'generic-17',
 );

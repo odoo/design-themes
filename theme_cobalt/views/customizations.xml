@@ -19,6 +19,28 @@
 
 <!-- Snippets -->
 
+<!-- ==== Banner ===== -->
+<template id="s_banner" inherit_id="website.s_banner" name="Cobalt s_banner">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt152 pb152 o_half_screen_height" remove="pt96 pb96" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="offset-lg-6 p-5 shadow-lg rounded" remove="pt32 pb32" separator=" "/>
+    </xpath>
+    <xpath expr="//h1" position="replace">
+        <h1>Reach more People.<br/>Grow your Business.</h1><br/>
+    </xpath>
+    <xpath expr="//p" position="replace">
+        <p class="lead">Building game-changing digital experiences designed to set your brand apart.</p>
+    </xpath>
+    <xpath expr="//a" position="before">
+        <br/>
+    </xpath>
+    <xpath expr="//a" position="replace">
+        <a href="#" class="btn btn-primary mb-2">Start now</a>
+    </xpath>
+</template>
+
 <!-- ==== Image-Text ===== -->
 <template id="s_image_text" inherit_id="website.s_image_text" name="Cobalt s_image_text">
     <xpath expr="//section" position="attributes">
@@ -35,15 +57,16 @@
     </xpath>
 
     <xpath expr="//h2" position="replace">
-        <h1>Reach more People.<br/>Grow your Business.</h1><br/>
+        <h1>Digital strategy synchronising multiple channels</h1><br/>
     </xpath>
 
-    <xpath expr="//p" position="replace"/>
-    <xpath expr="//p" position="replace"/>
-
-    <xpath expr="//a[hasclass('btn')]" position="replace">
-        <a href="#" class="btn btn-primary btn-lg mb-2">START NOW</a>
+    <xpath expr="//p" position="replace">
+        <p>We create a consistent customer experience through a detailed digital strategy built on precise customer research.</p>
     </xpath>
+
+    <xpath expr="//p[last()-1]" position="replace"/>
+
+    <xpath expr="//a[hasclass('btn')]" position="replace"/>
 </template>
 
 <!-- ==== Text-Image ===== -->
@@ -162,12 +185,16 @@
         <div class="o_we_shape o_web_editor_Bold_01 o_we_flip_y"></div>
     </xpath>
 
+    <xpath expr="//div[hasclass('container')]" position="attributes">
+        <attribute name="class" add="container-fluid px-5 px-lg-0" remove="container" separator=" "/>
+    </xpath>
+
     <xpath expr="//h2" position="replace"/>
     <xpath expr="//p" position="replace"/>
     <xpath expr="//p" position="replace"/>
 
     <xpath expr="//img" position="attributes">
-        <attribute name="class" add="" remove="img-thumbnail padding-large" separator=" "/>
+        <attribute name="class" add="img-fluid" remove="img-thumbnail padding-large" separator=" "/>
     </xpath>
 
     <xpath expr="//figcaption" position="replace">
@@ -175,7 +202,7 @@
     </xpath>
 
     <xpath expr="//div[hasclass('row')]/div" position="before">
-        <div class="col col-lg-5">
+        <div class="col offset-lg-2">
             <h2>Our Offices</h2>
             <p/>
             <div class="row">
@@ -198,7 +225,7 @@
     </xpath>
 
     <xpath expr="//div[hasclass('offset-lg-1')]" position="attributes">
-        <attribute name="class" add="col-lg-6" remove="col-lg-10" separator=" "/>
+        <attribute name="class" add="col-lg-6 px-0" remove="col-lg-10" separator=" "/>
         <attribute name="style" remove="text-align: center;" separator=";"/>
     </xpath>
 </template>

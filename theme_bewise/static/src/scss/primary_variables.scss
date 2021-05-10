@@ -4,84 +4,37 @@
 //------------------------------------------------------------------------------
 
 // Theme colors
-$o-theme-color-palettes: (
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
-        alpha: #11b6a8,
-        beta: #B9EAE8,
-        gamma: #fda301,
-        delta: #febf00,
-        epsilon: #1b7f7e,
-    ),
-    (
-        alpha: #45AADA,
-        beta: #B3DCF0,
-        gamma: #f74b94,
-        delta: #FDC6DD,
-        epsilon: #ea3884,
-    ),
-    (
-        alpha: #8578b9,
-        beta: #c1badb,
-        gamma: #FDF002,
-        delta: #FEF994,
-        epsilon: #dbb132,
-    ),
-    (
-        alpha: #87bd70,
-        beta: #C4E6B5,
-        gamma: #fe5e6d,
-        delta: #F2BFC5,
-        epsilon: #ce2b3a,
-    ),
-);
-
-// Grays
-$o-gray-color-palettes: ();
-@each $-palette in $o-theme-color-palettes {
-    $o-gray-color-palettes: append($o-gray-color-palettes, (
-        '900': lighten(#000, 40%),
-        '700': lighten(#000, 55%),
-        '600': lighten(#000, 70%),
-        '200': lighten(#000, 80%),
-    ));
-}
-
-// Colors
-$o-color-palettes: (
-    (
-        'o-color-1': #162238,
-        'o-color-2': #fda301,
-        'o-color-3': #f0f4f4,
-        'o-color-4': #ffffff,
-        'o-color-5': #222222,
-
-        'o-cc4-bg': #b4904f,
-
-        'body': 'o-color-3',
-        'menu': 4,
-        'footer': 1,
-        'copyright': 1,
-    ),
-    (
-        'o-color-1': #f74b94,
-        'o-color-2': #45AADA,
-        'o-color-3': #edf2f4,
-        'o-color-4': #ffffff,
-        'o-color-5': #333333,
-
-        'footer': 1,
-        'copyright': 1,
-    ),
-    (
-        'o-color-1': #dbb132,
-        'o-color-2': #8578b9,
-        'o-color-3': #f4f4f4,
-        'o-color-4': #ffffff,
-        'o-color-5': #333333,
-
-        'footer': 1,
-        'copyright': 1,
-    ),
+        'bewise-1': (
+            alpha: #11b6a8,
+            beta: #B9EAE8,
+            gamma: #fda301,
+            delta: #febf00,
+            epsilon: #1b7f7e,
+        ),
+        'bewise-2': (
+            alpha: #45AADA,
+            beta: #B3DCF0,
+            gamma: #f74b94,
+            delta: #FDC6DD,
+            epsilon: #ea3884,
+        ),
+        'bewise-3': (
+            alpha: #8578b9,
+            beta: #c1badb,
+            gamma: #FDF002,
+            delta: #FEF994,
+            epsilon: #dbb132,
+        ),
+        'bewise-4': (
+            alpha: #87bd70,
+            beta: #C4E6B5,
+            gamma: #fe5e6d,
+            delta: #F2BFC5,
+            epsilon: #ce2b3a,
+        )
+    )
 );
 
 //------------------------------------------------------------------------------
@@ -148,6 +101,8 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'bewise-1',
+
         'header-font-size': (20 / 16) * 1rem,
         'font': 'Darker Grotesque',
         'font-size-base': 1.2rem,
@@ -163,4 +118,35 @@ $o-website-values-palettes: (
         'btn-padding-y-lg': .5rem,
         'btn-padding-x-lg': 2.5rem,
     ),
+);
+
+$o-palette-priority-prefix: 'bewise';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'bewise-1',
+    2: 'bewise-2',
+    3: 'bewise-3',
+    4: 'generic-1',
+    5: 'generic-2',
+    6: 'generic-3',
+    7: 'generic-4',
+    8: 'generic-5',
+    9: 'generic-6',
+    10: 'generic-7',
+    11: 'generic-8',
+    12: 'generic-9',
+    13: 'generic-10',
+    14: 'generic-11',
+    15: 'generic-12',
+    16: 'generic-13',
+    17: 'generic-14',
+    18: 'generic-15',
+    19: 'generic-16',
+    20: 'generic-17',
+);
+$o-theme-color-palettes-compatibility-indexes: (
+    1: 'bewise-1',
+    2: 'bewise-2',
+    3: 'bewise-3',
+    4: 'bewise-4',
 );

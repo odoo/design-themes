@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common', 'website_animate'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images.xml',
 
         'views/snippets/s_parallax.xml',
@@ -16,13 +16,16 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_call_to_action.xml',
 
-        'views/old_snippets/s_banner_parallax.xml',
-        'views/old_snippets/s_products_carousel.xml',
-    ],
+        ],
     'images': [
         'static/description/artists_description.png',
         'static/description/artists_screenshot.jpg',
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-artists.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_artists/static/src/js/tour.js',
+        ],
+    }
 }

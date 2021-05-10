@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common', 'website_animate'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images.xml',
 
         'views/snippets/s_carousel.xml',
@@ -18,13 +18,16 @@
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_call_to_action.xml',
 
-        'views/old_snippets/s_banner_parallax.xml',
-        'views/old_snippets/s_products_carousel.xml',
-    ],
+        ],
     'images': [
         'static/description/yes_description.png',
         'static/description/yes_screenshot.jpg',
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-yes.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_yes/static/src/js/tour.js',
+        ],
+    }
 }

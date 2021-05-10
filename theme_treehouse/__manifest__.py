@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images_library.xml',
 
         'views/snippets/s_call_to_action.xml',
@@ -24,13 +24,16 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_title.xml',
 
-        'views/old_snippets/s_images_carousel.xml',
-        'views/old_snippets/s_images_row.xml',
-    ],
+        ],
     'images': [
         'static/description/treehouse_cover.jpg',
         'static/description/treehouse_screenshot.jpg',
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-treehouse.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_treehouse/static/src/js/tour.js',
+        ],
+    }
 }

@@ -8,7 +8,7 @@
     'author': 'Odoo S.A.',
     'depends': ['theme_common', 'website_animate'],
     'data': [
-        'views/assets.xml',
+        'data/ir_asset.xml',
         'views/images.xml',
 
         'views/snippets/s_cover.xml',
@@ -17,12 +17,16 @@
         'views/snippets/s_company_team.xml',
         'views/snippets/s_call_to_action.xml',
 
-        'views/old_snippets/s_banner_parallax.xml',
-    ],
+        ],
     'images': [
         'static/description/beauty_description.png',
         'static/description/beauty_screenshot.jpg',
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-beauty.odoo.com',
+    'assets': {
+        'website.assets_editor': [
+            'theme_beauty/static/src/js/tour.js',
+        ],
+    }
 }

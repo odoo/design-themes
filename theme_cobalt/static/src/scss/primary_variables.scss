@@ -1,28 +1,4 @@
 //------------------------------------------------------------------------------
-// Colors
-//------------------------------------------------------------------------------
-
-$o-color-palettes: (
-    (   // Palette 1
-        'o-color-1': #116466,
-        'o-color-2': #2B3737,
-        'o-color-3': #F6F4F2,
-        'o-color-4': #ffffff,
-        'o-color-5': #a9bcbc,
-
-        'o-cc3-headings': 'o-color-3',
-        'o-cc3-text': 'o-color-5',
-        'o-cc3-link': 'o-color-4',
-        'o-cc3-btn-primary': 'o-color-4',
-        'o-cc3-btn-secondary': 'o-color-5',
-
-        'header': 1,
-        'footer': 3,
-        'copyright': 'black-15',
-    ),
-);
-
-//------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
 
@@ -52,6 +28,8 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'cobalt-1',
+
         'font': 'Inter',
         'headings-font': 'Inter',
         'navbar-font': 'Inter',
@@ -72,4 +50,27 @@ $o-website-values-palettes: (
         'btn-padding-y-lg': 1rem,
         'btn-padding-x-lg': 3.3rem,
     ),
+);
+
+$o-palette-priority-prefix: 'cobalt';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'cobalt-1',
+    2: 'generic-1',
+    3: 'generic-2',
+    4: 'generic-3',
+    5: 'generic-4',
+    6: 'generic-5',
+    7: 'generic-6',
+    8: 'generic-7',
+    9: 'generic-8',
+    10: 'generic-9',
+    11: 'generic-10',
+    12: 'generic-11',
+    13: 'generic-12',
+    14: 'generic-13',
+    15: 'generic-14',
+    16: 'generic-15',
+    17: 'generic-16',
+    18: 'generic-17',
 );

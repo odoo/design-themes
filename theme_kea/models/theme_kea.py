@@ -9,4 +9,4 @@ class ThemeKea(models.AbstractModel):
         self.enable_view('website.template_footer_call_to_action')
 
         # For compatibility
-        # self.enable_view('theme_common.compatibility-saas-10-1')
+        # self.enable_asset('theme_common.compatibility_saas_10_1')

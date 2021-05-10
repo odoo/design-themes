@@ -3,84 +3,86 @@
 //------------------------------------------------------------------------------
 
 // Theme colors
-$o-theme-color-palettes: (
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
-        'alpha': #bdc3c7,
-        'beta': #95a5a6,
-        'gamma': #2980b9,
-        'delta': #3498db,
-        'epsilon': #34495e,
-    ),
-    (
-        'alpha': #bdc3c7,
-        'beta': #7a58b2,
-        'gamma': #593d87,
-        'delta': #39225f,
-        'epsilon': #2c3e50,
-    ),
-    (
-        'alpha': #c5bcb1,
-        'beta': #e67e22,
-        'gamma': #c0392b,
-        'delta': #e74c3c,
-        'epsilon': #d35400,
-    ),
-    (
-        'alpha': #c5bcb1,
-        'beta': #f1c40f,
-        'gamma': #f3ac12,
-        'delta': #e67e22,
-        'epsilon': #d35400,
-    ),
-    (
-        'alpha': #ecf0f1,
-        'beta': #bdc3c7,
-        'gamma': #27ae60,
-        'delta': #254c3a,
-        'epsilon': #2ecc71,
-    ),
-    (
-        'alpha': #ecf0f1,
-        'beta': #bdc3c7,
-        'gamma': #7f8c8d,
-        'delta': #445b5c,
-        'epsilon': #34495e,
-    ),
+        'clean-1': (
+            'alpha': #bdc3c7,
+            'beta': #95a5a6,
+            'gamma': #2980b9,
+            'delta': #3498db,
+            'epsilon': #34495e,
+        ),
+        'clean-2': (
+            'alpha': #bdc3c7,
+            'beta': #7a58b2,
+            'gamma': #593d87,
+            'delta': #39225f,
+            'epsilon': #2c3e50,
+        ),
+        'clean-3': (
+            'alpha': #c5bcb1,
+            'beta': #e67e22,
+            'gamma': #c0392b,
+            'delta': #e74c3c,
+            'epsilon': #d35400,
+        ),
+        'clean-4': (
+            'alpha': #c5bcb1,
+            'beta': #f1c40f,
+            'gamma': #f3ac12,
+            'delta': #e67e22,
+            'epsilon': #d35400,
+        ),
+        'clean-5': (
+            'alpha': #ecf0f1,
+            'beta': #bdc3c7,
+            'gamma': #27ae60,
+            'delta': #254c3a,
+            'epsilon': #2ecc71,
+        ),
+        'clean-6': (
+            'alpha': #ecf0f1,
+            'beta': #bdc3c7,
+            'gamma': #7f8c8d,
+            'delta': #445b5c,
+            'epsilon': #34495e,
+        )
+    )
 );
 
 @if $o-support-13-0-color-system {
     $-status-color-palettes: (
-        (
+        'clean-1': (
             'success': #2980b9,
             'info': #1abc9c,
             'warning': #36495e,
             'danger': #2c3e50,
         ),
-        (
+        'clean-2': (
             'success': #593d87,
             'info': #39225f,
             'warning': #2c3e50,
             'danger': #c0392b,
         ),
-        (
+        'clean-3': (
             'success': #c0392b,
             'info': #e67e22,
             'warning': #c5bcb1,
             'danger': #d35400,
         ),
-        (
+        'clean-4': (
             'success': #f3ac12,
             'info': #f1c40f,
             'warning': #c0392b,
             'danger': #d35400,
         ),
-        (
+        'clean-5': (
             'success': #27ae60,
             'info': #254c3a,
             'warning': #34495e,
             'danger': #2c3e50,
         ),
-        (
+        'clean-6': (
             'success': #bdc3c7,
             'info': #7f8c8d,
             'warning': #445b5c,
@@ -89,84 +91,12 @@ $o-theme-color-palettes: (
     );
     $-palettes: $o-theme-color-palettes;
     $o-theme-color-palettes: ();
-    @for $index from 1 through length($-palettes) {
-        $o-theme-color-palettes: append($o-theme-color-palettes, map-merge(nth($-palettes, $index), nth($-status-color-palettes, $index)));
+    @each $key in map-keys($-palettes) {
+        $o-theme-color-palettes: map-merge($o-theme-color-palettes, (
+            $key: map-merge(map-get($-palettes, $key), map-get($-status-color-palettes, $key) or ()),
+        ));
     }
 }
-
-// Grays
-$o-gray-color-palettes: ();
-@each $-palette in $o-theme-color-palettes {
-    $o-gray-color-palettes: append($o-gray-color-palettes, (
-        '900': lighten(#000, 40%),
-        '600': lighten(#000, 70%),
-        '200': lighten(#000, 80%),
-    ));
-}
-
-// Colors
-$o-color-palettes: (
-    (
-        'o-color-1': #3498db,
-        'o-color-2': #34495e,
-        'o-color-3': #e5edf2,
-        'o-color-4': #ffffff,
-        'o-color-5': #333333,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #7a58b2,
-        'o-color-2': #4e3575,
-        'o-color-3': #ecece4,
-        'o-color-4': #ffffff,
-        'o-color-5': #2c3e50,
-
-        'o-cc1-headings': 'o-color-5',
-        'o-cc5-link': #b9a1df,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #f85fa6,
-        'o-color-2': #a3416f,
-        'o-color-3': #e0e9f2,
-        'o-color-4': #ffffff,
-        'o-color-5': #222222,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #3d91db,
-        'o-color-2': #995528,
-        'o-color-3': #f0edeb,
-        'o-color-4': #ffffff,
-        'o-color-5': #222222,
-
-        'o-cc3-bg': #583e2d,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-    (
-        'o-color-1': #53aeb4,
-        'o-color-2': #7f8c8d,
-        'o-color-3': #eef3f6,
-        'o-color-4': #ffffff,
-        'o-color-5': #34495e,
-
-        'menu': 2,
-        'footer': 2,
-        'copyright': 2,
-    ),
-);
 
 //------------------------------------------------------------------------------
 // Fonts
@@ -264,6 +194,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'clean-1',
         'headings-font': 'Dosis',
         'navbar-font': 'Dosis',
         'buttons-font': 'Dosis',
@@ -272,4 +203,39 @@ $o-website-values-palettes: (
         'hamburger-type': 'off-canvas',
         'footer-template': 'contact',
     ),
+);
+
+$o-palette-priority-prefix: 'clean';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'clean-1',
+    2: 'clean-2',
+    3: 'clean-3',
+    4: 'clean-4',
+    5: 'clean-5',
+    6: 'generic-1',
+    7: 'generic-2',
+    8: 'generic-3',
+    9: 'generic-4',
+    10: 'generic-5',
+    11: 'generic-6',
+    12: 'generic-7',
+    13: 'generic-8',
+    14: 'generic-9',
+    15: 'generic-10',
+    16: 'generic-11',
+    17: 'generic-12',
+    18: 'generic-13',
+    19: 'generic-14',
+    20: 'generic-15',
+    21: 'generic-16',
+    22: 'generic-17',
+);
+$o-theme-color-palettes-compatibility-indexes: (
+    1: 'clean-1',
+    2: 'clean-2',
+    3: 'clean-3',
+    4: 'clean-4',
+    5: 'clean-5',
+    6: 'clean-6',
 );

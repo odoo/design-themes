@@ -12,4 +12,4 @@ class ThemeKiddo(models.AbstractModel):
         self.enable_view('website.template_footer_minimalist')
 
         # For compatibility
-        # self.enable_view('theme_common.compatibility-saas-10-1')
+        # self.enable_asset('theme_common.compatibility_saas_10_1')

@@ -20,132 +20,51 @@ $bg-img-07: url("/web/image/theme_common.image_content_07");
 // this only applied to buttons though but we extended that to all components.
 // Success, info, warning and error buttons are also customized with epsilon,
 // gamma, delta and ... black colors (see theme.scss).
-$o-theme-color-palettes: (
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
-        'alpha': #ffffff,
-        'beta': #cdd0a2,
-        'gamma': #b4bbb9,
-        'delta': #242327,
-        'epsilon': #957985,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #e9e9e9,
-        'gamma': #c8efeb,
-        'delta': #1e222f,
-        'epsilon': #55e8da,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #dbe8ed,
-        'gamma': #ecd5d6,
-        'delta': #590046,
-        'epsilon': #df699c,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #d3d3d3,
-        'gamma': #f2ef1a,
-        'delta': #000000,
-        'epsilon': #f1aa6b,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #cfcfcf,
-        'gamma': #2e2e2e,
-        'delta': #000000,
-        'epsilon': #1ad68f,
-    ),
-    (
-        'alpha': #ffffff,
-        'beta': #9fcae2,
-        'gamma': #bbc05c,
-        'delta': #112625,
-        'epsilon': #45b08c,
-    ),
-);
-
-// Grays
-$-gray-700: lighten(#000, 33.5%);
-$o-gray-color-palettes: ();
-@each $-palette in $o-theme-color-palettes {
-    $o-gray-color-palettes: append($o-gray-color-palettes, (
-        '900': lighten(#000, 20%),
-        '700': $-gray-700,
-        '600': lighten(#000, 46.7%),
-        '300': #d4d4d4,
-        '200': lighten(#000, 85%),
-    ));
-}
-
-// Colors
-$o-color-palettes: (
-    (
-        'o-color-1': #a1a52f,
-        'o-color-2': #66555c,
-        'o-color-3': #f7f7f7,
-        'o-color-4': #ffffff,
-        'o-color-5': #242327,
-
-        'menu': 5,
-        'footer': 5,
-        'copyright': 5,
-    ),
-    (
-        'o-color-1': #679b96,
-        'o-color-2': #345552,
-        'o-color-3': #e9e9e9,
-        'o-color-4': #ffffff,
-        'o-color-5': #1e222f,
-
-        'menu': 5,
-        'footer': 5,
-        'copyright': 5,
-    ),
-    (
-        'o-color-1': #df699c,
-        'o-color-2': #590046,
-        'o-color-3': #dbe8ed,
-        'o-color-4': #ffffff,
-        'o-color-5': #222222,
-
-        'menu': 5,
-        'footer': 5,
-        'copyright': 5,
-    ),
-    (
-        'o-color-1': #b29964,
-        'o-color-2': #62624c,
-        'o-color-3': #f5f4f4,
-        'o-color-4': #ffffff,
-        'o-color-5': #333333,
-
-        'menu': 5,
-        'footer': 5,
-        'copyright': 5,
-    ),
-    (
-        'o-color-1': #1ad68f,
-        'o-color-2': #2e2e2e,
-        'o-color-3': #f7f7f7,
-        'o-color-4': #ffffff,
-        'o-color-5': #000000,
-
-        'menu': 5,
-        'footer': 5,
-        'copyright': 5,
-    ),
-    (
-        'o-color-1': #cfd744,
-        'o-color-2': #3d504a,
-        'o-color-3': #f0f1f1,
-        'o-color-4': #ffffff,
-        'o-color-5': #112625,
-
-        'menu': 5,
-        'footer': 5,
-        'copyright': 5,
-    ),
+        'loftspace-1': (
+            'alpha': #ffffff,
+            'beta': #cdd0a2,
+            'gamma': #b4bbb9,
+            'delta': #242327,
+            'epsilon': #957985,
+        ),
+        'loftspace-2': (
+            'alpha': #ffffff,
+            'beta': #e9e9e9,
+            'gamma': #c8efeb,
+            'delta': #1e222f,
+            'epsilon': #55e8da,
+        ),
+        'loftspace-3': (
+            'alpha': #ffffff,
+            'beta': #dbe8ed,
+            'gamma': #ecd5d6,
+            'delta': #590046,
+            'epsilon': #df699c,
+        ),
+        'loftspace-4': (
+            'alpha': #ffffff,
+            'beta': #d3d3d3,
+            'gamma': #f2ef1a,
+            'delta': #000000,
+            'epsilon': #f1aa6b,
+        ),
+        'loftspace-5': (
+            'alpha': #ffffff,
+            'beta': #cfcfcf,
+            'gamma': #2e2e2e,
+            'delta': #000000,
+            'epsilon': #1ad68f,
+        ),
+        'loftspace-6': (
+            'alpha': #ffffff,
+            'beta': #9fcae2,
+            'gamma': #bbc05c,
+            'delta': #112625,
+            'epsilon': #45b08c,
+        ),
+    )
 );
 
 //------------------------------------------------------------------------------
@@ -204,6 +123,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
+        'color-palettes-name': 'loftspace-1',
         'header-font-size': .95rem,
         'btn-border-radius': 0,
         'btn-border-radius-lg': 0,
@@ -216,4 +136,32 @@ $o-website-values-palettes: (
         'footer-template': 'default',
         'link-underline': 'never',
     ),
+);
+
+$o-palette-priority-prefix: 'loftspace';
+
+$o-color-palettes-compatibility-indexes: (
+    1: 'loftspace-1',
+    2: 'loftspace-2',
+    3: 'loftspace-3',
+    4: 'loftspace-4',
+    5: 'loftspace-5',
+    6: 'loftspace-6',
+    7: 'generic-1',
+    8: 'generic-2',
+    9: 'generic-3',
+    10: 'generic-4',
+    11: 'generic-5',
+    12: 'generic-6',
+    13: 'generic-7',
+    14: 'generic-8',
+    15: 'generic-9',
+    16: 'generic-10',
+    17: 'generic-11',
+    18: 'generic-12',
+    19: 'generic-13',
+    20: 'generic-14',
+    21: 'generic-15',
+    22: 'generic-16',
+    23: 'generic-17',
 );
