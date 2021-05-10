@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_picture" inherit_id="website.s_picture">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc5" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;">
+                <font style="font-size: 62px;">Don’t miss a frame</font>
+            </h2>
+        </xpath>
+        <!-- Paragraphs -->
+        <xpath expr="//p[1]" position="replace">
+            <p class="text-center">Our new drone enable transmission up to 15 km away and supports 4K videos.<br/>
+            Keep the contact, even in a tropical storm.</p>
+        </xpath>
+        <!-- Caption -->
+        <xpath expr="//figcaption" position="replace">
+            <figcaption class="figure-caption text-muted py-3">The new light design in carbon fibre allow us to improve the battery life. Now, up to 11 hours.</figcaption>
+        </xpath>
+    </template>
+</odoo>

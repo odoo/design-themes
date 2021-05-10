@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4" remove="bg-200" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/23","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_23" style="background-image: url('/web_editor/shape/web_editor/Wavy/23.svg?c3=%23FFFFFF');"/>
+        </xpath>
+        <!-- Container -->
+        <xpath expr="//div[hasclass('container')]" position="attributes">
+            <attribute name="class" add="container-fluid" remove="container" separator=" "/>
+        </xpath>
+        <!-- Row -->
+        <xpath expr="//div[hasclass('row')]" position="attributes">
+            <attribute name="class" add="px-3" remove="container" separator=" "/>
+        </xpath>
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('card-body')]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Local Producers</h3>
+                <p class="card-text">As we use local growers, our flowers last longer and smell better. Just like the event you want to celebrate with flowers!</p>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Bio Flowers</h3>
+                <p class="card-text">Don't offer pesticides to your beloved one! By choosing our flowers, we guarantee you organic flowers.</p>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Eco-Friendly Packaging</h3>
+                <p class="card-text">We use 100% recycled materials. We believe the best gifts should also do good for the planet.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

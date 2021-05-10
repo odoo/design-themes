@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_media_list" inherit_id="website.s_media_list">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4" remove="bg-200" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/01","colors":{"c2":"o-color-5"},"flip":["y"]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Blobs_01 o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Blobs/01.svg?c2=%23212121');"/>
+        </xpath>
+        <!-- Row 1 -->
+        <xpath expr="(//div[hasclass('col-lg-12')])[1]/div" position="replace">
+            <div class="row s_col_no_resize s_col_no_bgcolor no-gutters border shadow align-items-center flex-row-reverse o_cc o_cc4" style="border-width: 2.5px !important; border-color: rgb(33, 33, 33) !important; box-shadow: rgb(33, 33, 33) 20px -20px 0px 0px !important;">
+                <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
+                    <img src="/web/image/website.s_media_list_default_image_1" alt="" class="s_media_list_img h-100 w-100"/>
+                </div>
+                <div class="s_media_list_body col-lg-8">
+                    <h3>Go to the Miraillet Festival</h3>
+                    <p>You will find here the different means of transport to get to the festival. The festival is accessible by bike. Be careful, you will be riding in the city centre where there are a lot of cars. Please make sure to park your bikes in the designated areas of the city.</p>
+                    <a href="#" class="btn btn-primary mb-2">Discover</a>
+                </div>
+            </div>
+        </xpath>
+        <!-- Row 2 -->
+        <xpath expr="(//div[hasclass('col-lg-12')])[2]/div" position="replace">
+            <div class="row s_col_no_resize s_col_no_bgcolor no-gutters shadow border align-items-center o_cc o_cc4" style="border-width: 2.5px !important; box-shadow: rgb(33, 33, 33) 20px -20px 0px 0px !important; border-color: rgb(33, 33, 33) !important;">
+                <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
+                    <img src="/web/image/website.s_media_list_default_image_2" alt="" class="s_media_list_img h-100 w-100"/>
+                </div>
+                <div class="s_media_list_body col-lg-8">
+                    <h3>Ticketing and ticketing timetables</h3>
+                    <p>Where and when to exchange your festival bracelets? Where to buy food and drink tickets? What is the price for children? The answer can be found here!</p>
+                </div>
+            </div>
+        </xpath>
+        <!-- Row 3 -->
+        <xpath expr="(//div[hasclass('col-lg-12')])[3]/div" position="replace">
+            <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_cc o_cc5 border shadow align-items-center flex-row-reverse" style="border-width: 2.5px !important; border-color: rgb(161, 192, 5) !important; box-shadow: rgb(161, 192, 5) 20px -20px 0px 0px !important;">
+                <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
+                    <img src="/web/image/website.s_media_list_default_image_3" alt="" class="s_media_list_img h-100 w-100"/>
+                </div>
+                <div class="s_media_list_body col-lg-8">
+                    <h3>Wheelchair accessibility</h3>
+                    <p>Once again this year, the festival, with the support of the non-profit organisations that implement the necessary means to facilitate access to the event for people with reduced mobility and people affected by or carrying a disability.</p>
+                    <a href="#">
+                        <font style="" class="text-o-color-1">Continue reading</font>
+                        <i class="align-middle fa fa-long-arrow-right ml-1 text-o-color-1"></i>
+                    </a>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

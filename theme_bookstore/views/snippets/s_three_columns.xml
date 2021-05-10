@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc1" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('card')]" position="attributes">
+            <attribute name="class" add="border rounded shadow" separator=" "/>
+            <attribute name="style" add="border-width: 10px !important; border-color: rgb(36, 35, 39) !important; border-radius: 0px !important; box-shadow: rgb(36, 35, 39) 0px 0px 25px 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('card-body')]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">A Belgian Story</h3>
+                <p class="card-text">Discover the history of Belgium in this well-documented book with many illustrations and testimonials.</p>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+            <attribute name="class" add="border rounded shadow" separator=" "/>
+            <attribute name="style" add="border-width: 10px !important; border-color: rgb(36, 35, 39) !important; border-radius: 0px !important; box-shadow: rgb(36, 35, 39) 0px 0px 25px 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">At the Mars conquest</h3>
+                <p class="card-text">Learn about the difficulties encountered by NASA engineers in sending the first men to Mars.</p>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+            <attribute name="class" add="border rounded shadow" separator=" "/>
+            <attribute name="style" add="border-width: 10px !important; border-color: rgb(36, 35, 39) !important; border-radius: 0px !important; box-shadow: rgb(36, 35, 39) 0px 0px 25px 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Re-edition</h3>
+                <p class="card-text">The first re-edition of this Latin dictionary, from 1460. Printed originally on the Gutenberg press.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

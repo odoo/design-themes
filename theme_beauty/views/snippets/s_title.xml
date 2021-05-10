@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_title" inherit_id="website.s_title">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center;">
+                <font style="font-size: 62px;">Close your eyes and let yourself go in the expert hands of our beauticians.</font>
+            </h1>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_cover" inherit_id="website.s_cover">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_full_screen_height" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07","colors":{"c3":"o-color-5"},"flip":[]}</attribute>
+        </xpath>
+        <!-- Title & Paragraph -->
+        <xpath expr="//div[hasclass('container')]" position="replace">
+            <div class="container s_allow_columns text-center">
+                <h1>
+                    <font style="font-size: 62px;"><b>The Ultimate Laptop</b></font>
+                </h1>
+                <p class="lead">Speed up your work with the last laptop. 3.4Ghz, 8 cores.<br/>
+                You’ll be unstoppable all day long (up to 11 hours).</p>
+                <p><a href="/contactus" class="btn btn-primary mb-2">Discover</a></p>
+            </div>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//section//*[last()]" position="after">
+            <div class="o_we_shape o_web_editor_Origins_07" style="background-image: url('/web_editor/shape/web_editor/Origins/07.svg?c3=%23333333');"/>
+        </xpath>
+    </template>
+</odoo>

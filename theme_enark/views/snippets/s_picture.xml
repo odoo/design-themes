@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_picture" inherit_id="website.s_picture">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt80" remove="pt48 bg-200" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;">
+                <font style="font-size: 62px; line-height: 48px;">Creating places that enhance the human experience.</font>
+            </h2>
+        </xpath>
+        <!-- Paragraphs -->
+        <xpath expr="//p[1]" position="replace">
+            <p class="text-center pt48">We always put people and nature at the center of our projects.</p>
+        </xpath>
+        <!-- Caption -->
+        <xpath expr="//figcaption" position="replace"/>
+    </template>
+</odoo>

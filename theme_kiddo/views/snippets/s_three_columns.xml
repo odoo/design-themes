@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc3 pb152" remove="bg-200 pb32" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/19","colors":{"c5":"o-color-1"},"flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_19" style='background-image: url("/web_editor/shape/web_editor/Wavy/19.svg?c5=%23F3997B");'/>
+        </xpath>
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('card')]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style" add="border-width: 2px !important; border-color: rgb(44, 41, 39) !important;" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('card-body')]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Philosophy</h3>
+                <p class="card-text">Aiming to achieve the best physical, mental, emotional and social development of children, our centre promotes active learning strategies</p>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style" add="border-width: 2px !important; border-color: rgb(44, 41, 39) !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Nursery</h3>
+                <p class="card-text">Since 2020, we welcome children from 0 to 3 years in a warm and specific environment for the needs of small children.</p>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style" add="border-width: 2px !important; border-color: rgb(44, 41, 39) !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Activities</h3>
+                <p class="card-text">All activities are primarily aimed at procuring pleasure, and at the psychomotor, cognitive and affective development of the child.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

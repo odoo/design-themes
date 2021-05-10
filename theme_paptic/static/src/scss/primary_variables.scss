@@ -1,0 +1,87 @@
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+$o-color-palettes: (
+    (   // Palette 1
+        'o-color-1': #6772E5,
+        'o-color-2': #F5F9F9,
+        'o-color-3': #34B885,
+        'o-color-4': #ffffff,
+        'o-color-5': #9BA9BB,
+
+        'o-cc1-headings': 'o-color-5',
+        'o-cc1-link': 'o-color-1',
+        'o-cc1-btn-secondary': 'o-color-5',
+        'o-cc1-btn-secondary-border': 'o-color-5',
+
+        'o-cc2-headings': 'o-color-2',
+        'o-cc2-link': #40fffb,
+
+        'o-cc3-headings': 'o-color-3',
+
+        'o-cc4-link': #40fffb,
+        'o-cc5-link': #40fffb,
+
+        'header': 1,
+        'footer': 1,
+        'copyright': 3,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (48.83 / 16);
+$o-theme-h2-font-size-multiplier: (39.06 / 16);
+$o-theme-h3-font-size-multiplier: (31.25 / 16);
+$o-theme-h4-font-size-multiplier: (25.00 / 16);
+$o-theme-h5-font-size-multiplier: (20.00 / 16);
+$o-theme-h6-font-size-multiplier: 1.1;
+
+$o-theme-font-configs: (
+    'Inter': (
+        'family': ('Inter', serif),
+        'url': 'Inter:400,400i,600,600i,800,800i',
+    ),
+
+    'Nunito': (
+        'family': ('Nunito', serif),
+        'url': 'Nunito:300,300i,400,400i,700,700i',
+    ),
+
+    'Abril Fatface': (
+        'family': ('Nunito', serif),
+        'url': 'Abril+Fatface:300,300i,400,400i,700,700i',
+    ),
+);
+
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font': 'Inter',
+        'headings-font': 'Nunito',
+        'navbar-font': 'Nunito',
+        'buttons-font': 'Nunito',
+
+        'font-size-base': (14 / 16) * 1rem,
+        'header-font-size': (14 / 16) * 1rem,
+
+        'hamburger-type': 'off-canvas',
+        'menu-box-shadow': false,
+
+        'btn-ripple': true,
+
+        'btn-font-size': (14 / 16) * 1rem,
+        'btn-border-radius': 2px,
+
+        'btn-font-size-lg': (14 / 16) * 1rem,
+        'btn-padding-y-lg': 1rem,
+        'btn-padding-x-lg': (28 / 16) * 1rem,
+    ),
+);

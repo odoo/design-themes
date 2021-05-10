@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_image_text" inherit_id="website.s_image_text">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4 pb72" remove="pb32" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13","colors":{"c4":"o-color-2"},"flip":["x"]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_13 o_we_flip_x" style='background-image: url("/web_editor/shape/web_editor/Wavy/13.svg?c4=%2399869E");'/>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="replace">
+            <div class="p-5 col-lg-5 offset-lg-1 o_cc o_cc3 text-center pb120 pt120 rounded shadow border" style="border-color: rgb(44, 41, 39) !important; border-radius: 300px !important; border-width: 2px !important; box-shadow: rgb(44, 41, 39) 25px 25px 0px 0px !important;">
+                <h2>Activities</h2>
+                <p><br/></p>
+                <p>Our team is composed of experienced nursery nurses.</p>
+                <p>They will propose to your children educational activities, playful, varied and adapted to the stage of development.</p>
+                <p><br/></p>
+                <p><a href="#" class="btn btn-primary mb-2">Discover more</a></p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

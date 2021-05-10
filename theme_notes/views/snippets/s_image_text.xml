@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_image_text" inherit_id="website.s_image_text">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc5" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/04","colors":{"c5":"o-color-1"},"flip":["x"]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Blobs_04 o_we_flip_x" style="background-image: url('/web_editor/shape/web_editor/Blobs/04.svg?c5=%23A1C005');"/>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="replace">
+            <div class="pb16 p-5 border pt32 offset-lg-2 col-lg-6 shadow o_cc o_cc4" style="border-width: 2.5px !important; border-color: rgb(33, 33, 33) !important; box-shadow: rgb(33, 33, 33) 20px -20px 0px 0px !important;">
+              <h2>History</h2>
+              <p>The Miraillet Festival was born in 2002 from a common will of cultural, touristic and institutional actors of the region to propose a major cultural event in the very heart of the region during the summer period.</p>
+              <p><a href="#" class="btn btn-dark mb-2">Discover more</a></p>
+            </div>
+        </xpath>
+        <!-- Picture -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="class" add="col-lg-4" remove="col-lg-6" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

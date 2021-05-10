@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== COVER ======== -->
+ <template id="s_cover" inherit_id="website.s_cover" name="Bewise s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="s_parallax_no_overflow_hidden" remove="s_parallax_is_fixed s_parallax" separator=" "/>
+    </xpath>
+    <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
+        <attribute name="style" remove="background-position: 50% 0;" add="background-position: 50% 50%;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
+        <attribute name="class" remove="bg-black-50" add="bg-black-25" separator=" "/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+    <xpath expr="//h1/font" position="replace">
+        <font style="font-size: 62px;font-weight: bold;">Always at the top</font>
+    </xpath>
+    <xpath expr="//p" position="replace">
+        <h5 class="lead" style="text-align: center;">Our university has topped the The World University<br/>Rankings for a fifth consecutive year.</h5>
+        <p class="lead"></p>
+    </xpath>
+</template>
+
+<!-- ======== BANNER ======== -->
+ <template id="s_banner" inherit_id="website.s_banner" name="Bewise s_banner">
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== TEXT-IMAGE ======== -->
+ <template id="s_text_image" inherit_id="website.s_text_image" name="Bewise s_text_image">
+    <xpath expr="//h2" position="replace">
+        <h4>Driven by Excellence</h4>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//p" position="replace">
+        <p>Teachers are selected among experts of their domains. They are not just professors, they are professionals in their field of expertise.</p>
+    </xpath>
+    <xpath expr="//p[2]" position="replace">
+        <p>Journalists, directors, developers, etc. working effectively in their fields of excellence.</p>
+        <div class="s_hr text-left p0 pb32" data-snippet="s_hr" data-name="Separator">
+            <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: var(--o-color-3) !important;"/>
+        </div>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE-TEXT ======== -->
+ <template id="s_image_text" inherit_id="website.s_image_text" name="Bewise s_image_text">
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="replace">
+        <h4>What makes us different?</h4>
+    </xpath>
+    <xpath expr="//p" position="replace">
+        <p>We make sure that everyone blossoms. We keep a human size in a warm and modern setting. All students benefit from individualised support.</p>
+    </xpath>
+    <xpath expr="//p[2]" position="replace">
+        <p>All students benefit from individualised support.</p>
+        <div class="s_hr text-left p0 pb32" data-snippet="s_hr" data-name="Separator">
+            <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: var(--o-color-3) !important;"/>
+        </div>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== NUMBERS ======== -->
+ <template id="s_numbers" inherit_id="website.s_numbers" name="Bewise s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":["x"]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_11 o_we_flip_x"/>
+    </xpath>
+
+    <xpath expr="//h6" position="replace">
+        <h6>Faculties</h6>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[2]/h6" position="replace">
+        <h6>Nationalities</h6>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[3]/h6" position="replace">
+        <h6>Libraries</h6>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[4]/h6" position="replace">
+        <h6>Students</h6>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[4]/span" position="replace">
+        <span class="s_number display-4">16,456</span>
+    </xpath>
+</template>
+
+
+<!-- ======== TITLE ======== -->
+ <template id="s_title" inherit_id="website.s_title" name="Bewise s_title">
+    <xpath expr="//h1" position="replace">
+        <h3 style="text-align:center;">Faculty Team</h3>
+        <p style="text-align:center;" class="text-muted">|</p>
+    </xpath>
+</template>
+
+<!-- ======== QUOTES ======== -->
+ <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Bewise s_quotes_carousel">
+    <!-- Assign slide3 as 'active' and move it in first position -->
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
+        <attribute name="class" remove="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="attributes">
+        <attribute name="class" add="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="before">
+        <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="move"/>
+    </xpath>
+    <!-- copy -->
+    <xpath expr="//div[hasclass('carousel-inner')]/div//p" position="replace">
+        <p>I have learned a lot, and I have realised professional projects thanks to the support of the mentors! The team is always at the top and always looking for solutions to problems, I felt accompanied and supported! It's not easy every day, but it's a great adventure!</p>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_blockquote_author')])" position="replace">
+        <span class="s_blockquote_author"><b>Iris DOE</b> • Graduated in 2019</span>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div[2]//p" position="replace">
+        <p>Thanks to its innovative system, the school offers a diplomatic training during which we are followed by a "mentor", a sort of "tutor"!</p>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_blockquote_author')])[2]" position="replace">
+        <span class="s_blockquote_author"><b>Jane DOE</b> • Graduated in 2017</span>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div[3]//p" position="replace">
+        <p>Great support and quality courses! A mentor helps you move forward and can be contacted through flexible schedules. Everything you need to start your career on the web.</p>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_blockquote_author')])[3]" position="replace">
+        <span class="s_blockquote_author"><b>John DOE</b> • Graduated in 2016</span>
+    </xpath>
+</template>
+
+<!-- ======== CALL TO ACTION ======== -->
+ <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Bewise s_call_to_action">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc4" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_11"/>
+    </xpath>
+
+    <xpath expr="//h3" position="replace">
+        <h5 style="text-align:right"><b>3,000 students</b> graduate each year find a job within 2 months</h5>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
+        <attribute name="class" add="col-lg-8" remove="col-lg-9" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-8')]/p" position="replace">
+        <p style="text-align:right">Join them and increase your chances to get hired.</p>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-4" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')]/p" position="attributes">
+        <attribute name="style" add="text-align: left;" remove="text-align: right;" separator=";"/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== TEAM ======== -->
+ <template id="s_company_team" inherit_id="website.s_company_team" name="Bewise s_company_team">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/01","colors":{"c2":"o-color-3"},"flip":["y"]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_01 o_we_flip_y" style="background-image: url(&quot;/web_editor/shape/web_editor/Blobs/01.svg?c2=%23F0F4F4&quot;);"/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div//h4" position="replace">
+        <h5>Tony Fred, <small><b>Faculty Head of IT</b></small></h5>
+    </xpath>
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div//p" position="replace">
+        <p>Tony received a degree in Electrical and Mechanical Engineering and a Ph D. degree in 1998 and 2004. After a post-doctoral experience  he joined the school as professor of mechatronics in 2006. In 2010, he became Head of IT.</p>
+    </xpath>
+
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[2]//h4" position="replace">
+        <h5>Mich Stark, <small><b>IT Officer</b></small></h5>
+    </xpath>
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[2]//p" position="replace">
+        <p>He is professor in the Institute of Mechanics, Materials and Civil Engineering since 2000. He lectures in mechanical drawing and mechanical design for undergraduate and graduate students.   He is active in Problem and Project based learning. He is the promoter of 8 doctoral theses.</p>
+    </xpath>
+
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[3]//h4" position="replace">
+        <h5>Aline Turner, <small><b>Law professor</b></small></h5>
+    </xpath>
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[3]//p" position="replace">
+        <p>She has been practicing law at the French-speaking Brussels Bar since 2006. She has worked in various major law firms based in Brussels, as member and then head of their litigation/arbitration practice groups.</p>
+    </xpath>
+
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[4]//h4" position="replace">
+        <h5>Iris Joe, <small><b>team leader professor</b></small></h5>
+    </xpath>
+</template>
+
+</odoo>

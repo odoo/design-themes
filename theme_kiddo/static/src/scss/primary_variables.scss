@@ -1,0 +1,192 @@
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #ffffff,
+        'beta': #47464b,
+        'gamma': #f3997b,
+        'delta': #add3ce,
+        'epsilon': #a7c7d5,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #d699ae,
+        'gamma': #B24774,
+        'delta': #72c2d0,
+        'epsilon': #ed8354,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #79CCC2,
+        'gamma': #F05A12,
+        'delta': #C5FFF8,
+        'epsilon': #0F7F72,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #53a1cc,
+        'gamma': #116899,
+        'delta': #aab3ca,
+        'epsilon': #ffc9c1,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #3b2c3c,
+        'gamma': #D2546D,
+        'delta': #303347,
+        'epsilon': #171827,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #2F343B,
+        'gamma': #C77966,
+        'delta': #703030,
+        'epsilon': #E3CDA4,
+    ),
+);
+
+$o-color-palettes: (
+    (
+        'o-color-1': #f3997b,
+        'o-color-2': #99869e,
+        'o-color-3': #e3f0ee,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #2c2927,
+
+        'o-cc2-headings': null,
+
+        'menu': 4,
+        'footer': 4,
+        'copyright': 4,
+    ),
+    (
+        'o-color-1': #637bbe,
+        'o-color-2': #8eb9c7,
+        'o-color-3': #f6f0ea,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #343643,
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+    (
+        'o-color-1': #684672,
+        'o-color-2': #6ea29c,
+        'o-color-3': #f8ebd6,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #302633,
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+    (
+        'o-color-1': #c54545,
+        'o-color-2': #364481,
+        'o-color-3': #ccd7c5,
+        'o-color-4': #ffffff,
+        'o-color-5': #1f2230,
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+);
+
+// Grays
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        '900': lighten(#000, 20%),
+        '700': lighten(#000, 33.5%),
+        '600': lighten(#000, 46.7%),
+        '200': lighten(#000, 85%),
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (40 / 14);
+$o-theme-h2-font-size-multiplier: (32 / 14);
+$o-theme-h3-font-size-multiplier: (28 / 14);
+$o-theme-h4-font-size-multiplier: (24 / 14);
+$o-theme-h5-font-size-multiplier: (20 / 14);
+$o-theme-h6-font-size-multiplier: (16 / 14);
+
+$o-theme-font-configs: (
+    'Montserrat': (
+        'family': ('Montserrat', sans-serif),  // font update - Proxima -> Montserrat
+        'url': 'Montserrat:300,300i,400,400i,600,600i',
+    ),
+    'Comic Neue': (
+        'family': ('Comic Neue', cursive),  // font update - Comic Sans MS -> Comic Neue
+        'url': 'Comic+Neue:300,300i,400,400i,700,700i',
+    ),
+    'Bubblegum Sans': (
+        'family': ('Bubblegum Sans', cursive),   // font update - Fontastique -> Bubblegum+Sans
+        'url': 'Bubblegum+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Eagle Lake': (
+        'family': ('Eagle Lake', serif),  // font update - Luminari -> Eagle Lake
+        'url': 'Eagle+Lake:300,300i,400,400i,700,700i',
+    ),
+    'Marcellus': (
+        'family': ('Marcellus', sans-serif),   // font update - Fecske -> Marcellus
+        'url': 'Marcellus:300,300i,400,400i,700,700i',
+    ),
+    'Roboto': (  //  stable ! Din -> Roboto
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'Oxygen': (
+        'family': ('Oxygen', sans-serif),
+        'url': 'Oxygen:300,300i,400,400i,700,700i',
+    ),
+    'Cabin': (
+        'family': ('Cabin', sans-serif),
+        'url': 'Cabin:300,300i,400,400i,700,700i',
+    ),
+    'Abel': (
+        'family': ('Abel', sans-serif),
+        'url': 'Abel:300,300i,400,400i,700,700i',
+    ),
+    'Advent Pro': (
+        'family': ('Advent Pro', sans-serif),
+        'url': 'Advent+Pro:300,300i,400,400i,700,700i',
+    ),
+    'Muli': (
+        'family': ('Muli', sans-serif),
+        'url': 'Muli:300,300i,400,400i,700,700i',
+    ),
+    'Noto Sans': (
+        'family': ('Noto Sans', sans-serif),
+        'url': 'Noto+Sans:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font-size-base': (14 / 16) * 1rem,
+        'header-font-size': 1.25rem,
+        'logo-height': 3rem,
+        'fixed-logo-height': 3rem,
+        'btn-border-radius': 2rem,
+        'font': 'MontSerrat',
+        'headings-font': 'Bubblegum Sans',
+        'navbar-font': 'Bubblegum Sans',
+        'buttons-font': 'Bubblegum Sans',
+        'link-underline': 'never',
+        'header-template': 'centered_logo',
+        'footer-template': 'minimalist',
+    ),
+);

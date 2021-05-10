@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_carousel" inherit_id="website.s_carousel">
+        <!-- Slide 1 -->
+        <xpath expr="//div[hasclass('carousel-content')]" position="replace">
+            <div class="jumbotron o_cc o_cc1 p-5 carousel-content col-lg-6">
+                <!-- Paragraph -->
+                <h2 style="font-size: 62px; line-height: 64px;">A touch of Magic</h2>
+                <p><br/></p>
+                <p class="lead">We are focused on providing high-quality service and customer satisfaction.</p>
+            </div>
+        </xpath>
+        <!-- Slide 2 -->
+        <xpath expr="(//div[hasclass('carousel-content')])[2]" position="replace">
+            <div class="jumbotron o_cc o_cc1 p-5 mt64 carousel-content col-lg-8 offset-lg-2 text-center">
+                <h2 style="font-size: 62px;">Ideas and tips</h2>
+                <p><br/></p>
+                <p class="lead">Get inspired with the latest trends and advice from our wedding experts.</p>
+            </div>
+        </xpath>
+        <!-- Slide 3 -->
+        <xpath expr="(//div[hasclass('carousel-content')])[3]" position="replace">
+            <div class="jumbotron o_cc o_cc1 p-5 carousel-content col-lg-8 offset-lg-4 py-5">
+                <h2 style="font-size: 62px; line-height: 64px;">Plan your destination</h2>
+                <p><br/></p>
+                <p class="lead">No matter where in the world you want to get married. Our directory of international wedding professionals can help you celebrate.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_features" inherit_id="website.s_features">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt48 pb48" remove="pt32 pb32" separator=" "/>
+        </xpath>
+        <!-- Icons -->
+        <xpath expr="//div[hasclass('row')]/div[1]/i" position="attributes">
+            <attribute name="class" add="rounded-circle" remove="rounded" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]/i" position="attributes">
+            <attribute name="class" add="rounded-circle" remove="rounded" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[3]/i" position="attributes">
+            <attribute name="class" add="rounded-circle" remove="rounded" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

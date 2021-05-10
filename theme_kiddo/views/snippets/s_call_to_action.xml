@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_call_to_action" inherit_id="website.s_call_to_action">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_half_screen_height" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","colors":{"c3":"o-color-1"},"flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_22" style='background-image: url("/web_editor/shape/web_editor/Wavy/22.svg?c3=%23F3997B");'/>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-9')]" position="replace">
+            <div class="col-lg-9 pb16">
+                <h3><b>2,000 parents</b> brought their kid to our nursery.</h3>
+                <p>Entrust us with your children and go to work with peace of mind.</p>
+            </div>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a" position="attributes">
+            <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

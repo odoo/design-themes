@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_banner" inherit_id="website.s_banner">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_full_screen_height" separator=" "/>
+        </xpath>
+        <!-- Banner -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="class" add="offset-lg-6 border p-5" remove="o_cc o_cc1 pt32 pb32" separator=" "/>
+            <attribute name="style" add="border-width: 1px !important; border-color: rgb(70, 77, 83) !important;" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1>
+                <font style="font-size: 62px; line-height: 48px;">A Different Viewpoint.</font>
+            </h1>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace">
+            <p><br/></p>
+            <p class="lead">We are a contemporary architecture firm working mainly in the residential, commercial and office sectors. Our projects are built all over the world, in urban and natural environments.</p>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a" position="replace">
+            <a href="#" class="btn btn-primary mb-2">Discover more</a>
+        </xpath>
+    </template>
+</odoo>

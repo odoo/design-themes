@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_cover" inherit_id="website.s_cover">
+        <!-- Section -->
+        <xpath expr="section" position="attributes">
+            <attribute name="class" add="o_full_screen_height" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center;">
+                <font style="font-size: 62px;"><b>Daily Fresh Food</b></font>
+            </h1>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace">
+            <h6 class="text-center">Only local and fresh products to keep you healthy.</h6>
+            <p><br/></p>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a[hasclass('btn')]" position="replace">
+            <a href="#" class="btn btn-lg btn-primary rounded-circle mb-2">Menu</a>
+        </xpath>
+        <!-- Scroll Down button -->
+        <xpath expr="//div[hasclass('container')]" position="after">
+            <a class="o_scroll_button rounded-circle align-items-center justify-content-center mx-auto bg-o-color-5 mb-2" href="#" title="Scroll down to next section">
+                <i class="fa fa-angle-down fa-2x"/>
+            </a>
+        </xpath>
+    </template>
+</odoo>

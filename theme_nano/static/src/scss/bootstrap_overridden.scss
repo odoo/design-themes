@@ -1,0 +1,82 @@
+//------------------------------------------------------------------------------//
+// TODO ideally this should be done in primary variables if it was possible.
+//------------------------------------------------------------------------------//
+
+// Headings
+@if o-website-value('headings-font-number') == 1 {
+    // Roboto
+    $o-theme-headings-font-weight:          500;
+}
+@else if o-website-value('headings-font-number') == 4 {
+    // Lato
+    $o-theme-headings-font-weight:          300;
+}
+@else if o-website-value('headings-font-number') == 5 {
+    // Advent Pro
+    $o-theme-h1-font-size-multiplier:       4;
+    $o-theme-h2-font-size-multiplier:       3.5;
+    $o-theme-headings-font-weight:          600;
+}
+@else if o-website-value('headings-font-number') == 6 {
+    // Oswald
+    $o-theme-h1-font-size-multiplier:       4;
+    $o-theme-h2-font-size-multiplier:       3.5;
+}
+
+// Body
+@if o-website-value('font-number') == 1 {
+    // Roboto
+    $o-theme-font-weight-bold:              500;
+}
+@else if o-website-value('font-number') == 4 {
+    // Lato
+    $o-theme-font-weight-light:             300;
+    $o-theme-font-weight-bold:              600;
+}
+@else if o-website-value('font-number') == 5 {
+    // Advent Pro
+    $o-theme-font-weight-bold:              600;
+}
+@else if o-website-value('font-number') == 6 {
+    // Oswald
+    $o-theme-font-weight-light:             200;
+    $o-theme-font-weight-normal:            300;
+    $o-theme-font-weight-bold:              400;
+}
+@else if o-website-value('font-number') == 8 {
+    // Open Sans
+    $o-theme-font-weight-bold:              600;
+}
+@else if o-website-value('font-number') == 10 {
+    // Montserrat Alternates
+    $o-theme-font-weight-bold:              600;
+}
+
+// Buttons
+@if o-website-value('buttons-font-number') == 1 {
+    // Roboto
+    $o-theme-btn-font-weight:               500;
+}
+@else if o-website-value('buttons-font-number') == 5 {
+    // Advent Pro
+    $o-theme-btn-font-weight:               600;
+}
+@else if o-website-value('buttons-font-number') == 6 {
+    // Oswald
+    $o-theme-btn-font-weight:               200;
+}
+@else if o-website-value('buttons-font-number') == 8 {
+    // Open Sans
+    $o-theme-btn-font-weight:               600;
+}
+@else if o-website-value('buttons-font-number') == 10 {
+    // Montserrat Alternates
+    $o-theme-btn-font-weight:               600;
+}
+
+//------------------------------------------------------------------------------//
+// Bootstrap
+//------------------------------------------------------------------------------//
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:                  200 !default;

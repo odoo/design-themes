@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_text_image" inherit_id="website.s_text_image">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2>Pamper Yourself</h2>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p[1]" position="replace">
+            <p>Escape from everyday busy reality and treat your body with intensive care. Beauty and health go hand in hand. Take time to slow down in our relaxing spa, and everything you’re chasing will come around.</p>
+        </xpath>
+        <xpath expr="//p[2]" position="replace"/>
+        <!-- Button -->
+        <xpath expr="//a" position="attributes">
+            <attribute name="class" add="btn-outline-secondary" remove="btn-primary" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

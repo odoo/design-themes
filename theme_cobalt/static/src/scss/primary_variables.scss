@@ -1,0 +1,75 @@
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+$o-color-palettes: (
+    (   // Palette 1
+        'o-color-1': #116466,
+        'o-color-2': #2B3737,
+        'o-color-3': #F6F4F2,
+        'o-color-4': #ffffff,
+        'o-color-5': #a9bcbc,
+
+        'o-cc3-headings': 'o-color-3',
+        'o-cc3-text': 'o-color-5',
+        'o-cc3-link': 'o-color-4',
+        'o-cc3-btn-primary': 'o-color-4',
+        'o-cc3-btn-secondary': 'o-color-5',
+
+        'header': 1,
+        'footer': 3,
+        'copyright': 'black-15',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (48.83 / 16);
+$o-theme-h2-font-size-multiplier: (39.06 / 16);
+$o-theme-h3-font-size-multiplier: (31.25 / 16);
+$o-theme-h4-font-size-multiplier: (25.00 / 16);
+$o-theme-h5-font-size-multiplier: (20.00 / 16);
+$o-theme-h6-font-size-multiplier: 1.1;
+
+$o-theme-font-configs: (
+    'Inter': (
+        'family': ('Inter', serif),
+        'url': 'Inter:400,400i,600,600i,800,800i',
+    ),
+
+    'Abril Fatface': (
+        'family': ('Abril Fatface', serif),
+        'url': 'Abril+Fatface:300,300i,400,400i,700,700i',
+    ),
+);
+
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font': 'Inter',
+        'headings-font': 'Inter',
+        'navbar-font': 'Inter',
+        'buttons-font': 'Inter',
+
+        'font-size-base': (14 / 16) * 1rem,
+        'header-font-size': (14 / 16) * 1rem,
+
+        'hamburger-type': 'off-canvas',
+        'menu-box-shadow': false,
+
+        'btn-ripple': true,
+        'btn-secondary-outline': true,
+        'btn-font-size': (14 / 16) * 1rem,
+        'btn-border-radius': 2px,
+
+        'btn-font-size-lg': (12 / 16) * 1rem,
+        'btn-padding-y-lg': 1rem,
+        'btn-padding-x-lg': 3.3rem,
+    ),
+);

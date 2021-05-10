@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_media_list" inherit_id="website.s_media_list">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt56 pb40 o_cc o_cc4" remove="pt32 bg-200" separator=" "/>
+        </xpath>
+        <!-- Row 1 -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[1]//div[hasclass('row')]" position="attributes">
+            <attribute name="class" add="o_cc o_cc3 shadow border rounded" remove="o_cc o_cc1" separator=" "/>
+            <attribute name="style" add="border-color: rgb(73, 64, 72) !important; box-shadow: rgba(0, 0, 0, 0.25) 25px -25px 0px 0px !important;
+            border-width: 15px !important; border-radius: 35px !important;" separator=" "/>
+        </xpath>
+        <!-- Row 2 -->
+        <xpath expr="//div[hasclass('s_media_list_item')][2]" position="attributes">
+            <attribute name="class" add="pt32" remove="pt16" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_media_list_item')])[2]//div[hasclass('row')]" position="attributes">
+            <attribute name="class" add="o_cc o_cc3 shadow border rounded" remove="o_cc o_cc1" separator=" "/>
+            <attribute name="style" add="border-color: rgb(73, 64, 72) !important; box-shadow: rgba(0, 0, 0, 0.25) 25px -25px 0px 0px !important;
+            border-width: 15px !important; border-radius: 35px !important;" separator=" "/>
+        </xpath>
+        <!-- Row 3 -->
+        <xpath expr="//div[hasclass('s_media_list_item')][3]" position="attributes">
+            <attribute name="class" add="pt32" remove="pt16" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_media_list_item')])[3]//div[hasclass('row')]" position="attributes">
+            <attribute name="class" add="o_cc o_cc3 flex-row-reverse shadow border rounded" remove="o_cc o_cc1" separator=" "/>
+            <attribute name="style" add="border-color: rgb(73, 64, 72) !important; box-shadow: rgba(0, 0, 0, 0.25) 25px -25px 0px 0px !important;
+            border-width: 15px !important; border-radius: 35px !important;" separator=" "/>
+        </xpath>
+        <!-- Text 1 -->
+        <xpath expr="//div[hasclass('s_media_list_body')]" position="replace">
+            <div class="col-lg-8 s_media_list_body">
+                <h3 class="card-title">Litigation</h3>
+                <p class="card-text">Litigation is our core-business. Our lawyers have been involved in many high-profile cases for 20 years.</p>
+            </div>
+        </xpath>
+        <!-- Row 2 -->
+        <xpath expr="(//div[hasclass('s_media_list_body')])[2]" position="replace">
+            <div class="col-lg-8 s_media_list_body">
+                <h3 class="card-title">Arbitration</h3>
+                <p class="card-text">Over the past years, our lawyers have gained significant experience in arbitration, both as counsel as well as arbitrators.</p>
+            </div>
+        </xpath>
+        <!-- Row 3 -->
+        <xpath expr="(//div[hasclass('s_media_list_body')])[3]" position="replace">
+            <div class="col-lg-8 s_media_list_body">
+                <h3 class="card-title">Mediation</h3>
+                <p class="card-text">In mediation, the parties find a solution for their conflict, with the assistance of a mediator who has no decision-making power. The result, if mediation succeeds, is a solution which is agreeable to all parties.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc2" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('card-body')]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">I sell. What should I do?</h3>
+                <p class="card-text">Discover tips and tricks when you sell a property. Whether it's appointments with the notary, fees, etc...</p>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">What’s the value of my property?</h3>
+                <p class="card-text">Our online estimation tool, 100% free of charge, will guide you through the different steps to have a rigorous evaluation.</p>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Building and renovating</h3>
+                <p class="card-text">Here are some tips to get you started on a new construction or renovation project. Because it can't be improvised. </p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

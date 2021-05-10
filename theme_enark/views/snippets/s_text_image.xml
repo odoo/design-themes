@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_text_image" inherit_id="website.s_text_image">
+        <!-- Title & Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
+            <div class="col-lg-6 p-5 border rounded" style="border-width: 1px !important; border-color: rgb(70, 77, 83) !important; border-radius: 4px !important;">
+                <h2>Building Castle in Cloud</h2>
+                <p><br/></p>
+                <p>When designing an architectural concept, we take into account the nine criteria that Zumthor considers to be important in creating an architectural atmosphere.</p>
+            </div>
+        </xpath>
+        <!-- Col 2 -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="attributes">
+            <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

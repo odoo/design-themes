@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_call_to_action" inherit_id="website.s_call_to_action">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt80 o_cc2" remove="pt48 o_cc3" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14","colors":{"c4":"o-color-1"},"flip":["y"]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Origins_14 o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Origins/14.svg?c4=%233498DB');"/>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
+            <attribute name="class" add="pt16" remove="pb16" separator=" "/>
+        </xpath>
+        <xpath expr="//h3" position="replace">
+            <h3><b>50,000 people</b>, run Clean to grow their financial wealth.</h3>
+        </xpath>
+        <xpath expr="//p" position="replace">
+            <p>Join them and make the right money move.</p>
+        </xpath>
+    </template>
+</odoo>

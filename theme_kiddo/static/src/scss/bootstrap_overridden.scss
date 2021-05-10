@@ -1,0 +1,15 @@
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light".
+// Acceptable values are between 0 and 255.
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  150 !default;
+
+// Shadow
+
+$box-shadow-sm:               0 0 .3125rem rgba(0,0,0,.25) !default;
+$box-shadow:                  0 0 .3125rem rgba(0,0,0,.25) !default;
+$box-shadow-lg:               0 0 .3125rem rgba(0,0,0,.25) !default;
+
+// Breadcrumbs
+
+$breadcrumb-bg:                     o-color('white') !default;

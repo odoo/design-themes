@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_company_team" inherit_id="website.s_company_team">
+        <!-- Section -->
+        <xpath expr="section" position="attributes">
+            <attribute name="class" add="pt64" remove="pt48" separator=" "/>
+        </xpath>
+        <!-- Team #01 -->
+        <xpath expr="//div[hasclass('row')]/div[1]//img" position="attributes">
+            <attribute name="class" remove="rounded-circle" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]//h4" position="replace">
+            <h4>Tony Fred, Editor-in-chief</h4>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]//p" position="replace">
+            <p>Founder and chief visionary, Tony is the driving force behind the company. He loves to keep his hands full by participating in the development of the magazine and does not hesitate to carry out field surveys.</p>
+        </xpath>
+        <!-- Team #02 -->
+        <xpath expr="//div[hasclass('row')]/div[2]//img" position="attributes">
+            <attribute name="class" remove="rounded-circle" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]//h4" position="replace">
+            <h4>Mich Stark, Sports Reporter</h4>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]//p" position="replace">
+            <p>Mich loves taking on challenges. With his multi-year experience as a journalist, he wanted to join a team that puts people at the center of the stories.</p>
+        </xpath>
+        <!-- Team #03 -->
+        <xpath expr="//div[hasclass('row')]/div[3]//img" position="attributes">
+            <attribute name="class" remove="rounded-circle" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[3]//h4" position="replace">
+            <h4>Aline Turner, Photograph</h4>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[3]//p" position="replace">
+            <p>Aline is one of the iconic people in life who can say they love what they do. She likes to capture the moment from another point of view, another perspective.</p>
+        </xpath>
+        <!-- Team #04 -->
+        <xpath expr="//div[hasclass('row')]/div[4]//img" position="attributes">
+            <attribute name="class" remove="rounded-circle" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[4]//h4" position="replace">
+            <h4>Iris Joe, Political Reporter</h4>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[4]//p" position="replace">
+            <p>Iris, with her international experience, helps us easily understand global politics. She is determined to drive success and delivers her professional acumen to bring the magazine to the next level.</p>
+        </xpath>
+    </template>
+</odoo>

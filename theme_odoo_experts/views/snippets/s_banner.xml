@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_banner" inherit_id="website.s_banner">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_half_screen_height" separator=" "/>
+        </xpath>
+        <!-- Shadow -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="class" add="rounded" separator=" "/>
+            <attribute name="style" add="box-shadow: rgb(39, 143, 132) 25px 25px 0px 0px !important; border-radius: 25px !important;" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1>
+                <font style="font-size: 62px; line-height: 48px;">If results matter to you</font>
+            </h1>
+        </xpath>
+        <!-- Paragraphs -->
+        <xpath expr="//p" position="replace">
+            <p><br/></p>
+            <p class="lead">Guided by expertise gained over 20 years of achieving success for clients, we practice with passion and strategic focus on the future.</p>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a" position="replace">
+            <a href="#" class="btn btn-primary mb-2">Discover more</a>
+        </xpath>
+    </template>
+</odoo>

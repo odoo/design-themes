@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_carousel" inherit_id="website.s_carousel">
+        <!-- Slide 1 -->
+        <xpath expr="//div[hasclass('carousel-content')]" position="replace">
+            <div class="carousel-content col-lg-6 p-5 o_cc o_cc5 shadow border" style="border-width: 2.5px !important; box-shadow: rgb(161, 192, 5) -20px 20px 0px 0px !important; border-color: rgb(161, 192, 5) !important;">
+                <h2><font style="font-size: 62px;">Miraillet Festival</font></h2>
+                <p class="lead">From the 12th to the 17th of August, come and enjoy the atmosphere at the Mirallet Festival. Discover the line up below.</p>
+                <p><br/></p>
+                <p><a href="/contactus" class="btn btn-primary mb-2">More Info</a></p>
+            </div>
+        </xpath>
+        <!-- Slide 2 -->
+        <xpath expr="(//div[hasclass('carousel-content')])[2]" position="replace">
+            <div class="carousel-content col-lg-8 offset-lg-2 mt48 pt48 pb40 text-center o_cc o_cc5 shadow border" style="border-width: 2.5px !important; box-shadow: rgb(161, 192, 5) 0px 20px 0px 0px !important; border-color: rgb(161, 192, 5) !important;">
+                <h2><font style="font-size: 62px;">6 Days Pass</font></h2>
+                <p class="lead">Tickets will be on sale soon. Do not miss our 6 Days Pass. Free camping!</p>
+                <p><br/></p>
+                <p><a href="/" class="btn btn-primary mb-2">More Info</a></p>
+            </div>
+        </xpath>
+        <!-- Slide 3 -->
+        <xpath expr="(//div[hasclass('carousel-content')])[3]" position="replace">
+            <div class="carousel-content col-lg-6 offset-lg-6 p-5 pt48 pb40 o_cc o_cc5 shadow border" style="border-width: 2.5px !important; box-shadow: rgb(161, 192, 5) 20px 20px 0px 0px !important; border-color: rgb(161, 192, 5) !important;">
+                <h2><font style="font-size: 62px;">Recent Editions</font></h2>
+                <p class="lead">Discover what makes the reputation of the Miraillet festival through these after-movies.</p>
+                <p><br/></p>
+                <p><a href="/" class="btn btn-primary mb-2">More Info</a></p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

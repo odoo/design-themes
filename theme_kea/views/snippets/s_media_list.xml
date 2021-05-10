@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_media_list" inherit_id="website.s_media_list">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Row 3 -->
+        <xpath expr="(//div[hasclass('row')])[4]" position="attributes">
+            <attribute name="class" add="o_cc5 flex-row-reverse rounded" remove="o_cc1" separator=" "/>
+            <attribute name="style" add="border-radius: 25px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('col-lg-4')])[3]" position="attributes">
+            <attribute name="class" add="col-lg-3" remove="col-lg-4" separator=" "/>
+        </xpath>
+        <!-- Row 2 -->
+        <xpath expr="(//div[hasclass('row')])[3]" position="attributes">
+            <attribute name="class" add="rounded o_cc5" remove="o_cc1" separator=" "/>
+            <attribute name="style" add="border-radius: 25px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('col-lg-4')])[2]" position="attributes">
+            <attribute name="class" add="col-lg-3" remove="col-lg-4" separator=" "/>
+        </xpath>
+        <!-- Row 1 -->
+        <xpath expr="(//div[hasclass('row')])[2]" position="attributes">
+            <attribute name="class" add="rounded flex-row-reverse o_cc5" remove="o_cc1" separator=" "/>
+            <attribute name="style" add="border-radius: 25px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
+            <attribute name="class" add="col-lg-6" remove="col-lg-4" separator=" "/>
+        </xpath>
+        <!-- Text 3 -->
+        <xpath expr="(//div[hasclass('col-lg-8')])[3]" position="replace">
+            <div class="col-lg-9 s_media_list_body">
+                <h3 class="card-title">Services</h3>
+                <p class="card-text">We make it a point of honour to offer you a 5-star service. We are here to answer all your hardware problems from smartphone, tablets to your computer.</p>
+            </div>
+        </xpath>
+        <!-- Text 2 -->
+        <xpath expr="(//div[hasclass('col-lg-8')])[2]" position="replace">
+            <div class="col-lg-9 s_media_list_body">
+                <h3 class="card-title">Quality</h3>
+                <p class="card-text">We only use original parts or parts of equivalent quality. ​We make sure you get the best quality available on the market at the best price. All our interventions are guaranteed for a period of one year.</p>
+            </div>
+        </xpath>
+         <!-- Text 1 -->
+        <xpath expr="//div[hasclass('col-lg-8')]" position="replace">
+            <div class="col-lg-6 s_media_list_body">
+                <h3 class="card-title">Motherboard Repair</h3>
+                <p class="card-text">No. 1 in Macbook and iPhone motherboard repair in the world. ​We are the preferred subcontractor for many electronic repair companies.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

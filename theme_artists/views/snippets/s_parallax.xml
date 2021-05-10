@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_parallax" inherit_id="website.s_parallax">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12","colors":{"c1":"#ab44ff","c3":"o-color-2"},"flip":["y"]}</attribute>
+        </xpath>
+        <!-- Bg Image -->
+        <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 75%;"/>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//section/*[last()]" position="before">
+            <div class="o_we_shape o_web_editor_Airy_12 o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Airy/12.svg?c1=%23ab44ff&amp;c3=%233A3A3A');"/>
+        </xpath>
+    </template>
+</odoo>

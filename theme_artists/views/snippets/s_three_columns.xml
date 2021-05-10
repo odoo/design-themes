@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4" remove="bg-200" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12","colors":{"c1":"#ab44ff","c3":"o-color-2"},"flip":["y"]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Airy_12 o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Airy/12.svg?c1=%23ab44ff&amp;c3=%233A3A3A');"/>
+        </xpath>
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('card')]" position="attributes">
+            <attribute name="class" add="border shadow" separator=" "/>
+            <attribute name="style" add="border-color: rgb(0, 0, 0) !important; border-width: 2px !important; box-shadow: rgba(0, 0, 0, 0.15) -20px 20px 0px 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('card-body')]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">My Artistic Process</h3>
+                <p class="card-text">The choice of materials, colours are not insignificant, discover more about my artistic process.</p>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+            <attribute name="class" add="border shadow" separator=" "/>
+            <attribute name="style" add="border-color: rgb(0, 0, 0) !important; border-width: 2px !important; box-shadow: rgba(0, 0, 0, 0.15) -20px 20px 0px 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">My Work</h3>
+                <p class="card-text">Here is a selection of my works, exhibited in my studio.</p>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+            <attribute name="class" add="border shadow" separator=" "/>
+            <attribute name="style" add="border-color: rgb(0, 0, 0) !important; border-width: 2px !important; box-shadow: rgba(0, 0, 0, 0.15) -20px 20px 0px 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">About me</h3>
+                <p class="card-text">Formerly a corporate accountant, I started a professional transition 10 years ago.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

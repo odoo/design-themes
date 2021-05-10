@@ -1,0 +1,197 @@
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #ffffff,
+        'beta': #add3ce,
+        'gamma': #a7c7d5,
+        'delta': #47464b,
+        'epsilon': #f3997b,
+    ),
+    (
+        'alpha': #f8f1d4,
+        'beta': #5b4645,
+        'gamma': #ffffff,
+        'delta': #21263a,
+        'epsilon': #8f8747,
+    ),
+    (
+        'alpha': #dedede,
+        'beta': #adadad,
+        'gamma': #ffffff,
+        'delta': #3e3e3e,
+        'epsilon': #848f47,
+    ),
+    (
+        'alpha': #cfcfcf,
+        'beta': #2e2e2e,
+        'gamma': #ffffff,
+        'delta': #000000,
+        'epsilon': #1ad68f,
+    ),
+    (
+        'alpha': #9fcae2,
+        'beta': #bbc05c,
+        'gamma': #ffffff,
+        'delta': #112625,
+        'epsilon': #45b08c,
+    ),
+    (
+        'alpha': #fdeacc,
+        'beta': #e8cda2,
+        'gamma': #ffffff,
+        'delta': #3e3f43,
+        'epsilon': #e1444d,
+    ),
+);
+
+// Grays
+$-gray-700: lighten(#000, 33.5%);
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        '900': lighten(#000000, 20%),
+        '700': $-gray-700,
+        '600': lighten(#000000, 46.7%),
+        '200': lighten(#000000, 85%),
+    ));
+}
+
+$o-color-palettes: (
+    (
+        'o-color-1': #9e160d,
+        'o-color-2': #543b3b,
+        'o-color-3': #f7f6f6,
+        'o-color-4': #ffffff,
+        'o-color-5': #242424,
+
+        'footer': 1,
+        'copyright': 1,
+    ),
+    (
+        'o-color-1': #3e7ae9,
+        'o-color-2': #000000,
+        'o-color-3': #f3f3f3,
+        'o-color-4': #ffffff,
+        'o-color-5': #222222,
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+);
+
+
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (48.83 / 16);
+$o-theme-h2-font-size-multiplier: (39.06 / 16);
+$o-theme-h3-font-size-multiplier: (31.25 / 16);
+$o-theme-h4-font-size-multiplier: (25.00 / 16);
+$o-theme-h5-font-size-multiplier: (20.00 / 16);
+$o-theme-h6-font-size-multiplier: 1.1;
+
+$o-theme-font-configs: (
+    'Handlee': (
+        'family': ('Handlee', cursive),
+        'url': 'Handlee:300,300i,400,400i,700,700i',
+    ),
+    'Gruppo': (
+        'family': ('Gruppo', cursive),
+        'url': 'Gruppo:300,300i,400,400i,700,700i',
+    ),
+    'Darker Grotesque': (
+        'family': ('Darker Grotesque', sans-serif),
+        'url': 'Darker+Grotesque:300,300i,500,500i,700,700i',
+    ),
+    'Droid Sans': (
+        'family': ('Droid Sans', sans-serif),
+    ),
+    'Bowlby One SC': (
+        'family': ('Bowlby One SC', cursive),
+        'url': 'Bowlby+One+SC:300,300i,400,400i,700,700i',
+    ),
+    'Lobster': (
+        'family': ('Lobster', cursive),
+        'url': 'Lobster:300,300i,400,400i,700,700i',
+    ),
+    'Nunito': (
+        'family': ('Nunito', sans-serif),
+        'url': 'Nunito:300,300i,400,400i,700,700i',
+    ),
+    'Raleway': (
+        'family': ('Raleway', sans-serif),
+        'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+    'Amatic SC': (
+        'family': ('Amatic SC', cursive),
+        'url': 'Amatic+SC:300,300i,400,400i,700,700i',
+    ),
+    'Open Sans Condensed': (
+        'family': ('Open Sans Condensed', sans-serif),
+        'url': 'Open+Sans+Condensed:300,300i,400,400i,700,700i',
+    ),
+    'Oswald': (
+        'family': ('Oswald', sans-serif),
+        'url': 'Oswald:300,300i,400,400i,700,700i',
+    ),
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'Permanent Marker': (
+        'family': ('Permanent Marker', cursive),
+        'url': 'Permanent+Marker:300,300i,400,400i,700,700i',
+    ),
+    'Pacifico': (
+        'family': ('Pacifico', cursive),
+        'url': 'Pacifico:300,300i,400,400i,700,700i',
+    ),
+    'Playfair Display': (
+        'family': ('Playfair Display', serif),
+        'url': 'Playfair+Display:300,300i,400,400i,700,700i',
+    ),
+    'Playfair Display SC': (
+        'family': ('Playfair Display SC', serif),
+        'url': 'Playfair+Display+SC:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': 1rem,
+        'font': 'Droid Sans',
+        'headings-font': 'Oswald',
+        'navbar-font': 'Oswald',
+
+        'buttons-font': 'Oswald',
+        'btn-primary-outline': false,
+        'btn-secondary-outline': true,
+
+        'btn-border-width': 2px,
+        'btn-padding-x': 1.15rem,
+        'btn-border-radius': 1px,
+        'btn-border-radius-sm': 0,
+        'btn-border-radius-lg': 2px,
+        'btn-padding-y': .474rem,
+        'btn-padding-y-lg': 1rem,
+        'btn-padding-x-lg': 3.3rem,
+        'btn-font-size': 1.2rem,
+        'btn-font-size-lg': 2rem,
+
+        'header-template': 'hamburger',
+        'hamburger-type': 'off-canvas',
+        'hamburger-position': 'left',
+        'footer-template': 'minimalist',
+    ),
+);

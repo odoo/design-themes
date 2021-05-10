@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- General Components, Layout -->
+
+<!-- ==== Headers ===== -->
+<template id="header_shadow" inherit_id="website.template_header_default" name="Cobalt Header Shadow">
+    <xpath expr="//nav" position="attributes">
+        <attribute name="class" remove="shadow-sm" separator=" "/>
+    </xpath>
+</template>
+
+<template id="header_button" inherit_id="website.template_header_default_oe_structure_header_default_1" name="Cobalt Header Button">
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
+    </xpath>
+</template>
+
+
+<!-- Snippets -->
+
+<!-- ==== Image-Text ===== -->
+<template id="s_image_text" inherit_id="website.s_image_text" name="Cobalt s_image_text">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt152 pb128" remove="pt32 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/03","colors":{"c2":"o-color-3"},"flip":[]}</attribute>
+    </xpath>
+
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_03" style="background-image: url(&quot;/web_editor/shape/web_editor/Blobs/03.svg?c2=%23F6F4F2&quot;);"/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
+        <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+    </xpath>
+
+    <xpath expr="//h2" position="replace">
+        <h1>Reach more People.<br/>Grow your Business.</h1><br/>
+    </xpath>
+
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+
+    <xpath expr="//a[hasclass('btn')]" position="replace">
+        <a href="#" class="btn btn-primary btn-lg mb-2">START NOW</a>
+    </xpath>
+</template>
+
+<!-- ==== Text-Image ===== -->
+<template id="s_text_image" inherit_id="website.s_text_image" name="Cobalt s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt80 pb88" remove="pt32 pb32" separator=" "/>
+    </xpath>
+
+    <xpath expr="//h2" position="replace">
+        <h2>What we can do, <b>for you</b></h2>
+        <br/>
+    </xpath>
+
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p" position="replace">
+        <h5>Digital Transformation</h5>
+        <p>Leader in digital business, we’re helping companies of all sizes to thrive in an ever-changing landscape.</p>
+        <br/>
+        <h5>Web &amp; App Development</h5>
+        <p>We have collected solid experience in building native and cross-platform mobile applications and websites. Check our portfolio from clients around the world.</p>
+        <br/>
+        <h5>Marketing Promotion &amp; Strategy</h5>
+        <p>We’ll build with you a clear promotion strategy. Thus, you’ll have an actionable plan to influence people about your business, generate more leads, and boost customer engagement.</p>
+        <br/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="col-lg-7" remove="col-lg-6" separator=" "/>
+    </xpath>
+
+    <xpath expr="//a[hasclass('btn')]" position="replace">
+        <a href="#" class="btn btn-secondary btn-lg mb-2">DISCOVER MORE</a>
+    </xpath>
+</template>
+
+<!-- ======== QUOTES ======== -->
+ <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Cobalt s_quotes_carousel">
+    <!-- Assign slide3 as 'active' and move it in first position -->
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
+        <attribute name="class" remove="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="attributes">
+        <attribute name="class" add="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="before">
+        <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="move"/>
+    </xpath>
+    <!-- Adjust  (new-)slide3 bg position -->
+    <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="attributes">
+        <attribute name="style" remove="background-position: 50% 50%;" add="background-position: 50% 20%;" separator=";"/>
+    </xpath>
+</template>
+
+<!-- ==== References ===== -->
+<template id="s_references" inherit_id="website.s_references" name="Cobalt s_references">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2" remove="pt48 pb32" separator=" "/>
+    </xpath>
+
+    <xpath expr="//h2" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+</template>
+
+<!-- ==== Three Columns ===== -->
+<template id="s_three_columns" inherit_id="website.s_three_columns" name="Cobalt s_three_columns">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="bg-200 pt32 pb32" add="pt72 pb120" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","colors":{"c2":"o-color-3"},"flip":["x"]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Bold_01 o_we_flip_x" style="background-image: url(&quot;/web_editor/shape/web_editor/Bold/01.svg?c2=%23F6F4F2&quot;);"/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]" position="before">
+        <h2 style="text-align: center;">Latest projects</h2>
+        <p/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div/div" position="replace">
+        <img class="d-block img-fluid figure-img rounded shadow-lg" src="/web/image/website.s_three_columns_default_image_1" alt="s_three_columns_1"/>
+        <h5>Hey Balàzs!</h5>
+        <p>This minimalist weather application was created to be multi-platform. It’s available for iPhone or Android phones.</p>
+        <a href="#" class="btn btn-secondary mb-2">READ MORE</a>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[2]/div" position="replace">
+        <img class="d-block img-fluid figure-img rounded shadow-lg" src="/web/image/website.s_three_columns_default_image_2" alt="s_three_columns_2"/>
+        <h5>Frank Clothes eCommerce</h5>
+        <p>We wanted to propose a friendly shopping experience for the fans of Frank Clothes. Read more how we developed it.</p>
+        <a href="#" class="btn btn-secondary mb-2">READ MORE</a>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[3]/div" position="replace">
+        <img class="d-block img-fluid figure-img rounded shadow-lg" src="/web/image/website.s_three_columns_default_image_3" alt="s_three_columns_3"/>
+        <h5>Earthquake Monitor</h5>
+        <p>We developed this application to  help the population of Goma living under the threat of a volcano.Now it’s available for every area.</p>
+        <a href="#" class="btn btn-secondary mb-2">READ MORE</a>
+    </xpath>
+</template>
+
+<!-- ==== Call To Action ===== -->
+<template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Cobalt s_call_to_action">
+    <xpath expr="//a" position="replace">
+        <a href="/contactus" class="btn btn-primary btn-lg mb-2">START NOW</a>
+    </xpath>
+</template>
+
+
+<!-- ==== Picture ===== -->
+<template id="s_picture" inherit_id="website.s_picture" name="Cobalt s_picture">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="bg-o-color-3 pt72 overflow-hidden" remove="bg-200 pt48" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["y"]}</attribute>
+    </xpath>
+
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Bold_01 o_we_flip_y"></div>
+    </xpath>
+
+    <xpath expr="//h2" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" add="" remove="img-thumbnail padding-large" separator=" "/>
+    </xpath>
+
+    <xpath expr="//figcaption" position="replace">
+        <figcaption class="text-400"><em>Our offices in Dhaka</em></figcaption>
+    </xpath>
+
+    <xpath expr="//div[hasclass('row')]/div" position="before">
+        <div class="col col-lg-5">
+            <h2>Our Offices</h2>
+            <p/>
+            <div class="row">
+                <div class="col-6 pt24 bg-white-75">
+                    <h5>Dhaka</h5>
+                    <p>This is our headquarter. That’s where, we’re building the strategy of the company.</p>
+                    <br/>
+                    <h5>Calgary</h5>
+                    <p>Opened in 2011, this office holds the Sales team for Americas and is composed of 100 people.</p>
+                </div>
+                <div class="col-6 pt24 bg-white-75">
+                    <h5>Abu Dhabi</h5>
+                    <p>R&amp;D department. Where the magic happens. We’re recruiting devs, so contact us.</p>
+                    <br/>
+                    <h5>Hong Kong</h5>
+                    <p>Our first step in Asia, opened in 2020. Holds Sales and Services department.</p>
+                </div>
+            </div>
+        </div>
+    </xpath>
+
+    <xpath expr="//div[hasclass('offset-lg-1')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-10" separator=" "/>
+        <attribute name="style" remove="text-align: center;" separator=";"/>
+    </xpath>
+</template>
+
+</odoo>

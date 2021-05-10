@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_cover" inherit_id="website.s_cover">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_full_screen_height bg-black-15 o_cc o_cc5" remove="bg-black-50" separator=" "/>
+        </xpath>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
+            <attribute name="class" add="bg-black-15" remove="bg-black-50" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center;">
+                <font style="font-size: 62px;"><b>Working beauty from the inside out</b></font>
+            </h1>
+        </xpath>
+        <!-- Paragraphs -->
+        <xpath expr="//p[2]" position="replace"/>
+        <xpath expr="//p[1]" position="replace"/>
+    </template>
+</odoo>

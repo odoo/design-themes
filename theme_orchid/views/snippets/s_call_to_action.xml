@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_call_to_action" inherit_id="website.s_call_to_action">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pb48 o_cc1" remove="pb24 bg-200 o_cc3" separator=" "/>
+        </xpath>
+        <!-- Paragraphs -->
+        <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
+            <attribute name="class" add="pt16" remove="pb16" separator=" "/>
+        </xpath>
+        <xpath expr="//h3" position="replace">
+            <h3><b>There are always flowers</b> for those who want to see them.</h3>
+        </xpath>
+        <xpath expr="//p" position="replace"/>
+    </template>
+</odoo>

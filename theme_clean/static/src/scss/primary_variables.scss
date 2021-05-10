@@ -1,0 +1,275 @@
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #bdc3c7,
+        'beta': #95a5a6,
+        'gamma': #2980b9,
+        'delta': #3498db,
+        'epsilon': #34495e,
+    ),
+    (
+        'alpha': #bdc3c7,
+        'beta': #7a58b2,
+        'gamma': #593d87,
+        'delta': #39225f,
+        'epsilon': #2c3e50,
+    ),
+    (
+        'alpha': #c5bcb1,
+        'beta': #e67e22,
+        'gamma': #c0392b,
+        'delta': #e74c3c,
+        'epsilon': #d35400,
+    ),
+    (
+        'alpha': #c5bcb1,
+        'beta': #f1c40f,
+        'gamma': #f3ac12,
+        'delta': #e67e22,
+        'epsilon': #d35400,
+    ),
+    (
+        'alpha': #ecf0f1,
+        'beta': #bdc3c7,
+        'gamma': #27ae60,
+        'delta': #254c3a,
+        'epsilon': #2ecc71,
+    ),
+    (
+        'alpha': #ecf0f1,
+        'beta': #bdc3c7,
+        'gamma': #7f8c8d,
+        'delta': #445b5c,
+        'epsilon': #34495e,
+    ),
+);
+
+@if $o-support-13-0-color-system {
+    $-status-color-palettes: (
+        (
+            'success': #2980b9,
+            'info': #1abc9c,
+            'warning': #36495e,
+            'danger': #2c3e50,
+        ),
+        (
+            'success': #593d87,
+            'info': #39225f,
+            'warning': #2c3e50,
+            'danger': #c0392b,
+        ),
+        (
+            'success': #c0392b,
+            'info': #e67e22,
+            'warning': #c5bcb1,
+            'danger': #d35400,
+        ),
+        (
+            'success': #f3ac12,
+            'info': #f1c40f,
+            'warning': #c0392b,
+            'danger': #d35400,
+        ),
+        (
+            'success': #27ae60,
+            'info': #254c3a,
+            'warning': #34495e,
+            'danger': #2c3e50,
+        ),
+        (
+            'success': #bdc3c7,
+            'info': #7f8c8d,
+            'warning': #445b5c,
+            'danger': #2c3e50,
+        ),
+    );
+    $-palettes: $o-theme-color-palettes;
+    $o-theme-color-palettes: ();
+    @for $index from 1 through length($-palettes) {
+        $o-theme-color-palettes: append($o-theme-color-palettes, map-merge(nth($-palettes, $index), nth($-status-color-palettes, $index)));
+    }
+}
+
+// Grays
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        '900': lighten(#000, 40%),
+        '600': lighten(#000, 70%),
+        '200': lighten(#000, 80%),
+    ));
+}
+
+// Colors
+$o-color-palettes: (
+    (
+        'o-color-1': #3498db,
+        'o-color-2': #34495e,
+        'o-color-3': #e5edf2,
+        'o-color-4': #ffffff,
+        'o-color-5': #333333,
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+    (
+        'o-color-1': #7a58b2,
+        'o-color-2': #4e3575,
+        'o-color-3': #ecece4,
+        'o-color-4': #ffffff,
+        'o-color-5': #2c3e50,
+
+        'o-cc1-headings': 'o-color-5',
+        'o-cc5-link': #b9a1df,
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+    (
+        'o-color-1': #f85fa6,
+        'o-color-2': #a3416f,
+        'o-color-3': #e0e9f2,
+        'o-color-4': #ffffff,
+        'o-color-5': #222222,
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+    (
+        'o-color-1': #3d91db,
+        'o-color-2': #995528,
+        'o-color-3': #f0edeb,
+        'o-color-4': #ffffff,
+        'o-color-5': #222222,
+
+        'o-cc3-bg': #583e2d,
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+    (
+        'o-color-1': #53aeb4,
+        'o-color-2': #7f8c8d,
+        'o-color-3': #eef3f6,
+        'o-color-4': #ffffff,
+        'o-color-5': #34495e,
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (41 / 16);
+$o-theme-h2-font-size-multiplier: (34 / 16);
+$o-theme-h3-font-size-multiplier: (28 / 16);
+$o-theme-h4-font-size-multiplier: (20 / 16);
+$o-theme-h5-font-size-multiplier: 1;
+$o-theme-h6-font-size-multiplier: (14 / 16);
+
+$o-theme-font-configs: (
+    'PT Sans': (
+        'family': ('PT Sans', sans-serif),
+        'url': 'PT+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Ubuntu': (
+        'family': ('Ubuntu', sans-serif),
+        'url': 'Ubuntu:300,300i,400,400i,700,700i',
+    ),
+    'Bitter': (
+        'family': ('Bitter', serif),
+        'url': 'Bitter:300,300i,400,400i,700,700i',
+    ),
+    'Noto Serif': ( // font update - Droid Serif -> Noto+Serif
+        'family': ('Noto Serif', serif),
+        'url': 'Noto+Serif:300,300i,400,400i,700,700i',
+    ),
+    'Dosis': (
+        'family': ('Dosis', sans-serif),
+        'url': 'Dosis:300,300i,400,400i,700,700i',
+    ),
+    'Open Sans': (
+        'family': ('Open Sans', sans-serif),
+        'url': 'Open+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Heebo': (
+        'family': ('Heebo', sans-serif),
+        'url': 'Heebo:300,300i,400,400i,700,700i',
+    ),
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'Josefin Slab': (
+        'family': ('Josefin Slab', serif),
+        'url': 'Josefin+Slab:300,300i,400,400i,700,700i',
+    ),
+    'Abel': (
+        'family': ('Abel', sans-serif),
+        'url': 'Abel:300,300i,400,400i,700,700i',
+    ),
+    'Muli': (
+        'family': ('Muli', sans-serif),
+        'url': 'Muli:300,300i,400,400i,700,700i',
+    ),
+    'Libre Baskerville': (
+        'family': ('Libre Baskerville', serif),
+        'url': 'Libre+Baskerville:300,300i,400,400i,700,700i',
+    ),
+    'Medula One': (
+        'family': ('Medula One', cursive),
+        'url': 'Medula+One:300,300i,400,400i,700,700i',
+    ),
+    'Montserrat Alternates': (
+        'family': ('Montserrat Alternates', sans-serif),
+        'url': 'Montserrat+Alternates:300,300i,400,400i,700,700i',
+    ),
+    'Imprima': (
+        'family': ('Imprima', sans-serif),
+        'url': 'Imprima:300,300i,400,400i,700,700i',
+    ),
+    'Oswald': (
+        'family': ('Oswald', sans-serif),
+        'url': 'Oswald:300,300i,400,400i,700,700i',
+    ),
+    'Quattrocento': (
+        'family': ('Quattrocento', serif),
+        'url': 'Quattrocento:300,300i,400,400i,700,700i',
+    ),
+    'Vollkorn': (
+        'family': ('Vollkorn', serif),
+        'url': 'Vollkorn:300,300i,400,400i,700,700i',
+    ),
+    'Alice': (
+        'family': ('Alice', serif),
+        'url': 'Alice:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'headings-font': 'Dosis',
+        'navbar-font': 'Dosis',
+        'buttons-font': 'Dosis',
+        'header-template': 'hamburger',
+        'hamburger-position': 'right',
+        'hamburger-type': 'off-canvas',
+        'footer-template': 'contact',
+    ),
+);

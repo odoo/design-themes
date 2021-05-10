@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_cover" inherit_id="website.s_cover">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_full_screen_height" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/12","colors":{"c3":"#e5edf2","c5":"#E5EDF2"},"flip":[]}</attribute>
+        </xpath>
+        <!-- Title & Paragraph -->
+        <xpath expr="//div[hasclass('container')]" position="replace">
+            <div class="container s_allow_columns text-center">
+                <h1>
+                    <font style="font-size: 62px;"><b>Sell from your couch</b></font>
+                </h1>
+                <p class="lead">
+                    Make your finances reach a new level with our online management system.<br/>
+                    Track every penny, directly from the confort of your home.
+                </p>
+            </div>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//section//*[last()]" position="after">
+            <div class="o_we_shape o_web_editor_Origins_07"/>
+        </xpath>
+    </template>
+</odoo>

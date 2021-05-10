@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_banner" inherit_id="website.s_banner">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14","colors":{"c4":"o-color-1"},"flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//section//*[last()]" position="after">
+            <div class="o_we_shape o_web_editor_Origins_14" style="background-image: url('/web_editor/shape/web_editor/Origins/14.svg?c4=%23539B80');"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1>
+                <font style="font-size: 48px;">Real Estate Agencies.<br/>
+                Near You.</font>
+            </h1>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace">
+            <p class="lead">We are specialist in the sale and rental of residential real estate.</p>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a" position="replace">
+            <a href="#" class="btn btn-primary mb-2">Properties</a>
+        </xpath>
+    </template>
+</odoo>

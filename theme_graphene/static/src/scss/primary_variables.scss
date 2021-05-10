@@ -1,0 +1,179 @@
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #85AFA8,
+        'beta': #7E566B,
+        'gamma': #85909A,
+        'delta': #969397,
+        'epsilon': #422335,
+
+        'success': #1b8433,
+        'warning': #e4b013,
+    ),
+    (
+        'alpha': #54787D,
+        'beta': #6B9997,
+        'gamma': #615145,
+        'delta': #C6CCA5,
+        'epsilon': #412342,
+
+        'success': #5CB85C,
+        'info': #4D68A3,
+        'warning': #DDC66B,
+        'danger': #D86060,
+    ),
+    (
+        'alpha': #456F74,
+        'beta': #EB5937,
+        'gamma': #403D3C,
+        'delta': #1C1919,
+        'epsilon': #D3CBBD,
+
+        'success': #31B05E,
+        'info': #4D68A3,
+        'warning': #EACF41,
+        'danger': #CB3E3E,
+    ),
+    (
+        'alpha': #23C59E,
+        'beta': #FF5B5B,
+        'gamma': #FFE9C7,
+        'delta': #545445,
+        'epsilon': #2D2D36,
+
+        'success': #5CB85C,
+    ),
+);
+
+// Theme Palettes
+$o-color-palettes: (
+    (   // Palette 1
+        'o-color-1': #30cbb2,
+        'o-color-2': #3c4e5e,
+        'o-color-3': #f4f5f6,
+        'o-color-4': #ffffff,
+        'o-color-5': #192028,
+
+        'o-cc1-link': #04957e,
+        'o-cc5-text': #b2b2b2,
+
+        'body': 'black-15',
+        'menu': 1,
+        'footer': 5,
+        'copyright': 'black-25',
+    ),
+    (   // Palette 2
+        'o-color-1': #c8a47e,
+        'o-color-2': #32273b,
+        'o-color-3': #f1f1ef,
+        'o-color-4': #ffffff,
+        'o-color-5': #252424,
+
+        'o-cc3-text': #b2b2b2,
+        'o-cc4-text': 'o-color-4',
+        'o-cc3-headings': 'o-color-4',
+        'o-cc4-headings': 'o-color-5',
+        'o-cc5-text': #b2b2b2,
+    ),
+    (   // Palette 3
+        'o-color-1': #39588e,
+        'o-color-2': #d2b683,
+        'o-color-3': #e0dfdb,
+        'o-color-4': #f4f5f6,
+        'o-color-5': #2a282a,
+
+        'o-cc5-link': #7a9edc,
+
+        'menu': 2,
+        'footer': 2,
+    ),
+    (   // Palette 4
+        'o-color-1': #f48747,
+        'o-color-2': #e9ceb0,
+        'o-color-3': #f1ebe5,
+        'o-color-4': #fbfaf8,
+        'o-color-5': #282d30,
+
+        'menu': 5,
+    ),
+);
+
+// Grays
+$-black: #000000;
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        '975': lighten($-black, 13%),
+        '950': lighten($-black, 16%),
+        '925': lighten($-black, 19%),
+        '900': lighten($-black, 22%),
+        '800': lighten($-black, 25%),
+        '700': lighten($-black, 33.5%),
+        '650': lighten($-black, 50%),
+        '600': lighten($-black, 65.5%),
+        '400': lighten($-black, 82%),
+        '200': lighten($-black, 93.5%),
+    ));
+}
+
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (48.83 / 16);
+$o-theme-h2-font-size-multiplier: (39.06 / 16);
+$o-theme-h3-font-size-multiplier: (31.25 / 16);
+$o-theme-h4-font-size-multiplier: (25.00 / 16);
+$o-theme-h5-font-size-multiplier: (20.00 / 16);
+$o-theme-h6-font-size-multiplier: 1.1;
+
+$o-theme-font-configs: (
+    'Heebo': (
+        'family': ('Heebo', sans-serif),
+        'url': 'Heebo:300,300i,400,400i,700,700i',
+    ),
+    'Abel': (
+        'family': ('Abel', sans-serif),
+        'url': 'Abel:300,300i,400,400i,700,700i',
+    ),
+    'Cinzel': (
+        'family': ('Cinzel', serif),
+        'url': 'Cinzel:300,300i,400,400i,700,700i',
+    ),
+    'Old Standard TT': (
+        'family': ('Old Standard TT', serif),
+        'url': 'Old+Standard+TT:300,300i,400,400i,700,700i',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+);
+
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font-size-base': 1rem,
+        'headings-font': 'Source Sans Pro',
+        'btn-ripple': true,
+        'layout': 'postcard',
+        'hamburger-type': 'off-canvas',
+        'header-template': 'centered_logo',
+        'footer-template': 'centered',
+
+        'btn-font-size-lg': 1rem,
+        'btn-padding-y-lg': .6rem,
+        'btn-padding-x-lg': 2.2rem,
+        'btn-border-radius-lg': 2px,
+    ),
+);

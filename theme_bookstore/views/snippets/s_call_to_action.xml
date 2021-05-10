@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_call_to_action" inherit_id="website.s_call_to_action">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_half_screen_height o_cc1 pt64 pb48" remove="o_cc3 pt48 pb24" separator=" "/>
+        </xpath>
+        <!-- Paragraph 1 -->
+        <xpath expr="//div[hasclass('col-lg-9')]" position="replace">
+            <div class="pb16 col-lg-12 text-center">
+                <h3>Browse through our <b>complete library</b>.</h3>
+            </div>
+        </xpath>
+        <!-- Paragraph 2 -->
+        <xpath expr="//div[hasclass('col-lg-3')]" position="replace">
+            <div class="col-lg-12 pt8">
+                <p style="text-align: center;">
+                    <a href="/contactus" class="btn btn-secondary btn-lg mb-2">Browse collection</a>
+                </p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

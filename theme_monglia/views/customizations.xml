@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== TITLE ======== -->
+<template id="s_title" inherit_id="website.s_title" name="Monglia s_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/07","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Airy_07"/>
+    </xpath>
+    <xpath expr="//h1" position="replace">
+        <h1>NEXT <font class="text-o-color-1">EVENTS</font></h1>
+    </xpath>
+</template>
+
+<!-- ======== BANNER ======== -->
+ <template id="s_banner" inherit_id="website.s_banner" name="Monglia s_banner">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_full_screen_height" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== COVER ======== -->
+ <template id="s_cover" inherit_id="website.s_cover" name="Monglia s_cover">
+    <!-- Customize elements -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_half_screen_height o_cc o_cc2" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03","flip":[]}</attribute>
+    </xpath>
+
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Blocks_03"/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('container')]" position="after">
+        <a class="o_scroll_button rounded-circle align-items-center justify-content-center mx-auto bg-primary text-o-color-4 mb-2" href="#" contenteditable="false" title="Scroll down to next section">
+            <i class="fa fa-angle-down fa-3x"/>
+        </a>
+    </xpath>
+
+    <xpath expr="//h1" position="replace">
+        <h1 style="text-align: left"><font style="font-size: 62px; font-weight: bold;">X²O Festival</font></h1>
+    </xpath>
+    <xpath expr="//p[1]" position="replace">
+        <p class="lead" style="text-align: left">After a year's absence, the free and independent festival is back.</p>
+        <p class="lead" style="text-align: left">More than ever young talents are honoured on the big stage with more famous artists.</p>
+    </xpath>
+    <xpath expr="//p[3]" position="attributes">
+        <attribute name="style" add="text-align: left;" remove="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+
+    <!-- Remove color filter -->
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+
+    <!-- Create column -->
+    <xpath expr="//div[hasclass('container')]" position="inside">
+        <div class="row">
+            <div class="o_colored_level col-lg-5"/>
+        </div>
+    </xpath>
+
+    <!-- Move all elements inside the new col -->
+    <xpath expr="//div[hasclass('col-lg-5')]" position="inside">
+        <xpath expr="//div[hasclass('container')]/h1" position="move"/>
+        <xpath expr="//div[hasclass('container')]/p"  position="move"/>
+        <xpath expr="//div[hasclass('container')]/p"  position="move"/>
+        <h2>21/22 December</h2>
+        <xpath expr="//div[hasclass('container')]/p"  position="move"/>
+    </xpath>
+</template>
+
+<!-- ======== MEDIA LIST ======== -->
+ <template id="s_media_list" inherit_id="website.s_media_list" name="Monglia s_media_list">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2" remove="bg-200" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/06","colors":{"c2":"o-color-1"},"flip":["x"]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Airy_06 o_we_flip_x" style="background-image: url(&quot;/web_editor/shape/web_editor/Airy/06.svg?c2=%23ED145B&quot;);"/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('container')]/div/div[1]//h3" position="replace">
+        <h3>Old Town Road</h3>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]/div/div[1]//p" position="replace">
+        <p>Everyone knows The States is the home of country music, and they have the festivals to prove it. Grab your cowboy hat and boots because we've put together the best country bands in the USA.</p>
+    </xpath>
+
+    <xpath expr="//div[hasclass('container')]/div/div[2]//h3" position="replace">
+        <h3>Smack My Band Up</h3>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]/div/div[2]//p" position="replace">
+        <p>Dj's and electro artists meet every year for the electro dance festival in the largest concert venue in Europe. Book your tickets now, there won't be room for everybody.</p>
+    </xpath>
+
+    <xpath expr="//div[hasclass('container')]/div/div[3]//h3" position="replace">
+        <h3>Sodade Club</h3>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]/div/div[3]//p" position="replace">
+        <p>Sodade is a beautiful concept that is difficult to put into words, but can be experienced by enjoying the diverse range of music on offer.</p>
+    </xpath>
+</template>
+
+<!-- ======== TEXT - IMAGE ======== -->
+ <template id="s_text_image" inherit_id="website.s_text_image" name="Monglia s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt104 pb40" remove="pt32 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Blocks_04"/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" remove="col-lg-6" add="col-lg-5" separator=" "/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="offset-lg-1" separator=" "/>
+    </xpath>
+
+    <xpath expr="//h2" position="replace">
+        <h2>The Club</h2>
+    </xpath>
+    <xpath expr="//p" position="replace">
+        <p>Open 24/7, the club welcomes you and your friends in a relaxed and friendly atmosphere.</p>
+    </xpath>
+    <xpath expr="//p[2]" position="replace"/>
+
+    <xpath expr="//a" position="replace">
+        <a href="/contactus" class="btn btn-primary mb-2">Learn more</a>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE - TEXT ======== -->
+ <template id="s_image_text" inherit_id="website.s_image_text" name="Monglia s_image_text">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pt104 pb104" remove="pt32 pb32" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
+        <attribute name="class" remove="col-lg-6" add="col-lg-5 offset-lg-1" separator=" "/>
+    </xpath>
+
+    <xpath expr="//h2" position="replace">
+        <h2>Mixology</h2>
+    </xpath>
+    <xpath expr="//p" position="replace">
+        <p>Every evening, renowned mixologists take turns preparing the best cocktails for you. Drink responsibly.</p>
+    </xpath>
+    <xpath expr="//p[2]" position="replace"/>
+
+</template>
+
+<!-- ======== CAROUSEL ======== -->
+ <template id="s_carousel" inherit_id="website.s_carousel" name="Monglia s_carousel">
+    <xpath expr="//h2/font" position="replace">
+        <font style="font-size: 62px;">Martina Clarck</font>
+    </xpath>
+    <xpath expr="//p" position="replace">
+        <p class="lead">This is the first full-length studio release in seven years for the British singer-songwriter.</p>
+    </xpath>
+    <xpath expr="//a" position="replace">
+        <a href="/contactus" class="btn btn-primary mb-2">Discover</a>
+    </xpath>
+</template>
+
+<!-- ======== QUOTES ======== -->
+ <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Monglia s_quotes_carousel">
+    <!-- Assign slide3 as 'active' and move it in first position -->
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
+        <attribute name="class" remove="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="attributes">
+        <attribute name="class" add="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="before">
+        <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="move"/>
+    </xpath>
+</template>
+
+<!-- ======== CALL TO ACTION ======== -->
+<template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Monglia s_call_to_action">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="//h3" position="replace">
+        <h3 style="text-align: left;"><b>APPLY FOR OUR V.I.P. CARD</b></h3>
+    </xpath>
+    <xpath expr="//p" position="replace">
+        <p style="text-align: left;">The vip card allows you to benefit from tickets before everyone else.</p>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
+        <attribute name="class" add="pt8" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

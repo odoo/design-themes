@@ -1,0 +1,188 @@
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+
+// The system for this theme is particular to support somehow the old version.
+// The alpha color is always white but primary is using beta (instead of alpha)
+// and secondary is using alpha (white) (instead of beta). In the old system,
+// this only applied to buttons though but we extended that to all components.
+// Success, info, warning and error buttons are also customized with epsilon,
+// gamma, delta and ... black colors (see theme.scss).
+$o-theme-color-palettes: (
+    (
+        alpha: #ffffff,
+        beta: #dcdcdc,
+        gamma: #9c9b9b,
+        delta: #333333,
+        epsilon: #e4677f,
+    ),
+    (
+        alpha: #c7d0d5,
+        beta: #93b1c6,
+        gamma: #ffffff,
+        delta: #556672,
+        epsilon: #ff7148,
+    ),
+    (
+        alpha: #ebe3e0,
+        beta: #e3d6c6,
+        gamma: #ffffff,
+        delta: #333333,
+        epsilon: #f9a646,
+    ),
+    (
+        alpha: #7ec2aa,
+        beta: #4ca8a1,
+        gamma: #ffffff,
+        delta: #556672,
+        epsilon: #f9a646,
+    ),
+    (
+        alpha: #7f909a,
+        beta: #ed6639,
+        gamma: #ffffff,
+        delta: #333333,
+        epsilon: #385b9f,
+    ),
+    (
+        alpha: #fcdf15,
+        beta: #0b99bc,
+        gamma: #ffffff,
+        delta: #3c3c3c,
+        epsilon: #d40e52,
+    ),
+);
+
+// Grays
+$-gray-700: lighten(#000, 33.5%);
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        '900': lighten(#000, 20%),
+        '700': $-gray-700,
+        '600': lighten(#000, 46.7%),
+        '300': #d4d4d4,
+        '200': lighten(#000, 85%),
+    ));
+}
+
+// Colors
+$o-color-palettes: (
+    (
+        'o-color-1': #e991a3,
+        'o-color-2': #575757,
+        'o-color-3': #f6f5f5,
+        'o-color-4': #ffffff,
+        'o-color-5': #333333,
+
+        'menu': 5,
+        'footer': 5,
+        'copyright': 5,
+    ),
+    (
+        'o-color-1': #f7a58e,
+        'o-color-2': #4b6272,
+        'o-color-3': #ecf0f2,
+        'o-color-4': #ffffff,
+        'o-color-5': #374249,
+
+        'menu': 4,
+        'footer': 4,
+        'copyright': 4,
+    ),
+    (
+        'o-color-1': #f9a646,
+        'o-color-2': #68635d,
+        'o-color-3': #f0efee,
+        'o-color-4': #ffffff,
+        'o-color-5': #333333,
+
+        'menu': 4,
+        'footer': 4,
+        'copyright': 4,
+    ),
+    (
+        'o-color-1': #ed6639,
+        'o-color-2': #385b9f,
+        'o-color-3': #d5dee3,
+        'o-color-4': #ffffff,
+        'o-color-5': #333333,
+
+        'o-cc4-link': 'o-color-4',
+        'o-cc4-btn-primary': 'o-color-4',
+
+        'menu': 4,
+        'footer': 4,
+        'copyright': 4,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (36 / 12);
+$o-theme-h2-font-size-multiplier: (30 / 12);
+$o-theme-h3-font-size-multiplier: (24 / 12);
+$o-theme-h4-font-size-multiplier: (18 / 12);
+$o-theme-h5-font-size-multiplier: (14 / 12);
+$o-theme-h6-font-size-multiplier: 1;
+
+$o-theme-font-configs: (
+    'Spartan': (
+        'family': ('Spartan', sans-serif),  // font update - SinKinSans -> Spartan
+        'url': 'Spartan:300,300i,400,400i,700,700i',
+    ),
+    'Rajdhani': (
+        'family': ('Rajdhani', sans-serif),
+        'url': 'Rajdhani:300,300i,400,400i,700,700i',
+    ),
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+    'Ubuntu': (
+        'family': ('Ubuntu', sans-serif),
+        'url': 'Ubuntu:300,300i,400,400i,700,700i',
+    ),
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'Playfair Display': (
+        'family': ('Playfair Display', serif),
+        'url': 'Playfair+Display:300,300i,400,400i,700,700i',
+    ),
+    'Lora': (
+        'family': ('Lora', serif),
+        'url': 'Lora:300,300i,400,400i,700,700i',
+    ),
+    'Barlow Condensed': (
+        'family': ('Barlow Condensed', sans-serif),
+        'url': 'Barlow+Condensed:300,300i,400,400i,700,700i',
+    ),
+);
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': 1.25rem,
+        'logo-height': 3rem,
+        'fixed-logo-height': 3rem,
+        'font-size-base': .925rem,
+        'font': 'Roboto',
+        'headings-font': 'Barlow Condensed',
+        'navbar-font': 'Barlow Condensed',
+        'buttons-font': 'Barlow Condensed',
+        'link-underline': 'never',
+        'header-links-style': 'outline',
+        'btn-primary-outline': true,
+        'header-template': 'default',
+        'footer-template': 'call_to_action',
+    ),
+);

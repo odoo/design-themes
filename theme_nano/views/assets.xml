@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_primary_variables" inherit_id="website._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/primary_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="_assets_frontend_helpers" inherit_id="website._assets_frontend_helpers" priority="1">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/bootstrap_overridden.scss"/>
+        </xpath>
+    </template>
+    <template id="assets_editor" inherit_id="website.assets_editor">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_nano/static/src/js/tour.js"/>
+        </xpath>
+    </template>
+</odoo>

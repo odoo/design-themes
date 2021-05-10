@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_banner" inherit_id="website.s_banner">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt152" remove="pt96 pb96" separator=" "/>
+        </xpath>
+        <!-- Column -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="class" add="col-lg-12 text-center pt80 pb80" remove="col-lg-6" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1><b>Digital Transformation</b></h1>
+        </xpath>
+        <!-- Text -->
+        <xpath expr="//p" position="replace">
+            <p class="lead">Software Innovation as its best.<br/> Harness the power of disruptive technologies to increase your day-to-day business operations.</p>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a" position="replace">
+            <a href="#" class="btn btn-primary mb-2">Our Solutions</a>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_banner" inherit_id="website.s_banner">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13","colors":{"c4":"o-color-1"},"flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//section/*[last()]" position="after">
+            <div class="o_we_shape o_web_editor_Wavy_13" style="background-image: url('/web_editor/shape/web_editor/Wavy/13.svg?c4=%23F3997B');"/>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
+            <div class="col-lg-6 jumbotron rounded pt32 pb32 o_cc o_cc3 border shadow" style="border-width: 2px !important; border-color: rgb(44, 41, 39) !important; box-shadow: rgb(44, 41, 39) -25px -25px 0px 0px !important;">
+                <h1><font style="font-size: 62px; line-height: 48px;">A little place of paradise.</font></h1>
+                <p><br/></p>
+                <p class="lead">Because your children deserve the best, we welcome children from 0 to 3 years in a warm and specific environment for the needs of small children</p>
+                <p><br/></p>
+                <a href="#" class="btn btn-primary mb-2">About us</a>
+            </div>
+        </xpath>
+    </template>
+</odoo>

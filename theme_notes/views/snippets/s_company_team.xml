@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_company_team" inherit_id="website.s_company_team">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt144 o_cc o_cc5" remove="pt48" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/08","colors":{"c1":"o-color-1"},"flip":["x","y"]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Blobs_08 o_we_flip_x o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Blobs/08.svg?c1=%23A1C005');"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]" position="before">
+            <h2 class="text-center"><font style="font-size: 62px;">Line Up</font></h2>
+        </xpath>
+        <!-- Paragraph 1 -->
+        <xpath expr="//div[hasclass('col-lg-8')]" position="replace">
+            <div class="col-lg-8">
+                <h4>Tony</h4>
+                <p>Tony is praised for the quality of his flow and beats but often criticised because of the controversial nature of his lyrics. He has also established a label, and developed a line of jewellery.</p>
+            </div>
+        </xpath>
+        <!-- Paragraph 2 -->
+        <xpath expr="(//div[hasclass('col-lg-8')])[2]" position="replace">
+            <div class="col-lg-8">
+                <h4>Aline</h4>
+                <p>Aline, is a French singer, songwriter and producer. In 2016, she was ranked as the most powerful and influential French person by Vanity Fair, who noticed her "radiance of French genius</p>
+            </div>
+        </xpath>
+        <!-- Paragraph 3 -->
+        <xpath expr="(//div[hasclass('col-lg-8')])[3]" position="replace">
+            <div class="col-lg-8">
+                <h4>Mich Starck</h4>
+                <p>Mich Starck is a French DJ, record producer and songwriter. He has sold over nine million albums and thirty million singles worldwide. In 2011, he was voted as the number one DJ in the DJ Mag Top 100 DJs poll.</p>
+            </div>
+        </xpath>
+        <!-- Paragraph 4 -->
+        <xpath expr="(//div[hasclass('col-lg-8')])[4]" position="replace">
+            <div class="col-lg-8">
+                <h4>Joseris</h4>
+                <p>Joseris is a Belgian band that formed in October 1995. Though originally categorised as a trip hop group, they quickly expanded their sound to the point where they could no longer be described as a lone genre, but rather encompass alternative, electronica, electro-pop, rock, and a mixture of others</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

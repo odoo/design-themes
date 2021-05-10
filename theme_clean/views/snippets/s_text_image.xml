@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_text_image" inherit_id="website.s_text_image">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc2" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14","colors":{"c4":"o-color-1"},"flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Origins_14" style="background-image: url('/web_editor/shape/web_editor/Origins/14.svg?c4=%233498DB');"/>
+        </xpath>
+        <!-- Title & Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
+            <div class="col-lg-6 pt16 pb16">
+                <h2>Everything you need, totally free</h2>
+                <p>Track every expenses, uncover new ways to save, choose the right credit cards.<br/>
+                All those advices and much more are included and totally free of charge.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

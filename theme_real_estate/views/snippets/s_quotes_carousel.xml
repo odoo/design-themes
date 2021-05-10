@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
+        <!-- Shape 1 -->
+        <xpath expr="(//div[hasclass('carousel-item')])[1]" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14","colors":{"c4":"o-color-3"},"flip":["y"]}</attribute>
+        </xpath>
+        <xpath expr="(//div[hasclass('carousel-item')])[1]/div" position="before">
+            <div class="o_we_shape o_web_editor_Origins_14 o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Origins/14.svg?c4=%23F4F4F4');"/>
+        </xpath>
+        <!-- Shape 2 -->
+        <xpath expr="(//div[hasclass('carousel-item')])[2]" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14","colors":{"c4":"o-color-3"},"flip":["y"]}</attribute>
+        </xpath>
+        <xpath expr="(//div[hasclass('carousel-item')])[2]/div" position="before">
+            <div class="o_we_shape o_web_editor_Origins_14 o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Origins/14.svg?c4=%23F4F4F4');"/>
+        </xpath>
+        <!-- Shape 3 -->
+        <xpath expr="(//div[hasclass('carousel-item')])[3]" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14","colors":{"c4":"o-color-3"},"flip":["y"]}</attribute>
+        </xpath>
+        <xpath expr="(//div[hasclass('carousel-item')])[3]/div" position="before">
+            <div class="o_we_shape o_web_editor_Origins_14 o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Origins/14.svg?c4=%23F4F4F4');"/>
+        </xpath>
+        <!-- Quote 1 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[1]/p" position="replace">
+            <p>Amazing team! smiling, always nice to talk with, they always have the best advices for you, adapted to your needs!</p>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_blockquote_author')])[1]" position="replace">
+            <span class="s_blockquote_author"><b>Jane Doe</b> • Customer, bought a house</span>
+        </xpath>
+        <!-- Quote 2 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[2]/p" position="replace">
+            <p>From start to finish, they were extremely professional, friendly, helpful and easy to do business with. Very happy with the experience and the company.</p>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_blockquote_author')])[2]" position="replace">
+            <span class="s_blockquote_author"><b>John Doe</b> • Customer, bought an appartement</span>
+        </xpath>
+        <!-- Quote 3 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[3]/p" position="replace">
+            <p>Positive energy, great team spirit, hard workers and awesome people! I warmly recommend them!</p>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_blockquote_author')])[3]" position="replace">
+            <span class="s_blockquote_author"><b>Iris Doe</b> • Customer, sold an appartement</span>
+        </xpath>
+    </template>
+</odoo>

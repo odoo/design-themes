@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_company_team" inherit_id="website.s_company_team">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4" separator=" "/>
+        </xpath>
+        <!-- Titles -->
+        <xpath expr="(//div[hasclass('col-lg-8')])[1]/h4" position="replace">
+            <h4>Tony</h4>
+        </xpath>
+        <xpath expr="(//div[hasclass('col-lg-8')])[2]/h4" position="replace">
+            <h4>Mich</h4>
+        </xpath>
+        <xpath expr="(//div[hasclass('col-lg-8')])[3]/h4" position="replace">
+            <h4>Aline</h4>
+        </xpath>
+        <xpath expr="(//div[hasclass('col-lg-8')])[4]/h4" position="replace">
+            <h4>Iris</h4>
+        </xpath>
+    </template>
+</odoo>

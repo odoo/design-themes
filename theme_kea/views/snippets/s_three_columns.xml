@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('card')]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('card-body')]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Reviews and Unboxing</h3>
+                <p class="card-text">Discover what we think about products in those unboxing and review videos.</p>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">New Gadgets</h3>
+                <p class="card-text">Cool new technology reminds us that even in 2020, we humans can't help but invent, grow, and change.</p>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Repair</h3>
+                <p class="card-text">As we are against programmed obsolescence and waste, we prefer to start by repairing your products before replacing them</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

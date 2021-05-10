@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_image_text" inherit_id="website.s_image_text">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4 pt56 pb64" remove="pt32 pb32" separator=" "/>
+        </xpath>
+        <!-- Container -->
+        <xpath expr="//div[hasclass('container')]" position="attributes">
+            <attribute name="class" add="container-fluid" remove="container" separator=" "/>
+        </xpath>
+        <!-- Row -->
+        <xpath expr="//div[hasclass('row')]" position="attributes">
+            <attribute name="class" add="align-items-stretch" remove="align-items-center" separator=" "/>
+        </xpath>
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="class" add="o_cc o_cc3 shadow" separator=" "/>
+            <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.25) 20px 20px 0px 0px !important;" separator=" "/>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="attributes">
+            <attribute name="class" add="col-lg-3 p-5 o_cc o_cc3 shadow" remove="col-lg-6 pt16 pb16" separator=" "/>
+            <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.25) 20px 20px 0px 0px !important;" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2>Our Vision</h2>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p[1]" position="replace">
+            <p>We see our role as that of a legal partner responsible for constantly finding practical and pragmatic solutions that are adapted to our clients' needs.</p>
+        </xpath>
+        <xpath expr="//p[2]" position="replace">
+            <p>We work on a daily basis on strategies to prevent disputes and, if necessary, to assist in their settlement by choosing the most appropriate method: conciliation, mediation, arbitration, or judicial proceedings.</p>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//p[3]" position="replace"/>
+    </template>
+</odoo>

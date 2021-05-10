@@ -1,0 +1,220 @@
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #ffffff,
+        'beta': #add3ce,
+        'gamma': #a7c7d5,
+        'delta': #47464b,
+        'epsilon': #f3997b,
+    ),
+    (
+        'alpha': #f8f1d4,
+        'beta': #5b4645,
+        'gamma': #ffffff,
+        'delta': #21263a,
+        'epsilon': #8f8747,
+    ),
+    (
+        'alpha': #dedede,
+        'beta': #adadad,
+        'gamma': #ffffff,
+        'delta': #3e3e3e,
+        'epsilon': #848f47,
+    ),
+    (
+        'alpha': #cfcfcf,
+        'beta': #2e2e2e,
+        'gamma': #ffffff,
+        'delta': #000000,
+        'epsilon': #1ad68f,
+    ),
+    (
+        'alpha': #9fcae2,
+        'beta': #bbc05c,
+        'gamma': #ffffff,
+        'delta': #112625,
+        'epsilon': #45b08c,
+    ),
+    (
+        'alpha': #fdeacc,
+        'beta': #e8cda2,
+        'gamma': #ffffff,
+        'delta': #3e3f43,
+        'epsilon': #e1444d,
+    ),
+);
+
+// Grays
+$-gray-700: lighten(#000, 33.5%);
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        '900': lighten(#000000, 20%),
+        '700': $-gray-700,
+        '600': lighten(#000000, 46.7%),
+        '200': lighten(#000000, 85%),
+    ));
+}
+
+// Colors
+$o-color-palettes: (
+    (
+        'o-color-1': #ed145b,
+        'o-color-2': #9CD6FA,
+        'o-color-3': #f5f5f5,
+        'o-color-4': #ffffff,
+        'o-color-5': #111111,
+    ),
+    (
+        'o-color-1': #8f8747,
+        'o-color-2': #5b4645,
+        'o-color-3': #f0ecdb,
+        'o-color-4': #ffffff,
+        'o-color-5': #21263a,
+    ),
+    (
+        'o-color-1': #c0ce75,
+        'o-color-2': #704562,
+        'o-color-3': #dedede,
+        'o-color-4': #ffffff,
+        'o-color-5': #3e3e3e,
+    ),
+    (
+        'o-color-1': #1ad68f,
+        'o-color-2': #2e2e2e,
+        'o-color-3': #cfcfcf,
+        'o-color-4': #ffffff,
+        'o-color-5': #000000,
+    ),
+    (
+        'o-color-1': #c5ca60,
+        'o-color-2': #40a181,
+        'o-color-3': #bfddec,
+        'o-color-4': #ffffff,
+        'o-color-5': #112625,
+
+        'footer': 1,
+        'copyright': 1,
+    ),
+    (
+        'o-color-1': #da557d,
+        'o-color-2': #6d4046,
+        'o-color-3': #fffddc,
+        'o-color-4': #ffffff,
+        'o-color-5': #3e3f43,
+
+        'footer': 1,
+        'copyright': 1,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (36 / 14);
+$o-theme-h2-font-size-multiplier: (30 / 14);
+$o-theme-h3-font-size-multiplier: (24 / 14);
+$o-theme-h4-font-size-multiplier: (18 / 14);
+$o-theme-h5-font-size-multiplier: 1;
+$o-theme-h6-font-size-multiplier: (12 / 14);
+
+$o-theme-font-configs: (
+    'Handlee': (
+        'family': ('Handlee', cursive),
+        'url': 'Handlee:300,300i,400,400i,700,700i',
+    ),
+    'Gruppo': (
+        'family': ('Gruppo', cursive),
+        'url': 'Gruppo:300,300i,400,400i,700,700i',
+    ),
+    'Darker Grotesque': (
+        'family': ('Darker Grotesque', sans-serif),
+        'url': 'Darker+Grotesque:300,300i,500,500i,700,700i',
+    ),
+    'Bowlby One SC': (
+        'family': ('Bowlby One SC', cursive),
+        'url': 'Bowlby+One+SC:300,300i,400,400i,700,700i',
+    ),
+    'Lobster': (
+        'family': ('Lobster', cursive),
+        'url': 'Lobster:300,300i,400,400i,700,700i',
+    ),
+    'Nunito': (
+        'family': ('Nunito', sans-serif),
+        'url': 'Nunito:300,300i,400,400i,700,700i',
+    ),
+    'Raleway': (
+        'family': ('Raleway', sans-serif),
+        'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+    'Amatic SC': (
+        'family': ('Amatic SC', cursive),
+        'url': 'Amatic+SC:300,300i,400,400i,700,700i',
+    ),
+    'Open Sans Condensed': (
+        'family': ('Open Sans Condensed', sans-serif),
+        'url': 'Open+Sans+Condensed:300,300i,400,400i,700,700i',
+    ),
+    'Oswald': (
+        'family': ('Oswald', sans-serif),
+        'url': 'Oswald:300,300i,400,400i,700,700i',
+    ),
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'Permanent Marker': (
+        'family': ('Permanent Marker', cursive),
+        'url': 'Permanent+Marker:300,300i,400,400i,700,700i',
+    ),
+    'Pacifico': (
+        'family': ('Pacifico', cursive),
+        'url': 'Pacifico:300,300i,400,400i,700,700i',
+    ),
+    'Playfair Display': (
+        'family': ('Playfair Display', serif),
+        'url': 'Playfair+Display:300,300i,400,400i,700,700i',
+    ),
+    'Playfair Display SC': (
+        'family': ('Playfair Display SC', serif),
+        'url': 'Playfair+Display+SC:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': (18 / 16) * 1rem,
+        'font': 'Roboto',
+        'headings-font': 'Darker Grotesque',
+        'navbar-font': 'Darker Grotesque',
+        'buttons-font': 'Darker Grotesque',
+        'header-template': 'hamburger',
+        'hamburger-type': 'off-canvas',
+        'hamburger-position': 'left',
+        'footer-template': 'minimalist',
+
+        'btn-border-radius': 0,
+        'btn-border-radius-sm': 0,
+        'btn-border-radius-lg': 0,
+        'btn-font-size': 1.2rem,
+        'btn-padding-y': .474rem,
+        'btn-padding-x': 1.25rem,
+        'btn-font-size-lg': 2rem,
+        'btn-padding-y-lg': .4rem,
+        'btn-padding-x-lg': 2rem,
+    ),
+);

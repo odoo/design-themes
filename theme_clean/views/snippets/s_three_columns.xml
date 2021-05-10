@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4" remove="bg-200" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('card-body')]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Our mission</h3>
+                <p class="card-text">Provide clear and concise financial advices to make your financial wealth grow. And this, completely free of charge</p>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Our values</h3>
+                <p class="card-text">We created our company to improve the work-life balance. We believe that we need to focus on our family more than our work and finances.</p>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Our team</h3>
+                <p class="card-text">Composed of 25 people from 25 to 66 years, we’re a young and dynamic company. We have open positions, do not hesitate to contact us.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

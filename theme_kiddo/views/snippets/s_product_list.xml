@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_product_list" inherit_id="website.s_product_list">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc3"  separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/15","flip":["y"]}</attribute>
+        </xpath>
+        <!-- Container -->
+        <xpath expr="//div[hasclass('container-fluid')]" position="replace">
+            <div class="container-fluid">
+                <!-- Row 1 -->
+                <div class="row py-5 justify-content-center">
+                    <!-- Item 1 -->
+                    <div class="h-100 p-0 col-lg-3 o_cc o_cc4 border rounded shadow pb64" style="border-color: rgb(44, 41, 39) !important; border-width: 2px !important; border-radius: 25px !important; box-shadow: rgb(44, 41, 39) -25px 25px 0px 0px !important;">
+                        <a href="#">
+                            <img src="/web/image/website.s_product_list_default_image_1" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
+                        </a>
+                        <div class="s_product_list_item_link pb24">
+                            <a href="#" class="btn btn-primary">View item</a>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="h-100 p-0 offset-lg-1 col-lg-3 o_cc o_cc4 border rounded shadow pb64" style="border-color: rgb(44, 41, 39) !important; border-width: 2px !important; border-radius: 25px !important; box-shadow: rgb(44, 41, 39) -25px 25px 0px 0px !important;">
+                        <a href="#">
+                            <img src="/web/image/website.s_product_list_default_image_2" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
+                        </a>
+                        <div class="s_product_list_item_link pb24">
+                            <a href="#" class="btn btn-primary">View item</a>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="h-100 p-0 offset-lg-1 col-lg-3 o_cc o_cc4 border rounded shadow pb64" style="border-color: rgb(44, 41, 39) !important; border-width: 2px !important; border-radius: 25px !important; box-shadow: rgb(44, 41, 39) -25px 25px 0px 0px !important;">
+                        <a href="#">
+                            <img src="/web/image/website.s_product_list_default_image_3" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
+                        </a>
+                        <div class="s_product_list_item_link pb24">
+                            <a href="#" class="btn btn-primary">View item</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="row pb48 justify-content-center">
+                    <!-- Item 4 -->
+                    <div class="h-100 p-0 col-lg-3 o_cc o_cc4 border rounded shadow pb64" style="border-color: rgb(44, 41, 39) !important; border-width: 2px !important; border-radius: 25px !important; box-shadow: rgb(44, 41, 39) -25px 25px 0px 0px !important;">
+                        <a href="#">
+                            <img src="/web/image/website.s_product_list_default_image_4" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
+                        </a>
+                        <div class="s_product_list_item_link pb24">
+                            <a href="#" class="btn btn-primary">View item</a>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="h-100 w-100 p-0 offset-lg-1 col-lg-3 o_cc o_cc4 border rounded shadow pb64" style="border-color: rgb(44, 41, 39) !important; border-width: 2px !important; border-radius: 25px !important; box-shadow: rgb(44, 41, 39) -25px 25px 0px 0px !important;">
+                        <a href="#">
+                            <img src="/web/image/website.s_product_list_default_image_5" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
+                        </a>
+                        <div class="s_product_list_item_link pb24">
+                            <a href="#" class="btn btn-primary">View item</a>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="h-100 p-0 offset-lg-1 col-lg-3 o_cc o_cc4 border rounded shadow pb64" style="border-color: rgb(44, 41, 39) !important; border-width: 2px !important; border-radius: 25px !important; box-shadow: rgb(44, 41, 39) -25px 25px 0px 0px !important;">
+                        <a href="#">
+                            <img src="/web/image/website.s_product_list_default_image_6" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
+                        </a>
+                        <div class="s_product_list_item_link pb24">
+                            <a href="#" class="btn btn-primary">View item</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container-fluid')]" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_15 o_we_flip_y"/>
+        </xpath>
+    </template>
+</odoo>
