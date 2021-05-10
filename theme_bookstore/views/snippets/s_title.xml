@@ -3,7 +3,7 @@
     <template id="s_title" inherit_id="website.s_title">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt64 pb64 o_half_screen_height parallax s_parallax_is_fixed bg-black-50" remove="pt32 pb32" separator=" "/>
+            <attribute name="class" add="pt64 pb64 o_half_screen_height parallax s_parallax_is_fixed bg-black-50" remove="pt40 pb40" separator=" "/>
             <attribute name="data-scroll-background-ratio">1</attribute>
         </xpath>
         <xpath expr="//div[hasclass('container')]" position="before">

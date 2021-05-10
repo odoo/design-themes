@@ -39,13 +39,6 @@
             <field name="url">/theme_monglia/static/src/img/content/content_img_12.jpg</field>
         </record>
 
-        <!-- Change default preheader image -->
-        <record id="header_image_1_default_image" model="theme.ir.attachment">
-            <field name="key">website.header_image_1_default_image</field>
-            <field name="name">website.header_image_1_default_image</field>
-            <field name="url">/website/static/src/img/snippets_demo/header_image_1_default_image.jpg</field>
-        </record>
-
         <!-- Change default images of snippets -->
         <record id="s_banner_default_image" model="theme.ir.attachment">
             <field name="key">website.s_banner_default_image</field>
