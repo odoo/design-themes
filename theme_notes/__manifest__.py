@@ -2,7 +2,7 @@
     'name': 'Notes & Play Theme',
     'description': 'Notes & Play Theme',
     'category': 'Theme/Retail',
-    'summary': 'Musics, Sound, Concerts, Artists, Records, Stores',
+    'summary': 'Band, Musics, Sound, Concerts, Artists, Records, Event, Food, Stores',
     'sequence': 280,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

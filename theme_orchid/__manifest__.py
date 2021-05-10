@@ -2,7 +2,7 @@
     'name': 'Orchid Theme',
     'description': 'Orchid Theme - Flowers, Beauty',
     'category': 'Theme/Retail',
-    'summary': 'Gardens, Flowers, Nature, Green, Beauty, Stores',
+    'summary': 'Florist, Gardens, Flowers, Nature, Green, Beauty, Stores',
     'sequence': 230,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

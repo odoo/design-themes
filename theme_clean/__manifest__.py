@@ -2,7 +2,7 @@
     'name': 'Clean Theme',
     'description': 'Clean Theme',
     'category': 'Theme/Services',
-    'summary': 'Corporate, Business, Tech, Services',
+    'summary': 'Legal, Corporate, Business, Tech, Services',
     'sequence': 120,
     'version': '2.0',
     'author': 'Odoo S.A.',

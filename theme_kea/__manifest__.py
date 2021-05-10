@@ -2,7 +2,7 @@
     'name': 'Kea Theme',
     'description': 'Kea Theme',
     'category': 'Theme/Technology',
-    'summary': 'Tech, IT, Computers, Stores',
+    'summary': 'Technology, Tech, IT, Computers, Stores',
     'sequence': 200,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

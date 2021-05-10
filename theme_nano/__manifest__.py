@@ -2,7 +2,7 @@
     'name': 'Nano Theme',
     'description': 'Nano Theme - Responsive Bootstrap Theme for Odoo CMS - Vertical Layout and Sidebar icons',
     'category': 'Theme/Lifestyle',
-    'summary': 'Agencies, Creative, Design, IT, Services, Fancy',
+    'summary': 'Maker, Agencies, Creative, Design, IT, Services, Fancy',
     'sequence': 270,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

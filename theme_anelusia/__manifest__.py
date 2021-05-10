@@ -2,7 +2,7 @@
     'name': 'Anelusia Theme',
     'description': 'Anelusia Fashion Theme',
     'category': 'Theme/Retail',
-    'summary': 'Fashions, Trends, Clothes, Shoes, Sports, Fitness, Stores',
+    'summary': 'Diversity, Fashions, Trends, Clothes, Shoes, Sports, Fitness, Stores',
     'sequence': 180,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

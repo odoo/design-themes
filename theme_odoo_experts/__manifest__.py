@@ -2,7 +2,7 @@
     'name': 'Odoo Experts Theme',
     'description': 'Odoo Experts Business Theme',
     'category': 'Theme/Corporate',
-    'summary': 'Corporate, Services, Business, Finance, IT',
+    'summary': 'Advisor, Corporate, Service, Business, Finance, IT',
     'sequence': 210,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

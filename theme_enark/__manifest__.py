@@ -2,7 +2,7 @@
     'name': 'Enark Theme',
     'description': 'Enark Theme',
     'category': 'Theme/Corporate',
-    'summary': 'Corporate, Business, Finance, Services',
+    'summary': 'Architect, Corporate, Business, Finance, Services',
     'sequence': 190,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

@@ -2,7 +2,7 @@
     'name': 'Kiddo Theme',
     'description': 'Kiddo theme for Odoo Website',
     'category': 'Theme/Retail',
-    'summary': 'Toys, Games, Kids, Boys, Girls, Stores',
+    'summary': 'Nursery, Toys, Games, Kids, Boys, Girls, Stores',
     'sequence': 290,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

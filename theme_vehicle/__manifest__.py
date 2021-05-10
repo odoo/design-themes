@@ -2,7 +2,7 @@
     'name': 'Vehicle Theme',
     'description': 'Vehicle Theme - Cars, Motorbikes, Bikes, Tires',
     'category': 'Theme/Services',
-    'summary': 'Cars, Motorbikes, Bikes, Tires, Transports, Repair, Mechanics, Garages, Sports, Services',
+    'summary': 'Vehicle, Cars, Motorbikes, Bikes, Tires, Transports, Repair, Mechanics, Garages, Sports, Services',
     'sequence': 300,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

@@ -2,7 +2,7 @@
     'name': 'Zap Theme',
     'description': 'Zap Theme - Corporate, Business, Marketing, Copywriting',
     'category': 'Theme/Corporate',
-    'summary': 'Marketing, Copywriting, Media, Events, Non Profit, NGO, Corporate, Business, Services',
+    'summary': 'Digital, Marketing, Copywriting, Media, Events, Non Profit, NGO, Corporate, Business, Services',
     'sequence': 160,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

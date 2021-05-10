@@ -2,7 +2,7 @@
     'name': 'Loftspace Theme',
     'description': 'Loftspace Fashion Theme',
     'category': 'Theme/Retail',
-    'summary': 'Houses, Interiors, Decorations, Furniture, Stores',
+    'summary': 'Furniture, Toys, Games, Kids, Boys, Girls, Stores',
     'sequence': 130,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

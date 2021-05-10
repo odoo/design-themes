@@ -2,7 +2,7 @@
     'name': 'Monglia Theme',
     'description': 'Monglia Catering Theme',
     'category': 'Theme/Services',
-    'summary': 'Restaurants, Bars, Pubs, Cafes, Catering, Food, Drinks, Concerts, Events, Shows, Musics, Dance, Party',
+    'summary': 'Event, Restaurants, Bars, Pubs, Cafes, Catering, Food, Drinks, Concerts, Shows, Musics, Dance, Party',
     'sequence': 260,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

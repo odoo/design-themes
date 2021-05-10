@@ -2,7 +2,7 @@
     'name': 'Cobalt Theme',
     'description': 'Clean and sharp design.',
     'category': 'Theme/Corporate',
-    'summary': 'Design, Tech, Computers, IT, Blogs',
+    'summary': 'Development, IT development, Design, Tech, Computers, IT, Blogs',
     'sequence': 110,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

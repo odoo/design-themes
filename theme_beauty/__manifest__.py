@@ -2,7 +2,7 @@
     'name': 'Beauty Theme',
     'description': 'Beauty Theme - Cosmetics, Beauty, Make Up, Hairdresser',
     'category': 'Theme/Retail',
-    'summary': 'Health, Beauty, Care, Make Up, Cosmetics, Hair Dressers, Stores',
+    'summary': 'Beauty, Health, Care, Make Up, Cosmetics, Hair Dressers, Stores',
     'sequence': 170,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

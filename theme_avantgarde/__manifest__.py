@@ -2,7 +2,7 @@
     'name': 'Avantgarde Theme',
     'description': 'Avantgarde is a sophisticated theme to inspire and impress',
     'category': 'Theme/Creative',
-    'summary': 'Arts, Galleries, Trends, Shows, Magazines, Blogs',
+    'summary': 'Design, Fine Art, Artwork, Creative, Creativity, Galleries, Trends, Shows, Magazines, Blogs',
     'sequence': 150,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

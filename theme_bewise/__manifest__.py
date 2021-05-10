@@ -2,7 +2,7 @@
     'name': 'Be Wise Theme',
     'description': 'Be Wise Theme',
     'category': 'Theme/Education',
-    'summary': 'Education, Schools, Young, Play, Kids, Sports',
+    'summary': 'University, Education, Schools, Young, Play, Kids',
     'sequence': 240,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

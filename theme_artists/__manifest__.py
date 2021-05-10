@@ -2,7 +2,7 @@
     'name': 'Artists Theme',
     'description': 'Artists Theme - Art Galleries, Photography, Painting',
     'category': 'Theme/Creative',
-    'summary': 'Arts, Galleries, Creative, Paintings, Photography, Shows, Stores',
+    'summary': 'Artist, Arts, Galleries, Creative, Paintings, Photography, Shows, Stores',
     'sequence': 310,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

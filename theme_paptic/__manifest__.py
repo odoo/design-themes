@@ -2,7 +2,7 @@
     'name': 'Paptic Theme',
     'description': 'Clean and sharp design.',
     'category': 'Theme/Corporate',
-    'summary': 'Design, Tech, Computers, IT, Blogs',
+    'summary': 'Consultancy, Design, Tech, Computers, IT, Blogs',
     'sequence': 110,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

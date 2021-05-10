@@ -2,7 +2,7 @@
     'name': 'Bookstore Theme',
     'description': 'Books, Magazines, Music',
     'category': 'Theme/Retail',
-    'summary': 'Books, Magazines, Literature, Musics, Media, Store',
+    'summary': 'Library, Books, Magazines, Literature, Musics, Media, Store',
     'sequence': 250,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

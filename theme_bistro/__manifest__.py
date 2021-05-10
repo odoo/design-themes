@@ -2,7 +2,7 @@
     'name': 'Bistro Theme',
     'description': 'Bistro Theme - Restaurant, Food/Drink, Catering, Food trucks',
     'category': 'Theme/Food',
-    'summary': 'Restaurants, Catering, Food, Drinks, Accomodations, Lodging, Hosting, Vacations, Holidays, Travels',
+    'summary': 'Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering',
     'sequence': 220,
     'version': '2.0.0',
     'author': 'Odoo S.A.',

@@ -2,7 +2,7 @@
     'name': 'Graphene Theme',
     'description': 'Light colours, thin text, clean and sharp design.',
     'category': 'Theme/Corporate',
-    'summary': 'Design, Tech, Computers, IT, Blogs',
+    'summary': 'Service, Corporate, Design, Technology, Robotics, Computers, IT, Blogs',
     'sequence': 110,
     'version': '2.0.0',
     'author': 'Odoo S.A.',
