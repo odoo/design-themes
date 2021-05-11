@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template name="Separator Extended" id="s_separator_extended" inherit_id="website.s_separator">
+
+            <xpath expr="//hr" position="replace">
+                <hr class="s_separator hr-full hr-1px hr-solid"/>
+            </xpath>
+
+        </template>
+
+    </data>
+</openerp>

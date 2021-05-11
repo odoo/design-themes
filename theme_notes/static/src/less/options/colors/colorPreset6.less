@@ -1,0 +1,155 @@
+@color-alpha: @white;
+@color-beta: @colorPreset6_color1; // dark brown
+@color-gamma: @colorPreset6_color2; // middle brown
+@color-delta: @colorPreset6_color3; // light brown
+@color-epsilon: @colorPreset6_color4; // yellow
+@color-zeta: @colorPreset6_color1_dark;
+@color-eta: @colorPreset6_color1_light;
+@color-theta: @colorPreset6_color2_dark;
+@color-iota: @colorPreset6_color2_light;
+@color-kappa: @colorPreset6_color3_dark;
+@color-lambda: @colorPreset6_color3_light;
+@color-mu: @colorPreset6_color4_dark;
+@color-nu: @colorPreset6_color4_light;
+
+/* ================== COLORS FOR FONT COLOR ================= */
+
+.text-alpha {color: @white;}
+.text-beta {color: @colorPreset6_color1;}
+.text-gamma {color: @colorPreset6_color2;}
+.text-delta {color: @colorPreset6_color3;}
+.text-epsilon {color: @colorPreset6_color4;}
+
+.text-primary {color: @color-alpha;}
+.text-success {color: @color-epsilon;}
+.text-info {color: @color-gamma;}
+.text-warning {color: @color-beta;}
+.text-danger {color: red;}
+
+/* ================== transparent BG USED FOR NAV ================= */
+
+.bgtransparent {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* ================== WHITE ================= */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (#db771f, #ad5b14);
+    .fa {color: @gray;}
+}
+
+/* ================== color-epsilon ================= */
+
+.bg-beta {
+    .SetDisplayColor (@color-epsilon, @gray-dark);
+    .LinkColor (#fe7f02, #c96503);
+}
+
+/* ================== color-gamma ================= */
+
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @color-alpha);
+    .LinkColor (@color-epsilon, #db771f);
+}
+
+/* ================== color-beta ================= */
+
+.bg-delta {
+    .SetDisplayColor (@color-beta, @color-alpha);
+    .LinkColor (@color-epsilon, #db771f);
+}
+
+/* ================== color-delta ================= */
+
+.bg-epsilon {
+    .SetDisplayColor (@color-delta, @color-alpha);
+    .LinkColor (@color-epsilon, #db771f);
+}
+
+/* ==================== TYPO ====================== */
+a {
+    color: @color-epsilon;
+
+    &:hover, &:focus {
+        color: @color-alpha;
+    }
+}
+
+/* ==================== FOOTER ====================== */
+
+#wrapwrap>footer #footer {
+    h4 {
+        color: @color-lambda;
+        border-top-color: @color-lambda;
+    }
+}
+
+.navbar-default .container {
+    background-color: @color-gamma;
+    .navbar-collapse{
+        background-color: @color-gamma;
+    }
+}
+#top_menu {
+    li a {
+        color: @color-epsilon;
+        &:hover {
+            color: @white;
+        }
+    }
+    .dropdown-menu, .navbar-collapse {
+        background-color: @color-gamma;
+        li > a {
+            color: @color-epsilon;
+            &:hover {
+                color: @white;
+            }
+        }
+    }
+}
+/* ==================== BUTTONS ====================== */
+
+#wrapwrap {
+    .btn-warning {
+        .btn-styles(@btn-warning-bg, @btn-default-bg, @white, @gray);
+    }
+    .btn-success {
+        .btn-styles(@btn-success-bg, @btn-default-bg, @white, @gray);
+    }
+}
+
+/* ==================== FORUM ====================== */
+
+.website_forum + #wrap {
+    .question .btn-link {
+        color: @color-epsilon;
+    }
+}
+
+/* ==================== EVENTS ====================== */
+
+#left_column {
+    .nav-pills {
+        .badge {
+            background-color: @color-delta;
+        }
+    }
+    .active > a {
+        color: @color-epsilon !important;
+        .badge {
+            background-color: @color-epsilon;
+        }
+    }
+}
+.o_website_event {
+    .container:first-child {
+        .breadcrumb li a {
+            color: @color-epsilon;
+        }
+    }
+}
+.event_main_breadcrumb .breadcrumb li a, .documentation_breadcrumb .breadcrumb li a {
+    color: @color-epsilon;
+}

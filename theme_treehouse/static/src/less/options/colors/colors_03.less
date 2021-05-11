@@ -1,0 +1,51 @@
+@color-alpha: @color-03-alpha;
+@color-beta: @color-03-beta;
+@color-gamma: @color-03-gamma;
+@color-delta: @color-03-delta;
+@color-epsilon: @color-03-epsilon;
+
+@gray-darker: #004460;
+@gray: #4BB5C1;
+@gray-lighter: #E4F8FF;
+
+@link-color: @color-alpha;
+@link-hover-color: darken(@color-alpha, 15%);
+
+.white(@gray-darker);
+.gray-lighter(@gray-darker);
+.gray(#fff);
+.gray-darker(#fff);
+.alpha(#fff);
+.beta(#fff);
+.gamma(@gray-darker);
+.delta(@gray-darker);
+.epsilon(@gray-darker);
+
+@preheader-text-color: #fff;
+
+.preheader-style() when (@nav-style-white = true){
+  @preheader-link-color: #fff;
+
+  @navbar-link-color: @gray-darker;
+  @navbar-link-active-bg: @color-alpha;
+  @navbar-link-active-color: #fff;
+  @navbar-link-hover-color: @color-alpha;
+}
+
+.preheader-style() when (@nav-style-gray-lighter = true){
+  @preheader-link-color: @gray-lighter;
+
+  @navbar-link-color: @gray-darker;
+  @navbar-link-active-bg: @color-alpha;
+  @navbar-link-active-color: @gray-lighter;
+  @navbar-link-hover-color: @color-alpha;
+}
+
+.preheader-style() when (@nav-style-gray-darker = true){
+  @preheader-link-color: #fff;
+
+  @navbar-link-color: #fff;
+  @navbar-link-active-bg: @color-alpha;
+  @navbar-link-active-color: #fff;
+  @navbar-link-hover-color: @color-alpha;
+}

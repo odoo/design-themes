@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Delete loftspace categories -->
+        <delete id="theme_loftspace_sale.living" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.sofa" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.armchair" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.cabinet" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.table" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.bedroom" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.bed" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.accessories" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.lamp" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.pillow" model="product.public.category"/>
+
+        <!-- Create new categories -->
+        <record id="software" model="product.public.category">
+            <field name="name">Softwares</field>
+        </record>
+        <record id="cms" model="product.public.category">
+            <field name="parent_id" ref="software"/>
+            <field name="name">CMS</field>
+        </record>
+        <record id="crm" model="product.public.category">
+            <field name="parent_id" ref="software"/>
+            <field name="name">CRM</field>
+        </record>
+        <record id="graphic_software" model="product.public.category">
+            <field name="parent_id" ref="software"/>
+            <field name="name">Graphic Softwares</field>
+        </record>
+        <record id="editors" model="product.public.category">
+            <field name="parent_id" ref="software"/>
+            <field name="name">Editors</field>
+        </record>
+
+        <record id="info_product" model="product.public.category">
+            <field name="name">Info Products</field>
+        </record>
+        <record id="email_marketing" model="product.public.category">
+            <field name="parent_id" ref="info_product"/>
+            <field name="name">Email Marketing</field>
+        </record>
+        <record id="google_adwords" model="product.public.category">
+            <field name="parent_id" ref="info_product"/>
+            <field name="name">Google Adwords</field>
+        </record>
+        <record id="google_analytics" model="product.public.category">
+            <field name="parent_id" ref="info_product"/>
+            <field name="name">Google Analytics</field>
+        </record>
+        <record id="social_networking" model="product.public.category">
+            <field name="parent_id" ref="info_product"/>
+            <field name="name">Social Networking</field>
+        </record>
+        <record id="facebook_campaign" model="product.public.category">
+            <field name="parent_id" ref="info_product"/>
+            <field name="name">Facebook Campaign</field>
+        </record>
+        <record id="twitter_campaign" model="product.public.category">
+            <field name="parent_id" ref="info_product"/>
+            <field name="name">Twitter Campaign</field>
+        </record>
+
+        <!-- Delete loftspace products -->
+        <delete id="theme_loftspace_sale.product_1" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_2" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_3" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_4" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_5" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_6" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_7" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_8" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_9" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_10" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_11" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_12" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_13" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_14" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_15" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_16" model="product.product"/>
+
+        <!-- Create new products -->
+        <record id="product_1" model="product.product">
+            <field name="name">CMS Software 1</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.cms')])]"/>
+            <field name="list_price">299.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_01.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_2" model="product.product">
+            <field name="name">CMS Software 2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.cms')])]"/>
+            <field name="list_price">399.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_02.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_3" model="product.product">
+            <field name="name">CRM Software 1</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.crm')])]"/>
+            <field name="list_price">159.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_03.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_4" model="product.product">
+            <field name="name">CRM Software 2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.crm')])]"/>
+            <field name="list_price">259.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_04.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_5" model="product.product">
+            <field name="name">Graphic Software 1</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.graphic_software')])]"/>
+            <field name="list_price">499.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_05.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_6" model="product.product">
+            <field name="name">Graphic Software 2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.graphic_software')])]"/>
+            <field name="list_price">699.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_06.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_7" model="product.product">
+            <field name="name">Editor Software</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.editors')])]"/>
+            <field name="list_price">59.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_07.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_8" model="product.product">
+            <field name="name">Email Marketing Info Product 1</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.email_marketing')])]"/>
+            <field name="list_price">29.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_08.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_9" model="product.product">
+            <field name="name">Email Marketing Info Product 2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.email_marketing')])]"/>
+            <field name="list_price">33.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_09.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_10" model="product.product">
+            <field name="name">Google Adwords Info Product 1</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.google_adwords')])]"/>
+            <field name="list_price">39.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_10.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_11" model="product.product">
+            <field name="name">Google Adwords Info Product 2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.google_adwords')])]"/>
+            <field name="list_price">49.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_11.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_12" model="product.product">
+            <field name="name">Google Analytics Info Product</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.google_analytics')])]"/>
+            <field name="list_price">29.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_12.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_13" model="product.product">
+            <field name="name">Social Network Info Product 1</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.social_networking')])]"/>
+            <field name="list_price">59.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_13.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_14" model="product.product">
+            <field name="name">Social Network Info Product 2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.social_networking')])]"/>
+            <field name="list_price">79.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_14.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_15" model="product.product">
+            <field name="name">Facebook Info Product</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.facebook_campaign')])]"/>
+            <field name="list_price">42.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_15.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_16" model="product.product">
+            <field name="name">Twitter Info Product</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_odoo_experts_sale.twitter_campaign')])]"/>
+            <field name="list_price">41.0</field>
+            <field name="image" type="base64" file="theme_odoo_experts/static/src/img/content/product_img_16.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+
+    </data>
+
+</openerp>

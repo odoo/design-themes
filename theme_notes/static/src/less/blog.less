@@ -1,0 +1,223 @@
+/* =====================  BLOG ===================== */
+
+#blog_right_column {
+    border-left: 1px solid black;
+    padding: 0 15px 35px 30px;
+
+    h4 {
+        text-transform: uppercase;
+    }
+    .nav-stacked>li.active>a {
+        background-color: rgba(0, 0, 0, 0);
+        color: @color-gamma;
+    }
+}
+.website_blog {
+    .col-sm-8 {
+        padding: 0 15px 30px 35px;
+    }
+}
+.post-meta {
+    margin-top: 20px;
+    text-align: left;
+}
+.blog_title {
+    .post-meta {
+        text-align: center;
+    }
+}
+#main_column {
+    h4 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+}
+
+/* =====================  FORUM ===================== */
+
+.website_forum + #wrap {
+    .alert {
+        a {
+            color: @gray;
+        }
+    }
+    .badge {
+        color: @color-alpha !important;
+    }
+    .text-muted {
+        color: @gray-lighter !important;
+    }
+    table, tbody {
+        background-color: rgba(0, 0, 0, 0) !important;
+        color: white !important;
+    }
+}
+.website_forum {
+    background-color: @color-eta;
+    margin-top: 0px !important;
+    width: 100%;
+    .navbar-default .navbar-nav > li > a, .navbar-header span {
+        color: @color-delta;
+    }
+    li.active > a {
+        background-color: @color-zeta !important;
+    }
+}
+.website_forum + #wrap {
+    padding: 35px;
+    .question .btn-link {
+        color: @color-delta;
+    }
+    .alert .close {
+        background: rgba(0, 0, 0, 0);
+    }
+    .oe_grey {
+        background: rgba(0, 0, 0, 0);
+    }
+    .page-header {
+        border-bottom: none;
+    }
+    .well {
+        background: rgba(0, 0, 0, 0);
+        border: 1px solid @gray-light;
+    }
+    .col-sm-9 .nav-tabs {
+        >li.active>a:hover, .nav-tabs>li.active>a:focus {
+            border: none;
+        }
+    }
+}
+.forum_docs {
+    margin-top: 30px;
+    padding: 10px 35px;
+    background-color: white;
+}
+
+/* =====================  EVENTS ===================== */
+
+.js_event + .container {
+    .well {
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        box-shadow: none;
+    }
+}
+.o_website_event {
+    .btn-primary {
+        background: rgba(0, 0, 0, 0) !important;
+        &:hover {
+            color: @gray-light !important;
+        }
+    }
+}
+
+/* ============== GENERAL STYLES ============== */
+
+/* ============== Form group in events, job etc ============== */
+
+.navbar-form, .form-inline:not(.pagination) {
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+    .form-control {
+        border-radius: 0px;
+        border: none;
+        padding: 20px 12px;
+        background-color: @gray-dark;
+        border: 1px solid @gray-light;
+    }
+    button[type="submit"] {
+        background-color: @black !important;
+        color: @gray-light !important;
+    }
+}
+
+/* ============== Breadcrumb in events, job etc ============== */
+
+.breadcrumb {
+    background: rgba(0, 0, 0, 0);
+    .BorderRadius(0px);
+
+    li a {
+        color: @color-delta;
+    }
+}
+/* ============== Nav-pills in events, job etc ============== */
+.nav-pills {
+    li a {
+        color: @gray-lighter;
+        &:hover {
+            color: @gray;
+        }
+    }
+    li.active > a {
+        color: @color-delta !important;
+        background: rgba(0, 0, 0, 0);
+        &:hover {
+            background-color: @gray-lighter;
+            color: @gray !important;
+        }
+        .badge {
+            color: @color-beta;
+            background-color: @color-delta;
+        }
+    }
+}
+
+/* ============== Table styles ============== */
+table:not(#cart_products):not(#cart_total) {
+    background-color: @gray-lighter;
+    color: @gray;
+    tbody {
+        background-color: @gray-lighter;
+        a {
+            color: @gray;
+            text-decoration: underline;
+            &:hover {
+                color: @gray-light;
+            }
+        }
+    }
+}
+
+/* ============== Panel styles ============== */
+
+.panel-heading {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    color: white !important;
+}
+.panel-footer {
+    background: rgba(0, 0, 0, 0);
+}
+.panel {
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid @gray-light;
+    .BorderRadius (0px);
+    .list-group-item {
+        background: rgba(0, 0, 0, 0);
+        border-color: @gray-light;
+    }
+    &.note-editor {
+        text-align: initial;
+    }
+}
+.panel-title {
+    font-size: 20px;
+    color: white;
+}
+
+/* =====================  DOCUMENTATION ===================== */
+
+[data-view-xmlid*="website_forum_doc.documentation_post"] {
+    .container:first-child {
+        margin-bottom: 0px !important;
+        height: 90px;
+        padding-top: 20px;
+    }
+}

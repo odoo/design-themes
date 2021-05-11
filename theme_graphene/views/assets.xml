@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+  <!--
+  =====================
+  Main Assets
+  =====================
+  -->
+
+  <!-- Main style -->
+  <template id="graphene_main_less" inherit_id="website.assets_frontend" active="True" priority="1">
+    <xpath expr="//link[last()]" position="after">
+      <t t-call="theme_graphene.theme_common_less"/>
+      <link href="/theme_graphene/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_graphene/static/src/less/main.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_graphene/static/src/less/main.font.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_graphene/static/src/less/images.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Customization modal -->
+  <template id="graphene_custom_modal_less" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/customize_modal.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Js Frontend -->
+  <template id="graphene_frontend_js" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//script[last()]" position="after">
+      <script type="text/javascript" src="/theme_common/static/src/js/copyright_fix.js"></script>
+
+      <script type="text/javascript" src="/theme_common/static/src/js/s_media_block_frontend.js"/>
+      <script type="text/javascript" src="/theme_common/static/src/js/s_showcase_slider_frontend.js"/>
+      <script type="text/javascript" src="/theme_common/static/lib/YTPlayer/jquery.mb.YTPlayer.js"/>
+      <script type="text/javascript" src="/theme_graphene/static/src/js/graphene.frontend.js"/>
+      <script type="text/javascript" src="/theme_graphene/static/src/js/graphene.ext.frontend.js"/>
+    </xpath>
+  </template>
+
+  <!-- Js Editor -->
+  <template id="graphene_editor_js" inherit_id="website.assets_editor" active="True">
+    <xpath expr="." position="inside">
+      <script type="text/javascript" src="/theme_common/static/src/js/s_animated_boxes_editor.js"/>
+      <script type="text/javascript" src="/theme_common/static/src/js/s_media_block_editor.js"/>
+      <script type="text/javascript" src="/theme_common/static/src/js/s_showcase_slider_editor.js"/>
+      <script type="text/javascript" src="/theme_graphene/static/src/js/graphene.editor.js"/>
+      <script type="text/javascript" src="/theme_graphene/static/src/js/graphene.ext.editor.js"/>
+    </xpath>
+  </template>
+
+</data>
+</openerp>

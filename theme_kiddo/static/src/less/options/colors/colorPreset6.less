@@ -1,0 +1,100 @@
+@color-alpha: @white;
+@color-beta: @colorPreset6_color3; // Claret
+@color-gamma: @colorPreset6_color2; // Orange
+@color-delta: @colorPreset6_color4; // Cream
+@color-epsilon: @colorPreset6_color1; // Gray
+@color-zeta: @colorPreset6_color3_dark;
+@color-eta: @colorPreset6_color3_light;
+@color-theta: @colorPreset6_color2_dark;
+@color-iota: @colorPreset6_color2_light;
+@color-kappa: @colorPreset6_color4_dark;
+@color-lambda: @colorPreset6_color4_light;
+@color-mu: @colorPreset6_color1_dark;
+@color-nu: @colorPreset6_color1_light;
+
+/* ============= FONT COLORS ================== */
+
+.text-alpha {color: @white;}
+.text-beta {color: @colorPreset6_color1;}
+.text-gamma {color: @colorPreset6_color2;}
+.text-delta {color: @colorPreset6_color3;}
+.text-epsilon {color: @colorPreset6_color4;}
+
+.text-primary {color: @color-alpha;}
+.text-success {color: @color-epsilon;}
+.text-info {color: @color-gamma;}
+.text-warning {color: @color-beta;}
+.text-danger {color: @color-delta;}
+
+/* ============= THEMES BUTTONS =============== */
+
+@btn-default-bg: @color-alpha;
+@btn-primary-bg: @color-epsilon;
+@btn-success-bg: @color-gamma;
+@btn-info-bg: @color-beta;
+@btn-warning-bg: @color-delta;
+@btn-danger-bg: @black;
+
+/* ============= BG USED FOR NAV ============== */
+
+.bgtransparent {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* ============= BGCOLORS ===================== */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-gamma, @color-theta);
+    .fa {color: @gray;}
+}
+
+.bg-beta {
+    .SetDisplayColor (@color-epsilon, @color-alpha);
+    .LinkColor (@color-gamma, @color-gamma);
+}
+
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @color-alpha);
+    .LinkColor (@color-delta, @color-kappa);
+}
+
+.bg-delta {
+    .SetDisplayColor (@color-beta, @color-alpha);
+    .LinkColor (#db771f, #db771f);
+}
+
+.bg-epsilon {
+    .SetDisplayColor (@color-delta, @gray);
+    .LinkColor (#3080d1, #3080d1);
+}
+
+/* ============= TYPO ========================= */
+
+a {
+    color: @color-gamma;
+    &:hover, &:focus {
+        color: @color-beta;
+    }
+}
+
+/* ============= STRUCTURE ==================== */
+
+#wrapwrap {
+    .navbar-default .container .navbar-collapse #top_menu li:not(.active):hover {
+        border-bottom-color: @color-gamma;
+    }
+
+    > footer {
+        #footer, .container {
+            background-color: @color-delta !important;
+            h3, h4 {
+                color: @colorPreset6_color3;
+            }
+        }
+    }
+}
+
+.contact-box {
+    color: @color-alpha;
+}

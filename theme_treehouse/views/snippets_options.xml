@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="li_colors">
+  <li t-attf-data-select_class="{{el}}-white"><a href="#" class="white"/></li>
+  <li t-attf-data-select_class="{{el}}-gray-lighter"><a href="#" class="gray-lighter"/></li>
+  <li t-attf-data-select_class="{{el}}-gray"><a href="#" class="gray"/></li>
+  <li t-attf-data-select_class="{{el}}-gray-darker"><a href="#" class="gray-darker"/></li>
+  <br/>
+  <li t-attf-data-select_class="{{el}}-alpha"><a href="#" class="color-alpha"/></li>
+  <li t-attf-data-select_class="{{el}}-beta"><a href="#" class="color-beta"/></li>
+  <li t-attf-data-select_class="{{el}}-gamma"><a href="#" class="color-gamma"/></li>
+  <li t-attf-data-select_class="{{el}}-delta"><a href="#" class="color-delta"/></li>
+  <li t-attf-data-select_class="{{el}}-epsilon"><a href="#" class="color-epsilon"/></li>
+</template>
+
+<template id="treehouse_options" inherit_id="website.snippet_options">
+
+<!-- Background
+     ========================================================================== -->
+
+  <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+    <attribute name="data-selector" add=".no-colorpicker" remove="section:not(.jumbotron), :not(.o_gallery > .container) > .carousel, .parallax"/>
+  </xpath>
+
+  <xpath expr="//div[@data-js='background']" position="attributes">
+    <attribute name="data-selector" add=".s_images_captions_fw [class*='col-'], .media-content, .media-options, .profile-body, .profile-options > [class*='col-'], .carousel-box-content, .s_three_columns_carousel [class*='col-'], .s_text_block_image_fw [class*='col-'], .news-carousel-time, .news-carousel-content, .s_four_columns_fw [class*='col-'], .s_masonry_block .block"/>
+  </xpath>
+
+  <xpath expr="//div[@data-js='background']/li" position="replace">
+    <li class="dropdown-submenu">
+      <a tabindex="-1" href="#">Images</a>
+      <ul class="treehouse-bg-img-selector dropdown-menu">
+        <li data-choose_image="choose_image"><a><b>Choose an image...</b></a></li>
+        <li data-select_class=""><a>None</a></li>
+        <li><a style="background: none; padding: 5px; border-top: 1px solid #ddd;"/></li>
+        <span class="inline">
+          <li data-select_class="bg-img-01"><a><img src="/web/image/theme_treehouse.bg_img_01/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-02"><a><img src="/web/image/theme_treehouse.bg_img_02/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-03"><a><img src="/web/image/theme_treehouse.bg_img_03/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-04"><a><img src="/web/image/theme_treehouse.bg_img_04/120x120" alt=""/></a></li>
+          <br/>
+          <li data-select_class="bg-img-05"><a><img src="/web/image/theme_treehouse.bg_img_05/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-06"><a><img src="/web/image/theme_treehouse.bg_img_06/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-07"><a><img src="/web/image/theme_treehouse.bg_img_07/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-08"><a><img src="/web/image/theme_treehouse.bg_img_08/120x120" alt=""/></a></li>
+          <br/>
+          <li data-select_class="bg-img-09"><a><img src="/web/image/theme_treehouse.bg_img_09/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-10"><a><img src="/web/image/theme_treehouse.bg_img_10/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-11"><a><img src="/web/image/theme_treehouse.bg_img_11/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-12"><a><img src="/web/image/theme_treehouse.bg_img_12/120x120" alt=""/></a></li>
+          <br/>
+          <li data-select_class="bg-img-13"><a><img src="/web/image/theme_treehouse.bg_img_13/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-14"><a><img src="/web/image/theme_treehouse.bg_img_14/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-15"><a><img src="/web/image/theme_treehouse.bg_img_15/120x120" alt=""/></a></li>
+          <li data-select_class="bg-img-16"><a><img src="/web/image/theme_treehouse.bg_img_16/120x120" alt=""/></a></li>
+        </span>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a tabindex="-1" href="#">Colors</a>
+      <ul class="treehouse-colorpicker dropdown-menu">
+        <li data-select_class=""><a href="#" class="none"/></li>
+          <t t-call="theme_treehouse.li_colors">
+            <t t-set="el">bg</t>
+          </t>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a tabindex="-1" href="#">Patterns</a>
+      <ul class="treehouse-colorpicker dropdown-menu">
+        <li data-select_class=""><a href="#" class="none"/></li>
+        <li data-select_class="bg-pattern-01"><a class="snippets-option-pattern" style="background-image:url('/web/image/theme_treehouse.bg_pattern_01');"></a></li>
+        <li data-select_class="bg-pattern-02"><a class="snippets-option-pattern" style="background-image:url('/web/image/theme_treehouse.bg_pattern_02');"></a></li>
+        <li data-select_class="bg-pattern-03"><a class="snippets-option-pattern" style="background-image:url('/web/image/theme_treehouse.bg_pattern_03');"></a></li>
+        <li data-select_class="bg-pattern-04"><a class="snippets-option-pattern" style="background-image:url('/web/image/theme_treehouse.bg_pattern_04');"></a></li>
+        <br/>
+        <li data-select_class="bg-pattern-05"><a class="snippets-option-pattern" style="background-image:url('/web/image/theme_treehouse.bg_pattern_05');"></a></li>
+        <li data-select_class="bg-pattern-06"><a class="snippets-option-pattern" style="background-image:url('/web/image/theme_treehouse.bg_pattern_06');"></a></li>
+        <li data-select_class="bg-pattern-07"><a class="snippets-option-pattern" style="background-image:url('/web/image/theme_treehouse.bg_pattern_07');"></a></li>
+        <li data-select_class="bg-pattern-08"><a class="snippets-option-pattern" style="background-image:url('/web/image/theme_treehouse.bg_pattern_08');"></a></li>
+        <li data-select_class="bg-pattern-09"><a class="snippets-option-pattern" style="background-image:url('/web/image/theme_treehouse.bg_pattern_09');"></a></li>
+      </ul>
+    </li>
+  </xpath>
+
+<!-- Layout
+     ========================================================================== -->
+
+  <xpath expr="//div[@data-js='content']" position="attributes">
+    <attribute name="data-selector" add="hr, .s_label"/>
+  </xpath>
+
+  <xpath expr="//div[@data-js='margin-y']" position="attributes">
+    <attribute name="data-selector" add="h1, h2, h3, h4, h5, h6"/>
+  </xpath>
+
+  <xpath expr="//div[@data-js='resize']" position="attributes">
+    <attribute name="data-selector" add=".row .media"/>
+  </xpath>
+
+<!-- Colors
+     ========================================================================== -->
+
+  <!-- LABEL -->
+  <xpath expr="//div[@data-js='blog-style']" position="before">
+    <div data-selector=".s_label, .label">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">Colors</a>
+        <ul class="treehouse-colorpicker dropdown-menu">
+          <t t-call="theme_treehouse.li_colors">
+            <t t-set="el">bg</t>
+          </t>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+  <!-- PANEL (including tabs & collapse snippets) -->
+  <xpath expr="//div[@data-js='colorpicker']" position="after">
+    <div data-selector=".s_tabs [class*='col-'], .s_collapse .panel, .s_panel">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">Colors</a>
+        <ul class="treehouse-colorpicker dropdown-menu">
+          <t t-call="theme_treehouse.li_colors">
+            <t t-set="el">panel</t>
+          </t>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+  <!-- WELL -->
+  <xpath expr="//div[@data-js='colorpicker']" position="after">
+    <div data-selector=".s_well">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">Colors</a>
+        <ul class="treehouse-colorpicker dropdown-menu">
+          <t t-call="theme_treehouse.li_colors">
+            <t t-set="el">well</t>
+          </t>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+<!-- Styles
+   ========================================================================== -->
+
+  <xpath expr="//div[@data-js='colorpicker']" position="after">
+    <div data-selector="h1, h2, h3, h4, h5, h6">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">Style</a>
+        <ul class="dropdown-menu">
+          <li data-toggle_class="text-muted"><a href="#">Muted</a></li>
+          <li data-toggle_class="text-uppercase"><a href="#">Uppercase</a></li>
+          <li data-toggle_class="text-underline"><a href="#">Underline</a></li>
+          <li data-toggle_class="text-boxed"><a href="#">Boxed</a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+  <xpath expr="//div[@data-js='colorpicker']" position="after">
+    <div data-selector="hr">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">Width</a>
+        <ul class="dropdown-menu">
+          <li data-select_class="hr-small"><a href="#">Small</a></li>
+          <li data-select_class="hr-half"><a href="#">Half</a></li>
+          <li data-select_class="hr-full"><a href="#">Full</a></li>
+        </ul>
+      </li>
+    </div>
+    <div data-selector="hr">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">Style</a>
+        <ul class="dropdown-menu">
+          <li data-select_class="hr-dashed"><a href="#">Dashed</a></li>
+          <li data-select_class="hr-dotted"><a href="#">Dotted</a></li>
+          <li data-select_class="hr-solid"><a href="#">Solid</a></li>
+        </ul>
+      </li>
+    </div>
+    <div data-selector="hr">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">Thickness</a>
+        <ul class="dropdown-menu">
+          <t t-foreach="range(1,6)" t-as="hr_size">
+            <li t-attf-data-select_class="hr-{{hr_size}}px"><a href="#"><t t-esc="hr_size"/> px</a></li>
+          </t>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+  <xpath expr="//div[@data-js='progress']" position="replace">
+    <div data-js="progress" data-selector=".progress .progress-bar">
+      <li class="dropdown-submenu">
+      <a tabindex="-1" href="#">Style</a>
+        <ul class="dropdown-menu">
+          <li data-toggle_class="progress-bar-striped"><a>Striped</a></li>
+          <li data-toggle_class="active"><a>Active</a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+</template>
+
+<!-- EDITOR
+   ========================================================================== -->
+
+<template id="editor_colorpicker" inherit_id="web_editor.colorpicker">
+  <xpath expr="//table" position="replace">
+    <table class="colorpicker">
+      <tr>
+        <td><button class="only-text text-alpha"/></td>
+        <td><button class="only-text text-beta"/></td>
+        <td><button class="only-text text-gamma"/></td>
+        <td><button class="only-text text-delta"/></td>
+        <td><button class="only-text text-epsilon"/></td>
+      </tr>
+      <tr>
+        <td><button class="only-text text-gray-lighter"/></td>
+        <td><button class="only-text text-gray-light"/></td>
+        <td><button class="only-text text-gray"/></td>
+        <td><button class="only-text text-gray-dark"/></td>
+        <td><button class="only-text text-gray-darker"/></td>
+      </tr>
+      <tr>
+        <td><button class="only-text text-white"/></td>
+        <td><button class="only-text text-black"/></td>
+      </tr>
+      <tr>
+        <td><button class="bg-alpha"/></td>
+        <td><button class="bg-beta"/></td>
+        <td><button class="bg-gamma"/></td>
+        <td><button class="bg-delta"/></td>
+        <td><button class="bg-epsilon"/></td>
+      </tr>
+      <tr>
+        <td><button class="bg-gray-lighter"/></td>
+        <td><button class="bg-gray-light"/></td>
+        <td><button class="bg-gray"/></td>
+        <td><button class="bg-gray-dark"/></td>
+        <td><button class="bg-gray-darker"/></td>
+      </tr>
+      <tr>
+        <td><button class="bg-white"/></td>
+        <td><button class="bg-black"/></td>
+      </tr>
+    </table>
+  </xpath>
+</template>
+
+</data>
+</openerp>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="theme_kea.option_layout_boxed" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="theme_kea.option_layout_fullwidth" model="ir.ui.view">
+        <field name="active" eval="True"/>
+    </record>
+    <record id="theme_kea.option_bg_03" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="theme_kea.option_bg_08" model="ir.ui.view">
+        <field name="active" eval="True"/>
+    </record>
+    <record id="theme_kea.option_font_sinkin" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="theme_kea.option_font_rajdhani" model="ir.ui.view">
+        <field name="active" eval="True"/>
+    </record>
+</odoo>

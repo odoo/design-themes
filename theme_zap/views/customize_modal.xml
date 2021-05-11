@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+<!-- Customize - Customize Theme
+     ========================================================================== -->
+
+    <template id="customize_modal" inherit_id="theme_treehouse.customize_modal" name="Zap Customize Modal">
+      <xpath expr="//div[@id='theme_customize_modal']" position="replace">
+        <div id="theme_customize_modal" class="modal fade" data-theme="theme_zap">
+          <div id="treehouse_customize_modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="loading_backdrop"></div>
+                <!-- Header -->
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    <i class="fa fa-close fa-1x"/>
+                    <span class="sr-only">Close</span>
+                  </button>
+                  <h3 class="modal-title">Options</h3>
+                </div>
+                <!-- Body -->
+                <div class="modal-body">
+
+                  <div id="zap_customize_modal_collapse" class="panel-group" role="tablist" aria-multiselectable="true">
+
+                    <!-- Colors -->
+                    <div class="panel">
+                      <!-- Colors heading -->
+                      <div id="zap_heading_colors" class="panel-heading" role="tab">
+                        <a href="#zap_nav_footer_colors" class="" data-toggle="collapse" data-parent="#zap_customize_modal_collapse" aria-expanded="true" aria-controls="zap_nav_footer_colors"><i class="fa fa-1x fa-paint-brush"/>Colors</a>
+                      </div>
+                      <!-- Colors body -->
+                      <div id="zap_nav_footer_colors" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="zap_heading_colors">
+                        <div class="panel-body">
+                          <div class="row">
+                            <!-- Header -->
+                            <div class="col-xs-12">
+                              <h5 class="mt0"><strong>Navigation</strong></h5>
+                            </div>
+                            <div class="col-xs-3">
+
+                              <label class="icon">
+                                <input type="radio" name="nav_bgcolor_var" data-xmlid="theme_zap.nav_white"/>
+                                <span class="white"></span>
+                              </label>
+
+                            </div>
+                            <div class="col-xs-3">
+
+                              <label class="icon">
+                                <input type="radio" name="nav_bgcolor_var" data-xmlid="theme_zap.nav_gray_lighter"/>
+                                <span class="gray-lighter"></span>
+                              </label>
+
+                            </div>
+                            <div class="col-xs-3">
+
+                              <label class="icon">
+                                <input type="radio" name="nav_bgcolor_var" data-xmlid="theme_zap.nav_gray_darker"/>
+                                <span class="gray-darker"></span>
+                              </label>
+
+                            </div>
+                            <!-- Schemes -->
+                            <div class="col-xs-12">
+                              <h5><strong>Schemes</strong></h5>
+                            </div>
+                            <div class="col-xs-6">
+
+                              <label class="icon">
+                                <input type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_01"/>
+                                <span class="color-01-alpha"></span>
+                                <span class="color-01-beta"></span>
+                                <span class="color-01-gamma"></span>
+                                <span class="color-01-delta"></span>
+                                <span class="color-01-epsilon"></span>
+                              </label>
+
+                              <label class="icon">
+                                <input type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_02"/>
+                                <span class="color-02-alpha"></span>
+                                <span class="color-02-beta"></span>
+                                <span class="color-02-gamma"></span>
+                                <span class="color-02-delta"></span>
+                                <span class="color-02-epsilon"></span>
+                              </label>
+
+                              <label class="icon">
+                                <input type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_03"/>
+                                <span class="color-03-alpha"></span>
+                                <span class="color-03-beta"></span>
+                                <span class="color-03-gamma"></span>
+                                <span class="color-03-delta"></span>
+                                <span class="color-03-epsilon"></span>
+                              </label>
+
+                            </div>
+                            <div class="col-xs-6">
+
+                              <label class="icon">
+                                <input type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_04"/>
+                                <span class="color-04-alpha"></span>
+                                <span class="color-04-beta"></span>
+                                <span class="color-04-gamma"></span>
+                                <span class="color-04-delta"></span>
+                                <span class="color-04-epsilon"></span>
+                              </label>
+
+                              <label class="icon">
+                                <input type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_05"/>
+                                <span class="color-05-alpha"></span>
+                                <span class="color-05-beta"></span>
+                                <span class="color-05-gamma"></span>
+                                <span class="color-05-delta"></span>
+                                <span class="color-05-epsilon"></span>
+                              </label>
+
+                              <label class="icon">
+                                <input type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_06"/>
+                                <span class="color-06-alpha"></span>
+                                <span class="color-06-beta"></span>
+                                <span class="color-06-gamma"></span>
+                                <span class="color-06-delta"></span>
+                                <span class="color-06-epsilon"></span>
+                              </label>
+
+                            </div>
+                            <!-- Footer -->
+                            <div class="col-xs-12">
+                              <h5><strong>Footer</strong></h5>
+                            </div>
+
+                            <div class="col-xs-3">
+
+                              <label class="icon">
+                                <input type="radio" name="footer_bgcolor_var" data-xmlid="theme_zap.footer_white"/>
+                                <span class="white"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="footer_bgcolor_var" data-xmlid="theme_zap.footer_gray_lighter"/>
+                                <span class="gray-lighter"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="footer_bgcolor_var" data-xmlid="theme_zap.footer_gray_darker"/>
+                                <span class="gray-darker"></span>
+                              </label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Fonts -->
+                    <div class="panel">
+                      <!-- Fonts heading -->
+                      <div id="zap_heading_fonts" class="panel-heading" role="tab">
+                        <a href="#zap_fonts" class="collapsed" data-toggle="collapse" data-parent="#zap_customize_modal_collapse" aria-expanded="false" aria-controls="zap_fonts"><i class="fa fa-1x fa-font"/>Fonts</a>
+                      </div>
+                      <!-- Fonts body -->
+                      <div id="zap_fonts" class="panel-collapse collapse" role="tabpanel" aria-labelledby="zap_heading_fonts">
+                        <div class="panel-body">
+                          <div class="row">
+
+                            <div class="col-xs-6">
+
+                              <label class="icon">
+                                <input type="radio" name="font_var" data-xmlid="theme_zap.font_advent_pro_oxygen"/>
+                                Advent Pro / Oxygen
+                              </label>
+
+                              <label class="icon">
+                                <input type="radio" name="font_var" data-xmlid="theme_zap.font_dosis_open_sans"/>
+                                Dosis / Open Sans
+                              </label>
+
+                              <label class="icon">
+                                <input type="radio" name="font_var" data-xmlid="theme_zap.font_lato_merriweather"/>
+                                Lato / Merriweather
+                              </label>
+
+                            </div>
+
+                            <div class="col-xs-6">
+
+                              <label class="icon">
+                                <input type="radio" name="font_var" data-xmlid="theme_zap.font_montserrat_alt_nunito"/>
+                                Montserrat Alt / Nunito
+                              </label>
+
+                              <label class="icon">
+                                <input type="radio" name="font_var" data-xmlid="theme_zap.font_oswald_lato"/>
+                                Oswald / Lato
+                              </label>
+
+                              <label class="icon">
+                                <input type="radio" name="font_var" data-xmlid="theme_zap.font_roboto_slab_roboto"/>
+                                Roboto Slab / Roboto
+                              </label>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Layout -->
+                    <div class="panel">
+                      <!-- Layout heading -->
+                      <div id="zap_heading_layout" class="panel-heading" role="tab">
+                        <a href="#zap_layout" class="collapsed" data-toggle="collapse" data-parent="#zap_customize_modal_collapse" aria-expanded="false" aria-controls="zap_layout"><i class="fa fa-1x fa-file-text-o"/>Layout</a>
+                      </div>
+                      <!-- Layout body -->
+                      <div id="zap_layout" class="panel-collapse collapse" role="tabpanel" aria-labelledby="zap_heading_layout">
+                        <div class="panel-body">
+                          <div class="row">
+
+                            <div class="col-xs-4">
+                              <label class="icon">
+                                <input type="radio" name="layout_var" data-xmlid=""/>Full width
+                              </label>
+                            </div>
+
+                            <div class="col-xs-4">
+                              <label class="icon">
+                                <input type="radio" name="layout_var" data-xmlid="theme_zap.layout_boxed"/>Boxed
+                              </label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Patterns -->
+                    <div class="panel">
+                      <!-- Patterns heading -->
+                      <div id="zap_heading_background" class="panel-heading" role="tab">
+                        <a href="#zap_background" class="collapsed" data-toggle="collapse" data-parent="#zap_customize_modal_collapse" aria-expanded="false" aria-controls="zap_background"><i class="fa fa-1x fa-image"/>Background</a>
+                      </div>
+                      <!-- Patterns body -->
+                      <div id="zap_background" class="panel-collapse collapse" role="tabpanel" aria-labelledby="zap_heading_background">
+                        <div class="panel-body">
+                          <div class="row">
+
+                            <div class="col-xs-12">
+                              <p class="text-muted mb16" style="font-size:13px;"><i class="fa fa-1x fa-info-circle"/> - These options works better with Layout > Boxed</p>
+                              <h5><strong>Colors</strong></h5>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid=""/>
+                                <span class="none"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_gray_lighter"/>
+                                <span class="gray-lighter"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_gray_darker"/>
+                                <span class="gray-darker"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_color_alpha"/>
+                                <span class="color-alpha"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-12">
+                              <h5><strong>Image</strong></h5>
+                            </div>
+
+                            <div class="col-xs-6">
+                              <label class="icon">
+                                <input name="body_bg_var" type="radio" data-xmlid="theme_zap.body_bg_image"/>Choose / Upload
+                              </label>
+                            </div>
+
+                            <div class="col-xs-12">
+                              <h5><strong>Patterns</strong></h5>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_pattern_01"/>
+                                <span style="background-image:url('/web/image/theme_treehouse.bg_pattern_01');"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_pattern_02"/>
+                                <span style="background-image:url('/web/image/theme_treehouse.bg_pattern_02');"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_pattern_03"/>
+                                <span style="background-image:url('/web/image/theme_treehouse.bg_pattern_03');"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_pattern_04"/>
+                                <span style="background-image:url('/web/image/theme_treehouse.bg_pattern_04');"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_pattern_05"/>
+                                <span style="background-image:url('/web/image/theme_treehouse.bg_pattern_05');"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_pattern_06"/>
+                                <span style="background-image:url('/web/image/theme_treehouse.bg_pattern_06');"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_pattern_07"/>
+                                <span style="background-image:url('/web/image/theme_treehouse.bg_pattern_07');"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_pattern_08"/>
+                                <span style="background-image:url('/web/image/theme_treehouse.bg_pattern_08');"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-xs-3">
+                              <label class="icon">
+                                <input type="radio" name="body_bg_var" data-xmlid="theme_zap.body_bg_pattern_09"/>
+                                <span style="background-image:url('/web/image/theme_treehouse.bg_pattern_09');"></span>
+                              </label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </xpath>
+    </template>
+
+<!-- Header colors
+     ========================================================================== -->
+
+    <template id="nav_white" name="White Header" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/layout/nav_white.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="nav_gray_lighter" name="Gray Lighter Header" inherit_id="website.assets_frontend" active="True">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/layout/nav_gray_lighter.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="nav_gray_darker" name="Gray Darker Header" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/layout/nav_gray_darker.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+<!-- Footer colors
+     ========================================================================== -->
+
+    <template id="footer_white" name="White Footer" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/layout/footer_white.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="footer_gray_lighter" name="Gray Lighter Footer" inherit_id="website.assets_frontend" active="True">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/layout/footer_gray_lighter.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="footer_gray_darker" name="Gray Darker Footer" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/layout/footer_gray_darker.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+<!-- Colors schemes
+     ========================================================================== -->
+
+    <template id="colors_01" name="Scheme Color 01" inherit_id="website.assets_frontend" active="True">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_02" name="Scheme Color 02" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_03" name="Scheme Color 03" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_04" name="Scheme Color 04" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_05" name="Scheme Color 05" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_06" name="Scheme Color 06" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+<!-- Fonts
+     ========================================================================== -->
+
+    <template id="font_advent_pro_oxygen" name="font_advent_pro_oxygen" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_advent_pro_oxygen.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_dosis_open_sans" name="font_dosis_open_sans" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_dosis_open_sans.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_lato_merriweather" name="font_lato_merriweather" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_lato_merriweather.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_montserrat_alt_nunito" name="font_montserrat_alt_nunito" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_montserrat_alt_nunito.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_oswald_lato" name="font_oswald_lato" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_oswald_lato.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_roboto_slab_roboto" name="font_roboto_slab_roboto" inherit_id="website.assets_frontend" active="True">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_roboto_slab_roboto.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+<!-- Layouts
+     ========================================================================== -->
+
+    <template id="layout_boxed" name="Boxed layout" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/layout/layout_boxed.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+<!-- Background image
+     ========================================================================== -->
+
+    <template id="body_bg_image" name="Background Image" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="//link[last()]" position="after">
+        <style>
+            /* This will be patched by background_image.js */
+        </style>
+      </xpath>
+    </template>
+
+<!-- Background colors
+     ========================================================================== -->
+
+    <template id="body_bg_color_alpha" name="Background Color Alpha" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside">
+        <link href="/theme_treehouse/static/src/less/options/background/color_alpha.less" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+    <template id="body_bg_gray_lighter" name="Background Gray Lighter" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside">
+        <link href="/theme_treehouse/static/src/less/options/background/gray_lighter.less" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+    <template id="body_bg_gray_darker" name="Background Gray Darker" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside">
+        <link href="/theme_treehouse/static/src/less/options/background/gray_darker.less" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+<!-- Background patterns
+     ========================================================================== -->
+
+    <template id="body_bg_pattern_01" name="Background Pattern 01" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/background/pattern_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="body_bg_pattern_02" name="Background Pattern 02" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/background/pattern_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="body_bg_pattern_03" name="Background Pattern 03" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/background/pattern_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="body_bg_pattern_04" name="Background Pattern 04" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/background/pattern_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="body_bg_pattern_05" name="Background Pattern 05" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/background/pattern_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="body_bg_pattern_06" name="Background Pattern 06" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/background/pattern_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="body_bg_pattern_07" name="Background Pattern 07" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/background/pattern_07.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="body_bg_pattern_08" name="Background Pattern 08" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/background/pattern_08.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="body_bg_pattern_09" name="Background Pattern 09" inherit_id="website.assets_frontend" active="False">
+      <xpath expr="." position="inside"><link href="/theme_treehouse/static/src/less/options/background/pattern_09.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+  </data>
+</openerp>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Snippet Body -->
+    <template name="Animated Boxes" id="s_animated_boxes">
+        <div class="s_animated_boxes row">
+            <div class="col-sm-4 col-md-4 item bg-alpha">
+                <div class="v-align">
+                    <h3>Box title</h3>
+                    <p>Box Description</p>
+                    <div class="oe_structure"/>
+                </div>
+                <div class="slide bg-delta">
+                    <div class="v-align">
+                        <h3>Slide title</h3>
+                        <p>Slide Description</p>
+                        <a class="btn btn-primary btn-sm"><strong>My great button</strong></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 item bg-beta">
+                <div class="v-align">
+                    <h3>Box title</h3>
+                    <p>Box Description</p>
+                    <div class="oe_structure"/>
+                </div>
+                <div class="slide bg-delta">
+                    <div class="v-align">
+                        <h3>Slide title</h3>
+                        <p>Slide Description</p>
+                        <a class="btn btn-primary btn-sm"><strong>My great button</strong></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 item bg-gamma">
+                <div class="v-align">
+                    <h3>Box title</h3>
+                    <p>Box Description</p>
+                    <div class="oe_structure"/>
+                </div>
+                <div class="slide bg-delta">
+                    <div class="v-align">
+                        <h3>Slide title</h3>
+                        <p>Slide Description</p>
+                        <a class="btn btn-primary btn-sm"><strong>My great button</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Snippet options -->
+    <template id="s_animated_boxes_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-selector=".s_animated_boxes" data-drop-in="#wrap"/>
+            <div data-js='s_animated_boxes' data-selector=".s_animated_boxes .item">
+                <li class="createSlide" data-create_slide=""><a>Add Slide</a></li>
+                <li class="deleteSlide" data-delete_slide=""><a>Delete Slide</a></li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

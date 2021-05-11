@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <delete id="product.sub_computers" model="product.public.category"/>
+        <delete id="product.Components" model="product.public.category"/>
+        <delete id="product.devices" model="product.public.category"/>
+        <delete id="product.laptops" model="product.public.category"/>
+        <delete id="product.network" model="product.public.category"/>
+        <delete id="product.Computer_all_in_one" model="product.public.category"/>
+        <delete id="product.External_Hard_Drive" model="product.public.category"/>
+        <delete id="product.Headset" model="product.public.category"/>
+        <delete id="product.Keyboard_Mouse" model="product.public.category"/>
+        <delete id="product.Pen_Drive" model="product.public.category"/>
+        <delete id="product.printer" model="product.public.category"/>
+        <delete id="product.Screen" model="product.public.category"/>
+        <delete id="product.server" model="product.public.category"/>
+        <delete id="product.services" model="product.public.category"/>
+        <delete id="product.Software" model="product.public.category"/>
+        <delete id="product.Speakers" model="product.public.category"/>
+
+        <!-- Create new categories -->
+
+        <record id="man" model="product.public.category">
+            <field name="name">Man</field>
+        </record>
+        <record id="shoes" model="product.public.category">
+            <field name="parent_id" ref="man"/>
+            <field name="name">Shoes</field>
+        </record>
+        <record id="tshirt" model="product.public.category">
+            <field name="parent_id" ref="man"/>
+            <field name="name">T-Shirt</field>
+        </record>
+        <record id="shirt" model="product.public.category">
+            <field name="parent_id" ref="man"/>
+            <field name="name">Shirt</field>
+        </record>
+        <record id="jumper" model="product.public.category">
+            <field name="parent_id" ref="man"/>
+            <field name="name">Jumper</field>
+        </record>
+
+        <record id="woman" model="product.public.category">
+            <field name="name">Woman</field>
+        </record>
+        <record id="jeans" model="product.public.category">
+            <field name="parent_id" ref="woman"/>
+            <field name="name">Jeans</field>
+        </record>
+        <record id="sleeveless_dress" model="product.public.category">
+            <field name="parent_id" ref="woman"/>
+            <field name="name">Sleeveless Dress</field>
+        </record>
+        <record id="sleeveless_top" model="product.public.category">
+            <field name="parent_id" ref="woman"/>
+            <field name="name">Sleeveless Top</field>
+        </record>
+        <record id="skirt" model="product.public.category">
+            <field name="parent_id" ref="woman"/>
+            <field name="name">Skirt</field>
+        </record>
+
+        <record id="product.anelusia_product_1" model="product.product">
+            <field name="name">Leather Shoes</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.shoes')])]"/>
+            <field name="standard_price">99.0</field>
+            <field name="list_price">99.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_01.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_2" model="product.product">
+            <field name="name">Converse Shoes</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.shoes')])]"/>
+            <field name="standard_price">139.0</field>
+            <field name="list_price">139.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_02.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_3" model="product.product">
+            <field name="name">Jeans</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.jeans')])]"/>
+            <field name="standard_price">29.0</field>
+            <field name="list_price">29.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_03.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_4" model="product.product">
+            <field name="name">Jeans</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.jeans')])]"/>
+            <field name="standard_price">29.0</field>
+            <field name="list_price">29.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_04.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_5" model="product.product">
+            <field name="name">Pink Shirt</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.shirt')])]"/>
+            <field name="standard_price">29.0</field>
+            <field name="list_price">29.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_05.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_6" model="product.product">
+            <field name="name">Sleeveless Top</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.sleeveless_top')])]"/>
+            <field name="standard_price">69.0</field>
+            <field name="list_price">69.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_06.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_7" model="product.product">
+            <field name="name">T-Shirt</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.tshirt')])]"/>
+            <field name="standard_price">9.0</field>
+            <field name="list_price">9.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_07.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_8" model="product.product">
+            <field name="name">T-Shirt</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.tshirt')])]"/>
+            <field name="standard_price">19.0</field>
+            <field name="list_price">19.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_08.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_9" model="product.product">
+            <field name="name">T-Shirt</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.tshirt')])]"/>
+            <field name="standard_price">19.0</field>
+            <field name="list_price">19.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_09.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_10" model="product.product">
+            <field name="name">Sleeveless Dress</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.sleeveless_dress')])]"/>
+            <field name="standard_price">129.0</field>
+            <field name="list_price">129.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_10.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_11" model="product.product">
+            <field name="name">Sleeveless Dress</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.sleeveless_dress')])]"/>
+            <field name="standard_price">149.0</field>
+            <field name="list_price">149.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_11.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_12" model="product.product">
+            <field name="name">Skirt</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.skirt')])]"/>
+            <field name="standard_price">39.0</field>
+            <field name="list_price">39.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_12.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_13" model="product.product">
+            <field name="name">Skirt</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.skirt')])]"/>
+            <field name="standard_price">29.0</field>
+            <field name="list_price">29.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_13.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_14" model="product.product">
+            <field name="name">Skirt</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.skirt')])]"/>
+            <field name="standard_price">19.0</field>
+            <field name="list_price">19.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_14.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_15" model="product.product">
+            <field name="name">Jumper</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.jumper')])]"/>
+            <field name="standard_price">49.0</field>
+            <field name="list_price">49.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_15.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.anelusia_product_16" model="product.product">
+            <field name="name">Jumper</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_anelusia_sale.jumper')])]"/>
+            <field name="standard_price">59.0</field>
+            <field name="list_price">59.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_anelusia/static/src/img/content/product_img_16.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+
+    </data>
+
+</openerp>

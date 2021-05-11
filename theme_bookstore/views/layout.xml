@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="change_modal_title" inherit_id="theme_loftspace.theme_customize" name="Change Modal Title">
+            <xpath expr="//h4[contains(@class, 'modal-title')]" position="replace">
+                <h4 class="modal-title text-center" id="mySmallModalLabel">Customize Theme Bookstore</h4>
+            </xpath>
+        </template>
+    </data>
+</openerp>

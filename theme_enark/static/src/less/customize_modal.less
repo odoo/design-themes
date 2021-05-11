@@ -1,0 +1,80 @@
+/* Theme Selector  */
+
+#theme_customize_modal {
+    * {
+        background-color: #3d4546;
+        font-family: "Lato-Regular";
+        text-transform: uppercase;
+    }
+
+    .modal-header {
+        border-bottom: none;
+        .close {
+            color: #fff;
+            text-shadow: 0 1px 0 #000;
+        }
+    }
+    .modal-title {
+        color: @gray;
+        font-size: 22px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .modal-body {
+        color: white;
+        .panel-body {
+            margin-top: -25px;
+        }
+        .panel {
+            border: none;
+        }
+        table td {
+            label {
+                font-weight: normal;
+                .enark-layout-combi {
+                    margin: 0 auto;
+                    padding: 10px;
+                }
+                &.checked {
+                    * {
+                        background-color: rgba(0, 0, 0, 0) !important;
+                    }
+                    background: #586263;
+                }
+                img {
+                    height: 30px !important;
+                    margin: 6px;
+                    width: 50px;
+                    box-shadow: none;
+                    border: 1px solid #ccc;
+                    border-radius: 50px;
+                    border: 2px solid @gray-dark;
+                }
+
+                &.enark-fonts-combi {
+                    box-shadow: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    span{
+                        text-transform: none;
+                    }
+
+                }
+            }
+
+        }
+        .modal-h6 {
+            font-size: 12px;
+        }
+        h5 {
+            border-top: 1px solid #555;
+            color: #aaa;
+            font-size: 16px;
+            padding-top: 20px;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+    }
+}

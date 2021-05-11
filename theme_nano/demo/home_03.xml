@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <openerp>
+    <data>
+
+    <template id="demo_page_03" inherit_id="website.layout" primary="True">
+      <xpath expr="//head/t[@t-call-assets='website.assets_frontend']" position="attributes">
+        <attribute name="t-call-assets">theme_nano.demo_page_03_assets_frontend</attribute>
+      </xpath>
+    </template>
+
+    <template id="demo_page_03_assets_frontend" inherit_id="website.assets_frontend" primary="True">
+      <xpath expr="." position="inside">
+
+        <link href="/theme_nano/static/src/less/options/layouts/header_white.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_nano/static/src/less/options/layouts/footer_light.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_nano/static/src/less/options/layouts/icons_sidebar_none.less" rel="stylesheet" type="text/less"/>
+
+        <link href="/theme_nano/static/src/less/options/colors/colors_agency.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_nano/static/src/less/options/fonts/font_advent_pro_oxygen.less" rel="stylesheet" type="text/less"/>
+
+      </xpath>
+    </template>
+
+    <template name="Nano // Demo 03" id="website.demo_page_03" page="True">
+      <t t-call="theme_nano.demo_page_03">
+        <div id="wrap" class="oe_structure bg-gray-lighter">
+          <section class="s_page_header bg-gray-darker">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mt32 mb32">
+                  <span class="s_label label bg-alpha">
+                    <strong>Tags</strong>
+                  </span>
+                  <span class="s_label label bg-delta">
+                    <strong>Category</strong>
+                  </span>
+                  <h1>Page Title</h1>
+                  <p class="lead">Introduce your content in few lines.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_process_steps_2 mt48 mb48">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 text-center mt32 mb32">
+                  <p><i class="fa fa-hand-o-up fa-2x img-circle bg-alpha"/></p>
+                  <h4>Select a product</h4>
+                  <p class="text-muted">This is the <strong>first step</strong>.</p>
+                  <p>Let your customers follow and understand your process.</p>
+                </div>
+                <div class="col-md-3 text-center mt32 mb32">
+                  <p><i class="fa fa-shopping-cart fa-2x img-circle bg-beta"/></p>
+                  <h4>Add to cart</h4>
+                  <p class="text-muted">This is the <strong>second step</strong>.</p>
+                  <p>Click on the icon to adapt it to your purpose.</p>
+                </div>
+                <div class="col-md-3 text-center mt32 mb32">
+                  <p><i class="fa fa-unlock-alt fa-2x img-circle bg-gamma"/></p>
+                  <h4>Sign in</h4>
+                  <p class="text-muted">This is the <strong>third step</strong>.</p>
+                  <p>Duplicate blocks to add more steps.</p>
+                </div>
+                <div class="col-md-3 text-center mt32 mb32">
+                  <p><i class="fa fa-paypal fa-2x img-circle bg-delta"/></p>
+                  <h4>Pay</h4>
+                  <p class="text-muted">This is the <strong>fourth step</strong>.</p>
+                  <p>Select and delete blocks to remove some steps.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div data-oe-call="theme_common.s_quotes_slider_2"/>
+          <div class="mt64 mb64">
+            <section class="s_collapse">
+              <div class="container">
+                <div class="row">
+                  <div class="panel-group col-md-12 mt32 mb32" id="myCollapse" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-gray">
+                      <div class="panel-heading">
+                        <a href="#collapseOne" class="" data-toggle="collapse" data-parent="#myCollapse" aria-expanded="true" aria-controls="collapseOne"><strong>Accordion</strong></a>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <h3 class="mt0">What's an accordion?</h3>
+                          <p><strong>- This is the first panel of the basic accordion example.</strong></p>
+                          <p>Accordion is a graphical element to show or hide content. There are times when a page can contain many related elements which makes it very long; using accordion enables editors to shorten the page, and allow readers to expand areas of interest to them.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-gray">
+                      <div class="panel-heading">
+                        <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-parent="#myCollapse" aria-expanded="false" aria-controls="collapseTwo"><strong>Content</strong></a>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <img class="img img-responsive pull-left" src="/web/image/theme_common.image_content_14" alt=""/>
+                          <h3 class="mt0">A sample title</h3>
+                          <p>To fit your purpose, you can add every classical content elements to a panel: texts, images, links...</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+                          <p><a href="#" class="btn btn-default">A sample link</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-gray">
+                      <div class="panel-heading">
+                        <a href="#collapseThree" class="collapsed" data-toggle="collapse" data-parent="#myCollapse" aria-expanded="false" aria-controls="collapseThree"><strong>Options</strong></a>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <h3 class="mt0">Options</h3>
+                          <p>The customize button allows you to:</p>
+                          <ul>
+                            <li>Change the color of each panel</li>
+                            <li>Add a panel (created after the active one)</li>
+                            <li>Remove a panel (the active one).</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <section class="s_comparisons">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="panel panel-info">
+                    <div class="panel-heading text-center">
+                      <h2 style="margin: 0">Beginner</h2>
+                      <p class="text-muted" style="margin: 0">Starter package</p>
+                    </div>
+                    <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                      <h2 style="margin: 0">
+                        <span>$</span>
+                        <b style="font-size: 60px">450</b>
+                        <small>.00</small>
+                      </h2>
+                      <div>per month</div>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item bg-gamma">Battery: 8 hours</li>
+                      <li class="list-group-item">Screen: 2.5 inch</li>
+                      <li class="list-group-item">Weight: 1.1 ounces</li>
+                      <li class="list-group-item">No support</li>
+                    </ul>
+                    <div class="panel-footer text-center">
+                      <p class="text-muted">
+                        <i>Free shipping, satisfied or reimbursed.</i>
+                      </p>
+                      <a class="btn btn-info" href="/page/website.contactus">Order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                      <h2 style="margin: 0">Professional</h2>
+                      <p style="margin: 0">Enterprise package</p>
+                    </div>
+                    <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                      <h2 style="margin: 0">
+                        <span>$</span>
+                        <b style="font-size: 60px">590</b>
+                        <small>.00</small>
+                      </h2>
+                      <div>per month</div>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item active">Battery: 12 hours</li>
+                      <li class="list-group-item">Screen: 2.8 inch</li>
+                      <li class="list-group-item">Weight: 1.2 ounces</li>
+                      <li class="list-group-item">Limited support</li>
+                    </ul>
+                    <div class="panel-footer text-center">
+                      <p class="text-muted">
+                        <i>Free shipping, satisfied or reimbursed.</i>
+                      </p>
+                      <a class="btn btn-primary" href="/page/website.contactus">Order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-success">
+                    <div class="panel-heading text-center">
+                      <h2 style="margin: 0">Expert</h2>
+                      <p class="text-muted" style="margin: 0">The top of the top</p>
+                    </div>
+                    <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                      <h2 style="margin: 0">
+                        <span>$</span>
+                        <b style="font-size: 60px">890</b>
+                        <small>.00</small>
+                      </h2>
+                      <div>per month</div>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item bg-beta">Battery: 20 hours</li>
+                      <li class="list-group-item">Screen: 2.8 inch</li>
+                      <li class="list-group-item">Weight: 1.2 ounces</li>
+                      <li class="list-group-item">Unlimited support</li>
+                    </ul>
+                    <div class="panel-footer text-center">
+                      <p class="text-muted">
+                        <i>Free shipping, satisfied or reimbursed.</i>
+                      </p>
+                      <a class="btn btn-success" href="/page/website.contactus">Contact us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="jumbotron s_button bg-gray-darker mt64 mb0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 mt48 mb48">
+                  <p class="mb0">
+                    <strong>50,000+ companies run Odoo to grow their businesses.</strong>
+                  </p>
+                  <p class="mb0">Join us and make your company a better place.</p>
+                </div>
+                <div class="col-md-3 mt48 mb48">
+                  <a class="btn btn-info pull-right mt8" href="/page/website.contactus"><b>Contact us</b> &amp;nbsp;<i class="fa fa-arrow-circle-right"/></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+    </template>
+
+  </data>
+</openerp>

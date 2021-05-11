@@ -1,0 +1,13 @@
+@s_features_carousel_border: 0px dotted rgba(0, 0, 0, 0);
+@s_features_carousel_indicators_visible: visible;
+.s_features_carousel_inner_hook(){
+    .carousel-inner .row {
+        margin: 40px 70px;
+        @media (max-width: @screen-xs-max) {
+            margin: 0px;
+        }
+    }
+}
+.s_features_carousel_mask_hook(){
+    border: 1px solid @gray-lighter;
+}

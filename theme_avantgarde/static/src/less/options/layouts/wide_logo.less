@@ -1,0 +1,289 @@
+
+#avant_header:not(.disabled) {
+
+  > .navbar{
+    padding-left: 0;
+    padding-right: 0;
+    @media (min-width: 768px) {
+      .container {
+        padding-right: 0;
+      }
+    }
+  }
+  .navbar-header{
+    float: none!important;
+    position: relative;
+  }
+  button.navbar-toggle{
+    display: block;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    -moz-transform-origin: 100% 20%;
+    -ms-transform-origin: 100% 20%;
+    -o-transform-origin: 100% 20%;
+    -webkit-transform-origin: 100% 20%;
+    transform-origin: 100% 20%;
+    -moz-transform: scale(1.3) translatey(-80%);
+    -ms-transform: scale(1.3) translatey(-80%);
+    -o-transform: scale(1.3) translatey(-80%);
+    -webkit-transform: scale(1.3) translatey(-80%);
+    transform: scale(1.3) translatey(-80%);
+    right: 0;
+
+    transform-origin: 100% 20%;
+    .transition(all 400ms);
+    .icon-bar {
+      width: 25px;
+      height: 3px;
+      .transition(all 400ms);
+      &:nth-child(2){
+        transform: rotate(45deg);
+        transform-origin: 50% 50%;
+      }
+      &:nth-child(3){
+        transform-origin: 50% 50%;
+        transform: rotate(-45deg)translateY(-5px)translateX(4px);
+      }
+      &:nth-child(4){
+        height: 3px;
+        opacity: 0;
+      }
+    }
+    &:hover{
+      background-color: rgba(0, 0, 0, 0);
+      cursor: pointer;
+
+      .icon-bar {
+        background-color: @color-alpha;
+      }
+    }
+    @media only screen and (min-width : 350px) {
+      height: 3em;
+    }
+    @media only screen and (min-width : 480px) {
+      height: 2.5em;
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      height: 3.6em;
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      height: 4.5em;
+    }
+    &.collapsed{
+      -moz-transform: scale(1) translatey(-80%);
+      -ms-transform: scale(1) translatey(-80%);
+      -o-transform: scale(1) translatey(-80%);
+      -webkit-transform: scale(1) translatey(-80%);
+      transform: scale(1) translatey(-80%);
+      .icon-bar {
+        background-color: fadeOut(@avant-text,20%);
+        .transition(all 400ms);
+        &:nth-child(2){
+          transform: rotate(0deg);
+        }
+        &:nth-child(3){
+          transform: rotate(0deg)translateY(0px)translateX(0px);
+        }
+        &:nth-child(4){
+          height: 3px;
+          opacity: 1;
+        }
+      }
+      &:hover{
+        .icon-bar {
+          background-color: @color-alpha;
+        }
+      }
+    }
+  }
+
+  .collapse.navbar-collapse.navbar-top-collapse {
+    display: none!important;
+    overflow-x: hidden!important;
+    .transition(padding none);
+    &.in, &.collapsing{
+
+      display: block!important;
+      overflow-x: hidden!important;
+    }
+  }
+  #top_menu {
+    text-align: right;
+    float: none!important;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 2em;
+
+    > li{
+      float: none!important;
+      width: 100%;
+      overflow: hidden;
+      &.divider{
+        margin: 5px 0;
+        border: none;
+        padding: 0;
+        border:none;
+      }
+      a {
+        font-size: 1.6em;
+        float: right;
+        padding: 9px;
+        background-color: @avant-bg;
+        margin-bottom: .31em;
+        clear: both;
+        .transition(all 300ms ease-in-out);
+      }
+      a:hover{
+        .translate(-10px,0);
+      }
+      //dropdowns
+      &.dropdown.open{
+
+        > a.dropdown-toggle {
+          background-color: @avant-bg;
+        }
+      }
+
+      .dropdown-menu{
+        position: static;
+        float: right;
+        clear: both;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        box-shadow: none;
+        margin-right: 1.5em;
+        margin-bottom: 1em;
+        a{
+          color: @avant-text;
+           font-size: 1em;
+        }
+      }
+
+    }
+  }
+
+  a.navbar-brand {
+
+    // text version
+    font-family  : @avant-family-heading;
+    font-style   : @avant-family-heading-style;
+    color        : @avant-text;
+    font-size    : 2em;
+    @media only screen and (min-width : 350px) {
+      font-size: 3em;
+    }
+    @media only screen and (min-width : 480px) {
+      font-size: 3em;
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      font-size: 5em;
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      font-size: 6em;
+      padding: .3em 0 .3em 15px;
+    }
+
+    // image version
+    &.logo {
+      max-width: 80%;
+      height: auto;
+      img{
+        max-width: 100%;
+        max-height: 120px;
+      }
+    }
+  }
+}
+
+// LAYOUT BOXED
+.avantgarde-layout-boxed() when (@avantgarde-layout-boxed = true) {
+  #avant_header:not(.disabled) {
+    a.navbar-brand {
+      padding-left : 0;
+      /* Medium Devices, Desktops */
+      @media only screen and (min-width : 992px) {
+        font-size: 6em;
+        padding: .3em 0;
+      }
+    }
+    button.navbar-toggle{
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+}
+.avantgarde-layout-boxed();
+
+// Top Content
+#wrapwrap.top_content{
+  #avant_header:not(.disabled){
+    .navbar-collapse{
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: fadeout(@avant-text, 80%)
+    }
+    #top_menu, #top_menu.collapsing {
+      padding: 0;
+      margin: 0;
+      li {
+        float: right!important;
+        > a{
+          float: right!important;
+        }
+      }
+      .dropdown-menu{
+        a, a:hover{
+          .translate(0, 0);
+          margin-left: 3px;
+        }
+      }
+    }
+    @media only screen and (max-width : 768px) {
+      #top_menu{
+        background-color: @avant-bg;
+        padding-right: 5%;
+      }
+      .navbar-collapse{
+        padding: 0;
+      }
+    }
+  }
+}
+
+// Customize Modal
+
+body #theme_customize_modal #tab_options {
+  .sample_header{
+    height: 30px;
+    h3{
+      font-size: 1.7em;
+      line-height: 1.5em;
+    }
+    p.sample_menu{
+      display: none;
+    }
+    i.fa-bars{
+      display: inline!important;
+      position: relative;
+      color: @avant-text;
+      float: right;
+      line-height: 2.3em;
+    }
+  }
+}
+

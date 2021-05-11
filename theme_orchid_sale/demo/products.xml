@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Delete loftspace categories -->
+        <delete id="theme_loftspace_sale.living" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.sofa" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.armchair" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.cabinet" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.table" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.bedroom" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.bed" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.accessories" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.lamp" model="product.public.category"/>
+        <delete id="theme_loftspace_sale.pillow" model="product.public.category"/>
+
+        <!-- Create new categories -->
+        <record id="cutted" model="product.public.category">
+            <field name="name">Cut Flowers</field>
+        </record>
+        <record id="tulip" model="product.public.category">
+            <field name="parent_id" ref="cutted"/>
+            <field name="name">Tulip</field>
+        </record>
+        <record id="gerbera" model="product.public.category">
+            <field name="parent_id" ref="cutted"/>
+            <field name="name">Gerbera</field>
+        </record>
+        <record id="carnation" model="product.public.category">
+            <field name="parent_id" ref="cutted"/>
+            <field name="name">Carnation</field>
+        </record>
+        <record id="lavender" model="product.public.category">
+            <field name="parent_id" ref="cutted"/>
+            <field name="name">Lavender</field>
+        </record>
+
+        <record id="potted" model="product.public.category">
+            <field name="name">Potted Flowers</field>
+        </record>
+        <record id="potted_tulip" model="product.public.category">
+            <field name="parent_id" ref="potted"/>
+            <field name="name">Potted Tulip</field>
+        </record>
+        <record id="potted_rose" model="product.public.category">
+            <field name="parent_id" ref="potted"/>
+            <field name="name">Potted Rose</field>
+        </record>
+        <record id="potted_primula" model="product.public.category">
+            <field name="parent_id" ref="potted"/>
+            <field name="name">Potted Primula</field>
+        </record>
+        <record id="potted_cyclamen" model="product.public.category">
+            <field name="parent_id" ref="potted"/>
+            <field name="name">Potted Cyclamen</field>
+        </record>
+        <record id="potted_geranium" model="product.public.category">
+            <field name="parent_id" ref="potted"/>
+            <field name="name">Potted Geranium</field>
+        </record>
+        <record id="potted_orchid" model="product.public.category">
+            <field name="parent_id" ref="potted"/>
+            <field name="name">Potted Orchid</field>
+        </record>
+
+        <!-- Delete loftspace products -->
+        <delete id="theme_loftspace_sale.product_1" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_2" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_3" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_4" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_5" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_6" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_7" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_8" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_9" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_10" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_11" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_12" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_13" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_14" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_15" model="product.product"/>
+        <delete id="theme_loftspace_sale.product_16" model="product.product"/>
+
+        <!-- Create new products -->
+        <record id="product_1" model="product.product">
+            <field name="name">Yellow Gerbera</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.gerbera')])]"/>
+            <field name="list_price">3.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_01.jpg"/>
+            <field name="image_variant" type="base64" file="theme_orchid/static/src/img/content/product_img_01.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_2" model="product.product">
+            <field name="name">Purple Tulips</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.tulip')])]"/>
+            <field name="list_price">2.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_02.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_3" model="product.product">
+            <field name="name">Red Roses</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.potted_rose')])]"/>
+            <field name="list_price">15.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_03.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_4" model="product.product">
+            <field name="name">Blue Lavenders</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.lavender')])]"/>
+            <field name="list_price">2.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_04.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_5" model="product.product">
+            <field name="name">Pink Roses</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.potted_rose')])]"/>
+            <field name="list_price">19.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_05.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_6" model="product.product">
+            <field name="name">Pink Tulips</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.tulip')])]"/>
+            <field name="list_price">2.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_06.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_7" model="product.product">
+            <field name="name">Yellow Tulips</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.tulip')])]"/>
+            <field name="list_price">1.5</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_07.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_8" model="product.product">
+            <field name="name">Bunch of Tulips</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.potted_tulip')])]"/>
+            <field name="list_price">9.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_08.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_9" model="product.product">
+            <field name="name">Carnations</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.carnation')])]"/>
+            <field name="list_price">3.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_09.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_10" model="product.product">
+            <field name="name">Red Gerbera</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.gerbera')])]"/>
+            <field name="list_price">3.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_10.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_11" model="product.product">
+            <field name="name">Bunch of Purple Tulips</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.potted_tulip')])]"/>
+            <field name="list_price">9.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_11.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_12" model="product.product">
+            <field name="name">Potted Purple Orchid</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.potted_orchid')])]"/>
+            <field name="list_price">19.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_12.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_13" model="product.product">
+            <field name="name">Potted Yellow Rose</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.potted_rose')])]"/>
+            <field name="list_price">19.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_13.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_14" model="product.product">
+            <field name="name">Potted Primula</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.potted_primula')])]"/>
+            <field name="list_price">14.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_14.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_15" model="product.product">
+            <field name="name">Potted Pink Cyclamen</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.potted_cyclamen')])]"/>
+            <field name="list_price">12.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_15.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_16" model="product.product">
+            <field name="name">Potted Geranium</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_orchid_sale.potted_geranium')])]"/>
+            <field name="list_price">11.0</field>
+            <field name="image" type="base64" file="theme_orchid/static/src/img/content/product_img_16.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+
+    </data>
+</openerp>

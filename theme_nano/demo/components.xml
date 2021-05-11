@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <template name="Nano // Components" id="website.demo_page_components" page="True">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+
+          <section class="bg-gray-dark">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="demo-title mt0 mb0">Components</h1>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 mb64">
+
+              <!-- TITLES -->
+
+              <h4 class="demo-subtitle mt32 mb32">Titles and Bodytext</h4>
+
+              <div class="row">
+                <div class="col-md-7">
+                  <h1 class="mt0">h1. Nano Heading</h1>
+                  <h2>h2. Nano Heading</h2>
+                  <h3>h3. Nano Heading</h3>
+                  <h4>h4. Nano Heading</h4>
+                  <h5>h5. Nano Heading</h5>
+                  <h6>h6. Nano Heading</h6>
+                </div>
+
+                <div class="col-md-5">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor <u>underlined text</u> et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco <a href="#">A link to...</a> laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit nulla pariatur.</p>
+                  <p><strong>BOLD - Excepteur sint occaecat cupidatat non proident,</strong> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p><em>ITALIC - Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em></p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipisicing elit sed do</li>
+                    <li>Eiusmodtempor incididunt ut labore</li>
+                    <li>Et dolore magna aliqua</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <!-- TITLES STYLES -->
+
+              <h4 class="demo-subtitle mt32 mb32">Titles styles</h4>
+
+              <div class="row">
+
+                <div class="col-md-4">
+                  <h3 class="text-muted mt0">h3. Title muted</h3>
+                  <h3 class="text-underline">h3. Title underlined</h3>
+                  <h3 class="text-uppercase">h3. In uppercase</h3>
+                </div>
+
+                <div class="col-md-4">
+                  <h3 class="text-boxed mt8">h3. Boxed</h3>
+                  <h3 class="bg-gamma">h3. Background Color</h3>
+                </div>
+
+                <div class="col-md-4">
+                  <h3 class="mt0"><small>h3. Small title</small></h3>
+                  <h3 class="text-success">h3. Colored</h3>
+                  <h3 class="text-info">h3. Colored</h3>
+                </div>
+
+              </div>
+
+              <!-- BUTTON -->
+
+              <h4 class="demo-subtitle mt32 mb32">Buttons</h4>
+
+              <div class="mb16">
+                <a href="#" class="btn btn-xs btn-default">Default</a>
+                <a href="#" class="btn btn-xs btn-primary">Alpha</a>
+                <a href="#" class="btn btn-xs btn-success">Beta</a>
+                <a href="#" class="btn btn-xs btn-info">Gamma</a>
+                <a href="#" class="btn btn-xs btn-warning">Delta</a>
+                <a href="#" class="btn btn-xs btn-danger">Espilon</a>
+                <a href="#" class="btn btn-xs btn-link">Link</a>
+              </div>
+
+              <div class="mb16">
+                <a href="#" class="btn btn-sm btn-default">Default</a>
+                <a href="#" class="btn btn-sm btn-primary">Alpha</a>
+                <a href="#" class="btn btn-sm btn-success">Beta</a>
+                <a href="#" class="btn btn-sm btn-info">Gamma</a>
+                <a href="#" class="btn btn-sm btn-warning">Delta</a>
+                <a href="#" class="btn btn-sm btn-danger">Espilon</a>
+                <a href="#" class="btn btn-sm btn-link">Link</a>
+              </div>
+
+              <div class="mb16">
+                <a href="#" class="btn btn-default">Default</a>
+                <a href="#" class="btn btn-primary">Alpha</a>
+                <a href="#" class="btn btn-success">Beta</a>
+                <a href="#" class="btn btn-info">Gamma</a>
+                <a href="#" class="btn btn-warning">Delta</a>
+                <a href="#" class="btn btn-danger">Espilon</a>
+                <a href="#" class="btn btn-link">Link</a>
+              </div>
+
+              <div class="mb16">
+                <a href="#" class="btn btn-lg btn-default">Default</a>
+                <a href="#" class="btn btn-lg btn-primary">Alpha</a>
+                <a href="#" class="btn btn-lg btn-success">Beta</a>
+                <a href="#" class="btn btn-lg btn-info">Gamma</a>
+                <a href="#" class="btn btn-lg btn-warning">Delta</a>
+                <a href="#" class="btn btn-lg btn-danger">Espilon</a>
+                <a href="#" class="btn btn-lg btn-link">Link</a>
+              </div>
+
+              <!-- ICONS -->
+
+              <h4 class="demo-subtitle mt32 mb32">Icons</h4>
+              <div class="row s_features_circle">
+
+                <div class="col-md-4 mb32">
+                  <i class="fa fa-1x fa-truck bg-gray-lighter"/>
+                  <i class="fa fa-1x fa-bicycle bg-gray-darker"/>
+                  <i class="fa fa-1x fa-plane bg-alpha"/>
+                  <i class="fa fa-1x fa-fighter-jet bg-beta"/>
+                  <i class="fa fa-1x fa-automobile bg-gamma"/>
+                  <i class="fa fa-1x fa-cab bg-delta"/>
+                  <i class="fa fa-1x fa-wheelchair bg-epsilon"/>
+                </div>
+
+                <div class="col-md-4 mb32">
+                  <i class="fa fa-1x img-rounded fa-truck bg-gray-lighter"/>
+                  <i class="fa fa-1x img-rounded fa-bicycle bg-gray-darker"/>
+                  <i class="fa fa-1x img-rounded fa-plane bg-alpha"/>
+                  <i class="fa fa-1x img-rounded fa-fighter-jet bg-beta"/>
+                  <i class="fa fa-1x img-rounded fa-automobile bg-gamma"/>
+                  <i class="fa fa-1x img-rounded fa-cab bg-delta"/>
+                  <i class="fa fa-1x img-rounded fa-wheelchair bg-epsilon"/>
+                </div>
+
+                <div class="col-md-4 mb32">
+                  <i class="fa fa-1x img-circle fa-truck bg-gray-lighter"/>
+                  <i class="fa fa-1x img-circle fa-bicycle bg-gray-darker"/>
+                  <i class="fa fa-1x img-circle fa-plane bg-alpha"/>
+                  <i class="fa fa-1x img-circle fa-fighter-jet bg-beta"/>
+                  <i class="fa fa-1x img-circle fa-automobile bg-gamma"/>
+                  <i class="fa fa-1x img-circle fa-cab bg-delta"/>
+                  <i class="fa fa-1x img-circle fa-wheelchair bg-epsilon"/>
+                </div>
+
+                <div class="col-md-12 demo-icons">
+                  <i class="fa fa-2x fa-rocket img-thumbnail bg-white"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail bg-gray-lighter"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail bg-gray-darker"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail img-rounded bg-alpha"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail img-rounded bg-beta"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail img-rounded bg-gamma"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail img-circle bg-delta"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail img-circle bg-epsilon"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail img-circle bg-gray-darker"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail shadow bg-epsilon"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail img-circle shadow bg-alpha"/>
+                  <i class="fa fa-2x fa-rocket img-thumbnail img-rounded shadow bg-beta"/>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </t>
+  </template>
+
+  <record id="demo_page_components_menu" model="website.menu">
+    <field name="name">Components</field>
+    <field name="url">/page/demo_page_components</field>
+    <field name="parent_id" ref="website.main_menu"/>
+    <field name="sequence" type="int">50</field>
+  </record>
+
+  </data>
+</openerp>
