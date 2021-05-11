@@ -1,0 +1,272 @@
+
+@include o-theme-cfa-header-shadows();
+
+.oe_website_login_container {
+    padding: 50px;
+}
+
+.btn {
+    &.btn-primary, &.btn-alpha {
+        border-color: darken(theme-color('alpha'), 10%);
+    }
+    &.btn-outline-primary, &.btn-outline-alpha {
+        border-color: darken(theme-color('alpha'), 10%);
+        color: darken(theme-color('alpha'), 20%);
+
+        &:hover {
+            border-color: darken(theme-color('alpha'), 30%);
+            color: darken(theme-color('alpha'), 30%);
+        }
+    }
+}
+
+// ======= WEBSITE ===================
+#wrapwrap {
+    // ======= HEADER ================
+    .navbar {
+        border: none;
+        background: theme-color('alpha');
+        margin: 0px auto;
+
+        .container {
+            width: 100%;
+
+            .navbar-toggler {
+                border-color: o-theme-color('gamma');
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+            }
+            .navbar-collapse {
+                background-color: rgba(0, 0, 0, 0);
+                text-align: center;
+                .navbar-nav {
+                    float: none;
+                }
+
+                #top_menu {
+                    @include o-theme-cfa-top-menu-style($bg-color: o-theme-color('alpha'), $top: 65px, $font-size: 16px, $dropdown-item-color: o-theme-color('gamma'),
+                        $dropdown-item-hover-bg-color: #f8f9fa, $dropdown-item-hover-color: o-theme-color('gamma-dark'),
+                        $nav-link-color: o-theme-color('gamma'), $text-transform: uppercase);
+
+                    > li {
+                        min-height: 55px;
+                        a.nav-link.active {
+                            color: o-theme-color('gamma');
+                            font-weight: normal;
+                        }
+                    }
+                    li {
+                        border-bottom: 3px solid transparent;
+                        &:hover {
+                            border-bottom-color: o-theme-color('gamma');
+                            @include media-breakpoint-down(sm) {
+                                border: none;
+                            }
+                        }
+                        a, span, b {
+                            text-transform: uppercase;
+                            .badge-primary { // is used when there is a product in cart
+                                background-color: o-theme-color('epsilon');
+                                font-size: 0.75em;
+                                padding: 0.1em 0.6em 0.1em;
+                                border-radius: 30px;
+                                position: relative;
+                                top: -15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ======= MAIN ==================
+    > main {
+
+        // ======= CONTENT ===========
+        > #wrap {
+            width: 100%;
+            margin: 0 auto;
+
+            .text-muted:after {
+                color: rgba(0, 0, 0, 0);
+            }
+        }
+
+        // ======= BUTTONS ===========
+        button[type="submit"]:not(#o_payment_form_pay):not(.oe_search_button) {
+            padding: 0 !important;
+            min-width: 25px !important;
+            border-radius: 0px !important;
+            border-width: 1px !important;
+            width: auto !important;
+            background: rgba(0, 0, 0, 0) !important;
+            border-color: rgba(0, 0, 0, 0) !important;
+        }
+        :not(.btn-group) > .btn:not(.ribbon):not(.dropdown-toggle):not(#add_to_cart):not(#clear_cover):not(.fa-shopping-cart):not(.a-submit):not(.js_add_cart_json) {
+            min-width: 150px;
+            padding: 20px;
+            border-radius: 50px;
+            transition: all 0.3s ease-out;
+
+            &.btn-sm {
+                min-width: 0;
+                padding: $btn-padding-y-sm $btn-padding-x-sm;
+                border-radius: $btn-border-radius-sm;
+                transition: none;
+            }
+        }
+
+        // FIXME restore button colors
+
+        // badges
+        .badge, .active > a > .badge {
+            padding: 5px 10px;
+            margin-left: 15px;
+            background-color: o-theme-color('gamma') !important;
+            color: white !important;
+            min-width: 28px;
+        }
+    }
+
+    // ======= FOOTER ================
+    > footer {
+        position: relative;
+        background: o-theme-color('gamma');
+        @include o-theme-cfa-footer-style($bg-color: theme-color('gamma'), $h4-color: o-theme-color('delta'), $text-transform: none, $p-color: #333333);
+
+        #footer {
+            width: 100%;
+
+            .row > div h2 {
+                text-transform: uppercase;
+                font-size: 25px;
+                color: o-theme-color('delta');
+                a {
+                    display: inline;
+                }
+            }
+        }
+        .container {
+            .js_language_selector .dropdown-toggle {
+                padding: 5px 10px;
+            }
+            &.o_footer_copyright {
+                padding: 8px 65px;
+            }
+            h4, h5, h6 {
+                border-top: 5px solid o-theme-color('gamma');
+                margin-right: 50px;
+                padding-top: 20px;
+                color: o-theme-color('delta');
+            }
+        }
+        &.o_footer .text-muted {
+            color: rgba(255, 255, 255, 0.4) !important;
+        }
+        .o_footer_copyright .container {
+            padding: 20px 65px;
+        }
+    }
+}
+
+// Events
+#left_column {
+    > .nav-pills > li {
+        &.active > a {
+            background-color: rgba(0, 0, 0, 0);
+            color: o-theme-color('delta');
+        }
+        > a:hover {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+// Blog
+@include o-theme-cfa-website-blog-styles(1px solid o-theme-color('gamma'), uppercase);
+
+// Forum
+@include o-theme-cfa-forum-style($bg-color: rgba(255, 255, 255, 0.8), $nav-link-active-color: o-theme-color('alpha'), $question-btn-color: none,
+    $btn-block-bg-color: transparent);
+
+.o_wforum_navbar_container {
+    .navbar .navbar-brand {
+        color: rgba(0, 0, 0, 0.9);
+    }
+}
+.website_forum {
+    #wrap {
+        #right-column {
+            border-left: 1px solid gray('200');
+            > .btn {
+                background-color: o-theme-color('delta') !important;
+                color: white;
+                &:hover {
+                    border-color: o-theme-color('delta-dark');
+                }
+            }
+            .card .card-header .card-title {
+                font-size: 20px;
+            }
+        }
+    }
+    .question .mt16 {
+        padding: 10px;
+        background: rgb(230, 230, 230);
+    }
+    .alert .close {
+        background: rgba(0, 0, 0, 0);
+    }
+}
+
+@for $i from 1 through length($o-theme-bg-imgs) {
+    .bg-img-0#{$i} {
+        background-image: nth($o-theme-bg-imgs, $i);
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@if $o-theme-layout == 'boxed' {
+    #wrapwrap {
+        padding: 0 !important;
+
+        > main > #wrap {
+            @include media-breakpoint-up(lg) {
+                width: map-get($grid-breakpoints, lg) - 50;
+                margin: 50px auto;
+            }
+
+            &.container {
+                width: map-get($grid-breakpoints, lg);
+                max-width: 100%;
+            }
+        }
+        .container {
+            width: map-get($grid-breakpoints, lg);
+            max-width: 100%;
+        }
+    }
+} @else {
+    #wrapwrap > main .o_wforum_navbar_container {
+        margin-bottom: 50px;
+    }
+}
+
+.text-primary {
+    color: o-theme-color('alpha');
+}
+.text-success {
+    color: o-theme-color('beta');
+}
+.text-info {
+    color: o-theme-color('gamma');
+}
+.text-warning {
+    color: o-theme-color('delta');
+}
+.text-danger {
+    color: o-theme-color('epsilon');
+}

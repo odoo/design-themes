@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bistro_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="after">
+            <div data-selector="section">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-reorder"/> Borders</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="">None</we-button>
+                        <we-button data-select-class="border-waves">Waves</we-button>
+                        <we-button data-select-class="border-lines">Lines</we-button>
+                        <we-button data-select-class="border-triangles">Triangles</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+</odoo>

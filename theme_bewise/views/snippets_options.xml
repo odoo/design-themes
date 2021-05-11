@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bewise_snippet_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add="section, .carousel, .parallax, .s_color_blocks_2_block, .s_color_blocks_4_block, .s_big_image"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="after">
+            <div data-js='sizing_x'
+                 data-selector=".row.simple-stepwizard-row > .simple-stepwizard-step"
+                 data-drop-in='.row.simple-stepwizard-row'/>
+
+            <div data-js="scroll_nav" data-selector="section">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-mouse-pointer"/> Scroll Nav</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="o_scroll_nav">Enabled</we-button>
+                        <we-button data-select-class="">Disabled</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+
+            <div data-selector=".s_text_highlight"
+                 data-drop-near="section, p, h1, h2, h3, blockquote, .card, .oe_share, .progress"/>
+        </xpath>
+    </template>
+
+    <template id="options_colorpicker" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" add="section, .carousel, .parallax, .s_big_image, .s_team_profile_box, .s_color_blocks_2_block, .s_color_blocks_4_block, .s_event_list time, .s_text_highlight, .s_color_blocks_img_title"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,11 @@
+#pre-header {
+    .year {
+        display: none !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .pre-header-links {
+            width: 100%;
+        }
+    }
+}

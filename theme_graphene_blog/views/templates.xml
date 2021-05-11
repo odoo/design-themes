@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_secondary_variables" inherit_id="theme_graphene._assets_secondary_variables">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene_blog/static/src/scss/secondary_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="_assets_frontend_helpers" inherit_id="theme_graphene._assets_frontend_helpers">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene_blog/static/src/scss/frontend_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="theme_graphene.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene_blog/static/src/scss/graphene.blog.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_editor" inherit_id="theme_graphene.assets_editor">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_graphene_blog/static/src/js/graphene.blog.editor.js"/>
+        </xpath>
+    </template>
+
+    <!-- Snippet's Options -->
+    <template id="s_latest_posts_big_picture_options" inherit_id="website_blog.s_latest_posts_options">
+        <xpath expr="//div[@data-js='js_get_posts_selectBlog']" position="before">
+            <div data-js='s_latest_posts_style' data-selector=".s_latest_posts_big_picture .js_get_posts">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-paint-brush"/> List Style</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="">Default</we-button>
+                        <we-button data-select-class="effect-marley">Marley</we-button>
+                        <we-button data-select-class="effect-dexter">Dexter</we-button>
+                        <we-button data-select-class="effect-chico">Silly-Chico</we-button>
+                        <we-button data-select-class="effect-steve">Lonely Steve</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+            <div data-js='s_latest_posts_options' data-selector=".s_latest_posts_big_picture .js_get_posts">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-cogs"/> Options</we-toggler>
+                    <we-collapse>
+                        <we-button data-toggle-class="first_is_big">First is bigger</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+</odoo>

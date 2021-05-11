@@ -1,0 +1,141 @@
+
+@mixin o-bg-color-extension($color, $text-color, $with-muted) {
+    // FIXME "support" of link colors as before ?
+    // a:not(.btn) {
+    //     color: $linkcolor;
+    //     &:hover, &:focus {
+    //         color: $hovercolor;
+    //     }
+    // }
+}
+
+$o-theme-bg-img-01: url("/web/image/theme_common.image_content_11");
+$o-theme-bg-img-02: url("/web/image/theme_common.image_content_09");
+$o-theme-bg-img-03: url("/web/image/theme_common.image_content_10");
+$o-theme-bg-img-04: url("/web/image/theme_common.image_content_12");
+$o-theme-bg-img-05: null;
+$o-theme-bg-img-06: null;
+$o-theme-bg-img-07: null;
+
+$o-theme-font-size-base: 1rem;
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #ffffff,
+        'beta': #47464b,
+        'gamma': #3B3D4D,
+        'delta': #E6FA16,
+        'epsilon': #9B96B4,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #101010,
+        'gamma': #474747,
+        'delta': #ff0000,
+        'epsilon': #e94060,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #19272c,
+        'gamma': #90c0cf,
+        'delta': #e94060,
+        'epsilon': #5ed7e9,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #212523,
+        'gamma': #2d6a51,
+        'delta': #72bd9e,
+        'epsilon': #bcfa16,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #4B4D52,
+        'gamma': #DE8642,
+        'delta': #B9B1A8,
+        'epsilon': #FFF2E7,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #fee202,
+        'gamma': #514947,
+        'delta': #48372f,
+        'epsilon': #766151,
+    ),
+);
+
+// Grays
+$-gray-700: lighten(#000, 33.5%);
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        'black': #000000,
+        '900': lighten(#000, 20%),
+        '700': $-gray-700,
+        '600': lighten(#000, 46.7%),
+        '200': lighten(#000, 85%),
+        'white': #ffffff,
+    ));
+}
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'body': #535258,
+        'menu':  #49484C,
+        'footer': #3E3F4E,
+        'text': white,
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('Cuprum', sans-serif),
+    ('Open Sans', sans-serif),
+    ('Mukta', sans-serif),
+    ('Overlock', cursive),
+    ('Rajdhani', sans-serif),
+    ('Ubuntu', sans-serif),
+    ('Droid Sans', sans-serif),
+);
+$o-theme-font-urls: (
+    'Cuprum:300,300i,400,400i,700,700i',
+    'Oxygen:300,300i,400,400i,700,700i',
+    'Mukta:300,300i,400,400i,700,700i',
+    'Overlock:300,300i,400,400i,700,700i',
+    'Rajdhani:300,300i,400,400i,700,700i',
+    'Ubuntu:300,300i,400,400i,700,700i',
+    'Droid+Sans:300,300i,400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'Cuprum',
+    'Oxygen',
+    'Mukta',
+    'Overlock',
+    'Rajdhani',
+    'Ubuntu',
+    'Droid Sans',
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': (18 / 16) * 1rem,
+        'font-number': 1,
+        'headings-font-number': 1,
+        'navbar-font-number': 1,
+        'buttons-font-number': 1,
+    ),
+);

@@ -1,0 +1,162 @@
+@mixin o-bg-color-extension($color, $text-color, $with-muted) {
+    a:not(.btn),
+    &.fa,
+    .blockquote-text small {
+        color: if($text-color, $text-color, color-yiq($color));
+    }
+}
+
+$o-theme-font-size-base: 1rem;
+
+$o-theme-sidenav: false;
+$o-theme-sidenav-right: false;
+$o-theme-sidenav-icons: true;
+
+$o-theme-shadow: none;
+$o-theme-navbar-height: 60px;
+$o-theme-header-margin: floor($o-theme-navbar-height*0.25);
+$o-theme-sidenav-width-md: 210px;
+$o-theme-sidenav-width-lg: 230px;
+$o-theme-preheader-width-md: 45px;
+$o-theme-preheader-width-lg: 60px;
+$o-theme-border-radius-large: 20px;
+
+// Snippets
+
+$s-banner-2-background-position: inherit;
+
+$s-label-border-radius: $o-theme-border-radius-large;
+$s-label-padding: 5px 15px;
+
+$s-text-block-image-fw-padding: 0 40px;
+
+// $s-numbers-main-bg-color: $o-theme-gray-darker; FIXME
+$s-numbers-numbers-color: inherit;
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #ed8558,
+        'beta': #74bcc5,
+        'gamma': #7cc086,
+        'delta': #afd5a6,
+        'epsilon': #f3da80,
+    ),
+    (
+        'alpha': #ED8C2B,
+        'beta': #CF4A30,
+        'gamma': #911146,
+        'delta': #35203B,
+        'epsilon': #88A825,
+    ),
+    (
+        'alpha': #79BD8F,
+        'beta': #00A388,
+        'gamma': #046380,
+        'delta': #4BB5C1,
+        'epsilon': #BEEB9F,
+    ),
+    (
+        'alpha': #16c6cc,
+        'beta': #D72D3C,
+        'gamma': #ff6d3b,
+        'delta': #ffb733,
+        'epsilon': #ffd55c,
+    ),
+    (
+        'alpha': #14212B,
+        'beta': #E6E2AF,
+        'gamma': #C9DE55,
+        'delta': #962D3E,
+        'epsilon': #413659,
+    ),
+    (
+        'alpha': #db5d6b,
+        'beta': #ea958e,
+        'gamma': #fffcdb,
+        'delta': #d4e090,
+        'epsilon': #79d4be,
+    ),
+);
+
+// Grays
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        'white': #FFFFFF,
+        'black': #000000,
+    ));
+}
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'menu':  #23262B,
+        'footer': #E2DBD0,
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+// FIXME solve per font options
+
+$o-theme-fonts: (
+    ('Nunito', sans-serif),
+    ('Dosis', sans-serif),
+    ('Lato', sans-serif),
+    ('Advent Pro', sans-serif),
+    ('Oswald', sans-serif),
+    ('Roboto Slab', serif),
+    ('Oxygen', sans-serif),
+    ('Open Sans', sans-serif),
+    ('Merriweather', serif),
+    ('Montserrat Alternates', sans-serif),
+    ('Roboto', sans-serif),
+);
+$o-theme-font-urls: (
+    'Nunito:300,300i,400,400i,700,700i',
+    'Dosis:300,300i,400,400i,700,700i',
+    'Lato:300,300i,400,400i,700,700i',
+    'Advent+Pro:300,300i,400,400i,700,700i',
+    'Oswald:300,300i,400,400i,700,700i',
+    'Roboto+Slab:300,300i,400,400i,700,700i',
+    'Oxygen:300,300i,400,400i,700,700i',
+    'Open+Sans:300,300i,400,400i,700,700i',
+    'Merriweather:300,300i,400,400i,700,700i',
+    'Montserrat+Alternates:300,300i,400,400i,700,700i',
+    'Roboto:300,300i,400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'Nunito',
+    'Dosis',
+    'Lato',
+    'Advent Pro',
+    'Oswald',
+    'Roboto Slab',
+    'Oxygen',
+    'Open Sans',
+    'Merriweather',
+    'Montserrat Alternates',
+    'Roboto',
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': (14 / 16) * 1rem,
+        'font-number': 1,
+        'headings-font-number': 1,
+        'navbar-font-number': 1,
+        'buttons-font-number': 1,
+    ),
+);

@@ -1,0 +1,173 @@
+$o-font-weight-normal: 300;
+$o-theme-font-size-small: 0.875 * $o-theme-font-size-base;
+$o-theme-font-size-extra-small: 0.8125 * $o-theme-font-size-base;
+$o-line-height-base: 1.5;
+$o-headings-line-height: 1.2;
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': darken(#428bca, 6.5%),
+        'beta': #5cb85c,
+        'gamma': #5bc0de,
+        'delta': #f0ad4e,
+        'epsilon': #d9534f,
+    ),
+    (
+        'alpha': #ED8C2B,
+        'beta': #CF4A30,
+        'gamma': #911146,
+        'delta': #35203B,
+        'epsilon': #88A825,
+    ),
+    (
+        'alpha': #79BD8F,
+        'beta': #00A388,
+        'gamma': #046380,
+        'delta': #4BB5C1,
+        'epsilon': #BEEB9F,
+    ),
+    (
+        'alpha': #16c6cc,
+        'beta': #D72D3C,
+        'gamma': #ff6d3b,
+        'delta': #ffb733,
+        'epsilon': #ffd55c,
+    ),
+    (
+        'alpha': #14212B,
+        'beta': #E6E2AF,
+        'gamma': #C9DE55,
+        'delta': #962D3E,
+        'epsilon': #413659,
+    ),
+    (
+        'alpha': #ee592f,
+        'beta': #59c1b0,
+        'gamma': #1fa58d,
+        'delta': #f8c63b,
+        'epsilon': #dcb038,
+    ),
+);
+
+
+// Grays
+$o-gray-color-palettes: (
+    (
+        'white': #FFFFFF,
+        '200': #eceef1,
+        '600': #c0c6d0,
+        '700': #949faf,
+        '800': #535f70,
+        '900': #1d2127,
+        'black': #000000,
+    ),
+    (
+        'white': #FFFFFF,
+        '200': #EFECCA,
+        '700': #A7A37E,
+        '900': #1d2127,
+        'black': #000000,
+    ),
+    (
+        'white': #FFFFFF,
+        '200': #eeeeee,
+        '700': #555555,
+        '900': #222222,
+        'black': #000000,
+    ),
+    (
+        'white': #FFFFFF,
+        '200': #eceef1,
+        '600': #c0c6d0,
+        '700': #949faf,
+        '800': #535f70,
+        '900': #1d2127,
+        'black': #000000,
+    ),
+    (
+        'white': #FFFFFF,
+        '200': #BDD4DE,
+        '700': #348899,
+        '900': #3F5765,
+        'black': #000000,
+    ),
+    (
+        'white': #FFFFFF,
+        '200': #d5deeb,
+        '700': #a8b3c0,
+        '900': #323a49,
+        'black': #000000,
+    ),
+);
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $o-gray-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'menu': map-get($-palette, '200'),
+        'footer': map-get($-palette, '200'),
+        'text': map-get($-palette, '900'),
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font-number': 1,
+        'headings-font-number': 2,
+        'buttons-font-number': 1,
+        'navbar-font-number': 1,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('Roboto', sans-serif),
+    ('Roboto Slab', serif),
+    ('Dosis', sans-serif),
+    ('Lato', sans-serif),
+    ('Advent Pro', sans-serif),
+    ('Oswald', sans-serif),
+    ('Oxygen', sans-serif),
+    ('Open Sans', sans-serif),
+    ('Merriweather', serif),
+    ('Montserrat Alternates', sans-serif),
+    ('Nunito', sans-serif),
+);
+$o-theme-font-urls: (
+    'Roboto:300,300i,400,400i,700,700i',
+    'Roboto+Slab:300,300i,400,400i,700,700i',
+    'Dosis:300,300i,400,400i,700,700i',
+    'Lato:300,300i,400,400i,700,700i',
+    'Advent+Pro:300,300i,400,400i,700,700i',
+    'Oswald:300,300i,400,400i,700,700i',
+    'Oxygen:300,300i,400,400i,700,700i',
+    'Open+Sans:300,300i,400,400i,700,700i',
+    'Merriweather:300,300i,400,400i,700,700i',
+    'Montserrat+Alternates:300,300i,400,400i,700,700i',
+    'Nunito:300,300i,400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'Roboto',
+    'Roboto Slab',
+    'Dosis',
+    'Lato',
+    'Advent Pro',
+    'Oswald',
+    'Oxygen',
+    'Open Sans',
+    'Merriweather',
+    'Montserrat Alternates',
+    'Nunito',
+);

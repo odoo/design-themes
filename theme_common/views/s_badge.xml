@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Badge" id="s_badge">
+        <span class="s_badge badge bg-gamma" data-name="Badge">
+            <i class="fa fa-1x fa-fw fa-folder"/>Category
+        </span>
+    </template>
+
+    <template id="s_badge_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" separator="," add=".s_badge"/>
+        </xpath>
+        <xpath expr="//div[@id='so_content_addition']" position="attributes">
+            <attribute name="data-selector" separator="," add=".s_badge"/>
+        </xpath>
+    </template>
+</odoo>

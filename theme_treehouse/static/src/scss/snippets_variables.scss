@@ -1,0 +1,23 @@
+// Masonry Blocks
+$s-masonry-block-content-top: 15%;
+$s-masonry-block-content-right: 10%;
+$s-masonry-block-content-bottom: 5%;
+$s-masonry-block-content-left: 10%;
+
+// Google Maps
+$s-google-map-desc-alpha: 1;
+$s-google-map-desc-hover-alpha: 1;
+
+@mixin s-google-map-desc-p-hook {
+    float: none;
+}
+@mixin s-google-map-desc-span-hook {
+    float: none;
+}
+@mixin s-google-map-desc-hook {
+    text-align: center;
+    padding: 20px 0;
+}
+
+// Label
+$s-label-padding: 6px 10px;

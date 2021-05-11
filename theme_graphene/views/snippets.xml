@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- theme_common snippets -->
+    <template id="snippet_selection" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]/t[@t-snippet='website.s_cover']" position="after">
+            <t t-snippet="theme_common.s_animated_boxes" t-thumbnail="/theme_graphene/static/src/img/ui/s_animated_blocks.jpg"/>
+            <t t-snippet="theme_common.s_showcase" t-thumbnail="/theme_graphene/static/src/img/ui/s_showcase.jpg"/>
+            <t t-snippet="theme_common.s_numbers" t-thumbnail="/theme_common/static/src/img/snippets/s_numbers.png"/>
+            <t t-snippet="theme_common.s_page_header" t-thumbnail="/theme_common/static/src/img/snippets/s_page_header.png"/>
+            <t t-snippet="theme_common.s_media_list" t-thumbnail="/theme_common/static/src/img/snippets/s_media_list.png"/>
+            <t t-snippet="theme_common.s_masonry_block" t-thumbnail="/theme_graphene/static/src/img/ui/s_masonry_block.jpg"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="theme_common.s_showcase_slider" t-thumbnail="/theme_graphene/static/src/img/ui/s_showcase_slider.jpg"/>
+        </xpath>
+    </template>
+</odoo>

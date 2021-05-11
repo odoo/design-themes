@@ -1,0 +1,229 @@
+// TODO ideally this should be done in primary variables if it was possible.
+// To be replaced when all font sizes / boldness can be controlled thanks to the
+// themes dialog (one day ?)
+
+@if o-website-value('headings-font-number') == 5 {
+    $o-headings-font-weight: 300;
+} @else if o-website-value('headings-font-number') == 6 {
+    $o-h3-font-size-factor: 1.875;
+    $o-h4-font-size-factor: 1.5;
+    $o-h5-font-size-factor: 1.25;
+    $o-h6-font-size-factor: 1.125;
+}
+
+@if o-website-value('font-number') == 2 {
+    $o-theme-font-size-large: 1.25rem;
+} @else if o-website-value('font-number') == 3 {
+    $o-font-weight-normal: 300;
+    $o-font-weight-bold: 600;
+    $o-line-height-base: 1.5;
+} @else if o-website-value('font-number') == 4 {
+    $o-theme-font-size-extra-small: (13/16) * 1rem;
+    $o-theme-layout-font-size: $o-theme-font-size-extra-small;
+} @else if o-website-value('font-number') == 5 {
+    $o-font-weight-normal: 300;
+    $o-theme-layout-font-size: (13/16) * 1rem;
+    $o-theme-letter-spacing: 0;
+} @else if o-website-value('font-number') == 6 {
+    $o-font-weight-normal: 300;
+    $o-font-weight-bold: 600;
+    $o-theme-layout-font-size: (13/16) * 1rem;
+}
+
+@if o-website-value('buttons-font-number') == 3 {
+    $o-btn-font-weight: 600;
+}
+
+//==============================================================================
+
+//
+// Color system
+//
+
+$gray-900: palette-theme-color('secondary') !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  200 !default;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1.25rem !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                  darken(palette-theme-color('primary'), $o-theme-link-color-darken) !default;
+$link-hover-color:            darken($link-color, $o-theme-link-color-hover-darken) !default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-gutter-width:           if($o-theme-layout == 'boxed', 40px, 30px) !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius:               .375rem !default;
+$border-radius-lg:            1.25rem !default;
+$border-radius-sm:            .25rem !default;
+
+$box-shadow-sm:               none !default;
+$box-shadow:                  none !default;
+$box-shadow-lg:               none !default;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-size-base:                    $o-theme-font-size-base !default;
+
+$font-size-lg:                      $o-theme-font-size-large !default;
+$font-size-sm:                      $o-theme-font-size-small !default;
+
+$font-weight-normal:                $o-font-weight-normal !default;
+$font-weight-bold:                  $o-font-weight-bold !default;
+
+$line-height-base:                  $o-line-height-base !default;
+
+$h1-font-size:                      $font-size-base * $o-h1-font-size-factor !default;
+$h2-font-size:                      $font-size-base * $o-h2-font-size-factor !default;
+$h3-font-size:                      $font-size-base * $o-h3-font-size-factor !default;
+$h4-font-size:                      $font-size-base * $o-h4-font-size-factor !default;
+$h5-font-size:                      $font-size-base * $o-h5-font-size-factor !default;
+$h6-font-size:                      $font-size-base * $o-h6-font-size-factor !default;
+
+$headings-font-weight:              $o-headings-font-weight !default;
+$headings-line-height:              $o-headings-line-height !default;
+
+$lead-font-weight:                  400 !default;
+
+$small-font-size:                   87% !default;
+
+$text-muted:                        rgba(palette-color('text'), 0.5) !default;
+
+$blockquote-small-color:            palette-gray('900') !default;
+$blockquote-font-size:              $font-size-base !default;
+
+$list-inline-padding:               1.25rem !default;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:               .34rem !default;
+$input-btn-padding-x:               .8rem !default;
+
+$input-btn-focus-box-shadow:        none !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-border-width:                 .125rem !default;
+
+$btn-padding-y:                     .25rem !default;
+$btn-padding-x:                     1.875rem !default;
+$btn-border-radius:                 1.5rem !default;
+
+$btn-padding-y-sm:                  .125rem !default;
+$btn-padding-x-sm:                  1.563rem !default;
+$btn-border-radius-sm:              1.2rem !default;
+
+$btn-padding-y-lg:                  .5rem !default;
+$btn-padding-x-lg:                  3.125rem !default;
+$btn-border-radius-lg:              1.7rem !default;
+
+$btn-font-weight:                   $o-btn-font-weight !default;
+$btn-box-shadow:                    none !default;
+$btn-focus-box-shadow:              $btn-box-shadow !default;
+$btn-active-box-shadow:             $btn-box-shadow !default;
+
+// Forms
+
+$input-box-shadow:                  none !default;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-bg:                       palette-gray('200') !default;
+$dropdown-border-radius:            0 !default;
+$dropdown-border-width:             0 !default;
+$dropdown-divider-bg:               transparent !default;
+$dropdown-box-shadow:               none !default;
+
+$dropdown-link-hover-color:         palette-theme-color('primary') !default;
+
+$dropdown-link-active-color:        palette-gray('white') !default;
+
+// Navs
+
+$nav-link-padding-y:                .3rem !default;
+$nav-link-padding-x:                .3rem !default;
+
+$nav-tabs-border-color:             palette-theme-color('primary') !default;
+$nav-tabs-link-hover-border-color:  $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        palette-theme-color('epsilon') !default;
+$nav-tabs-link-active-bg:           palette-theme-color('primary') !default;
+$nav-tabs-link-active-border-color: $nav-tabs-link-active-bg !default;
+
+$nav-divider-margin-y:              0 !default;
+
+// Pagination
+
+$pagination-hover-color:            palette-gray('white') !default;
+$pagination-hover-bg:               palette-theme-color('primary') !default;
+$pagination-hover-border-color:     $pagination-hover-bg !default;
+
+// Jumbotron
+
+$jumbotron-padding:                 1.875rem !default;
+$jumbotron-bg:                      palette-theme-color('epsilon') !default;
+
+// Popovers
+
+$popover-border-color:              palette-theme-color('gamma') !default;
+$popover-border-radius:             $border-radius !default;
+
+$popover-header-bg:                 palette-theme-color('gamma') !default;
+
+$popover-header-color:              palette-gray('white') !default;
+
+// Badges
+
+$badge-font-size:                   87.5% !default;
+$badge-padding-y:                   .375rem !default;
+$badge-padding-x:                   .875rem !default;
+$badge-border-radius:               .375rem !default;
+
+// Progress bar
+
+$progress-height:                   1.3rem !default;
+$progress-border-radius:            $border-radius * 2 !default;
+$progress-box-shadow:               none !default;
+$progress-bar-bg:                   palette-theme-color('epsilon') !default;
+
+// Image thumbnails
+
+$thumbnail-box-shadow:              none !default;
+
+// Breadcrumbs
+
+$breadcrumb-bg:                     palette-theme-color('light') !default;
+$breadcrumb-divider-color:          palette-gray('900') !default;
+$breadcrumb-active-color:           palette-theme-color('primary') !default;
+
+// Carousel
+
+$carousel-indicator-width:          .75rem !default;
+$carousel-indicator-height:         .75rem !default;
+
+$carousel-indicator-active-bg:      palette-theme-color('primary') !default;
+$carousel-caption-color:            palette-gray('900') !default;

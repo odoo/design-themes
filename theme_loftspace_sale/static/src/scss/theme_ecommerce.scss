@@ -1,0 +1,150 @@
+.oe_website_sale {
+    padding-bottom: 20px !important;
+    background-color: theme-color('alpha');
+    color: gray('700');
+
+    &:not(.oe_optional_products_modal) {
+        overflow: hidden;
+    }
+    .badge, .active > a > .badge {
+        padding: 5px 10px;
+        margin-left: 15px;
+        min-width: 28px;
+    }
+    .card {
+        text-align: unset;
+    }
+    .oe_cart {
+        .btn-primary {
+            background-color: theme-color('epsilon');
+            color: white;
+        }
+        .oe_website_spinner {
+            max-width: 180px;
+            margin: auto;
+            border-collapse: inherit;
+        }
+        h4 .oe_currency_value, h4 .text-right {
+            font-size: 16px;
+        }
+    }
+    .oe_product {
+        border: 0;
+        section .product_price .btn-secondary { // cart btn
+            top: -6px;
+        }
+    }
+    @include o-theme-cfa-ecommerce-classes($h6-border-bottom: 1px solid gray('200'), $add-cart-width: 50px, $price-h4: $h4-font-size,
+        $nav-link-active-bg-color: theme-color('epsilon'), $btn-secondary-padding: 10px 0 0 20px);
+
+
+    #products_grid_before .category-name {
+        margin-top: 0;
+        padding: 10px 15px;
+        color: theme-color('alpha');
+        text-align: left;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+}
+#products_grid {
+
+    .products_pager {
+        margin-top: 15px;
+        @include media-breakpoint-down(sm) {
+            &:last-child {
+                float: right;
+                width: 100%;
+            }
+        }
+        ul.pagination {
+            a {
+                border: rgba(0, 0, 0, 0);
+                color: gray('700');
+                transition: all 0.3s ease-out;
+
+                &:hover {
+                    border-bottom: 3px solid theme-color('delta');
+                    background: rgba(0, 0, 0, 0);
+                    color: gray('600');
+                }
+            }
+            li.active > a {
+                border-bottom: 3px solid theme-color('epsilon');
+                background-color: rgba(0, 0, 0, 0);
+                color: theme-color('epsilon');
+            }
+        }
+    }
+}
+
+/* =================== Categories =================== */
+
+#products_grid_before {
+    padding-bottom: 800em;
+    margin-bottom: -800em;
+    background-color: theme-color('delta');
+}
+
+/* =================== Product page =================== */
+
+#product_detail {
+    .form-inline {
+        width: 100%;
+    }
+    .col-lg-5 {
+        padding: 40px;
+    }
+}
+.oe_website_sale.container {
+    max-width: 100%;
+    padding-top: 0 !important;
+
+    > :first-child {
+        margin-top: 0 !important;
+    }
+    > :last-child, + .oe_structure {
+        margin-bottom: 0 !important;
+    }
+}
+#add_to_cart {
+    padding: 10px;
+    max-width: 150px;
+    display: inline-block;
+    transition: all 0.5s ease-out;
+    .fa {
+        font-size: 22px;
+        padding-right: 5px;
+    }
+}
+
+/* ======= ADD QUANTITY ========= */
+
+.oe_website_spinner {
+    margin-bottom: 25px;
+    max-width: 160px;
+    width: 100%;
+    height: 40px;
+    @include media-breakpoint-down(md) {
+        margin-left: 0;
+    }
+    .quantity {
+        text-align: center;
+        border-color: gray('700');
+        height: 40px;
+        width: 50px;
+    }
+}
+
+/* ===================== Product list view ======================= */
+
+#payment_method .oe_sale_acquirer_button .btn-primary {
+    background-color: theme-color('epsilon');
+    color: white;
+}
+.oe_website_sale_tx_status {
+    // This was introduced as a fix to correct a layout problem (uncleared
+    // float-right button in the block before).
+    clear: both;
+    padding-top: 4px;
+}

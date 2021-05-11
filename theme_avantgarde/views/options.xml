@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Customize header  -->
+    <template id="avantgarde_header" inherit_id="website.layout" name="Avantgarde Header">
+        <xpath expr="//div[@id='wrapwrap']/header" position="before">
+            <div id="pre-header" class="clearfix">
+                <span class="h5 year"><t t-esc="time.strftime('%Y')"/></span>
+                <h5 class="pre-header-text o_default_snippet_text h5 mb0">Add your custom text here</h5>
+                <span class="pre-header-links h5 text-right">
+                    <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook"/></a>
+                    <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                    <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                    <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                    <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    <a t-att-href="website.social_instagram" t-if="website.social_instagram"><i class="fa fa-instagram"/></a>
+                    <a t-attf-href="mailto:#{res_company.email}" t-if="res_company.email"><i class="fa fa-envelope"></i></a>
+                </span>
+            </div>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+            <attribute name="id">avant_header</attribute>
+        </xpath>
+    </template>
+
+    <!-- Avantgarde's data selectors -->
+    <template id="avant_data-selectors" inherit_id="website.snippet_options" name="Avantgarde data selectors">
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-exclude" add=".s_showcase_image, .s_clonable_boxes, .s_css_slider"/>
+        </xpath>
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-exclude" add=".s_clonable_boxes, .s_css_slider"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-exclude" add=".s_showcase_image, .s_clonable_boxes, .s_css_slider"/>
+        </xpath>
+    </template>
+
+    <!-- Avantgarde BG Effects -->
+    <template id="avantgarde_bg_effects" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js="bg_fx"
+                data-selector="section, .s_clonable_boxes .row > div"
+                data-exclude=".parallax, .s_google_map, .s_showcase_image, .s_showcase, .s_masonry_block, .s_clonable_boxes, .s_css_slider">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-sliders"/> Background Effects</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="insetShadow">Inset Shadow</we-button>
+                        <we-button data-select-class="insetShadowBig">Big Inset Shadow</we-button>
+                        <we-button data-select-class="glossy">Glossy</we-button>
+                        <we-button data-select-class="glossy-medium">Glossy Medium</we-button>
+                        <we-button data-select-class="glossy-soft">Glossy Soft</we-button>
+                        <we-divider/>
+                        <we-button data-select-class="">No effects</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Avantgarde Color Picker -->
+    <template id="avantgarde_colorpicker_pattern" inherit_id="web_editor.colorpicker">
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='alpha']" position="after">
+            <button class="o_small" data-color="alpha-lighter"/>
+            <button class="o_small" data-color="alpha-light"/>
+            <button class="o_small" data-color="alpha-dark"/>
+            <button class="o_small" data-color="alpha-darker"/>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='beta']" position="after">
+            <button class="o_small" data-color="beta-lighter"/>
+            <button class="o_small" data-color="beta-light"/>
+            <button class="o_small" data-color="beta-dark"/>
+            <button class="o_small" data-color="beta-darker"/>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='gamma']" position="after">
+            <button class="o_small" data-color="gamma-lighter"/>
+            <button class="o_small" data-color="gamma-light"/>
+            <button class="o_small" data-color="gamma-dark"/>
+            <button class="o_small" data-color="gamma-darker"/>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='delta']" position="after">
+            <button class="o_small" data-color="delta-lighter"/>
+            <button class="o_small" data-color="delta-light"/>
+            <button class="o_small" data-color="delta-dark"/>
+            <button class="o_small" data-color="delta-darker"/>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='epsilon']" position="after">
+            <button class="o_small" data-color="epsilon-lighter"/>
+            <button class="o_small" data-color="epsilon-light"/>
+            <button class="o_small" data-color="epsilon-dark"/>
+            <button class="o_small" data-color="epsilon-darker"/>
+        </xpath>
+    </template>
+
+    <!-- Avantgarde Typography -->
+    <template id="avantgarde_typo_pattern" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-selector="h1, h2">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-header"/> Text Tranform</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="">Normal</we-button>
+                        <we-button data-select-class="text-uppercase">Uppercase</we-button>
+                        <we-divider/>
+                        <we-button data-select-class="text-small_caps">Small Caps</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+
+            <!-- Drop Caps Option: trigger first <p> elements that dosn't contains a button.
+            Keep element previusly affected too ( to remove the option if not needed anymore) -->
+            <div data-js="typo_style"
+                data-selector="main p, p[class*='drop-caps']"
+                data-exclude="p + p, p:has(.btn)">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-font"/> Font Style</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="">Normal</we-button>
+                        <we-divider/>
+                        <we-button data-select-class="drop-caps">Drop Caps</we-button>
+                        <we-button data-select-class="drop-caps_alpha">Drop Caps Alpha</we-button>
+                        <we-button data-select-class="drop-caps_beta">Drop Caps Beta</we-button>
+                        <we-button data-select-class="drop-caps_gamma">Drop Caps Gamma</we-button>
+                        <we-button data-select-class="drop-caps_delta">Drop Caps Delta</we-button>
+                        <we-button data-select-class="drop-caps_epsilon">Drop Caps Epsilon</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Google Map Options -->
+    <template id="avantgarde_google_map" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js="map" data-selector="section.s_google_map">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-paint-brush"/> Style</we-toggler>
+                    <we-collapse data-no-preview="true">
+                        <we-button class="thumb stdMap-thumb" data-map-color="stdMap"></we-button>
+                        <we-button class="thumb lightMonoMap-thumb" data-map-color="lightMonoMap"></we-button>
+                        <we-button class="thumb cupertinoMap-thumb" data-map-color="cupertinoMap"></we-button>
+                        <we-button class="thumb retroMap-thumb" data-map-color="retroMap"></we-button>
+                        <we-button class="thumb cobaltMap-thumb" data-map-color="cobaltMap"></we-button>
+                        <we-button class="thumb flatMap-thumb" data-map-color="flatMap"></we-button>
+                        <we-button class="thumb blueMap-thumb" data-map-color="blueMap"></we-button>
+                        <we-button class="thumb lillaMap-thumb" data-map-color="lillaMap"></we-button>
+                        <we-button class="thumb carMap-thumb" data-map-color="carMap"></we-button>
+                        <we-button class="thumb bwMap-thumb" data-map-color="bwMap"></we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Avantgarde Top Banner -->
+    <template id="avantgarde_top_content_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js='avantgarde_top_banner_options' data-selector=".s_parallax, .s_google_map">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-magic"/> Position</we-toggler>
+                    <we-collapse data-no-preview="true">
+                        <we-button data-select-class="">Normal</we-button>
+                        <we-button data-select-class="move_to_top">Move to top</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+</odoo>

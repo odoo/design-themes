@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_customize" inherit_id="theme_common.theme_customize">
+        <!-- Set number of colors -->
+        <xpath expr="//t[@t-set='_nb_colors']" position="attributes">
+            <attribute name="t-value">4</attribute>
+        </xpath>
+
+        <!-- Add serif / sans-serif sections -->
+        <xpath expr="//content[@id='theme_customize_content_fonts']" position="inside">
+            <list string="Sans-serif">
+                <selection>
+                    <opt data-xmlid="theme_graphene.option_font_sourcesans" data-font="6"/>
+                    <opt data-xmlid="theme_graphene.option_font_abel" data-font="2"/>
+                    <opt data-xmlid="theme_graphene.option_font_sansserif" data-font="1"/>
+                </selection>
+            </list>
+            <list string="Serif">
+                <selection>
+                    <opt data-xmlid="theme_graphene.option_font_playfair" data-font="5"/>
+                    <opt data-xmlid="theme_graphene.option_font_oldstandard" data-font="4"/>
+                    <opt data-xmlid="theme_graphene.option_font_cinzel" data-font="3"/>
+                </selection>
+            </list>
+        </xpath>
+
+        <!-- Add post card layout option -->
+        <xpath expr="//opt[@id='option_layout_boxed']" position="after">
+            <opt id="option_layout_postcard" string="Postcard" data-xmlid="theme_graphene.graphene_option_layout_postcard_variables" data-icon=""/>
+        </xpath>
+    </template>
+
+    <!-- Sans-serif fonts -->
+    <template id="option_font_sourcesans" inherit_id="theme_graphene._assets_primary_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene/static/src/scss/options/fonts/source-sans.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_abel" inherit_id="theme_graphene._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene/static/src/scss/options/fonts/abel.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_sansserif" inherit_id="theme_graphene._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene/static/src/scss/options/fonts/sans-serif.scss"/>
+        </xpath>
+    </template>
+
+    <!-- Serif fonts -->
+    <template id="option_font_playfair" inherit_id="theme_graphene._assets_primary_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene/static/src/scss/options/fonts/PlayfairDisplay.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_oldstandard" inherit_id="theme_graphene._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene/static/src/scss/options/fonts/OldStandard.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_cinzel" inherit_id="theme_graphene._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene/static/src/scss/options/fonts/Cinzel.scss"/>
+        </xpath>
+    </template>
+
+    <!-- Layout Options -->
+    <template id="graphene_option_layout_postcard_variables" inherit_id="theme_graphene._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_graphene/static/src/scss/options/layouts/postcard_variables.scss"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,149 @@
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1.25rem !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                palette-theme-color("epsilon") !default;
+$link-hover-color:          palette-theme-color("delta") !default;
+$link-hover-decoration:     none !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
+
+$box-shadow-sm:               0 0 .3125rem rgba(0,0,0,.25) !default;
+$box-shadow:                  0 0 .3125rem rgba(0,0,0,.25) !default;
+$box-shadow-lg:               0 0 .3125rem rgba(0,0,0,.25) !default;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-weight-normal:          500 !default;
+
+$h1-font-size:                $o-theme-font-size-base * (36 / 12) !default;
+$h2-font-size:                $o-theme-font-size-base * (30 / 12) !default;
+$h3-font-size:                $o-theme-font-size-base * (24 / 12) !default;
+$h4-font-size:                $o-theme-font-size-base * (18 / 12) !default;
+$h5-font-size:                $o-theme-font-size-base * (14 / 12) !default;
+$h6-font-size:                $o-theme-font-size-base !default;
+
+$hr-border-color:             palette-theme-color('gamma') !default;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .625rem !default;
+$input-btn-padding-x:         1.25rem !default;
+
+$input-btn-focus-color:       darken(palette-theme-color('primary'), 15%) !default;
+$input-btn-focus-box-shadow:  0 0 0 0 0 !default;
+
+$input-btn-padding-y-sm:      .625rem !default;
+$input-btn-padding-x-sm:      1.25rem !default;
+
+$input-btn-padding-y-lg:      .625rem !default;
+$input-btn-padding-x-lg:      1.25rem !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-box-shadow:              0 0 0 0 0 !default;
+$btn-focus-box-shadow:        $btn-box-shadow !default;
+$btn-active-box-shadow:       $btn-box-shadow !default;
+
+$btn-border-width:      0 !default;
+
+// Forms
+
+$input-bg:                              palette-theme-color('primary') !default;
+
+$input-color:                           #242327 !default;
+$input-box-shadow:                      $btn-box-shadow !default;
+
+$input-focus-bg:                        darken(palette-theme-color('primary'), 15%) !default;
+$input-focus-box-shadow:                $btn-box-shadow !default;
+
+$input-height-border:                   .0625rem !default;
+
+$form-check-input-margin-y:             0 !default;
+$form-check-input-margin-x:             0 !default;
+
+$form-check-inline-margin-x:            0 !default;
+$form-check-inline-input-margin-x:      0 !default;
+
+$custom-select-focus-box-shadow:        none !default;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-padding-y:                .3125rem !default;
+$dropdown-spacer:                   0 !default;
+$dropdown-border-radius:            .25rem !default;
+$dropdown-divider-bg:               palette-gray('white') !default;
+$dropdown-box-shadow:               0 .375rem 1.75em rgba(palette-gray('black'), .175) !default;
+
+$dropdown-item-padding-y:           .1875rem !default;
+$dropdown-item-padding-x:           1.25rem !default;
+
+// Navs
+
+$nav-link-padding-y:                .625rem !default;
+$nav-link-padding-x:                .9375rem !default;
+
+$nav-tabs-border-width:             0 !default;
+$nav-tabs-link-active-color:        palette-gray('white') !default;
+$nav-tabs-link-active-bg:           transparent !default;
+
+$nav-pills-link-active-color:       palette-gray('white') !default;
+$nav-pills-link-active-bg:          transparent !default;
+
+$nav-divider-color:                 transparent !default;
+$nav-divider-margin-y:              0 !default;
+
+// Navbar
+
+$navbar-padding-y:                  3px !default;
+$navbar-padding-x:                  0 !default;
+
+$navbar-nav-link-padding-x:         .9375rem !default;
+
+// Pagination
+
+$pagination-focus-box-shadow:       0 0 0 0 0 !default;
+
+// Cards
+
+$card-cap-bg:                       palette-gray('white') !default;
+
+// Badges
+
+$badge-padding-y:                   .3125rem !default;
+$badge-padding-x:                   .625rem !default;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .5rem !default;
+$breadcrumb-padding-x:              .9375rem !default;
+
+$breadcrumb-margin-bottom:          1.25rem !default;
+
+$breadcrumb-bg:                     palette-gray('white') !default;
+
+// Carousel
+
+$carousel-control-color:            palette-gray('800') !default;

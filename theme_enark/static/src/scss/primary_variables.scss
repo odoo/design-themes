@@ -1,0 +1,155 @@
+$o-theme-font-size-base: 1rem;
+
+$o-theme-bg-img-01: url("/theme_enark/static/src/img/backgrounds/bg_img_01.jpg");
+$o-theme-bg-img-02: url("/theme_enark/static/src/img/backgrounds/bg_img_02.jpg");
+$o-theme-bg-img-03: url("/theme_enark/static/src/img/backgrounds/bg_img_03.jpg");
+$o-theme-bg-img-04: url("/theme_enark/static/src/img/backgrounds/bg_img_04.jpg");
+$o-theme-bg-img-05: url("/theme_enark/static/src/img/backgrounds/bg_img_05.jpg");
+$o-theme-bg-img-06: url("/theme_enark/static/src/img/backgrounds/bg_img_06.jpg");
+$o-theme-bg-img-07: url("/theme_enark/static/src/img/backgrounds/bg_img_07.jpg");
+$o-theme-bg-img-08: url("/theme_enark/static/src/img/backgrounds/bg_img_08.jpg");
+$o-theme-bg-img-09: url("/theme_enark/static/src/img/backgrounds/bg_img_09.jpg");
+$o-theme-bg-img-10: url("/theme_enark/static/src/img/backgrounds/bg_img_10.jpg");
+$o-theme-bg-img-11: url("/theme_enark/static/src/img/backgrounds/bg_img_11.jpg");
+$o-theme-bg-img-12: url("/theme_enark/static/src/img/backgrounds/bg_img_12.jpg");
+
+$o-theme-bg-pattern-01: url("/theme_enark/static/src/img/backgrounds/bg_pattern_01.jpg");
+$o-theme-bg-pattern-02: url("/theme_enark/static/src/img/backgrounds/bg_pattern_02.jpg");
+$o-theme-bg-pattern-03: url("/theme_enark/static/src/img/backgrounds/bg_pattern_03.jpg");
+$o-theme-bg-pattern-04: url("/theme_enark/static/src/img/backgrounds/bg_pattern_04.jpg");
+$o-theme-bg-pattern-05: url("/theme_enark/static/src/img/backgrounds/bg_pattern_05.jpg");
+$o-theme-bg-pattern-06: url("/theme_enark/static/src/img/backgrounds/bg_pattern_06.jpg");
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #9ea5ab,
+        'beta': #b5c0c9,
+        'gamma': #778089,
+        'delta': #566b7f,
+        'epsilon': #28354d,
+    ),
+    (
+        'alpha': #2b6990,
+        'beta': #9ea5ab,
+        'gamma': #1fb1b0,
+        'delta': #324465,
+        'epsilon': #28354d,
+    ),
+    (
+        'alpha': #5a8eaf,
+        'beta': #2b6990,
+        'gamma': #566b7f,
+        'delta': #324465,
+        'epsilon': #28354d,
+    ),
+    (
+        'alpha': #1fb1b0,
+        'beta': #566b7f,
+        'gamma': #1b7f7e,
+        'delta': darken(#1b7f7e, 30%),
+        'epsilon': darken(#1b7f7e, 50%),
+    ),
+    (
+        'alpha': #5a8eaf,
+        'beta': #2b6990,
+        'gamma': #1fb1b0,
+        'delta': #324465,
+        'epsilon': #28354d,
+    ),
+    (
+        'alpha': lighten(#000, 45%),
+        'beta': lighten(#000, 80%),
+        'gamma': lighten(#000, 70%),
+        'delta': lighten(#000, 35%),
+        'epsilon': lighten(#000, 20%),
+    ),
+);
+
+// Grays
+$-gray-700: lighten(#000, 55%);
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        'black': #000000,
+        '900': lighten(#000, 40%),
+        '700': $-gray-700,
+        '600': lighten(#000, 70%),
+        '200': lighten(#000, 80%),
+        'white': #FFFFFF,
+    ));
+}
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'body': #e4e4e4,
+        'menu': rgba(0, 0, 0, 0),
+        'footer': rgba(0, 0, 0, 0),
+        'text': $-gray-700,
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('Ubuntu', sans-serif),
+    ('BebasNeue', sans-serif),
+    ('Maven Pro', sans-serif),
+    ('Muli', sans-serif),
+    ('Abel', sans-serif),
+    ('Raleway', sans-serif),
+    ('Alegreya Sans SC', sans-serif),
+    ('Bitter', serif),
+    ('Quattrocento', serif),
+    ('PT Sans', sans-serif),
+    ('Vollkorn', serif),
+);
+$o-theme-font-urls: (
+    'Ubuntu:300,300i,400,400i,700,700i',
+    null,
+    'Maven+Pro:300,300i,400,400i,700,700i',
+    'Muli:300,300i,400,400i,700,700i',
+    'Abel:300,300i,400,400i,700,700i',
+    'Raleway:300,300i,400,400i,700,700i',
+    'Alegreya+Sans+SC:300,300i,400,400i,700,700i',
+    'Bitter:300,300i,400,400i,700,700i',
+    'Quattrocento:300,300i,400,400i,700,700i',
+    'PT+Sans:300,300i,400,400i,700,700i',
+    'Vollkorn:300,300i,400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'Ubuntu',
+    'BebasNeue',
+    'Maven Pro',
+    'Muli',
+    'Abel',
+    'Raleway',
+    'Alegreya Sans SC',
+    'Bitter',
+    'Quattrocento',
+    'PT Sans',
+    'Vollkorn',
+);
+
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': 1.3rem,
+        'font-number': 1,
+        'headings-font-number': 2,
+        'navbar-font-number': 2,
+        'buttons-font-number': 1,
+    ),
+);

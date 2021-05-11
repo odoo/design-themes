@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Full Menu" id="s_full_menu">
+        <section class="s_full_menu">
+            <div class="container-fluid">
+                <h2>Menu A'la carte</h2>
+                <div class="row menu-container">
+                    <div class="col-lg-2 text-center">
+                        <h4>Hamburgers</h4>
+                        <i class="fa fa-glass fa-5x"/>
+                    </div>
+                    <div class="col-lg-10 s_full_menu_content">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img src="/web/image/theme_common.image_content_13" alt="#" class="img img-fluid d-block mx-auto"/>
+                            </div>
+                            <div class="col-lg-8 s_full_menu_content_description">
+                                <h4>Sandwich with Ham and Cheese<span class="slash"><span class="price"> | €</span> 9.00</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt, eum quae neque officiis dignissimos, veritatis amet, dolorum aperiam tempore sed. Modi rerum velit itaque ex nobis vero necessitatibus adipisci eaque cum iste nisi molestias quibusdam, voluptate odit deserunt, beatae.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img src="/web/image/theme_common.image_content_14" alt="#" class="img img-fluid d-block mx-auto"/>
+                            </div>
+                            <div class="col-lg-8 s_full_menu_content_description">
+                                <h4>Honey Dijon Chicken Burger<span class="slash"><span class="price"> | €</span> 12.00</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt, eum quae neque officiis dignissimos, veritatis amet, dolorum aperiam tempore sed. Modi rerum velit itaque ex nobis vero necessitatibus adipisci eaque cum iste nisi molestias quibusdam, voluptate odit deserunt, beatae.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

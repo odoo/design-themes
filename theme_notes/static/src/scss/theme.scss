@@ -1,0 +1,315 @@
+
+@include o-theme-cfa-header-shadows();
+
+main > :first-child{
+    margin: 50px auto;
+}
+#wrap {
+    margin: 50px auto;
+    .text-muted{
+        &:after {
+            color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+/* ========== Navigation =========== */
+.navbar {
+    border: none;
+    background: theme-color('beta');
+
+    .container {
+        padding: 0px;
+
+        .navbar-toggler {
+            border-color: o-theme-color('epsilon');
+            &:hover {
+                background-color: gray('800');
+            }
+        }
+        .navbar-brand {
+            margin-left: 25px;
+        }
+        .navbar-collapse {
+            box-shadow: none;
+        }
+    }
+}
+#wrapwrap > header .container .navbar-collapse {
+    @include media-breakpoint-down(sm) {
+        margin: 0;
+        border: none !important;
+        padding-top: 30px;
+    }
+    .navbar-nav {
+        float: none;
+    }
+}
+#top_menu {
+    @include o-theme-cfa-top-menu-style($bg-color: o-theme-color('beta'), $dropdown-item-hover-color: o-theme-color('alpha'),
+        $nav-link-color: o-theme-color('delta'), $transition: color 0.3s ease-out);
+    .nav-link {
+        &.active {
+            color: o-theme-color('delta');
+            font-weight: normal;
+        }
+        .badge-primary { // shop if there is any product in cart
+            background-color: o-theme-color('delta');
+            font-size: 12px;
+            padding: 0.1em 0.6em 0.1em;
+            border-radius: 30px;
+            position: relative;
+            top: -15px;
+        }
+    }
+}
+/* ====================== Footer ======================== */
+#wrapwrap > footer {
+    .container h4 {
+        border-top: 5px solid o-theme-color('gamma-dark');
+    }
+    @include o-theme-cfa-footer-style($font-size: medium, $padding: 8px 65px, $bg-color: transparent,
+        $h4-padding: 20px 0 0 0, $h4-color: o-theme-color('epsilon'));
+
+    > .container:last-child {
+        margin: 0 !important;
+        width: 100%;
+        background-color: o-theme-color('gamma-dark');
+        color: o-theme-color('alpha');
+        .text-muted, a:not(.js_change_lang) {
+            color: o-theme-color('alpha');
+        }
+    }
+    #footer {
+        margin-top: 0px;
+        background-color: o-theme-color('gamma');
+
+        .row > div h2 a {
+            display: inline;
+        }
+        .col-lg-3, .col-lg-5 {
+            padding: 20px 0px;
+            h2 { // social icons in footer
+                text-transform: uppercase;
+                font-size: 25px;
+                color: o-theme-color('beta');
+                a {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+/* ====================== button style ======================== */
+@mixin btn-styles($btn-color, $btn-hover-color, $btn-text-color, $btn-text-hover-color) {
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    background-color: $btn-color;
+    border: 2px solid rgba(0, 0, 0, 0);
+    color: $btn-text-color;
+
+    &:hover,
+    &:focus {
+        background-color: $btn-hover-color;
+        border: 2px solid $btn-color;
+    }
+    &:hover {
+        color: $btn-text-hover-color;
+    }
+    &:active {
+        background-color: darken($btn-color, 12%);
+        border: 3px solid $btn-color;
+    }
+}
+
+#wrapwrap {
+    @include o-theme-cfa-btn-main-style();
+
+    .btn-secondary {
+        @include btn-styles(gray('100'), gray('400'), gray('700'), $black);
+    }
+    .btn-primary {
+        @include btn-styles(o-theme-color('beta'), o-theme-color('beta-dark'), o-theme-color('alpha'), gray('200'));
+    }
+    .btn-success {
+        @include btn-styles(o-theme-color('gamma'), o-theme-color('gamma-dark'), o-theme-color('alpha'), gray('700'));
+    }
+    .btn-info {
+        @include btn-styles(o-theme-color('delta'), o-theme-color('delta-dark'), o-theme-color('alpha'), o-theme-color('beta'));
+    }
+    .btn-warning {
+        @include btn-styles(o-theme-color('epsilon'), o-theme-color('epsilon-dark'), gray('700'), gray('700'));
+    }
+    .btn-danger {
+        @include btn-styles($black, gray('700'), o-theme-color('delta'), $white);
+    }
+}
+
+/* =====================  BLOG ===================== */
+
+@include o-theme-cfa-website-blog-styles(1px solid black, uppercase);
+
+/* =====================  FORUM ===================== */
+
+//o-theme-color('beta')
+@include o-theme-cfa-forum-style($question-btn-color: o-theme-color('delta'), $nav-link-color: o-theme-color('delta'));
+.o_wforum_navbar_container {
+    .navbar .navbar-brand {
+        color: o-theme-color('alpha');
+    }
+}
+.website_forum {
+    #wrap {
+        padding: 35px;
+        .alert .close, .card {
+            background: rgba(0, 0, 0, 0);
+        }
+        .alert a {
+            color: gray('700');
+        }
+        .card {
+            text-align: center;
+        }
+        .o_page_header {
+            border-bottom: none;
+        }
+        .badge {
+            color: o-theme-color('alpha') !important;
+        }
+        .text-muted {
+            color: gray('200') !important;
+        }
+        table, tbody {
+            background-color: rgba(0, 0, 0, 0) !important;
+            color: white !important;
+        }
+    }
+}
+
+/* =====================  EVENTS ===================== */
+
+.js_event + .container {
+    .card {
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        box-shadow: none;
+    }
+}
+.o_website_event {
+    .btn-primary {
+        background: rgba(0, 0, 0, 0) !important;
+        &:hover {
+            color: gray('600') !important;
+        }
+    }
+}
+
+/* ============== GENERAL STYLES ============== */
+
+/* ============== Form group in events, job etc ============== */
+#wrap {
+    .navbar-form, .form-inline:not(.pagination) {
+        margin-bottom: 0px;
+        margin-top: 5px;
+
+        .form-control {
+            border-radius: 0px;
+            border: none;
+            padding: 20px 12px;
+            background-color: gray('800');
+            border: 1px solid gray('600');
+        }
+        button[type="submit"] {
+            background-color: $black !important;
+            color: gray('600') !important;
+        }
+    }
+}
+
+/* ============== Breadcrumb in events, job etc ============== */
+
+.breadcrumb {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+
+    li a {
+        color: o-theme-color('delta');
+    }
+}
+/* ============== Nav-pills in events, job etc ============== */
+
+@include o-theme-cfa-nav-pills-styles($color: gray('200'), $active-color: o-theme-color('delta'),
+    $badge-color: o-theme-color('beta'), $badge-bg: o-theme-color('delta'));
+
+/* ============== Table styles ============== */
+#wrapwrap table:not(#cart_products):not(#cart_total) {
+    background-color: gray('200');
+    color: gray('700');
+    tbody {
+        background-color: gray('200');
+        a {
+            color: gray('700');
+            text-decoration: underline;
+            &:hover {
+                color: gray('600');
+            }
+        }
+    }
+}
+
+/* ============== Panel styles ============== */
+
+@include o-theme-cfa-card-classes($color: white, $border-color: gray('600'));
+
+@include o-theme-cfa-bg-img-classes();
+
+.text-primary {
+    color: o-theme-color('alpha');
+}
+.text-success {
+    color: o-theme-color('beta');
+}
+.text-info {
+    color: o-theme-color('gamma');
+}
+.text-warning {
+    color: o-theme-color('delta');
+}
+.text-danger {
+    color: red;
+}
+
+@if $o-theme-layout == 'boxed' {
+    #wrapwrap {
+        padding: 0 !important;
+
+        #wrap {
+            width: 992px;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .container {
+                width: 992px;
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+            }
+        }
+        .navbar > .container {
+            width: 100%;
+        }
+    }
+    #footer {
+        width: 100%;
+        margin-top: 32px;
+    }
+    .navbar {
+        width: 100%;
+        margin: 0 auto;
+    }
+} @else {
+    @include o-theme-cfa-full-width-styles();
+    #footer {
+        margin-top: 32px;
+    }
+}

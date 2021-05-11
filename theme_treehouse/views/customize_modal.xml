@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Colors schemes -->
+    <template id="option_colors_05_variables" inherit_id="theme_common.option_colors_05_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/colors/colors_05_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_06_variables" inherit_id="theme_common.option_colors_06_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/colors/colors_06_variables.scss"/>
+        </xpath>
+    </template>
+
+    <!-- Background patterns FIXME ? -->
+    <template id="body_bg_pattern_01" inherit_id="theme_treehouse._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/background/pattern_01_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="body_bg_pattern_02" inherit_id="theme_treehouse._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/background/pattern_02_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="body_bg_pattern_03" inherit_id="theme_treehouse._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/background/pattern_03_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="body_bg_pattern_04" inherit_id="theme_treehouse._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/background/pattern_04_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="body_bg_pattern_05" inherit_id="theme_treehouse._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/background/pattern_05_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="body_bg_pattern_06" inherit_id="theme_treehouse._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/background/pattern_06_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="body_bg_pattern_07" inherit_id="theme_treehouse._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/background/pattern_07_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="body_bg_pattern_08" inherit_id="theme_treehouse._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/background/pattern_08_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="body_bg_pattern_09" inherit_id="theme_treehouse._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_treehouse/static/src/scss/options/background/pattern_09_variables.scss"/>
+        </xpath>
+    </template>
+</odoo>

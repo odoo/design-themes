@@ -1,0 +1,300 @@
+
+$o-theme-hamburger-layout: false;
+
+$o-theme-img-base-url      : "theme_avantgarde/static/src/img/pictures/";
+$o-theme-img-2x-prefix     : "2x_";
+$o-theme-thumb-base-url    : "theme_avantgarde/static/src/img/thumbs/";
+$o-theme-pattern-base-url  : "theme_avantgarde/static/src/img/patterns/";
+$o-theme-pattern-2x-prefix : "2x_";
+
+$o-theme-family-heading-weight: inherit;
+
+// =============================
+// === IMAGES and PATTERNS =====
+// =============================
+
+$o-theme-img-01 : "bg_image_01.jpg";
+$o-theme-img-02 : "bg_image_02.jpg";
+$o-theme-img-03 : "bg_image_03.jpg";
+$o-theme-img-04 : "bg_image_04.jpg";
+$o-theme-img-05 : "bg_image_05.jpg";
+$o-theme-img-06 : "bg_image_06.jpg";
+$o-theme-img-07 : "bg_image_07.jpg";
+$o-theme-img-08 : "bg_image_08.jpg";
+$o-theme-img-09 : "bg_image_09.jpg";
+$o-theme-img-10 : "bg_image_10.jpg";
+$o-theme-img-11 : "bg_image_11.jpg";
+$o-theme-img-12 : "bg_image_12.jpg";
+
+$o-theme-patt-01 : "bg_pattern_01.jpg";
+$o-theme-patt-02 : "bg_pattern_02.jpg";
+$o-theme-patt-03 : "bg_pattern_03.jpg";
+$o-theme-patt-04 : "bg_pattern_04.jpg";
+$o-theme-patt-05 : "bg_pattern_05.jpg";
+$o-theme-patt-06 : "bg_pattern_06.jpg";
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #E91E63,
+        'beta': #FF9833,
+        'gamma': #339ACC,
+        'delta': #00CC64,
+        'epsilon': #572F59,
+
+        'success': #5CB85C,
+        'info': #4D68A3,
+        'warning': #DDC66B,
+        'danger': #D86060,
+    ),
+    (
+        'alpha': #DBAD10,
+        'beta': #595959,
+        'gamma': #808F85,
+        'delta': #91C499,
+        'epsilon': #F2E9DC,
+    ),
+    (
+        'alpha': #3BBFEE,
+        'beta': #58355E,
+        'gamma': #E03616,
+        'delta': #FFF689,
+        'epsilon': #CFFFB0,
+
+        'success': #31B05E,
+        'info': #4D68A3,
+        'warning': #EACF41,
+        'danger': #CB3E3E,
+    ),
+    (
+        'alpha': #009688,
+        'beta': #003249,
+        'gamma': #313715,
+        'delta': #ECCE8E,
+        'epsilon': #D16014,
+
+        'success': #5CB85C,
+    ),
+    (
+        'alpha': #F44336,
+        'beta': #450D0B,
+        'gamma': #1F143B,
+        'delta': #80A2BD,
+        'epsilon': #655557,
+    ),
+    (
+        'alpha': #CDDC39,
+        'beta': #D6F8D6,
+        'gamma': #7FC6A4,
+        'delta': #5D737E,
+        'epsilon': #55505C,
+    ),
+    (
+        'alpha': #FF5722,
+        'beta': #29335C,
+        'gamma': #F3A712,
+        'delta': #F0CEA0,
+        'epsilon': #534D41,
+    ),
+    (
+        'alpha': #607D8B,
+        'beta': #3B1F2B,
+        'gamma': #A9ACA9,
+        'delta': #969397,
+        'epsilon': #60495A,
+    ),
+);
+
+// Grays
+$-black: #000000;
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        'black': $-black,
+        '975': lighten($-black, 13%),
+        '950': lighten($-black, 16%),
+        '925': lighten($-black, 19%),
+        '900': lighten($-black, 22%),
+        '800': lighten($-black, 25%),
+        '700': lighten($-black, 33.5%),
+        '650': lighten($-black, 50%),
+        '600': lighten($-black, 65.5%),
+        '400': lighten($-black, 82%),
+        '200': lighten($-black, 93.5%),
+        'white': lighten($-black, 100%),
+    ));
+}
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'body': #FFFFFF,
+        'menu': #FFFFFF,
+        'footer': #FFFFFF,
+        'text': #000000,
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font-number': 1,
+        'headings-font-number': 2,
+        'navbar-font-number': 1,
+        'buttons-font-number': 3,
+    ),
+);
+
+// =============================
+// === s_animated_boxes ========
+// =============================
+
+@mixin s-animated-boxes-slide-hook {
+    transition: none;
+    display: none;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@mixin s-animated-boxes-slide-hover-hook {
+    transition: none;
+}
+
+// =================================
+// s_medias_list
+// =================================
+
+$s-medias-list-bg-color-main: #FFFFFF;
+
+// =============================
+// Page Header  s_page_header ==
+// =============================
+
+// Snippet
+$s-page-header-main-font-color     : #FFFFFF;
+
+// Labels
+$s-page-header-label-font-size     : .9em;
+$s-page-header-label-border-radius : 2px;
+$s-page-header-label-padding       : 5px 8px;
+$s-page-header-label-margin        : 0 10px 0 0;
+
+// Labels > i
+$s-page-header-i-margin: 0 6px;
+
+// =============================
+// === s_showcase_slider =======
+// =============================
+
+@mixin s-showcase-slider-navigation-hook {
+    span {
+        text-indent:100%;
+        background:url("../img/ui/s_showcase_slider-arrow.svg") no-repeat center center;
+        &:before{ content: none;}
+    }
+    &:first-of-type {
+        span {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@mixin s-showcase-slider-close-hook {
+    background: url("../img/ui/s_showcase_slider-close.svg") no-repeat center center;
+    text-indent: 100%;
+}
+
+@mixin s-showcase-slider-slider-hover-hook {
+    &:after{
+        background: rgba(0, 0, 0, 0.4) url("../img/ui/s_showcase_slider-zoom.svg") no-repeat center center;
+    }
+}
+
+// =============================
+// === s_css_slider ============
+// =============================
+
+@mixin s-css-slider-navigation-hook {
+    span {
+        text-indent: 100%;
+        background: url("../img/ui/s_showcase_slider-arrow.svg") no-repeat center center;
+        &:before {
+            content: none;
+        }
+    }
+    &:first-of-type {
+        span {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@mixin s-css-slider-close-hook {
+    background: url("../img/ui/s_showcase_slider-close.svg") no-repeat center center;
+    text-indent: 100%;
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('Lato', sans-serif),
+    ('Raleway', sans-serif),
+    ('Heebo', sans-serif),
+    ('Abril Fatface', cursive),
+    ('Alfa Slab One', cursive),
+    ('Arvo', serif),
+    ('Cantata One', serif),
+    ('Open Sans Condensed', sans-serif),
+    ('Open Sans', sans-serif),
+    ('Oswald', sans-serif),
+    ('Poiret One', cursive),
+    ('PT Sans Narrow', sans-serif),
+    ('Roboto Slab', serif),
+    ('Rufina', serif),
+    ('Vollkorn', serif),
+);
+$o-theme-font-urls: (
+    'Lato:300,300i,400,400i,700,700i',
+    'Raleway:300,300i,400,400i,700,700i',
+    'Heebo:300,300i,400,400i,700,700i',
+    'Abril+Fatface:300,300i,400,400i,700,700i',
+    'Alfa+Slab+One:300,300i,400,400i,700,700i',
+    'Arvo:300,300i,400,400i,700,700i',
+    'Cantata+One:300,300i,400,400i,700,700i',
+    'Open+Sans+Condensed:300,300i,400,400i,700,700i',
+    'Open+Sans:300,300i,400,400i,700,700i',
+    'Oswald:300,300i,400,400i,700,700i',
+    'Poiret+One:300,300i,400,400i,700,700i',
+    'PT+Sans+Narrow:300,300i,400,400i,700,700i',
+    'Roboto+Slab:300,300i,400,400i,700,700i',
+    'Rufina:300,300i,400,400i,700,700i',
+    'Vollkorn:300,300i,400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'Lato',
+    'Raleway',
+    'Heebo',
+    'Abril',
+    'Alfa Slab One',
+    'Arvo',
+    'Cantata',
+    'Open Sans Condenced',
+    'Open Sans',
+    'Oswald',
+    'Poiret One',
+    'PT Sans Narrow',
+    'Roboto Slab',
+    'Rufina',
+    'Vollkorn',
+);

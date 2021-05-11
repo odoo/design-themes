@@ -1,0 +1,25 @@
+
+// Grays
+$i: 1;
+$o-color-palettes: ();
+@each $-palette in $o-gray-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'menu': map-get(nth($o-theme-color-palettes, $i), 'secondary'),
+        'footer': map-get($-palette, '200'),
+        'text': map-get(nth($o-theme-color-palettes, $i), 'secondary'),
+    ));
+    $i: $i + 1;
+}
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font-number': 6,
+        'headings-font-number': 6,
+        'navbar-font-number': 1,
+        'buttons-font-number': 6,
+    ),
+);

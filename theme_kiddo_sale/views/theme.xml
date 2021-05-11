@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_frontend" inherit_id="theme_kiddo.assets_frontend" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_kiddo_sale/static/src/scss/theme_ecommerce.scss"/>
+        </xpath>
+    </template>
+
+    <!-- FIXME color presets ? -->
+</odoo>

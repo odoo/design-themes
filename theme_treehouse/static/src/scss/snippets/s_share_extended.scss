@@ -1,0 +1,21 @@
+.s_share {
+    .s_share_title {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+            .fa {
+                background-color: theme-color('primary');
+                color: #fff;
+            }
+        }
+        .fa {
+            background-color: gray('200');
+            color: theme-color('primary');
+        }
+        @include fa-size-generator(20px);
+    }
+}

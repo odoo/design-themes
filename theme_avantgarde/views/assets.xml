@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_utils" inherit_id="web._assets_utils">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/mixins.scss"/>
+        </xpath>
+    </template>
+    <template id="_assets_primary_variables" inherit_id="website._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/primary_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="_assets_secondary_variables" inherit_id="website._assets_secondary_variables" priority="1">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/secondary_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="_assets_frontend_helpers" inherit_id="website._assets_frontend_helpers" priority="1">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/bootstrap_overridden.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="website.assets_frontend" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_media_list.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_clonable_boxes.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_showcase.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_css_slider.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_showcase_image.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_masonry_block.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_showcase_slider.scss"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/images.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/main.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_avantgarde/static/src/js/avantgarde.frontend.js"/>
+            <script type="text/javascript" src="/theme_common/static/lib/YTPlayer/jquery.mb.YTPlayer.js"/>
+            <script type="text/javascript" src="/theme_common/static/src/js/s_css_slider_frontend.js"/>
+            <script type="text/javascript" src="/theme_common/static/src/js/s_showcase_slider_frontend.js"/>
+            <script type="text/javascript" src="/theme_avantgarde/static/src/js/avantgarde.ext.frontend.js"/>
+        </xpath>
+    </template>
+
+    <template id="assets_editor" inherit_id="website.assets_editor">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_common/static/src/js/s_animated_boxes_editor.js"/>
+            <script type="text/javascript" src="/theme_common/static/src/js/s_showcase_editor.js"/>
+            <script type="text/javascript" src="/theme_common/static/src/js/s_css_slider_editor.js"/>
+            <script type="text/javascript" src="/theme_common/static/src/js/s_showcase_slider_editor.js"/>
+            <script type="text/javascript" src="/theme_avantgarde/static/src/js/avantgarde.editor.js"/>
+            <script type="text/javascript" src="/theme_avantgarde/static/src/js/avantgarde.ext.editor.js"/>
+        </xpath>
+    </template>
+</odoo>

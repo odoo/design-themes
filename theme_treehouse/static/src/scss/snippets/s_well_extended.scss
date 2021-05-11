@@ -1,0 +1,13 @@
+.s_well {
+    box-shadow: $o-theme-shadow;
+
+    .card-text {
+        overflow: hidden;
+    }
+    ol, p, ul {
+        width: 100%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

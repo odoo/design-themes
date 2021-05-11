@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Some snippets are always included with theme_common -->
+    <template id="snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="theme_common.s_google_map" t-thumbnail="/theme_common/static/src/img/snippets/s_google_map.png"/>
+        </xpath>
+    </template>
+
+    <!-- Extend customize modal to suggest more colors, more fonts -->
+    <template id="theme_customize" inherit_id="website.theme_customize">
+        <!-- Add color suggestions -->
+        <xpath expr="//content[@id='theme_customize_content_colors']/*" position="before">
+            <list data-depends="theme_color_suggestions">
+                <opt data-xmlid=""/>
+                <!-- Only allow 9 (but most themes have 6) -->
+                <t t-set="_nb_colors" t-value="6"/>
+                <t t-foreach="_nb_colors - 1" t-as="i">
+                    <t t-set="number" t-value="i + 2"/>
+                    <opt t-attf-data-xmlid="theme_common.option_colors_0#{number}_variables"/>
+                </t>
+            </list>
+        </xpath>
+    </template>
+
+    <!-- Those are independant from the user palette and act as default for it -->
+    <template id="option_colors_02_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_02_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_03_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_03_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_04_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_04_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_05_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_05_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_06_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_06_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_07_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_07_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_08_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_08_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_09_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_09_variables.scss"/>
+        </xpath>
+    </template>
+</odoo>

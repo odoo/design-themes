@@ -1,0 +1,147 @@
+@mixin o-bg-color-extension($color, $text-color, $with-muted) {
+    // FIXME "support" of link colors as before ?
+    // a:not(.btn) {
+    //     color: $linkcolor;
+    //     &:hover, &:focus {
+    //         color: $hovercolor;
+    //     }
+    // }
+}
+
+$o-theme-navbar-height: 80px;
+$o-theme-hamburger-layout: false;
+
+$o-theme-bg-img-01: url("/web/image/theme_common.image_content_11");
+$o-theme-bg-img-02: url("/web/image/theme_common.image_content_09");
+$o-theme-bg-img-03: url("/web/image/theme_common.image_content_10");
+$o-theme-bg-img-04: url("/web/image/theme_common.image_content_12");
+$o-theme-bg-img-05: url("/web/image/theme_common.image_content_02");
+$o-theme-bg-img-06: url("/web/image/theme_common.image_content_03");
+$o-theme-bg-img-07: url("/web/image/theme_common.image_content_07");
+
+$font-size-base: 1rem;
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$-palettes: (
+    (
+        'alpha': #ffffff,
+        'beta': #cdd0a2,
+        'gamma': #b4bbb9,
+        'delta': #242327,
+        'epsilon': #957985,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #f4f1db,
+        'gamma': #928371,
+        'delta': #53453f,
+        'epsilon': #c31737,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #d8eff1,
+        'gamma': #0d75ac,
+        'delta': #000f3d,
+        'epsilon': #e07a6b,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #faf7e1,
+        'gamma': #e3d6c6,
+        'delta': #eed187,
+        'epsilon': #dc733f,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #cfcfcf,
+        'gamma': #2e2e2e,
+        'delta': #000000,
+        'epsilon': #32c0c9,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #aacfb0,
+        'gamma': #4dac5e,
+        'delta': #93ab12,
+        'epsilon': #e62e3e,
+    ),
+);
+$o-theme-color-palettes: ();
+@each $-palette in $-palettes {
+    $o-theme-color-palettes: append($o-theme-color-palettes, map-merge($-palette, (
+        'primary': map-get($-palette, 'beta'),
+        'secondary': map-get($-palette, 'alpha'),
+    )));
+}
+
+// Grays
+$-gray-700: lighten(#000, 33.5%);
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        'black': #000000,
+        '900': lighten(#000, 20%),
+        '700': $-gray-700,
+        '600': lighten(#000, 46.7%),
+        '200': lighten(#000, 85%),
+        'white': #ffffff,
+    ));
+}
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'body': desaturate(map-get($-palette, 'delta'), 100%),
+        'menu':  map-get($-palette, 'beta'),
+        'footer': map-get($-palette, 'delta'),
+        'text': $-gray-700,
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('Source Sans Pro', sans-serif),
+    ('Forum', cursive),
+    ('Heebo', sans-serif),
+    ('Buda', cursive),
+    ('PT Serif', serif),
+    ('Rajdhani', sans-serif),
+);
+$o-theme-font-urls: (
+    'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    'Forum:300,300i,400,400i,700,700i',
+    'Heebo:300,300i,400,400i,700,700i',
+    'Buda:300,300i,400,400i,700,700i',
+    'PT+Serif:300,300i,400,400i,700,700i',
+    'Rajdhani:300,300i,400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'Source Sans Pro',
+    'Forum',
+    'Heebo',
+    'Buda',
+    'PT Serif',
+    'Rajdhani',
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': (50 / 16) * 1rem,
+        'font-number': 1,
+        'headings-font-number': 1,
+        'navbar-font-number': 1,
+        'buttons-font-number': 1,
+    ),
+);

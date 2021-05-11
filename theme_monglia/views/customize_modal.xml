@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_customize" inherit_id="theme_common.theme_customize">
+        <xpath expr="//content[@id='theme_customize_content_navbar']/*" position="before">
+            <list string="Menu">
+                <checkbox><opt id="option_hamburger_menu" string="Hamburger" data-xmlid="theme_monglia.website_custom_navigation, theme_monglia.website_custom_navigation_variables, website.no_autohide_menu" data-reload="/"/></checkbox>
+                <opt data-depends="option_hamburger_menu" string="Left" data-xmlid=""/>
+                <opt data-depends="option_hamburger_menu" string="Right" data-xmlid="theme_monglia.option_navigation_right_style"/>
+            </list>
+        </xpath>
+    </template>
+
+    <template id="website_custom_navigation" inherit_id="website.layout" priority="1">
+        <xpath expr="//div[@id='wrapwrap']//header//*[hasclass('navbar-toggler')]" position="replace"/>
+        <xpath expr="//div[@id='wrapwrap']//header//*[hasclass('navbar-brand')]" position="replace">
+            <h1>$0</h1>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']//header//*[hasclass('navbar-collapse')]" position="attributes">
+            <attribute name="class"/>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']//header//*[@id='top_menu']" position="attributes">
+            <attribute name="class">nav navbar-nav</attribute>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']//header//*[@id='top_menu']/*[hasclass('divider')]" position="replace"/>
+        <xpath expr="//div[@id='wrapwrap']//header//div[hasclass('container')]" position="inside">
+            <h2>
+                <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                <a t-att-href="website.social_instagram" t-if="website.social_instagram"><i class="fa fa-instagram"/></a>
+            </h2>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']//header//div[hasclass('container')]" position="after">
+            <div id="menuToggle" contenteditable="false"><i class="fa fa-bars"/></div>
+        </xpath>
+    </template>
+    <template id="website_custom_navigation_variables" inherit_id="theme_monglia._assets_primary_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_monglia/static/src/scss/options/nav/hamburger_layout_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_navigation_right_style" inherit_id="theme_monglia.website_custom_navigation_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_monglia/static/src/scss/options/nav/option_navigation_right.scss"/>
+        </xpath>
+    </template>
+</odoo>

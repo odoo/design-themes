@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_masonry_block" name="Masonry Block">
+        <section class="s_masonry_block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="block col-lg-6 text-center bg-img-03">
+                        <div class="content">
+                            <h2>A great title</h2>
+                            <p>And a great subtitle</p>
+                        </div>
+                    </div>
+                    <div class="s_masonry_block_pseudo_col col-lg-6">
+                        <div class="row">
+                            <div class="block col-lg-6 col-md-6 bg-alpha text-center">
+                                <div class="content">
+                                    <h3>A great title</h3>
+                                    <p>And a great subtitle</p>
+                                </div>
+                            </div>
+                            <div class="block col-lg-6 col-md-6 text-center bg-img-01">
+                                <div class="content">
+                                    <h3>A great title</h3>
+                                    <p>And a great subtitle</p>
+                                </div>
+                            </div>
+                            <div class="block col-lg-6 col-md-6 text-center bg-img-06">
+                                <div class="content">
+                                    <h3>A great title</h3>
+                                    <p>And a great subtitle</p>
+                                </div>
+                            </div>
+                            <div class="block col-lg-6 col-md-6 text-center bg-beta-lighter">
+                                <div class="content">
+                                    <h3>A great title</h3>
+                                    <p>And a great subtitle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_masonry_block-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" separator=", " add=".s_masonry_block .block"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" separator=", " add=".s_masonry_block .block"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-selector" separator=", " add=".s_masonry_block .block"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-selector=".s_masonry_block">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-expand"/> Inner Spacing</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="">Normal</we-button>
+                        <we-button data-select-class="s_ratio_2_1">Bigger</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+</odoo>

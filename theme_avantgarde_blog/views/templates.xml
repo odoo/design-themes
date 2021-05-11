@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_primary_variables" inherit_id="website_blog._assets_primary_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde_blog/static/src/scss/primary_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="theme_avantgarde.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde_blog/static/src/scss/s_latest_posts.scss"/>
+        </xpath>
+    </template>
+
+    <!-- Snippet's Options -->
+    <template id="s_latest_posts_big_picture_options" inherit_id="website_blog.s_latest_posts_options">
+        <xpath expr="//div[@data-js='js_get_posts_selectBlog']" position="before">
+            <div data-js='s_latest_posts_style' data-selector=".s_latest_posts_big_picture .js_get_posts">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-paint-brush"/> List Style</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="">Default</we-button>
+                        <we-button data-select-class="effect-marley">Marley</we-button>
+                        <we-button data-select-class="effect-dexter">Dexter</we-button>
+                        <we-button data-select-class="effect-chico">Silly-Chico</we-button>
+                        <we-button data-select-class="effect-steve">Lonely Steve</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+            <div data-js='s_latest_posts_options' data-selector=".s_latest_posts_big_picture .js_get_posts">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-cogs"/> Options</we-toggler>
+                    <we-collapse>
+                        <we-button data-toggle-class="first_is_big">First is bigger</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Latest posts's Orizzontal big images Template -->
+
+    <!-- Snippet's Body -->
+    <template id="s_latest_posts_big_orizontal" name="Latest Posts Horizontal">
+        <section class="s_latest_posts_big_orizontal">
+            <div class="js_get_posts container-fluid"  data-loading="true" data-template="theme_avantgarde_blog.s_latest_posts_big_orizontal_template"/>
+        </section>
+    </template>
+
+    <!-- Latest posts's Template -->
+    <template id="s_latest_posts_big_orizontal_template">
+        <t t-foreach="posts" t-as="p">
+            <figure class="post s_latest_posts_post">
+                <figcaption>
+                    <h4 class="mb0"><a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)"><t t-esc="p.name"/></a></h4>
+                    <h5 class="mt0 mb4" t-field="p.write_date" t-options='{"format": "dd/MM"}' />
+                </figcaption>
+                <a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)">
+                    <t t-call="website.record_cover">
+                        <t t-set="_record" t-value="p"/>
+                        <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+                    </t>
+                </a>
+            </figure>
+        </t>
+    </template>
+
+    <template id="s_latest_posts_place_in_tab" inherit_id="website_blog.website_blog">
+        <xpath expr="//t[@t-snippet='website_blog.s_latest_posts']" position="before">
+            <t t-snippet="theme_avantgarde_blog.s_latest_posts_big_orizontal" t-thumbnail="/theme_avantgarde_blog/static/src/img/ui/s_latest_posts_horizontal.jpg"/>
+        </xpath>
+    </template>
+</odoo>

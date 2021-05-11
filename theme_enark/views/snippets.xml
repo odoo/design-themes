@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippet_selection" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]/t[@t-snippet='website.s_cover']" position="after">
+            <t t-snippet="theme_common.s_color_blocks_2" t-thumbnail="/theme_common/static/src/img/snippets/s_color_block.png"/>
+            <t t-snippet="theme_common.s_color_blocks_4" t-thumbnail="/theme_common/static/src/img/snippets/s_color_block.png"/>
+            <t t-snippet="theme_common.s_column" t-thumbnail="/theme_common/static/src/img/snippets/s_column.png"/>
+            <t t-snippet="theme_common.s_two_columns" t-thumbnail="/theme_common/static/src/img/snippets/s_two_columns.png"/>
+            <t t-snippet="theme_common.s_three_columns_circle" t-thumbnail="/theme_common/static/src/img/snippets/s_three_columns_circle.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="theme_common.s_text_highlight" t-thumbnail="/theme_common/static/src/img/snippets/s_color_block.png"/>
+            <t t-snippet="theme_common.s_big_icons" t-thumbnail="/theme_common/static/src/img/snippets/s_icon_box_circle.png"/>
+            <t t-snippet="theme_common.s_icon_box" t-thumbnail="/theme_common/static/src/img/snippets/s_icon_box.png"/>
+            <t t-snippet="theme_common.s_progress_bar" t-thumbnail="/theme_common/static/src/img/snippets/s_progress_bar.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="theme_common.s_team_profiles" t-thumbnail="/theme_common/static/src/img/snippets/s_profile.png"/>
+            <t t-snippet="theme_common.s_profile" t-thumbnail="/theme_common/static/src/img/snippets/s_profile.png"/>
+            <t t-snippet="theme_common.s_timeline" t-thumbnail="/theme_common/static/src/img/snippets/s_timeline.png"/>
+            <t t-snippet="theme_common.s_event_list" t-thumbnail="/theme_common/static/src/img/snippets/s_event_list.png"/>
+            <t t-snippet="theme_common.s_discount" t-thumbnail="/theme_common/static/src/img/snippets/s_comparison.png"/>
+            <t t-snippet="theme_common.s_pricing" t-thumbnail="/theme_common/static/src/img/snippets/s_comparison.png"/>
+            <t t-snippet="theme_common.s_process_steps" t-thumbnail="/theme_common/static/src/img/snippets/s_process_step.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="theme_common.s_big_image" t-thumbnail="/theme_common/static/src/img/snippets/s_big_image.png"/>
+            <t t-snippet="theme_common.s_big_image_parallax" t-thumbnail="/theme_common/static/src/img/snippets/s_big_image.png"/>
+        </xpath>
+    </template>
+</odoo>

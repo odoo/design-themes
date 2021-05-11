@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippet_selection" inherit_id="theme_monglia.snippet_selection">
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t[@t-snippet='theme_common.s_full_menu']" position="replace"/>
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t[@t-snippet='theme_common.s_compact_menu']" position="replace"/>
+    </template>
+</odoo>

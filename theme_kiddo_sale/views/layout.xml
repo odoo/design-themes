@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Product grid view -->
+        <template id="products" inherit_id='website_sale.products' name="Products" priority="15">
+            <xpath expr="//*[hasclass('oe_website_sale')]//*[1]" position="before">
+                <t t-call="theme_kiddo_sale.search"/>
+            </xpath>
+            <!-- Use container fluid instead of container -->
+            <xpath expr="//div[hasclass('oe_website_sale')]" position="attributes">
+                <attribute name="class">container-fluid oe_website_sale</attribute>
+            </xpath>
+            <!-- Add pager to the top and bottom -->
+            <xpath expr="//div[@id='products_grid']/*[1]" position="before">
+                <div class="products_pager form-inline justify-content-center">
+                    <t t-call="website_sale.pricelist_list"/>
+                    <t t-call="website.pager"/>
+                </div>
+            </xpath>
+            <xpath expr="//div[@id='products_grid']/*[last()]" position="after">
+                <div class="products_pager form-inline justify-content-center">
+                    <t t-call="website_sale.pricelist_list"/>
+                    <t t-call="website.pager"/>
+                </div>
+            </xpath>
+            <!-- Remove original pager -->
+            <xpath expr="//div[hasclass('products_pager')]" position="replace"/>
+            <xpath expr="//div[hasclass('oe_website_sale')]/div[hasclass('products_pager')]" position="replace"/>
+        </template>
+
+        <!-- Rearrange product page -->
+        <template id="product" inherit_id='website_sale.product' name="Product">
+            <!-- Widen breadcrumb -->
+            <xpath expr="//*[@id='wrap']//*[hasclass('row')]/*[1]" position="attributes">
+                <attribute name="class">col-md-12</attribute>
+            </xpath>
+            <!-- Move search bar -->
+            <xpath expr="//*[@id='wrap']//*[hasclass('row')]/*[2]" position="replace"/>
+            <xpath expr="//*[@id='wrap']//*[hasclass('row')]" position="before">
+                <t t-call="theme_kiddo_sale.search"/>
+            </xpath>
+            <!-- Move product name -->
+            <!-- FIXME -->
+<!--             <xpath expr="//h1[@t-field='product.name']" position="replace"/> -->
+<!--             <xpath expr="//*[@id='website_published_button']" position="after"> -->
+<!--                 <div class="col-md-12 product-title"> -->
+<!--                     <h1 itemprop="name" t-field="product.name">Product Name</h1> -->
+<!--                 </div> -->
+<!--             </xpath> -->
+
+            <!-- New add to cart button -->
+            <xpath expr="//a[@id='add_to_cart']" position="replace">
+                <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit d-block" href="#">
+                    <i class="fa fa-shopping-cart"/>
+                    Add to Cart
+                </a>
+            </xpath>
+        </template>
+
+        <!-- Add class to recommended products -->
+        <template id="recommended_products" inherit_id="website_sale.recommended_products" name="Alternative Products">
+            <xpath expr="//div[hasclass('container')]" position="attributes">
+                <attribute name='id'>website_sale_recommended_products</attribute>
+            </xpath>
+        </template>
+
+        <!-- Add h3 tag to the category list -->
+        <template id="products_categories" inherit_id="website_sale.products_categories" name="Product Categories">
+            <xpath expr="//div[@id='wsale_products_categories_collapse']/ul" position="before">
+                <h3 class="category-name">Product categories</h3>
+            </xpath>
+        </template>
+
+        <record id="website_sale.products_add_to_cart" model="ir.ui.view">
+            <field name="active" eval='True'/>
+        </record>
+
+        <record id="website_sale.products_categories" model="ir.ui.view">
+            <field name="active" eval='True'/>
+        </record>
+
+        <!-- Product search bar -->
+        <template id="search" name="search">
+            <div class="row">
+                <div class="col-lg-12">
+                    <t t-if="not keep">
+                        <form action="/shop" method="get" class="form-inline">
+                            <div class="input-group">
+                                <input name="search" class="search-query form-control" placeholder="Search..." type="text"/>
+                                <div class="input-group-append">
+                                    <a class="btn btn-secondary a-submit"><i class="fa fa-search"/></a>
+                                </div>
+                            </div>
+                        </form>
+                    </t>
+                    <t t-if="keep">
+                        <t t-call="website_sale.search">
+                            <t t-set="search_class">form-inline</t>
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </template>
+    </data>
+</openerp>

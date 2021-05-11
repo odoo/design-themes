@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Customize -->
+    <template id="theme_customize" inherit_id="website.theme_customize">
+        <xpath expr="//content[@id='theme_customize_content_layout']/*" position="before">
+            <list>
+                <opt string="Show Menu" data-xmlid="" data-reload="/"/>
+                <opt string="Hide Menu" data-xmlid="theme_bewise.option_layout_hide_menu" data-reload="/"/>
+            </list>
+        </xpath>
+    </template>
+
+    <!-- Menu -->
+    <template id="option_layout_hide_menu" inherit_id="website.layout" active="False">
+        <xpath expr="//header" position="attributes">
+            <attribute name="t-attf-class" add="d-none" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

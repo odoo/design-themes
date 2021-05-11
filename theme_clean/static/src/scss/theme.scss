@@ -1,0 +1,103 @@
+// Restore text-success color for website_sale "wizard" (checkout breadcrumb)
+// Hopefully remove this with improvements of saas-17
+.oe_website_sale .wizard .text-success {
+    color: #5CB85C;
+}
+
+#wrapwrap {
+    overflow-x: hidden;
+}
+
+// Backgrounds Images
+
+@include o-theme-chd-bg-img-classes(
+    $bg2: ( linear-gradient( rgba(black, 0.8), rgba(black, 0.2) ), $o-theme-bg-img-02),
+    $bg3: ( linear-gradient( rgba(black, 0.6), rgba(black, 0.7) ), $o-theme-bg-img-03),
+    $bg6: ( linear-gradient( rgba(black, 0.3), rgba(black, 0.75) ), $o-theme-bg-img-06)
+);
+
+@mixin o-bg-blur-styles($color: white) {
+    background-size: cover;
+    background-attachment: fixed;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: $color;
+    }
+    .text-muted {
+        color: theme-color('alpha');
+    }
+}
+
+.bg-blur-01 {
+    background-image: $o-theme-bg-blur-01;
+    @include o-bg-blur-styles(gray('800'));
+}
+.bg-blur-02 {
+    background-image: $o-theme-bg-blur-02;
+    @include o-bg-blur-styles();
+}
+.bg-blur-03 {
+    background-image: $o-theme-bg-blur-03;
+    @include o-bg-blur-styles();
+}
+.bg-blur-04 {
+    background-image: $o-theme-bg-blur-04;
+    @include o-bg-blur-styles();
+}
+.bg-blur-05 {
+    background-image: $o-theme-bg-blur-05;
+    @include o-bg-blur-styles();
+}
+.bg-blur-06 {
+    background-image: $o-theme-bg-blur-06;
+    @include o-bg-blur-styles(gray('800'));
+}
+
+// Backgrounds Gradients
+@include o-theme-chd-bg-gradient-classes();
+@include o-theme-chd-bg-option-menu-styles();
+
+// Custom Padding
+@include o-theme-chd-padding-l-r-classes();
+
+// Price List
+.price {
+    font-size: 50px;
+}
+
+// popover
+.popover, .popover-title {
+    color: #555;
+}
+
+// hr
+hr {
+    border-top: 1px solid gray('700');
+}
+
+// Navbar
+
+.navbar .active {
+    background-color: theme-color('delta');
+}
+
+// Footer
+
+footer {
+    h1, h2, h3, h4, h5, h6 {
+        color: gray('200');
+        text-transform: uppercase;
+    }
+    @include o-theme-chd-footer-styles();
+}
+
+@if $o-theme-layout == 'boxed' {
+    #wrapwrap {
+        @include media-breakpoint-up(md) {
+            margin: 0 auto;
+
+            .container {
+                max-width: 100%;
+            }
+        }
+    }
+}

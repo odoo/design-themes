@@ -1,0 +1,9 @@
+@include blockquote-layout(gray('200'), gray('900'));
+
+blockquote {
+    font-size: $font-size-base;
+    .fa {
+        @include border-left-radius($border-radius-lg);
+        padding-left: 5px;
+    }
+}

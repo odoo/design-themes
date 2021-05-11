@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- PREHEADER - Add Contact, Social, Language -->
+    <template id="preheader" inherit_id="website.layout" name="preHeader">
+        <xpath expr="//div[@id='wrapwrap']/header/nav" position="before">
+            <nav id="preheader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex">
+                            <ul id="contact" class="list-inline m-0">
+                                <li class="list-inline-item home d-none d-md-inline-block">
+                                    <a href="/"><i class="fa fa-home fa-1x"/></a>
+                                </li>
+                                <li class="list-inline-item home d-inline-block d-md-none">
+                                    <a href="/contactus"><i class="fa fa-envelope fa-1x"/>Contact</a>
+                                </li>
+                                <li class="list-inline-item d-none d-lg-inline-block">
+                                    <a href="/contactus"><i class="fa fa-map-marker fa-1x"/>Meet us</a>
+                                </li>
+                                <li class="list-inline-item d-none d-md-inline-block" t-ignore="true">
+                                    <i class="fa fa-phone fa-1x"/>
+                                    <span t-field="res_company.phone"></span>
+                                </li>
+                                <li class="list-inline-item d-none d-md-inline-block" t-ignore="true">
+                                    <i class="fa fa-envelope fa-1x"/><a t-attf-href="mailto:{{ res_company.email }}" t-field="res_company.email"/>
+                                </li>
+                            </ul>
+
+                            <div id="social" class="ml-auto">
+                                <a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank">
+                                    <i class="fa fa-facebook fa-1x"/>
+                                </a>
+                                <a t-if="website.social_twitter" t-att-href="website.social_twitter" target="_blank">
+                                    <i class="fa fa-twitter fa-1x"/>
+                                </a>
+                                <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" target="_blank">
+                                    <i class="fa fa-linkedin fa-1x"/>
+                                </a>
+                                <a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank">
+                                    <i class="fa fa-youtube fa-1x"/>
+                                </a>
+                                <a t-if="website.social_github" t-att-href="website.social_github" target="_blank">
+                                    <i class="fa fa-github fa-1x"/>
+                                </a>
+                                <a t-if="website.social_instagram" t-att-href="website.social_instagram" target="_blank">
+                                    <i class="fa fa-instagram fa-1x"/>
+                                </a>
+                            </div>
+
+                            <ul id="language" class="list-inline m-0 js_language_selector d-none d-md-block" t-if="(request.is_frontend_multilang and len(languages) &gt; 1) or (website and editable)">
+                                <li class="list-inline-item">
+                                    <div class="btn-group">
+                                        <button data-toggle="dropdown" type="button" class="dropdown-toggle">
+                                            <i class="fa fa-globe fa-1x"/>
+                                        </button>
+                                        <div role="menu" class="dropdown-menu dropdown-menu-right js_language_selector">
+                                            <t t-foreach="languages" t-as="lg">
+                                                <a t-attf-class="js_change_lang dropdown-item#{' active' if lang == lg[0] else ''}"
+                                                   t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                                                   t-att-data-url_code="lg[0]" class="js_change_lang">
+                                                    <t t-esc="lg[2].split('/').pop()"/>
+                                                </a>
+                                            </t>
+                                            <t groups="base.group_website_publisher">
+                                                <t t-set="url_return" t-value="url_for('', lang_code='[lang]') + '?' + keep_query()"/>
+                                                <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}"
+                                                   class="dropdown-item">
+                                                    <i class="fa fa-plus-circle"/>Add...
+                                                </a>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </xpath>
+    </template>
+
+    <!-- Add arrow in footer copyright -->
+    <template id="add_footer_arrow" inherit_id="website.layout">
+        <xpath expr="//div[hasclass('o_footer_copyright')]//div[hasclass('row')]/div[1]" position="attributes">
+            <attribute name="class" separator=" " remove="col-lg-6" add="col-lg-5"/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]//div[hasclass('row')]/div[2]" position="attributes">
+            <attribute name="class" separator=" " remove="col-lg-6" add="col-lg-5"/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]//div[hasclass('row')]/div[1]" position="after">
+            <div class="col-lg-2 d-none d-md-block text-center">
+                <a href="#" class="top"><i class="fa fa-arrow-up fa-1x"/></a>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="CSS Slider" id="s_css_slider">
+        <!-- The snippet require a default inline height in order to work poperly. That value can be changed by the user using the website builder -->
+        <section class="s_css_slider o_not-animable autoplay" style="height:450px">
+            <div class="wrapper">
+                <div class="slider container">
+                    <div class="selected slide row">
+                        <div class="info col-lg-3">
+                            <h3>Slide Title</h3>
+                            <p>Slide Description</p>
+                        </div>
+                        <img class="o_not-animable" src="/web/image/theme_common.image_content_20"/>
+                    </div>
+                    <div class="slide row">
+                        <div class="info col-lg-3">
+                            <h3>Slide Title</h3>
+                            <p>Slide Description</p>
+                        </div>
+                        <img class="o_not-animable" src="/web/image/theme_common.image_content_21"/>
+                    </div>
+                    <div class="slide row">
+                        <div class="info col-lg-3">
+                            <h3>Slide Title</h3>
+                            <p>Slide Description</p>
+                        </div>
+                        <img class="o_not-animable" src="/web/image/theme_common.image_content_22"/>
+                    </div>
+                </div>
+                <ul class="navigation">
+                    <li><span contentEditable="false" class="o_not-animable fa fa-chevron-left prev inactive"/></li>
+                    <li><span contentEditable="false" class="o_not-animable fa fa-chevron-right next"/></li>
+                </ul>
+            </div>
+        </section>
+    </template>
+
+    <!-- Snippets options -->
+    <template id="s_css_slider_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js='s_css_slider_slide' data-selector=".s_css_slider">
+                <we-button class="js_s_css_slider_addSlide"><i class="fa fa-plus-circle"/> Add a new Slide</we-button>
+                <we-button class="js_s_css_slider_removeSlide"><i class="fa fa-trash-o"/> Remove current slide</we-button>
+            </div>
+            <div data-js='s_css_slider_autoplay' data-selector=".s_css_slider">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-bolt"/> Autoplay</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="">False</we-button>
+                        <we-button data-select-class="autoplay">True</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".s_css_slider .info"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,158 @@
+//
+// Color system
+//
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  200 !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              1.4 !default;
+$line-height-sm:              1.4 !default;
+
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
+
+$box-shadow-sm:               0 3px 3px -2px rgba(51,51,51,0) !default;
+$box-shadow:                  0 3px 3px -2px rgba(51,51,51,0) !default;
+$box-shadow-lg:               0 3px 3px -2px rgba(51,51,51,0) !default;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-size-base:              $o-theme-font-size-base !default;
+
+$line-height-base:            1.4 !default;
+
+$h1-font-size:                $font-size-base * 3 !default;
+$h2-font-size:                $font-size-base * (30 / 14) !default;
+$h3-font-size:                $font-size-base * (24 / 14) !default;
+$h4-font-size:                $font-size-base * (18 / 14) !default;
+$h5-font-size:                $font-size-base * 1 !default;
+$h6-font-size:                $font-size-base * (12 / 14) !default;
+
+$headings-font-weight:        300 !default;
+
+$hr-border-color:             #eee !default;
+
+$hr-margin-y:                 .25rem !default;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y-sm:      .375rem !default !default;
+$input-btn-padding-x-sm:      .75rem !default !default;
+
+$input-btn-padding-y-lg:      .625rem !default;
+$input-btn-padding-x-lg:      2rem !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-box-shadow:              0 3px 3px -2px rgba(51,51,51,0) !default;
+$btn-focus-box-shadow:        0 3px 3px -2px rgba(51,51,51,0) !default;
+$btn-active-box-shadow:       0 3px 3px -2px rgba(51,51,51,0) !default;
+
+// Forms
+
+$label-margin-bottom:                   0 !default;
+
+$input-box-shadow:                      0 3px 3px -2px rgba(51,51,51,0) !default;
+
+$input-focus-box-shadow:                0 3px 3px -2px rgba(51,51,51,0) !default;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-padding-y:                .3125rem !default;
+$dropdown-spacer:                   0 !default;
+$dropdown-border-color:             palette-gray('200') !default;
+
+// Navs
+
+$nav-link-padding-y:                .625rem !default;
+$nav-link-padding-x:                .9375rem !default;
+
+$nav-tabs-border-width:             0 !default;
+$nav-tabs-link-active-bg:           none !default;
+
+$nav-divider-margin-y:              0 !default;
+
+// Navbar
+
+$navbar-padding-y:                  1rem !default;
+$navbar-padding-x:                  2.5% !default;
+
+// Pagination
+
+$pagination-padding-y:              .375rem !default;
+$pagination-padding-y-sm:           .3125rem !default;
+$pagination-padding-x-sm:           .625rem !default;
+$pagination-padding-y-lg:           .625rem !default;
+$pagination-padding-x-lg:           1rem !default;
+
+$pagination-focus-box-shadow:       0 !default;
+
+$pagination-hover-color:            palette-theme-color('primary') !default;
+
+$pagination-active-color:           white !default;
+$pagination-active-bg:              palette-theme-color('primary') !default;
+
+// Badges
+
+$badge-border-radius:               0.25em !default;
+
+// Progress bars
+
+$progress-box-shadow:               0 !default;
+
+// Image thumbnails
+
+$thumbnail-box-shadow:              0 3px 3px -2px rgba(51,51,51,0) !default;
+
+// Breadcrumbs
+
+$breadcrumb-bg:                     palette-gray('100') !default;
+$breadcrumb-divider-color:          palette-gray('400') !default;
+$breadcrumb-active-color:           palette-gray('400') !default;
+
+// Carousel
+
+$carousel-control-color:            palette-theme-color('delta') !default;
+
+$carousel-indicator-active-bg:      palette-theme-color('delta') !default;
+
+$carousel-caption-color:            palette-theme-color('delta') !default;
+
+
+//------------------------------------------------------------------------------
+// Non Bootstrap Variables (should not be here but the system is not good enough
+// to put them at the right place yet)
+//------------------------------------------------------------------------------
+
+// s_medias_list
+$s-medias-list-bg-color-main: palette-gray('white');
+
+// s_numbers
+$s-numbers-main-bg-color: palette-theme-color('beta');
+$s-numbers-numbers-color: palette-gray('white');
+
+// Google Map
+$s-google-map-desc-bg: palette-theme-color('beta');
+$s-google-map-desc-hover-bg: palette-theme-color('beta');
+
+// s_page_header
+$s-page-header-main-bg-color: palette-theme-color('beta-lighter');
+$s-page-header-main-font-color: palette-gray('white');
+$s-page-header-label-font-size: .9em;
+$s-page-header-label-border-radius: .125rem;
+$s-page-header-label-padding: .3125rem .5rem;
+$s-page-header-label-margin: 0 .625rem 0 0;
+$s-page-header-i-margin: 0 .375rem;

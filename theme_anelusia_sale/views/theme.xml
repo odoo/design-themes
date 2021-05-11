@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_primary_variables" inherit_id="website_sale._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_anelusia_sale/static/src/scss/primary_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="website_sale.assets_frontend" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_anelusia_sale/static/src/scss/theme_ecommerce.scss"/>
+        </xpath>
+        <xpath expr="script[last()]" position="after">
+            <!-- FIXME this seems broken -->
+            <script type="text/javascript" src="/theme_anelusia_sale/static/src/js/website_sale.test.js"></script>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,94 @@
+// =============================
+// s_latest_posts_big_orizontal
+// =============================
+
+.s_latest_posts_big_orizontal {
+    .o_record_cover_container {
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    .js_get_posts {
+        position: relative;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+        text-align: left;
+        .s_latest_posts_post {
+            //display: table-cell;
+            flex-grow: 1;
+            position: relative;
+            figcaption:after {
+                position: relative;
+                width: 100%;
+                height: 150px;
+                content: "";
+                display: block;
+            }
+            h4 {
+                position: relative;
+                text-align: left;
+                padding-right: 5%;
+                &:before {
+                    content: "";
+                    z-index: 0;
+                    display: inline;
+                    float: left;
+                    width: 20%;
+                    position: absolute;
+                    top: 49%;
+                    left: 0;
+                    border-bottom: 1px solid $body-color;
+                }
+                a {
+                    z-index: 1;
+                    display: block;
+                    line-height: 1;
+                    padding-left: 25%;
+                    position: relative;
+                }
+            }
+            h5 {
+                padding-left: 24%;
+            }
+            > a {
+                bottom: 0;
+                display: block;
+                background: theme-color('alpha');
+                width: 100%;
+                height: 150px;
+                position: absolute;
+                overflow: hidden;
+                > div {
+                    height: 100%;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    opacity: 1;
+                    transform: scale(1);
+                    transform-origin: 50%;
+                    transition: all 400ms;
+                    backface-visibility: hidden;
+                    &:hover {
+                        opacity: 0.8;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            @include media-breakpoint-down(sm) {
+                display: inline-block;
+                margin-bottom: 2em;
+                width: 50%;
+            }
+            @media only screen and (max-width : 480px) { // FIXME
+                width: 100%;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="treehouse_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" separator="," add=".s_images_captions_fw [class*='col-'], .media-content, .media-options, .profile-body, .profile-options > [class*='col-'], .carousel-box-content, .s_text_block_image_fw [class*='col-'], .news-carousel-time, .news-carousel-content, .s_four_columns_fw [class*='col-'], .s_masonry_block .block"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" separator="," add=".s_images_captions_fw [class*='col-'], .media-content, .media-options, .profile-body, .profile-options > [class*='col-'], .carousel-box-content, .s_text_block_image_fw [class*='col-'], .news-carousel-time, .news-carousel-content, .s_four_columns_fw [class*='col-'], .s_masonry_block .block"/>
+        </xpath>
+
+        <!-- Layout -->
+        <xpath expr="//div[@data-js='sizing_y']" position="attributes">
+            <attribute name="data-selector" separator="," add="h1, h2, h3, h4, h5, h6"/>
+        </xpath>
+
+        <!-- Styles -->
+        <xpath expr="//div[@id='so_main_colorpicker']" position="after">
+            <div data-selector="h1, h2, h3, h4, h5, h6">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-paint-brush"/> Style</we-toggler>
+                    <we-collapse>
+                        <we-button data-toggle-class="text-muted">Muted</we-button>
+                        <we-button data-toggle-class="text-uppercase">Uppercase</we-button>
+                        <we-button data-toggle-class="text-underline">Underline</we-button>
+                        <we-button data-toggle-class="text-boxed">Boxed</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+</odoo>

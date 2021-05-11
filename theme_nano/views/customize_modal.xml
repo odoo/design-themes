@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customize_modal" inherit_id="theme_common.theme_customize">
+        <xpath expr="//content[@id='theme_customize_content_navbar']/*" position="before">
+            <list string="Menu">
+                <checkbox><opt string="Side Navigation" data-xmlid="theme_nano.option_side_nav_variables, website.no_autohide_menu"/></checkbox>
+            </list>
+            <list string="Icons Bar">
+                <checkbox><opt id="option_icons_bar_hide" string="Hide" data-xmlid="theme_nano.option_icons_sidebar_none_variables"/></checkbox>
+                <opt data-depends="!option_icons_bar_hide" string="Left" data-xmlid=""/>
+                <opt data-depends="!option_icons_bar_hide" string="Right" data-xmlid="theme_nano.option_icons_sidebar_right"/>
+            </list>
+        </xpath>
+    </template>
+
+    <!-- Layouts -->
+    <template id="option_side_nav_variables" inherit_id="theme_nano._assets_primary_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/options/layouts/side_nav_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_icons_sidebar_right" inherit_id="theme_nano.option_side_nav_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/options/layouts/icons_sidebar_right.scss"/>
+        </xpath>
+    </template>
+    <template id="option_icons_sidebar_none_variables" inherit_id="theme_nano.option_side_nav_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/options/layouts/icons_sidebar_none_variables.scss"/>
+        </xpath>
+    </template>
+</odoo>

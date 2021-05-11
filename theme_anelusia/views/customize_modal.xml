@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_customize" inherit_id="website.theme_customize">
+        <xpath expr="//content[@id='theme_customize_content_navbar']/*" position="before">
+            <list string="Menu">
+                <checkbox><opt id="option_hamburger_menu" string="Hamburger" data-xmlid="theme_anelusia.option_layout_hamburger, theme_anelusia.option_layout_hamburger_variables, website.no_autohide_menu" data-reload="/"/></checkbox>
+            </list>
+        </xpath>
+    </template>
+
+    <!-- Hamburger layout (Optional) -->
+    <template id="option_layout_hamburger" inherit_id="website.layout" name="Anelusia hamburger layout">
+        <xpath expr="//header/nav" position="attributes">
+            <attribute name="class" remove="navbar-expand-md" separator=" "/>
+        </xpath>
+        <xpath expr="//header//button[hasclass('navbar-toggler')]" position="inside">
+            <span class="new-toggle-text">MENU</span>
+        </xpath>
+        <xpath expr="//header//ul[contains(@id, 'top_menu')]" position="after">
+            <div class="collapse_icon">
+                <h2>
+                    <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                    <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                    <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                    <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                    <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    <a t-att-href="website.social_instagram" t-if="website.social_instagram"><i class="fa fa-instagram"/></a>
+                </h2>
+            </div>
+        </xpath>
+    </template>
+    <template id="option_layout_hamburger_variables" inherit_id="theme_anelusia._assets_primary_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_anelusia/static/src/scss/options/layout/hamburger_variables.scss"/>
+        </xpath>
+    </template>
+</odoo>

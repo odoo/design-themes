@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippets_selection" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]/t[@t-snippet='website.s_three_columns']" position="after">
+            <t t-snippet="theme_common.s_page_header" t-thumbnail="/theme_common/static/src/img/snippets/s_page_header.png"/>
+            <t t-snippet="theme_common.s_numbers" t-thumbnail="/theme_common/static/src/img/snippets/s_numbers.png"/>
+            <t t-snippet="theme_common.s_process_steps" t-thumbnail="/theme_common/static/src/img/snippets/s_process_steps.png"/>
+            <t t-snippet="theme_common.s_team_profiles" t-thumbnail="/theme_common/static/src/img/snippets/s_team_profiles.png"/>
+            <t t-snippet="theme_common.s_images_row" t-thumbnail="/theme_common/static/src/img/snippets/s_images_row.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]/t[@t-snippet='website.s_card']" position="after">
+            <t t-snippet="theme_common.s_badge" t-thumbnail="/theme_common/static/src/img/snippets/s_badge.png"/>
+            <t t-snippet="theme_common.s_progress_bar" t-thumbnail="/theme_common/static/src/img/snippets/s_progress_bar.png"/>
+            <t t-snippet="theme_common.s_blockquote" t-thumbnail="/theme_common/static/src/img/snippets/s_blockquote.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]/t" position="after">
+            <t t-snippet="theme_common.s_news_carousel" t-thumbnail="/theme_common/static/src/img/snippets/s_news_carousel.png"/>
+            <t t-snippet="theme_common.s_images_carousel" t-thumbnail="/theme_common/static/src/img/snippets/s_images_carousel.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="theme_common.s_timeline" t-thumbnail="/theme_common/static/src/img/snippets/s_timeline.png"/>
+            <t t-snippet="theme_common.s_media_list" t-thumbnail="/theme_common/static/src/img/snippets/s_media_list.png"/>
+            <t t-snippet="theme_common.s_masonry_block" t-thumbnail="/theme_common/static/src/img/snippets/s_masonry_block.png"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Showcase Image" id="s_showcase_image">
+        <section class="s_showcase_image container-fluid">
+            <div class="row">
+                <figure class="bg-img-03 col-lg-6 bl">
+                    <figcaption class="o_animable">
+                        <h6>Sample description</h6>
+                        Write one or two paragraphs describing your product
+                    </figcaption>
+                </figure>
+                <div class="info col-lg-6">
+                    <div class="row" contenteditable="false">
+                        <div class="content col-md-11 col-lg-8" contenteditable="true">
+                            <h3>Sample Title</h3>
+                            <h4 class="text-primary">With a great subtitle</h4>
+                            <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+                            <a href="#" class="btn btn-secondary">Click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_showcase_image-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-selector=".s_showcase_image">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-exchange"/> Image position</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="">Left</we-button>
+                        <we-button data-select-class="s_right">Right</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+
+            <div data-selector=".s_showcase_image figure">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-tag"/> Caption position</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="tl">Top Left</we-button>
+                        <we-button data-select-class="tr">Top Right</we-button>
+                        <we-button data-select-class="bl">Bottom Left</we-button>
+                        <we-button data-select-class="">Bottom Right</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_showcase_image figure"/>
+        </xpath>
+
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".s_showcase_image figure, .s_showcase_image figcaption"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-selector" add=".s_showcase_image figure"/>
+        </xpath>
+    </template>
+</odoo>

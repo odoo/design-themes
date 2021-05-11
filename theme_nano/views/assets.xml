@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_primary_variables" inherit_id="website._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/primary_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="_assets_frontend_helpers" inherit_id="website._assets_frontend_helpers" priority="1">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/bootstrap_overridden.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="website.assets_frontend" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <!-- Snippets - Common -->
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_images_carousel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_color_blocks_4.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_badge.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_media_list.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_news_carousel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_process_steps.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_progress_bar.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_team_profiles.scss"/>
+            <!-- Snippets - NANO -->
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/snippets/s_big_message.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/snippets/s_panel_extended.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/snippets/s_share_extended.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/snippets/s_well_extended.scss"/>
+            <!-- Theme NANO -->
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/theme.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_nano/static/src/js/nano.frontend.js"/>
+        </xpath>
+    </template>
+
+    <template id="assets_editor" inherit_id="website.assets_editor">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_common/static/src/js/s_progress_bar.js"></script>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Profile" id="s_profile">
+        <section class="s_profile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb32">
+                        <h2>A Great Way to Present Your Team</h2>
+                        <h3 class="text-muted">Add your co-Workers and a link to their profiles.</h3>
+                    </div>
+                    <div class="col-lg-6 mb32 s_profile_box">
+                        <div class="row mb32">
+                            <div class="col-lg-8">
+                                <h2>John Doe</h2>
+                                <p> <strong>FUNCTION: </strong> Web Designer / UI.</p>
+                                <p> <strong>COMPANY: </strong> Odoo</p>
+                                <p> <strong>Skills: </strong><span class="tags">html5, css3, jquery, bootstrap3</span></p>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="/web/image/theme_common.image_content_14" alt="" class="rounded-circle img-fluid d-block mx-auto"/>
+                            </div>
+                        </div>
+                        <div class="row s_profile_box_divider text-center">
+                            <div class="col-lg-4 s_profile_box_emphasis mt8 mb8">
+                                <h2>
+                                    <strong> 20,7K </strong>
+                                </h2>
+                                <p><small>Followers</small></p>
+                            </div>
+                            <div class="col-lg-4 s_profile_box_emphasis mt8 mb8">
+                                <h2>
+                                    <strong>245</strong>
+                                </h2>
+                                <p><small>Projects</small></p>
+                            </div>
+                            <div class="col-lg-4 s_profile_box_emphasis mt8 mb8">
+                                <h2>
+                                    <strong>143</strong>
+                                </h2>
+                                <p><small>Clients</small></p>
+                            </div>
+                        </div>
+                        <div class="row s_profile_box_divider text-center mb24">
+                            <div class="col-lg-4 mt48">
+                                <a type="button" class="btn btn-lg btn-success btn-block" href="#">
+                                    <i class="fa fa-facebook-square"/> Facebook
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mt48">
+                                <a type="button" class="btn btn-lg btn-info btn-block" href="#">
+                                    <i class="fa fa-linkedin-square"/> Linkedin
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mt48">
+                                <a type="button" class="btn btn-lg btn-primary btn-block" href="#">
+                                    <i class="fa fa-git-square"/> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 mb32">
+                        <h2>About Me</h2>
+                        <p class="text-justify mt16 mb32">
+                            <strong>Write something about you.</strong>This is a good way to briefly tell your visitors who you are and what you do. Link Clean Flat Profile to your social networks and use the customizable progress bars to show your skills.
+                        </p>
+                        <p>Project 01</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <span>80% Html5/CSS3</span>
+                            </div>
+                        </div>
+                        <p>Project 02</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                <span>85% Bootstrap</span>
+                            </div>
+                        </div>
+                        <p>Project 03</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%">
+                                <span>99% COMPLETE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

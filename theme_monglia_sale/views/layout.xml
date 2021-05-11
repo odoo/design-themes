@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- Product grid view -->
+        <template id="products" inherit_id='website_sale.products' name="Products" priority="15">
+            <xpath expr="//*[contains(@id, 'products_grid')]//*[1]" position="before">
+                <t t-call="theme_monglia_sale.search"/>
+            </xpath>
+
+            <!-- Add pager to the top and bottom -->
+            <xpath expr="//div[@id='products_grid']/*[1]" position="before">
+                <div class="products_pager form-inline justify-content-center">
+                    <t t-call="website_sale.pricelist_list"/>
+                    <t t-call="website.pager"/>
+                </div>
+            </xpath>
+            <xpath expr="//div[@id='products_grid']/*[last()]" position="after">
+                <div class="products_pager form-inline justify-content-center">
+                    <t t-call="website_sale.pricelist_list"/>
+                    <t t-call="website.pager"/>
+                </div>
+            </xpath>
+
+            <!-- Remove original pager -->
+            <xpath expr="//div[hasclass('products_pager')]" position="replace"/>
+            <xpath expr="//div[hasclass('oe_website_sale')]/div[hasclass('products_pager')]" position="replace"/>
+        </template>
+
+        <!-- Rearrange product page -->
+        <template id="product" inherit_id='website_sale.product' name="Product">
+            <!-- Widen breadcrumb -->
+            <xpath expr="//*[@id='wrap']//*[hasclass('row')]/*[1]" position="attributes">
+                <attribute name="class">col-md-12</attribute>
+            </xpath>
+            <!-- Move search bar -->
+            <xpath expr="//*[@id='wrap']//*[hasclass('row')]/*[2]" position="replace">
+            </xpath>
+            <xpath expr="//*[@id='wrap']//*[hasclass('row')]" position="before">
+                <t t-call="theme_monglia_sale.search"/>
+            </xpath>
+
+            <!-- New add to cart button -->
+            <xpath expr="//a[@id='add_to_cart']" position="replace">
+                <a id="add_to_cart" class="btn btn-success btn-lg mt8 js_check_product a-submit d-block" href="#">
+                    <i class="fa fa-shopping-cart"/>
+                    Add to Cart
+                </a>
+            </xpath>
+        </template>
+
+        <!-- Add class to recommended products -->
+        <template id="recommended_products" inherit_id="website_sale.recommended_products" name="Alternative Products">
+            <xpath expr="//div[hasclass('container')]" position="attributes">
+                <attribute name='id'>website_sale_recommended_products</attribute>
+            </xpath>
+        </template>
+
+        <!-- Add h3 tag to the category list -->
+        <template id="products_categories" inherit_id="website_sale.products_categories" name="Product Categories">
+            <xpath expr="//div[@id='wsale_products_categories_collapse']/ul" position="before">
+                <h3 class="category-name">Product categories</h3>
+            </xpath>
+        </template>
+
+        <!-- Add h3 tag before filters -->
+        <template id="products_filters" inherit_id="website_sale.products_attributes" name="Product Filters">
+            <xpath expr="//div[@id='wsale_products_attributes_collapse']/form" position="before">
+                <h3 class="category-name">Product filters</h3>
+            </xpath>
+        </template>
+
+        <template id="search" name="search">
+            <div class="row">
+                <div class="col-lg-12">
+                    <t t-if="not keep">
+                        <form action="/shop" method="get" class="pagination form-inline">
+                            <div class="input-group">
+                                <input name="search" class="search-query form-control" placeholder="Search..." type="text"/>
+                                <div class="input-group-append">
+                                    <a class="btn btn-secondary a-submit"><i class="fa fa-search"/></a>
+                                </div>
+                            </div>
+                        </form>
+                    </t>
+                    <t t-if="keep">
+                        <t t-call="website_sale.search">
+                            <t t-set="search_class">pagination form-inline col-lg-12</t>
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </template>
+</odoo>

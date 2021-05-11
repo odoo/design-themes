@@ -1,0 +1,122 @@
+#wrapwrap > main > #wrap .oe_website_sale {
+    background-color: o-theme-color('beta-dark');
+    color: o-theme-color('alpha');
+
+    .oe_product_cart {
+        border: 1px solid o-theme-color('beta');
+        .in {
+            background-color: rgba(0, 0, 0, 0.7) !important;
+        }
+    }
+
+    #products_grid_before {
+        background-color: o-theme-color('beta-dark');
+        ul ul {
+            background-color: rgba(0, 0, 0, 0);
+            > li > a {
+                color: o-theme-color('alpha');
+            }
+        }
+        ul > li {
+            &, &.active {
+                > a:hover, > a:focus {
+                    background-color: o-theme-color('gamma-light')!important;
+                    color: gray('700')!important;
+                }
+            }
+        }
+        .js_attributes {
+            background-color: o-theme-color('beta-light');
+
+            h4 {
+                color: o-theme-color('alpha');
+            }
+            strong {
+                color: o-theme-color('alpha');
+                border: none;
+            }
+        }
+    }
+    #products_grid .oe_product {
+        border-color: rgba(0, 0, 0, 0);
+
+        section {
+            background: rgba(59, 44, 60, 0.8);
+
+            h5 a {
+                color: o-theme-color('alpha');
+            }
+            .product_price {
+                background-color: o-theme-color('delta');
+                border-bottom-color: o-theme-color('delta-dark');
+
+                &:before {
+                    background-color: o-theme-color('delta-light');
+                }
+                &:after {
+                    border-right-color: o-theme-color('delta-light');
+                }
+
+                .fa {
+                    color: o-theme-color('alpha') !important;
+                }
+                span {
+                    color: o-theme-color('alpha') !important;
+                }
+            }
+            .oe_currency_value > span {
+                color: o-theme-color('beta') !important;
+            }
+        }
+    }
+    .form-inline .input-group .input-group-btn .a-submit {
+        border: none;
+
+        background-image: linear-gradient(to bottom, o-theme-color('delta'), o-theme-color('delta-light'));
+        &:hover {
+            background-image: linear-gradient(to bottom, o-theme-color('delta-light'), o-theme-color('delta'));
+        }
+
+        i {
+            color: o-theme-color('alpha');
+        }
+    }
+    .breadcrumb li > span {
+        color: o-theme-color('alpha');
+    }
+    .text-right {
+        color: o-theme-color('alpha') !important;
+    }
+    .oe_cart {
+        strong {
+            color: o-theme-color('alpha');
+        }
+        .form-control {
+            background-color: white;
+            color: o-theme-color('epsilon-light');
+            border-color: o-theme-color('beta-dark');
+        }
+        .col-form-label {
+            color: white;
+        }
+        tbody, .text-muted {
+            color: white;
+        }
+    }
+    #right_column .fa {
+        color: o-theme-color('epsilon-light');
+    }
+    #modal_optional_products {
+        color: gray('600');
+    }
+    #cart_products {
+        tr > td {
+            background-color: rgba(0, 0, 0, 0)!important;
+            border-top-color: o-theme-color('beta');
+        }
+        .form-control {
+            background-color: o-theme-color('alpha') !important;
+            color: gray('700') !important;
+        }
+    }
+}

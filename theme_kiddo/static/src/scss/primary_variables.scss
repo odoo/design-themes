@@ -1,0 +1,150 @@
+@mixin o-bg-color-extension($color, $text-color, $with-muted) {
+    // FIXME "support" of link colors as before ?
+    // a:not(.btn) {
+    //     color: $linkcolor;
+    //     &:hover, &:focus {
+    //         color: $hovercolor;
+    //     }
+    // }
+}
+
+$o-theme-bg-imgs: url('/web/image/theme_common.image_content_11'),
+                  url('/web/image/theme_common.image_content_09'),
+                  url('/web/image/theme_common.image_content_10'),
+                  url('/web/image/theme_common.image_content_12');
+
+$o-theme-font-size-base: (14 / 16) * 1rem;
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #ffffff,
+        'beta': #47464b,
+        'gamma': #f3997b,
+        'delta': #add3ce,
+        'epsilon': #a7c7d5,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #d699ae,
+        'gamma': #B24774,
+        'delta': #72c2d0,
+        'epsilon': #ed8354,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #79CCC2,
+        'gamma': #F05A12,
+        'delta': #C5FFF8,
+        'epsilon': #0F7F72,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #53a1cc,
+        'gamma': #116899,
+        'delta': #aab3ca,
+        'epsilon': #ffc9c1,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #3b2c3c,
+        'gamma': #D2546D,
+        'delta': #303347,
+        'epsilon': #171827,
+    ),
+    (
+        'alpha': #ffffff,
+        'beta': #2F343B,
+        'gamma': #C77966,
+        'delta': #703030,
+        'epsilon': #E3CDA4,
+    ),
+);
+
+// Grays
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        'black': #000000,
+        '900': lighten(#000, 20%),
+        '700': lighten(#000, 33.5%),
+        '600': lighten(#000, 46.7%),
+        '200': lighten(#000, 85%),
+        'white': #ffffff,
+    ));
+}
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'body': lighten(map-get($-palette, 'gamma'), 10%),
+        'menu': #ffffff,
+        'footer': #ffffff,
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('Proxima', sans-serif),
+    ('Comic Sans MS', cursive),
+    ('Fontastique', cursive),
+    ('Luminari', serif),
+    ('Fecske', sans-serif),
+    ('Din Alternate', sans-serif),
+    ('Oxygen', sans-serif),
+    ('Cabin', sans-serif),
+    ('Abel', sans-serif),
+    ('Advent Pro', sans-serif),
+    ('Muli', sans-serif),
+    ('Noto Sans', sans-serif),
+);
+$o-theme-font-urls: (
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    'Oxygen:300,300i,400,400i,700,700i',
+    'Cabin:300,300i,400,400i,700,700i',
+    'Abel:300,300i,400,400i,700,700i',
+    'Advent+Pro:300,300i,400,400i,700,700i',
+    'Muli:300,300i,400,400i,700,700i',
+    'Noto+Sans:300,300i,400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'Proxima',
+    'Comic font',
+    'Fontastique',
+    'Luminari',
+    'Fecske',
+    'Din Alternate',
+    'Oxygen',
+    'Cabin',
+    'Abel',
+    'Advent Pro',
+    'Muli',
+    'Noto Sans',
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': 1rem,
+        'font-number': 1,
+        'headings-font-number': 1,
+        'navbar-font-number': 1,
+        'buttons-font-number': 1,
+    ),
+);

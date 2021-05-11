@@ -1,0 +1,182 @@
+$o-theme-font-size-base: (14 / 16) * 1rem;
+
+$o-theme-img-base-url: "theme_graphene/static/src/img/pictures/";
+$o-theme-img-2x-prefix: "2x_";
+$o-theme-thumb-base-url: "theme_graphene/static/src/img/thumbs/";
+$o-theme-pattern-base-url: "theme_graphene/static/src/img/patterns/";
+$o-theme-pattern-2x-prefix: "2x_";
+
+$o-theme-img-01: "bg_image_01.jpg";
+$o-theme-img-02: "bg_image_02.jpg";
+$o-theme-img-03: "bg_image_03.jpg";
+$o-theme-img-04: "bg_image_04.jpg";
+$o-theme-img-05: "bg_image_05.jpg";
+$o-theme-img-06: "bg_image_06.jpg";
+$o-theme-img-07: "bg_image_07.jpg";
+$o-theme-img-08: "bg_image_08.jpg";
+$o-theme-img-09: "bg_image_09.jpg";
+$o-theme-img-10: "bg_image_10.jpg";
+
+$o-theme-patt-01: "bg_pattern_01.jpg";
+$o-theme-patt-02: "bg_pattern_02.jpg";
+$o-theme-patt-03: "bg_pattern_03.jpg";
+$o-theme-patt-04: "bg_pattern_04.jpg";
+$o-theme-patt-05: "bg_pattern_05.jpg";
+$o-theme-patt-06: "bg_pattern_06.jpg";
+
+// UI colors
+$graphene-ui-dark: #252931;
+$graphene-ui-light: #303540;
+$graphene-ui-text: #fff;
+$graphene-ui-muted: #9097A8;
+$graphene-ui-success: #16A085;
+$graphene-ui-danger: #E77575;
+
+//------------------------------------------------------------------------------
+// Snippets
+//------------------------------------------------------------------------------
+
+// s_showcase_slider
+// =================
+
+@mixin s-showcase-slider-navigation-hook {
+    span {
+        text-indent: 100%;
+        background: url("../img/ui/s_showcase_slider-arrow.svg") no-repeat center center;
+        &:before { content: none; }
+    }
+    &:first-of-type {
+        span { transform: rotate(180deg); }
+    }
+}
+
+@mixin s-showcase-slider-close-hook {
+    background: url("../img/ui/s_showcase_slider-close.svg") no-repeat center center;
+    text-indent: 100%;
+}
+
+@mixin s-showcase-slider-slider-hover-hook {
+    &::after {
+        background: rgba(0, 0, 0, 0.4) url("../img/ui/s_showcase_slider-zoom.svg") no-repeat center center;
+    }
+}
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #85AFA8,
+        'beta': #7E566B,
+        'gamma': #85909A,
+        'delta': #969397,
+        'epsilon': #422335,
+    ),
+    (
+        'alpha': #54787D,
+        'beta': #6B9997,
+        'gamma': #615145,
+        'delta': #C6CCA5,
+        'epsilon': #412342,
+
+        'success': #5CB85C,
+        'info': #4D68A3,
+        'warning': #DDC66B,
+        'danger': #D86060,
+    ),
+    (
+        'alpha': #456F74,
+        'beta': #EB5937,
+        'gamma': #403D3C,
+        'delta': #1C1919,
+        'epsilon': #D3CBBD,
+
+        'success': #31B05E,
+        'info': #4D68A3,
+        'warning': #EACF41,
+        'danger': #CB3E3E,
+    ),
+    (
+        'alpha': #23C59E,
+        'beta': #FF5B5B,
+        'gamma': #FFE9C7,
+        'delta': #545445,
+        'epsilon': #2D2D36,
+
+        'success': #5CB85C,
+    ),
+);
+
+// Grays
+$-black: #000000;
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        'black': $-black,
+        '975': lighten($-black, 13%),
+        '950': lighten($-black, 16%),
+        '925': lighten($-black, 19%),
+        '900': lighten($-black, 22%),
+        '800': lighten($-black, 25%),
+        '700': lighten($-black, 33.5%),
+        '650': lighten($-black, 50%),
+        '600': lighten($-black, 65.5%),
+        '400': lighten($-black, 82%),
+        '200': lighten($-black, 93.5%),
+        'white': lighten($-black, 100%),
+    ));
+}
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'body': #fefefe,
+        'menu': #fefefe,
+        'footer': #f8f8f8,
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font-number': 1,
+        'headings-font-number': 6,
+        'navbar-font-number': 1,
+        'buttons-font-number': 1,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('Heebo', sans-serif),
+    ('Abel', sans-serif),
+    ('Cinzel', serif),
+    ('Old Standard TT', serif),
+    ('Playfair Display', serif),
+    ('Source Sans Pro', sans-serif),
+);
+$o-theme-font-urls: (
+    'Heebo:300,300i,400,400i,700,700i',
+    'Abel:300,300i,400,400i,700,700i',
+    'Cinzel:300,300i,400,400i,700,700i',
+    'Old+Standard+TT:300,300i,400,400i,700,700i',
+    'Playfair+Display:300,300i,400,400i,700,700i',
+    'Source+Sans+Pro:300,300i,400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'Heebo',
+    'Abel',
+    'Cinzel',
+    'Old Standard',
+    'Playfair Display',
+    'Source Sans Pro',
+);
