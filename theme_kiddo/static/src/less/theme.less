@@ -1,0 +1,303 @@
+
+// ======= MODALS ====================
+.modal {
+    .modal-title {
+        color: @color-alpha;
+    }
+    .well {
+        .BorderRadius(0px);
+    }
+    .nav-tabs > li {
+        margin-bottom: 0px;
+        &:hover {
+            background: rgba(0, 0, 0, 0);
+        }
+    }
+    .pager li > a {
+        .BorderRadius(0px);
+    }
+    .search .form-control {
+        border-color: @gray-lighter;
+    }
+    .modal-content {
+        border-radius: 0px;
+        border: none;
+    }
+    .modal-header {
+        height: 71px;
+        background-color: @modalGreen;
+        border: none;
+
+        h4 {
+          font-size: 20px;
+        }
+    }
+}
+
+// ======= GENERAL ===================
+main > * { // hack for documentation page bg
+    background-color: @color-alpha;
+}
+.oe_website_login_container {
+    padding: 50px;
+}
+#editor-media-image {
+    background-color: white !important;
+}
+.input-group[class*="col-"] {
+    float: left;
+}
+.js_publish_btn {
+    .BorderRadius (0px) !important;
+    padding: 6px !important;
+    background-color: @color-alpha !important;
+    border: 1px solid @gray-lighter !important;
+    color: gray !important;
+}
+
+// ======= WEBSITE ===================
+#wrapwrap {
+    background: no-repeat center center fixed;
+    background-size: cover;
+
+    // ======= HEADER ================
+    .navbar-default {
+        border: none;
+        background: transparent;
+        margin: 0px auto;
+
+        .container {
+            width: 100%;
+            background-color: @color-alpha;
+
+            .navbar-header {
+                padding-left: 10px;
+                .navbar-toggle {
+                    border-color: @color-gamma;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                    .icon-bar {
+                        background-color: @color-gamma;
+                    }
+                }
+            }
+            .navbar-collapse {
+                background-color: transparent;
+                text-align: center;
+                .navbar-nav {
+                    float: none;
+                }
+
+                #top_menu {
+                    > li {
+                        min-height: 55px;
+                    }
+                    li {
+                        &:hover {
+                            border-bottom: 3px solid @color-gamma;
+                            @media (max-width: @screen-xs-max) {
+                                border: none;
+                            }
+                        }
+                        a, span, b {
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            color: @color-gamma;
+                            &:hover {
+                                color: @color-theta;
+                            }
+
+                            .label-primary { // is used when there is a product in cart
+                                background-color: @color-delta;
+                                font-size: 12px;
+                                padding: 0.1em 0.6em 0.1em;
+                                .BorderRadius (30px);
+                                position: relative;
+                                top: -15px;
+                            }
+                        }
+
+                        &.divider {
+                            display: none;
+                        }
+
+                        &.active, &.open {
+                            > a {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+
+                    .dropdown-menu, .navbar-collapse {
+                        background-color: @color-alpha;
+                        border-radius: 0px;
+                        border-color: rgba(0, 0, 0, 0);
+                        top: 65px;
+
+                        li {
+                            &:hover {
+                                border: none;
+                            }
+
+                            > a {
+                                color: @color-gamma;
+                                border-right: none;
+                                > span {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ======= MAIN ==================
+    > main {
+
+        // ======= CONTENT ===========
+        > #wrap {
+            width: 100%;
+            margin: 0 auto;
+
+            .text-muted:after {
+                color: rgba(0, 0, 0, 0);
+            }
+        }
+
+        // ======= BUTTONS ===========
+        button[type="submit"] {
+            padding: 0 !important;
+            min-width: 25px !important;
+            border-radius: 0px !important;
+            border-width: 1px !important;
+            width: auto !important;
+            background: rgba(0, 0, 0, 0) !important;
+            border-color: rgba(0, 0, 0, 0) !important;
+        }
+        :not(.btn-group) > .btn:not(.ribbon):not(.dropdown-toggle):not(#add_to_cart):not(#clear_cover):not(.fa-shopping-cart):not(.a-submit):not(.btn-xs) {
+            min-width: 150px;
+            padding: 20px;
+            .BorderRadius (50px);
+            .transition (all 0.3s ease-out);
+        }
+        .btn-default:not(.a-submit) {
+            .btn-styles(@btn-default-bg, @btn-default-bg, @gray, @gray);
+            border-color: @gray-lighter;
+            &:hover {
+                border-color: @gray;
+            }
+        }
+        .btn-primary {
+            .btn-styles(@btn-default-bg, @btn-default-bg, @color-beta, @gray);
+            border-color: @color-beta;
+            &:hover {
+                border-color: @gray;
+            }
+        }
+        .btn-success {
+            .btn-styles(@btn-default-bg, @btn-default-bg, @color-gamma, @gray);
+            border-color: @color-gamma;
+            &:hover {
+                border-color: @gray;
+            }
+        }
+        .btn-info {
+            .btn-styles(@btn-default-bg, @btn-default-bg, @color-delta, @gray);
+            border-color: @color-delta;
+            &:hover {
+                border-color: @gray-lighter;
+            }
+        }
+        .btn-warning {
+            .btn-styles(@btn-default-bg, @btn-default-bg, @color-epsilon, @gray);
+            border-color: @color-epsilon;
+            &:hover {
+                border-color: @gray-lighter;
+            }
+        }
+        .btn-danger {
+            .btn-styles(@btn-default-bg, @btn-default-bg, @color-epsilon, @gray);
+            border-color: @color-epsilon;
+            &:hover {
+                border-color: @gray-lighter;
+            }
+        }
+
+        // badges
+        .badge, .active > a > .badge {
+            padding: 5px 10px;
+            margin-left: 15px;
+            background-color: @color-gamma !important;
+            color: white !important;
+            min-width: 28px;
+        }
+    }
+
+    // ======= FOOTER ================
+    > footer {
+        position: relative;
+
+        background: @color-gamma;
+        #footer {
+            width: 100%;
+            background-color: @color-alpha;
+
+            .custom-footer {
+                width: 100%;
+            }
+            a {
+                display: block;
+            }
+            .row > div {
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 25px;
+                    color: @color-beta;
+                    a {
+                        display: inline;
+                    }
+                }
+            }
+        }
+        .container {
+            padding: 20px 65px;
+            h4 {
+                border-top: 5px solid @color-gamma;
+                margin-right: 50px;
+                padding-top: 20px;
+                color: @color-beta;
+            }
+        }
+
+        #footer + .container {
+            margin: 0 !important;
+            width: 100%;
+            background-color: @color-gamma;
+            color: @color-alpha;
+            .text-muted, a {
+                color: @color-alpha;
+            }
+            a {
+                display: inline!important;
+            }
+        }
+    }
+}
+
+// ======= SNIPPET OPTION STYLE ======
+.snippet-option-colorpicker {
+    .colorpicker td > * {
+        width: 30px;
+        height: 30px;
+    }
+    .none {
+        background-color: @color-alpha;
+        font-size: 10px;
+    }
+}

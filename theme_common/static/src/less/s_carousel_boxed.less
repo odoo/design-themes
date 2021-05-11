@@ -1,0 +1,35 @@
+#wrapwrap .s_carousel_boxed {
+    .carousel {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @media (max-width: @screen-sm-max) {
+            height: auto !important;
+        }
+    }
+    @media (min-width: @screen-md-min) {
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+        }
+    }
+    .carousel-caption {
+        text-shadow: none;
+        background-color: #fff;
+        color: @gray-darker;
+        padding: 5px 0;
+        bottom: 35px;
+        p {
+            margin: 0;
+        }
+    }
+    .carousel-control {
+        .carousel-control(15px, 0, 2px);
+    }
+    .carousel-indicators {
+        .carousel-indicators(10px, 10px);
+    }
+}
+

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="demo1_layout" inherit_id="website.layout" primary="True">
+      <xpath expr="//head/t[@t-call-assets='web.assets_frontend'][@t-js='false']" position="attributes">
+        <attribute name="t-call-assets">theme_bewise.demo1_assets_frontend</attribute>
+      </xpath>
+      <xpath expr="//head/t[@t-call-assets='web.assets_frontend'][@t-css='false']" position="attributes">
+        <attribute name="t-call-assets">theme_bewise.demo1_assets_frontend</attribute>
+      </xpath>
+    </template>
+
+    <template id="demo1_assets_frontend" inherit_id="website.assets_frontend" primary="True">
+      <xpath expr="." position="inside">
+
+        <link href="/theme_bewise/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/theme.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/customize_modal.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/padding.less" rel="stylesheet" type="text/less"/>
+
+        <!-- PRESET bgvar-1, colorvar-1, fontvar-1 -->
+
+        <link href="/theme_bewise/static/src/less/options/layout_boxed.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/layout_show_menu.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/color_preset_1.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/bg_preset_1.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/font_preset_1.less" rel="stylesheet" type="text/less"/>
+
+        <link href="/theme_common/static/src/less/s_discount.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_event_list.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_profile.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box_square.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_pricing.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_process_steps_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_timeline.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_lead_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_logo_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_4.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_image.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_image_parallax.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_team_profiles.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_slide_banner.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_shade.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_color.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_text_highlight.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_testimonial_slider.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_icon_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_icon_square.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_mini_nav_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_nav.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_multicolor.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_multicolor_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_img.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_slider.less" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+    <template id="website.demo_page_demo_1" page="True">
+      <t t-call="theme_bewise.demo1_layout">
+        <div id="wrap" class="oe_structure oe_empty">
+          <section class="s_separator_multicolor_fw">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <hr/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_big_image_parallax parallax bg-img-01" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 1941.9px; width: 100%;">
+            <div class="container">
+              <div class="row">
+                <div class="mt64 mb64 col-md-12">
+                  <img class="img-responsive center-block" src="/web/image/theme_common.image_content_logo"/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_mini_nav_bar">
+            <div class="container">
+              <div class="row s_mini_nav_bar_nav mini_nav_scroll">
+                <div class="col-md-1 s_mini_nav_bar_item">
+                  <a class="btn btn-default btn-xl" href="#section1" type="button">Section 1</a>
+                </div>
+                <div class="col-md-1 s_mini_nav_bar_item">
+                  <a class="btn btn-primary btn-xl" href="#section2" type="button">Section 2</a>
+                </div>
+                <div class="col-md-1 s_mini_nav_bar_item">
+                  <a class="btn btn-success btn-xl" href="#section3" type="button">Section 3</a>
+                </div>
+                <div class="col-md-1 s_mini_nav_bar_item">
+                  <a class="btn btn-info btn-xl" href="#section4" type="button">Section 4</a>
+                </div>
+                <div class="col-md-1 s_mini_nav_bar_item">
+                  <a class="btn btn-warning btn-xl" href="#section5" type="button">Section 5</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_text o_scroll_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h1>A Soft, Pastel Theme for Odoo CMS</h1>
+                  <h3 class="text-muted ">Have fun &amp; Be Wise*!</h3>
+                </div>
+                <div class="col-md-12 mt64 mb64">
+                  <p class="text-justify" style="text-align: center;">Be Wise a beautifully designed HTML Template for kids and it would suit for any children, art, craft, school &amp; Training Website.<br/>
+                  <span style="line-height: 1.3;">This template is beautifully crafted with hadcoded HTML 5 and CSS3 with amazing animations and parallax effect</span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_big_icon_circle mb8   ">
+            <div class="container">
+              <div class="row mb64">
+                <div class="col-md-2 col-md-offset-1 mt16 mb32">
+                  <div class="s_big_icon_circle_box">
+                    <div class="s_big_icon_circle_icon col-md-4 center-block">
+                      <span class="fa fa-desktop"/>
+                      <h5>1000 Apps</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 mt16 mb32">
+                  <div class="s_big_icon_circle_box">
+                    <div class="s_big_icon_circle_icon col-md-4">
+                      <span class="fa fa-users"/>
+                      <h5>20.000 Users</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 mt16 mb32">
+                  <div class="s_big_icon_circle_box">
+                    <div class="s_big_icon_circle_icon col-md-4">
+                      <span class="fa fa-user"/>
+                      <h5>234 Clients</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 mt16 mb32">
+                  <div class="s_big_icon_circle_box">
+                    <div class="s_big_icon_circle_icon col-md-4">
+                      <span class="fa fa-globe"/>
+                      <h5>30 Countries</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 mt16 mb32">
+                  <div class="s_big_icon_circle_box">
+                    <div class="s_big_icon_circle_icon col-md-4">
+                      <span class="fa fa-users"/>
+                      <h5>75 Partners</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_separator_multicolor mb0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <hr/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="s_color_blocks_slider carousel slide bg-epsilon mt92 o_scroll_nav" data-interval="10000" id="myCarousel0">
+            <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#myCarousel0"/><li data-slide-to="1" data-target="#myCarousel0"/></ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="container-fluid">
+                  <div class="row content">
+                    <div class="col-md-8 s_color_blocks_slider_img text-center">
+                      <img class="img-responsive center-block" src="/theme_bewise/static/src/img/backgrounds/bg_img_05.jpg"/>
+                    </div>
+                    <div class="col-md-4 s_color_blocks_slider_content text-center">
+                      <span class="center-block fa fa-heart-o fa-5x"/>
+                      <h2 class="text-center">Loving Theme</h2>
+                      <h3 class="text-center text-muted mb16">Sweet*</h3>
+                      <p class="text-justify mb32">You can set your own combinations from 4 layout modes, 4 color schemes, 4 background patterns and 8 combined fonts.<br/></p>
+                      <a class="btn btn-warning " href="#"><i class="fa fa-cog"/> More Details </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="container-fluid">
+                  <div class="row content">
+                    <div class="col-md-8 s_color_blocks_slider_img text-center">
+                      <img class="img-responsive center-block" src="/theme_bewise/static/src/img/backgrounds/bg_img_06.jpg"/>
+                    </div>
+                    <div class="col-md-4 s_color_blocks_slider_content text-center">
+                      <span class="center-block fa fa-star-o fa-5x" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                      <h2 class="text-center">Sweet Design</h2>
+                      <h3 class="text-center text-muted mb16">Soft*</h3>
+                      <p class="text-justify mb32">Be Wise* is a beautifully designed theme for children websites. Crafted with the finest pixel quality and best coding practices inspired by Bootstrap.<br/>
+                      </p>
+                      <a class="btn btn-warning " href="#"><i class="fa fa-cog"/> More Details </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+              <i class="fa fa-chevron-left"/>
+            </div>
+            <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+              <i class="fa fa-chevron-right"/>
+            </div>
+          </div>
+          <section class="s_separator_nav">
+            <div class="container">
+              <div class="row s_separator_nav_nav mini_nav_scroll">
+                <div class="s_separator_nav_item col-md-2 pull-right" style="text-align: right;">
+                  <a class="btn btn-primary " href="#wrap" type="button">Top</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_text mt0 mb0 o_scroll_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mt16 mb32">
+                  <h2>Simply Bootstrap!</h2>
+                  <h3 class="text-muted ">Drop the blocks. Build your web pages.</h3>
+                </div>
+                <div class="mt48 col-md-5 mb48">
+                  <p class="text-justify">
+                    <span style="line-height: 23.3999996185303px; text-align: justify;">Creating pages is easier with the help of Odoo CMS building blocks. Dive into the flexibility of Be Wise* Theme to make your web creation experience smoother.</span>
+                  </p>
+                </div>
+                <div class="mt48 col-md-5 col-md-offset-2 mb64">
+                  <p class="text-justify">
+                    <span style="line-height: 23.3999996185303px; text-align: justify;">Be Wise* has been coded sensibly and smartly so that it’s layout can be changed from boxed to full width and vice-versa without affecting the design quality.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_icon_box_circle">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 mt16 mb16">
+                  <i class="fa fa-2x fa-eyedropper pull-left img-circle bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>4 Color Schemes</h4>
+                  </div>
+                </div>
+                <div class="col-md-3 mt16 mb16">
+                  <i class="fa fa-2x fa-font pull-left img-circle bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>4 Font Combinations</h4>
+                  </div>
+                </div>
+                <div class="col-md-3 mt16 mb16">
+                  <i class="fa fa-2x fa-desktop pull-left img-circle bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Wide/Boxed Layout</h4>
+                  </div>
+                </div>
+                <div class="col-md-3 mt16 mb128">
+                  <i class="fa fa-2x fa-paint-brush pull-left img-circle bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Soft Backgrounds</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_big_image_parallax parallax bg-img-04" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 1941.9px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mt32 s_big_image_parallax_content mb0">
+                  <img class="img-responsive center-block" src="/web/image/theme_common.image_content_03"/>
+                </div>
+                <div class="col-md-12 text-center mt16">
+                  <h3>
+                    <font class="bg-orange-dark">
+                      <font class="bg-gamma">
+                        <font class="text-white"> A Funny Theme For Odoo CMS </font>
+                      </font>
+                    </font>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_lead_bar bg-epsilon">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt16 mb64">
+                  <h3>Responsive HTML5 theme built using Bootstrap</h3>
+                  <h5 class="mb0 mt0 text-muted">Be Wise* was made with easy customization in mind.</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_separator_nav">
+            <div class="container">
+              <div class="row s_separator_nav_nav mini_nav_scroll">
+                <div class="s_separator_nav_item col-md-2 pull-right" style="text-align: right;">
+                  <a class="btn btn-primary " href="#wrap" type="button">Top</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_text_image_2 o_scroll_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 mt0 mb48">
+                  <h3>Be Wise* for everyone!</h3>
+                  <h4 class="text-muted">Simple as a pushover.</h4>
+                  <p class="text-justify mt16">You can set your own combinations from 4 layout modes, 4 color schemes, 4 background patterns and 8 combined fonts. Be Wise* is a beautifully designed theme for children websites. Crafted with the finest pixel quality and best coding practices inspired by Bootstrap.</p>
+                </div>
+                <div class="col-md-5 col-md-offset-2 mb32 mt16">
+                  <img class="img-responsive" src="/web/image/theme_common.image_content_07"/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_image_text_2 bg-delta">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 mb48 mt64">
+                  <img class="img-responsive" src="/web/image/theme_common.image_content_02"/>
+                </div>
+                <div class="col-md-5 col-md-offset-2 mt64 mb64">
+                  <h3>A Nice and Colorfull Template</h3>
+                  <h4 class="text-muted">Beautifull color schemes</h4>
+                  <p class="text-justify mt16">Be Wise* is a beautifully designed theme for children websites. Crafted with the finest pixel quality and best coding practices inspired by Bootstrap. You can set your own combinations from 4 layout modes, 4 color schemes, 4 background patterns and 8 combined fonts.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_separator_multicolor_fw">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <hr/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_separator_nav">
+            <div class="container">
+              <div class="row s_separator_nav_nav mini_nav_scroll">
+                <div class="s_separator_nav_item col-md-2 pull-right">
+                  <a class="btn btn-success btn-xl pull-right" href="#wrap" type="button">Top</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_column o_scroll_nav">
+            <div class="container">
+              <div class="row">
+                <div class="mt32 mb64 col-md-12">
+                  <img class="img-responsive center-block" src="/web/image/theme_common.image_content_04"/>
+                  <h3 class="mt32 text-center">A Light, Powerful and Easy-to-Use Bootstrap Theme</h3>
+                  <h4 class="text-muted text-center">The power of Odoo CMS</h4>
+                  <p class="text-justify mt16 mb64">Be Wise* a beautifully designed HTML Template for, children, craft, toys, school &amp; Training Website. This template is beautifully crafted with hadcoded HTML 5 and CSS3 with amazing animations and parallax effect.  Be Wise is easy, intuitive, and flexible. Creating pages is easier with the help of Odoo CMS building blocks. Dive into the flexibility of Be Wise* Theme to make your web creation experience smoother.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_separator_nav">
+            <div class="container">
+              <div class="row s_separator_nav_nav mini_nav_scroll">
+                <div class="s_separator_nav_item col-md-2 pull-right">
+                  <a class="btn btn-success btn-xl pull-right" href="#wrap" type="button">Top</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+    </template>
+
+    <record id="demo_page_demo_1_menu" model="website.menu">
+      <field name="name">Demo 1</field>
+      <field name="url">/page/demo_page_demo_1</field>
+      <field name="parent_id" ref="website.main_menu"/>
+      <field name="sequence" type="int">20</field>
+    </record>
+</data>
+</openerp>

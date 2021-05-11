@@ -1,0 +1,40 @@
+@s_cubes_big_cube_min_height: 600px;
+#wrapwrap .s_cubes {
+    .cube {
+        min-height: 200px;
+
+        h3 {
+            text-align: center;
+        }
+        h4 {
+            padding-bottom: 20px;
+        }
+
+        .cube-heading {
+            position: relative;
+            top: 25%;
+        }
+        > .row {
+            height: 50%;
+        }
+    }
+
+    .cube-big {
+        height: 600px;
+        @media screen and (max-width: 640px) {
+            height: auto;
+        }
+
+        .cube-heading {
+            position: relative;
+            top: 25%;
+        }
+        &:first-child {
+            min-height: @s_cubes_big_cube_min_height;
+        }
+    }
+
+    .cube-small, .cube-text {
+        height: 300px;
+    }
+}

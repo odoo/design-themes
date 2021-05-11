@@ -1,0 +1,40 @@
+body {
+    font-size: 13px;
+}
+.navbar-default .container {
+    box-shadow: none;
+}
+header .navbar-default .container {
+    height: 50px;
+    li > .dropdown-menu {
+        margin-top: 0;
+    }
+    .navbar-collapse {
+        @media screen and (max-width: @screen-xs-max) {
+            float: left;
+            box-shadow: none !important;
+        }
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
+    }
+    .navbar-header {
+        height: 50px;
+        padding: 0 15px;
+        .navbar-brand {
+            transform: none;
+            padding: 0;
+            margin-left: 0;
+        }
+        .navbar-toggle {
+            top: 0;
+            right: 0;
+        }
+    }
+}
+#top_menu {
+    transform: none;
+    li a {
+        font-size: 13px;
+    }
+}

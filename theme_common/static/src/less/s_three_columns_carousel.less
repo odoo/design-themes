@@ -1,0 +1,16 @@
+#wrapwrap .s_three_columns_carousel {
+    [class*="bg-"] {
+        border: 10px solid rgba(0, 0, 0, 0);
+        padding: 20px;
+        background-clip: padding-box;
+        > .carousel [class*="bg-"]{
+            border: 0;
+        }
+    }
+    .bg-none {
+        padding: 0;
+    }
+    .carousel-control {
+        .carousel-control(0, 0, 2px);
+    }
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <openerp>
+    <data>
+
+    <template name="Building Blocks | Features" id="website.demo_blocks_features" page="True">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure mb64">
+
+          <section class="bg-gray-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="demo-title mt0 mb0">Structure Blocks</h1>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt32 mb32">Features Grid + Circle</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_features_grid_circle"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Full-width: Images + Captions</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_images_captions_fw"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">News Carousel</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_news_carousel"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Numbers</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_numbers"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Process Steps</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_process_steps_2"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Accordion</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_collapse"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Quotes Slider</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_quotes_slider_2"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">References</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_references_2"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Google Map</h4>
+              </div>
+            </div>
+          </div>
+
+          <section class="s_google_map" data-map-type="ROADMAP" data-map-color="" data-map-zoom="12" data-map-gps="(50.6305797, 4.869176899999957)" data-pin-title="Discover Our Office:" data-pin-desc="Our office is located in Grand-Rosière - T. (+32) 81 81 37 00" data-pin-style="flat" style="height: 488px; overflow: hidden;">
+            <div class="map_container"/>
+            <div class="description">
+              <font>Visit us:</font>
+              <span> Our office is located in Grand-Rosière - T. (+32) 81 81 37 00</span>
+            </div>
+          </section>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Team Profiles</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_team_profiles_2"/>
+
+    </div>
+  </t>
+</template>
+
+<record id="demo_blocks_features_menu" model="website.menu">
+    <field name="name">Features</field>
+    <field name="url">/page/demo_blocks_features</field>
+    <field name="parent_id" ref="demo_blocks_menu"/>
+    <field name="sequence" type="int">43</field>
+</record>
+
+</data>
+</openerp>

@@ -1,0 +1,29 @@
+#wrapwrap .s_collapse {
+    .panel {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .panel-group .panel-heading+.panel-collapse > .panel-body {
+        border: 0;
+    }
+    .panel-heading {
+        padding: 0;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: @font-size-small;
+            width: 100%;
+            padding: 12px 0;
+            display: inline-block;
+            &:before {
+                content:'\f056';
+                font-family: 'FontAwesome';
+                margin: 0 12px 0 16px;
+            }
+            &.collapsed:before {
+                content:'\f055';
+                font-family: 'FontAwesome';
+            }
+        }
+    }
+}

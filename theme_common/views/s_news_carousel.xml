@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="News Carousel" id="s_news_carousel">
+        <section id="s_news_carousel" class="s_news_carousel bg-gray-lighter">
+            <div class="container">
+                <div class="row">
+                    <div data-interval="10000" class="col-md-12 carousel slide mt32 mb32" style="height: 240px;">
+                        <div class="carousel-control left" data-target="#s_news_carousel" data-slide="prev">
+                            <i class="fa fa-chevron-left fa-1x bg-white"/>
+                        </div>
+                        <div class="carousel-inner bg-white">
+                            <div class="item active">
+                                <div class="row content">
+                                    <div class="col-md-3 news-carousel-time text-center bg-beta">
+                                        <span class="day bg-white img-circle">18</span>
+                                        <span class="month"><strong>DECEMBER</strong></span>
+                                        <span class="year">2014</span>
+                                    </div>
+                                    <div class="col-md-9 news-carousel-content">
+                                        <h3 class="mt0">Ten basic rules to making an irresistible website.</h3>
+                                        <p>Your website is where almost all of your customers will end up first. Let's clear up what it takes to give them the best experience with it.</p>
+                                        <p><a href="https://www.odoo.com/blog/business-hacks-1/post/10-basic-rules-to-making-an-irresistible-website-201" class="btn btn-xs btn-primary">Full read</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row content">
+                                    <div class="col-md-3 news-carousel-time text-center bg-beta">
+                                        <span class="day bg-white img-circle">17</span>
+                                        <span class="month"><strong>JANUARY</strong></span>
+                                        <span class="year">2015</span>
+                                    </div>
+                                    <div class="col-md-9 news-carousel-content">
+                                        <h3 class="mt0">Five things to know to prepare for the future of eCommerce.</h3>
+                                        <p>Which trends to follow?  Which ideas will work?</p>
+                                        <p><a href="https://www.odoo.com/blog/business-hacks-1/post/5-things-to-know-to-prepare-for-the-future-of-ecommerce-193" class="btn btn-xs btn-primary">Discover more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row content">
+                                    <div class="col-md-3 news-carousel-time text-center bg-beta">
+                                        <span class="day bg-white img-circle">3</span>
+                                        <span class="month"><strong>FEBRUARY</strong></span>
+                                        <span class="year">2015</span>
+                                    </div>
+                                    <div class="col-md-9 news-carousel-content">
+                                        <h3 class="mt0">How you can use newsletters to increase your popularity?</h3>
+                                        <p>Build relationships and recognition by staying in touch</p>
+                                        <p><a href="https://www.odoo.com/blog/business-hacks-1/post/how-you-can-use-newsletters-to-increase-your-popularity-194" class="btn btn-xs btn-primary">Click here</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-control right" data-target="#s_news_carousel" data-slide="next">
+                            <i class="fa fa-chevron-right fa-1x bg-white"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

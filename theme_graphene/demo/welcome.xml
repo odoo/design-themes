@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="website.layout_logo_show"  model="ir.ui.view" >
+      <field name="active" eval="False"/>
+    </record>
+
+    <template id="website.welcome" name="Welcome" page="True">
+      <t t-call="website.layout">
+        <div id="wrap"  class="oe_structure demo_welcome">
+
+          <section autoplay="autoplay" class="s_media_block move_to_top preserve3d" custom_content="&lt;iframe src='https://www.youtube.com/embed/LyEz6Ru2IwY'&gt;&lt;/iframe&gt;"  iframefit="fitCont" loop="loop" src="http://media.sublimevideo.net/v/midnight-sun-short-edit-360p.mp4" muted="muted" style="height: 600px;" background="js-animated-bg" opacity="1">
+            <div class="v-align text-center">
+              <img src="/web/image/theme_common.image_content_logo" style="width: 100%; max-width: 270px;opacity:0" class=" center-block o_animate o_animate_both_scroll o_anim_fade_in o_anim_dur1500"/>
+            </div>
+          </section>
+
+          <section class="mb32 bg-white bg_patt-03 text-gray">
+            <div class="mt48 text-center o_animate o_animate_both_scroll o_anim_fade_in o_anim_dur1500">
+              <h1 class="letterSpacing10 text-uppercase sans-serif o_animate o_not-animable title-underlined">Welcome</h1>
+              <p class="serif">
+                <em>Welcome to Graphene , Awesome multi-porpose Odoo 8 theme</em>
+              </p>
+              <!-- <p class="serif"><em>Graphene is a new kind of material, more efficent then silicon and stronger than diamond.</em><br /><em>It inspired the creation of this theme</em></p>-->
+            </div>
+            <div class="mt92 tech">
+              <div class="row">
+                <div class="col-xs-4">
+                   <img class="img-responsive" src="/theme_graphene/static/src/img/theme_samples/HTML5.png" alt=""/>
+                 </div>
+                 <div class="col-xs-4 mt8">
+                   <img class="img-responsive" src="/theme_graphene/static/src/img/theme_samples/less.png" alt=""/>
+                 </div>
+                 <div class="col-xs-4">
+                   <img class="img-responsive" src="/theme_graphene/static/src/img/theme_samples/CSS3.png" alt=""/>
+                 </div>
+               </div>
+            </div>
+          </section>
+
+          <section class="parallax s_parallax o_animate bg-img-03 o_anim_fade_in o_anim_dur2000" contenteditable="false" data-scroll-background-ratio="0.3" style="height: 336px; overflow: hidden; background-attachment: scroll;">
+            <div>
+              <div class="oe_structure" contenteditable="true"/>
+            </div>
+          </section>
+
+          <section class="s_showcase">
+            <div class="box">
+              <div class="hidden-xs line o_animate o_anim_fade_in_down o_anim_dur3000 o_anim_del1500"/>
+
+              <div class="row">
+                <div class="col-md-5 col-sm-5 text-right feature o_animate o_anim_fade_in_left o_anim_dur1500">
+                  <h4>Fully-equipped <img  src="/theme_graphene/static/description/media/gift.jpg" alt=""/></h4>
+                  <p>HTML5 videos, pure CSS3 Animation, Retina images support... Everyting is out of the box.</p>
+                </div>
+                <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature o_animate o_anim_fade_in_right o_anim_dur1500">
+                   <h4><img  src="/theme_graphene/static/description/media/custom.jpg" alt=""/> Flexible</h4>
+                  <p>Limitless combination. Use the provided styles or start from scratch, Graphene will take care of everything</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-5 col-sm-5 text-right feature  o_animate o_anim_fade_in_left o_anim_dur1500 o_anim_del500">
+                  <h4>Mobile friendly <img  src="/theme_graphene/static/description/media/mobile.jpg" alt=""/></h4>
+                  <p>Media queries are managed for you. Graphene work beautifully on desktop and mobile devices.</p>
+                </div>
+                <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature o_animate o_anim_fade_in_right o_anim_dur1500 o_anim_del500">
+                  <h4><img  src="/theme_graphene/static/description/media/browsers.jpg" alt=""/>
+                  Cross-browser</h4>
+                  <p>Works on all modern browsers and degrades gracefully on the old ones.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="container mt16 text-center o_animate o_anim_fade_in o_anim_del2000">
+              <a href="/page/feat/" class="btn btn-default">Discover all the features</a>
+            </div>
+          </section>
+
+          <hr/>
+
+          <section class="s_text_block">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center title-parent mt64 mb0">
+                  <h2 class="o_animate o_not-animable title-boxed">Powerful snippets</h2>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="s_google_map" data-map-type="ROADMAP" data-map-color="blueMap" data-map-zoom="16" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-title="Discover Our Office:" data-pin-desc="Our office is loceated in the northeast of Brussels. TEL (555) 43W2 2e365" data-pin-style="flat" style="height: 488px; overflow: hidden;">
+            <div class="map_container"/>
+            <div class="description">
+              <font>Visit us:</font>
+              <span> Our office is located in the northeast of Brussels. TEL (555) 432 2365 </span>
+            </div>
+          </section>
+
+          <section class="s_text_image mb128 mt64">
+            <div class="col-md-4 col-md-offset-1 mt128">
+              <h3>Fully Customizable</h3>
+              <p>Create you unique font and colors combination. Everything in Graphene is ready to be c</p>
+              <p>Start with the customer – find out what they want and give it to them.</p>
+            </div>
+            <div class="col-md-7 " style="padding:0; overflow:hidden">
+              <img class="img img-responsive mb16 o_animate o_anim_fade_in_right o_anim_dur1500" src="/theme_graphene/static/src/img/theme_samples/browser_right.png"/>
+            </div>
+          </section>
+
+          <hr/>
+
+          <section class="s_showcase_slider feat o_not-animable mb128">
+            <div class="s_ss_slider_wrapper">
+              <ul class="s_ss_slider o_animable">
+                <li class="selected o_not-animable">
+                  <img src="/theme_graphene/static/description/media/move_top.jpg" alt="Product Image 1"/>
+                </li>
+                <li><img class="o_not-animable" src="/theme_graphene/static/description/media/anima_editor700.png" alt="Product Image 1"/></li>
+                <li><img class="o_not-animable" src="/theme_graphene/static/description/media/latest_posts.jpg" alt="Product Image 2"/></li>
+                <li><img class="o_not-animable" src="/theme_graphene/static/description/media/typo.jpg" alt="Product Image 2"/></li>
+              </ul> <!-- s_ss slider -->
+
+              <ul class="s_ss_slider_navigation">
+                <li><span contentEditable="false" class="o_not-animable fa fa-chevron-left s_ss_prev inactive">Next</span></li>
+                <li><span contentEditable="false" class="o_not-animable fa fa-chevron-right s_ss_next">Prev</span></li>
+              </ul> <!-- s_ss slider-navigation -->
+
+              <span href="#0" class="s_ss_close fa fa-times">Close</span>
+            </div> <!-- s_ss slider-wrapper -->
+
+            <div class="s_ss_item_info o_animable">
+              <h2>Produt Title</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione.</p>
+
+              <button class="btn btn-primary">Add to cart</button>
+            </div> <!-- s_ss info -->
+          </section>
+
+          <hr/>
+
+        </div> <!-- #wrap -->
+      </t>
+    </template>
+
+    <record id="graphene_home_menu" model="website.menu">
+      <field name="name">Welcome</field>
+      <field name="url">/page/welcome</field>
+      <field name="parent_id" ref="website.main_menu"/>
+    </record>
+
+  </data>
+</openerp>

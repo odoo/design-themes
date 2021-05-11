@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_kea_website_options_pattern" inherit_id="website.snippet_options">
+        <!-- Drop s_button_text into content -->
+        <xpath expr="." position="inside">
+                <div data-selector=".s_button_text"
+                        data-drop-near=".s_banner_3 .hero-bg > *, .s_banner_parallax .hero-bg > *, p, span, h1, h2, h3, h4, h5, h6">
+                </div>
+        </xpath>
+
+        <!-- Background image -->
+        <xpath expr="//div[@data-js='background']/li" position="replace">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><i class="fa fa-picture-o"/> Background Image</a>
+                <ul class="dropdown-menu">
+                    <li data-select_class="bg-img-01"><a><img src="/web/image/theme_common.image_content_11/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-02"><a><img src="/web/image/theme_common.image_content_03/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-03"><a><img src="/web/image/theme_common.image_content_12/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-04"><a><img src="/web/image/theme_common.image_content_02/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-05"><a><img src="/web/image/theme_common.image_content_10/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-06"><a><img src="/web/image/theme_common.image_content_09/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-07"><a><img src="/web/image/theme_common.image_content_07/250x120" class="center-block"/></a></li>
+                    <li data-select_class=""><a>None</a></li>
+                    <li><a style="background: none; padding: 5px; border-top: 1px solid #ddd;"/></li>
+                    <li data-select_class="oe_custom_bg" data-choose_image="choose_image"><a><b>Choose another image...</b></a></li>
+                </ul>
+            </li>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector">section, .carousel, .parallax, .color-block, .color-block4, headerwrap, .cube-big, .cube-small, .s_color_blocks_2_block</attribute>
+        </xpath>
+
+        <!-- BG colors -->
+        <xpath expr="//div[@data-js='colorpicker']/li" position="replace">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><i class="fa fa-eyedropper"/> Colors</a>
+                <ul class="dropdown-menu">
+                    <table class="colorpicker">
+                        <tr>
+                            <td><button data-color="alpha"></button></td>
+                            <td><button data-color="beta"></button></td>
+                            <td><button data-color="gamma"></button></td>
+                            <td><button data-color="delta"></button></td>
+                            <td><button data-color="epsilon"></button></td>
+                            <td><button data-color="none">none</button></td>
+                        </tr>
+                        <tr>
+                            <td><button data-color="black"></button></td>
+                            <td><button data-color="gray-dark"></button></td>
+                            <td><button data-color="gray"></button></td>
+                            <td><button data-color="gray-light"></button></td>
+                            <td><button data-color="white"></button></td>
+                        </tr>
+                    </table>
+                </ul>
+            </li>
+        </xpath>
+
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-selector">section, .carousel, .parallax, #footer, .copyright, .product-widget, .mask, .cube-small .popup-container, .s_color_blocks_4_block, .s_event_list_item>.bg-delta, .s_color_blocks_2_block</attribute>
+        </xpath>
+    </template>
+
+    <!-- Font size -->
+    <template id="font_size" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='blog-style']" position="after">
+            <div data-js='typo_size' data-selector="h1, h2, h3, h4, h5, h6, p">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-text-height"/> Font size</a>
+                    <ul class="dropdown-menu toggle">
+                        <li data-select_class=""><a>Auto</a></li>
+                        <li class="divider"/>
+                        <li data-select_class="em1"><a>1em</a></li>
+                        <li data-select_class="em2"><a>2em</a></li>
+                        <li data-select_class="em3"><a>3em</a></li>
+                        <li data-select_class="em4"><a>4em</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

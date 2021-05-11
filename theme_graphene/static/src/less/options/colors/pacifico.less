@@ -1,0 +1,83 @@
+// Pacifico Color Set
+// =============================
+
+@color-alpha     : @color-alpha-pacifico;
+@color-beta      : @color-beta-pacifico;
+@color-gamma     : @color-gamma-pacifico;
+@color-delta     : @color-delta-pacifico;
+@color-epsilon   : @color-epsilon-pacifico;
+
+// =============================
+// Bootstrap Colours ===========
+// =============================
+
+@brand-primary : @color-alpha;
+@brand-info    : #4D68A3;
+@brand-success : #5CB85C;
+@brand-info    : #4D68A3;
+@brand-warning  : #DDC66B;
+@brand-danger : #D86060;
+
+// =============================
+// Layout's Colours ============
+// =============================
+
+#wrapwrap { background-color: #FEFEFE;}
+
+// LAYOUT BOXED
+
+.graphene-layout-boxed() when (@graphene-layout-boxed = true) {
+
+    #wrapwrap { background-color: #575D69;}
+
+}
+.graphene-layout-boxed();
+
+// LAYOUT POSTCARD
+.graphene-layout-postcard() when (@graphene-layout-postcard = true) {
+
+    #wrapwrap { background-color: #575D69;}
+
+    a.navbar-brand, .navbar-default a.navbar-brand {
+        color: @gray-white;
+    }
+
+    header#graph_header .navbar .navbar-nav > li.active > a,
+    header#graph_header .navbar .navbar-nav > li.active > a:hover,
+    header#graph_header .navbar .navbar-nav > li.active > a:focus {
+        color: @gray-lighter;
+    }
+
+    header#graph_header .navbar .navbar-nav > li > a {
+        color: @gray-light;
+        &:hover{
+            color: white;
+        }
+    }
+
+}
+.graphene-layout-postcard();
+
+// LAYOUT TOP BANNER
+
+.graphene-layout-top_banner() when (@graphene-layout-top_banner = true) {
+    
+    #wrapwrap { background-color: #575D69;}
+
+    a.navbar-brand, .navbar-default a.navbar-brand {
+        color: @gray-white;
+    }
+
+    header#graph_header .navbar .navbar-nav > li.active > a,
+    header#graph_header .navbar .navbar-nav > li.active > a:hover,
+    header#graph_header .navbar .navbar-nav > li.active > a:focus {
+        color: @gray-lighter;
+    }
+
+    header#graph_header .navbar .navbar-nav > li > a {
+        color: @gray-light;
+    }
+
+}
+.graphene-layout-top_banner();
+

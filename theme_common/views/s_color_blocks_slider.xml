@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Color Blocks Slider" id="s_color_blocks_slider">
+        <div id="ColorBlockSlider" class="s_color_blocks_slider carousel slide bg-epsilon" data-interval="10000">
+            <ol class="carousel-indicators hidden"><li data-target="#ColorBlockSlider" data-slide-to="0" class="active"></li></ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container-fluid">
+                        <div class="row content">
+                            <div class="col-md-8 s_color_blocks_slider_img text-center">
+                                <img src="/theme_bewise/static/src/img/backgrounds/bg_img_06.jpg" class="img-responsive center-block"/>
+                            </div>
+                            <div class="col-md-4 s_color_blocks_slider_content text-center">
+                                <span class="fa fa-cube fa-5x center-block"></span>
+                                <h2 class="text-center">An Other Color Block</h2>
+                                <h3 class="text-center text-muted mb16">Customize Backgrounds</h3>
+                                <p class="text-justify mb32">Color blocks are a simple and effective way to <strong>present and highlight your content</strong>. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</p>
+                                <a class="btn btn-info mb32" href="#"><i class="fa fa-cog"/> More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control left hidden" data-target="#ColorBlockSlider" data-slide="prev" style="width: 10%"><i class="fa fa-chevron-left"/></div>
+            <div class="carousel-control right hidden" data-target="#ColorBlockSlider" data-slide="next" style="width: 10%"><i class="fa fa-chevron-right"/></div>
+        </div>
+    </template>
+</odoo>
