@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Features Grid Circle" id="s_features_grid_circle">
+        <section class="s_features_grid_circle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 mb32">
+                                <h2>List of Features</h2>
+                                <h4 class="text-primary">Add a great slogan</h4>
+                            </div>
+                            <div class="col-md-12">
+                                <i class="fa fa-2x fa-comment pull-left img-circle mb16 bg-alpha"/>
+                                <div class="feature-text">
+                                    <h5 class="mt0 mb4 text-primary"><b>Change icons</b></h5>
+                                    <p>Click on the icon to adapt it to your feature.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <i class="fa fa-2x fa-columns pull-left img-circle mb16 bg-alpha"/>
+                                <div class="feature-text">
+                                    <h5 class="mt0 mb4 text-primary"><b>Duplicate</b></h5>
+                                    <p>Duplicate blocks to add more features.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <i class="fa fa-2x fa-user pull-left img-circle mb16 bg-alpha"/>
+                                <div class="feature-text">
+                                    <h5 class="mt0 mb4 text-primary"><b>Delete Blocks</b></h5>
+                                    <p>Select and delete blocks to remove some features.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 mb32">
+                                <h2>Second List</h2>
+                                <h4 class="text-success">Add a great slogan</h4>
+                            </div>
+                            <div class="col-md-12">
+                                <i class="fa fa-2x fa-magic pull-left img-circle mb16 bg-beta"/>
+                                <div class="feature-text">
+                                    <h5 class="mt0 mb4 text-success"><b>Great Value</b></h5>
+                                    <p>Tell features the visitor would like to know, not what you'd like to say.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <i class="fa fa-2x fa-bolt pull-left img-circle mb16 bg-beta"/>
+                                <div class="feature-text">
+                                    <h5 class="mt0 mb4 text-success"><b>Change Background</b></h5>
+                                    <p>From the main container, you can change the background to highlight features.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <i class="fa fa-2x fa-picture-o pull-left img-circle mb16 bg-beta"/>
+                                <div class="feature-text">
+                                    <h5 class="mt0 mb4 text-success"><b>Sample images</b></h5>
+                                    <p>All these icons are licensed under creative commons so that you can use them.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

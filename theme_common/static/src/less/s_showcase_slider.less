@@ -1,0 +1,277 @@
+//  ======= Variables ============================
+//  ==============================================
+//  Change main snippet's propriety easily
+
+@s-ss-slider-navigation-color : white;
+@s-ss-slider-navigation-text-shadow : 0 1px 0 #333;
+
+//  ====== Hooks(hook) =====================================
+//  ===========================================================
+//  Use them to inject NEW css rules or overwrite the old ones.
+//  This method is more maintenable than classic css overwrite
+//  'couse it works also if the snippet's structure will change.
+
+//  How to:
+//  in your theme, just call the backdoor like a normal
+//  CSS class adding parethesis at the end ".backdoor-name()"
+//  (this will prevent the creation of a standard CSS class).
+//  Add your rules inside. Your style will take the priority.
+//  Done.
+
+//  .s_showcase_slider-wrapper-hook() {
+//    border: 20px solid red;
+//    max-height: 200px;
+//  }
+
+.s_showcase_slider-wrapper-hook() {}
+    .s_showcase_slider-slider-hook() {}
+        .s_showcase_slider-slider-hover-hook() {}
+        .s_showcase_slider-navigation-hook() {}
+            .s_showcase_slider-navigation-buttons-hook() {}
+        .s_showcase_slider-close-hook() {}
+    .s_showcase_slider-info-hook() {}
+
+#wrapwrap .s_showcase_slider {
+    position: relative;
+
+    .s_ss_slider_wrapper {
+        position: relative;
+        z-index: 10;
+        .transition(width 400ms);
+        /* Force Hardware Acceleration */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+        .backface-visibility(hidden);
+
+        .s_showcase_slider-wrapper-hook;
+
+        .s_ss_close {
+            display: none;
+            .o-position-absolute(30px, 30px);
+            z-index: 12;
+            width: 48px;
+            height: 48px;
+            overflow: hidden;
+            white-space: nowrap;
+            visibility: hidden;
+            opacity: 0;
+            font-size: 1.6em;
+            text-align: right;
+            color: @s-ss-slider-navigation-color;
+            text-shadow: @s-ss-slider-navigation-text-shadow;
+            .transition(e("transform 0.3s 0s, visibility 0s 0.4s"))
+
+            &:hover {
+                .scale(1.2);
+            }
+
+            .s_showcase_slider-close-hook;
+        }
+
+        ul {
+            margin: 0;
+        }
+    }
+
+    .s_ss_slider {
+        padding: 0;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        &:before { /* never visible - this is used by javascript to check the current window size */
+            content: 'mobile';
+            display: none;
+        }
+        .s_showcase_slider-slider-hook;
+
+        li {
+            .o-position-absolute(@top: 0, @left: 0);
+            list-style: none;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            .translate(100%; 0);
+            .transition(transform 300ms linear);
+            img {
+                display:block;
+                width:100%;
+            }
+            &.selected {
+                position:relative;
+                z-index:12;
+                .translate(0; 0);
+            }
+            &.move-left {
+                .translate(-100%; 0);
+            }
+        }
+    }
+
+    .s_ss_slider_navigation li {
+        .o-position-absolute(@top: 50%);
+        z-index:12;
+        list-style:none;
+        .translate(0; -50%);
+
+        span {
+            display: block;
+            width: 48px;
+            height: 48px;
+            overflow: hidden;
+            font-size: 1.6em;
+            color: @s-ss-slider-navigation-color;
+            text-shadow: @s-ss-slider-navigation-text-shadow;
+            white-space: nowrap;
+            .transition(e("opacity 200ms, visibility 0s"));
+
+            .s_showcase_slider-navigation-buttons-hook;
+
+            &.inactive {
+                opacity: 0;
+                visibility: hidden;
+                .transition(e("opacity 200ms 0s, visibility 0s 200ms"));
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        &:first-of-type {
+            left: 10px;
+        }
+        &:last-of-type {
+            right: 10px;
+        }
+
+        .s_showcase_slider-navigation-hook;
+    }
+
+    .s_ss_slider_pagination {
+        .o-position-absolute(@left: 50%, @bottom: 30px);
+        z-index: 12;
+        .translate(-50%; 0);
+        visibility: hidden;
+        li {
+            display: inline-block;
+            float: left;
+            margin: 0 5px;
+        }
+        li.selected a {
+            background: #f5f4f3;
+        }
+        a {
+            display: block;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            box-shadow: 0 1px 0 #333;
+            border: 1px solid #f5f4f3;
+            background-color: rgba(255,255,255,0);
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
+        }
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    .s_ss_item_info {
+        padding: 50px 5%;
+
+        .s_showcase_slider-info-hook;
+    }
+
+    // ================ READABLE
+    &.readable {
+        font-size: 100%;
+        .s_ss_item_info {
+            padding: 0 20px;
+        }
+    }
+
+    // ================ SLIDER ACTIVE
+    &.active .s_ss_slider_wrapper .s_ss_close {
+        visibility: visible;
+        opacity: 1;
+        .transition(e("transform 0.3s 0s, visibility 0s 0s, opacity .4s .4s"))
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #wrapwrap .s_showcase_slider {
+        .s_ss_slider {
+            cursor: pointer;
+            &:before { content: 'desktop'; }
+            &:after {
+                content: '';
+                display: block;
+                .o-position-absolute(@top: 0, @left: 0);
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                background: rgba(255, 255, 255, 0.4);
+                background-size: 48px;
+                opacity: 0;
+                z-index: 14;
+                .transition(opacity 200ms);
+            }
+            &:hover::after {
+                opacity: 1;
+            }
+            .s_showcase_slider-slider-hover-hook;
+        }
+
+        .s_ss_item_info {
+            .o-position-absolute(0, 0);
+            width: 50%;
+            padding: 60px 60px 0;
+            margin: 0;
+        }
+
+        .s_ss_slider_wrapper {
+            width: 50%;
+            .s_ss_close {
+                display: block;
+            }
+        }
+        .s_ss_slider_navigation li,
+        .s_ss_slider_pagination {
+            opacity: 0;
+            visibility: hidden;
+            .transition(e("opacity 0.4s 0s, visibility 0s .4s"))
+        }
+
+        .s_ss_slider_navigation li {
+            &:first-child {
+                left: 30px;
+            }
+            li:last-child {
+                right: 30px;
+            }
+        }
+        // ================ SLIDER ACTIVE
+        &.active {
+            .s_ss_slider {
+                cursor: auto;
+                &:after {
+                    display: none;
+                }
+            }
+            .s_ss_slider_wrapper {
+                width: 100%;
+                z-index: 10;
+            }
+            .s_ss_slider_navigation li,
+            .s_ss_slider_pagination {
+                opacity: 1;
+                visibility: visible;
+                .transition(e("opacity 0.4s .4s, visibility 0s .4s"))
+            }
+        }
+    }
+} /* @media only screen and (min-width: 992px) */

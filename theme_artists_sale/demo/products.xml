@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Delete Monglia categories -->
+    <delete id="theme_monglia_sale.warm_food" model="product.public.category"/>
+    <delete id="theme_monglia_sale.hamburger" model="product.public.category"/>
+    <delete id="theme_monglia_sale.gyros" model="product.public.category"/>
+    <delete id="theme_monglia_sale.pizza" model="product.public.category"/>
+    <delete id="theme_monglia_sale.sandwich" model="product.public.category"/>
+    <delete id="theme_monglia_sale.cold_food" model="product.public.category"/>
+    <delete id="theme_monglia_sale.salad" model="product.public.category"/>
+    <delete id="theme_monglia_sale.pasta" model="product.public.category"/>
+
+    <!-- Create new categories -->
+    <record id="drawers" model="product.public.category">
+        <field name="name">For Drawers</field>
+    </record>
+    <record id="pencils" model="product.public.category">
+        <field name="parent_id" ref="drawers"/>
+        <field name="name">Pencils</field>
+    </record>
+
+    <record id="painters" model="product.public.category">
+        <field name="name">For Painters</field>
+    </record>
+    <record id="brushes" model="product.public.category">
+        <field name="parent_id" ref="painters"/>
+        <field name="name">Brushes</field>
+    </record>
+
+    <record id="photographer" model="product.public.category">
+        <field name="name">For Photographers</field>
+    </record>
+    <record id="frames" model="product.public.category">
+        <field name="parent_id" ref="photographer"/>
+        <field name="name">Picture Frames</field>
+    </record>
+
+    <!-- Delete Monglia products -->
+    <delete id="theme_monglia_sale.product_1" model="product.product"/>
+    <delete id="theme_monglia_sale.product_2" model="product.product"/>
+    <delete id="theme_monglia_sale.product_3" model="product.product"/>
+    <delete id="theme_monglia_sale.product_4" model="product.product"/>
+    <delete id="theme_monglia_sale.product_5" model="product.product"/>
+    <delete id="theme_monglia_sale.product_6" model="product.product"/>
+    <delete id="theme_monglia_sale.product_7" model="product.product"/>
+    <delete id="theme_monglia_sale.product_8" model="product.product"/>
+    <delete id="theme_monglia_sale.product_9" model="product.product"/>
+    <delete id="theme_monglia_sale.product_10" model="product.product"/>
+    <delete id="theme_monglia_sale.product_11" model="product.product"/>
+    <delete id="theme_monglia_sale.product_12" model="product.product"/>
+    <delete id="theme_monglia_sale.product_13" model="product.product"/>
+    <delete id="theme_monglia_sale.product_14" model="product.product"/>
+    <delete id="theme_monglia_sale.product_15" model="product.product"/>
+    <delete id="theme_monglia_sale.product_template_16" model="product.template"/>
+
+    <!-- Create new products -->
+    <record id="product_1" model="product.product">
+        <field name="name">Green Frame</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.frames')])]"/>
+        <field name="list_price">15.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_01.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_2" model="product.product">
+        <field name="name">Orange Frame</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.frames')])]"/>
+        <field name="list_price">15.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_02.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_3" model="product.product">
+        <field name="name">Pink Frame</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.frames')])]"/>
+        <field name="list_price">19.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_03.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_4" model="product.product">
+        <field name="name">Rose Frame</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.frames')])]"/>
+        <field name="list_price">19.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_04.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_5" model="product.product">
+        <field name="name">Brush</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.brushes')])]"/>
+        <field name="list_price">2.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_05.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_6" model="product.product">
+        <field name="name">Brush</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.brushes')])]"/>
+        <field name="list_price">2.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_06.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_7" model="product.product">
+        <field name="name">Brush</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.brushes')])]"/>
+        <field name="list_price">2.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_07.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_8" model="product.product">
+        <field name="name">Brush</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.brushes')])]"/>
+        <field name="list_price">2.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_08.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_9" model="product.product">
+        <field name="name">Brush</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.brushes')])]"/>
+        <field name="list_price">2.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_09.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_10" model="product.product">
+        <field name="name">Brush</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.brushes')])]"/>
+        <field name="list_price">2.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_10.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_11" model="product.product">
+        <field name="name">Pencil Graphite</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.pencils')])]"/>
+        <field name="list_price">1.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_11.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_12" model="product.product">
+        <field name="name">Pencil Graphite</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.pencils')])]"/>
+        <field name="list_price">1.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_12.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_13" model="product.product">
+        <field name="name">Pencil Graphite</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.pencils')])]"/>
+        <field name="list_price">1.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_13.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_14" model="product.product">
+        <field name="name">Pencil Graphite</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.pencils')])]"/>
+        <field name="list_price">1.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_14.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_15" model="product.product">
+        <field name="name">Pencil Graphite</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.pencils')])]"/>
+        <field name="list_price">1.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_15.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+    <record id="product_16" model="product.product">
+        <field name="name">Pencil Graphite</field>
+        <field name="public_categ_ids" eval="[(6,0,[ref('theme_artists_sale.pencils')])]"/>
+        <field name="list_price">1.0</field>
+        <field name="image" type="base64" file="theme_artists/static/src/img/content/product_img_16.jpg"/>
+        <field name="website_published" eval="True"/>
+        <field name="website_size_x">1</field>
+        <field name="website_size_y">2</field>
+    </record>
+</odoo>

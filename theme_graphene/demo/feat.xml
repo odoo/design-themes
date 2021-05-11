@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="website.layout_logo_show"  model="ir.ui.view" >
+      <field name="active" eval="False"/>
+    </record>
+
+    <template id="website.feat" name="Features" page="True">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure demo_feat text-center">
+
+          <section class="parallax s_parallax bg-img-03 move_to_top" style="padding-top: 40px; height: 424px; overflow: hidden; background-attachment: scroll; background-position: 0px 0px;" data-scroll-background-ratio="0.3" data-scroll-background-offset="0" contenteditable="false">
+            <div>
+              <div class="oe_structure container text-center mt32" contenteditable="true">
+                <h1 class="mt128 o_animate o_not-animable title-boxed">Features</h1>
+              </div>
+            </div>
+          </section>
+
+          <div class="bg-white" style="height:80px"></div>
+
+          <section class="container bg-white">
+            <img class="img-responsive o_animate o_anim_fade_in " src="/theme_graphene/static/description/media/anima_editor.png" alt=""/>
+
+            <hr class="mb64 mt64"/>
+
+            <img class="img-responsive o_animate o_anim_fade_in" src="/theme_graphene/static/description/media/video.jpg" alt=""/>
+
+            <a href="/page/blocks#video" class="btn btn-default">Discover More</a>
+
+            <hr class="mb64 mt64"/>
+
+            <img class="img-responsive o_animate o_anim_fade_in" src="/theme_graphene/static/description/media/move_top.jpg" alt=""/>
+
+            <hr class="mb64 mt64"/>
+
+            <img class="img-responsive o_animate o_anim_fade_in" src="/theme_graphene/static/description/media/typo.jpg" alt=""/>
+
+            <a href="/page/style" class="btn btn-default">Discover More</a>
+
+            <hr class="mb64 mt64"/>
+
+            <img class="img-responsive o_animate o_anim_fade_in" src="/theme_graphene/static/description/media/maps.jpg" alt=""/>
+
+            <a href="/page/blocks#maps" class="btn btn-default">Discover More</a>
+
+            <hr class="mb64 mt64"/>
+
+          </section>
+
+        </div> <!-- #wrap -->
+      </t>
+    </template>
+
+    <record id="graphene_feat_menu" model="website.menu">
+      <field name="name">Features</field>
+      <field name="url">/page/feat</field>
+      <field name="parent_id" ref="demo_blocks_menu"/>
+      <field name="sequence" type="int">2</field>
+    </record>
+
+  </data>
+</openerp>

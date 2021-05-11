@@ -1,0 +1,47 @@
+@font-family-sans-serif: "MedulaOne-Regular";
+@font-family-base: "Abel-Regular";
+@font-size-base: 16px;
+@line-height-base: 20/14;
+@headings-line-height: 1.1;
+
+#wrapwrap {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @font-family-sans-serif;
+    line-height: @headings-line-height;
+}
+
+.text-muted {
+    font-family: "Abel-Regular";
+    letter-spacing: -1px;
+}
+
+h1 {
+    font-size: @font-size-h1;
+}
+h2 {
+    font-size: @font-size-h2;
+}
+h3 {
+    font-size: @font-size-h3;
+}
+h4 {
+    font-size: @font-size-h4;
+}
+h5 {
+    font-size: @font-size-h5;
+}
+h6 {
+    font-size: @font-size-h6;
+}
+
+@font-size-h1: floor((@font-size-base * 3.3));
+@font-size-h2: floor((@font-size-base * 3.0));
+@font-size-h3: ceil((@font-size-base * 2.50));
+@font-size-h4: ceil((@font-size-base * 2.00));
+@font-size-h5: ceil((@font-size-base * 1.95));
+@font-size-h6: ceil((@font-size-base * 1.80));

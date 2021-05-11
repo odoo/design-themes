@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="odoo_experts_demo_blocks" inherit_id="website.demo_blocks" name="Odoo Experts Building Blocks">
+            <xpath expr="//div[@data-oe-call='theme_common.s_big_icon_circle']" position="after">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mt16 mb16">
+                            <h4 class="text-muted text-center">News Carousel</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-oe-call="theme_common.s_news_carousel"/>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mt16 mb16">
+                            <h4 class="text-muted text-center">Showcase</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-oe-call="theme_common.s_showcase"/>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

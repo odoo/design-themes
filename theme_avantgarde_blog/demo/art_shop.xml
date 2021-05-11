@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template inherit_id="website.art_shop">
+        <xpath expr="//section[hasclass('s_showcase_slider')]" position="after">
+            <section class="s_latest_posts_big_orizontal mt48 mb48">
+                <div class="js_get_posts container-fluid" data-loading="true" data-template="theme_avantgarde_blog.s_latest_posts_big_orizontal_template"></div>
+            </section>
+        </xpath>
+    </template>
+</odoo>

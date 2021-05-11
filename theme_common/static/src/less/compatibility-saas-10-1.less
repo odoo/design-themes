@@ -1,0 +1,17 @@
+// This file is for compatibility since saas-10 web_editor refactoring.
+// As a fix to work properly in the editor, some classes have been renamed.
+// To allow a smooth transition, old classes alias are created here.
+
+.bg-compatibility-mixin(@bg, @color) {
+    background-color: @bg;
+    color: @color;
+    .text-muted {
+        color: fade(@color, 40%);
+    }
+}
+
+.black { .bg-compatibility-mixin(@gray-base, @gray-light); }
+.darkgray { .bg-compatibility-mixin(@gray-dark, @gray-white); }
+.gray { .bg-compatibility-mixin(@gray, @gray-white); }
+.lightgray { .bg-compatibility-mixin(@gray-lighter, @gray); }
+.white { .bg-compatibility-mixin(@gray-white, @gray); }

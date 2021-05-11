@@ -1,0 +1,115 @@
+// =============================
+// === IMAGES and PATTERNS =====
+// =============================
+
+.bg-image(@img, @text-color: white, @shadow-color : rgba(0, 0, 0, 0), @x:50%, @y:50%, @repeat: no-repeat) {
+  @std-url: url("@{graphene-img-base-url}@{img}");
+  background-image: @std-url!important;
+  background-position: @x @y;
+  background-repeat: @repeat;
+  color: @text-color;
+  text-shadow: 0 1px 1px fadeout(@shadow-color,40%);
+  background-size: cover;
+
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      @2x-url: url("@{graphene-img-base-url}@{graphene-pattern-2x-prefix}@{img}");
+      background-image: @2x-url!important;
+  }
+}
+
+.bg-pattern(@img, @text-color:white, @repeat: repeat, @size: auto, @x:50%, @y:50%) {
+  @std-url: url("@{graphene-pattern-base-url}@{img}");
+  background-image: @std-url!important;
+  background-size: @size;
+  background-repeat: @repeat;
+  background-position: @x @y;
+  color: @text-color;
+
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      @2x-url: url("@{graphene-pattern-base-url}@{graphene-img-2x-prefix}@{img}");
+      background-image: @2x-url!important;
+  }
+}
+
+.bg-thumb(@img) {
+  @url: url("@{graphene-thumb-base-url}@{img}");
+  background-image: @url!important;
+  background-position: center center;
+  background-size: cover;
+}
+
+@img-01 : "bg_image_01.jpg";
+.bg-img-01       { .bg-image(@img-01); }
+.bg-img-01-thumb { .bg-thumb(@img-01); }
+
+@img-02 : "bg_image_02.jpg";
+.bg-img-02       { .bg-image(@img-02,white, black); }
+.bg-img-02-thumb { .bg-thumb(@img-02); }
+
+@img-03 : "bg_image_03.jpg";
+.bg-img-03       { .bg-image(@img-03, #F4F4F4, black); }
+.bg-img-03-thumb { .bg-thumb(@img-03); }
+
+@img-04 : "bg_image_04.jpg";
+.bg-img-04       { .bg-image(@img-04, white, black); }
+.bg-img-04-thumb { .bg-thumb(@img-04); }
+
+@img-05 : "bg_image_05.jpg";
+.bg-img-05       { .bg-image(@img-05); }
+.bg-img-05-thumb { .bg-thumb(@img-05); }
+
+@img-06 : "bg_image_06.jpg";
+.bg-img-06       { .bg-image(@img-06,#333, rgba(0, 0, 0, 0), 50%,0%); }
+.bg-img-06-thumb { .bg-thumb(@img-06); }
+
+@img-07 : "bg_image_07.jpg";
+.bg-img-07       { .bg-image(@img-07,white, black); }
+.bg-img-07-thumb { .bg-thumb(@img-07); }
+
+@img-08 : "bg_image_08.jpg";
+.bg-img-08       { .bg-image(@img-08, white, black); }
+.bg-img-08-thumb { .bg-thumb(@img-08); }
+
+@img-09 : "bg_image_09.jpg";
+.bg-img-09       { .bg-image(@img-09); }
+.bg-img-09-thumb { .bg-thumb(@img-09); }
+
+@img-10 : "bg_image_10.jpg";
+.bg-img-10       { .bg-image(@img-10,white, black); }
+.bg-img-10-thumb { .bg-thumb(@img-10); }
+
+@patt-01 : "bg_pattern_01.jpg";
+.bg_patt-01       { .bg-pattern(@patt-01, @gray, no-repeat, cover); }
+.bg_patt-01-thumb { .bg-thumb(@patt-01); }
+
+@patt-02 : "bg_pattern_02.jpg";
+.bg_patt-02       { .bg-pattern(@patt-02, @gray, no-repeat, cover, 100%, 42%); }
+.bg_patt-02-thumb { .bg-thumb(@patt-02); }
+
+@patt-03 : "bg_pattern_03.jpg";
+.bg_patt-03       { .bg-pattern(@patt-03, @gray, no-repeat, cover, 100%, 42%); }
+.bg_patt-03-thumb { .bg-thumb(@patt-03); }
+
+@patt-04 : "bg_pattern_04.jpg";
+.bg_patt-04       { .bg-pattern(@patt-04, @gray, no-repeat, cover, 100%, 35%); }
+.bg_patt-04-thumb { .bg-thumb(@patt-04); }
+
+@patt-05 : "bg_pattern_05.jpg";
+.bg_patt-05       { .bg-pattern(@patt-05, #555, no-repeat, cover, 100%, 42%); }
+.bg_patt-05-thumb { .bg-thumb(@patt-05); }
+
+@patt-06 : "bg_pattern_06.jpg";
+.bg_patt-06       { .bg-pattern(@patt-06, #666, no-repeat, cover, 100%, 36%); }
+.bg_patt-06-thumb { .bg-thumb(@patt-06); }

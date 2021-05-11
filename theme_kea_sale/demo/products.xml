@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <delete id="website_sale.sub_computers" model="product.public.category"/>
+        <delete id="website_sale.Components" model="product.public.category"/>
+        <delete id="website_sale.devices" model="product.public.category"/>
+        <delete id="website_sale.laptops" model="product.public.category"/>
+        <delete id="website_sale.network" model="product.public.category"/>
+        <delete id="website_sale.Computer_all_in_one" model="product.public.category"/>
+        <delete id="website_sale.External_Hard_Drive" model="product.public.category"/>
+        <delete id="website_sale.Headset" model="product.public.category"/>
+        <delete id="website_sale.Keyboard_Mouse" model="product.public.category"/>
+        <delete id="website_sale.Pen_Drive" model="product.public.category"/>
+        <delete id="website_sale.printer" model="product.public.category"/>
+        <delete id="website_sale.Screen" model="product.public.category"/>
+        <delete id="website_sale.server" model="product.public.category"/>
+        <delete id="website_sale.services" model="product.public.category"/>
+        <delete id="website_sale.Software" model="product.public.category"/>
+        <delete id="website_sale.Speakers" model="product.public.category"/>
+
+        <!-- Create new categories -->
+
+        <record id="computers" model="product.public.category">
+            <field name="name">Computers</field>
+        </record>
+        <record id="mac" model="product.public.category">
+            <field name="parent_id" ref="computers"/>
+            <field name="name">Mac</field>
+        </record>
+        <record id="pc" model="product.public.category">
+            <field name="parent_id" ref="computers"/>
+            <field name="name">PC</field>
+        </record>
+
+        <record id="phones" model="product.public.category">
+            <field name="name">Phones</field>
+        </record>
+        <record id="printers" model="product.public.category">
+            <field name="name">Printers</field>
+        </record>
+        <record id="remote" model="product.public.category">
+            <field name="name">Remote Controllers</field>
+        </record>
+        <record id="headphone" model="product.public.category">
+            <field name="name">Headphones</field>
+        </record>
+
+        <record id="accessories" model="product.public.category">
+            <field name="name">Accessories</field>
+        </record>
+        <record id="mouse" model="product.public.category">
+            <field name="parent_id" ref="accessories"/>
+            <field name="name">Mouse</field>
+        </record>
+        <record id="keyboards" model="product.public.category">
+            <field name="parent_id" ref="accessories"/>
+            <field name="name">Keyboards</field>
+        </record>
+        <record id="other" model="product.public.category">
+            <field name="parent_id" ref="accessories"/>
+            <field name="name">Other</field>
+        </record>
+
+        <record id="product_1" model="product.product">
+            <field name="name">Asus Taichi</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.pc')])]"/>
+            <field name="standard_price">1099.0</field>
+            <field name="list_price">1099.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_01.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_2" model="product.product">
+            <field name="name">Dell Laptop</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.pc')])]"/>
+            <field name="standard_price">1300.0</field>
+            <field name="list_price">1300.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_02.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_3" model="product.product">
+            <field name="name">Apple Imac</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.mac')])]"/>
+            <field name="standard_price">2700.0</field>
+            <field name="list_price">2700.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_03.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_4" model="product.product">
+            <field name="name">Macbook Pro</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.mac')])]"/>
+            <field name="standard_price">2700.0</field>
+            <field name="list_price">2700.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_04.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_5" model="product.product">
+            <field name="name">Mac Pro</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.mac')])]"/>
+            <field name="standard_price">3499.0</field>
+            <field name="list_price">3499.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_05.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_6" model="product.product">
+            <field name="name">Mac Mini</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.mac')])]"/>
+            <field name="standard_price">889.0</field>
+            <field name="list_price">889.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_06.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_7" model="product.product">
+            <field name="name">Iphone 6</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.phones')])]"/>
+            <field name="standard_price">699.0</field>
+            <field name="list_price">699.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_07.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_8" model="product.product">
+            <field name="name">Ipad Keyboard</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.keyboards')])]"/>
+            <field name="standard_price">49.0</field>
+            <field name="list_price">49.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_08.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_9" model="product.product">
+            <field name="name">Edifier Headphone</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.headphone')])]"/>
+            <field name="standard_price">149.0</field>
+            <field name="list_price">149.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_09.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_10" model="product.product">
+            <field name="name">Beats Headphone</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.headphone')])]"/>
+            <field name="standard_price">349.0</field>
+            <field name="list_price">349.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_10.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_11" model="product.product">
+            <field name="name">Beat Tour-In-Ear Headphone</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.headphone')])]"/>
+            <field name="standard_price">149.0</field>
+            <field name="list_price">149.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_11.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_12" model="product.product">
+            <field name="name">Apple Magic Mouse</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.mouse')])]"/>
+            <field name="standard_price">89.0</field>
+            <field name="list_price">89.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_12.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_13" model="product.product">
+            <field name="name">Epson Expression Photo XP-950 Printer</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.printers')])]"/>
+            <field name="standard_price">319.0</field>
+            <field name="list_price">319.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_13.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_14" model="product.product">
+            <field name="name">Apple Remote</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.remote')])]"/>
+            <field name="standard_price">19.0</field>
+            <field name="list_price">19.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_14.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_15" model="product.product">
+            <field name="name">Sony Vaio Duo 13</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.pc')])]"/>
+            <field name="standard_price">1399.0</field>
+            <field name="list_price">1399.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_15.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product_16" model="product.product">
+            <field name="name">Bretford MobilePro</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kea_sale.other')])]"/>
+            <field name="standard_price">149.0</field>
+            <field name="list_price">149.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kea/static/src/img/content/product_img_16.jpg"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+
+    </data>
+
+</openerp>

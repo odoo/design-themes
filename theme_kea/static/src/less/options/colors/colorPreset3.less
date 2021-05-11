@@ -1,0 +1,94 @@
+@color-alpha: @gray-white;
+@color-beta: @colorPreset3_color1; // gray
+@color-gamma: @colorPreset3_color2; // middle blue
+@color-delta: @colorPreset3_color3; // salmon
+@color-epsilon: @colorPreset3_color4; // vivid blue
+@color-zeta: @colorPreset3_color1_dark;
+@color-eta: @colorPreset3_color1_light;
+@color-theta: @colorPreset3_color2_dark;
+@color-iota: @colorPreset3_color2_light;
+@color-kappa: @colorPreset3_color3_dark;
+@color-lambda: @colorPreset3_color3_light;
+@color-mu: @colorPreset3_color4_dark;
+@color-nu: @colorPreset3_color4_light;
+
+/* ================== COLORS FOR FONT COLOR ================= */
+
+.text-alpha {color: @gray-white;}
+.text-beta {color: @colorPreset3_color1;}
+.text-gamma {color: @colorPreset3_color2;}
+.text-delta {color: @colorPreset3_color3;}
+.text-epsilon {color: @colorPreset3_color4;}
+
+/* ================== BF COLORS ================= */
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-epsilon, @color-mu);
+    .fa {color: @gray;}
+}
+.bg-beta {
+    .SetDisplayColor (@color-beta, @gray);
+    .LinkColor (@color-epsilon, @color-mu);
+}
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @gray);
+    .LinkColor (@color-mu, @color-epsilon);
+}
+.bg-delta {
+    .SetDisplayColor (@color-delta, @color-alpha);
+    .LinkColor (@color-epsilon, @color-mu);
+}
+.bg-epsilon {
+    .SetDisplayColor (@color-epsilon, @gray-dark);
+    .LinkColor (@color-alpha, @gray-darker);
+}
+/* ==================== TYPO ====================== */
+a {
+    color: @color-epsilon;
+    &:hover, &:focus {
+        color: @gray;
+    }
+}
+/* ==================== BUTTON ====================== */
+
+.btn-default {
+    .btn-styles(@color-alpha, @color-alpha, @color-epsilon, @color-delta);
+}
+.btn-primary {
+    .btn-styles(@color-beta, @color-zeta, @color-delta, @color-kappa);
+}
+.btn-success {
+    .btn-styles(@color-epsilon, @color-mu, @color-alpha, @color-alpha);
+}
+.btn-info {
+    .btn-styles(@color-gamma, @color-theta, @gray, @gray);
+}
+.btn-warning {
+    .btn-styles(@color-delta, @color-kappa, @color-alpha, @color-beta);
+}
+.btn-danger {
+    .btn-styles(@gray-base, @color-kappa, @color-alpha, @color-beta);
+}
+
+/* ==================== Structure ====================== */
+
+.navbar-default .container {
+    background-color: rgba(235, 227, 224, 0.8);
+    .navbar-collapse {
+        background-color: @color-beta;
+    }
+    &.affix {
+        background-color: @color-beta;
+    }
+}
+#top_menu {
+    li a, .label-primary {
+        color: @gray;
+    }
+    .dropdown-menu, .navbar-collapse {
+        background-color: @color-beta;
+        li > a {
+            color: @gray;
+        }
+    }
+}

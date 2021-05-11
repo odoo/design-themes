@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Big message" id="s_big_message" inherit_id="website.s_big_message">
+        <xpath expr="//section[contains(@class, 's_big_message')]" position="attributes">
+            <attribute name="class">jumbotron s_big_message bg-gray-darker</attribute>
+        </xpath>
+        <xpath expr="//section[contains(@class, 's_big_message')]//h1" position="attributes">
+            <attribute name="class">text-success</attribute>
+        </xpath>
+        <xpath expr="//section[contains(@class, 's_big_message')]//a[@class='btn btn-primary btn-lg']" position="attributes">
+            <attribute name="class">btn btn-success btn-lg</attribute>
+        </xpath>
+    </template>
+</odoo>

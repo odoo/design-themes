@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Tabs" id="s_tabs">
+        <section class="s_tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt32 mb32 tabs_container panel-alpha">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active">
+                                <a href="#myTab1" role="tab" data-toggle="tab"><i class="fa fa fa-question-circle fa-1x"/><strong>Tabs</strong></a>
+                            </li>
+                            <li>
+                                <a href="#myTab2" role="tab" data-toggle="tab"><i class="fa fa-align-justify fa-1x"/><strong>Content</strong></a>
+                            </li>
+                            <li>
+                                <a href="#myTab3" role="tab" data-toggle="tab"><i class="fa fa-cog fa-1x"/><strong>Options</strong></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="myTab1" class="tab-pane fade in active">
+                                <h3 class="mt0">What's a tab?</h3>
+                                <p><strong>- This is the first panel of the basic tab example.</strong></p>
+                                <p>Tab is a graphical element that allows multiple panels to be contained within a single container, <br/>using tabs as a navigational widget for switching between sets of contents.</p>
+                            </div>
+                            <div id="myTab2" class="tab-pane fade">
+                                <img class="img img-responsive pull-left" src="/web/image/theme_common.image_content_13" alt=""/>
+                                <h3 class="mt0">A sample title</h3>
+                                <p>To fit your purpose, you can add every classical content elements to a panel: texts, images, links...</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+                                <p><a href="#" class="btn btn-default">A sample link</a></p>
+                            </div>
+                            <div id="myTab3" class="tab-pane fade">
+                                <h3 class="mt0">Options</h3>
+                                <p>The customize button allows you to:</p>
+                                <ul>
+                                    <li>Change the color of the container</li>
+                                    <li>Add a tab (created after the active one)</li>
+                                    <li>Remove a tab (the active one).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_options_tabs" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="tabs" data-selector=".s_tabs .tabs_container">
+                <li data-add_tab=""><a>Add a tab</a></li>
+                <li data-remove_tab=""><a>Remove a tab</a></li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

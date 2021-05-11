@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- PREHEADER - Add Contact, Social, Language -->
+    <template id="preheader" inherit_id="website.layout" name="preHeader">
+        <xpath expr="//div[@id='wrapwrap']/header/div" position="before">
+            <div id="preheader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul id="contact" class="list-inline">
+                                <li class="home hidden-xs">
+                                    <a href="/"><i class="fa fa-home fa-1x"/></a>
+                                </li>
+                                <li class="home visible-xs-inline-block">
+                                    <a href="/page/website.contactus"><i class="fa fa-envelope fa-1x"/>Contact</a>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="/page/website.contactus"><i class="fa fa-map-marker fa-1x"/>Meet us</a>
+                                </li>
+                                <li class="hidden-xs" t-ignore="true">
+                                    <i class="fa fa-phone fa-1x"/>
+                                    <span t-field="res_company.phone"></span>
+                                </li>
+                                <li class="hidden-xs" t-ignore="true">
+                                    <i class="fa fa-envelope fa-1x"/><a t-attf-href="mailto:{{ res_company.email }}" t-field="res_company.email"/>
+                                </li>
+                            </ul>
+
+                            <ul id="language" class="list-inline pull-right js_language_selector hidden-xs" t-if="(request.website_multilang and len(languages) &gt; 1) or (website and editable)">
+                                <li>
+                                    <div class="btn-group">
+                                        <button data-toggle="dropdown" type="button" data-caret="true" class="dropdown-toggle">
+                                            <i class="fa fa-globe fa-1x"/>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul role="menu" class="dropdown-menu dropdown-menu-right js_language_selector">
+                                            <t t-foreach="languages" t-as="lg">
+                                                <li t-att-class="'active' if lang == lg[0] else None">
+                                                    <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if website and lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                                                        <t t-esc="lg[1].split('/').pop()"/>
+                                                    </a>
+                                                </li>
+                                            </t>
+                                            <li groups="base.group_website_publisher">
+                                                <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                                                <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                                                    <i class="fa fa-plus-circle"/>Add...
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div id="social" class="pull-right">
+                                <a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank">
+                                    <i class="fa fa-facebook fa-1x"/>
+                                </a>
+                                <a t-if="website.social_twitter" t-att-href="website.social_twitter" target="_blank">
+                                    <i class="fa fa-twitter fa-1x"/>
+                                </a>
+                                <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" target="_blank">
+                                    <i class="fa fa-linkedin fa-1x"/>
+                                </a>
+                                <a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank">
+                                    <i class="fa fa-youtube fa-1x"/>
+                                </a>
+                                <a t-if="website.social_googleplus" t-att-href="website.social_googleplus" target="_blank">
+                                    <i class="fa fa-google-plus fa-1x"/>
+                                </a>
+                                <a t-if="website.social_github" t-att-href="website.social_github" target="_blank">
+                                    <i class="fa fa-github fa-1x"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- COPYRIGHT - Replace default -->
+    <template id="remove_default_copyright" inherit_id="website.layout_footer_copyright" name="Remove Default Copyright">
+        <xpath expr="(//footer//div[contains(@class, 'container')])[last()]" position="replace"/>
+    </template>
+    <template id="add_default_copyright" inherit_id="website.layout" name="Add Default Copyright">
+        <xpath expr="//footer" position="after">
+            <div id="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div id="company" class="col-md-5 col-sm-5 col-xs-6">
+                            <span class="hidden-xs">Copyright</span>
+                            &amp;copy;
+                            <span t-field="res_company.name">Company name</span>
+                        </div>
+
+                        <div class="col-md-2 col-sm-2 hidden-xs text-center">
+                            <a href="#" class="top"><i class="fa fa-arrow-up fa-1x"/></a>
+                        </div>
+
+                        <div id="odoo" class="col-md-5 col-sm-5 col-xs-6" t-ignore="true" t-if="not editable">
+                            <span class="hidden-xs">Create a <a href="http://www.odoo.com/page/website-builder"><strong>free website</strong></a> with</span>
+                            <a class="label label-alpha" href="http://www.odoo.com/page/website-builder">odoo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,171 @@
+
+// Carousel Snippets
+.carousel-control .fa {
+    border-radius: @border-radius-circle;
+    padding-top: 2px;
+    &:hover {
+        color: @color-alpha !important;
+    }
+}
+
+// Banner Carousel
+#wrapwrap .s_banner_2.carousel {
+    .carousel-box-content {
+        border-radius: @border-radius-base;
+    }
+    .carousel-control {
+        width: 10%;
+        .carousel-control(0, 20px, 3px);
+        .fa-size-generator(15px);
+        .fa {
+            top: auto;
+            bottom: 30px;
+        }
+    }
+    .carousel-indicators {
+        background-color: #fff;
+        height: 35px;
+        line-height: 38px;
+        width: auto;
+        left: 50%;
+        right: auto;
+        bottom: 20px;
+        margin-right: -50%;
+        margin-left: 0;
+        transform: translate(-50%, 0);
+        padding: 0 40px;
+        border-radius: @border-radius-large;
+    }
+}
+
+// Carousel Boxed
+#wrapwrap .s_carousel_boxed {
+    .carousel-inner {
+        border-radius: @border-radius-base;
+    }
+    .carousel-control {
+        width: 10%;
+        .carousel-control(15px, 20px, 3px);
+        .fa-size-generator(15px);
+        .fa {
+            top: auto;
+            bottom: 30px;
+        }
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-caption {
+        bottom: 15px;
+        border-radius: (@border-radius-large * 3);
+        min-height: 35px;
+        padding: 5px 0;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+// 3-Columns Carousel
+#wrapwrap .s_three_columns_carousel .carousel-control {
+    width: auto;
+    min-width: 35px;
+    .carousel-control(15px, 0, 2px);
+    .fa-size-generator(15px);
+    .fa {
+        top: auto;
+        bottom: 15px;
+    }
+}
+
+// News Carousel
+@font-size-h2: 48px;
+@font-size-h6: 20px;
+
+// Masonry Blocks
+@s_masonry_block_content_top: 15%;
+@s_masonry_block_content_right: 10%;
+@s_masonry_block_content_bottom: 5%;
+@s_masonry_block_content_left: 10%;
+
+// Google Maps
+@s_google_map-desc-alpha: 1;
+@s_google_map-desc-hover-alpha: 1;
+
+.s_google_map .description {
+    background: @color-alpha !important;
+}
+
+.s_google_map-desc-p-hook() {
+    float: none;
+};
+.s_google_map-desc-span-hook() {
+    float: none;
+};
+.s_google_map-desc-hook() {
+    text-align: center;
+    padding: 20px 0;
+};
+
+// Label
+@label-border-radius: @border-radius-base;
+@label-padding: 6px 14px 6px 10px;
+
+.label i {
+    opacity: 0.5;
+}
+
+// Jumbotron
+.jumbotron {
+    margin: 0;
+    p {
+        font-weight: @font-normal;
+    }
+}
+
+// Comparisons
+.s_comparisons {
+    .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+        background-color: @color-alpha;
+        border-color: @color-alpha;
+    }
+    .panel-body h2 small {
+        color: @gray-darker;
+    }
+}
+
+// Border-radius
+.panel-group .panel, .s_medias_list .row, .s_text_block_image_fw [class*="col-md-"], .s_well {
+    border-radius: @border-radius-base;
+}
+
+.s_images_captions_fw p {
+    border-bottom-right-radius: @border-radius-base;
+}
+
+.s_progress_bar {
+    border-radius: (@border-radius-base * 2);
+}
+
+.profile-body {
+    .border-top-radius(@border-radius-base);
+}
+blockquote {
+    p {
+        border-bottom-left-radius: @border-radius-base;
+        border-top-right-radius: @border-radius-base;
+        border-bottom-right-radius: @border-radius-base;
+    }
+    .fa {
+        .border-left-radius(@border-radius-base);
+    }
+}
+
+.s_three_columns_carousel [class*="col-md-"] {
+    border-radius: (@border-radius-base * 2.5);
+}
+
+// Features
+.s_features {
+    .fa-size-generator(20);
+}

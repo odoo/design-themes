@@ -1,0 +1,28 @@
+#wrapwrap {
+  #preheader {
+    display: none;
+  }
+  header .navbar-default {
+    @media (min-width: @screen-md-min) {
+      left: 0;
+    }
+  }
+  @media (min-width: @screen-md-min) {
+    main > *,
+    #copyright {
+      margin-left: 260px !important;
+    }
+    #footer{
+      padding-left: 260px !important;
+    }
+  }
+  @media (min-width: @screen-lg-min) {
+    main > *,
+    #copyright {
+      margin-left: 320px !important;
+    }
+    #footer{
+      padding-left: 320px !important;
+    }
+  }
+}
