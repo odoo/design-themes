@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Slide Banner" id="s_slide_banner">
+        <div id="SlideBanner" class="s_slide_banner carousel slide" data-interval="10000">
+            <ol class="carousel-indicators hidden"><li data-target="#SlideBanner" data-slide-to="0" class="active"/></ol>
+            <div class="carousel-inner">
+                <div class="item active bg-blur-04">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-content col-md-5 mt64 mb64 text-center">
+                                <img src="/web/image/theme_common.image_content_logo_small" class="img-responsive center-block"/>
+                                <h3 class="mt32 text-muted">Clean Slide Banner</h3>
+                                <p class="mt16">Edit the content of your banner and add new slides.</p>
+                                <a href="/page/demo_page_blocks" class="btn btn-warning btn-lg mt32">Building Blocks</a>
+                            </div>
+                            <div class="carousel-img col-md-6 col-md-offset-1 hidden-sm hidden-xs mt64">
+                                <img src="/web/image/theme_common.image_content_07" class="img-responsive"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control left hidden" data-target="#SlideBanner" data-slide="prev"><i class="fa fa-chevron-left"/></div>
+            <div class="carousel-control right hidden" data-target="#SlideBanner" data-slide="next"><i class="fa fa-chevron-right"/></div>
+        </div>
+    </template>
+</odoo>

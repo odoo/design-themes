@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Change fullwidth layout -->
+    <template id="real_estate_fullwidth" inherit_id='theme_monglia.option_layout_fullwidth' name="Real Estate Full-Width Layout">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_real_estate/static/src/less/options/layout/full-width_2.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="real_estate_layout_boxed" inherit_id="theme_monglia.option_layout_boxed" name="Real Estate Boxed Layout">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_real_estate/static/src/less/options/layout/boxed_2.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+</odoo>

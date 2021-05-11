@@ -1,0 +1,109 @@
+
+//  ======= Variables ============================
+//  ==============================================
+//  Change main snippet's propriety easily
+
+//  ====== Hooks(hook) =====================================
+//  ===========================================================
+//  Use them to inject NEW css rules or overwrite the old ones.
+//  This method is more maintenable than classic css overwrite
+//  'couse it works also if the snippet's structure will change.
+
+//  How to:
+//  in your theme, just call the backdoor like a normal
+//  CSS class adding parethesis at the end ".backdoor-name()"
+//  (this will prevent the creation of a standard CSS class).
+//  Add your rules inside. Your style will take the priority.
+//  Done.
+
+//  .s_media_block-hook() {
+//    border: 20px solid red;
+//    max-height: 200px;
+//  }
+
+.s_animated_boxes-main-hook() {}
+
+.s_animated_boxes-item-hook() {}
+
+.s_animated_boxes-slide-hook() {};
+
+.s_animated_boxes-slide_hover-hook() {}
+
+#wrapwrap .s_animated_boxes{
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    .s_animated_boxes-main-hook;
+    .item {
+        height: 200px;
+        background-size: cover;
+        overflow: hidden;
+        text-align: center;
+        .s_animated_boxes-item-hook;
+        > * {
+            z-index: 0;
+            position: relative;
+            padding-top: @grid-gutter-width/2;
+            padding-bottom: @grid-gutter-width/2;
+        }
+        .slide {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            padding: @grid-gutter-width/2;
+            .transition(opacity 400ms);
+            .s_animated_boxes-slide-hook;
+            &.visible{
+                opacity: 1;
+            }
+        }
+        &:hover .slide{
+            opacity: 1;
+            .transition(opacity 100ms);
+            .s_animated_boxes-slide_hover-hook;
+        }
+
+        @media (max-width: @screen-xs-max) {
+            height: auto;
+            min-height: 200px;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                min-height: 200px;
+                vertical-align: middle;
+            }
+
+            .v-align {
+                display: inline-block;
+                width: 98%;
+                vertical-align: middle;
+
+                top: auto;
+                .translate(0, 0);
+            }
+        }
+    }
+}
+
+// Used in editing mode
+body.editor_enable .s_animated_boxes,
+#wrapwrap.cke_editable .s_animated_boxes {
+    .item:hover .slide {
+        display: none;
+        opacity: 0;
+    }
+
+    .item.showSlide .slide, .item.showSlide:hover .slide {
+        display: block;
+        opacity: 1;
+        transform: translateY(0%)!important;
+        transform: translateX(0%)!important;
+    }
+}

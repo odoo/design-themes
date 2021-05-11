@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Big Image" id="s_big_image">
+        <section class="s_big_image bg-img-01 o_animation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 mt128">
+                        <img src="/web/image/theme_common.image_content_logo" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-md-6 col-md-offset-3 s_big_image_content text-center mt16">
+                        <div class="s_text_highlight bg-gamma mt32 mb32">
+                            <div class="text-center">
+                                <h3>A Business Theme for Odoo CMS</h3>
+                                <a type="button" class="btn btn-lg btn-warning mt16">THEMES FEATURES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

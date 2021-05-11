@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Event List" id="s_event_list">
+        <section class="s_event_list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mt32 mb32">
+                        <h2>Nice and Efficient Events List</h2>
+                        <h3 class="text-muted">Display Your Last Activities</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="s_event_list_item">
+                            <time datetime="2014-07-20 0000" class="bg-delta">
+                                <span class="s_event_list_day">02</span>
+                                <span class="s_event_list_month">Jul</span>
+                                <span class="s_event_list_year">2014</span>
+                                <span class="s_event_list_time">12:00 AM</span>
+                            </time>
+                            <div class="s_event_list_info">
+                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                <ul>
+                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                </ul>
+                            </div>
+                            <div class="s_event_list_social">
+                                <ul>
+                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-2x fa-facebook"/></a></li>
+                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-2x fa-twitter"/></a></li>
+                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-2x fa-google-plus"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="s_event_list_item">
+                            <time datetime="2014-07-20 0000" class="bg-delta">
+                                <span class="s_event_list_day">05</span>
+                                <span class="s_event_list_month">Sep</span>
+                                <span class="s_event_list_year">2014</span>
+                                <span class="s_event_list_time">12:00 AM</span>
+                            </time>
+                            <div class="s_event_list_info">
+                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                <ul>
+                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                </ul>
+                            </div>
+                            <div class="s_event_list_social">
+                                <ul>
+                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-2x fa-facebook"/></a></li>
+                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-2x fa-twitter"/></a></li>
+                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-2x fa-google-plus"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="s_event_list_item">
+                            <time datetime="2014-07-20 0000" class="bg-delta">
+                                <span class="s_event_list_day">2</span>
+                                <span class="s_event_list_month">Jul</span>
+                                <span class="s_event_list_year">2014</span>
+                                <span class="s_event_list_time">12:00 AM</span>
+                            </time>
+                            <div class="s_event_list_info">
+                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                <ul>
+                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                </ul>
+                            </div>
+                            <div class="s_event_list_social">
+                                <ul>
+                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-2x fa-facebook"/></a></li>
+                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-2x fa-twitter"/></a></li>
+                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-2x fa-google-plus"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="text-center">With Theme Clean you get a list of your events with date, time, description, etc. Select the simple or image mode and edit your content.
+                        <br/>You can link your events to your favorite social network.</p>
+                    </div>
+                    <div class="col-md-6 mt32 mb32">
+                        <div class="s_event_list_item">
+                            <time datetime="2014-07-20" class="bg-delta">
+                                <span class="s_event_list_day">18</span>
+                                <span class="s_event_list_month">Jul</span>
+                                <span class="s_event_list_year">2014</span>
+                                <span class="s_event_list_time">ALL DAY</span>
+                            </time>
+                            <img src="/web/image/theme_common.image_content_09" class="img-responsive"/>
+                            <div class="s_event_list_info">
+                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                <ul>
+                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                </ul>
+                            </div>
+                            <div class="s_event_list_social">
+                                <ul>
+                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-2x fa-facebook"/></a></li>
+                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-2x fa-twitter"/></a></li>
+                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-2x fa-google-plus"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt32 mb32">
+                        <div class="s_event_list_item">
+                            <time datetime="2014-07-20" class="bg-delta">
+                                <span class="s_event_list_day">21</span>
+                                <span class="s_event_list_month">Jul</span>
+                                <span class="s_event_list_year">2014</span>
+                                <span class="s_event_list_time">ALL DAY</span>
+                            </time>
+                            <div class="s_event_list_icon">
+                                <i class="fa fa-2x fa-calendar"/>
+                            </div>
+                            <div class="s_event_list_info">
+                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                <ul>
+                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                </ul>
+                            </div>
+                            <div class="s_event_list_social">
+                                <ul>
+                                    <li class="s_event_list_facebook"><a href="facebook"><span class="fa fa-2x fa-facebook"/></a></li>
+                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-2x fa-twitter"/></a></li>
+                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-2x fa-google-plus"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

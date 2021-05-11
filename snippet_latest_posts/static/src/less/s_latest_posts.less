@@ -1,0 +1,30 @@
+
+// Default Style ================================
+// ==============================================
+
+.s_latest_posts {
+  .media.media_list_template{
+    .pull-left {
+      height : 200px;
+      width  : 100%;
+      a, .media-object {
+        height : 100%;
+        width  : 100%;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+      }
+      @media (min-width: 768px) {
+        height : 100px;
+        width  : 100px;
+      }
+    }
+    .media, .media-body {
+      overflow: visible;
+      @media (min-width: 768px) {
+        overflow: hidden;
+      }
+    }
+  }
+}
+

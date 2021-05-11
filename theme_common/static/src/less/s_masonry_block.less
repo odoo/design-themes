@@ -1,0 +1,46 @@
+@s_masonry_block_content_top: 35%;
+@s_masonry_block_content_right: 25%;
+@s_masonry_block_content_bottom: 35%;
+@s_masonry_block_content_left: 25%;
+
+#wrapwrap .s_masonry_block {
+    min-height: 340px;
+    > div {
+        height: 100%;
+    }
+
+    .row {
+        height: 100%;
+
+        > div {
+            position: relative;
+            height: 100%;
+            min-height: 170px;
+        }
+    }
+
+    .content {
+        .clearfix();
+    }
+
+    @media (min-width: @screen-sm-min) {
+        .row .row > div {
+            height: 50%;
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        height: 0px; // hack to force height chain
+        &.s_ratio_2_1 {
+            position: relative;
+            padding: 0 0 50% 0; // to have 2:1 aspect ratio
+            > div {
+                .o-position-absolute(0, 0, 0, 0);
+            }
+        }
+
+        .content {
+            .o-position-absolute(@s_masonry_block_content_top, @s_masonry_block_content_right, @s_masonry_block_content_bottom, @s_masonry_block_content_left);
+        }
+    }
+}

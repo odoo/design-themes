@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Button" id="s_button" inherit_id="website.s_button">
+        <xpath expr="//section[contains(@class, 's_button')]" position="attributes">
+            <attribute name="class">jumbotron s_button bg-alpha</attribute>
+        </xpath>
+    </template>
+</odoo>

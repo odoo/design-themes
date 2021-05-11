@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_notes_website_options_pattern" inherit_id="website.snippet_options">
+        <!-- Background image -->
+        <xpath expr="//div[@data-js='background']//ul" position="replace">
+            <ul class="dropdown-menu">
+                <li data-select_class=""><a>None</a></li>
+                <li data-select_class="oe_custom_bg" data-choose_image="choose_image"><a><b>Choose another image...</b></a></li>
+                <li><a style="background: none; padding: 5px; border-top: 1px solid #ddd;"/></li>
+                <li data-select_class="bg-img-01"><a><img src="/web/image/theme_common.image_content_11/150x0" class="center-block"/></a></li>
+                <li data-select_class="bg-img-02"><a><img src="/web/image/theme_common.image_content_09/150x0" class="center-block"/></a></li>
+                <li data-select_class="bg-img-03"><a><img src="/web/image/theme_common.image_content_10/150x0" class="center-block"/></a></li>
+                <li data-select_class="bg-img-04"><a><img src="/web/image/theme_common.image_content_12/150x0" class="center-block"/></a></li>
+            </ul>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector">section, .carousel, .parallax, .color-block, .color-block4, headerwrap, .cube-big, .cube-small</attribute>
+        </xpath>
+        <xpath expr="//div[@data-js='blog-style']" position="attributes">
+            <attribute name="data-selector">section:not(.carousel):not(.parallax):not(.s_product_list)</attribute>
+        </xpath>
+
+        <!-- BG colors -->
+        <xpath expr="//div[@data-js='colorpicker']/li/ul/li" position="replace">
+            <table class="colorpicker">
+                <tr>
+                    <td><button data-color="alpha"></button></td>
+                    <td><button data-color="beta"></button></td>
+                    <td><button data-color="gamma"></button></td>
+                    <td><button data-color="delta"></button></td>
+                    <td><button data-color="epsilon"></button></td>
+                    <td><button data-color="none">none</button></td>
+                </tr>
+                <tr>
+                    <td><button data-color="black"></button></td>
+                    <td><button data-color="gray-dark"></button></td>
+                    <td><button data-color="gray"></button></td>
+                    <td><button data-color="gray-light"></button></td>
+                    <td><button data-color="white"></button></td>
+                </tr>
+            </table>
+        </xpath>
+
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-selector">section, .carousel, .parallax, #footer, .copyright, .product-widget, .mask, .cube-small .popup-container, .s_color_blocks_4_block, .s_event_list_item>.bg-delta</attribute>
+        </xpath>
+    </template>
+</odoo>

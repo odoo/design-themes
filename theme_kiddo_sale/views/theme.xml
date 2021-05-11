@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="less" name="theme_kiddo_sale_less" inherit_id="theme_kiddo.less">
+            <xpath expr="//link[last()]" position="after">
+                <link href="/theme_kiddo_sale/static/src/less/theme_ecommerce.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+
+        <template id="option_colorPreset1" name="option_colorPreset1" inherit_id="theme_kiddo.option_colorPreset1">
+            <xpath expr="//link[last()]" position="after">
+                <link href="/theme_kiddo_sale/static/src/less/options/colors/colorPreset1.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+        <template id="option_colorPreset2" name="option_colorPreset2" inherit_id="theme_kiddo.option_colorPreset2">
+            <xpath expr="//link[last()]" position="after">
+                <link href="/theme_kiddo_sale/static/src/less/options/colors/colorPreset2.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+        <template id="option_colorPreset3" name="option_colorPreset3" inherit_id="theme_kiddo.option_colorPreset3">
+            <xpath expr="//link[last()]" position="after">
+                <link href="/theme_kiddo_sale/static/src/less/options/colors/colorPreset3.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+        <template id="option_colorPreset4" name="option_colorPreset4" inherit_id="theme_kiddo.option_colorPreset4">
+            <xpath expr="//link[last()]" position="after">
+                <link href="/theme_kiddo_sale/static/src/less/options/colors/colorPreset4.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+        <template id="option_colorPreset5" name="option_colorPreset5" inherit_id="theme_kiddo.option_colorPreset5">
+            <xpath expr="//link[last()]" position="after">
+                <link href="/theme_kiddo_sale/static/src/less/options/colors/colorPreset5.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+        <template id="option_colorPreset6" name="option_colorPreset6" inherit_id="theme_kiddo.option_colorPreset6">
+            <xpath expr="//link[last()]" position="after">
+                <link href="/theme_kiddo_sale/static/src/less/options/colors/colorPreset6.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>

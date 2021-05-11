@@ -1,0 +1,201 @@
+@color-alpha: @gray-white;
+@color-beta: @colorPreset5_color1; // dark gray
+@color-gamma: @colorPreset5_color2; // orange
+@color-delta: @colorPreset5_color3; // beige
+@color-epsilon: @colorPreset5_color4; // light beige
+@color-zeta: @colorPreset5_color1_dark;
+@color-eta: @colorPreset5_color1_light;
+@color-theta: @colorPreset5_color2_dark;
+@color-iota: @colorPreset5_color2_light;
+@color-kappa: @colorPreset5_color3_dark;
+@color-lambda: @colorPreset5_color3_light;
+@color-mu: @colorPreset5_color4_dark;
+@color-nu: @colorPreset5_color4_light;
+
+/* ================== COLORS FOR FONT COLOR ================= */
+
+.text-alpha {color: @gray-white;}
+.text-beta {color: @colorPreset5_color1;}
+.text-gamma {color: @colorPreset5_color2;}
+.text-delta {color: @colorPreset5_color3;}
+.text-epsilon {color: @colorPreset5_color4;}
+
+.text-primary {color: @color-alpha;}
+.text-success {color: @color-beta;}
+.text-info {color: @color-gamma;}
+.text-warning {color: @color-delta;}
+.text-danger {color: red;}
+
+.bgrgba(0, 0, 0, 0) {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* ================== color-alpha ================= */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-gamma, @color-iota);
+    .fa {color: @gray;}
+}
+
+/* ================== color-beta ================= */
+
+.bg-beta {
+    .SetDisplayColor (@color-beta, @color-alpha);
+    .LinkColor (@color-gamma, @color-theta);
+}
+
+/* ================== color-gamma ================= */
+
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @color-alpha);
+    .LinkColor (@color-beta, @color-zeta);
+}
+
+/* ================== color-delta ================= */
+
+.bg-delta {
+    .SetDisplayColor (@color-delta, @color-alpha);
+    .LinkColor (@color-beta, @color-zeta);
+}
+
+/* ================== color-epsilon ================= */
+
+.bg-epsilon {
+    .SetDisplayColor (@color-epsilon, @gray);
+    .LinkColor (@color-gamma, @color-theta);
+}
+
+/* ==================== TYPO ====================== */
+a {
+    color: @color-gamma;
+
+    &:hover, &:focus {
+        color: @color-iota;
+    }
+}
+.text-muted {color: @gray-light;}
+
+/* ==================== Structure ====================== */
+
+main > * {
+    background-color: @color-epsilon;
+    color: @color-beta;
+}
+/* Nav */
+.navbar-default .container {
+    background-color: @color-epsilon;
+    .navbar-collapse{
+        background-color: @color-epsilon;
+    }
+    .navbar-toggle {
+        border-color: @color-beta !important;
+        &:hover {
+            background-color: @color-delta  !important;
+        }
+        .icon-bar {
+            background-color: @color-beta !important;
+        }
+    }
+}
+#top_menu {
+    li a {
+        color: @color-gamma;
+        &:hover {
+            color: @gray;
+        }
+    }
+    .dropdown-menu, .navbar-collapse {
+        background-color: @color-epsilon;
+        li > a {
+            color: @color-gamma;
+            &:hover {
+                color: @gray;
+            }
+        }
+    }
+}
+
+/* ==================== ECOMMERCE ====================== */
+
+#add_to_cart {
+    color: white !important;
+}
+
+/* ==================== FOOTER ====================== */
+
+#wrapwrap>footer #footer {
+    background-color: @color-epsilon;
+
+    h4 {
+        color: @color-beta;
+        border-top-color: @color-delta;
+    }
+    p, .list-unstyled {
+            color: @color-beta;
+        }
+}
+
+/* ==================== FORUM ====================== */
+
+.website_forum + #wrap {
+    .question .btn-link {
+        color: @color-gamma;
+    }
+    .text-muted {
+        color: @gray-light !important;
+    }
+    table, tbody {
+        background-color: rgba(0, 0, 0, 0) !important;
+        color: @gray !important;
+
+    }
+}
+
+/* ==================== EVENTS ====================== */
+
+#left_column {
+    .nav-pills li a {
+        color: @color-beta;
+        &:hover {
+            color: @color-zeta;
+        }
+    }
+    .active > a {
+        color: @color-gamma !important;
+        .badge {
+            background-color: @color-delta;
+        }
+    }
+}
+.o_website_event {
+    .container:first-child {
+        .breadcrumb li a {
+            color: @color-gamma;
+        }
+    }
+}
+.event_main_breadcrumb .breadcrumb li a, .documentation_breadcrumb .breadcrumb li a {
+    color: @color-gamma;
+}
+.panel-heading {
+    color: @color-beta !important;
+}
+
+/* ============== Panel styles ============== */
+
+.panel-heading, .panel-title {
+    color: @gray !important;
+}
+
+/* ============== Modal colors ============== */
+
+.modal-body {
+    .nav-tabs {
+        background-color: @color-delta !important;
+        border-bottom: 1px solid @color-eta;
+    }
+    .well {
+      background-color: @color-delta !important;
+    }
+}

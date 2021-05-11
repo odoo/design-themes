@@ -1,0 +1,113 @@
+//  ======= Variables ============================
+//  ==============================================
+//  Change main snippet's propriety easily
+
+//  es. @s_google_map-desc-bg: red;
+
+    @s_google_map-desc-alpha        : 0.80;
+    @s_google_map-desc-hover-alpha  : 0.55;
+
+    @s_google_map-desc-bg           : @brand-primary;
+    @s_google_map-desc-hover-bg     : @brand-primary;
+
+    @s_google_map-desc-p-color      : white;
+    @s_google_map-desc-p-color      : white;
+
+//  ====== hooks(hook) =====================================
+//  ===========================================================
+//  Use them to inject NEW rules or overwrite the old ones.
+//  This method is more maintenable than classic css overwrite
+//  'couse it works also if the snippet's structure will change.
+
+//  How to:
+//  in your theme, just call the backdoor like a normal
+//  CSS class adding parethesis at the end ".backdoor-name()"
+//  (this will prevent the creation of a standard CSS class).
+//  Add your rules inside. Your style will take the priority.
+//  Done.
+
+//  .s_google_map-hook() {
+//    background: red;
+//    min-height: 200px;
+//  }
+
+    .s_google_map-hook() {}
+
+    .s_google_map-desc-hook() {}
+
+    .s_google_map-desc-p-hook() {}
+
+    .s_google_map-desc-span-hook() {}
+
+// Default Style ================================
+// ==============================================
+
+.s_google_map {
+  height: 100%;
+  min-height: 300px;
+  position: relative;
+  .s_google_map-hook(); //.s_google_map backdoor
+
+  .map_container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.readable{
+    .map_container {
+      position: relative;
+    }
+  }
+
+  .description{
+    z-index: 99;
+    background: @s_google_map-desc-bg;
+    background: rgba(red(@s_google_map-desc-bg), green(@s_google_map-desc-bg), blue(@s_google_map-desc-bg) , @s_google_map-desc-alpha);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 1em;
+    color: white;
+    .transition(background-color 250ms ease);
+    .s_google_map-desc-hook(); //.description backdoor
+
+    font {
+      float: left;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      .s_google_map-desc-p-hook(); //.description p backdoor
+    }
+
+    span{
+      float: left;
+      text-transform: none;
+      font-weight: normal;
+      margin-top: 20px;
+      margin-left: 10px;
+      .s_google_map-desc-span-hook(); //.description span backdoor
+    }
+  }
+
+  &:hover .description{
+      background: @s_google_map-desc-hover-bg;
+      background: rgba(red(@s_google_map-desc-hover-bg), green(@s_google_map-desc-hover-bg), blue(@s_google_map-desc-hover-bg) , @s_google_map-desc-hover-alpha);
+  }
+}
+
+#mapModal {
+  z-index: 3000;
+}
+
+.pac-container { // google map autosuggestion
+  z-index: 3001;
+  &:after {
+    display:none;
+  }
+}

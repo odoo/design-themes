@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="less" inherit_id="website.assets_frontend" active="True" priority="100">
+            <xpath expr="." position="inside">
+                <link href="/theme_beauty/static/src/less/layout.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_beauty/static/src/less/snippets/s_banner_3.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_beauty/static/src/less/snippets/s_three_columns.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_beauty/static/src/less/snippets/s_banner_parallax.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>
