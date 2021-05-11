@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Full-width - Four columns" id="s_four_columns_fw">
+        <section class="s_four_columns_fw" style="height:400px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 bg-white">
+                        <h3>First part</h3>
+                        <p class="text-muted"><i class="fa fa-clock-o fa-1x"/> March 2013</p>
+                        <p>Adapt these columns to fit you design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        <p><a href="#" class="btn btn-default">Discover more</a></p>
+                    </div>
+                    <div class="col-md-3 bg-beta">
+                        <h3>Second part</h3>
+                        <p class="text-muted"><i class="fa fa-clock-o fa-1x"/> August 2014</p>
+                        <p>To add a column, reduce the size of these columns using the right icon of each block. Then, duplicate one of the column to create a new one as a copy.</p>
+                        <p><a href="#" class="btn btn-default">Full read</a></p>
+                    </div>
+                    <div class="col-md-3 bg-alpha">
+                        <h3>Third part</h3>
+                        <p class="text-muted"><i class="fa fa-clock-o fa-1x"/> September 2015</p>
+                        <p>Delete the right image or replace it with a picture that illustrates your message.</p>
+                        <p><a href="#" class="btn btn-default">Contact us</a></p>
+                    </div>
+                    <div class="col-md-3 bg-img-08"/>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

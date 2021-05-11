@@ -1,0 +1,46 @@
+#wrapwrap > main > #wrap .oe_website_sale {
+    .sub-navigation, .new-logo, .chart, .search, .in, .collapsing {
+        background-color: @color-alpha !important;
+    }
+
+    #products_grid_before {
+        .open-icon, .close-icon {
+            color: @color-delta;
+        }
+        ul > li > a {
+            &:hover, &:focus {
+                color: @color-gamma;
+            }
+        }
+        > ul > li > a {
+            border-bottom-color: @color-lambda;
+        }
+    }
+    #products_grid {
+        .oe_product section .product_price {
+            color: @gray;
+            background-color: @color-delta;
+            border-bottom-color: @color-kappa;
+        }
+        .products_pager ul {
+            a {
+                border-top-color: @color-gamma;
+                border-bottom-color: @color-gamma;
+            }
+
+            li:first-child > a {
+                border-left-color: @color-gamma;
+            }
+            li:last-child > a {
+                border-right-color: @color-gamma;
+            }
+        }
+        .pagination > .active > a {
+            background-color: @color-delta;
+            color: @color-alpha;
+            &:hover {
+                background-color: @color-kappa;
+            }
+        }
+    }
+}

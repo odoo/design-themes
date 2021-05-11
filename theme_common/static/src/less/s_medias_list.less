@@ -1,0 +1,42 @@
+
+// ======  Variables ==================
+@s_medias_list-bg-color-main : @gray-lighter;
+
+#wrapwrap .s_medias_list {
+    background-color: @s_medias_list-bg-color-main;
+    .media {
+        @media (max-width: @screen-sm-max) {
+            height: auto !important;
+        }
+        > .row {
+            margin: 16px 0;
+            background-color: #fff;
+            > [class*="col-"] {
+                padding: 0;
+                &.media-content{
+                    padding: 30px;
+                }
+            }
+            .media-options {
+                height: 100%;
+                background-color: @gray-lighter;
+                > .row {
+                    margin: 0;
+                    [class*="col-"]{
+                        padding: 0;
+                        margin-bottom: 1px;
+                        p {
+                            margin: 0;
+                            font-size: @font-size-small;
+                            display: inline-block;
+                        }
+                        .fa-size-generator(10px);
+                        .fa {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

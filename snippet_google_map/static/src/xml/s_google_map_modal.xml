@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <div t-name="snippet_google_map.s_google_map_modal" class="form-horizontal">
+        <div class="form-group">
+            <label for="pin_address" class="col-sm-3 control-label text-right">Address</label>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-building-o"/></div>
+                    <input type="text" class="form-control" id="pin_address" placeholder="Your address"/>
+                    <input type="hidden" id="placeBk"/>
+                </div>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3">
+                <small class="help-block">e.g. De Brouckere, Brussels, Belgium</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pin_style" class="col-sm-3 control-label text-right">Marker Style</label>
+            <div class="col-sm-9">
+                <select id="pin_style" name="pin_style" class="col-sm-5">
+                    <option value="flat">Flat</option>
+                    <option>Default</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</templates>

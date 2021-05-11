@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Collapse" id="s_collapse">
+        <section class="s_collapse">
+            <div class="container">
+                <div class="row">
+                    <div class="panel-group col-md-12 mt32 mb32" id="myCollapse" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-alpha">
+                            <div class="panel-heading">
+                                <a href="#collapseOne" class="" data-toggle="collapse" data-parent="#myCollapse" aria-expanded="true" aria-controls="collapseOne"><strong>Accordion</strong></a>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h3 class="mt0">What's an accordion?</h3>
+                                    <p><strong>- This is the first panel of the basic accordion example.</strong></p>
+                                    <p>Accordion is a graphical element to show or hide content. There are times when a page can contain many related elements which makes it very long; using accordion enables editors to shorten the page, and allow readers to expand areas of interest to them.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-alpha">
+                            <div class="panel-heading">
+                                <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-parent="#myCollapse" aria-expanded="false" aria-controls="collapseTwo"><strong>Content</strong></a>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <img class="img img-responsive pull-left" src="/web/image/theme_common.image_content_14" alt=""/>
+                                    <h3 class="mt0">A sample title</h3>
+                                    <p>To fit your purpose, you can add every classical content elements to a panel: texts, images, links...</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+                                    <p><a href="#" class="btn btn-default">A sample link</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-alpha">
+                            <div class="panel-heading">
+                                <a href="#collapseThree" class="collapsed" data-toggle="collapse" data-parent="#myCollapse" aria-expanded="false" aria-controls="collapseThree"><strong>Options</strong></a>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h3 class="mt0">Options</h3>
+                                    <p>The customize button allows you to:</p>
+                                    <ul>
+                                        <li>Change the color of each panel</li>
+                                        <li>Add a panel (created after the active one)</li>
+                                        <li>Remove a panel (the active one).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_options_collapse" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="collapse" data-selector=".s_collapse .panel"/>
+            <div data-js="collapse_group" data-selector=".s_collapse"/>
+            <div data-selector=".panel" data-drop-near=".panel-group .panel"/>
+        </xpath>
+    </template>
+</odoo>

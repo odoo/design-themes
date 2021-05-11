@@ -1,0 +1,41 @@
+/* VARIABLES
+   ========================================================================== */
+
+@border-radius-small: 0;
+@border-radius-base: 0;
+@border-radius-large: 0;
+@border-radius-circle: 0;
+
+@shadow: none;
+@opacity: 1;
+
+/* BUTTONS
+   ========================================================================== */
+
+#wrapwrap,
+.modal-body .dropdown-menu,
+.link-style .col-sm-10{
+  .btn{
+    padding: 10px 22px;
+    &.btn-xs{
+      padding: 6px 10px;
+    }
+    &.btn-sm{
+      padding: 8px 16px;
+    }
+    &.btn-lg{
+      padding: 12px 28px;
+    }
+  }
+}
+
+/* NAVBAR
+   ========================================================================== */
+
+#wrapwrap header .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  padding: 8px 14px;
+  &:before {
+    content: '';
+    margin: 0;
+  }
+}

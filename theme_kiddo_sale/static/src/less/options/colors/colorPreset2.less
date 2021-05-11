@@ -1,0 +1,38 @@
+#wrapwrap > main > #wrap .oe_website_sale {
+    #products_grid_before {
+        ul > li > a {
+            &:hover, &:focus {
+                background-color: @color-iota;
+            }
+        }
+        .js_attributes {
+            border-color: @color-beta;
+            color: @color-epsilon;
+
+            strong {
+                color: @gray-light;
+                border-bottom-color: @gray-lighter;
+            }
+        }
+    }
+    #products_grid {
+        .oe_product section .product_price {
+            background-color: @color-delta;
+
+            &:before {
+                background-color: @color-epsilon;
+            }
+            &:after {
+                border-right-color: @color-epsilon;
+            }
+        }
+
+        .pagination > .active > a {
+            color: @color-alpha;
+            background-color: @color-epsilon;
+            &:hover {
+                background-color: @color-mu;
+            }
+        }
+    }
+}

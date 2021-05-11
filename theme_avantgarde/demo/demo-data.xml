@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customize_main_logo" inherit_id="website.layout_logo_show">
+        <xpath expr="//a[@class='navbar-brand logo']" position="replace">
+            <a href="/" class="navbar-brand logo">
+                <img id="logo" src="/theme_avantgarde/static/src/img/theme_samples/image_content_logo_black.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                <img id="logoGallery" style="display:none" src="/theme_avantgarde/static/src/img/theme_samples/logo_gallery.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                <img id="logoMagazine" style="display:none" src="/theme_avantgarde/static/src/img/theme_samples/logo_magazine.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                <img id="logoShop" style="display:none" src="/theme_avantgarde/static/src/img/theme_samples/logo_shop.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </a>
+        </xpath>
+    </template>
+
+    <record id="menu_demo" model="website.menu">
+        <field name="name">Demo</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">20</field>
+        <field name="website_id" ref="website.default_website"/>
+    </record>
+</odoo>

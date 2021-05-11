@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Timeline" id="s_timeline">
+        <section class="s_timeline o_animation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Present Your Evolution with this Timeline</h2>
+                        <h3 class="text-muted">Tell Your Story</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <ul class="s_timeline_ul">
+                            <li>
+                                <div class="s_timeline_badge">
+                                    <i class="fa fa-asterisk"/>
+                                </div>
+                                <div class="s_timeline_panel">
+                                    <div class="s_timeline_panel_content">
+                                        <div class="s_timeline_heading">
+                                            <h4 class="s_timeline_date pull-right" >2014</h4>
+                                            <h4 class="s_timeline_title">Your Function</h4>
+                                            <h3 class="s_timeline_company" >COMPANY NAME</h3>
+                                            <h5 class="s_timeline_info">Description of the tasks</h5>
+                                        </div>
+                                        <div class="s_timeline_body">
+                                            <p>Use Theme Clean Timeline as a part of your resume or to show your visitors what you've done in the past. You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_timeline_panel">
+                                    <div class="s_timeline_panel_content">
+                                        <div class="s_timeline_heading">
+                                            <h4 class="s_timeline_date pull-right" >2014</h4>
+                                            <h4 class="s_timeline_title">Your Function</h4>
+                                            <h3 class="s_timeline_company" >COMPANY NAME</h3>
+                                            <h5 class="s_timeline_info">Description of the tasks</h5>
+                                        </div>
+                                        <div class="s_timeline_body">
+                                            <p>A timeline is a graphical representation of a period of time, on which important events are marked.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="s_timeline_inverted">
+                                <div class="s_timeline_badge warning">
+                                    <i class="fa fa-asterisk"/>
+                                </div>
+                                <div class="s_timeline_panel">
+                                    <div class="s_timeline_panel_content">
+                                        <div class="s_timeline_heading">
+                                            <h4 class="s_timeline_date pull-right">2014</h4>
+                                            <h4 class="s_timeline_title">Your Function</h4>
+                                            <h3 class="s_timeline_company" >COMPANY NAME</h3>
+                                            <h5 class="s_timeline_info">Description of the tasks</h5>
+                                        </div>
+                                        <div class="s_timeline_body">
+                                            <p>A timeline is a graphical representation of a period of time, on which important events are marked. Use Theme Clean Timeline as a part of your resume or to show your visitors what you've done in the past. You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_options_timeline" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-selector=".s_timeline_ul li" data-drop-in=".s_timeline_ul" data-drop-near=".s_timeline_ul li">
+                <li data-toggle_class="s_timeline_inverted"><a>Left / Right</a></li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

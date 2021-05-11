@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_customize" inherit_id="website.theme_customize" name="theme_clean modal">
+        <xpath expr="div" position="replace">
+            <div id="theme_customize_modal" class="modal fade bs-example-modal-sm" data-theme="theme_clean">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="loading_backdrop"></div>
+                        <div class="modal-header">
+                            <button type="button" class="close">×</button>
+                            <h4 class="modal-title" id="mySmallModalLabel">Customize your theme</h4>
+                        </div>
+                        <div class="modal-body panel-group clean-panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default clean-panel">
+                                <div class="panel-heading clean-panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title clean-panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            CLEAN PRESETS
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body clean-panel-body">
+                                        <h5>Predefined Backgound, Colors and Fonts</h5>
+                                        <table name="preset">
+                                            <tr>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/preset_1.gif" alt="Preset 1" class="clean-preset-combi-img"/>
+                                                        <h6 class="text-center clean-preset-combi">PRESET 1</h6>
+                                                        <input id="presetvar-1" name="presetvar" type="radio" data-enable="bgvar-1,colorvar-1,fontvar-1"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/preset_2.gif" alt="Preset 2" class="clean-preset-combi-img"/>
+                                                        <h6 class="text-center clean-preset-combi">PRESET 2</h6>
+                                                        <input id="presetvar-2" name="presetvar" type="radio" data-enable="bgvar-2,colorvar-2,fontvar-6"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/preset_3.gif" alt="Preset 3" class="clean-preset-combi-img"/>
+                                                        <h6 class="text-center clean-preset-combi">PRESET 3</h6>
+                                                        <input id="presetvar-3" name="presetvar" type="radio" data-enable="bgvar-8,colorvar-4,fontvar-3"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/preset_4.gif" alt="Preset 4" class="clean-preset-combi-img"/>
+                                                        <h6 class="text-center clean-preset-combi">PRESET 4</h6>
+                                                        <input id="presetvar-4" name="presetvar" type="radio" data-enable="bgvar-5,colorvar-3,fontvar-2"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/preset_5.gif" alt="Preset 5" class="clean-preset-combi-img"/>
+                                                        <h6 class="text-center clean-preset-combi">PRESET 5</h6>
+                                                        <input id="presetvar-5" name="presetvar" type="radio" data-enable="bgvar-10,colorvar-5,fontvar-12"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/preset_6.gif" alt="Preset 6" class="clean-preset-combi-img"/>
+                                                        <h6 class="text-center clean-preset-combi">PRESET 6</h6>
+                                                        <input id="presetvar-6" name="presetvar" type="radio" data-enable="bgvar-12,colorvar-6,fontvar-9"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default clean-panel">
+                                <div class="panel-heading clean-panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title clean-panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            ADVANCED
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <h5>Change the layout</h5>
+                                        <table name="layout">
+                                            <tr>
+                                                <td class=" text-center">
+                                                    <label class="clean-layout-combi center-block">
+                                                        <h6 class="text-center">WIDE VIEW</h6>
+                                                        <input name="layoutvar" type="radio" data-xmlid=""/>
+                                                    </label>
+                                                </td>
+                                                <td class=" text-center">
+                                                    <label class="clean-layout-combi center-block">
+                                                        <h6 class="text-center">BOXED VIEW</h6>
+                                                        <input name="layoutvar" type="radio" data-xmlid="theme_clean.option_layout_boxed"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <h5>Select a background</h5>
+                                        <table name="background-shades">
+                                            <tr>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_light1.gif" alt="LIGHT" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-1" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_light1"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_light2.gif" alt="LIGHT" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-2" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_light2"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_light3.gif" alt="LIGHT" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-3" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_light3"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_cold1.gif" alt="COLD" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-4" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_cold1"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_cold2.gif" alt="COLD" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-5" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_cold2"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_cold3.gif" alt="COLD" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-6" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_cold3"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_warm1.gif" alt="WARM" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-7" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_warm1"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_warm2.gif" alt="WARM" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-8" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_warm2"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_warm3.gif" alt="WARM" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-9" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_warm3"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_dark1.gif" alt="DARK" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-10" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_dark1"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_dark2.gif" alt="DARK" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-11" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_dark2"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-bg-layout-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/bg_shade_dark3.gif" alt="DARK" class="clean-bg-layout-combi-img"/>
+                                                        <input id="bgvar-12" name="bgcolorvar" type="radio" data-xmlid="theme_clean.option_bg_shade_dark3"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <h5>Choose the main color</h5>
+                                        <table name="color">
+                                            <tr>
+                                                <td>
+                                                    <label class="clean-color-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/variant-cobalt.gif" alt="Cobalt" class="clean-color-layout-combi"/>
+                                                        <input id="colorvar-1" name="colorvar" type="radio" data-xmlid="theme_clean.option_color_preset_1"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-color-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/variant-amethyst.gif" alt="Amethyst" class="clean-color-layout-combi"/>
+                                                        <input id="colorvar-2" name="colorvar" type="radio" data-xmlid="theme_clean.option_color_preset_2"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-color-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/variant-ruby.gif" alt="Blue" class="clean-color-layout-combi"/>
+                                                        <input id="colorvar-3" name="colorvar" type="radio" data-xmlid="theme_clean.option_color_preset_3"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-color-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/variant-gold.gif" alt="Gold" class="clean-color-layout-combi"/>
+                                                        <input id="colorvar-4" name="colorvar" type="radio" data-xmlid="theme_clean.option_color_preset_4"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-color-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/variant-emerald.gif" alt="Emerald" class="clean-color-layout-combi"/>
+                                                        <input id="colorvar-5" name="colorvar" type="radio" data-xmlid="theme_clean.option_color_preset_5"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="clean-color-combi">
+                                                        <img src="/theme_clean/static/src/img/customize/variant-stone.gif" alt="Stone" class="clean-color-layout-combi"/>
+                                                        <input id="colorvar-6" name="colorvar" type="radio" data-xmlid="theme_clean.option_color_preset_6"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <h5>Select a FONT combination</h5>
+                                        <table name="font">
+                                            <tr>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'Ubuntu-Regular'; font-size:14px">Ubuntu</span>
+                                                        <span style="font-family:'PT_Sans-Web-Regular'; font-size:14px">/ PT Sans</span>
+                                                        <input id="fontvar-1" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_UbuntuPtSans"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'Lato-Light'; font-size:14px">Lato Light</span>
+                                                        <span style="font-family:'Muli-Regular'; font-size:14px">/ Muli</span>
+                                                        <input id="fontvar-2" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_LatoLightMuli"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'Oswald-Regular'; font-size:14px">Oswald</span>
+                                                        <span style="font-family:'Muli-Regular'; font-size:14px">/ Muli</span>
+                                                        <input id="fontvar-3" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_OswaldMuli"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'Bitter-Regular'; font-size:14px">Bitter</span>
+                                                        <span style="font-family:'DroidSerif'; font-size:14px">/ Droid Serif</span>
+                                                        <input id="fontvar-4" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_BitterDroidSerif"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'Quattrocento-Regular'; font-size:14px">Quattrocento</span>
+                                                        <span style="font-family:'Bitter-Regular'; font-size:14px">/ Bitter</span>
+                                                        <input id="fontvar-5" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_QuattrocentoBitter"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'Vollkorn-Regular'; font-size:14px">Vollkorn</span>
+                                                        <span style="font-family:'Alice-Regular'; font-size:14px">/ Alice</span>
+                                                        <input id="fontvar-6" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_VollkornAlice"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'Quattrocento-Regular'; font-size:14px">Quattrocento</span>
+                                                        <span style="font-family:'PT_Sans-Web-Regular'; font-size:14px">/ PT Sans</span>
+                                                        <input id="fontvar-7" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_QuattrocentoPtSans"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'Vollkorn-Regular'; font-size:14px">Vollkorn</span>
+                                                        <span style="font-family:'Raleway-Regular'; font-size:14px">/ Raleway</span>
+                                                        <input id="fontvar-8" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_VollkornRaleway"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'LibreBaskerville-Regular'; font-size:12px">LibreBaskerville</span>
+                                                        <span style="font-family:'OpenSans-Regular'; font-size:13px">/ Open Sans</span>
+                                                        <input id="fontvar-9" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_LibreBaskervilleOpenSans"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'Dosis-Regular'; font-size:14px">Dosis</span>
+                                                        <span style="font-family:'OpenSans-Regular'; font-size:14px">/ OpenSans</span>
+                                                        <input id="fontvar-10" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_DosisOpenSans"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'MontserratAlternates-Regular'; font-size:14px">Montserrat Alt</span>
+                                                        <span style="font-family:'Imprima-Regular'; font-size:14px">/ Imprima</span>
+                                                        <input id="fontvar-11" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_MontserratAltImprima"/>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class=" clean-fonts-combi">
+                                                        <span style="font-family:'JosefinSans-Regular'; font-size:14px">Josefin Sans</span>
+                                                        <span style="font-family:'Abel-Regular'; font-size:14px">/ Abel</span>
+                                                        <input id="fontvar-12" name="fontvar" type="radio" data-xmlid="theme_clean.option_font_JosefinAbelOxygen"/>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="option_layout_boxed" name="option_layout_boxed" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/layout_boxed.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- Option bg shade -->
+    <template id="option_bg_shade_light1" name="option_bg_shade_light1" inherit_id="theme_clean.less" active="True">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_light1.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_shade_light2" name="option_bg_shade_light2" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_light2.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_shade_light3" name="option_bg_shade_light3" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_light3.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="option_bg_shade_cold1" name="option_bg_shade_cold1" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_cold1.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_shade_cold2" name="option_bg_shade_cold2" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_cold2.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_shade_cold3" name="option_bg_shade_cold3" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_cold3.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="option_bg_shade_warm1" name="option_bg_shade_warm1" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_warm1.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_shade_warm2" name="option_bg_shade_warm2" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_warm2.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_shade_warm3" name="option_bg_shade_warm3" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_warm3.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="option_bg_shade_dark1" name="option_bg_shade_dark1" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_dark1.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_shade_dark2" name="option_bg_shade_dark2" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_dark2.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_shade_dark3" name="option_bg_shade_dark3" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/bg_shade_dark3.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- Option color -->
+    <template id="option_color_preset_1" name="option_color_preset_1" inherit_id="theme_clean.less" active="True">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/color_preset_1.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_color_preset_2" name="option_color_preset_2" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/color_preset_2.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_color_preset_3" name="option_color_preset_3" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/color_preset_3.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_color_preset_4" name="option_color_preset_4" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/color_preset_4.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_color_preset_5" name="option_color_preset_5" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/color_preset_5.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_color_preset_6" name="option_color_preset_6" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/color_preset_6.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- Option Font -->
+    <template id="option_font_UbuntuPtSans" name="option_font_UbuntuPtSans" inherit_id="theme_clean.less" active="True">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_UbuntuPtSans.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_BitterDroidSerif" name="option_font_BitterDroidSerif" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_BitterDroidSerif.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_DosisOpenSans" name="option_font_DosisOpenSans" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_DosisOpenSans.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_LatoLightMuli" name="option_font_LatoLightMuli" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_LatoLightMuli.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_LibreBaskervilleOpenSans" name="option_font_LibreBaskervilleOpenSans" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_LibreBaskervilleOpenSans.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_JosefinAbelOxygen" name="option_font_JosefinAbelOxygen" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_JosefinAbelOxygen.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_MontserratAltImprima" name="option_font_MontserratAltImprima" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_MontserratAltImprima.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_OswaldMuli" name="option_font_OswaldMuli" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_OswaldMuli.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_QuattrocentoBitter" name="option_font_QuattrocentoBitter" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_QuattrocentoBitter.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_QuattrocentoPtSans" name="option_font_QuattrocentoPtSans" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_QuattrocentoPtSans.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_VollkornRaleway" name="option_font_VollkornRaleway" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_VollkornRaleway.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_VollkornAlice" name="option_font_VollkornAlice" inherit_id="theme_clean.less" active="False">
+        <xpath expr="." position="inside"><link href="/theme_clean/static/src/less/options/font_VollkornAlice.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+</odoo>

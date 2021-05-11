@@ -1,0 +1,190 @@
+
+/* Theme Selector  */
+
+#theme_customize_modal {
+    overflow-y: auto;
+
+    #boxed-collapse {
+        position: relative;
+    }
+
+    .modal-content {
+        background-color: #3d4546;
+        font-family: "Lato-Regular" !important;
+        letter-spacing: normal;
+        font-weight: normal;
+    }
+
+    .modal-dialog {
+        width: 100%;
+        max-width: 456px;
+    }
+
+    .modal-header {
+        border-bottom: none;
+
+        .modal-title {
+            color: #c4c7c7;
+            font-size: 16px;
+            font-family: "Lato-Regular";
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: normal;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .close {
+            opacity: 0.7;
+            color: #fff;
+            text-shadow: 0 1px 0 #000;
+        }
+    }
+
+    .panel-group {
+        .panel-heading+.panel-collapse > .panel-body {
+            border-top: none;
+        }
+        .panel + .panel {
+            margin-top: 0;
+            border-top: 1px solid #3d4546;
+        }
+    }
+
+
+    .modal-body {
+        font-family: "Lato-Regular";
+        font-weight: normal;
+        position: relative;
+        padding: 0 15px 0px;
+        background-color: #3d4546;
+        color: white;
+
+
+        .clean-panel {
+            border: none;
+            background-color: #2a2e2f;
+
+            div.panel-heading.clean-panel-heading {
+                border: none;
+                background-color: #5a6567;
+
+                h4.clean-panel-title {
+                    font-family: "Lato-Regular";
+                    color: white;
+                    font-size: 16px;
+                    font-weight: normal;
+                    text-transform: uppercase;
+
+                    a, a:hover, a:focus {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .clean-panel-body {
+                background-color: #2a2e2f;
+                border: none;
+                padding-bottom: 30px;
+            }
+        }
+
+        label {
+            font-weight: normal;
+            cursor: pointer;
+            margin: 0 auto;
+
+            &.checked {
+                background: #586263;
+                color: white;
+                border: none;
+                margin: 0 auto;
+                line-height: 1.5;
+
+                h6 {
+                    color: white;
+                }
+
+                img {
+                    box-shadow: none;
+                    border: 1px solid #ccc;
+                }
+            }
+
+            &.clean-fonts-combi {
+                text-align: left;
+                line-height: 1.2;
+                padding: 5px 10px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            &.clean-layout-combi {
+                background-color: #373d3e;
+
+                .modal-h6 {
+                    color: white;
+                }
+
+                &:hover  {
+                    background: #474f50;
+                    cursor: pointer;
+                }
+
+                &.checked, &.checked:hover {
+                    background: #586263;
+                    cursor: default;
+                }
+            }
+
+            &.clean-layout-combi, &.clean-fonts-combi  {
+                width: 197px;
+            }
+
+            &.clean-preset-combi, &.clean-layout-combi {
+                padding: 5px;
+            }
+
+            &.clean-bg-layout-combi, &.clean-color-combi {
+                width: 66px;
+                padding: 2px;
+                margin: 0
+            }
+
+            &:hover {
+                background-color: #373d3e;
+            }
+
+            img {
+                width: 50px;
+                height: 30px;
+                margin: 6px;
+            }
+        }
+    }
+
+    h5, h6 {
+        font-family: "Lato-Regular";
+        letter-spacing: normal;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    h6 {
+        color: @gray;
+    }
+
+    h5 {
+        padding-bottom: 5px;
+        text-align: center;
+        margin-top: 35px;
+        color: #aaa;
+
+        &:first-child {
+            margin-top: 5px;
+        }
+    }
+}

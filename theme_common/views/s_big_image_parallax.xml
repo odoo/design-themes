@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Big Image Parallax" id="s_big_image_parallax">
+        <section class="s_big_image_parallax parallax bg-img-04 o_animation" data-scroll-background-ratio="0.3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt32 s_big_image_parallax_content" data-name="Content Block">
+                        <img src="/web/image/theme_common.image_content_03" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-md-12 text-center" data-name="Title Block">
+                        <h3>A Business Theme For Odoo CMS</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

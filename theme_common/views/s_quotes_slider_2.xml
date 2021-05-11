@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Quotes Slider 2" id="s_quotes_slider_2">
+        <section id="s_quotes_slider_2" class="s_quotes_slider_2 carousel quotecarousel slide" data-interval="5000">
+            <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#s_quotes_slider_2"></li><li data-slide-to="1" data-target="#s_quotes_slider_2"></li></ol>
+            <div class="carousel-inner">
+                <div class="item active bg-img-03">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="col-md-6 mt32 mb32">
+                                <blockquote>
+                                    <i class="fa fa-comment fa-1x bg-beta"/>
+                                    <div class="blockquote-text">
+                                        <p class="bg-white">Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                                        <img class="img img-circle" src="/web/image/theme_common.image_content_10" alt=""/>
+                                        <small>John DOE, CEO of <strong>MyCompany</strong></small>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-img-03">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="col-md-6 mt32 mb32">
+                                <blockquote>
+                                    <i class="fa fa-comment fa-1x bg-beta"/>
+                                    <div class="blockquote-text">
+                                        <p class="bg-white">Odoo provides essential platform for our project management. Things are better organized and more visible with it.</p>
+                                        <img class="img img-circle" src="/web/image/theme_common.image_content_10" alt=""/>
+                                        <small>John DOE, CEO of <strong>MyCompany</strong></small>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

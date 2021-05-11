@@ -1,0 +1,214 @@
+/* GRAYS --------------------------------------------------------- */
+/* Adjust to vary the intensity of texts ans headings ------------ */
+
+@gray-darker:            lighten(#000, 20%);
+@gray-dark:              lighten(#000, 40%);
+@gray:                   lighten(#000, 55%);
+@gray-light:             lighten(#000, 70%);
+@gray-lighter:           lighten(#000, 80%);
+
+/* COLORS --------------------------------------------------------- */
+
+@color-alpha:   @color-concrete;
+@color-beta:    @color-silver;
+@color-gamma:   @color-stone;
+@color-delta:   @color-concrete-dark;
+@color-epsilon: @color-midnight;
+
+/* COLORED BG -------------------------------------------------------- */
+
+.bg-alpha {
+    .bg-clouds;
+}
+.bg-beta {
+    .bg-silver;
+}
+.bg-gamma {
+    .bg-stone;
+  }
+.bg-delta {
+    .bg-concrete-dark;
+  }
+.bg-epsilon {
+    .bg-asphalt;
+  }
+
+/* TEXT & LINKS -------------------------------------------------------- */
+
+@text-muted:        @color-alpha;
+@link-color:        @color-alpha;
+@link-hover-color:  @color-gamma;
+
+/* BUTTONS --------------------------------------------------------- */
+
+@btn-primary-bg:                 @color-concrete;
+@btn-success-bg:                 @color-blue;
+@btn-info-bg:                    @color-asphalt;
+@btn-warning-bg:                 @color-red;
+@btn-danger-bg:                  @color-red-dark;
+
+.btn .fa {
+    color: white;}
+
+.btn-default .fa {
+    color: @gray-dark;
+  }
+
+#wrap {
+    border: 1px solid fade(@color-beta, 30%);
+}
+
+/* eCommerce */
+
+#products_grid .oe_product section {
+  padding: 4px 15px 24px 10px;
+  border-top: 1px dotted @color-gamma;
+  background-color: fade(@color-alpha, 65%);
+  h5 a {
+    color: white;
+    font-weight: 300;
+  }
+  &:hover {
+    background-color: fade(@color-alpha, 90%);
+    transition: all 0.3s ease-in-out;
+    color: @color-epsilon;
+  }
+}
+
+#products_grid_before {
+    ul {
+        font-size: 15px;
+        li {
+            a {
+                font-size: 16px;
+                color: @gray-light;
+                margin: 1px 0px;
+
+                &:hover, &:focus {
+                    transition: all 0.3s ease-in-out;
+                    background-color: fade(@gray-lighter, 30%);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+#products_grid_before  .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  background-color: fade(@color-alpha, 40%);
+  padding: 6px 6px;
+}
+
+/* s_icon_box */
+
+.bg-beta .s_icon_box_box:hover .s_icon_box_icon .fa  {
+    transition: all 0.3s ease-in-out;
+    color: @color-delta !important;
+}
+
+.bg-beta .s_icon_box_box:hover .s_icon_box_content h4 {
+    transition: all 0.3s ease-in-out;
+    color: @color-delta !important;
+}
+
+/* s_icon_box_square */
+
+.bg-beta .s_icon_box_square_icon {
+    border-color: white !important;
+    background-color: @color-alpha !important;
+    .fa {
+        color: white !important;
+    }
+    h4 {
+        color: white !important;
+}
+}
+
+.bg-beta .s_icon_box_square_box:hover .s_icon_box_square_icon {
+    border-color: white !important;
+    background-color: white !important;
+    .fa {
+        color: @color-alpha !important;
+    }
+}
+
+.bg-beta .s_icon_box_square_box:hover h4 {
+        color: white !important;
+}
+
+/* s_icon_box_circle */
+
+.bg-beta .s_icon_box_circle_icon {
+    border-color: white !important;
+    background-color: @color-alpha !important;
+    .fa {
+        color: white !important;
+    }
+    h4 {
+        color: white !important;
+}
+}
+
+.bg-beta .s_icon_box_circle_box:hover .s_icon_box_circle_icon {
+    border-color: white !important;
+    background-color: white !important;
+    .fa {
+        color: @color-alpha !important;
+    }
+}
+
+.bg-beta .s_icon_box_circle_box:hover h4 {
+        color: white !important;
+}
+
+/* s_big_icon_circle */
+
+.bg-beta .s_big_icon_circle_icon {
+    background-color: fade(@color-alpha, 0%) !important;
+    border: 6px solid white !important;
+    h5 {
+        color: white !important;
+    }
+    .fa {
+        color: white !important;
+    }
+}
+
+.bg-beta .s_big_icon_circle_box:hover .s_big_icon_circle_icon {
+    background-color: white !important;
+    border-color: @color-alpha;
+    transform: scale(1.1,1.1);
+    .fa {
+        color: @color-alpha !important;
+    }
+    h5 {
+        color: white !important;
+    }
+}
+
+/* s_big_icon_square */
+
+.bg-beta .s_big_icon_square_icon {
+    background-color: fade(@color-alpha, 0%) !important;
+    border: 6px solid white !important;
+    h5 {
+        color: white !important;
+    }
+    .fa {
+        color: white !important;
+    }
+}
+
+.bg-beta .s_big_icon_square_box:hover .s_big_icon_square_icon {
+    background-color: white !important;
+    border-color: @color-alpha;
+    transform: scale(1.1,1.1);
+    .fa {
+        color: @color-alpha !important;
+    }
+    h5 {
+        color: white !important;
+    }
+}

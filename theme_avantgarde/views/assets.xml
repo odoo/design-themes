@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+  <!--
+  =====================
+  Main Assets
+  =====================
+  -->
+
+  <!-- Main style -->
+  <template id="avantgarde_main_less" inherit_id="website.assets_frontend" active="True" priority="1">
+    <xpath expr="//link[last()]" position="after">
+      <t t-call="theme_avantgarde.theme_common_less"/>
+      <link href="/theme_avantgarde/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_avantgarde/static/src/less/main.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_avantgarde/static/src/less/images.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Customization modal -->
+  <template id="avantgarde_custom_modal_less" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/customize_modal.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Js Frontend -->
+  <template id="avantgarde_frontend_js" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//script[last()]" position="after">
+      <script type="text/javascript" src="/theme_avantgarde/static/src/js/avantgarde.frontend.js"/>
+      <script type="text/javascript" src="/theme_common/static/lib/YTPlayer/jquery.mb.YTPlayer.js"/>
+      <script type="text/javascript" src="/theme_common/static/src/js/s_media_block_frontend.js"/>
+      <script type="text/javascript" src="/theme_common/static/src/js/s_css_slider_frontend.js"/>
+      <script type="text/javascript" src="/theme_common/static/src/js/s_showcase_slider_frontend.js"/>
+      <script type="text/javascript" src="/theme_avantgarde/static/src/js/avantgarde.ext.frontend.js"/>
+    </xpath>
+  </template>
+
+  <!-- Js Editor -->
+  <template id="avantgarde_editor_js" inherit_id="website.assets_editor" active="True">
+    <xpath expr="." position="inside">
+      <script type="text/javascript" src="/theme_common/static/src/js/s_animated_boxes_editor.js"/>
+      <script type="text/javascript" src="/theme_common/static/src/js/s_css_slider_editor.js"/>
+      <script type="text/javascript" src="/theme_common/static/src/js/s_media_block_editor.js"/>
+      <script type="text/javascript" src="/theme_common/static/src/js/s_showcase_slider_editor.js"/>
+      <script type="text/javascript" src="/theme_avantgarde/static/src/js/avantgarde.editor.js"/>
+      <script type="text/javascript" src="/theme_avantgarde/static/src/js/avantgarde.ext.editor.js"/>
+    </xpath>
+  </template>
+
+  <record id="theme_common.compatibility-saas-10-2" model="ir.ui.view">
+    <field name="active" eval="True"/>
+  </record>
+</data>
+</openerp>

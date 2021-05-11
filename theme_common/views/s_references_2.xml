@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="References Logos" id="s_references_2">
+        <section class="s_references_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Our References</h2>
+                        <h5 class="text-primary mb32">More than 500 happy customers.</h5>
+                        <div id="s_references_2" class="carousel quotecarousel slide mb0" data-interval="5000">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <blockquote>
+                                        <i class="fa fa-comment fa-1x bg-beta"/>
+                                        <div class="blockquote-text" contenteditable="true">
+                                            <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                                            <img src="/web/image/theme_common.image_content_10" class="img img-circle" alt=""/>
+                                            <small>John DOE, CEO of <strong>MyCompany</strong></small>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <i class="fa fa-comment fa-1x bg-beta"/>
+                                        <div class="blockquote-text" contenteditable="true">
+                                            <p>Odoo provides essential platform for our project management. Things are better organized and more visible with it.</p>
+                                            <img src="/web/image/theme_common.image_content_10" class="img img-circle" alt=""/>
+                                            <small>John DOE, CEO of <strong>MyCompany</strong></small>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators"><li data-target="#s_references_2" data-slide-to="0" class="active"></li><li data-target="#s_references_2" data-slide-to="1"></li></ol>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt32">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 mb16">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_12" alt=""/>
+                            </div>
+                            <div class="col-md-4 col-sm-4 mb16">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_13" alt=""/>
+                            </div>
+                            <div class="col-md-4 col-sm-4 mb16">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_14" alt=""/>
+                            </div>
+                            <div class="col-md-4 col-sm-4 mb16">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_15" alt=""/>
+                            </div>
+                            <div class="col-md-4 col-sm-4 mb16">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_16" alt=""/>
+                            </div>
+                            <div class="col-md-4 col-sm-4 mb16">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_17" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

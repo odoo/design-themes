@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Products" id="s_products_carousel">
+        <section id="s_products_carousel" class="carousel s_products_carousel slide" data-interval="10000">
+            <ol type="01" class="carousel-indicators"><li data-target="#s_products_carousel" data-slide-to="0" class="active"></li><li data-target="#s_products_carousel" data-slide-to="1"></li></ol>
+            <div class="carousel-inner bg-img-02">
+                <div class="item active">
+                    <div class="container-fluid">
+                        <div class="row content">
+                            <div class="col-md-12 hero-bg">
+                                <h2>Present your products online!</h2>
+                            </div>
+                            <div class="col-md-12 product-widget center-block bg-alpha">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_01" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_02" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_03" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_04" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_05" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_06" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-fluid">
+                        <div class="row content">
+                            <div class="col-md-12 hero-bg">
+                                <h2>Convert your visitors to customers.</h2>
+                            </div>
+                            <div class="col-md-12 product-widget center-block bg-alpha">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_01" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_02" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_03" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_04" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_05" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6 widget">
+                                        <a href="http://www.odoo.com">
+                                            <img src="/web/image/theme_common.image_product_06" alt="" class="img img-responsive center-block"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control left" data-target="#s_products_carousel" data-slide="prev">
+                <i class="fa fa-chevron-left"/>
+            </div>
+            <div class="carousel-control right" data-target="#s_products_carousel" data-slide="next">
+                <i class="fa fa-chevron-right"/>
+            </div>
+        </section>
+    </template>
+</odoo>

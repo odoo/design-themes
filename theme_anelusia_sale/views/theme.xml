@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="less" name="theme_anelusia_sale_less" inherit_id="website.assets_frontend">
+            <xpath expr="//link[last()]" position="after">
+                <link href="/theme_anelusia_sale/static/src/less/theme_ecommerce.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend" inherit_id="website.assets_frontend" name="theme_anelusia_sale frontend scripts" priority="99">
+            <xpath expr="script[last()]" position="after">
+                <script type="text/javascript" src="/theme_anelusia_sale/static/src/js/website_sale.test.js"></script>
+            </xpath>
+        </template>
+    </data>
+</openerp>

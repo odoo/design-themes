@@ -1,0 +1,26 @@
+@s_big_icon_circle_color: @color-epsilon;
+@s_big_icon_circle_icon_size: 150px;
+.s_big_icon_circle_height_hook(){
+    height: 100vh;
+    padding-top: 0;
+    @media screen  and (max-width:@screen-md-max) {
+        height: 100%;
+    }
+    .row {
+        height: 100vh;
+        @media screen  and (max-width:@screen-md-max) {
+            height: 100%;
+        }
+    }
+    .col-md-12 {
+        height: 35%;
+        padding-top: 10%;
+    }
+}
+.s_big_icon_circle_fa_hook(){
+    height: 100px;
+    line-height: 70px;
+    @media screen  and (max-width:@screen-md-max) {
+        height: 80px;
+    }
+}

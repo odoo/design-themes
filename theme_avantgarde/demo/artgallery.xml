@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="demo_page_artgallery" model="website.menu">
+      <field name="name">Homepage - ArtGallery</field>
+      <field name="url">/page/artgallery</field>
+      <field name="parent_id" ref="menu_demo"/>
+      <field name="sequence" type="int">10</field>
+      <field name="website_id" ref="website.default_website"/>
+    </record>
+
+    <template id="website.artgallery" page="True" name="Avantgarde - ArtGallery">
+      <t t-call="website.layout">
+        <div class="oe_structure demo_artgallery" id="wrap">
+
+          <section autoplay="autoplay" class="s_media_block bg-img-10 move_to_top" header_type="image" style="height:600px;height: 80vh;background-position: 50% 0;">
+            <div class="v-align text-center preserve3d">
+              <!-- <h1 class="text-center">Media Box</h1> -->
+            </div>
+          </section>
+
+          <section class="s_showcase_image s_right container-fluid bg-white">
+            <div class="row">
+              <figure class="bg-img-06 col-md-6">
+                <figcaption class="o_animable">
+                  <h6>Self-portraits,</h6>Egon Schiele, 1910s</figcaption>
+              </figure>
+              <div class="info col-md-6">
+                <div class="content">
+                  <h3>Egon Schiele Retrospective</h3>
+                  <h4 class="text-primary">28.2 / 12.3</h4>
+                  <p>Schiele was a major figurative painter of the early 20th century. The twisted body shapes and the expressive line that characterize Schiele's paintings and drawings mark the artist as an early exponent of Expressionism.</p>
+                  <a class="btn btn-default">Discover More</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="s_showcase_image container-fluid mb92">
+            <div class="row">
+              <figure class="col-md-6 bl bg-img-11">
+                <figcaption class="o_animable">
+                  <h6>Sample description</h6>
+                  Write one or two paragraphs describing your product
+                </figcaption>
+              </figure>
+              <div class="info col-md-6">
+                <div class="content">
+                  <h3>AvantGallery</h3>
+                  <h4 class="text-primary">Philosophy</h4>
+                  <p>AvantGallery is a contemporary art gallery that brings a group of strong, international artists. The gallery occupies three floors in a house built in 1911. The gallery also publishes catalogues and editions in close collaboration with the represented artists, in order to promote and distribute their work</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr/>
+
+          <section class="row mt48" id="hook_s_google_map">
+            <div class="col-sm-12">
+              <h3 class="text-center text-small_caps">Where we are</h3>
+
+              <section class="s_google_map" data-map-type="ROADMAP" data-map-color="carMap" data-map-zoom="17" data-map-gps="(50.8301436, 4.340218400000026)" data-pin-style="flat" style="height: 200px; overflow: hidden;">
+                <div class="map_container"/>
+              </section>
+              <address class="mt16">
+                <strong>AvantGallery, Inc.</strong><br/>
+                13 Rue Franz Gailliard<br/>
+                1060 Saint-Gilles, Brussels<br/>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+              </address>
+            </div>
+          </section>
+
+          <hr/>
+
+          <div class="row bg-beta" id="go_back">
+            <div class="container text-center" style="padding:1em">
+              <h2><a href="/#demo_sites"><i class="fa fa-chevron-left" style="margin-right:.5em"/>Go back</a></h2>
+            </div>
+          </div>
+
+          <style type="text/css">
+            #logo{display:none}
+            #logoGallery{display:block!important}
+
+            #wrapwrap > footer {
+              height: 0;
+              overflow: hidden;
+              display: block;
+              margin-top: 100px;
+            }
+            #wrapwrap > main {padding-bottom:100px}
+
+            #go_back a { color:white}
+            #go_back a:hover { color:white}
+
+            #go_back i{ opacity:0.7}
+            #go_back:hover i{ opacity:1}
+
+          </style>
+
+        </div>
+        <!-- #wrap -->
+      </t>
+    </template>
+  </data>
+</openerp>

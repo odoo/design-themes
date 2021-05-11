@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="demo_page_artshop" model="website.menu">
+      <field name="name">Homepage - Shop</field>
+      <field name="url">/page/art_shop</field>
+      <field name="parent_id" ref="menu_demo"/>
+      <field name="sequence" type="int">10</field>
+      <field name="website_id" ref="website.default_website"/>
+    </record>
+
+    <template id="website.art_shop" page="True" name="Avantgarde - ArtShop">
+      <t t-call="website.layout">
+        <div class="oe_structure demo_art_shop" id="wrap">
+
+          <section class="s_css_slider o_not-animable autoplay" style="height:450px">
+            <div class="wrapper">
+              <div class="slider container">
+
+                <div class="selected slide row">
+                  <img class="o_not-animable" src="/theme_avantgarde/static/src/img/theme_samples/art_object_2.jpg" style="width: 100%; margin-top: -41.5px;"/>
+                </div>
+
+                <div class="slide row">
+                  <img class="o_not-animable" src="/theme_avantgarde/static/src/img/theme_samples/shop_art_1.jpg" style="width: 100%; margin-top: -41.5px;"/>
+                </div>
+
+                <div class="slide row">
+                  <img src="/theme_avantgarde/static/src/img/theme_samples/art_object_1.jpg" style="width: 100%; margin-top: -41.5px"/>
+                </div>
+              </div>
+
+              <ul class="navigation">
+                <li>
+                  <span class="o_not-animable fa fa-chevron-left prev inactive"/>
+                </li>
+                <li>
+                  <span class="o_not-animable fa fa-chevron-right next cke_widget_element"/>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="s_title mt32">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="text-center text-small_caps">Welcome to our shop</h1>
+                  <h3 class="text-muted text-center">Take a look inside...</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="s_showcase_slider o_not-animable mt32 mb48">
+            <div class="s_ss_slider_wrapper">
+              <ul class="s_ss_slider o_animable">
+                <li class="selected o_not-animable">
+                  <img class="o_not-animable" src="/theme_avantgarde/static/src/img/theme_samples/art_item-3.jpeg"/>
+                </li>
+                <li>
+                  <img class="o_not-animable" src="/theme_avantgarde/static/src/img/theme_samples/art_item-1.jpg"/>
+                </li>
+                <li>
+                  <img class="o_not-animable" src="/theme_avantgarde/static/src/img/theme_samples/art_item-2.jpg"/>
+                </li>
+                <li>
+                  <img class="o_not-animable" src="/theme_avantgarde/static/src/img/theme_samples/art_item-4.jpg"/>
+                </li>
+              </ul>
+              <ul class="s_ss_slider_navigation">
+                <li>
+                  <span class="o_not-animable fa fa-chevron-left s_ss_prev inactive"></span>
+                </li>
+                <li>
+                  <span class="o_not-animable fa fa-chevron-right s_ss_next"></span>
+                </li>
+              </ul>
+              <span class="s_ss_close fa fa-times" href="#0">Close</span>
+            </div>
+            <div class="s_ss_item_info o_animable">
+              <h3 class=" text-small_caps mt0">Our products</h3>
+              <p>Click the image to get a preview</p>
+              <button class="btn btn-primary" style="position: relative; overflow: hidden;">Call to action</button>
+            </div>
+          </section>
+
+          <section class="row  mt48">
+            <div class="col-sm-6">
+              <h3 class="text-center text-small_caps">Where we are</h3>
+
+              <section class="s_google_map" data-map-type="ROADMAP" data-map-color="carMap" data-map-zoom="17" data-map-gps="(50.8301436, 4.340218400000026)" data-pin-style="flat" style="height: 200px; overflow: hidden;">
+                <div class="map_container"/>
+              </section>
+              <address class="mt16">
+                <strong>AvantShop, Inc.</strong><br/>
+                13 Rue Franz Gailliard<br/>
+                1060 Saint-Gilles, Brussels<br/>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+              </address>
+            </div>
+
+            <div class="col-sm-6">
+              <h3 class="text-center text-small_caps">About us</h3>
+              <div class="bg-img-12" style="display:block;width:100%;height:300px"></div>
+              <p class="mt8">Whether you're a seasoned collector, an aspiring da Vinci, or just a passerby with a sense for all things beautiful, The AvantShop is an enchanting experience for all who visit.  Located in our city and home to a world class art collection, we've been turning window shoppers into happy, long-time clients for over a century.</p>
+            </div>
+          </section>
+
+          <hr/>
+
+          <div class="row bg-beta" id="go_back">
+            <div class="container text-center" style="padding:1em">
+              <h2><a href="/#demo_sites"><i class="fa fa-chevron-left" style="margin-right:.5em"/>Go back</a></h2>
+            </div>
+          </div>
+
+          <style type="text/css">
+            #logo{display:none}
+            #logoShop{display:block!important}
+
+            #wrapwrap > footer {
+              height: 0;
+              overflow: hidden;
+              display: block;
+              margin-top: 100px;
+            }
+            #wrapwrap > main {padding-bottom:100px}
+
+            #go_back a { color:white}
+            #go_back a:hover { color:white}
+
+            #go_back i{ opacity:0.7}
+            #go_back:hover i{ opacity:1}
+
+          </style>
+
+        </div>
+        <!-- #wrap -->
+      </t>
+    </template>
+  </data>
+</openerp>

@@ -1,0 +1,18 @@
+@s_banner_parallax_text_color: white;
+@s_banner_parallax_height: 100vh;
+
+.s_banner_parallax_row_hook() {
+    .hero-bg:before {
+        border-top: 0px solid rgba(0, 0, 0, 0);
+    }
+    .hero-bg:after {
+        border-top: 0px solid rgba(0, 0, 0, 0);
+    }
+}
+
+.s_banner_parallax_hero_bg_hook() {
+    margin-bottom: 100px;
+    @media screen and (max-width: 640px) {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,106 @@
+// =============================
+// === DEFINE MAIN COLOURS  ====
+// =============================
+
+// Resets bootstrap greyscale and add steps
+@gray-white      : lighten(@gray-base, 100%);
+@gray-lighter    : lighten(@gray-base, 93.5%);
+@gray-light-light: lighten(@gray-base, 82%);
+@gray-light      : lighten(@gray-base, 65.5%);
+@gray-light-dark : lighten(@gray-base, 50%);
+@gray            : lighten(@gray-base, 33.5%);
+@gray-dark-light : lighten(@gray-base, 25%);
+@gray-dark       : lighten(@gray-base, 22%);
+@gray-dark-dark  : lighten(@gray-base, 19%);
+@gray-darker     : lighten(@gray-base, 16%);
+@gray-darkest    : lighten(@gray-base, 13%);
+@gray-base       : #000;
+
+.o-create-color-classes(~'gray-light-light', @gray-light-light);
+.o-create-color-classes(~'gray-light-dark', @gray-light-dark);
+.o-create-color-classes(~'gray-dark-light', @gray-dark-light);
+.o-create-color-classes(~'gray-dark-dark', @gray-dark-dark);
+.o-create-color-classes(~'gray-darkest', @gray-darkest);
+
+// Theme_common color' system
+@color-alpha     : @brand-primary;
+@color-beta      : @brand-success;
+@color-gamma     : @brand-info;
+@color-delta     : @brand-warning;
+@color-epsilon   : @brand-danger;
+
+@color-alpha-lighter   : lighten( @color-alpha, 10%);
+@color-beta-lighter    : lighten( @color-beta, 10%);
+@color-gamma-lighter   : lighten( @color-gamma, 10%);
+@color-delta-lighter   : lighten( @color-delta, 10%);
+@color-epsilon-lighter : lighten( @color-epsilon, 10%);
+
+@color-alpha-light     : lighten( @color-alpha, 5%);
+@color-beta-light      : lighten( @color-beta, 5%);
+@color-gamma-light     : lighten( @color-gamma, 5%);
+@color-delta-light     : lighten( @color-delta, 5%);
+@color-epsilon-light   : lighten( @color-epsilon, 5%);
+
+@color-alpha-dark      : darken( @color-alpha, 5%);
+@color-beta-dark       : darken( @color-beta, 5%);
+@color-gamma-dark      : darken( @color-gamma, 5%);
+@color-delta-dark      : darken( @color-delta, 5%);
+@color-epsilon-dark    : darken( @color-epsilon, 5%);
+
+@color-alpha-darker    : darken( @color-alpha, 10%);
+@color-beta-darker     : darken( @color-beta, 10%);
+@color-gamma-darker    : darken( @color-gamma, 10%);
+@color-delta-darker    : darken( @color-delta, 10%);
+@color-epsilon-darker  : darken( @color-epsilon, 10%);
+
+.o-create-color-classes(~'alpha-lighter', @color-alpha-lighter);
+.o-create-color-classes(~'beta-lighter', @color-beta-lighter);
+.o-create-color-classes(~'gamma-lighter', @color-gamma-lighter);
+.o-create-color-classes(~'delta-lighter', @color-delta-lighter);
+.o-create-color-classes(~'epsilon-lighter', @color-epsilon-lighter);
+
+.o-create-color-classes(~'alpha-light', @color-alpha-light);
+.o-create-color-classes(~'beta-light', @color-beta-light);
+.o-create-color-classes(~'gamma-light', @color-gamma-light);
+.o-create-color-classes(~'delta-light', @color-delta-light);
+.o-create-color-classes(~'epsilon-light', @color-epsilon-light);
+
+.o-create-color-classes(~'alpha-dark', @color-alpha-dark);
+.o-create-color-classes(~'beta-dark', @color-beta-dark);
+.o-create-color-classes(~'gamma-dark', @color-gamma-dark);
+.o-create-color-classes(~'delta-dark', @color-delta-dark);
+.o-create-color-classes(~'epsilon-dark', @color-epsilon-dark);
+
+.o-create-color-classes(~'alpha-darker', @color-alpha-darker);
+.o-create-color-classes(~'beta-darker', @color-beta-darker);
+.o-create-color-classes(~'gamma-darker', @color-gamma-darker);
+.o-create-color-classes(~'delta-darker', @color-delta-darker);
+.o-create-color-classes(~'epsilon-darker', @color-epsilon-darker);
+
+// =============================
+// === Theme's Palette =========
+// =============================
+
+@color-alpha-gardenia    : #85AFA8;
+@color-beta-gardenia     : #7E566B;
+@color-gamma-gardenia    : #85909A;
+@color-delta-gardenia    : #969397;
+@color-epsilon-gardenia  : #422335;
+
+@color-alpha-pacifico    : #54787D;
+@color-beta-pacifico     : #6B9997;
+@color-gamma-pacifico    : #615145;
+@color-delta-pacifico    : #C6CCA5;
+@color-epsilon-pacifico  : #412342;
+
+@color-alpha-blackmath   : #456F74;
+@color-beta-blackmath    : #EB5937;
+@color-gamma-blackmath   : #403D3C;
+@color-delta-blackmath   : #1C1919;
+@color-epsilon-blackmath : #D3CBBD;
+
+@color-alpha-mwad        : #23C59E;
+@color-beta-mwad         : #FF5B5B;
+@color-gamma-mwad        : #FFE9C7;
+@color-delta-mwad        : #545445;
+@color-epsilon-mwad      : #2D2D36;

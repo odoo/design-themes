@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_masonry_block" name="Masonry Block">
+        <section class="s_masonry_block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="block col-md-6 text-center bg-img-03">
+                        <div class="content">
+                            <h2>A great title</h2>
+                            <p>And a great subtitle</p>
+                        </div>
+                    </div>
+                    <div class="block col-md-6 bg-gamma-lighter">
+                        <div class="row">
+                            <div class="block col-md-6 col-sm-6 text-center">
+                                <div class="content">
+                                    <h3>A great title</h3>
+                                    <p>And a great subtitle</p>
+                                </div>
+                            </div>
+                            <div class="block col-md-6 col-sm-6 text-center bg-img-01">
+                                <div class="content">
+                                    <h3>A great title</h3>
+                                    <p>And a great subtitle</p>
+                                </div>
+                            </div>
+                            <div class="block col-md-6 col-sm-6 text-center bg-img-06">
+                                <div class="content">
+                                    <h3>A great title</h3>
+                                    <p>And a great subtitle</p>
+                                </div>
+                            </div>
+                            <div class="block col-md-6 col-sm-6 text-center bg-beta-lighter">
+                                <div class="content">
+                                    <h3>A great title</h3>
+                                    <p>And a great subtitle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_masonry_block-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-selector" separator=", " add=".s_masonry_block .block"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" separator=", " add=".s_masonry_block .block"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-selector=".s_masonry_block">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Ratio</a>
+                    <ul class="dropdown-menu">
+                        <li data-select_class=""><a>Auto</a></li>
+                        <li data-select_class="s_ratio_2_1"><a>2:1</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+</odoo>
