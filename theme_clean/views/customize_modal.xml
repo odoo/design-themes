@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_customize" inherit_id="theme_common.theme_customize">
+        <!-- Add font options -->
+        <xpath expr="//t[@t-set='_nb_fonts']" position="attributes">
+            <attribute name="t-value">19</attribute>
+        </xpath>
+    </template>
+</odoo>

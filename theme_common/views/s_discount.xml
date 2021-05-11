@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Discount" id="s_discount">
+        <section class="s_discount o_animation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mt32 mb32">
+                        <h2>Nice % Discount Tables</h2>
+                        <h3 class="text-muted">Collapsable Tab Code</h3>
+                    </div>
+                    <div class="col-lg-3 mt32 mb32">
+                        <div class="s_discount_box">
+                            <div class="s_discount_brand bg-white">
+                                <h3 class="text-muted">COUPON</h3>
+                            </div>
+                            <div class="s_discount_amount bg-beta"><p>30%</p>
+                                <div class="s_discount_type"><p>off</p></div>
+                            </div>
+                            <div class="s_discount_descr">
+                                <p><strong>Increase the amount of your visitors by offering them great discount.</strong>
+                                <br/>Let them find the coupon code.</p>
+                            </div>
+                            <div class="s_discount_ends bg-white">
+                                <p><small>* Conditions and restrictions apply.</small></p>
+                            </div>
+                            <div class="s_discount_coupon bg-beta">
+                                <a data-toggle="collapse" href="#code-1" class="s_discount_open-code">Get a code</a>
+                                <div id="code-1" class="collapse s_discount_code"><div class="code">LV5MAY14</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt32 mb32">
+                        <div class="s_discount_box">
+                            <div class="s_discount_brand bg-white">
+                                <h3 class="text-muted">Shipping</h3>
+                            </div>
+                            <div class="s_discount_amount bg-beta"><p>50$</p>
+                                <div class="s_discount_type"><p>worldwilde</p></div>
+                            </div>
+                            <div class="s_discount_descr">
+                                <p><strong>Increase the amount of your visitors by offering them great discount.</strong>
+                                <br/>Let them find the coupon code.</p>
+                            </div>
+                            <div class="s_discount_ends bg-white">
+                                <p><small>* Conditions and restrictions apply.</small></p>
+                            </div>
+                            <div class="s_discount_coupon bg-beta">
+                                <a data-toggle="collapse" href="#code-2" class="s_discount_open-code">Get a code</a>
+                                <div id="code-2" class="collapse s_discount_code"><div class="code">OLV4SY3R</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt32 mb32">
+                        <div class="s_discount_box">
+                            <div class="s_discount_brand bg-white">
+                                <h3 class="text-muted">GIFT</h3>
+                            </div>
+                            <div class="s_discount_amount bg-beta"><p>25%</p>
+                                <div class="s_discount_type"><p>off</p></div>
+                            </div>
+                            <div class="s_discount_descr">
+                                <p><strong>Increase the amount of your visitors by offering them great discount.</strong>
+                                <br/>Let them find the coupon code.</p>
+                            </div>
+                            <div class="s_discount_ends bg-white">
+                                <p><small>* Conditions and restrictions apply.</small></p>
+                            </div>
+                            <div class="s_discount_coupon bg-beta">
+                                <a data-toggle="collapse" href="#code-3" class="s_discount_open-code">Get a code</a>
+                                <div id="code-3" class="collapse s_discount_code"><div class="code">ZUY4OPLQ</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt32 mb32">
+                        <div class="s_discount_box">
+                            <div class="s_discount_brand bg-white">
+                                <h3 class="text-muted"><p>-50% OFF</p></h3>
+                            </div>
+                            <div class="s_discount_amount bg-beta"><p>GIFT</p>
+                                <div class="s_discount_type"><p>card</p></div>
+                            </div>
+                            <div class="s_discount_descr">
+                                <p><strong>Increase the amount of your visitors by offering them great discount.</strong>
+                                <br/>Let them find the coupon code.</p>
+                            </div>
+                            <div class="s_discount_ends bg-white">
+                                <p><small>* Conditions and restrictions apply.</small></p>
+                            </div>
+                            <div class="s_discount_coupon bg-beta">
+                                <a data-toggle="collapse" href="#code-4" class="s_discount_open-code">Get a code</a>
+                                <div id="code-4" class="collapse s_discount_code"><div class="code">ZUY4OPLQ</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_discount_opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".s_discount_box [class*='s_discount_']"/>
+        </xpath>
+    </template>
+</odoo>

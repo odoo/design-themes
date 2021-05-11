@@ -1,0 +1,45 @@
+.border-waves {
+    &::before, &::after {
+        content: '';
+        display: block;
+        height: 10px;
+        background: url('/theme_bistro/static/src/img/content/border-waves.svg');
+        background-repeat: repeat-x;
+    }
+    &::before {
+        background-position: left -6px;
+    }
+    &::after {
+        background-position: left 2px;
+    }
+}
+
+.border-triangles {
+    &::before, &::after {
+        content: '';
+        display: block;
+        height: 16px;
+        background-repeat: repeat-x;
+        background-size: 16px 16px !important;
+    }
+    &::before {
+        background: linear-gradient(-135deg, #ffffff 8px, rgba(0, 0, 0, 0) 0), linear-gradient(135deg, #ffffff 8px, rgba(0, 0, 0, 0) 0);
+    }
+    &::after {
+        background: linear-gradient(-45deg, #ffffff 8px, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, #ffffff 8px, rgba(0, 0, 0, 0) 0);
+    }
+}
+
+.border-lines {
+    &::before, &::after {
+        content: '';
+        display: block;
+        height: 1px;
+    }
+    &::before {
+        box-shadow: 0 0 0 10px #fff, 0 21px 0 0 #fff;
+    }
+    &::after {
+        box-shadow: 0 0 0 10px #fff, 0 -21px 0 0 #fff;
+    }
+}

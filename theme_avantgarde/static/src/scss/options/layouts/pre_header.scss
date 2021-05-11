@@ -1,0 +1,47 @@
+#pre-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .pre-header-text {
+        display: none;
+    }
+
+    .year {
+        margin: 0;
+        padding: 10px 0;
+        width: 60px;
+        flex: 1 1 auto;
+    }
+
+    .pre-header-links {
+        flex: 0 0 auto;
+        align-self: flex-end;
+    }
+
+    @include media-breakpoint-up(md) {
+        .pre-header-text {
+            flex: 1 1 auto;
+            display: block;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .year {
+            flex: 0 1 auto;
+
+            &:after {
+                display: inline-block;
+                margin: 0 10px;
+                font-weight: bold;
+                content: "\00B7";
+            }
+        }
+    }
+}
+
+#wrapwrap.o_header_overlay {
+    #avant_header {
+        top: 40px;
+    }
+}

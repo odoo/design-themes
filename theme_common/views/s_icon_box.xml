@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Icon Box" id="s_icon_box">
+        <section class="s_icon_box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb32">
+                        <h2>Icon Box / Features List</h2>
+                        <h3 class="text-muted">Showcase Your Services and Features</h3>
+                    </div>
+                    <div class="col-lg-3 mt16 mb16">
+                        <i class="fa fa-2x fa-eyedropper float-left rounded-circle bg-gamma"/>
+                        <div class="icon_box_content">
+                            <h4>Colors</h4>
+                            <p>You can change the box color by using the customize option.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt16 mb16">
+                        <i class="fa fa-2x fa-font float-left rounded-circle bg-gamma"/>
+                        <div class="icon_box_content">
+                            <h4>Fonts</h4>
+                            <p>Select your favorite font combination to emphase your texts.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt16 mb16">
+                        <i class="fa fa-2x fa-desktop float-left rounded-circle bg-gamma"/>
+                        <div class="icon_box_content">
+                            <h4>Layout</h4>
+                            <p>It is super easy to resize and/or duplicate each box.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt16 mb16">
+                        <i class="fa fa-2x fa-paint-brush float-left rounded-circle bg-gamma"/>
+                        <div class="icon_box_content">
+                            <h4>Style</h4>
+                            <p>You can even replace the icon by one of your choice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

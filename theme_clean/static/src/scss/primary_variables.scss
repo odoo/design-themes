@@ -1,0 +1,306 @@
+
+$o-theme-bg-img-01: url("/theme_clean/static/src/img/backgrounds/bg_snippet_01.jpg");
+$o-theme-bg-img-02: url("/theme_clean/static/src/img/backgrounds/bg_snippet_02.jpg");
+$o-theme-bg-img-03: url("/theme_clean/static/src/img/backgrounds/bg_snippet_03.jpg");
+$o-theme-bg-img-04: url("/theme_clean/static/src/img/backgrounds/bg_snippet_04.jpg");
+$o-theme-bg-img-05: url("/theme_clean/static/src/img/backgrounds/bg_snippet_05.jpg");
+$o-theme-bg-img-06: url("/theme_clean/static/src/img/backgrounds/bg_snippet_06.jpg");
+$o-theme-bg-img-07: null;
+$o-theme-bg-img-08: null;
+$o-theme-bg-img-09: null;
+$o-theme-bg-img-10: null;
+$o-theme-bg-img-11: null;
+$o-theme-bg-img-12: null;
+
+$o-theme-bg-blur-01: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_01.jpg");
+$o-theme-bg-blur-02: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_02.jpg");
+$o-theme-bg-blur-03: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_03.jpg");
+$o-theme-bg-blur-04: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_04.jpg");
+$o-theme-bg-blur-05: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_05.jpg");
+$o-theme-bg-blur-06: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_06.jpg");
+
+$o-theme-font-size-base: 1rem;
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #bdc3c7,
+        'beta': #95a5a6,
+        'gamma': #2980b9,
+        'delta': #3498db,
+        'epsilon': #34495e,
+
+        'primary': #337ab7,
+        'secondary': #ffffff,
+        'success': #2980b9,
+        'info': #1abc9c,
+        'warning': #36495e,
+        'danger': #2c3e50,
+    ),
+    (
+        'alpha': #bdc3c7,
+        'beta': #7a58b2,
+        'gamma': #593d87,
+        'delta': #39225f,
+        'epsilon': #2c3e50,
+
+        'primary': #337ab7,
+        'secondary': #ffffff,
+        'success': #593d87,
+        'info': #39225f,
+        'warning': #2c3e50,
+        'danger': #c0392b,
+    ),
+    (
+        'alpha': #c5bcb1,
+        'beta': #e67e22,
+        'gamma': #c0392b,
+        'delta': #e74c3c,
+        'epsilon': #d35400,
+
+        'primary': #337ab7,
+        'secondary': #ffffff,
+        'success': #c0392b,
+        'info': #e67e22,
+        'warning': #c5bcb1,
+        'danger': #d35400,
+    ),
+    (
+        'alpha': #c5bcb1,
+        'beta': #f1c40f,
+        'gamma': #f3ac12,
+        'delta': #e67e22,
+        'epsilon': #d35400,
+
+        'primary': #337ab7,
+        'secondary': #ffffff,
+        'success': #f3ac12,
+        'info': #f1c40f,
+        'warning': #c0392b,
+        'danger': #d35400,
+    ),
+    (
+        'alpha': #ecf0f1,
+        'beta': #bdc3c7,
+        'gamma': #27ae60,
+        'delta': #254c3a,
+        'epsilon': #2ecc71,
+
+        'primary': #337ab7,
+        'secondary': #ffffff,
+        'success': #27ae60,
+        'info': #254c3a,
+        'warning': #34495e,
+        'danger': #2c3e50,
+    ),
+    (
+        'alpha': #ecf0f1,
+        'beta': #bdc3c7,
+        'gamma': #7f8c8d,
+        'delta': #445b5c,
+        'epsilon': #34495e,
+
+        'primary': #337ab7,
+        'secondary': #ffffff,
+        'success': #bdc3c7,
+        'info': #7f8c8d,
+        'warning': #445b5c,
+        'danger': #2c3e50,
+    ),
+);
+
+// Grays
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        'black': #000000,
+        '900': lighten(#000, 40%),
+        '600': lighten(#000, 70%),
+        '200': lighten(#000, 80%),
+        'white': #FFFFFF,
+    ));
+}
+
+// Colors
+$o-color-palettes: (
+    (
+        'menu': #1b557a,
+        'footer': #164666,
+        'text': #8c8c8c,
+
+        'btn-alpha': #3498DB, // FIXME
+        'btn-beta': #2980B9,
+        'btn-gamma': #1ABC9C,
+        'btn-delta': #34495E,
+        'btn-epsilon': #2C3E50,
+
+        'btn-primary': #3498db,
+        'btn-secondary': #ffffff,
+        'btn-success': #1abc9c,
+        'btn-info': #2ecc71,
+        'btn-warning': #e67e22,
+        'btn-danger': #e74c3c,
+    ),
+    (
+        'menu': #362552,
+        'footer': #2b1d41,
+        'text': #8c8c8c,
+
+        'btn-alpha': #7a58b2,
+        'btn-beta': #593d87,
+        'btn-gamma': #39225f,
+        'btn-delta': #2C3E50,
+        'btn-epsilon': #C0392B,
+
+        'btn-primary': #bdc3c7,
+        'btn-secondary': #ffffff,
+        'btn-success': #95a5a6,
+        'btn-info': #7a58b2,
+        'btn-warning': #b29ed2,
+        'btn-danger': #e74c3c,
+    ),
+    (
+        'menu': #81261d,
+        'footer': #6d2018,
+        'text': #8c8c8c,
+
+        'btn-alpha': #E74C3C,
+        'btn-beta': #C0392B,
+        'btn-gamma': #E67E22,
+        'btn-delta': #c5bcb1,
+        'btn-epsilon': #D35400,
+
+        'btn-primary': #e74c3c,
+        'btn-secondary': #ffffff,
+        'btn-success': #e67e22,
+        'btn-info': #f3ac12,
+        'btn-warning': #d35400,
+        'btn-danger': #c0392b,
+    ),
+    (
+        'menu': #b07b09,
+        'footer': #976a08,
+        'text': #8c8c8c,
+
+        'btn-alpha': #E74C3C,
+        'btn-beta': #f3ac12,
+        'btn-gamma': #F1C40F,
+        'btn-delta': #C0392B,
+        'btn-epsilon': #D35400,
+
+        'btn-primary': #f1c40f,
+        'btn-secondary': #ffffff,
+        'btn-success': #e67e22,
+        'btn-info': #f3ac12,
+        'btn-warning': #d35400,
+        'btn-danger': #c0392b,
+    ),
+    (
+        'menu': #19703e,
+        'footer': #145b32,
+        'text': #8c8c8c,
+
+        'btn-alpha': #2ECC71,
+        'btn-beta': #27AE60,
+        'btn-gamma': #254c3a,
+        'btn-delta': #34495E,
+        'btn-epsilon': #2C3E50,
+
+        'btn-primary': #2ecc71,
+        'btn-secondary': #ffffff,
+        'btn-success': #1abc9c,
+        'btn-info': #3498db,
+        'btn-warning': #e67e22,
+        'btn-danger': #e74c3c,
+    ),
+    (
+        'menu': #6d8082,
+        'footer': #617374,
+        'text': #8c8c8c,
+
+        'btn-alpha': #95A5A6,
+        'btn-beta': #BDC3C7,
+        'btn-gamma': #7F8C8D,
+        'btn-delta': #445b5c,
+        'btn-epsilon': #2C3E50,
+
+        'btn-primary': #95a5a6,
+        'btn-secondary': #ffffff,
+        'btn-success': #3498db,
+        'btn-info': #34495e,
+        'btn-warning': #e74c3c,
+        'btn-danger': #c0392b,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('PT Sans', sans-serif),
+    ('Ubuntu', sans-serif),
+    ('Bitter', serif),
+    ('Droid Serif', serif),
+    ('Dosis', sans-serif),
+    ('Open Sans', sans-serif),
+    ('Helvetica','Arial', sans-serif),
+    ('Lato', sans-serif),
+    ('Josefin Slab', serif),
+    ('Abel', sans-serif),
+    ('Muli', sans-serif),
+    ('Libre Baskerville', serif),
+    ('Medula One', cursive),
+    ('Montserrat Alternates', sans-serif),
+    ('Imprima', sans-serif),
+    ('Oswald', sans-serif),
+    ('Quattrocento', serif),
+    ('Vollkorn', serif),
+    ('Alice', serif),
+);
+$o-theme-font-urls: (
+    'PT+Sans:400,400i,700,700i',
+    'Ubuntu:400,400i,700,700i',
+    'Bitter:400,400i,700',
+    null,
+    'Dosis:400,700',
+    'Open+Sans:400,400i,700,700i',
+    null,
+    'Lato:400,400i,700,700i',
+    'Josefin+Slab:400,400i,700,700i',
+    'Abel',
+    'Muli:400,400i,700,700i',
+    'Libre+Baskerville:400,400i,700',
+    'Medula+One',
+    'Montserrat+Alternates:400,400i,700,700i',
+    'Imprima',
+    'Oswald:400,700',
+    'Quattrocento:400,700',
+    'Vollkorn:400,400i,700,700i',
+    'Alice',
+);
+$o-theme-font-names: (
+    'PT Sans',
+    'Ubuntu',
+    'Bitter',
+    'Droid Serif',
+    'Dosis',
+    'Open Sans',
+    'Helvetica',
+    'Lato',
+    'Josefin Slab',
+    'Abel',
+    'Muli',
+    'Libre Baskerville',
+    'Medula One',
+    'Montserrat Alternates',
+    'Imprima',
+    'Oswald',
+    'Quattrocento',
+    'Vollkorn',
+    'Alice',
+);

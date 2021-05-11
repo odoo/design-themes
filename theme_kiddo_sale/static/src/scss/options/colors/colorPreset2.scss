@@ -1,0 +1,38 @@
+#wrapwrap > main > #wrap .oe_website_sale {
+    #products_grid_before {
+        ul > li > a {
+            &:hover, &:focus {
+                background-color: o-theme-color('gamma-light');
+            }
+        }
+        .js_attributes {
+            border-color: o-theme-color('beta');
+            color: o-theme-color('epsilon');
+
+            strong {
+                color: gray('600');
+                border-bottom-color: gray('200');
+            }
+        }
+    }
+    #products_grid {
+        .oe_product section .product_price {
+            background-color: o-theme-color('delta');
+
+            &:before {
+                background-color: o-theme-color('epsilon');
+            }
+            &:after {
+                border-right-color: o-theme-color('epsilon');
+            }
+        }
+
+        .pagination > .active > a {
+            color: o-theme-color('alpha');
+            background-color: o-theme-color('epsilon');
+            &:hover {
+                background-color: o-theme-color('epsilon-dark');
+            }
+        }
+    }
+}

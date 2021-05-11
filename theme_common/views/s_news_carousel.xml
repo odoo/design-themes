@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="News Carousel" id="s_news_carousel">
+        <section class="pt48 pb48" style="background-color: rgb(239, 239, 239);">
+            <div class="container">
+                <div class="row">
+                    <div id="s_news_carousel" class="col-lg-12 s_news_carousel s_carousel s_carousel_default carousel slide s_col_no_bgcolor" data-interval="10000">
+                        <!-- Control -->
+                        <div class="carousel-control-prev" data-target="#s_news_carousel" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                            <span class="carousel-control-prev-icon"/>
+                            <span class="sr-only">Previous</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row no-gutters content">
+                                    <div class="col-lg-3 s_news_carousel_date text-center bg-alpha pt16 pb16">
+                                        <span class="s_news_carousel_day" style="font-size: 62px;">18</span>
+                                        <span class="s_news_carousel_month">December</span>
+                                    </div>
+                                    <div class="col-lg-9 s_news_carousel_content">
+                                        <span class="s_badge badge bg-secondary pull-right">
+                                          <i class="fa fa-1x fa-fw fa-exclamation-circle"/>New
+                                        </span>
+                                        <h3>Create an irresistible website.</h3>
+                                        <p>Your website is where almost all of your customers will end up first. <br/>Let's clear up what it takes to give them the best experience with it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row no-gutters content">
+                                    <div class="col-lg-3 s_news_carousel_date text-center bg-gamma pt16 pb16">
+                                        <span class="s_news_carousel_day" style="font-size: 62px;">3</span>
+                                        <span class="s_news_carousel_month">January</span>
+                                    </div>
+                                    <div class="col-lg-9 s_news_carousel_content">
+                                        <h3>Prepare for the future of eCommerce.</h3>
+                                        <p>Which trends to follow? Which ideas will work? <br/>Opening Keynote - Presented by John DOE.</p>
+                                        <a href="#" class="btn btn-alpha">REGISTER <i class="fa fa-1x fa-caret-right ml-2"/></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row no-gutters content">
+                                    <div class="col-lg-3 s_news_carousel_date text-center bg-delta pt16 pb16">
+                                        <span class="s_news_carousel_icon">
+                                             <i class="fa fa-3x fa-envelope"/>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-9 s_news_carousel_content">
+                                        <h3>Use newsletters to increase your popularity</h3>
+                                        <p>Build relationships and recognition by staying in touch with your customers.</p>
+                                        <a href="#" class="btn btn-delta">Discover</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Control -->
+                        <div class="carousel-control-next" data-target="#s_news_carousel" data-slide="next" role="img" aria-label="Next" title="Next">
+                            <span class="carousel-control-next-icon"/>
+                            <span class="sr-only">Next</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_news_carousel_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-exclude" add=".s_news_carousel .carousel-item" separator=","/>
+        </xpath>
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-exclude" add=".s_news_carousel .carousel-item" separator=","/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-exclude" add=".s_news_carousel .carousel-item" separator=","/>
+        </xpath>
+    </template>
+</odoo>

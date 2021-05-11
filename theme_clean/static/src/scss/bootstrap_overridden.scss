@@ -1,0 +1,139 @@
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1.25rem;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                theme-color('primary');
+$link-hover-color:          theme-color('info');
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              1.42;
+$line-height-sm:              1.42;
+
+$border-color:                transparent;
+
+$border-radius:               .125rem;
+$border-radius-lg:            .125rem;
+$border-radius-sm:            .0625rem;
+
+$box-shadow-sm:               0 0 5px 0 rgba(140,140,140,.5);
+$box-shadow:                  0 0 5px 0 rgba(140,140,140,.5);
+$box-shadow-lg:               0 0 5px 0 rgba(140,140,140,.5);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-weight-bold:            600;
+
+$h1-font-size:                $o-theme-font-size-base * (41 / 16);
+$h2-font-size:                $o-theme-font-size-base * (34 / 16);
+$h3-font-size:                $o-theme-font-size-base * (28 / 16);
+$h4-font-size:                $o-theme-font-size-base * (20 / 16);
+$h5-font-size:                $o-theme-font-size-base;
+$h6-font-size:                $o-theme-font-size-base * (14 / 16);
+
+$text-muted:                  theme-color('alpha');
+
+$hr-border-color:             #ccc;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-focus-box-shadow:  0;
+
+$input-btn-padding-y-sm:      .3125rem;
+$input-btn-padding-x-sm:      .625rem;
+
+$input-btn-padding-y-lg:      .625rem;
+$input-btn-padding-x-lg:      1rem;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-border-width:            0;
+
+$btn-box-shadow:              0;
+$btn-focus-box-shadow:        0;
+$btn-active-box-shadow:       0;
+
+// Forms
+
+$label-margin-bottom:                   0;
+
+$input-box-shadow:                      0;
+
+$input-focus-box-shadow:                0;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-padding-y:                .3125rem;
+$dropdown-spacer:                   0;
+$dropdown-divider-bg:               transparent;
+$dropdown-box-shadow:               0;
+
+$dropdown-item-padding-y:           .1875rem;
+$dropdown-item-padding-x:           1.25rem;
+
+/// Navs
+
+$nav-link-padding-y:                .75rem;
+$nav-link-padding-x:                .9375rem;
+
+$nav-tabs-border-width:             0;
+$nav-tabs-link-active-color:        white;
+$nav-tabs-link-active-bg:           theme-color('primary');
+
+$nav-divider-color:                 $white;
+
+// Navbar
+$navbar-padding-y:                  0;
+
+$navbar-nav-link-padding-x:         $nav-link-padding-x;
+
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           rgba(theme-color('delta'), .9);
+$navbar-dark-active-color:          $white;
+
+$navbar-light-color:                $black;
+$navbar-light-hover-color:          rgba(theme-color('delta'), .9);
+$navbar-light-active-color:         $black;
+
+// Pagination
+
+$pagination-padding-y:              .375rem;
+$pagination-padding-y-sm:           .3125rem;
+$pagination-padding-x-sm:           .625rem;
+$pagination-padding-y-lg:           .625rem;
+$pagination-padding-x-lg:           1rem;
+$pagination-line-height:            1.42;
+
+$pagination-focus-box-shadow:       0;
+
+$pagination-active-color:           white;
+$pagination-active-bg:              theme-color('primary');
+
+// Progress bars
+
+$progress-box-shadow:               0;
+$progress-bar-bg:                   theme-color("gamma");
+
+// Carousel
+
+$carousel-indicator-active-bg:      #808080;
+
+$carousel-caption-color:            #808080;

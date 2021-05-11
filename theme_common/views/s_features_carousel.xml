@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Features Slider" id="s_features_carousel">
+        <section id="myCarousel" class="s_features_carousel carousel slide" data-interval="10000" >
+            <!-- Indicators -->
+            <ol type="1" class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="container carousel_header">
+                <div class="row">
+                    <div class="col-lg-12 pt64">
+                        <h2>Features</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item image_text active">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="col-lg-6 pt16">
+                                <div class="circle d-block mx-auto">
+                                    <div class="mask bg-beta" data-name="Big circle">
+                                        <span class="text-center">01.</span>
+                                        <p>DECISIONS, DECISIONS, AND EVEN MORE DECISIONS</p>
+                                    </div>
+                                </div>
+                                <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                            </div>
+                            <div class="col-lg-6 pt16">
+                                <img class="img img-fluid d-block mx-auto" src="/web/image/theme_common.image_content_04" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item image_text">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="col-lg-6 pt16">
+                                <div class="circle d-block mx-auto">
+                                    <div class="mask bg-beta" data-name="Big circle">
+                                        <span class="text-center">02.</span>
+                                        <p>DESIGN, DESIGN, AND EVEN MORE DESIGN</p>
+                                    </div>
+                                </div>
+                                <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                            </div>
+                            <div class="col-lg-6 pt16">
+                                <img class="img img-fluid d-block mx-auto" src="/web/image/theme_common.image_content_03" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control-prev" data-target="#s_products_carousel" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                <span class="carousel-control-prev-icon"/>
+                <span class="sr-only">Previous</span>
+            </div>
+            <div class="carousel-control-next" data-target="#s_products_carousel" data-slide="next" role="img" aria-label="Next" title="Next">
+                <span class="carousel-control-next-icon"/>
+                <span class="sr-only">Next</span>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_features_carousel-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".s_features_carousel .mask"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_features_carousel .mask"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-selector" add=".s_features_carousel .mask"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,65 @@
+#wrapwrap {
+
+    // Banner Carousel
+    .s_banner_2.carousel {
+        .carousel-box-content {
+            border-radius: $border-radius;
+        }
+        .carousel-control {
+            width: 10%;
+            @include carousel-control(0, 20px, 3px);
+            @include fa-size-generator(15px);
+            .fa {
+                top: auto;
+                bottom: 30px;
+            }
+        }
+        .carousel-indicators {
+            background-color: #fff;
+            height: 35px;
+            line-height: 38px;
+            width: auto;
+            left: 50%;
+            right: auto;
+            bottom: 20px;
+            margin-right: -50%;
+            margin-left: 0;
+            transform: translate(-50%, 0);
+            padding: 0 40px;
+            border-radius: $border-radius-lg;
+        }
+    }
+
+    // 3-Columns Carousel
+    .s_three_columns .carousel-control {
+        width: auto;
+        min-width: 35px;
+        @include carousel-control(15px, 0, 2px);
+        @include fa-size-generator(15px);
+        .fa {
+            top: auto;
+            bottom: 15px;
+        }
+    }
+
+    // Border-radius
+    .panel-group .panel,
+    .s_medias_list .row,
+    .s_text_block_image_fw [class*="col-lg-"],
+    .s_well {
+        border-radius: $border-radius;
+    }
+
+    // Team Profile
+    .profile-body {
+        @include border-top-radius($border-radius);
+    }
+
+    .label i {
+        opacity: 0.5;
+    }
+
+    .s_images_captions_fw p {
+        border-bottom-right-radius: $border-radius;
+    }
+}

@@ -1,0 +1,7 @@
+
+// Background colors extension
+@mixin o-bg-color-extension($color, $text-color, $with-muted) {
+    &.fa, .blockquote-text small, a:not(.btn) {
+        color: if($text-color, $text-color, color-yiq($color));
+    }
+}

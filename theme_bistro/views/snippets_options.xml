@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bistro_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="after">
+            <div data-selector="section">
+                <div class="dropdown-submenu">
+                    <a tabindex="-1" href="#" class="dropdown-item"><i class="fa fa-reorder fa-1x"/>Borders</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-select-class="">None</a>
+                        <a href="#" class="dropdown-item" data-select-class="border-waves">Waves</a>
+                        <a href="#" class="dropdown-item" data-select-class="border-lines">Lines</a>
+                        <a href="#" class="dropdown-item" data-select-class="border-triangles">Triangles</a>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Snippet's Body -->
+    <template name="Media Block" id="s_media_block">
+        <section class="s_media_block pb160 pt160" src="http://media.sublimevideo.net/v/midnight-sun-short-edit-360p.mp4" muted="muted" loop="loop" autoplay="autoplay" iframefit="fitCont">
+            <div class="v-align text-center">
+                <h1 class="text-center">Set a catchy headline</h1>
+            </div>
+        </section>
+    </template>
+
+    <!-- Snippet's Options -->
+    <template id="s_media_block_option" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js="s_media_block" data-selector="section.s_media_block">
+                <a href="#" class="dropdown-item" data-video-opt="" data-no-preview="true"><i class="fa fa-fw fa-cog"/>Video Options</a>
+            </div>
+        </xpath>
+    </template>
+</odoo>

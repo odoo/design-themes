@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_customize" inherit_id="theme_common.theme_customize">
+        <!-- Set number of colors and fonts -->
+        <xpath expr="//t[@t-set='_nb_colors']" position="attributes">
+            <attribute name="t-value">8</attribute>
+        </xpath>
+        <xpath expr="//t[@t-set='_nb_fonts']" position="attributes">
+            <attribute name="t-value">15</attribute>
+        </xpath>
+
+        <!-- Add layout options -->
+        <xpath expr="//content[@id='theme_customize_content_layout']/*" position="before">
+            <list string="Logo">
+                <opt string="Standard" data-xmlid=""/>
+                <opt string="Wide" data-xmlid="theme_avantgarde.avantgarde_option_layout_wide_logo"/>
+            </list>
+            <list string="Pre Header">
+                <opt string="None" data-xmlid=""/>
+                <opt string="Standard" data-xmlid="theme_avantgarde.avantgarde_option_layout_pre_header"/>
+            </list>
+            <list string="Year">
+                <opt string="Show" data-xmlid=""/>
+                <opt string="Hide" data-xmlid="theme_avantgarde.avantgarde_option_layout_hide_year"/>
+            </list>
+        </xpath>
+    </template>
+
+    <!-- Layout Options -->
+    <template id="avantgarde_option_layout_wide_logo" inherit_id="theme_avantgarde.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/options/layouts/wide_logo.scss"/>
+        </xpath>
+    </template>
+    <template id="avantgarde_option_layout_pre_header" inherit_id="theme_avantgarde.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/options/layouts/pre_header.scss"/>
+        </xpath>
+    </template>
+    <template id="avantgarde_option_layout_hide_year" inherit_id="theme_avantgarde.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/options/layouts/hide_year.scss"/>
+        </xpath>
+    </template>
+</odoo>

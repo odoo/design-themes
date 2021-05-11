@@ -1,0 +1,132 @@
+//
+// Color system
+//
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  200;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              1.4;
+$line-height-sm:              1.4;
+
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
+
+$box-shadow-sm:               0 3px 3px -2px rgba(51,51,51,0);
+$box-shadow:                  0 3px 3px -2px rgba(51,51,51,0);
+$box-shadow-lg:               0 3px 3px -2px rgba(51,51,51,0);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-size-base:              $o-theme-font-size-base;
+
+$line-height-base:            1.4;
+
+$h1-font-size:                $font-size-base * 3;
+$h2-font-size:                $font-size-base * (30 / 14);
+$h3-font-size:                $font-size-base * (24 / 14);
+$h4-font-size:                $font-size-base * (18 / 14);
+$h5-font-size:                $font-size-base * 1;
+$h6-font-size:                $font-size-base * (12 / 14);
+
+$headings-font-weight:        300;
+
+$hr-border-color:             #eee;
+
+$hr-margin-y:                 .25rem;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y-sm:      .375rem !default;
+$input-btn-padding-x-sm:      .75rem !default;
+
+$input-btn-padding-y-lg:      .625rem;
+$input-btn-padding-x-lg:      2rem;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-box-shadow:              0 3px 3px -2px rgba(51,51,51,0);
+$btn-focus-box-shadow:        0 3px 3px -2px rgba(51,51,51,0);
+$btn-active-box-shadow:       0 3px 3px -2px rgba(51,51,51,0);
+
+// Forms
+
+$label-margin-bottom:                   0;
+
+$input-box-shadow:                      0 3px 3px -2px rgba(51,51,51,0);
+
+$input-focus-box-shadow:                0 3px 3px -2px rgba(51,51,51,0);
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-padding-y:                .3125rem;
+$dropdown-spacer:                   0;
+$dropdown-border-color:             $gray-200;
+
+// Navs
+
+$nav-link-padding-y:                .625rem;
+$nav-link-padding-x:                .9375rem;
+
+$nav-tabs-border-width:             0;
+$nav-tabs-link-active-bg:           none;
+
+$nav-divider-margin-y:              0;
+
+// Navbar
+
+$navbar-padding-y:                  1rem;
+$navbar-padding-x:                  2.5%;
+
+// Pagination
+
+$pagination-padding-y:              .375rem;
+$pagination-padding-y-sm:           .3125rem;
+$pagination-padding-x-sm:           .625rem;
+$pagination-padding-y-lg:           .625rem;
+$pagination-padding-x-lg:           1rem;
+
+$pagination-focus-box-shadow:       0;
+
+$pagination-hover-color:            theme-color('primary');
+
+$pagination-active-color:           white;
+$pagination-active-bg:              theme-color('primary');
+
+// Badges
+
+$badge-border-radius:               0.25em;
+
+// Progress bars
+
+$progress-box-shadow:               0;
+
+// Image thumbnails
+
+$thumbnail-box-shadow:              0 3px 3px -2px rgba(51,51,51,0);
+
+// Breadcrumbs
+
+$breadcrumb-bg:                     $gray-100;
+$breadcrumb-divider-color:          $gray-400;
+$breadcrumb-active-color:           $gray-400;
+
+// Carousel
+
+$carousel-control-color:            theme-color('delta');
+
+$carousel-indicator-active-bg:      theme-color('delta');
+
+$carousel-caption-color:            theme-color('delta');

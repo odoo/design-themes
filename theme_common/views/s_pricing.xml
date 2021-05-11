@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Pricing" id="s_pricing">
+        <section class="s_pricing o_animation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mt32 mb32">
+                        <h2>Full Detailed Price List</h2>
+                        <h3 class="text-muted">A Great way to show your range</h3>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="container pricing-list">
+                    <div class="row">
+                        <div class="col-lg-3 mb32">
+                            <div class="s_pricing_box">
+                                <div class="s_pricing_header bg-beta text-center">
+                                    <h2>$15/mo</h2>
+                                    <h3>Tiny</h3>
+                                </div>
+                                <div class="s_pricing_features bg-white">
+                                    <p> <strong>Unlimited</strong> Email Addresses</p>
+                                    <p> <strong>50GB</strong> Disk Space</p>
+                                    <p> <strong>Unlimited</strong> MySQL Databases</p>
+                                    <p> <strong>Unlimited</strong> Domains</p>
+                                    <p> <strong>Free</strong> Billing Systems</p>
+                                    <a href="#" class="btn btn-success btn-lg mt32 mb32">More Features</a>
+                                </div>
+                                <div class="s_pricing_footer bg-beta"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb32">
+                            <div class="s_pricing_box">
+                                <div class="s_pricing_header bg-gamma text-center">
+                                    <h2>$29/mo</h2>
+                                    <h3>Small</h3>
+                                </div>
+                                <div class="s_pricing_features bg-white">
+                                    <p> <strong>Unlimited</strong> Email Addresses</p>
+                                    <p> <strong>80GB</strong> Disk Space</p>
+                                    <p> <strong>Unlimited</strong> MySQL Databases</p>
+                                    <p> <strong>Unlimited</strong> Domains</p>
+                                    <p> <strong>Free</strong> Billing Systems</p>
+                                    <a href="#" class="btn btn-success btn-lg mt32 mb32">More Features</a>
+                                </div>
+                                <div class="s_pricing_footer bg-gamma"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb32">
+                            <div class="s_pricing_box">
+                                <div class="s_pricing_header bg-delta text-center">
+                                    <h2>$69/mo</h2>
+                                    <h3>Medium</h3>
+                                </div>
+                                <div class="s_pricing_features bg-white">
+                                    <p> <strong>Unlimited </strong> Email Addresses</p>
+                                    <p> <strong>120GB</strong> Disk Space</p>
+                                    <p> <strong>Unlimited</strong> MySQL Databases</p>
+                                    <p> <strong>Unlimited</strong> Domains</p>
+                                    <p> <strong>Free</strong> Billing Systems</p>
+                                    <a href="#" class="btn btn-success btn-lg mt32 mb32">More Features</a>
+                                </div>
+                                <div class="s_pricing_footer bg-delta"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb32">
+                            <div class="s_pricing_box">
+                                <div class="s_pricing_header bg-epsilon text-center">
+                                    <h2>$99/mo</h2>
+                                    <h3>Pro</h3>
+                                </div>
+                                <div class="s_pricing_features bg-white">
+                                    <p> <strong>Unlimited</strong> Email Addresses</p>
+                                    <p> <strong>120GB</strong> Disk Space</p>
+                                    <p> <strong>Unlimited</strong> MySQL Databases</p>
+                                    <p> <strong>Unlimited</strong> Domains</p>
+                                    <p> <strong>Free</strong> Billing Systems</p>
+                                    <a href="#" class="btn btn-success btn-lg mt32 mb32">More Features</a>
+                                </div>
+                                <div class="s_pricing_footer bg-epsilon"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </template>
+
+    <template id="s_options_pricing" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="colorpicker" data-selector=".s_pricing_box" data-target=".s_pricing_header, .s_pricing_footer">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Colors</a>
+                    <div class="dropdown-menu">
+                    </div>
+                </li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

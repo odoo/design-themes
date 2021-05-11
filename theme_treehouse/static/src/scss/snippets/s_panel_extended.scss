@@ -1,0 +1,15 @@
+.s_panel {
+    &.panel {
+        background-color: inherit;
+    }
+    .panel-heading {
+        border: 0;
+        .fa {
+            margin-right: 12px;
+        }
+    }
+}
+
+.panel {
+    box-shadow: $o-theme-shadow;
+}

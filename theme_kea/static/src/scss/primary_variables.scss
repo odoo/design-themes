@@ -1,0 +1,141 @@
+@mixin o-bg-color-extension($color, $text-color, $with-muted) {
+    // FIXME "support" of link colors as before ?
+    // a:not(.btn) {
+    //     color: $linkcolor;
+    //     &:hover, &:focus {
+    //         color: $hovercolor;
+    //     }
+    // }
+}
+
+$o-theme-font-size-base: 0.75rem;
+
+$o-theme-bg-img-01: url("/web/image/theme_common.image_content_11");
+$o-theme-bg-img-02: url("/web/image/theme_common.image_content_03");
+$o-theme-bg-img-03: url("/web/image/theme_common.image_content_12");
+$o-theme-bg-img-04: url("/web/image/theme_common.image_content_02");
+$o-theme-bg-img-05: url("/web/image/theme_common.image_content_10");
+$o-theme-bg-img-06: url("/web/image/theme_common.image_content_09");
+$o-theme-bg-img-07: url("/web/image/theme_common.image_content_07");
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+
+// The system for this theme is particular to support somehow the old version.
+// The alpha color is always white but primary is using beta (instead of alpha)
+// and secondary is using alpha (white) (instead of beta). In the old system,
+// this only applied to buttons though but we extended that to all components.
+// Success, info, warning and error buttons are also customized with epsilon,
+// gamma, delta and ... black colors (see theme.scss).
+$-palettes: (
+    (
+        alpha: #ffffff,
+        beta: #dcdcdc,
+        gamma: #9c9b9b,
+        delta: #333333,
+        epsilon: #e4677f,
+    ),
+    (
+        alpha: #c7d0d5,
+        beta: #93b1c6,
+        gamma: #ffffff,
+        delta: #556672,
+        epsilon: #ff7148,
+    ),
+    (
+        alpha: #ebe3e0,
+        beta: #e3d6c6,
+        gamma: #ffffff,
+        delta: #333333,
+        epsilon: #f9a646,
+    ),
+    (
+        alpha: #7ec2aa,
+        beta: #4ca8a1,
+        gamma: #ffffff,
+        delta: #556672,
+        epsilon: #f9a646,
+    ),
+    (
+        alpha: #7f909a,
+        beta: #ed6639,
+        gamma: #ffffff,
+        delta: #333333,
+        epsilon: #385b9f,
+    ),
+    (
+        alpha: #fcdf15,
+        beta: #0b99bc,
+        gamma: #ffffff,
+        delta: #3c3c3c,
+        epsilon: #d40e52,
+    ),
+);
+$o-theme-color-palettes: ();
+@each $-palette in $-palettes {
+    $o-theme-color-palettes: append($o-theme-color-palettes, map-merge($-palette, (
+        'primary': map-get($-palette, 'beta'),
+        'secondary': map-get($-palette, 'alpha'),
+    )));
+}
+
+// Grays
+$-gray-700: lighten(#000, 33.5%);
+$o-gray-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        'black': #000000,
+        '900': lighten(#000, 20%),
+        '700': $-gray-700,
+        '600': lighten(#000, 46.7%),
+        '300': #d4d4d4,
+        '200': lighten(#000, 85%),
+        'white': #ffffff,
+    ));
+}
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'body': #f2edea,
+        'menu': #FFFFFF,
+        'footer': #FFFFFF,
+        'text': $-gray-700,
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-fonts: (
+    ('SinkinSans', sans-serif),
+    ('Rajdhani', sans-serif),
+    ('Roboto', sans-serif),
+    ('Source Sans Pro', sans-serif),
+    ('Ubuntu', sans-serif),
+    ('Lato', sans-serif),
+    ('Ubuntu', sans-serif),
+);
+$o-theme-font-urls: (
+    null,
+    'Rajdhani:400,700',
+    'Roboto:400,400i,700,700i',
+    'Source+Sans+Pro:400,400i,700,700i',
+    'Ubuntu:400,400i,700,700i',
+    'Lato:400,400i,700,700i',
+    'Ubuntu:400,400i,700,700i',
+);
+$o-theme-font-names: (
+    'Sinkin',
+    'Rajdhani',
+    'Roboto',
+    'Source Sans Pro',
+    'Ubuntu',
+    'Lato',
+    'Ubuntu',
+);

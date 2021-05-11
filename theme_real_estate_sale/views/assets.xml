@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_frontend" inherit_id="theme_real_estate.assets_frontend" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_real_estate_sale/static/src/scss/layout_sale.scss"/>
+        </xpath>
+    </template>
+</odoo>

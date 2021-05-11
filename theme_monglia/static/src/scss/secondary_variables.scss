@@ -1,0 +1,20 @@
+$-palettes: $o-color-palettes;
+$o-color-palettes: ();
+$i: 1;
+@each $-palette in $-palettes {
+    $-theme-palette: nth($o-theme-color-palettes, $i);
+    $o-color-palettes: append($o-color-palettes, map-merge($-palette, (
+        'alpha-light'     : lighten(map-get($-theme-palette, 'alpha'), 10%),
+        'beta-light'      : lighten(map-get($-theme-palette, 'beta'), 10%),
+        'gamma-light'     : lighten(map-get($-theme-palette, 'gamma'), 10%),
+        'delta-light'     : lighten(map-get($-theme-palette, 'delta'), 10%),
+        'epsilon-light'   : lighten(map-get($-theme-palette, 'epsilon'), 10%),
+
+        'alpha-dark'      : darken(map-get($-theme-palette, 'alpha'), 10%),
+        'beta-dark'       : darken(map-get($-theme-palette, 'beta'), 10%),
+        'gamma-dark'      : darken(map-get($-theme-palette, 'gamma'), 10%),
+        'delta-dark'      : darken(map-get($-theme-palette, 'delta'), 10%),
+        'epsilon-dark'    : darken(map-get($-theme-palette, 'epsilon'), 10%),
+    )));
+    $i: $i + 1;
+}

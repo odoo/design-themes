@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippet_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".s_images_captions_fw [class*='col-'], .media-content, .media-options, .profile-body, .profile-options > [class*='col-'], .carousel-box-content, .s_text_block_image_fw [class*='col-'], .news-carousel-time, .news-carousel-content, .s_color_blocks_4 [class*='col-lg-']"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_images_captions_fw [class*='col-'], .media-content, .media-options, .profile-body, .profile-options > [class*='col-'], .carousel-box-content, .s_text_block_image_fw [class*='col-'], .news-carousel-time, .news-carousel-content, .s_color_blocks_4 [class*='col-lg-']"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='sizing_y']" position="attributes">
+            <attribute name="data-selector" add="h1, h2, h3, h4, h5, h6"/>
+        </xpath>
+
+        <!-- Styles -->
+        <xpath expr="//div[@id='so_main_colorpicker']" position="after">
+            <div data-selector="h1, h2, h3, h4, h5, h6">
+                <div class="dropdown-submenu">
+                    <a tabindex="-1" href="#" class="dropdown-item"><i class="fa fa-paint-brush"/>Style</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-toggle-class="text-muted">Muted</a>
+                        <a href="#" class="dropdown-item" data-toggle-class="text-uppercase">Uppercase</a>
+                        <a href="#" class="dropdown-item" data-toggle-class="text-underline">Underline</a>
+                        <a href="#" class="dropdown-item" data-toggle-class="text-boxed">Boxed</a>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+
+        <!-- Disable top content snippet options -->
+        <xpath expr="//div[@data-js='topMenuTransparency']" position="replace"/>
+        <xpath expr="//div[@data-js='topMenuColor']" position="replace"/>
+    </template>
+</odoo>

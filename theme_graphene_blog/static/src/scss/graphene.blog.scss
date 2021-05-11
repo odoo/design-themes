@@ -1,0 +1,61 @@
+
+#wrapwrap.o_header_overlay #wrap {
+    > div#title.blog_header {
+        @include graphene-top-content;
+        overflow: visible;
+    }
+
+    #title.blog_header {
+        .cover.cover_full {
+            height: 75vh;
+            @include graphene-top-content;
+        }
+        .blog_title {
+            min-height: 300px;
+            top: 0;
+            margin-top: 15%;
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 25%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 30%;
+            }
+        }
+        > .container:not(.cover) {
+            z-index: 2;
+
+            #change_cover, .js_publish_management {
+                top: -150px;
+            }
+        }
+    }
+
+    #blog_content {
+        background: #FEFEFE;
+        z-index: 2;
+        position: relative;
+        margin-top: 0 !important;
+        padding: $grid-gutter-width/2;
+    }
+
+    .readable {
+        @include media-breakpoint-down(sm) {
+            font-size: 110%;
+        }
+    }
+}
+
+#title.blog_header {
+    .cover.cover_narrow {
+        width: 100%;
+        height: 350px;
+        height: 35vh;
+
+        &.container-fluid {
+            height: 450px;
+            height: 45vh;
+        }
+    }
+}

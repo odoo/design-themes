@@ -1,0 +1,135 @@
+// Links
+//
+// Style anchor elements.
+
+$link-color:                theme-color('delta');
+$link-hover-color:          theme-color('secondary');
+$link-hover-decoration:     none;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              1.3;
+$line-height-sm:              1.3;
+
+$border-width:                4px;
+$border-color:                theme-color('primary');
+
+$border-radius:               .125rem;
+$border-radius-lg:            .125rem;
+$border-radius-sm:            .0625rem;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-weight-normal:          500;
+
+$line-height-base:            1.3;
+
+$h1-font-size:                $o-theme-font-size-base * (44 / 16);
+$h2-font-size:                $o-theme-font-size-base * (40 / 16);
+$h3-font-size:                $o-theme-font-size-base * (32 / 16);
+$h4-font-size:                $o-theme-font-size-base * (26 / 16);
+$h5-font-size:                $o-theme-font-size-base * (21 / 16);
+$h6-font-size:                $o-theme-font-size-base * (18 / 16);
+
+$text-muted:                  theme-color('primary');
+
+$hr-border-color:             transparent;
+$hr-border-width:             0;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-focus-width:       0;
+
+$input-btn-padding-y-sm:      .3125rem;
+$input-btn-padding-x-sm:      .625rem;
+
+$input-btn-padding-y-lg:      .625rem;
+
+$input-btn-border-width:      .0625rem;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-box-shadow:              0;
+$btn-active-box-shadow:       0;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           1.5rem;
+$btn-border-radius-lg:        1.5rem;
+$btn-border-radius-sm:        1.5rem;
+
+// Forms
+
+$label-margin-bottom:                   0;
+
+$input-border-width:                    .0625rem;
+$input-box-shadow:                      0;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-padding-y:                .3125rem;
+$dropdown-spacer:                   0;
+$dropdown-border-width:             .0625rem;
+$dropdown-divider-bg:               white;
+
+$dropdown-item-padding-y:           .1875rem;
+$dropdown-item-padding-x:           1.25rem;
+
+// Navs
+
+$nav-link-padding-y:                .9375rem;
+$nav-link-padding-x:                .9375rem;
+
+$nav-tabs-border-width:             0;
+$nav-tabs-border-radius:            0;
+$nav-tabs-link-active-color:        $gray-900;
+$nav-tabs-link-active-bg:           $gray-800;
+
+// Navbar
+
+$navbar-padding-y:                  0;
+$navbar-padding-x:                  0;
+
+$navbar-brand-font-size:            1.313rem;
+
+// Pagination
+
+$pagination-padding-y:              .375rem;
+$pagination-padding-y-sm:           .3125rem;
+$pagination-padding-x-sm:           .625rem;
+$pagination-padding-y-lg:           .625rem;
+$pagination-padding-x-lg:           1rem;
+
+$pagination-color:                  theme-color('primary');
+$pagination-border-width:           .0625rem;
+
+$pagination-focus-box-shadow:       0;
+
+$pagination-hover-color:            theme-color('gamma');
+$pagination-hover-bg:               $gray-300;
+
+$pagination-active-color:           $white;
+$pagination-active-bg:              #337ab7;
+
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+$badge-pill-border-radius:          10rem;
+
+// Progress bars
+
+$progress-border-radius:            0;
+$progress-box-shadow:               0;
+
+// Breadcrumbs
+
+$breadcrumb-active-color:           theme-color('primary');

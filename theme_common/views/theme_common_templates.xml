@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Some snippets are always included with theme_common -->
+    <template id="snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="theme_common.s_google_map" t-thumbnail="/theme_common/static/src/img/snippets/s_google_map.png"/>
+        </xpath>
+    </template>
+
+    <!-- Extend customize modal to suggest more colors, more fonts -->
+    <template id="theme_customize" inherit_id="website.theme_customize">
+        <!-- Add color suggestions -->
+        <xpath expr="//content[@id='theme_customize_content_colors']/*" position="before">
+            <more data-depends="theme_color_suggestions">
+                <opt data-xmlid="" data-color-palette="1"/>
+                <!-- Only allow 9 (but most themes have 6) -->
+                <t t-set="_nb_colors" t-value="6"/>
+                <t t-foreach="_nb_colors - 1" t-as="i">
+                    <t t-set="number" t-value="i + 2"/>
+                    <opt t-attf-data-xmlid="theme_common.option_colors_0#{number}_variables" t-att-data-color-palette="number"/>
+                </t>
+            </more>
+        </xpath>
+
+         <!-- Add font options -->
+        <xpath expr="//content[@id='theme_customize_content_fonts']/*" position="before">
+            <!-- Only allow 19 (but most themes have 6 that website already defines) -->
+            <t t-set="_nb_fonts" t-value="6"/>
+        </xpath>
+        <xpath expr="//list[@id='theme_customize_content_fonts_title']" position="inside">
+            <t t-foreach="_nb_fonts - 6" t-as="i">
+                <t t-set="number" t-value="i + 7"/>
+                <t t-set="dozen" t-value="number &lt; 10 and '0' or ''"/>
+                <opt t-attf-data-xmlid="theme_common.option_font_title_#{dozen}#{number}_variables" t-att-data-font="number"/>
+            </t>
+        </xpath>
+        <xpath expr="//list[@id='theme_customize_content_fonts_body']" position="inside">
+            <t t-foreach="_nb_fonts - 6" t-as="i">
+                <t t-set="number" t-value="i + 7"/>
+                <t t-set="dozen" t-value="number &lt; 10 and '0' or ''"/>
+                <opt t-attf-data-xmlid="theme_common.option_font_body_#{dozen}#{number}_variables" t-att-data-font="number"/>
+            </t>
+        </xpath>
+        <xpath expr="//list[@id='theme_customize_content_fonts_button']" position="inside">
+            <t t-foreach="_nb_fonts - 6" t-as="i">
+                <t t-set="number" t-value="i + 7"/>
+                <t t-set="dozen" t-value="number &lt; 10 and '0' or ''"/>
+                <opt t-attf-data-xmlid="theme_common.option_font_button_#{dozen}#{number}_variables" t-att-data-font="number"/>
+            </t>
+        </xpath>
+        <xpath expr="//list[@id='theme_customize_content_fonts_navbar']" position="inside">
+            <t t-foreach="_nb_fonts - 6" t-as="i">
+                <t t-set="number" t-value="i + 7"/>
+                <t t-set="dozen" t-value="number &lt; 10 and '0' or ''"/>
+                <opt t-attf-data-xmlid="theme_common.option_font_navbar_#{dozen}#{number}_variables" t-att-data-font="number"/>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Those are independant from the user palette and act as default for it -->
+    <template id="option_colors_02_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_02_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_03_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_03_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_04_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_04_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_05_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_05_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_06_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_06_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_07_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_07_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_08_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_08_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_colors_09_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/colors/option_colors_09_variables.scss"/>
+        </xpath>
+    </template>
+
+    <!-- Font options -->
+    <template id="option_font_title_07_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_07_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_08_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_08_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_09_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_09_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_10_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_10_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_11_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_11_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_12_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_12_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_13_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_13_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_14_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_14_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_15_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_15_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_16_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_16_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_17_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_17_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_18_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_18_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_19_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_title_19_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="option_font_body_07_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_07_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_08_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_08_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_09_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_09_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_10_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_10_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_11_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_11_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_12_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_12_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_13_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_13_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_14_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_14_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_15_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_15_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_16_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_16_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_17_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_17_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_18_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_18_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_19_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_body_19_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="option_font_button_07_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_07_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_08_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_08_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_09_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_09_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_10_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_10_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_11_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_11_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_12_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_12_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_13_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_13_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_14_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_14_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_15_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_15_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_16_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_16_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_17_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_17_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_18_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_18_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_button_19_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_button_19_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="option_font_navbar_07_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_07_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_08_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_08_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_09_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_09_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_10_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_10_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_11_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_11_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_12_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_12_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_13_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_13_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_14_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_14_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_15_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_15_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_16_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_16_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_17_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_17_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_18_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_18_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_navbar_19_variables" inherit_id="theme_common._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/options/fonts/option_font_navbar_19_variables.scss"/>
+        </xpath>
+    </template>
+</odoo>

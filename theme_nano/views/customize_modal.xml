@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customize_modal" inherit_id="theme_common.theme_customize">
+        <!-- Set number of fonts -->
+        <xpath expr="//t[@t-set='_nb_fonts']" position="attributes">
+            <attribute name="t-value">11</attribute>
+        </xpath>
+
+        <xpath expr="//content[@id='theme_customize_content_layout']/*" position="before">
+            <list string="Menu">
+                <opt string="Standard" data-xmlid=""/>
+                <opt string="Side Navigation" data-xmlid="theme_nano.option_side_nav_variables, website.no_autohide_menu"/>
+            </list>
+            <list string="Icons Bar">
+                <opt id="option_icons_bar_show" string="Show" data-xmlid=""/>
+                <opt string="Hide" data-xmlid="theme_nano.option_icons_sidebar_none_variables"/>
+            </list>
+            <list string="Icons Bar Position" data-depends="option_icons_bar_show">
+                <opt string="Left" data-xmlid=""/>
+                <opt string="Right" data-xmlid="theme_nano.option_icons_sidebar_right"/>
+            </list>
+        </xpath>
+    </template>
+
+    <!-- Layouts -->
+    <template id="option_side_nav_variables" inherit_id="theme_nano._assets_primary_variables" active="True">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/options/layouts/side_nav_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_icons_sidebar_right" inherit_id="theme_nano.option_side_nav_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/options/layouts/icons_sidebar_right.scss"/>
+        </xpath>
+    </template>
+    <template id="option_icons_sidebar_none_variables" inherit_id="theme_nano.option_side_nav_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_nano/static/src/scss/options/layouts/icons_sidebar_none_variables.scss"/>
+        </xpath>
+    </template>
+</odoo>

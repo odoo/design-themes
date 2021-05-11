@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+<!-- Media Block Snippet -->
+<t t-extend="theme_common.s_media_block_modal">
+    <t t-jquery="div#media_block_more_option" t-operation="after">
+        <div class="col-md-12 media-block-option-youtube">
+            <div class="row">
+                <label class="col-md-4 pre_label">Video background</label>
+                <label class="col-md-7">
+                    <select name="background" class="form-control background">
+                        <option value="js-transparent">Transparent</option>
+                        <option value="js-animated-bg">Animated colors</option>
+                        <option value="js-static-black">Static Black</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <div class="col-md-12 media-block-option-youtube">
+            <div class="form-group" style="overflow:hidden">
+                <label class="col-md-4 pre_label col-form-label">Opacity</label>
+                <label class="col-md-7">
+                    <input name="opacity" type="range" step="0.1" min="0" max="1" value="1" placeholder="1"/>
+                </label>
+            </div>
+        </div>
+    </t>
+</t>
+</templates>

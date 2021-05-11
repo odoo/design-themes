@@ -1,0 +1,137 @@
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1.25rem;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                o-theme-color('epsilon');
+$link-hover-color:          o-theme-color('epsilon-dark');
+$link-hover-decoration:     none;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
+
+$box-shadow-sm:               0 0 .3125rem rgba(0,0,0,.25);
+$box-shadow:                  0 0 .3125rem rgba(0,0,0,.25);
+$box-shadow-lg:               0 0 .3125rem rgba(0,0,0,.25);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-enable value-keyword-case
+
+$font-size-base:              0.75rem;
+
+$font-weight-normal:          500;
+
+$line-height-base:            (20 / 12);
+
+$h1-font-size:                $font-size-base * (25 / 12);
+$h2-font-size:                $font-size-base * (18 / 12);
+$h3-font-size:                $font-size-base * (16 / 12);
+$h4-font-size:                $font-size-base * (14 / 12);
+$h5-font-size:                $font-size-base * 1;
+$h6-font-size:                $font-size-base * 1;
+
+$text-muted:                  #777777;
+
+$hr-border-color:             theme-color('gamma');
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .625rem;
+$input-btn-padding-x:         1.25rem;
+
+$input-btn-focus-color:       darken(theme-color('primary'), 15%);
+$input-btn-focus-box-shadow:  0 0 0 0 0;
+
+$input-btn-padding-y-sm:      .625rem;
+$input-btn-padding-x-sm:      1.25rem;
+
+$input-btn-padding-y-lg:      .625rem;
+$input-btn-padding-x-lg:      1.25rem;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-box-shadow:              0 0 0 0 0;
+$btn-focus-box-shadow:        $btn-box-shadow;
+$btn-active-box-shadow:       $btn-box-shadow;
+
+// Forms
+
+$input-color:                           #242327;
+$input-box-shadow:                      $btn-box-shadow;
+
+$input-focus-box-shadow:                $btn-box-shadow;
+
+$form-check-input-margin-y:             0;
+$form-check-input-margin-x:             0;
+
+$form-check-inline-margin-x:            0;
+$form-check-inline-input-margin-x:      0;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-padding-y:                .3125rem;
+$dropdown-spacer:                   0;
+$dropdown-border-radius:            .25rem;
+$dropdown-border-width:             .0625rem;
+$dropdown-divider-bg:               $white;
+$dropdown-box-shadow:               0 .375rem 1.75em rgba($black, .175);
+
+$dropdown-item-padding-y:           .1875rem;
+$dropdown-item-padding-x:           1.25rem;
+
+// Navs
+
+$nav-link-padding-y:                .4375rem;
+$nav-link-padding-x:                .9375rem;
+
+$nav-divider-margin-y:              0;
+
+// Navbar
+
+$navbar-padding-x:                  0;
+$navbar-nav-link-padding-x:         $nav-link-padding-x;
+
+// Cards
+
+$card-cap-bg:                       $white;
+
+// Badges
+
+$badge-font-size:                   100%;
+$badge-padding-y:                   .3125rem;
+$badge-padding-x:                   .625rem;
+$badge-border-radius:               .625rem;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .5rem;
+$breadcrumb-padding-x:              .9375rem;
+
+$breadcrumb-margin-bottom:          1.25rem;
+
+$breadcrumb-bg:                     $white;
+
+// Carousel
+
+$carousel-control-color:            rgba(0,0,0,0);

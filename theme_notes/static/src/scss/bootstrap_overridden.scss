@@ -1,0 +1,170 @@
+// Links
+//
+// Style anchor elements.
+
+$link-color:                theme-color('delta');
+$link-hover-color:          theme-color('alpha');
+$link-hover-decoration:     none;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-color:                $gray-600;
+
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
+
+$box-shadow-sm:               0;
+$box-shadow:                  0;
+$box-shadow-lg:               0;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-enable value-keyword-case
+
+$font-weight-normal:          500;
+
+$h1-font-size:                $o-theme-font-size-base * (40 / 16);
+$h2-font-size:                $o-theme-font-size-base * (32 / 16);
+$h3-font-size:                $o-theme-font-size-base * (28 / 16);
+$h4-font-size:                $o-theme-font-size-base * (24 / 16);
+$h5-font-size:                $o-theme-font-size-base * (20 / 16);
+$h6-font-size:                $o-theme-font-size-base;
+
+$hr-border-color:             $gray-600;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .625rem;
+$input-btn-padding-x:         1.25rem;
+
+$input-btn-focus-color:       darken(theme-color('primary'), 15%);
+$input-btn-focus-box-shadow:  0 0 0 0 0;
+
+$input-btn-padding-y-sm:      .625rem;
+$input-btn-padding-x-sm:      1.25rem;
+
+$input-btn-padding-y-lg:      .625rem;
+$input-btn-padding-x-lg:      1.25rem;
+
+$input-btn-border-width:      0;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-box-shadow:              0;
+$btn-focus-box-shadow:        $btn-box-shadow;
+$btn-active-box-shadow:       $btn-box-shadow;
+
+// Forms
+
+$input-bg:                              theme-color('secondary');
+
+$input-color:                           #242327;
+$input-border-width:                    .0625rem;
+$input-box-shadow:                      $btn-box-shadow;
+
+$input-focus-bg:                        darken(theme-color('primary'), 15%);
+$input-focus-box-shadow:                $btn-box-shadow;
+
+$input-height-border:                   .0625rem;
+
+$form-check-input-margin-y:             0;
+$form-check-input-margin-x:             0;
+
+$form-check-inline-margin-x:            0;
+$form-check-inline-input-margin-x:      0;
+
+$custom-select-focus-box-shadow:        none;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-padding-y:                .3125rem;
+$dropdown-spacer:                   0;
+$dropdown-border-radius:            .25rem;
+$dropdown-border-width:             .0625rem;
+$dropdown-divider-bg:               $white;
+$dropdown-box-shadow:               0 .375rem 1.75em rgba($black, .175);
+
+$dropdown-item-padding-y:           .1875rem;
+$dropdown-item-padding-x:           1.25rem;
+
+// Navs
+
+$nav-link-padding-y:                .625rem;
+$nav-link-padding-x:                .9375rem;
+
+$nav-tabs-border-width:             0;
+$nav-tabs-link-active-color:        $white;
+$nav-tabs-link-active-bg:           transparent;
+
+$nav-pills-link-active-color:       $white;
+$nav-pills-link-active-bg:          transparent;
+
+$nav-divider-color:                 transparent;
+$nav-divider-margin-y:              0;
+
+// Navbar
+
+$navbar-padding-y:                  0;
+$navbar-padding-x:                  0;
+
+$navbar-nav-link-padding-x:         0.9375rem;
+
+$navbar-brand-font-size:            3.125rem;
+
+// Pagination
+
+$pagination-padding-y:              .375rem;
+$pagination-padding-y-sm:           .3125rem;
+$pagination-padding-x-sm:           .625rem;
+$pagination-padding-y-lg:           .625rem;
+$pagination-padding-x-lg:           1rem;
+
+$pagination-color:                  $gray-700;
+$pagination-border-width:           .1875rem;
+$pagination-border-color:           $white;
+
+$pagination-focus-box-shadow:       0 0 0 0 0;
+
+$pagination-hover-color:            theme-color('epsilon');
+$pagination-hover-bg:               $white;
+$pagination-hover-border-color:     #242327;
+
+$pagination-active-color:           theme-color('epsilon');
+$pagination-active-bg:              $white;
+$pagination-active-border-color:    theme-color('epsilon');
+
+// Cards
+
+$card-cap-bg:                       $white;
+
+// Badges
+
+$badge-padding-y:                   .3125rem;
+$badge-padding-x:                   .625rem;
+$badge-border-radius:               .625rem;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .5rem;
+$breadcrumb-padding-x:              .9375rem;
+$breadcrumb-item-padding:           0;
+
+$breadcrumb-margin-bottom:          1.25rem;
+
+$breadcrumb-bg:                     $white;
+$breadcrumb-divider-color:          theme-color('epsilon');
+
+// Carousel
+
+$carousel-control-color:            $gray-800;

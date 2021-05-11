@@ -1,0 +1,74 @@
+
+// Carousel Snippets
+.carousel-control .fa {
+    border-radius: 50%;
+    padding-top: 2px;
+    &:hover {
+        color: theme-color('alpha') !important;
+    }
+}
+
+
+.s_images_carousel {
+    .carousel-inner {
+        border-radius: $border-radius;
+    }
+    .carousel-caption {
+        border-radius: 10rem;
+    }
+}
+
+
+.s_google_map .description {
+    background: theme-color('alpha') !important;
+}
+
+
+// Jumbotron
+.jumbotron {
+    margin: 0;
+    p {
+        font-weight: $font-weight-base;
+    }
+}
+
+// Comparisons
+.s_comparisons {
+    .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+        background-color: theme-color('primary');
+        border-color: theme-color('primary');
+    }
+    .panel-body h2 small {
+        color: gray('900');
+    }
+}
+
+.s_images_row .s_images_row_body {
+    border-bottom-right-radius: $border-radius;
+}
+
+
+
+.s_progress_bar {
+    border-radius: ($border-radius * 2);
+}
+
+// Blockquote
+.s_blockquote {
+    p {
+        @include border-right-radius($border-radius);
+        border-bottom-left-radius: $border-radius;
+    }
+    .fa {
+        @include border-left-radius($border-radius);
+    }
+}
+
+.s_three_columns [class*="col-lg-"] {
+    border-radius: ($border-radius * 2.5);
+}
+
+// Features
+.s_features {
+    @include fa-size-generator(20);
+}
