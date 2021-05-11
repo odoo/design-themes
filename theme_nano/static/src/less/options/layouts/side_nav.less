@@ -1,0 +1,154 @@
+/* LAYOUT ≥ 992px
+   ========================================================================== */
+body:not(.editor_enable):not(.editor_has_snippets) {
+    @media (min-width: @screen-md-min) {
+        #preheader, #wrap, #wrapwrap, .navbar-default, body, header, html, main {
+            height: 100%;
+        }
+
+        header {
+            .affix;
+            top: 0;
+
+            .navbar-header {
+                padding: 40px 0 25px;
+
+                .navbar-brand {
+                    margin: 0;
+
+                    &.logo,  &.logo img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .navbar-default {
+                left: @nano-preheader-width-md;
+                width: @nano-sidenav-width-md;
+
+                @tmp-container-padding:floor((@grid-gutter-width / 2));
+
+                .navbar-collapse {
+                    margin-left: -@tmp-container-padding;
+                }
+
+                .navbar-nav.navbar-right {
+                    width: 100%;
+
+                    &:last-child {
+                        margin-right: -@tmp-container-padding;
+                    }
+
+                    li {
+                        float: none;
+                        margin: 0;
+
+                        a {
+                            padding: 8px 20px;
+                            margin: 0 0 5px 0;
+                            font-size: 13px;
+                            .border-left-radius(@border-radius-large);
+                            .border-right-radius(0);
+
+                            .caret {
+                                border-left: 5px solid;
+                                margin-top: 6px;
+                                border-bottom: @caret-width-large solid rgba(0, 0, 0, 0);
+                                border-top: @caret-width-large solid rgba(0, 0, 0, 0);
+                                float: right;
+                            }
+                        }
+
+                        &.open > .dropdown-menu {
+                            min-width: 280px;
+                            top: 0;
+                            left: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        #preheader {
+            .affix;
+            width: @nano-preheader-width-md;
+            padding: 50px 0;
+            text-align: center;
+
+            #lang {
+                float: none;
+                margin: 0 0 30px;
+            }
+
+            #contact {
+                margin: 0 0 45px;
+
+                address {
+                    margin: 0 0 10px;
+                }
+
+                .contact-address {
+                    padding: 20px;
+
+                    span[itemprop="name"] {
+                        display: block;
+                        padding: 0 0 15px;
+                    }
+                }
+            }
+
+            #social {
+                text-align: center;
+            }
+
+            .fa {
+                margin-bottom: 5px;
+            }
+
+            .btn-group > .dropdown-menu {
+                top: 0;
+                padding: 0;
+                left: floor(@nano-preheader-width-md + @nano-sidenav-width-md - (@nano-preheader-width-md/3)*0.5) + 3;
+            }
+        }
+
+        #copyright, #footer, #wrapwrap main > * {
+            margin-left: @nano-sidenav-width-md + @nano-preheader-width-md;
+        }
+    }
+
+    /* LAYOUT ≥ 1200px
+       ========================================================================== */
+
+    @media (min-width: @screen-lg-min) {
+        #copyright, #footer, #wrapwrap main > * {
+            margin-left: @nano-sidenav-width-lg + @nano-preheader-width-lg;
+        }
+
+        header .navbar-default {
+            width: @nano-sidenav-width-lg;
+            left: @nano-preheader-width-lg;
+
+            .navbar-nav.navbar-right li a {
+                font-size: 14px;
+            }
+        }
+
+        #preheader {
+            width: @nano-preheader-width-lg;
+
+            .btn-group > .dropdown-menu {
+                left: floor(@nano-preheader-width-lg + @nano-sidenav-width-lg) - (@nano-preheader-width-lg/3)*0.5;
+            }
+        }
+    }
+
+    #theme_customize_modal #nano_customize_modal .nano_icons_sidebar_options {
+        visibility: visible;
+        padding: 50px 17px 17px;
+        height: auto;
+    }
+
+    .nano-sidebar-hook;
+}

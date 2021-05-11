@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Mini Navbar" id="s_mini_nav_bar">
+        <section class="s_mini_nav_bar">
+            <div class="container">
+                <div class="row s_mini_nav_bar_nav">
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                        <a type="button" href="#section1" class="btn btn-default btn-xl">Section 1</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                        <a type="button" href="#section2" class="btn btn-primary btn-xl">Section 2</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                        <a type="button" href="#section3" class="btn btn-success btn-xl">Section 3</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                        <a type="button" href="#section4" class="btn btn-info btn-xl">Section 4</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                        <a type="button" href="#section5" class="btn btn-warning btn-xl">Section 5</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                        <a type="button" href="#section6" class="btn btn-danger btn-xl">Section 6</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

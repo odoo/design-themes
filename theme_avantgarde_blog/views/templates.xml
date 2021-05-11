@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="avantgarde_main_less" inherit_id="theme_avantgarde.avantgarde_main_less">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/less" href="/theme_avantgarde_blog/static/src/less/s_latest_posts.less"/>
+        </xpath>
+    </template>
+
+    <!-- Latest Posts Snippet   -->
+    <template id="overwrite_latest_post_thumb" inherit_id="snippet_latest_posts.s_latest_posts_place_in_tab">
+        <xpath expr="//t[@t-snippet='snippet_latest_posts.s_latest_posts']" position="attributes">
+            <attribute name="t-thumbnail">/theme_avantgarde_blog/static/src/img/ui/s_latest_posts.jpg</attribute>
+        </xpath>
+        <xpath expr="//t[@t-snippet='snippet_latest_posts.s_latest_posts_big_picture']" position="attributes">
+            <attribute name="t-thumbnail">/theme_avantgarde_blog/static/src/img/ui/s_latest_posts_big_picture.jpg</attribute>
+        </xpath>
+    </template>
+
+    <!-- Snippet's Options -->
+    <template id="s_latest_posts_big_picture_options" inherit_id="snippet_latest_posts.s_latest_posts_option">
+        <xpath expr="//div[@data-js='js_get_posts']" position="before">
+            <div data-js='s_latest_posts_style' data-selector=".s_latest_posts_big_picture .js_get_posts">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-paint-brush"/>List Style</a>
+                    <ul class="dropdown-menu">
+                        <li data-select-class=""><a>Default</a></li>
+                        <li data-select-class="effect-marley"><a>Marley</a></li>
+                        <li data-select-class="effect-dexter"><a>Dexter</a></li>
+                        <li data-select-class="effect-chico"><a>Silly-Chico</a></li>
+                        <li data-select-class="effect-steve"><a>Lonely Steve</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div data-js='s_latest_posts_options' data-selector=".s_latest_posts_big_picture .js_get_posts">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-cogs"/>Options</a>
+                    <ul class="dropdown-menu">
+                        <li data-toggle-class="first_is_big"><a>First is bigger</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="avant_js-methods" inherit_id="theme_avantgarde.avant_js-methods">
+        <xpath expr="//div[@data-js='no_resize']" position="attributes">
+            <attribute name="data-selector" separator=", " add=".s_latest_posts_big_picture, .s_latest_posts"/>
+        </xpath>
+    </template>
+
+    <!-- Latest posts's Orizzontal big images Template -->
+
+    <!-- Snippet's Body -->
+    <template id="s_latest_posts_big_orizontal" name="Latest Posts Horizontal">
+        <section class="s_latest_posts_big_orizontal">
+            <div class="js_get_posts container-fluid"  data-loading="true" data-template="theme_avantgarde_blog.s_latest_posts_big_orizontal_template"/>
+        </section>
+    </template>
+
+    <!-- Latest posts's Template -->
+    <template id="s_latest_posts_big_orizontal_template">
+        <t t-if="not posts">
+            <t t-call="snippet_latest_posts.no_blog_posts"/>
+        </t>
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <figure class="post">
+                <figcaption>
+                    <h4 class="mb0"><a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)"><t t-esc="p.name"/></a></h4>
+                    <h5 class="mt0 mb4" t-field="p.write_date" t-options='{"format": "dd/MM"}' />
+                </figcaption>
+                <a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+                    </t>
+                </a>
+            </figure>
+        </t>
+    </template>
+
+    <template id="s_latest_posts_place_in_tab" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+            <t t-snippet="theme_avantgarde_blog.s_latest_posts_big_orizontal" t-thumbnail="/theme_avantgarde_blog/static/src/img/ui/s_latest_posts_horizontal.jpg"/>
+        </xpath>
+    </template>
+</odoo>

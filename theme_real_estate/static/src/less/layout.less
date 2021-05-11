@@ -1,0 +1,15 @@
+
+/* ================= HAMBURGER LAYOUT ================== */
+// @hamburger-layout variable has been defined in parent theme
+
+.hamburger-layout() when (@hamburger-layout = true) {
+    #wrapwrap > header > .navbar-static-top {
+        #top_menu li {
+            border-bottom: none;
+            a {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.hamburger-layout();

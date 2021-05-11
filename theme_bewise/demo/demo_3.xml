@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="demo3_layout" inherit_id="website.layout" primary="True">
+      <xpath expr="//t[@t-call-assets='web.assets_frontend'][@t-js='false']" position="attributes">
+        <attribute name="t-call-assets">theme_bewise.demo3_assets_frontend</attribute>
+      </xpath>
+      <xpath expr="//t[@t-call-assets='web.assets_frontend'][@t-css='false']" position="attributes">
+        <attribute name="t-call-assets">theme_bewise.demo3_assets_frontend</attribute>
+      </xpath>
+    </template>
+
+    <template id="demo3_assets_frontend" inherit_id="website.assets_frontend" primary="True">
+      <xpath expr="." position="inside">
+
+        <link href="/theme_bewise/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/theme.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/customize_modal.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/padding.less" rel="stylesheet" type="text/less"/>
+
+        <!-- PRESET bgvar-1, colorvar-1, fontvar-1 -->
+
+        <link href="/theme_bewise/static/src/less/options/layout_wide.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/layout_show_menu.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/color_preset_4.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/bg_preset_4.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/font_preset_4.less" rel="stylesheet" type="text/less"/>
+
+        <link href="/theme_common/static/src/less/s_discount.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_event_list.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_profile.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box_square.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_pricing.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_process_steps_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_timeline.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_lead_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_logo_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_4.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_image.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_image_parallax.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_team_profiles.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_slide_banner.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_shade.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_color.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_text_highlight.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_testimonial_slider.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_icon_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_icon_square.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_mini_nav_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_nav.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_multicolor.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_multicolor_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_img.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_slider.less" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+    <record id="demo_page_demo_3_page" model="website.page">
+      <field name="url">/demo_page_demo_3</field>
+      <field name="website_published">True</field>
+      <field name="name">Demo Page 3</field>
+      <field name="type">qweb</field>
+      <field name="key">website.demo_page_demo_3</field>
+      <field name="arch" type="xml">
+        <t t-name="website.demo_page_demo_3">
+          <t t-call="theme_bewise.demo3_layout">
+            <div id="wrap" class="oe_structure oe_empty">
+              <section class="s_separator_multicolor_fw">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <hr/>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="parallax s_parallax bg-img-12" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 0px; width: 100%;">
+                <div>
+                  <div class="oe_structure"/>
+                </div>
+              </section>
+              <section class="s_mini_nav_bar">
+                <div class="container">
+                  <div class="row s_mini_nav_bar_nav mini_nav_scroll">
+                    <div class="s_mini_nav_bar_item col-md-1">
+                      <a class="btn btn-default btn-xl" href="#section1" type="button">Section 1</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                      <a class="btn btn-primary btn-xl" href="#section2" type="button">Section 2</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                      <a class="btn btn-success btn-xl" href="#section3" type="button">Section 3</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                      <a class="btn btn-info btn-xl" href="#section4" type="button">Section 4</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                      <a class="btn btn-warning btn-xl" href="#section5" type="button">Section 5</a>
+                    </div>
+                    <div class="col-md-1 s_mini_nav_bar_item">
+                      <a class="btn btn-danger btn-xl" href="#section6" type="button">Section 6</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_profile o_scroll_nav o_scroll_nav">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 text-center mb32">
+                      <h2 id="section1">A Mutli-purpose Themes with Full Features</h2>
+                      <h3 class="text-muted">Let Be Wise* do the job!</h3>
+                    </div>
+                    <div class="col-md-6 well s_profile_box mb0">
+                      <div class="row mb32">
+                        <div class="col-md-8">
+                          <h2>John Doe</h2>
+                          <p><strong>FUNCTION: </strong> Web Designer / UI.</p>
+                          <p><strong>COMPANY: </strong> Odoo</p>
+                          <p>
+                            <strong>Skills: </strong>
+                            <span class="tags">html5, css3, jquery, bootstrap3</span>
+                          </p>
+                        </div>
+                        <div class="col-md-4">
+                          <img alt="" class="img-circle img-responsive center-block" src="/web/image/theme_common.image_content_14"/>
+                        </div>
+                      </div>
+                      <div class="row s_profile_box_divider text-center">
+                        <div class="col-md-4 s_profile_box_emphasis mt8 mb8">
+                          <h2>
+                            <strong> 20,7K </strong>
+                          </h2>
+                          <p>
+                            <small>Followers</small>
+                          </p>
+                        </div>
+                        <div class="col-md-4 s_profile_box_emphasis mt8 mb8">
+                          <h2>
+                            <strong>245</strong>
+                          </h2>
+                          <p>
+                            <small>Projects</small>
+                          </p>
+                        </div>
+                        <div class="col-md-4 s_profile_box_emphasis mt8 mb8">
+                          <h2>
+                            <strong>143</strong>
+                          </h2>
+                          <p>
+                            <small>Clients</small>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row s_profile_box_divider text-center mb24">
+                        <div class="col-md-4 mt48">
+                          <a class="btn btn-lg btn-success btn-block" href="#" type="button"><i class="fa fa-facebook-square"/> Facebook </a>
+                        </div>
+                        <div class="col-md-4 mt48">
+                          <a class="btn btn-lg btn-info btn-block" href="#" type="button"><i class="fa fa-linkedin-square"/> Linkedin </a>
+                        </div>
+                        <div class="col-md-4 mt48">
+                          <a class="btn btn-lg btn-primary btn-block" href="#" type="button"><i class="fa fa-git-square"/> GitHub </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1 well mb0">
+                      <h2>About Me</h2>
+                      <p class="text-justify mt16 mb32"><strong>Write something about you.</strong>This is a good way to briefly tell your visitors who you are and what you do. Link Clean Flat Profile to your social networks and use the customizable progress bars to show your skills.</p>
+                      <p>Project 01</p>
+                      <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" style="width: 80%">
+                          <span>80% Html5/CSS3</span>
+                        </div>
+                      </div>
+                      <p>Project 02</p>
+                      <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 85%">
+                          <span>85% Bootstrap</span>
+                        </div>
+                      </div>
+                      <p>Project 03</p>
+                      <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="99" class="progress-bar progress-bar-warning" role="progressbar" style="width: 99%">
+                          <span>99% COMPLETE</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_separator_nav">
+                <div class="container">
+                  <div class="row s_separator_nav_nav mini_nav_scroll">
+                    <div class="s_separator_nav_item col-md-2 pull-right">
+                      <a class="btn btn-success btn-xl pull-right" href="#wrap" type="button">Top</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="s_color_blocks_slider carousel slide bg-gamma mt0 o_scroll_nav" data-interval="10000" id="myCarousel0">
+                <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#myCarousel0"/><li data-slide-to="1" data-target="#myCarousel0"/></ol>
+                <div class="carousel-inner" id="section2">
+                  <div class="item active">
+                    <div class="container-fluid">
+                      <div class="row content">
+                        <div class="col-md-8 s_color_blocks_slider_img text-center">
+                          <img class="img-responsive center-block" src="/theme_bewise/static/src/img/backgrounds/bg_img_04.jpg" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                        </div>
+                        <div class="col-md-4 s_color_blocks_slider_content text-center">
+                          <span class="center-block fa fa-heart-o fa-5x"/>
+                          <h2 class="text-center">Loving Theme</h2>
+                          <h3 class="text-center text-muted mb16">Sweet*</h3>
+                          <p class="text-justify mb32">You can set your own combinations from 4 layout modes, 4 color schemes, 4 background patterns and 8 combined fonts.<br/>
+                          </p>
+                          <a class="btn btn-warning " href="#"><i class="fa fa-cog"/> More Details </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="container-fluid">
+                      <div class="row content">
+                        <div class="col-md-8 s_color_blocks_slider_img text-center">
+                          <img class="img-responsive center-block" src="/theme_bewise/static/src/img/backgrounds/bg_img_03.jpg"/>
+                        </div>
+                        <div class="col-md-4 s_color_blocks_slider_content text-center">
+                          <span class="center-block fa fa-star-o fa-5x" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                          <h2 class="text-center">Sweet Design</h2>
+                          <h3 class="text-center text-muted mb16">Soft*</h3>
+                          <p class="text-justify mb32">Be Wise* is a beautifully designed theme for children websites. Crafted with the finest pixel quality and best coding practices inspired by Bootstrap.<br/></p>
+                          <a class="btn btn-warning " href="#"><i class="fa fa-cog"/> More Details </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                  <i class="fa fa-chevron-left"/>
+                </div>
+                <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                  <i class="fa fa-chevron-right"/>
+                </div>
+              </div>
+              <section class="s_separator_nav">
+                <div class="container">
+                  <div class="row s_separator_nav_nav mini_nav_scroll">
+                    <div class="s_separator_nav_item col-md-2 pull-right">
+                      <a class="btn btn-success btn-xl pull-right" href="#wrap" type="button">Top</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_event_list o_scroll_nav">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 text-center mt32 mb32">
+                      <h2 id="section3">Schedule, Organize &amp; Share</h2>
+                      <h3 class="text-muted">A theme that fits your need</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="text-center">With Theme Clean you get a list of your events with date, time, description, etc. Select the simple or image mode and edit your content.<br/>
+                      You can link your events to your favorite social network.</p>
+                    </div>
+                    <div class="col-md-6 mt32 mb32">
+                      <div class="s_event_list_item">
+                        <time class="bg-epsilon" datetime="2014-07-20">
+                          <span class="s_event_list_day">18</span>
+                          <span class="s_event_list_month">Jul</span>
+                          <span class="s_event_list_year">2014</span>
+                          <span class="s_event_list_time">ALL DAY</span>
+                        </time>
+                        <img class="img-responsive" src="/web/image/theme_common.image_content_09"/>
+                        <div class="s_event_list_info">
+                          <h4 class="s_event_list_title">Your Event Name</h4>
+                          <p class="s_event_list_desc">Write a description of your event here.</p>
+                          <ul>
+                            <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                            <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                          </ul>
+                        </div>
+                        <div class="s_event_list_social">
+                          <ul>
+                            <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                            <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                            <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mt32 mb32">
+                      <div class="s_event_list_item">
+                        <time class="bg-gamma" datetime="2014-07-20">
+                          <span class="s_event_list_day">21</span>
+                          <span class="s_event_list_month">Jul</span>
+                          <span class="s_event_list_year">2014</span>
+                          <span class="s_event_list_time">ALL DAY</span>
+                        </time>
+                        <div class="s_event_list_icon">
+                          <i class="fa fa-calendar fa-5x"/>
+                        </div>
+                        <div class="s_event_list_info">
+                          <h4 class="s_event_list_title">Your Event Name</h4>
+                          <p class="s_event_list_desc">Write a description of your event here.</p>
+                          <ul>
+                            <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                            <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                          </ul>
+                        </div>
+                        <div class="s_event_list_social">
+                          <ul>
+                            <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                            <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                            <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_separator_multicolor mt16">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <hr/>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_separator_nav">
+                <div class="container">
+                  <div class="row s_separator_nav_nav mini_nav_scroll">
+                    <div class="s_separator_nav_item col-md-2 pull-right">
+                      <a class="btn btn-success btn-xl pull-right" href="#wrap" type="button">Top</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_color_blocks_4 mt128 o_scroll_nav" id="section4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-3 s_color_blocks_4_block text-center bg-beta">
+                      <h4><span class="fa fa-check-circle fa-lg"/> 4 Font Combinations</h4>
+                      <p>Focus on Content</p>
+                    </div>
+                    <div class="col-md-3 s_color_blocks_4_block text-center bg-gamma">
+                      <h4><span class="fa fa-check-circle fa-lg"/> Wide/Boxed Layout</h4>
+                      <p>Change Layout, Hide Menu</p>
+                    </div>
+                    <div class="s_color_blocks_4_block text-center col-md-6 bg-epsilon">
+                      <h4><span class="fa fa-check-circle fa-lg"/> 4 Backgrounds</h4>
+                      <p>Soft Patterns</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_title mt48">
+                <div class="container text-center">
+                  <h2>Design is Fun</h2>
+                  <h3 class="text-muted ">Be Wise* is easy, fast &amp; flexible</h3>
+                </div>
+              </section>
+              <section class="s_text_block mt0 mb0  ">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-5 mt64 mb0">
+                      <p class="text-justify">
+                        <span style="line-height: 23.3999996185303px; text-align: justify;">Creating pages is easier with the help of Odoo CMS building blocks. Dive into the flexibility of Be Wise* Theme to make your web creation experience smoother.</span>
+                      </p>
+                      <section class="s_separator_color">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <hr/>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="col-md-5 col-md-offset-2 mt64 mb0">
+                      <p class="text-justify">
+                        <span style="line-height: 23.3999996185303px; text-align: justify;">Be Wise* has been coded sensibly and smartly so that it’s layout can be changed from boxed to full width and vice-versa without affecting the design quality.</span>
+                      </p>
+                      <section class="s_separator_color">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <hr/>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_separator_nav">
+                <div class="container">
+                  <div class="row s_separator_nav_nav mini_nav_scroll">
+                    <div class="s_separator_nav_item col-md-2 pull-right">
+                      <a class="btn btn-success btn-xl pull-right" href="#wrap" type="button">Top</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_big_image_parallax parallax mt128 bg-img-08" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 0px;">
+                <div class="container">
+                  <div class="row">
+                    <div class="s_big_image_parallax_content mb0 col-md-12 mt32">
+                      <img class="img-responsive center-block" src="/theme_bewise/static/src/img/content/content_logo.png"/>
+                    </div>
+                    <div class="col-md-12 text-center mt16 mb48">
+                      <h3>
+                        <font class="bg-orange-dark">
+                          <font class="bg-gamma">
+                            <font class="text-white"> A Funny Theme For Odoo CMS </font>
+                          </font>
+                        </font>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_separator_nav">
+                <div class="container">
+                  <div class="row s_separator_nav_nav mini_nav_scroll">
+                    <div class="s_separator_nav_item col-md-2 pull-right" style="text-align: right;">
+                      <a class="btn btn-warning " href="#wrap" type="button">Top</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_timeline o_scroll_nav">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 text-center mb64">
+                      <h2 id="section5">Catch More Visitores with Be Wise*</h2>
+                      <h3 class="text-muted">The sweetest way to tell Your Story</h3>
+                    </div>
+                    <div class="mb92 col-md-12">
+                      <ul class="s_timeline_ul">
+                        <li>
+                          <div class="s_timeline_badge">
+                            <span tabindex="-1">
+                              <i class="fa fa-asterisk" data-widget="icons"/>
+                            </span>
+                          </div>
+                          <div class="s_timeline_panel">
+                            <div class="s_timeline_panel_content">
+                              <div class="s_timeline_heading">
+                                <h4 class="s_timeline_date pull-right">2015</h4>
+                                <h4 class="s_timeline_title">A News</h4>
+                                <h3 class="s_timeline_company">Something happened</h3>
+                                <h5 class="s_timeline_info">Description of the tasks</h5>
+                              </div>
+                              <div class="s_timeline_body">
+                                <p>Use Theme Be Wise* Timeline as a part of your resume or to show your visitors what you've done in the past. You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="s_timeline_panel">
+                            <div class="s_timeline_panel_content">
+                              <div class="s_timeline_heading">
+                                <h4 class="s_timeline_date pull-right">2015</h4>
+                                <h4 class="s_timeline_title">A Story</h4>
+                                <h3 class="s_timeline_company">Say it to the world!</h3>
+                                <h5 class="s_timeline_info">Description of the tasks</h5>
+                              </div>
+                              <div class="s_timeline_body">
+                                <p>A timeline is a graphical representation of a period of time,<br/>
+                                on which important events are marked. Show us <span style="color: rgb(102, 102, 102); line-height: 23.3999996185303px; background-color: rgb(247, 247, 247);">what you've done in the past</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="parallax s_parallax bg-img-12" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 0px;">
+                <div>
+                  <div class="oe_structure"/>
+                </div>
+              </section>
+              <section class="s_separator_nav">
+                <div class="container">
+                  <div class="row s_separator_nav_nav mini_nav_scroll">
+                    <div class="s_separator_nav_item col-md-2 pull-right">
+                      <a class="btn btn-success btn-xl pull-right" href="#wrap" type="button">Top</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_pricing o_scroll_nav">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 text-center mt32 mb32">
+                      <h2 id="section6">Lot of Features</h2>
+                      <h3 class="text-muted">Be Wise* is a multi-purpose theme</h3>
+                    </div>
+                  </div>
+                </div>
+                <section>
+                  <div class="container pricing-list">
+                    <div class="row">
+                      <div class="col-md-3 mb32">
+                        <div class="s_pricing_box">
+                          <div class="s_pricing_header bg-beta text-center">
+                            <h2>$15/mo</h2>
+                            <h3>Tiny</h3>
+                          </div>
+                          <div class="s_pricing_features">
+                            <p>
+                              <strong/>
+                            </p>
+                            <p><strong>Unlimited</strong> Email Addresses</p>
+                            <p><strong>50GB</strong> Disk Space</p>
+                            <a class="btn btn-success btn-lg mt32 mb32" type="button">More Features</a>
+                          </div>
+                          <div class="s_pricing_footer bg-beta"/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb32">
+                        <div class="s_pricing_box">
+                          <div class="s_pricing_header bg-gamma text-center">
+                            <h2>$29/mo</h2>
+                            <h3>Small</h3>
+                          </div>
+                          <div class="s_pricing_features">
+                            <p>
+                              <strong/>
+                            </p>
+                            <p><strong>Unlimited</strong> Email Addresses</p>
+                            <p><strong>80GB</strong> Disk Space</p>
+                            <a class="btn btn-success btn-lg mt32 mb32" type="button">More Features</a>
+                          </div>
+                          <div class="s_pricing_footer bg-gamma"/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb32">
+                        <div class="s_pricing_box">
+                          <div class="s_pricing_header bg-delta text-center">
+                            <h2>$69/mo</h2>
+                            <h3>Medium</h3>
+                          </div>
+                          <div class="s_pricing_features">
+                            <p>
+                              <strong/>
+                            </p>
+                            <p><strong>Unlimited </strong> Email Addresses</p>
+                            <p><strong>120GB</strong> Disk Space</p>
+                            <a class="btn btn-success btn-lg mt32 mb32" type="button">More Features</a>
+                          </div>
+                          <div class="s_pricing_footer bg-delta"/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb32">
+                        <div class="s_pricing_box">
+                          <div class="s_pricing_header bg-epsilon text-center">
+                            <h2>$99/mo</h2>
+                            <h3>Pro</h3>
+                          </div>
+                          <div class="s_pricing_features">
+                            <p>
+                              <strong/>
+                            </p>
+                            <p><strong>Unlimited</strong> Email Addresses</p>
+                            <p><strong>120GB</strong> Disk Space</p>
+                            <a class="btn btn-success btn-lg mt32 mb32" type="button">More Features</a>
+                          </div>
+                          <div class="s_pricing_footer bg-epsilon"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <section class="s_separator_nav">
+                <div class="container">
+                  <div class="row s_separator_nav_nav mini_nav_scroll">
+                    <div class="s_separator_nav_item col-md-2 pull-right" style="text-align: right;">
+                      <a class="btn btn-primary " href="#wrap" type="button">Top</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </t>
+        </t>
+      </field>
+    </record>
+
+    <record id="demo_page_demo_3_menu" model="website.menu">
+      <field name="name">Demo 3</field>
+      <field name="url">/demo_page_demo_3</field>
+      <field name="parent_id" ref="website.main_menu"/>
+      <field name="sequence" type="int">20</field>
+      <field name="page_id" ref="demo_page_demo_3_page"/>
+    </record>
+</odoo>

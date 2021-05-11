@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="welcome" inherit_id="theme_avantgarde.welcome">
+        <xpath expr="//section[@id='demo_sites']" position="after">
+            <section class="s_latest_posts_big_picture">
+                <div class="effect-chico" contenteditable="False">
+                    <figure class="loading_container col-sm-4">
+                        <div class="content">
+                            <div class="thumb" style="background-image: url(/theme_avantgarde/static/src/img/theme_samples/shop_art_1.jpg)"/>
+                            <figcaption>
+                                <h2>Shop</h2>
+                                <p>Building your company's website and selling your products online easy.</p>
+                                <a href="/art_shop">Read More</a>
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="loading_container col-sm-4">
+                        <div class="content">
+                            <div class="thumb" style="background-image: url(/theme_avantgarde/static/src/img/theme_samples/paint_modern.jpg)"/>
+                            <figcaption>
+                                <h2>Online Magazine</h2>
+                                <p>Ideas behing the Odoo communication tools.</p>
+                                <a href="/magazine">Read More</a>
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="loading_container col-sm-4">
+                        <div class="content">
+                            <div class="thumb" style="background-image: url(/theme_avantgarde/static/src/img/theme_samples/museum.jpg)"/>
+                            <figcaption>
+                                <h2>Art Gallery</h2>
+                                <p>Are your meetings useful and productive?</p>
+                                <a href="/artgallery">Read More</a>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+        </xpath>
+    </template>
+</odoo>

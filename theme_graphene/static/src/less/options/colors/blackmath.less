@@ -1,0 +1,53 @@
+// Tender Color Set
+
+// =============================
+
+@color-alpha     : @color-alpha-blackmath;
+@color-beta      : @color-beta-blackmath;
+@color-gamma     : @color-gamma-blackmath;
+@color-delta     : @color-delta-blackmath;
+@color-epsilon   : @color-epsilon-blackmath;
+
+// =============================
+// Bootstrap Colours ===========
+// =============================
+
+@brand-primary : @color-alpha;
+@brand-info    : #5877BA;
+@brand-success : #31B05E;
+@brand-info    : #4D68A3;
+@brand-warning : #EACF41;
+@brand-danger  : #CB3E3E;
+
+// =============================
+// Backgrounds Colours =========
+// =============================
+
+.graphene-layout-boxed() when (@graphene-layout-boxed = true)  {
+    body /* #wrapwrap should but cannot be used because top snippet would appear under the background in IE */ { background: @color-epsilon  }
+}
+.graphene-layout-boxed();
+
+.graphene-layout-postcard() when (@graphene-layout-postcard = true)  {
+    body /* #wrapwrap should but cannot be used because top snippet would appear under the background in IE */ { background: @color-epsilon  }
+
+    header#graph_header {
+        .navbar-brand, .navbar-default .navbar-brand {
+            color: white;
+        }
+
+        .navbar .navbar-nav > li.active > a,
+        .navbar .navbar-nav > li.active > a:hover,
+        .navbar .navbar-nav > li.active > a:focus {
+            color: white;
+        }
+
+        .navbar .navbar-nav > li > a {
+            color: lighten(@color-epsilon-light, 10%);
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+.graphene-layout-postcard();

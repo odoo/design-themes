@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="artgallery" inherit_id="theme_avantgarde.artgallery">
+        <xpath expr="//section[@id='hook_s_google_map']/div" position="attributes">
+            <attribute name="class" separator=" " remove="col-sm-12" add="col-sm-6"/>
+        </xpath>
+
+        <xpath expr="//section[@id='hook_s_google_map']" position="inside">
+            <div class="col-sm-6">
+                <h3 class="text-center text-small_caps">Latest Posts</h3>
+                <section class="s_latest_posts">
+                    <div class="container">
+                        <div class="js_get_posts" data-loading="true" data-template="snippet_latest_posts.media_list_template" contenteditable="False"/>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+</odoo>

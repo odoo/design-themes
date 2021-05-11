@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="kea_home" model="website.menu">
+            <field name="name">Demo</field>
+            <field name="url">/demo</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">60</field>
+            <field name="page_id" ref="demo_page"/>
+        </record>
+
+        <record id="demo_blocks_menu" model="website.menu">
+            <field name="name">Blocks</field>
+            <field name="url">/demo_blocks</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">60</field>
+            <field name="page_id" ref="demo_blocks_page"/>
+        </record>
+
+</odoo>

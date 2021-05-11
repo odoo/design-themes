@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Slideshow" id="s_banner_3">
+        <section id="s_banner_3" class="carousel s_banner_3 slide" data-interval="10000">
+            <ol type="01" class="carousel-indicators"><li data-target="#s_banner_3" data-slide-to="0" class="active"></li><li data-target="#s_banner_3" data-slide-to="1"></li></ol>
+            <div class="carousel-inner">
+                <div class="item active bg-img-01">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-12 hero-bg">
+                                <h1>Generate customers</h1>
+                                <h2>from visitors.</h2>
+                                <img src="/web/image/theme_common.image_content_01" alt="#" class="img img-responsive"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-img-02">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-12 hero-bg">
+                                <h1>Present your products</h1>
+                                <h2>with this Theme.</h2>
+                                <img src="/web/image/theme_common.image_content_01" alt="#" class="img img-responsive"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control left" data-target="#s_banner_3" data-slide="prev">
+                <i class="fa fa-chevron-left"/>
+            </div>
+            <div class="carousel-control right" data-target="#s_banner_3" data-slide="next">
+                <i class="fa fa-chevron-right"/>
+            </div>
+        </section>
+    </template>
+</odoo>

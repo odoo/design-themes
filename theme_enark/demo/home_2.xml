@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="home2_layout" inherit_id="website.layout" primary="True">
+      <xpath expr="//t[@t-call-assets='web.assets_frontend'][@t-js='false']" position="attributes">
+        <attribute name="t-call-assets">theme_enark.home2_assets_frontend</attribute>
+      </xpath>
+      <xpath expr="//t[@t-call-assets='web.assets_frontend'][@t-css='false']" position="attributes">
+        <attribute name="t-call-assets">theme_enark.home2_assets_frontend</attribute>
+      </xpath>
+    </template>
+    <template id="home2_assets_frontend" inherit_id="website.assets_frontend" primary="True">
+      <xpath expr="." position="inside">
+        <!-- PRESET: bgvar-3, colorvar-4, fontvar-3 -->
+        <link href="/theme_enark/static/src/less/options/color_preset_4.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_enark/static/src/less/options/bg_preset_3.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_enark/static/src/less/options/font_preset_3.less" rel="stylesheet" type="text/less"/>
+
+      </xpath>
+    </template>
+
+    <record id="demo_page_home_2_page" model="website.page">
+      <field name="url">/demo_page_home_2</field>
+      <field name="website_published">True</field>
+      <field name="type">qweb</field>
+      <field name="key">website.demo_page_home_2</field>
+      <field name="arch" type="xml">
+        <t t-name="website.demo_page_home_2">
+          <t t-call="theme_enark.home2_layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+          <section class="s_big_image bg-img-01  o_displayed_top o_displayed_middle o_displayed_bottom o_visible o_visible_bottom o_visible_middle o_visible_top" style="height: 600px; overflow: hidden;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 mt128">
+                  <img class="img-responsive center-block" src="/web/image/theme_common.image_content_logo"/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_lead_bar  bg-epsilon o_displayed_top o_displayed_middle o_displayed_bottom o_visible o_visible_middle o_visible_top">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt16 mb32">
+                  <h3>Responsive HTML5 theme built using Bootstrap</h3>
+                  <h5 class="mb0 mt0 text-muted">ENARK was made with easy customization in mind.</h5>
+                </div>
+                <div class="col-md-4 mt16 mb32">
+                  <a class="btn btn-primary btn-lg pull-right mt24" href="/contactus"><i class="fa fa-arrow-right"/> Theme Features </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_big_icon_square  mb0 mt92 o_displayed_middle o_displayed_bottom o_displayed_top">
+            <div class="container">
+              <div class="row mb64">
+                <div class="col-md-2 col-md-offset-1 mt16 mb0">
+                  <div class="s_big_icon_square_box">
+                    <div class="s_big_icon_square_icon">
+                      <span class="fa fa-desktop"/>
+                      <h5>1000 Apps</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 mt16 mb0">
+                  <div class="s_big_icon_square_box">
+                    <div class="s_big_icon_square_icon">
+                      <span class="fa fa-users"/>
+                      <h5>20.000 Users</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 mt16 mb0">
+                  <div class="s_big_icon_square_box">
+                    <div class="s_big_icon_square_icon">
+                      <span class="fa fa-user"/>
+                      <h5>234 Clients</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 mt16 mb0">
+                  <div class="s_big_icon_square_box">
+                    <div class="s_big_icon_square_icon">
+                      <span class="fa fa-globe"/>
+                      <h5>30 Countries</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 mt16 mb0">
+                  <div class="s_big_icon_square_box">
+                    <div class="s_big_icon_square_icon">
+                      <span class="fa fa-users"/>
+                      <h5>75 Partners</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_testimonial_slider carousel slide bg_gradient_black_down" data-interval="3000" data-ride="carousel" id="myCarousel6">
+            <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#myCarousel6"/><li data-slide-to="1" data-target="#myCarousel6"/></ol>
+          </section>
+          <section class="s_testimonial_slider carousel slide" data-interval="3000" data-ride="carousel" id="myCarousel2">
+            <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#myCarousel2"/><li data-slide-to="1" data-target="#myCarousel2"/></ol>
+          </section>
+          <section class="s_title mt0">
+            <div class="container text-center">
+              <h2>Tell Your Story. Catch More Visitors.</h2>
+              <div class="oe_share s_share">
+                <h5>Share <a class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftheme-enark.odoo.com%2Fpage%2Fdemo_page_home_2" target="_Blank"><i class="fa fa-facebook-square"/></a> <a class="oe_share_twitter" href="https://twitter.com/intent/tweet?text=website.demo_page_home_2&amp;url=https%3A%2F%2Ftheme-enark.odoo.com%2Fpage%2Fdemo_page_home_2" target="_Blank"><i class="fa fa-twitter"/></a> <a class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftheme-enark.odoo.com%2Fpage%2Fdemo_page_home_2&amp;title=website.demo_page_home_2" target="_Blank"><i class="fa fa-linkedin"/></a> <a class="oe_share_google" href="https://plus.google.com/share?url=https%3A%2F%2Ftheme-enark.odoo.com%2Fpage%2Fdemo_page_home_2" target="_Blank"><i class="fa fa-google-plus-square"/></a> <a href="mailto:?body=https%3A%2F%2Ftheme-enark.odoo.com%2Fpage%2Fdemo_page_home_2&amp;subject=website.demo_page_home_2"><i class="fa fa-envelope-o"/></a></h5>
+              </div>
+            </div>
+          </section>
+          <section class="s_lead_bar bg-gamma  mt0 o_displayed_top o_displayed_middle o_displayed_bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt16 mb32">
+                  <h3>Responsive HTML5 theme built using Bootstrap</h3>
+                  <h5 class="mb0 mt0 text-muted">ENARK was made with easy customization in mind.</h5>
+                </div>
+                <div class="col-md-4 mb32 mt32" style="text-align: right;">
+                  <a class="btn btn-primary btn-lg" href="/demo_page_blocks">NEW BUILDING BLOCKS</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="clean-title bg-delta mt0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb16 mt64">
+                  <h1>Focuses on Your Content !</h1>
+                  <h3 class="text-muted ">Flat Design &amp; Clean Structure</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_image_text  mb0 bg-delta o_displayed_bottom o_displayed_middle o_displayed_top">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 mt32 mb32">
+                  <br/>
+                  <img src="/theme_enark/static/src/img/content/content_img_07.png"/>
+                </div>
+                <div class="mt128 col-md-4 col-md-offset-3">
+                  <h3>ENARK Theme<br/>
+    for Odoo CMS</h3>
+                  <h4 class="text-muted">BUILD WITH BOOTSTRAP 3 FRAMEWORK</h4>
+                  <div/>
+                  <p><br/>
+    Enark is a professional responsive HTML5 theme, built using Bootstrap3, the most popular wdqsdfront-end framework for developing responsive, mobile first projects on the web.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_icon_box_square bg-delta mt0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 clearfix mt16 mb16">
+                  <span class="fa fa-2x fa-eyedropper pull-left img-rounded bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Colors</h4>
+                    <p>You can change the box color by using the customize option.</p>
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix mt16 mb16">
+                  <span class="fa fa-2x fa-font pull-left img-rounded bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Fonts</h4>
+                    <p>Select your favorite font combination to emphase your texts.</p>
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix mt16 mb16">
+                  <span class="fa fa-2x fa-desktop pull-left img-rounded bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Layout</h4>
+                    <p>It is super easy to resize and/or duplicate each box.</p>
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix mt16 mb92">
+                  <span class="fa fa-2x fa-paint-brush pull-left img-rounded bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Style</h4>
+                    <p>You can even replace the icon by one of your choice.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_title bg-white mt0">
+            <div class="container text-center">
+              <h1>ENARK Theme Contributors</h1>
+              <div/>
+              <div/>
+              <h4 class="text-muted "/>
+              <h4 class="text-muted ">This Theme was created trough an Indiegogo Campaign.<br/>
+    Thanks to our bakers it was a great success. Odoo CMS reached 677% of its goal with more than 81K.</h4>
+            </div>
+          </section>
+          <section class="s_references bg-white">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/applicatour.jpg"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/aselcis.jpg"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/bas-solutions.png"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/bloopark.png"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/brouwland.jpg"/>
+                  </div>
+                  <div class="col-md-2 col-md-offset-1">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/catsdogs.png"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/huckemedia.png"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/dialognet.png"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/dynapps.jpg"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/opusvl.png"/>
+                  </div>
+                  <div class="col-md-2 col-md-offset-1">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/oxen.jpg"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/simplitco.jpg"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/sodexis.jpg"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/tech-receptives.png"/>
+                  </div>
+                  <div class="col-md-2 mb64">
+                    <img class="img-responsive center-block" src="/theme_enark/static/description/contributors/vauxoo.png"/>
+                  </div>
+                </div>
+              </div>
+            </section>
+          <section class="s_big_image  mt0 bg-img-05 o_displayed_bottom o_displayed_middle o_displayed_top" style="height: 592px; overflow: hidden;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 mt128">
+                  <img class="img-responsive center-block" src="/web/image/theme_common.image_content_logo"/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_icon_box_circle mt0 bg-gamma mb0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb48 mt92">
+                  <h1>Impress Your Visitor !</h1>
+                  <h3 class="text-muted ">ENARK is made for business and personal purpose</h3>
+                </div>
+                <div class="col-md-3 clearfix mt16 mb16">
+                  <span class="fa fa-2x fa-picture-o pull-left img-circle bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Minimalistic Flat Design</h4>
+                    <p>Theme ENARK <br/>
+    <span style="line-height: 1.42857143;">provides a modern and minimalistic flat design and makes you ride the trend</span></p>
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix mt16 mb16">
+                  <span class="fa fa-2x fa-pencil pull-left img-circle bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Beautiful Colors</h4>
+                    <p>Easily adapt your branding with the six color palettes you can choose with Theme ENARK.</p>
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix mt16 mb16">
+                  <span class="fa fa-2x fa-font pull-left img-circle bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Font Combination</h4>
+                    <p>Find the font that suits your business and make your content more accessible.</p>
+                  </div>
+                </div>
+                <div class="col-md-3 clearfix mt16 mb128">
+                  <span class="fa fa-2x fa-desktop pull-left img-circle bg-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Modern Layout</h4>
+                    <p>Changing your layout is super easy with ENARK. You can switch from full width to boxed.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="s_banner carousel slide  mt0 o_displayed_bottom o_displayed_middle o_displayed_top" data-interval="10000" id="myCarousel1" style="height: 440px; overflow: hidden;">
+            <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#myCarousel1"/><li data-slide-to="1" data-target="#myCarousel1"/><li data-slide-to="2" data-target="#myCarousel1"/></ol>
+            <div class="carousel-inner">
+              <div class="item bg-blur-04 bg-img-09 active">
+                <div class="container">
+                  <div class="row content">
+                    <div class="carousel-content col-md-5 col-sm-12 mt64 mb64 text-center">
+                      <img class="img-responsive center-block" src="/web/image/theme_common.image_content_logo_small"/>
+                      <h3 class="mt32 text-muted" style="text-align: left;">Build your brand. easily.</h3>
+                      <p class="mt16" style="text-align: left;"/>
+                      <p style="text-align: left;">
+                        <a class="btn btn-warning btn-lg" href="/demo_page_blocks">NEW BUILDING BLOCKS</a>
+                      </p>
+                    </div>
+                    <div class="carousel-img col-md-6 col-md-offset-1 hidden-sm hidden-xs mt64">
+                      <img class="img-responsive" src="/theme_enark/static/src/img/content/content_img_01.png" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none;-webkit-transform: translateX(23.4%)  translateY(8.3%);-moz-transform: translateX(23.4%)  translateY(8.3%);-ms-transform: translateX(23.4%)  translateY(8.3%);-o-transform: translateX(23.4%)  translateY(8.3%);transform: translateX(23.4%)  translateY(8.3%)"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item bg-blur-03 bg-img-10">
+                <div class="container">
+                  <div class="row content">
+                    <div class="carousel-content col-md-5 col-sm-12 mt64 mb64 text-center">
+                      <img class="img-responsive center-block" src="/web/image/theme_common.image_content_logo_small"/>
+                      <h3 class="mt32 text-muted" style="text-align: left;">MAKE YOUR OWN WEBSITE</h3>
+                      <p class="mt16" style="text-align: left;"/>
+                      <p style="text-align: left;">
+                        <a class="btn btn-info btn-lg" href="/demo_page_blocks">NEW BUILDING BLOCKS</a>
+                      </p>
+                    </div>
+                    <div class="carousel-img col-md-6 col-md-offset-1 hidden-sm hidden-xs mt64">
+                      <img class="img-responsive" src="/theme_enark/static/src/img/content/content_img_03.png" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none;-webkit-transform: translateX(73.6%)  translateY(-4.2%);-moz-transform: translateX(73.6%)  translateY(-4.2%);-ms-transform: translateX(73.6%)  translateY(-4.2%);-o-transform: translateX(73.6%)  translateY(-4.2%);transform: translateX(73.6%)  translateY(-4.2%)"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item bg-blur-06 bg-img-12">
+                <div class="container">
+                  <div class="row content">
+                    <div class="carousel-content col-sm-12 mt64 mb64 text-center col-md-5">
+                      <h3 class="mt32 text-muted" style="text-align: left;">
+                        <img class="img-responsive center-block" src="/web/image/theme_common.image_content_logo_small" style="line-height: 1.42857143;"/>
+                      </h3>
+                      <h3 class="mt32 text-muted" style="text-align: left;">YOU ARE THE DESIGNER</h3>
+                      <p class="mt16" style="text-align: left;">
+                        <br/>
+                        <a class="btn btn-success btn-lg" href="/demo_page_blocks">NEW BUILDING BLOCKS</a>
+                      </p>
+                    </div>
+                    <div class="carousel-img col-md-6 col-md-offset-1 hidden-sm hidden-xs mt64">
+                      <img class="img-responsive" src="/theme_clean/static/src/img/content/image_content_01.png" style="-webkit-transform: translateX(25.9%) translateY(8.3%); transform: translateX(25.9%) translateY(8.3%); -webkit-animation-play-state: paused; -webkit-transition: none; transition: none;"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel1" href="#myCarousel1" style="width: 10%">
+              <i class="fa fa-chevron-left"/>
+            </div>
+            <div class="carousel-control right" data-slide="next" data-target="#myCarousel1" href="#myCarousel1" style="width: 10%">
+              <i class="fa fa-chevron-right"/>
+            </div>
+          </div>
+          <section class="s_two_columns  o_displayed_bottom o_displayed_middle o_displayed_top bg-beta mt0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb0 mt92">
+                  <h1>Without any Technical or Designer Skills</h1>
+                  <h3 class="text-muted ">Build your brand identity with Enark</h3>
+                </div>
+                <div class="col-md-12 text-center mt48">
+                  <div/>
+                </div>
+                <div class="mt128 col-md-3 mb128">
+                  <h1>Grow Your Business with Your Website.</h1>
+                  <div/>
+                  <h3>
+                    <font class="bg-delta">
+                      <font class="text-delta">Sale Online. Make Opportunities.</font>
+                    </font>
+                  </h3>
+                  <div/>
+                  <div>
+                    <span style="line-height: 1.42857143;"/>
+                  </div>
+                  <div>
+                    <span style="line-height: 1.42857143;"/>
+                  </div>
+                  <div>
+                    <span style="line-height: 1.42857143;"/>
+                  </div>
+                  <div>
+                    <span style="line-height: 1.42857143;"/>
+                  </div>
+                  <div>
+                    <span style="line-height: 1.42857143;">Build web pages, create your shop online our edit your first blog post with ENARK Theme for Odoo CMS.</span>
+                  </div>
+                </div>
+                <div class="mt0 col-md-offset-1 col-md-4 mb128">
+                  <img class="img-responsive" src="/web/image/theme_common.image_content_06"/>
+                  <h4 class="mt32 text-center">Universal Graphics</h4>
+                  <h5 class="text-muted text-center">TOOLS &amp; OPTIONS</h5>
+                  <blockquote>
+                    <p>You can easily change the background, the colors and the font combination of your website or you a preset.</p>
+                  </blockquote>
+                </div>
+                <div class="mt0 col-md-4 mb128">
+                  <img class="img-responsive" src="/web/image/theme_common.image_content_05"/>
+                  <h4 class="mt32 text-center">Save Time. Make Money</h4>
+                  <h5 class="text-muted text-center">RICH FEATURES</h5>
+                  <blockquote>
+                    <p>Every Building Block has its own options. You can change their style by playing with images, colors and gradients.</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_lead_bar  bg-epsilon o_displayed_top o_displayed_middle o_displayed_bottom mt0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt16 mb32">
+                  <h3>New Odoo Bootstrap Theme: ENARK Theme</h3>
+                  <h5 class="mb0 mt0 text-muted">Enark was made with easy customization in mind.</h5>
+                </div>
+                <div class="col-md-4 mb32 mt32" style="text-align: right;">
+                  <a class="btn btn-info btn-lg" href="/demo_page_blocks">NEW BUILDING BLOCKS</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_color_blocks_2  o_displayed_bottom o_displayed_middle o_displayed_top">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 s_color_blocks_2_block text-center o_animate o_anim_fade_in_left bg-img-08">
+                  <span class="fa fa-shield fa-5x center-block"/>
+                  <h2 class="text-center">Beautiful Layout</h2>
+                  <h3 class="text-center text-muted mb16">PLAY WITH COLORS &amp; GRADIENTS</h3>
+                  <p>ENARK is a uniquely designed theme. <br/>
+    It's super easy to modify and uses advanced LESS/CSS techniques<br/>
+    built on the latest Bootstrap Framework.<br/>
+    <br/>
+     </p>
+                  <a class="btn btn-info mb32" href="#"><i class="fa fa-cog"/> More Details </a>
+                </div>
+                <div class="col-md-6 s_color_blocks_2_block bg-gamma text-center bg_gradient_primary_up o_animate o_anim_fade_in_right">
+                  <span class="fa fa-cube fa-5x center-block"/>
+                  <h2 class="text-center">Modern Structure</h2>
+                  <h3 class="text-center text-muted mb16">HIGHLIGHT WITH ANIMATIONS</h3>
+                  <p>ENARK is build with easy customization in mind. Out of the box,<br/>
+    you get 6 color schemes and multiple combinations,<br/>
+    from backgronds to fonts.<br/>
+    <br/>
+     </p>
+                  <a class="btn btn-info mb32" href="#"><i class="fa fa-cog"/> More Details</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_event_list mt0 bg_gradient_primary_down">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb32 mt128">
+                  <h2>
+                    <span class="fa fa-clock-o fa-5x"/>
+                  </h2>
+                  <h2><br/>
+    Schedule Everything with ENARK Theme</h2>
+                  <h3 class="text-muted">Your Last Activities</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-center">With ENARK Theme you get a list of your events with date, time, description, etc. Select the simple or image mode and edit your content.<br/>
+    You can link your events to your favorite social network.</p>
+                </div>
+                <div class="col-md-6 mt32 mb32">
+                  <div class="s_event_list_item">
+                    <time class="bg-delta" datetime="2014-07-20">
+                      <span class="s_event_list_day">18</span>
+                      <span class="s_event_list_month">Jul</span>
+                      <span class="s_event_list_year">2014</span>
+                      <span class="s_event_list_time">ALL DAY</span>
+                    </time>
+                    <img class="img-responsive" src="/web/image/theme_common.image_content_09"/>
+                    <div class="s_event_list_info">
+                      <h4 class="s_event_list_title">Your Event Name</h4>
+                      <p class="s_event_list_desc">Write a description of your event here.</p>
+                      <ul>
+                        <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                        <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                      </ul>
+                    </div>
+                    <div class="s_event_list_social">
+                      <ul>
+                        <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                        <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                        <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mt32 mb32">
+                  <div class="s_event_list_item">
+                    <time class="bg-delta" datetime="2014-07-20">
+                      <span class="s_event_list_day">18</span>
+                      <span class="s_event_list_month">Jul</span>
+                      <span class="s_event_list_year">2014</span>
+                      <span class="s_event_list_time">ALL DAY</span>
+                    </time>
+                    <img class="img-responsive" src="/web/image/ir.attachment/258_013f081/datas" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                    <div class="s_event_list_info">
+                      <h4 class="s_event_list_title">Your Event Name</h4>
+                      <p class="s_event_list_desc">Write a description of your event here.</p>
+                      <ul>
+                        <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                        <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                      </ul>
+                    </div>
+                    <div class="s_event_list_social">
+                      <ul>
+                        <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                        <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                        <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_column  bg-epsilon o_displayed_bottom o_displayed_middle o_displayed_top bg_gradient_primary_up">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mb32 mt32">
+                  <img class="img-responsive center-block" src="/web/image/theme_common.image_content_04"/>
+                  <h3 class="mt32 text-center">Tones of Options. Unlimited Possibilities</h3>
+                  <h4 class="text-muted text-center">Customize your website with ease</h4>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_icon_box mb0 bg_gradient_black_down bg-epsilon mt0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 clearfix mb128 mt64">
+                  <span class="fa fa-2x fa-expand pull-left text-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>Responsive</h4>
+                    <p>Enark is designed for mobile first so it looks great and <span style="line-height: 25.7142868041992px; background-color: rgba(16, 90, 90, 0.498039);">Enark </span>on mobile devices of all sizes.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 clearfix mb128 mt64">
+                  <span class="fa fa-2x fa-html5 pull-left text-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>HTML5</h4>
+                    <p>Create your pages without typing a single line of code. <span style="line-height: 25.7142868041992px; background-color: rgba(16, 90, 90, 0.498039);">Enark </span> use a clean and simple HTML structure.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 clearfix mb128 mt64">
+                  <span class="fa fa-2x fa-css3 pull-left text-gamma"/>
+                  <div class="icon_box_content">
+                    <h4>LESS/CSS</h4>
+                    <p>Enjoy the power of LESS/CSS3. Customizing your theme has never been so easy. Make it your own!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_lead_bar  o_displayed_top o_displayed_middle o_displayed_bottom bg-delta">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mt16 mb32 o_animate o_anim_fade_in_left">
+                  <h3>ENARK - Bootstrap Theme for Odoo CMS</h3>
+                  <h5 class="mb0 mt0 text-muted">Made with easy customization in mind.</h5>
+                </div>
+                <div class="mb32 mt32 col-md-3 col-md-offset-1 o_animate o_anim_fade_in_right" style="text-align: right;">
+                  <a class="btn btn-info btn-lg" href="/demo_page_blocks">NEW BUILDING BLOCKS</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          </div>
+        </t>
+      </t>
+    </field>
+  </record>
+
+  <record id="demo_page_home_2_menu" model="website.menu">
+    <field name="name">Demo 2</field>
+    <field name="url">/demo_page_home_2</field>
+    <field name="parent_id" ref="website.main_menu"/>
+    <field name="sequence" type="int">20</field>
+    <field name="page_id" ref="demo_page_home_2_page"/>
+  </record>
+
+</odoo>

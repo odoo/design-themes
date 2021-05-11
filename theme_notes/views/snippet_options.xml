@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_notes_website_options_pattern" inherit_id="website.snippet_options">
+        <!-- Background image -->
+        <xpath expr="//div[@data-js='background']//ul" position="replace">
+            <ul class="dropdown-menu">
+                <li data-select-class=""><a>None</a></li>
+                <li data-select-class="oe_custom_bg" data-choose-image="true" data-no-preview="true"><a><b>Choose another image...</b></a></li>
+                <li><a style="background: none; padding: 5px; border-top: 1px solid #ddd;"/></li>
+                <li data-select-class="bg-img-01"><a><img src="/web/image/theme_common.image_content_11/150x0" class="center-block"/></a></li>
+                <li data-select-class="bg-img-02"><a><img src="/web/image/theme_common.image_content_09/150x0" class="center-block"/></a></li>
+                <li data-select-class="bg-img-03"><a><img src="/web/image/theme_common.image_content_10/150x0" class="center-block"/></a></li>
+                <li data-select-class="bg-img-04"><a><img src="/web/image/theme_common.image_content_12/150x0" class="center-block"/></a></li>
+            </ul>
+        </xpath>
+    </template>
+</odoo>

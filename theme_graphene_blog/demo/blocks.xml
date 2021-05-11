@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="blocks" inherit_id="theme_graphene.blocks">
+        <xpath expr="//h3[@id='hook_showcase_slider']" position="before">
+            <h3 class="text-center bg-white mt128 mb0">LATEST POSTS</h3>
+            <hr class="mt4 mb32"/>
+
+            <section class="s_latest_posts_big_picture">
+                <div class="js_get_posts first_is_big" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+            </section>
+
+            <h3 class="text-center bg-white mt92 mb0">Styles</h3>
+            <hr class="mt4 mb32"/>
+
+            <div class="container text-center">
+                <div class="row">
+                    <section class="s_latest_posts_big_picture col-md-6 mt32">
+                        <div class="js_get_posts first_is_big effect-marley" data-posts_limit="1" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+                    </section>
+                    <section class="s_latest_posts_big_picture col-md-6 mt32">
+                        <div class="js_get_posts first_is_big effect-dexter" data-posts_limit="1" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="s_latest_posts_big_picture col-md-6 mt32">
+                        <div class="js_get_posts first_is_big effect-chico" data-posts_limit="1" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+                    </section>
+                    <section class="s_latest_posts_big_picture col-md-6 mt32">
+                        <div class="js_get_posts first_is_big effect-steve" data-posts_limit="1" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+                    </section>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

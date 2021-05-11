@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_kea_website_options_pattern" inherit_id="website.snippet_options">
+
+        <!-- Background image -->
+        <xpath expr="//div[@data-js='background']/li/ul" position="replace">
+            <ul class="dropdown-menu">
+                <li data-background=""><a href="#">None</a></li>
+                <li class="divider"/>
+                <li data-choose-image="true" data-no-preview="true"><a href="#"><b>Set Custom Image...</b></a></li>
+                <li class="divider"/>
+                <li class="col-2" data-background="/web/image/theme_common.image_content_11"><a style="background-image:url(/web/image/theme_common.image_content_11/140x140)"/></li>
+                <li class="col-2" data-background="/web/image/theme_common.image_content_03"><a style="background-image:url(/web/image/theme_common.image_content_03/140x140)"/></li>
+                <li class="col-2" data-background="/web/image/theme_common.image_content_12"><a style="background-image:url(/web/image/theme_common.image_content_12/140x140)"/></li>
+                <li class="col-2" data-background="/web/image/theme_common.image_content_02"><a style="background-image:url(/web/image/theme_common.image_content_02/140x140)"/></li>
+                <li class="col-2" data-background="/web/image/theme_common.image_content_10"><a style="background-image:url(/web/image/theme_common.image_content_10/140x140)"/></li>
+                <li class="col-2" data-background="/web/image/theme_common.image_content_09"><a style="background-image:url(/web/image/theme_common.image_content_09/140x140)"/></li>
+                <li class="col-2" data-background="/web/image/theme_common.image_content_07"><a style="background-image:url(/web/image/theme_common.image_content_07/140x140)"/></li>
+            </ul>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-exclude" add=".s_color_blocks_4, .s_color_blocks_2, .s_cubes"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-exclude" add=".s_color_blocks_4, .s_color_blocks_2, .s_cubes"/>
+        </xpath>
+    </template>
+
+</odoo>

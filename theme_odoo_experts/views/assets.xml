@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    <template id="less" inherit_id="website.assets_frontend" active="True" priority="1">
+        <xpath expr="." position="inside">
+            <link href="/theme_odoo_experts/static/src/less/layout.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_odoo_experts/static/src/less/snippets/s_banner_3.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_odoo_experts/static/src/less/snippets/s_three_columns.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_odoo_experts/static/src/less/snippets/s_banner_parallax.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_odoo_experts/static/src/less/snippets/s_news_carousel.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_odoo_experts/static/src/less/snippets/s_big_icon_circle.less" rel="stylesheet" type="text/less"/>
+
+            <link href="/theme_common/static/src/less/s_news_carousel.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_showcase.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    </data>
+</openerp>

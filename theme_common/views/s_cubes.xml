@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Cubes" id="s_cubes">
+        <section class="s_cubes">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 cube cube-big bg-img-03"/>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="cube cube-text col-md-6 col-sm-6">
+                                <div class="cube-heading">
+                                    <h4 class="text-center">A good subtitle</h4>
+                                    <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                </div>
+                            </div>
+                            <div class="cube cube-small col-md-6 col-sm-6 bg-img-04"/>
+                        </div>
+                        <div class="row">
+                            <div class="cube cube-small col-md-6 col-sm-6 bg-img-02"/>
+                            <div class="cube cube-text col-md-6 col-sm-6 last">
+                                <div class="cube-heading">
+                                    <h4 class="text-center">A good subtitle</h4>
+                                    <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_cubes-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".s_cubes .cube"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_cubes .cube"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-selector" add=".s_cubes .cube"/>
+        </xpath>
+    </template>
+</odoo>

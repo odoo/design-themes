@@ -1,0 +1,59 @@
+/*
+  ========================================
+  ==== website builder menu integration
+  ========================================
+*/
+
+// variables
+@o_animate-timeline-bg-color: #F7F7F7;
+@o_animate-timeline-border-bottom : 1px solid #EAEAEA;
+@o_animate-timeline-height: 5px;
+@o_animate-timeline-duration-color: #21b799;
+@o_animate-timeline-delay-color: #A4498C;
+
+// default style
+#oe_manipulators .dropdown-menu {
+    > li {
+        &.o_anim_li  > a > i {
+            color: orange!important;
+        }
+        span.timeline {
+            display: block;
+            width: 100%;
+            height: @o_animate-timeline-height;
+            margin-bottom: 5px;
+            position: relative;
+            background-color: @o_animate-timeline-bg-color;
+            border-bottom: @o_animate-timeline-border-bottom;
+
+            > span {
+                float: left;
+                display: inline-block;
+                position: relative;
+                height: @o_animate-timeline-height;
+            }
+            span[simulate="duration"] {
+                position: absolute;
+                float: left;
+                left: 0;
+                height: 100%;
+                background: @o_animate-timeline-duration-color;
+                width: 0%;
+                .animation-name(o_animate_timeline_duration);
+                .animation-timing-function(linear);
+                .animation-fill-mode(forwards);
+            }
+            span[simulate="delay"] {
+                position: absolute;
+                float: left;
+                left: 0;
+                height: 100%;
+                background: @o_animate-timeline-delay-color;
+                width: 0%;
+                .animation-name(o_animate_timeline_delay);
+                .animation-timing-function(linear);
+                .animation-fill-mode(forwards);
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@s_banner_3_carousel_height: 100vh;
+@s_banner_3_indicators_visible: visible;
+@s_banner_3_padding: 30px;
+@s_banner_3_h1_size: 50px;
+@s_banner_3_h2_size: 30px;
+
+.s_banner_3_row_hook() {
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+
+    img {
+        display: none;
+    }
+}
+
+.s_banner_3_col_center_hook() {
+    text-align: center;
+    height: auto;
+    padding-bottom: 20px;
+    h1, h2 {
+        color: white;
+    }
+    .fa {
+        transform: none;
+        font-size: 18px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.s_banner_3_carousel-control_hook() {
+    display: none;
+}

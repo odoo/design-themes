@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+      <template name="Demo Page" id="demo_page">
+        <t t-call="website.layout">
+          <div id="wrap" class="oe_structure">
+
+            <div class="s_banner_2 carousel slide" id="myCarousel3" style="height: 450px;">
+              <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#myCarousel3"></li><li data-slide-to="1" data-target="#myCarousel3" class=""></li><li data-slide-to="2" data-target="#myCarousel3" class=""></li></ol>
+              <div class="carousel-inner">
+                <div class="item bg-img-10 active">
+                  <div class="container">
+                    <div class="row content">
+                      <div class="col-md-4 col-md-offset-4 carousel-box-content bg-white text-center mt64">
+                        <h1 class="text-danger">Slide title</h1>
+                        <h5 class="mb16">Customize this text.</h5>
+                        <p class="mb16">Use this snippet to presents your content in a slideshow-like format, with a set number of items at a time and arrows for navigation.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item bg-img-02">
+                  <div class="container">
+                    <div class="row content">
+                      <div class="col-md-4 carousel-box-content mt64">
+                        <h1 class="text-white">Slide title</h1>
+                        <h5 class="mb16 text-gray">Click to customize this text.</h5>
+                        <p class="mb16 text-white">Add and arrange blocks to create a custom layout of text, images and links.</p>
+                        <p><a class="btn btn-sm btn-warning" href="/">Read more</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item bg-img-07">
+                  <div class="container">
+                    <div class="row content">
+                      <div class="col-md-4 col-md-offset-8 carousel-box-content text-right mt64">
+                        <h1 class="text-bg-white">Slide title</h1>
+                        <h5 class="text-beta text-bg-white">Customize this text.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-control left" data-slide="prev" data-target="#myCarousel3" href="#myCarousel3">
+                <i class="fa fa-chevron-left fa-1x"/>
+              </div>
+              <div class="carousel-control right" data-slide="next" data-target="#myCarousel3" href="#myCarousel3">
+                <i class="fa fa-chevron-right fa-1x"/>
+              </div>
+            </div>
+
+            <section class="s_three_columns_carousel bg-gray-lighter">
+              <div class="container">
+                <div class="row mt32 mb32">
+                  <div class="col-md-4 col-sm-4 bg-white">
+                    <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_19"/>
+                    <h3>First Feature</h3>
+                    <h6 class="text-primary">Tell your story</h6>
+                    <p>Adapt these three columns to fit you design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 bg-white">
+                    <div class="carousel slide" data-interval="10000" id="s_three_columns_carousel">
+                      <div class="carousel-inner">
+                        <div class="item">
+                          <img alt="" src="/web/image/theme_common.image_content_20"/>
+                        </div>
+                        <div class="item active">
+                          <img alt="" src="/web/image/theme_common.image_content_21"/>
+                        </div>
+                        <div class="item">
+                          <img alt="" src="/web/image/theme_common.image_content_22"/>
+                        </div>
+                      </div>
+                      <div class="carousel-control left" data-slide="prev" data-target="#s_three_columns_carousel">
+                        <i class="fa fa-chevron-left fa-1x"/>
+                      </div>
+                      <div class="carousel-control right" data-slide="next" data-target="#s_three_columns_carousel">
+                        <i class="fa fa-chevron-right fa-1x"/>
+                      </div>
+                    </div>
+                    <h3>Second Feature</h3>
+                    <h6 class="text-primary">Showcase your work</h6>
+                    <p>To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the column to create a new one.</p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 bg-white">
+                    <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_23"/>
+                    <h3>Third Feature</h3>
+                    <h6 class="text-primary">Give some extra details</h6>
+                    <p>Delete the above image or replace it with a picture that illustrates your message.
+      Click on the picture to change it's <em>rounded corner</em> style.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="s_features_circle mt64 mb64">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4 text-center">
+                    <span class="fa fa-bug fa-2x img-circle img-thumbnail bg-alpha" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"></span>
+                    <h3 class="mt16">First Feature</h3>
+                    <p class="text-muted">Tell what's the value for the customer for this feature.</p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 text-center">
+                    <span class="fa fa-rocket fa-2x img-circle img-thumbnail bg-gray-darker"></span>
+                    <h3 class="mt16">Second Feature</h3>
+                    <p class="text-muted">Write what the customer would like to know, not what you want to show.</p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 text-center">
+                    <span class="fa fa-flask fa-2x img-circle img-thumbnail bg-beta" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"></span>
+                    <h3 class="mt16">Third Feature</h3>
+                    <p class="text-muted">A small explanation of this great feature, in clear words.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="s_news_carousel bg-img-10 border-waves">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 carousel slide mt64 mb64" data-interval="10000" id="myCarousel7" style="height:240px; overflow: hidden;">
+                    <div class="carousel-control left" data-slide="prev" data-target="#myCarousel7" href="#myCarousel7">
+                      <i class="fa fa-chevron-left fa-1x bg-white"/>
+                    </div>
+                    <div class="carousel-inner bg-white">
+                      <div class="item active">
+                        <div class="row content">
+                          <div class="col-md-3 news-carousel-time text-center bg-beta">
+                            <span class="day bg-white img-circle">18</span>
+                            <span class="month">
+                              <strong>DECEMBER</strong>
+                            </span>
+                            <span class="year">2014</span>
+                          </div>
+                          <div class="col-md-9 news-carousel-content">
+                            <h3 class="mt0">Ten basic rules to making an irresistible website.</h3>
+                            <p>Your website is where almost all of your customers will end up first. Let's clear up what it takes to give them the best experience with it.</p>
+                            <p>
+                              <a class="btn btn-xs btn-danger" href="https://www.odoo.com/blog/business-hacks-1/post/10-basic-rules-to-making-an-irresistible-website-201">Full read</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row content">
+                          <div class="col-md-3 news-carousel-time text-center bg-beta">
+                            <span class="day bg-white img-circle">17</span>
+                            <span class="month">
+                              <strong>JANUARY</strong>
+                            </span>
+                            <span class="year">2015</span>
+                          </div>
+                          <div class="col-md-9 news-carousel-content">
+                            <h3 class="mt0">Five things to know to prepare for the future of eCommerce.</h3>
+                            <p>Which trends to follow? Which ideas will work?</p>
+                            <p>
+                              <a class="btn btn-xs btn-danger" href="https://www.odoo.com/blog/business-hacks-1/post/5-things-to-know-to-prepare-for-the-future-of-ecommerce-193">Discover more</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row content">
+                          <div class="col-md-3 news-carousel-time text-center bg-beta">
+                            <span class="day bg-white img-circle">3</span>
+                            <span class="month">
+                              <strong>FEBRUARY</strong>
+                            </span>
+                            <span class="year">2015</span>
+                          </div>
+                          <div class="col-md-9 news-carousel-content">
+                            <h3 class="mt0">How you can use newsletters to increase your popularity?</h3>
+                            <p>Build relationships and recognition by staying in touch</p>
+                            <p>
+                              <a class="btn btn-xs btn-danger" href="https://www.odoo.com/blog/business-hacks-1/post/how-you-can-use-newsletters-to-increase-your-popularity-194">Click here</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-control right" data-slide="next" data-target="#myCarousel7" href="#myCarousel7">
+                      <i class="fa fa-chevron-right fa-1x bg-white"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="s_process_steps_2 mt64 mb32">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 text-center mb48 mt32">
+                    <i class="fa fa-hand-o-up fa-2x img-thumbnail img-circle bg-alpha"/>
+                    <h5 class="mt16">Select a product</h5>
+                    <p class="text-muted">This is the <strong>first step</strong>.</p>
+                    <p>Let your customers follow and understand your process.</p>
+                  </div>
+                  <div class="col-md-3 text-center mb48 mt32">
+                    <i class="fa fa-shopping-cart fa-2x img-thumbnail img-circle bg-gray-darker"/>
+                    <h5 class="mt16">Add to cart</h5>
+                    <p class="text-muted">This is the <strong>second step</strong>.</p>
+                    <p>Click on the icon to adapt it to your purpose.</p>
+                  </div>
+                  <div class="col-md-3 text-center mb48 mt32">
+                    <i class="fa fa-unlock-alt fa-2x img-thumbnail img-circle bg-beta"/>
+                    <h5 class="mt16">Sign in</h5>
+                    <p class="text-muted">This is the <strong>third step</strong>.</p>
+                    <p>Duplicate blocks to add more steps.</p>
+                  </div>
+                  <div class="col-md-3 text-center mb48 mt32">
+                    <i class="fa fa-paypal fa-2x img-thumbnail img-circle bg-gray-darker"/>
+                    <h5 class="mt16">Pay</h5>
+                    <p class="text-muted">This is the <strong>fourth step</strong>.</p>
+                    <p>Select and delete blocks to remove some steps.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="s_images_captions_fw">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6 bg-img-11" style="height:250px;">
+                    <p class="bg-white">
+                      <span class="text-primary fa fa-info-circle"></span>
+                      <strong>- Fairy Cupcakes</strong>
+                    </p>
+                  </div>
+                  <div class="col-md-6 bg-img-09" style="height:250px;">
+                    <p class="bg-white">
+                      <span class="text-primary fa fa-info-circle"></span>
+                      <strong>- Crumbly Cookies</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="s_team_profiles_2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4 text-center mt48 mb48">
+                    <div class="profile-body bg-beta">
+                      <img alt="" class="img img-responsive img-circle" src="/web/image/theme_common.image_content_18"/>
+                      <h3>John DOE</h3>
+                      <p class="text-primary"><strong>- CHIEF -</strong></p>
+                      <p>Use this paragraph to write a short, sweet and successful resume about this member of your team.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 text-center mt48 mb48">
+                    <div class="profile-body bg-gray-darker">
+                      <img alt="" class="img img-responsive img-circle" src="/web/image/theme_common.image_content_09"/>
+                      <h3>John DOE</h3>
+                      <p class="text-primary"><strong>- SAUCEMAKER -</strong></p>
+                      <p>Use this paragraph to write a short, sweet and successful resume about this member of your team.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 text-center mt48 mb48">
+                    <div class="profile-body bg-gray-lighter">
+                      <img alt="" class="img img-responsive img-circle" src="/web/image/theme_common.image_content_11"/>
+                      <h3>John DOE</h3>
+                      <p class="text-primary"><strong>- PASTRY COOK -</strong></p>
+                      <p>Use this paragraph to write a short, sweet and successful resume about this member of your team.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="s_text_block_image_fw bg-img-12 border-waves mb32">
+              <div class="container">
+                <div class="row">
+                  <div class="mt64 mb64 col-md-5">
+                    <h2 class="text-white">Short headline</h2>
+                    <h5 class="text-primary">With a great subtitle</h5>
+                    <p class="text-white">Write one or two paragraphs describing your product, services or a specific feature.<br/> To be successful your content needs to be useful to your readers.</p>
+                    <p>
+                      <i class="fa fa-info-circle fa-1x text-primary"/>
+                      <strong>- <font class="text-white">An additional information</font></strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="s_references_2 mb48">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 mb0">
+                    <h2 class="mb16">Our References</h2>
+                    <h5 class="text-primary mb16">More than 500 happy customers.</h5>
+                  </div>
+                  <div class="mt0 col-md-12">
+                    <div class="row">
+                      <div class="mb0 col-md-2">
+                        <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_12"/>
+                      </div>
+                      <div class="mb0 col-md-2">
+                        <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_13"/>
+                      </div>
+                      <div class="mb0 col-md-2">
+                        <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_14"/>
+                      </div>
+                      <div class="mb16 mt0 col-md-2">
+                        <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_15"/>
+                      </div>
+                      <div class="mb16 col-md-2">
+                        <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_16"/>
+                      </div>
+                      <div class="mb16 col-md-2">
+                        <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_17"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </t>
+      </template>
+
+</odoo>

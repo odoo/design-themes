@@ -1,0 +1,18 @@
+@s_banner_3_carousel_row_height: auto;
+
+.s_banner_3_row_hook() {
+    background-color: white;
+    float: right;
+    height: auto;
+    margin-right: 150px;
+    @media screen and (max-width: 640px) {
+        float: none;
+    }
+    img {
+        display: none;
+    }
+}
+
+.s_banner_3_carousel-control_hook() {
+    display: inherit;
+}

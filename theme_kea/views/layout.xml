@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <!-- Add affix to nav -->
+    <template id="add_data_spy_affix" inherit_id="website.layout" name="Add data-spy affix to nav">
+      <xpath expr="//header/div[hasclass('navbar-static-top')]/div" position="attributes">
+        <attribute name="data-spy">affix</attribute>
+      </xpath>
+    </template>
+</data>
+</openerp>

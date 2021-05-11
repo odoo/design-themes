@@ -1,0 +1,17 @@
+#wrapwrap {
+    > main > #wrap {
+        @media (min-width: @screen-md-min) {
+            width: @screen-md-min - 50;
+            margin: 50px auto;
+        }
+
+        &.container {
+            width: @screen-md-min;
+            max-width: 100%;
+        }
+    }
+    .container {
+        width: @screen-md-min;
+        max-width: 100%;
+    }
+}

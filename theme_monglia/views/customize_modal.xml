@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_customize" inherit_id="website.theme_customize" name="theme_monglia modal">
+        <xpath expr="div" position="replace">
+            <div id="theme_customize_modal" class="modal fade bs-example-modal-sm" data-theme="theme_monglia">
+                <div class="modal-dialog">
+                    <div class="container-fluid interface modal-content">
+                        <div class="loading_backdrop"/>
+                        <div class="row">
+                            <!-- ======================== Nav tabs ======================== -->
+                            <div class="left-content">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active text-center left-content-block">
+                                        <a href="#layout" class="" role="tab" data-toggle="tab"><span class="fa fa-th-list center-block"></span>LAYOUT</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#header" class="" role="tab" data-toggle="tab"><span class="fa fa-th-list center-block"></span>MENU</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#color" class="" role="tab" data-toggle="tab"><span class="fa fa-pencil center-block"></span>COLORS</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#bgcolor" class="" role="tab" data-toggle="tab"><span class="fa fa-pencil center-block"></span> BG COLORS</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#bgimage" class="" role="tab" data-toggle="tab"><span class="fa fa-picture-o center-block"></span> BACKGROUND</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#font" class="" role="tab" data-toggle="tab"><span class="fa fa-font center-block"></span>FONTS</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- ========================= Content ======================== -->
+                            <div class="col-xs-10 right-content">
+                                <div class="col-md-12 modal-header">
+                                    <button type="button" class="close">×</button>
+                                    <h4 class="modal-title text-center" id="mySmallModalLabel">Customize Theme</h4>
+                                </div>
+                                <div class="col-xs-12 tab-content">
+                                    <!-- =============== LAYOUT CONTAINER ================= -->
+                                    <div class="tab-pane active" id="layout">
+                                        <div class="col-xs-12">
+                                            <label>
+                                                <h6 class="text-center modal-h6"><i class="fa fa-desktop"/></h6>
+                                                <p>Full width</p>
+                                                <input name="layoutvar" type="radio" data-xmlid="theme_monglia.option_layout_fullwidth"/>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <label>
+                                                <h6 class="text-center modal-h6"><i class="fa fa-arrows-h"/></h6>
+                                                <p>Boxed</p>
+                                                <input name="layoutvar" type="radio" data-xmlid="theme_monglia.option_layout_boxed"/>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== NAV CONTAINER ================= -->
+                                    <div class="tab-pane" id="header">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <label class="center-block" >
+                                                    <h6 class="text-center modal-h6"><i class="fa fa-bars"/></h6>
+                                                    Hamburger Menu
+                                                    <input name="headervar" type="checkbox" data-xmlid="theme_monglia.website_custom_navigation, theme_monglia.website_custom_navigation_less" data-reload="/"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row monglia_hamburger_options">
+                                            <div class="col-xs-12">
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="center-block" >
+                                                    <h6 class="text-center modal-h6"><i class="fa fa-bars"/><i class="fa fa-fw fa-window-maximize"/></h6>
+                                                    Left
+                                                    <input name="headervar" type="radio" data-xmlid="theme_monglia.option_navigation_left_style"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="center-block" >
+                                                    <h6 class="text-center modal-h6"><i class="fa fa-fw fa-window-maximize"/><i class="fa fa-bars"/></h6>
+                                                    Right
+                                                    <input name="headervar" type="radio" data-xmlid="theme_monglia.option_navigation_right_style"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== COLOR CONTAINER ================= -->
+                                    <div class="tab-pane" id="color">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 1</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset1">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_monglia.option_colorPreset1"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 2</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset2">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_monglia.option_colorPreset2"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 3</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset3">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_monglia.option_colorPreset3"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 4</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset4">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_monglia.option_colorPreset4"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 5</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset5">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_monglia.option_colorPreset5"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 6</p>
+                                                 <label class="color-combi">
+                                                    <div class="row colorPreset6">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_monglia.option_colorPreset6"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== BG COLOR CONTAINER ================= -->
+                                    <div class="tab-pane" id="bgcolor">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <label class="col-xs-12 bg_color_01">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_color_01"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_02">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_color_02"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_03">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_color_03"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_04">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_color_04"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_05">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_color_05"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_06">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_color_06"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_07">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_color_07"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_08">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_color_08"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== BG IMAGE CONTAINER ================= -->
+                                    <div class="tab-pane" id="bgimage">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label id="bg_image">
+                                                    <img src="/theme_monglia/static/src/img/library/tn-bg-custom.jpg" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_custom" data-customize-bg=""/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label id="bg_pattern">
+                                                    <img src="/theme_monglia/static/src/img/library/tn-pattern-custom.jpg" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_pattern_custom" data-customize-bg=""/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label id="bg_none">
+                                                    <img src="/theme_monglia/static/src/img/library/tn-bg-none.jpg" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_monglia.option_bg_none"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== FONT CONTAINER ================= -->
+                                    <div class="tab-pane" id="font">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <label class="center-block">
+                                                    <h4 style="font-family: Handlee; font-size: 30px">Handlee</h4>
+                                                    <input name="fontvar" type="radio" data-xmlid="theme_monglia.option_font_handlee"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="center-block">
+                                                    <h4 style="font-family: Nunito; font-size: 30px">Nunito</h4>
+                                                    <input name="fontvar" type="radio" data-xmlid="theme_monglia.option_font_nunito"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="center-block">
+                                                    <h4 style="font-family: SourceSansPro-Regular; font-size: 30px">SourceSansPro</h4>
+                                                    <input name="fontvar" type="radio" data-xmlid="theme_monglia.option_font_sourcesanspro"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="center-block">
+                                                    <h4 style="font-family: Gruppo; font-size: 30px">Gruppo</h4>
+                                                    <input name="fontvar" type="radio" data-xmlid="theme_monglia.option_font_gruppo"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="center-block">
+                                                    <h4 style="font-family: Raleway; font-size: 30px">Raleway</h4>
+                                                    <input name="fontvar" type="radio" data-xmlid="theme_monglia.option_font_raleway"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="center-block">
+                                                    <h4 style="font-family: Droid Sans; font-size: 30px">Droid Sans</h4>
+                                                    <input name="fontvar" type="radio" data-xmlid="theme_monglia.option_font_droid"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- ===================== LAYOUT OPTIONS ======================== -->
+    <template id="option_layout_fullwidth" name="theme_monglia_option_layout_fullwidth" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/layout/full-width.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_layout_boxed" name="theme_monglia_option_layout_boxed" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/layout/boxed.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- ===================== NAV OPTIONS ======================== -->
+    <template id="website_custom_navigation" inherit_id="website.layout" name="website_custom_navigation" priority="1" active="True">
+        <xpath expr="//div[@id='wrapwrap']//header//div[hasclass('navbar-header')]/button" position="replace"/>
+        <xpath expr="//div[@id='wrapwrap']//header//div[hasclass('navbar-header')]/a" position="replace">
+            <h1><a class="navbar-brand" href="/" t-field="res_company.name"/></h1>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']//header//div[hasclass('navbar-top-collapse')]" position="attributes">
+            <attribute name="class">menu-wrap</attribute>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']//header//ul[@id='top_menu']" position="attributes">
+            <attribute name="class">nav navbar-nav navbar-top-collapse</attribute>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']//header//ul[@id='top_menu']/li[hasclass('divider')]" position="replace"/>
+        <xpath expr="//div[@id='wrapwrap']//header//div[hasclass('container')]" position="inside">
+            <h2>
+                <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                <a t-att-href="website.social_googleplus" t-if="website.social_googleplus"><i class="fa fa-google-plus-square"/></a>
+                <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+            </h2>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']//header//div[hasclass('container')]" position="after">
+            <div id="menuToggle"><i class="fa fa-bars"/></div>
+        </xpath>
+    </template>
+
+    <template id="website_custom_navigation_less" inherit_id="website.assets_frontend" name="website_custom_navigation_less" active="True">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/nav/hamburger_layout.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+    <template id="option_navigation_right_style" name="option_navigation_right_style" inherit_id="theme_monglia.website_custom_navigation_less" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/nav/option_navigation_right.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_navigation_left_style" name="option_navigation_left_style" inherit_id="theme_monglia.website_custom_navigation_less" active="True">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/nav/option_navigation_left.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+    <!-- ===================== COLOR OPTIONS ======================== -->
+    <template id="option_colorPreset1" name="option_colorPreset1" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/colors/colorPreset1.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset2" name="option_colorPreset2" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/colors/colorPreset2.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset3" name="option_colorPreset3" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/colors/colorPreset3.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset4" name="option_colorPreset4" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/colors/colorPreset4.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset5" name="option_colorPreset5" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/colors/colorPreset5.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset6" name="option_colorPreset6" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/colors/colorPreset6.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+    <!-- ===================== BG COLOR OPTIONS ======================== -->
+    <template id="option_bg_color_01" name="option_bg_color_01" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_colors/option_bg_color_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_02" name="option_bg_color_02" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_colors/option_bg_color_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_03" name="option_bg_color_03" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_colors/option_bg_color_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_04" name="option_bg_color_04" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_colors/option_bg_color_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_05" name="option_bg_color_05" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_colors/option_bg_color_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_06" name="option_bg_color_06" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_colors/option_bg_color_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_07" name="option_bg_color_07" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_colors/option_bg_color_07.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_08" name="option_bg_color_08" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_colors/option_bg_color_08.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- ===================== BG IMAGE OPTIONS ======================== -->
+    <template id="option_bg_01" name="option_bg_01" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_02" name="option_bg_02" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_03" name="option_bg_03" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_04" name="option_bg_04" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_05" name="option_bg_05" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_06" name="option_bg_06" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_07" name="option_bg_07" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_07.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_08" name="option_bg_08" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_08.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_09" name="option_bg_09" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_09.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_10" name="option_bg_10" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_10.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_none" name="option_bg_none" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/bg_images/option_bg_none.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_custom" name="option_bg_custom" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/bg_images/option_bg_custom.less" rel="stylesheet" type="text/less"/>
+            <style/>
+        </xpath>
+    </template>
+
+    <!-- ===================== FONT OPTIONS ======================== -->
+    <template id="option_font_handlee" name="option_font_handlee" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/fonts/handlee.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_nunito" name="option_font_nunito" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/fonts/nunito.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_sourcesanspro" name="option_font_sourcesanspro" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/fonts/sourcesanspro.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_gruppo" name="option_font_gruppo" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/fonts/gruppo.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_raleway" name="option_font_raleway" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/fonts/raleway.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_droid" name="option_font_droid" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/fonts/droid.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- ===================== PATTERN OPTIONS ======================== -->
+    <template id="option_bg_pattern_01" name="option_bg_pattern_01" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_02" name="option_bg_pattern_02" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_03" name="option_bg_pattern_03" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_04" name="option_bg_pattern_04" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_05" name="option_bg_pattern_05" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_06" name="option_bg_pattern_06" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_07" name="option_bg_pattern_07" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_07.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_08" name="option_bg_pattern_08" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_08.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_09" name="option_bg_pattern_09" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_09.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_10" name="option_bg_pattern_10" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_bg_pattern_10.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_pattern_none" name="option_pattern_none" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_monglia/static/src/less/options/patterns/option_pattern_none.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_pattern_custom" name="option_pattern_custom" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_monglia/static/src/less/options/patterns/option_pattern_custom.less" rel="stylesheet" type="text/less"/>
+            <style/>
+        </xpath>
+    </template>
+</odoo>

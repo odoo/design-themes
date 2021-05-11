@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="theme_customize" inherit_id="website.theme_customize" name="theme_avantgarde modal">
+  <xpath expr="div" position="replace">
+
+    <div id="theme_customize_modal" class=" modal fade bs-example-modal-sm">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="loading_backdrop"></div>
+
+          <div class="modal-header">
+            <button type="button" class="close">×</button>
+            <h4 class="modal-title text-center" id="mySmallModalLabel"><i class="fa fa-cog"/>  Customize <span>Avantgarde</span></h4>
+          </div>
+
+          <div class="modal-body">
+
+            <!-- TAB LIST -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="active"><a href="#tab_layout" role="tab" data-toggle="tab"><i class="fa fa-laptop"/> LAYOUT</a></li>
+              <li><a href="#tab_options" role="tab" data-toggle="tab"><i class="fa fa-sliders"/>  OPTIONS</a></li>
+              <li><a href="#tab_palettes" role="tab" data-toggle="tab"><i class="fa fa-paint-brush "/>&#32;&#32;STYLE</a></li>
+              <li><a href="#tab_fonts" role="tab" data-toggle="tab"><i class="fa fa-font"/>  FONTS</a></li>
+            </ul>
+
+            <!-- TAB CONTENT -->
+            <div class="tab-content">
+
+              <!-- =========  LAYOUTS =============== -->
+
+              <div name="layout" class="container-fluid tab-pane fade in active" id="tab_layout">
+
+                <h6><strong>Page Layout</strong></h6>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <label class="chd-layout-combi center-block " >
+                      <div class="sample_body fullwidth">
+                        <div class="sample_browser">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-left"/><i class="fa fa-arrow-right"/>
+                          </div>
+                          <div class="pull-left sample_addressBar">http://www.odoo.com/this/is/a/sample/url</div>
+                          <div class="pull-right">
+                            <i class="fa fa-circle"/><i class="fa fa-circle"/><i class="fa fa-circle"/>
+                          </div>
+                        </div>
+                        <div class="sample_wrap">
+                          <div class="sample_header">
+                            <h3>Company</h3>
+                            <p class="sample_menu">Home<span></span>About Us<span></span>Contact</p>
+                          </div>
+                          <div class='sample_content'>
+                            <div class='sample_image'></div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Full width</p>
+                      <input name="layoutvar" type="radio" data-xmlid="theme_avantgarde.avantgarde_option_layout_fullwidth"/>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <label class="chd-layout-combi center-block " >
+                      <div class="sample_body boxed">
+                        <div class="sample_browser">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-left"/><i class="fa fa-arrow-right"/>
+                          </div>
+                          <div class="pull-left sample_addressBar">http://www.odoo.com/this/is/a/sample/url</div>
+                          <div class="pull-right">
+                            <i class="fa fa-circle"/><i class="fa fa-circle"/><i class="fa fa-circle"/>
+                          </div>
+                        </div>
+                        <div class="sample_wrap">
+                          <div class="sample_header">
+                            <h3>Company</h3>
+                            <p class="sample_menu">Home<span></span>About Us<span></span>Contact</p>
+                          </div>
+                          <div class='sample_content'>
+                            <div class='sample_image'></div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Boxed</p>
+                      <input name="layoutvar" type="radio" data-xmlid="theme_avantgarde.avantgarde_option_layout_boxed"/>
+                    </label>
+                  </div>
+                </div>
+              </div>  <!-- Close layout container -->
+
+              <!-- =========  THEME OPTIONS =============== -->
+              <div class="container-fluid tab-pane fade" id="tab_options" name="options">
+                <div class="row">
+                  <div class="col-xs-5 col-xs-offset-1">
+                    <label class="chd-opt-combi"> Wide Logo <input name="wide_logo" type="checkbox" data-xmlid="theme_avantgarde.avantgarde_option_layout_wide_logo"/></label>
+                  </div>
+                  <div class="col-xs-5 col-xs-offset-1">
+                    <label class="chd-opt-combi">Pre Header<input name="wide_logo" type="checkbox" data-xmlid="theme_avantgarde.avantgarde_option_layout_pre_header"/></label>
+                  </div>
+                  <div class="col-xs-5 col-xs-offset-7 avant_hide_logo">
+                    <label class="chd-opt-combi">Hide year<input name="hide_year" type="checkbox" data-xmlid="theme_avantgarde.avantgarde_option_layout_hide_year"/></label>
+                  </div>
+                </div>
+                <div class="row mt32">
+                  <div class="col-xs-12 chd-layout-combi">
+                    <div class="sample_body options">
+                      <div class="sample_browser">
+                        <div class="pull-left">
+                          <i class="fa fa-arrow-left"/><i class="fa fa-arrow-right"/>
+                        </div>
+                        <div class="pull-left sample_addressBar">http://www.odoo.com/this/is/a/sample/url</div>
+                        <div class="pull-right">
+                          <i class="fa fa-circle"/><i class="fa fa-circle"/><i class="fa fa-circle"/>
+                        </div>
+                      </div>
+                      <div class="sample_wrap">
+                        <div class="pre_header">
+                          <span class="pull-left">2015</span>
+                          <span class="pull-right">
+                            <i class="fa fa-facebook"/>
+                            <i class="fa fa-twitter"/>
+                            <i class="fa fa-google-plus"/>
+                            <i class="fa fa-envelope"/>
+                          </span>
+                        </div>
+                        <div class="sample_header">
+                          <h3>Company</h3>
+                          <i class="fa fa-bars"/>
+                          <p class="sample_menu">Home<span></span>About Us<span></span>Contact</p>
+                        </div>
+                        <div class='sample_content'>
+                          <div class='sample_image'></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- =========  COLOUR PALETTES =============== -->
+
+              <div name="color" class="container-fluid tab-pane fade" id="tab_palettes">
+                <h6><strong>Accent Color</strong></h6>
+                <div class="row">
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt palette-1">
+                        <div class="row"/>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_avantgarde.option_color_palette-1"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt palette-2">
+                        <div class="row"/>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_avantgarde.option_color_palette-2"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt palette-3">
+                        <div class="row"/>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_avantgarde.option_color_palette-3"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt palette-4">
+                        <div class="row"/>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_avantgarde.option_color_palette-4"/>
+                    </label>
+                  </div>
+                </div> <!-- row 1 -->
+
+                <div class="row">
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt palette-5">
+                        <div class="row"/>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_avantgarde.option_color_palette-5"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt palette-6">
+                        <div class="row"/>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_avantgarde.option_color_palette-6"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt palette-7">
+                        <div class="row"/>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_avantgarde.option_color_palette-7"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt palette-8">
+                        <div class="row"/>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_avantgarde.option_color_palette-8"/>
+                    </label>
+                  </div>
+                </div>
+                <div class="row text-center"><i class="fa fa-chevron-down mb16"/></div>
+                <div class="panel complementary text-center row">
+                  <p class="text-center">
+                    <small><strong>Generated Complementary color</strong></small>
+                    <i class="fa fa-cog fa-3"/>
+                  </p>
+
+                  <div class="col-xs-12">
+                    <table class="table text-center">
+                      <tr>
+                        <td class="bg-alpha-lighter"/>
+                        <td class="bg-alpha-light"/>
+                        <td class="bg-alpha"/>
+                        <td class="bg-alpha-dark"/>
+                        <td class="bg-alpha-darker"/>
+                      </tr>
+
+                      <tr>
+                        <td class="bg-beta-lighter"/>
+                        <td class="bg-beta-light"/>
+                        <td class="bg-beta"/>
+                        <td class="bg-beta-dark"/>
+                        <td class="bg-beta-darker"/>
+                      </tr>
+
+                      <tr>
+                        <td class="bg-gamma-lighter"/>
+                        <td class="bg-gamma-light"/>
+                        <td class="bg-gamma"/>
+                        <td class="bg-gamma-dark"/>
+                        <td class="bg-gamma-darker"/>
+                      </tr>
+
+                      <tr>
+                        <td class="bg-delta-lighter"/>
+                        <td class="bg-delta-light"/>
+                        <td class="bg-delta"/>
+                        <td class="bg-delta-dark"/>
+                        <td class="bg-delta-darker"/>
+                      </tr>
+
+                      <tr>
+                        <td class="bg-epsilon-lighter"/>
+                        <td class="bg-epsilon-light"/>
+                        <td class="bg-epsilon"/>
+                        <td class="bg-epsilon-dark"/>
+                        <td class="bg-epsilon-darker"/>
+                      </tr>
+
+                    </table>
+                  </div>
+                </div>
+
+                <h6><strong>Page Background</strong></h6>
+
+                <div class="row">
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt main_bg_1">
+                        <div class="row"/>
+                      </div>
+                      <input name="bg_style_var" type="radio" data-xmlid="theme_avantgarde.option_main_bg_1"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt main_bg_1_pattern">
+                        <div class="row"/>
+                      </div>
+                      <input name="bg_style_var" type="radio" data-xmlid="theme_avantgarde.option_main_bg_1_pattern"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt main_bg_2">
+                        <div class="row"/>
+                      </div>
+                      <input name="bg_style_var" type="radio" data-xmlid="theme_avantgarde.option_main_bg_2"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt main_bg_2_pattern">
+                        <div class="row"/>
+                      </div>
+                      <input name="bg_style_var" type="radio" data-xmlid="theme_avantgarde.option_main_bg_2_pattern"/>
+                    </label>
+                  </div>
+                </div> <!-- first row -->
+
+                <div class="row">
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt main_bg_3">
+                        <div class="row"/>
+                      </div>
+                      <input name="bg_style_var" type="radio" data-xmlid="theme_avantgarde.option_main_bg_3"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt main_bg_3_pattern">
+                        <div class="row"/>
+                      </div>
+                      <input name="bg_style_var" type="radio" data-xmlid="theme_avantgarde.option_main_bg_3_pattern"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt main_bg_4">
+                        <div class="row"/>
+                      </div>
+                      <input name="bg_style_var" type="radio" data-xmlid="theme_avantgarde.option_main_bg_4"/>
+                    </label>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt main_bg_4_pattern">
+                        <div class="row"/>
+                      </div>
+                      <input name="bg_style_var" type="radio" data-xmlid="theme_avantgarde.option_main_bg_4_pattern"/>
+                    </label>
+                  </div>
+                </div>
+
+              </div> <!-- Close color container -->
+
+              <!-- =========  FONTS COMBINATIONS =============== -->
+              <div name="fonts" class="container-fluid tab-pane fade " id="tab_fonts">
+
+                <div class="row">
+
+                  <div class="btn-group" role="group">
+
+                    <div class="btn-group heading" role="group">
+
+                      <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+                          Heading <span class="caret"> </span>
+                        </button>
+                        <ul class="dropdown-menu" id="heading-loader" role="menu" aria-labelledby="heading-loader">
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="abril">Abril Fatface</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_abril"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="alfa">Alfa Slab One</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_alfa_slab"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="arvo">Arvo</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_arvo"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="rufina">Rufina</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_rufina"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="lato">Lato</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_lato"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                              <a href="#" role="menuitem" tabindex="-1">
+                                  <span class="opsans_n">Open Sans</span>
+                                  <label class="chd-heading-combi">
+                                      <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_open_sans_normal"/>
+                                  </label>
+                              </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="opensans">Open Sans Condensed</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_open_sans"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="raleway">Raleway</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_raleway"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="roboto">Roboto Slab</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_roboto_slab"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="cantata">Cantata</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_cantata"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span style="font-family:sans-serif">Sans-serif default</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_sans_serif"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span style="font-family:serif">Serif default</span>
+                              <label class="chd-heading-combi">
+                                <input type="radio" name="heading-font" data-xmlid="theme_avantgarde.opt_heading_serif"/>
+                              </label>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <div class="btn-group" role="group">
+
+                      <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+                          Paragraph <span class="caret"> </span>
+                        </button>
+                        <ul class="dropdown-menu" id="paragraph-loader" role="menu" aria-labelledby="paragraph-loader">
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="abril">Abril Fatface</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_abril"/>
+                              </label>
+                            </a>
+                          </li>
+
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="arvo">Arvo</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_arvo"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="cinzel">Cinzel Decorative</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_cinzel"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="lato">Lato</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_lato"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="opsans_n">Open Sans</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_open_sans_normal"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="opensans">Open Sans Condesed</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_open_sans"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="raleway">Raleway</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_raleway"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="roboto">Roboto Slab</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_roboto_slab"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span class="vollkorn">Vollkorn</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_vollkorn"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span style="font-family:sans-serif">Sans-serif default</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_sans_serif"/>
+                              </label>
+                            </a>
+                          </li>
+                          <li role="presentation">
+                            <a href="#" role="menuitem" tabindex="-1">
+                              <span style="font-family:serif">Serif default</span>
+                              <label class="chd-paragraph-combi">
+                                <input type="radio" name="paragraph-font" data-xmlid="theme_avantgarde.opt_paragraph_serif"/>
+                              </label>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div> <!-- first .row -->
+
+                <div class="row">
+                  <hr/>
+                  <small>Preview</small>
+                  <div class="bg-white text-center fonts-preview">
+                    <p class="h2"> My sans-serif title</p>
+                    <p>There was a low rumbling of heavy sea-boots among the benches, and a still slighter shuffling of women's shoes, and all was quiet again, and every eye on the preacher. He paused a little; then kneeling in the pulpit's bows, folded his large brown hands across his chest</p>
+                  </div>
+                </div>
+
+              </div> <!-- Close fonts tab -->
+            </div> <!-- Close tab content -->
+
+            <!-- Default "Change theme" button  -->
+            <!-- <a class="changeTheme" href="/web#return_label=Website&amp;action=website.action_module_theme"><small>Change theme</small></a> -->
+
+          </div>  <!-- Close modal-body  -->
+        </div>  <!-- Close modal-content  -->
+      </div>  <!-- Close modal-dialog  -->
+    </div>  <!-- #theme_customize_modal  -->
+
+  </xpath>
+</template>
+
+  <!--
+  =====================
+  Costumization assets
+  =====================
+  -->
+
+  <!-- Paragraph fonts -->
+
+  <template id="opt_paragraph_abril" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-abril.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_arvo" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-arvo.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_cinzel" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-cinzel.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_lato" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-lato.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_open_sans_normal" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-open_sans_normal.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_open_sans" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-open_sans.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_oswald" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-oswald.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_opiret_one" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-opiret_one.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_pt_sans" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-pt_sans.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_raleway" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-raleway.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_roboto_slab" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-roboto_slab.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_vollkorn" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-vollkorn.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_sans_serif" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-sans_serif.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_paragraph_serif" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/paragraph-serif.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Heading Fonts -->
+  <template id="opt_heading_abril" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-abril.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_alfa_slab" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-alfa_slab.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_arvo" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-arvo.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_rufina" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-rufina.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_lato" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-lato.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_open_sans_normal" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-open_sans_normal.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_open_sans" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-open_sans.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_oswald" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-oswald.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_opiret_one" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-opiret_one.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_pt_sans" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-pt_sans.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_raleway" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-raleway.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_roboto_slab" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-roboto_slab.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_cantata" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-cantata.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_sans_serif" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-sans_serif.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="opt_heading_serif" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/fonts/heading-serif.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Main Layout Options -->
+  <template id="avantgarde_option_layout_fullwidth" name="avantgarde_option_layout_fullwidth" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/layouts/fullwidth.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="avantgarde_option_layout_boxed" name="avantgarde_option_layout_boxed" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/layouts/boxed.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Layout Options -->
+
+  <template id="avantgarde_option_layout_wide_logo" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/layouts/wide_logo.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="avantgarde_option_layout_pre_header" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/layouts/pre_header.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="avantgarde_option_layout_hide_year" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/layouts/hide_year.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Color Palettes  -->
+  <template id="option_color_palette-3" name="option_color_palette-3" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/palette-3.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_color_palette-4" name="option_color_palette-4" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/palette-4.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_color_palette-1" name="option_color_palette-1" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/palette-1.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_color_palette-2" name="option_color_palette-2" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/palette-2.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_color_palette-5" name="option_color_palette-5" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/palette-5.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_color_palette-6" name="option_color_palette-6" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/palette-6.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_color_palette-7" name="option_color_palette-7" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/palette-7.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_color_palette-8" name="option_color_palette-8" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/palette-8.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Page Styles -->
+  <template id="option_main_bg_1" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/option_main_bg_1.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_main_bg_1_pattern" inherit_id="website.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/option_main_bg_1_pattern.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_main_bg_2" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/option_main_bg_2.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_main_bg_2_pattern" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/option_main_bg_2_pattern.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_main_bg_3" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/option_main_bg_3.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_main_bg_3_pattern" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/option_main_bg_3_pattern.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_main_bg_4" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/option_main_bg_4.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_main_bg_4_pattern" inherit_id="website.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_avantgarde/static/src/less/options/colors/option_main_bg_4_pattern.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+</data>
+</openerp>

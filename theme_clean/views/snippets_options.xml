@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="clean_snippet_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']//ul" position="replace">
+            <ul class="dropdown-menu">
+                <li data-select-class=""><a href="#">None</a></li>
+                <li class="divider"></li>
+                <li data-choose-image="true" data-no-preview="true"><a href="#"><b>Set Custom Image...</b></a></li>
+                <li class="divider"></li>
+                <li class="col-2" data-select-class="bg-blur-01"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_01.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-blur-06"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_06.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-blur-05"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_05.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-blur-02"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_02.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-blur-03"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_03.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-blur-04"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_04.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-img-01"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_01.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-img-02"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_02.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-img-03"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_03.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-img-04"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_04.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-img-05"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_05.jpg" class="bg_option_menu_img center-block"/></a></li>
+                <li class="col-2" data-select-class="bg-img-06"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_06.jpg" class="bg_option_menu_img center-block"/></a></li>
+            </ul>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_big_image"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="after">
+            <div data-js='margin-x' data-selector=".row.simple-stepwizard-row > .simple-stepwizard-step" data-drop-in='.row.simple-stepwizard-row'></div>
+
+            <div data-js="gradientpicker" data-selector="section, .parallax, .s_color_blocks_2 [class*='col-md-'], .s_color_blocks_4 [class*='col-md-'], .s_big_image, .s_big_image_parallax, .s_team_profile_box">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-barcode"/>Gradients</a>
+                    <ul class="dropdown-menu">
+                        <li data-select-class=""><a>None</a></li>
+                        <li class="divider"/>
+                        <li class="col-2" data-select-class="bg_gradient_primary_up"><a><div class="bg_option_menu_gradient bg_gradient_primary_up center-block"/></a></li>
+                        <li class="col-2" data-select-class="bg_gradient_primary_down"><a><div class="bg_option_menu_gradient bg_gradient_primary_down center-block"/></a></li>
+                        <li class="col-2" data-select-class="bg_gradient_white_up"><a><div class="bg_option_menu_gradient bg_gradient_white_up_thumb center-block"/></a></li>
+                        <li class="col-2" data-select-class="bg_gradient_white_down"><a><div class="bg_option_menu_gradient bg_gradient_white_down_thumb center-block"/></a></li>
+                        <li class="col-2" data-select-class="bg_gradient_black_up"><a><div class="bg_option_menu_gradient bg_gradient_black_up center-block"/></a></li>
+                        <li class="col-2" data-select-class="bg_gradient_black_down"><a><div class="bg_option_menu_gradient bg_gradient_black_down center-block"/></a></li>
+                    </ul>
+                </li>
+            </div>
+
+            <div data-selector=".s_separator_color" data-drop-near="section, p, h1, h2, h3, blockquote, .well, .panel, .oe_share, .progress"></div>
+            <div data-selector=".s_separator_shade" data-drop-near="section, p, h1, h2, h3, blockquote, .well, .panel, .oe_share, .progress"></div>
+            <div data-selector=".s_text_highlight" data-drop-near="section, p, h1, h2, h3, blockquote, .well, .panel, .oe_share, .progress"></div>
+        </xpath>
+
+        <xpath expr="//div[@data-js='margin-x']" position="after">
+            <div data-js="margin-x" data-drop-near=".s_color_blocks_2 [class*='col-md-']" data-selector=".s_color_blocks_2 [class*='col-md-']"/>
+            <div data-js="margin-x" data-drop-near=".s_color_blocks_4 [class*='col-md-']" data-selector=".s_color_blocks_4 [class*='col-md-']"/>
+        </xpath>
+    </template>
+
+    <template id="clean_palette" inherit_id="web_editor.colorpicker" name="Theme Clean Palette">
+        <xpath expr="//colorpicker/div[last()]" position="after">
+            <div class="o_colorpicker_section" data-name="clean_palette" data-icon-class="fa fa-star">
+
+                <button data-color="turquoise-light">turquoise-light</button>
+                <button data-color="green-light">green-light</button>
+                <button data-color="blue-light">blue-light</button>
+                <button data-color="purple-light">purple-light</button>
+                <button data-color="pink-light">pink-light</button>
+                <button data-color="red-light">red-light</button>
+                <button data-color="brown-light">brown-light</button>
+                <button data-color="orange-light">orange-light</button>
+                <button data-color="yellow-light">yellow-light</button>
+                <button data-color="turquoise">turquoise</button>
+                <button data-color="green">green</button>
+                <button data-color="blue">blue</button>
+                <button data-color="purple">purple</button>
+                <button data-color="pink">pink</button>
+                <button data-color="red">red</button>
+                <button data-color="brown">brown</button>
+                <button data-color="orange">orange</button>
+                <button data-color="yellow">yellow</button>
+
+                <button data-color="turquoise-dark">turquoise-dark</button>
+                <button data-color="green-dark">green-dark</button>
+                <button data-color="blue-dark">blue-dark</button>
+                <button data-color="purple-dark">purple-dark</button>
+                <button data-color="pink-dark">pink-dark</button>
+                <button data-color="red-dark">red-dark</button>
+                <button data-color="brown-dark">brown-dark</button>
+                <button data-color="orange-dark">orange-dark</button>
+                <button data-color="yellow-dark">yellow-dark</button>
+
+                <button data-color="clouds">clouds</button>
+                <button data-color="silver">silver</button>
+                <button data-color="concrete">concrete</button>
+                <button data-color="stone">stone</button>
+                <button data-color="asphalt">asphalt</button>
+                <button data-color="midnight">midnight</button>
+            </div>
+        </xpath>
+    </template>
+</odoo>

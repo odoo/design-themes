@@ -1,0 +1,49 @@
+/* blockquote-box */
+
+@s_big_icon_circle_icon_size: 120px;
+.s_big_icon_circle_height_hook() {};
+.s_big_icon_circle_fa_hook() {};
+
+#wrapwrap .s_big_icon_circle {
+    text-align: center!important;
+    .s_big_icon_circle_height_hook;
+    //fix -- without this in mobile view the circles go to the top and so they hide the h2 and h3 above it.
+    .col-md-12 {
+        float: none;
+    }
+}
+
+#wrapwrap .s_big_icon_circle_box {
+    text-align: center!important;
+    width: 150px;
+    margin: 0 auto;
+
+    .fa {
+        color:white;
+        font-size: 40px;
+        .s_big_icon_circle_fa_hook;
+    }
+}
+
+#wrapwrap .s_big_icon_circle_icon {
+    width: @s_big_icon_circle_icon_size;
+    height: @s_big_icon_circle_icon_size;
+    text-align:center!important;
+    padding: 40px 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 80px;
+    margin: 0px auto;
+    h5 {
+        margin-top: 48px;
+    }
+}
+
+#wrapwrap .s_big_icon_circle_box:hover .s_big_icon_circle_icon {
+    transition: all 0.3s ease-in-out;
+    background-color: @color-gamma;
+}
+
+#wrapwrap .s_big_icon_circle_box:hover .s_big_icon_circle_content h4 {
+    transition: all 0.3s ease-in-out;
+    color: @color-gamma;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Big Image" id="s_big_image">
+        <section class="s_big_image bg-img-01 o_animation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 mt128">
+                        <img src="/web/image/theme_common.image_content_logo" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 s_big_image_content text-center mt48 bg-gamma">
+                        <h2 class="mt16">We have Awesome Products</h2>
+                        <a type="button" class="btn btn-lg btn-warning mt16 mb32">OUR CATALOG</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template name="Big Image Options" id="s_big_image-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='colorpicker'][@data-palette-exclude='grayscale']" position="attributes">
+            <attribute name="data-selector" add=".s_big_image .s_big_image_content"/>
+        </xpath>
+    </template>
+</odoo>

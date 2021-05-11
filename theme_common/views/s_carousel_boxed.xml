@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Carousel Boxed" id="s_carousel_boxed">
+        <section class="s_carousel_boxed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mt32 mb32">
+                        <h2>Carousel</h2>
+                        <h4 class="text-primary">Cycling through elements</h4>
+                        <p>Use this building block to showcase your content with an images carousel. You can edit, add or remove images using the customize options.</p>
+                        <p>And with the resize option, you can adjust the height of the slideshow to fit your needs.</p>
+                        <p><i class="fa fa-info-circle fa-1x text-primary"/> <strong>- An additional information</strong></p>
+                    </div>
+                    <div id="s_carousel_boxed" class="col-md-8 carousel slide mt32 mb32" data-interval="10000" style="height: 400px;">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_24" alt=""/>
+                                <div class="carousel-caption" contenteditable="true"><p>A <strong>caption</strong> for this image</p></div>
+                            </div>
+                            <div class="item">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_25" alt=""/>
+                                <div class="carousel-caption" contenteditable="true"><p>A <strong>caption</strong> for this image</p></div>
+                            </div>
+                            <div class="item">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_26" alt=""/>
+                                <div class="carousel-caption" contenteditable="true"><p>A <strong>caption</strong> for this image</p></div>
+                            </div>
+                        </div>
+                        <div class="carousel-control left" data-target="#s_carousel_boxed" data-slide="prev">
+                            <i class="fa fa-chevron-left fa-1x bg-white"/>
+                        </div>
+                        <div class="carousel-control right" data-target="#s_carousel_boxed" data-slide="next">
+                            <i class="fa fa-chevron-right fa-1x bg-white"/>
+                        </div>
+                        <ol class="carousel-indicators"><li data-target="#s_carousel_boxed" data-slide-to="0" class="active"></li><li data-target="#s_carousel_boxed" data-slide-to="1"></li><li data-target="#s_carousel_boxed" data-slide-to="2"></li></ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_carousel_boxed_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-selector" remove=":not(.o_gallery > .container) > .carousel" add=":not(.o_gallery > .container, .s_carousel_boxed > .container > .row) > .carousel"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" remove=":not(.o_gallery > .container) > .carousel" add=":not(.o_gallery > .container, .s_carousel_boxed > .container > .row) > .carousel"/>
+        </xpath>
+    </template>
+
+</odoo>

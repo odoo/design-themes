@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template name="Loftspace Banner 3" id="loftspace_s_3" inherit_id="theme_common.s_banner_3">
+            <xpath expr="//div[hasclass('carousel-inner')]//img" position="replace"></xpath>
+            <!-- delete second img -->
+            <xpath expr="//div[hasclass('carousel-inner')]//img" position="replace"></xpath>
+        </template>
+
+    </data>
+</openerp>

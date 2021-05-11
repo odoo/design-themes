@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="website.layout_logo_show"  model="ir.ui.view" >
+      <field name="active" eval="False"/>
+    </record>
+
+    <template id="feat" name="Features">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure demo_feat text-center">
+
+          <section class="parallax s_parallax bg-img-03 move_to_top" style="padding-top: 40px; height: 424px; overflow: hidden; background-attachment: scroll; background-position: 0px 0px;" data-scroll-background-ratio="0.3" data-scroll-background-offset="0" contenteditable="false">
+            <div>
+              <div class="oe_structure container text-center mt32" contenteditable="true">
+                <h1 class="mt128 o_animate o_not-animable title-boxed">Features</h1>
+              </div>
+            </div>
+          </section>
+
+          <div class="bg-white" style="height:80px"></div>
+
+          <section class="container bg-white">
+            <img class="img-responsive o_animate o_anim_fade_in " src="/theme_graphene/static/description/media/anima_editor.png" alt=""/>
+
+            <hr class="mb64 mt64"/>
+
+            <img class="img-responsive o_animate o_anim_fade_in" src="/theme_graphene/static/description/media/video.jpg" alt=""/>
+
+            <a href="/blocks#video" class="btn btn-default">Discover More</a>
+
+            <hr class="mb64 mt64"/>
+
+            <img class="img-responsive o_animate o_anim_fade_in" src="/theme_graphene/static/description/media/move_top.jpg" alt=""/>
+
+            <hr class="mb64 mt64"/>
+
+            <img class="img-responsive o_animate o_anim_fade_in" src="/theme_graphene/static/description/media/typo.jpg" alt=""/>
+
+            <a href="/style" class="btn btn-default">Discover More</a>
+
+            <hr class="mb64 mt64"/>
+
+            <img class="img-responsive o_animate o_anim_fade_in" src="/theme_graphene/static/description/media/maps.jpg" alt=""/>
+
+            <a href="/blocks#maps" class="btn btn-default">Discover More</a>
+
+            <hr class="mb64 mt64"/>
+
+          </section>
+
+        </div> <!-- #wrap -->
+      </t>
+    </template>
+
+    <record id="feat_page" model="website.page">
+      <field name="name">Features</field>
+      <field name="website_published">True</field>
+      <field name="url">/feat</field>
+      <field name="view_id" ref="feat" />
+    </record>
+
+    <record id="graphene_feat_menu" model="website.menu">
+      <field name="name">Features</field>
+      <field name="url">/feat</field>
+      <field name="parent_id" ref="demo_blocks_menu"/>
+      <field name="sequence" type="int">2</field>
+      <field name="page_id" ref="feat_page"/>
+    </record>
+
+</odoo>

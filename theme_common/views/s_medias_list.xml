@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Medias List" id="s_medias_list">
+        <section class="s_medias_list">
+            <div class="container">
+                <div class="row mt16 mb16">
+                    <div class="col-md-12 media">
+                        <div class="row bg-white">
+                            <div class="col-md-8 media-content">
+                                <h3 class="mt0">Media heading</h3>
+                                <p>Use this snippet to build various types of components that feature a left- or right-aligned image alongside textual content. Duplicate the element to create a list that fit your needs and maybe add some useful options</p>
+                                <div class="oe_share s_share">
+                                    <a target="_blank" class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u={url}">
+                                        <i class="img-circle fa fa-facebook fa-1x"/>
+                                    </a>
+                                    <a target="_blank" class="oe_share_twitter fa-1x" href="https://twitter.com/intent/tweet?text={title}&amp;url={url}">
+                                        <i class="img-circle fa fa-twitter fa-1x"/>
+                                    </a>
+                                    <a target="_blank" class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title={title}&amp;">
+                                        <i class="img-circle fa fa-linkedin fa-1x"/>
+                                    </a>
+                                    <a target="_blank" class="oe_share_google" href="https://plus.google.com/share?url={url}">
+                                        <i class="img-circle fa fa-google-plus fa-1x"/>
+                                    </a>
+                                    <a href="mailto:?body={url}&amp;subject={title}">
+                                        <i class="img-circle fa fa-envelope fa-1x"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img class="img img-responsive pull-right" src="/web/image/theme_common.image_content_20" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 media" style="height:260px;">
+                        <div class="row bg-white">
+                            <div class="col-md-4">
+                                <img class="img img-responsive" src="/web/image/theme_common.image_content_21" alt=""/>
+                            </div>
+                            <div class="col-md-6 media-content">
+                                <h3 class="mt0">Event Heading</h3>
+                                <p>This 5th edition of our annual Open Days was a real success thanks to you! We look forward to seeing you at the next Open Days, an important event for the open source community. During this event, we said a final goodbye to OpenERP and officially welcomed Odoo - new brand with better apps and amazing services.</p>
+                            </div>
+                            <div class="col-md-2 media-options bg-gray-lighter">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <i class="fa fa-1x fa-map-marker bg-gray-darker"/>
+                                        <p>Louvain-la-Neuve</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <i class="fa fa-1x fa-clock-o bg-gray-darker"/>
+                                        <p>3 days in June</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <i class="fa fa-1x fa-home bg-gray-darker"/>
+                                        <p>17 exhibitors</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <i class="fa fa-1x fa-user bg-gray-darker"/>
+                                        <p>90 employees</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <i class="fa fa-1x fa-users bg-gray-darker"/>
+                                        <p>2,000 participants</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <i class="fa fa-1x fa-desktop bg-alpha"/>
+                                        <p><a href="https://www.odoo.com/fr_FR/event/opendays-2014-2014-06-02-2014-06-06-5/page/website_event.Introduction-OpenDays" target="_blank">Read more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 media">
+                        <div class="row bg-white">
+                            <div class="col-md-6 media-content">
+                                <h3 class="mt0">Blog Post Heading</h3>
+                                <p>Use this component for creating a list of featured posts to highlight blog posts to which you want to bring attention. You can install Odoo Blogging Platform within two clicks and start posting.</p>
+                                <a href="/web#return_label=Website&amp;action=website.action_module_website" class="btn btn-success" target="_blank">Discover Blogs</a>
+                            </div>
+                            <div class="col-md-4">
+                                <img class="img img-responsive pull-right" src="/web/image/theme_common.image_content_20" alt=""/>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-12"><img class="img img-responsive" src="/web/image/theme_common.image_content_21" alt=""/></div>
+                                    <div class="col-md-12"><img class="img img-responsive" src="/web/image/theme_common.image_content_22" alt=""/></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

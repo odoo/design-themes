@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <template id="s_latest_posts_place_in_tab" inherit_id="website.snippets">
+      <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+        <t t-snippet="snippet_latest_posts.s_latest_posts" t-thumbnail="/snippet_latest_posts/static/src/img/s_latest_posts.jpg"/>
+        <t t-snippet="snippet_latest_posts.s_latest_posts_big_picture" t-thumbnail="/snippet_latest_posts/static/src/img/s_latest_posts_big_picture.jpg"/>
+      </xpath>
+    </template>
+
+    <!-- Snippet's Options -->
+    <template id="s_latest_posts_option" inherit_id="website.snippet_options">
+      <xpath expr="//div[@data-js='background']" position="before">
+
+        <div data-js='js_get_posts' data-selector=".js_get_posts"/>
+
+        <div data-js='js_get_posts_selectBlog' data-selector=".js_get_posts">
+          <li class="dropdown-submenu">
+            <a tabindex="-1" href="#">Limit by blog</a>
+            <ul class="dropdown-menu">
+              <li data-filter_by_blog_id="0" data-no-preview="true"><a>All blogs</a></li>
+              <!-- the blogs' list will be generated in js -->
+            </ul>
+          </li>
+        </div>
+
+        <div data-js='js_get_posts_limit' data-selector=".js_get_posts">
+          <li class="dropdown-submenu">
+            <a tabindex="-1" href="#">Limit number to...</a>
+            <ul class="dropdown-menu" data-no-preview="true">
+              <li data-posts_limit="1"><a>1 post</a></li>
+              <li data-posts_limit="2"><a>2 posts</a></li>
+              <li data-posts_limit="3"><a>3 posts</a></li>
+              <li data-posts_limit="4"><a>4 posts</a></li>
+              <li data-posts_limit="5"><a>5 posts</a></li>
+              <li data-posts_limit="6"><a>6 posts</a></li>
+              <li data-posts_limit="7"><a>7 posts</a></li>
+              <li data-posts_limit="8"><a>8 posts</a></li>
+              <li data-posts_limit="9"><a>9 posts</a></li>
+              <li data-posts_limit="10"><a>10 posts</a></li>
+            </ul>
+          </li>
+        </div>
+
+      </xpath>
+    </template>
+
+</data>
+</openerp>

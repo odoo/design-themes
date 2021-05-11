@@ -1,0 +1,21 @@
+@s_banner_parallax_height: 100vh;
+@s_banner_parallax_padding: 15px;
+@s_banner_parallax_header_shadow: none;
+@s_banner_parallax_text_color: @color-alpha;
+@s_banner_parallax_bg_position: none !important;
+@s_banner_parallax_h1_size: 50px;
+.s_banner_parallax_hero_bg_hook(){
+    width: 100%;
+    text-align: center;
+    position: relative;
+    .LinearGradient (rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+};
+.s_banner_parallax_row_hook(){
+    vertical-align: top;
+    padding: 0;
+};
+.s_banner_parallax_height_hook (){
+    @media (max-width:@screen-sm-min) {
+        height: 100vh !important;
+    }
+};

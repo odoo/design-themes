@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="demo_page" model="website.page">
+        <field name="url">/demo</field>
+        <field name="website_published">True</field>
+        <field name="name">Theme Demo</field>
+        <field name="type">qweb</field>
+        <field name="key">website.demo</field>
+        <field name="arch" type="xml">
+            <t t-name="website.demo">
+                <t t-call="website.layout">
+
+                    <div id="wrap" class="oe_structure oe_empty">
+
+                    <section class="s_banner_parallax parallax bg-img-07" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 0px;">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12 hero-bg">
+                                    <h1>Present your products</h1>
+                                    <h2>with this theme.</h2>
+                                    <img alt="#" src="/web/image/theme_common.image_content_01" class="img img-responsive"/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_product_list">
+                        <div class="container-fluid product-list">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <a href="http://www.odoo.com">
+                                        <img alt="#" src="/web/image/theme_common.image_product_01" class="img img-responsive"/>
+                                    </a>
+                                    <a class="btn btn-default center-block" href="http://www.odoo.com">
+                                        <i class="fa fa-chevron-down"/> Watch item
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <a href="http://www.odoo.com">
+                                        <img alt="#" src="/web/image/theme_common.image_product_02" class="img img-responsive"/>
+                                    </a>
+                                    <a class="btn btn-default center-block" href="http://www.odoo.com">
+                                        <i class="fa fa-chevron-down"/> Watch item
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <a href="http://www.odoo.com">
+                                        <img alt="#" src="/web/image/theme_common.image_product_03" class="img img-responsive"/>
+                                    </a>
+                                    <a class="btn btn-default center-block" href="http://www.odoo.com">
+                                        <i class="fa fa-chevron-down"/> Watch item
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <a href="http://www.odoo.com">
+                                        <img alt="#" src="/web/image/theme_common.image_product_04" class="img img-responsive"/>
+                                    </a>
+                                    <a class="btn btn-default center-block" href="http://www.odoo.com">
+                                        <i class="fa fa-chevron-down"/> Watch item
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <a href="http://www.odoo.com">
+                                        <img alt="#" src="/web/image/theme_common.image_product_05" class="img img-responsive"/>
+                                    </a>
+                                    <a class="btn btn-default center-block" href="http://www.odoo.com">
+                                        <i class="fa fa-chevron-down"/> Watch item
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                    <a href="http://www.odoo.com">
+                                        <img alt="#" src="/web/image/theme_common.image_product_06" class="img img-responsive"/>
+                                    </a>
+                                    <a class="btn btn-default center-block" href="http://www.odoo.com">
+                                        <i class="fa fa-chevron-down"/> Watch item
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="bg-delta">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt64 mb92">
+                                    <h2>Custom Pages: Have No Limits.</h2>
+                                    <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>This theme gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="s_cubes">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 bg-img-03"/>
+                                    <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                        <div class="row">
+                                            <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                                                <div class="cube-heading">
+                                                    <h4 class="text-center">A good subtitle</h4>
+                                                    <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                                </div>
+                                            </div>
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-04"/></div>
+                                        <div class="row">
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-02"/>
+                                            <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                                                <div class="cube-heading">
+                                                    <h4 class="text-center">A good subtitle</h4>
+                                                    <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_text_big_picture">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12 hero-paragraph">
+                                        <h1 class="mt32">Endless Possibilities</h1>
+                                        <h2>The only theme you need</h2>
+                                        <p>This powerful theme along with its unique structure lets you create any design style with just one theme. These simple yet powerful options allow you to create any type of website. No two versions will ever look the same.</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12 hero-image">
+                                        <img alt="#" src="/web/image/theme_common.image_content_03" class="img img-responsive"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_features_carousel carousel slide bg-alpha" data-interval="10000" id="myCarousel4">
+                            <ol class="carousel-indicators hidden" type="01"><li class="active" data-slide-to="0" data-target="#myCarousel4"/></ol>
+                            <div class="container">
+                                <div class="row content">
+                                    <div class="col-md-12 mt64">
+                                        <h2>Features</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="item image_text active">
+                                    <div class="container mb92">
+                                        <div class="row content">
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="circle center-block">
+                                                    <div class="mask bg-delta">
+                                                        <span class="text-center">01.</span>
+                                                        <p>DECISIONS, DECISIONS, AND EVEN MORE DECISIONS</p>
+                                                    </div>
+                                                </div>
+                                                <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <img class="img img-responsive center-block" src="/theme_anelusia/static/src/img/content/content_img_11.jpg" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item image_text">
+                                    <div class="container mb92">
+                                        <div class="row content">
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="circle center-block">
+                                                    <div class="mask bg-beta">
+                                                        <span class="text-center">02.</span>
+                                                        <p>DESIGN, DESIGN, AND EVEN MORE DESIGN</p>
+                                                    </div>
+                                                </div>
+                                                <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <img class="img img-responsive center-block" src="/web/image/theme_common.image_content_03"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel4" href="#myCarousel4">
+                                <i class="fa fa-chevron-left"/>
+                            </div>
+                            <div class="carousel-control right" data-slide="next" data-target="#myCarousel4" href="#myCarousel4">
+                                <i class="fa fa-chevron-right"/>
+                            </div>
+                        </section>
+                        <section class="s_big_picture_text">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 hero-image">
+                                        <img alt="#" src="/web/image/theme_common.image_content_02" class="img img-responsive"/>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 hero-paragraph">
+                                        <h1 class="mt32">Endless Possibilities</h1>
+                                        <h2>The only theme you need</h2>
+                                        <p>This powerful theme along with its unique structure lets you create any design style with just one theme. These simple yet powerful options allow you to create any type of website. No two versions will ever look the same.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_cubes">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                        <div class="row">
+                                            <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                                                <div class="cube-heading">
+                                                    <h4 class="text-center">A good subtitle</h4>
+                                                    <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                                </div>
+                                            </div>
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-04"/></div>
+                                        <div class="row">
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-02"/>
+                                            <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                                                <div class="cube-heading">
+                                                    <h4 class="text-center">A good subtitle</h4>
+                                                    <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 bg-img-01"/></div>
+                            </div>
+                        </section>
+                        <section class="s_event_list mt64 mb32">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center mt32 mb32">
+                                        <h2>Nice and Efficient Events List</h2>
+                                        <h3 class="text-muted">Display Your Last Activities</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-gamma" datetime="2014-07-20 0000">
+                                                <span class="s_event_list_day">02</span>
+                                                <span class="s_event_list_month">Jul</span>
+                                                <span class="s_event_list_year">2014</span>
+                                                <span class="s_event_list_time">12:00 AM</span>
+                                            </time>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-beta" datetime="2014-07-20 0000">
+                                                <span class="s_event_list_day">05</span>
+                                                <span class="s_event_list_month">Sep</span>
+                                                <span class="s_event_list_year">2014</span>
+                                                <span class="s_event_list_time">12:00 AM</span>
+                                            </time>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-gamma" datetime="2014-07-20 0000">
+                                                <span class="s_event_list_day">2</span>
+                                                <span class="s_event_list_month">Jul</span>
+                                                <span class="s_event_list_year">2014</span>
+                                                <span class="s_event_list_time">12:00 AM</span>
+                                            </time>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="text-center">With Theme Anelusia you get a list of your events with date, time, description, etc. Select the simple or image mode and edit your content.<br/>You can link your events to your favorite social network.</p>
+                                    </div>
+                                    <div class="col-md-6 mt32 mb32">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-epsilon" datetime="2014-07-20">
+                                                <span class="s_event_list_day">18</span>
+                                                <span class="s_event_list_month">Jul</span>
+                                                <span class="s_event_list_year">2014</span>
+                                                <span class="s_event_list_time">ALL DAY</span>
+                                            </time>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt32 mb32">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-epsilon" datetime="2014-07-20">
+                                                <span class="s_event_list_day">21</span>
+                                                <span class="s_event_list_month">Jul</span>
+                                                <span class="s_event_list_year">2014</span>
+                                                <span class="s_event_list_time">ALL DAY</span>
+                                            </time>
+                                            <div class="s_event_list_icon">
+                                                <i class="fa fa-calendar fa-5x"/>
+                                            </div>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_header_text_big_picture">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 text-center mt32 mb32">
+                                        <h1>The product which fits your needs</h1>
+                                    </div>
+                                    <div class="col-md-6 mb16 mt16">
+                                        <p>Design expression comes from the combined effect of all elements in a product. Colour tone, shape and size should direct a person's thoughts towards buying the product. Therefore it is in the product designer's best interest to consider the audiences who are most likely to be the product's end consumers. Keeping in mind how consumers will perceive the product during the design process will direct towards the product’s success in the market. However, even within a specific audience, it is challenging to cater to each possible personality within that group.</p>
+                                    </div>
+                                    <div class="col-md-6 mb16 mt16">
+                                        <p>The solution to that is to create a product that, in its designed appearance and function, expresses a personality or tells a story. Products that carry such attributes are more likely to give off a stronger expression that will attract more consumers. On that note it is important to keep in mind that design expression does not only concern the appearance of a product, but also its function. For example, as humans our appearance as well as our actions are subject to people's judgment when they are making a first impression of us.</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <img alt="#" src="/web/image/theme_common.image_content_04" class="img img-responsive"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="s_numbers bg-gray-dark">
+                        <div class="container">
+                            <div class="col-md-3 mb32 text-center">
+                                <h1 class="mb0">12.200</h1>
+                                <p>Products in total</p>
+                            </div>
+                            <div class="col-md-3 mb32 text-center">
+                                <h1 class="mb0">45</h1>
+                                <p>Shops</p>
+                            </div>
+                            <div class="col-md-3 mb32 text-center">
+                                <h1 class="mb0">10.000</h1>
+                                <p>Clients</p>
+                            </div>
+                            <div class="col-md-3 mb32 text-center">
+                                <h1 class="mb0">370</h1>
+                                <p>Employees</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_testimonial_slider carousel slide bg-gamma" data-interval="6000" data-ride="carousel" id="myCarousel4">
+                        <ol class="carousel-indicators hidden"><li class="active" data-slide-to="0" data-target="#myCarousel4"/></ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="container">
+                                    <div class="row content text-center mt64 mb64">
+                                        <h3>
+                                            <i class="fa fa-quote-left"/> Let your visitors know what they said about you.
+                                            <i class="fa fa-quote-right"/>
+                                        </h3>
+                                        <p class="lead">Name, Function / Company Inc.</p>
+                                        <div class="col-md-2 col-md-offset-5">
+                                            <img class="img-responsive center-block" src="/web/image/theme_common.image_content_08"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    </div>
+
+                </t>
+            </t>
+        </field>
+    </record>
+
+</odoo>

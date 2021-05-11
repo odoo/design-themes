@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template name="Google Map" id="s_google_map">
+    <section class="s_google_map" data-map-type="ROADMAP" data-map-color="" data-map-zoom="12" data-map-gps="(50.854975,4.3753899)" data-pin-style="flat" style="height: 488px; overflow: hidden;">
+      <div class="map_container"/>
+      <div class="description">
+        <font>Visit us:</font>
+        <span> Our office is located in the northeast of Brussels. TEL (555) 432 2365 </span>
+      </div>
+    </section>
+  </template>
+
+  <!-- Add to the top bar -->
+  <template id="google_map_snippet" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+      <t t-snippet="snippet_google_map.s_google_map" t-thumbnail="/snippet_google_map/static/src/img/thumbnail.png"/>
+    </xpath>
+  </template>
+
+  <!-- Snippet's Options -->
+  <template id="s_google_map_option" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-js='background']" position="before">
+      <div data-js="map" data-selector="section.s_google_map">
+        <li data-map="" data-no-preview="true">
+          <a><i class="fa fa-fw fa-cog"/>Map Options</a>
+        </li>
+
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-fw fa-road"/>Type</a>
+          <ul class="dropdown-menu" data-no-preview="true">
+            <li data-map_type="ROADMAP"><a>RoadMap</a></li>
+            <li data-map_type="TERRAIN"><a>Terrain</a></li>
+            <li data-map_type="SATELLITE"><a>Satellite</a></li>
+            <li data-map_type="HYBRID"><a>Hybrid</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-fw fa-search"/>Zoom</a>
+          <ul class="dropdown-menu" data-no-preview="true">
+            <li data-map_zoom="6"><a>1</a></li>
+            <li data-map_zoom="8"><a>2</a></li>
+            <li data-map_zoom="10"><a>3</a></li>
+            <li data-map_zoom="12"><a>4</a></li>
+            <li data-map_zoom="14"><a>5</a></li>
+            <li data-map_zoom="16"><a>6</a></li>
+            <li data-map_zoom="18"><a>7</a></li>
+            <li data-map_zoom="20"><a>8</a></li>
+          </ul>
+        </li>
+      </div>
+    </xpath>
+  </template>
+
+  <template id="s_google_map_remove_options" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-js='background']" position="attributes">
+      <attribute name="data-exclude" add=".s_google_map" separator=","/>
+    </xpath>
+    <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+      <attribute name="data-exclude" add=".s_google_map" separator=","/>
+    </xpath>
+  </template>
+</odoo>

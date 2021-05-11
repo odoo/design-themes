@@ -1,0 +1,180 @@
+//  ======= Variables ============================
+//  ==============================================
+//  Change main snippet's propriety easily
+
+@s_css_slider-navigation-color       : white;
+@s_css_slider-navigation-text-shadow : 0 1px 0 #333;
+
+@s_css_slider_info-bg-color   : #fff;
+@s_css_slider_info-text-color : #333;
+
+//  ====== Hooks(hook) =====================================
+//  ===========================================================
+//  Use them to inject NEW css rules or overwrite the old ones.
+//  This method is more maintenable than classic css overwrite
+//  'couse it works also if the snippet's structure will change.
+
+//  How to:
+//  in your theme, just call the backdoor like a normal
+//  CSS class adding parethesis at the end ".backdoor-name()"
+//  (this will prevent the creation of a standard CSS class).
+//  Add your rules inside. Your style will take the priority.
+//  Done.
+
+//  .s_css_slider-wrapper-hook() {
+//    border: 20px solid red;
+//    max-height: 200px;
+//  }
+
+.s_css_slider-wrapper-hook() {}
+    .s_css_slider-slider-hook() {}
+        .s_css_slider-slider-hover-hook() {};
+        .s_css_slider-navigation-hook() {};
+            .s_css_slider-navigation-buttons-hook() {};
+
+#wrapwrap .s_css_slider {
+    position: relative;
+    min-height: 150px;
+
+    .wrapper {
+        height: 100%;
+        position: relative;
+        z-index: 10;
+        .transition(width 400ms);
+        /* Force Hardware Acceleration */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+        .backface-visibility(hidden);
+
+        .s_css_slider-wrapper-hook;
+    }
+
+    .slider{
+        padding: 0;
+        height: 100%;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        .s_css_slider-slider-hook;
+    }
+
+    .slider .slide {
+        position: absolute;
+        list-style: none;
+        overflow: hidden;
+        top:0;
+        left:0;
+        margin: 0;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        .translate(100%; 0);
+        .transition(transform 300ms linear);
+        .info {
+            position: relative;
+            margin: 0;
+
+            &:not([class*=bg-]) {
+                color : @s_css_slider_info-text-color;
+                background-color : @s_css_slider_info-bg-color;
+            }
+
+            @media screen and (min-width:764px) {
+                padding: @grid-gutter-width;
+                padding-top: @grid-gutter-width*0.5;
+                .o-position-absolute(30%, @left: 60px);
+                max-width: 60%;
+            }
+        }
+        img {
+            display:block;
+            width:100%;
+        }
+        &.selected {
+            position:relative;
+            z-index:12;
+            .translate(0; 0);
+        }
+        &.move-left {
+            .translate(-100%; 0);
+        }
+    }
+    .navigation li {
+        position:absolute;
+        z-index:12;
+        top:50%;
+        list-style:none;
+        bottom:auto;
+        .translate(0; -50%);
+
+        span {
+            display: block;
+            width: 48px;
+            height: 48px;
+            overflow: hidden;
+            font-size: 1.6em;
+            color: @s_css_slider-navigation-color;
+            text-shadow: @s_css_slider-navigation-text-shadow;
+            white-space: nowrap;
+            .transition(e("opacity 200ms, visibility 0s"));
+
+            .s_css_slider-navigation-buttons-hook;
+
+            &.inactive {
+                opacity:0;
+                visibility:hidden;
+                .transition(e("opacity 200ms 0s, visibility 0s 200ms"));
+            }
+            &:hover {
+                opacity:.7;
+            }
+        }
+        &:first-of-type {
+            left:10px;
+        }
+        &:last-of-type {
+            right:10px;
+        }
+
+        .s_css_slider-navigation-hook;
+    }
+
+    .s_css_slider_pagination {
+        position:absolute;
+        padding: 0;
+        z-index: 12;
+        bottom: 30px;
+        left: 50%;
+        right:auto;
+        .translate(-50%; 0);
+
+        li {
+            display:inline-block;
+            float:left;
+            margin:0 5px;
+        }
+        li.selected a {
+            background:#f5f4f3;
+        }
+        a {
+            display:block;
+            height:12px;
+            width:12px;
+            border-radius:50%;
+            box-shadow: 0 1px 0 #333;
+            border:1px solid #f5f4f3;
+            background-color:rgba(255,255,255,0);
+            overflow:hidden;
+            text-indent:100%;
+            white-space:nowrap;
+        }
+        &:after {
+            content:"";
+            display:table;
+            clear:both;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Timeline with Icons" id="s_timeline_icons">
+        <section class="s_timeline_icons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Present your evolution with this timeline</h2>
+                        <h3 class="text-muted mb32">Tell Your Story</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <ul class="timeline">
+                            <li>
+                                <span class="timeline-date">2015</span>
+                                <div class="timeline-content">
+                                    <i class="fa fa-1x fa-child bg-beta img-circle"/>
+                                    <div class="timeline-text">
+                                        <p>A timeline is a graphical representation on which important events are marked.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <span class="timeline-date">2010</span>
+                                <div class="timeline-content">
+                                    <i class="fa fa-1x fa-bolt bg-gamma img-circle"/>
+                                    <div class="timeline-text">
+                                        <p>Use this timeline as a part of your resume, to show your visitors what you've done in the past.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline-date">2002</span>
+                                <div class="timeline-content">
+                                    <i class="fa fa-1x fa-graduation-cap bg-gamma img-circle"/>
+                                    <div class="timeline-text">
+                                        <p>You can edit, duplicate... </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content-double">
+                                    <i class="fa fa-1x fa-asterisk bg-alpha img-circle"/>
+                                    <div class="timeline-text">
+                                        <p>...and switch the timeline contents to fit your needs.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline-date">1999</span>
+                                <div class="timeline-content">
+                                    <i class="fa fa-1x fa-rocket bg-beta img-circle"/>
+                                    <div class="timeline-text">
+                                        <p>Edit this text and change it with your content.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <span class="timeline-date">1982</span>
+                                <div class="timeline-content">
+                                    <i class="fa fa-1x fa-music bg-gamma img-circle"/>
+                                    <div class="timeline-text">
+                                        <p>You can also edit the icon.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="options_s_timeline_icons" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-selector=".s_timeline_icons li" data-drop-in=".s_timeline_icons .timeline" data-drop-near=".s_timeline_icons li">
+                <li data-toggle-class="timeline-inverted"><a>Left / Right</a></li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

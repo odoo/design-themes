@@ -1,0 +1,244 @@
+/* ====================== GENERAL =====================*/
+main > * {
+    background-color: white;
+    color: @gray;
+}
+#wrap {
+    margin: 80px auto;
+    @media (max-width: @screen-sm-min) {
+        margin-top: 0px;
+    }
+    margin-bottom: 0px;
+    .text-muted{
+        &:after {
+            color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+#wrapwrap {
+    .input-group[class*="col-"] {
+        float: left;
+    }
+}
+
+/* ========== Navigation =========== */
+
+#oe_main_menu_navbar + #wrapwrap .navbar-default .container.affix {
+    top: @odoo-navbar-height;
+}
+
+.navbar-default {
+    border: none;
+    .container {
+        padding: 0px;
+        box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+        top: -100px;
+        li > .dropdown-menu {
+            border: none;
+        }
+        &.affix {
+            top: 0px;
+            .transition (top 0.5s ease-out);
+            @media (max-width: @screen-xs-max) {
+                position: relative;
+            }
+        }
+        .navbar-header {
+            margin: 0;
+            .navbar-toggle {
+                right: 25px;
+                border-color: rgba(0, 0, 0, 0);
+                @media (max-width: @screen-xs-max) {
+                    right: 5px;
+                    margin-right: 0;
+                }
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+                .icon-bar {
+                    background-color: @color-epsilon;
+                    height: 3px;
+                }
+            }
+            .navbar-brand {
+                margin-left: 25px;
+                color: @color-alpha;
+                @media (max-width: @screen-xs-max) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+#wrapwrap > header .container .navbar-collapse {
+    @media (max-width: @screen-xs-max) {
+        margin: 0;
+        padding: 0;
+        border: none !important;
+        box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+    }
+}
+#top_menu {
+    margin-right: 0px;
+    display: inline-block;
+    @media (max-width: @screen-xs-max) {
+        padding-left: 15px;
+    }
+    li {
+        &:hover {
+            @media (max-width: @screen-xs-max) {
+                border: none;
+            }
+        }
+        a {
+            color: @color-beta;
+            font-size: 18px;
+            .transition (color 0.2s ease-out);
+            &:hover {
+                color: @color-epsilon;
+            }
+            .label-primary { // shop if there is any product in cart
+                background-color: rgba(0, 0, 0, 0);
+                font-size: 12px;
+                padding: 0.4em 0.6em 0.4em;
+                position: relative;
+                top: -15px;
+            }
+        }
+    }
+    .divider {
+        display: none;
+    }
+    .active a {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .open > a:focus {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .dropdown-menu, .navbar-collapse {
+        border-radius: 0px;
+        border-color: rgba(0, 0, 0, 0);
+        li > a {
+            &:hover {
+                background: rgba(0, 0, 0, 0);
+                color: @color-epsilon;
+            }
+        }
+        .divider {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+/* ====================== Footer ======================== */
+#wrapwrap > footer {
+    background: rgba(0, 0, 0, 0);
+    .container {
+        background-color: @color-alpha;
+        padding: 0px 65px 20px 65px;
+        h4 {
+            border-left: 15px solid @color-theta;
+            margin-right: 50px;
+            padding-left: 20px;
+            color: @color-delta;
+            text-transform: uppercase;
+            span {
+                display: block;
+            }
+        }
+        p, .list-unstyled {
+            color: @gray;
+            font-size: 14px;
+        }
+    }
+    > .container:last-child {
+            margin-top: 0px !important;
+            .label {
+                padding: .6em .6em .3em;
+            }
+    }
+    #footer {
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        .row {
+            padding-top: 32px;
+        }
+        .col-md-3, .col-md-5 {
+            padding: 20px 0px;
+            h2 { // social icons in footer
+                text-transform: uppercase;
+                font-size: 25px;
+                color: @color-beta;
+                a {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+/* ====================== button style ======================== */
+
+.btn {
+    padding: 10px 20px;
+    .BorderRadius (0px);
+    .transition (all 0.3s ease-out);
+    border-width: 0px !important;
+}
+
+/* Insert blocks btn */
+
+#website-top-navbar {
+  [data-action="snippet"] {
+      padding: 2px 6px;
+  }
+}
+
+/* ====================== form style ======================== */
+
+
+.form-control:not(.js_quantity):not(.modal) {
+    box-shadow: none;
+    border-bottom: 1px solid @gray-lighter;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-radius: 0px;
+    color: @gray;
+    background-color: rgba(0, 0, 0, 0);
+    &:focus {
+        border-bottom-color: @gray;
+        border-bottom-width: 2px;
+        box-shadow: none;
+    }
+}
+
+// ======= Web Editor ======
+#oe_manipulators {
+    .oe_overlay > .oe_overlay_options > .btn-group > .oe_options {
+        .snippet-option-background {
+            > ul {
+                width: 300px;
+                padding-bottom: 20px;
+            }
+
+            li.col-2, li.col-2:hover {
+                float: left;
+                width: 140px;
+                margin: 5px 4px;
+                height: 100px;
+                padding: 3px;
+
+                a {
+                    display: block;
+                    height: 100%;
+                    background-position: center;
+                    padding: 0!important;
+                }
+            }
+        }
+    }
+}
