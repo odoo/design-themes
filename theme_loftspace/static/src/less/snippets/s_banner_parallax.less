@@ -1,0 +1,53 @@
+@s_banner_parallax_height: 100vh;
+@s_banner_parallax_padding: 0px;
+@s_banner_parallax_img_height: 350px;
+@s_banner_parallax_text-shadow: none;
+@s_banner_parallax_text_color: auto;
+@s_banner_parallax_bg_position: none !important;
+@s_banner_parallax_h1_size: 50px;
+
+.s_banner_parallax_hero_bg_hook(){
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+};
+.s_banner_parallax_row_hook(){
+    vertical-align: top;
+    padding: 0;
+    .hero-bg:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 80vh solid transparent;
+        border-bottom: 0px solid transparent;
+        border-left: 50vw solid @color-gamma;
+        position: absolute;
+        bottom: -85vh;
+        left: -2px;
+        opacity: 0.8;
+        @media (max-width:@screen-sm-max) {
+            display: none;
+        }
+    }
+    .hero-bg:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 80vh solid transparent;
+        border-bottom: 0px solid transparent;
+        border-right: 50vw solid @color-gamma;
+        position: absolute;
+        bottom: -85vh;
+        right: -2px;
+        opacity: 0.8;
+        @media (max-width:@screen-sm-max) {
+            display: none;
+        }
+    }
+};
+.s_banner_parallax_height_hook (){
+    @media (max-width:@screen-sm-max) {
+        height: 100vh !important;
+    }
+};

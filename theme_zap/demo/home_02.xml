@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <template id="demo_page_02" inherit_id="website.layout" primary="True">
+      <xpath expr="//head/t[@t-call-assets='website.assets_frontend']" position="attributes">
+        <attribute name="t-call-assets">theme_zap.demo_page_02_assets_frontend</attribute>
+      </xpath>
+    </template>
+
+    <template id="demo_page_02_assets_frontend" inherit_id="website.assets_frontend" primary="True">
+      <xpath expr="//t[@t-call='website.theme']" position="replace">
+        <link rel="stylesheet" href='/website_less/static/src/less/import_bootstrap.less'/>
+        <link rel="stylesheet" href='/website_less/static/src/less/colors.less' t-ignore="true"/>
+        <link rel="stylesheet" href='/website/static/src/css/website.css'/>
+        <link rel="stylesheet" href='/website_less/static/src/less/website.less' type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/layouts/header_dark.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/layouts/footer_dark.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/layouts/layout_boxed.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/patterns/bg_pattern_1.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/colors/colors_agency.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/fonts/font_montserrat_alt_nunito.less" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+    <template name="Zap - Demo 02" id="website.demo_page_02" page="True">
+      <t t-call="theme_zap.demo_page_02">
+        <div id="wrap" class="oe_structure">
+          <div data-oe-call="theme_common.s_text_block_image_fw"/>
+          <div data-oe-call="theme_common.s_four_columns_fw"/>
+          <section class="s_text_image_fw bg-white">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 mt16 mb16">
+                  <div class="col-text">
+                    <h2>Short Paragraph</h2>
+                    <h4 class="text-primary">With a nice image</h4>
+                    <p>A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story. Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers. Start with the customer. Find out what they want and give it to them.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-img">
+                  <img alt="" class="img img-responsive" src="/website/image/theme_common.image_content_04"/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div data-oe-call="theme_common.s_images_captions_fw"/>
+          <section class="s_image_text_fw bg-white">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 col-img">
+                  <img alt="" class="img img-responsive" src="/theme_zap/static/src/img/backgrounds/11.jpg"/>
+                </div>
+                <div class="col-md-6 mt16 mb16">
+                  <div class="col-text">
+                    <h2>Great headline</h2>
+                    <h4 class="text-primary">With a good subtitle</h4>
+                    <p>Write <strong>one or two paragraphs</strong> describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+                    <p>Start with the <strong>customer</strong>– find out what they want and give it to them.</p>
+                    <p>
+                      <a class="btn btn-default btn-sm" href="#">Get in touch</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+    </template>
+
+    <record id="demo_page_02_menu" model="website.menu">
+      <field name="name">Demo 02</field>
+      <field name="url">/page/demo_page_02</field>
+      <field name="parent_id" ref="demo_page_menu"/>
+      <field name="sequence" type="int">32</field>
+    </record>
+
+  </data>
+</openerp>

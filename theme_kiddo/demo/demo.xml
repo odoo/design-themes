@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <openerp>
+        <data>
+
+            <template id="website.demo" page="True" name="Theme Demo">
+                <t t-call="website.layout">
+
+                    <div id="wrap" class="oe_structure oe_empty">
+
+                        <section class="carousel s_banner_3 slide" data-interval="10000" id="myCarousel0">
+                            <ol class="carousel-indicators" type="01">
+                                <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item bg-img-01 active">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12 hero-bg">
+                                                <h1>Sell your products</h1>
+                                                <h2>with Theme Kiddo.</h2>
+                                                <img alt="#" src="/website/image/theme_common.image_content_01" style="img img-responsive"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item bg-img-02">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12 hero-bg">
+                                                <h1>Sell your products</h1>
+                                                <h2>with this theme.</h2>
+                                                <img alt="#" src="/website/image/theme_common.image_content_01" style="img img-responsive"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0">
+                                <i class="fa fa-chevron-left"/>
+                            </div>
+                            <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0">
+                                <i class="fa fa-chevron-right"/>
+                            </div>
+                        </section>
+
+                        <section class="jumbotron s_big_message mt0 mb0 gray">
+                            <div class="container">
+                                <h1>Sell Online. Easily.</h1>
+                                <p>Write one sentence to convince visitor about your message.</p>
+                                <p>
+                                    <a class="btn btn-info btn-lg" href="/page/website.contactus">Contact us </a>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="s_cubes">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 bg-img-03">
+                                        <div class="content">
+                                            <div class="col-xs-12 cube-heading">
+                                                <h3>Some text</h3>
+                                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, quidem!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                        <div class="row">
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12">
+                                                <div class="cube-heading">
+                                                    <h4 class="text-center">Lorem ispum</h4>
+                                                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, officiis, beatae! Excepturi quaerat, sint molestiae! Ab et est officia reprehenderit?</p>
+                                                </div>
+                                            </div>
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-04"/></div>
+                                        <div class="row">
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-02"/>
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 last">
+                                                <div class="cube-heading">
+                                                    <h4 class="text-center">Lorem ispum</h4>
+                                                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, officiis, beatae! Excepturi quaerat, sint molestiae! Ab et est officia reprehenderit?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="s_separator_block lightgray">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="separator-container"/></div>
+                            </div>
+                        </section>
+
+                        <section class="s_3_column_text oe_structure mt64 mb64">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h2>Custom Pages: Have No Limits.</h2>
+                                        <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>Kiddo gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h2>Custom Pages: Have No Limits.</h2>
+                                        <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>Kiddo gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h2>Custom Pages: Have No Limits.</h2>
+                                        <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>Kiddo gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="s_color_blocks_4 o_animation mt0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center bg-alpha">
+                                        <h4>
+                                            <span class="fa fa-check-circle fa-lg"/> A COLOR BLOCK
+                                        </h4>
+                                        <p>Highlight Your Content</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center bg-beta">
+                                        <h4>
+                                            <span class="fa fa-check-circle fa-lg"/> A COLOR BLOCK
+                                        </h4>
+                                        <p>Customize Backgrounds</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center bg-gamma">
+                                        <h4>
+                                            <span class="fa fa-check-circle fa-lg"/> A COLOR BLOCK
+                                        </h4>
+                                        <p>Resize and Duplicate</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center bg-delta">
+                                        <h4>
+                                            <span class="fa fa-check-circle fa-lg"/> A COLOR BLOCK
+                                        </h4>
+                                        <p>Select the Colors</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="s_features_carousel carousel slide" data-interval="10000" id="myCarousel1">
+                            <ol class="carousel-indicators hidden" type="01">
+                                <li class="active" data-slide-to="0" data-target="#myCarousel1"/>
+                            </ol>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 mt64">
+                                        <h2>LAYOUT OPTIONS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="item image_text active">
+                                    <div class="container mb92">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="circle center-block mt16">
+                                                    <div class="mask">
+                                                        <span class="text-center">01.</span>
+                                                        <p>DECISIONS, DECISIONS, AND EVEN MORE DECISIONS</p>
+                                                    </div>
+                                                </div>
+                                                <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <img class="img img-responsive center-block" src="/website/image/theme_common.image_content_04"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item image_text">
+                                    <div class="container mb92">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="circle center-block mt16">
+                                                    <div class="mask">
+                                                        <span class="text-center">02.</span>
+                                                        <p>DESIGN, DESIGN, AND EVEN MORE DESIGN</p>
+                                                    </div>
+                                                </div>
+                                                <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <img class="img img-responsive center-block" src="/website/image/theme_common.image_content_03"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel1" href="#myCarousel1">
+                                <i class="fa fa-chevron-left"/>
+                            </div>
+                            <div class="carousel-control right" data-slide="next" data-target="#myCarousel1" href="#myCarousel1">
+                                <i class="fa fa-chevron-right"/>
+                            </div>
+                        </section>
+
+                    </div>
+
+                </t>
+            </template>
+
+        </data>
+    </openerp>

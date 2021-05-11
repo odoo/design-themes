@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <template id="clean_snippet_options" inherit_id="website_less.snippet_options">
+
+      <xpath expr="//div[@data-js='background']//ul" position="replace">
+          <ul class="dropdown-menu">
+            <li data-select_class="oe_custom_bg" data-choose_image="choose_image"><a><b>Choose an image...</b></a></li>
+            <li><a style="background: none; padding: 5px; border-top: 1px solid #ddd;"></a></li>
+
+            <li data-select_class="bg-blur-01"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_01.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-blur-06"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_06.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-blur-05"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_05.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-blur-02"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_02.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-blur-03"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_03.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-blur-04"><a><img src="/theme_clean/static/src/img/backgrounds/bg_blur_thumb_04.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-img-01"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_01.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-img-02"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_02.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-img-03"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_03.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-img-04"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_04.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-img-05"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_05.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class="bg-img-06"><a><img src="/theme_clean/static/src/img/backgrounds/bg_img_thumb_06.jpg" class="bg_option_menu_img center-block"/></a></li>
+            <li data-select_class=""><a>None</a></li>
+          </ul>
+      </xpath>
+
+      <xpath expr="//div[@data-js='background']" position="attributes">
+        <attribute name="data-selector">section, .carousel, .parallax, .s_color_blocks_2_block, .s_color_blocks_4_block, .s_big_image</attribute>
+      </xpath>
+
+      <xpath expr="//div[@data-js='margin-x']" position="attributes">
+        <attribute name="data-selector">.row:not(.s_process_step_steps) > [class*='col-md-']</attribute>
+      </xpath>
+
+      <xpath expr="//div[@data-js='background']" position="after">
+
+        <div data-js='margin-x'
+            data-selector=".row.simple-stepwizard-row > .simple-stepwizard-step"
+            data-drop-in='.row.simple-stepwizard-row'>
+        </div>
+
+        <div data-js="gradientpicker"
+            data-selector="section, .carousel, .parallax, .s_color_blocks_2_block, .s_color_blocks_4_block, .s_big_image, .s_big_image_parallax, .s_team_profile_box">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Gradients</a>
+                <ul class="dropdown-menu">
+                    <li data-select_class="bg_gradient_primary_up"><a><div class="bg_option_menu_gradient bg_gradient_primary_up center-block"/></a></li>
+                    <li data-select_class="bg_gradient_primary_down"><a><div class="bg_option_menu_gradient bg_gradient_primary_down center-block"/></a></li>
+                    <li data-select_class="bg_gradient_white_up"><a><div class="bg_option_menu_gradient bg_gradient_white_up_thumb center-block"/></a></li>
+                    <li data-select_class="bg_gradient_white_down"><a><div class="bg_option_menu_gradient bg_gradient_white_down_thumb center-block"/></a></li>
+                    <li data-select_class="bg_gradient_black_up"><a><div class="bg_option_menu_gradient bg_gradient_black_up center-block"/></a></li>
+                    <li data-select_class="bg_gradient_black_down"><a><div class="bg_option_menu_gradient bg_gradient_black_down center-block"/></a></li>
+                    <li data-select_class=""><a>None</a></li>
+                </ul>
+            </li>
+        </div>
+
+        <div data-js="animation"
+            data-selector=".s_color_blocks_2_block, .s_color_blocks_2_block img, .s_color_blocks_4_block, .s_color_blocks_4_block img, .s_discount_box, .s_pricing_box, .s_text img, .s_text_image_2 img, .s_image_text_2 img, .s_big_image img, .s_big_image_parallax img, .s_column img, .s_two_columns img, .s_three_columns_circle img, .s_team_profile_box, .s_timeline_panel, .s_lead_bar div, .s_text_highlight">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Animate</a>
+                <ul class="dropdown-menu">
+                    <li data-select_class="o_fade_in"><a>Fade In</a></li>
+                    <li data-select_class="o_fade_in_down"><a>Fade In Down</a></li>
+                    <li data-select_class="o_fade_in_left"><a>Fade In Left</a></li>
+                    <li data-select_class="o_fade_in_right"><a>Fade In Right</a></li>
+                    <li data-select_class="o_fade_in_up"><a>Fade In Up</a></li>
+                    <li data-select_class=""><a>None</a></li>
+                </ul>
+            </li>
+        </div>
+
+        <div data-selector=".s_separator_color"
+            data-drop-near="section, p, h1, h2, h3, blockquote, .well, .panel, .oe_share, .progress">
+        </div>
+
+        <div data-selector=".s_separator_shade"
+            data-drop-near="section, p, h1, h2, h3, blockquote, .well, .panel, .oe_share, .progress">
+        </div>
+
+        <div data-selector=".s_text_highlight"
+            data-drop-near="section, p, h1, h2, h3, blockquote, .well, .panel, .oe_share, .progress">
+        </div>
+
+      </xpath>
+
+    </template>
+
+    <!-- Option colorpicker override default from website_less and add a new one for some object -->
+
+    <template id="options_colorpicker" inherit_id="website_less.snippet_options">
+      <xpath expr="//div[@data-js='colorpicker']" position="replace">
+        <div data-js='colorpicker' data-selector="section, .carousel, .parallax, .s_big_image, .s_team_profile_box, .s_color_blocks_2_block, .s_color_blocks_4_block, .s_event_list time, .s_text_highlight">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Color</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <table class="colorpicker">
+                            <tr>
+                                <td colspan="9">Theme colors</td>
+                            </tr>
+                            <tr>
+                                <td><button class="bg-alpha"></button></td>
+                                <td><button class="bg-beta"></button></td>
+                                <td><button class="bg-gamma"></button></td>
+                                <td><button class="bg-delta"></button></td>
+                                <td><button class="bg-epsilon"></button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="bg-white"></button></td>
+                                <td><button class="bg-black"></button></td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+        </div>
+
+      </xpath>
+    </template>
+
+    <!-- Colorpicker used for editor and when li of color option is empty -->
+
+    <template id="colorpicker" inherit_id="website_less.colorpicker" name="theme_clean colorpicker">
+        <xpath expr="table" position="replace">
+            <table class="colorpicker">
+                <tr>
+                    <td colspan="9">Theme colors</td>
+                </tr>
+                <tr>
+                    <td><button class="bg-alpha"></button></td>
+                    <td><button class="bg-beta"></button></td>
+                    <td><button class="bg-gamma"></button></td>
+                    <td><button class="bg-delta"></button></td>
+                    <td><button class="bg-epsilon"></button></td>
+                </tr>
+                <tr>
+                  <td colspan="9">
+                    <hr style="width: 90%; height: 1px; margin: 3px auto;"/>
+                    Custom colors
+                  </td>
+                </tr>
+                <tr>
+                    <td><button class="bg-turquoise-light"/></td>
+                    <td><button class="bg-green-light"/></td>
+                    <td><button class="bg-blue-light"/></td>
+                    <td><button class="bg-purple-light"/></td>
+                    <td><button class="bg-pink-light"/></td>
+                    <td><button class="bg-red-light"/></td>
+                    <td><button class="bg-brown-light"/></td>
+                    <td><button class="bg-orange-light"/></td>
+                    <td><button class="bg-yellow-light"/></td>
+                </tr>
+                <tr>
+                    <td><button class="bg-turquoise"/></td>
+                    <td><button class="bg-green"/></td>
+                    <td><button class="bg-blue"/></td>
+                    <td><button class="bg-purple"/></td>
+                    <td><button class="bg-pink"/></td>
+                    <td><button class="bg-red"/></td>
+                    <td><button class="bg-brown"/></td>
+                    <td><button class="bg-orange"/></td>
+                    <td><button class="bg-yellow"/></td>
+                </tr>
+                <tr>
+                    <td><button class="bg-turquoise-dark"/></td>
+                    <td><button class="bg-green-dark"/></td>
+                    <td><button class="bg-blue-dark"/></td>
+                    <td><button class="bg-purple-dark"/></td>
+                    <td><button class="bg-pink-dark"/></td>
+                    <td><button class="bg-red-dark"/></td>
+                    <td><button class="bg-brown-dark"/></td>
+                    <td><button class="bg-orange-dark"/></td>
+                    <td><button class="bg-yellow-dark"/></td>
+                </tr>
+                <tr>
+                    <td><button class="bg-white"/></td>
+                    <td><button class="bg-clouds"/></td>
+                    <td><button class="bg-silver"/></td>
+                    <td><button class="bg-concrete"/></td>
+                    <td><button class="bg-stone"/></td>
+                    <td><button class="bg-asphalt"/></td>
+                    <td><button class="bg-midnight"/></td>
+                    <td><button class="bg-black"/></td>
+                </tr>
+            </table>
+        </xpath>
+    </template>
+
+  </data>
+</openerp>

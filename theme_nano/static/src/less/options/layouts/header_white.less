@@ -1,0 +1,32 @@
+#wrapwrap header .navbar-default {
+  background-color: #fff;
+  .navbar-nav {
+    > li > a { 
+      color: @gray-darker;
+      &:hover, 
+      &:focus {
+        .color(@gray-darker; #fff);
+      }
+    }
+    li.active > a, 
+    li.active > a:hover, 
+    li.active > a:focus {
+      .color(@color-alpha; #fff); 
+    }
+  }
+  .dropdown-menu {
+    background-color: #fff;
+    > li > a {
+      color: @gray-darker;
+      &:hover,
+      &:focus {
+        .color(@gray-darker; #fff);
+      }
+    }
+    li.active > a, 
+    li.active > a:hover, 
+    li.active > a:focus {
+      .color(@color-alpha; #fff);
+    }
+  }
+}

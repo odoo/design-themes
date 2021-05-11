@@ -1,0 +1,56 @@
+@color-alpha: @color-04-alpha;
+@color-beta: @color-04-beta;
+@color-gamma: @color-04-gamma;
+@color-delta: @color-04-delta;
+@color-epsilon: @color-04-epsilon;
+
+@gray-darker: #1d2127;
+@gray: #AFAD94;
+@gray-lighter: #efecca;
+
+@link-color: @color-alpha;
+@link-hover-color: darken(@color-alpha, 15%);
+
+.white(@gray-darker);
+.gray-lighter(@gray-darker);
+.gray(#fff);
+.gray-darker(#fff);
+.alpha(#fff);
+.beta(#fff);
+.gamma(#fff);
+.delta(#fff);
+.epsilon(@gray-darker);
+
+@preheader-icons-color: darken(@color-alpha, 15%);
+
+.preheader-style() when (@nav-style-white = true){
+  @preheader-link-color: #fff;
+  @preheader-text-color: #fff;
+
+  @navbar-link-color: @gray-darker;
+  @navbar-link-active-bg: @color-alpha;
+  @navbar-link-active-color: #fff;
+  @navbar-link-hover-color: darken(@color-alpha, 10%);
+}
+
+.preheader-style() when (@nav-style-gray-lighter = true){
+  @preheader-link-color: @gray-lighter;
+  @preheader-text-color: @gray-lighter;
+
+  @navbar-link-color: @gray-darker;
+  @navbar-link-active-bg: @color-alpha;
+  @navbar-link-active-color: @gray-lighter;
+  @navbar-link-hover-color: @color-alpha;
+}
+
+.preheader-style() when (@nav-style-gray-darker = true){
+  @preheader-link-color: @gray-darker;
+  @preheader-text-color: #fff;
+  
+  @navbar-link-color: #fff;
+  @navbar-link-active-bg: @color-alpha;
+  @navbar-link-active-color: @gray-darker;
+  @navbar-link-hover-color: @color-alpha;
+}
+
+.preheader-style();

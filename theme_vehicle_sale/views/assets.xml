@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+  <data>
+
+    <template id="less" inherit_id="website_less.assets_frontend" active="True" priority="1">
+      <xpath expr="." position="inside">
+
+        <link href="/theme_vehicle_sale/static/src/less/layout_sale.less" rel="stylesheet" type="text/less"/>
+
+      </xpath>
+    </template>
+
+  </data>
+</openerp>

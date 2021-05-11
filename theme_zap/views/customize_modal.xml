@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+<!-- Customize - Customize Theme
+     ========================================================================== -->
+
+    <template id="zap_customize_modal" inherit_id="website_less.theme_customize" name="zap Customize Modal">
+      <xpath expr="div" position="replace">
+        <div id="theme_customize_modal" class="modal fade">
+          <div id="zap_customize_modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="loading_backdrop"></div>
+                <!-- Header -->
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    <i class="fa fa-close fa-1x"></i>
+                    <span class="sr-only">Close</span>
+                  </button>
+                  <h3 class="modal-title">Options</h3>
+                </div>
+                <!-- Body -->
+                <div class="modal-body">
+                  
+                  <div id="zap_customize_modal_collapse" class="panel-group" role="tablist" aria-multiselectable="true">
+
+                    <!-- Colors -->
+                    <div class="panel">
+                      <!-- Colors heading -->
+                      <div id="zap_heading_colors" class="panel-heading" role="tab">
+                        <a href="#zap_header_footer_colors" class="" data-toggle="collapse" data-parent="#zap_customize_modal_collapse" aria-expanded="true" aria-controls="zap_header_footer_colors">Colors</a>
+                      </div>
+                      <!-- Colors body -->
+                      <div id="zap_header_footer_colors" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="zap_heading_colors">
+                        <div class="panel-body">
+                          <div class="row">
+                            <!-- Header -->
+                            <div class="col-md-12">
+                              <h5 class="mt0">Header</h5>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input id="header_bgcolor_white" type="radio" name="header_bgcolor_var" data-xmlid="theme_zap.header_white"/>
+                                <span class="white"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input id="header_bgcolor_gray_lighter" type="radio" name="header_bgcolor_var" data-xmlid="theme_zap.header_light"/>
+                                <span class="gray-lighter"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input id="header_bgcolor_gray_darker" type="radio" name="header_bgcolor_var" data-xmlid="theme_zap.header_dark"/>
+                                <span class="gray-darker"></span>
+                              </label>
+                            </div>
+                            <!-- Schemes -->
+                            <div class="col-md-12">
+                              <h5>Schemes</h5>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label class="icon checked">
+                                <input id="scheme_color_press" type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_press"/>
+                                <span class="press-alpha"></span>
+                                <span class="press-beta"></span>
+                                <span class="press-gamma"></span>
+                                <span class="press-delta"></span>
+                                <span class="press-epsilon"></span>
+                              </label>
+                              <label class="icon">
+                                <input id="scheme_color_food" type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_food"/>
+                                <span class="food-alpha"></span>
+                                <span class="food-beta"></span>
+                                <span class="food-gamma"></span>
+                                <span class="food-delta"></span>
+                                <span class="food-epsilon"></span>
+                              </label>
+                              <label class="icon">
+                                <input id="scheme_color_environment" type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_environment"/>
+                                <span class="environment-alpha"></span>
+                                <span class="environment-beta"></span>
+                                <span class="environment-gamma"></span>
+                                <span class="environment-delta"></span>
+                                <span class="environment-epsilon"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label class="icon">
+                                <input id="scheme_color_agency" type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_agency"/>
+                                <span class="agency-alpha"></span>
+                                <span class="agency-beta"></span>
+                                <span class="agency-gamma"></span>
+                                <span class="agency-delta"></span>
+                                <span class="agency-epsilon"></span>
+                              </label>
+                              <label class="icon">
+                                <input id="scheme_color_technology" type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_technology"/>
+                                <span class="technology-alpha"></span>
+                                <span class="technology-beta"></span>
+                                <span class="technology-gamma"></span>
+                                <span class="technology-delta"></span>
+                                <span class="technology-epsilon"></span>
+                              </label>
+                              <label class="icon">
+                                <input id="scheme_color_travel" type="radio" name="scheme_color_var" data-xmlid="theme_zap.colors_travel"/>
+                                <span class="travel-alpha"></span>
+                                <span class="travel-beta"></span>
+                                <span class="travel-gamma"></span>
+                                <span class="travel-delta"></span>
+                                <span class="travel-epsilon"></span>
+                              </label>
+                            </div>
+                            <!-- Footer -->
+                            <div class="col-md-12">
+                              <h5>Footer</h5>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input id="footer_bgcolor_white" type="radio" name="footer_bgcolor_var" data-xmlid="theme_zap.footer_white"/>
+                                <span class="white"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input id="footer_bgcolor_gray_lighter" type="radio" name="footer_bgcolor_var" data-xmlid="theme_zap.footer_light"/>
+                                <span class="gray-lighter"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input id="footer_bgcolor_gray_darker" type="radio" name="footer_bgcolor_var" data-xmlid="theme_zap.footer_dark"/>
+                                <span class="gray-darker"></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Fonts -->
+                    <div class="panel">
+                      <!-- Fonts heading -->
+                      <div id="zap_heading_fonts" class="panel-heading" role="tab">
+                        <a href="#zap_fonts" class="collapsed" data-toggle="collapse" data-parent="#zap_customize_modal_collapse" aria-expanded="false" aria-controls="zap_fonts">Fonts</a>
+                      </div>
+                      <!-- Fonts body -->
+                      <div id="zap_fonts" class="panel-collapse collapse" role="tabpanel" aria-labelledby="zap_heading_fonts">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label class="icon checked">
+                                <input name="font_var" type="radio" data-xmlid="theme_zap.font_advent_pro_oxygen"/>Advent Pro / Oxygen
+                              </label>
+                              <label class="icon">
+                                <input name="font_var" type="radio" data-xmlid="theme_zap.font_dosis_open_sans"/>Dosis / Open Sans
+                              </label>
+                              <label class="icon">
+                                <input name="font_var" type="radio" data-xmlid="theme_zap.font_lato_merriweather"/>Merriweather / Lato
+                              </label>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label class="icon">
+                                <input name="font_var" type="radio" data-xmlid="theme_zap.font_montserrat_alt_nunito"/>Montserrat / Nunito
+                              </label>
+                              <label class="icon">
+                                <input name="font_var" type="radio" data-xmlid="theme_zap.font_oswald_lato"/>Oswald / Lato
+                              </label>
+                              <label class="icon">
+                                <input name="font_var" type="radio" data-xmlid="theme_zap.font_roboto_slab_roboto"/>Roboto Slab / Roboto
+                              </label>
+                              <!-- 
+                              <label class="icon">
+                                <input name="font_var" type="radio" data-xmlid="theme_zap.font_medula_one_abel"/>Medula One / Abel
+                              </label>
+                              <label class="icon">
+                                <input name="font_var" type="radio" data-xmlid="theme_zap.font_amatic_josefin_sans"/>Amatic / Josefin Sans
+                              </label> 
+                              -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Layout -->
+                    <div class="panel">
+                      <!-- Layout heading -->
+                      <div id="zap_heading_layouts" class="panel-heading" role="tab">
+                        <a href="#zap_layouts" class="collapsed" data-toggle="collapse" data-parent="#zap_customize_modal_collapse" aria-expanded="false" aria-controls="zap_layouts">Layout</a>
+                      </div>
+                      <!-- Layout body -->
+                      <div id="zap_layouts" class="panel-collapse collapse" role="tabpanel" aria-labelledby="zap_heading_layouts">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                              <label class="icon checked">
+                                <input name="layout_var" type="radio" data-xmlid=""/>Full width
+                              </label>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                              <label class="icon">
+                                <input name="layout_var" type="radio" data-xmlid="theme_zap.layout_boxed"/>Boxed
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Patterns -->
+                    <div class="panel">
+                      <!-- Patterns heading -->
+                      <div id="zap_heading_patterns" class="panel-heading" role="tab">
+                        <a href="#zap_patterns" class="collapsed" data-toggle="collapse" data-parent="#zap_customize_modal_collapse" aria-expanded="false" aria-controls="zap_patterns">Patterns</a>
+                      </div>
+                      <!-- Patterns body -->
+                      <div id="zap_patterns" class="panel-collapse collapse" role="tabpanel" aria-labelledby="zap_heading_patterns">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid=""/>
+                                <span class="none"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid="theme_zap.bg_pattern_1"/>
+                                <span style="background-image:url('/website/image/theme_zap.bg_pattern_01');"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid="theme_zap.bg_pattern_2"/>
+                                <span style="background-image:url('/website/image/theme_zap.bg_pattern_02');"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid="theme_zap.bg_pattern_3"/>
+                                <span style="background-image:url('/website/image/theme_zap.bg_pattern_03');"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid="theme_zap.bg_pattern_4"/>
+                                <span style="background-image:url('/website/image/theme_zap.bg_pattern_04');"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid="theme_zap.bg_pattern_5"/>
+                                <span style="background-image:url('/website/image/theme_zap.bg_pattern_05');"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid="theme_zap.bg_pattern_6"/>
+                                <span style="background-image:url('/website/image/theme_zap.bg_pattern_06');"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid="theme_zap.bg_pattern_7"/>
+                                <span style="background-image:url('/website/image/theme_zap.bg_pattern_07');"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid="theme_zap.bg_pattern_8"/>
+                                <span style="background-image:url('/website/image/theme_zap.bg_pattern_08');"></span>
+                              </label>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              <label class="icon">
+                                <input name="bgpattern_var" type="radio" data-xmlid="theme_zap.bg_pattern_9"/>
+                                <span style="background-image:url('/website/image/theme_zap.bg_pattern_09');"></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FOOTER -->
+                <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </xpath>
+    </template>
+
+
+<!-- Header colors
+     ========================================================================== -->
+
+    <template id="header_white" name="header_white" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/layouts/header_white.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="header_light" name="header_light" inherit_id="website.theme" active="True">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/layouts/header_light.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="header_dark" name="header_dark" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/layouts/header_dark.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+
+<!-- Footer colors
+     ========================================================================== -->
+
+    <template id="footer_white" name="footer_white" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/layouts/footer_white.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="footer_light" name="footer_light" inherit_id="website.theme" active="True">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/layouts/footer_light.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="footer_dark" name="footer_dark" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/layouts/footer_dark.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+
+<!-- Colors schemes
+     ========================================================================== -->
+
+    <template id="colors_press" name="colors_press" inherit_id="website.theme" active="True">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_press.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_environment" name="colors_environment" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_environment.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_agency" name="colors_agency" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_agency.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_technology" name="colors_technology" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_technology.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_travel" name="colors_travel" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_travel.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="colors_food" name="colors_food" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/colors/colors_food.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+
+<!-- Fonts
+     ========================================================================== -->
+
+    <template id="font_advent_pro_oxygen" name="font_advent_pro_oxygen" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_advent_pro_oxygen.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_dosis_open_sans" name="font_dosis_open_sans" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_dosis_open_sans.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_lato_merriweather" name="font_lato_merriweather" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_lato_merriweather.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_montserrat_alt_nunito" name="font_montserrat_alt_nunito" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_montserrat_alt_nunito.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_oswald_lato" name="font_oswald_lato" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_oswald_lato.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_roboto_slab_roboto" name="font_roboto_slab_roboto" inherit_id="website.theme" active="True">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_roboto_slab_roboto.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+<!-- 
+    <template id="font_medula_one_abel" name="font_medula_one_abel" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_medula_one_abel.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="font_amatic_josefin_sans" name="font_amatic_josefin_sans" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/fonts/font_amatic_josefin_sans.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+ -->
+
+<!-- Layouts
+     ========================================================================== -->
+
+    <template id="layout_boxed" name="layout_boxed" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/layouts/layout_boxed.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+
+<!-- Background patterns
+     ========================================================================== -->
+
+    <template id="bg_pattern_1" name="bg_pattern_1" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/patterns/bg_pattern_1.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="bg_pattern_2" name="bg_pattern_2" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/patterns/bg_pattern_2.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="bg_pattern_3" name="bg_pattern_3" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/patterns/bg_pattern_3.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="bg_pattern_4" name="bg_pattern_4" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/patterns/bg_pattern_4.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="bg_pattern_5" name="bg_pattern_5" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/patterns/bg_pattern_5.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="bg_pattern_6" name="bg_pattern_6" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/patterns/bg_pattern_6.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="bg_pattern_7" name="bg_pattern_7" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/patterns/bg_pattern_7.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="bg_pattern_8" name="bg_pattern_8" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/patterns/bg_pattern_8.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <template id="bg_pattern_9" name="bg_pattern_9" inherit_id="website.theme" active="False">
+      <xpath expr="." position="inside"><link href="/theme_zap/static/src/less/options/patterns/bg_pattern_9.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+  </data>
+</openerp>

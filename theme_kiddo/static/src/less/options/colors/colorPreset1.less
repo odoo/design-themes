@@ -1,0 +1,88 @@
+@color-alpha: @white;
+@color-beta: @colorPreset1_color3; //green
+@color-gamma: @colorPreset1_color2; //orange
+@color-delta: @colorPreset1_color4; //blue
+@color-epsilon: @colorPreset1_color1; //gray
+@color-zeta: @colorPreset1_color3_dark;
+@color-eta: @colorPreset1_color3_light;
+@color-theta: @colorPreset1_color2_dark;
+@color-iota: @colorPreset1_color2_light;
+@color-kappa: @colorPreset1_color4_dark;
+@color-lambda: @colorPreset1_color4_light;
+@color-mu: @colorPreset1_color1_dark;
+@color-nu: @colorPreset1_color1_light;
+
+/* ============= FONT COLORS ================== */
+
+.text-alpha {color: @white;}
+.text-beta {color: @colorPreset1_color1;}
+.text-gamma {color: @colorPreset1_color2;}
+.text-delta {color: @colorPreset1_color3;}
+.text-epsilon {color: @colorPreset1_color4;}
+
+.text-primary {color: @color-alpha;}
+.text-success {color: @color-epsilon;}
+.text-info {color: @color-gamma;}
+.text-warning {color: @color-beta;}
+.text-danger {color: @color-delta;}
+
+/* ============= THEMES BUTTONS =============== */
+
+@btn-default-bg: @color-alpha;
+@btn-primary-bg: @color-beta;
+@btn-success-bg: @color-gamma;
+@btn-info-bg: @color-delta;
+@btn-warning-bg: @color-epsilon;
+@btn-danger-bg: @black;
+
+/* ============= BG USED FOR NAV ============== */
+
+.bgrgba(0, 0, 0, 0) {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* ============= BGCOLORS ===================== */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-gamma, @color-epsilon);
+    .fa {color: @gray;}
+}
+
+.bg-beta {
+    .SetDisplayColor (@color-epsilon, @color-alpha);
+    .LinkColor (@color-gamma, @color-gamma);
+}
+
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @color-alpha);
+    .LinkColor (@color-epsilon, @color-epsilon);
+}
+
+.bg-delta {
+    .SetDisplayColor (@color-beta, @color-alpha);
+    .LinkColor (#db771f, #db771f);
+}
+
+.bg-epsilon {
+    .SetDisplayColor (@color-delta, @color-alpha);
+    .LinkColor (#3080d1, #3080d1);
+}
+
+/* ============= TYPO ========================= */
+
+a {
+    color: @color-gamma;
+    &:hover, &:focus {
+        color: @color-beta;
+    }
+}
+
+/* ============= STRUCTURE ==================== */
+
+#wrapwrap > footer #footer h3 {
+    color: @color-beta;
+}
+.in, .collapsing {
+    background-color: @color-alpha !important;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+
+        <template name="Loftspace Banner Parallax" id="loftspace_s_banner_parallax" inherit_id="theme_common.s_banner_parallax">
+            <xpath expr="//div[contains(@class, 'col-md-9')]/*[last()]" position="replace">
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

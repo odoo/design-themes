@@ -1,0 +1,42 @@
+body {
+    p, span, a, i {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+h5, h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+@media (max-width: @screen-xs-max) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+}

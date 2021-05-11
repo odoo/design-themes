@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="zap_options" inherit_id="website_less.snippet_options">
+
+<!-- EXTEND
+     ========================================================================== -->
+
+  <!-- BACKGROUND option -->
+  <xpath expr="//div[@data-js='background']" position="attributes">
+    <attribute name="data-selector">section, :not(.o_gallery > .container) > .carousel, .parallax, .s_images_captions_fw [class*="col-"], .media-options, .profile-body, .profile-options > [class*="col-"], .carousel-box-content, .s_three_columns_carousel [class*="col-"], .s_four_columns_fw [class*="col-"]</attribute>
+  </xpath>
+
+  <!-- CONTENT option -->
+  <xpath expr="//div[@data-js='content']" position="attributes">
+    <attribute name="data-selector">blockquote, .s_well, .s_panel, .oe_share, hr, .s_label</attribute>
+  </xpath>
+
+  <!-- MARGIN Y option -->
+  <xpath expr="//div[@data-js='margin-y']" position="attributes">
+    <attribute name="data-selector">section, .row > [class*='col-md-'], .carousel, .parallax, hr, h1, h2, h3, h4, h5, h6</attribute>
+  </xpath>
+
+  <!-- RESIZE option -->
+  <xpath expr="//div[@data-js='resize']" position="attributes">
+      <attribute name="data-selector">section, .carousel, .parallax, .row .media</attribute>
+  </xpath>
+
+
+<!-- BACKGROUND IMAGES option
+     ========================================================================== -->
+
+  <xpath expr="//div[@data-js='background']/li/a" position="replace">
+    <a tabindex="-1" href="#"><i class="fa fa-1x fa-image"></i>Background</a>
+    <ul class="zap-bg-img-selector dropdown-menu">
+      <!-- Choose an image -->
+      <li data-select_class="oe_custom_bg" data-choose_image="choose_image"><a><b>Choose an image...</b></a></li>
+      <!-- None -->
+      <li data-select_class=""><a>None</a></li>
+      <li><a style="background: none; padding: 5px; border-top: 1px solid #ddd;"></a></li>
+      <!-- Custom -->
+      <span class="inline">
+        <li data-select_class="bg-img-01"><a><img src="/website/image/theme_zap.bg_img_01/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-02"><a><img src="/website/image/theme_zap.bg_img_02/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-03"><a><img src="/website/image/theme_zap.bg_img_03/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-04"><a><img src="/website/image/theme_zap.bg_img_04/120x120" alt=""/></a></li>
+        <br/>
+        <li data-select_class="bg-img-05"><a><img src="/website/image/theme_zap.bg_img_05/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-06"><a><img src="/website/image/theme_zap.bg_img_06/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-07"><a><img src="/website/image/theme_zap.bg_img_07/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-08"><a><img src="/website/image/theme_zap.bg_img_08/120x120" alt=""/></a></li>
+        <br/>
+        <li data-select_class="bg-img-09"><a><img src="/website/image/theme_zap.bg_img_09/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-10"><a><img src="/website/image/theme_zap.bg_img_10/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-11"><a><img src="/website/image/theme_zap.bg_img_11/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-12"><a><img src="/website/image/theme_zap.bg_img_12/120x120" alt=""/></a></li>
+        <br/>
+        <li data-select_class="bg-img-13"><a><img src="/website/image/theme_zap.bg_img_13/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-14"><a><img src="/website/image/theme_zap.bg_img_14/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-15"><a><img src="/website/image/theme_zap.bg_img_15/120x120" alt=""/></a></li>
+        <li data-select_class="bg-img-16"><a><img src="/website/image/theme_zap.bg_img_16/120x120" alt=""/></a></li>
+      </span>
+    </ul>
+  </xpath>
+
+
+<!-- BACKGROUND PATTERNS option
+     ========================================================================== -->
+
+  <xpath expr="//div[@data-js='background']/li/ul" position="after">
+    <li class="dropdown-submenu">
+      <a tabindex="-1" href="#"><i class="fa fa-cubes fa-1x"></i>Pattern</a>
+      <ul class="zap-colorpicker dropdown-menu">
+        <!-- None -->
+        <li data-select_class=""><a href="#" class="none"></a></li>
+        <!-- Custom -->
+        <li data-select_class="bg-pattern-01">
+          <a href="#" class="snippets-option-pattern" style="background-image:url('/website/image/theme_zap.bg_pattern_01');"></a>
+        </li>
+        <li data-select_class="bg-pattern-02">
+          <a href="#" class="snippets-option-pattern" style="background-image:url('/website/image/theme_zap.bg_pattern_02');"></a>
+        </li>
+        <li data-select_class="bg-pattern-03">
+          <a href="#" class="snippets-option-pattern" style="background-image:url('/website/image/theme_zap.bg_pattern_03');"></a>
+        </li>
+        <li data-select_class="bg-pattern-04">
+          <a href="#" class="snippets-option-pattern" style="background-image:url('/website/image/theme_zap.bg_pattern_04');"></a>
+        </li>
+        <br/>
+        <li data-select_class="bg-pattern-05">
+          <a href="#" class="snippets-option-pattern" style="background-image:url('/website/image/theme_zap.bg_pattern_05');"></a>
+        </li>
+        <li data-select_class="bg-pattern-06">
+          <a href="#" class="snippets-option-pattern" style="background-image:url('/website/image/theme_zap.bg_pattern_06');"></a>
+        </li>
+        <li data-select_class="bg-pattern-07">
+          <a href="#" class="snippets-option-pattern" style="background-image:url('/website/image/theme_zap.bg_pattern_07');"></a>
+        </li>
+        <li data-select_class="bg-pattern-08">
+          <a href="#" class="snippets-option-pattern" style="background-image:url('/website/image/theme_zap.bg_pattern_08');"></a>
+        </li>
+        <li data-select_class="bg-pattern-09">
+          <a href="#" class="snippets-option-pattern" style="background-image:url('/website/image/theme_zap.bg_pattern_09');"></a>
+        </li>
+      </ul>
+    </li>
+  </xpath>
+
+
+<!-- BACKGROUND COLORS option
+     ========================================================================== -->
+
+  <!-- DESACTIVATE default Colorpicker -->
+  <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+    <attribute name="data-selector">.no-colorpicker</attribute>
+  </xpath>
+
+  <!-- ADD new options -->
+  <xpath expr="//div[@data-js='background']/li/ul" position="after">
+    <li class="dropdown-submenu">
+      <a tabindex="-1" href="#"><i class="fa fa-tint fa-1x"></i>Color</a>
+      <ul class="zap-colorpicker dropdown-menu">
+        <li data-select_class=""><a href="#" class="none"></a></li>
+        <li data-select_class="bg-white"><a href="#" class="white"></a></li>
+        <li data-select_class="bg-gray-lighter"><a href="#" class="gray-lighter"></a></li>
+        <li data-select_class="bg-gray"><a href="#" class="gray"></a></li>
+        <li data-select_class="bg-gray-darker"><a href="#" class="gray-darker"></a></li>
+        <br/>
+        <li data-select_class="bg-alpha"><a href="#" class="color-alpha"></a></li>
+        <li data-select_class="bg-beta"><a href="#" class="color-beta"></a></li>
+        <li data-select_class="bg-gamma"><a href="#" class="color-gamma"></a></li>
+        <li data-select_class="bg-delta"><a href="#" class="color-delta"></a></li>
+        <li data-select_class="bg-epsilon"><a href="#" class="color-epsilon"></a></li>
+      </ul>
+    </li>
+  </xpath>
+
+
+<!-- COLORS option
+     ========================================================================== -->
+
+  <!-- FA COLORS option -->
+  <xpath expr="//div[@data-js='media']" position="after">
+    <div data-selector=".fa">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-1x fa-tint"></i>Color</a>
+        <ul class="zap-colorpicker dropdown-menu">
+          <li data-select_class="bg-none"><a href="#" class="none"></a></li>
+          <li data-select_class="bg-white"><a href="#" class="white"></a></li>
+          <li data-select_class="bg-gray-lighter"><a href="#" class="gray-lighter"></a></li>
+          <li data-select_class="bg-gray"><a href="#" class="gray"></a></li>
+          <li data-select_class="bg-gray-darker"><a href="#" class="gray-darker"></a></li>
+          <br/>
+          <li data-select_class="bg-alpha"><a href="#" class="color-alpha"></a></li>
+          <li data-select_class="bg-beta"><a href="#" class="color-beta"></a></li>
+          <li data-select_class="bg-gamma"><a href="#" class="color-gamma"></a></li>
+          <li data-select_class="bg-delta"><a href="#" class="color-delta"></a></li>
+          <li data-select_class="bg-epsilon"><a href="#" class="color-epsilon"></a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+  <!-- LABEL COLORS option -->
+  <xpath expr="//div[@data-js='media']" position="after">
+    <div data-selector=".label">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-1x fa-tint"></i>Color</a>
+        <ul class="zap-colorpicker dropdown-menu">
+          <li data-select_class="bg-white"><a href="#" class="white"></a></li>
+          <li data-select_class="bg-gray-lighter"><a href="#" class="gray-lighter"></a></li>
+          <li data-select_class="bg-gray"><a href="#" class="gray"></a></li>
+          <li data-select_class="bg-gray-darker"><a href="#" class="gray-darker"></a></li>
+          <br/>
+          <li data-select_class="bg-alpha"><a href="#" class="color-alpha"></a></li>
+          <li data-select_class="bg-beta"><a href="#" class="color-beta"></a></li>
+          <li data-select_class="bg-gamma"><a href="#" class="color-gamma"></a></li>
+          <li data-select_class="bg-delta"><a href="#" class="color-delta"></a></li>
+          <li data-select_class="bg-epsilon"><a href="#" class="color-epsilon"></a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+  <!-- PANEL COLORS (including tabs & collapse snippets) -->
+  <xpath expr="//div[@data-js='colorpicker']" position="after">
+    <div data-selector=".s_tabs [class*='col-'], .s_collapse .panel, .s_panel">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-tint fa-1x"></i>Color</a>
+        <ul class="zap-colorpicker dropdown-menu">
+          <li data-select_class="panel-white"><a href="#" class="white"></a></li>
+          <li data-select_class="panel-gray-lighter"><a href="#" class="gray-lighter"></a></li>
+          <li data-select_class="panel-gray"><a href="#" class="gray"></a></li>
+          <li data-select_class="panel-gray-darker"><a href="#" class="gray-darker"></a></li>
+          <br/>
+          <li data-select_class="panel-alpha"><a href="#" class="color-alpha"></a></li>
+          <li data-select_class="panel-beta"><a href="#" class="color-beta"></a></li>
+          <li data-select_class="panel-gamma"><a href="#" class="color-gamma"></a></li>
+          <li data-select_class="panel-delta"><a href="#" class="color-delta"></a></li>
+          <li data-select_class="panel-epsilon"><a href="#" class="color-epsilon"></a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+  <!-- WELL COLORS -->
+  <xpath expr="//div[@data-js='colorpicker']" position="after">
+    <div data-selector=".s_well">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-tint fa-1x"></i>Color</a>
+        <ul class="zap-colorpicker dropdown-menu">
+          <li data-select_class="well-white"><a href="#" class="white"></a></li>
+          <li data-select_class="well-gray-lighter"><a href="#" class="gray-lighter"></a></li>
+          <li data-select_class="well-gray"><a href="#" class="gray"></a></li>
+          <li data-select_class="well-gray-darker"><a href="#" class="gray-darker"></a></li>
+          <br/>
+          <li data-select_class="well-alpha"><a href="#" class="color-alpha"></a></li>
+          <li data-select_class="well-beta"><a href="#" class="color-beta"></a></li>
+          <li data-select_class="well-gamma"><a href="#" class="color-gamma"></a></li>
+          <li data-select_class="well-delta"><a href="#" class="color-delta"></a></li>
+          <li data-select_class="well-epsilon"><a href="#" class="color-epsilon"></a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+  <!-- TITLE COLORS -->
+  <xpath expr="//div[@data-js='colorpicker']" position="after">
+    <div data-selector="h1, h2, h3, h4, h5, h6">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-tint fa-1x"></i>Color</a>
+        <ul class="zap-colorpicker dropdown-menu">
+          <li data-select_class="text-white"><a href="#" class="white"></a></li>
+          <li data-select_class="text-gray-lighter"><a href="#" class="gray-lighter"></a></li>
+          <li data-select_class="text-gray"><a href="#" class="gray"></a></li>
+          <li data-select_class="text-gray-darker"><a href="#" class="gray-darker"></a></li>
+          <br/>
+          <li data-select_class="text-primary"><a href="#" class="color-alpha"></a></li>
+          <li data-select_class="text-success"><a href="#" class="color-beta"></a></li>
+          <li data-select_class="text-info"><a href="#" class="color-gamma"></a></li>
+          <li data-select_class="text-warning"><a href="#" class="color-delta"></a></li>
+          <li data-select_class="text-danger"><a href="#" class="color-epsilon"></a></li>
+        </ul>
+      </li>
+    </div>
+    <div data-selector="h1, h2, h3, h4, h5, h6">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-paint-brush fa-1x"></i>Background</a>
+        <ul class="zap-colorpicker dropdown-menu">
+          <li data-select_class="bg-none"><a href="#" class="none"></a></li>
+          <li data-select_class="bg-white"><a href="#" class="white"></a></li>
+          <li data-select_class="bg-gray-lighter"><a href="#" class="gray-lighter"></a></li>
+          <li data-select_class="bg-gray"><a href="#" class="gray"></a></li>
+          <li data-select_class="bg-gray-darker"><a href="#" class="gray-darker"></a></li>
+          <br/>
+          <li data-select_class="bg-alpha"><a href="#" class="color-alpha"></a></li>
+          <li data-select_class="bg-beta"><a href="#" class="color-beta"></a></li>
+          <li data-select_class="bg-gamma"><a href="#" class="color-gamma"></a></li>
+          <li data-select_class="bg-delta"><a href="#" class="color-delta"></a></li>
+          <li data-select_class="bg-epsilon"><a href="#" class="color-epsilon"></a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+
+  <!-- STYLES option
+     ========================================================================== -->
+
+  <!-- TITLE OPTIONS -->
+  <xpath expr="//div[@data-js='colorpicker']" position="after">
+    <div data-selector="h1, h2, h3, h4, h5, h6">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-pencil fa-1x"></i>Style</a>
+        <ul class="dropdown-menu">
+          <li data-toggle_class="text-muted"><a href="#">Muted</a></li>
+          <li data-toggle_class="text-uppercase"><a href="#">Uppercase</a></li>
+          <li data-toggle_class="text-underline"><a href="#">Underline</a></li>
+          <li data-toggle_class="text-boxed"><a href="#">Boxed</a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+  <!-- HR OPTIONS -->
+  <xpath expr="//div[@data-js='colorpicker']" position="after">
+    <div data-selector="hr">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-1x fa-arrows-h"></i>Width</a>
+        <ul class="dropdown-menu">
+          <li data-select_class="hr-small"><a href="#">Small</a></li>
+          <li data-select_class="hr-half"><a href="#">Half</a></li>
+          <li data-select_class="hr-full"><a href="#">Full</a></li>
+        </ul>
+      </li>
+    </div>
+    <div data-selector="hr">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-1x fa-ellipsis-h"></i>Style</a>
+        <ul class="dropdown-menu">
+          <li data-select_class="hr-dashed"><a href="#">Dashed</a></li>
+          <li data-select_class="hr-dotted"><a href="#">Dotted</a></li>
+          <li data-select_class="hr-solid"><a href="#">Solid</a></li>
+        </ul>
+      </li>
+    </div>
+    <div data-selector="hr">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-1x fa-pencil"></i>Thickness</a>
+        <ul class="dropdown-menu">
+          <li data-select_class="hr-1px"><a href="#">1 px</a></li>
+          <li data-select_class="hr-2px"><a href="#">2 px</a></li>
+          <li data-select_class="hr-3px"><a href="#">3 px</a></li>
+          <li data-select_class="hr-4px"><a href="#">4 px</a></li>
+          <li data-select_class="hr-5px"><a href="#">5 px</a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+
+
+<!-- EXTRAS
+     ========================================================================== -->
+
+  <!-- ICONS  -->
+    <xpath expr="//div[@data-js='blog-style']//a" position="replace">
+      <a tabindex="-1" href="#"><i class="fa fa-1x fa-align-justify"></i>Style</a>
+    </xpath>
+    <xpath expr="//div[@data-js='transform']//a" position="replace">
+      <a tabindex="-1" href="#"><i class="fa fa-1x fa-pencil"></i>Style</a>
+    </xpath>
+    <xpath expr="//div[@data-js='transform']//a[@class='style']" position="replace">
+      <a tabindex="-1" href="#" class="style"><i class="fa fa-1x fa-arrows-alt"></i>Transform</a>
+    </xpath>
+    <xpath expr="//div[@data-js='transform']//a[@class='clear-style']" position="replace">
+      <a tabindex="-1" href="#" class="clear-style"><i class="fa fa-1x fa-rotate-left"></i>Reset Transformation</a>
+    </xpath>
+    <xpath expr="//div[@data-js='parallax']//a" position="replace">
+      <a tabindex="-1" href="#"><i class="fa fa-1x fa-tachometer"></i>Scroll speed</a>
+    </xpath>
+    <xpath expr="//div[@data-js='image_floating_margin']// a" position="replace">
+        <a tabindex="-1" href="#"><i class="fa fa-1x fa-picture-o"></i>Margin</a>
+    </xpath>
+    <xpath expr="//div[@data-js='image_floating_hidelink']//a" position="replace">
+        <a href="#"><i class="fa fa-1x fa-eye-slash"></i>Hide link</a>
+    </xpath>
+    <xpath expr="//div[@data-js='image_floating_side']//a" position="replace">
+        <a tabindex="-1" href="#"><i class="fa fa-1x fa-arrows-h"></i>Float</a>
+    </xpath>
+    <xpath expr="//div[@data-js='media']//a" position="replace">
+        <a href="#" class="edition"><i class="fa fa-1x fa-folder-open"></i>Change...</a>
+    </xpath>
+    <xpath expr="//div[@data-js='carousel']//a[@class='button js_add']" position="replace">
+        <a href="#" class="button js_add"><i class="fa fa-1x fa-plus"></i>Add slide</a>
+    </xpath>
+    <xpath expr="//div[@data-js='carousel']//a[@class='button js_remove']" position="replace">
+        <a href="#" class="button js_remove"><i class="fa fa-1x fa-minus"></i>Remove slide</a>
+    </xpath>
+</template>
+
+</data>
+</openerp>

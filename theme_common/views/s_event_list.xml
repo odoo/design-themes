@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+    <template name="Event List" id="s_event_list">
+      <section class="s_event_list">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mt32 mb32">
+              <h2>Nice and Efficient Events List</h2>
+              <h3 class="text-muted">Display Your Last Activities</h3>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <ul class="s_event_list">
+                  <li>
+                    <time datetime="2014-07-20 0000" class="bg-delta">
+                      <span class="s_event_list_day">02</span>
+                      <span class="s_event_list_month">Jul</span>
+                      <span class="s_event_list_year">2014</span>
+                      <span class="s_event_list_time">12:00 AM</span>
+                    </time>
+                    <div class="s_event_list_info">
+                      <h4 class="s_event_list_title">Your Event Name</h4>
+                      <p class="s_event_list_desc">Write a description of your event here.</p>
+                      <ul>
+                        <li style="width:50%;">
+                          <a href="#">
+                            <span class="fa fa-globe"></span> Link
+                          </a>
+                        </li>
+                        <li style="width:50%;">
+                          <span class="fa fa-info-circle"></span> Info
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="s_event_list_social">
+                      <ul>
+                        <li class="s_event_list_facebook" style="width:33%;">
+                          <a href="#">
+                            <span class="fa fa-facebook"></span>
+                          </a>
+                        </li>
+                        <li class="s_event_list_twitter" style="width:34%;">
+                          <a href="#">
+                            <span class="fa fa-twitter"></span>
+                          </a>
+                        </li>
+                        <li class="s_event_list_google_plus" style="width:33%;">
+                          <a href="#">
+                            <span class="fa fa-google-plus"></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul class="s_event_list">
+                  <li>
+                    <time datetime="2014-07-20 0000" class="bg-delta">
+                      <span class="s_event_list_day">05</span>
+                      <span class="s_event_list_month">Sep</span>
+                      <span class="s_event_list_year">2014</span>
+                      <span class="s_event_list_time">12:00 AM</span>
+                    </time>
+                    <div class="s_event_list_info">
+                      <h4 class="s_event_list_title">Your Event Name</h4>
+                      <p class="s_event_list_desc">Write a description of your event here.</p>
+                      <ul>
+                        <li style="width:50%;">
+                          <a href="#">
+                            <span class="fa fa-globe"></span> Link
+                          </a>
+                        </li>
+                        <li style="width:50%;">
+                          <span class="fa fa-info-circle"></span> Info
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="s_event_list_social">
+                      <ul>
+                        <li class="s_event_list_facebook" style="width:33%;">
+                          <a href="#">
+                            <span class="fa fa-facebook"></span>
+                          </a>
+                        </li>
+                        <li class="s_event_list_twitter" style="width:34%;">
+                          <a href="#">
+                            <span class="fa fa-twitter"></span>
+                          </a>
+                        </li>
+                        <li class="s_event_list_google_plus" style="width:33%;">
+                          <a href="#">
+                            <span class="fa fa-google-plus"></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul class="s_event_list">
+                  <li>
+                    <time datetime="2014-07-20 0000" class="bg-delta">
+                      <span class="s_event_list_day">2</span>
+                      <span class="s_event_list_month">Jul</span>
+                      <span class="s_event_list_year">2014</span>
+                      <span class="s_event_list_time">12:00 AM</span>
+                    </time>
+                    <div class="s_event_list_info">
+                      <h4 class="s_event_list_title">Your Event Name</h4>
+                      <p class="s_event_list_desc">Write a description of your event here.</p>
+                      <ul>
+                        <li style="width:50%;">
+                          <a href="#">
+                            <span class="fa fa-globe"></span> Link
+                          </a>
+                        </li>
+                        <li style="width:50%;">
+                          <span class="fa fa-info-circle"></span> Info
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="s_event_list_social">
+                      <ul>
+                        <li class="s_event_list_facebook" style="width:33%;">
+                          <a href="#">
+                            <span class="fa fa-facebook"></span>
+                          </a>
+                        </li>
+                        <li class="s_event_list_twitter" style="width:34%;">
+                          <a href="#">
+                            <span class="fa fa-twitter"></span>
+                          </a>
+                        </li>
+                        <li class="s_event_list_google_plus" style="width:33%;">
+                          <a href="#">
+                            <span class="fa fa-google-plus"></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+              <p class="text-center">With Theme Clean you get a list of your events with date, time, description, etc. Select the simple or image mode and edit your content.
+                <br/>You can link your events to your favorite social network.</p>
+              </div>
+                <div class="col-md-6 mt32 mb32">
+                  <ul class="s_event_list">
+                    <li>
+                      <time datetime="2014-07-20" class="bg-delta">
+                        <span class="s_event_list_day">18</span>
+                        <span class="s_event_list_month">Jul</span>
+                        <span class="s_event_list_year">2014</span>
+                        <span class="s_event_list_time">ALL DAY</span>
+                      </time>
+                      <img src="/website/image/theme_common.image_content_09" class="img-responsive"/>
+                      <div class="s_event_list_info">
+                        <h4 class="s_event_list_title">Your Event Name</h4>
+                        <p class="s_event_list_desc">Write a description of your event here.</p>
+                        <ul>
+                          <li style="width:50%;">
+                            <a href="#">
+                              <span class="fa fa-globe"></span> Link
+                            </a>
+                          </li>
+                          <li style="width:50%;">
+                            <span class="fa fa-info-circle"></span> Info
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="s_event_list_social">
+                        <ul>
+                          <li class="s_event_list_facebook" style="width:33%;">
+                            <a href="#">
+                              <span class="fa fa-facebook"></span>
+                            </a>
+                          </li>
+                          <li class="s_event_list_twitter" style="width:34%;">
+                            <a href="#">
+                              <span class="fa fa-twitter"></span>
+                            </a>
+                          </li>
+                          <li class="s_event_list_google_plus" style="width:33%;">
+                            <a href="#">
+                              <span class="fa fa-google-plus"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 mt32 mb32">
+                  <ul class="s_event_list">
+                    <li>
+                      <time datetime="2014-07-20" class="bg-delta">
+                        <span class="s_event_list_day">21</span>
+                        <span class="s_event_list_month">Jul</span>
+                        <span class="s_event_list_year">2014</span>
+                        <span class="s_event_list_time">ALL DAY</span>
+                      </time>
+                      <div class="s_event_list_icon">
+                        <i class="fa fa-calendar fa-5x"></i>
+                      </div>
+                      <div class="s_event_list_info">
+                        <h4 class="s_event_list_title">Your Event Name</h4>
+                        <p class="s_event_list_desc">Write a description of your event here.</p>
+                        <ul>
+                          <li style="width:50%;">
+                            <a href="#">
+                              <span class="fa fa-globe"></span> Link
+                            </a>
+                          </li>
+                          <li style="width:50%;">
+                            <span class="fa fa-info-circle"></span> Info
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="s_event_list_social">
+                        <ul>
+                          <li class="s_event_list_facebook" style="width:33%;">
+                            <a href="facebook">
+                              <span class="fa fa-facebook"></span>
+                            </a>
+                          </li>
+                          <li class="s_event_list_twitter" style="width:34%;">
+                            <a href="#">
+                              <span class="fa fa-twitter"></span>
+                            </a>
+                          </li>
+                          <li class="s_event_list_google_plus" style="width:33%;">
+                            <a href="#">
+                              <span class="fa fa-google-plus"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+        </section>
+      </template>
+
+  </data>
+</openerp>

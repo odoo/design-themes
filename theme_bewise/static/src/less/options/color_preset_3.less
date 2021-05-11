@@ -1,0 +1,64 @@
+/* GRAYS --------------------------------------------------------- */
+/* Adjust to vary the intensity of texts ans headings ------------ */
+
+@gray-darker:            lighten(#000, 20%);
+@gray-dark:              lighten(#000, 40%);
+@gray:                   lighten(#000, 55%);
+@gray-light:             lighten(#000, 70%);
+@gray-lighter:           lighten(#000, 80%);
+
+/* COLORS --------------------------------------------------------- */
+
+@color-alpha:   @color-purple;
+@color-beta:    @color-purple-light;
+@color-gamma:   @color-yellow;
+@color-delta:   @color-yellow-light;
+@color-epsilon: @color-yellow-dark;
+
+/* COLORED BG -------------------------------------------------------- */
+
+.bg-alpha {
+    .bg-clouds;
+}
+.bg-beta {
+    .bg-yellow-light;
+}
+.bg-gamma {
+    .bg-yellow;
+  }
+.bg-delta {
+    .bg-purple-light;
+  }
+.bg-epsilon {
+    .bg-purple;
+  }
+
+/* TEXT & LINKS -------------------------------------------------------- */
+
+@text-color:        @gray;
+@headings-color:    @color-gamma;
+
+
+@text-muted:        @color-alpha;
+@link-color:        @color-alpha;
+@link-hover-color:  @color-gamma;
+
+hr {
+    border-color: @gray-lighter;
+}
+
+
+/* BUTTONS --------------------------------------------------------- */
+
+@btn-primary-bg:                 @color-purple-light;
+@btn-success-bg:                 @color-purple;
+@btn-info-bg:                    @color-yellow-light;
+@btn-warning-bg:                 @color-yellow;
+@btn-danger-bg:                  @color-yellow-dark;
+
+.btn .fa {
+    color: white;}
+
+.btn-default .fa {
+    color: @gray-dark;
+  }

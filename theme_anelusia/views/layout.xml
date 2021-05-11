@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Add text to Toggle Button -->
+
+        <template id="toggle_button_text" inherit_id="website.layout" name="Toggle Button">
+            <xpath expr="//div[contains(@class, 'navbar-header')]/button[contains(@class, 'navbar-toggle')]" position="replace">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
+                    <span class="new-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </span>
+                    <span class="new-toggle-text">MENU</span>
+                </button>
+            </xpath>
+        </template>
+
+        <!-- Replace copyright and put languages -->
+
+        <template id="change_footer_copyright" inherit_id="website.layout_footer_copyright" name="Change Footer Copyright">
+            <xpath expr="//footer/div[contains(@class, 'container')][last()]" position="before">
+                <hr/>
+            </xpath>
+        </template>
+
+        <!-- Add social icons to navbar-collapse -->
+        
+        <template id="navbar-collapse-icons" inherit_id="website.layout" name="Navbar Collapse Social Icons">
+            <xpath expr="//div[contains(@id, 'wrapwrap')]//ul[contains(@id, 'top_menu')]" position="after">
+                <div class="collapse_icon">
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus"><i class="fa fa-google-plus-square"/></a>
+                        <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    </h2>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

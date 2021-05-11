@@ -1,0 +1,22 @@
+@s_discount_box_border_radius: 0px;
+@s_discount_coupon_color: @color-gamma;
+@s_discount_amount_size: 70px;
+
+.s_discount_descr_hook() {
+    background-color: @color-beta;
+    color: @color-alpha;
+}
+.s_discount_box_hook() {
+    .bg-beta, .bg-gamma, .bg-epsilon {
+        background-color: rgba(0, 0, 0, 0);
+        color: @gray;
+    }
+    .s_discount_open-code {
+        color: @color-gamma !important;
+    }
+}
+.s_discount_brand_hook() {
+    h3 {
+        color: @color-gamma;
+    }
+}

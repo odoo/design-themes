@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <delete id="product.computers" model="product.public.category"/>
+        <delete id="product.sub_computers" model="product.public.category"/>
+        <delete id="product.Components" model="product.public.category"/>
+        <delete id="product.devices" model="product.public.category"/>
+        <delete id="product.laptops" model="product.public.category"/>
+        <delete id="product.network" model="product.public.category"/>
+        <delete id="product.case" model="product.public.category"/>
+        <delete id="product.Computer_all_in_one" model="product.public.category"/>
+        <delete id="product.External_Hard_Drive" model="product.public.category"/>
+        <delete id="product.graphics_card" model="product.public.category"/>
+        <delete id="product.HDD" model="product.public.category"/>
+        <delete id="product.Headset" model="product.public.category"/>
+        <delete id="product.Keyboard_Mouse" model="product.public.category"/>
+        <delete id="product.Memory" model="product.public.category"/>
+        <delete id="product.Modem_Router" model="product.public.category"/>
+        <delete id="product.motherboard" model="product.public.category"/>
+        <delete id="product.Pen_Drive" model="product.public.category"/>
+        <delete id="product.printer" model="product.public.category"/>
+        <delete id="product.processor" model="product.public.category"/>
+        <delete id="product.Screen" model="product.public.category"/>
+        <delete id="product.server" model="product.public.category"/>
+        <delete id="product.services" model="product.public.category"/>
+        <delete id="product.Software" model="product.public.category"/>
+        <delete id="product.Speakers" model="product.public.category"/>
+        <delete id="product.Switch" model="product.public.category"/>
+        <delete id="product.video_acquisition" model="product.public.category"/>
+
+        <!-- Create new categories -->
+
+        <record id="guitars" model="product.public.category">
+            <field name="name">Guitars</field>
+        </record>
+        <record id="fender" model="product.public.category">
+            <field name="parent_id" ref="guitars"/>
+            <field name="name">Fender</field>
+        </record>
+        <record id="gibson" model="product.public.category">
+            <field name="parent_id" ref="guitars"/>
+            <field name="name">Gibson</field>
+        </record>
+        <record id="other" model="product.public.category">
+            <field name="parent_id" ref="guitars"/>
+            <field name="name">Other Brands</field>
+        </record>
+
+        <record id="bass_guitars" model="product.public.category">
+            <field name="name">Bass Guitars</field>
+        </record>
+        <record id="drums" model="product.public.category">
+            <field name="name">Drums</field>
+        </record>
+        <record id="percussion" model="product.public.category">
+            <field name="name">Percussion</field>
+        </record>
+        <record id="violin" model="product.public.category">
+            <field name="name">Violin</field>
+        </record>
+
+        <record id="brass" model="product.public.category">
+            <field name="name">Brass</field>
+        </record>
+        <record id="trombone" model="product.public.category">
+            <field name="parent_id" ref="brass"/>
+            <field name="name">Trombone</field>
+        </record>
+        <record id="saxophone" model="product.public.category">
+            <field name="parent_id" ref="brass"/>
+            <field name="name">Saxophone</field>
+        </record>
+
+        <record id="product.notes_product_4" model="product.product">
+            <field name="name">Violin</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.violin')])]"/>
+            <field name="standard_price">340.0</field>
+            <field name="list_price">340.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_04.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_5" model="product.product">
+            <field name="name">Fender Jazz Bass</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.bass_guitars')])]"/>
+            <field name="standard_price">799.0</field>
+            <field name="list_price">799.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_05.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_6" model="product.product">
+            <field name="name">Fender Telecaster</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.fender')])]"/>
+            <field name="standard_price">889.0</field>
+            <field name="list_price">889.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_06.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_7" model="product.product">
+            <field name="name">Gibson Les Paul Studio</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.gibson')])]"/>
+            <field name="standard_price">2349.0</field>
+            <field name="list_price">2349.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_07.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_8" model="product.product">
+            <field name="name">Fender Stratocaster</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.fender')])]"/>
+            <field name="standard_price">949.0</field>
+            <field name="list_price">949.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_08.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_9" model="product.product">
+            <field name="name">Washburn</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.other')])]"/>
+            <field name="standard_price">1149.0</field>
+            <field name="list_price">1149.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_09.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_10" model="product.product">
+            <field name="name">Mapex Drumset</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.drums')])]"/>
+            <field name="standard_price">549.0</field>
+            <field name="list_price">549.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_10.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_11" model="product.product">
+            <field name="name">Tama Drumset</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.drums')])]"/>
+            <field name="standard_price">769.0</field>
+            <field name="list_price">699.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_11.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_12" model="product.product">
+            <field name="name">Yamaha Drumset</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.drums')])]"/>
+            <field name="standard_price">889.0</field>
+            <field name="list_price">889.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_12.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_13" model="product.product">
+            <field name="name">SSR Bongo</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.percussion')])]"/>
+            <field name="standard_price">79.0</field>
+            <field name="list_price">79.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_13.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_14" model="product.product">
+            <field name="name">Authentic Percussion</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.percussion')])]"/>
+            <field name="standard_price">279.0</field>
+            <field name="list_price">279.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_14.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_15" model="product.product">
+            <field name="name">Saxophone</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.brass')])]"/>
+            <field name="standard_price">379.0</field>
+            <field name="list_price">379.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_15.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.notes_product_16" model="product.product">
+            <field name="name">Trombone</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_notes_sale.brass')])]"/>
+            <field name="standard_price">399.0</field>
+            <field name="list_price">399.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_notes/static/src/img/content/product_img_16.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+
+    </data>
+
+</openerp>

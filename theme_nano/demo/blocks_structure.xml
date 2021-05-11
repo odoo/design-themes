@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+  <template name="Building Blocks // Structure" id="website.demo_blocks_structure" page="True">
+    <t t-call="website.layout">
+      <div id="wrap" class="oe_structure mb32">
+
+        <section class="bg-gray-dark">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="demo-title mt0 mb0">Structure Blocks</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="demo-subtitle mt32 mb32">Title</h4>
+            </div>
+          </div>
+        </div>
+
+        <section class="s_title">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="text-center">Your Website Title</h1>
+                <h3 class="text-muted text-center">And a great subtitle too</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="demo-subtitle mt32 mb32">Text + Image</h4>
+            </div>
+          </div>
+        </div>
+
+        <section class="s_text_image">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mt16">
+                <h3>A Section Subtitle</h3>
+                <p>Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                <p>Start with the customer – find out what they want and give it to them.</p>
+              </div>
+              <div class="col-md-6 mt16">
+                <img alt="" class="img img-responsive" src="/website/image/theme_common.image_content_04"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="demo-subtitle mt32 mb32">Image + Text</h4>
+            </div>
+          </div>
+        </div>
+
+        <section class="s_image_text">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mt16">
+                <img alt="" class="img img-responsive" src="/website/image/theme_common.image_content_06"/>
+              </div>
+              <div class="col-md-6 mt16">
+                <h3>A Section Subtitle</h3>
+                <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+                <p>Start with the customer – find out what they want and give it to them.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="demo-subtitle mt32 mb32">Text Block</h4>
+            </div>
+          </div>
+        </div>
+
+        <section class="s_text_block">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="mb8">A Great Headline</h2>
+                <h3 class="text-primary mb0 mt0">A good subtitle</h3>
+                <hr class="s_separator hr-full hr-1px hr-solid"/>
+              </div>
+              <div class="col-md-12 mb16 mt16">
+                <p>A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                <p><b>Great stories have personality.</b> Consider telling a great story that provides personality. Writing a story with personality for potential clients will asist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                <p><b>Great stories are for everyone even when only written for just one person.</b> If you try to write with a wide general audience in mind, your story will ring false and be bland. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="demo-subtitle mt32 mb32">Big message</h4>
+            </div>
+          </div>
+        </div>
+
+        <section class="jumbotron s_big_message bg-gray-darker">
+          <div class="container">
+            <h1 class="text-success">Sell Online. Easily.</h1>
+            <p>Write one sentence to convince visitor about your message.</p>
+            <p>
+              <a class="btn btn-success btn-lg" href="/page/website.contactus">Contact us </a>
+            </p>
+          </div>
+        </section>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="demo-subtitle mt32 mb32">Big Picture</h4>
+            </div>
+          </div>
+        </div>
+
+        <section class="s_big_picture">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center mt32 mb32">
+                <h2>A Punchy Headline</h2>
+              </div>
+              <div class="col-md-12">
+                <img alt="Odoo CMS - a big picture" class="img img-responsive" src="/website/image/theme_common.image_content_05" style="margin: 0 auto;"/>
+              </div>
+              <div class="col-md-6 col-md-offset-3 mb16 mt16">
+                <p class="text-center">
+                  <b>A Small Subtitle</b>
+                </p>
+                <p class="text-center">Choose a vibrant image and write an inspiring paragraph about it. It does not have to be long, but it should reinforce your image.</p>
+                <p class="text-center">
+                  <a class="btn btn-success" href="/page/website.contactus">Contact us »</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </t>
+  </template>
+
+  <record id="demo_page_blocks_menu" model="website.menu">
+    <field name="name">Blocks</field>
+    <field name="url">/page/demo_blocks</field>
+    <field name="parent_id" ref="website.main_menu"/>
+    <field name="sequence" type="int">50</field>
+  </record>
+
+  <record id="demo_blocks_structure_menu" model="website.menu">
+    <field name="name">Structure</field>
+    <field name="url">/page/demo_blocks_structure</field>
+    <field name="parent_id" ref="demo_page_blocks_menu"/>
+    <field name="sequence" type="int">51</field>
+  </record>
+
+  </data>
+</openerp>

@@ -1,0 +1,232 @@
+/* ====================== GENERAL =====================*/
+body {
+    .in:not(.tour):not(.navbar-collapse) {
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+    .tour {
+        .close {
+            color: @gray;
+        }
+    }
+}
+#wrapwrap {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    > * {
+        display: table-row;
+    }
+}
+main > * {
+    background-color: @color-eta;
+    color: white;
+    &:first-child{
+        margin: 50px auto;
+    }
+}
+#wrap {
+    margin: 50px auto;
+    .text-muted{
+        &:after {
+            color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+.input-group[class*="col-"] {
+    float: left;
+}
+.js_publish_btn {
+    background-color: @color-alpha !important;
+    color: gray !important;
+}
+/* ========== Navigation =========== */
+.navbar-default {
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    .container {
+        padding: 0px;
+        background-color: @color-beta;
+        .navbar-header {
+            margin: 0;
+            .navbar-toggle {
+                border-color: @color-epsilon;
+                &:hover {
+                    background-color: @gray-dark;
+                }
+                .icon-bar {
+                    background-color: @color-epsilon;
+                }
+            }
+            .navbar-brand {
+                margin-left: 25px;
+            }
+        }
+        .navbar-collapse {
+            background-color: @color-beta;
+            box-shadow: none;
+        }
+    }
+}
+#wrapwrap > header .container .navbar-collapse {
+    @media (max-width: @screen-sm-min) {
+        margin: 0;
+        border: none !important;
+        padding-top: 30px;
+    }
+    .navbar-nav {
+        float: none;
+    }
+}
+#top_menu {
+    margin-right: 0px;
+    @media (max-width: @screen-sm-min) {
+        width: 100%;
+        text-align: left;
+        transform: none;
+    }
+    li {
+        a {
+            color: @color-delta;
+            font-size: 18px;
+            .transition (color 0.3s ease-out);
+            &:hover {
+                color: @color-alpha;
+            }
+            .label-primary { // shop if there is any product in cart
+                background-color: @color-delta;
+                font-size: 12px;
+                padding: 0.1em 0.6em 0.1em;
+                .BorderRadius (30px);
+                position: relative;
+                top: -15px;
+            }
+        }
+    }
+    .divider {
+        display: none;
+    }
+    .active a {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .open > a:focus {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .dropdown-menu, .navbar-collapse {
+        background-color: @color-beta;
+        border-radius: 0px;
+        border-color: rgba(0, 0, 0, 0);
+
+        li > a {
+            color: @color-delta;
+            border-right: none;
+            &:hover {
+                border-bottom: none;
+                background: rgba(0, 0, 0, 0);
+                color: @color-alpha;
+            }
+        }
+        .divider {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+/* ====================== Footer ======================== */
+#wrapwrap > footer {
+    background: @color-theta;
+    #footer {
+        margin-top: 0px;
+    }
+    .container {
+        padding: 20px 65px;
+        h4 {
+            border-top: 5px solid @color-theta;
+            margin-right: 50px;
+            padding-top: 20px;
+            color: @color-epsilon;
+            text-transform: uppercase;
+        }
+        p, .list-unstyled {
+            color: @color-alpha;
+        }
+    }
+    > .container:last-child {
+        margin: 0 !important;
+        width: 100%;
+        background-color: @color-theta;
+        color: @color-alpha;
+        .text-muted, a {
+            color: @color-alpha;
+        }
+    }
+    #footer {
+        background-color: @color-gamma;
+        a {
+            display: block;
+        }
+        .col-md-3, .col-md-5 {
+            padding: 20px 0px;
+            h2 { // social icons in footer
+                text-transform: uppercase;
+                font-size: 25px;
+                color: @color-beta;
+                a {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+.copyright {
+    padding: 20px 0px;
+    background-color: @color-theta;
+    color: @color-alpha;
+    .js_language_selector {
+        margin-bottom: 0px;
+        float: right;
+    }
+}
+/* ====================== button style ======================== */
+#wrapwrap {
+    .btn {
+        padding: 10px 20px;
+        .BorderRadius (0px);
+        .transition (all 0.3s ease-out);
+        border-width: 0px !important;
+    }
+    .btn-default {
+        .btn-styles(@color-alpha, @gray-lighter, @gray, @black);
+    }
+    .btn-primary {
+        .btn-styles(@color-beta, @color-zeta, @color-alpha, @gray-lighter);
+    }
+    .btn-success {
+        .btn-styles(@color-gamma, @color-theta, @color-alpha, @gray);
+    }
+    .btn-info {
+        .btn-styles(@color-delta, @color-kappa, @color-alpha, @color-beta);
+    }
+    .btn-warning {
+        .btn-styles(@color-epsilon, @color-mu, @gray, @gray);
+    }
+    .btn-danger {
+        .btn-styles(@black, @gray, @color-delta, @white);
+    }
+}
+/* ====================== Snippet Option Styles ======================== */
+
+.snippet-option-colorpicker {
+    .colorpicker td > * {
+        width: 30px;
+        height: 30px;
+    }
+    .none {
+        background-color: @color-alpha;
+        font-size: 10px;
+    }
+}
+.btn-group {
+    .dropdown-toggle {
+        border-width: 1px !important;
+    }
+}

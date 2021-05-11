@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+
+        <template name="Big picture" id="s_big_picture_extended" inherit_id="website_less.snippets">
+            <xpath expr="//section[contains(@class, 's_big_picture')]" position="attributes">
+                <attribute name="class">s_big_picture</attribute>
+            </xpath>
+            <xpath expr="//section[contains(@class, 's_big_picture')]//img" position="attributes">
+                <attribute name="src">/website/image/theme_common.image_content_05</attribute>
+            </xpath>
+            <xpath expr="//section[contains(@class, 's_big_picture')]//a" position="attributes">
+        		<attribute name="class">btn btn-success</attribute>
+        	</xpath>
+		</template>
+
+    </data>
+</openerp>

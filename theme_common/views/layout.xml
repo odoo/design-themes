@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Deactivate default website_less options before adding the theme ones -->
+        <template id="reset_default_options" inherit_id="website_less.default_options">
+          <xpath expr="//t[@id='default_options']" position="attributes">
+             <attribute name="t-if">False</attribute>
+          </xpath>
+        </template>
+
+    </data>
+</openerp>

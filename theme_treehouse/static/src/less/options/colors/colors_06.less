@@ -1,0 +1,51 @@
+@color-alpha: @color-06-alpha;
+@color-beta: @color-06-beta;
+@color-gamma: @color-06-gamma;
+@color-delta: @color-06-delta;
+@color-epsilon: @color-06-epsilon;
+
+@gray-darker: #193441;
+@gray: #3E606F;
+@gray-lighter: lighten(#3E606F, 50%);
+
+@link-color: darken(@color-alpha, 10%);
+@link-hover-color: darken(@color-alpha, 25%);
+
+.white(@gray-darker);
+.gray-lighter(@gray-darker);
+.gray(#fff);
+.gray-darker(#fff);
+.alpha(#fff);
+.beta(#fff);
+.gamma(@gray-darker);
+.delta(@gray-darker);
+.epsilon(#fff);
+
+  @preheader-text-color: #fff;
+
+.preheader-style() when (@nav-style-white = true){
+  @preheader-link-color: #fff;
+
+  @navbar-link-color: @gray-darker;
+  @navbar-link-active-bg: @color-alpha;
+  @navbar-link-active-color: #fff;
+  @navbar-link-hover-color: darken(@color-alpha, 10%);
+}
+
+.preheader-style() when (@nav-style-gray-lighter = true){
+  @preheader-link-color: #fff;
+
+  @navbar-link-color: @gray-darker;
+  @navbar-link-active-bg: darken(@gray-lighter, 30%);
+  @navbar-link-active-color: @gray-lighter;
+  @navbar-link-hover-color: darken(@gray-lighter, 30%);
+}
+
+.preheader-style() when (@nav-style-gray-darker = true){
+  @preheader-link-color: @gray-darker;
+  
+  @navbar-link-color: #fff;
+  @navbar-link-active-bg: @color-alpha;
+  @navbar-link-active-color: @gray-darker;
+  @navbar-link-hover-color: @color-alpha;
+}

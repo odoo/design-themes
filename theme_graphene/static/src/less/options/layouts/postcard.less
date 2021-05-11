@@ -1,0 +1,76 @@
+// Postcard Layout 
+
+@graphene-layout-postcard: true;
+
+
+#graph_header {
+	.navbar{
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+	}
+	.nav li.open > a{
+		background-color: rgba(0, 0, 0, 0);
+		color: #555;
+	}
+	.nav li.open a {
+		color: #555;
+	}
+}
+
+
+#wrapwrap, main, footer{
+	background-color: rgba(0, 0, 0, 0)!important;
+}
+
+
+
+
+#wrap, footer > .container, footer > #footer{
+	background: #FFF;
+	margin: 0 auto;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	max-width: 1024px;
+	width: 95%;
+	.box-shadow(0 3px 5px 0px rgba(0, 0, 0, 0.18));
+	.container{max-width: 100%}
+}
+
+footer {
+	padding-bottom: 1em;
+}
+
+footer > .container, footer > #footer{
+	border-radius:0;
+	margin-top:0!important;
+	&:last-child{
+		padding-bottom: 1em;
+		margin-bottom: 3em!important;
+	}
+}
+
+
+// =========== Others modules compatibility     
+
+
+.website_forum {
+	background: #FFF;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 1px;
+	max-width: 1024px;
+	width: 95%;
+	a.navbar-brand{
+		padding-left: 10px;
+	}
+}
+
+
+main > section.container{
+	background: #FFF;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 1px;
+	max-width: 1024px;
+	width: 95%;
+}

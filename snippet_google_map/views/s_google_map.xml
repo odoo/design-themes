@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+  <!-- Snippet's Body -->
+  <template name="Google Map" id="s_google_map">
+    <section class="s_google_map" data-map-type="ROADMAP" data-map-color="" data-map-zoom="12" data-map-gps="(50.854975,4.3753899)" data-pin-style="flat" style="height: 488px; overflow: hidden;">
+      <div class="map_container" /> 
+      <div class="description">
+        <font>Visit us:</font>
+        <span> Our office is located in the northeast of Brussels. TEL (555) 432 2365 </span>
+      </div>
+    </section>
+  </template>
+
+  <!-- Add to the top bar -->
+  <template id="google_map_snippet" inherit_id="website_less.snippets">
+    <xpath expr="//div[@id='snippet_feature']" position="inside">
+      <t t-snippet="snippet_google_map.s_google_map" t-thumbnail="/snippet_google_map/static/src/img/thumbnail.png"/>
+    </xpath>
+  </template>
+  
+  <!-- GoogleMaps Api 
+  // This MUST to be colled in this way. Otherwise if you add the API into website_frontend, it will be loaded multiple time-->
+  <template id="s_google_map_API" name="google maps api" inherit_id="website.layout" active="True">
+    <xpath expr="//body" position="inside">
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&#38;libraries=places"></script>
+    </xpath>
+  </template>
+
+  <!-- Snippet's Options -->
+  <template id="s_google_map_option" inherit_id="website_less.snippet_options">
+    <xpath expr="//div[@data-js='blog-style']" position="before">
+      <div data-js='map' data-selector="section.s_google_map">
+
+        <li data-map="">
+          <a><i class="fa fa-fw fa-cog"></i>Map Options</a>
+        </li>
+  
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-fw fa-road"></i>Type</a>
+          <ul class="dropdown-menu">
+            <li data-map_type="ROADMAP"><a>RoadMap</a></li>
+            <li data-map_type="TERRAIN"><a>Terrain</a></li>
+            <li data-map_type="SATELLITE"><a>Satellite</a></li>
+            <li data-map_type="HYBRID"><a>Hybrid</a></li>
+          </ul>
+        </li>
+
+        <!-- 
+        Map's colors palettes must be defined using javascript (this map is generated using google API).
+        Have a look to the snippet's less file for more info about. 
+        -->
+          
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-fw fa-search"></i>Zoom</a>
+          <ul class="dropdown-menu">
+            <li data-map_zoom="12"><a>12</a></li>
+            <li data-map_zoom="13"><a>13</a></li>
+            <li data-map_zoom="14"><a>14</a></li>
+            <li data-map_zoom="15"><a>15</a></li>
+            <li data-map_zoom="16"><a>16</a></li>
+            <li data-map_zoom="17"><a>17</a></li>
+            <li data-map_zoom="18"><a>18</a></li>
+          </ul>
+        </li>
+
+      </div>
+    </xpath>         
+  </template>
+
+  </data>
+</openerp>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+        
+        <!-- Delete loftspace categories -->
+        <delete id="theme_monglia_sale.warm_food" model="product.public.category"/>
+        <delete id="theme_monglia_sale.hamburger" model="product.public.category"/>
+        <delete id="theme_monglia_sale.gyros" model="product.public.category"/>
+        <delete id="theme_monglia_sale.pizza" model="product.public.category"/>
+        <delete id="theme_monglia_sale.sandwich" model="product.public.category"/>
+        <delete id="theme_monglia_sale.cold_food" model="product.public.category"/>
+        <delete id="theme_monglia_sale.salad" model="product.public.category"/>
+        <delete id="theme_monglia_sale.pasta" model="product.public.category"/>
+
+        <!-- Create new categories -->
+        <record id="engine_parts" model="product.public.category">
+            <field name="name">Engine Parts</field>
+        </record>
+        <record id="battery" model="product.public.category">
+            <field name="parent_id" ref="engine_parts"/>
+            <field name="name">Battery</field>
+        </record>
+        <record id="cogwheel" model="product.public.category">
+            <field name="parent_id" ref="engine_parts"/>
+            <field name="name">Cogwheel</field>
+        </record>
+        <record id="filter" model="product.public.category">
+            <field name="parent_id" ref="engine_parts"/>
+            <field name="name">Oil filter</field>
+        </record>
+        <record id="radiator" model="product.public.category">
+            <field name="parent_id" ref="engine_parts"/>
+            <field name="name">Radiator</field>
+        </record>
+        <record id="complete_engines" model="product.public.category">
+            <field name="parent_id" ref="engine_parts"/>
+            <field name="name">Complete Engines</field>
+        </record>
+        <record id="spark_plug" model="product.public.category">
+            <field name="parent_id" ref="engine_parts"/>
+            <field name="name">Spark Plug</field>
+        </record>
+
+        <record id="undercarriage" model="product.public.category">
+            <field name="name">Landing gear</field>
+        </record>
+        <record id="brake_disk" model="product.public.category">
+            <field name="parent_id" ref="undercarriage"/>
+            <field name="name">Brake Disk</field>
+        </record>
+        <record id="absorber" model="product.public.category">
+            <field name="parent_id" ref="undercarriage"/>
+            <field name="name">Absorber</field>
+        </record>
+
+        <record id="other_parts" model="product.public.category">
+            <field name="name">Other Parts</field>
+        </record>
+        <record id="exhaust" model="product.public.category">
+            <field name="parent_id" ref="other_parts"/>
+            <field name="name">Car Exhausts</field>
+        </record>
+        <record id="lamps" model="product.public.category">
+            <field name="parent_id" ref="other_parts"/>
+            <field name="name">Lamps</field>
+        </record>
+
+        <!-- Delete loftspace products -->
+        <delete id="theme_monglia_sale.product_1" model="product.product"/>
+        <delete id="theme_monglia_sale.product_2" model="product.product"/>
+        <delete id="theme_monglia_sale.product_3" model="product.product"/>
+        <delete id="theme_monglia_sale.product_4" model="product.product"/>
+        <delete id="theme_monglia_sale.product_5" model="product.product"/>
+        <delete id="theme_monglia_sale.product_6" model="product.product"/>
+        <delete id="theme_monglia_sale.product_7" model="product.product"/>
+        <delete id="theme_monglia_sale.product_8" model="product.product"/>
+        <delete id="theme_monglia_sale.product_9" model="product.product"/>
+        <delete id="theme_monglia_sale.product_10" model="product.product"/>
+        <delete id="theme_monglia_sale.product_11" model="product.product"/>
+        <delete id="theme_monglia_sale.product_12" model="product.product"/>
+        <delete id="theme_monglia_sale.product_13" model="product.product"/>
+        <delete id="theme_monglia_sale.product_14" model="product.product"/>
+        <delete id="theme_monglia_sale.product_15" model="product.product"/>
+        <delete id="theme_monglia_sale.product_template_16" model="product.product"/>
+
+        <!-- Create new products -->
+        <record id="product_1" model="product.product">
+            <field name="name">Oil Filter</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.filter')])]"/>
+            <field name="list_price">59.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_01.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_2" model="product.product">
+            <field name="name">Front Headlights</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.lamps')])]"/>
+            <field name="list_price">259.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_02.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_3" model="product.product">
+            <field name="name">Car Battery 12V</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.battery')])]"/>
+            <field name="list_price">75.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_03.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_4" model="product.product">
+            <field name="name">Cogwheel</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.cogwheel')])]"/>
+            <field name="list_price">89.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_04.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_5" model="product.product">
+            <field name="name">Front Headlight Lamp</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.lamps')])]"/>
+            <field name="list_price">79.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_05.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_6" model="product.product">
+            <field name="name">Car Battery</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.battery')])]"/>
+            <field name="list_price">99.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_06.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_7" model="product.product">
+            <field name="name">Car Exhaust</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.exhaust')])]"/>
+            <field name="list_price">239.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_07.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_8" model="product.product">
+            <field name="name">Shock Absorber</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.absorber')])]"/>
+            <field name="list_price">119.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_08.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_9" model="product.product">
+            <field name="name">Spark Plug</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.spark_plug')])]"/>
+            <field name="list_price">49.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_09.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_10" model="product.product">
+            <field name="name">V8 Engine Pistons</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.complete_engines')])]"/>
+            <field name="list_price">1349.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_10.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_11" model="product.product">
+            <field name="name">Car Rear Lamp</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.lamps')])]"/>
+            <field name="list_price">299.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_11.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_12" model="product.product">
+            <field name="name">Radiator</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.radiator')])]"/>
+            <field name="list_price">79.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_12.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_13" model="product.product">
+            <field name="name">V8 Car Engine</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.complete_engines')])]"/>
+            <field name="list_price">4999.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_13.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_14" model="product.product">
+            <field name="name">Brake Disk Red</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.brake_disk')])]"/>
+            <field name="list_price">289.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_14.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_15" model="product.product">
+            <field name="name">Car Engine</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.complete_engines')])]"/>
+            <field name="list_price">2459.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_15.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+        <record id="product_template_16" model="product.template">
+            <field name="name">Brake Disk Yellow</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_vehicle_sale.brake_disk')])]"/>
+            <field name="list_price">289.0</field>
+            <field name="image" type="base64" file="theme_vehicle/static/src/img/content/product_img_16.jpg"/>
+            <field name="website_published" eval="True"/>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+        </record>
+
+	</data>
+
+</openerp>

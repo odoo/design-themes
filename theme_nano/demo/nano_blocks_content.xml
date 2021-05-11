@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+  <template name="Nano // Building Blocks // Content" id="website.demo_nano_blocks_content" page="True">
+    <t t-call="website.layout">
+      <div id="wrap" class="oe_structure mb64">
+        
+        <section class="bg-gray-dark">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="demo-title mt0 mb0">Content Blocks</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+
+              <!-- WELL -->
+
+              <h4 class="demo-subtitle mt32 mb32">Well</h4>
+
+              <div class="s_well well well-alpha">
+                <span class="pull-left fa fa-plug fa-3x" style=""></span>
+                <div class="well-text">
+                  <p>Explain the benefits you offer. <br/>Don't write about products or services here, write about solutions.</p>
+                </div>
+              </div>
+
+              <div class="s_well well well-beta">
+                <span class="pull-left fa fa-support fa-3x" style=""></span>
+                <div class="well-text">
+                  <p>Explain the benefits you offer. <br/>Don't write about products or services here, write about solutions.</p>
+                </div>
+              </div>
+
+              <div class="s_well well well-epsilon">
+                <span class="pull-left fa fa-exclamation-triangle fa-3x" style=""></span>
+                <div class="well-text">
+                  <p>Explain the benefits you offer. <br/>Don't write about products or services here, write about solutions.</p>
+                </div>
+              </div>
+
+              <!-- BLOCKQUOTE -->
+
+              <h4 class="demo-subtitle mt64 mb32">Blockquote</h4>
+
+              <blockquote class="s_quote">
+                <i class="fa fa-quote-left fa-1x bg-beta"></i>
+                <div class="blockquote-text">
+                  <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                  <img alt="" class="img img-circle" src="/website/image/theme_common.image_content_10"/>
+                  <small>Author of this quote</small>
+                </div>
+              </blockquote>
+
+              <!-- PANEL -->
+
+              <h4 class="demo-subtitle mt64 mb32">Panel</h4>
+
+              <div class="s_panel panel panel-delta">
+                <div class="panel-heading">
+                  <h4 class="mt0 mb0"><i class="fa fa-bicycle fa-1x text-muted"></i>Feature Title</h4>
+                </div>
+                <div class="panel-body">Panels are a great tool to compare offers or to emphasize on key features. To compare products, use the inside columns.</div>
+              </div>
+
+              <div class="s_panel panel panel-gamma">
+                <div class="panel-heading">
+                  <h4 class="mt0 mb0"><i class="fa fa-truck fa-1x text-muted"></i>Feature Title</h4>
+                </div>
+                <div class="panel-body">Panels are a great tool to compare offers or to emphasize on key features. To compare products, use the inside columns.</div>
+              </div>
+
+              <div class="s_panel panel panel-alpha">
+                <div class="panel-heading">
+                  <h4 class="mt0 mb0"><i class="fa fa-fighter-jet fa-1x text-muted"></i>Feature Title</h4>
+                </div>
+                <div class="panel-body">Panels are a great tool to compare offers or to emphasize on key features. To compare products, use the inside columns.</div>
+              </div>
+
+              <!-- SEPARATOR -->
+
+              <h4 class="demo-subtitle mt64 mb32">Separator</h4>
+
+              <hr class="s_separator hr-full hr-1px hr-solid mt0"/>
+              <hr class="s_separator hr-full hr-3px hr-dotted"/>
+              <hr class="s_separator hr-full hr-5px hr-dashed mb0"/>
+
+              <!-- SHARE -->
+
+              <h4 class="demo-subtitle mt64 mb32">Social buttons</h4>
+
+              <div class="row">
+
+                <div class="col-md-4">
+
+                  <div class="oe_share s_share">
+                    <h4 class="s_share_title">Share <i class="text-muted fa fa-1x fa-hand-o-right"></i></h4>
+                    <a class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content" target="_blank">
+                      <i class="img-circle fa fa-1x fa-facebook"></i>
+                    </a>
+                    <a class="oe_share_twitter" href="https://twitter.com/intent/tweet?text=Building%20Blocks%20-%20Content&amp;url=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content" target="_blank">
+                      <i class="img-circle fa fa-1x fa-twitter"></i>
+                    </a>
+                    <a class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content&amp;title=Building%20Blocks%20-%20Content&amp;" target="_blank">
+                      <i class="img-circle fa fa-1x fa-linkedin"></i>
+                    </a>
+                    <a class="oe_share_google" href="https://plus.google.com/share?url=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content" target="_blank">
+                      <i class="img-circle fa fa-1x fa-google-plus"></i>
+                    </a>
+
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                  <div class="oe_share s_share">
+                    <h4 class="s_share_title text-beta">Share <i class="text-muted fa fa-1x fa-hand-o-right"></i></h4>
+                    <a class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content" target="_blank">
+                      <i class="img-rounded bg-beta fa fa-1x fa-facebook"></i>
+                    </a>
+                    <a class="oe_share_twitter" href="https://twitter.com/intent/tweet?text=Building%20Blocks%20-%20Content&amp;url=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content" target="_blank">
+                      <i class="img-rounded bg-beta fa fa-1x fa-twitter"></i>
+                    </a>
+                    <a class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content&amp;title=Building%20Blocks%20-%20Content&amp;" target="_blank">
+                      <i class="img-rounded bg-beta fa fa-1x fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:?body=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content&amp;subject=Building%20Blocks%20-%20Content">
+                      <i class="img-rounded bg-beta fa fa-1x fa-envelope"></i>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                  <div class="oe_share s_share">
+                    <h4 class="s_share_title text-beta">Share <i class="text-muted fa fa-1x fa-hand-o-right"></i></h4>
+                    <a class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content" target="_blank">
+                      <i class="img-circle bg-gamma fa fa-2x fa-facebook"></i>
+                    </a>
+                    <a class="oe_share_twitter" href="https://twitter.com/intent/tweet?text=Building%20Blocks%20-%20Content&amp;url=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content" target="_blank">
+                      <i class="img-circle bg-gamma fa fa-2x fa-twitter"></i>
+                    </a>
+                    <a class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftheme-nano.odoo.com%2Fpage%2Fdemo_blocks_content&amp;title=Building%20Blocks%20-%20Content&amp;" target="_blank">
+                      <i class="img-circle bg-gamma fa fa-2x fa-linkedin"></i>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- LABEL -->
+
+              <h4 class="demo-subtitle mt64 mb32">Label</h4>
+
+              <span class="s_label label bg-alpha">
+                <strong>Category</strong>
+              </span> 
+              <span class="s_label label bg-beta">
+                <strong>Category</strong>
+              </span> 
+              <span class="s_label label bg-gamma">
+                <strong>Category</strong>
+              </span> 
+              <span class="s_label label bg-delta">
+                <strong>Category</strong>
+              </span> 
+              <span class="s_label label bg-epsilon">
+                <strong>Category</strong>
+              </span>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </t>
+  </template>
+
+  <record id="demo_nano_blocks_content_menu" model="website.menu">
+    <field name="name">Content</field>
+    <field name="url">/page/demo_nano_blocks_content</field>
+    <field name="parent_id" ref="demo_nano_blocks_menu"/>
+    <field name="sequence" type="int">42</field>
+  </record>
+
+  </data>
+</openerp>

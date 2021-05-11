@@ -1,0 +1,104 @@
+@s_showcase_image_right-caption_bg                : white;
+@s_showcase_image_right-caption_color             : #333;
+@s_showcase_image_right-caption_padding           : 1em;
+@s_showcase_image_right-caption_font-size-mobile  : 1em;
+@s_showcase_image_right-caption_font-size-desktop : .8em;
+@s_showcase_image_right-caption_text-shadow       : none;
+
+
+// Default Layout
+// =======================
+
+.s_showcase_image_right {
+  height: auto;
+  text-align: right;
+  .info{
+    margin-bottom: 1.5em;
+  }
+  figure{
+    background-size : cover;
+    position        : relative;  
+    height          : 200px;
+  }
+  figcaption {
+    position    : absolute;
+    bottom      : 0;
+    width       : 100%;
+    text-shadow : @s_showcase_image_right-caption_text-shadow;
+    font-size   : @s_showcase_image_right-caption_font-size-mobile;
+    color       : @s_showcase_image_right-caption_color;
+    background  : @s_showcase_image_right-caption_bg;
+    padding     : @s_showcase_image_right-caption_padding;
+    h6 {margin-top: 0}
+  }
+  @media only screen and (max-width: 767px) {
+    height: auto!important;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    height: 350px;
+    .info{
+      height: 100%;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .content{
+    }
+    figure{
+      height: 100%;
+    }
+    figcaption {
+      position     : absolute;
+      bottom       : 0;
+      right        : 0;
+      width        : 50%;
+      margin-right : 14px;
+      text-align   : left;
+      font-size : @s_showcase_image_right-caption_font-size-desktop;
+      padding   : @s_showcase_image_right-caption_padding;
+    }
+  }
+}
+
+@supports not (display: flex) {
+  @media only screen and (min-width: 992px) {
+    .info{
+      margin: 2em 0;
+    }
+  }
+}
+
+// Layout Options
+// =======================
+
+.s_showcase_image_right figure {
+  &.tl{
+    figcaption {
+      top    : 0;
+      left   : 0;
+      bottom : auto;
+      right  : auto;
+      text-align: right;
+    }
+  }
+  &.tr{
+    figcaption {
+      top    : 0;
+      left   : auto;
+      bottom : auto;
+      right  : 0;
+      margin-right : 14px;
+    }
+  }
+  &.bl{
+    figcaption {
+      top    : auto;
+      left   : 0;
+      bottom : 0;
+      right  : auto;
+      text-align: right;
+    }
+  }
+}

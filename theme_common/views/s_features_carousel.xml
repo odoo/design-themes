@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template name="Features Slideshow" id="s_features_carousel">
+
+
+                <section id="myCarousel" class="s_features_carousel carousel slide" data-interval="10000" >
+                    <!-- Indicators -->
+                    <ol type="01" class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+
+                    <div class="container">
+                        <div class="row content">
+                            <div class="col-md-12 mt64">
+                                <h2>Features</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="item image_text active">
+                            <div class="container mb92">
+                                <div class="row content">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="circle center-block">
+                                            <div class="mask bg-beta">
+                                                <span class="text-center">01.</span>
+                                                <p>DECISIONS, DECISIONS, AND EVEN MORE DECISIONS</p>
+                                            </div>
+                                        </div>
+                                        <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <img class="img img-responsive center-block" src="/website/image/theme_common.image_content_04"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item image_text">
+                            <div class="container mb92">
+                                <div class="row content">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="circle center-block">
+                                            <div class="mask bg-beta">
+                                                <span class="text-center">02.</span>
+                                                <p>DESIGN, DESIGN, AND EVEN MORE DESIGN</p>
+                                            </div>
+                                        </div>
+                                        <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <img class="img img-responsive center-block" src="/website/image/theme_common.image_content_03"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control left" data-target="#myCarousel" data-slide="prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div class="carousel-control right" data-target="#myCarousel" data-slide="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </section>
+
+        </template>
+    </data>
+</openerp>

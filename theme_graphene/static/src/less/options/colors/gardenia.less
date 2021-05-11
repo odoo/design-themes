@@ -1,0 +1,85 @@
+// Gardenia Color Set
+// ===========================
+
+@color-alpha     : @color-alpha-gardenia;
+@color-beta      : @color-beta-gardenia;
+@color-gamma     : @color-gamma-gardenia;
+@color-delta     : @color-delta-gardenia;
+@color-epsilon   : @color-epsilon-gardenia; 
+
+
+// =============================
+// Bootstrap Colours ===========
+// =============================
+
+@brand-primary: @color-alpha;
+
+
+
+// =============================
+// General Colours =============
+// =============================
+
+
+#wrapwrap { 
+
+	.navbar-default .navbar-nav > .active > a > span, 
+	.navbar-default .navbar-nav > .active > a:hover > span, 
+	.navbar-default .navbar-nav > .active > a:focus > span {
+		border-bottom: 2px solid @color-epsilon  ;
+	}
+
+	.label-default {
+		background-color: @color-epsilon ;
+	}
+
+}
+
+
+// =============================
+// Snipets =====================
+// =============================
+
+
+
+.jumbotron {
+	background-color: #DDD;
+}
+
+
+// =============================
+// Layout ======================
+// =============================
+
+.graphene-layout-postcard() when (@graphene-layout-boxed = true), (@graphene-layout-postcard = true)  {
+
+	body { background:  #EDEDEE;}
+
+	header#graph_header {
+		.navbar-brand, .navbar-default .navbar-brand {
+			color: @gray-darker;
+		}
+
+		.navbar .navbar-nav > li.active > a, 
+		.navbar .navbar-nav > li.active > a:hover, 
+		.navbar .navbar-nav > li.active > a:focus {
+			color: @gray-dark;
+		}
+
+		.navbar .navbar-nav > li > a {
+			color: @gray-darker;
+		}
+	}
+
+
+}
+.graphene-layout-postcard();
+
+
+
+
+
+
+
+
+

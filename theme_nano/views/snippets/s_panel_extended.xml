@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+	<data>
+
+		<template name="Panel Extended" id="s_panel_extended" inherit_id="website_less.snippets">
+
+			<xpath expr="//div[contains(@class, 's_panel')]" position="replace">
+				<div class="s_panel panel panel-beta">
+					<div class="panel-heading">
+						<h4 class="mt0 mb0"><i class="fa fa-star fa-1x text-muted"></i>Feature Title</h4>
+					</div>
+					<div class="panel-body">Panels are a great tool to compare offers or to emphasize on key features. To compare products, use the inside columns.</div>
+				</div>
+			</xpath>
+			
+		</template>
+
+	</data>
+</openerp>

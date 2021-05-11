@@ -1,0 +1,20 @@
+@s_banner_parallax_height: 100vh;
+@s_banner_parallax_padding: 0px;
+@s_banner_parallax_img_height: 350px;
+@s_banner_parallax_text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+.s_banner_parallax_hero_bg_hook(){
+    width: 100%;
+    text-align: center;
+    bottom: -30px;
+    @media (max-width:@screen-xs-max) {
+        top: 100px;
+    }
+};
+.s_banner_parallax_row_hook(){
+    vertical-align: bottom;
+};
+.s_banner_parallax_height_hook (){
+    @media (max-width:@screen-sm-min) {
+        height: 100vh !important;
+    }
+};

@@ -1,0 +1,349 @@
+/* ==========================================================================
+   Structure Styles
+   ========================================================================== */
+
+/**
+ * 1. preHeader
+ * 2. Navbar
+ * 3. Hamburger Button
+ * 4. Copyright
+ */
+
+
+/* preHeader
+   ========================================================================== */
+
+@preheader-background-color: @color-alpha;
+.preheader-style();
+
+#preheader {
+	vertical-align: middle;
+	font-size: @layout-font-size;
+	font-weight: @layout-font-weight;
+	padding: 8px 0;
+	background-color: @preheader-background-color;
+	color: @preheader-link-color;
+	.home,
+	#social,
+	#language {
+		> a .fa,
+		button .fa {
+			box-sizing: content-box;
+			border: 2px solid rgba(0, 0, 0, 0);
+			color: @color-alpha;
+			background-color: @preheader-link-color;
+			&:hover {
+				background-color: rgba(0, 0, 0, 0);
+				border-color: @preheader-link-color;
+				color: @preheader-link-color;
+			}
+		}
+		.fa-size-generator(10px);
+	}
+	.list-inline {
+		display: inline-block;
+		margin: 0;
+		> li {
+			padding: 0;
+		}
+	}
+	#social {
+		text-align: right;
+		a {
+			text-decoration: none;
+		}
+	}		
+	#contact {
+		li {
+			margin: 0 20px 0 0;
+			.fa:not(.fa-home) {
+				margin: 0 8px 0 0;
+				color: @preheader-link-color;
+				opacity: 0.5;
+			}
+			a, span:not(.fa) { 
+				color: @preheader-text-color;
+				letter-spacing: 1px;
+			}
+		}
+	}
+	#language {
+		min-width: 10%;
+		text-align: right;
+		/* Button */
+		.btn-group {
+			button {
+				padding: 0;
+				border: 0;
+				background-color: rgba(0, 0, 0, 0);
+				.caret {
+					margin: 0 0 0 5px;
+					color: @preheader-link-color;
+				}
+			}
+			&.open > button {
+				box-shadow: @shadow;
+				.fa {
+					background-color: rgba(0, 0, 0, 0);
+					border-color: @preheader-link-color;
+					color: @preheader-link-color;
+				}
+				.caret {
+					border-bottom: 5px solid;
+					border-top: 0;
+				}
+			}
+			/* First Level */
+			> .dropdown-menu {
+				top: 38px;
+				right: 0;
+				padding: 0;
+				border: 0;
+				margin: 0;
+				min-width: 200px;
+				z-index: @zindex-dropdown + 1;
+				box-shadow: @shadow;
+				background-color: @preheader-link-color;
+				> li {
+					margin: 0;
+					> a {
+						padding: 8px 18px;
+						color: @navbar-link-color;
+						font-size: @navbar-font-size;
+						font-weight: @navbar-font-weight;
+						text-align: right;
+						text-transform: uppercase;
+						.fa {
+							margin: 0 5px;
+						}
+						&:hover,
+						&:hover .fa { 
+							background-color: rgba(0, 0, 0, 0);
+							color: @color-alpha;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Navbar
+   ========================================================================== */
+
+#wrapwrap {
+	.navbar {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.navbar-default {
+		border: 0;
+		font-size: @font-size-small;
+		font-weight: @font-bold;
+		.navbar-collapse {
+			border: 0;
+		}
+		.navbar-brand {
+			color: @navbar-link-color;
+		}
+		.navbar-nav {
+			/* Remove separator */
+			.divider {
+				display: none;
+			}
+			/* First Level */
+			> li {
+				margin: 5px 0;
+				> a {
+					letter-spacing: 1px;
+					padding: 3px 14px;
+					border: 2px solid rgba(0, 0, 0, 0);
+					margin-left: 4px;
+					color: @navbar-link-color;
+					font-size: @navbar-font-size;
+					font-weight: @navbar-font-weight;
+					border-radius: 20px;
+					text-transform: uppercase;
+					&:hover{
+						color: @navbar-link-hover-color;
+						border: 2px solid @navbar-link-hover-color;
+					}
+				}
+				&.active > a, 
+				&.active > a:hover, 
+				&.active > a:focus {
+					background-color: @navbar-link-active-bg;
+					border-color: @navbar-link-active-bg;
+					border-radius: 20px;
+					color: @navbar-link-active-color;
+				}
+				&.open {
+					> a, 
+					> a:hover, 
+					> a:focus {
+						background-color: rgba(0, 0, 0, 0);
+						color: @navbar-link-hover-color;
+						border-color: @navbar-link-hover-color;
+						border-radius: 20px;
+					}
+					.caret {
+						border-bottom: 5px solid;
+						border-top: 0;
+					}
+				}
+				/* Second Level */
+				> .dropdown-menu {
+					top: 34px;
+					left: 4px;
+					padding: 0;
+					border: 0;
+					min-width: 200px;
+					box-shadow: @shadow;
+					> li {
+						margin: 0;
+						> a {
+							padding: 8px 18px;
+							font-size: @navbar-font-size;
+							font-weight: @navbar-font-weight;
+							text-transform: uppercase;
+							&:before {
+								content: '\f111';
+								font-family: 'FontAwesome';
+								margin: 0 6px 0 0;
+								line-height: 18px;
+								font-size: 6px;
+								vertical-align: top;
+							}
+							&:hover { 
+								background-color: rgba(0, 0, 0, 0);
+								color: @navbar-link-hover-color;
+							}
+						}
+						&.active > a,
+						&.active > a:hover,
+						&.active > a:focus {
+							background-color: @navbar-link-active-bg;
+							color: @navbar-link-active-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: @screen-xs-max) {
+		.navbar-collapse {
+			margin: 0;
+			box-shadow: @shadow;
+		}
+		.navbar-default .navbar-nav > li {
+			> a {
+				margin: 0 0 5px 0;
+			}
+			.dropdown-menu > li {
+				> a {
+					padding: 4px 20px;
+					&:before {
+						line-height: 24px;
+					}
+				}
+				&.active > a,
+				&.active > a:hover,
+				&.active > a:focus {
+					border-radius: 20px;
+				}
+				&:last-child {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+
+	@media (min-width: @screen-sm-min) {
+		.navbar .container {
+			white-space: nowrap;
+		}
+		.navbar-header,
+		.navbar-collapse {
+			float: none !important;
+			display: inline-block !important;
+			vertical-align: middle;
+		}
+		.navbar-header {
+			width: 20%;
+		}
+		.navbar-collapse {
+			width: 80%;
+		}
+	}
+
+}
+
+
+/* Hamburger Button
+   ========================================================================== */
+
+@media (max-width: @screen-sm-max) {
+	#wrapwrap #preheader li.visible-xs-inline-block .fa {
+		opacity: 1;
+		color: @color-alpha;
+		&:hover {
+			color: @navbar-link-color;
+		}
+	}
+	#wrapwrap .navbar-default .navbar-toggle {
+		border: 0;
+		padding: 8px 2px;
+		color: @gray-darker;
+		background-color: rgba(0, 0, 0, 0);
+		.icon-bar {
+			background-color: @navbar-link-color;
+			width: 25px;
+			height: 3px;
+			border-radius: 2px;
+		}	
+		&:hover {
+			.icon-bar{
+				background-color: @color-alpha;
+			}
+		}
+	}
+}
+
+
+/* Copyright
+   ========================================================================== */
+
+#copyright {
+	background-color: @preheader-background-color;
+	color: @preheader-text-color;
+	font-size: @layout-font-size;
+	font-weight: @layout-font-weight;
+	#company {
+		padding: 10px 15px;
+	}
+	.top {
+		position: absolute;
+		top: -20px;
+		left: 0;
+		right: 0;
+		.fa-size-generator(20px);
+	}
+	#odoo {
+		padding: 10px 15px;
+		text-align: right;
+		a{
+			color: @preheader-text-color;
+			&:hover{
+				color: @preheader-text-color;
+				text-decoration: underline;
+			}
+		}
+		.label{
+			padding: 2px 6px;
+			background-color: #fff;
+			color: @color-alpha;
+			font-size: 100%;
+		}
+	}
+}

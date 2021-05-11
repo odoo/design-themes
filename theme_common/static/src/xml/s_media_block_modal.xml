@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+<t t-name="theme_common.s_media_block_modal">
+
+  <div class="modal" contenteditable="False" contentEditable="false" backdrop="false" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:2001">
+  
+    <div class="modal-dialog">
+
+      <div id="s_media_block_modal" class="modal-content">
+        
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h4 class="text-centered">Media Type</h4>
+          <div class="videoEnabler container-fluid">
+            <label class="col-sm-1" for="header_type"><i></i></label>
+            <div class="col-sm-11">         
+              <select id="header_type" class="form-control">
+                <option value="video">Html5 Video</option>
+                <option value="custom_content">Iframe</option>
+                <option value="image">Just picture</option>
+              </select>   
+            </div>     
+          </div>
+        </div> 
+          
+        <div class="modal-body" contenteditable="false">
+          <div id="tab_html5" class="videoTabs">
+            <form class="form-horizontal container-fluid" role="form">
+
+              <div class="form-group">
+                <label for="mp4" class="col-sm-2 control-label">MP4</label>
+                <div class="col-sm-10">
+                  <input type="url" class="form-control" id="mp4" placeholder="Mp4 file path" />
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                  <small class="help-block"><i class="fa fa-check"></i>IE9+ - Firefox - Chrome - Safari - iOS - Android</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="webm" class="col-sm-2 control-label">WebM</label>
+                <div class="col-sm-10">
+                  <input type="url" class="form-control" id="webm" placeholder="WebM file path" />
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                  <small class="help-block"><i class="fa fa-check"></i>Firefox - Chrome - Opera</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="ogg" class="col-sm-2 control-label">Ogg</label>
+                <div class="col-sm-10">
+                  <input type="url" class="form-control" id="ogg" placeholder="Ogg file path" />
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                  <small class="help-block"><i class="fa fa-check"></i>Firefox - Chrome - Opera</small>
+                </div>
+              </div>
+
+              <div class="col-sm-10 col-sm-offset-2"><hr /></div>
+
+              <label class="col-sm-2 control-label">Options</label>
+              
+              <div class="col-sm-10 videoCheckbox">
+                <div class="col-sm-6">
+                  <div class="checkbox">
+                    <label class="col-sm-7 pre_label" >Muted</label>
+                    <label class="col-sm-5"><input id="muted" type="checkbox" value="muted" /></label>
+                  </div>
+                  <div class="checkbox">
+                    <label class="col-sm-7 pre_label">Show controls</label>
+                    <label class="col-sm-5">
+                      <input id="controls" type="checkbox" value="controls" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="checkbox">
+                    <label class="col-sm-7 pre_label">Loop video</label>
+                    <label class="col-sm-5">
+                      <input id="loop" type="checkbox" value="loop" />             
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="checkbox">
+                    <label class="col-sm-7 pre_label">Autoplay</label>
+                    <label class="col-sm-5">
+                      <input id="autoplay" type="checkbox" value="autoplay" />           
+                    </label>
+                  </div>
+                </div>
+
+              </div> <!-- /.videCheckbox -->          
+            </form>
+          </div>
+
+
+          <div id="tab_custom" class="videoTabs">
+            <form class="form-horizontal container-fluid" role="form">
+        
+              <div class="form-group mb0">
+                <label for="custom_content" class="col-sm-2 control-label">Your code</label>
+
+                <div class="col-sm-10">
+                  <textarea id="custom_content" class="form-control" rows="6"></textarea>
+                </div>
+
+                <div class="col-sm-offset-2 col-sm-10">
+                  <small class="help-block"><i class="fa fa-check"></i>Youtube - Vimeo - Dailymotion - Slideshare</small>
+                </div>
+                
+                <div class="col-sm-10 col-sm-offset-2" contenteditable="false" id="accordion4323424223">
+
+                  <div class="  panel-default ">
+                    <a class="" data-parent="#accordion4323424223" data-toggle="collapse" href="#collapse3423234234">
+                      <span class="fa fa-question-circle white"></span> 
+                    </a>
+                    <div class="collapse" id="collapse3423234234">
+                      <p class="mt16">Add videos, playlists or other contents pasting the iframe code into the box.<br/>
+                      Here’s how to embed a Youtube video:</p>
+                      <ol>
+                        <li>Click the <strong>Share</strong> link under the video.</li>
+                        <li>Click the <strong>Embed</strong> link.</li>
+                        <li>Copy the code provided in the expanded box.</li>
+                        <li>Paste the code into the box.</li>
+                      </ol>
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <img src="/theme_common/static/src/img/ui/s_media_block/share.png" alt="share" class="img-responsive guide" />  
+                        </div>
+                        <div class="col-xs-6">
+                          <img src="/theme_common/static/src/img/ui/s_media_block/iframe.png" alt="iframe" class="img-responsive guide" />  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-sm-10 col-sm-offset-2"><hr/></div>
+            
+              <div class="form-group">
+                <label  class="col-sm-2 control-label">Options</label>
+
+                <div class="col-sm-4 col-sm-offset-1">
+
+                  <label class="radio-inline col-sm-11 col-sm-offset-1">
+                    <input type="radio" name="iframefit" id="fitContR" value="fitCont" /><i class="fa fa-compress"></i>
+                  </label>
+                  <small class="help-block col-sm-12">Fit container to video</small>
+
+                </div>
+
+                <div class="col-sm-5">                  
+                  <label class="radio-inline col-sm-11 col-sm-offset-1">
+                    <input type="radio" name="iframefit" id="fitIframeR" value="fitIframe" /><i class="fa fa-expand"></i>
+                  </label>
+                  <small class="help-block col-sm-12">Fit video to container</small>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+
+          <div id="tab_image" class="videoTabs">
+            <form class="form-horizontal container-fluid" role="form">
+              <div class="form-group">
+                <h4 class="col-sm-10 col-sm-offset-2"><i class="fa fa-code"></i>&#32;&#32;Custom content</h4>
+              </div>
+              <div class="form-group">
+                <label for="custom_content" class="col-sm-2 control-label">Your code</label>
+
+                <div class="col-sm-10">
+                  <textarea id="custom_content" class="form-control" rows="4"></textarea>
+                </div>
+
+                <div class="col-sm-offset-2 col-sm-10">
+                  <small class="help-block"><i class="fa fa-check"></i>Firefox - Chrome - Opera</small>
+                </div>
+              </div>
+
+            </form>
+          </div>
+      
+      
+
+        </div> <!-- modal-body -->
+
+
+        <div class="modal-footer">
+          <button id="cancel" data-dismiss="modal" class="btn btn-primary">Cancel</button>
+          <button id="sub_data" data-dismiss="modal" class="btn btn-danger">Apply</button>
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- / .modal -->
+</t>
+
+</templates>

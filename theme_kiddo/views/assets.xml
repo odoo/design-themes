@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="kiddo_editor_js" name="theme_editor_kiddo" inherit_id="website_less.assets_editor" active="True">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/theme_kiddo/static/src/js/kiddo_snippets_editor.js"></script>
+            </xpath>
+        </template>
+
+        <template id="less" name="theme kiddo less" inherit_id="website.theme" active="True" priority="1">
+            <xpath expr="." position="inside">
+                <link href="/theme_common/static/src/less/fonts.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/mixins.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_separator_block.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_1_column_text.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_2_column_text.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_3_column_text.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_4_column_text.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_big_picture_text.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_text_big_picture.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_cubes.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_header_text_big_picture.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_text_picture_text.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_banner_parallax.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_product_list.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_banner_3.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_features_carousel.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_discount.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_image_text_fw.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_color_blocks_4.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_common/static/src/less/s_products_carousel.less" rel="stylesheet" type="text/less"/>
+
+                <link href="/theme_kiddo/static/src/less/blog.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_kiddo/static/src/less/color.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_kiddo/static/src/less/customize_modal.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_kiddo/static/src/less/options.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_kiddo/static/src/less/s_discount.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_kiddo/static/src/less/theme.less" rel="stylesheet" type="text/less"/>
+                <link href="/theme_kiddo/static/src/less/typography.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>

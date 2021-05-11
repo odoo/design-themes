@@ -1,0 +1,168 @@
+// =============================
+// === DEFINE MAIN COLOURS  ====
+// =============================
+
+// Resets bootstrap greyscale and add steps
+@black           : #000;
+@white           : lighten(@black, 100%);
+
+@gray-lighter    : lighten(@black, 93.5%);
+
+@gray-light-light: lighten(@black, 82%);
+@gray-light      : lighten(@black, 65.5%);
+@gray-light-dark : lighten(@black, 50%);
+
+@gray            : lighten(@black, 33.5%); 
+
+@gray-dark-light : lighten(@black, 25%);
+@gray-dark       : lighten(@black, 22%);
+@gray-dark-dark  : lighten(@black, 19%);
+
+@gray-darker     : lighten(@black, 16%);
+
+@gray-darkest     : lighten(@black, 13%);
+
+
+// Bootstrap's bg
+.bg-success          { background-color : @brand-success!important; color: contrast(@brand-success, #000000, #ffffff, 60%);}
+.bg-primary          { background-color : @brand-primary!important; color: contrast(@brand-primary, #000000, #ffffff, 60%);}
+.bg-info             { background-color : @brand-info!important; color: contrast(@brand-info, #000000, #ffffff, 60%);}
+.bg-danger           { background-color : @brand-danger!important; color: contrast(@brand-danger, #000000, #ffffff, 60%);}
+.bg-warning          { background-color : @brand-warning!important; color: contrast(@brand-warning, #000000, #ffffff, 60%);}
+
+
+// Text Color
+.color-black            { color : @black; }
+.color-white            { color : @white; }
+
+.color-gray-lighter     { color : @gray-lighter; }
+.color-gray-light-light { color : @gray-light-light; }
+.color-gray-light       { color : @gray-light; }
+.color-gray-light-dark  { color : @gray-light-dark; }
+.color-gray             { color : @gray; }
+.color-gray-dark-light  { color : @gray-dark-light; }
+.color-gray-dark        { color : @gray-dark; }
+.color-gray-dark-dark   { color : @gray-dark-dark; }
+.color-gray-darker      { color : @gray-darker; }
+.color-gray-darkest     { color : @gray-darkest; }
+
+
+// Background Color
+.bg-white            { background-color : @white!important;  color: @gray;}
+.bg-black            { background-color : @black!important;  color: contrast(@black, #000000, #ffffff, 60%);}
+
+.bg-gray-lighter     { background-color : @gray-lighter!important;  color: contrast(@gray-lighter , #000000, #ffffff, 60%);}
+.bg-gray-light-light { background-color : @gray-light-light!important;  color: contrast(@gray-light-light, #000000, #ffffff, 60%);}
+.bg-gray-light       { background-color : @gray-light!important;  color: contrast(@gray-light, #000000, #ffffff, 60%);}
+.bg-gray-light-dark  { background-color : @gray-light-dark!important;  color: contrast(@gray-light-dark, #000000, #ffffff, 60%);}
+
+.bg-gray             { background-color : @gray!important;  color: contrast(@gray, #000000, #ffffff, 60%);}
+
+.bg-gray-dark-light  { background-color : @gray-dark-light!important;  color: contrast(@gray-dark-light, #000000, #ffffff, 60%);}
+.bg-gray-dark        { background-color : @gray-dark!important;  color: contrast(@gray-dark, #000000, #ffffff, 60%);}
+.bg-gray-dark-dark   { background-color : @gray-dark-dark!important;  color: contrast(@gray-dark-dark, #000000, #ffffff, 60%);}
+.bg-gray-darker      { background-color : @gray-darker!important;  color: contrast(@gray-darker, #000000, #ffffff, 60%);}
+.bg-gray-darkest     { background-color : @gray-darkest!important;  color: contrast(@gray-darkest, #000000, #ffffff, 60%);}
+
+
+
+// Theme_common color' system
+@color-alpha     : @brand-primary;
+@color-beta      : @brand-success;
+@color-gamma     : @brand-info;
+@color-delta     : @brand-warning;
+@color-epsilon   : @brand-danger;
+
+
+@color-alpha-lighter   : lighten( @color-alpha, 10%);
+@color-beta-lighter    : lighten( @color-beta, 10%);
+@color-gamma-lighter   : lighten( @color-gamma, 10%);
+@color-delta-lighter   : lighten( @color-delta, 10%);
+@color-epsilon-lighter : lighten( @color-epsilon, 10%);
+
+@color-alpha-light     : lighten( @color-alpha, 5%);
+@color-beta-light      : lighten( @color-beta, 5%);
+@color-gamma-light     : lighten( @color-gamma, 5%);
+@color-delta-light     : lighten( @color-delta, 5%);
+@color-epsilon-light   : lighten( @color-epsilon, 5%);
+
+@color-alpha-dark      : darken( @color-alpha, 5%);
+@color-beta-dark       : darken( @color-beta, 5%);
+@color-gamma-dark      : darken( @color-gamma, 5%);
+@color-delta-dark      : darken( @color-delta, 5%);
+@color-epsilon-dark    : darken( @color-epsilon, 5%);
+
+@color-alpha-darker    : darken( @color-alpha, 10%);
+@color-beta-darker     : darken( @color-beta, 10%);
+@color-gamma-darker    : darken( @color-gamma, 10%);
+@color-delta-darker    : darken( @color-delta, 10%);
+@color-epsilon-darker  : darken( @color-epsilon, 10%);
+
+.color-alpha         { color : @color-alpha; }
+.color-beta          { color : @color-beta; }
+.color-gamma         { color : @color-gamma; }
+.color-delta         { color : @color-delta; }
+.color-epsilon       { color : @color-epsilon; }
+.color-white         { color : @white; }
+
+
+.bg-alpha           { background-color : @color-alpha!important;  color: contrast(@color-alpha, #000000, #ffffff, 60%);}
+.bg-beta            { background-color : @color-beta!important;  color: contrast(@color-beta, #000000, #ffffff, 60%);}
+.bg-gamma           { background-color : @color-gamma!important;  color: contrast(@color-gamma, #000000, #ffffff, 60%);}
+.bg-delta           { background-color : @color-delta!important;  color: contrast(@color-delta, #000000, #ffffff, 60%);}
+.bg-epsilon         { background-color : @color-epsilon!important;  color: contrast(@color-epsilon, #000000, #ffffff, 60%);}
+
+.bg-alpha-lighter   { background-color : @color-alpha-lighter!important;  color: contrast(@color-alpha-lighter, #000000, #ffffff, 60%);}
+.bg-beta-lighter    { background-color : @color-beta-lighter!important;  color: contrast(@color-beta-lighter, #000000, #ffffff, 60%);}
+.bg-gamma-lighter   { background-color : @color-gamma-lighter!important;  color: contrast(@color-gamma-lighter, #000000, #ffffff, 60%);}
+.bg-delta-lighter   { background-color : @color-delta-lighter!important;  color: contrast(@color-delta-lighter, #000000, #ffffff, 60%);}
+.bg-epsilon-lighter { background-color : @color-epsilon-lighter!important;  color: contrast(@color-epsilon-lighter, #000000, #ffffff, 60%);}
+
+.bg-alpha-light     { background-color : @color-alpha-light!important;  color: contrast(@color-alpha-light, #000000, #ffffff, 60%);}
+.bg-beta-light      { background-color : @color-beta-light!important;  color: contrast(@color-beta-light, #000000, #ffffff, 60%);}
+.bg-gamma-light     { background-color : @color-gamma-light!important;  color: contrast(@color-gamma-light, #000000, #ffffff, 60%);}
+.bg-delta-light     { background-color : @color-delta-light!important;  color: contrast(@color-delta-light, #000000, #ffffff, 60%);}
+.bg-epsilon-light   { background-color : @color-epsilon-light!important;  color: contrast(@color-epsilon-light, #000000, #ffffff, 60%);}
+
+.bg-alpha-dark      { background-color : @color-alpha-dark!important;  color: contrast(@color-alpha-dark, #000000, #ffffff, 60%);}
+.bg-beta-dark       { background-color : @color-beta-dark!important;  color: contrast(@color-beta-dark, #000000, #ffffff, 60%);}
+.bg-gamma-dark      { background-color : @color-gamma-dark!important;  color: contrast(@color-gamma-dark, #000000, #ffffff, 60%);}
+.bg-delta-dark      { background-color : @color-delta-dark!important;  color: contrast(@color-delta-dark, #000000, #ffffff, 60%);}
+.bg-epsilon-dark    { background-color : @color-epsilon-dark!important;  color: contrast(@color-epsilon-dark , #000000, #ffffff, 60%);}
+
+.bg-alpha-darker    { background-color : @color-alpha-darker!important;  color: contrast(@color-alpha-darker, #000000, #ffffff, 60%);}
+.bg-beta-darker     { background-color : @color-beta-darker!important;  color: contrast(@color-beta-darker, #000000, #ffffff, 60%);}
+.bg-gamma-darker    { background-color : @color-gamma-darker!important;  color: contrast(@color-gamma-darker, #000000, #ffffff, 60%);}
+.bg-delta-darker    { background-color : @color-delta-darker!important;  color: contrast(@color-delta-darker, #000000, #ffffff, 60%);}
+.bg-epsilon-darker  { background-color : @color-epsilon-darker!important;  color: contrast(@color-epsilon-darker , #000000, #ffffff, 60%);}
+
+
+
+// =============================
+// === Theme's Palette =========
+// =============================
+
+@color-alpha-gardenia    : #85AFA8;
+@color-beta-gardenia     : #7E566B;
+@color-gamma-gardenia    : #85909A;
+@color-delta-gardenia    : #969397;
+@color-epsilon-gardenia  : #422335;
+
+@color-alpha-pacifico    : #54787D;
+@color-beta-pacifico     : #6B9997;
+@color-gamma-pacifico    : #615145;
+@color-delta-pacifico    : #C6CCA5;
+@color-epsilon-pacifico  : #412342; 
+
+@color-alpha-blackmath   : #456F74;
+@color-beta-blackmath    : #EB5937;
+@color-gamma-blackmath   : #403D3C;
+@color-delta-blackmath   : #1C1919;
+@color-epsilon-blackmath : #D3CBBD; 
+
+@color-alpha-mwad        : #23C59E;
+@color-beta-mwad         : #FF5B5B;
+@color-gamma-mwad        : #FFE9C7;
+@color-delta-mwad        : #545445;
+@color-epsilon-mwad      : #2D2D36; 
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+    <template name="Process Steps" id="s_process_step">
+      <section class="s_process_step">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2>A Usefull Process Step</h2>
+              <h3 class="text-muted ">Resize and Duplicate the steps to fit your needs</h3>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <div class="container s_process_step_steps">
+            <div class="row">
+              <div class="col-md-3">
+                <h5>STEP 1</h5>
+                <a type="button" class="btn btn-primary">
+                  <i class="fa fa-tag"></i>
+                </a>
+                <h4 class="text-muted">Shopping</h4>
+                <div class="s_process_step_content">
+                  <p>This is the <u>first step</u>. Let your customers understand your process easily.</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <h5>STEP 2</h5>
+                <a type="button" class="btn btn-success">
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+                <h4 class="text-muted">Buy</h4>
+                <div class="s_process_step_content">
+                  <p>This is <u>step two</u>. Let your customers follow and understand your process.</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <h5>STEP 3</h5>
+                <a type="button" class="btn btn-info">
+                  <i class="fa fa-file-text-o"></i>
+                </a>
+                <h4 class="text-muted">Order</h4>
+                <div class="s_process_step_content">
+                  <p>This is <u>step three</u>. Let your customers follow and understand your process.</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <h5>STEP 4</h5>
+                <a type="button" class="btn btn-danger">
+                  <i class="fa fa-truck"></i>
+                </a>
+                <h4 class="text-muted">Shipping</h4>
+                <div class="s_process_step_content">
+                  <p>This is <u>step four</u>. Let your customers follow and understand your process.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </template>
+
+  </data>
+</openerp>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template name="Building Blocks // Effects" id="website.demo_blocks_effects" page="True">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure mb64">
+
+      <section class="bg-gray-darker">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="demo-title mt0 mb0">Effect Blocks</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="demo-subtitle mt32 mb32">Parallax</h4>
+          </div>
+        </div>
+    	</div>
+
+	    <section class="parallax s_parallax" data-scroll-background-offset="-70.8" data-scroll-background-ratio="0.3" style="background-image: url(/website/static/src/img/banner/mountains.jpg); background-attachment: scroll; background-position: 0px -70.8px; height: 420px;">
+      	<div>
+        	<div class="oe_structure"></div>
+      	</div>
+    	</section>
+
+	    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="demo-subtitle mt64 mb32">Parallax Slider</h4>
+          </div>
+        </div>
+    	</div>
+
+		  <section class="parallax s_parallax_slider" data-scroll-background-offset="-174" data-scroll-background-ratio="0.3" style="background-image: url(/website/static/src/img/parallax/quote.png); background-attachment: scroll; background-position: 0px -174px;">
+        <div>
+          <div>
+            <div class="oe_structure">
+              <div class="carousel quotecarousel slide mb0" id="myCarousel7">
+                <ol class="carousel-indicators mb0">
+                  <li class="active" data-slide-to="0" data-target="#myCarousel7"></li>
+                  <li data-slide-to="1" data-target="#myCarousel7" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item text_only active">
+                    <div class="container-fluid">
+                      <div class="content">
+                        <div class="row">
+                          <blockquote class="mt48 mb16 col-md-4 col-md-offset-4">
+                            <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                            <small>Author of this quote</small>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item text_only">
+                    <div class="container-fluid">
+                      <div class="content">
+                        <div class="row">
+                          <blockquote class="mt48 mb16 col-md-4 col-md-offset-4">
+                            <p>Odoo provides essential platform for our project management. Things are better organized and more visible with it.</p>
+                            <small>John Doe, CEO</small>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+		
+    </div>
+  </t>
+</template>
+
+<record id="demo_blocks_effects_menu" model="website.menu">
+    <field name="name">Effects</field>
+    <field name="url">/page/demo_blocks_effects</field>
+    <field name="parent_id" ref="demo_page_blocks_menu"/>
+    <field name="sequence" type="int">53</field>
+</record>
+
+</data>
+</openerp>

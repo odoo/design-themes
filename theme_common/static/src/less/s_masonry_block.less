@@ -1,0 +1,45 @@
+@s_masonry_block_screen-sm-min_content-left: 50%;
+@s_masonry_block_screen-sm-min_content-height: 30%;
+@s_masonry_block_screen-sm-min_content-width: 50%;
+@s_masonry_block_screen-sm-min_content-margin: -15% 0 0 -25%;
+
+.s_masonry_block {
+  .item{
+    min-height: 170px; 
+    padding: 0;
+  }
+  .main-block{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .block{
+    float: left;
+    display: inline;
+    min-height: 170px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  @media only screen and (min-width : 768px) {
+    .item {
+      height: 100%;
+    } 
+    .block{
+      width: 50%;
+      height: 50%;
+    }
+    .main-block, 
+    .block {
+      .content {
+        position: absolute;
+        top: 50%;
+        left: @s_masonry_block_screen-sm-min_content-left;
+        height: @s_masonry_block_screen-sm-min_content-height;
+        width: @s_masonry_block_screen-sm-min_content-width;
+        margin: @s_masonry_block_screen-sm-min_content-margin;
+      }
+    }
+  }
+}

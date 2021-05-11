@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <openerp>
+        <data>
+
+            <template id="website.demo_blocks" name="Theme Demo" page="True">
+                <t t-call="website.layout">
+
+                    <div id="wrap" class="oe_structure oe_empty">
+
+                        <!-- Content -->
+
+                        <div data-oe-call="theme_common.s_separator_block"/>
+                        <section class="s_title_big mb0 mt0">
+                            <div class="oe_share">
+                                <h1 class="mb32 mt32 text-center">
+                                    <font class="text-warning">Content blocks</font>
+                                </h1>
+                            </div>
+                        </section>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="text-muted text-center">Title block</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_title_big"/>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="text-muted text-center">2 column text block</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_2_column_text"/>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="text-muted text-center">3 column text block</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_3_column_text"/>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="text-muted text-center">4 column text block</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_4_column_text"/>
+
+                        <!-- Structure -->
+
+                        <div data-oe-call="theme_common.s_separator_block"/>
+                        <section class="s_title_big mb0 mt0">
+                            <div class="oe_share">
+                                <h1 class="mb32 mt32 text-center">
+                                    <font class="text-warning">Structure blocks</font>
+                                </h1>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Custom banner</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_banner_parallax"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Big image / text</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_big_picture_text"/>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Text / big image</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_text_big_picture"/>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Cubes</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_cubes"/>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Header / text / big image</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_header_text_big_picture"/>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Text / image / text</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_text_picture_text"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Product list</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_product_list"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Color blocks</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_color_blocks_4"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Discount</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_discount"/>
+
+                        <!-- Features -->
+
+                        <div data-oe-call="theme_common.s_separator_block"/>
+                        <section class="s_title_big mb0 mt0">
+                            <div class="oe_share">
+                                <h1 class="mb32 mt32 text-center">
+                                    <font class="text-warning">Feature blocks</font>
+                                </h1>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Slideshow banner</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_banner_3"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Product slideshow</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_products_carousel"/>
+
+                    </div>
+
+                </t>
+            </template>
+
+        </data>
+    </openerp>

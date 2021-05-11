@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+    <!-- Theme logo -->
+
+    <record id="theme_zap.logo" model="ir.attachment">
+        <field name="name">logo_zap.png</field>
+        <field name="datas_fname">logo_zap.png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="type">url</field>
+        <field name="url">/theme_zap/static/src/img/content/logo_zap.png</field>
+    </record>
+
+    <!-- Image for img tags with variations -->
+
+    <record id="theme_common.image_content_04" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/text_image.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_05" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/big_picture.gif</field>
+    </record>
+
+    <record id="theme_common.image_content_06" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/image_text.jpg</field>
+    </record>
+    
+    <record id="theme_common.image_content_09" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/profiles_boxes_2.jpg</field>
+    </record>
+    
+    <record id="theme_common.image_content_10" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/author.gif</field>
+    </record>
+
+    <record id="theme_common.image_content_11" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/profiles_boxes_3.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_12" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/logo_bakery.png</field>
+    </record>
+
+    <record id="theme_common.image_content_13" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/logo_barber.png</field>
+    </record>
+
+    <record id="theme_common.image_content_14" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/logo_coffee.png</field>
+    </record>
+
+    <record id="theme_common.image_content_15" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/logo_coffee_ribbon.png</field>
+    </record>
+
+    <record id="theme_common.image_content_16" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/logo_fish.png</field>
+    </record>
+
+    <record id="theme_common.image_content_17" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/logo_plane.png</field>
+    </record>
+
+    <record id="theme_common.image_content_18" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/profiles_boxes_1.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_19" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/three_columns_1.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_20" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/three_columns_2a.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_21" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/three_columns_2b.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_22" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/three_columns_2c.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_23" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/content/three_columns_3.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_24" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/backgrounds/01.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_25" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/backgrounds/04.jpg</field>
+    </record>
+
+    <record id="theme_common.image_content_26" model="ir.attachment">
+        <field name="url">/theme_zap/static/src/img/backgrounds/11.jpg</field>
+    </record>
+
+    </data>
+</openerp>

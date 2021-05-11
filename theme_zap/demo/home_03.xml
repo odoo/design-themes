@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <template id="demo_page_03" inherit_id="website.layout" primary="True">
+      <xpath expr="//head/t[@t-call-assets='website.assets_frontend']" position="attributes">
+        <attribute name="t-call-assets">theme_zap.demo_page_03_assets_frontend</attribute>
+      </xpath>
+    </template>
+
+    <template id="demo_page_03_assets_frontend" inherit_id="website.assets_frontend" primary="True">
+      <xpath expr="//t[@t-call='website.theme']" position="replace">
+        <link rel="stylesheet" href='/website_less/static/src/less/import_bootstrap.less'/>
+        <link rel="stylesheet" href='/website_less/static/src/less/colors.less' t-ignore="true"/>
+        <link rel="stylesheet" href='/website/static/src/css/website.css'/>
+        <link rel="stylesheet" href='/website_less/static/src/less/website.less' type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/layouts/header_light.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/layouts/footer_white.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/colors/colors_environment.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_zap/static/src/less/options/fonts/font_dosis_open_sans.less" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+    <template name="Zap - Demo 03" id="website.demo_page_03" page="True">
+      <t t-call="theme_zap.demo_page_03">
+        <div id="wrap" class="oe_structure">
+          <section class="s_page_header bg-gamma">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mt32 mb32">
+                  <span class="s_label label bg-alpha">
+                    <strong>Tags</strong>
+                  </span>
+                  <span class="s_label label bg-gray-lighter">
+                    <strong>Category</strong>
+                  </span>
+                  <h1>Page Title</h1>
+                  <p class="lead">Introduce your content in few lines.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_process_steps_2 mt32">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 text-center mt32 mb32">
+                  <p style="text-align: left;">
+                    <i class="fa fa-hand-o-up fa-2x img-circle bg-alpha" style=""></i>
+                  </p>
+                  <h4 style="text-align: left;">Select a product</h4>
+                  <p class="text-muted" style="text-align: left;">This is the <strong>first step</strong>.</p>
+                  <p style="text-align: left;">Let your customers follow and understand your process.</p>
+                </div>
+                <div class="col-md-3 text-center mt32 mb32">
+                  <p style="text-align: left;">
+                    <i class="fa fa-shopping-cart fa-2x img-circle bg-beta" style=""></i>
+                  </p>
+                  <h4 style="text-align: left;">Add to cart</h4>
+                  <p class="text-muted" style="text-align: left;">This is the <strong>second step</strong>.</p>
+                  <p style="text-align: left;">Click on the icon to adapt it to your purpose.</p>
+                </div>
+                <div class="col-md-3 text-center mt32 mb32">
+                  <p style="text-align: left;">
+                    <i class="fa fa-unlock-alt fa-2x img-circle bg-gamma" style=""></i>
+                  </p>
+                  <h4 style="text-align: left;">Sign in</h4>
+                  <p class="text-muted" style="text-align: left;">This is the <strong>third step</strong>.</p>
+                  <p style="text-align: left;">Duplicate blocks to add more steps.</p>
+                </div>
+                <div class="col-md-3 text-center mt32 mb32">
+                  <p style="text-align: left;">
+                    <i class="fa fa-paypal fa-2x img-circle bg-delta" style=""></i>
+                  </p>
+                  <h4 style="text-align: left;">Pay</h4>
+                  <p class="text-muted" style="text-align: left;">This is the <strong>fourth step</strong>.</p>
+                  <p style="text-align: left;">Select and delete blocks to remove some steps.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div data-oe-call="theme_common.s_medias_list"/>
+          <div data-oe-call="theme_common.s_collapse"/>
+          <section class="s_comparisons">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb32">
+                  <h2>Our Offers</h2>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-info">
+                    <div class="panel-heading text-center">
+                      <h2 style="margin: 0">Beginner</h2>
+                      <p class="text-muted" style="margin: 0">Starter package</p>
+                    </div>
+                    <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                      <h2 style="margin: 0">
+                        <span>$</span>
+                        <b style="font-size: 60px">450</b>
+                        <small>.00</small>
+                      </h2>
+                      <div>per month</div>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item active">Battery: 8 hours</li>
+                      <li class="list-group-item">Screen: 2.5 inch</li>
+                      <li class="list-group-item">Weight: 1.1 ounces</li>
+                      <li class="list-group-item">No support</li>
+                    </ul>
+                    <div class="panel-footer text-center">
+                      <p class="text-muted">
+                        <i>Free shipping, satisfied or reimbursed.</i>
+                      </p>
+                      <a class="btn btn-primary btn-lg" href="/page/website.contactus">Order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                      <h2 style="margin: 0">Professional</h2>
+                      <p style="margin: 0">Enterprise package</p>
+                    </div>
+                    <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                      <h2 style="margin: 0">
+                        <span>$</span>
+                        <b style="font-size: 60px">590</b>
+                        <small>.00</small>
+                      </h2>
+                      <div>per month</div>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item active">Battery: 12 hours</li>
+                      <li class="list-group-item">Screen: 2.8 inch</li>
+                      <li class="list-group-item">Weight: 1.2 ounces</li>
+                      <li class="list-group-item">Limited support</li>
+                    </ul>
+                    <div class="panel-footer text-center">
+                      <p class="text-muted">
+                        <i>Free shipping, satisfied or reimbursed.</i>
+                      </p>
+                      <a class="btn btn-primary btn-lg" href="/page/website.contactus">Order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-info">
+                    <div class="panel-heading text-center">
+                      <h2 style="margin: 0">Expert</h2>
+                      <p class="text-muted" style="margin: 0">The top of the top</p>
+                    </div>
+                    <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                      <h2 style="margin: 0">
+                        <span>$</span>
+                        <b style="font-size: 60px">890</b>
+                        <small>.00</small>
+                      </h2>
+                      <div>per month</div>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item active">Battery: 20 hours</li>
+                      <li class="list-group-item">Screen: 2.8 inch</li>
+                      <li class="list-group-item">Weight: 1.2 ounces</li>
+                      <li class="list-group-item">Unlimited support</li>
+                    </ul>
+                    <div class="panel-footer text-center">
+                      <p class="text-muted">
+                        <i>Free shipping, satisfied or reimbursed.</i>
+                      </p>
+                      <a class="btn btn-primary btn-lg" href="/page/website.contactus">Contact us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="jumbotron s_button bg-gamma">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 text-muted">
+                  <p class="mb0">
+                    <strong>50,000+ companies run Odoo to grow their businesses.</strong>
+                  </p>
+                  <p class="mb0">Join us and make your company a better place.</p>
+                </div>
+                <div class="col-md-3">
+                  <a class="btn btn-info btn-lg pull-right mt8" href="/page/website.contactus"><i class="fa fa-arrow-right"></i> Contact Us Now </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+    </template>
+
+    <record id="demo_page_03_menu" model="website.menu">
+      <field name="name">Demo 03</field>
+      <field name="url">/page/demo_page_03</field>
+      <field name="parent_id" ref="demo_page_menu"/>
+      <field name="sequence" type="int">33</field>
+    </record>
+
+  </data>
+</openerp>

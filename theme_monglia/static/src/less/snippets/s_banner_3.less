@@ -1,0 +1,34 @@
+@s_banner_3_carosel_control_color: transparent;
+@s_banner_3_padding: 15px;
+@s_banner_3_fa_color: @color-alpha;
+@s_banner_3_carousel_height: 100vh;
+@s_banner_3_text-shadow: none;
+@s_banner_3_hero-bg_color: @black;
+@s_banner_3_indicators_visible: visible;
+@s_banner_3_h1_size: 45px;
+@s_banner_3_h2_size: 25px;
+
+.s_banner_3_row_hook(){
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid @color-alpha;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+    img {
+        display: none;
+    }
+    @media (max-width:@screen-sm-min) {
+        top: 100px;
+        width: 100%;
+    }
+}
+.s_banner_3_col_center_hook(){
+    text-align: center;
+    width: 100%;
+}
+.s_banner_3_carousel-control_hook(){
+    display: none;
+}

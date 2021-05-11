@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+    <template name="2x Color Block" id="s_color_blocks_2">
+      <section class="s_color_blocks_2 o_animation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 s_color_blocks_2_block bg-alpha text-center">
+              <span class="fa fa-shield fa-5x center-block"></span>
+              <h2 class="text-center">This Is a Color Block</h2>
+              <h3 class="text-center text-muted mb16">Highlight Your Content</h3>
+              <p class="text-justify mb32">
+                Color blocks are a simple and effective way to <strong>present and highlight your content</strong>. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.
+              </p>
+              <a class="btn btn-info mb32" href="#">
+                <i class="fa fa-cog"></i> More Details
+              </a>
+            </div>
+            <div class="col-md-6 s_color_blocks_2_block bg-gamma text-center">
+              <span class="fa fa-cube fa-5x center-block"></span>
+              <h2 class="text-center">An Other Color Block</h2>
+              <h3 class="text-center text-muted mb16">Customize Backgrounds</h3>
+              <p class="text-justify mb32">
+                Color blocks are a simple and effective way to <strong>present and highlight your content</strong>. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.
+              </p>
+              <a class="btn btn-info mb32" href="#">
+                <i class="fa fa-cog"></i> More Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </template>
+
+  </data>
+</openerp>

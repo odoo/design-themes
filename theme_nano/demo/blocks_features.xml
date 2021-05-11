@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template name="Building Blocks // Features" id="website.demo_blocks_features" page="True">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure">
+
+      <section class="bg-gray-dark">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="demo-title mt0 mb0">Features Blocks</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="demo-subtitle mt32 mb32">Image Gallery</h4>
+          </div>
+        </div>
+      </div>
+
+      <section class="s_image_gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mt16 mb32">
+              <h2>Our Customer References</h2>
+              <h4 class="text-muted">More than 500 successful projects</h4>
+            </div>
+            <div class="col-md-6">
+              <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/desert.jpg"/>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/china_thumb.jpg"/>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/deers_thumb.jpg"/>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/desert_thumb.jpg"/>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/china_thumb.jpg"/>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/deers_thumb.jpg"/>
+            </div>
+            <div class="col-md-6">
+              <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/landscape.jpg"/>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/china_thumb.jpg"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="demo-subtitle mt32 mb32">Price Tables</h4>
+          </div>
+        </div>
+      </div>
+
+      <section class="s_comparisons">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mt16 mb32">
+              <h2>Our Offers</h2>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-info">
+                <div class="panel-heading text-center">
+                  <h2 style="margin: 0">Beginner</h2>
+                  <p class="text-muted" style="margin: 0">Starter package</p>
+                </div>
+                <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                  <h2 style="margin: 0">
+                    <span>$</span>
+                    <b style="font-size: 60px">450</b>
+                    <small>.00</small>
+                  </h2>
+                  <div>per month</div>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item active">Battery: 8 hours</li>
+                  <li class="list-group-item">Screen: 2.5 inch</li>
+                  <li class="list-group-item">Weight: 1.1 ounces</li>
+                  <li class="list-group-item">No support</li>
+                </ul>
+                <div class="panel-footer text-center">
+                  <p class="text-muted">
+                    <i>Free shipping, satisfied or reimbursed.</i>
+                  </p>
+                  <a class="btn btn-primary btn-lg" href="/page/website.contactus">Order now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                  <h2 style="margin: 0">Professional</h2>
+                  <p style="margin: 0">Enterprise package</p>
+                </div>
+                <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                  <h2 style="margin: 0">
+                    <span>$</span>
+                    <b style="font-size: 60px">590</b>
+                    <small>.00</small>
+                  </h2>
+                  <div>per month</div>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item active">Battery: 12 hours</li>
+                  <li class="list-group-item">Screen: 2.8 inch</li>
+                  <li class="list-group-item">Weight: 1.2 ounces</li>
+                  <li class="list-group-item">Limited support</li>
+                </ul>
+                <div class="panel-footer text-center">
+                  <p class="text-muted">
+                    <i>Free shipping, satisfied or reimbursed.</i>
+                  </p>
+                  <a class="btn btn-primary btn-lg" href="/page/website.contactus">Order now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-info">
+                <div class="panel-heading text-center">
+                  <h2 style="margin: 0">Expert</h2>
+                  <p class="text-muted" style="margin: 0">The top of the top</p>
+                </div>
+                <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                  <h2 style="margin: 0">
+                    <span>$</span>
+                    <b style="font-size: 60px">890</b>
+                    <small>.00</small>
+                  </h2>
+                  <div>per month</div>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item active">Battery: 20 hours</li>
+                  <li class="list-group-item">Screen: 2.8 inch</li>
+                  <li class="list-group-item">Weight: 1.2 ounces</li>
+                  <li class="list-group-item">Unlimited support</li>
+                </ul>
+                <div class="panel-footer text-center">
+                  <p class="text-muted">
+                    <i>Free shipping, satisfied or reimbursed.</i>
+                  </p>
+                  <a class="btn btn-primary btn-lg" href="/page/website.contactus">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="demo-subtitle mt32 mb32">Button</h4>
+          </div>
+        </div>
+      </div>
+
+      <section class="jumbotron s_button bg-beta">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 text-muted">
+              <p class="mb0">
+                <strong>50,000+ companies run Odoo to grow their businesses.</strong>
+              </p>
+              <p class="mb0">Join us and make your company a better place.</p>
+            </div>
+            <div class="col-md-3">
+              <a class="btn btn-success pull-right mt8" href="/page/website.contactus"><i class="fa fa-arrow-right"></i> Contact Us Now </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="demo-subtitle mt32 mb32">FAQ</h4>
+          </div>
+        </div>
+      </div>
+
+      <section class="s_faq">
+        <div class="container">
+          <h2 class="page-header">Point of Sale Questions <small>v7</small></h2>
+          <h3>Which hardware does Odoo POS support?</h3>
+          <p>Odoo's POS is a web application that can run on any device that can display websites with little to no setup required.</p>
+          <p>The Point of Sale works perfectly on any kind of touch enabled device, whether it's multi-touch tablets like an iPad or keyboardless resistive touchscreen terminals.</p>
+          <h3>Does it works offline?</h3>
+          <p>Deploy new stores with just an internet connection: no installation, no specific hardware required. It works with any iPad, Tablet PC, laptop or industrial POS machine.</p>
+          <p>While an internet connection is required to start the Point of Sale, it will stay operational even after a complete disconnection.</p>
+          <h2 class="page-header">Project Management Questions <small>v7</small></h2>
+          <h3>Can I use it to manage projects based on agile methodologies?</h3>
+          <p>Yes.</p>
+        </div>
+      </section>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="demo-subtitle mt32 mb32">References</h4>
+          </div>
+        </div>
+      </div>
+
+      <section class="s_references">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-center">Our References</h1>
+              <h3 class="text-muted text-center">More than 500 happy customers.</h3>
+            </div>
+            <div class="col-md-4 col-md-offset-1 mt16">
+              <blockquote>
+                <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                <small>Author of this quote</small>
+              </blockquote>
+            </div>
+            <div class="col-md-4 col-md-offset-2 mt16">
+              <blockquote>
+                <p>Odoo provides essential platform for our project management. Things are better organized and more visible with it.</p>
+                <small>John Doe, CEO</small>
+              </blockquote>
+            </div>
+            <div class="col-md-2 col-md-offset-1">
+              <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/website/image/theme_common.image_content_12"/>
+            </div>
+            <div class="col-md-2">
+              <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/website/image/theme_common.image_content_13"/>
+            </div>
+            <div class="col-md-2">
+              <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/website/image/theme_common.image_content_14"/>
+            </div>
+            <div class="col-md-2">
+              <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/website/image/theme_common.image_content_15"/>
+            </div>
+            <div class="col-md-2">
+              <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/website/image/theme_common.image_content_16"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </t>
+</template>
+
+<record id="demo_blocks_features_menu" model="website.menu">
+    <field name="name">Features</field>
+    <field name="url">/page/demo_blocks_features</field>
+    <field name="parent_id" ref="demo_page_blocks_menu"/>
+    <field name="sequence" type="int">52</field>
+</record>
+
+</data>
+</openerp>

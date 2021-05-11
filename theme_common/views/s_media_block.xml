@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+  <!-- Snippet's Body -->
+  <template name="Media Block" id="s_media_block">
+      <section class="s_media_block" header_type="video" mp4="http://media.sublimevideo.net/v/midnight-sun-short-edit-360p.mp4" webm="http://media.sublimevideo.net/v/midnight-sun-short-edit-360p.webm" muted="muted" loop="loop" autoplay="autoplay" iframefit="fitCont" style="height:600px">    
+        <div class="v-align text-center">     
+          <h1 class="text-center">Media Box</h1>     
+        </div>        
+      </section>
+  </template>
+
+  <!-- Snippet's Options -->
+  <template id="s_media_block_option" inherit_id="website_less.snippet_options">  
+    <xpath expr="//div[@data-js='blog-style']" position="before">
+      <div data-js='s_media_block' data-selector="section.s_media_block">
+        <li data-video_opt=""><a><i class="fa fa-fw fa-cog"></i>Media Type</a></li>
+      </div>
+    </xpath>
+  </template>
+
+  </data>
+</openerp>

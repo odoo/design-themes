@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="website_blog.blog_post_1" model="blog.post">
+        <field name="background_image">/theme_graphene/static/src/img/theme_samples/radius.jpg</field>
+    </record>
+
+    <record id="website_blog.blog_post_2" model="blog.post">
+        <field name="background_image">/theme_graphene/static/src/img/theme_samples/bridge.jpg</field>
+    </record>
+
+    <record id="website_blog.blog_post_3" model="blog.post">
+        <field name="name">Organize a meeting</field>
+        <field name="subtitle">Are your meetings useful and productive?</field>
+        <field name="blog_id" ref="website_blog.blog_blog_1"/>
+        <field name="website_published" eval="True"/>
+        
+        <field name="background_image">/theme_graphene/static/src/img/theme_samples/design.jpg</field>
+        <field name="content">
+<![CDATA[<section class="row readable">
+            <div class="col-md-12 mb32">
+                <img class="img-responsive" src="/website_blog/static/src/img/CMS_WMS_screens.jpg"/>
+            </div>
+            <div class="col-md-6 col-md-offset-3 mb16 mt16">
+                <p class="text-center">
+                    New Features Launched
+                </p>
+                <p class="text-center">
+                    To add to an already comprehensive set of Odoo
+                    features, a website content management system (CMS
+                    or WMS) has been developed and a beta release is
+                    available from today, 31st January 2014.
+                </p>
+            </div>
+        </section>
+        <section class="readable">
+            <p>
+                Odoo claims to be 'the Open Source software that makes
+                building your company's website and selling your products
+                online easy'. So how true is this statement?
+            </p><p>
+                "Odoo's latest launch will allow a business to go from
+                zero to trading online quicker than ever before,” Stuart
+                Mackintosh, MD of Open Source specialist and Odoo
+                integration partner, OpusVL, explains. “The investment
+                required to have a fully automated business system is
+                dramatically reduced, enabling the small and medium
+                enterprise to compete at a level of functionality and
+                performance previously reserved for the big IT investors."
+            </p>
+            <blockquote>
+                <p>
+                    "Finally, the leading edge is being brought to the masses.
+                    It will now be the turn of the big players to catch up to
+                    the superior technologies of the SME."
+                </p>
+            </blockquote>
+            <p>
+                "This is another clever and highly disruptive move by
+                Odoo,which will force other technology providers to
+                take another look at the value they are providing to ensure
+                that their 'solutions' can still compete."
+            </p><p>
+                "Odoo now competes on many fronts, with no real
+                competition out there to knock them off the top spot.
+                With the launch of their integrated CMS and Ecommerce
+                systems,it only elevates their position as one of the leading
+                lights in the open source revolution. It will be at least 5
+                years before another ERP or CMS provider will be able to
+                compete at this level due to the technology currently
+                employed by most industry providers."
+            </p>
+            <h4>Adding to industry leading technology</h4>
+            <p>
+                Like many modern website editors, with Odoo you can edit
+                content in-line, enabling you to see exactly what you are
+                changing and ensure your changes suit the context.
+            </p><p>
+                However, unlike other web content management systems, it
+                fully integrates into the back-end database. This means
+                that when you edit a product description, image or price,
+                it updates the product database in real time, providing a
+                true self-service window into the business.
+            </p><p>
+                This provides a single source of data for your company and
+                removes the need to create offline synchronisation between
+                website and product database.
+            </p><p>
+                As it comes, there is a default website based on Bootstrap
+                3, the latest industry standard for rapid development of
+                multi-device websites backed by Twitter, so can be directly
+                integrated with many web tools and works across all devices
+                by default.
+            </p>
+        </section>
+]]>
+        </field>
+    </record>
+
+
+
+
+  </data>
+</openerp>

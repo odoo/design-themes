@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="1">
+
+  <!-- Jump to website after theme installation -->
+  <record id="base.open_menu" model="ir.actions.todo">
+      <field name="action_id" ref="website.action_website"/>
+      <field name="state">open</field>
+  </record>
+
+</data>
+<data>
+
+  <!-- Assets, less, js -->
+  <record id="website_less.option_bootstrap_less" model="ir.ui.view">
+      <field name="active">True</field>
+  </record>
+
+  <template id="less" name="theme_clean less" inherit_id="website.theme" active="True" priority="1">
+    <xpath expr="." position="inside">
+      <link href="/theme_common/static/src/less/fonts.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_clean/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_clean/static/src/less/theme.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_clean/static/src/less/customize_modal.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_clean/static/src/less/padding.less" rel="stylesheet" type="text/less"/>
+
+      <link href="/theme_common/static/src/less/s_discount.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_event_list.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_profile.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_icon_box.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_icon_box_circle.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_icon_box_square.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_pricing.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_process_steps.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_timeline.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_lead_bar.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_logo_bar.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_color_blocks_2.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_color_blocks_4.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_big_image.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_big_image_parallax.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_team_profiles.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_slide_banner.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_separator_shade.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_separator_color.less" rel="stylesheet" type="text/less"/>
+      <link href="/theme_common/static/src/less/s_text_highlight.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="assets_editor" inherit_id="website_less.assets_editor" name="Editor assets">
+      <xpath expr="." position="inside">
+          <script type="text/javascript" src="/theme_common/static/src/js/s_progress_bar.js"></script>
+      </xpath>
+  </template>
+
+</data>
+</openerp>

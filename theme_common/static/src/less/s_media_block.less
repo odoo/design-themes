@@ -1,0 +1,150 @@
+//  ======= Variables ============================
+//  ==============================================
+//  Change main snippet's propriety easily
+
+//  es. @s_media_block-background-repeat: repeat;
+
+    @s_media_block-background-size            : cover;
+    @s_media_block-background-repeat          : no-repeat;  
+
+    @s_media_block_modal-transition-duration  : 400ms;    
+
+
+//  ====== Hooks(hook) =====================================
+//  ===========================================================
+//  Use them to inject NEW css rules or overwrite the old ones.  
+//  This method is more maintenable than classic css overwrite
+//  'couse it works also if the snippet's structure will change. 
+
+//  How to: 
+//  in your theme, just call the backdoor like a normal 
+//  CSS class adding parethesis at the end ".backdoor-name()" 
+//  (this will prevent the creation of a standard CSS class).
+//  Add your rules inside. Your style will take the priority.
+//  Done. 
+
+//  .s_media_block-hook(){
+//    border: 20px solid red;
+//    max-height: 200px;
+//  }
+
+    .s_media_block-hook(){}
+
+    .s_media_block-textdiv-hook(){};
+
+    .s_media_block-videoBox-hook(){}
+
+    .s_media_block_modal-hook(){};
+
+
+
+
+// Default Style ================================
+// ==============================================
+
+.s_media_block {
+    background-size: @s_media_block-background-size;
+    background-repeat: @s_media_block-background-repeat;
+    background-attachment: initial;
+    position: relative;
+    overflow: hidden;
+    background-color: #EAEAEA;
+    height: 400px;
+    .s_media_block-hook;
+
+    > div {
+      z-index: 1;
+      position: relative;
+      color: white;
+      .s_media_block-textdiv-hook;
+    }
+    .editable {
+      min-height: 50px;
+    }
+    iframe {
+      top: 0;
+      position: absolute;
+    }  
+    .videoBox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      display: block;
+      min-height: 100%;
+      min-width: 100%;
+      overflow: hidden;
+      .transition(e("top .5s ease-in-out, left .5s ease-in-out, width .5s ease-in-out, height .5s ease-in-out"));
+
+      .s_media_block-videoBox-hook;
+    }
+    .headerIframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+}
+
+#s_media_block_modal {
+
+  .s_media_block_modal-hook;
+
+  .videoEnabler {
+    position: relative;
+    display: block;
+    height: 4em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    i { font-size: 2em;}
+  }
+
+  .modal-body {
+    img.guide {
+      box-shadow:inset rgba(0, 0, 0, 0.35) 0 0 26px, rgba(0, 0, 0, 0.35) 0 0 15px;
+      border-radius: 50%;
+      border: 8px solid #FFF;
+      width: 75%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .videoTabs {
+      max-height: 0px;
+      opacity: 0;
+      overflow: hidden;   
+      width: 100%;
+      position: relative;
+      border-top: 0px solid black;
+      hr {margin: 10px -15px 20px;}    
+    }
+    .videoTabs.active {
+      max-height: 2000px;
+      opacity: 1;
+      padding: 20px 0;           
+    }
+    .videoTabs.trans {
+      .transition(e("max-height 400ms ease 0ms, opacity 400ms ease 0ms"))
+    }
+
+    #custom_content {
+      font-family: monospace;
+      font-size: 0.8em;
+      min-height: 100px;
+    }
+  }
+  .help-block {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 7px;
+    font-size: 10px;
+    font-weight: bold;
+    i {margin-right: 7px;}
+  }
+}
+
+/* WebSite Builder custom media query (why?) */
+@media only screen and (max-width: 400px){
+  section.s_media_block {
+    height: 400px!important; // fix a website builder "!important" rule 
+  }
+}

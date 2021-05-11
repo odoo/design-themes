@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<!--
+  Customize Themes
+
+  Use INPUT type 'checkbox' or 'radio' or use OPTION in select box
+  'data-xmlid' (optional) xml id of the template to add if the input is checked.
+      You can set a list of xml id separate by comma (all template is enable or 
+      disable in same time)
+  'data-enable' (optional) to checked one or more HTML ids, or list separate by comma
+  'data-disable' (optional) to unchecked one or more HTML ids, or list separate by comma
+  'data-reload="/"' (optional) force the reloading of the page if the url match with
+      the string ( = regexp).
+      Otherwise, only the '/web/css/website.assets_frontend' is reloaded
+
+  For the sets (data-enable and/or data-disable without data-xmlid), the set is
+  automatically checked if:
+  - all related fields are enabled for data-enable
+  - all related fields are disabled for data-disable
+  else unchecked
+  
+  HTML apply classes:
+  - 'checked': on the parent label when input is checked
+  - 'in': on the container (e.g.: bootstrap modal) after added in DOM (removed together 
+     out is added)
+  - 'out': on the container 1 second before removed from ths DOM
+  - 'loading': on the container/modal when the new css is loading 
+-->
+
+<template id="theme_customize" inherit_id="website_less.theme_customize" name="theme_graphene modal">
+  <xpath expr="div" position="replace">
+
+    <div id="theme_customize_modal" class=" modal fade bs-example-modal-sm">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="loading_backdrop"></div>
+          
+          <div class="modal-header">
+            <button type="button" class="close">×</button>
+            <h4 class="modal-title text-center" id="mySmallModalLabel"><i class="fa fa-cog"></i>  Customize <span>Graphene</span></h4>
+          </div>
+
+          <div class="modal-body">
+            
+            <!-- TAB LIST -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="active"><a href="#tab_layout" role="tab" data-toggle="tab"><i class="fa fa-desktop"></i>  LAYOUT</a></li>
+              <li><a href="#tab_palettes" role="tab" data-toggle="tab"><i class="fa fa-paint-brush "></i>  PALETTES</a></li>
+              <li><a href="#tab_fonts" role="tab" data-toggle="tab"><i class="fa fa-font"></i>  FONTS</a></li>
+            </ul>
+            
+            <!-- TAB CONTENT -->
+            <div class="tab-content">
+         
+              <!-- =========  LAYOUTS =============== -->
+
+              <div name="layout" class="container-fluid tab-pane fade in active" id="tab_layout"> 
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <label class="chd-layout-combi center-block " >
+                      <div class="sample_body fullwidth">
+                        <div class="sample_browser">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-left"></i><i class="fa fa-arrow-right"></i>
+                          </div>
+                          <div class="pull-left sample_addressBar">http://www.odoo.com/this/is/a/sample/url</div>
+                          <div class="pull-right">
+                            <i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i>
+                          </div>
+                        </div>
+                        <div class="sample_wrap">
+                          <div class="sample_header">
+                            <h3>Company</h3>
+                            <p class="sample_menu">Home<span></span>About Us<span></span>Contact</p>
+                          </div>
+                          <div class='sample_content'>
+                            <div class='sample_image'></div>
+                          </div>  
+                        </div>
+                      </div>
+                      <p>Full with</p>
+                      <input name="layoutvar" data-reload="/" type="radio" data-xmlid="theme_graphene.graphene_option_layout_fullwidth"/>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <label class="chd-layout-combi center-block " >
+                      <div class="sample_body boxed">
+                        <div class="sample_browser">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-left"></i><i class="fa fa-arrow-right"></i>
+                          </div>
+                          <div class="pull-left sample_addressBar">http://www.odoo.com/this/is/a/sample/url</div>
+                          <div class="pull-right">
+                            <i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i>
+                          </div>
+                        </div>
+                        <div class="sample_wrap">
+                          <div class="sample_header">
+                            <h3>Company</h3>
+                            <p class="sample_menu">Home<span></span>About Us<span></span>Contact</p>
+                          </div>
+                          <div class='sample_content'>
+                            <div class='sample_image'></div>
+                          </div>  
+                        </div>
+                      </div>
+                      <p>Boxed</p>
+                      <input name="layoutvar" data-reload="/" type="radio" data-xmlid="theme_graphene.graphene_option_layout_boxed"/>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <label class="chd-layout-combi center-block " >
+                      <div class="sample_body postcard">
+                        <div class="sample_browser">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-left"></i><i class="fa fa-arrow-right"></i>
+                          </div>
+                          <div class="pull-left sample_addressBar">http://www.odoo.com/this/is/a/sample/url</div>
+                          <div class="pull-right">
+                            <i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i>
+                          </div>
+                        </div>
+                        <div class="sample_wrap">
+                          <div class="sample_header">
+                            <h3>Company</h3>
+                            <p class="sample_menu">Home<span></span>About Us<span></span>Contact</p>
+                          </div>
+                          <div class='sample_content'>
+                            <div class='sample_image'></div>
+                          </div>  
+                        </div>
+                      </div>
+                      <p>Postcard</p>
+                      <input name="layoutvar" data-reload="/" type="radio" data-xmlid="theme_graphene.graphene_option_layout_postcard"/>
+                    </label>
+                  </div>
+                </div>
+              </div>  <!-- Close layout container -->
+
+              <!-- =========  COLOUR PALETTES =============== -->
+                                    
+              <div name="color" class="container-fluid tab-pane fade" id="tab_palettes"> 
+
+                <div class="row"> <!-- Open 1°row -->
+                  <div class="col-xs-6">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt gardenia">
+                        <div class="row">
+                          <div />
+                          <div />
+                          <div />
+                          <div />
+                          <div />
+                        </div>
+                        <p>Gardenia</p>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_graphene.option_color_graphene" />
+                    </label>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt pacifico">
+                        <div class="row">
+                          <div />
+                          <div />
+                          <div />
+                          <div />
+                          <div />
+                        </div>
+                        <p>Pacifico</p>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_graphene.option_color_pacifico" />
+                    </label>
+                  </div>
+                </div> <!-- Close 1°row --> 
+
+                <div class="row"> <!-- Open 2°row -->
+                  <div class="col-xs-6">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt blackmath">
+                        <div class="row">
+                          <div />
+                          <div />
+                          <div />
+                          <div />
+                          <div />
+                        </div>
+                        <p>Black Math</p>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_graphene.option_color_blackmath" />
+                    </label>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <label class="chd-color-combi">
+                      <div class="container-fluid opt mwad">
+                        <div class="row">
+                          <div />
+                          <div />
+                          <div />
+                          <div />
+                          <div />
+                        </div>
+                        <p>MWAD</p>
+                      </div>
+                      <input name="colorvar" type="radio" data-xmlid="theme_graphene.option_color_mwad" />
+                    </label>
+                  </div>         
+                </div> <!-- Close 2°row --> 
+
+              </div> <!-- Close color container -->   
+
+              <!-- =========  FONTS COMBINATIONS =============== -->     
+              <div name="fonts" class="container-fluid tab-pane fade " id="tab_fonts"> 
+                <div class="row">
+                  <h4 class="text-center">Sans-serif font</h4>
+                  <div class="col-xs-4">
+                    <label class="chd-fonts-combi center-block">
+                      <h6>Source Sans</h6>
+                      <input name="fontvar" type="radio" data-xmlid="theme_graphene.option_font_sourcesans" />
+                    </label>
+                  </div>
+
+                  <div class="col-xs-4">
+                    <label class="chd-fonts-combi center-block">
+                      <h6>Abel</h6>
+                      <input name="fontvar" type="radio" data-xmlid="theme_graphene.option_font_abel" />
+                    </label>
+                  </div>
+
+                  <div class="col-xs-4">
+                    <label class="chd-fonts-combi center-block">
+                      <h6>Standard</h6>
+                      <input name="fontvar" type="radio" data-xmlid="theme_graphene.option_font_sansserif" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <hr/>
+                  <h4 class="text-center serif">Serif font</h4>          
+                  <div class="col-xs-4">
+                    <label class="chd-fonts-combi center-block">
+                      <h6>Playfair</h6>
+                      <input name="serifvar" type="radio" data-xmlid="theme_graphene.option_font_playfair" />
+                    </label>
+                  </div>
+
+                  <div class="col-xs-4">
+                    <label class="chd-fonts-combi center-block">
+                      <h6>Old Standard</h6>
+                      <input name="serifvar" type="radio" data-xmlid="theme_graphene.option_font_oldstandard" />
+                    </label>
+                  </div>
+
+                  <div class="col-xs-4">
+                    <label class="chd-fonts-combi center-block">
+                      <h6>Cinzel</h6>
+                      <input name="serifvar" type="radio" data-xmlid="theme_graphene.option_font_cinzel" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <hr/>
+                  <small>Preview</small>          
+                  <div class="bg-white text-center fonts-preview">
+                    <p class="sans-serif em2"> My sans-serif title</p>
+                    <p class="serif">My serif text. There was a low rumbling of heavy sea-boots among the benches, and a still slighter shuffling of women's shoes, and all was quiet again, and every eye on the preacher. He paused a little; then kneeling in the pulpit's bows, folded his large brown hands across his chest</p>
+                  </div>      
+                </div>
+
+              </div> <!-- Close fonts tab -->          
+            </div> <!-- Close tab content -->     
+            
+            <!-- Default "Change theme" button  -->
+            <!-- <a class="changeTheme" href="/web#return_label=Website&amp;action=website.action_module_theme"><small>Change theme</small></a> -->
+
+          </div>  <!-- Close modal-body  -->
+        </div>  <!-- Close modal-content  -->     
+      </div>  <!-- Close modal-dialog  -->  
+    </div>  <!-- #theme_customize_modal  -->
+        
+  </xpath>
+</template>
+  
+
+  <!--Activate less files from bootstrap (?)-->
+  <record id="website_less.option_bootstrap_less" model="ir.ui.view">
+    <field name="active">True</field>
+  </record>
+
+  <!-- Activate advanced options -->
+  <record id="website_animate.o_animate_options_options" model="ir.ui.view">
+    <field name="active">True</field>
+  </record>
+
+  <!--
+  =====================
+  Costumization assets
+  =====================
+  --> 
+
+  <!-- Color Palettes  -->
+  <template id="option_color_blackmath" name="option_color_blackmath" inherit_id="website_less.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/colors/blackmath.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_color_mwad" name="option_color_mwad" inherit_id="website_less.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/colors/mwad.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_color_graphene" name="option_color_graphene" inherit_id="website_less.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/colors/gardenia.less" rel="stylesheet" type="text/less"/>
+    </xpath>  
+  </template>
+
+  <template id="option_color_pacifico" name="option_color_pacifico" inherit_id="website_less.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/colors/pacifico.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <!-- Sans-serif fonts -->
+  <template id="option_font_sourcesans" name="option_font_sourcesans" inherit_id="website_less.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/fonts/source-sans.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_font_sansserif" name="option_font_sansserif" inherit_id="website_less.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/fonts/sans-serif.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_font_abel" name="option_font_abel" inherit_id="website_less.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/fonts/abel.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+
+  <!-- Serif fonts -->
+  <template id="option_font_playfair" name="option_font_playfair" inherit_id="website_less.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/fonts/PlayfairDisplay.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_font_oldstandard" name="option_font_oldstandard" inherit_id="website_less.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/fonts/OldStandard.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="option_font_cinzel" name="option_font_cinzel" inherit_id="website_less.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/fonts/Cinzel.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+  
+
+  <!-- Layout Options -->
+  <template id="graphene_option_layout_fullwidth" name="graphene_option_layout_fullwidth" inherit_id="website_less.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/layouts/fullwidth.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="graphene_option_layout_boxed" name="graphene_option_layout_boxed" inherit_id="website_less.assets_frontend" active="False">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/layouts/boxed.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+  <template id="graphene_option_layout_postcard" name="graphene_option_layout_postcard" inherit_id="website_less.assets_frontend" active="True">
+    <xpath expr="//link[last()]" position="after">
+      <link href="/theme_graphene/static/src/less/options/layouts/postcard.less" rel="stylesheet" type="text/less"/>
+    </xpath>
+  </template>
+
+</data>
+</openerp>

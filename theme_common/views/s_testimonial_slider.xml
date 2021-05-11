@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+    <template name="Testimonial SLider" id="s_testimonial_slider">
+      <section class="s_testimonial_slider carousel slide" id="testimonial_slider" data-ride="carousel" data-interval="6000">
+        <ol class="carousel-indicators hidden">
+          <li data-target="#testimonial_slider" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+
+            <div class="container">
+              <div class="row content text-center mt64 mb64">
+
+               <h3><i class="fa fa-quote-left"></i> Let your visitors know what they said about you. <i class="fa fa-quote-right"></i></h3>
+               <p class="lead">Name, Function / Company Inc.</p>
+
+               <div class="col-md-2 col-md-offset-5">
+                <img class="img-responsive center-block" src="/website/image/theme_common.image_content_08"/>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </template>
+
+
+</data>
+</openerp>

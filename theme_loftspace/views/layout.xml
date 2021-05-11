@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Replace copyright -->
+
+        <template id="change_footer_copyright" inherit_id="website.layout_footer_copyright" name="Change Footer Copyright">
+            <xpath expr="//footer/div[contains(@class, 'container')][last()]" position="replace">
+                <div class="container copyright">
+                    <div class="col-md-12 text-center">
+                        <hr/>
+                        <div>Copyright &amp;copy; <span t-field="res_company.name">Company name</span></div>
+                    </div>
+                    <div class="col-md-12 text-center" t-ignore="true" t-if="not editable">
+                        Create a <a href="http://www.odoo.com/page/website-builder">free website</a> with
+                        <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Odoo</a>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

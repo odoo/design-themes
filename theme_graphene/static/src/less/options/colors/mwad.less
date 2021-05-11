@@ -1,0 +1,50 @@
+// MWAD Color Set
+// ==========================
+
+@color-alpha     : @color-alpha-mwad;
+@color-beta      : @color-beta-mwad;
+@color-gamma     : @color-gamma-mwad;
+@color-delta     : @color-delta-mwad;
+@color-epsilon   : @color-epsilon-mwad; 
+
+
+// =============================
+// Bootstrap Colours ===========
+// =============================
+
+@brand-primary: @color-alpha;
+@brand-success: #5CB85C;
+ 
+
+
+.graphene-layout-boxed() when (@graphene-layout-boxed = true) {
+    body { background: @color-epsilon  }
+}
+.graphene-layout-boxed();
+
+.graphene-layout-postcard() when (@graphene-layout-postcard = true)  {
+    body { background: @color-epsilon  }
+
+    header#graph_header {
+        .navbar-brand, .navbar-default .navbar-brand {
+            color: white;
+        }
+
+        .navbar .navbar-nav > li.active > a, 
+        .navbar .navbar-nav > li.active > a:hover, 
+        .navbar .navbar-nav > li.active > a:focus {
+            color: @gray-lighter;
+        }
+
+        .navbar .navbar-nav > li > a {
+            color: @gray-light;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+
+}
+.graphene-layout-postcard();
+
+

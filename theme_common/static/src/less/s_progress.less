@@ -1,0 +1,68 @@
+.s_progress {
+	.col-md-3:nth-child(4) {
+		.fa-chevron-right {
+			color: rgba(0, 0, 0, 0);
+		}
+	}
+	.col-md-3:nth-child(1) {
+		border-left-width: 0;
+	}
+	.col-md-3 {
+		border-left-width: 1px;
+		border-left-style: solid;
+		@media only screen and (max-width : 768px) {
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-left-width: 0;
+		}
+	}
+	.fa {
+		font-size: 60px;
+	}
+	.process {
+		height: 25px;
+		text-align: right;
+		width: 100%;
+		@media only screen and (max-width : 768px) {
+			display: none;
+		}
+	}
+	hr {
+		width: 50px;
+		margin-bottom: 40px;
+	    transform:rotate(90deg);
+	    -o-transform:rotate(90deg);
+	    -moz-transform:rotate(90deg);
+	    -webkit-transform:rotate(90deg);
+	    @media only screen and (max-width : 768px) {
+			display: none;
+		}
+	}
+	.icon-container {
+		max-width: 250px;
+	}
+	.progress-iconset {
+		padding: 10px;
+		text-align: center;
+		min-height: 230px;
+		@media only screen and (max-width : 768px) {
+			min-height: 50px;
+		}
+	}
+	.icons .col-md-3 {
+		padding: 0;
+	}
+	.fa-chevron-right {
+		font-size: 25px;
+	}
+	.progress-content {
+		padding: 10px 25px;
+		min-height: 230px;
+		@media only screen and (max-width : 768px) {
+			min-height: 50px;
+		}
+		h1 {
+			margin-top: 0;
+		}
+	}
+}
