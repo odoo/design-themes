@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Steps" id="s_process_steps_2">
+        <section class="s_process_steps_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center mt32 mb32">
+                        <i class="fa fa-hand-o-up fa-2x img-circle bg-alpha"/>
+                        <h4>Select a product</h4>
+                        <p class="text-muted">This is the <strong>first step</strong>.</p>
+                        <p>Let your customers follow and understand your process.</p>
+                    </div>
+                    <div class="col-md-3 text-center mt32 mb32">
+                        <i class="fa fa-shopping-cart fa-2x img-circle bg-beta"/>
+                        <h4>Add to cart</h4>
+                        <p class="text-muted">This is the <strong>second step</strong>.</p>
+                        <p>Click on the icon to adapt it to your purpose.</p>
+                    </div>
+                    <div class="col-md-3 text-center mt32 mb32">
+                        <i class="fa fa-unlock-alt fa-2x img-circle bg-gamma"/>
+                        <h4>Sign in</h4>
+                        <p class="text-muted">This is the <strong>third step</strong>.</p>
+                        <p>Duplicate blocks to add more steps.</p>
+                    </div>
+                    <div class="col-md-3 text-center mt32 mb32">
+                        <i class="fa fa-paypal fa-2x img-circle bg-delta"/>
+                        <h4>Pay</h4>
+                        <p class="text-muted">This is the <strong>fourth step</strong>.</p>
+                        <p>Select and delete blocks to remove some steps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

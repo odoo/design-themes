@@ -1,0 +1,148 @@
+body {
+    background:
+    linear-gradient(
+        fade(white, 6%) 40%,
+        fade(white, 60%)),
+    @bg-pattern-03;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrap {
+    background-color: fade(darken(@color-beta, 30%), 40%);
+}
+
+#wrapwrap {
+    color: white;
+}
+
+/* Navbar ----------------------------------------------------------- */
+
+@navbar-default-bg:                     fade(@color-alpha, 0%);
+@navbar-default-link-color:             lighten(@color-alpha, 30%);
+@navbar-default-link-hover-color:       white;
+
+@navbar-default-link-active-color:      white;
+@navbar-default-link-active-bg:         @color-alpha;
+
+/* Footer ----------------------------------------------------------- */
+
+footer {
+  background: fade(@color-alpha, 0%) !important;
+}
+
+#wrapwrap footer {
+   background-color: none;
+   color: @gray-darker;
+}
+
+footer .container .pull-left {
+    color: @color-alpha;
+}
+
+footer ul li a {
+  color: white;
+}
+
+footer ul li a:hover {
+  color: white;
+    text-decoration: none;
+}
+footer h4 {
+  color: @color-delta;
+  padding-bottom: 12px;
+    text-transform: uppercase;
+    a {
+      color: @color-delta;
+    }
+}
+footer .fa {
+    color: @color-epsilon;
+}
+
+footer .container.mt16.mb8 {
+        border-top: 1px solid white;
+        color: white;
+        .pull-left {
+          color: white;
+        }
+    }
+
+/* s_icon_box */
+
+.s_icon_box_box:hover .s_icon_box_icon .fa, .s_icon_box_box:hover .s_icon_box_content h4 {
+    transition: all 0.3s ease-in-out;
+    color: @color-alpha;
+}
+
+/* s_icon_box_square */
+
+.s_icon_box_square_box:hover .s_icon_box_square_icon {
+    border-color: @color-alpha;
+    background-color: @color-alpha !important;
+    .fa {
+        color: white !important;
+    }
+}
+
+.s_icon_box_square_box:hover h4 {
+        color: @color-alpha !important;
+}
+
+/* s_icon_box_circle */
+
+.s_icon_box_circle_box:hover .s_icon_box_circle_icon {
+    border-color: @color-alpha;
+    background-color: @color-alpha !important;
+    .fa {
+        color: white !important;
+    }
+}
+
+.s_icon_box_circle_box:hover h4 {
+        color: @color-alpha !important;
+}
+
+    /* s_big_icon_circle */
+
+.s_big_icon_circle_icon {
+    background-color: fade(@color-alpha, 0%) !important;
+    border: 4px solid @color-alpha;
+    h5 {
+        color: white;
+    }
+}
+
+.s_big_icon_circle_box:hover .s_big_icon_circle_icon {
+    background-color: fade(@color-alpha, 100%) !important;
+    border-color: white;
+    transform: scale(1.1,1.1);
+    .fa {
+        color: white !important;
+    }
+    h5 {
+        color: white;
+    }
+}
+
+/* s_big_icon_square */
+
+.s_big_icon_square_icon {
+    background-color: fade(@color-alpha, 0%) !important;
+    border: 6px solid @color-alpha;
+    h5 {
+        color: @color-alpha;
+    }
+}
+
+.s_big_icon_square_box:hover .s_big_icon_square_icon {
+    background-color: fade(@color-alpha, 100%) !important;
+    border-color: @color-alpha;
+    transform: scale(1.1,1.1);
+    .fa {
+        color: white !important;
+    }
+    h5 {
+        color: @color-alpha;
+    }
+}

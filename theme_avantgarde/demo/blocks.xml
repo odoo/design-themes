@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="avantgarde_blocks_menu" model="website.menu">
+      <field name="name">Building Blocks</field>
+      <field name="url">/page/blocks</field>
+      <field name="parent_id" ref="menu_demo"/>
+      <field name="sequence" type="int">32</field>
+    </record>
+
+    <template id="website.blocks" page="True" name="Avantgarde - Building Blocks">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure demo_blocks text-center">
+
+          <section class="s_css_slider o_not-animable autoplay mb64" style="height:450px">
+            <div class="wrapper">
+              <div class="slider container">
+                <div class="slide row move-left">
+                  <div class="info col-md-3">
+                    <h3>Slide Title</h3>
+                    <p>Slide Description</p>
+                  </div>
+                  <img class="o_not-animable" src="/web/image/theme_common.image_content_20" style="width: 100%; margin-top: -50px;"/>
+                </div>
+                <div class="slide row move-left">
+                  <div class="info col-md-3">
+                    <h3>Slide Title</h3>
+                    <p>Slide Description</p>
+                  </div>
+                  <img class="o_not-animable" src="/web/image/theme_common.image_content_21" style="width: 100%; margin-top: -50px;"/>
+                </div>
+                <div class="slide row selected">
+                  <div class="info col-md-3">
+                    <h3>Slide Title</h3>
+                    <p>Slide Description</p>
+                  </div>
+                  <img class="o_not-animable" src="/web/image/theme_common.image_content_22" style="width: 100%; margin-top: -50px;"/>
+                </div>
+              </div>
+              <ul class="navigation">
+                <li>
+                  <span class="o_not-animable fa fa-chevron-left prev"></span>
+                </li>
+                <li>
+                  <span class="o_not-animable fa fa-chevron-right next inactive"></span>
+                </li>
+              </ul><ul class="s_css_slider_pagination"><li class=""><a href="#0">1</a></li><li class=""><a href="#0">2</a></li><li class="selected"><a href="#0">3</a></li></ul>
+            </div>
+          </section>
+
+          <section class="s_showcase_slider o_not-animable mb64">
+            <div class="s_ss_slider_wrapper">
+              <ul class="s_ss_slider o_animable">
+                <li class="selected o_not-animable">
+                  <img src="/web/image/theme_common.image_content_20"/>
+                </li>
+                <li>
+                  <img class="o_not-animable" src="/web/image/theme_common.image_content_21"/>
+                </li>
+                <li>
+                  <img class="o_not-animable" src="/web/image/theme_common.image_content_22"/>
+                </li>
+              </ul>
+              <ul class="s_ss_slider_navigation">
+                <li>
+                  <span class="o_not-animable fa fa-chevron-left s_ss_prev inactive"></span>
+                </li>
+                <li>
+                  <span class="o_not-animable fa fa-chevron-right s_ss_next"></span>
+                </li>
+              </ul><ul class="s_ss_slider_pagination"><li class="selected"><a href="#0">1</a></li><li><a href="#0">2</a></li><li><a href="#0">3</a></li></ul>
+              <ul class="s_ss_slider_pagination">
+                <li class="selected">
+                  <a href="#0">1</a>
+                </li>
+                <li>
+                  <a href="#0">2</a>
+                </li>
+                <li>
+                  <a href="#0">3</a>
+                </li>
+              </ul>
+              <span class="s_ss_close fa fa-times" href="#0">Close</span>
+            </div>
+            <div class="s_ss_item_info o_animable">
+              <h2>My Title</h2>
+              <p>A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+              <button class="btn btn-primary" style="position: relative; overflow: hidden;">Add to cart</button>
+            </div>
+          </section>
+          <section class="s_clonable_boxes mt32 mb64" style="height: 104px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4 col-md-4 bg-alpha">
+                  <div class="item">
+                    <h3>Box title</h3>
+                    <p>Box Description</p>
+                    <div class="oe_structure"></div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-4 bg-beta">
+                  <div class="item">
+                    <h3>Box title</h3>
+                    <p>Box Description</p>
+                    <div class="oe_structure"></div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-4 bg-gamma">
+                  <div class="item">
+                    <h3>Box title</h3>
+                    <p>Box Description</p>
+                    <div class="oe_structure"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_google_map mb64" data-map-color="" data-map-gps="(50.854975,4.3753899)" data-map-type="ROADMAP" data-map-zoom="12" data-pin-style="flat" style="height: 472px; overflow: hidden;">
+            <div class="map_container"/>
+            <div class="description">
+              <font>Visit us:</font>
+              <span> Our office is located in the northeast of Brussels. TEL (555) 432 2365 </span>
+            </div>
+          </section>
+          <section class="s_latest_posts_big_picture">
+            <h2 class="text-center sans-serif">Latest Posts</h2>
+            <div class="js_get_posts effect-marley first_is_big" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"><figure class="loading_container col-sm-6">
+              <div class="content">
+                <div class="thumb" style="background-image: url(/theme_avantgarde/static/src/img/theme_samples/shop_art_2.jpg)"></div>
+                <figcaption>
+                  <h2>Dynamic post list</h2>
+                  <p>Use this snippet to list your post where you need</p>
+                  <a href="/blog/1/post/3">Read More</a>
+                </figcaption>
+              </div>
+            <div class="progress js-loading" style="display: none;"><div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div></div></figure><figure class="loading_container col-sm-6">
+              <div class="content">
+                <div class="thumb" style="background-image: url(/theme_avantgarde/static/src/img/theme_samples/radius.jpg)"></div>
+                <figcaption>
+                  <h2>A sample blog post</h2>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <a href="/blog/1/post/1">Read More</a>
+                </figcaption>
+              </div>
+            <div class="progress js-loading" style="display: none;"><div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div></div></figure><figure class="loading_container col-sm-6">
+              <div class="content">
+                <div class="thumb" style="background-image: url(/theme_avantgarde/static/src/img/theme_samples/bridge.jpg)"></div>
+                <figcaption>
+                  <h2>Another sample blog post</h2>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <a href="/blog/1/post/2">Read More</a>
+                </figcaption>
+              </div>
+            <div class="progress js-loading" style="display: none;"><div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div></div></figure></div>
+          </section>
+          <section class="s_showcase_image container-fluid mt32 mb64">
+            <div class="row">
+              <figure class="bg-img-03 col-sm-6 col-md-5 bl">
+                <figcaption class="o_animable"><h6>Sample description</h6>
+      Write one or two paragraphs describing your product</figcaption>
+              </figure>
+              <div class="info col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-1">
+                <div class="row">
+                  <div class="content col-sm-11 col-md-8">
+                    <h3>Sample Title</h3>
+                    <h4 class="text-primary">With a great subtitle</h4>
+                    <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+                    <a class="btn btn-default" href="#" style="position: relative; overflow: hidden;">Click here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_masonry_block s_ratio_2_1">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 text-center bg-img-03">
+                  <div class="content">
+                    <h2>A great title</h2>
+                    <p>And a great subtitle</p>
+                  </div>
+                </div>
+                <div class="col-md-6 bg-gamma-lighter">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 text-center">
+                      <div class="content">
+                        <h3>A great title</h3>
+                        <p>And a great subtitle</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 text-center bg-img-12">
+                      <div class="content">
+                        <h3>A great title</h3>
+                        <p>And a great subtitle</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 text-center bg-img-06">
+                      <div class="content">
+                        <h3>A great title</h3>
+                        <p>And a great subtitle</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 text-center bg-beta-lighter">
+                      <div class="content">
+                        <h3>A great title</h3>
+                        <p>And a great subtitle</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_showcase_image s_right container-fluid mt32 mb32">
+            <div class="row">
+              <figure class="bg-img-03 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1">
+                <figcaption class="o_animable"><h6>Sample description</h6>
+      Write one or two paragraphs describing your product</figcaption>
+              </figure>
+              <div class="info col-sm-6 col-md-6">
+                <div class="row">
+                  <div class="content col-sm-11 col-md-8">
+                    <h3>Sample Title</h3>
+                    <h4 class="text-primary">With a great subtitle</h4>
+                    <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+                    <a class="btn btn-default" href="#" style="position: relative; overflow: hidden;">Click here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_text_block_image_fw bg-img-03 mb64">
+            <div class="container">
+              <div class="row">
+                <div class="bg-white col-md-6 mt64 mb64 o_animable">
+                  <h2>Short headline</h2>
+                  <h4 class="text-primary">With a great subtitle</h4>
+                  <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+                  <p>
+                    <i class="fa fa-info-circle fa-1x text-primary"/>
+                    <strong>- An additional information</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section autoplay="autoplay" class="s_media_block" iframefit="fitCont" loop="loop" src="http://media.sublimevideo.net/v/midnight-sun-short-edit-360p.mp4" muted="muted" style="height: 360px; overflow: hidden;">
+            <div class="v-align text-center preserve3d">
+              <h1 class="text-center">Media Box</h1>
+            </div>
+          </section>
+
+          <hr/>
+
+          <div class="row bg-beta" id="go_back">
+            <div class="container text-center" style="padding:1em">
+              <h2><a href="/"><i class="fa fa-chevron-left" style="margin-right:.5em"/>Go back</a></h2>
+            </div>
+          </div>
+
+          <style type="text/css">
+
+            #wrapwrap > footer {
+              height: 0;
+              overflow: hidden;
+              display: block;
+              margin-top: 100px;
+            }
+            #wrapwrap > main {padding-bottom:100px}
+
+            #go_back a { color:white}
+            #go_back a:hover { color:white}
+
+            #go_back i{ opacity:0.7}
+            #go_back:hover i{ opacity:1}
+
+          </style>
+
+        </div> <!-- #wrap -->
+      </t>
+    </template>
+
+  </data>
+</openerp>

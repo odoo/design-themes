@@ -1,0 +1,91 @@
+#wrapwrap > main > #wrap .oe_website_sale {
+    #products_grid_before {
+        ul > li > a {
+            &:hover, &:focus {
+                background-color: @color-eta;
+            }
+        }
+        .js_attributes {
+            border-bottom-color: @color-epsilon;
+            strong {
+                border-bottom-color: @gray-lighter;
+            }
+        }
+    }
+    #products_grid {
+        .oe_product section {
+            h5 a {
+                color: @gray;
+            }
+            .product_price {
+                background-color: @color-delta;
+                border-bottom-color: @color-kappa;
+
+                &:before {
+                    background-color: @color-epsilon;
+                }
+                &:after {
+                    border-right-color: @color-epsilon;
+                }
+
+                .fa {
+                    color: @color-gamma !important;
+                }
+                span {
+                    color: @color-alpha !important;
+                }
+            }
+        }
+        .products_pager ul {
+            a {
+                border-top-color: @color-epsilon;
+                border-bottom-color: @color-epsilon;
+            }
+            li:first-child > a {
+                border-left-color: @color-epsilon;
+            }
+            li:last-child > a {
+                border-right-color: @color-epsilon;
+            }
+        }
+        .pagination > .active > a {
+            color: @color-alpha;
+            background-color: @color-delta;
+        }
+    }
+    .form-inline .input-group .input-group-btn .a-submit {
+        border: none;
+
+        background-color: @color-delta;
+        &:hover {
+            background-color: @color-kappa;
+        }
+        i {
+            color: @color-alpha;
+        }
+    }
+    .js_product span {
+        color: @gray !important;
+    }
+    .oe_cart #cart_total {
+        h3, span {
+            color: @gray;
+        }
+    }
+    span:not(.fa) {
+        color: @gray;
+    }
+    .wizard li {
+        border-color: @color-beta;
+        .chevron {
+            border-left-color: @color-beta;
+        }
+
+        &.text-primary {
+            background-color: @color-beta;
+            .chevron:before {
+                border-left-color: @color-beta;
+            }
+        }
+    }
+}

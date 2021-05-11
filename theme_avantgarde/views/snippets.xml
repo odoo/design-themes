@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+  <!-- theme_common snippets     -->
+  <template id="snippet_selection" inherit_id="website.snippets">
+
+    <xpath expr="//div[@id='snippet_structure']/div[contains(@class, 'o_panel_body')]" position="inside">
+      <t t-snippet="theme_common.s_text_block_image_fw" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_text_block_image_fw.jpg"/>
+
+      <t t-snippet="theme_common.s_numbers" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_numbers.jpg"/>
+      <t t-snippet="theme_common.s_showcase" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_showcase.jpg"/>
+      <t t-snippet="theme_common.s_page_header" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_page_header.jpg"/>
+      <t t-snippet="theme_common.s_medias_list" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_medias_list.jpg"/>
+      <t t-snippet="theme_common.s_masonry_block" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_masonry_block.jpg"/>
+      <t t-snippet="theme_common.s_showcase_image" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_showcase_image.jpg"/>
+      <t t-snippet="theme_common.s_clonable_boxes" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_clonable_boxes.jpg"/>
+    </xpath>
+
+    <xpath expr="//div[@id='snippet_feature']/div[contains(@class, 'o_panel_body')]" position="inside">
+      <t t-snippet="theme_common.s_media_block" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_media_block-thumb.jpg"/>
+      <t t-snippet="theme_common.s_css_slider" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_css_slider.jpg"/>
+      <t t-snippet="theme_common.s_showcase_slider" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_showcase_slider.jpg"/>
+    </xpath>
+
+  </template>
+
+  <!-- Google Map Snippet   -->
+  <template id="overwrite_google_map_thumb" inherit_id="snippet_google_map.google_map_snippet">
+    <xpath expr="//t[@t-snippet='snippet_google_map.s_google_map']" position="attributes">
+      <attribute name="t-thumbnail">/theme_avantgarde/static/src/img/ui/s_google_map.jpg</attribute>
+    </xpath>
+  </template>
+
+  <!-- Latest Posts Snippets   -->
+  <template id="overwrite_latest_post_thumb" inherit_id="snippet_latest_posts.s_latest_posts_place_in_tab">
+    <xpath expr="//t[@t-snippet='snippet_latest_posts.s_latest_posts']" position="attributes">
+      <attribute name="t-thumbnail">/theme_avantgarde/static/src/img/ui/s_latest_posts.jpg</attribute>
+    </xpath>
+    <xpath expr="//t[@t-snippet='snippet_latest_posts.s_latest_posts_big_picture']" position="attributes">
+      <attribute name="t-thumbnail">/theme_avantgarde/static/src/img/ui/s_latest_posts_big_picture.jpg</attribute>
+    </xpath>
+  </template>
+
+  <template id="theme_common_less">
+    <link href="/theme_common/static/src/less/s_text_block_image_fw.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_medias_list.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_clonable_boxes.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_showcase.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_css_slider.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_showcase_image.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_masonry_block.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_media_block.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_showcase_slider.less" rel="stylesheet" type="text/less"/>
+  </template>
+
+  <!-- theme_common JSs are in assets.xml -->
+
+  <!-- costumizing website builder snippets -->
+
+  <template id="s_banner_custom" inherit_id="website.s_banner">
+    <xpath expr="//div[@id='myCarousel']//div[@class='carousel-inner']//div[contains(@class, 'oe_img_bg')]" position="attributes">
+      <attribute name="style">background-image: url('/theme_avantgarde/static/src/img/pictures/bg_image_04.jpg')</attribute>
+    </xpath>
+  </template>
+
+  <!-- Latest posts's Orizzontal big images Template -->
+
+  <!-- Snippet's Body -->
+  <template id="s_latest_posts_big_orizontal" name="Latest Posts Horizontal">
+    <section class="s_latest_posts_big_orizontal">
+        <div class="js_get_posts container-fluid"  data-loading="true" data-template="theme_avantgarde.s_latest_posts_big_orizontal_template"/>
+    </section>
+  </template>
+
+  <!-- Latest posts's Template -->
+  <template id="s_latest_posts_big_orizontal_template">
+    <t t-if="not posts">
+      <t t-call="snippet_latest_posts.no_blog_posts"/>
+    </t>
+    <t t-foreach="posts" t-as="p">
+      <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+      <figure class="post">
+        <figcaption>
+          <h4 class="mb0"><a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)"><t t-esc="p.name"/></a></h4>
+          <h5 class="mt0 mb4" t-field="p.write_date" t-field-options='{"format": "dd/MM"}' />
+        </figcaption>
+        <a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)">
+          <div t-attf-class="loading_container thumb #{properties.get('background-color')}" t-attf-style="background-image: #{properties.get('background-image', 'none')}; opacity: #{properties.get('opacity', 1)};"/>
+        </a>
+      </figure>
+    </t>
+  </template>
+
+  <template id="s_latest_posts_place_in_tab" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_feature']/div[contains(@class, 'o_panel_body')]" position="inside">
+      <t t-snippet="theme_avantgarde.s_latest_posts_big_orizontal" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_latest_posts_horizontal.jpg"/>
+    </xpath>
+  </template>
+
+</data>
+</openerp>
+

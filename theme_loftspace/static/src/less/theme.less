@@ -1,0 +1,287 @@
+/* ====================== SET COLLAPSE MENU TO COLLAPSE AT 768PX =====================*/
+
+@media (max-width: @screen-sm-min) {
+    #wrapwrap {
+        header {
+            .navbar-toggle {
+                display: block;
+            }
+            .navbar-fixed-top {
+                top: 0;
+                border-width: 0 0 1px;
+            }
+            .navbar-collapse.collapse {
+                display: none!important;
+            }
+            .navbar-nav {
+                float: none!important;
+            }
+            .navbar-nav>li {
+                float: none;
+            }
+            .collapse.in{
+                  display:block !important;
+                  height: auto !important;
+            }
+        }
+    }
+}
+/* ====================== GENERAL =====================*/
+
+#slide {border: 1px solid black;}
+.oe_overlay {
+    .btn {
+        border: 1px solid @gray-lighter !important;
+    }
+    .btn-group>.btn-group {
+        float: none;
+    }
+}
+
+main > * {
+    background-color: white;
+    color: @gray;
+}
+#wrap {
+    margin: 80px auto;
+    .text-muted{
+        &:after {
+            color: transparent;
+        }
+    }
+}
+
+.input-group[class*="col-"] {
+    float: left;
+}
+.js_publish_management {
+    .btn-success {
+        background-color: green !important;
+        color: white !important;
+    }
+    .btn-danger {
+        background-color: red !important;
+        color: white !important;
+    }
+}
+
+/* ========== Navigation =========== */
+
+.navbar-default {
+    border: none;
+    background-color: @color-alpha;
+    border-bottom: 1px solid @gray-lighter;
+    .container:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(to left, @color-beta, @color-epsilon);
+        top: 0px;
+        left: 0;
+    }
+    .container {
+        margin-top: 5px;
+        li > .dropdown-menu {
+            margin-top: 9px;
+            border: none;
+        }
+        .navbar-header {
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+            @media (max-width:@screen-sm-min) {
+                display: block;
+                max-width: 100%;
+            }
+            .navbar-toggle {
+                top: 4px;
+                right: -25px;
+                border-color: @gray;
+                border-radius: 30px;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 2;
+                padding: 7px 15px;
+                .transition (background-color 0.2s ease-out);
+                &:hover, &:focus {
+                    background-color: transparent;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                .icon-bar {
+                    width: 17px;
+                    height: 3px;
+                    background-color: white;
+                }
+                .icon-bar + .icon-bar {
+                    margin-top: 2px;
+                }
+            }
+        }
+        .navbar-collapse {
+            border-color: transparent;
+            display: inline-block !important;
+            vertical-align: middle;
+            @media (max-width:@screen-sm-min) {
+                width: auto;
+            }
+            .navbar-brand {
+                position: relative;
+                top: -23px;
+                color: @gray;
+                padding: 0;
+                float: none;
+                @media (max-width:@screen-sm-min) {
+                    display: block;
+                    padding: 15px;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+#top_menu {
+    li {
+        &:hover {
+            @media (max-width:@screen-sm-min) {
+                border: none;
+            }
+        }
+        a {
+            color: @color-epsilon;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+    }
+    .divider {
+        background-color: transparent;
+        border-right-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+    .active a {
+        background-color: transparent;
+    }
+    .open > a:focus {
+        background-color: transparent;
+    }
+    .dropdown-menu, .navbar-collapse {
+        background-color: white;
+        border-radius: 0px;
+        border-color: transparent;
+        box-shadow: none;
+        li > a {
+            font-size: 20px;
+            border-right: none;
+            color: @color-epsilon;
+            &:hover {
+                border-bottom: none;
+                background: transparent;
+                color: @gray;
+            }
+        }
+        .divider {
+            background-color: transparent;
+            margin: 0;
+        }
+    }
+    .dropdown-menu {
+        @media (max-width:@screen-sm-min) {
+            position: relative;
+        }
+        li a {
+            font-size: 12px;
+        }
+    }
+}
+
+/* ====================== Footer ======================== */
+#wrapwrap > footer {
+    background: transparent;
+    .container {
+        padding: 0px 65px 20px 65px;
+        h4 {
+            margin-right: 50px;
+            color: @color-delta;
+            span {
+                display: block;
+                font-size: 14px;
+            }
+        }
+        p, .list-unstyled {
+            color: @gray;
+        }
+    }
+    #footer {
+        background-color: @color-alpha;
+        border-top: 1px solid @gray-lighter;
+        .col-md-3, .col-md-5 {
+            padding: 20px 0px;
+            h2 { // social icons in footer
+                text-transform: uppercase;
+                font-size: 25px;
+                color: @color-beta;
+                a {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+.copyright {
+    padding: 20px 0px;
+    background-color: @color-alpha;
+    color: @gray;
+    hr {
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+    .js_language_selector {
+        margin-bottom: 0px;
+    }
+}
+
+/* ====================== button style ======================== */
+
+.btn {
+    padding: 10px 20px;
+    .BorderRadius (0px);
+    .transition (all 0.3s ease-out);
+    border-width: 0px !important;
+}
+
+/* Insert blocks btn */
+
+/* ====================== form style ======================== */
+
+#wrapwrap .form-control:not(.js_quantity) {
+    box-shadow: none;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-radius: 0px;
+    color: @gray;
+    &:focus {
+        border-bottom-color: @gray;
+        border-bottom-width: 2px;
+        box-shadow: none;
+    }
+}
+
+/* ====================== Snippet Option Styles ======================== */
+
+.snippet-option-colorpicker {
+    .colorpicker td > * {
+        width: 30px;
+        height: 30px;
+    }
+    .none {
+        background-color: @color-alpha;
+        font-size: 10px;
+    }
+}
+.btn-group {
+    .dropdown-toggle {
+        border-width: 1px !important;
+    }
+}

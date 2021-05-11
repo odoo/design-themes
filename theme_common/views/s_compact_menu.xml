@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Compact Menu" id="s_compact_menu">
+        <section class="s_compact_menu">
+            <div class="container-fluid">
+                <h2 class="text-center">Drink menu</h2>
+                <div class="row menu-container">
+                    <div class="col-md-2 text-center s_compact_menu_row_title">
+                        <h4>Cocktails</h4>
+                        <div class="fa fa-glass"/>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="menublock">
+                                <h4 class="menu-title">Mojito <span class="slash"><span class="price"> | €</span> 12.00</span></h4>
+                                <div class="menu-description">
+                                    <span class="menu-item">rum, lime, juice cane sugar</span>
+                                    <span class="menu-item">fresh mint, soda, ice</span>
+                                </div>
+                            </div>
+                            <div class="menublock">
+                                <h4 class="menu-title">margarita <span class="slash"><span class="price"> | €</span> 9.00</span></h4>
+                                <div class="menu-description">
+                                    <span class="menu-item">white tequila, triple sec,</span>
+                                    <span class="menu-item">lime juice, ice</span>
+                                </div>
+                            </div>
+                            <div class="menublock">
+                                <h4 class="menu-title">tequila sunrise <span class="slash"><span class="price"> | €</span> 11.00</span></h4>
+                                <div class="menu-description">
+                                    <span class="menu-item">white tequila, frenadine,</span>
+                                    <span class="menu-item">orange juice, soda, ice</span>
+                                </div>
+                            </div>
+                            <div class="menublock">
+                                <h4 class="menu-title">manhattan <span class="slash"><span class="price"> | €</span> 12.50</span></h4>
+                                <div class="menu-description">
+                                    <span class="menu-item">whiskey, vermouth, angostura,</span>
+                                    <span class="menu-item">maraschino cherry</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row menu-container">
+                    <div class="col-md-2 text-center s_compact_menu_row_title">
+                        <h4>Wine</h4>
+                        <div class="fa fa-glass"/>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="menublock">
+                                <div class="item">
+                                <h4 class="menu-title">Colores del Sol <span class="slash"><span class="price"> | €</span> 12.00</span></h4>
+                                <div class="menu-description">
+                                    <span class="menu-item">Malbec</span>
+                                    <span class="menu-item">Mendoza, 2012</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="menublock">
+                                <h4 class="menu-title">Francis Ford Coppola <span class="slash"><span class="price"> | €</span> 9.00</span></h4>
+                                <div class="menu-description">
+                                    <span class="menu-item">Pinot Noir</span>
+                                    <span class="menu-item">California, 2012</span>
+                                </div>
+                            </div>
+                            <div class="menublock">
+                                <h4 class="menu-title">Blackbird Vineyards<span class="slash"><span class="price"> | €</span> 11.00</span></h4>
+                                <div class="menu-description">
+                                    <span class="menu-item">Rose</span>
+                                    <span class="menu-item">Napa, 2012</span>
+                                </div>
+                            </div>
+                            <div class="menublock">
+                                <h4 class="menu-title">Patz and Hall<span class="slash"><span class="price"> | €</span> 12.50</span></h4>
+                                <div class="menu-description">
+                                    <span class="menu-item">Chardonnay</span>
+                                    <span class="menu-item">Sonoma Coast, 2012</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <openerp>
+        <data>
+
+            <template id="website.demo" page="True" name="Theme Demo">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure oe_empty">
+
+                        <section class="s_banner_parallax bg-img-04 parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 882.9px;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-12 hero-bg">
+                                        <h1>Present your products</h1>
+                                        <h2>with this theme.</h2>
+                                        <img alt="#" src="/web/image/theme_common.image_content_01" class="img img-responsive"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_product_list mt0 bg-gamma">
+                            <div class="container-fluid product-list">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <a href="http://www.odoo.com">
+                                            <img alt="#" src="/web/image/theme_common.image_content_06" class="img img-responsive"/>
+                                        </a>
+                                        <a class="btn btn-default" href="http://www.odoo.com">
+                                            <i class="fa fa-eye"/>Watch item
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <a href="http://www.odoo.com">
+                                            <img alt="#" src="/web/image/theme_common.image_content_06" class="img img-responsive"/>
+                                        </a>
+                                        <a class="btn btn-default" href="http://www.odoo.com">
+                                            <i class="fa fa-eye"/>Watch item
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <a href="http://www.odoo.com">
+                                            <img alt="#" src="/web/image/theme_common.image_content_06" class="img img-responsive"/>
+                                        </a>
+                                        <a class="btn btn-default" href="http://www.odoo.com">
+                                            <i class="fa fa-eye"/>Watch item
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <a href="http://www.odoo.com">
+                                            <img alt="#" src="/web/image/theme_common.image_content_06" class="img img-responsive"/>
+                                        </a>
+                                        <a class="btn btn-default" href="http://www.odoo.com">
+                                            <i class="fa fa-eye"/>Watch item
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <a href="http://www.odoo.com">
+                                            <img alt="#" src="/web/image/theme_common.image_content_06" class="img img-responsive"/>
+                                        </a>
+                                        <a class="btn btn-default" href="http://www.odoo.com">
+                                            <i class="fa fa-eye"/>Watch item
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-6">
+                                        <a href="http://www.odoo.com">
+                                            <img alt="#" src="/web/image/theme_common.image_content_06" class="img img-responsive"/>
+                                        </a>
+                                        <a class="btn btn-default" href="http://www.odoo.com">
+                                            <i class="fa fa-eye"/>Watch item
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_3_column_text oe_structure mt92 mb92">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h2>Custom Pages: Have No Limits.</h2>
+                                        <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>This theme gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h2>Custom Pages: Have No Limits.</h2>
+                                        <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>This theme gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h2>Custom Pages: Have No Limits.</h2>
+                                        <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>This theme gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_color_blocks_4 o_animation o_displayed_top o_displayed_middle o_displayed_bottom">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center bg-alpha">
+                                        <h4>A COLOR BLOCK</h4>
+                                        <p>Highlight Your Content</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center bg-beta">
+                                        <h4>A COLOR BLOCK</h4>
+                                        <p>Customize Backgrounds</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center bg-gamma">
+                                        <h4>A COLOR BLOCK</h4>
+                                        <p>Resize and Duplicate</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center bg-delta">
+                                        <h4>A COLOR BLOCK</h4>
+                                        <p>Select the Colors</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_cubes bg-beta">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 bg-img-03"/>
+                                    <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                        <div class="row">
+                                            <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                                                <div class="cube-heading">
+                                                    <h4 class="text-center">A good subtitle</h4>
+                                                    <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                                </div>
+                                            </div>
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-04"/></div>
+                                        <div class="row">
+                                            <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-02"/>
+                                            <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                                                <div class="cube-heading">
+                                                    <h4 class="text-center">A good subtitle</h4>
+                                                    <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_text_picture_text bg-black mt0">
+                            <div class="container-fluid">
+                                <div class="row mb32 mt32">
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>The latest technology</h3>
+                                        <p>Product design is the process of creating a new product to be sold by a business to its customers. A very broad concept, it is essentially the efficient and effective generation and development of ideas through a process that leads to new products.</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 text-center">
+                                        <img alt="#" src="/web/image/theme_common.image_content_05" class="img img-responsive"/>
+                                        <a href="#">DISCOVER THE PRODUCT</a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>The best approach</h3>
+                                        <p>In a systematic approach, product designers conceptualize and evaluate ideas, turning them into tangible inventions and products. The product designer's role is to combine art, science, and technology to create new products that other people can use.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_event_list none">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center mt32 mb32">
+                                        <h2>Nice and Efficient Events List</h2>
+                                        <h3 class="text-muted">
+                                            <font class="text-alpha">Display Your Last Activities</font>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-delta" datetime="2014-07-20 0000">
+                                                <span class="s_event_list_day">
+                                                    <font class="text-gamma">02</font>
+                                                </span>
+                                                <font class="text-gamma"></font>
+                                                <span class="s_event_list_month"/>
+                                                <font class="text-gamma">
+                                                    <span class="s_event_list_month">Jul</span>
+                                                </font>
+                                                <span class="s_event_list_year">2014</span>
+                                                <span class="s_event_list_time">
+                                                    <font class="text-gamma">12:00 AM</font>
+                                                </span>
+                                            </time>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-delta" datetime="2014-07-20 0000">
+                                                <span class="s_event_list_day">
+                                                    <font class="text-gamma">05</font>
+                                                </span>
+                                                <font class="text-gamma">
+                                                    <span class="s_event_list_month">Sep</span>
+                                                    <span class="s_event_list_year">2014</span>
+                                                </font>
+                                                <span class="s_event_list_time"/>
+                                                <font class="text-gamma">
+                                                    <span class="s_event_list_time">
+                                                        <font class="text-gamma">12:00 AM</font>
+                                                    </span>
+                                                </font>
+                                            </time>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-delta" datetime="2014-07-20 0000">
+                                                <span class="s_event_list_day">
+                                                    <font class="text-gamma">2</font>
+                                                </span>
+                                                <span class="s_event_list_month">
+                                                    <font class="text-gamma">Jul</font>
+                                                </span>
+                                                <font class="text-gamma">
+                                                    <span class="s_event_list_year">2014</span>
+                                                </font>
+                                                <span class="s_event_list_time"/>
+                                                <font class="text-gamma">
+                                                    <span class="s_event_list_time">
+                                                        <font class="text-gamma">12:00 AM</font>
+                                                    </span>
+                                                </font>
+                                            </time>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="text-center">With this theme you get a list of your events with date, time, description, etc. Select the simple or image mode and edit your content.<br/>You can link your events to your favorite social network.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mt32 mb32">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-delta" datetime="2014-07-20">
+                                                <span class="s_event_list_day">
+                                                    <font class="text-gamma">18</font>
+                                                </span>
+                                                <font class="text-gamma"></font>
+                                                <span class="s_event_list_month"/>
+                                                <font class="text-gamma">
+                                                    <span class="s_event_list_month">Jul</span>
+                                                </font>
+                                                <span class="s_event_list_year">2014</span>
+                                                <span class="s_event_list_time">
+                                                    <font class="text-gamma">ALL DAY</font>
+                                                </span>
+                                            </time>
+                                            <img class="img-responsive" src="/web/image/theme_common.image_content_09"/>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt32 mb32">
+                                        <div class="s_event_list_item">
+                                            <time class="bg-delta" datetime="2014-07-20">
+                                                <span class="s_event_list_day">
+                                                    <font class="text-gamma">21</font>
+                                                </span>
+                                                <font class="text-gamma"></font>
+                                                <span class="s_event_list_month"/>
+                                                <font class="text-gamma">
+                                                    <span class="s_event_list_month">Jul</span>
+                                                </font>
+                                                <span class="s_event_list_year">2014</span>
+                                                <span class="s_event_list_time">
+                                                    <font class="text-gamma">ALL DAY</font>
+                                                </span>
+                                            </time>
+                                            <div class="s_event_list_icon">
+                                                <i class="fa fa-calendar fa-5x"/>
+                                            </div>
+                                            <div class="s_event_list_info">
+                                                <h4 class="s_event_list_title">Your Event Name</h4>
+                                                <p class="s_event_list_desc">Write a description of your event here.</p>
+                                                <ul>
+                                                    <li><a href="#"><span class="fa fa-globe"/> Link</a></li>
+                                                    <li><a href="#"><span class="fa fa-info-circle"/> Info</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="s_event_list_social">
+                                                <ul>
+                                                    <li class="s_event_list_facebook"><a href="#"><span class="fa fa-facebook"/></a></li>
+                                                    <li class="s_event_list_twitter"><a href="#"><span class="fa fa-twitter"/></a></li>
+                                                    <li class="s_event_list_google_plus"><a href="#"><span class="fa fa-google-plus"/></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_testimonial_slider carousel slide mt32 mb48" data-interval="6000" data-ride="carousel" id="myCarousel4">
+                            <ol class="carousel-indicators hidden"><li class="active" data-slide-to="0" data-target="#myCarousel4"/></ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="container">
+                                        <div class="row content text-center mt64 mb64">
+                                            <h3>
+                                                <i class="fa fa-quote-left"/> Let your visitors know what they said about you.
+                                                <i class="fa fa-quote-right"/>
+                                            </h3>
+                                            <p class="lead">Name, Function / Company Inc.</p>
+                                            <div class="col-md-2 col-md-offset-5">
+                                                <img class="img-responsive center-block" src="/web/image/theme_common.image_content_08"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+
+                </t>
+            </template>
+
+        </data>
+    </openerp>

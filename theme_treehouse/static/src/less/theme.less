@@ -1,0 +1,312 @@
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
+/**
+ * 1. Bootstrap Variables
+ * 2. Basics Rules
+ * 2. Background Images
+ * 3. Background Patterns
+ * 4. Buttons
+ * 5. Icons Styles
+ * 6. Texts Colors
+ * 7. Forum
+ */
+
+/* Bootstrap Variables
+   ========================================================================== */
+
+@shadow: none;
+@opacity: 1;
+@border-radius-small: 2px;
+@border-radius-base: 6px;
+@border-radius-large: 20px;
+@border-radius-circle: 50%;
+@body-bg: rgba(0, 0, 0, 0);
+
+/* Basics rules
+   ========================================================================== */
+
+@layout_boxed: false;
+
+#wrapwrap {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  .hyphens;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: @font-normal;
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    b, strong {
+      font-weight: @headings-font-bold;
+    }
+  }
+  p:not(.s_share) a:not(.btn) {
+    text-decoration: underline;
+  }
+  b, strong {
+    font-weight: @font-bold;
+  }
+  .readable {
+    padding: 0 30px;
+    .container {
+      width: auto;
+    }
+  }
+  a, button, .fa {
+    transition: all .3s ease-in-out;
+  }
+  /* Remove yellow background */
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+  .form-control{
+    &:focus{
+      border-color: @color-alpha;
+      box-shadow: @shadow;
+    }
+  }
+}
+
+/* Background Images
+   ========================================================================== */
+
+[class*="bg-img-"],
+.carousel-inner .item[class*="bg-img-"]{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-img-01{ background-image: url('/web/image/theme_treehouse.bg_img_01'); }
+.bg-img-02{ background-image: url('/web/image/theme_treehouse.bg_img_02'); }
+.bg-img-03{ background-image: url('/web/image/theme_treehouse.bg_img_03'); }
+.bg-img-04{ background-image: url('/web/image/theme_treehouse.bg_img_04'); }
+.bg-img-05{ background-image: url('/web/image/theme_treehouse.bg_img_05'); }
+.bg-img-06{ background-image: url('/web/image/theme_treehouse.bg_img_06'); }
+.bg-img-07{ background-image: url('/web/image/theme_treehouse.bg_img_07'); }
+.bg-img-08{ background-image: url('/web/image/theme_treehouse.bg_img_08'); }
+.bg-img-09{ background-image: url('/web/image/theme_treehouse.bg_img_09'); }
+.bg-img-10{ background-image: url('/web/image/theme_treehouse.bg_img_10'); }
+.bg-img-11{ background-image: url('/web/image/theme_treehouse.bg_img_11'); }
+.bg-img-12{ background-image: url('/web/image/theme_treehouse.bg_img_12'); }
+.bg-img-13{ background-image: url('/web/image/theme_treehouse.bg_img_13'); }
+.bg-img-14{ background-image: url('/web/image/theme_treehouse.bg_img_14'); }
+.bg-img-15{ background-image: url('/web/image/theme_treehouse.bg_img_15'); }
+.bg-img-16{ background-image: url('/web/image/theme_treehouse.bg_img_16'); }
+
+/* Background Patterns
+   ========================================================================== */
+
+[class*="bg-pattern-"],
+.carousel-inner .item[class*="bg-pattern-"]{
+  background-size: inherit;
+  background-repeat: repeat;
+}
+
+.bg-pattern-01{ background: url('/web/image/theme_treehouse.bg_pattern_01') repeat; }
+.bg-pattern-02{ background: url('/web/image/theme_treehouse.bg_pattern_02') repeat; }
+.bg-pattern-03{ background: url('/web/image/theme_treehouse.bg_pattern_03') repeat; }
+.bg-pattern-04{ background: url('/web/image/theme_treehouse.bg_pattern_04') repeat; }
+.bg-pattern-05{ background: url('/web/image/theme_treehouse.bg_pattern_05') repeat; }
+.bg-pattern-06{ background: url('/web/image/theme_treehouse.bg_pattern_06') repeat; }
+.bg-pattern-07{ background: url('/web/image/theme_treehouse.bg_pattern_07') repeat; }
+.bg-pattern-08{ background: url('/web/image/theme_treehouse.bg_pattern_08') repeat; }
+.bg-pattern-09{ background: url('/web/image/theme_treehouse.bg_pattern_09') repeat; }
+
+/* Buttons
+   ========================================================================== */
+
+#wrapwrap,
+.modal-body .dropdown-menu,
+.link-style .col-sm-10{
+  .btn{
+    padding: 6px 40px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: (@border-radius-large * 2);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: @btn-font-family;
+    font-size: @font-size-base;
+    font-weight: @btn-font-weight;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:active,
+    &.active{
+      box-shadow: @shadow;
+    }
+    /* Sizes */
+    &.btn-xs{
+      font-size: @font-size-extra-small;
+      padding: 2px 20px;
+    }
+    &.btn-sm{
+      font-size: @font-size-small;
+      padding: 4px 30px;
+    }
+    &.btn-lg{
+      font-size: @font-size-large;
+      padding: 8px 50px;
+    }
+  }
+}
+
+/* Icons & Titles Styles
+   ========================================================================== */
+
+#wrapwrap {
+  .img-circle,
+  .img-circle.img-thumbnail {
+    border-radius: 50%;
+  }
+  .img-rounded,
+  .img-rounded.img-thumbnail {
+    border-radius: @border-radius-base;
+  }
+  .thumbnail,
+  .img-thumbnail {
+    border-radius: inherit;
+    border: 0;
+    padding: 0;
+  }
+  .shadow {
+    border-bottom: 5px solid @gray-darker;
+    &.bg-gray-darker {
+      border-bottom-color: #000;
+    }
+  }
+  h1, h2, h3, h4, h5, h6, .lead {
+    &[class*="bg-"],
+    font[class*="bg-"] {
+      padding: 6px 18px;
+      border-radius: @border-radius-base;
+      display: inline-block;
+    }
+  }
+  .text-underline {
+    text-decoration: underline;
+  }
+  .text-boxed {
+    border: 1px solid;
+    border-color: inherit;
+    padding: 20px;
+    border-radius: @border-radius-base;
+  }
+}
+
+/* Texts Colors
+   ========================================================================== */
+
+#wrapwrap{
+  [class*="bg-"].automatic-color,
+  .automatic-color{
+    color: @gray-darker;
+  }
+  [class*="bg-"].text-white,
+  .text-white{
+    color: #fff;
+  }
+  [class*="bg-"].text-black,
+  .text-black{
+    color: #000;
+  }
+  [class*="bg-"].text-gray-lighter,
+  .text-gray-lighter{
+    color: @gray-lighter;
+  }
+  [class*="bg-"].text-gray,
+  .text-gray{
+    color: @gray;
+  }
+  [class*="bg-"].text-gray-darker,
+  .text-gray-darker{
+    color: @gray-darker;
+  }
+  [class*="bg-"].text-alpha,
+  [class*="bg-"].text-primary,
+  .text-alpha,
+  .text-primary{
+    color: @color-alpha;
+  }
+  [class*="bg-"].text-beta,
+  [class*="bg-"].text-success,
+  .text-beta,
+  .text-success{
+    color: @color-beta;
+  }
+  [class*="bg-"].text-gamma,
+  [class*="bg-"].text-info,
+  .text-gamma,
+  .text-info{
+    color: @color-gamma;
+  }
+  [class*="bg-"].text-delta,
+  [class*="bg-"].text-warning,
+  .text-delta,
+  .text-warning{
+    color: @color-delta;
+  }
+  [class*="bg-"].text-epsilon,
+  [class*="bg-"].text-danger,
+  .text-epsilon,
+  :not(del).text-danger{
+    color: @color-epsilon;
+  }
+  .text-muted{
+    .text-muted(@gray-darker);
+  }
+}
+
+.input-group > span {
+  padding-left: 16px;
+}
+.oe_website_sale #products_grid_before li > a {
+  border-radius: @border-radius-large;
+}
+
+.oe_website_sale #products_grid_before li.active > a {
+    background-color: @color-alpha;
+}
+.pagination > .active > a {
+    border-color: @color-alpha;
+    background-color: @color-alpha;
+}
+
+/* Forum
+   ========================================================================== */
+
+// Search
+#wrapwrap .website_forum {
+  .input-group > .form-control {
+    height: auto;
+    padding: 7px 12px;
+    color: @gray-darker;
+  }
+  .input-group .form-control + .input-group-btn {
+    padding: 0;
+    button {
+      padding: 6px 20px;
+      .border-left-radius(0);
+    }
+  }
+}
+
+#wrapwrap .website_forum + #wrap {
+  // Ask a question - Button
+  .btn-group .btn {
+    padding: 6px 12px;
+    .border-right-radius(0);
+    &.dropdown-toggle {
+      .border-left-radius(0);
+      .border-right-radius(20px);
+    }
+  }
+  // Ask a question - Editor icons
+  .btn-toolbar .btn {
+    background-color: transparent;
+    color: #000;
+    border-radius: 0;
+    &.dropdown-toggle {
+      border-radius: 0;
+    }
+  }
+}

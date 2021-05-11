@@ -1,0 +1,230 @@
+
+// Create new mixins if they are not defined in bootstrap only.
+
+/* FA-(@i)x
+========================================================================== */
+
+.fa-size-generator(@base-size) {
+    .fa {
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .fa,
+    .fa.fa-1x {
+        width: (@base-size + 20px);
+        height: (@base-size + 20px);
+        line-height: (@base-size + 20px);
+    }
+    .fa.fa-2x {
+        width: (@base-size + 40px);
+        height: (@base-size + 40px);
+        line-height: (@base-size + 40px);
+    }
+    .fa.fa-3x {
+        width: (@base-size + 60px);
+        height: (@base-size + 60px);
+        line-height: (@base-size + 60px);
+    }
+    .fa.fa-4x {
+        width: (@base-size + 80px);
+        height: (@base-size + 80px);
+        line-height: (@base-size + 80px);
+    }
+    .fa.fa-5x {
+        width: (@base-size + 100px);
+        height: (@base-size + 100px);
+        line-height: (@base-size + 100px);
+    }
+}
+
+.fa-margin-generator(@base-margin) {
+    .fa-margin(5);
+    .fa-margin(@n, @i: 1) when (@i =< @n) {
+        .fa-@{i}x {
+            margin-top: (20px + (@i * @base-margin));
+        }
+        .fa-margin(@n, (@i + 1));
+    }
+}
+
+/* BLOCKQUOTE
+========================================================================== */
+
+.blockquote-layout(@bg-color, @color) {
+    blockquote {
+        font-style: italic;
+        margin: 0 0 12px 0;
+        padding: 0;
+        border: 0;
+        > .fa,
+        > span .fa {
+            float: left;
+        }
+        .fa-size-generator(20px);
+        img {
+            display: inline-block;
+            max-width: 40px;
+            max-height: 40px;
+        }
+        small {
+            display: inline-block;
+            color: @color;
+        }
+        .blockquote-text {
+            overflow: hidden;
+            font-size: @font-size-base;
+            text-align: left;
+            &:focus{
+                outline: none;
+            }
+        }
+        p {
+            background-color: @bg-color;
+            color: @color;
+            padding: 24px;
+        }
+    }
+}
+
+/* CAROUSEL
+========================================================================== */
+
+.carousel-control(@position, @fa-position, @fa-padding) {
+    opacity: 1;
+    text-shadow: none;
+    color: @gray-darker;
+    font-size: inherit;
+    width: 5%;
+    .fa {
+        top: 50%;
+        background-color: #fff;
+        &:hover {
+            color: @color-alpha;
+        }
+        @media (max-width: @screen-xs-max) {
+            top: auto;
+            bottom: 0;
+        }
+    }
+    .fa-size-generator(20px);
+    &.left {
+        background-image: none;
+        left: @position;
+        .fa {
+            left: @fa-position;
+            right: auto;
+            padding-right: @fa-padding;
+        }
+    }
+    &.right {
+        background-image: none;
+        right: @position;
+        .fa {
+            right: @fa-position;
+            left: auto;
+            padding-left: @fa-padding;
+        }
+    }
+}
+
+.carousel-indicators(@bottom, @bottom-sm) {
+    bottom: @bottom;
+    li {
+        width: 12px;
+        height: 12px;
+        border-color: @gray-darker;
+        margin: 0;
+        &:hover {
+            border-color: @color-alpha;
+        }
+        &.active {
+            background-color: @color-alpha;
+            border-color: @color-alpha;
+            margin: 0;
+        }
+    }
+    @media (max-width: @screen-sm-max) {
+        bottom: @bottom-sm;
+    }
+}
+
+// Mixins cfa
+
+.BorderRadius(@border-radius) {
+    -webkit-border-radius: @border-radius;
+    -moz-border-radius: @border-radius;
+    border-radius: @border-radius;
+}
+.LinearGradient(@startColor, @endColor) {
+    background-color: @startColor;
+    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: -webkit-linear-gradient(top, @startColor, @endColor);
+    background: -moz-linear-gradient(top, @startColor, @endColor);
+    background: -ms-linear-gradient(top, @startColor, @endColor);
+    background: -o-linear-gradient(top, @startColor, @endColor);
+}
+.LinkColor(@linkcolor, @hovercolor) {
+    a:not(.btn) {
+        color: @linkcolor;
+        &:hover, &:focus {
+            color: @hovercolor;
+            text-decoration: none;
+        }
+    }
+}
+.SetDisplayColor(@bgcolor, @textcolor) {
+    background-color: @bgcolor;
+    color: @textcolor;
+}
+.SetTextShadow(@thickness, @shadowcolor) {
+    text-shadow: 0px @thickness 0px @shadowcolor;
+}
+.VAlignMiddle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.VAlignTop {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+.PlaceholderStyle (@color) {
+    ::-webkit-input-placeholder { /* WebKit browsers */
+            color:    @color;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+         color:    @color;
+         opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+         color:    @color;
+         opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+         color:    @color;
+    }
+}
+
+/* ====================== button ======================== */
+
+.btn-styles(@btn-color, @btn-hover-color, @btn-text-color, @btn-text-hover-color) {
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    background-color: @btn-color;
+    border: 2px solid rgba(0, 0, 0, 0);
+    color: @btn-text-color;
+
+    &:hover,
+    &:focus {
+        background-color: @btn-hover-color;
+        border: 2px solid @btn-color;
+    }
+    &:hover {
+        color: @btn-text-hover-color;
+    }
+    &:active {
+        background-color: darken(@btn-color, 12%);
+        border: 3px solid @btn-color;
+    }
+}

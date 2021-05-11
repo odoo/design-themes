@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_monglia_website_options_pattern" inherit_id="website.snippet_options">
+        <!-- Background image -->
+        <xpath expr="//div[@data-js='background']/li" position="replace">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><i class="fa fa-picture-o"/> Background Image</a>
+                <ul class="dropdown-menu">
+                    <li data-select_class="bg-img-01"><a><img src="/web/image/theme_common.image_content_11/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-02"><a><img src="/web/image/theme_common.image_content_09/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-03"><a><img src="/web/image/theme_common.image_content_10/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-04"><a><img src="/web/image/theme_common.image_content_12/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-05"><a><img src="/web/image/theme_common.image_content_02/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-06"><a><img src="/web/image/theme_common.image_content_03/250x120" class="center-block"/></a></li>
+                    <li data-select_class="bg-img-07"><a><img src="/web/image/theme_common.image_content_07/250x120" class="center-block"/></a></li>
+                    <li data-select_class=""><a>None</a></li>
+                    <li><a style="background: none; padding: 5px; border-top: 1px solid #ddd;"/></li>
+                    <li data-select_class="oe_custom_bg" data-choose_image="choose_image"><a><b>Choose another image...</b></a></li>
+                </ul>
+            </li>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector">section, .carousel, .parallax, .color-block, .color-block4, headerwrap, .cube-big, .cube-small, .s_color_blocks_2_block</attribute>
+        </xpath>
+
+        <!-- BG colors -->
+        <xpath expr="//div[@data-js='colorpicker']/li" position="replace">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><i class="fa fa-eyedropper"/> Colors</a>
+                <ul class="dropdown-menu">
+                    <table class="colorpicker">
+                        <tr>
+                            <td><button data-color="alpha"></button></td>
+                            <td><button data-color="beta"></button></td>
+                            <td><button data-color="gamma"></button></td>
+                            <td><button data-color="delta"></button></td>
+                            <td><button data-color="epsilon"></button></td>
+                            <td><button data-color="none">none</button></td>
+                        </tr>
+                        <tr>
+                            <td><button data-color="black"></button></td>
+                            <td><button data-color="gray-dark"></button></td>
+                            <td><button data-color="gray"></button></td>
+                            <td><button data-color="gray-light"></button></td>
+                            <td><button data-color="white"></button></td>
+                        </tr>
+                    </table>
+                </ul>
+            </li>
+        </xpath>
+
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-selector">section, .carousel, .parallax, .product-widget, .mask, .cube-small, .s_color_blocks_4_block, .s_event_list_item>.bg-delta, .s_color_blocks_2_block, .big-menu, .hero-bg, .event, .event-heading, .menu-heading, .menu-right-content, .menu-container</attribute>
+        </xpath>
+
+        <!-- Drop snippets -->
+
+        <xpath expr="//div[@data-js='background']" position="after">
+            <div data-js='margin-x'
+                data-selector=".row > [class*='menublock'], .row > [class*='event'], .menu-container, .fullmenu-right-content > [class*='row']"
+                data-drop-near=".row > [class*='menublock'], .row > [class*='event'], .menu-container, .fullmenu-right-content > [class*='row']">
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Font size -->
+    <template id="font_size" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='blog-style']" position="after">
+            <div data-js='typo_size' data-selector="h1, h2, h3, h4, h5, h6, p">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-text-height"/> Font size</a>
+                    <ul class="dropdown-menu toggle">
+                        <li data-select_class=""><a>Auto</a></li>
+                        <li class="divider"/>
+                        <li data-select_class="px14"><a>14px</a></li>
+                        <li data-select_class="px16"><a>16px</a></li>
+                        <li data-select_class="px18"><a>18px</a></li>
+                        <li data-select_class="px22"><a>22px</a></li>
+                        <li class="divider"/>
+                        <li data-select_class="px30"><a>30px</a></li>
+                        <li data-select_class="px36"><a>36px</a></li>
+                        <li data-select_class="px42"><a>42px</a></li>
+                        <li data-select_class="px50"><a>50px</a></li>
+                        <li data-select_class="px60"><a>60px</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+
+      <!-- Reversed state for cubes snippet -->
+    <template id="order_reverse" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='colorpicker']/li" position="after">
+            <div data-js='cube-reversed' data-selector=".cube-big">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-refresh"/>Reversed</a>
+                    <ul class="dropdown-menu toggle">
+                        <li data-select_class=""><a>Auto</a></li>
+                        <li data-select_class="reversed"><a>Reversed</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

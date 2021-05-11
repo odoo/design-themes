@@ -1,0 +1,40 @@
+@s_banner_3_carousel_height: 500px;
+@s_banner_3_padding: 30px;
+@s_banner_3_h1_size: 50px;
+@s_banner_3_h2_size: 30px;
+
+.s_banner_3_row_hook(){
+    background-color: transparent;
+    height: auto;
+    img {
+        display: none;
+    }
+}
+.s_banner_3_col_center_hook(){
+    text-align: left;
+    width: 400px;
+    height: auto;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    background-color: white;
+    border: 15px solid rgba(255, 255, 255, .5);
+    @media screen and (max-width: @screen-md-max) {
+        text-align: left !important;
+        width: auto;
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+.s_banner_3_hook(){
+    border: 15px solid white;
+    border-left-width: 50px;
+    border-right-width: 50px;
+    @media screen and (max-width:768px) {
+        border-width: 10px;
+    }
+}
