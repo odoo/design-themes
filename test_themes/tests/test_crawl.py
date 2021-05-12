@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-import unittest
-
 from odoo.tests import HttpCase, tagged
 
 
@@ -40,9 +38,16 @@ class Crawler(HttpCase):
         self.authenticate('admin', 'admin')
         test_crawling()
 
-    # Does not work without editor fix but really useful to build the pages automatically with cr.commit()
-    @unittest.skip
+    # Note: this test is also really useful to build the default pages
+    # automatically by adding cr.commit() at the end of the tour
     def test_02_homepage_tour_every_theme(self):
+        # TODO All the theme tours that are runned during this test should be
+        # improved so that each step properly checks that the previous step
+        # actually had an effect (as those tours are normally made to display to
+        # the user and were not designed for testing). However, this is already
+        # really useful as only checking if *entering* edit mode in each theme
+        # does not crash is already covering most issues that can be created
+        # when designing a theme at the moment.
         Website = self.env['website']
         websites_themes = Website.get_test_themes_websites()
         for website in websites_themes:
