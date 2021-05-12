@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_picture" inherit_id="website.s_picture">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc5" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;">
+                <font style="font-size: 62px;">Limited editions</font>
+            </h2>
+        </xpath>
+        <!-- Paragraphs -->
+        <xpath expr="//p[1]" position="replace">
+            <p class="text-center">Explore our top-end Collector's Editions.<br/>
+            Signed and limited tributes to some of the most outstanding writers of all time. </p>
+        </xpath>
+        <!-- Caption -->
+        <xpath expr="//figcaption" position="replace">
+            <figcaption class="figure-caption text-muted py-3">Don't rely on a book's cover</figcaption>
+        </xpath>
+    </template>
+</odoo>

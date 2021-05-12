@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_text_block" inherit_id="website.s_text_block">
+        <!-- Paragraph #01 -->
+        <xpath expr="//p" position="replace">
+            <p>A healthy kitchen with local products. We’re constantly looking to propose new products and receipts. <b>While respecting seasons' products and nature.</b></p>
+        </xpath>
+        <!-- Paragraph #02 -->
+        <xpath expr="//p[2]" position="replace">
+            <p>At the Bistro, you can expect a healthy kitchen on a daily basis. <br/>Come and visit us for a Sunday brunch, healthy juices full of nutrition or delicious cakes that satisfy your sweet tooth. <b>And each day, you’ll discover our Today’s Special.</b></p>
+        </xpath>
+    </template>
+</odoo>

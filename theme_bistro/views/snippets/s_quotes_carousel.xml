@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
+        <!-- Carousel -->
+        <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
+            <attribute name="class" add="s_carousel_rounded" remove="s_carousel_default" separator=" "/>
+        </xpath>
+        <!-- Slide #01 -->
+        <xpath expr="//div[hasclass('carousel-item')][1]" position="attributes">
+            <attribute name="class" remove="bg-200" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][1]//blockquote" position="attributes">
+            <attribute name="class" add="mx-auto" remove="mr-auto" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][1]//blockquote//p" position="replace">
+            <p class="small">Cosy and friendly, good atmosphere and super food. Especially the spiced fruit crumble.</p>
+        </xpath>
+        <!-- Slide #02 -->
+        <xpath expr="//div[hasclass('carousel-item')][2]" position="attributes">
+            <attribute name="style">background-image: none;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][2]//blockquote" position="attributes">
+            <attribute name="class" add="mx-auto" remove="mr-auto" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][2]//blockquote//p" position="replace">
+            <p class="small">This place is perfect for groups or a casual date night.</p>
+        </xpath>
+        <!-- Slide #03 -->
+        <xpath expr="//div[hasclass('carousel-item')][3]" position="attributes">
+            <attribute name="style">background-image: none;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][3]//blockquote" position="attributes">
+            <attribute name="class" add="mx-auto" remove="ml-auto" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][3]//blockquote//p" position="replace">
+            <p class="small">A truly exquisite dining experience. I highly recommend the Mustard Sauce, out of this world.</p>
+        </xpath>
+    </template>
+</odoo>

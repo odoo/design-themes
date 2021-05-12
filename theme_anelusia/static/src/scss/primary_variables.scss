@@ -1,0 +1,182 @@
+//------------------------------------------------------------------------------//
+// Presets
+//------------------------------------------------------------------------------//
+
+$o-website-values-palettes: (
+    (
+        // Header
+        'header-font-size':                 (20 / 16) * 1rem,
+        'header-template':                  'hamburger-full',
+
+        // Font
+        'font':                             'Source Sans Pro',
+        'headings-font':                    'Source Sans Pro',
+        'navbar-font':                      'Source Sans Pro',
+        'buttons-font':                     'Source Sans Pro',
+
+        'link-underline':                   'never',
+
+        // Footer
+        'footer-template':                  'headline',
+    ),
+);
+
+//------------------------------------------------------------------------------//
+// Fonts
+//------------------------------------------------------------------------------//
+
+$o-theme-font-configs: (
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+    'Forum': (
+        'family': ('Forum', cursive),
+        'url': 'Forum:300,300i,400,400i,700,700i',
+    ),
+    'Heebo': (
+        'family': ('Heebo', sans-serif),
+        'url': 'Heebo:300,300i,400,400i,600,600i',
+    ),
+    'Buda': (
+        'family': ('Buda', cursive),
+        'url': 'Buda:300,300i,400,400i,700,700i',
+    ),
+    'PT Serif': (
+        'family': ('PT Serif', serif),
+        'url': 'PT+Serif:300,300i,400,400i,700,700i',
+    ),
+    'Rajdhani': (
+        'family': ('Rajdhani', sans-serif),
+        'url': 'Rajdhani:300,300i,400,400i,700,700i',
+    ),
+    'EB Garamond': (
+        'family': ('EB Garamond', serif),
+        'url': 'EB+Garamond:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+$o-color-palettes: (
+    ( // Palette 1
+        'o-color-1':                        #000000,
+        'o-color-2':                        #e4e4e4,
+        'o-color-3':                        #00459e,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #444444,
+
+        'o-cc2-headings':                   'o-color-4',
+        'o-cc2-link':                       'o-color-4',
+        'o-cc2-btn-primary':                'o-color-4',
+
+        'o-cc4-headings':                   'o-color-4',
+        'o-cc4-btn-primary':                'o-color-4',
+        'o-cc4-text':                       'o-color-2',
+        'o-cc4-link':                       'o-color-4',
+
+        'o-cc5-text':                       'o-color-2',
+        'o-cc5-link':                       'o-color-4',
+
+        'menu':                             4,
+        'footer':                           4,
+        'copyright':                        4,
+    ),
+    ( // Palette 2
+        'o-color-1':                        #d4ab0a,
+        'o-color-2':                        #444444,
+        'o-color-3':                        #ececec,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #000000,
+
+        'menu':                             4,
+        'footer':                           1,
+        'copyright':                        2,
+    ),
+    ( // Palette 3
+        'o-color-1':                        #005699,
+        'o-color-2':                        #ac5e82,
+        'o-color-3':                        #d8eff1,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #222222,
+
+        'o-cc5-link':                       #218bdf,
+        'o-cc5-btn-primary':                #218bdf,
+    ),
+    ( // Palette 4
+        'o-color-1':                        #dc143c,
+        'o-color-2':                        #7e2839,
+        'o-color-3':                        #faf7e1,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #222222,
+    ),
+    ( // Palette 5
+        'o-color-1':                        #32c0c9,
+        'o-color-2':                        #cfcfcf,
+        'o-color-3':                        #cee6e7,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #2e2e2e,
+
+        'footer':                           1,
+    ),
+    ( // Palette 6
+        'o-color-1':                        #e27b92,
+        'o-color-2':                        #e4e4e4,
+        'o-color-3':                        #465548,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #222222,
+
+        'o-cc2-headings':                   'o-color-4',
+        'o-cc5-text':                       'o-color-2',
+
+        'menu':                             2,
+        'footer':                           2,
+    ),
+);
+// Compatibility
+$o-theme-color-palettes: (
+    (
+        'alpha':                            #ffffff,
+        'beta':                             #cdd0a2,
+        'gamma':                            #b4bbb9,
+        'delta':                            #242327,
+        'epsilon':                          #957985,
+    ),
+    (
+        'alpha':                            #ffffff,
+        'beta':                             #f4f1db,
+        'gamma':                            #928371,
+        'delta':                            #53453f,
+        'epsilon':                          #c31737,
+    ),
+    (
+        'alpha':                            #ffffff,
+        'beta':                             #d8eff1,
+        'gamma':                            #0d75ac,
+        'delta':                            #000f3d,
+        'epsilon':                          #e07a6b,
+    ),
+    (
+        'alpha':                            #ffffff,
+        'beta':                             #faf7e1,
+        'gamma':                            #e3d6c6,
+        'delta':                            #eed187,
+        'epsilon':                          #dc733f,
+    ),
+    (
+        'alpha':                            #ffffff,
+        'beta':                             #cfcfcf,
+        'gamma':                            #2e2e2e,
+        'delta':                            #000000,
+        'epsilon':                          #32c0c9,
+    ),
+    (
+        'alpha':                            #ffffff,
+        'beta':                             #aacfb0,
+        'gamma':                            #4dac5e,
+        'delta':                            #93ab12,
+        'epsilon':                          #e62e3e,
+    ),
+);

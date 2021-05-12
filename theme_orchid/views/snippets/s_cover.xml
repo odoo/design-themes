@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_cover" inherit_id="website.s_cover">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_half_screen_height" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/01","flip":[]}</attribute>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('container')]" position="replace">
+            <div class="container s_allow_columns">
+                <h1 style="text-align: center;">
+                    <font style="font-size: 62px;"><b>Live life in full bloom</b></font>
+                </h1>
+            </div>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//section/*[last()]" position="after">
+            <div class="o_we_shape o_web_editor_Wavy_01"/>
+        </xpath>
+    </template>
+</odoo>

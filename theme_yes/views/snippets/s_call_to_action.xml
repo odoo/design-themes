@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_call_to_action" inherit_id="website.s_call_to_action">
+        <!-- Paragraph -->
+        <xpath expr="//h3" position="replace">
+            <h3><b>345 couples</b> trusted us to organize their wedding.</h3>
+        </xpath>
+        <xpath expr="//p" position="replace">
+            <p>Join them and let us help you make this day unforgettable.</p>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,283 @@
+//------------------------------------------------------------------------------//
+// Presets
+//------------------------------------------------------------------------------//
+
+$o-website-values-palettes: (
+    (
+        // Header
+        'header-template':                  'vertical',
+        'hambuger-type':                    'off-canvas',
+        'hamburger-position':               'right',
+        'logo-height':                      3rem,
+        'fixed-logo-height':                2rem,
+
+        // Font
+        'font':                             'Poppins',
+        'headings-font':                    'Poppins',
+        'navbar-font':                      'Poppins',
+        'buttons-font':                     'Poppins',
+
+        // Buttons
+        'btn-padding-y':                    .45rem,
+        'btn-padding-x':                    1.35rem,
+        'btn-padding-y-sm':                 .3rem,
+        'btn-padding-x-sm':                 .9rem,
+        'btn-padding-y-lg':                 .6rem,
+        'btn-padding-x-lg':                 1.8rem,
+        'btn-border-radius':                10rem,
+        'btn-border-radius-sm':             10rem,
+        'btn-border-radius-lg':             10rem,
+        'btn-ripple':                       true,
+
+        'input-padding-y':                  .45rem,
+        'input-padding-y-sm':               .3rem,
+        'input-padding-y-lg':               .6rem,
+
+        // Footer
+        'footer-template':                  'centered',
+        'footer-effect':                    'slideout_slide_hover',
+        'footer-scrolltop':                 true,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Abel': (
+        'family': ('Abel', sans-serif),
+        'url': 'Abel:300,300i,400,400i,700,700i',
+        'properties' : (
+            'base': (
+                'font-size-base':           (18 / 16) * 1rem,
+                'header-font-size':         (18 / 16) * 1rem,
+            ),
+        )
+    ),
+    'Dosis': (
+        'family': ('Dosis', sans-serif),
+        'url': 'Dosis:300,300i,400,400i,700,700i',
+        'properties' : (
+            'base': (
+                'font-size-base':           (18 / 16) * 1rem,
+                'header-font-size':         (18 / 16) * 1rem,
+            ),
+        )
+    ),
+    'Karla': (
+        'family': ('Karla', sans-serif),
+        'url': 'Karla:300,300i,400,400i,700,700i',
+    ),
+    'Laila': (
+        'family': ('Laila', serif),
+        'url': 'Laila:300,300i,400,400i,600,600i',
+    ),
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'Poppins': (
+        'family': ('Poppins', sans-serif),
+        'url': 'Poppins:300,300i,400,400i,600,600i',
+        'properties': (
+            'base': (
+                'header-font-size':         (15 / 16) * 1rem,
+                'font-size-base':           (15 / 16) * 1rem,
+            ),
+        )
+    ),
+    'Raleway': (
+        'family': ('Raleway', sans-serif),
+        'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+);
+
+// Headings
+
+$o-theme-h1-font-size-multiplier:           3;
+$o-theme-h2-font-size-multiplier:           2.5;
+$o-theme-h3-font-size-multiplier:           2;
+$o-theme-h4-font-size-multiplier:           1.75;
+$o-theme-h5-font-size-multiplier:           1.5;
+$o-theme-h6-font-size-multiplier:           1.25;
+
+$o-theme-headings-font-weight:              400;
+
+// Texts
+
+$o-theme-font-size-lg-multiplier:           1.25;
+$o-theme-font-size-sm-multiplier:           .875;
+
+$o-theme-font-weight-light:                 300;
+$o-theme-font-weight-normal:                400;
+$o-theme-font-weight-bold:                  700;
+
+// Buttons
+
+$o-theme-btn-font-weight:                   400;
+
+//------------------------------------------------------------------------------//
+// Colors
+//------------------------------------------------------------------------------//
+
+$o-color-palette-number: 5;
+$o-color-palettes: (
+    ( // Palette 1
+        'o-color-1':                        #68b581,
+        'o-color-2':                        #046380,
+        'o-color-3':                        #e8e6d1,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #1d2127,
+
+        'o-cc1-text':                       'o-color-5',
+
+        'menu':                             1,
+        'footer':                           5,
+        'copyright':                        4,
+    ),
+    ( // Palette 2
+        'o-color-1':                        #8cc850,
+        'o-color-2':                        #cc4452,
+        'o-color-3':                        #f6f4e1,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #4c4545,
+
+        'o-cc1-text':                       'o-color-5',
+        'o-cc3-link':                       'o-color-4',
+        'o-cc4-link':                       'o-color-4',
+        'o-cc5-btn-secondary':              'o-color-2',
+
+        'menu':                             5,
+        'footer':                           5,
+        'copyright':                        4,
+    ),
+    ( // Palette 3
+        'o-color-1':                        #e2ad3b,
+        'o-color-2':                        #1a2a41,
+        'o-color-3':                        #f2ebd5,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #d26400,
+
+        'o-cc1-text':                       'o-color-2',
+        'o-cc2-headings':                   'o-color-2',
+        'o-cc2-link':                       'o-color-2',
+        'o-cc3-headings':                   'o-color-3',
+        'o-cc5-link':                       'o-color-3',
+
+        'menu':                             3,
+        'footer':                           3,
+        'copyright':                        4,
+    ),
+    ( // Palette 4
+        'o-color-1':                        #0092b2,
+        'o-color-2':                        #046380,
+        'o-color-3':                        #f2ebd5,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #a8c545,
+
+        'o-cc1-text':                       #002737,
+        'o-cc2-headings':                   'o-color-2',
+        'o-cc3-headings':                   'o-color-3',
+        'o-cc3-link':                       'o-color-3',
+        'o-cc4-link':                       'o-color-3',
+        'o-cc4-btn-primary':                'o-color-3',
+        'o-cc4-btn-secondary':              'o-color-2',
+        'o-cc5-link':                       'o-color-2',
+        'o-cc5-btn-secondary':              'o-color-2',
+
+        'preheader':                        4,
+        'menu':                             1,
+        'footer':                           3,
+        'copyright':                        4,
+    ),
+    ( // Palette 5
+        'o-color-1':                        #dd7e43,
+        'o-color-2':                        #658791,
+        'o-color-3':                        #9cc264,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #2b2d33,
+
+        'o-cc1-text':                       'o-color-5',
+        'o-cc2-headings':                   'o-color-4',
+        'o-cc2-btn-primary':                'o-color-4',
+        'o-cc2-link':                       'o-color-4',
+        'o-cc3-btn-primary':                'o-color-4',
+        'o-cc3-btn-secondary':              'o-color-5',
+        'o-cc3-link':                       'o-color-4',
+        'o-cc4-btn-primary':                'o-color-4',
+        'o-cc4-btn-secondary':              'o-color-5',
+        'o-cc4-link':                       'o-color-4',
+        'o-cc5-btn-secondary':              'o-color-2',
+        'o-cc5-link':                       'o-color-1',
+
+        'preheader':                        4,
+        'menu':                             5,
+        'footer':                           5,
+        'copyright':                        4,
+    ),
+    ( // Palette 6
+        'o-color-1':                        #92b475,
+        'o-color-2':                        #8c7d77,
+        'o-color-3':                        #efefed,
+        'o-color-4':                        #ffffff,
+        'o-color-5':                        #011a33,
+
+        'o-cc1-text':                       'o-color-5',
+        'o-cc3-link':                       'o-color-4',
+        'o-cc3-btn-secondary':              'o-color-4',
+        'o-cc4-link':                       'o-color-4',
+        'o-cc4-btn-secondary':              'o-color-4',
+        'o-cc5-btn-secondary':              'o-color-4',
+
+        'menu':                             2,
+        'footer':                           5,
+        'copyright':                        4,
+    ),
+);
+
+// Compatibility
+$o-theme-color-palettes: (
+    (
+        'alpha':                            #68b581,
+        'beta':                             #00a388,
+        'gamma':                            #046380,
+        'delta':                            #4bb5c1,
+        'epsilon':                          #beeb9f,
+    ),
+    (
+        'alpha':                            #a3cc52,
+        'beta':                             #cc4452,
+        'gamma':                            #8e3557,
+        'delta':                            #f7f2b2,
+        'epsilon':                          #4a1a2c,
+    ),
+    (
+        'alpha':                            #eebf3e,
+        'beta':                             #e2ad3b,
+        'gamma':                            #bf5c00,
+        'delta':                            #77c4d3,
+        'epsilon':                          #901811,
+    ),
+    (
+        'alpha':                            #0092b2,
+        'beta':                             #046380,
+        'gamma':                            #a8c545,
+        'delta':                            #fff6c5,
+        'epsilon':                          #ffd55c,
+    ),
+    (
+        'alpha':                            #dd7e43,
+        'beta':                             #d45c45,
+        'gamma':                            #911146,
+        'delta':                            #9cc264,
+        'epsilon':                          #306e73,
+    ),
+    (
+        'alpha':                            #b7ca79,
+        'beta':                             #677e52,
+        'gamma':                            #b0cc99,
+        'delta':                            #89725b,
+        'epsilon':                          #f6e8b1,
+    ),
+);

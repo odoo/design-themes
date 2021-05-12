@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_call_to_action" inherit_id="website.s_call_to_action">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt64 pb48" remove="pt48 pb24 bg-200" separator=" "/>
+        </xpath>
+        <!-- Column #01 -->
+        <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
+            <attribute name="class" add="col-lg-12 text-center" remove="col-lg-9" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]//h3" position="replace">
+            <h3><b>Help us protect and preserve</b> for future generations</h3>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]//p" position="replace">
+            <p>Join us and make the planet a better place.</p>
+        </xpath>
+        <!-- Column #02 -->
+       <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
+            <attribute name="class" add="col-lg-12" remove="col-lg-3" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]//p" position="attributes">
+            <attribute name="style">text-align: center;</attribute>
+        </xpath>
+    </template>
+</odoo>

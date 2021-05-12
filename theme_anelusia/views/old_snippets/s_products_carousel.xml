@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="_assets_snippet_s_products_carousel_css_000_variables" inherit_id="theme_common._assets_snippet_s_products_carousel_css_000_variables" active="False">
+    <xpath expr="//link[last()]" position="after">
+        <link rel="stylesheet" type="text/scss" href="/theme_anelusia/static/src/old_snippets/s_products_carousel/000_variables.scss"/>
+    </xpath>
+</template>
+
+<template id="assets_snippet_s_products_carousel_css_000" inherit_id="theme_common.assets_snippet_s_products_carousel_css_000" active="False">
+    <xpath expr="//link[last()]" position="after">
+        <link rel="stylesheet" type="text/scss" href="/theme_anelusia/static/src/old_snippets/s_products_carousel/000.scss"/>
+    </xpath>
+</template>
+
+</odoo>

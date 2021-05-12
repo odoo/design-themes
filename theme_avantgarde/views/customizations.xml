@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== TITLE ======== -->
+<template id="s_title" inherit_id="website.s_title" name="Avantgarde s_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/05","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_05"/>
+    </xpath>
+    <xpath expr="//h1" position="replace">
+        <h1>A Sense of Sharpness</h1>
+    </xpath>
+</template>
+
+<!-- ======== COVER ======== -->
+ <template id="s_cover" inherit_id="website.s_cover" name="Avantgarde s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="s_parallax_no_overflow_hidden" remove="s_parallax_is_fixed s_parallax" separator=" "/>
+    </xpath>
+    <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
+        <attribute name="style" remove="background-position: 50% 0;" add="background-position: 50% 80%;" separator=";"/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== BANNER ======== -->
+ <template id="s_cover" inherit_id="website.s_cover" name="Avantgarde s_cover">
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== TEXT-IMAGE ======== -->
+ <template id="s_text_image" inherit_id="website.s_text_image" name="Avantgarde s_text_image">
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE-TEXT ======== -->
+ <template id="s_image_text" inherit_id="website.s_image_text" name="Avantgarde s_image_text">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/05","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_05"/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== IMAGES WALL ======== -->
+ <template id="s_images_wall" inherit_id="website.s_images_wall" name="Avantgarde s_images_wall">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/06","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_06"/>
+    </xpath>
+</template>
+
+<!-- ======== REFERENCES ======== -->
+ <template id="s_references" inherit_id="website.s_references" name="Avantgarde s_references">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/01","colors":{"c2":"o-color-3"},"flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_01" style="background-image: url(&quot;/web_editor/shape/web_editor/Blobs/01.svg?c2=%23F7F7F7&quot;);"/>
+    </xpath>
+</template>
+
+<!-- ======== CAROUSEL ======== -->
+ <template id="s_carousel" inherit_id="website.s_carousel" name="Avantgarde s_carousel">
+    <!-- Assign slide3 as 'active' and move it in first position -->
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
+        <attribute name="class" remove="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="attributes">
+        <attribute name="class" add="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="before">
+        <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="move"/>
+    </xpath>
+
+    <xpath expr="//h2/font" position="replace">
+        <font style="font-size: 62px; background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Making Simple</font>
+    </xpath>
+</template>
+
+<!-- ======== QUOTES ======== -->
+ <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Avantgarde s_quotes_carousel">
+    <!-- Assign slide2 as 'active' and move it in first position -->
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
+        <attribute name="class" remove="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div[2]" position="attributes">
+        <attribute name="class" add="active" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]/div" position="before">
+        <xpath expr="//div[hasclass('carousel-inner')]/div[2]" position="move"/>
+    </xpath>
+</template>
+
+<!-- ======== CALL TO ACTION ======== -->
+ <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Avantgarde s_call_to_action">
+    <xpath expr="//h3" position="replace">
+        <h3 style="text-align: right;"><b>50,000+ visitors</b> can't be wrong.</h3>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
+        <attribute name="class" add="col-lg-8" remove="col-lg-9" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-8')]/p" position="attributes">
+        <attribute name="style" add="text-align: right;" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-4" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')]/p" position="attributes">
+        <attribute name="style" add="text-align: left;" remove="text-align: right;" separator=";"/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

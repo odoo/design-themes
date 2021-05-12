@@ -1,0 +1,164 @@
+// Colors
+$o-color-palettes: (
+    (
+        'o-color-1': #a1a52f,
+        'o-color-2': #66555c,
+        'o-color-3': #f7f7f7,
+        'o-color-4': #ffffff,
+        'o-color-5': #242327,
+
+        'o-cc2-link': 'o-color-5',
+        'o-cc5-link': 'o-color-4',
+        'o-cc5-btn-primary': 'o-color-4',
+        'o-cc5-btn-secondary': 'o-color-5',
+
+        'menu': 5,
+        'footer': 5,
+        'copyright': 5,
+    ),
+    (
+        'o-color-1': #679b96,
+        'o-color-2': #345552,
+        'o-color-3': #e9e9e9,
+        'o-color-4': #ffffff,
+        'o-color-5': #1e222f,
+
+        'o-cc2-link': 'o-color-5',
+        'o-cc2-headings': 'o-color-5',
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+    (
+        'o-color-1': #df699c,
+        'o-color-2': #590046,
+        'o-color-3': #dbe8ed,
+        'o-color-4': #ffffff,
+        'o-color-5': #222222,
+
+        'o-cc2-link': 'o-color-5',
+        'o-cc2-headings': 'o-color-5',
+
+        'menu': 2,
+        'footer': 2,
+        'copyright': 2,
+    ),
+    (
+        'o-color-1': #b29964,
+        'o-color-2': #62624c,
+        'o-color-3': #f5f4f4,
+        'o-color-4': #ffffff,
+        'o-color-5': #333333,
+
+        'o-cc2-link': 'o-color-5',
+
+        'menu': 4,
+        'footer': 4,
+        'copyright': 4,
+    ),
+    (
+        'o-color-1': #1ad68f,
+        'o-color-2': #2e2e2e,
+        'o-color-3': #f7f7f7,
+        'o-color-4': #ffffff,
+        'o-color-5': #000000,
+
+        'o-cc2-link': 'o-color-5',
+        'o-cc4-link': 'o-color-5',
+        'o-cc4-text': 'o-color-5',
+
+        'menu': 4,
+        'footer': 4,
+        'copyright': 4,
+    ),
+    (
+        'o-color-1': #cfd744,
+        'o-color-2': #3d504a,
+        'o-color-3': #f0f1f1,
+        'o-color-4': #ffffff,
+        'o-color-5': #112625,
+
+        'o-cc2-link': 'o-color-5',
+        'o-cc4-link': 'o-color-5',
+        'o-cc4-text': 'o-color-5',
+
+        'menu': 4,
+        'footer': 4,
+        'copyright': 4,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (25 / 12);
+$o-theme-h2-font-size-multiplier: (18 / 12);
+$o-theme-h3-font-size-multiplier: (16 / 12);
+$o-theme-h4-font-size-multiplier: (14 / 12);
+$o-theme-h5-font-size-multiplier: 1;
+$o-theme-h6-font-size-multiplier: 1;
+
+$o-theme-font-configs: (
+    'Heebo': (
+        'family': ('Heebo', sans-serif),
+        'url': 'Heebo:300,300i,400,400i,700,700i',
+    ),
+    'Rajdhani': (
+        'family': ('Rajdhani', sans-serif),
+        'url': 'Rajdhani:300,300i,400,400i,700,700i',
+    ),
+    'Raleway': (
+        'family': ('Raleway', sans-serif),
+        'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+    'Ubuntu': (
+        'family': ('Ubuntu', sans-serif),
+        'url': 'Ubuntu:300,300i,400,400i,700,700i',
+    ),
+    'Poppins': (
+        'family': ('Poppins', sans-serif),
+        'url': 'Poppins:300,300i,400,400i,700,700i',
+    ),
+    'Questrial': (
+        'family': ('Questrial', sans-serif),
+        'url': 'Questrial:300,300i,400,400i,700,700i',
+    ),
+    'Muli': (
+        'family': ('Muli', sans-serif),
+        'url': 'Muli:300,300i,400,400i,700,700i',
+    ),
+    'Cormorant': (
+        'family': ('Cormorant', serif),
+        'url': 'Cormorant:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'header-font-size': (18 / 16) * 1rem,
+        'btn-border-radius': 0px,
+        'btn-border-radius-sm': 0px,
+        'btn-border-radius-lg': 0px,
+        'font': 'Poppins',
+        'headings-font': 'Poppins',
+        'navbar-font': 'Poppins',
+        'buttons-font': 'Poppins',
+        'header-template': 'contact',
+        'footer-template': 'descriptive',
+        'header-links-style': 'border-bottom',
+    ),
+);

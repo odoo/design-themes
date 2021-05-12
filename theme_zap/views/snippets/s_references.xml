@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_references" inherit_id="website.s_references">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt80 pb64 o_cc2" remove="pt48 pb32" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;">Our <b>References</b></h2>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="after">
+            <p><br/></p>
+        </xpath>
+        <!-- Column #01 -->
+        <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
+            <attribute name="class" add="rounded bg-white shadow-sm pt48 pb48" remove="" separator=" "/>
+        </xpath>
+        <!-- Column #02 -->
+        <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
+            <attribute name="class" add="rounded bg-white shadow-sm pt48 pb48" remove="" separator=" "/>
+        </xpath>
+        <!-- Column #03 -->
+        <xpath expr="//div[hasclass('row')]/div[3]" position="attributes">
+            <attribute name="class" add="rounded bg-white shadow-sm pt48 pb48" remove="" separator=" "/>
+        </xpath>
+        <!-- Column #04 -->
+        <xpath expr="//div[hasclass('row')]/div[4]" position="attributes">
+            <attribute name="class" add="rounded bg-white shadow-sm pt48 pb48" remove="" separator=" "/>
+        </xpath>
+        <!-- Column #05 -->
+        <xpath expr="//div[hasclass('row')]/div[5]" position="attributes">
+            <attribute name="class" add="rounded bg-white shadow-sm pt48 pb48" remove="" separator=" "/>
+        </xpath>
+        <!-- Column #06 -->
+        <xpath expr="//div[hasclass('row')]/div[6]" position="attributes">
+            <attribute name="class" add="rounded bg-white shadow-sm pt48 pb48" remove="" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

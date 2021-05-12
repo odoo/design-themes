@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_carousel" inherit_id="website.s_carousel">
+        <!-- Carousel -->
+        <xpath expr="//div[hasclass('s_carousel')]" position="attributes">
+            <attribute name="class" add="s_carousel_bordered carousel-fade" remove="s_carousel_default" separator=" "/>
+        </xpath>
+        <!-- Slide #01 -->
+        <xpath expr="//div[hasclass('carousel-item')][1]" position="attributes">
+             <attribute name="class" remove="pt152 pb152" separator=" "/>
+            <attribute name="style" add="background-position: 50% 50%;" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][1]//div[hasclass('carousel-content')]" position="attributes">
+            <attribute name="class" add="col-lg-8 offset-lg-2 bg-white-50 pt200 pb192 text-center" remove="col-lg-6" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][1]//h2" position="replace">
+            <h2><font style="font-size: 48px;">Creative Studio</font></h2>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][1]//p" position="replace">
+            <p class="lead">We combine smart design with rich technology <br/>to craft innovative products.</p>
+        </xpath>
+        <!-- Slide #02 -->
+        <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('carousel-content')]" position="attributes">
+            <attribute name="class" add="bg-white-50" remove="bg-black-50" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('s_hr')]" position="replace"/>
+        <!-- Slide #03 -->
+        <xpath expr="//div[hasclass('carousel-item')][3]" position="replace"/>
+        <xpath expr="//*[@data-slide-to='2']" position="replace"/>
+    </template>
+</odoo>

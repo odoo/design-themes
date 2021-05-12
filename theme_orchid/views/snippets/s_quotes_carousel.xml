@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
+        <!-- Quote 1 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[1]/p" position="replace">
+            <p>A wide range of high quality products and a warm welcome! I recommend this shop 200%!</p>
+        </xpath>
+        <!-- Quote 2 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[2]/p" position="replace">
+            <p>Very nice, colourful shop with many choices in the choir of a very pretty town.</p>
+        </xpath>
+        <!-- Quote 3 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[3]/p" position="replace">
+            <p>A small shop with a very large selection of roses. Nice prices and above all a very professional and friendly welcome.</p>
+        </xpath>
+    </template>
+</odoo>

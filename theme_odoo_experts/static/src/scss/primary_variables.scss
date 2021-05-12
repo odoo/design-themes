@@ -1,0 +1,140 @@
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+$o-color-palettes: (
+    (
+        'o-color-1': #278f84,
+        'o-color-2': #494048,
+        'o-color-3': #f9f9f9,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #201c20,
+
+        'o-cc5-link': #65e4d7,
+
+        'menu': 3,
+        'footer': 3,
+        'copyright': 3,
+    ),
+    (
+        'o-color-1': #414f8a,
+        'o-color-2': #888888,
+        'o-color-3': #f9f9f9,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #222222,
+
+        'o-cc5-text': #b8b7b7,
+        'o-cc5-link': 'o-color-4',
+
+        'menu': 5,
+        'footer': 5,
+        'copyright': 5,
+    ),
+    (
+        'o-color-1': #dfcc60,
+        'o-color-2': #7f6262,
+        'o-color-3': #f9f9f9,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #352626,
+
+        'menu': 4,
+        'footer': 4,
+        'copyright': 4,
+    ),
+    (
+        'o-color-1': #01e0b5,
+        'o-color-2': #5c7aff,
+        'o-color-3': #f9f9f9,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #444444,
+
+        'o-cc2-link': 'o-color-5',
+
+        'menu': 3,
+        'footer': 3,
+        'copyright': 3,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (25 / 12);
+$o-theme-h2-font-size-multiplier: (18 / 12);
+$o-theme-h3-font-size-multiplier: (16 / 12);
+$o-theme-h4-font-size-multiplier: (14 / 12);
+$o-theme-h5-font-size-multiplier: 1;
+$o-theme-h6-font-size-multiplier: 1;
+
+$o-theme-font-configs: (
+    'Heebo': (
+        'family': ('Heebo', sans-serif),
+        'url': 'Heebo:300,300i,400,400i,700,700i',
+    ),
+    'Rajdhani': (
+        'family': ('Rajdhani', sans-serif),
+        'url': 'Rajdhani:300,300i,400,400i,700,700i',
+    ),
+    'Raleway': (
+        'family': ('Raleway', sans-serif),
+        'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+    'Ubuntu': (
+        'family': ('Ubuntu', sans-serif),
+        'url': 'Ubuntu:300,300i,400,400i,700,700i',
+    ),
+    'Poppins': (
+        'family': ('Poppins', sans-serif),
+        'url': 'Poppins:300,300i,400,400i,700,700i',
+    ),
+    'Questrial': (
+        'family': ('Questrial', sans-serif),
+        'url': 'Questrial:300,300i,400,400i,700,700i',
+    ),
+    'Muli': (
+        'family': ('Muli', sans-serif),
+        'url': 'Muli:300,300i,400,400i,700,700i',
+    ),
+    'Anton': (
+        'family': ('Anton', sans-serif),
+        'url': 'Anton:300,300i,400,400i,700,700i',
+    ),
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'Oswald': (
+        'family': ('Oswald', sans-serif),
+        'url': 'Oswald:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'logo-height': (52 / 16) * 1rem,
+        'fixed-logo-height': (52 / 16) * 1rem,
+        'header-font-size': (18 / 16) * 1rem,
+        'btn-border-radius': 0,
+        'btn-border-radius-lg': 0,
+        'btn-border-radius-sm': 0,
+        'font': 'Lato',
+        'headings-font': 'Oswald',
+        'navbar-font': 'Oswald',
+        'buttons-font': 'Lato',
+        'header-template': 'contact',
+        'footer-template': 'contact',
+        'header-links-style': 'border-bottom',
+    ),
+);

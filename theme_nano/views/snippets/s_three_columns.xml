@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt80 pb80" remove="pt32 pb32" separator=" "/>
+        </xpath>
+        <!-- Column #01 -->
+        <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
+            <attribute name="class" add="offset-lg-2" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]//*[hasclass('card-title')]" position="replace">
+            <h4 class="card-title">Handcrafted</h4>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]//*[hasclass('card-text')]" position="replace">
+            <p class="card-text">People should love the things they own. Things should be built to last.</p>
+        </xpath>
+        <!-- Column #02 -->
+        <xpath expr="//div[hasclass('row')]/div[2]//*[hasclass('card-title')]" position="replace">
+            <h4 class="card-title">Tailored</h4>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]//*[hasclass('card-text')]" position="replace">
+            <p class="card-text">Made in Santa's Workshop. High quality fabric &amp; exclusive designs.</p>
+        </xpath>
+        <!-- Column #03 -->
+        <xpath expr="//div[hasclass('row')]/div[3]" position="replace"/>
+    </template>
+</odoo>

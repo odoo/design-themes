@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('card-body')]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Unique Items</h3>
+                <p class="card-text">To buy unique pieces is to buy a piece of the artist: His passion put in the execution
+                of the object, his hours of reflexion, his dexterity... It is a committed, ethical act, which encourages a
+                responsible and direct economy.</p>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Tailored advice</h3>
+                <p class="card-text">Whether it is to help you see clearly in a project, to confirm a choice or when you have
+                no idea about the layout of your interior, our advisers are there to accompany you throughout your project.</p>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">For the whole Family</h3>
+                <p class="card-text">Every week our shop receive new products. Some are only on sale for a limited period of time.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_text_image" inherit_id="website.s_text_image">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt64 pb64 o_cc o_cc5" remove="pt32 pb32" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2>Selected for you</h2>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p[1]" position="replace">
+            <p>We’re working with young and innovative designers who use noble and durable materials.
+            Thus, we can offer you unique pieces that will brighten up your interior and life.</p>
+        </xpath>
+        <xpath expr="//p[2]" position="replace">
+            <p><br/></p>
+        </xpath>
+    </template>
+</odoo>

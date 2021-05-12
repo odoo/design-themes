@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_text_image" inherit_id="website.s_text_image">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc3" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12","colors":{"c1":"#ab44ff","c3":"o-color-1"},"flip":["y"]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Airy_12 o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Airy/12.svg?c1=%23ab44ff&amp;c3=%23AB44FF');"/>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
+            <div class="col-lg-6 p-5 border shadow rounded" style="border-width: 1px !important; border-color: rgb(229, 229, 229) !important; border-radius: 20px !important; box-shadow: rgba(0, 0, 0, 0.15) -20px 20px 0px 0px !important;">
+                <h2>Let yourself be transported</h2>
+                <p><br/></p>
+                <p>Welcome to my online home. I invite you to come in, learn more about me and my work, and stop to embrace the slow pleasure of art and beauty.</p>
+            </div>
+        </xpath>
+        <!-- Picture -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="attributes">
+            <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

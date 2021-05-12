@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_image_text" inherit_id="website.s_image_text">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="bg-o-color-5" remove="pt32 pb32" separator=" "/>
+        </xpath>
+        <!-- Column #01 -->
+        <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
+            <attribute name="class" add="p-lg-0" remove="pt16 pb16" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]/img" position="attributes">
+            <attribute name="class" add="w-100 h-100" remove="img-fluid" separator=" "/>
+            <attribute name="style">object-fit: cover;</attribute>
+        </xpath>
+        <!-- Column #02 -->
+        <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
+            <attribute name="class" add="col-lg-4 offset-lg-1 pt48 pb48" remove="col-lg-6 pt16 pb16" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]/h2" position="replace">
+            <h2>How we Work</h2>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]/p[1]" position="replace">
+            <p>Come up with your big idea. <br/>We take care of the rest.</p>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]/p[2]" position="replace">
+            <p>“Soon is not as good as now.” <br/><b>~Seth Godin</b><br/></p>
+        </xpath>
+    </template>
+</odoo>

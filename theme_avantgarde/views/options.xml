@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Customize header  -->
+    <template id="avantgarde_header" inherit_id="website.layout" name="Avantgarde Header">
+        <xpath expr="//div[@id='wrapwrap']/header" position="before">
+            <div id="pre-header" class="clearfix">
+                <span class="h5 year"><t t-esc="time.strftime('%Y')"/></span>
+                <h5 class="pre-header-text o_default_snippet_text h5 mb0">Add your custom text here</h5>
+                <span class="pre-header-links h5 text-right">
+                    <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook"/></a>
+                    <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                    <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                    <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                    <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    <a t-att-href="website.social_instagram" t-if="website.social_instagram"><i class="fa fa-instagram"/></a>
+                    <a t-attf-href="mailto:#{res_company.email}" t-if="res_company.email"><i class="fa fa-envelope"></i></a>
+                </span>
+            </div>
+        </xpath>
+        <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+            <attribute name="id">avant_header</attribute>
+        </xpath>
+    </template>
+
+    <!-- Avantgarde Top Banner -->
+    <template id="avantgarde_top_content_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='Box']" position="before">
+            <div data-js='avantgarde_top_banner_options' data-selector=".s_parallax, .s_google_map">
+                <we-select string="Position" data-no-preview="true">
+                    <we-button data-select-class="">Normal</we-button>
+                    <we-button data-select-class="move_to_top">Move to top</we-button>
+                </we-select>
+            </div>
+        </xpath>
+        <xpath expr="//div[@id='so_header_theme']" position="attributes">
+            <attribute name="data-js">HeaderOptions</attribute>
+        </xpath>
+    </template>
+
+    <!-- Theme options -->
+    <template id="snippet_options" inherit_id="website.snippet_options">
+        <!-- Add layout options -->
+        <xpath expr="//div[@id='so_header_theme']/*" position="before">
+            <we-checkbox data-name="pre_header_opt" string="Pre Header" data-customize-website-views="theme_avantgarde.avantgarde_option_layout_pre_header"/>
+            <we-checkbox data-dependencies="pre_header_opt" string="Hide Year" data-customize-website-views="theme_avantgarde.avantgarde_option_layout_hide_year"/>
+        </xpath>
+        <xpath expr="//we-select[@id='header_templates_select']/we-button" position="before">
+            <we-button id="option_hamburger_menu"
+                data-name="hamburger_menu_opt"
+                data-customize-website-views="website.no_autohide_menu"
+                data-variable="header-template"
+                data-customize-website-variable="avantgarde"
+                data-trigger="header_effect_standard_opt"
+                string="Avantgarde"
+                data-reload="/"/>
+        </xpath>
+    </template>
+
+    <!-- Navbar Options -->
+    <template id="avantgarde_option_layout_pre_header" inherit_id="theme_avantgarde.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/options/layouts/pre_header.scss"/>
+        </xpath>
+    </template>
+    <template id="avantgarde_option_layout_hide_year" inherit_id="theme_avantgarde.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_avantgarde/static/src/scss/options/layouts/hide_year.scss"/>
+        </xpath>
+    </template>
+</odoo>

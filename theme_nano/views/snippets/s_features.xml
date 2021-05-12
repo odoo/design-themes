@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_features" inherit_id="website.s_features">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pb48" remove="pb32" separator=" "/>
+        </xpath>
+        <!-- Column #01 -->
+        <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
+            <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-4" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]/i" position="replace">
+            <i class="fa fa-3x fa-asterisk rounded bg-o-color-5 m-4"></i>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]/h3" position="replace">
+            <h2>Intuitive</h2>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]/p" position="replace">
+            <p>We create easy-to-use products.</p>
+        </xpath>
+        <!-- Column #02 -->
+        <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
+            <attribute name="class" add="col-lg-5" remove="col-lg-4" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]/i" position="replace">
+            <i class="fa fa-3x fa-arrows-alt rounded bg-primary m-4"></i>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]/h3" position="replace">
+            <h2>Adaptable</h2>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]/p" position="replace">
+            <p>We create modular solutions.</p>
+        </xpath>
+        <!-- Column #03 -->
+        <xpath expr="//div[hasclass('row')]/div[3]" position="replace"/>
+    </template>
+</odoo>

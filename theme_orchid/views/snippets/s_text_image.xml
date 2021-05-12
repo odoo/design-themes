@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_text_image" inherit_id="website.s_text_image">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt64" remove="pt32" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/06","colors":{"c1":"o-color-1","c3":"o-color-1","c4":"o-color-1","c5":"o-color-4"},"flip":["x","y"]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_06 o_we_flip_x o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Wavy/06.svg?c1=%23a1a52f&amp;c3=%23A1A52F&amp;c4=%23A1A52F&amp;c5=%23FFFFFF');"/>
+        </xpath>
+        <!-- Row -->
+        <xpath expr="//div[hasclass('row')]" position="attributes">
+            <attribute name="class" add="align-items-stretch" remove="align-items-center" separator=" "/>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="attributes">
+            <attribute name="class" add="col-lg-8 p-3 o_cc o_cc5 " remove="col-lg-6 pt16 pb16" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
+            <div class="col-lg-4 p-5 o_cc o_cc5">
+                <h2>Our Mission</h2>
+                <p>Deliver flowers to live up to your dedication for your loved ones. To do so, we collaborate with local producers who care about the environment and cultivate their flowers with love.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

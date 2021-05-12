@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_share" inherit_id="website.s_share">
+        <!-- Title -->
+        <xpath expr="//*[hasclass('s_share_title')]" position="attributes">
+            <attribute name="class" add="d-none" separator=" "/>
+        </xpath>
+        <!-- Disk -->
+        <xpath expr="//a[1]/i" position="attributes">
+            <attribute name="class" add="rounded-circle shadow-sm" separator=" "/>
+        </xpath>
+        <xpath expr="//a[2]/i" position="attributes">
+            <attribute name="class" add="rounded-circle shadow-sm" separator=" "/>
+        </xpath>
+        <xpath expr="//a[3]/i" position="attributes">
+            <attribute name="class" add="rounded-circle shadow-sm" separator=" "/>
+        </xpath>
+        <xpath expr="//a[4]/i" position="attributes">
+            <attribute name="class" add="rounded-circle shadow-sm" separator=" "/>
+        </xpath>
+        <xpath expr="//a[5]/i" position="attributes">
+            <attribute name="class" add="rounded-circle shadow-sm" separator=" "/>
+        </xpath>
+        <xpath expr="//a[6]/i" position="attributes">
+            <attribute name="class" add="rounded-circle shadow-sm" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

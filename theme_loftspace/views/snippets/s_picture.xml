@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_picture" inherit_id="website.s_picture">
+       <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt64" remove="pt48" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;">
+                <font style="font-size: 62px;">Made it simple, but significant.</font>
+            </h2>
+        </xpath>
+        <!-- Paragraphs -->
+        <xpath expr="//p[1]" position="replace">
+            <p class="text-center">Your home should be a story of who you are and a collection of what you love.<br/>
+            We can offer you complete guidance in the process of your personal interior project.</p>
+        </xpath>
+        <!-- Caption -->
+        <xpath expr="//figcaption" position="replace">
+            <figcaption class="figure-caption text-muted py-3">Home is where your story begins.</figcaption>
+        </xpath>
+    </template>
+</odoo>

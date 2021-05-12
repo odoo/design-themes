@@ -1,0 +1,316 @@
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #E91E63,
+        'beta': #FF9833,
+        'gamma': #339ACC,
+        'delta': #00CC64,
+        'epsilon': #572F59,
+
+        'success': #5CB85C,
+        'info': #4D68A3,
+        'warning': #DDC66B,
+        'danger': #D86060,
+    ),
+    (
+        'alpha': #DBAD10,
+        'beta': #595959,
+        'gamma': #808F85,
+        'delta': #91C499,
+        'epsilon': #F2E9DC,
+    ),
+    (
+        'alpha': #3BBFEE,
+        'beta': #58355E,
+        'gamma': #E03616,
+        'delta': #FFF689,
+        'epsilon': #CFFFB0,
+
+        'success': #31B05E,
+        'info': #4D68A3,
+        'warning': #EACF41,
+        'danger': #CB3E3E,
+    ),
+    (
+        'alpha': #009688,
+        'beta': #003249,
+        'gamma': #313715,
+        'delta': #ECCE8E,
+        'epsilon': #D16014,
+
+        'success': #5CB85C,
+    ),
+    (
+        'alpha': #F44336,
+        'beta': #450D0B,
+        'gamma': #1F143B,
+        'delta': #80A2BD,
+        'epsilon': #655557,
+
+        'success': #31B05E,
+        'info': #4D68A3,
+        'warning': #EACF41,
+        'danger': #CB3E3E,
+    ),
+    (
+        'alpha': #CDDC39,
+        'beta': #D6F8D6,
+        'gamma': #7FC6A4,
+        'delta': #5D737E,
+        'epsilon': #55505C,
+    ),
+    (
+        'alpha': #FF5722,
+        'beta': #29335C,
+        'gamma': #F3A712,
+        'delta': #F0CEA0,
+        'epsilon': #534D41,
+    ),
+    (
+        'alpha': #607D8B,
+        'beta': #3B1F2B,
+        'gamma': #A9ACA9,
+        'delta': #969397,
+        'epsilon': #60495A,
+
+        'success': #5CB85C,
+    ),
+);
+
+// Theme Palettes
+$o-color-palettes: (
+    (
+        'o-color-1': #ee4980,
+        'o-color-2': #5f5458,
+        'o-color-3': #f7f7f7,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #000000,
+
+        'o-cc5-headings': 'o-color-1',
+
+        'body': 'o-color-3',
+        'footer': 1,
+        'copyright': 3,
+    ),
+    (
+        'o-color-1': #38383b,
+        'o-color-2': #918f8b,
+        'o-color-3': #dfe0e1,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #000000,
+
+        'o-cc4-headings': 'o-color-3',
+        'o-cc5-headings': 'o-color-2',
+
+        'o-cc4-btn-primary': 'o-color-3',
+        'o-cc5-btn-primary': 'o-color-2',
+
+        'menu': 4,
+        'footer': 4,
+    ),
+    (
+        'o-color-1': #f08e80,
+        'o-color-2': #0b0d63,
+        'o-color-3': #fdf0e6,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #4e4d4d,
+
+        'o-cc2-headings': 'o-color-2',
+        'o-cc3-headings': 'o-color-3',
+        'o-cc4-headings': 'o-color-5',
+        'o-cc5-headings': 'o-color-1',
+
+        'footer': 1,
+        'copyright': 1,
+    ),
+    (
+        'o-color-1': #f78f4a,
+        'o-color-2': #94583a,
+        'o-color-3': #F7EFBA,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #312b24,
+
+        'o-cc2-headings': 'o-color-2',
+        'o-cc3-headings': 'o-color-3',
+        'o-cc4-headings': 'o-color-5',
+        'o-cc5-headings': 'o-color-1',
+
+        'o-cc2-btn-primary': 'o-color-2',
+        'o-cc3-btn-primary': 'o-color-3',
+
+        'footer': 1,
+        'copyright': 1,
+    ),
+    (
+        'o-color-1': #AC578C,
+        'o-color-2': #69355D,
+        'o-color-3': #F7EFBA,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #000000,
+
+        'o-cc2-headings': 'o-color-2',
+        'o-cc3-headings': 'o-color-3',
+        'o-cc4-headings': 'o-color-5',
+        'o-cc5-headings': 'o-color-1',
+
+        'o-cc2-btn-primary': 'o-color-2',
+        'o-cc3-btn-primary': 'o-color-3',
+
+        'footer': 1,
+        'copyright': 1,
+    ),
+    (
+        'o-color-1': #f3b65b,
+        'o-color-2': #3c4e3c,
+        'o-color-3': #e7d1b5,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #000000,
+
+        'o-cc2-headings': 'o-color-2',
+        'o-cc3-headings': 'o-color-3',
+        'o-cc5-headings': 'o-color-1',
+    ),
+    (
+        'o-color-1': #f48847,
+        'o-color-2': #282d30,
+        'o-color-3': #e9ceb0,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #000000,
+
+        'o-cc2-headings': 'o-color-1',
+        'o-cc5-headings': 'o-color-1',
+    ),
+    (
+        'o-color-1': #278f84,
+        'o-color-2': #494048,
+        'o-color-3': #ebe1ea,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #201c20,
+
+        'o-cc2-headings': 'o-color-1',
+        'o-cc5-headings': 'o-color-1',
+    ),
+);
+
+// Grays
+$-black: #000000;
+$o-gray-color-palettes: ();
+@each $-palette in $o-color-palettes {
+    $o-gray-color-palettes: append($o-gray-color-palettes, (
+        '975': lighten($-black, 13%),
+        '950': lighten($-black, 16%),
+        '925': lighten($-black, 19%),
+        '900': lighten($-black, 22%),
+        '800': lighten($-black, 25%),
+        '700': lighten($-black, 33.5%),
+        '650': lighten($-black, 50%),
+        '600': lighten($-black, 65.5%),
+        '400': lighten($-black, 82%),
+        '200': lighten($-black, 93.5%),
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (48.83 / 16);
+$o-theme-h2-font-size-multiplier: (39.06 / 16);
+$o-theme-h3-font-size-multiplier: (31.25 / 16);
+$o-theme-h4-font-size-multiplier: (25.00 / 16);
+$o-theme-h5-font-size-multiplier: (20.00 / 16);
+$o-theme-h6-font-size-multiplier: 1.1;
+
+$o-theme-font-configs: (
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'Raleway': (
+        'family': ('Raleway', sans-serif),
+        'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+    'Heebo': (
+        'family': ('Heebo', sans-serif),
+        'url': 'Heebo:300,300i,400,400i,700,700i',
+    ),
+    'Abril Fatface': (
+        'family': ('Abril Fatface', cursive),
+        'url': 'Abril+Fatface:300,300i,400,400i,700,700i',
+    ),
+    'Alfa Slab One': (
+        'family': ('Alfa Slab One', cursive),
+        'url': 'Alfa+Slab+One:300,300i,400,400i,700,700i',
+    ),
+    'Arvo': (
+        'family': ('Arvo', serif),
+        'url': 'Arvo:300,300i,400,400i,700,700i',
+    ),
+    'Cantata One': (
+        'family': ('Cantata One', serif),
+        'url': 'Cantata+One:300,300i,400,400i,700,700i',
+    ),
+    'Open Sans Condensed': (
+        'family': ('Open Sans Condensed', sans-serif),
+        'url': 'Open+Sans+Condensed:300,300i,400,400i,700,700i',
+    ),
+    'Open Sans': (
+        'family': ('Open Sans', sans-serif),
+        'url': 'Open+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Oswald': (
+        'family': ('Oswald', sans-serif),
+        'url': 'Oswald:300,300i,400,400i,700,700i',
+    ),
+    'Poiret One': (
+        'family': ('Poiret One', cursive),
+        'url': 'Poiret+One:300,300i,400,400i,700,700i',
+    ),
+    'PT Sans Narrow': (
+        'family': ('PT Sans Narrow', sans-serif),
+        'url': 'PT+Sans+Narrow:300,300i,400,400i,700,700i',
+    ),
+    'Roboto Slab': (
+        'family': ('Roboto Slab', serif),
+        'url': 'Roboto+Slab:300,300i,400,400i,700,700i',
+    ),
+    'Playfair Display': (
+        'family': ('Playfair Display', serif),
+        'url': 'Playfair+Display:300,300i,400,400i,700,700i',
+    ),
+    'Vollkorn': (
+        'family': ('Vollkorn', serif),
+        'url': 'Vollkorn:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font-size-base': (14 / 16) * 1rem,
+        'font': 'Heebo',
+        'headings-font': 'Playfair Display',
+        'navbar-font': 'Playfair Display',
+        'buttons-font': 'Playfair Display',
+
+        'layout': 'boxed',
+        'header-template': 'magazine',
+        'hamburger-type': 'off-canvas',
+        'menu-box-shadow': false,
+
+        'footer-template': 'centered',
+
+        'btn-ripple': true,
+        'btn-padding-y-lg': .6rem,
+        'btn-padding-x-lg': 2.2rem,
+        'link-underline': 'always',
+    ),
+);

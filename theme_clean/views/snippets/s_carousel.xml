@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_carousel" inherit_id="website.s_carousel">
+        <!-- Container -->
+        <xpath expr="//div[hasclass('carousel-inner')]" position="replace">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item pt256 pb256 oe_img_bg active" style="background-image: url('/web/image/website.s_carousel_default_image_1'); position: relative;" data-name="Slide" data-oe-shape-data='{"shape":"web_editor/Origins/08","flip":["y"]}'>
+                    <!-- Shape -->
+                    <div class="o_we_shape o_web_editor_Origins_08 o_we_flip_y"/>
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-content col-lg-6">
+                                <!-- Paragraph -->
+                                <h2><font style="font-size: 62px;">Personal adviser.</font></h2>
+                                <p class="lead">At any moment, you may contact our advisor through the in-app video meeting system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item pt96 pb96 oe_img_bg" style="background-image: url('/web/image/website.s_carousel_default_image_2'); position: relative;" data-name="Slide" data-oe-shape-data='{"shape":"web_editor/Origins/05","flip":[]}'>
+                    <!-- Shape -->
+                    <div class="o_we_shape o_web_editor_Origins_05"/>
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-content col-lg-8 offset-lg-2 text-center pt48 pb40">
+                                <!-- Paragraph -->
+                                <h2 style="font-size: 62px;">Simplify things.</h2>
+                                <p class="lead">We invest in strategic advice tailored to your<br/>
+                                business problems and needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item pt128 pb128 oe_img_bg" style="background-image: url('/web/image/website.s_carousel_default_image_3'); position: relative;" data-name="Slide" data-oe-shape-data='{"shape":"web_editor/Origins/08","flip":["y","x"]}'>
+                    <!-- Shape -->
+                    <div class="o_we_shape o_web_editor_Origins_08 o_we_flip_y o_we_flip_x"/>
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-content col-lg-8 offset-lg-6 py-5">
+                                <!-- Paragraph -->
+                                <h2><font style="font-size: 62px;">Efficient team processes.</font></h2>
+                                <p class="lead">We integrate digital tools and solutions for better insights, enabling data-driven planning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

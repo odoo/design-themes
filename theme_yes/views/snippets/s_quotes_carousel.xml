@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
+        <!-- Quote 1 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[1]/p" position="replace">
+            <p>They are a great venue: clean, gorgeous, elegant and very workable for a lot of different kinds of events.</p>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_blockquote_author')])[1]" position="replace">
+            <span class="s_blockquote_author"><b>Linda and Paul</b> • Married in 2020</span>
+        </xpath>
+        <!-- Quote 2 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[2]/p" position="replace">
+            <p>The organisation was perfect. Flowers and decoration were sumptuous.</p>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_blockquote_author')])[2]" position="replace">
+            <span class="s_blockquote_author"><b>Jack and Mary</b> • Married in 2019</span>
+        </xpath>
+        <!-- Quote 3 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[3]/p" position="replace">
+            <p>The staff was anticipatory and responsive, the food was excellent, and the venue was beautiful.</p>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_blockquote_author')])[3]" position="replace">
+            <span class="s_blockquote_author"><b>Rose and Peter</b> • Married in 2020</span>
+        </xpath>
+    </template>
+</odoo>

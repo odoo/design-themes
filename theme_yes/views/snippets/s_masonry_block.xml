@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_masonry_block" inherit_id="website.s_masonry_block">
+        <!-- Column 1 -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[3]" position="replace">
+            <div class="col-lg-6 o_cc o_cc4 text-center">
+                <h3><em>Sparkling, dynamic and smiling.</em></h3>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[4]" position="replace">
+            <div class="col-lg-6 o_cc o_cc4"></div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[5]" position="replace">
+            <div class="col-lg-6 o_cc o_cc1"></div>
+        </xpath>
+        <!-- Column 4 -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[6]" position="replace">
+            <div class="col-lg-6 o_cc o_cc1 text-center">
+                <h3><em>Warm, attentive and caring.</em></h3>
+            </div>
+        </xpath>
+    </template>
+</odoo>

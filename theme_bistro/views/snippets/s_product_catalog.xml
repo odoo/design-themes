@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_product_catalog" inherit_id="website.s_product_catalog">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="style"/>
+            <attribute name="class" add="pt96 pb80 s_parallax parallax s_parallax_is_fixed o_colored_level o_cc5" remove="pt32 pb32" separator=" "/>
+            <attribute name="data-scroll-background-ratio">1</attribute>
+        </xpath>
+        <xpath expr="//section/*" position="before">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_bistro/static/src/img/backgrounds/16.jpg'); background-position: 50% 0%;"/>
+             <div class="o_we_bg_filter bg-black-50"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace"/>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace"/>
+    </template>
+</odoo>
