@@ -18,6 +18,10 @@ const snippets = [
         name: 'Image - Text',
     },
     {
+        id: 's_images_wall',
+        name: 'Images Wall',
+    },
+    {
         id: 's_references',
         name: 'References',
     },
