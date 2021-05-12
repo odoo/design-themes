@@ -45,11 +45,11 @@
 <template id="s_image_text" inherit_id="website.s_image_text" name="Cobalt s_image_text">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt152 pb128" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/03","colors":{"c2":"o-color-3"},"flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/03","flip":[]}</attribute>
     </xpath>
 
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_03" style="background-image: url(&quot;/web_editor/shape/web_editor/Blobs/03.svg?c2=%23F6F4F2&quot;);"/>
+        <div class="o_we_shape o_web_editor_Blobs_03"/>
     </xpath>
 
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
@@ -137,10 +137,10 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Cobalt s_three_columns">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="bg-200 pt32 pb32" add="pt72 pb120" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","colors":{"c2":"o-color-3"},"flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Bold_01 o_we_flip_x" style="background-image: url(&quot;/web_editor/shape/web_editor/Bold/01.svg?c2=%23F6F4F2&quot;);"/>
+        <div class="o_we_shape o_web_editor_Bold_01 o_we_flip_x"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]" position="before">
         <h2 style="text-align: center;">Latest projects</h2>
