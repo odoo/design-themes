@@ -33,6 +33,5 @@ wTourUtils.registerThemeHomepageTour("anelusia_tour", [
     wTourUtils.clickOnSnippet(snippets[3], 'top'),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
-    wTourUtils.clickOnSave(),
 ]);
 });

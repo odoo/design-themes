@@ -39,6 +39,5 @@ wTourUtils.registerThemeHomepageTour("real_estate_tour", [
     wTourUtils.selectColorPalette(),
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.clickOnSave(),
 ]);
 });
