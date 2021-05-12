@@ -43,6 +43,5 @@ wTourUtils.registerThemeHomepageTour("loftspace_tour", [
     wTourUtils.clickOnSnippet(snippets[5]),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
-    wTourUtils.clickOnSave(),
 ]);
 });
