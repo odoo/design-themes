@@ -119,3 +119,11 @@ $o-color-palettes-compatibility-indexes: (
     22: 'generic-16',
     23: 'generic-17',
 );
+
+//------------------------------------------------------------------------------
+// Shapes
+//------------------------------------------------------------------------------
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Airy/12', (3: 3));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/04', (5: 4));
+$o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Airy/12', (3: 'footer'));

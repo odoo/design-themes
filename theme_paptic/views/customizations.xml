@@ -23,11 +23,11 @@
 <template id="s_cover" inherit_id="website.s_cover" name="Paptic s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb0 pt192" remove="pt96 pb96 bg-black-50 s_parallax_is_fixed s_parallax" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","colors":{"c1":"#40FFFB","c2":"o-color-1","c3":"#FFFFFF","c5":"#9BA9BB"},"flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":["x"]}</attribute>
     </xpath>
 
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04 o_we_flip_x" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=%2340FFFB&amp;c2=%236772E5&amp;c3=%23FFFFFF&amp;c5=%239BA9BB');"/>
+        <div class="o_we_shape o_web_editor_Blocks_04 o_we_flip_x"/>
     </xpath>
 
     <!-- Enable SVG dynamic color functionality -->
@@ -43,7 +43,7 @@
 
 
     <xpath expr="//h1" position="replace">
-        <h1 class="text-o-color-4">Grow your Business. <br/>Optimize your time.</h1>
+        <h1 class="text-o-color-4">Grow your Business.<br/>Optimize your time.</h1>
     </xpath>
     <xpath expr="//p" position="replace">
         <p class="text-o-color-3">&#160;</p>
@@ -74,11 +74,11 @@
 <template id="s_image_text" inherit_id="website.s_image_text" name="Paptic s_image_text">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt96 pb16 o_cc o_cc3" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/03","colors":{"c3":"o-color-4"},"flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/03","flip":["x"]}</attribute>
     </xpath>
 
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Origins_03 o_we_flip_x" style="background-image: url(&quot;/web_editor/shape/web_editor/Origins/03.svg?c3=%23FFFFFF&quot;);"></div>
+        <div class="o_we_shape o_web_editor_Origins_03 o_we_flip_x"></div>
     </xpath>
 
     <xpath expr="//img" position="attributes">
@@ -207,10 +207,10 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Paptic s_three_columns">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="bg-200 pt32 pb32 o_cc o_cc3" add="pt120 pb120" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/01","colors":{"c2":"o-color-3","c5":"o-color-3"},"flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/01","flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Origins_01" style="background-image: url(&quot;/web_editor/shape/web_editor/Origins/01.svg?c2=%23F6F9FC&amp;c5=%23F6F9FC&quot;);"></div>
+        <div class="o_we_shape o_web_editor_Origins_01"></div>
     </xpath>
     <xpath expr="//div[hasclass('row')]" position="before">
         <h3 style="text-align: center;">SUCCESS STORIES</h3>
@@ -243,11 +243,11 @@
 <template id="s_picture" inherit_id="website.s_picture" name="Paptic s_picture">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt72 o_cc o_cc1" remove="bg-200 pt48" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/08","colors":{"c1":"#F5F9F9"},"flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/08","flip":[]}</attribute>
     </xpath>
 
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Bold_08" style="background-image: url('/web_editor/shape/web_editor/Bold/08.svg?c1=%23F5F9F9');"></div>
+        <div class="o_we_shape o_web_editor_Bold_08"/>
     </xpath>
 
     <xpath expr="//img" position="attributes">
