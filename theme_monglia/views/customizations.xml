@@ -81,10 +81,10 @@
  <template id="s_media_list" inherit_id="website.s_media_list" name="Monglia s_media_list">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc2" remove="bg-200" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/06","colors":{"c2":"o-color-1"},"flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/06","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_06 o_we_flip_x" style="background-image: url(&quot;/web_editor/shape/web_editor/Airy/06.svg?c2=%23ED145B&quot;);"/>
+        <div class="o_we_shape o_web_editor_Airy_06 o_we_flip_x"/>
     </xpath>
 
     <xpath expr="//div[hasclass('container')]/div/div[1]//h3" position="replace">
