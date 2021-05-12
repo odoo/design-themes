@@ -239,3 +239,10 @@ $o-theme-color-palettes-compatibility-indexes: (
     5: 'clean-5',
     6: 'clean-6',
 );
+
+//------------------------------------------------------------------------------
+// Shapes
+//------------------------------------------------------------------------------
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14', (4: 4));
+$o-bg-shapes: add-header-shape-colors-mapping('web_editor', 'Origins/07_001', (3: 'menu', 5: 2));

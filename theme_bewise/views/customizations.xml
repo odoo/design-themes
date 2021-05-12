@@ -183,10 +183,10 @@
 <!-- ======== TEAM ======== -->
  <template id="s_company_team" inherit_id="website.s_company_team" name="Bewise s_company_team">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/01","colors":{"c2":"o-color-3"},"flip":["y"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/09","flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_01 o_we_flip_y" style="background-image: url(&quot;/web_editor/shape/web_editor/Blobs/01.svg?c2=%23F0F4F4&quot;);"/>
+        <div class="o_we_shape o_web_editor_Blobs_09"/>
     </xpath>
 
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div//h4" position="replace">
