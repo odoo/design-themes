@@ -38,6 +38,5 @@ wTourUtils.registerThemeHomepageTour("treehouse_tour", [
     wTourUtils.clickOnSnippet(snippets[4], 'top'),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
-    wTourUtils.clickOnSave(),
 ]);
 });
