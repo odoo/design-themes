@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="demo_page_home_page" model="website.page">
+        <field name="url">/demo_page_home</field>
+        <field name="website_published">True</field>
+        <field name="name">Home</field>
+        <field name="type">qweb</field>
+        <field name="key">website.demo_page_home</field>
+        <field name="arch" type="xml">
+            <t t-name="website.demo_page_home">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure oe_empty">
+                        <section class="s_big_image bg-img-01">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2 mt128">
+                                        <img class="img-responsive center-block" src="/web/image/theme_common.image_content_logo"/>
+                                    </div>
+                                    <div class="col-md-6 col-md-offset-3 s_big_image_content text-center mt16 mb48">
+                                        <div class="s_text_highlight bg-gamma mt32 mb32">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="text-center">
+                                                        <h3>A Business Theme for Odoo CMS</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-warning btn-lg" href="/demo_page_blocks" type="button">NEW BUILDING BLOCKS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_lead_bar bg-gamma">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 mt16 mb32">
+                                        <h3>Responsive HTML5 theme built using Bootstrap</h3>
+                                        <h5 class="mb0 mt0 text-muted">CLEAN was made with easy customization in mind.</h5>
+                                    </div>
+                                    <div class="col-md-4 mt16 mb32">
+                                        <a class="btn btn-primary btn-lg pull-right mt24" href="/contactus"><i class="fa fa-arrow-right"/>
+                                            Theme Features
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="clean-title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center mt48 mb16">
+                                        <h1>Focuses on Your Content !</h1>
+                                        <h3 class="text-muted ">flat design &amp; clean structure</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_image_text">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5 mt32 mb32">
+                                        <img class="img-responsive o_animate o_anim_fade_in_left" src="/web/image/theme_common.image_content_02"/>
+                                    </div>
+                                    <div class="col-md-5 col-md-offset-2 mt32">
+                                        <h3>Clean for Odoo CMS</h3>
+                                        <h4 class="text-muted">BUILD WITH BOOTSTRAP 3 FRAMEWORK</h4>
+                                        <div/>
+                                        <p>Clean is a professional responsive HTML5 theme, built using Bootstrap3, the most popular front-end framework for developing responsive, mobile first projects on the web.</p>
+                                        <p>Just drag &amp; drop the blocks you need to easily build your layout. All layouts are made of sections, that you can easily combine to fit your specific project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_icon_box_circle mt8">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center mb48">
+                                        <h1>Impress Your Visitor !</h1>
+                                        <h3 class="text-muted ">Showcase Your Services and Features</h3>
+                                    </div>
+                                    <div class="col-md-3 clearfix mt16 mb16">
+                                        <span class="fa fa-2x fa-picture-o pull-left img-circle bg-gamma"/>
+                                        <div class="icon_box_content">
+                                            <h4>Minimalistic Flat Design</h4>
+                                            <p>Theme Clean provides a modern and minimalistic flat design and makes you ride the trend</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 clearfix mt16 mb16">
+                                        <span class="fa fa-2x fa-pencil pull-left img-circle bg-gamma"/>
+                                        <div class="icon_box_content">
+                                            <h4>6 Beautiful Color Schemes</h4>
+                                            <p>Easily adapt your branding with the six color palettes you can choose with Theme Clean</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 clearfix mt16 mb16">
+                                        <span class="fa fa-2x fa-font pull-left img-circle bg-gamma"/>
+                                        <div class="icon_box_content">
+                                            <h4>12 Font Combinations</h4>
+                                            <p>Find the font that suits your business and make your content more accessible by you visitors.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 clearfix mt16 mb128">
+                                        <span class="fa fa-2x fa-desktop pull-left img-circle bg-gamma"/>
+                                        <div class="icon_box_content">
+                                            <h4>Wide and Boxed Layout</h4>
+                                            <p>Changing your layout is super easy with Theme Clean. You can switch from full width to boxed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_two_columns mt48 o_displayed_top o_displayed_middle o_displayed_bottom">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center mt48">
+                                        <h2>Build Attractive Web Pages Without any Technical or Designer Skills</h2>
+                                        <h3 class="text-muted ">CLEAN is SIMPLE, Fast AND EFFICIENT</h3>
+                                    </div>
+                                    <div class="col-md-12 text-center mt48">
+                                        <div/>
+                                        <blockquote>
+                                            <p>
+                                                <em>Clean is a uniquely designed theme. It's super easy to modify and uses advanced LESS/CSS techniques
+                                                    <br/>
+                                                    built on the latest Bootstrap Framework.</em>
+                                            </p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="col-md-5 mb32 mt0">
+                                        <img class="img-responsive" src="/web/image/theme_common.image_content_06"/>
+                                        <h4 class="mt32 text-center">Easy Customization</h4>
+                                        <h5 class="text-muted text-center">TOOLS &amp; OPTIONS</h5>
+                                        <blockquote>
+                                            <p>You can easily change the background, the colors and the font combination of your website or you a preset.</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="col-md-5 col-md-offset-2 mt0 mb92">
+                                        <img class="img-responsive" src="/web/image/theme_common.image_content_05"/>
+                                        <h4 class="mt32 text-center">All Blocks Editable</h4>
+                                        <h5 class="text-muted text-center">RICH FEATURES</h5>
+                                        <blockquote>
+                                            <p>Every Building Block has its own options. You can change their style by playing with images, colors and gradients.</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_lead_bar bg-epsilon">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 mt16 mb32">
+                                        <h3>New Odoo Bootstrap Theme: Clean Theme</h3>
+                                        <h5 class="mb0 mt0 text-muted">CLEAN was made with easy customization in mind.</h5>
+                                    </div>
+                                    <div class="col-md-4 mt16 mb32">
+                                        <a class="btn btn-primary btn-lg pull-right mt24" href="/demo_page_blocks"><i class="fa fa-arrow-right"/>
+                                            Theme Features
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_color_blocks_2">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 s_color_blocks_2_block text-center o_animate o_anim_fade_in_left bg-img-03">
+                                        <span class="fa fa-shield fa-5x center-block"/>
+                                        <h2 class="text-center">Clean Layout</h2>
+                                        <h3 class="text-center text-muted mb16">PLAY WITH COLORS &amp; GRADIENTS</h3>
+                                        <p>Clean is a uniquely designed theme.
+                                            <br/>
+                                            It's super easy to modify and uses advanced LESS/CSS techniques<br/>
+                                            built on the latest Bootstrap Framework.<br/>
+                                            <br/>
+                                        </p>
+                                        <a class="btn btn-info mb32" href="#"><i class="fa fa-cog"/>
+                                            More Details
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 s_color_blocks_2_block bg-gamma text-center bg_gradient_primary_up o_animate o_anim_fade_in_right">
+                                        <span class="fa fa-cube fa-5x center-block"/>
+                                        <h2 class="text-center">Clean Structure</h2>
+                                        <h3 class="text-center text-muted mb16">HIGHLIGHT WITH ANIMATIONS</h3>
+                                        <p>Clean is build with easy customization in mind. Out of the box,<br/>
+                                            you get 6 color schemes and multiple combinations,<br/>
+                                            from backgronds to fonts.<br/>
+                                            <br/>
+                                        </p>
+                                        <a class="btn btn-info mb32" href="#"><i class="fa fa-cog"/>
+                                            More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_discount">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center mb32 mt48">
+                                        <h2>Clean Theme - Beautiful Flat Colors</h2>
+                                        <section class="s_separator_color mt48">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <hr/>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <h3 class="text-muted">Brand your website now</h3>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12 mt32 mb32">
+                                        <div class="s_discount_box">
+                                            <div class="s_discount_brand">
+                                                <h3 class="text-muted">COUPON</h3>
+                                            </div>
+                                            <div class="s_discount_amount bg-yellow">30%
+                                                <div class="s_discount_type">off</div>
+                                            </div>
+                                            <div class="s_discount_descr">
+                                                <strong>Increase the amount of your visitors by offering them great discount.</strong><br/>Let them find the coupon code.</div>
+                                            <div class="s_discount_ends">
+                                                <small>* Conditions and restrictions apply.</small>
+                                            </div>
+                                            <div class="s_discount_coupon bg-yellow">
+                                                <a class="s_discount_open-code" data-toggle="collapse" href="#code-1">Get a code</a>
+                                                <div class="collapse s_discount_code" id="code-1">LV5MAY14</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt32 mb32 col-xs-12 col-md-4">
+                                        <div class="s_discount_box">
+                                            <div class="s_discount_brand">
+                                                <h3 class="text-muted">GIFT CARDS</h3>
+                                            </div>
+                                            <div class="s_discount_amount bg-red">25%
+                                                <div class="s_discount_type">off</div>
+                                            </div>
+                                            <div class="s_discount_descr">
+                                                <strong>Increase the amount of your visitors by offering them great discount.</strong><br/>Let them find the coupon code.
+                                            </div>
+                                            <div class="s_discount_ends">
+                                                <small>* Conditions and restrictions apply.</small>
+                                            </div>
+                                            <div class="s_discount_coupon bg-red">
+                                                <a class="s_discount_open-code" data-toggle="collapse" href="#code-3">Get a code</a>
+                                                <div class="collapse s_discount_code" id="code-3">ZUY4OPLQ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt32 mb32 col-md-4 col-xs-12 col-md-offset-1">
+                                        <div class="s_discount_box">
+                                            <div class="s_discount_brand">
+                                                <h3 class="text-muted">-50% OFF</h3>
+                                            </div>
+                                            <div class="s_discount_amount bg-epsilon">GIFT
+                                                <div class="s_discount_type">card</div>
+                                            </div>
+                                            <div class="s_discount_descr">
+                                                <strong>Increase the amount of your visitors by offering them great discount.</strong><br/>Let them find the coupon code.
+                                            </div>
+                                            <div class="s_discount_ends">
+                                                <small>* Conditions and restrictions apply.</small>
+                                            </div>
+                                            <div class="s_discount_coupon bg-epsilon">
+                                                <a class="s_discount_open-code" data-toggle="collapse" href="#code-4">Get a code</a>
+                                                <div class="collapse s_discount_code" id="code-4">ZUY4OPLQ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_team_profiles bg-epsilon bg_gradient_black_up mt92">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center mt128 mb64">
+                                        <h1 class="text-muted">Drop. Resize. Duplicate. ANIMATE. Customize
+                                            <font class="text-orange">anything</font>
+                                            you want.</h1>
+                                        <div>
+                                            <h2>An Extended Set of Options!</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-center mt16 mb128">
+                                        <blockquote>
+                                            <p>
+                                                <em>See how easy it is to change the look of your page just by using an other background color.<br/>Combine your background color with a gradient to get more depht.</em>
+                                            </p>
+                                            <small>Design Tip</small>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_image_text mt48">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5 mt32">
+                                        <h1>Create Stunning<br/>
+                                            Layouts in Instant !</h1>
+                                        <div/>
+                                        <div/>
+                                        <blockquote>
+                                            <p>
+                                                <em>BUILD TO LOOK AWESOME</em>
+                                            </p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt32 col-md-offset-1 col-md-6">
+                                        <h3>Personalize Every Element</h3>
+                                        <div/>
+                                        <div/>
+                                        <div class="s_progress_bar progress">
+                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success bg-turquoise-light" data-value="52" role="progressbar" style="width: 52%;">52% Research</div>
+                                        </div>
+                                        <div class="s_progress_bar progress">
+                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success bg-purple progress-bar-striped" data-value="61" role="progressbar" style="width: 61%;">61% Development</div>
+                                        </div>
+                                        <div class="s_progress_bar progress">
+                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success bg-pink-dark progress-bar-striped active" role="progressbar" style="width: 80%">
+                                                <span>80% Design</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_icon_box mt92">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="mt16 mb16 clearfix col-md-4">
+                                        <span class="fa fa-2x fa-expand pull-left text-gamma"/>
+                                        <div class="icon_box_content">
+                                            <h4>Responsive</h4>
+                                            <p>Clean is designed for mobile first so it looks great and clean on mobile devices of all sizes.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt16 mb16 clearfix col-md-4">
+                                        <span class="fa fa-2x fa-html5 pull-left text-gamma"/>
+                                        <div class="icon_box_content">
+                                            <h4>Clean HTML5</h4>
+                                            <p>Create your pages without typing a single line of code. Clean use a clean and simple HTML structure.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt16 mb92 clearfix col-md-4">
+                                        <span class="fa fa-2x fa-css3 pull-left text-gamma"/>
+                                        <div class="icon_box_content">
+                                            <h4>LESS/CSS</h4>
+                                            <p>Enjoy the power of LESS/CSS3. Customizing your theme has never been so easy. Make it your own!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="s_lead_bar bg-gamma">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 mt16 mb32 o_animate o_anim_fade_in_left">
+                                        <h3>Clean - Bootstrap Theme for Odoo CMS</h3>
+                                        <h5 class="mb0 mt0 text-muted">CLEAN was made with easy customization in mind.</h5>
+                                    </div>
+                                    <div class="mb32 mt32 col-md-3 col-md-offset-1 o_animate o_anim_fade_in_right">
+                                        <a class="btn btn-info btn-lg" href="/contactus"><i class="fa fa-arrow-right"/>
+                                            Theme Features
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+
+    <record id="demo_page_home_menu" model="website.menu">
+        <field name="name">Clean Home</field>
+        <field name="url">/demo_page_home</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">20</field>
+        <field name="page_id" ref="demo_page_home_page"/>
+    </record>
+</odoo>

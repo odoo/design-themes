@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Customize header  -->
+    <template id="graphene_header" inherit_id="website.layout" name="Graphene Header">
+        <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+            <attribute name="id">graph_header</attribute>
+        </xpath>
+    </template>
+
+    <!-- Graphene's data selectors -->
+    <template id="graph_data-selectors" inherit_id="website.snippet_options" name="Graphene data selectors">
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-exclude" add=".s_google_map" separator=","/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-exclude" add=".s_google_map" separator=","/>
+        </xpath>
+    </template>
+
+    <!-- Graphene BG Effects -->
+    <template id="graphene_bg_effects" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js='bg_fx' data-selector="[class^='s_']:not(.s_animated_boxes), section:not(.s_google_map):not(.s_cubes):not(.s_showcase_slider)">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-sliders"/>Background Effects</a>
+                    <ul class="dropdown-menu ">
+                        <li data-select-class="insetShadow"><a>Inset Shadow</a></li>
+                        <li data-select-class="insetShadowBig"><a>Big Inset Shadow</a></li>
+                        <li data-select-class="glossy"><a>Glossy</a></li>
+                        <li data-select-class="glossy-medium"><a>Glossy Medium</a></li>
+                        <li data-select-class="glossy-soft"><a>Glossy Soft</a></li>
+                        <li class="divider"/>
+                        <li data-select-class=""><a>No effects</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Graphene Color Picker -->
+    <template id="graphene_colorpicker_pattern" inherit_id="web_editor.colorpicker">
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='alpha']" position="after">
+            <button class="o_small" data-color="alpha-lighter"/>
+            <button class="o_small" data-color="alpha-light"/>
+            <button class="o_small" data-color="alpha-dark"/>
+            <button class="o_small" data-color="alpha-darker"/>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='beta']" position="after">
+            <button class="o_small" data-color="beta-lighter"/>
+            <button class="o_small" data-color="beta-light"/>
+            <button class="o_small" data-color="beta-dark"/>
+            <button class="o_small" data-color="beta-darker"/>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='gamma']" position="after">
+            <button class="o_small" data-color="gamma-lighter"/>
+            <button class="o_small" data-color="gamma-light"/>
+            <button class="o_small" data-color="gamma-dark"/>
+            <button class="o_small" data-color="gamma-darker"/>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='delta']" position="after">
+            <button class="o_small" data-color="delta-lighter"/>
+            <button class="o_small" data-color="delta-light"/>
+            <button class="o_small" data-color="delta-dark"/>
+            <button class="o_small" data-color="delta-darker"/>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='epsilon']" position="after">
+            <button class="o_small" data-color="epsilon-lighter"/>
+            <button class="o_small" data-color="epsilon-light"/>
+            <button class="o_small" data-color="epsilon-dark"/>
+            <button class="o_small" data-color="epsilon-darker"/>
+        </xpath>
+
+        <xpath expr="//colorpicker/div[@data-name='grayscale']/button[@data-color='gray-lighter']" position="after">
+            <button data-color="gray-light-light">Gray Light Light</button>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='grayscale']/button[@data-color='gray-light']" position="after">
+            <button data-color="gray-light-dark">Gray Light Dark</button>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='grayscale']/button[@data-color='gray']" position="after">
+            <button data-color="gray-dark-light">Gray Dark Light</button>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='grayscale']/button[@data-color='gray-dark']" position="after">
+            <button data-color="gray-dark-dark">Gray Dark Dark</button>
+        </xpath>
+        <xpath expr="//colorpicker/div[@data-name='grayscale']/button[@data-color='gray-darker']" position="after">
+            <button data-color="gray-darkest">Gray Darkest</button>
+        </xpath>
+    </template>
+
+    <!-- Graphene Typography -->
+    <template id="graphene_typo_pattern" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-selector="h1, h2">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-font"/>Font Family</a>
+                    <ul class="dropdown-menu">
+                        <li data-select-class="serif"><a>Serif</a></li>
+                        <li data-select-class="sans-serif"><a>Sans-Serif</a></li>
+                        <li data-select-class=""><a>Default</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js='typo_style' data-selector="h1, h2">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-paint-brush"/>Text Effects</a>
+                    <ul class="dropdown-menu">
+                        <li data-select-class=""><a>No effects</a></li>
+                        <li class="divider"/>
+                        <li data-select-class="title-underlined"><a>Underlined</a></li>
+                        <li data-select-class="title-boxed"><a>Boxed</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Google Map Options -->
+    <template id="graphene_google_map" inherit_id="snippet_google_map.s_google_map_option">
+        <xpath expr="//div[@data-js='map']" position="inside">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-fw fa-paint-brush"/>Style</a>
+                    <ul class="dropdown-menu backgrounds" data-no-preview="true">
+                        <li class="col-2" data-map_color="stdMap"><a class="thumb stdMap-thumb"/></li>
+                        <li class="col-2" data-map_color="lightMonoMap"><a class="thumb lightMonoMap-thumb">Light Mono</a></li>
+                        <li class="col-2" data-map_color="cupertinoMap"><a class="thumb cupertinoMap-thumb"/></li>
+                        <li class="col-2" data-map_color="retroMap"><a class="thumb retroMap-thumb"/></li>
+                        <li class="col-2" data-map_color="cobaltMap"><a class="thumb cobaltMap-thumb"/></li>
+                        <li class="col-2" data-map_color="flatMap"><a class="thumb flatMap-thumb"/></li>
+                        <li class="col-2" data-map_color="blueMap"><a class="thumb blueMap-thumb"/></li>
+                        <li class="col-2" data-map_color="lillaMap"><a class="thumb lillaMap-thumb"/></li>
+                        <li class="col-2" data-map_color="carMap"><a class="thumb carMap-thumb"/></li>
+                        <li class="col-2" data-map_color="bwMap"><a class="thumb bwMap-thumb"/></li>
+                    </ul>
+                </li>
+        </xpath>
+    </template>
+
+    <!-- Graphene Top Banner -->
+    <template id="graphene_top_content_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js='graphene_top_banner_options' data-selector=".s_media_block, .s_parallax, .s_google_map">
+                <li class="dropdown-submenu move_to_top_options">
+                    <a tabindex="-1" href="#"><i class="fa fa-magic"/>Position</a>
+                    <ul class="dropdown-menu" data-no-preview="true">
+                        <li data-select-class=""><a>Normal</a></li>
+                        <li data-select-class="move_to_top"><a>Move to top</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

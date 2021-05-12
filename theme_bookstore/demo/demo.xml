@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template name="Demo" id="demo">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+                <section class="carousel slide o_visible" data-interval="10000" id="myCarousel4">
+                    <ol class="carousel-indicators" type="01"><li class="active" data-slide-to="0" data-target="#myCarousel4"/><li data-slide-to="1" data-target="#myCarousel4"/></ol>
+                    <div class="carousel-inner">
+                        <div class="item bg-img-07 active">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12 hero-bg mt32 o_visible">
+                                        <h1 class="px42 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Generate customers</h1>
+                                        <h2 class="px30 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">from visitors.</h2>
+                                        <img alt="#" src="/web/image/theme_common.image_content_01" class="img img-responsive"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item bg-img-06">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12 hero-bg mt32 o_animate none" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                        <h1 class="px42 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Present your products</h1>
+                                        <h2 class="px30 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">with this Theme.</h2>
+                                        <img alt="#" src="/web/image/theme_common.image_content_01" class="img img-responsive"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control left" data-slide="prev" data-target="#myCarousel4" href="#myCarousel4">
+                        <i class="fa fa-chevron-left"/>
+                    </div>
+                    <div class="carousel-control right" data-slide="next" data-target="#myCarousel4" href="#myCarousel4">
+                        <i class="fa fa-chevron-right"/>
+                    </div>
+                </section>
+                <section class="jumbotron s_big_message mt0 mb0 o_animate bg-delta" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container">
+                        <h1>Sell Online. Easily.</h1>
+                        <p>Write one sentence to convince visitor about your message.</p>
+                        <p>
+                            <a class="btn btn-success btn-lg" href="/contactus">Contact us </a>
+                        </p>
+                    </div>
+                </section>
+                <section class="s_title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mt32 mb48">
+                                <h1 class="text-center o_animate px36" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                    <font class="text-epsilon">the latest arrivals.</font>
+                                </h1>
+                                <h3 class="text-muted text-center">
+                                    <font class="text-green">recommended for you</font>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_product_list o_animate mt0 bg-alpha" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container-fluid product-list">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4 col-xs-6 o_animate o_anim_fade_in_left" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/web/image/theme_common.image_product_01" class="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6 o_animate o_anim_fade_in_left" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/web/image/theme_common.image_product_02" class="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6 o_animate o_anim_fade_in_left" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/web/image/theme_common.image_product_03" class="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6 o_animate o_anim_fade_in_right" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/web/image/theme_common.image_product_06" class="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6 mb0 o_animate o_anim_fade_in_right" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/web/image/theme_common.image_product_04" class="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6 o_animate o_anim_fade_in_right" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/web/image/theme_common.image_product_05" class="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_image o_animate bg-beta" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1 mb92 mt128 o_animate o_anim_fade_in_left" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <h1 class="px36 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Best sellers</h1>
+                                <p class="px14 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                                <p class="px14 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Start with the customer – find out what they want and give it to them.</p>
+                            </div>
+                            <div class="col-md-6 mt16 o_animate o_anim_fade_in_right" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <img class="img img-responsive mb16 shadow o_animate" src="/theme_bookstore/static/src/img/content/product_img_09.jpg" style="transition: none; -webkit-transition: none; -webkit-transform: translateX(7.1%) translateY(-10.2%) scaleX(0.57) scaleY(0.57); transform: translateX(7.1%) translateY(-10.2%) scaleX(0.57) scaleY(0.57); animation-play-state: paused; -webkit-animation-play-state: paused;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_title bg-alpha">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mt48 mb48">
+                                <h1 class="text-center px36">
+                                    <font class="text-delta">looking for something new?</font>
+                                </h1>
+                                <h3 class="text-muted text-center px22">
+                                    <font class="text-red">check out our best seller's list</font>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_image bg-beta o_visible">
+                    <div class="container">
+                        <div class="row">
+                            <div class="mt16 o_animate o_anim_fade_in_right col-md-5 o_animated" style="animation-name: o_anim_fade_in_right; -webkit-animation-name: o_anim_fade_in_right; visibility: visible; animation-play-state: running; -webkit-animation-play-state: running;">
+                                <img class="img img-responsive mb16 o_visible shadow" src="/theme_bookstore/static/src/img/content/product_img_02.jpg" style="transition: none; -webkit-transition: none; -webkit-transform: translateX(-9%) translateY(-9.4%) scaleX(0.57) scaleY(0.57); transform: translateX(-9%) translateY(-9.4%) scaleX(0.57) scaleY(0.57);"/>
+                            </div>
+                            <div class="mb92 mt128 o_animate o_anim_fade_in_left col-md-6 o_animated" style="animation-name: o_anim_fade_in_left; -webkit-animation-name: o_anim_fade_in_left; visibility: visible; animation-play-state: running; -webkit-animation-play-state: running;">
+                                <h1 class="o_animate px36" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Best sellers</h1>
+                                <p class="px14 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                                <p class="px14 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Start with the customer – find out what they want and give it to them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_structure o_animate bg-alpha" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1">
+                                <h2>Custom Pages: Have No Limits.</h2>
+                                <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>This theme gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <h2>Custom Pages: Have No Limits.</h2>
+                                <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>This theme gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_color_blocks_4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center o_animate bg-beta" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <h4>A COLOR BLOCK</h4>
+                                <p>Highlight Your Content</p>
+                                <p>
+                                    <img class="shadow o_animate" src="/theme_bookstore/static/src/img/content/product_img_08.jpg" style="-webkit-transition: none; transition: none; -webkit-transform: scaleX(0.74) scaleY(0.74); transform: scaleX(0.74) scaleY(0.74); animation-play-state: paused; -webkit-animation-play-state: paused;"/>
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center o_animate bg-gamma" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <h4>A COLOR BLOCK</h4>
+                                <p>Customize Backgrounds</p>
+                                <p>
+                                    <img class="shadow o_animate" src="/theme_bookstore/static/src/img/content/product_img_11.jpg" style="-webkit-transition: none; transition: none; -webkit-transform: translateY(-2.6%) scaleX(0.69) scaleY(0.69); transform: translateY(-2.6%) scaleX(0.69) scaleY(0.69); animation-play-state: paused; -webkit-animation-play-state: paused;"/>
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center o_animate bg-epsilon" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <h4>A COLOR BLOCK</h4>
+                                <p>Resize and Duplicate</p>
+                                <p>
+                                    <img class="shadow o_animate" src="/theme_bookstore/static/src/img/content/product_img_06.jpg" style="-webkit-transition: none; transition: none; -webkit-transform: translateY(-1.5%) scaleX(0.71) scaleY(0.71); transform: translateY(-1.5%) scaleX(0.71) scaleY(0.71); animation-play-state: paused; -webkit-animation-play-state: paused;"/>
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 s_color_blocks_4_block text-center bg-delta">
+                                <h4>A COLOR BLOCK</h4>
+                                <p>Select the Colors</p>
+                                <p>
+                                    <img src="/theme_bookstore/static/src/img/content/product_img_05.jpg" style="-webkit-transition: none; transition: none; -webkit-transform: translateY(-4%) scaleX(0.69) scaleY(0.69); transform: translateY(-4%) scaleX(0.69) scaleY(0.69);"/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_separator_block bg-alpha pt32 pb32">
+                    <div class="container">
+                        <div class="row">
+                            <div class="s_separator_block-container"/></div>
+                        </div>
+                </section>
+                <section class="parallax s_parallax o_animate bg-img-04" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="height: 352px; overflow: hidden; animation-play-state: paused; -webkit-animation-play-state: paused; background-attachment: scroll; background-position: 0px 531.3px;">
+                    <div>
+                        <div class="oe_structure"/>
+                    </div>
+                </section>
+                <section class="s_title o_animate bg-alpha" style="height: 184px; overflow: hidden; animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mt48 mb0">
+                                <h1 class="text-center o_animate px42 o_anim_fade_in_left" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Your Website Title</h1>
+                                <h3 class="text-muted text-center px22 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                    <font class="text-alpha">And a great subtitle too</font>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_testimonial_slider carousel slide o_animate bg-beta" data-interval="6000" data-ride="carousel" id="myCarousel5" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <ol class="carousel-indicators hidden"><li class="active" data-slide-to="0" data-target="#myCarousel5"/></ol>
+                    <div class="carousel-inner">
+                        <div class="item mb16 active">
+                            <div class="container">
+                                <div class="row content text-center mt64 mb64">
+                                    <h3>
+                                        <i class="fa fa-quote-left"/> Let your visitors know what they said about you.
+                                        <i class="fa fa-quote-right"/>
+                                    </h3>
+                                    <p class="lead">Name, Function / Company Inc.</p>
+                                    <div class="col-md-2 col-md-offset-5">
+                                        <img class="img-responsive center-block" src="/web/image/theme_common.image_content_08"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_structure o_animate bg-alpha mt92" style="height: 352px; overflow: hidden; animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1">
+                                <h2>Custom Pages: Have No Limits.</h2>
+                                <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us.<br/>This theme gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <h2>Custom Pages: Have No Limits.</h2>
+                                <p>Our #1 priority is you, the user. We believe in our product and hold ourselves to the highest standards. We truly care about your site as much as you do, which is why we offer amazing support at our dedicated support center. In addition, we offer free updates with new features requested by our users. You can count on us. <br/>This theme gives you limitless potential to build amazing pages. Easily create unique page layouts using the tools we provide. In addition, we have you covered with dozens of beautiful pre-designed pages you can quickly choose from.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_big_picture_text o_animate bg-beta" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 hero-image">
+                                <img alt="#" src="/theme_bookstore/static/src/img/backgrounds/10.jpg" style="-webkit-transition: none; transition: none"/>
+                            </div>
+                            <div class="col-md-6 col-sm-12 hero-paragraph">
+                                <h1 class="mt32">Endless Possibilities</h1>
+                                <h2>The only theme you need</h2>
+                                <p>This powerful theme along with its unique structure lets you create any design style with just one theme. These simple yet powerful options allow you to create any type of website. No two versions will ever look the same.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_big_picture o_animate bg-beta" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-12 hero-paragraph">
+                                <h1 class="mt32 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Endless Possibilities</h1>
+                                <h2>The only theme you need</h2>
+                                <p>This powerful theme along with its unique structure lets you create any design style with just one theme. These simple yet powerful options allow you to create any type of website. No two versions will ever look the same.</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 hero-image">
+                                <img alt="#" src="/theme_bookstore/static/src/img/backgrounds/04.jpg" style="-webkit-transition: none; transition: none;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_timeline mt64" style="height: 624px; overflow: hidden;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center mb48">
+                                <h2>Present Your Evolution with this Timeline</h2>
+                                <h3 class="text-muted">Tell Your Story</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <ul class="s_timeline_ul">
+                                    <li>
+                                        <div class="s_timeline_badge">
+                                            <i class="fa fa-asterisk"/>
+                                        </div>
+                                        <div class="s_timeline_panel">
+                                            <div class="s_timeline_panel_content">
+                                                <div class="s_timeline_heading">
+                                                    <h4 class="s_timeline_date pull-right">2014</h4>
+                                                    <h4 class="s_timeline_title">Your Function</h4>
+                                                    <h3 class="s_timeline_company">COMPANY NAME</h3>
+                                                    <h5 class="s_timeline_info">Description of the tasks</h5>
+                                                </div>
+                                                <div class="s_timeline_body">
+                                                    <p>Use Theme Clean Timeline as a part of your resume or to show your visitors what you've done in the past. You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_timeline_panel">
+                                            <div class="s_timeline_panel_content">
+                                                <div class="s_timeline_heading">
+                                                    <h4 class="s_timeline_date pull-right">2014</h4>
+                                                    <h4 class="s_timeline_title">Your Function</h4>
+                                                    <h3 class="s_timeline_company">COMPANY NAME</h3>
+                                                    <h5 class="s_timeline_info">Description of the tasks</h5>
+                                                </div>
+                                                <div class="s_timeline_body">
+                                                    <p>A timeline is a graphical representation of a period of time, on which important events are marked.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="s_timeline_inverted">
+                                        <div class="s_timeline_badge warning">
+                                            <i class="fa fa-asterisk"/>
+                                        </div>
+                                        <div class="s_timeline_panel">
+                                            <div class="s_timeline_panel_content">
+                                                <div class="s_timeline_heading">
+                                                    <h4 class="s_timeline_date pull-right">2014</h4>
+                                                    <h4 class="s_timeline_title">Your Function</h4>
+                                                    <h3 class="s_timeline_company">COMPANY NAME</h3>
+                                                    <h5 class="s_timeline_info">Description of the tasks</h5>
+                                                </div>
+                                                <div class="s_timeline_body">
+                                                    <p>A timeline is a graphical representation of a period of time, on which important events are marked. Use Theme Clean Timeline as a part of your resume or to show your visitors what you've done in the past. You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+</odoo>

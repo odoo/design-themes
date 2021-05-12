@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+<div t-name="theme_common.s_media_block_modal" class="o_technical_modal modal" contenteditable="False" contentEditable="false" backdrop="false" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:2001">
+    <div class="modal-dialog">
+        <div id="s_media_block_modal" class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title">Select a video</h3>
+            </div>
+
+            <form class="modal-body form-horizontal" role="form">
+                <div class="alert alert-info">
+                    <strong class="small">Use the 'Customize 'menu to define a fallback background image for not compatible devices</strong>
+                </div>
+                <div class="form-group mb0">
+                    <label for="media_block_src" class="col-sm-2 control-label">Video</label>
+                    <div class="col-sm-10">
+                        <textarea id="media_block_src" class="form-control" name="src" rows="6"></textarea>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <small class="help-block"><i class="fa fa-check"/>HTML5 Video - Youtube - Vimeo - Dailymotion</small>
+                    </div>
+
+                    <div class="col-sm-offset-2 col-sm-10" contenteditable="false" id="accordion4323424223">
+                        <div class="panel-default">
+                            <a data-parent="#accordion4323424223" data-toggle="collapse" href="#collapse3423234234">
+                                <span class="fa fa-question-circle bg-white"/>
+                            </a>
+                            <div class="collapse" id="collapse3423234234">
+                                <p class="mt16">Add videos, playlists or other contents pasting the iframe code or video url into the box.</p>
+                                <p class="mt16">Here’s how to embed a Youtube video:</p>
+                                <ol>
+                                    <li>Click the <strong>Share</strong> link under the video.</li>
+                                    <li>Click the <strong>Embed</strong> link.</li>
+                                    <li>Copy the code provided in the expanded box.</li>
+                                    <li>Paste the code into the box.</li>
+                                </ol>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <img src="/theme_common/static/src/img/ui/s_media_block/share.png" alt="share" class="img-responsive guide"/>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <img src="/theme_common/static/src/img/ui/s_media_block/iframe.png" alt="iframe" class="img-responsive guide"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                    </div>
+                </div>
+
+                <div id="media_block_options" class="form-group">
+                    <label class="col-sm-2 control-label">Options</label>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-6" id="media_block_option_muted">
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="muted" type="checkbox" value="muted"/> Muted
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" id="media_block_option_controls">
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="controls" type="checkbox" value="controls"/> Show controls
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" id="media_block_option_loop">
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="loop" type="checkbox" value="loop"/> Loop video
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" id="media_block_option_autoplay">
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="autoplay" type="checkbox" value="autoplay"/> Autoplay
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12" id="media_block_more_option"><hr/></div>
+
+                            <div id="media_block_option_iframefit">
+                                <div class="radio col-sm-6 col-sm-offset-1">
+                                    <label>
+                                        <input type="radio" name="iframefit" value="fitCont"/>
+                                        <small>Fill container with video</small>
+                                    </label>
+                                </div>
+                                <div class="radio col-sm-5">
+                                    <label>
+                                        <input type="radio" name="iframefit" value="fitIframe"/>
+                                        <small>Put video in container</small>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.videCheckbox -->
+                </div>
+            </form><!-- modal-body -->
+
+            <div class="modal-footer">
+                <button id="cancel" data-dismiss="modal" class="btn btn-primary">Cancel</button>
+                <button id="sub_data" data-dismiss="modal" class="btn btn-danger">Apply</button>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- / .modal -->
+
+</templates>

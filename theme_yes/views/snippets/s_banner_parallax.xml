@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Yes Banner Parallax" id="yes_s_banner_parallax" inherit_id="theme_common.s_banner_parallax">
+        <xpath expr="//div[hasclass('col-md-9')]/*[last()]" position="replace"/>
+    </template>
+</odoo>

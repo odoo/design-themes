@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="li_colors">
+        <li t-attf-data-select-class="{{el}}-white"><a href="#" class="white"/></li>
+        <li t-attf-data-select-class="{{el}}-gray-lighter"><a href="#" class="gray-lighter"/></li>
+        <li t-attf-data-select-class="{{el}}-gray"><a href="#" class="gray"/></li>
+        <li t-attf-data-select-class="{{el}}-gray-darker"><a href="#" class="gray-darker"/></li>
+        <br/>
+        <li t-attf-data-select-class="{{el}}-alpha"><a href="#" class="color-alpha"/></li>
+        <li t-attf-data-select-class="{{el}}-beta"><a href="#" class="color-beta"/></li>
+        <li t-attf-data-select-class="{{el}}-gamma"><a href="#" class="color-gamma"/></li>
+        <li t-attf-data-select-class="{{el}}-delta"><a href="#" class="color-delta"/></li>
+        <li t-attf-data-select-class="{{el}}-epsilon"><a href="#" class="color-epsilon"/></li>
+    </template>
+
+    <template id="snippet_options" inherit_id="website.snippet_options">
+        <!-- Background
+        ========================================================================== -->
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-selector">.no-colorpicker</attribute>
+        </xpath>
+        <xpath expr="//div[@data-js='colorpicker'][2]" position="attributes">
+            <attribute name="data-selector">.no-colorpicker</attribute>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_images_captions_fw [class*='col-'], .media-content, .media-options, .profile-body, .profile-options > [class*='col-'], .carousel-box-content, .s_three_columns_carousel [class*='col-'], .s_text_block_image_fw [class*='col-'], .news-carousel-time, .news-carousel-content, .s_color_blocks_4 [class*='col-md-']"/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']/li" position="after">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Colors</a>
+                <ul class="nano-colorpicker dropdown-menu">
+                    <li data-select-class=""><a href="#" class="none"/></li>
+                        <t t-call="theme_nano.li_colors">
+                            <t t-set="el">bg</t>
+                        </t>
+                </ul>
+            </li>
+        </xpath>
+
+        <!-- Layout
+        ========================================================================== -->
+        <xpath expr="//div[@data-js='content']" position="attributes">
+            <attribute name="data-selector" add="hr, .s_label"/>
+        </xpath>
+        <xpath expr="//div[@data-js='sizing_y']" position="attributes">
+            <attribute name="data-selector" add="h1, h2, h3, h4, h5, h6"/>
+        </xpath>
+        <xpath expr="//div[@data-js='sizing_x']" position="attributes">
+            <attribute name="data-selector" add=".s_color_blocks_4 [class*='col-md-']"/>
+            <attribute name="data-drop-near" add=".s_color_blocks_4 [class*='col-md-']"/>
+        </xpath>
+
+        <!-- Colors
+        ========================================================================== -->
+
+        <!-- LABEL -->
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-selector=".s_label, .label">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Colors</a>
+                    <ul class="nano-colorpicker dropdown-menu">
+                        <t t-call="theme_nano.li_colors">
+                            <t t-set="el">bg</t>
+                        </t>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <!-- PANEL (including tabs & collapse snippets) -->
+        <xpath expr="//div[@data-js='colorpicker']" position="after">
+            <div data-selector=".s_tabs [class*='col-'], .s_panel">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Colors</a>
+                    <ul class="nano-colorpicker dropdown-menu">
+                        <t t-call="theme_nano.li_colors">
+                            <t t-set="el">panel</t>
+                        </t>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <!-- WELL -->
+        <xpath expr="//div[@data-js='colorpicker']" position="after">
+            <div data-selector=".s_well">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Colors</a>
+                    <ul class="nano-colorpicker dropdown-menu">
+                        <t t-call="theme_nano.li_colors">
+                            <t t-set="el">well</t>
+                        </t>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <!-- Styles
+        ========================================================================== -->
+        <xpath expr="//div[@data-js='colorpicker']" position="after">
+            <div data-selector="h1, h2, h3, h4, h5, h6">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-paint-brush"/>Style</a>
+                    <ul class="dropdown-menu">
+                        <li data-toggle-class="text-muted"><a href="#">Muted</a></li>
+                        <li data-toggle-class="text-uppercase"><a href="#">Uppercase</a></li>
+                        <li data-toggle-class="text-underline"><a href="#">Underline</a></li>
+                        <li data-toggle-class="text-boxed"><a href="#">Boxed</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+        <xpath expr="//div[@data-js='colorpicker']" position="after">
+            <div data-selector="hr">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-arrows-h"/>Width</a>
+                    <ul class="dropdown-menu">
+                        <li data-select-class="hr-small"><a href="#">Small</a></li>
+                        <li data-select-class="hr-half"><a href="#">Half</a></li>
+                        <li data-select-class="hr-full"><a href="#">Full</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div data-selector="hr">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-paint-brush"/>Style</a>
+                    <ul class="dropdown-menu">
+                        <li data-select-class="hr-dashed"><a href="#">Dashed</a></li>
+                        <li data-select-class="hr-dotted"><a href="#">Dotted</a></li>
+                        <li data-select-class="hr-solid"><a href="#">Solid</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div data-selector="hr">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-arrows-b"/>Thickness</a>
+                    <ul class="dropdown-menu">
+                        <t t-foreach="range(1,6)" t-as="hr_size">
+                            <li t-attf-data-select-class="hr-{{hr_size}}px"><a href="#"><t t-esc="hr_size"/> px</a></li>
+                        </t>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- PROGRESS BAR -->
+    <template  id="snippet_options_progress_bar" inherit_id="theme_common.s_options_progress_bar">
+        <xpath expr="//div[@data-js='progress']" position="replace">
+            <div data-js="progress" data-selector=".progress .progress-bar">
+                <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><i class="fa fa-paint-brush"/>Style</a>
+                    <ul class="dropdown-menu">
+                        <li data-toggle-class="progress-bar-striped"><a>Striped</a></li>
+                        <li data-toggle-class="active"><a>Active</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

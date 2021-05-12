@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Testimonials" id="s_testimonial_slider">
+        <section class="s_testimonial_slider carousel slide" id="testimonial_slider" data-ride="carousel" data-interval="1000">
+            <ol class="carousel-indicators hidden"><li data-target="#testimonial_slider" data-slide-to="0" class="active"></li></ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container text-center mt64 mb64">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <i class="fa fa-quote-left pull-left"/>
+                                <h3> Let your visitors know what they said about you.</h3>
+                                <i class="fa fa-quote-right pull-right"/>
+                            </div>
+                            <div class="col-md-6 col-md-offset-3 mt16">
+                                <p>Name, Function / Company Inc.</p>
+                            </div>
+                            <div class="col-md-2 col-md-offset-5">
+                                <img class="img-responsive center-block" src="/web/image/theme_common.image_content_08"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

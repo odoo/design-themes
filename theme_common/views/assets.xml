@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="theme_website_tutorial_open" model="ir.actions.todo">
+        <field name="action_id" ref="website.action_website"/>
+    </record>
+
+    <template id="assets_frontend" name="Theme common frontend assets" inherit_id="website.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_common/static/src/less/fonts.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/mixins.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+    <template id="compatibility-saas-10-1" name="Compatibility for saas-10 - 1" inherit_id="website.assets_frontend" priority="99" active="False">
+        <xpath expr="//link" position="before">
+            <link href="/theme_common/static/src/less/compatibility-saas-10-1.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="compatibility-saas-10-2" name="Compatibility for saas-10 - 2" inherit_id="website.assets_frontend" priority="99" active="False">
+        <xpath expr="//link" position="before">
+            <link href="/theme_common/static/src/less/compatibility-saas-10-2.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+</odoo>

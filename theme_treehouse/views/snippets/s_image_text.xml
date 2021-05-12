@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Image Text" id="s_image_text" inherit_id="website.s_image_text">
+       <xpath expr="//section[hasclass('s_image_text')]//img" position="replace">
+            <img class="img img-responsive" src="/web/image/theme_common.image_content_04" alt=""/>
+        </xpath>
+    </template>
+</odoo>

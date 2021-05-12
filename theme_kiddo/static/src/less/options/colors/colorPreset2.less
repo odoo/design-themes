@@ -1,0 +1,79 @@
+@color-alpha: @gray-white;
+@color-beta: @colorPreset2_color1;  // claret
+@color-gamma: @colorPreset2_color2; // purple
+@color-delta: @colorPreset2_color3; // blue
+@color-epsilon: @colorPreset2_color4; // orange
+@color-zeta: @colorPreset2_color1_dark;
+@color-eta: @colorPreset2_color1_light;
+@color-theta: @colorPreset2_color2_dark;
+@color-iota: @colorPreset2_color2_light;
+@color-kappa: @colorPreset2_color3_dark;
+@color-lambda: @colorPreset2_color3_light;
+@color-mu: @colorPreset2_color4_dark;
+@color-nu: @colorPreset2_color4_light;
+
+/* ============= FONT COLORS ================== */
+
+.text-alpha {color: @gray-white;}
+.text-beta {color: @colorPreset2_color1;}
+.text-gamma {color: @colorPreset2_color2;}
+.text-delta {color: @colorPreset2_color3;}
+.text-epsilon {color: @colorPreset2_color4;}
+
+.text-primary {color: @color-alpha;}
+.text-success {color: @color-beta;}
+.text-info {color: @color-gamma;}
+.text-warning {color: @color-delta;}
+.text-danger {color: @color-epsilon;}
+
+/* ============= THEMES BUTTONS =============== */
+
+@btn-default-bg: @color-alpha;
+@btn-primary-bg: @color-beta;
+@btn-success-bg: @color-gamma;
+@btn-info-bg: @color-delta;
+@btn-warning-bg: @color-epsilon;
+@btn-danger-bg: @gray-base;
+
+/* ============= BG USED FOR NAV ============== */
+
+.bgtransparent {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* ============= BGCOLORS ===================== */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-epsilon, @color-mu);
+    .fa {color: @gray;}
+}
+
+.bg-beta {
+    .SetDisplayColor (@color-beta, @color-alpha);
+    .LinkColor (@color-gamma, @color-theta);
+}
+
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @color-alpha);
+    .LinkColor (@color-epsilon, @color-nu);
+}
+
+.bg-delta {
+    .SetDisplayColor (@color-delta, @color-alpha);
+    .LinkColor (#0172d2, #0141d2);
+}
+
+.bg-epsilon {
+    .SetDisplayColor (@color-epsilon, @color-alpha);
+    .LinkColor (@color-gamma, @color-theta);
+}
+
+/* ============= TYPO ========================= */
+
+a {
+    color: @color-epsilon;
+    &:hover, &:focus {
+        color: @color-mu;
+    }
+}

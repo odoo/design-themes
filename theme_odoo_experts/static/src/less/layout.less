@@ -1,0 +1,57 @@
+#wrap {
+    box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.75);
+}
+.oe_login_form {
+    .btn-primary {
+        color: @gray-base;
+    }
+}
+
+// Affix menu styles
+
+.navbar-default {
+    border-bottom: none !important;
+    .container {
+        background-color: white;
+        box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+        .transition (top 0.5s ease-out);
+        #top_menu .dropdown-menu {
+            box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.3);
+        }
+        li > .dropdown-menu {
+            margin-top: 0;
+            li {
+                height: auto;
+                &:hover {
+                    border-bottom: none;
+                    background: none;
+                }
+            }
+        }
+        li:not(.dropdown-menu) {
+            height: 53px;
+
+            &:hover {
+                border-bottom: 2px solid @color-epsilon;
+            }
+            @media screen and (max-width: 640px) {
+                height: auto;
+            }
+        }
+        li.active > a {
+            color: black;
+        }
+        .navbar-brand {
+            height: 53px;
+        }
+    }
+    .container:before {
+        height: 0px;
+    }
+}
+
+// Footer
+
+#wrapwrap > footer .container p {
+    font-size: 14px;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customize_main_logo" inherit_id="website.layout_logo_show">
+        <xpath expr="//a[hasclass('navbar-brand', 'logo')]//span" position="after">
+            <img id="logo" style="display:none" src="/theme_avantgarde/static/src/img/theme_samples/image_content_logo_black.png"/>
+            <img id="logoGallery" style="display:none" src="/theme_avantgarde/static/src/img/theme_samples/logo_gallery.png"/>
+            <img id="logoMagazine" style="display:none" src="/theme_avantgarde/static/src/img/theme_samples/logo_magazine.png"/>
+            <img id="logoShop" style="display:none" src="/theme_avantgarde/static/src/img/theme_samples/logo_shop.png"/>
+        </xpath>
+    </template>
+
+    <record id="menu_demo" model="website.menu">
+        <field name="name">Demo</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">20</field>
+        <field name="website_id" ref="website.default_website"/>
+    </record>
+</odoo>

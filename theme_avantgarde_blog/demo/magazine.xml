@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="magazine" inherit_id="theme_avantgarde.magazine">
+        <xpath expr="//blockquote" position="after">
+            <section class="s_latest_posts_big_picture">
+                <div class="js_get_posts first_is_big effect-marley" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+            </section>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,58 @@
+// MWAD Color Set
+// ==========================
+
+@color-alpha     : @color-alpha-mwad;
+@color-beta      : @color-beta-mwad;
+@color-gamma     : @color-gamma-mwad;
+@color-delta     : @color-delta-mwad;
+@color-epsilon   : @color-epsilon-mwad;
+
+// =============================
+// Bootstrap Colours ===========
+// =============================
+
+@brand-primary: @color-alpha;
+@brand-success: #5CB85C;
+
+.graphene-layout-boxed() when (@graphene-layout-boxed = true) {
+    body /* #wrapwrap should but cannot be used because top snippet would appear under the background in IE */ { background: @color-epsilon  }
+}
+.graphene-layout-boxed();
+
+.graphene-layout-postcard() when (@graphene-layout-postcard = true)  {
+    body /* #wrapwrap should but cannot be used because top snippet would appear under the background in IE */ { background: @color-epsilon  }
+
+    header#graph_header {
+        .navbar-brand, .navbar-default .navbar-brand {
+            color: white;
+        }
+
+        .navbar .navbar-nav > li.active > a,
+        .navbar .navbar-nav > li.active > a:hover,
+        .navbar .navbar-nav > li.active > a:focus {
+            color: @gray-lighter;
+        }
+
+        .navbar .navbar-nav > li > a {
+            color: @gray-light;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+
+}
+.graphene-layout-postcard();
+
+// This color palette partially match the web_editor UI.
+// Add a border to define a separation between  the top bar and the page bg.
+body.editor_enable #web_editor-top-edit, #web_editor-toolbars .note-popover .popover {
+    border-bottom: 1px solid @gray;
+}
+
+// Improve theme_customize_modal contrast
+body #theme_customize_modal .modal-content {
+    border: 1px solid @gray-dark;
+    border-top: 1px solid @gray-light;
+    box-shadow: 0 5px 15px black;
+}

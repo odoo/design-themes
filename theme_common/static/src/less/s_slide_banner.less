@@ -1,0 +1,40 @@
+
+#wrapwrap .s_slide_banner {
+    min-height: 480px;
+
+    &.carousel {
+        overflow: hidden;
+        .carousel-content {
+            background: none;
+            margin-top: 75px;
+            color: @text-color;
+        }
+        .carousel-inner {
+            height: 100%;
+            .item {
+                height: 100%;
+                background-size: cover;
+            }
+        }
+        .carousel-control {
+            width: 10%;
+            cursor: pointer;
+            span {
+                .o-position-absolute(@top: 50%);
+                margin-top: -8px;
+            }
+            &.left {
+                left: -10px;
+                * {
+                    .o-position-absolute(50%, 50%);
+                }
+            }
+            &.right {
+                right: -10px;
+                * {
+                    .o-position-absolute(@top: 50%);
+                }
+            }
+        }
+    }
+}

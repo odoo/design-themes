@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="yes_demo_blocks" inherit_id="theme_kea.demo_blocks" name="Yes Building Blocks">
+        <xpath expr="//div[@data-oe-call='theme_common.s_testimonial_slider']" position="after">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="text-muted text-center">2 Color blocks</h4>
+                    </div>
+                </div>
+            </div>
+            <div data-oe-call="theme_common.s_color_blocks_2"/>
+        </xpath>
+    </template>
+</odoo>

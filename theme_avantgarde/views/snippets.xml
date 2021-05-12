@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- theme_common snippets     -->
+  <template id="snippet_selection" inherit_id="website.snippets">
+
+    <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]/t[@t-snippet='website.s_cover']" position="after">
+      <t t-snippet="theme_common.s_numbers" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_numbers.jpg"/>
+      <t t-snippet="theme_common.s_showcase" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_showcase.jpg"/>
+      <t t-snippet="theme_common.s_page_header" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_page_header.jpg"/>
+      <t t-snippet="theme_common.s_medias_list" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_medias_list.jpg"/>
+      <t t-snippet="theme_common.s_masonry_block" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_masonry_block.jpg"/>
+      <t t-snippet="theme_common.s_showcase_image" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_showcase_image.jpg"/>
+      <t t-snippet="theme_common.s_clonable_boxes" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_clonable_boxes.jpg"/>
+    </xpath>
+
+    <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]/t" position="before">
+      <t t-snippet="theme_common.s_media_block" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_media_block-thumb.jpg"/>
+      <t t-snippet="theme_common.s_css_slider" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_css_slider.jpg"/>
+      <t t-snippet="theme_common.s_showcase_slider" t-thumbnail="/theme_avantgarde/static/src/img/ui/s_showcase_slider.jpg"/>
+    </xpath>
+
+  </template>
+
+  <!-- Google Map Snippet   -->
+  <template id="overwrite_google_map_thumb" inherit_id="snippet_google_map.google_map_snippet">
+    <xpath expr="//t[@t-snippet='snippet_google_map.s_google_map']" position="attributes">
+      <attribute name="t-thumbnail">/theme_avantgarde/static/src/img/ui/s_google_map.jpg</attribute>
+    </xpath>
+  </template>
+
+  <template id="theme_common_less">
+    <link href="/theme_common/static/src/less/s_medias_list.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_clonable_boxes.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_showcase.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_css_slider.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_showcase_image.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_masonry_block.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_media_block.less" rel="stylesheet" type="text/less"/>
+    <link href="/theme_common/static/src/less/s_showcase_slider.less" rel="stylesheet" type="text/less"/>
+  </template>
+
+  <!-- theme_common JSs are in assets.xml -->
+
+  <!-- costumizing website builder snippets -->
+
+  <template id="s_banner_custom" inherit_id="website.s_banner">
+    <xpath expr="//div[@id='myCarousel']//div[hasclass('carousel-inner')]//div[hasclass('oe_img_bg')]" position="attributes">
+      <attribute name="style">background-image: url('/theme_avantgarde/static/src/img/pictures/bg_image_04.jpg')</attribute>
+    </xpath>
+  </template>
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Showcase Slider" id="s_showcase_slider">
+        <section class="s_showcase_slider o_not-animable">
+            <div class="s_ss_slider_wrapper">
+                <ul class="s_ss_slider o_animable">
+                    <li class="selected o_not-animable"><img src="/web/image/theme_common.image_content_20"/></li>
+                    <li><img class="o_not-animable" src="/web/image/theme_common.image_content_21"/></li>
+                    <li><img class="o_not-animable" src="/web/image/theme_common.image_content_22"/></li>
+                </ul>
+                <ul class="s_ss_slider_navigation">
+                    <li><span contentEditable="false" class="o_not-animable fa fa-chevron-left s_ss_prev inactive"/></li>
+                    <li><span contentEditable="false" class="o_not-animable fa fa-chevron-right s_ss_next"/></li>
+                </ul> 
+                <span href="#0" class="s_ss_close fa fa-times">Close</span>
+            </div>
+            <div class="s_ss_item_info o_animable">
+                <h2>My Title</h2>
+                <p>A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </section>
+    </template>
+
+    <!-- Snippets options -->
+    <template id="s_showcase_slider_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js='s_showcase_slider' data-selector=".s_showcase_slider">
+                <li class="js_s_ss_addSlide"><a tabindex="-1" href="#">Add Slide</a></li>
+                <li class="js_s_ss_removeSlide"><a tabindex="-1" href="#">Remove current slide</a></li>
+            </div>
+        </xpath>
+    </template>
+</odoo>

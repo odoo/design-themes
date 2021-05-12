@@ -1,0 +1,1020 @@
+
+// Btn
+@btn-default-color: #333;
+@btn-default-bg: #fff;
+@btn-default-border: #ccc;
+@btn-primary-color: #fff;
+@btn-primary-border: darken(@btn-primary-bg, 5%);
+@btn-success-color: #fff;
+@btn-success-border: darken(@btn-success-bg, 5%);
+@btn-info-color: #fff;
+@btn-info-border: darken(@btn-info-bg, 5%);
+@btn-warning-color: #fff;
+@btn-warning-border: darken(@btn-warning-bg, 5%);
+@btn-danger-color: #fff;
+@btn-danger-border: darken(@btn-danger-bg, 5%);
+@btn-link-disabled-color: @gray-light;
+
+.btn .fa {
+    color: #fff;
+}
+
+// Border Radius
+@border-radius-base: 2px;
+@border-radius-large: 2px;
+@border-radius-small: 1px;
+
+// Form states and alerts - Define colors for form feedback states and, by default, alerts.
+@state-primary-text: white;
+@state-primary-bg: @color-alpha;
+@state-primary-border: darken(spin(@state-primary-bg, -10), 5%);
+@state-success-text: white;
+@state-success-bg: @color-beta;
+@state-success-border: darken(spin(@state-success-bg, -10), 5%);
+@state-info-text: white;
+@state-info-bg: @color-gamma;
+@state-info-border: darken(spin(@state-info-bg, -10), 7%);
+@state-warning-text: white;
+@state-warning-bg: @color-delta;
+@state-warning-border: darken(spin(@state-warning-bg, -10), 5%);
+@state-danger-text: white;
+@state-danger-bg: @color-epsilon;
+@state-danger-border: darken(spin(@state-danger-bg, -10), 5%);
+
+// State info variables above are good for alerts, but for forms the text and bg colors need to switched
+.has-success {
+    .form-control-validation(@state-danger-bg; @state-danger-border; @state-success-text);
+}
+.has-warning {
+    .form-control-validation(@state-danger-bg; @state-danger-border; @state-warning-text);
+}
+.has-error {
+    .form-control-validation(@state-danger-bg; @state-danger-border; @state-danger-text);
+}
+
+// Restore text-success color for website_sale "wizard" (checkout breadcrumb)
+// Hopefully remove this with improvements of saas-17
+.oe_website_sale .wizard .text-success {
+    color: #5CB85C;
+}
+
+//** Background color of the whole progress component
+@progress-bg: #f5f5f5;
+//** Progress bar text color
+@progress-bar-color: #fff;
+
+//** Default progress bar color
+@progress-bar-bg: @color-alpha;
+//** Success progress bar color
+@progress-bar-success-bg: @color-beta;
+//** Warning progress bar color
+@progress-bar-warning-bg: @color-delta;
+//** Danger progress bar color
+@progress-bar-danger-bg: @color-epsilon;
+//** Info progress bar color
+@progress-bar-info-bg: @color-gamma;
+
+#wrapwrap {
+    overflow-x: hidden;
+}
+
+.bg-blue {
+    background-color: @color-blue;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-blue-light;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-turquoise {
+    background-color: @color-turquoise;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-turquoise, 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-green {
+    background-color: @color-green;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-green, 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-yellow {
+    background-color: @color-yellow;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-yellow, 30%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-orange {
+    background-color: @color-orange;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-orange, 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-red {
+    background-color: @color-red;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-red, 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-pink {
+    background-color: @color-pink;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-pink, 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-purple {
+    background-color: @color-purple;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-purple, 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-brown {
+    background-color: @color-brown;
+    color: white;
+    h1, h2, h3, h4, h5, h6, p {
+        color: @gray-light;
+    }
+    & .text-muted {
+        color: lighten(@color-brown, 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-blue-dark {
+    background-color: @color-blue-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-blue-dark , 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-turquoise-dark {
+    background-color: @color-turquoise-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-turquoise-dark , 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-green-dark {
+    background-color: @color-green-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-green-dark , 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-yellow-dark {
+    background-color: @color-yellow-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-yellow-dark , 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-orange-dark {
+    background-color: @color-orange-dark;
+    color: white;
+     & a, h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-orange-dark , 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-red-dark {
+    background-color: @color-red-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-red-dark , 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-pink-dark {
+    background-color: @color-pink-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-pink-dark , 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-purple-dark {
+    background-color: @color-purple-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: lighten(@color-purple-dark , 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-brown-dark {
+    background-color: @color-brown-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6, p {
+        color: @gray-light;
+    }
+    & .text-muted {
+        color: lighten(@color-brown-dark, 35%);
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-blue-light {
+    background-color: @color-blue-light;
+    color: lighten(@color-blue-light , 50%);
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-blue;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-turquoise-light {
+    background-color: @color-turquoise-light;
+    color: lighten(@color-turquoise-light , 50%);
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-turquoise-dark;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-green-light {
+    background-color: @color-green-light;
+    color: lighten(@color-green-light , 50%);
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-green-dark;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-yellow-light {
+    background-color: @color-yellow-light;
+    color: lighten(@color-yellow-light , 50%);
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    p {
+        color: @gray;
+    }
+    & .text-muted {
+        color: @color-yellow-dark;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-orange-light {
+    background-color: @color-orange-light;
+    color: lighten(@color-orange-light , 50%);
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-orange;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-red-light {
+    background-color: @color-red-light;
+    color: lighten(@color-red-light , 50%);
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-red;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-pink-light {
+    background-color: @color-pink-light;
+    color: lighten(@color-pink-light , 50%);
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-pink;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-purple-light {
+    background-color: @color-purple-light;
+    color: lighten(@color-purple-light , 50%);
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-purple;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-brown-light {
+    background-color: @color-brown-light;
+    color: lighten(@color-brown-light, 50%);
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-brown;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-clouds {
+    background-color: @color-clouds;
+    color: @gray-dark;
+    h1, h2, h3, h4, h5, h6, p {
+        color: @gray;
+    }
+    & .text-muted {
+        color: @gray;
+    }
+    & .fa {
+        color: @color-silver;
+    }
+}
+
+.bg-silver {
+    background-color: @color-silver;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    p {
+        color: @gray-dark;
+    }
+    & .text-muted {
+        color: @gray;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-concrete {
+    background-color: @color-concrete;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @gray-dark;
+    }
+    & .fa {
+        color: white;
+    }
+    // .s_pricing_features p {
+    //   color: @gray;
+    // }
+}
+
+.bg-stone {
+    background-color: @color-stone;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @gray-lighter;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-asphalt {
+    background-color: @color-asphalt;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-concrete;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-midnight {
+    background-color: @color-midnight;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @color-concrete;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-marine {
+    background-color: @color-marine;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @gray-lighter;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-wind {
+    background-color: @color-wind;
+    color: @gray-dark;
+    § {
+        color: @gray-darker;
+    }
+    & .text-muted {
+        color: @gray;
+    }
+    & .fa {
+        color: @color-silver;
+    }
+}
+.bg-clay {
+    background-color: @color-clay;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: white;
+    }
+    & .fa {
+        color: white;
+    }
+}
+.bg-sand {
+    background-color: @color-sand;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: white;
+    }
+    & .fa {
+        color: white;
+    }
+}
+.bg-beach {
+    background-color: @color-beach;
+    color: @gray-dark;
+    h1, h2, h3, h4, h5, h6 {
+        color: @gray-darker;
+    }
+    & .text-muted {
+        color: @gray;
+    }
+    & .fa {
+        color: @color-silver;
+    }
+}
+.bg-forest {
+    background-color: @color-forest;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @gray-lighter;
+    }
+    & .fa {
+        color: white;
+    }
+}
+.bg-twilight {
+    background-color: @color-twilight;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @gray-lighter;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-burgundy {
+    background-color: @color-burgundy;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @gray-lighter;
+    }
+    & .fa {
+        color: white;
+    }
+}
+@bg-concrete-dark: background(@color-concrete-dark);
+
+.bg-concrete-dark {
+    background-color: @color-concrete-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    & .text-muted {
+        color: @gray-lighter;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-white {
+    background: white;
+    color: black;
+    h1, h2, h3, h4, h5, h6, p {
+        color: @gray-dark;
+    }
+    & .text-muted {
+        color: @color-alpha;
+    }
+    & .fa {
+        color: @color-alpha;
+    }
+}
+.bg-black {
+    background: black;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+    p {
+        color: @gray-lighter;
+    }
+    & .text-muted {
+        color: @color-alpha;
+    }
+    & .fa {
+        color: white;
+    }
+}
+.bg-gray-darker {
+    background-color: @gray-darker;
+}
+.bg-gray-dark {
+    background-color: @gray-dark;
+}
+.bg-gray {
+    background-color: @gray;
+}
+.bg-gray-light {
+    background-color: @gray-light;
+}
+.bg-gray-lighter {
+    background-color: @gray-lighter;
+}
+
+// Backgrounds Images
+@bg-img-01: url("/theme_clean/static/src/img/backgrounds/bg_snippet_01.jpg");
+@bg-img-02: url("/theme_clean/static/src/img/backgrounds/bg_snippet_02.jpg");
+@bg-img-03: url("/theme_clean/static/src/img/backgrounds/bg_snippet_03.jpg");
+@bg-img-04: url("/theme_clean/static/src/img/backgrounds/bg_snippet_04.jpg");
+@bg-img-05: url("/theme_clean/static/src/img/backgrounds/bg_snippet_05.jpg");
+@bg-img-06: url("/theme_clean/static/src/img/backgrounds/bg_snippet_06.jpg");
+
+.bg-img-01 {
+    background-image: @bg-img-01;
+    background-size: cover;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+.bg-img-02 {
+    background-image: linear-gradient( fade(black, 80%), fade(black, 20%) ), @bg-img-02;
+    background-size: cover;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+
+.bg-img-03 {
+    background-image: linear-gradient( fade(white, 60%), fade(white, 70%) ), @bg-img-03;
+    background-size: cover;
+    h1, h2, h3, h4, h5, h6, p {
+        color: @gray-dark !important;
+    }
+    .fa, .text-muted {
+        color: @color-alpha !important;
+    }
+}
+
+.bg-img-04 {
+    background-image: @bg-img-04;
+    background-size: cover;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+
+.bg-img-05 {
+    background-image: @bg-img-05;
+    background-size: cover;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+
+.bg-img-06 {
+    background-image: linear-gradient( fade(black, 30%), fade(black, 75%) ), @bg-img-06;
+    background-size: cover;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+@bg-blur-01: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_01.jpg");
+@bg-blur-02: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_02.jpg");
+@bg-blur-03: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_03.jpg");
+@bg-blur-04: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_04.jpg");
+@bg-blur-05: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_05.jpg");
+@bg-blur-06: url("/theme_clean/static/src/img/backgrounds/bg_blur_img_06.jpg");
+
+.bg-blur-01 {
+    background-image: @bg-blur-01;
+    background-size: cover;
+    background-attachment: fixed;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: @gray-dark;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+.bg-blur-02 {
+    background-image: @bg-blur-02;
+    background-size: cover;
+    background-attachment: fixed;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+.bg-blur-03 {
+    background-image: @bg-blur-03;
+    background-size: cover;
+    background-attachment: fixed;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+.bg-blur-04 {
+    background-image: @bg-blur-04;
+    background-size: cover;
+    background-attachment: fixed;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+
+}
+.bg-blur-05 {
+    background-image: @bg-blur-05;
+    background-size: cover;
+    background-attachment: fixed;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+.bg-blur-06 {
+    background-image: @bg-blur-06;
+    background-size: cover;
+    background-attachment: fixed;
+    .fa, h1, h2, h3, h4, h5, h6, p {
+        color: @gray-dark;
+    }
+    .text-muted {
+        color: @color-alpha;
+    }
+}
+
+// Backgrounds Gradients
+.bg_gradient_primary_down {
+    background-image: linear-gradient( fade(@color-alpha, 0%), fade(@color-alpha, 100%) ),;
+}
+
+.bg_gradient_primary_up {
+    background-image: linear-gradient( fade(@color-alpha, 100%), fade(@color-alpha, 0%) ),;
+}
+
+.bg_gradient_white_down_thumb {
+    background-image: linear-gradient( fade(#ccc, 100%), fade(white, 50%) ),;
+}
+
+.bg_gradient_white_down {
+    background-image: linear-gradient( fade(white, 0%), fade(white, 50%) ),;
+}
+
+.bg_gradient_white_up_thumb {
+    background-image: linear-gradient( fade(white, 50%), fade(#ccc, 100%) ),;
+}
+
+.bg_gradient_white_up {
+    background-image: linear-gradient( fade(white, 50%), fade(white, 0%) ),;
+}
+
+.bg_gradient_black_up {
+    background-image: linear-gradient( fade(black, 50%), fade(black, 0%) ),;
+}
+
+.bg_gradient_black_down {
+    background-image: linear-gradient( fade(black, 0%), fade(black, 50%) ),;
+}
+
+.bg_option_menu_gradient, .bg_option_menu_img {
+    height: 25px;
+    width: 120px;
+    border: 1px solid #ccc;
+}
+
+// Images
+@content_logo: url("/theme_clean/static/src/img/content/content_logo.png");
+
+.content_logo {
+    background-image: @content_logo;
+    background-size: cover;
+    width: 620px;
+    height: 220px;
+}
+
+// Custom Padding
+.padding-l-r-8 {
+    padding: 0 8px;
+}
+
+.padding-l-r-16 {
+    padding: 0 16px;
+}
+
+.padding-l-r-32 {
+    padding: 0 32px;
+}
+
+// Price List
+.price {
+    font-size: 50px;
+}
+
+// popover
+.popover, .popover-title {
+    color: #555;
+}
+
+// hr
+hr {
+    border-top: 1px solid @gray;
+}
+
+// Footer
+#wrapwrap footer {
+    font-size: 14px;
+    .row {
+        padding: 70px 0 50px;
+        border-bottom: 1px solid @color-alpha;
+    }
+}
+
+footer h4 {
+    font-size: 16px;
+}
+
+footer p {
+    text-align: justify;
+}
+footer .fa:not(.fa-2x):not(.fa-3x):not(.fa-4x):not(.fa-5x) {
+    font-size: 18px;
+}
+
+// Media editor Icons
+.modal-dialog .select-media {
+    color: @gray-dark;
+}
+
+.modal .font-icons-icons .font-icons-icon {
+    color: @gray-dark;
+}
+
+.demo_blocks_title {
+    border-left: 5px solid @color-alpha;
+}
+
+
+// Editor
+
+// Define a custom layout for Clean's palette.
+#oe_manipulators {
+    .o_colorpicker_section[data-name="clean_palette"]{
+        > button {
+            margin-right: 6px;
+            float: left;
+            width: 15px;
+            height: 23px;
+            padding: 0px 14px;
+            color: rgba(0, 0, 0, 0);
+        }
+    }
+
+    .oe_overlay > .oe_overlay_options > .btn-group > .oe_options {
+        .snippet-option-background, .snippet-option-gradientpicker {
+            > ul {
+                width: 300px;
+                padding-bottom: 20px;
+            }
+
+            li.col-2 {
+                float: left;
+                width: 140px;
+                margin: 5px 4px;
+                height: 35px;
+                padding:3px;
+
+                a, img {
+                    display: block;
+                    height: 100%;
+                    padding: 0!important;
+                }
+
+                img {
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

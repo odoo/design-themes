@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="demo_page_blocks_page" model="website.page">
+        <field name="url">/demo_page_blocks</field>
+        <field name="website_published">True</field>
+        <field name="name">Demo Page Block</field>
+        <field name="type">qweb</field>
+        <field name="key">website.demo_page_blocks</field>
+        <field name="arch" type="xml">
+            <t t-name="website.demo_page_blocks">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure oe_empty">
+                        <section class="s_big_image_parallax parallax bg-img-04" data-scroll-background-offset="0" data-scroll-background-ratio="0.3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-2 mt32 s_big_image_parallax_content">
+                                        <img class="img-responsive center-block o_animate o_anim_fade_in_up" src="/web/image/theme_common.image_content_03"/>
+                                    </div>
+                                    <div class="col-md-4 mt64 mb64">
+                                        <img class="img-responsive center-block" src="/web/image/theme_common.image_content_logo"/>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <h3>NEW EXCLUSIVE BUILDING BLOCKS</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="s_title_block">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 mt64">
+                                        <h2>STRUCTURE BLOCKS</h2>
+                                        <hr/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">1. Clean Title Block</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_title"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">2. Clean Text Block</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_text"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">3. Clean Image Text</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="website.s_image_text"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">4. Clean Text Image</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="website.s_text_image"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">5. Clean Color Blocks x2</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_color_blocks_2"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">6. Clean Color Blocks x4</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_color_blocks_4"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">7. Clean One Column</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_column"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">8. Clean Two Columns</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_two_columns"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">9. Clean Three Columns</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_three_columns_circle"/>
+
+                        <section class="s_title_block">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 mt64">
+                                        <h2>CONTENT BLOCKS</h2>
+                                        <hr/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">1. Icon Box</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_icon_box"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">2. Icon Box Circle</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_icon_box_circle"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">3. Icon Box Square</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_icon_box_square"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">4. Separator Color</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_separator_color"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">5. Separator Shade</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_separator_shade"/>
+
+                        <section class="s_title_block">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 mt64">
+                                        <h2>FEATURES BLOCKS</h2>
+                                        <hr/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">1. Lead Bar</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_lead_bar"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">4. Team Profiles</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_team_profiles"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">5. Profile</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_profile"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">6. Timeline</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_timeline"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">7. Timeline Compact</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_timeline_compact"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">8. Event List</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_event_list"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">9. Discount</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_discount"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">10. Pricing</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_pricing"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">11. Process Step</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_process_steps_2"/>
+
+                        <section class="s_title_block">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 mt64">
+                                        <h2>EFFECT BLOCKS</h2>
+                                        <hr/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">1. Big Image</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_big_image"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt32">
+                                    <blockquote class="demo_blocks_title">
+                                        <h3 class="text-muted">2. Big Image Parallax</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-oe-call="theme_common.s_big_image_parallax"/>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+
+    <record id="demo_page_blocks_menu" model="website.menu">
+        <field name="name">Blocks</field>
+        <field name="url">/demo_page_blocks</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">20</field>
+        <field name="page_id" ref="demo_page_blocks_page"/>
+    </record>
+</odoo>

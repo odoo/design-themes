@@ -1,0 +1,60 @@
+#pre-header {
+    display: table;
+    width: 100%;
+    .o-flex-display();
+
+    .pre-header-text {
+        display: none;
+    }
+
+    .year {
+        margin: 0;
+        padding: 10px 0;
+        width: 60px;
+        display: table-cell;
+        .o-flex(1,1,auto);
+    }
+
+    .pre-header-links {
+        display: table-cell;
+        .o-flex(0,0,auto);
+        .o-align-self(flex-end);
+    }
+
+    @media all and (min-width: @screen-sm-min) {
+        .pre-header-text {
+            margin: 0;
+            padding: 10px 0;
+            display: table-cell;
+            .o-flex(1,1,auto);
+        }
+
+        .year{
+            .o-flex(0,1,auto);
+
+            &:after {
+                display: inline-block;
+                margin: 0 10px;
+                font-weight: bold;
+                content: "\00B7";
+            }
+        }
+    }
+}
+
+// Customize Modal
+body #theme_customize_modal #tab_options {
+    .pre_header{
+        display: block!important;
+    }
+
+    .avant_hide_logo {
+      display: block;
+    }
+}
+
+#wrapwrap.top_content{
+  #avant_header {
+    .o-position-absolute(40px, @left: 0);
+  }
+}

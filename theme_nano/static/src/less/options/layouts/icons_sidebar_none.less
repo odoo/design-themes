@@ -1,0 +1,32 @@
+#wrapwrap {
+    #preheader {
+        display: none;
+    }
+}
+
+.nano-sidebar-hook () {
+    @media (min-width: @screen-md-min) {
+        header .navbar-default {
+            left: 0;
+            content: "ciao"
+        }
+
+        #copyright, main > * {
+            margin-left: @nano-sidenav-width-md !important;
+        }
+
+        #footer {
+            padding-left: @nano-sidenav-width-md !important;
+        }
+    }
+
+    @media (min-width: @screen-lg-min) {
+        #copyright, main > * {
+            margin-left: @nano-sidenav-width-lg !important;
+        }
+
+        #footer {
+            padding-left: @nano-sidenav-width-lg !important;
+        }
+    }
+}

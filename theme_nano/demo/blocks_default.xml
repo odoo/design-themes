@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="demo_blocks_default_page" model="website.page">
+    <field name="url">/demo_blocks_default</field>
+    <field name="website_published">True</field>
+    <field name="name">Building Blocks | Default</field>
+    <field name="type">qweb</field>
+    <field name="key">website.demo_blocks_default</field>
+    <field name="arch" type="xml">
+      <t t-name="website.demo_blocks_default">
+        <t t-call="website.layout">
+          <div id="wrap" class="oe_structure">
+
+              <section class="bg-gray-dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h1 class="demo-title mt0 mb0">Structure Blocks</h1>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="demo-subtitle mt32 mb32">Title</h4>
+                  </div>
+                </div>
+              </div>
+
+              <section class="s_title">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h1 class="text-center">Your Website Title</h1>
+                      <h3 class="text-muted text-center">And a great subtitle too</h3>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="demo-subtitle mt32 mb32">Text + Image</h4>
+                  </div>
+                </div>
+              </div>
+
+              <section class="s_text_image">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 mt16">
+                      <h3>A Section Subtitle</h3>
+                      <p>Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                      <p>Start with the customer – find out what they want and give it to them.</p>
+                    </div>
+                    <div class="col-md-6 mt16">
+                      <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_04"/>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="demo-subtitle mt32 mb32">Image + Text</h4>
+                  </div>
+                </div>
+              </div>
+
+              <section class="s_image_text">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 mt16">
+                      <img alt="" class="img img-responsive" src="/web/image/theme_common.image_content_06"/>
+                    </div>
+                    <div class="col-md-6 mt16">
+                      <h3>A Section Subtitle</h3>
+                      <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+                      <p>Start with the customer – find out what they want and give it to them.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="demo-subtitle mt32 mb32">Text Block</h4>
+                  </div>
+                </div>
+              </div>
+
+              <section class="s_text_block">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="mb8">A Great Headline</h2>
+                      <h3 class="text-primary mb0 mt0">A good subtitle</h3>
+                      <hr class="s_separator hr-full hr-1px hr-solid"/>
+                    </div>
+                    <div class="col-md-12 mb16 mt16">
+                      <p>A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                      <p><b>Great stories have personality.</b> Consider telling a great story that provides personality. Writing a story with personality for potential clients will asist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                      <p><b>Great stories are for everyone even when only written for just one person.</b> If you try to write with a wide general audience in mind, your story will ring false and be bland. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="demo-subtitle mt32 mb32">Big message</h4>
+                  </div>
+                </div>
+              </div>
+
+              <section class="jumbotron s_big_message bg-gray-darker">
+                <div class="container">
+                  <h1 class="text-success">Sell Online. Easily.</h1>
+                  <p>Write one sentence to convince visitor about your message.</p>
+                  <p>
+                    <a class="btn btn-success btn-lg" href="/contactus">Contact us </a>
+                  </p>
+                </div>
+              </section>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="demo-subtitle mt32 mb32">Big Picture</h4>
+                  </div>
+                </div>
+              </div>
+
+              <section class="s_big_picture">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 text-center mt32 mb32">
+                      <h2>A Punchy Headline</h2>
+                    </div>
+                    <div class="col-md-12">
+                      <img alt="Odoo CMS - a big picture" class="img img-responsive" src="/web/image/theme_common.image_content_05" style="margin: 0 auto;"/>
+                    </div>
+                    <div class="col-md-6 col-md-offset-3 mb16 mt16">
+                      <p class="text-center">
+                        <b>A Small Subtitle</b>
+                      </p>
+                      <p class="text-center">Choose a vibrant image and write an inspiring paragraph about it. It does not have to be long, but it should reinforce your image.</p>
+                      <p class="text-center">
+                        <a class="btn btn-success" href="/contactus">Contact us »</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            <section class="bg-gray-dark">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1 class="demo-title mt0 mb0">Features Blocks</h1>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="demo-subtitle mt32 mb32">Image Gallery</h4>
+                </div>
+              </div>
+            </div>
+
+            <section class="s_image_gallery">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center mt16 mb32">
+                    <h2>Our Customer References</h2>
+                    <h4 class="text-muted">More than 500 successful projects</h4>
+                  </div>
+                  <div class="col-md-6">
+                    <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/desert.jpg"/>
+                  </div>
+                  <div class="col-md-3">
+                    <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/china_thumb.jpg"/>
+                  </div>
+                  <div class="col-md-3">
+                    <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/deers_thumb.jpg"/>
+                  </div>
+                  <div class="col-md-3">
+                    <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/desert_thumb.jpg"/>
+                  </div>
+                  <div class="col-md-3">
+                    <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/china_thumb.jpg"/>
+                  </div>
+                  <div class="col-md-3">
+                    <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/deers_thumb.jpg"/>
+                  </div>
+                  <div class="col-md-6">
+                    <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/landscape.jpg"/>
+                  </div>
+                  <div class="col-md-3">
+                    <img alt="Odoo CMS - Gallery sample" class="img img-thumbnail img-responsive mb16" src="/website/static/src/img/china_thumb.jpg"/>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="demo-subtitle mt32 mb32">Price Tables</h4>
+                </div>
+              </div>
+            </div>
+
+            <section class="s_comparisons">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center mt16 mb32">
+                    <h2>Our Offers</h2>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="panel panel-info">
+                      <div class="panel-heading text-center">
+                        <h2 style="margin: 0">Beginner</h2>
+                        <p class="text-muted" style="margin: 0">Starter package</p>
+                      </div>
+                      <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                        <h2 style="margin: 0">
+                          <span>$</span>
+                          <b style="font-size: 60px">450</b>
+                          <small>.00</small>
+                        </h2>
+                        <div>per month</div>
+                      </div>
+                      <ul class="list-group">
+                        <li class="list-group-item active">Battery: 8 hours</li>
+                        <li class="list-group-item">Screen: 2.5 inch</li>
+                        <li class="list-group-item">Weight: 1.1 ounces</li>
+                        <li class="list-group-item">No support</li>
+                      </ul>
+                      <div class="panel-footer text-center">
+                        <p class="text-muted">
+                          <i>Free shipping, satisfied or reimbursed.</i>
+                        </p>
+                        <a class="btn btn-primary btn-lg" href="/contactus">Order now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading text-center">
+                        <h2 style="margin: 0">Professional</h2>
+                        <p style="margin: 0">Enterprise package</p>
+                      </div>
+                      <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                        <h2 style="margin: 0">
+                          <span>$</span>
+                          <b style="font-size: 60px">590</b>
+                          <small>.00</small>
+                        </h2>
+                        <div>per month</div>
+                      </div>
+                      <ul class="list-group">
+                        <li class="list-group-item active">Battery: 12 hours</li>
+                        <li class="list-group-item">Screen: 2.8 inch</li>
+                        <li class="list-group-item">Weight: 1.2 ounces</li>
+                        <li class="list-group-item">Limited support</li>
+                      </ul>
+                      <div class="panel-footer text-center">
+                        <p class="text-muted">
+                          <i>Free shipping, satisfied or reimbursed.</i>
+                        </p>
+                        <a class="btn btn-primary btn-lg" href="/contactus">Order now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="panel panel-info">
+                      <div class="panel-heading text-center">
+                        <h2 style="margin: 0">Expert</h2>
+                        <p class="text-muted" style="margin: 0">The top of the top</p>
+                      </div>
+                      <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                        <h2 style="margin: 0">
+                          <span>$</span>
+                          <b style="font-size: 60px">890</b>
+                          <small>.00</small>
+                        </h2>
+                        <div>per month</div>
+                      </div>
+                      <ul class="list-group">
+                        <li class="list-group-item active">Battery: 20 hours</li>
+                        <li class="list-group-item">Screen: 2.8 inch</li>
+                        <li class="list-group-item">Weight: 1.2 ounces</li>
+                        <li class="list-group-item">Unlimited support</li>
+                      </ul>
+                      <div class="panel-footer text-center">
+                        <p class="text-muted">
+                          <i>Free shipping, satisfied or reimbursed.</i>
+                        </p>
+                        <a class="btn btn-primary btn-lg" href="/contactus">Contact us</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="demo-subtitle mt32 mb32">Button</h4>
+                </div>
+              </div>
+            </div>
+
+            <section class="jumbotron s_button bg-beta">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-9">
+                    <p class="mb0">
+                      <strong>50,000+ companies run Odoo to grow their businesses.</strong>
+                    </p>
+                    <p class="mb0">Join us and make your company a better place.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <a class="btn btn-primary pull-right mt8" href="/contactus"><i class="fa fa-arrow-right"/> Contact Us Now </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="demo-subtitle mt32 mb32">FAQ</h4>
+                </div>
+              </div>
+            </div>
+
+            <section class="s_faq">
+              <div class="container">
+                <h2 class="page-header">Point of Sale Questions <small>v7</small></h2>
+                <h3>Which hardware does Odoo POS support?</h3>
+                <p>Odoo's POS is a web application that can run on any device that can display websites with little to no setup required.</p>
+                <p>The Point of Sale works perfectly on any kind of touch enabled device, whether it's multi-touch tablets like an iPad or keyboardless resistive touchscreen terminals.</p>
+                <h3>Does it works offline?</h3>
+                <p>Deploy new stores with just an internet connection: no installation, no specific hardware required. It works with any iPad, Tablet PC, laptop or industrial POS machine.</p>
+                <p>While an internet connection is required to start the Point of Sale, it will stay operational even after a complete disconnection.</p>
+                <h2 class="page-header">Project Management Questions <small>v7</small></h2>
+                <h3>Can I use it to manage projects based on agile methodologies?</h3>
+                <p>Yes.</p>
+              </div>
+            </section>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="demo-subtitle mt32 mb32">References</h4>
+                </div>
+              </div>
+            </div>
+
+            <section class="s_references">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1 class="text-center">Our References</h1>
+                    <h3 class="text-muted text-center">More than 500 happy customers.</h3>
+                  </div>
+                  <div class="col-md-4 col-md-offset-1 mt16">
+                    <blockquote>
+                      <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                      <small>Author of this quote</small>
+                    </blockquote>
+                  </div>
+                  <div class="col-md-4 col-md-offset-2 mt16">
+                    <blockquote>
+                      <p>Odoo provides essential platform for our project management. Things are better organized and more visible with it.</p>
+                      <small>John Doe, CEO</small>
+                    </blockquote>
+                  </div>
+                  <div class="col-md-2 col-md-offset-1">
+                    <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/web/image/theme_common.image_content_12"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/web/image/theme_common.image_content_13"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/web/image/theme_common.image_content_14"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/web/image/theme_common.image_content_15"/>
+                  </div>
+                  <div class="col-md-2">
+                    <img alt="OpenERP logo" class="img img-responsive img-thumbnail" src="/web/image/theme_common.image_content_16"/>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+                  <section class="bg-gray-darker">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1 class="demo-title mt0 mb0">Effect Blocks</h1>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="demo-subtitle mt32 mb32">Parallax</h4>
+                </div>
+              </div>
+            </div>
+
+            <section class="parallax s_parallax" data-scroll-background-offset="-70.8" data-scroll-background-ratio="0.3" style="background-image: url(/web/image/website.s_background_image_11); background-attachment: scroll; background-position: 0px -70.8px; height: 420px;">
+              <div>
+                <div class="oe_structure"></div>
+              </div>
+            </section>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="demo-subtitle mt64 mb32">Parallax Slider</h4>
+                </div>
+              </div>
+            </div>
+
+            <section class="parallax s_parallax_slider" data-scroll-background-offset="-174" data-scroll-background-ratio="0.3" style="background-image: url(/web/image/website.s_background_image_15); background-attachment: scroll; background-position: 0px -174px;">
+              <div>
+                <div>
+                  <div class="oe_structure">
+                    <div class="carousel quotecarousel slide mb0" id="myCarousel7">
+                      <ol class="carousel-indicators mb0"><li class="active" data-slide-to="0" data-target="#myCarousel7"></li><li data-slide-to="1" data-target="#myCarousel7" class=""></li></ol>
+                      <div class="carousel-inner">
+                        <div class="item text_only active">
+                          <div class="container">
+                            <div class="content">
+                              <div class="row">
+                                <blockquote class="mt48 mb16 col-md-4 col-md-offset-4">
+                                  <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                                  <small>Author of this quote</small>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item text_only">
+                          <div class="container">
+                            <div class="content">
+                              <div class="row">
+                                <blockquote class="mt48 mb16 col-md-4 col-md-offset-4">
+                                  <p>Odoo provides essential platform for our project management. Things are better organized and more visible with it.</p>
+                                  <small>John Doe, CEO</small>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </t>
+      </t>
+    </field>
+  </record>
+
+  <record id="demo_blocks_default_menu" model="website.menu">
+    <field name="name">Default</field>
+    <field name="url">/demo_blocks_default</field>
+    <field name="parent_id" ref="demo_blocks_menu"/>
+    <field name="sequence" type="int">44</field>
+    <field name="page_id" ref="demo_blocks_default_page"/>
+  </record>
+
+</odoo>

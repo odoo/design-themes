@@ -1,0 +1,94 @@
+@color-alpha: @gray-white;
+@color-beta: @colorPreset3_color1; // gray
+@color-gamma: @colorPreset3_color2; // middle blue
+@color-delta: @colorPreset3_color3; // salmon
+@color-epsilon: @colorPreset3_color4; // vivid blue
+@color-zeta: @colorPreset3_color1_dark;
+@color-eta: @colorPreset3_color1_light;
+@color-theta: @colorPreset3_color2_dark;
+@color-iota: @colorPreset3_color2_light;
+@color-kappa: @colorPreset3_color3_dark;
+@color-lambda: @colorPreset3_color3_light;
+@color-mu: @colorPreset3_color4_dark;
+@color-nu: @colorPreset3_color4_light;
+
+/* ================== COLORS FOR FONT COLOR ================= */
+
+.text-alpha {color: @gray-white;}
+.text-beta {color: @colorPreset3_color1;}
+.text-gamma {color: @colorPreset3_color2;}
+.text-delta {color: @colorPreset3_color3;}
+.text-epsilon {color: @colorPreset3_color4;}
+
+.text-primary {color: @color-alpha;}
+.text-success {color: @color-beta;}
+.text-info {color: @color-gamma;}
+.text-warning {color: @color-delta;}
+.text-danger {color: red;}
+
+/* ================== transparent BG USED FOR NAV ================= */
+
+.bgtransparent {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* ================== color-alpha ================= */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-epsilon, @color-mu);
+    .fa {color: @gray;}
+}
+
+/* ================== PLAYFULCLARET ================= */
+
+.bg-beta {
+    .SetDisplayColor (@color-beta, @gray-white);
+    .LinkColor (@color-gamma, @color-iota);
+}
+
+/* ================== color-beta ================= */
+
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @color-alpha);
+    .LinkColor (@color-delta, @color-kappa);
+}
+
+/* ================== PLAYFULBLUE ================= */
+
+.bg-delta {
+    .SetDisplayColor (@color-delta, @color-alpha);
+    .LinkColor (@gray, @gray-base);
+}
+
+/* ================== PLAYFULORANGE ================= */
+
+.bg-epsilon {
+    .SetDisplayColor (@color-epsilon, @color-alpha);
+    .LinkColor (@color-delta, @color-kappa);
+}
+
+/* ==================== TYPO ====================== */
+a {
+    color: @color-delta;
+
+    &:hover, &:focus {
+        color: @color-alpha;
+    }
+}
+
+/* ==================== Structure ====================== */
+
+/* Nav */
+.navbar-default .container {
+    background-color: @color-beta;
+    .navbar-collapse{
+        background-color: @color-beta;
+    }
+}
+
+/* Footer */
+
+#wrapwrap > footer .container h4 {
+    color: @color-alpha;
+}

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+            <template id="demo_blocks" name="Building Blocks">
+                <t t-call="website.layout">
+
+                    <div id="wrap" class="oe_structure oe_empty">
+
+                        <!-- Content -->
+                        <section class="s_title mb0 mt0" style="padding-top: 25px;">
+                            <div class="container">
+                                <h1 class="mb32 mt32 text-center">Content blocks</h1>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="text-muted text-center">1 column text block</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_1_column_text"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="text-muted text-center">2 column text block</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_2_column_text"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="text-muted text-center">3 column text block</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_3_column_text"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="text-muted text-center">4 column text block</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_4_column_text"/>
+
+                        <!-- Structure -->
+                        <section class="s_title mb0 mt0">
+                            <div class="container">
+                                <h1 class="mb32 mt32 text-center">Structure blocks</h1>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Custom banner</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_banner_parallax"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Big image / text</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_big_picture_text"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Text / big image</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_text_big_picture"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Cubes</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_cubes"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Header / text / big image</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_header_text_big_picture"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Text / image / text</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_text_picture_text"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Product list</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_product_list"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Features slideshow</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_features_carousel"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Color blocks</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_color_blocks_4"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Event list</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_timeline"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Timeline</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_event_list"/>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Testimonial slider</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_testimonial_slider"/>
+
+                        <!-- Features -->
+                        <section class="s_title mb0 mt0">
+                            <div class="container">
+                                <h1 class="mb32 mt32 text-center">Feature blocks</h1>
+                            </div>
+                        </section>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mt16 mb16">
+                                    <h4 class="text-muted text-center">Product slideshow</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-oe-call="theme_common.s_products_carousel"/>
+
+                    </div>
+
+                </t>
+            </template>
+
+            <record id="demo_blocks_page" model="website.page">
+                <field name="name">Building Blocks</field>
+                <field name="website_published">True</field>
+                <field name="url">/demo_blocks</field>
+                <field name="view_id" ref="demo_blocks" />
+            </record>
+
+</odoo>

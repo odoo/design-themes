@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Showcase Image" id="s_showcase_image">
+        <section class="s_showcase_image container-fluid">
+            <div class="row">
+                <figure class="bg-img-03 col-md-6 bl">
+                    <figcaption class="o_animable">
+                        <h6>Sample description</h6>
+                        Write one or two paragraphs describing your product
+                    </figcaption>
+                </figure>
+                <div class="info col-md-6">
+                    <div class="row" contenteditable="false">
+                        <div class="content col-sm-11 col-md-8" contenteditable="true">
+                            <h3>Sample Title</h3>
+                            <h4 class="text-primary">With a great subtitle</h4>
+                            <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+                            <a href="#" class="btn btn-default">Click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_showcase_image-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-selector=".s_showcase_image">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-exchange"/>Image position</a>
+                    <ul class="dropdown-menu">
+                        <li data-select-class=""><a>Left</a></li>
+                        <li data-select-class="s_right"><a>Right</a></li>
+                    </ul>
+                </li>
+            </div>
+
+            <div data-selector=".s_showcase_image figure">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-tag"/>Caption position</a>
+                    <ul class="dropdown-menu">
+                        <li data-select-class="tl"><a>Top Left</a></li>
+                        <li data-select-class="tr"><a>Top Right</a></li>
+                        <li data-select-class="bl"><a>Bottom Left</a></li>
+                        <li data-select-class=""><a>Bottom Right</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_showcase_image figure"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".s_showcase_image figure, .s_showcase_image figcaption"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-selector" add=".s_showcase_image figure"/>
+        </xpath>
+    </template>
+</odoo>

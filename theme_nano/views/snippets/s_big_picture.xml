@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <template name="Big picture" id="s_big_picture_extended" inherit_id="website.s_big_picture">
+
+      <xpath expr="//section[hasclass('s_big_picture')]//img" position="attributes">
+        <attribute name="src">/web/image/theme_common.image_content_05</attribute>
+      </xpath>
+
+    </template>
+
+  </data>
+</openerp>

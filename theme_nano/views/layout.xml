@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+<!-- ==================================================
+         PREHEADER
+         ================================================== -->
+
+<template id="preHeader" inherit_id="website.layout" name="Nano preHeader">
+    <xpath expr="//div[@id='wrapwrap']/header/div" position="before">
+
+        <div id="preheader" class="bg-alpha">
+            <!-- Languages -->
+            <ul id="lang" class="js_language_selector list-unstyled" t-if="(request.is_frontend_multilang and len(languages) &gt; 1) or editable">
+                <li>
+                    <div class="btn-group">
+                        <button data-toggle="dropdown" type="button" data-caret="true" class="dropdown-toggle">
+                            <i class="fa fa-flag fa-1x img-circle"/>
+                        </button>
+                        <ul role="menu" class="dropdown-menu js_language_selector">
+                            <t t-foreach="languages" t-as="lg">
+                                <li t-att-class="'active' if lang == lg[0] else None">
+                                    <a class="js_change_lang" t-att-data-lang="lg[0]" t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None">
+                                        <t t-esc="lg[1].split('/').pop()"/>
+                                    </a>
+                                </li>
+                            </t>
+                            <li groups="base.group_website_publisher">
+                                <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                                <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                                    <i class="fa fa-plus-circle"/>Add...
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Infos + Contact -->
+            <div id="contact">
+                <div class="btn-group">
+                    <button data-toggle="dropdown" type="button" data-caret="true" class="dropdown-toggle">
+                        <i class="fa fa-info fa-1x img-circle"/>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                        <li class="contact-address">
+                            <address itemscope="itemscope" itemtype="http://schema.org/Organization">
+                        <div t-field="res_company.partner_id" t-options='{
+                                     "widget": "contact",
+                                     "fields": ["name", "address", "phone", "mobile", "fax", "email"]}'/>
+                        </address>
+                    </li>
+                    </ul>
+                </div>
+                <a t-attf-href="mailto:{{ res_company.email }}">
+                    <i class="fa fa-envelope fa-1x img-circle"/>
+                </a>
+            </div>
+
+            <!-- Social -->
+            <div id="social">
+                <a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank">
+                    <i class="fa fa-1x fa-facebook img-circle"/>
+                </a>
+                <a t-if="website.social_twitter" t-att-href="website.social_twitter" target="_blank">
+                    <i class="fa fa-1x fa-twitter img-circle"/>
+                </a>
+                <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" target="_blank">
+                    <i class="fa fa-1x fa-linkedin img-circle"/>
+                </a>
+                <a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank">
+                    <i class="fa fa-1x fa-youtube img-circle"/>
+                </a>
+                <a t-if="website.social_googleplus" t-att-href="website.social_googleplus" target="_blank">
+                    <i class="fa fa-1x fa-google-plus img-circle"/>
+                </a>
+                <a t-if="website.social_github" t-att-href="website.social_github" target="_blank">
+                    <i class="fa fa-1x fa-github img-circle"/>
+                </a>
+            </div>
+
+        </div>
+
+    </xpath>
+</template>
+
+<!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+        <record id="website.footer_default" model="ir.ui.view">
+            <field name="active" eval="False"/>
+        </record>
+
+        <template id="add_fluid_custom" inherit_id="website.footer_custom" name="Add Fluid to Custom">
+            <xpath expr="//div[hasclass('container')]" position="attributes">
+                <attribute name="class">container-fluid</attribute>
+            </xpath>
+        </template>
+
+<!-- ==================================================
+         COPYRIGHT
+         ================================================== -->
+
+        <template id="remove_default_copyright" inherit_id="website.layout_footer_copyright" name="Remove Default Copyright">
+            <xpath expr="(//footer//div[hasclass('container')])[last()]" position="replace"/>
+        </template>
+
+        <template id="copyright" inherit_id="website.layout" name="Nano Copyright">
+            <xpath expr="//footer" position="after">
+                <div id="copyright" class="bg-alpha">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="company" class="col-md-5 col-sm-5 col-xs-6">
+                                <span class="hidden-xs">Copyright</span> &amp;copy; <span t-field="res_company.name">Company name</span>
+                            </div>
+                            <div id="back-top" class="col-md-2 col-sm-2 hidden-xs text-center">
+                                <a href="#"><i class="fa fa-arrow-up fa-1x img-circle"/></a>
+                            </div>
+                            <div id="odoo" class="col-md-5 col-sm-5 col-xs-6" t-ignore="true" t-if="not editable">
+                                <span class="hidden-xs">Create a <a href="http://www.odoo.com/page/website-builder"><strong>free website</strong></a> with</span>
+                                <a class="label bg-white" href="http://www.odoo.com/page/website-builder">odoo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

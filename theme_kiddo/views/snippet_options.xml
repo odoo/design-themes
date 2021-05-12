@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_kiddo_website_options_pattern" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-exclude" add=".s_color_blocks_4, .s_color_blocks_2"/>
+        </xpath>
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-exclude" add=".s_color_blocks_4, .s_color_blocks_2, .s_cubes"/>
+        </xpath>
+    </template>
+</odoo>

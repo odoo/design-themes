@@ -1,0 +1,26 @@
+@s_banner_2-background-position: 50% 50%;
+@s_banner_2-content-margin: 0;
+
+#wrapwrap .s_banner_2.carousel {
+    margin-top: 0;
+    margin-bottom: 0;
+    .row.content {
+        margin: @s_banner_2-content-margin;
+        outline: 0;
+    }
+    .carousel-box-content {
+        padding: 15px 30px;
+    }
+    .carousel-box-image {
+        padding: 0;
+    }
+    .carousel-inner .item {
+        background-position: @s_banner_2-background-position;
+    }
+    .carousel-control {
+        .carousel-control(15px, 0, 2px);
+    }
+    .carousel-indicators {
+        .carousel-indicators(10px, 10px);
+    }
+}

@@ -1,0 +1,22 @@
+#top_menu li {
+    border-bottom-width: 0px;
+    a {
+        text-transform: uppercase;
+    }
+}
+#wrapwrap > footer {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* ================= HAMBURGER LAYOUT ================== */
+// @hamburger-layout variable has been defined in parent theme
+
+.hamburger-colors() when (@hamburger-layout = true) {
+    #wrapwrap > header > .navbar-static-top {
+        z-index: 100;
+        > .container {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    }
+}
+.hamburger-colors();

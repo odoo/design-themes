@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="less" inherit_id="theme_treehouse.less">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_zap/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_zap/static/src/less/theme.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="assets_editor" inherit_id="theme_treehouse.assets_editor">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_zap/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+</odoo>

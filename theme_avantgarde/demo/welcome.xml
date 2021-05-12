@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="welcome" name="Avantgarde - Welcome">
+      <t t-call="website.layout">
+        <div id="wrap"  class="oe_structure demo_welcome">
+
+          <section class="s_media_block pt256 pb256" muted="muted" loop="loop" autoplay="autoplay" iframefit="fitCont" src="https://www.youtube.com/embed/EEfXg1JUYu0"/>
+
+          <section class="s_title mt32">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="text-center text-small_caps">Welcome to Avantgarde</h1>
+                  <h3 class="text-muted text-center">A modern and elegant theme</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="s_text_block">
+            <div class="container">
+              <div class="row">
+                <div class="mb16 col-md-8 col-md-offset-2 mt32">
+                  <p class="drop-caps">
+                    Avantgarde is a sophisticated theme to inspire and impress. Its strength is its simplicity and flexibility. It presents your work and content with absolute clarity and impact. A perfect tool for anyone to create a clean and elegant website
+                  </p>
+                  <p>
+                    <b>Tons of customizations are possible</b> with this template that’ll help you redefine your website’s brand value.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="s_text_block" id="demo_sites">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb16 mt32">
+                  <h3 class="text-small_caps">Sample Homepages</h3>
+                  <h5 class="text-muted text-small_caps">Just some examples of how can be simple to create a website using Avantgarde</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr/>
+
+          <section class="s_text_block mt64" id="customization">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb16 mt32">
+                  <h3 class="text-small_caps">Customizations</h3>
+                  <h5 class="text-muted text-small_caps">Easily adapt Avantgarde to your needs</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="row text-center">
+            <div class="col-sm-6 col-md-5 col-md-offset-1">
+              <h4>Layout Options</h4>
+              <hr class="mb0"/>
+              <img class="img-responsive" src="/theme_avantgarde/static/description/media/layout.jpg" alt=""/>
+            </div>
+            <div class="col-sm-6 col-md-5">
+              <h4>Header Options</h4>
+              <hr class="mb0"/>
+              <img class="img-responsive" src="/theme_avantgarde/static/description/media/options.png" alt=""/>
+            </div>
+            <div class="col-sm-6 col-md-5 mt48 col-md-offset-1">
+              <h4>Color Options</h4>
+              <hr class="mb0"/>
+              <img class="img-responsive" src="/theme_avantgarde/static/description/media/palette.jpg" alt=""/>
+            </div>
+            <div class="col-sm-6 col-md-5 mt48">
+              <h4>Fonts Options</h4>
+              <hr class="mb0"/>
+              <img class="img-responsive" src="/theme_avantgarde/static/description/media/fonts.jpg" alt=""/>
+            </div>
+          </div>
+
+          <section class="s_text_block mt64" id="style">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb16 mt32">
+                  <h3 class="text-small_caps">Bulding Blocks</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="row text-center">
+            <a href="/blocks" class="btn btn-lg btn-default">Discover</a>
+          </div>
+
+          <section class="s_text_block mt64" id="style">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb16 mt32">
+                  <h3 class="text-small_caps">Style Specimen</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="row text-center">
+            <a href="/style" class="btn btn-lg btn-default">Discover</a>
+          </div>
+
+          <hr/>
+
+        </div> <!-- #wrap -->
+
+        <style type="text/css">
+          .navbar-brand.logo > span {display:none}
+          #logo{display:block!important}
+
+          #wrapwrap > footer {
+            height: 0;
+            overflow: hidden;
+            display: block;
+            margin-top: 100px;
+          }
+          #wrapwrap > main {padding-bottom:100px}
+        </style>
+      </t>
+    </template>
+
+    <record id="welcome_page" model="website.page">
+      <field name="name">Avantgarde - ArtShop</field>
+      <field name="website_published">True</field>
+      <field name="url">/welcome</field>
+      <field name="view_id" ref="welcome" />
+    </record>
+
+    <record id="graphene_home_menu" model="website.menu">
+      <field name="name">Welcome</field>
+      <field name="url">/welcome</field>
+      <field name="parent_id" ref="website.main_menu"/>
+      <field name="page_id" ref="welcome_page"/>
+    </record>
+
+</odoo>

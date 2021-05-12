@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_customize" inherit_id="website.theme_customize" name="theme_kea modal">
+        <xpath expr="div" position="replace">
+            <div id="theme_customize_modal" class="modal fade bs-example-modal-sm" data-theme="theme_kea">
+                <div class="modal-dialog">
+                    <div class="container-fluid interface modal-content">
+                        <div class="loading_backdrop"/>
+                        <div class="row">
+                            <!-- ======================== Nav tabs ======================== -->
+                            <div class="col-md-2 left-content">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active text-center left-content-block">
+                                        <a href="#layout" class="" role="tab" data-toggle="tab"><span class="fa fa-th-list center-block"></span>LAYOUT</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#color" class="" role="tab" data-toggle="tab"><span class="fa fa-pencil center-block"></span>COLORS</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#bgcolor" class="" role="tab" data-toggle="tab"><span class="fa fa-pencil center-block"></span> BG COLORS</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#bgimage" class="" role="tab" data-toggle="tab"><span class="fa fa-picture-o center-block"></span> BG IMAGES</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#pattern" class="" role="tab" data-toggle="tab"><span class="fa fa-th center-block"></span> BG PATTERNS</a>
+                                    </li>
+                                    <li class="text-center left-content-block">
+                                        <a href="#font" class="" role="tab" data-toggle="tab"><span class="fa fa-font center-block"></span>FONTS</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- ========================= Content ======================== -->
+                            <div class="col-md-10 right-content">
+                                <div class="col-md-12 modal-header">
+                                    <button type="button" class="close">×</button>
+                                    <h4 class="modal-title text-center" id="mySmallModalLabel">Customize Theme</h4>
+                                </div>
+                                <div class="col-md-12 tab-content">
+                                    <!-- =============== LAYOUT CONTAINER ================= -->
+                                    <div class="tab-pane active" id="layout">
+                                        <div class="col-xs-12">
+                                            <label>
+                                                <h6 class="text-center modal-h6"><i class="fa fa-desktop"/></h6>
+                                                <p>Full width</p>
+                                                <input name="layoutvar" type="radio" data-xmlid="theme_kea.option_layout_fullwidth"/>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <label>
+                                                <h6 class="text-center modal-h6"><i class="fa fa-arrows-h"/></h6>
+                                                <p>Boxed</p>
+                                                <input name="layoutvar" type="radio" data-xmlid="theme_kea.option_layout_boxed"/>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== COLOR CONTAINER ================= -->
+                                    <div class="tab-pane" id="color">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 1</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset1">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kea.option_colorPreset1"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 2</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset2">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kea.option_colorPreset2"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 3</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset3">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kea.option_colorPreset3"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 4</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset4">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kea.option_colorPreset4"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 5</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset5">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kea.option_colorPreset5"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p class="text-center">Color Preset 6</p>
+                                                <label class="color-combi">
+                                                    <div class="row colorPreset6">
+                                                        <div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div><div class="col-xs-2"></div>
+                                                    </div>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kea.option_colorPreset6"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== BG COLOR CONTAINER ================= -->
+                                    <div class="tab-pane" id="bgcolor">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <label class="col-xs-12 bg_color_01">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_color_01"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_02">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_color_02"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_03">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_color_03"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_04">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_color_04"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_05">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_color_05"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_06">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_color_06"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_07">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_color_07"/>
+                                                </label>
+                                                <label class="col-xs-12 bg_color_08">
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_color_08"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== BG IMAGE CONTAINER ================= -->
+                                    <div class="tab-pane" id="bgimage">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_01/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_01"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_02/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_02"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_03/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_03"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_04/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_04"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_05/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_05"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_06/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_06"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_07/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_07"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_08/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_08"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_09/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_09"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/web/image/theme_kea.bg_img_10/250x120" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_10"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/theme_kea/static/src/img/library/tn-bg-custom.jpg" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_custom" data-customize-bg=""/>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>
+                                                    <img src="/theme_kea/static/src/img/library/tn-bg-none.jpg" alt="Image" class="color-combi-img" style="width: 100%; height: 100%;"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_none"/>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== BG PATTERN CONTAINER ================= -->
+                                    <div class="tab-pane" id="pattern">
+                                        <div class="row">
+
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_01/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_01"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_02/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_02"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_03/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_03"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_04/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_04"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_05/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_05"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_06/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_06"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_07/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_07"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_08/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_08"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_09/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_09"/>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label class="pattern-swatch">
+                                                    <img src="/web/image/theme_kea.bg_pattern_10/250x120" alt="Pattern" class="color-combi-pattern"/>
+                                                    <input name="bgcolorvar" type="radio" data-xmlid="theme_kea.option_bg_pattern_10"/>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- =============== FONT CONTAINER ================= -->
+                                    <div class="tab-pane" id="font">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                              <label class="center-block">
+                                                <h4 style="font-family: SinkinSans-Regular; font-size: 30px">SinkinSans</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kea.option_font_sinkin"/>
+                                              </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                              <label class="center-block">
+                                                <h4 style="font-family: Roboto-Regular; font-size: 30px">Roboto</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kea.option_font_roboto"/>
+                                              </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                              <label class="center-block">
+                                                <h4 style="font-family: SourceSansPro-Regular; font-size: 30px">SourceSansPro</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kea.option_font_sourcesanspro"/>
+                                              </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                              <label class="center-block">
+                                                <h4 style="font-family: Rajdhani-Regular; font-size: 30px">Rajdhani</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kea.option_font_rajdhani"/>
+                                              </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                              <label class="center-block">
+                                                <h4 style="font-family: Lato-Regular; font-size: 30px">Lato</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kea.option_font_lato"/>
+                                              </label>
+                                            </div>
+                                            <div class="col-xs-12">
+                                              <label class="center-block">
+                                                <h4 style="font-family: Ubuntu-Regular; font-size: 30px">Ubuntu</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kea.option_font_ubuntu"/>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+<!-- ===================== LAYOUT OPTIONS ======================== -->
+
+    <template id="option_layout_fullwidth" name="theme_kea_option_layout_fullwidth" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/layout/full-width.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_layout_boxed" name="theme_kea_option_layout_boxed" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/layout/boxed.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+<!-- ===================== COLOR OPTIONS ======================== -->
+
+    <template id="option_colorPreset1" name="option_colorPreset1" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kea/static/src/less/options/colors/colorPreset1.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset2" name="option_colorPreset2" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kea/static/src/less/options/colors/colorPreset2.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset3" name="option_colorPreset3" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kea/static/src/less/options/colors/colorPreset3.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset4" name="option_colorPreset4" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kea/static/src/less/options/colors/colorPreset4.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset5" name="option_colorPreset5" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kea/static/src/less/options/colors/colorPreset5.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset6" name="option_colorPreset6" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kea/static/src/less/options/colors/colorPreset6.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+<!-- ===================== BG COLOR OPTIONS ======================== -->
+
+    <template id="option_bg_color_01" name="option_bg_color_01" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_colors/option_bg_color_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_02" name="option_bg_color_02" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_colors/option_bg_color_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_03" name="option_bg_color_03" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_colors/option_bg_color_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_04" name="option_bg_color_04" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_colors/option_bg_color_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_05" name="option_bg_color_05" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_colors/option_bg_color_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_06" name="option_bg_color_06" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_colors/option_bg_color_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_07" name="option_bg_color_07" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_colors/option_bg_color_07.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_color_08" name="option_bg_color_08" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_colors/option_bg_color_08.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+<!-- ===================== BG IMAGE OPTIONS ======================== -->
+
+    <template id="option_bg_01" name="option_bg_01" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_02" name="option_bg_02" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_03" name="option_bg_03" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_04" name="option_bg_04" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_05" name="option_bg_05" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_06" name="option_bg_06" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_07" name="option_bg_07" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_07.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_08" name="option_bg_08" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_08.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_09" name="option_bg_09" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_09.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_10" name="option_bg_10" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_10.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_none" name="option_bg_none" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/bg_images/option_bg_none.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_custom" name="option_bg_custom" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kea/static/src/less/options/bg_images/option_bg_custom.less" rel="stylesheet" type="text/less"/>
+            <style/>
+        </xpath>
+    </template>
+
+<!-- ===================== FONT OPTIONS ======================== -->
+
+    <template id="option_font_sinkin" name="option_font_sinkin" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/fonts/sinkin.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_roboto" name="option_font_roboto" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/fonts/roboto.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_sourcesanspro" name="option_font_sourcesanspro" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/fonts/sourcesanspro.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_rajdhani" name="option_font_rajdhani" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/fonts/rajdhani.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_lato" name="option_font_lato" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/fonts/lato.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_ubuntu" name="option_font_ubuntu" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/fonts/ubuntu.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+<!-- ===================== PATTERN OPTIONS ======================== -->
+
+    <template id="option_bg_pattern_01" name="option_bg_pattern_01" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_02" name="option_bg_pattern_02" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_03" name="option_bg_pattern_03" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_04" name="option_bg_pattern_04" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_05" name="option_bg_pattern_05" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_06" name="option_bg_pattern_06" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_07" name="option_bg_pattern_07" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_07.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_08" name="option_bg_pattern_08" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_08.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_09" name="option_bg_pattern_09" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_09.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_10" name="option_bg_pattern_10" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kea/static/src/less/options/patterns/option_bg_pattern_10.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+</odoo>

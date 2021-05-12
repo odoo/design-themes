@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="feat" inherit_id="theme_graphene.feat">
+        <xpath expr="//img[contains(@src, 'move_top')]" position="after">
+            <hr class="mb64 mt64"/>
+            <img class="img-responsive o_animate o_anim_fade_in" src="/theme_graphene/static/description/media/latest_posts.jpg" alt=""/>
+            <a href="/blocks#posts" class="btn btn-default">Discover More</a>
+        </xpath>
+    </template>
+</odoo>

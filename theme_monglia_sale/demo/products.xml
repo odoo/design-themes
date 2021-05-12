@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <delete id="website_sale.sub_computers" model="product.public.category"/>
+        <delete id="website_sale.Components" model="product.public.category"/>
+        <delete id="website_sale.devices" model="product.public.category"/>
+        <delete id="website_sale.laptops" model="product.public.category"/>
+        <delete id="website_sale.network" model="product.public.category"/>
+        <delete id="website_sale.Computer_all_in_one" model="product.public.category"/>
+        <delete id="website_sale.External_Hard_Drive" model="product.public.category"/>
+        <delete id="website_sale.Headset" model="product.public.category"/>
+        <delete id="website_sale.Keyboard_Mouse" model="product.public.category"/>
+        <delete id="website_sale.Pen_Drive" model="product.public.category"/>
+        <delete id="website_sale.printer" model="product.public.category"/>
+        <delete id="website_sale.Screen" model="product.public.category"/>
+        <delete id="website_sale.server" model="product.public.category"/>
+        <delete id="website_sale.services" model="product.public.category"/>
+        <delete id="website_sale.Software" model="product.public.category"/>
+        <delete id="website_sale.Speakers" model="product.public.category"/>
+
+        <!-- Create new categories -->
+
+        <record id="warm_food" model="product.public.category">
+            <field name="name">Warm food</field>
+        </record>
+        <record id="hamburger" model="product.public.category">
+            <field name="parent_id" ref="warm_food"/>
+            <field name="name">Hamburger</field>
+        </record>
+        <record id="gyros" model="product.public.category">
+            <field name="parent_id" ref="warm_food"/>
+            <field name="name">Gyros</field>
+        </record>
+        <record id="pizza" model="product.public.category">
+            <field name="parent_id" ref="warm_food"/>
+            <field name="name">Pizza</field>
+        </record>
+        <record id="sandwich" model="product.public.category">
+            <field name="parent_id" ref="warm_food"/>
+            <field name="name">Sandwich</field>
+        </record>
+
+        <record id="cold_food" model="product.public.category">
+            <field name="name">Cold food</field>
+        </record>
+        <record id="salad" model="product.public.category">
+            <field name="parent_id" ref="cold_food"/>
+            <field name="name">Salad</field>
+        </record>
+        <record id="pasta" model="product.public.category">
+            <field name="parent_id" ref="cold_food"/>
+            <field name="name">Pasta</field>
+        </record>
+
+        <record id="product_1" model="product.product">
+            <field name="name">Hamburger</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.hamburger')])]"/>
+            <field name="standard_price">3.0</field>
+            <field name="list_price">3.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_01.jpg"/>
+        </record>
+        <record id="product_2" model="product.product">
+            <field name="name">Double Burger</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.hamburger')])]"/>
+            <field name="standard_price">4.5</field>
+            <field name="list_price">4.5</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_02.jpg"/>
+        </record>
+        <record id="product_3" model="product.product">
+            <field name="name">Chicken Burger</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.hamburger')])]"/>
+            <field name="standard_price">5.0</field>
+            <field name="list_price">4.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_03.jpg"/>
+        </record>
+        <record id="product_4" model="product.product">
+            <field name="name">Kebab</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.gyros')])]"/>
+            <field name="standard_price">3.0</field>
+            <field name="list_price">3.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_04.jpg"/>
+        </record>
+        <record id="product_5" model="product.product">
+            <field name="name">Gyros</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.gyros')])]"/>
+            <field name="standard_price">3.5</field>
+            <field name="list_price">3.5</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_05.jpg"/>
+        </record>
+        <record id="product_6" model="product.product">
+            <field name="name">Gyros Plate</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.pizza')])]"/>
+            <field name="standard_price">5.5</field>
+            <field name="list_price">5.5</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_06.jpg"/>
+        </record>
+        <record id="product_7" model="product.product">
+            <field name="name">Ceasar Salad</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.salad')])]"/>
+            <field name="standard_price">4.0</field>
+            <field name="list_price">4.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_07.jpg"/>
+        </record>
+        <record id="product_8" model="product.product">
+            <field name="name">Fruit Salad</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.salad')])]"/>
+            <field name="standard_price">4.0</field>
+            <field name="list_price">4.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_08.jpg"/>
+        </record>
+        <record id="product_9" model="product.product">
+            <field name="name">Olive Salad</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.salad')])]"/>
+            <field name="standard_price">4.5</field>
+            <field name="list_price">4.5</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_09.jpg"/>
+        </record>
+        <record id="product_10" model="product.product">
+            <field name="name">Pizza Salami</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.pizza')])]"/>
+            <field name="standard_price">7.0</field>
+            <field name="list_price">7.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_10.jpg"/>
+        </record>
+        <record id="product_11" model="product.product">
+            <field name="name">Pizza Seafood</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.pizza')])]"/>
+            <field name="list_price">8.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_11.jpg"/>
+        </record>
+        <record id="product_12" model="product.product">
+            <field name="name">Pizza Margharita</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.pizza')])]"/>
+            <field name="standard_price">5.0</field>
+            <field name="list_price">5.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_12.jpg"/>
+        </record>
+        <record id="product_13" model="product.product">
+            <field name="name">Pizza Olive and Pepper</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.pizza')])]"/>
+            <field name="standard_price">6.0</field>
+            <field name="list_price">6.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_13.jpg"/>
+        </record>
+        <record id="product_14" model="product.product">
+            <field name="name">Pannini</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.sandwich')])]"/>
+            <field name="standard_price">4.0</field>
+            <field name="list_price">4.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_14.jpg"/>
+        </record>
+        <record id="product_15" model="product.product">
+            <field name="name">Salmon Pasta</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.pasta')])]"/>
+            <field name="list_price">8.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_15.jpg"/>
+        </record>
+        <record id="product_template_16" model="product.template">
+            <field name="name">Sandwich with Ham and Cheese</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">1</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_monglia_sale.sandwich')])]"/>
+            <field name="list_price">4.0</field>
+            <field name="image" type="base64" file="theme_monglia/static/src/img/content/product_img_16.jpg"/>
+        </record>
+
+        <record id="demo_discount" model="product.pricelist.item">
+            <field name="name">Monglia Demo Discount</field>
+            <field name="base">list_price</field>
+            <field name="applied_on">1_product</field>
+            <field name="pricelist_id" ref="product.list0"/>
+            <field name="product_tmpl_id" ref="theme_monglia_sale.product_template_16"/>
+            <field name="price_discount">25</field>
+            <field name="compute_price">formula</field>
+            <field name="sequence">1</field>
+        </record>
+    </data>
+</openerp>

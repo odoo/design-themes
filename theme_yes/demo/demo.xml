@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Demo Page" id="demo">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="s_title mt0" style="height: 168px; overflow: hidden;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mt32">
+                                <h1 class="text-center">
+                                    <font class="text-epsilon">Wedding Exhibition 2015</font>
+                                </h1>
+                                <h3 class="text-muted text-center em1 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                    <font class="text-blue">05.08.2015 - 08.08.2015 New York</font>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_banner_parallax parallax bg-img-05" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 1165.5px;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-9 col-sm-12 hero-bg">
+                                <h1>Present your products</h1>
+                                <h2>with this theme.</h2>
+                                <section>
+                                    <div class="oe_share">
+                                        <a class="btn btn-success btn-lg mt8" href="/contactus">
+                                            <i class="fa fa-arrow-right"/> Contact Us Now
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="jumbotron s_button mb0 mt0 o_animate bg-alpha" style="height: 240px; overflow: hidden; animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 text-muted mt48">
+                                <p class="mb0">
+                                    <strong>50,000+ companies run Odoo to grow their businesses.</strong>
+                                </p>
+                                <p class="mb0">Join us and make your company a better place.</p>
+                            </div>
+                            <div class="col-md-3 mt48">
+                                <a class="btn btn-success btn-lg" href="/contactus">
+                                    <i class="fa fa-arrow-right"/> Contact Us Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr class="s_separator"/>
+                <section class="s_three_columns mt32" style="height: 568px; overflow: hidden;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-1">
+                                <img class="img img-rounded img-responsive o_animate" src="/theme_yes/static/src/img/content/content_img_01.jpg" style="transition: none; -webkit-transition: none; animation-play-state: paused; -webkit-animation-play-state: paused;"/>
+                                <h4 class="mt16">Feature One</h4>
+                                <p>Adapt these three columns to fit you design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                            </div>
+                            <div class="col-md-4 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                                <img class="img img-responsive o_animate img-rounded" src="/theme_yes/static/src/img/content/content_img_07.jpg" style="animation-play-state: paused; -webkit-animation-play-state: paused;"/>
+                                <h4 class="mt16">Feature Two</h4>
+                                <p>To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the column to create a new one as a copy.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img img-rounded img-responsive o_animate" src="/theme_yes/static/src/img/content/content_img_09.jpg" style="transition: none; -webkit-transition: none; animation-play-state: paused; -webkit-animation-play-state: paused;"/>
+                                <h4 class="mt16">Feature Three</h4>
+                                <p>Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's
+                                    <em>rounded corner</em> style.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="parallax s_parallax oe_custom_bg oe_img_bg" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="height: 336px; overflow: hidden; background-image: url(/web/image/theme_common.image_content_01); background-attachment: scroll; background-position: 0px 1165.5px;">
+                    <div>
+                        <div class="oe_structure"/>
+                    </div>
+                </section>
+                <section class="s_title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mt48">
+                                <h1 class="text-center">
+                                    <font class="bg-epsilon">Top Wedding Dresses 2015</font>
+                                </h1>
+                                <h3 class="text-muted text-center em1 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">Now in our showrooms</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_product_list mt48 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container-fluid product-list">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/website/image/theme_common.image_product_01" style="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/website/image/theme_common.image_product_02" style="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/website/image/theme_common.image_product_03" style="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/website/image/theme_common.image_product_04" style="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/website/image/theme_common.image_product_05" style="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="http://www.odoo.com">
+                                    <img alt="#" src="/website/image/theme_common.image_product_06" style="img img-responsive"/>
+                                </a>
+                                <a class="btn btn-default" href="http://www.odoo.com">
+                                    <i class="fa fa-eye"/>Watch item
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_cubes o_animate bg-epsilon" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 o_animate bg-img-07" style="animation-play-state: paused; -webkit-animation-play-state: paused;"/>
+                            <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                <div class="row">
+                                    <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                                        <div class="cube-heading">
+                                            <h4 class="text-center o_animate em2" style="animation-play-state: paused; -webkit-animation-play-state: paused;">A good subtitle</h4>
+                                            <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 oe_custom_bg oe_img_bg" style="background-image: url(/web/image/theme_common.image_product_08);"/>
+                                </div>
+                                <div class="row">
+                                    <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 oe_custom_bg oe_img_bg" style="background-image: url(/web/image/theme_common.image_product_07);"/>
+                                    <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                                        <div class="cube-heading">
+                                            <h4 class="text-center em2 o_animate" style="animation-play-state: paused; -webkit-animation-play-state: paused;">A good subtitle</h4>
+                                            <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_picture_text mt64">
+                    <div class="container">
+                        <div class="row mb32 mt32">
+                            <div class="col-md-4 col-sm-12">
+                                <h3>The latest technology</h3>
+                                <blockquote>
+                                    <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                                    <small>Author of this quote</small>
+                                </blockquote>
+                                <p>Product design is the process of creating a new product to be sold by a business to its customers. A very broad concept, it is essentially the efficient and effective generation and development of ideas through a process that leads to new products.</p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 text-center">
+                                <img alt="#" src="/website/image/theme_common.image_content_05" style="img img-responsive"/>
+                                <a href="https://www.odoo.com">DISCOVER THE PRODUCT</a>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <h3>The best approach</h3>
+                                <blockquote>
+                                    <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                                    <small>Author of this quote</small>
+                                </blockquote>
+                                <p>In a systematic approach, product designers conceptualize and evaluate ideas, turning them into tangible inventions and products. The product designer's role is to combine art, science, and technology to create new products that other people can use.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_timeline o_animation o_displayed_bottom o_displayed_top o_displayed_middle o_visible_bottom o_animate bg-beta o_visible_middle" style="animation-play-state: paused; -webkit-animation-play-state: paused;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2>Present Your Evolution with this Timeline</h2>
+                                <h3 class="text-muted">Tell Your Story</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <ul class="s_timeline_ul">
+                                    <li>
+                                        <div class="s_timeline_badge">
+                                            <i class="fa fa-asterisk"/>
+                                        </div>
+                                        <div class="s_timeline_panel">
+                                            <div class="s_timeline_panel_content">
+                                                <div class="s_timeline_heading">
+                                                    <h4 class="s_timeline_date pull-right">2014</h4>
+                                                    <h4 class="s_timeline_title">Your Function</h4>
+                                                    <h3 class="s_timeline_company">COMPANY NAME</h3>
+                                                    <h5 class="s_timeline_info">Description of the tasks</h5>
+                                                </div>
+                                                <div class="s_timeline_body">
+                                                    <p>Use Theme Clean Timeline as a part of your resume or to show your visitors what you've done in the past. You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_timeline_panel">
+                                            <div class="s_timeline_panel_content">
+                                                <div class="s_timeline_heading">
+                                                    <h4 class="s_timeline_date pull-right">2014</h4>
+                                                    <h4 class="s_timeline_title">Your Function</h4>
+                                                    <h3 class="s_timeline_company">COMPANY NAME</h3>
+                                                    <h5 class="s_timeline_info">Description of the tasks</h5>
+                                                </div>
+                                                <div class="s_timeline_body">
+                                                    <p>A timeline is a graphical representation of a period of time, on which important events are marked.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="s_timeline_inverted">
+                                        <div class="s_timeline_badge warning">
+                                            <i class="fa fa-asterisk"/>
+                                        </div>
+                                        <div class="s_timeline_panel">
+                                            <div class="s_timeline_panel_content">
+                                                <div class="s_timeline_heading">
+                                                    <h4 class="s_timeline_date pull-right">2014</h4>
+                                                    <h4 class="s_timeline_title">Your Function</h4>
+                                                    <h3 class="s_timeline_company">COMPANY NAME</h3>
+                                                    <h5 class="s_timeline_info">Description of the tasks</h5>
+                                                </div>
+                                                <div class="s_timeline_body">
+                                                    <p>A timeline is a graphical representation of a period of time, on which important events are marked. Use Theme Clean Timeline as a part of your resume or to show your visitors what you've done in the past. You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_comparisons">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center mt16 mb32">
+                                <h2>Our Offers</h2>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading text-center">
+                                        <h2 style="margin: 0px;">Beginner</h2>
+                                        <p class="text-muted" style="margin: 0px;">Starter package</p>
+                                    </div>
+                                    <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                                        <h2 style="margin: 0px;">
+                                            <font class="text-blue">$
+                                                <b style="font-size: 60px">450</b>
+                                                <small>.00</small>
+                                            </font>
+                                        </h2>
+                                        <div>per month</div>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item active">Battery: 8 hours</li>
+                                        <li class="list-group-item">Screen: 2.5 inch</li>
+                                        <li class="list-group-item">Weight: 1.1 ounces</li>
+                                        <li class="list-group-item">No support</li>
+                                    </ul>
+                                    <div class="panel-footer text-center">
+                                        <p class="text-muted">
+                                            <i>Free shipping, satisfied or reimbursed.</i>
+                                        </p>
+                                        <a class="btn btn-danger btn-lg" href="/contactus">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading text-center">
+                                        <h2 style="margin: 0px;">Professional</h2>
+                                        <p style="margin: 0px;">Enterprise package</p>
+                                    </div>
+                                    <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                                        <h2 style="margin: 0px;">
+                                            <font class="text-epsilon">
+                                                <span>$</span>
+                                                <b style="font-size: 60px">590</b>
+                                                <small>.00</small>
+                                            </font>
+                                        </h2>
+                                        <div>per month</div>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item active">Battery: 12 hours</li>
+                                        <li class="list-group-item">Screen: 2.8 inch</li>
+                                        <li class="list-group-item">Weight: 1.2 ounces</li>
+                                        <li class="list-group-item">Limited support</li>
+                                    </ul>
+                                    <div class="panel-footer text-center">
+                                        <p class="text-muted">
+                                            <i>Free shipping, satisfied or reimbursed.</i>
+                                        </p>
+                                        <a class="btn btn-success btn-lg" href="/contactus">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading text-center">
+                                        <h2 style="margin: 0px;">Expert</h2>
+                                        <p class="text-muted" style="margin: 0px;">The top of the top</p>
+                                    </div>
+                                    <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
+                                        <h2 style="margin: 0px;">
+                                            <span>$</span>
+                                            <b style="font-size: 60px">890</b>
+                                            <small>.00</small>
+                                        </h2>
+                                        <div>per month</div>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item active">Battery: 20 hours</li>
+                                        <li class="list-group-item">Screen: 2.8 inch</li>
+                                        <li class="list-group-item">Weight: 1.2 ounces</li>
+                                        <li class="list-group-item">Unlimited support</li>
+                                    </ul>
+                                    <div class="panel-footer text-center">
+                                        <p class="text-muted">
+                                            <i>Free shipping, satisfied or reimbursed.</i>
+                                        </p>
+                                        <a class="btn btn-danger btn-lg" href="/contactus">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="parallax s_parallax oe_custom_bg oe_img_bg" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="height: 240px; overflow: hidden; background-image: url(/web/image/theme_kea.bg_img_10); background-attachment: scroll; background-position: 0px 1165.5px;">
+                    <div>
+                        <div class="oe_structure"/>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

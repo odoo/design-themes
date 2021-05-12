@@ -1,0 +1,44 @@
+body {
+    &.o_bigslide_open {
+        #wrapwrap {
+            header .navbar {
+                right: 0px;
+            }
+        }
+    }
+}
+#wrapwrap {
+    header {
+        .navbar {
+            right: -300px;
+            text-align: left;
+            width: 360px;
+            &.active {
+                right: 0;
+            }
+            .container {
+                left: 60px;
+                box-shadow: -6px 0px 20px 0px rgba(0,0,0,0.5);
+                li {
+                    text-align: left;
+                    a {
+                        text-align: left;
+                    }
+                }
+            }
+            #menuToggle {
+                left: 20px;
+            }
+        }
+    }
+}
+.navbar-static-top {
+    li:not(.open) {
+        &:hover {
+            border-left: 3px solid @color-epsilon;
+            a {
+                padding-left: 20px!important;
+            }
+        }
+    }
+}
