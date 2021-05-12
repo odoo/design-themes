@@ -56,6 +56,5 @@ wTourUtils.registerThemeHomepageTour("monglia_tour", [
 
     wTourUtils.dragNDrop(snippets[5]),
     wTourUtils.dragNDrop(snippets[6]),
-    wTourUtils.clickOnSave(),
 ]);
 });

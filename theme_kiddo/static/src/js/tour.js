@@ -40,6 +40,5 @@ wTourUtils.registerThemeHomepageTour("kiddo_tour", [
     wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.clickOnSave(),
 ]);
 });
