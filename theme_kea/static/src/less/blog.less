@@ -1,0 +1,132 @@
+/* =====================  BLOG ===================== */
+
+#blog_right_column {
+    padding: 0 15px 35px 30px;
+}
+.website_blog {
+    .col-sm-8 {
+        padding: 0 15px 30px 35px;
+    }
+}
+.post-meta {
+    margin-top: 20px;
+    text-align: left;
+}
+.blog_title {
+    .post-meta {
+        text-align: center;
+    }
+}
+#main_column {
+    h4 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+}
+
+/* =====================  FORUM ===================== */
+
+.website_forum {
+    background-color: @color-eta;
+    margin-top: 0px !important;
+    width: 100%;
+    .navbar-default .navbar-nav > li > a, .navbar-header span {
+        color: @color-delta;
+    }
+    .navbar-right {
+        margin-bottom: 0;
+        .btn {
+            padding: 5px 20px;
+        }
+    }
+    li.active > a {
+        background-color: @color-zeta !important;
+    }
+}
+.website_forum + #wrap {
+    padding: 35px;
+    .col-sm-3 {
+        .btn-block {
+            background-color: @color-epsilon;
+            color: white;
+        }
+    }
+    .question {
+        .oe_grey {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+.forum_docs {
+    margin-top: 30px;
+    padding: 10px 35px;
+    background-color: white;
+}
+
+/* ============== Breadcrumb in events, job etc ============== */
+
+#wrapwrap .breadcrumb {
+    background: rgba(0, 0, 0, 0);
+    .BorderRadius(0px);
+}
+/* ============== Nav-pills in events, job etc ============== */
+#wrapwrap .nav-pills {
+    li a {
+        color: @gray-light;
+        &:hover {
+            color: @gray;
+        }
+    }
+    li.active > a {
+        color: @color-epsilon !important;
+        background: rgba(0, 0, 0, 0);
+        &:hover {
+            background-color: @gray-lighter;
+            color: @gray !important;
+        }
+        .badge {
+            color: @color-alpha;
+            background-color: @color-epsilon;
+        }
+    }
+}
+
+/* ============== Panel styles ============== */
+#wrapwrap {
+    .panel-heading {
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: none;
+        color: @color-epsilon !important;
+    }
+    .panel-footer {
+        background: rgba(0, 0, 0, 0);
+    }
+    .panel {
+        text-align: center;
+        border: none;
+        box-shadow: none;
+        border: 1px solid @gray-lighter;
+        .BorderRadius (0px);
+        .list-group-item {
+            border-color: white;
+        }
+        &.note-editor {
+            text-align: initial;
+        }
+    }
+    .panel-title {
+        font-size: 20px;
+    }
+}
+
+/* =====================  DOCUMENTATION ===================== */
+
+[data-view-xmlid*="website_forum_doc.documentation_post"] {
+    .container:first-child {
+        margin-bottom: 0px !important;
+        height: 90px;
+        padding-top: 20px;
+    }
+}

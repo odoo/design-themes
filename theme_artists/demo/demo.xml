@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Demo Page" id="website.demo" page="True">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="carousel slide" data-interval="10000" id="myCarousel4">
+                    <ol class="carousel-indicators" type="01">
+                        <li class="active" data-slide-to="0" data-target="#myCarousel4"/>
+                        <li data-slide-to="1" data-target="#myCarousel4"/>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item bg-img-01 active">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12 hero-bg">
+                                        <h1>Generate customers</h1>
+                                        <h2>from visitors.</h2>
+                                        <img alt="#" src="/website/image/theme_common.image_content_01" class="img img-responsive"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item bg-img-02">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12 hero-bg">
+                                        <h1>Present your products</h1>
+                                        <h2>with this Theme.</h2>
+                                        <img alt="#" src="/website/image/theme_common.image_content_01" class="img img-responsive"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control left" data-slide="prev" data-target="#myCarousel4" href="#myCarousel4">
+                        <i class="fa fa-chevron-left"/>
+                    </div>
+                    <div class="carousel-control right" data-slide="next" data-target="#myCarousel4" href="#myCarousel4">
+                        <i class="fa fa-chevron-right"/>
+                    </div>
+                </section>
+                <section class="s_separator_block bg-alpha" style="height: 80px; overflow: hidden;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="s_separator_block-container"/></div>
+                    </div>
+                </section>
+                <section class="s_title" style="height: 184px; overflow: hidden;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="text-center">Discover Our Gallery</h1>
+                                <h3 class="text-muted text-center px18 o_animate" style="animation-play-state: paused;">The new painting exhibition</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_big_picture_text">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 hero-image">
+                                <img alt="#" src="/website/image/theme_common.image_content_02" class="img img-responsive"/>
+                            </div>
+                            <div class="col-md-6 col-sm-12 hero-paragraph">
+                                <h1 class="mt32">Endless Possibilities</h1>
+                                <h2>The only theme you need</h2>
+                                <p>This powerful theme along with its unique structure lets you create any design style with just one theme. These simple yet powerful options allow you to create any type of website. No two versions will ever look the same.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_big_picture">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-12 hero-paragraph">
+                                <h1 class="mt32">Endless Possibilities</h1>
+                                <h2>The only theme you need</h2>
+                                <p>This powerful theme along with its unique structure lets you create any design style with just one theme. These simple yet powerful options allow you to create any type of website. No two versions will ever look the same.</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 hero-image">
+                                <img alt="#" src="/website/image/theme_common.image_content_03" class="img img-responsive"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_cubes">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 bg-img-03"/>
+                            <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                <div class="row">
+                                    <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                                        <div class="cube-heading">
+                                            <h4 class="text-center">A good subtitle</h4>
+                                            <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-04"/></div>
+                                <div class="row">
+                                    <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-02"/>
+                                    <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                                        <div class="cube-heading">
+                                            <h4 class="text-center">A good subtitle</h4>
+                                            <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_three_columns">
+                    <div class="container mt64">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img img-rounded img-responsive o_animate" src="/theme_artists/static/src/img/content/content_img_06.jpg" style="transition: none; animation-play-state: paused;"/>
+                                <h4 class="mt16">Feature Two</h4>
+                                <p>To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the column to create a new one as a copy.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img img-rounded img-responsive o_animate" src="/theme_artists/static/src/img/content/content_img_07.jpg" style="transition: none; animation-play-state: paused;"/>
+                                <h4 class="mt16">Feature Two</h4>
+                                <p>To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the column to create a new one as a copy.</p>
+                            </div>
+                            <div class="col-md-12">
+                                <img class="img img-rounded img-responsive o_animate" src="/theme_artists/static/src/img/content/content_img_01.jpg" style="transition: none; animation-play-state: paused;"/>
+                                <h4 class="mt16">Feature Two</h4>
+                                <p>To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the column to create a new one as a copy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_header_text_big_picture">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 text-center mt32 mb32">
+                                <h1>The product which fits your needs</h1>
+                            </div>
+                            <div class="col-md-6 mb16 mt16">
+                                <p>Design expression comes from the combined effect of all elements in a product. Colour tone, shape and size should direct a person's thoughts towards buying the product. Therefore it is in the product designer's best interest to consider the audiences who are most likely to be the product's end consumers. Keeping in mind how consumers will perceive the product during the design process will direct towards the product’s success in the market. However, even within a specific audience, it is challenging to cater to each possible personality within that group.</p>
+                            </div>
+                            <div class="col-md-6 mb16 mt16">
+                                <p>The solution to that is to create a product that, in its designed appearance and function, expresses a personality or tells a story. Products that carry such attributes are more likely to give off a stronger expression that will attract more consumers. On that note it is important to keep in mind that design expression does not only concern the appearance of a product, but also its function. For example, as humans our appearance as well as our actions are subject to people's judgment when they are making a first impression of us.</p>
+                            </div>
+                            <div class="col-md-12">
+                                <img alt="#" src="/website/image/theme_common.image_content_04" class="img img-responsive"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_separator_block bg-alpha" style="height: 128px; overflow: hidden;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="s_separator_block-container"/>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

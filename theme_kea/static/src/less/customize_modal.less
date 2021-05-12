@@ -1,0 +1,244 @@
+/* ================== MODAL COLORS ================= */
+
+@modalGreen: @colorPreset6_color2;
+@modalGreenDark: darken(@modalGreen, 5%);
+@modalGreenLight: lighten(@modalGreen, 15%);
+@modalOrange: @colorPreset5_color1;
+@modalBlue: #151C24;
+@modalLightBlue: lighten(@modalBlue, 20%);
+
+/* ======================= COLOR PRESET 1 ====================== */
+
+#theme_customize_modal .row .colorPreset1 div:nth-child(1) {background-color: @gray-white;}
+#theme_customize_modal .row .colorPreset1 div:nth-child(2) {background-color: @colorPreset1_color1;}
+#theme_customize_modal .row .colorPreset1 div:nth-child(3) {background-color: @colorPreset1_color2;}
+#theme_customize_modal .row .colorPreset1 div:nth-child(4) {background-color: @colorPreset1_color3;}
+#theme_customize_modal .row .colorPreset1 div:nth-child(5) {background-color: @colorPreset1_color4;}
+
+/* ======================= COLOR PRESET 2 ====================== */
+
+#theme_customize_modal .row .colorPreset2 div:nth-child(1) {background-color: @colorPreset2_color1;}
+#theme_customize_modal .row .colorPreset2 div:nth-child(2) {background-color: @colorPreset2_color2;}
+#theme_customize_modal .row .colorPreset2 div:nth-child(3) {background-color: @gray-white;}
+#theme_customize_modal .row .colorPreset2 div:nth-child(4) {background-color: @colorPreset2_color3;}
+#theme_customize_modal .row .colorPreset2 div:nth-child(5) {background-color: @colorPreset2_color4;}
+
+/* ======================= COLOR PRESET 3 ====================== */
+
+#theme_customize_modal .row .colorPreset3 div:nth-child(1) {background-color: @colorPreset3_color1;}
+#theme_customize_modal .row .colorPreset3 div:nth-child(2) {background-color: @colorPreset3_color2;}
+#theme_customize_modal .row .colorPreset3 div:nth-child(3) {background-color: @gray-white;}
+#theme_customize_modal .row .colorPreset3 div:nth-child(4) {background-color: @colorPreset3_color3;}
+#theme_customize_modal .row .colorPreset3 div:nth-child(5) {background-color: @colorPreset3_color4;}
+
+/* ======================= COLOR PRESET 4 ====================== */
+
+#theme_customize_modal .row .colorPreset4 div:nth-child(1) {background-color: @colorPreset4_color1;}
+#theme_customize_modal .row .colorPreset4 div:nth-child(2) {background-color: @colorPreset4_color2;}
+#theme_customize_modal .row .colorPreset4 div:nth-child(3) {background-color: @gray-white;}
+#theme_customize_modal .row .colorPreset4 div:nth-child(4) {background-color: @colorPreset4_color3;}
+#theme_customize_modal .row .colorPreset4 div:nth-child(5) {background-color: @colorPreset4_color4;}
+
+/* ======================= COLOR PRESET 5 ====================== */
+
+#theme_customize_modal .row .colorPreset5 div:nth-child(1) {background-color: @colorPreset5_color1;}
+#theme_customize_modal .row .colorPreset5 div:nth-child(2) {background-color: @colorPreset5_color2;}
+#theme_customize_modal .row .colorPreset5 div:nth-child(3) {background-color: @gray-white;}
+#theme_customize_modal .row .colorPreset5 div:nth-child(4) {background-color: @colorPreset5_color3;}
+#theme_customize_modal .row .colorPreset5 div:nth-child(5) {background-color: @colorPreset5_color4;}
+
+/* ======================= COLOR PRESET 6 ====================== */
+
+#theme_customize_modal .row .colorPreset6 div:nth-child(1) {background-color: @colorPreset6_color1;}
+#theme_customize_modal .row .colorPreset6 div:nth-child(2) {background-color: @colorPreset6_color2;}
+#theme_customize_modal .row .colorPreset6 div:nth-child(3) {background-color: @gray-white;}
+#theme_customize_modal .row .colorPreset6 div:nth-child(4) {background-color: @colorPreset6_color3;}
+#theme_customize_modal .row .colorPreset6 div:nth-child(5) {background-color: @colorPreset6_color4;}
+
+/* ======================= BACKGROUNDS ====================== */
+
+#theme_customize_modal #bgcolor .bg_color_01 {background-color: @gray-white;}
+#theme_customize_modal #bgcolor .bg_color_02 {background-color: @colorPreset2_color2;}
+#theme_customize_modal #bgcolor .bg_color_03 {background-color: @gray-light;}
+#theme_customize_modal #bgcolor .bg_color_04 {background-color: @colorPreset3_color2;}
+#theme_customize_modal #bgcolor .bg_color_05 {background-color: @colorPreset3_color4;}
+#theme_customize_modal #bgcolor .bg_color_06 {background-color: @colorPreset4_color2;}
+#theme_customize_modal #bgcolor .bg_color_07 {background-color: @colorPreset5_color4;}
+#theme_customize_modal #bgcolor .bg_color_08 {background-color: @colorPreset3_color2;}
+
+/* ================== THEME CUSTOMIZE MODAL =============== */
+
+#theme_customize_modal {
+    label > div, label > img, label > h6, label > h4 {
+        border: none;
+        padding: 3px;
+    }
+    label.checked > div, label.checked > img, label.checked > h6, label.checked > h4 {
+        box-shadow: none;
+        background-color: @modalLightBlue;
+    }
+    h4 {
+        color: @gray-white;
+        text-align: left;
+    }
+    h6 {
+        color: @gray-white;
+    }
+    p {
+        color: @gray-white;
+    }
+    .row {
+        .col-md-2 {
+            padding-right: 0px;
+        }
+    }
+}
+#theme_customize_modal {
+    .modal-header {
+        border-bottom: none;
+    }
+    .nav-tabs > li.active > a, &:hover, &:focus, .nav > li > a:hover, &:focus {
+        background-color: @gray-dark;
+        border: none;
+        color: @modalOrange;
+    }
+
+    .nav-tabs > li > a {
+        margin-right: 0px;
+        &:hover {
+            border-radius: 0px;
+            border: none;
+        }
+    }
+    .nav-tabs > li > a, .nav > li > a {
+        border-radius: 0px;
+        border: none;
+    }
+    .modal-dialog .nav > li > a {
+        padding: 15px 5px;
+    }
+    .modal-h6 {
+        font-size: 30px;
+    }
+    .interface {
+        width: 350px;
+        margin-top: 20px;
+        position: relative;
+        font-family: "Cuprum-Regular";
+
+        .left-content {
+            background-color: @modalGreen;
+            width: 70px;
+            padding-left: 0px;
+            .VAlignTop;
+            ul {
+                border: none;
+            }
+        }
+
+        .right-content {
+            .VAlignTop;
+            padding: 0px;
+            background-color: @gray-dark;
+            .tab-content {
+                overflow-x: hidden;
+                height: 480px;
+            }
+        }
+    }
+    .close {
+        padding: .2em .4em;
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        float: right;
+        font-weight: bold;
+        opacity: .9;
+        text-shadow: none;
+    }
+    .left-content-block a {
+        display: block;
+        min-height: 70px;
+        width: 70px;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        font-size: 12px;
+
+        &:hover, &:focus, &:active {
+            background-image: none;
+        }
+
+        span {
+            margin-bottom: 13px;
+        }
+    }
+    .left-content-block .glyphicon:hover, .glyphicon:focus {
+        color: @modalOrange;
+    }
+    .glyphicon {
+        font-size: 20px;
+        padding-bottom: 5px;
+        color: @gray-white;
+    }
+    .color-combi {
+        .col-xs-2 {
+            width: 43px;
+            height: 43px;
+            padding: 0px;
+        }
+        .row {
+            border-color: @gray-light !important;
+        }
+    }
+    .tab-pane > .row > .col-xs-6 {
+        padding: 0px;
+    }
+    #bgcolor {
+        .col-xs-12 {
+            height: 50px;
+            margin-bottom: 15px;
+        }
+    }
+    #pattern {
+        .col-xs-12 {
+            .pattern-swatch {
+                width: 250px;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    #color {
+        p:first-child {
+            margin-top: 15px;
+        }
+    }
+}
+
+#theme_customize_modal {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+/* ====================== LOGIN =====================*/
+
+.oe_login_form {
+    .oe_login_buttons {
+        .btn-primary {
+            background: rgba(0, 0, 0, 0) !important;
+            &:hover {
+                color: @color-delta !important;
+            }
+        }
+        .btn-link {
+            color: @color-delta;
+        }
+    }
+}
+.oe_website_login_container {
+    padding: 50px;
+}

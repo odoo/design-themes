@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="theme_graphene.option_font_abel"  model="ir.ui.view" >
+      <field name="active" eval="True"/>
+    </record>
+
+    <template id="website.style" name="Style" page="True">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure demo_style text-center">
+
+          <h5 class="text-center mt32 mb0">BUTTONS</h5>
+          <hr class="mt4 mb4"/>
+          <small>Click them to get a preview </small>
+
+          <section class="container text-center mt32 mb48">
+            <button class="btn btn-lg btn-default" type="button">Default</button>
+            <button class="btn btn-lg btn-primary" type="button">Primary</button>
+            <button class="btn btn-lg btn-success" type="button">Success</button>
+            <button class="btn btn-lg btn-info" type="button">Info</button>
+            <button class="btn btn-lg btn-warning" type="button">Warning</button>
+            <button class="btn btn-lg btn-danger" type="button">Danger</button>
+            <button class="btn btn-lg btn-link" type="button">Link</button>
+            <h1 class="mt4 mb4"/>
+            <button class="btn btn-default" type="button">Default</button>
+            <button class="btn btn-primary" type="button">Primary</button>
+            <button class="btn btn-success" type="button">Success</button>
+            <button class="btn btn-info" type="button">Info</button>
+            <button class="btn btn-warning" type="button">Warning</button>
+            <button class="btn btn-danger" type="button">Danger</button>
+            <button class="btn btn-link" type="button">Link</button>
+          </section>
+
+          <h5 class="text-center mt92 mb0">LABELS</h5>
+          <hr class="mt4 mb4"/>
+          <section class="container text-center mt16 mb48">
+            <span class="label label-default">Default</span>
+            <span class="label label-primary">Primary</span>
+            <span class="label label-success">Success</span>
+            <span class="label label-info">Info</span>
+            <span class="label label-warning">Warning</span>
+            <span class="label label-danger">Danger</span>
+          </section>
+
+          <h5 class="text-center mt92 mb0">PATTERNS</h5>
+          <hr class="mt4 mb4"/>
+          <section class="container text-center mt16 mb48">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="panel bg_patt-01" style="height:200px"/>
+                </div>
+                <div class="col-md-2">
+                  <div class="panel bg_patt-02" style="height:200px"/>
+                </div>
+                <div class="col-md-2">
+                  <div class="panel bg_patt-03" style="height:200px"/>
+                </div>
+                <div class="col-md-2">
+                  <div class="panel bg_patt-04" style="height:200px"/>
+                </div>
+                <div class="col-md-2">
+                  <div class="panel bg_patt-05" style="height:200px"/>
+                </div>
+                <div class="col-md-2">
+                  <div class="panel bg_patt-06" style="height:200px"/>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <h5 class="text-center mt92 mb0">Typography</h5>
+          <hr class="mt4 mb4"/>
+          <div class="container text-left">
+            <div class="col-md-6">
+              <h1><strong>H1</strong> - My awesome title</h1>
+              <h2><strong>H2</strong> - My awesome title</h2>
+              <h3><strong>H3</strong> - My awesome title</h3>
+              <h4><strong>H4</strong> - My awesome title</h4>
+              <h5><strong>H5</strong> - My awesome title</h5>
+              <h6><strong>H6</strong> - My awesome title</h6>
+            </div>
+            <div class="col-md-6">
+              <p class="mt32">Paragraphs.<br/>Integer dictum condimentum urna in viverra. Sed ut lacus vitae leo ornare rhoncus. Cras accumsan, justo id bibendum sollicitudin, dolor erat rutrum leo, varius sodales enim turpis et lacus. Ut augue ante, pretium nec venenatis et, tempor scelerisque sapien. Nam eu elit efficitur, luctus tellus eget, vehicula augue. Integer porttitor laoreet pellentesque. Aenean non velit ut nibh ultricies commodo posuere congue risus.</p>
+              <p><strong>This is a strong text</strong></p>
+              <p><em>This is an italic text</em></p>
+              <p><u>This is an underlined text</u></p>
+            </div>
+          </div>
+
+          <h5 class="text-center mt92 mb0">Styled Titles</h5>
+          <hr class="mt4 mb32"/>
+          <div class="container">
+            <div class="col-md-6">
+              <h1 class="text-center o_animate o_not-animable title-boxed">A boxed Title</h1>
+            </div>
+            <div class="col-md-6">
+              <h1 class="text-center o_animate o_not-animable title-underlined">An underlined Title</h1>
+            </div>
+          </div>
+
+          <h5 class="text-center mt92 mb0">Text costumization</h5>
+          <hr class="mt4 mb32"/>
+          <div class="container mb128">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="text-center letterSpacing4">Custom letter's spacing</h3>
+              </div>
+              <div class="col-md-6">
+                <h3 class="text-center text-uppercase">Uppercase text</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="text-center serif">A serif text</h3>
+              </div>
+              <div class="col-md-6">
+                <h3 class="text-center sans-serif">A sans-serif text</h3>
+              </div>
+            </div>
+          </div>
+        </div> <!-- #wrap -->
+      </t>
+    </template>
+
+    <record id="graphene_style_menu" model="website.menu">
+      <field name="name">Style</field>
+      <field name="url">/page/style</field>
+      <field name="parent_id" ref="demo_blocks_menu"/>
+      <field name="sequence" type="int">1</field>
+    </record>
+
+  </data>
+</openerp>

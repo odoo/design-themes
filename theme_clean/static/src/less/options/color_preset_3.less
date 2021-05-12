@@ -1,0 +1,106 @@
+// GRAYS
+// Adjust to vary the intensity of texts ans headings
+@gray-darker: lighten(#000, 20%);
+@gray-dark: lighten(#000, 40%);
+@gray: lighten(#000, 50%);
+@gray-light: lighten(#000, 70%);
+@gray-lighter: lighten(#000, 80%);
+
+// COLORS
+@color-alpha: @color-red;
+@color-beta: @color-red-dark;
+@color-gamma: @color-orange;
+@color-delta: @color-sand;
+@color-epsilon: @color-orange-dark;
+
+// COLORED TEXT
+.text-alpha {
+    color: @color-sand !important;
+}
+.text-beta {
+    color: @color-orange !important;
+}
+.text-gamma {
+    color: @color-red-dark !important;
+}
+.text-delta {
+    color: @color-red !important;
+}
+.text-epsilon {
+    color: @color-orange-dark !important;
+}
+
+// COLORED BG
+.bg-alpha {
+    .bg-sand;
+}
+.bg-beta {
+    .bg-orange;
+}
+.bg-gamma {
+    .bg-red-dark;
+}
+.bg-delta {
+    .bg-red;
+}
+.bg-epsilon {
+    .bg-orange-dark;
+}
+
+// TEXT & LINKS
+@text-muted: @color-gamma;
+@link-color: @color-alpha;
+@link-hover-color: @color-beta;
+
+// BUTTONS
+@btn-primary-bg: @color-red;
+@btn-success-bg: @color-orange;
+@btn-info-bg: @color-yellow-dark;
+@btn-warning-bg: @color-orange-dark;
+@btn-danger-bg: @color-red-dark;
+
+.btn .fa {
+    color: white;
+}
+
+.btn-default .fa {
+    color: @gray-dark;
+}
+
+// transparent BG
+// Used in snippets Prx Image Color and Prx Image Shade
+.bg-transparent-color {
+    background-color: @color-red-dark;
+    opacity: 0.85;
+}
+
+// Navbar
+@navbar-default-bg: darken(@color-red-dark, 15%);
+@navbar-default-link-color: white;
+@navbar-default-link-hover-color: @gray-light;
+@navbar-default-link-active-color: white;
+@navbar-default-link-active-bg: @color-red-dark;
+
+// Footer
+#wrapwrap footer {
+    background-color: darken(@color-red-dark, 20%);
+    color: white;
+}
+footer .container .pull-left {
+    color: @color-clouds;
+}
+footer ul li a {
+    color: @color-silver;
+}
+footer ul li a:hover {
+    color: @color-clouds;
+    text-decoration: none;
+}
+footer h4 {
+    color: @gray-light;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+}
+footer .fa {
+    color: @gray-light;
+}

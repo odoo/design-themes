@@ -1,0 +1,23 @@
+<openerp>
+  <data>
+
+    <template id="assets_frontend_less" name="Google Map Assets" inherit_id="website.assets_frontend">
+      <xpath expr="." position="inside">
+        <link href="/snippet_google_map/static/src/less/s_google_map.less" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+    <template id="assets_frontend_js" name="Google Map Assets" inherit_id="website.assets_frontend">
+      <xpath expr="//script[last()]" position="after">
+        <script src="/snippet_google_map/static/src/js/s_google_map_frontend.js" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+    <template id="assets_editor" name="Google Map Editor Assets" inherit_id="website.assets_editor">
+      <xpath expr="." position="inside">
+        <script src="/snippet_google_map/static/src/js/s_google_map_editor.js" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+  </data>
+</openerp>

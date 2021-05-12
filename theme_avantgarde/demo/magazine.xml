@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record id="demo_page_magazine" model="website.menu">
+      <field name="name">Homepage - Magazine</field>
+      <field name="url">/page/magazine</field>
+      <field name="parent_id" ref="menu_demo"/>
+      <field name="sequence" type="int">20</field>
+      <field name="website_id" ref="website.default_website"/>
+    </record>
+
+    <template id="website.magazine" page="True" name="Avantgarde - Magazine">
+      <t t-call="website.layout">
+        <div class="oe_structure demo_magazine" id="wrap">
+          <section class="s_showcase_image container-fluid mb32 bg-gray-darker" style="height: 232px; overflow: hidden;">
+            <div class="row">
+              <figure class="col-sm-6 col-md-6 bl bg-img-01">
+                <figcaption class="o_animable">
+                  <h6>DAOA MUSEUM</h6>An expansive gallery for special exhibitions will be 18,000 square feet in area.
+                </figcaption>
+              </figure>
+              <div class="info col-sm-6 col-sm-offset-0 col-md-6">
+                <div class="row" >
+                  <div class="content col-sm-11 col-md-10 col-md-offset-1" >
+                    <h3 class="text-small_caps mb0">Latest article</h3>
+                    <h4 class="text-primary mt0">New exhibition downtown</h4>
+                    <p>Reflecting the way artists think and work, all mediums are presented together without hierarchy. Numerous pieces that have rarely, if ever, been...</p>
+                    <a class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr/>
+
+          <div class="row">
+            <div class="col-md-4">
+              <img src="/theme_avantgarde/static/src/img/pictures/bg_image_07.jpg" class="img-responsive"/>
+              <hr/>
+              <h3>Impressionism, an overwiew</h3>
+              <p class="drop-caps_alpha">Impressionism is a 19th-century art movement that originated with a group of Paris-based artists. Their independent exhibitions brought them to prominence during the 1870s and 1880s, in spite of harsh opposition from the conventional art community in France.<br/>The name of the style derives from the title of a Claude Monet work, Impression, soleil levant (Impression, Sunrise), which provoked the critic Louis Leroy to coin the term in a satirical review published in the Parisian newspaper Le Charivari.<br/>Impressionist painting characteristics include relatively small, thin, yet visible brush strokes, open composition, emphasis on accurate depiction of light in its changing qualities (often accentuating the effects of the passage of time), ordinary subject matter, inclusion of movement as a crucial element of human perception and experience, and unusual visual angles.<br/>The development of Impressionism in the visual arts was soon followed by analogous styles in other media that became known as impressionist music and impressionist literature.<br/>
+              Radicals in their time, early Impressionists violated the rules of academic painting. They constructed their pictures from freely brushed colours that took precedence over lines and contours, following the example of painters such as Eugène Delacroix and J. M. W. Turner.<br/>They also painted realistic scenes of modern life, and often painted outdoors. Previously, still lifes and portraits as well as landscapes were usually painted in a studio.[1] The Impressionists found that they could capture the momentary and transient effects of sunlight by painting en plein air.<br/>They portrayed overall visual effects instead of details, and used short "broken" brush strokes of mixed and pure unmixed colour—not blended smoothly or shaded, as was customary—to achieve an effect of intense colour vibration.
+            </p>
+
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5 class="text-right">During the 1860s, the Salon jury routinely rejected about half of the works submitted by Monet and his friends in favour of works by artists faithful to the approved style. <br/> In 1863, the Salon jury rejected Manet's The Luncheon on the Grass (Le déjeuner sur l'herbe) primarily because it depicted a nude woman with two clothed men at a picnic.</h5>
+                </div>
+
+                <div class="col-md-8">
+                  <div class="bg-img-06" style="display:block;width:100%;height:100%; padding-bottom: 100%;"></div>
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <hr/>
+
+                  <blockquote><p class="text-small_caps">The critical response was mixed. Monet and Cézanne received the harshest attacks. </p><small>David Monjoie</small></blockquote>
+
+                  <p>After passing over the first chain of mountains we skirted a salt sea, upon whose bosom swam countless horrid things.  Seal-like creatures there were with long necks stretching ten and more feet above their enormous bodies and whose snake heads were split with gaping mouths bristling with countless fangs.  There were huge tortoises too, paddling about among these other reptiles, which Perry said were Plesiosaurs of the Lias.  I didn't question his veracity they might have been most anything.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr/>
+
+          <div class="row bg-beta" id="go_back">
+            <div class="container text-center" style="padding:1em">
+              <h2><a href="/#demo_sites"><i class="fa fa-chevron-left" style="margin-right:.5em"/>Go back</a></h2>
+            </div>
+          </div>
+
+          <style type="text/css">
+            #logo{display:none}
+            #logoMagazine{display:block!important}
+            #pre-header{display:block!important}
+
+            #wrapwrap > footer {
+              height: 0;
+              overflow: hidden;
+              display: block;
+              margin-top: 100px;
+            }
+            #wrapwrap > main {padding-bottom:100px}
+
+            #go_back a { color:white}
+            #go_back a:hover { color:white}
+
+            #go_back i{ opacity:0.7}
+            #go_back:hover i{ opacity:1}
+
+          </style>
+
+          <script>
+            var element = document.getElementById("avant_header");
+            element.classList.add("disabled")
+          </script>
+
+        </div>
+        <!-- #wrap -->
+      </t>
+    </template>
+  </data>
+</openerp>

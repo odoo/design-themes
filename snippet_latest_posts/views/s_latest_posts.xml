@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Snippet's Body -->
+    <template id="s_latest_posts" name="Latest Posts List">
+        <section class="s_latest_posts">
+            <div class="container">
+                <h2 class="text-center">Latest Posts</h2>
+                <div class="js_get_posts" data-loading="true" data-template="snippet_latest_posts.media_list_template"/>
+                <hr/>
+            </div>
+        </section>
+    </template>
+
+    <!-- Latest posts's Template -->
+    <template id="media_list_template">
+        <t t-if="not posts">
+            <t t-call="snippet_latest_posts.no_blog_posts"/>
+        </t>
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <div class="post media media_list_template">
+                <div class="pull-left">
+                    <a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)">
+                        <t t-call="website_blog.blog_cover">
+                            <t t-set="cover_properties" t-value="properties"/>
+                            <t t-set="additionnal_classes" t-value="'media-object loading_container thumb'"/>
+                        </t>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading" t-field="p.name"/>
+                    <p t-field="p.subtitle"/>
+                    <a class="btn btn-default" t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)">Read More</a>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <!-- No post here, template -->
+    <template id="no_blog_posts">
+        <div class="container readable">
+            <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&#215;</span>
+                </button>
+                <h3>No posts here...</h3>
+                <p>Please, be sure that your posts are not in draft state</p>
+            </div>
+        </div>
+    </template>
+
+    <!-- ======== LATEST POSTS BIG PICTURES  ========  -->
+
+    <!-- Snippet's Body -->
+    <template id="s_latest_posts_big_picture" name="Latest Posts Big Images">
+        <section class="s_latest_posts_big_picture">
+            <h2 class="text-center sans-serif">Latest Posts</h2>
+            <div class="js_get_posts" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template"/>
+        </section>
+    </template>
+
+    <template id="s_latest_posts_big_picture_template">
+        <t t-if="not posts">
+            <t t-call="snippet_latest_posts.no_blog_posts"/>
+        </t>
+        <t t-foreach="posts" t-as="p">
+            <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+            <figure class="loading_container col-sm-6">
+                <div class="content">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'thumb'"/>
+                    </t>
+                    <figcaption>
+                        <h2 t-field="p.name"/>
+                        <p t-field="p.subtitle"/>
+                        <a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)">Read More</a>
+                    </figcaption>
+                </div>
+            </figure>
+        </t>
+    </template>
+</odoo>

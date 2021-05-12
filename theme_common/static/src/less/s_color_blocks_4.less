@@ -1,0 +1,25 @@
+#wrapwrap .s_color_blocks_4 {
+    .row {
+        .o-flex-display();
+        .o-flex-flow(row, wrap);
+
+        // Fix for safari browser as it 'supports' flex but not with the right
+        // behavior
+        &::before, &::after {
+            width: 0;
+        }
+    }
+    [class*="col-md-"] {
+        padding: 64px 20px;
+    }
+    @media (max-width: @screen-sm-max) {
+        [class*="col-md-"] {
+            .o-flex(1, 1, 100%);
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

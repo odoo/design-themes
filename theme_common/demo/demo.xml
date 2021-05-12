@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="demo_layout" inherit_id="website.layout" primary="True">
+      <xpath expr="//t[@t-call-assets='web.assets_frontend'][@t-js='false']" position="before">
+        <t t-call-assets="theme_common.demo_assets_frontend"/>
+      </xpath>
+      <xpath expr="//t[@t-call-assets='web.assets_frontend'][@t-css='false']" position="before">
+        <t t-call-assets="theme_common.demo_assets_frontend"/>
+      </xpath>
+
+      <xpath expr="//script[last()]" position="after">
+        <script type="text/javascript" src="/theme_common/static/src/js/s_media_block_frontend.js"/>
+        <script type="text/javascript" src="/theme_common/static/src/js/s_media_block_editor.js"/>
+        <script type="text/javascript" src="/theme_common/static/src/js/s_animated_boxes_editor.js"/>
+        <script type="text/javascript" src="/theme_common/static/src/js/s_showcase_slider_editor.js"/>
+      </xpath>
+    </template>
+
+    <template id="demo_assets_frontend">
+        <link rel="stylesheet" href='/web/static/src/less/import_bootstrap.less'/>
+        <link rel="stylesheet" href='/website/static/src/less/colors.less'/>
+        <link rel="stylesheet" href='/website/static/src/css/website.css'/>
+
+        <link href="/theme_common/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_discount.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_event_list.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_profile.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box_square.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_pricing.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_timeline.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_lead_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_logo_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_4.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_image.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_image_parallax.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_team_profiles.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_slide_banner.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_shade.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_color.less" rel="stylesheet" type="text/less"/>
+        <!-- ENARK -->
+        <link href="/theme_common/static/src/less/s_testimonial_slider.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_icon_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_icon_square.less" rel="stylesheet" type="text/less"/>
+        <!-- ZAP -->
+        <link href="/theme_common/static/src/less/s_banner_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_carousel_boxed.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_collapse.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_features_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_features_grid_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_four_columns_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_images_captions_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_image_text_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_label.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_medias_list.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_news_carousel.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_process_steps_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_quotes_slider_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_references_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_tabs.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_team_profiles_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_text_image_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_three_columns_carousel.less" rel="stylesheet" type="text/less"/>
+        <!-- KIDDO -->
+        <link href="/theme_common/static/src/less/s_1_column_text.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_2_column_text.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_3_column_text.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_4_column_text.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_banner_parallax.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_picture_text.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_cubes.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_features_carousel.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_header_text_big_picture.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_block.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_banner_3.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_text_big_picture.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_text_picture_text.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_products_carousel.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_product_list.less" rel="stylesheet" type="text/less"/>
+        <!-- GRAPHENE -->
+        <link href="/theme_common/static/src/less/s_media_block.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_animated_boxes.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_showcase.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_showcase_slider.less" rel="stylesheet" type="text/less"/>
+    </template>
+
+    <template id="website.snippet_selector" page="True">
+      <t t-call="theme_common.demo_layout">
+        <div id="wrap" class="oe_structure oe_empty">
+
+          <div class="container mt32">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="#clean" class="btn btn-primary">CLEAN</a>
+                <a href="#enark" class="btn btn-primary">ENARK</a>
+                <a href="#zap" class="btn btn-primary">ZAP</a>
+                <a href="#kiddo" class="btn btn-primary">KIDDO</a>
+                <a href="#graphene" class="btn btn-primary">GRAPHENE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt32 mb32">
+            <div class="row">
+              <div class="col-md-12">
+                <a name="clean"/>
+                <h1 class="text-center">CLEAN THEME</h1>
+                <hr/>
+              </div>
+            </div>
+          </div>
+          <h2>s_big_image</h2>
+          <div data-oe-call="theme_common.s_big_image"/>
+          <h2>s_big_image_parallax</h2>
+          <div data-oe-call="theme_common.s_big_image_parallax"/>
+          <h2>s_color_blocks_2</h2>
+          <div data-oe-call="theme_common.s_color_blocks_2"/>
+          <h2>s_color_blocks_4</h2>
+          <div data-oe-call="theme_common.s_color_blocks_4"/>
+          <h2>s_column</h2>
+          <div data-oe-call="theme_common.s_column"/>
+          <h2>s_discount</h2>
+          <div data-oe-call="theme_common.s_discount"/>
+          <h2>s_event_list</h2>
+          <div data-oe-call="theme_common.s_event_list"/>
+          <h2>s_icon_box</h2>
+          <div data-oe-call="theme_common.s_icon_box"/>
+          <h2>s_icon_box_circle</h2>
+          <div data-oe-call="theme_common.s_icon_box_circle"/>
+          <h2>s_icon_box_square</h2>
+          <div data-oe-call="theme_common.s_icon_box_square"/>
+          <h2>s_image_text</h2>
+          <div data-oe-call="website.s_image_text"/>
+          <h2>s_lead_bar</h2>
+          <div data-oe-call="theme_common.s_lead_bar"/>
+          <h2>s_logo_bar</h2>
+          <div data-oe-call="theme_common.s_logo_bar"/>
+          <h2>s_pricing</h2>
+          <div data-oe-call="theme_common.s_pricing"/>
+          <h2>s_profile</h2>
+          <div data-oe-call="theme_common.s_profile"/>
+          <h2>s_separator_color</h2>
+          <div data-oe-call="theme_common.s_separator_color"/>
+          <h2>s_separator_shade</h2>
+          <div data-oe-call="theme_common.s_separator_shade"/>
+          <h2>s_slide_banner</h2>
+          <div data-oe-call="theme_common.s_slide_banner"/>
+          <h2>s_team_profiles</h2>
+          <div data-oe-call="theme_common.s_team_profiles"/>
+          <h2>s_text_block</h2>
+          <div data-oe-call="website.s_text_block"/>
+          <h2>s_text_image</h2>
+          <div data-oe-call="website.s_text_image"/>
+          <h2>s_three_columns_circle</h2>
+          <div data-oe-call="theme_common.s_three_columns_circle"/>
+          <h2>s_timeline</h2>
+          <div data-oe-call="theme_common.s_timeline"/>
+          <h2>s_timeline_compact</h2>
+          <div data-oe-call="theme_common.s_timeline_compact"/>
+          <h2>s_title</h2>
+          <div data-oe-call="website.s_title"/>
+          <h2>s_two_columns</h2>
+          <div data-oe-call="theme_common.s_two_columns"/>
+
+          <div class="container mt32 mb32">
+            <div class="row">
+              <div class="col-md-12">
+                <a name="enark"/>
+                <h1 class="text-center">ENARK THEME</h1>
+                <hr/>
+              </div>
+            </div>
+          </div>
+          <h2>s_testimonial_slider</h2>
+          <div data-oe-call="theme_common.s_testimonial_slider"/>
+          <h2>s_big_icon_circle</h2>
+          <div data-oe-call="theme_common.s_big_icon_circle"/>
+          <h2>s_big_icon_square</h2>
+          <div data-oe-call="theme_common.s_big_icon_square"/>
+
+          <div class="container mt32 mb32">
+            <div class="row">
+              <div class="col-md-12">
+                <a name="zap"/>
+                <h1 class="text-center">ZAP THEME</h1>
+                <hr/>
+              </div>
+            </div>
+          </div>
+          <h2>s_banner_2</h2>
+          <div data-oe-call="theme_common.s_banner_2"/>
+          <h2>s_carousel_boxed</h2>
+          <div data-oe-call="theme_common.s_carousel_boxed"/>
+          <h2>s_features_circle</h2>
+          <div data-oe-call="theme_common.s_features_circle"/>
+          <h2>s_three_columns_carousel</h2>
+          <div data-oe-call="theme_common.s_three_columns_carousel"/>
+          <h2>s_page_header</h2>
+          <div data-oe-call="theme_common.s_page_header"/>
+          <h2>s_medias_list</h2>
+          <div data-oe-call="theme_common.s_medias_list"/>
+          <h2>s_four_columns_fw</h2>
+          <div data-oe-call="theme_common.s_four_columns_fw"/>
+          <h2>s_text_image_fw</h2>
+          <div data-oe-call="theme_common.s_text_image_fw"/>
+          <h2>s_image_text_fw</h2>
+          <div data-oe-call="theme_common.s_image_text_fw"/>
+          <h2>s_news_carousel</h2>
+          <div data-oe-call="theme_common.s_news_carousel"/>
+          <h2>s_quotes_slider_2</h2>
+          <div data-oe-call="theme_common.s_quotes_slider_2"/>
+          <h2>s_features_grid_circle</h2>
+          <div data-oe-call="theme_common.s_features_grid_circle"/>
+          <h2>s_images_captions_fw</h2>
+          <div data-oe-call="theme_common.s_images_captions_fw"/>
+          <h2>s_news_carousel</h2>
+          <div data-oe-call="theme_common.s_news_carousel"/>
+          <h2>s_numbers</h2>
+          <div data-oe-call="theme_common.s_numbers"/>
+          <h2>s_process_steps_2</h2>
+          <div data-oe-call="theme_common.s_process_steps_2"/>
+          <h2>s_collapse</h2>
+          <div data-oe-call="theme_common.s_collapse"/>
+          <h2>s_quotes_slider_2</h2>
+          <div data-oe-call="theme_common.s_quotes_slider_2"/>
+          <h2>s_references_2</h2>
+          <div data-oe-call="theme_common.s_references_2"/>
+          <h2>s_tabs</h2>
+          <div data-oe-call="theme_common.s_tabs"/>
+          <h2>s_team_profiles_2</h2>
+          <div data-oe-call="theme_common.s_team_profiles_2"/>
+
+          <div class="container mt32 mb32">
+            <div class="row">
+              <div class="col-md-12">
+                <a name="kiddo"/>
+                <h1 class="text-center">KIDDO THEME</h1>
+                <hr/>
+              </div>
+            </div>
+          </div>
+
+          <h2>s_1_column_text</h2>
+          <div data-oe-call="theme_common.s_1_column_text"/>
+          <h2>s_2_column_text</h2>
+          <div data-oe-call="theme_common.s_2_column_text"/>
+          <h2>s_3_column_text</h2>
+          <div data-oe-call="theme_common.s_3_column_text"/>
+          <h2>s_4_column_text</h2>
+          <div data-oe-call="theme_common.s_4_column_text"/>
+          <h2>s_banner_parallax</h2>
+          <div data-oe-call="theme_common.s_banner_parallax"/>
+          <h2>s_big_picture_text</h2>
+          <div data-oe-call="theme_common.s_big_picture_text"/>
+          <h2>s_cubes</h2>
+          <div data-oe-call="theme_common.s_cubes"/>
+          <h2>s_features_carousel</h2>
+          <div data-oe-call="theme_common.s_features_carousel"/>
+          <h2>s_header_text_big_picture</h2>
+          <div data-oe-call="theme_common.s_header_text_big_picture"/>
+          <h2>s_separator_block</h2>
+          <div data-oe-call="theme_common.s_separator_block"/>
+          <h2>s_banner_3</h2>
+          <div data-oe-call="theme_common.s_banner_3"/>
+          <h2>s_text_big_picture</h2>
+          <div data-oe-call="theme_common.s_text_big_picture"/>
+          <h2>s_text_picture_text</h2>
+          <div data-oe-call="theme_common.s_text_picture_text"/>
+          <h2>s_products_carousel</h2>
+          <div data-oe-call="theme_common.s_products_carousel"/>
+          <h2>s_product_list</h2>
+          <div data-oe-call="theme_common.s_product_list"/>
+
+          <div class="container mt32 mb32">
+            <div class="row">
+              <div class="col-md-12">
+                <a name="graphene"/>
+                <h1 class="text-center">GRAPHENE THEME</h1>
+                <hr/>
+              </div>
+            </div>
+          </div>
+          <h2>s_media_block</h2>
+          <div data-oe-call="theme_common.s_media_block"/>
+          <h2>s_animated_boxes</h2>
+          <div data-oe-call="theme_common.s_animated_boxes"/>
+          <h2>s_showcase</h2>
+          <div data-oe-call="theme_common.s_showcase"/>
+          <h2>s_showcase_slider</h2>
+          <div data-oe-call="theme_common.s_showcase_slider"/>
+        </div>
+      </t>
+    </template>
+
+  </data>
+</openerp>

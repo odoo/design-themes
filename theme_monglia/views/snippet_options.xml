@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_monglia_website_options_pattern" inherit_id="website.snippet_options">
+        <!-- Background image -->
+        <xpath expr="//div[@data-js='background']/li" position="replace">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><i class="fa fa-picture-o"/>Background Image</a>
+                <ul class="dropdown-menu">
+                    <li data-background=""><a href="#">None</a></li>
+                    <li class="divider"></li>
+                    <li data-choose_image="choose_image"><a href="#"><b>Set Custom Image...</b></a></li>
+                    <li class="divider"></li>
+                    <li class="col-2" data-background="/web/image/theme_common.image_content_11"><a><span style="background-image: url('/web/image/theme_common.image_content_11/147x140')"/></a></li>
+                    <li class="col-2" data-background="/web/image/theme_common.image_content_09"><a><span style="background-image: url('/web/image/theme_common.image_content_09/147x140')"/></a></li>
+                    <li class="col-2" data-background="/web/image/theme_common.image_content_10"><a><span style="background-image: url('/web/image/theme_common.image_content_10/147x140')"/></a></li>
+                    <li class="col-2" data-background="/web/image/theme_common.image_content_12"><a><span style="background-image: url('/web/image/theme_common.image_content_12/147x140')"/></a></li>
+                    <li class="col-2" data-background="/web/image/theme_common.image_content_02"><a><span style="background-image: url('/web/image/theme_common.image_content_02/147x140')"/></a></li>
+                    <li class="col-2" data-background="/web/image/theme_common.image_content_03"><a><span style="background-image: url('/web/image/theme_common.image_content_03/147x140')"/></a></li>
+                    <li class="col-2" data-background="/web/image/theme_common.image_content_07"><a><span style="background-image: url('/web/image/theme_common.image_content_07/147x140')"/></a></li>
+                </ul>
+            </li>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute
+                name="data-selector"
+                remove="section"
+                add="section:not(.s_color_blocks_2):not(.s_color_blocks_4):not(.s_cubes)"
+            />
+        </xpath>
+
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute
+                name="data-selector"
+                remove="section:not(.parallax)"
+                add="section:not(.s_color_blocks_2):not(.s_color_blocks_4):not(.s_cubes), .s_big_icon_circle_icon, .product-widget, .mask, .hero-bg"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Timeline Compact" id="s_timeline_compact">
+        <section class="s_timeline_compact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="s_timeline_ul">
+                            <li>
+                                <div class="s_timeline_badge">
+                                    <i class="fa fa-asterisk"/>
+                                </div>
+                                <div class="s_timeline_panel">
+                                    <div class="s_timeline_panel_content">
+                                        <div class="s_timeline_heading">
+                                            <h4 class="s_timeline_date pull-right" >2014</h4>
+                                            <h4 class="s_timeline_title">Your Function</h4>
+                                            <h3 class="s_timeline_company" >COMPANY NAME</h3>
+                                            <h5 class="s_timeline_info">Description of the tasks</h5>
+                                        </div>
+                                        <div class="s_timeline_body">
+                                            <p>Use Theme Clean Timeline as a part of your resume or to show your visitors what you've done in the past. You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="s_timeline_inverted">
+                                <div class="s_timeline_badge warning">
+                                    <i class="fa fa-asterisk"/>
+                                </div>
+                                <div class="s_timeline_panel">
+                                    <div class="s_timeline_panel_content">
+                                        <div class="s_timeline_heading">
+                                            <h4 class="s_timeline_date pull-right" >2014</h4>
+                                            <h4 class="s_timeline_title">Your Function</h4>
+                                            <h3 class="s_timeline_company" >COMPANY NAME</h3>
+                                            <h5 class="s_timeline_info">Description of the tasks</h5>
+                                        </div>
+                                        <div class="s_timeline_body">
+                                            <p>You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1 mt64">
+                        <h2>A Timeline for Resume</h2>
+                        <h4 class="text-muted">Tell Your Story</h4>
+                        <p class="text-justify mt16">A timeline is a graphical representation of a period of time, on which important events are marked. Use Theme Clean Timeline as a part of your resume or to show your visitors what you've done in the past. You can edit, duplicate or switch the timeline panels to fit your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

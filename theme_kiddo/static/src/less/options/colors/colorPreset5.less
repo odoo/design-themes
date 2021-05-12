@@ -1,0 +1,166 @@
+@color-alpha: @gray-white;
+@color-beta: @colorPreset5_color1;
+@color-gamma: @colorPreset5_color2;
+@color-delta: @colorPreset5_color3;
+@color-epsilon: @colorPreset5_color4;
+@color-zeta: @colorPreset5_color1_dark;
+@color-eta: @colorPreset5_color1_light;
+@color-theta: @colorPreset5_color2_dark;
+@color-iota: @colorPreset5_color2_light;
+@color-kappa: @colorPreset5_color3_dark;
+@color-lambda: @colorPreset5_color3_light;
+@color-mu: @colorPreset5_color4_dark;
+@color-nu: @colorPreset5_color4_light;
+
+/* ============= FONT COLORS ================== */
+
+.text-alpha {color: @gray-white;}
+.text-beta {color: @colorPreset5_color1;}
+.text-gamma {color: @colorPreset5_color2;}
+.text-delta {color: @colorPreset5_color3;}
+.text-epsilon {color: @colorPreset5_color4;}
+
+.text-primary {color: @color-alpha;}
+.text-success {color: @color-beta;}
+.text-info {color: @color-gamma;}
+.text-warning {color: @color-delta;}
+.text-danger {color: @color-epsilon;}
+
+/* ============= THEMES BUTTONS =============== */
+
+@btn-default-bg: @color-alpha;
+@btn-primary-bg: @color-beta;
+@btn-success-bg: @color-gamma;
+@btn-info-bg: @color-delta;
+@btn-warning-bg: @color-epsilon;
+@btn-danger-bg: @gray-base;
+
+/* ============= BG USED FOR NAV ============== */
+
+.bgtransparent {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* ============= BGCOLORS ===================== */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-gamma, @color-iota);
+    .fa {color: @gray;}
+}
+
+.bg-beta {
+    .SetDisplayColor (@color-beta, @color-alpha);
+    .LinkColor (@color-gamma, @color-theta);
+}
+
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @color-alpha);
+    .LinkColor (@color-beta, @color-zeta);
+}
+
+.bg-delta {
+    .SetDisplayColor (@color-delta, @color-alpha);
+    .LinkColor (@color-gamma, @color-theta);
+}
+
+.bg-epsilon {
+    .SetDisplayColor (@color-epsilon, @color-alpha);
+    .LinkColor (@color-gamma, @color-theta);
+}
+
+/* ============= TYPO ========================= */
+
+a {
+    color: @color-gamma;
+    &:hover, &:focus {
+        color: @color-iota;
+    }
+}
+
+/* ============= STRUCTURE ==================== */
+
+#wrapwrap {
+    li.active ul {
+        background-color: @color-eta;
+    }
+
+    .navbar-default .container {
+        background-color: @color-epsilon;
+
+        .navbar-collapse #top_menu {
+            li a .label-primary {
+                background-color: @color-gamma;
+            }
+
+            .dropdown-menu, .navbar-collapse {
+                background-color: @color-epsilon;
+            }
+        }
+    }
+
+    > main > #wrap {
+        background-color: @color-zeta!important;
+        color: @color-alpha;
+    }
+
+    // Nav
+    .in, .collapsing {
+        background-color: @color-epsilon !important;
+    }
+
+    > footer {
+        #footer, .container {
+            background-color: @color-delta !important;
+            h3, h4 {
+                color: @color-alpha !important;
+            }
+            p, li {
+                color: @color-alpha !important;
+            }
+        }
+    }
+}
+
+.panel, .panel-body {
+    color: @gray;
+}
+#table_search {
+    background-color: white !important;
+}
+
+// Forum
+.website_forum {
+    background: rgba(23, 24, 39, 0.8);
+    margin-top: 0px !important;
+    width: 100%;
+
+    a {
+        color: @color-alpha !important;
+    }
+    li.active > a {
+        background-color: @color-delta !important;
+    }
+
+    + #wrap {
+        .oe_grey {
+            background: rgba(0, 0, 0, 0) !important;
+        }
+        .panel {
+            background: rgba(0, 0, 0, 0) !important;
+            .panel-heading, .panel-body {
+                color: @color-alpha !important;
+            }
+        }
+
+        .question .mt16 {
+            background: rgba(0, 0, 0, 0) !important;
+        }
+        tbody {
+            color: @gray;
+        }
+        #right-column > .btn {
+            background-color: @color-gamma !important;
+        }
+    }
+}

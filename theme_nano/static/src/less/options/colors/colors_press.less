@@ -1,0 +1,39 @@
+/* ==========================================================================
+   PRESS
+   ========================================================================== */
+
+/* Colors
+   ========================================================================== */
+
+@color-alpha: @press-alpha;
+@color-beta: @press-beta;
+@color-gamma: @press-gamma;
+@color-delta: @press-delta;
+@color-epsilon: @press-epsilon;
+
+/* Gray
+   ========================================================================== */
+
+@gray-darker: #1d2127;
+@gray-dark: lighten(@gray-darker, 25%);
+@gray: lighten(@gray-darker, 50%);
+@gray-light: lighten(@gray-darker, 65%);
+@gray-lighter: #e3dcd1;
+
+/* Content Colors
+   ========================================================================== */
+
+#wrapwrap{
+  .white(@gray-darker);
+  .gray-lighter(@gray-darker);
+  .gray(#fff);
+  .gray-darker(#fff);
+  .alpha(#fff);
+  .beta(#fff);
+  .gamma(#fff);
+  .delta(#fff);
+  .epsilon(@gray-darker);
+}
+
+@layout-icons-color: #fff;
+@link-color: @color-alpha;

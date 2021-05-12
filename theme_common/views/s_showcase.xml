@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Showcase" id="s_showcase">
+        <section class="s_showcase">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5 col-sm-5 text-right feature">
+                        <h4><span class="fa fa-2x fa-desktop"/>First feature</h4>
+                        <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
+                        <h4><span class="fa fa-2x fa-heart"/>Another feature</h4>
+                        <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-sm-5 text-right feature">
+                        <h4><span class="fa fa-2x fa-paint-brush "/>Second feature</h4>
+                        <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
+                        <h4><span class="fa fa-2x fa-sliders "/>Last Feature</h4>
+                        <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt16 text-center">
+                <a class="btn btn-default" href="">Discover all the features</a>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_showcase-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js='s_showcase' data-selector=".s_showcase .feature"/>
+        </xpath>
+    </template>
+</odoo>

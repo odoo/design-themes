@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Change fullwidth layout -->
+    <template id="artists_layout_boxed" inherit_id="theme_monglia.option_layout_boxed" name="Artists Boxed Layout">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_artists/static/src/less/options/layout/boxed_2.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    
+    <!-- Put new font into modal -->
+    <template id="artists_radley_font" inherit_id="theme_monglia.theme_customize" name="Artist Radley Font">
+        <xpath expr="//div[contains(@id, 'font')]/div[contains(@class, 'row')]" position="inside">
+            <div class="col-xs-12">
+                <label class="chd-fonts-combi center-block">
+                    <h4 style="font-family: Radley; font-size: 30px">Radley</h4>
+                    <input name="fontvar" type="radio" data-xmlid="theme_artists.option_font_radley"/>
+                </label>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Radley template -->
+    <template id="option_font_radley" name="option_font_radley" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_artists/static/src/less/options/fonts/radley.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+</odoo>

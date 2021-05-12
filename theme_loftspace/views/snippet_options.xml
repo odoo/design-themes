@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_loftspace_website_options_pattern" inherit_id="website.snippet_options">
+
+        <!-- Background image -->
+        <xpath expr="//div[@data-js='background']/li" position="replace">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><i class="fa fa-picture-o"/>Background Image</a>
+                <ul class="dropdown-menu">
+                    <li data-select_class=""><a>None</a></li>
+                    <li class="separator"/>
+                    <li data-select_class="oe_custom_bg" data-choose_image="choose_image"><a><b>Choose another image...</b></a></li>
+                    <li class="separator"/>
+                    <li class="col-2" data-select_class="bg-img-01"><a><img src="/web/image/theme_common.image_content_11/100x70" class="center-block"/></a></li>
+                    <li class="col-2" data-select_class="bg-img-02"><a><img src="/web/image/theme_common.image_content_09/100x70" class="center-block"/></a></li>
+                    <li class="col-2" data-select_class="bg-img-03"><a><img src="/web/image/theme_common.image_content_10/100x70" class="center-block"/></a></li>
+                    <li class="col-2" data-select_class="bg-img-04"><a><img src="/web/image/theme_common.image_content_12/100x70" class="center-block"/></a></li>
+                    <li class="col-2" data-select_class="bg-img-05"><a><img src="/web/image/theme_common.image_content_02/100x70" class="center-block"/></a></li>
+                    <li class="col-2" data-select_class="bg-img-06"><a><img src="/web/image/theme_common.image_content_03/100x70" class="center-block"/></a></li>
+                    <li class="col-2" data-select_class="bg-img-07"><a><img src="/web/image/theme_common.image_content_07/100x70" class="center-block"/></a></li>
+                </ul>
+            </li>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" remove="section" add="section:not(.s_color_blocks_2):not(.s_color_blocks_4):not(.s_cubes)" />
+        </xpath>
+
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute
+                name="data-selector"
+                remove="section:not(.parallax)"
+                add="section:not(.s_color_blocks_2):not(.s_color_blocks_4):not(.s_cubes), .product-widget, .hero-bg"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-selector"
+                       remove="section:not(.parallax)"
+                       add="section:not(.parallax):not(.s_cubes)"/>
+        </xpath>
+    </template>
+</odoo>

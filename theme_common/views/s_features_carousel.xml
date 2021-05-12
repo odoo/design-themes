@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Features Slider" id="s_features_carousel">
+        <section id="myCarousel" class="s_features_carousel carousel slide" data-interval="10000" >
+            <!-- Indicators -->
+            <ol type="01" class="carousel-indicators"><li data-target="#myCarousel" data-slide-to="0" class="active"></li><li data-target="#myCarousel" data-slide-to="1"></li></ol>
+            <div class="container">
+                <div class="row content">
+                    <div class="col-md-12 mt64">
+                        <h2>Features</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <div class="item image_text active">
+                    <div class="container mb92">
+                        <div class="row content">
+                            <div class="col-md-6">
+                                <div class="circle center-block">
+                                    <div class="mask bg-beta" data-name="Big circle">
+                                        <span class="text-center">01.</span>
+                                        <p>DECISIONS, DECISIONS, AND EVEN MORE DECISIONS</p>
+                                    </div>
+                                </div>
+                                <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img img-responsive center-block" src="/web/image/theme_common.image_content_04"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item image_text">
+                    <div class="container mb92">
+                        <div class="row content">
+                            <div class="col-md-6">
+                                <div class="circle center-block">
+                                    <div class="mask bg-beta" data-name="Big circle">
+                                        <span class="text-center">02.</span>
+                                        <p>DESIGN, DESIGN, AND EVEN MORE DESIGN</p>
+                                    </div>
+                                </div>
+                                <p class="mt32 text-center">This theme does not limit you to one setup, we prefer to give you options. From boxed layout to wide, left sidebars to right and multiple headers; we let you decide. That’s right, you can have your cake and eat some too.</p>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <img class="img img-responsive center-block" src="/web/image/theme_common.image_content_03"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control left" data-target="#myCarousel" data-slide="prev">
+                <i class="fa fa-chevron-left"/>
+            </div>
+            <div class="carousel-control right" data-target="#myCarousel" data-slide="next">
+                <i class="fa fa-chevron-right"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_features_carousel-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".s_features_carousel .mask"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_features_carousel .mask"/>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-selector" add=".s_features_carousel .mask"/>
+        </xpath>
+    </template>
+</odoo>

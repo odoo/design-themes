@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Banner" id="s_banner_2">
+        <div class="s_banner_2 carousel slide" id="s_banner_2" style="height: 440px;">
+            <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#s_banner_2"></li><li data-slide-to="1" data-target="#s_banner_2"></li><li data-slide-to="2" data-target="#s_banner_2"></li></ol>
+            <div class="carousel-inner">
+                <div class="item active bg-img-02">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="col-md-4 carousel-box-content bg-white mt64">
+                                <h2>Slide title</h2>
+                                <h5 class="text-primary">Click to customize this text.</h5>
+                                <p>Use this snippet to presents your content in a slideshow-like format, with a set number of items at a time and arrows for navigation.</p>
+                                <p><a class="btn btn-primary btn-sm" href="/page/website.aboutus">About us</a>
+                                <a class="btn btn-success btn-sm" href="/page/website.contactus">Contact us</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-img-07">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="col-md-4 col-md-offset-8 carousel-box-content bg-none mt64">
+                                <h2>Slide title</h2>
+                                <h5 class="text-primary">Click to customize this text.</h5>
+                                <p>This is a great component if you want visitors to browse through any featured content in a scrolling carousel.</p>
+                                <p><a href="/" class="btn btn-default btn-lg">Start now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-img-08">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="col-md-4 col-md-offset-4 carousel-box-content bg-white text-center mt64">
+                                <h2>Slide title</h2>
+                                <h5 class="text-primary">Click to customize this text.</h5>
+                                <p>Add and arrange blocks to create a custom layout of text, images and links.</p>
+                                <p><a href="/" class="btn btn-success btn-lg">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control left" data-slide="prev" data-target="#s_banner_2" href="#s_banner_2">
+                <i class="fa fa-chevron-left fa-1x"/>
+            </div>
+            <div class="carousel-control right" data-slide="next" data-target="#s_banner_2" href="#s_banner_2">
+                <i class="fa fa-chevron-right fa-1x"/>
+            </div>
+        </div>
+    </template>
+</odoo>

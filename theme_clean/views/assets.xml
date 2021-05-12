@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="less" name="theme_clean less" inherit_id="website.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_clean/static/src/less/variables.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_clean/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_clean/static/src/less/theme.less" rel="stylesheet" type="text/less"/>
+
+            <link href="/theme_common/static/src/less/s_discount.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_event_list.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_profile.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_icon_box.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_icon_box_circle.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_icon_box_square.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_pricing.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_process_steps_2.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_timeline.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_lead_bar.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_logo_bar.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_color_blocks_2.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_color_blocks_4.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_big_image.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_big_image_parallax.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_team_profiles.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_slide_banner.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_separator_shade.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_separator_color.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_text_highlight.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_common/static/src/less/s_two_columns.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+    <template id="assets_editor" inherit_id="website.assets_editor" name="Editor assets">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_clean/static/src/less/variables.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_clean/static/src/less/customize_modal.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_common/static/src/js/s_progress_bar.js"></script>
+        </xpath>
+    </template>
+</odoo>

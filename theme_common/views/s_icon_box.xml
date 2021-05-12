@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Icon Box" id="s_icon_box">
+        <section class="s_icon_box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mb32">
+                        <h2>Icon Box / Features List</h2>
+                        <h3 class="text-muted">Showcase Your Services and Features</h3>
+                    </div>
+                    <div class="col-md-3 clearfix mt16 mb16">
+                        <i class="fa fa-2x fa-expand pull-left text-gamma"/>
+                        <div class="icon_box_content">
+                            <h4>100% Responsive</h4>
+                            <p>Clean is designed for mobile first so it looks great and clean on mobile devices of all sizes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 clearfix mt16 mb16">
+                        <i class="fa fa-2x fa-tablet pull-left text-gamma"/>
+                        <div class="icon_box_content">
+                            <h4>Retina Ready</h4>
+                            <p>Clean is build to look sharp ,cool and awesome on all displays. Images will look sharp and clear.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 clearfix mt16 mb16">
+                        <i class="fa fa-2x fa-html5 pull-left text-gamma"/>
+                        <div class="icon_box_content">
+                            <h4>Clean HTML5</h4>
+                            <p>Create your pages without typing a single line of code. Clean use a clean and simple HTML structure.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 clearfix mt16 mb16">
+                        <i class="fa fa-2x fa-css3 pull-left text-gamma"/>
+                        <div class="icon_box_content">
+                            <h4>LESS/CSS</h4>
+                            <p>Enjoy the power of LESS/CSS3. Customizing your theme has never been so easy. Make it your own!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

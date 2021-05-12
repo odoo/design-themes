@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="demo2_layout" inherit_id="website.layout" primary="True">
+      <xpath expr="//t[@t-call-assets='web.assets_frontend'][@t-js='false']" position="attributes">
+        <attribute name="t-call-assets">theme_bewise.demo2_assets_frontend</attribute>
+      </xpath>
+      <xpath expr="//t[@t-call-assets='web.assets_frontend'][@t-css='false']" position="attributes">
+        <attribute name="t-call-assets">theme_bewise.demo2_assets_frontend</attribute>
+      </xpath>
+    </template>
+
+    <template id="demo2_assets_frontend" inherit_id="website.assets_frontend" primary="True">
+      <xpath expr="." position="inside">
+
+        <link href="/theme_bewise/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/theme.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/customize_modal.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/padding.less" rel="stylesheet" type="text/less"/>
+
+        <!-- PRESET bgvar-1, colorvar-1, fontvar-1 -->
+
+        <link href="/theme_bewise/static/src/less/options/layout_boxed.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/layout_show_menu.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/color_preset_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/bg_preset_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_bewise/static/src/less/options/font_preset_3.less" rel="stylesheet" type="text/less"/>
+
+        <link href="/theme_common/static/src/less/s_discount.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_event_list.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_profile.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_icon_box_square.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_pricing.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_process_steps_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_timeline.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_lead_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_logo_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_4.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_image.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_image_parallax.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_team_profiles.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_slide_banner.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_shade.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_color.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_text_highlight.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_testimonial_slider.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_icon_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_big_icon_square.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_mini_nav_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_nav.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_multicolor.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_separator_multicolor_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_img.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_color_blocks_slider.less" rel="stylesheet" type="text/less"/>
+      </xpath>
+    </template>
+
+    <template id="website.demo_page_demo_2" page="True">
+      <t t-call="theme_bewise.demo2_layout">
+        <div id="wrap" class="oe_structure oe_empty">
+          <section class="s_separator_multicolor_fw">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <hr/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_big_image_parallax parallax bg-img-06 o_visible o_visible_bottom o_visible_middle o_visible_top   " data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 0px; width: 100%;">
+            <div class="container">
+              <div class="row">
+                <div class="s_big_image_parallax_content mb0 mt128 col-md-4 col-md-offset-4">
+                  <img class="img-responsive center-block" src="/theme_bewise/static/src/img/content/content_img_02.png" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                </div>
+                <div class="col-md-12 mt32 s_big_image_parallax_content"/>
+                <div class="col-md-12 mt32 s_big_image_parallax_content"/>
+                <div class="col-md-12 text-center mb64">
+                  <h3>
+                    <font class="bg-gamma"> A Funny Theme For Odoo CMS </font>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_mini_nav_bar">
+            <div class="container">
+              <div class="row s_mini_nav_bar_nav mini_nav_scroll">
+                <div class="s_mini_nav_bar_item col-md-1">
+                  <a class="btn btn-default btn-xl" href="#section1" type="button">Section 1</a>
+                </div>
+                <div class="col-md-1 s_mini_nav_bar_item">
+                  <a class="btn btn-primary btn-xl" href="#section2" type="button">Section 2</a>
+                </div>
+                <div class="col-md-1 s_mini_nav_bar_item">
+                  <a class="btn btn-success btn-xl" href="#section3" type="button">Section 3</a>
+                </div>
+                <div class="col-md-1 s_mini_nav_bar_item">
+                  <a class="btn btn-info btn-xl" href="#section4" type="button">Section 4</a>
+                </div>
+                <div class="col-md-1 s_mini_nav_bar_item">
+                  <a class="btn btn-warning btn-xl" href="#section5" type="button">Section 5</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_color_blocks_img mb0 o_scroll_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mb32">
+                  <h2 id="section1">Organize Your Content &amp; Play with Building Blocks</h2>
+                  <h3 class="text-muted ">Be Wise* is fun</h3>
+                </div>
+                <div class="col-md-4 s_color_blocks_img_block">
+                  <div class="s_color_blocks_img_title bg-delta">
+                    <h5 class="text-muted text-center">Full Colors</h5>
+                    <h4 class="text-center mb32">Play with the blocks</h4>
+                    <img class="img-responsive center-block" src="/web/image/theme_common.image_content_10"/>
+                  </div>
+                </div>
+                <div class="col-md-4 s_color_blocks_img_block">
+                  <div class="s_color_blocks_img_title bg-beta">
+                    <h5 class="text-muted text-center">Full Options</h5>
+                    <h4 class="text-center mb32">Customize everything</h4>
+                    <img class="img-responsive center-block" src="/web/image/theme_common.image_content_11"/>
+                  </div>
+                </div>
+                <div class="col-md-4 s_color_blocks_img_block">
+                  <div class="s_color_blocks_img_title bg-gamma">
+                    <h5 class="text-muted text-center">Easy-to-Use</h5>
+                    <h4 class="text-center mb32">Make it your own</h4>
+                    <img class="img-responsive center-block" src="/web/image/theme_common.image_content_13"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_separator_nav">
+            <div class="container">
+              <div class="row s_separator_nav_nav mini_nav_scroll">
+                <div class="s_separator_nav_item col-md-2 pull-right">
+                  <a class="btn btn-success btn-xl pull-right" href="#wrap" type="button">Top</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="s_color_blocks_slider carousel slide bg-gamma mt48 o_scroll_nav" data-interval="10000" id="myCarousel0">
+            <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#myCarousel0"/><li data-slide-to="1" data-target="#myCarousel0"/></ol>
+            <div class="carousel-inner" id="section2">
+              <div class="item active">
+                <div class="container-fluid">
+                  <div class="row content">
+                    <div class="col-md-8 s_color_blocks_slider_img text-center">
+                      <img class="img-responsive center-block"  src="/theme_bewise/static/src/img/backgrounds/bg_img_07.jpg" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                    </div>
+                    <div class="col-md-4 s_color_blocks_slider_content text-center">
+                      <span class="center-block fa fa-heart-o fa-5x"/>
+                      <h2 class="text-center">Loving Theme</h2>
+                      <h3 class="text-center text-muted mb16">Sweet*</h3>
+                      <p class="text-justify mb32">You can set your own combinations from 4 layout modes, 4 color schemes, 4 background patterns and 8 combined fonts.<br/></p>
+                      <a class="btn btn-warning " href="#"><i class="fa fa-cog"/> More Details </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="container-fluid">
+                  <div class="row content">
+                    <div class="col-md-8 s_color_blocks_slider_img text-center">
+                      <img class="img-responsive center-block"  src="/theme_bewise/static/src/img/backgrounds/bg_img_02.jpg"/>
+                    </div>
+                    <div class="col-md-4 s_color_blocks_slider_content text-center">
+                      <span class="center-block fa fa-star-o fa-5x" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                      <h2 class="text-center">Sweet Design</h2>
+                      <h3 class="text-center text-muted mb16">Soft*</h3>
+                      <p class="text-justify mb32">Be Wise* is a beautifully designed theme for children websites. Crafted with the finest pixel quality and best coding practices inspired by Bootstrap.<br/></p>
+                      <a class="btn btn-warning " href="#"><i class="fa fa-cog"/> More Details </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+              <i class="fa fa-chevron-left"/>
+            </div>
+            <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+              <i class="fa fa-chevron-right"/>
+            </div>
+          </div>
+          <section class="s_separator_nav">
+            <div class="container">
+              <div class="row s_separator_nav_nav mini_nav_scroll">
+                <div class="s_separator_nav_item col-md-2 pull-right" style="text-align: right;">
+                  <a class="btn btn-primary " href="#wrap" type="button">Top</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_testimonial_slider carousel slide mt0 o_scroll_nav" data-interval="6000" data-ride="carousel" id="myCarousel1">
+            <ol class="carousel-indicators"><li class="active" data-slide-to="0" data-target="#myCarousel1"/><li data-slide-to="1" data-target="#myCarousel1"/><li data-slide-to="2" data-target="#myCarousel1"/></ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="container">
+                  <div class="row content text-center mt64 mb64">
+                    <h3 id="section3"><i class="fa fa-quote-left"/> Let your visitors know what your customers said about you. <i class="fa fa-quote-right"/></h3>
+                    <p class="lead">Name, Function / Company Inc.</p>
+                    <div class="col-md-2 col-md-offset-5">
+                      <img class="img-responsive center-block" src="/web/image/theme_common.image_content_08"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="container">
+                  <div class="row content text-center mt64 mb64">
+                    <h3><i class="fa fa-quote-left"/> Be Wise* for Kids  <i class="fa fa-quote-right"/></h3>
+                    <p class="lead">Name, Function / Company Inc.</p>
+                    <div class="col-md-2 col-md-offset-5">
+                      <img class="img-responsive center-block" src="/web/image/theme_common.image_content_08"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="container">
+                  <div class="row content text-center mt64 mb64">
+                    <h3><i class="fa fa-quote-left"/> Let your visitors know what they said about you. <i class="fa fa-quote-right"/></h3>
+                    <p class="lead">Name, Function / Company Inc.</p>
+                    <div class="col-md-2 col-md-offset-5">
+                      <img class="img-responsive center-block" src="/web/image/theme_common.image_content_08"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_separator_multicolor mt16">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <hr/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_text_block mt0 mb0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 mb48 mt64">
+                  <p class="text-justify">
+                    <span style="line-height: 23.3999996185303px; text-align: justify;">Creating pages is easier with the help of Odoo CMS building blocks. Dive into the flexibility of Be Wise* Theme to make your web creation experience smoother.</span>
+                  </p>
+                  <section class="s_separator_color">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <hr/>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-md-5 col-md-offset-2 mb92 mt64">
+                  <p class="text-justify">
+                    <span style="line-height: 23.3999996185303px; text-align: justify;">Be Wise* has been coded sensibly and smartly so that it’s layout can be changed from boxed to full width and vice-versa without affecting the design quality.</span>
+                  </p>
+                  <section class="s_separator_color">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <hr/>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="section4" class="s_color_blocks_4 o_scroll_nav">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3 s_color_blocks_4_block text-center bg-alpha">
+                  <h4><span class="fa fa-check-circle fa-lg"/> 4 Color Schemes</h4>
+                  <p>Soft &amp; Sweet</p>
+                </div>
+                <div class="col-md-3 s_color_blocks_4_block text-center bg-beta">
+                  <h4><span class="fa fa-check-circle fa-lg"/> 4 Font Combinations</h4>
+                  <p>Focus on Content</p>
+                </div>
+                <div class="col-md-3 s_color_blocks_4_block text-center bg-gamma">
+                  <h4><span class="fa fa-check-circle fa-lg"/> Wide/Boxed Layout</h4>
+                  <p>Change Layout, Hide Menu</p>
+                </div>
+                <div class="col-md-3 s_color_blocks_4_block text-center bg-delta">
+                  <h4><span class="fa fa-check-circle fa-lg"/> 4 Backgrounds</h4>
+                  <p>Soft Patterns</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_big_image_parallax parallax bg-img-03" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 0px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mt32 s_big_image_parallax_content mb0">
+                  <img class="img-responsive center-block" src="/web/image/theme_common.image_content_03"/>
+                </div>
+                <div class="col-md-12 text-center mt16">
+                  <h3>
+                    <font class="bg-orange-dark">
+                      <font class="bg-gamma">
+                        <font class="text-white"> A Funny Theme For Odoo CMS </font>
+                      </font>
+                    </font>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_separator_nav">
+            <div class="container">
+              <div class="row s_separator_nav_nav mini_nav_scroll">
+                <div class="s_separator_nav_item col-md-2 pull-right" style="text-align: right;">
+                  <a class="btn btn-warning " href="#wrap" type="button">Top</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="parallax s_parallax bg-img-10" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 0px;">
+            <div>
+              <div class="oe_structure"/>
+            </div>
+          </section>
+          <section class="s_separator_nav">
+            <div class="container">
+              <div class="row s_separator_nav_nav mini_nav_scroll">
+                <div class="s_separator_nav_item col-md-2 pull-right">
+                  <a class="btn btn-success btn-xl pull-right" href="#wrap" type="button">Top</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_pricing o_scroll_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center mt32 mb32">
+                  <h2 id="section6">Lot of Features</h2>
+                  <h3 class="text-muted">Be Wise* is a multi-purpose theme</h3>
+                </div>
+              </div>
+            </div>
+            <section>
+              <div class="container pricing-list">
+                <div class="row">
+                  <div class="col-md-3 mb32">
+                    <div class="s_pricing_box">
+                      <div class="s_pricing_header bg-beta text-center">
+                        <h2>$15/mo</h2>
+                        <h3>Tiny</h3>
+                      </div>
+                      <div class="s_pricing_features">
+                        <p>
+                          <strong/>
+                        </p>
+                        <p><strong>Unlimited</strong> Email Addresses</p>
+                        <p><strong>50GB</strong> Disk Space</p>
+                        <a class="btn btn-success btn-lg mt32 mb32" type="button">More Features</a>
+                      </div>
+                      <div class="s_pricing_footer bg-beta"/>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb32">
+                    <div class="s_pricing_box">
+                      <div class="s_pricing_header bg-gamma text-center">
+                        <h2>$29/mo</h2>
+                        <h3>Small</h3>
+                      </div>
+                      <div class="s_pricing_features">
+                        <p>
+                          <strong/>
+                        </p>
+                        <p><strong>Unlimited</strong> Email Addresses</p>
+                        <p><strong>80GB</strong> Disk Space</p>
+                        <a class="btn btn-success btn-lg mt32 mb32" type="button">More Features</a>
+                      </div>
+                      <div class="s_pricing_footer bg-gamma"/>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb32">
+                    <div class="s_pricing_box">
+                      <div class="s_pricing_header bg-delta text-center">
+                        <h2>$69/mo</h2>
+                        <h3>Medium</h3>
+                      </div>
+                      <div class="s_pricing_features">
+                        <p>
+                          <strong/>
+                        </p>
+                        <p><strong>Unlimited </strong> Email Addresses</p>
+                        <p><strong>120GB</strong> Disk Space</p>
+                        <a class="btn btn-success btn-lg mt32 mb32" type="button">More Features</a>
+                      </div>
+                      <div class="s_pricing_footer bg-delta"/>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb32">
+                    <div class="s_pricing_box">
+                      <div class="s_pricing_header bg-epsilon text-center">
+                        <h2>$99/mo</h2>
+                        <h3>Pro</h3>
+                      </div>
+                      <div class="s_pricing_features">
+                        <p>
+                          <strong/>
+                        </p>
+                        <p><strong>Unlimited</strong> Email Addresses</p>
+                        <p><strong>120GB</strong> Disk Space</p>
+                        <a class="btn btn-success btn-lg mt32 mb32" type="button">More Features</a>
+                      </div>
+                      <div class="s_pricing_footer bg-epsilon"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="s_separator_nav">
+            <div class="container">
+              <div class="row s_separator_nav_nav mini_nav_scroll">
+                <div class="s_separator_nav_item col-md-2 pull-right" style="text-align: right;">
+                  <a class="btn btn-primary " href="#wrap" type="button">Top</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+    </template>
+
+    <record id="demo_page_demo_2_menu" model="website.menu">
+      <field name="name">Demo 2</field>
+      <field name="url">/page/demo_page_demo_2</field>
+      <field name="parent_id" ref="website.main_menu"/>
+      <field name="sequence" type="int">20</field>
+    </record>
+</data>
+</openerp>

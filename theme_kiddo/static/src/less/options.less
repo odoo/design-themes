@@ -1,0 +1,15 @@
+
+@bg-img-01: url("/web/image/theme_common.image_content_11");
+@bg-img-02: url("/web/image/theme_common.image_content_09");
+@bg-img-03: url("/web/image/theme_common.image_content_10");
+@bg-img-04: url("/web/image/theme_common.image_content_12");
+
+.o-generate-bg-img-options(4);
+.o-generate-bg-img-options(@n, @i: 1) when (@i =< @n) {
+    .bg-img-0@{i} {
+        background-image: ~"@{bg-img-0@{i}}";
+        background-size: cover;
+        background-position: center center;
+    }
+    .o-generate-bg-img-options(@n, @i + 1);
+}
