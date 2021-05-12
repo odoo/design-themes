@@ -38,6 +38,5 @@ wTourUtils.registerThemeHomepageTour("clean_tour", [
     wTourUtils.clickOnSnippet(snippets[4]),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
-    wTourUtils.clickOnSave(),
 ]);
 });

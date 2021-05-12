@@ -39,6 +39,5 @@ wTourUtils.registerThemeHomepageTour("enark_tour", [
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.clickOnSnippet(snippets[4]),
     wTourUtils.changeOption('minHeight', 'we-button-group.o_we_user_value_widget', _t('height')),
-    wTourUtils.clickOnSave(),
 ]);
 });

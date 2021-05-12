@@ -34,6 +34,5 @@ wTourUtils.registerThemeHomepageTour("notes_tour", [
     wTourUtils.dragNDrop(snippets[3]),
     wTourUtils.clickOnSnippet(snippets[3]),
     wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
-    wTourUtils.clickOnSave(),
 ]);
 });
