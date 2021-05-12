@@ -44,6 +44,5 @@ wTourUtils.registerThemeHomepageTour("bookstore_tour", [
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.dragNDrop(snippets[5]),
-    wTourUtils.clickOnSave(),
 ]);
 });

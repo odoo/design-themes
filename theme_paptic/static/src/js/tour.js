@@ -35,6 +35,5 @@ wTourUtils.registerThemeHomepageTour("paptic_tour", [
     wTourUtils.dragNDrop(snippets[1], 'top'),
     wTourUtils.dragNDrop(snippets[2], 'top'),
     wTourUtils.dragNDrop(snippets[3], 'top'),
-    wTourUtils.clickOnSave(),
 ]);
 });

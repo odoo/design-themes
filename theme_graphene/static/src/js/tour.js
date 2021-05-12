@@ -45,7 +45,5 @@ wTourUtils.registerThemeHomepageTour("graphene_tour", [
     wTourUtils.clickOnSnippet(snippets[4], 'top'),
     wTourUtils.changeBackgroundColor('left'),
     wTourUtils.selectColorPalette(),
-
-    wTourUtils.clickOnSave(),
 ]);
 });

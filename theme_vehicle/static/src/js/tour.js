@@ -53,7 +53,5 @@ wTourUtils.registerThemeHomepageTour("vehicle_tour", [
     wTourUtils.clickOnSnippet(snippets[6], 'top'),
     wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
     wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
-
-    wTourUtils.clickOnSave(),
 ]);
 });

@@ -43,6 +43,5 @@ wTourUtils.registerThemeHomepageTour("avantgarde_tour", [
     wTourUtils.dragNDrop(snippets[3], 'top'),
 
     wTourUtils.dragNDrop(snippets[4], 'top'),
-    wTourUtils.clickOnSave(),
 ]);
 });
