@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
+import unittest
+
 from odoo.tests import HttpCase, tagged
 
 
@@ -37,3 +39,11 @@ class Crawler(HttpCase):
         # 2. Test as admin
         self.authenticate('admin', 'admin')
         test_crawling()
+
+    # Does not work without editor fix but really useful to build the pages automatically with cr.commit()
+    @unittest.skip
+    def test_02_homepage_tour_every_theme(self):
+        Website = self.env['website']
+        websites_themes = Website.get_test_themes_websites()
+        for website in websites_themes:
+            self.start_tour(f"/?fw={website.id}", 'homepage', login='admin')
