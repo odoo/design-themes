@@ -4,11 +4,11 @@
         <!-- Section -->
         <xpath expr="//section" position="attributes">
             <attribute name="class" add="o_cc o_cc4 pb128" remove="pb32" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14","colors":{"c4":"o-color-3"},"flip":[]}</attribute>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14","flip":[]}</attribute>
         </xpath>
         <!-- Shape -->
         <xpath expr="//div[hasclass('container')]" position="before">
-            <div class="o_we_shape o_web_editor_Origins_14" style="background-image: url('/web_editor/shape/web_editor/Origins/14.svg?c4=%23F4F4F4');"/>
+            <div class="o_we_shape o_web_editor_Origins_14 o_second_extra_shape_mapping"/>
         </xpath>
         <!-- Paragraph -->
         <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="replace">

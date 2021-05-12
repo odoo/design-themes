@@ -4,15 +4,15 @@
         <!-- Section -->
         <xpath expr="//section" position="attributes">
             <attribute name="class" add="o_cc o_cc4" remove="bg-200" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/01","colors":{"c2":"o-color-5"},"flip":["y"]}</attribute>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/01","flip":["y"]}</attribute>
         </xpath>
         <!-- Shape -->
         <xpath expr="//div[hasclass('container')]" position="before">
-            <div class="o_we_shape o_web_editor_Blobs_01 o_we_flip_y" style="background-image: url('/web_editor/shape/web_editor/Blobs/01.svg?c2=%23212121');"/>
+            <div class="o_we_shape o_web_editor_Blobs_01 o_we_flip_y"/>
         </xpath>
         <!-- Row 1 -->
         <xpath expr="(//div[hasclass('col-lg-12')])[1]/div" position="replace">
-            <div class="row s_col_no_resize s_col_no_bgcolor no-gutters border shadow align-items-center flex-row-reverse o_cc o_cc4" style="border-width: 2.5px !important; border-color: rgb(33, 33, 33) !important; box-shadow: rgb(33, 33, 33) 20px -20px 0px 0px !important;">
+            <div class="row s_col_no_resize s_col_no_bgcolor no-gutters border shadow align-items-center flex-row-reverse o_cc o_cc4" style="border-width: 2.5px !important; border-color: rgb(44, 41, 39) !important; box-shadow: rgb(44, 41, 39) 20px -20px 0px 0px !important;">
                 <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
                     <img src="/web/image/website.s_media_list_default_image_1" alt="" class="s_media_list_img h-100 w-100"/>
                 </div>
@@ -25,7 +25,7 @@
         </xpath>
         <!-- Row 2 -->
         <xpath expr="(//div[hasclass('col-lg-12')])[2]/div" position="replace">
-            <div class="row s_col_no_resize s_col_no_bgcolor no-gutters shadow border align-items-center o_cc o_cc4" style="border-width: 2.5px !important; box-shadow: rgb(33, 33, 33) 20px -20px 0px 0px !important; border-color: rgb(33, 33, 33) !important;">
+            <div class="row s_col_no_resize s_col_no_bgcolor no-gutters shadow border align-items-center o_cc o_cc4" style="border-width: 2.5px !important; box-shadow: rgb(44, 41, 39) 20px -20px 0px 0px !important; border-color: rgb(44, 41, 39) !important;">
                 <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
                     <img src="/web/image/website.s_media_list_default_image_2" alt="" class="s_media_list_img h-100 w-100"/>
                 </div>
@@ -37,7 +37,7 @@
         </xpath>
         <!-- Row 3 -->
         <xpath expr="(//div[hasclass('col-lg-12')])[3]/div" position="replace">
-            <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_cc o_cc5 border shadow align-items-center flex-row-reverse" style="border-width: 2.5px !important; border-color: rgb(161, 192, 5) !important; box-shadow: rgb(161, 192, 5) 20px -20px 0px 0px !important;">
+            <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_cc o_cc5 border shadow align-items-center flex-row-reverse" style="border-width: 2.5px !important; border-color: rgb(44, 41, 39) !important; box-shadow: rgb(44, 41, 39) 20px -20px 0px 0px !important;">
                 <div class="align-self-stretch s_media_list_img_wrapper col-lg-4">
                     <img src="/web/image/website.s_media_list_default_image_3" alt="" class="s_media_list_img h-100 w-100"/>
                 </div>

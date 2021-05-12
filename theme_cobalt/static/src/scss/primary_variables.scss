@@ -74,3 +74,11 @@ $o-color-palettes-compatibility-indexes: (
     17: 'generic-16',
     18: 'generic-17',
 );
+
+//------------------------------------------------------------------------------
+// Shapes
+//------------------------------------------------------------------------------
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Blobs/03', (2: 2));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Bold/01', (2: 2));
+$o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Bold/01', (2: 'footer'));

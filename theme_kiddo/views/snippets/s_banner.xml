@@ -3,11 +3,11 @@
     <template id="s_banner" inherit_id="website.s_banner">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13","colors":{"c4":"o-color-1"},"flip":[]}</attribute>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13","flip":[]}</attribute>
         </xpath>
         <!-- Shape -->
         <xpath expr="//section/*[last()]" position="after">
-            <div class="o_we_shape o_web_editor_Wavy_13" style="background-image: url('/web_editor/shape/web_editor/Wavy/13.svg?c4=%23F3997B');"/>
+            <div class="o_we_shape o_web_editor_Wavy_13"/>
         </xpath>
         <!-- Paragraph -->
         <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
