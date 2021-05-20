@@ -1,0 +1,188 @@
+
+// Default Style ================================
+// ==============================================
+
+#wrapwrap .o_player_wrapper {
+    display: flex;
+    align-items: center;
+
+    .o_player {
+        position: static!important;
+        margin: 0!important;
+    }
+}
+
+#wrapwrap .s_media_block {
+    background-size: $s-media-block-background-size;
+    background-repeat: $s-media-block-background-repeat;
+    background-attachment: initial;
+    position: relative;
+    overflow: hidden;
+    @include s-media-block-hook;
+
+    > div {
+        z-index: 2;
+        color: white;
+
+        &.v-align {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            > * {
+                position: relative;
+                left: -50%;
+            }
+        }
+    }
+    .editable {
+        min-height: 50px;
+    }
+
+    .o_media_loading {
+        opacity: 0;
+    }
+
+    .videoBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        display: block;
+        min-height: 100%;
+        min-width: 100%;
+        overflow: hidden;
+        transition: e("top .5s ease-in-out, left .5s ease-in-out, width .5s ease-in-out, height .5s ease-in-out");
+
+        @include s-media-block-videoBox-hook;
+    }
+
+    .o_player_wrapper {
+        @include o-position-absolute(0, 0, 0, 0);
+    }
+
+    .yt_video_container {
+        @include o-position-absolute(0, 0, 0, 0);
+        z-index: 0;
+        transform: translate(0);
+        background: rgba(255, 0, 0, 0);
+        &.js-static-black {
+            background: black;
+        }
+        &.js-animated-bg {
+            background: linear-gradient(230deg, #4b79cf, #a24bcf, #4bc5cf);
+            background-size: 300% 300%;
+            animation: o-anim_movingBG 30s ease infinite;
+        }
+        .mb_YTPBar { display: none!important; }
+
+        .yt-loader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: #2D9;
+            display: block;
+            overflow: visible!important;
+            transition: width 800ms ease;
+
+            span {
+                display: block;
+                position: absolute;
+                right: 0px;
+                width: 100px;
+                height: 100%;
+                box-shadow: 0 0 10px #2D9, 0 0 5px #2D9;
+                opacity: 1.0;
+            }
+        }
+
+        .controls{
+            position: absolute;
+            top: 80%;
+            right: 50px;
+            opacity: 0;
+            padding: 3px 7px;
+            color: gray('600');
+            background: rgba(0, 0, 0, 0.69);
+            span {
+                &.btnMute { margin-left: 5px; }
+                &:hover   { color: $white; cursor: pointer; }
+            }
+        }
+        &:hover .controls{
+            opacity: 1;
+        }
+    }
+}
+
+.editor_enable .s_media_block {
+    &:before {
+        content: " ";
+        display: block;
+        @include o-position-absolute(0, 0, 0, 0);
+        z-index: 1;
+    }
+}
+
+#s_media_block_modal {
+    @include s-media-block-modal-hook;
+
+    .videoEnabler {
+        position: relative;
+        display: block;
+        height: 4em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        i { font-size: 2em; }
+    }
+
+    .modal-body {
+        position: relative;
+        border-top: 0px solid black;
+
+        img.guide {
+            box-shadow:inset rgba(0, 0, 0, 0.35) 0 0 26px, rgba(0, 0, 0, 0.35) 0 0 15px;
+            border-radius: 50%;
+            border: 8px solid #FFF;
+            width: 75%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        hr {margin: 10px -15px 20px;}
+
+        #media_block_src {
+            font-family: monospace;
+            font-size: 0.8em;
+            min-height: 100px;
+        }
+
+        &[data-video-type="vimeo"] {
+            #media_block_option_muted, #media_block_option_controls {
+                display: none;
+            }
+        }
+        &[data-video-type="dailymotion"] {
+            #media_block_option_loop, #media_block_option_controls {
+                display: none;
+            }
+        }
+        &[data-video-type="other"], &[data-video-type="image"] {
+            #media_block_options {
+                display: none;
+            }
+        }
+        &[data-video-type=youtube] {
+            #media_block_option_controls {
+                display: none;
+            }
+        }
+    }
+}
+
+/* WebSite Builder custom media query (why?) */
+@media only screen and (max-width: 400px) { // FIXME
+    #wrapwrap section.s_media_block {
+        height: 400px!important; // fix a website builder "!important" rule
+    }
+}

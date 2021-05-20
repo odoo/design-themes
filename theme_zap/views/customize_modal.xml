@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="customize_modal" inherit_id="theme_common.theme_customize">
+        <xpath expr="//t[@t-set='_nb_fonts']" position="attributes">
+            <attribute name="t-value">11</attribute>
+        </xpath>
+    </template>
+
+    <template id="option_font_title_02_variables" inherit_id="website.option_font_title_02_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_headings_roboto_slab_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_03_variables" inherit_id="website.option_font_title_03_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_headings_dosis_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_04_variables" inherit_id="website.option_font_title_04_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_headings_lato_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_05_variables" inherit_id="website.option_font_title_05_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_headings_advent_pro_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_06_variables" inherit_id="website.option_font_title_06_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_headings_oswald_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_title_10_variables" inherit_id="theme_common.option_font_title_10_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_headings_montserrat_variables.scss"/>
+        </xpath>
+    </template>
+
+    <!-- FIXME -->
+    <!-- <template id="option_font_body_01_variables" inherit_id="website.option_font_body_01_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_body_roboto_variables.scss"/>
+        </xpath>
+    </template> -->
+    <template id="option_font_body_04_variables" inherit_id="website.option_font_body_04_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_body_lato_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_07_variables" inherit_id="theme_common.option_font_body_07_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_body_oxygen_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_08_variables" inherit_id="theme_common.option_font_body_08_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_body_open_sans_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_09_variables" inherit_id="theme_common.option_font_body_09_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_body_merriweather_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="option_font_body_11_variables" inherit_id="theme_common.option_font_body_11_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_body_alt_nunito_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="option_font_button_04_variables" inherit_id="website.option_font_button_04_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_zap/static/src/scss/options/fonts/font_buttons_lato_variables.scss"/>
+        </xpath>
+    </template>
+</odoo>

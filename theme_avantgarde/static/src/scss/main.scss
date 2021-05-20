@@ -1,0 +1,652 @@
+//  =================================================================
+//  Avantgarde Theme.
+//  Light colours, thin text, clean and sharp design.
+//  =================================================================
+
+//------------------------------------------------------------------------------
+// Responsive margins
+//------------------------------------------------------------------------------
+
+$lg-margin: 0.8;
+$md-margin: 0.6;
+$sm-margin: 0.4;
+$xs-margin: 0.2;
+@include o-theme-responsive-spacing-classes($lg-margin, $md-margin, $sm-margin, $xs-margin);
+
+// =================================================
+// ================== BOOTSTRAP  ===================
+// =================================================
+
+// =============   LABELS  =============
+// ======================================
+
+#wrapwrap {
+    label {
+        font-weight: inherit;
+    }
+}
+
+// =============  WELLS  =============
+// ===================================
+
+.card {
+    box-shadow: none;
+}
+
+// =============  INPUTS  =============
+// ====================================
+
+#wrapwrap {
+    .input-group, .navbar-form {
+        .btn {
+            height: (($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) + 0.1);
+        }
+    }
+}
+
+//==================================  BASE  ====================================
+
+// =============================
+// 3.1 GENERAL LAYOUT ==========
+// =============================
+
+#wrap {
+    margin-top: 20px;
+    transition: margin-top 600ms ease-in;
+}
+
+@if $o-theme-layout == 'boxed' {
+    .container {
+        max-width: 100%;
+    }
+
+    #wrap {
+        margin-top: 0;
+    }
+
+    #wrapwrap {
+        padding: 0 !important;
+        > * {
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+    }
+
+    #avant_header {
+        .navbar {
+           padding: 20px 10px;
+        }
+
+        a.navbar-brand.logo {
+          padding: 0px;
+        }
+    }
+}
+
+#wrapwrap {
+    text-rendering          : geometricPrecision;
+    // -webkit-transform       : translate3d(0, 0, 0);
+    // transform               : translate3d(0, 0, 0);
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+@keyframes pageFadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+
+    80% {
+        transform: none;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@mixin pageFadeInDown {
+    animation-name: pageFadeInDown;
+}
+
+main {
+    animation-duration: 1s;
+    @include pageFadeInDown;
+}
+
+h4, h5, h6 {
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 25px;
+    height: auto;
+    padding-top: 10px;
+    background: rgba(255, 0, 0, 0);
+    border-top: 1px solid #E2E2E2;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+// =============================
+// BUTTONS / LABELS ============
+// =============================
+@include o-theme-sri-btn-style();
+
+@include o-theme-sri-ripple-animation-styles('avant');
+
+.tooltip {
+    height: auto;
+    .tooltip-arrow {
+        display: none;
+    }
+    h5 {
+        text-transform: none;
+    }
+}
+
+#wrapwrap {
+    overflow-x: hidden;
+}
+.readable {
+    max-width: 100%;
+    > * {
+        position: relative;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+#wrap > hr {
+    width: 50%;
+    position: relative;
+}
+
+@mixin generate-spacing($n) {
+    @for $i from 1 through $n {
+        .letterSpacing#{$i} {
+            letter-spacing:($i)*1px!important;
+        }
+    }
+}
+@include generate-spacing(10);
+
+.em2 {
+    font-size: 2em;
+}
+.em4 {
+    font-size: 4em;
+}
+
+.text-small {
+    font-size: 0.9em;
+}
+.text-medium {
+    font-size: 1.2em;
+}
+.text-big {
+    font-size: 1.5em;
+}
+
+.mo0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.drop-caps:first-letter,
+.drop-caps_alpha:first-letter,
+.drop-caps_beta:first-letter,
+.drop-caps_gamma:first-letter,
+.drop-caps_delta:first-letter,
+.drop-caps_epsilon:first-letter {
+    font-size: 4.6em;
+    line-height: 0.9;
+    float: left;
+    margin-right: 0.1em;
+
+    .text-right & {
+        float: right;
+    }
+}
+.drop-caps_alpha:first-letter {
+    color: theme-color('alpha');
+}
+.drop-caps_beta:first-letter {
+    color: theme-color('beta');
+}
+.drop-caps_gamma:first-letter {
+    color: theme-color('gamma');
+}
+.drop-caps_delta:first-letter {
+    color: theme-color('delta');
+}
+.drop-caps_epsilon:first-letter {
+    color: theme-color('epsilon');
+}
+
+.text-small_caps {
+    font-variant: small-caps;
+    text-rendering: auto;
+}
+
+@include o-theme-sri-bg-effects-classes();
+
+@include o-theme-sri-v-align-class();
+
+// =============================
+// === ANIMATIONS ==============
+// =============================
+
+@keyframes elFadeIn {
+    0% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+.elFadeIn {
+  animation-name: elFadeIn;
+}
+
+// =============================
+// === HEADER ==================
+// =============================
+
+#pre-header {
+    display: none;
+    border-bottom: 1px solid $body-color;
+    @if $o-theme-layout == 'full' {
+        padding: 10px 10px;
+    } @else {
+        padding: 10px 0;
+    }
+    position: relative;
+    z-index: 2;
+
+    .year {
+        font-family: $headings-font-family;
+        color: $body-color;
+    }
+    a {
+        margin-left: 5px;
+        color: $body-color;
+        &:hover {
+            color: theme-color('alpha');
+        }
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+}
+
+@include o-theme-sri-header-styles('avant', rgba(255, 0, 0, 0), $body-color, none, normal, 1, all 400ms, theme-color('alpha'));
+
+// Elements interaction
+
+// If a title is first child of a box with custom margin-top,
+// then remove the natural title's margin-top
+
+[class*='mt'] {
+    > h1, > h2, > h3, > h4, > h5, > h6 {
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+}
+
+// =============================
+// ====  Top Content  ==========
+// =============================
+
+#wrapwrap.o_header_overlay {
+
+    #pre-header {
+        @include o-position-absolute($top: 0, $left: 0);
+        margin: 0;
+        width: 100%;
+
+        &:after {
+            content: "";
+            position: fixed;
+        }
+    }
+
+    > header {
+        .navbar-brand {
+            color: #fff;
+        }
+    }
+
+    #wrap {
+        // Blog Layout
+        #title.blog_header {
+
+            .cover.cover_full{
+                height: 75vh;
+                z-index: -1;
+                width: 100%;
+                @include o-position-absolute($top: 0, $left: 0);
+            }
+
+            .blog_title {
+                min-height: 300px;
+                top: 0;
+                margin-top: 15%;
+            }
+
+            >.container:not(.cover) {
+                z-index: 2;
+
+                .js_publish_management, #change_cover {
+                    top: -150px;
+                }
+            }
+        }
+
+        #blog_content {
+            background: #FEFEFE;
+            z-index: 2;
+            position: relative;
+            margin-top: 0!important;
+        }
+    }
+}
+
+//==================================  SNIPPETS ====================================
+
+// ============================
+// Jumbotron ==================
+// ============================
+
+.jumbotron p {
+    font-weight: inherit;
+}
+
+// ============================
+// s_title ====================
+// ============================
+
+.s_title {
+    text-align: center;
+    overflow: hidden;
+    h1 {
+        display: inline;
+        position: relative;
+        &:before {
+            content: "";
+            background: $body-color;
+            height: 1px;
+            position: absolute;
+            left: -100%;
+            top: 49%;
+            width: 90%;
+        }
+        &:after {
+            content: "";
+            background: $body-color;
+            height: 1px;
+            position: absolute;
+            left: 110%;
+            top: 49%;
+            width: 90%;
+        }
+    }
+}
+
+// =============================
+// s_text_block ================
+// =============================
+
+.s_text_block {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// =============================
+// s_text_block_image_fw =======
+// =============================
+
+.s_text_block_image_fw {
+    div {
+        text-shadow: none;
+    }
+}
+
+@keyframes o-anim_movingBG  {
+    0% {
+        background-position: 0% 84%
+    }
+    40% {
+        background-position: 100% 16%
+    }
+    100% {
+        background-position: 0% 84%
+    }
+}
+
+// =============================
+// 4.6  Google Map  ============
+// =============================
+
+.dropdown-menu.backgrounds {
+    width: 260px;
+
+    a.thumb {
+        margin: 2px 7px 6px;
+        float: left;
+        clear: none;
+        width: 44%;
+
+        height: 50px;
+        background-size: cover;
+        outline: 1px solid #626262;
+        opacity: .8;
+        &:hover {opacity: 1}
+        &.active {
+            opacity: 1;
+            outline: 2px solid theme-color('success');
+        }
+    }
+}
+
+@include o-theme-sri-bg-img-thumb-classes((
+    'stdMap': 'map-default.jpg', 'lightMonoMap': 'map-lightMono.jpg', 'cupertinoMap': 'map-cupertino.jpg',
+    'retroMap': 'map-retro.jpg', 'cobaltMap': 'map-cobalt.jpg', 'flatMap': 'map-flat.jpg', 'blueMap': 'map-blue.jpg',
+    'lillaMap': 'map-lilla.jpg', 'carMap': 'map-caramello.jpg', 'testMap': 'map-default.jpg', 'bwMap': 'map-bw.jpg'
+));
+
+/*==================================================
+=            web_editor integration                =
+==================================================*/
+// temporary rules until web_editor's assets and
+// theme's one will be totally separated
+
+.o_ace_view_editor, .o_technical_modal, .js_publish_management {
+    .btn.btn-secondary {
+        background: white!important;
+    }
+}
+
+/* Ecommerce */
+@include o-theme-sri-ecommerce-classes();
+
+$-logo-font-size: $o-theme-navbar-logo-height / $line-height-base;
+@if $-logo-font-size >= 5rem {
+    header .navbar-brand {
+        @include media-breakpoint-down(md) {
+            font-size: max(5 / 6 * $-logo-font-size, 1rem);
+        }
+        @media only screen and (max-width : 479px) {
+            font-size: max(3 / 6 * $-logo-font-size, 1rem);
+        }
+        @media only screen and (max-width : 349px) {
+            font-size: max(2 / 6 * $-logo-font-size, 1rem);
+        }
+    }
+}
+
+@if $o-theme-hamburger-layout {
+    #avant_header:not(.disabled) {
+        > .navbar {
+            @include media-breakpoint-up(md) {
+                > .container {
+                    padding-right: 0;
+                }
+            }
+
+            > .container {
+                flex-wrap: wrap !important;
+                align-items: center !important;
+            }
+        }
+        .navbar-header {
+            float: none !important;
+            position: relative;
+        }
+        button.navbar-toggler {
+            display: block;
+            border-color: rgba(0, 0, 0, 0);
+            background-color: rgba(0, 0, 0, 0);
+            transition: all 400ms;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0);
+                cursor: pointer;
+            }
+            @media only screen and (min-width : 350px) {
+                height: 3em;
+            }
+            @media only screen and (min-width : 480px) { // FIXME
+                height: 2.5em;
+            }
+            @include media-breakpoint-up(md) {
+                height: 3.6em;
+            }
+            @include media-breakpoint-up(lg) {
+                height: 4.5em;
+            }
+
+            @if $o-theme-layout == 'boxed' {
+                margin-right: 0;
+                padding-right: 0;
+            }
+        }
+
+        .navbar-collapse {
+            display: none !important;
+            width: 100% !important;
+            overflow-x: hidden !important;
+
+            &.show, &.collapsing {
+                display: block !important;
+            }
+        }
+
+        #top_menu {
+            text-align: right;
+            float: none !important;
+            overflow: hidden;
+            max-width: 100%;
+            margin-top: 0px;
+            padding-right: 15px;
+            padding-bottom: 2em;
+
+            > li {
+                float: none!important;
+                width: 100%;
+                overflow: hidden;
+                &.divider {
+                    margin: 5px 0;
+                    border: none;
+                    padding: 0;
+                    border:none;
+                }
+                a {
+                    float: right;
+                    padding: 9px;
+                    background-color: color('body');
+                    margin-bottom: .31em;
+                    clear: both;
+                    transition: all 300ms ease-in-out;
+
+                    &:hover {
+                        transform: translate(-10px,0);
+                    }
+                }
+
+                &.dropdown.show > a.dropdown-toggle {
+                    background-color: color('body');
+                }
+                .dropdown-menu {
+                    position: static;
+                    float: right;
+                    clear: both;
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    box-shadow: none;
+                    margin-right: 1.5em;
+                    margin-bottom: 1em;
+
+                    .dropdown-item {
+                        color: color('text');
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .navbar-brand {
+            @include media-breakpoint-up(lg) {
+                padding: .3em 0 .3em 15px;
+            }
+            @if $o-theme-layout == 'boxed' {
+                padding-left: 0;
+                @include media-breakpoint-up(lg) {
+                    padding: .3em 0;
+                }
+            }
+        }
+    }
+
+    // Top Content
+    #wrapwrap.o_header_overlay {
+        #avant_header:not(.disabled) {
+            .navbar-collapse {
+                overflow: hidden;
+                position: absolute;
+                right: 0;
+                width: 100%;
+                padding: 10px;
+                background-color: transparentize(color('text'), 0.8);
+            }
+            #top_menu, #top_menu.collapsing {
+                padding: 0;
+                margin: 0;
+                li {
+                    float: right!important;
+                    > a {
+                        float: right!important;
+                    }
+                }
+                .dropdown-menu {
+                    .dropdown-item, .dropdown-item:hover {
+                        transform: translate(0, 0);
+                        margin-left: 3px;
+                    }
+                }
+            }
+            @include media-breakpoint-up(md) {
+                #top_menu {
+                    background-color: color('body');
+                    padding-right: 5%;
+                }
+                .navbar-collapse {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

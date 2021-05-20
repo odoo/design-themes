@@ -1,0 +1,18 @@
+#top_menu li {
+    border-bottom-width: 0px;
+    a {
+        text-transform: uppercase;
+    }
+}
+#wrapwrap > footer {
+    background: rgba(0, 0, 0, 0);
+}
+
+@if $o-theme-hamburger-layout {
+    #wrapwrap > header > .navbar-static-top {
+        z-index: 100;
+        > .container {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    }
+}

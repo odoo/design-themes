@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Page header" id="s_page_header">
+        <section class="s_page_header pt32 pb32" style="background-color: rgb(239, 239, 239);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pt16">
+                        <span class="s_badge badge bg-alpha">
+                            <i class="fa fa-1x fa-fw fa-tag"/>Tag
+                        </span>
+                        <span class="s_badge badge bg-gamma">
+                            <i class="fa fa-1x fa-fw fa-folder"/>Category
+                        </span>
+                    </div>
+                    <div class="col-lg-12 s_title pt8 pb16">
+                        <h1 class="s_title_default"><font style="font-size: 62px;">Page Title</font></h1>
+                        <p class="lead">Introduce your content in few lines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

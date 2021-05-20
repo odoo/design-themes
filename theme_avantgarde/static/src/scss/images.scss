@@ -1,0 +1,26 @@
+
+.bg-img-01       { @include o-theme-sri-bg-image-styles($o-theme-img-01); }
+.bg-img-02       { @include o-theme-sri-bg-image-styles($o-theme-img-02, white, black); }
+.bg-img-03       { @include o-theme-sri-bg-image-styles($o-theme-img-03, #F4F4F4, black); }
+.bg-img-04       { @include o-theme-sri-bg-image-styles($o-theme-img-04, white, black); }
+.bg-img-05       { @include o-theme-sri-bg-image-styles($o-theme-img-05); }
+.bg-img-06       { @include o-theme-sri-bg-image-styles($o-theme-img-06,#333, rgba(255, 0, 0, 0), 50%,20%); }
+.bg-img-07       { @include o-theme-sri-bg-image-styles($o-theme-img-07,white, black); }
+.bg-img-08       { @include o-theme-sri-bg-image-styles($o-theme-img-08, white, black); }
+.bg-img-09       { @include o-theme-sri-bg-image-styles($o-theme-img-09); }
+.bg-img-10       { @include o-theme-sri-bg-image-styles($o-theme-img-10,white, black); }
+.bg-img-11       { @include o-theme-sri-bg-image-styles($o-theme-img-11,white, black); }
+.bg-img-12       { @include o-theme-sri-bg-image-styles($o-theme-img-12,white, black); }
+
+.bg_patt-01       { @include o-theme-sri-bg-pattern-styles($o-theme-patt-01, gray('700')); }
+.bg_patt-02       { @include o-theme-sri-bg-pattern-styles($o-theme-patt-02, gray('700'), $x: 100%, $y: 42%); }
+.bg_patt-03       { @include o-theme-sri-bg-pattern-styles($o-theme-patt-03, gray('700'), $x: 100%, $y: 42%); }
+.bg_patt-04       { @include o-theme-sri-bg-pattern-styles($o-theme-patt-04, gray('700'), $x: 100%, $y: 35%); }
+.bg_patt-05       { @include o-theme-sri-bg-pattern-styles($o-theme-patt-05, #555, $x: 100%, $y: 42%); }
+.bg_patt-06       { @include o-theme-sri-bg-pattern-styles($o-theme-patt-06, #666, $x: 100%, $y: 36%); }
+
+@include o-theme-sri-bg-img-thumb-classes((
+    'bg-img-01': $o-theme-img-01, 'bg-img-02': $o-theme-img-02, 'bg-img-03': $o-theme-img-03, 'bg-img-04': $o-theme-img-04, 'bg-img-05': $o-theme-img-05, 'bg-img-06': $o-theme-img-06,
+    'bg-img-07': $o-theme-img-07, 'bg-img-08': $o-theme-img-08, 'bg-img-09': $o-theme-img-09, 'bg-img-10': $o-theme-img-10, 'bg-img-11': $o-theme-img-11, 'bg-img-12': $o-theme-img-12,
+    'bg-patt-01': $o-theme-patt-01, 'bg-patt-02': $o-theme-patt-02, 'bg-patt-03': $o-theme-patt-03, 'bg-patt-04': $o-theme-patt-04, 'bg-patt-05': $o-theme-patt-05, 'bg-patt-06': $o-theme-patt-06
+));

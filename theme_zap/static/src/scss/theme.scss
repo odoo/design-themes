@@ -1,0 +1,26 @@
+
+.btn {
+    padding: 10px 22px;
+
+    &.btn-sm {
+        padding: 6px 10px;
+    }
+    &.btn-lg {
+        padding: 12px 28px;
+    }
+}
+
+#wrapwrap header .navbar .navbar-nav .nav-item > .dropdown-menu .dropdown-item {
+    padding: 8px 14px;
+
+    &:before {
+        content: '';
+        margin: 0;
+    }
+}
+
+.o_footer_copyright .js_language_selector {
+    .dropdown-toggle {
+        padding: 3px 16px;
+    }
+}

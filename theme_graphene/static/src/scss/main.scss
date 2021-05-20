@@ -1,0 +1,549 @@
+//  =================================================================
+//  Graphene Theme.
+//  Light colours, thin text, clean and sharp design.
+//  =================================================================
+
+//------------------------------------------------------------------------------
+// Responsive margins
+//------------------------------------------------------------------------------
+
+$lg-margin: 0.8;
+$md-margin: 0.6;
+$sm-margin: 0.4;
+$xs-margin: 0.2;
+@include o-theme-responsive-spacing-classes($lg-margin, $md-margin, $sm-margin, $xs-margin);
+
+
+.modal:not(.o_technical_modal) {
+    .modal-header {
+        border-bottom: 1px solid $graphene-ui-light;
+        color: $graphene-ui-dark;
+        .close {
+            text-shadow: 0 1px 0 #000;
+        }
+    }
+    .modal-content {
+        color: $graphene-ui-text;
+        top: 15px;
+        label {
+            font-weight: 300;
+        }
+        hr {
+            border-top-color: rgba(255, 255, 255, 0.05);
+        }
+        .card, .panel {
+            background-color : $graphene-ui-light;
+            border: none;
+        }
+        .table-striped > tbody > tr:nth-of-type(2n+1) {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        select, textarea {
+            color: gray('800')est;
+        }
+        form .list-group .form-group {
+            background: rgba(0, 0, 0, 0);
+            border-color: $graphene-ui-light;
+            border-width: 0 0 1px 0
+        }
+
+        .nav-tabs {
+            background-color : $graphene-ui-dark;
+            border: none;
+            > li > a {
+                color: $graphene-ui-muted;
+                border: none;
+                &:hover {
+                    background-color: $graphene-ui-light;
+                    border: none;
+                }
+            }
+            > li.active > a,
+            > li.active > a:hover,
+            > li.active > a:focus {
+                background-color: $graphene-ui-light;
+                color: white;
+                border: none;
+            }
+            li.search {
+                top: 3px;
+                right: 7px;
+                .pager li > a, .pager li > span {
+                    background-color: theme-color('primary');
+                    border-radius: 0;
+                    border: none;
+                    font-weight: bold;
+                    color: white;
+                }
+                .pager .disabled >a,
+                .pager .disabled> a:hover,
+                .pager .disabled> a:focus,
+                .pager .disabled> span {
+                    background-color: $graphene-ui-light;
+                    border: none;
+                    opacity: 0.5;
+                }
+            }
+        }
+        .form-control {
+            background-color: $graphene-ui-dark;
+            color: #EAEAEA;
+            border:none;
+        }
+        .font-icons:before {
+            top: 7px!important;
+            left: 8px!important;
+            font-size: 1.2em!important;
+        }
+	.o_payment_form {
+	    .payment_option_name {
+	        color: unset;
+	    }
+	}
+    }
+
+    .modal-body {
+        border-bottom    : 1px solid rgba(255, 255, 255, 0.05);
+        background-color : $graphene-ui-light;
+        padding-bottom   : $modal-header-padding;
+    }
+
+    .modal-footer {
+        padding: $modal-header-padding + (5/16) * 1rem;
+    }
+}
+
+//==================================  BASE  ====================================
+
+// =============================
+// 3.1 GENERAL LAYOUT ==========
+// =============================
+
+#wrap {
+    margin-top: 20px;
+}
+
+// =============================
+// 3.2 TYPOGRAPHY ==============
+// =============================
+
+.serif {
+    font-family: nth($o-theme-fonts, $o-theme-font-serif-number);
+}
+.sans-serif {
+    font-family: nth($o-theme-fonts, $o-theme-font-sans-serif-number);
+}
+
+.body {
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+h4, h5, h6 {
+    line-height: 1.6;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0px;
+    padding-left: 0;
+}
+
+footer {
+    height: auto;
+}
+
+@if $o-theme-layout == 'boxed' {
+    #wrap {
+        margin-top: 0;
+    }
+
+    #wrapwrap {
+        > header, > main {
+            background: #FFF;
+        }
+
+        #graph_header .navbar {
+            padding: 20px 10px;
+        }
+    }
+
+    #graph_header, .o_header_affix {
+        .navbar {
+            > .container {
+                width: 100%;
+                max-width: 1024px;
+            }
+        }
+    }
+}
+@if $o-theme-layout == 'postcard' {
+    #graph_header {
+        .navbar {
+            padding-left: 2.5%;
+
+            @include media-breakpoint-up(md) {
+                padding-right: 2.5%;
+            }
+        }
+        .nav li.show > a {
+            background-color: rgba(0, 0, 0, 0);
+            color: #555;
+        }
+        .nav li.show > a {
+            color: #555;
+        }
+    }
+
+    main, footer:not(.modal-footer) {
+        background-color: rgba(0, 0, 0, 0)!important;
+    }
+
+    #wrap, footer:not(.modal-footer) > * {
+        background: #FFF;
+        margin: 0 auto;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        max-width: 1024px;
+        width: 95%;
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.18);
+        .container {
+            max-width: 100%;
+        }
+    }
+
+    footer:not(.modal-footer) {
+        padding-bottom: 1em;
+    }
+
+    footer:not(.modal-footer) > * {
+        border-radius:0;
+        margin-top: 0!important;
+        &:last-child {
+            padding: 8px;
+            margin-bottom: 3em!important;
+        }
+    }
+
+    // =========== Others modules compatibility
+
+    .o_wforum_navbar_container {
+        background: #FFF;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 1px;
+        max-width: 1024px;
+        width: 95%;
+        max-width: 100%;
+        a.navbar-brand {
+            padding-left: 10px;
+        }
+    }
+
+    main > section.container {
+        background: #FFF;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 1px;
+        max-width: 1024px;
+        width: 95%;
+    }
+
+    #graph_header, .o_header_affix {
+        .navbar {
+            > .container {
+                width: 100%;
+                max-width: 1024px;
+            }
+        }
+    }
+}
+
+
+// =============================
+// BUTTONS / LABELS ============
+// =============================
+
+// ======== Button Customizations
+@include o-theme-sri-btn-style(0px 3px 3px -2px rgba(51, 51, 51, 0.0), 0px 3px 3px -2px rgba(51, 51, 51, 0.23), 0px 2px 2px -1px rgba(51, 51, 51, 0.23));
+
+button.btn {
+    outline:0!important;
+    &:focus, &:active {
+        outline:0;
+    }
+}
+
+@include o-theme-sri-ripple-animation-styles('graph');
+
+.tooltip {
+    height: auto;
+    .tooltip-arrow {
+        display: none;
+    }
+    h5 {
+        text-transform: none;
+    }
+}
+
+// ==================================
+// WB builder default classes ===
+// ==================================
+
+#wrapwrap {
+    overflow-x: hidden;
+}
+
+#wrap > hr {
+    width: 50%;
+    position: relative;
+}
+
+// =============================
+// EFFECTS =================
+// =============================
+
+@mixin generate-spacing($n) {
+    @for $i from 1 through $n {
+        .letterSpacing#{$i} {
+            letter-spacing:($i)*1px;
+        }
+    }
+}
+@include generate-spacing(10);
+
+.em2 {
+    font-size: 2em;
+}
+.em4 {
+    font-size: 4em;
+}
+
+.mo0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.title-parent {
+    text-align: center;
+}
+
+.title-underlined, .title-boxed {
+    display: inline-block;
+    clear: both;
+    position: relative;
+
+    &:before, &:after {
+        content: "";
+        opacity: .8;
+        display: block;
+    }
+
+    &.o_hold {
+        &:before, &:after {
+            transition: none;
+        }
+    }
+}
+
+.title-underlined {
+    padding-bottom: 0.6em;
+    &:after {
+        margin: .2em auto 0;
+        border-top: 2px solid;
+        width: 0;
+        transition: width 1s ease-in 500ms;
+    }
+    &.o_visible {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.title-boxed{
+    margin: 0.9em 0 1em;
+    padding: 0.25em 0.1em;
+
+    @include media-breakpoint-up(md) {
+        padding: 0.45em 0.8em;
+    }
+
+    &:before, &:after{
+        opacity: 0;
+        border: 2px solid rgba(0, 0, 0, 0);
+        display: initial;
+        @include o-position-absolute(0,0,0,0);
+        transition: e("opacity .75s ease-out 500ms, transform 1s ease-out 500ms");
+    }
+    &:before {
+        transform: scale(0, 1);
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+    &:after  {
+        transform: scale(1, 0);
+        border-right-color: inherit;
+        border-left-color: inherit;
+    }
+    &.o_visible {
+        &:before,&:after {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+@include o-theme-sri-bg-effects-classes();
+
+@include o-theme-sri-v-align-class();
+
+// =============================
+// === HEADER ==================
+// =============================
+@include o-theme-sri-header-styles('graph', rgba(0, 0, 0, 0), gray('900'), uppercase, 600, 0.5, none, gray('800'));
+
+// =============================
+// 3.8 Website B. ==============
+// =============================
+
+// Restore original toolbar font-family
+div#website-top-navbar *:not(.fa) {
+    font-family: sans-serif;
+}
+
+// Elements interaction
+
+// If a title is first child of a box with custom margin-top,
+// then remove the natural title's margin-top
+
+[class*='mt'] {
+    > h1, > h2, > h3, > h4, > h5, > h6 {
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+}
+
+// =============================
+// ====  Top Content  ==========
+// =============================
+
+@mixin graphene-top-content {
+    z-index: -1;
+    width: 100%;
+    @include o-position-absolute($top: 0, $left: 0);
+}
+
+#wrapwrap.o_header_overlay {
+
+    > header:not(.affixed) {
+
+        .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-toggle {
+            border-color: white;
+
+            .icon-bar {
+                background-color: white;
+            }
+        }
+
+        .nav > li {
+            > a {
+                color: white;
+                opacity: 1;
+            }
+
+            &.active > a, &:hover > a, li.active > a {
+                color: #fff;
+            }
+        }
+    }
+
+    #wrap {
+        > section, > div {
+            &:not([class*='bg-']) {
+                background-color: white;
+            }
+        }
+    }
+}
+
+//==================================  SNIPPETS ====================================
+
+// =============================
+// s_text_block ================
+// =============================
+
+.s_text_block {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// =============================
+// s_text_block_image_fw =======
+// =============================
+
+.s_text_block_image_fw {
+    div {
+        text-shadow: none;
+    }
+}
+
+@mixin o-anim-movingBG {
+    0% {
+        background-position: 0% 84%
+    }
+    40% {
+        background-position: 100% 16%
+    }
+    100% {
+        background-position: 0% 84%
+    }
+}
+
+@-webkit-keyframes o-anim_movingBG  { @include o-anim-movingBG; }
+@-moz-keyframes o-anim_movingBG  { @include o-anim-movingBG; }
+@-ms-keyframes o-anim_movingBG  { @include o-anim-movingBG; }
+@-o-keyframes o-anim_movingBG  { @include o-anim-movingBG; }
+@keyframes o-anim_movingBG  { @include o-anim-movingBG; }
+
+// =============================
+// Google Map
+// =============================
+
+.dropdown-menu.backgrounds {
+    width: 260px;
+
+    a.thumb {
+        margin: 2px 7px 6px;
+        float: left;
+        clear: none;
+        width: 44%;
+
+        height: 50px;
+        background-size: cover;
+        outline: 1px solid #626262;
+        opacity: .8;
+        &:hover {opacity: 1}
+        &.active {
+            opacity: 1;
+            outline: 2px solid theme-color('success');
+        }
+    }
+}
+
+@include o-theme-sri-bg-img-thumb-classes((
+    'stdMap': 'map-default.jpg', 'lightMonoMap': 'map-lightMono.jpg', 'cupertinoMap': 'map-cupertino.jpg',
+    'retroMap': 'map-retro.jpg', 'cobaltMap': 'map-cobalt.jpg', 'flatMap': 'map-flat.jpg', 'blueMap': 'map-blue.jpg',
+    'lillaMap': 'map-lilla.jpg', 'carMap': 'map-caramello.jpg', 'testMap': 'map-default.jpg', 'bwMap': 'map-bw.jpg'
+));
+
+/* Ecommerce */
+@include o-theme-sri-ecommerce-classes();

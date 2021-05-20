@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Share Extended" id="s_share_extended" inherit_id="website.s_share">
+        <xpath expr="//div[contains(@t-attf-class, 's_share')]" position="replace">
+            <div class="oe_share s_share">
+                <h4 class="s_share_title">Share
+                    <i class="text-muted fa fa-hand-o-right fa-1x"/></h4>
+                <a target="_blank" class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u={url}">
+                    <i class="rounded-circle fa fa-facebook fa-1x"/>
+                </a>
+                <a target="_blank" class="oe_share_twitter fa-1x" href="https://twitter.com/intent/tweet?text={title}&amp;url={url}">
+                    <i class="rounded-circle fa fa-twitter fa-1x"/>
+                </a>
+                <a target="_blank" class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title={title}&amp;">
+                    <i class="rounded-circle fa fa-linkedin fa-1x"/>
+                </a>
+                <a target="_blank" class="oe_share_google" href="https://plus.google.com/share?url={url}">
+                    <i class="rounded-circle fa fa-google-plus fa-1x"/>
+                </a>
+                <a href="mailto:?body={url}&amp;subject={title}">
+                    <i class="rounded-circle fa fa-envelope fa-1x"/>
+                </a>
+            </div>
+        </xpath>
+    </template>
+</odoo>

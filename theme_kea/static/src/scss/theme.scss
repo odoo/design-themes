@@ -1,0 +1,234 @@
+
+#wrap {
+    margin: 80px auto;
+    @include media-breakpoint-down(sm) {
+        margin-top: 0px;
+    }
+    margin-bottom: 0px;
+    .text-muted{
+        &:after {
+            color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+#wrapwrap {
+    .input-group[class*="col-"] {
+        float: left;
+    }
+}
+
+@include o-theme-cfa-header-shadows();
+@include o-theme-cfa-header-responsive-sizes();
+
+/* ========== Navigation =========== */
+
+.navbar {
+    border: none;
+    .container {
+        padding: 0px;
+        box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+        top: -100px;
+        .dropdown-menu {
+            border: none;
+        }
+        .navbar-toggler {
+            right: 25px;
+            border-color: rgba(0, 0, 0, 0);
+            @include media-breakpoint-down(sm) {
+                right: 5px;
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+        .navbar-brand {
+            margin-left: 25px;
+            color: theme-color('alpha');
+            @include media-breakpoint-down(sm) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+#wrapwrap > header .container .navbar-collapse {
+    @include media-breakpoint-down(sm) {
+        margin: 0;
+        padding: 0;
+        border: none !important;
+        box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+    }
+}
+#top_menu {
+    @include o-theme-cfa-top-menu-style($media-padding: 0 0 0 15px, $font-weight: 200,
+        $transition: color 0.2s ease-out, $dropdown-item-hover-color: rgba(0, 0, 0, 0.7));
+    .nav-item {
+        &:hover {
+            @include media-breakpoint-down(sm) {
+                border: none;
+            }
+        }
+        .nav-link {
+            .badge-primary { // shop if there is any product in cart
+                font-size: 1em;
+                padding: 0.4em 0.6em 0.4em;
+                position: relative;
+                top: -15px;
+            }
+            &.active {
+                font-weight: 200;
+            }
+        }
+    }
+    .dropdown-menu, .navbar-collapse {
+        .dropdown-item:hover, .nav-link:hover {
+            color: theme-color('epsilon');
+        }
+    }
+}
+
+/* ====================== Footer ======================== */
+#wrapwrap > footer {
+    background: rgba(0, 0, 0, 0);
+    @include o-theme-cfa-footer-style($container-padding: 0px 65px 20px 65px, $padding: 8px, $bg-color: transparent, $h4-color: theme-color('delta'), $p-color: gray('700'));
+
+    .container {
+        .js_language_selector .dropdown-toggle {
+            padding: 10px 20px;
+        }
+        &.o_footer_copyright {
+            padding: 8px 65px;
+            margin-bottom: 8px;
+            background-color: theme-color('alpha');
+        }
+        h1, h2, h3, h4, h5, h6 {
+            border-left: 15px solid o-theme-color('gamma-dark');
+            margin-right: 50px;
+            padding-left: 20px;
+            color: theme-color('delta');
+            text-transform: uppercase;
+            span {
+                display: block;
+            }
+        }
+    }
+    > .container:last-child {
+        margin-top: 0px !important;
+        .label {
+            padding: .6em .6em .3em;
+        }
+    }
+    #footer {
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: theme-color('alpha');
+        .col-lg-3, .col-lg-5 {
+            padding: 20px 0px;
+            h2 { // social icons in footer
+                text-transform: uppercase;
+                font-size: 25px;
+                color: theme-color('beta');
+                a {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+@include o-theme-cfa-btn-style();
+
+/* ====================== form style ======================== */
+.form-control:not(.quantity):not(.modal) {
+    @include o-theme-cfa-custom-form-control();
+    border-bottom: 1px solid gray('200');
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* =====================  BLOG ===================== */
+
+@include o-theme-cfa-website-blog-styles();
+
+/* =====================  FORUM ===================== */
+@include o-theme-cfa-forum-style($nav-link-active-color: o-theme-color('beta-dark'));
+.o_wforum_navbar_container .navbar .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/* ============== Breadcrumb in events, job etc ============== */
+
+#wrapwrap .breadcrumb {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+}
+
+/* ============== Nav-pills in events, job etc ============== */
+@include o-theme-cfa-nav-pills-styles();
+
+@include o-theme-cfa-card-classes(20px);
+
+@include o-theme-cfa-bg-img-classes();
+
+.em1 {
+    font-size: 1em !important;
+    line-height: 1.5em;
+}
+.em2 {
+    font-size: 2em !important;
+    line-height: 1.5em;
+}
+.em3 {
+    font-size: 3em !important;
+    line-height: 1.5em;
+}
+.em4 {
+    font-size: 4em !important;
+    line-height: 1.2em;
+}
+
+@if $o-theme-layout == 'boxed' {
+    #wrapwrap {
+        padding: 0;
+
+        #wrap, #footer {
+            max-width: map-get($container-max-widths, 'xl');
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+        #footer {
+            margin: 0 auto;
+        }
+        .navbar > .container {
+            max-width: 100%;
+        }
+        footer {
+            background: transparent !important;
+
+            #footer, .o_footer_copyright .container {
+                @if color('footer') {
+                    @include o-bg-color(color('footer'));
+                }
+            }
+            .o_footer_copyright {
+                padding-top: 0;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        .container {
+            max-width: 100%;
+        }
+    }
+    .navbar {
+        width: 100%;
+        margin: 0 auto;
+    }
+} @else {
+    @include o-theme-cfa-full-width-styles();
+    #wrapwrap > footer .container:last-child {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Blockquote" id="s_blockquote">
+        <blockquote class="s_blockquote blockquote">
+            <i class="fa fa-quote-left fa-1x bg-beta rounded-0 s_blockquote_icon"/>
+            <div class="s_blockquote_content" style="background-color: rgba(239,239,239);">
+                <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                <footer class="blockquote-footer">
+                    <img class="img rounded-circle mr-2" src="/web/image/theme_common.image_content_10" alt=""/>
+                    John DOE • CEO of MyCompany
+                </footer>
+            </div>
+        </blockquote>
+    </template>
+</odoo>

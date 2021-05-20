@@ -1,0 +1,9 @@
+$-palettes: $o-color-palettes;
+$o-color-palettes: ();
+$i: 1;
+@each $-palette in $-palettes {
+    $-theme-palette: nth($o-theme-color-palettes, $i);
+    $o-color-palettes: append($o-color-palettes, o-theme-common-add-color-variations($-theme-palette, $-palette));
+    $i: $i + 1;
+}
+$o-user-color-palette: o-theme-common-add-color-variations($o-user-theme-color-palette, $o-user-color-palette);

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_primary_variables" inherit_id="theme_kea._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_yes/static/src/scss/primary_variables.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_yes/static/src/scss/snippets/s_products_carousel.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_yes/static/src/scss/snippets/s_banner_parallax.scss"/>
+        </xpath>
+    </template>
+    <template id="_assets_frontend_helpers" inherit_id="theme_kea._assets_frontend_helpers" priority="1">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_yes/static/src/scss/bootstrap_overridden.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="theme_kea.assets_frontend" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_yes/static/src/scss/layout.scss"/>
+        </xpath>
+    </template>
+
+    <template id="compatibility-saas-11-4-variables" name="Compatibility for saas-11.4 (variables)" inherit_id="theme_common.compatibility-saas-11-4-variables">
+        <xpath expr="//link[last()]" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_yes/static/src/scss/compatibility-saas-11.4-variables.scss"/>
+        </xpath>
+    </template>
+</odoo>

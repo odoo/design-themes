@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Showcase" id="s_showcase">
+        <section class="s_showcase">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 text-right feature" data-name="Feature block">
+                        <h4 class="mb16"><span class="fa fa-2x fa-fw fa-desktop"/>First feature</h4>
+                        <p>Focus on what the customer would like to know, not what you want to show. Write a small explanation of this great feature</p>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 text-left feature" data-name="Feature block">
+                        <h4 class="mb16"><span class="fa fa-2x fa-heart"/>Another feature</h4>
+                        <p>Focus on what the customer would like to know, not what you want to show. Write a small explanation of this great feature</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 text-right feature" data-name="Feature block">
+                        <h4 class="mb16"><span class="fa fa-2x fa-paint-brush "/>Second feature</h4>
+                        <p>Focus on what the customer would like to know, not what you want to show. Write a small explanation of this great feature</p>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 text-left feature" data-name="Feature block">
+                        <h4 class="mb16"><span class="fa fa-2x fa-sliders "/>Last Feature</h4>
+                        <p>Focus on what the customer would like to know, not what you want to show. Write a small explanation of this great feature</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt16 mb16 text-center">
+                <a class="btn btn-secondary" href="">Discover all the features</a>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_showcase-opt" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="before">
+            <div data-js='s_showcase' data-selector=".s_showcase .feature"/>
+        </xpath>
+    </template>
+</odoo>

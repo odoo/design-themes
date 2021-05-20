@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Images row" id="s_images_row">
+        <section class="s_images_row">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 s_images_row_overlay oe_img_bg" style="background-image: url('/web/image/theme_common.image_content_27');">
+                        <div class="s_images_row_body bg-white">
+                            <i class="fa fa-1x fa-camera text-alpha mr-2"/><b>Images</b>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 s_images_row_overlay oe_img_bg" style="background-image: url('/web/image/theme_common.image_content_28');">
+                        <div class="s_images_row_body bg-white">
+                            <i class="fa fa-1x fa-file-o text-alpha mr-2"/><b>Notes</b>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 s_images_row_overlay oe_img_bg" style="background-image: url('/web/image/theme_common.image_content_29');">
+                        <div class="s_images_row_body bg-white">
+                            <i class="fa fa-1x fa-newspaper-o text-alpha mr-2"/><b>News</b>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 s_images_row_overlay oe_img_bg" style="background-image: url('/web/image/theme_common.image_content_30');">
+                        <div class="s_images_row_body bg-white">
+                            <i class="fa fa-1x fa-pencil-square-o text-alpha mr-2"/><b>Edit</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="s_images_row_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-exclude" add=".s_images_row" separator=","/>
+        </xpath>
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector" add=".s_images_row_overlay" separator=","/>
+            <attribute name="data-exclude" add=".s_images_row" separator=","/>
+        </xpath>
+        <xpath expr="//div[@data-js='background_position']" position="attributes">
+            <attribute name="data-selector" add=".s_images_row_overlay" separator=","/>
+            <attribute name="data-exclude" add=".s_images_row" separator=","/>
+        </xpath>
+    </template>
+</odoo>

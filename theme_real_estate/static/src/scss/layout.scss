@@ -1,0 +1,24 @@
+
+@if $o-theme-hamburger-layout {
+    #wrapwrap > header > .navbar {
+        #top_menu .nav-item {
+            border-bottom: none;
+            .nav-link {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@if $o-theme-layout == 'boxed' {
+    #wrap {
+        border: none;
+    }
+} @else {
+    #wrapwrap {
+        border: 10px solid white;
+        @media screen and (max-width: 640px) {
+            border: none;
+        }
+    }
+}

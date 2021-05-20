@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Products" id="s_products_carousel">
+        <section id="s_products_carousel" class="carousel s_products_carousel slide" data-interval="10000">
+            <ol type="1" class="carousel-indicators">
+                <li data-target="#s_products_carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#s_products_carousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner bg-img-02">
+                <div class="carousel-item active">
+                    <div class="container-fluid">
+                        <div class="row content">
+                            <div class="col-lg-12 hero-bg">
+                                <h2>Present your products online!</h2>
+                            </div>
+                            <div class="col-lg-12 product-widget d-block mx-auto bg-alpha">
+                                <div class="row">
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_01" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_02" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_03" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_04" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_05" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_06" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row content">
+                            <div class="col-lg-12 hero-bg">
+                                <h2>Convert your visitors to customers.</h2>
+                            </div>
+                            <div class="col-lg-12 product-widget d-block mx-auto bg-alpha">
+                                <div class="row">
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_01" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_02" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_03" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_04" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_05" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-2 pt16 pb16 widget">
+                                        <a href="#">
+                                            <img src="/web/image/theme_common.image_product_06" alt="" class="img img-fluid d-block mx-auto"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control-prev" data-target="#s_products_carousel" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                <span class="carousel-control-prev-icon"/>
+                <span class="sr-only">Previous</span>
+            </div>
+            <div class="carousel-control-next" data-target="#s_products_carousel" data-slide="next" role="img" aria-label="Next" title="Next">
+                <span class="carousel-control-next-icon"/>
+                <span class="sr-only">Next</span>
+            </div>
+        </section>
+    </template>
+
+</odoo>

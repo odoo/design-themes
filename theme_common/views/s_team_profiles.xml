@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="Team Profiles" id="s_team_profiles">
+        <section class="s_team_profiles pt32 pb32">
+            <div class="container">
+                <div class="row d-flex align-items-stretch s_col_no_bgcolor">
+                    <div class="col-lg-4 pt16 pb16">
+                        <div class="card bg-white text-center">
+                            <div class="card-body">
+                                <img class="img img-fluid rounded-circle m-3 mx-auto" src="/web/image/theme_common.image_content_18" style="width: 50%;" alt=""/>
+                                <h2 class="card-title">John DOE</h2>
+                                <h6 class="text-primary">- ART DIRECTOR -</h6>
+                                <p class="card-text">Use this paragraph to write a short, sweet and successful resume about this member of your team.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="http://www.odoo.com/web/about/facebook" class="btn btn-link" target="_blank">
+                                    <i class="fa fa-facebook fa-1x"/>
+                                </a>
+                                <a href="http://www.odoo.com/web/about/instagram" class="btn btn-link" target="_blank">
+                                    <i class="fa fa-instagram fa-1x"/>
+                                </a>
+                                <a href="http://www.odoo.com/web/about/twitter" class="btn btn-link" target="_blank">
+                                    <i class="fa fa-twitter fa-1x"/>
+                                </a>
+                                <a href="http://www.odoo.com/web/about/linkedin" class="btn btn-link" target="_blank">
+                                    <i class="fa fa-linkedin fa-1x"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt16 pb16">
+                        <div class="card bg-white text-center">
+                            <div class="card-body">
+                                <img class="img img-fluid rounded-circle m-3" src="/web/image/theme_common.image_content_09" style="width: 50%;" alt=""/>
+                                <h2 class="card-title">John DOE</h2>
+                                <h6 class="text-primary">- PARTNER -</h6>
+                                <p class="card-text">Use this paragraph to write a short, sweet and successful resume about this member of your team.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/aboutus" class="btn btn-primary" target="_blank">
+                                    Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt16 pb16">
+                        <div class="card bg-white text-center">
+                            <div class="card-body">
+                                <img class="img img-fluid rounded-circle m-3" src="/web/image/theme_common.image_content_11" style="width: 50%;" alt=""/>
+                                <h2 class="card-title">John DOE</h2>
+                                <h6 class="text-primary">- TRAINEE -</h6>
+                                <p class="card-text">Use this paragraph to write a short, sweet and successful resume about this member of your team.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="http://www.odoo.com/web/about/facebook" class="btn btn-link" target="_blank">
+                                    <i class="fa fa-facebook fa-1x"/>
+                                </a>
+                                <a href="http://www.odoo.com/web/about/instagram" class="btn btn-link" target="_blank">
+                                    <i class="fa fa-instagram fa-1x"/>
+                                </a>
+                                <a href="http://www.odoo.com/web/about/twitter" class="btn btn-link" target="_blank">
+                                    <i class="fa fa-twitter fa-1x"/>
+                                </a>
+                                <a href="http://www.odoo.com/web/about/linkedin" class="btn btn-link" target="_blank">
+                                    <i class="fa fa-linkedin fa-1x"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="s_team_profiles_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="colorpicker"
+                data-selector=".s_team_profiles [class*='col-lg-']"
+                data-target=".card"
+                data-palette-title="Box Color">
+                <div class="dropdown-submenu">
+                    <a tabindex="-1" href="#" class="dropdown-item"><i class="fa fa-eyedropper"/>Color</a>
+                    <div class="dropdown-menu" role="menu"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

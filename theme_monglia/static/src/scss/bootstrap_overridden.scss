@@ -1,0 +1,108 @@
+//
+// Color system
+//
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  180 !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                palette-theme-color('epsilon') !default;
+$link-hover-color:          o-theme-color('epsilon-dark') !default;
+$link-hover-decoration:     none !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
+
+$box-shadow-sm:               0 0 0 0 0 !default;
+$box-shadow:                  $box-shadow-sm !default;
+$box-shadow-lg:               $box-shadow-sm !default;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-weight-bold:            900 !default;
+
+$h1-font-size:                $o-theme-font-size-base * (36 / 14) !default;
+$h2-font-size:                $o-theme-font-size-base * (30 / 14) !default;
+$h3-font-size:                $o-theme-font-size-base * (24 / 14) !default;
+$h4-font-size:                $o-theme-font-size-base * (18 / 14) !default;
+$h5-font-size:                $o-theme-font-size-base !default;
+$h6-font-size:                $o-theme-font-size-base * (12 / 14) !default;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .625rem !default;
+$input-btn-padding-x:         1.25rem !default;
+
+$input-btn-focus-box-shadow:  0 !default;
+
+$input-btn-padding-y-sm:      $input-btn-padding-y !default;
+$input-btn-padding-x-sm:      $input-btn-padding-x !default;
+
+$input-btn-padding-y-lg:      $input-btn-padding-y !default;
+$input-btn-padding-x-lg:      $input-btn-padding-x !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-box-shadow:              0 !default;
+$btn-active-box-shadow:       0 !default;
+
+$btn-border-width:            0 !default;
+
+// Forms
+
+$input-bg:                              palette-theme-color('secondary') !default;
+
+$input-box-shadow:                      0 !default;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-divider-bg:               palette-gray('white') !default;
+$dropdown-box-shadow:               0 !default;
+
+// Navs
+
+$nav-link-padding-y:                0 !default;
+$nav-link-padding-x:                .3125rem !default;
+
+$nav-tabs-border-color:             #2e2d31 !default;
+$nav-tabs-border-width:             0 0 1px 0 !default;
+$nav-tabs-link-hover-border-color:  transparent palette-theme-color('epsilon') #2e2d31 transparent !default;
+$nav-tabs-link-active-color:        $nav-tabs-border-color !default;
+$nav-tabs-link-active-bg:           transparent !default;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color !default;
+
+$nav-divider-color:                 transparent !default;
+$nav-divider-margin-y:              0 !default;
+
+// Navbar
+
+$navbar-padding-y:                  0 !default;
+$navbar-padding-x:                  1.875rem !default;
+
+// Pagination
+
+$pagination-focus-box-shadow:       0 !default;
+
+// Breadcrumbs
+
+$breadcrumb-bg:                     palette-gray('white') !default;
+
+// Carousel
+
+$carousel-control-color:            rgba(0,0,0,0) !default;

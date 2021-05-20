@@ -1,0 +1,19 @@
+.s_blockquote {
+    .s_blockquote_icon {
+        float: left;
+    }
+    .s_blockquote_content {
+        overflow: hidden;
+        padding: $grid-gutter-width/2;
+        background-color: gray('100');
+        text-align: left;
+    }
+    .blockquote-footer {
+        img {
+            max-height: 40px;
+        }
+        &:before {
+            display: none;
+        }
+    }
+}

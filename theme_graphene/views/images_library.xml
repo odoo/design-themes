@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Theme logo -->
+    <record id="image_content_logo" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_logo</field>
+        <field name="name">theme_common.image_content_logo</field>
+        <field name="url">/theme_graphene/static/src/img/theme_samples/image_content_logo.png</field>
+    </record>
+
+    <!-- Image for img tags -->
+    <record id="image_content_01" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_01</field>
+        <field name="name">theme_common.image_content_01</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_01.jpg</field>
+    </record>
+    <record id="image_content_02" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_02</field>
+        <field name="name">theme_common.image_content_02</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_02.jpg</field>
+    </record>
+    <record id="image_content_03" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_03</field>
+        <field name="name">theme_common.image_content_03</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_03.jpg</field>
+    </record>
+    <record id="image_content_04" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_04</field>
+        <field name="name">theme_common.image_content_04</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_04.jpg</field>
+    </record>
+    <record id="image_content_05" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_05</field>
+        <field name="name">theme_common.image_content_05</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_05.jpg</field>
+    </record>
+    <record id="image_content_06" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_06</field>
+        <field name="name">theme_common.image_content_06</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_06.jpg</field>
+    </record>
+    <record id="image_content_07" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_07</field>
+        <field name="name">theme_common.image_content_07</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_07.jpg</field>
+    </record>
+    <record id="image_content_08" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_08</field>
+        <field name="name">theme_common.image_content_08</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_08.jpg</field>
+    </record>
+    <record id="image_content_09" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_09</field>
+        <field name="name">theme_common.image_content_09</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_09.jpg</field>
+    </record>
+    <record id="image_content_10" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_10</field>
+        <field name="name">theme_common.image_content_10</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_10.jpg</field>
+    </record>
+
+    <record id="image_content_19" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_19</field>
+        <field name="name">theme_common.image_content_19</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_01.jpg</field>
+    </record>
+    <record id="image_content_20" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_20</field>
+        <field name="name">theme_common.image_content_20</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_01.jpg</field>
+    </record>
+    <record id="image_content_21" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_21</field>
+        <field name="name">theme_common.image_content_21</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_02.jpg</field>
+    </record>
+    <record id="image_content_22" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_22</field>
+        <field name="name">theme_common.image_content_22</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_03.jpg</field>
+    </record>
+    <record id="image_content_23" model="theme.ir.attachment">
+        <field name="key">theme_common.image_content_23</field>
+        <field name="name">theme_common.image_content_23</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_03.jpg</field>
+    </record>
+
+    <!-- Change default images of snippets -->
+    <record id="s_cover_default_image" model="theme.ir.attachment">
+        <field name="key">website.s_cover_default_image</field>
+        <field name="name">website.s_cover_default_image</field>
+        <field name="url">/theme_graphene/static/src/img/pictures/bg_image_08.jpg</field>
+    </record>
+</odoo>

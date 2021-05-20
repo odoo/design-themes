@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template name="3x Color Block" id="s_color_blocks_img">
+        <section class="s_color_blocks_img o_animation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb32">
+                        <h2>Organize Your Content with These Three Columns</h2>
+                        <h3 class="text-muted ">Write Something Nice for Your Users</h3>
+                    </div>
+                    <div class="col-lg-4 s_color_blocks_img_block">
+                        <div class="s_color_blocks_img_title bg-delta">
+                            <h5 class="text-muted text-center">Resume with a Subtitle</h5>
+                            <h4 class="text-center mb32">This Is a Column</h4>
+                            <img src="/web/image/theme_common.image_content_10" class="img-fluid d-block mx-auto"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 s_color_blocks_img_block">
+                        <div class="s_color_blocks_img_title bg-beta">
+                            <h5 class="text-muted text-center">Resume with a Subtitle</h5>
+                            <h4 class="text-center mb32">This Is a Column</h4>
+                            <img src="/web/image/theme_common.image_content_11" class="img-fluid d-block mx-auto"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 s_color_blocks_img_block">
+                        <div class="s_color_blocks_img_title bg-gamma">
+                            <h5 class="text-muted text-center">Resume with a Subtitle</h5>
+                            <h4 class="text-center mb32">This Is a Column</h4>
+                            <img src="/web/image/theme_common.image_content_13" class="img-fluid d-block mx-auto"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

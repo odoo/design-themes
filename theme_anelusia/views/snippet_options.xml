@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_anelusia_website_options_pattern" inherit_id="website.snippet_options">
+        <xpath expr="//div[@id='so_main_colorpicker']" position="attributes">
+            <attribute name="data-selector" add=".product-widget, .popup-container, .big-menu"/>
+        </xpath>
+    </template>
+</odoo>

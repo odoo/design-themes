@@ -1,0 +1,78 @@
+#wrapwrap > main > #wrap .oe_website_sale {
+    #products_grid_before {
+        ul > li > a {
+            &:hover, &:focus {
+                background-color: o-theme-color('beta-light');
+            }
+        }
+        .js_attributes {
+            border-bottom-color: o-theme-color('epsilon');
+            strong {
+                border-bottom-color: gray('200');
+            }
+        }
+    }
+    #products_grid {
+        .oe_product section {
+            h5 a {
+                color: gray('700');
+            }
+            .product_price {
+                background-color: o-theme-color('delta');
+                border-bottom-color: o-theme-color('delta-dark');
+
+                &:before {
+                    background-color: o-theme-color('epsilon');
+                }
+                &:after {
+                    border-right-color: o-theme-color('epsilon');
+                }
+
+                .fa {
+                    color: o-theme-color('gamma') !important;
+                }
+                span {
+                    color: o-theme-color('alpha') !important;
+                }
+            }
+        }
+        .products_pager ul {
+            a {
+                border-top-color: o-theme-color('epsilon');
+                border-bottom-color: o-theme-color('epsilon');
+            }
+            li:first-child > a {
+                border-left-color: o-theme-color('epsilon');
+            }
+            li:last-child > a {
+                border-right-color: o-theme-color('epsilon');
+            }
+        }
+        .pagination > .active > a {
+            color: o-theme-color('alpha');
+            background-color: o-theme-color('delta');
+        }
+    }
+    .form-inline .input-group .input-group-btn .a-submit {
+        border: none;
+
+        background-color: o-theme-color('delta');
+        &:hover {
+            background-color: o-theme-color('delta-dark');
+        }
+        i {
+            color: o-theme-color('alpha');
+        }
+    }
+    .js_product span {
+        color: gray('700') !important;
+    }
+    .oe_cart #cart_total {
+        h3, span {
+            color: gray('700');
+        }
+    }
+    span:not(.fa) {
+        color: gray('700');
+    }
+}

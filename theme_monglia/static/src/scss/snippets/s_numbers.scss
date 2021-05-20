@@ -1,0 +1,11 @@
+.s_numbers {
+    .s_number {
+        font-size: 75px;
+        @include media-breakpoint-down(sm) {
+            font-size: 60px;
+        }
+    }
+    h6 {
+        text-transform: uppercase;
+    }
+}
