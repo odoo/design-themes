@@ -7,6 +7,7 @@
     'depends': ['website'],
     'data': [
         'data/data.xml',
+        'data/ir_asset.xml',
         'views/old_snippets/s_column.xml',
         'views/old_snippets/s_page_header.xml',
         'views/old_snippets/s_three_columns_circle.xml',

@@ -472,5 +472,13 @@
             <field name="active" eval="False"/>
         </record>
 
+        <record id="theme_common.configurator_tour" model="theme.ir.asset">
+            <field name="key">theme_common.configurator_tour</field>
+            <field name="name">Configurator Tour JS</field>
+            <field name="bundle">website.assets_editor</field>
+            <field name="glob">/theme_common/static/src/js/configurator_tour.js</field>
+            <field name="active" eval="False"/>
+        </record>
+
     </data>
 </odoo>
