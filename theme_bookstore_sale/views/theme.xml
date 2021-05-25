@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="less" name="theme_bookstore_sale_less" inherit_id="website.assets_frontend">
+            <xpath expr="." position="inside">
+                <link href="/theme_bookstore_sale/static/src/less/layout.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>

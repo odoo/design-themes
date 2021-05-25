@@ -1,0 +1,28 @@
+.s_color_blocks_4 {
+  .row, .col-flex {
+    .flex-display(flex);
+    .flex-wrap(wrap);
+
+    // Fix for safari browser as it 'supports' flex but not with the right
+    // behavior
+    &::before, &::after {
+        width: 0;
+    }
+  }
+  .col-flex { // Compatibility with old saas
+    width: 100%;
+  }
+  [class*="col-md-"] {
+    padding: 64px 20px;
+  }
+  @media (max-width: @screen-sm-max) {
+    [class*="col-md-"] {
+      .flex(1 100%);
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

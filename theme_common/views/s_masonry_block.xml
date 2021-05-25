@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+    <!-- 
+    In order to make the blocks' background editable, in your theme xpath the default data selector adding the blocks 
+
+    Eg.
+    <xpath expr="//div[@data-js='background']" position="attributes">
+      <attribute name="data-selector">.s_masonry_block .item, .s_masonry_block .block</attribute>
+    </xpath> 
+    -->
+    
+    <template id="s_masonry_block" name="Masonry Block">
+      <section class="s_masonry_block mt0 mb0" style="height: 480px;">
+        <div class="item col-sm-12 col-md-6 bg-img-03">
+          <div class="main-block text-center">
+            <div class="content">
+              <h2>A great title</h2>
+              <p>And a great subtitle</p>
+            </div>
+          </div>
+        </div>
+        <div class="item col-sm-12 col-md-6 bg-gamma-lighter">
+          <div class="block text-center">
+              <div class="content">
+                <h3>A great title</h3>
+                <p>And a great subtitle</p>
+              </div>
+          </div>
+          <div class="block text-center bg-img-01">
+              <div class="content">
+                <h3>A great title</h3>
+                <p>And a great subtitle</p>
+              </div>
+          </div>
+          <div class="block text-center bg-img-06">
+              <div class="content">
+                <h3>A great title</h3>
+                <p>And a great subtitle</p>
+              </div>
+          </div>
+          <div class="block text-center bg-beta-lighter">
+              <div class="content">
+                <h3>A great title</h3>
+                <p>And a great subtitle</p>
+              </div>
+          </div>
+        </div>
+      </section>
+    </template>
+
+  </data>
+</openerp>
+
+

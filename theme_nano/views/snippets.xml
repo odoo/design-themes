@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+    <template id="s_selection" inherit_id="website.snippets">
+
+
+<!-- STRUCTURE
+     ================================================== -->
+      
+      <xpath expr="//div[@id='snippet_structure']/div[contains(@class, 'o_panel_body')]" position="inside">
+        <t t-snippet="theme_common.s_three_columns_carousel" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_three_columns_carousel.gif"/>
+        <t t-snippet="theme_common.s_carousel_boxed" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_carousel_boxed.gif"/>
+        <t t-snippet="theme_common.s_image_text_fw" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_image_text_fw.gif"/>
+        <t t-snippet="theme_common.s_text_block_image_fw" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_text_block_image_fw.gif"/>
+        <t t-snippet="theme_common.s_text_image_fw" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_text_image_fw.gif"/>
+        <t t-snippet="theme_common.s_images_captions_fw" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_images_captions_fw.gif"/>
+        <t t-snippet="theme_common.s_banner_2" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_banner_2.gif"/>
+        <t t-snippet="theme_common.s_page_header" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_page_header.gif"/>
+        <t t-snippet="theme_common.s_features_circle" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_features_circle.gif"/>
+        <t t-snippet="theme_common.s_numbers" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_numbers.gif"/>
+        <t t-snippet="theme_common.s_color_blocks_4" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_four_columns_fw.gif"/>
+      </xpath>
+
+
+<!-- CONTENT
+     ================================================== -->
+
+      <xpath expr="//div[@id='snippet_content']/div[contains(@class, 'o_panel_body')]" position="inside">
+        <t t-snippet="theme_common.s_label" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_label.gif"/>
+        <t t-snippet="theme_common.s_progress_bar" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_progress_bar.gif"/>
+      </xpath>
+
+
+<!-- FEATURES
+     ================================================== -->
+
+      <xpath expr="//div[@id='snippet_feature']/div[contains(@class, 'o_panel_body')]" position="inside">
+        <t t-snippet="theme_common.s_references_2" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_references_2.gif"/>
+        <t t-snippet="theme_common.s_quotes_slider_2" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_quotes_slider_2.gif"/>
+        <t t-snippet="theme_common.s_features_grid_circle" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_features_grid_circle.gif"/>
+        <t t-snippet="theme_common.s_collapse" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_collapse.gif"/>
+        <t t-snippet="theme_common.s_medias_list" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_medias_list.gif"/>
+        <t t-snippet="theme_common.s_news_carousel" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_news_carousel.gif"/>
+        <t t-snippet="theme_common.s_process_steps_2" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_process_steps_2.gif"/>
+        <t t-snippet="theme_common.s_team_profiles_2" t-thumbnail="/theme_nano/static/src/img/snippets_thumbs/s_team_profiles_2.gif"/>
+      </xpath>
+
+    </template>
+
+  </data>
+</openerp>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- Jump to website after theme installation -->
+        <record id="base.open_menu" model="ir.actions.todo">
+            <field name="action_id" ref="website.action_website"/>
+            <field name="state">open</field>
+        </record>
+    </data>
+
+    <data>
+    <template id="theme_customize" inherit_id="website.theme_customize" name="theme_kiddo modal">
+        <xpath expr="div" position="replace">
+            <div id="theme_customize_modal" class="modal fade bs-example-modal-sm" data-theme="theme_kiddo">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close">×</button>
+                            <h4 class="modal-title text-center" id="mySmallModalLabel">Customize Theme</h4>
+                        </div>
+
+                        <div class="modal-body interface">
+                            <div class="row">
+
+                                <!-- ======================== Nav tabs ======================== -->
+
+                                <div class="col-xs-3 left-content">
+
+                                    <div class="loading_backdrop"/>
+
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="active text-center left-content-block">
+                                            <a href="#layout" class="" role="tab" data-toggle="tab"><span class="fa fa-th-list center-block"></span>LAYOUT</a>
+                                        </li>
+
+                                        <li class="text-center left-content-block">
+                                            <a href="#color" class="" role="tab" data-toggle="tab"><span class="fa fa-pencil center-block"></span>COLORS</a>
+                                        </li>
+
+                                        <li class="text-center left-content-block">
+                                            <a href="#bgcolor" class="" role="tab" data-toggle="tab"><span class="fa fa-pencil center-block"></span>BG COLORS</a>
+                                        </li>
+
+                                        <li class="text-center left-content-block">
+                                            <a href="#bgimage" class="" role="tab" data-toggle="tab"><span class="fa fa-picture-o center-block"></span>BG IMAGES</a>
+                                        </li>
+
+                                        <li class="text-center left-content-block">
+                                            <a href="#pattern" class="" role="tab" data-toggle="tab"><span class="fa fa-th center-block"></span>BG PATTERNS</a>
+                                        </li>
+
+                                        <li class="text-center left-content-block">
+                                            <a href="#font" class="" role="tab" data-toggle="tab"><span class="fa fa-font center-block"></span>FONTS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- ========================= Content ======================== -->
+
+                                <div class="col-xs-9 right-content">
+                                    <div class="tab-content">
+
+                                        <!-- =============== LAYOUT CONTAINER ================= -->
+
+                                        <div class="tab-pane active" id="layout">
+                                            <div>
+                                                <label>
+                                                    <h6 class="text-center modal-h6"><i class="fa fa-desktop fa-3x"></i></h6>
+                                                    <p>Full width</p>
+                                                    <input name="layoutvar" type="radio" data-xmlid="theme_kiddo.option_layout_fullwidth"/>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label>
+                                                    <h6 class="text-center modal-h6"><i class="fa fa-arrows-h fa-3x"></i></h6>
+                                                    <p>Boxed</p>
+                                                    <input name="layoutvar" type="radio" data-xmlid="theme_kiddo.option_layout_boxed"/>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- =============== COLOR CONTAINER ================= -->
+
+                                        <div class="tab-pane" id="color">
+                                            <div>
+                                                <p class="text-center">Color Preset 1</p>
+                                                <label class="color-combi colorPreset1">
+                                                    <div/><div/><div/><div/><div/>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kiddo.option_colorPreset1"/>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <p class="text-center">Color Preset 2</p>
+                                                <label class="color-combi colorPreset2">
+                                                    <div/><div/><div/><div/><div/>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kiddo.option_colorPreset2"/>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <p class="text-center">Color Preset 3</p>
+                                                <label class="color-combi colorPreset3">
+                                                    <div/><div/><div/><div/><div/>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kiddo.option_colorPreset3"/>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <p class="text-center">Color Preset 4</p>
+                                                <label class="color-combi colorPreset4">
+                                                    <div/><div/><div/><div/><div/>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kiddo.option_colorPreset4"/>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <p class="text-center">Color Preset 5</p>
+                                                <label class="color-combi colorPreset5">
+                                                    <div/><div/><div/><div/><div/>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kiddo.option_colorPreset5"/>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <p class="text-center">Color Preset 6</p>
+                                                <label class="color-combi colorPreset6">
+                                                    <div/><div/><div/><div/><div/>
+                                                    <input name="colorvar" type="radio" data-xmlid="theme_kiddo.option_colorPreset6"/>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- =============== BG COLOR CONTAINER ================= -->
+
+                                        <div class="tab-pane" id="bgcolor">
+                                            <label class="bg-white">
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_white"/>
+                                            </label>
+                                            <label class="bg-beige">
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_beige"/>
+                                            </label>
+                                            <label class="bg-gray">
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_gray"/>
+                                            </label>
+                                            <label class="bg-black">
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_black"/>
+                                            </label>
+                                            <label class="bg-green">
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_green"/>
+                                            </label>
+                                            <label class="bg-blue">
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_blue"/>
+                                            </label>
+                                            <label class="bg-indigo">
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_indigo"/>
+                                            </label>
+                                            <label class="bg-rose">
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_rose"/>
+                                            </label>
+                                        </div>
+
+                                        <!-- =============== BG IMAGE CONTAINER ================= -->
+
+                                        <div class="tab-pane" id="bgimage">
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_01/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_01"/>
+                                            </label>
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_02/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_02"/>
+                                            </label>
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_03/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_03"/>
+                                            </label>
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_04/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_04"/>
+                                            </label>
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_05/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_05"/>
+                                            </label>
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_06/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_06"/>
+                                            </label>
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_07/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_07"/>
+                                            </label>
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_08/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_08"/>
+                                            </label>
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_09/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_09"/>
+                                            </label>
+                                            <label>
+                                                <img src="/website/image/theme_kiddo.bg_img_10/250x120" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_10"/>
+                                            </label>
+                                            <label>
+                                                <img src="/theme_kiddo/static/src/img/library/tn-bg-custom.jpg" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_custom" data-customize-bg=""/>
+                                            </label>
+                                            <label>
+                                                <img src="/theme_kiddo/static/src/img/library/tn-bg-none.jpg" alt="Image" class="color-combi-img"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_none"/>
+                                            </label>
+                                        </div>
+
+                                        <!-- =============== BG PATTERN CONTAINER ================= -->
+
+                                        <div class="tab-pane" id="pattern">
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/pineapplecut.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_01"/>
+                                            </label>
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/pattern_02.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_02"/>
+                                            </label>
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/skulls.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_03"/>
+                                            </label>
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/sprinkles.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_04"/>
+                                            </label>
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/tileable_wood_texture.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_05"/>
+                                            </label>
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/tree_bark.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_06"/>
+                                            </label>
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/grey.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_07"/>
+                                            </label>
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/pattern_08.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_08"/>
+                                            </label>
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/pattern_09.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_09"/>
+                                            </label>
+                                            <label class="pattern-swatch">
+                                                <img src="/theme_kiddo/static/src/img/pattern/pattern_10.png" alt="Pattern" class="color-combi-pattern"/>
+                                                <input name="bgcolorvar" type="radio" data-xmlid="theme_kiddo.option_bg_pattern_10"/>
+                                            </label>
+                                        </div>
+
+                                        <!-- =============== FONT CONTAINER ================= -->
+
+                                        <div class="tab-pane" id="font">
+                                            <label class="center-block">
+                                                <h4 style="font-family: ProximaRegular; font-size: 30px">Proxima</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kiddo.option_font_proxima"/>
+                                            </label>
+                                            <label class="center-block">
+                                                <h4 style="font-family: ComicRegular; font-size: 30px">Comic Sans</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kiddo.option_font_comic"/>
+                                            </label>
+                                            <label class="center-block">
+                                                <h4 style="font-family: DinRegular; font-size: 30px">Din Alternate</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kiddo.option_font_din"/>
+                                            </label>
+                                            <label class="center-block">
+                                                <h4 style="font-family: LuminariRegular; font-size: 30px">Luminari</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kiddo.option_font_luminari"/>
+                                            </label>
+                                            <label class="center-block">
+                                                <h4 style="font-family: Fontastique; font-size: 30px">Fontastique</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kiddo.option_font_fontastique"/>
+                                            </label>
+                                            <label class="center-block">
+                                                <h4 style="font-family: NotoRegular; font-size: 30px">Noto</h4>
+                                                <input name="fontvar" type="radio" data-xmlid="theme_kiddo.option_font_noto"/>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer"/>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- ===================== LAYOUT OPTIONS ======================== -->
+
+    <template id="option_layout_fullwidth" name="theme_kiddo_option_layout_fullwidth" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/layout/full-width.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_layout_boxed" name="theme_kiddo_option_layout_boxed" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/layout/boxed.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- ===================== COLOR OPTIONS ======================== -->
+
+    <template id="option_colorPreset1" name="option_colorPreset1" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kiddo/static/src/less/options/colors/colorPreset1.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset2" name="option_colorPreset2" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kiddo/static/src/less/options/colors/colorPreset2.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset3" name="option_colorPreset3" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kiddo/static/src/less/options/colors/colorPreset3.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset4" name="option_colorPreset4" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kiddo/static/src/less/options/colors/colorPreset4.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset5" name="option_colorPreset5" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kiddo/static/src/less/options/colors/colorPreset5.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <template id="option_colorPreset6" name="option_colorPreset6" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link href="/theme_kiddo/static/src/less/options/colors/colorPreset6.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+    <!-- ===================== BG COLOR OPTIONS ======================== -->
+
+    <template id="option_bg_white" name="option_bg_white" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_colors/option_bg_white.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_beige" name="option_bg_beige" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_colors/option_bg_beige.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_gray" name="option_bg_gray" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_colors/option_bg_gray.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_black" name="option_bg_black" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_colors/option_bg_black.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_green" name="option_bg_green" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_colors/option_bg_green.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_blue" name="option_bg_blue" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_colors/option_bg_blue.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_indigo" name="option_bg_indigo" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_colors/option_bg_indigo.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_rose" name="option_bg_rose" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_colors/option_bg_rose.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- ===================== BG IMAGE OPTIONS ======================== -->
+
+    <template id="option_bg_01" name="option_bg_01" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_02" name="option_bg_02" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_03" name="option_bg_03" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_04" name="option_bg_04" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_05" name="option_bg_05" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_06" name="option_bg_06" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_07" name="option_bg_07" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_07.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_08" name="option_bg_08" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_08.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_09" name="option_bg_09" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_09.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_10" name="option_bg_10" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/bg_images/option_bg_10.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_custom" name="option_bg_custom" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><style/></xpath>
+    </template>
+    <template id="option_bg_none" name="option_bg_none" inherit_id="website.assets_frontend" active="False"></template>
+
+    <!-- ===================== FONT OPTIONS ======================== -->
+
+    <template id="option_font_proxima" name="option_font_proxima" inherit_id="website.assets_frontend" active="True">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/fonts/proxima.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_comic" name="option_font_comic" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/fonts/comic.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_din" name="option_font_din" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/fonts/din.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_luminari" name="option_font_luminari" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/fonts/luminari.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_fontastique" name="option_font_fontastique" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/fonts/fontastique.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_font_noto" name="option_font_noto" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/fonts/noto.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- ===================== PATTERN OPTIONS ======================== -->
+
+    <template id="option_bg_pattern_01" name="option_bg_pattern_01" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_01.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_02" name="option_bg_pattern_02" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_02.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_03" name="option_bg_pattern_03" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_03.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_04" name="option_bg_pattern_04" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_04.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_05" name="option_bg_pattern_05" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_05.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_06" name="option_bg_pattern_06" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_06.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_07" name="option_bg_pattern_07" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_07.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_08" name="option_bg_pattern_08" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_08.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_09" name="option_bg_pattern_09" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_09.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+    <template id="option_bg_pattern_10" name="option_bg_pattern_10" inherit_id="website.assets_frontend" active="False">
+        <xpath expr="//link[last()]" position="after"><link href="/theme_kiddo/static/src/less/options/patterns/option_bg_pattern_10.less" rel="stylesheet" type="text/less"/></xpath>
+    </template>
+
+    <!-- ===================== COLOR PICKER ======================== -->
+
+    <template id="colorpicker" inherit_id="website.colorpicker" name="Color-Picker">
+        <xpath expr="table" position="replace">
+            <table class="colorpicker">
+                <tr>
+                    <td><button class="automatic-color" title="Automatic Color"/></td>
+                    <td><button class="bg-alpha" title="Primary Color"/></td>
+                    <td><button class="bg-beta" title="Success Color"/></td>
+                    <td><button class="bg-gamma" title="Info Color"/></td>
+                    <td><button class="bg-delta" title="Warning Color"/></td>
+                    <td><button class="bg-epsilon" title="Danger Color"/></td>
+                </tr>
+                <tr><td colspan="8"><hr style="width: 100%; height: 1px;"/></td></tr>
+                <tr>
+                    <td><button class="bg-blue"/></td>
+                    <td><button class="bg-turquoise"/></td>
+                    <td><button class="bg-green"/></td>
+                    <td><button class="bg-yellow"/></td>
+                    <td><button class="bg-red"/></td>
+                    <td><button class="bg-pink"/></td>
+                    <td><button class="bg-purple"/></td>
+                    <td><button class="bg-brown"/></td>
+                </tr>
+                <tr><td colspan="8"><hr style="width: 100%; height: 1px;"/></td></tr>
+                <tr>
+                    <td><button class="bg-blue2"/></td>
+                    <td><button class="bg-turquoise2"/></td>
+                    <td><button class="bg-green2"/></td>
+                    <td><button class="bg-yellow2"/></td>
+                    <td><button class="bg-red2"/></td>
+                    <td><button class="bg-lightblue2"/></td>
+                    <td><button class="bg-purple2"/></td>
+                    <td><button class="bg-brown2"/></td>
+                </tr>
+            </table>
+        </xpath>
+    </template>
+    </data>
+</openerp>
+
+
+

@@ -1,0 +1,683 @@
+/* ==========================================================================
+   Edit, Customize and Demo
+   ========================================================================== */
+
+/**
+ * 1. Customize Modal
+ * 2. Editor Options
+ * 3. Snippets Navbar
+ * 4. Demos Page
+ * 5. Publishing Buttons
+ */
+
+/* Customize Modal
+   ================================================== */
+
+#theme_customize_modal {
+  &.modal.fade:not(.in) .modal-dialog {
+    .translate3d(50%, 0, 0);
+  }
+  #treehouse_customize_modal .modal-dialog {
+    top: 0;
+    right: 0;
+    height: 100%;
+    text-transform: inherit;
+    .modal-content {
+      height: 100%;
+      border-radius: 0;
+      border: 0;
+      width: 480px;
+      background-color: #000;
+    }
+  }
+  .modal-header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+  }
+  .modal-header {
+    .modal-title {
+      line-height: 1.2;
+      font-family: 'Roboto', sans-serif;
+      font-size: 34px;
+    }
+    .close {
+      width: 30px;
+      height: 30px;
+      margin: 5px 0 0 0;
+      background-color: #fff;
+      color: @gray-darker;
+      text-shadow: @shadow;
+      opacity: 0.5;
+      border-radius: 50%;
+      font-size: 18px;
+      &:hover {
+        opacity: 1;
+        background-color: @brand-danger;
+        color: #000;
+      }
+    }
+  }
+  .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #fff;
+  }
+  .panel {
+    border: 0;
+    box-shadow: @shadow;
+    font-family: 'Roboto', sans-serif;
+  }
+  .panel-group {
+    margin-bottom: 0;
+  }
+  .panel-group .panel + .panel {
+    margin-top: 0;
+  }
+  .panel-heading {
+    padding: 0;
+    margin-bottom: 1px;
+    a {
+      display: block;
+      padding: 10px 20px;
+      background-color: @brand-success;
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+      .fa {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 10px 0 0;
+        background-color: #fff;
+        color: @brand-success;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 13px;
+      }
+      &.collapsed {
+        background-color: #eee;
+        color: #000;
+        .fa {
+          color: #000;
+        }
+      }
+      &.collapsed:hover {
+        background-color: @brand-primary;
+        color: #fff;
+        .fa {
+          background-color: #fff;
+          color: @brand-primary;
+        }
+      }
+    }
+  }
+  .modal-body {
+    padding: 0;
+  }
+  #treehouse_fonts .panel-body {
+    span {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .icon:before {
+      margin-bottom: 20px;
+    }
+    .customize_abel {
+      font-family: 'Abel';
+    }
+    .customize_lato {
+      font-family: 'Lato';
+    }
+    .customize_karla {
+      font-family: 'Karla';
+    }
+    .customize_laila {
+      font-family: 'Laila';
+    }
+    .customize_dosis {
+      font-family: 'Dosis';
+    }
+    .customize_raleway {
+      font-family: 'Raleway';
+    }
+  }
+  .panel-group .panel{
+    border-radius: 0;
+  }
+  .panel-body {
+    h5 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+    }
+    padding: 20px 26px;
+    border-bottom: 1px solid #000;
+    .icon {
+      text-align: left;
+      clear: both;
+      font-weight: normal;
+      font-size: 14px;
+    }
+    .icon:before {
+      content: '\f111';
+      font-family: 'FontAwesome';
+      font-size: 18px;
+      margin-right: 8px;
+      margin-bottom: 10px;
+      color: #ccc;
+      float: left;
+    }
+    .icon:hover {
+      color: @gray-darker;
+      cursor: pointer;
+    }
+    .icon:hover:before {
+      content: '\f058';
+      font-family: 'FontAwesome';
+      color: #000;
+    }
+    .icon.checked:before {
+      content: '\f058';
+      font-family: 'FontAwesome';
+      color: @brand-success;
+    }
+    .icon span {
+      float: left;
+      width: 30px;
+      height: 30px;
+    }
+    .none {
+      background-image:url('/theme_treehouse/static/src/img/customize/customize_none.gif');
+      background-position: center;
+      border: 1px solid #000;
+    }
+    /* Grayscale */
+    .white { background-color: #fff;border: 1px solid @gray-darker !important; }
+    .gray-lighter { background-color: @gray-lighter; }
+    .gray-darker { background-color: @gray-darker; }
+    .color-alpha { background-color: @color-alpha; }
+    /* 01 */
+    .color-01-alpha { background-color: @color-01-alpha; }
+    .color-01-beta { background-color: @color-01-beta; }
+    .color-01-gamma { background-color: @color-01-gamma; }
+    .color-01-delta { background-color: @color-01-delta; }
+    .color-01-epsilon { background-color: @color-01-epsilon; }
+    /* 02 */
+    .color-02-alpha { background-color: @color-02-alpha; }
+    .color-02-beta { background-color: @color-02-beta; }
+    .color-02-gamma { background-color: @color-02-gamma; }
+    .color-02-delta { background-color: @color-02-delta; }
+    .color-02-epsilon { background-color: @color-02-epsilon; }
+    /* 03 */
+    .color-03-alpha { background-color: @color-03-alpha; }
+    .color-03-beta { background-color: @color-03-beta; }
+    .color-03-gamma { background-color: @color-03-gamma; }
+    .color-03-delta { background-color: @color-03-delta; }
+    .color-03-epsilon { background-color: @color-03-epsilon; }
+    /* 04 */
+    .color-04-alpha { background-color: @color-04-alpha; }
+    .color-04-beta { background-color: @color-04-beta; }
+    .color-04-gamma { background-color: @color-04-gamma; }
+    .color-04-delta { background-color: @color-04-delta; }
+    .color-04-epsilon { background-color: @color-04-epsilon; }
+    /* 05 */
+    .color-05-alpha { background-color: @color-05-alpha; }
+    .color-05-beta { background-color: @color-05-beta; }
+    .color-05-gamma { background-color: @color-05-gamma; }
+    .color-05-delta { background-color: @color-05-delta; }
+    .color-05-epsilon { background-color: @color-05-epsilon; }
+    /* 06 */
+    .color-06-alpha { background-color: @color-06-alpha; }
+    .color-06-beta { background-color: @color-06-beta; }
+    .color-06-gamma { background-color: @color-06-gamma; }
+    .color-06-delta { background-color: @color-06-delta; }
+    .color-06-epsilon { background-color: @color-06-epsilon; }
+  }
+}
+
+/* Editor Options
+   ================================================== */
+
+/* Selector Button */
+.navbar-inverse {
+  background-color: #000;
+  .navbar-nav>.active>a,
+  .navbar-nav>.active>a:hover,
+  .navbar-nav>.active>a:focus {
+    background-color: #000;
+  }
+}
+
+.oe_overlay {
+  /* Options Buttons */
+  .oe_overlay_options {
+    /* Customize Button */
+    .oe_options {
+      .dropdown-menu {
+        padding: 0;
+        margin: -1px 0 0 0;
+        min-width: 240px;
+        > li {
+          margin: 0;
+          &:hover {
+            > a {
+              color: @brand-primary;
+              &:after {
+                border-left-color: @brand-primary;
+              }
+              .fa {
+                background-color: @brand-primary;
+                color:#fff;
+              }
+            }
+          }
+          &.active {
+            .fa {
+              background-color: @brand-primary;
+            }
+            > a:hover {
+              color: #fff;
+            }
+          }
+          a {
+            line-height: 40px;
+            font-size: 14px;
+            padding: 0 20px 0 15px;
+            &:hover {
+              color: @brand-primary;
+            }
+            &:after {
+              margin-top: 16px;
+            }
+            &:hover:after {
+              border-left-color: @brand-primary;
+            }
+            .fa {
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              background-color: #ccc;
+              text-align: center;
+              margin-right: 12px;
+              margin-left: -15px;
+            }
+            &:hover .fa {
+              color: #fff;
+              background-color: @brand-primary;
+            }
+          }
+          /* Not COLORPICKER */
+          > .dropdown-menu {
+            border-radius: 0;
+            a:hover:after {
+              content: '\f00c';
+              font-family: 'FontAwesome';
+              position: absolute;
+              right: 0;
+              margin: 0 15px 0 0;
+              color: @brand-primary;
+            }
+            > .active > a {
+              color: #fff;
+              &:after {
+                content: '\f00c';
+                font-family: 'FontAwesome';
+                position: absolute;
+                right: 0;
+                margin: 0 15px 0 0;
+                color: #fff;
+              }
+            }
+          }
+          /* COLORPICKER */
+          > .dropdown-menu.treehouse-colorpicker {
+            background-clip: inherit;
+            font-size: 0;
+            padding: 5px;
+            li {
+              display: inline-block;
+              margin: 5px;
+              a {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                padding: 0;
+              }
+              &.active a:after,
+              a:hover:after {
+                background-color: #fff;
+                right: auto;
+                left: auto;
+                font-size: 16px;
+                width: 24px;
+                height: 24px;
+                line-height: 26px;
+                margin: 7px 0 0 -12px;
+              }
+              &.active a.color-alpha:after,
+              a.color-alpha:hover:after {
+                color: @color-alpha;
+              }
+              &.active a.color-beta:after,
+              a.color-beta:hover:after {
+                color: @color-beta;
+              }
+              &.active a.color-gamma:after,
+              a.color-gamma:hover:after {
+                color: @color-gamma;
+              }
+              &.active a.color-delta:after,
+              a.color-delta:hover:after {
+                color: @color-delta;
+              }
+              &.active a.color-epsilon:after,
+              a.color-epsilon:hover:after {
+                color: @color-epsilon;
+              }
+              &.active a.none:after,
+              &.active a.snippets-option-pattern:after,
+              &.active a.white:after,
+              a.none:hover:after,
+              a.snippets-option-pattern:hover:after,
+              a.white:hover:after {
+                color: @gray-darker;
+              }
+              &.active a.gray-lighter:after,
+              a.gray-lighter:hover:after {
+                color: @gray-lighter;
+              }
+              &.active a.gray:after,
+              a.gray:hover:after {
+                color: @gray;
+              }
+              &.active a.gray-darker:after,
+              a.gray-darker:hover:after {
+                color: @gray-darker;
+              }
+            }
+            .active .none,
+            .active .none:hover,
+            .none,
+            .none:hover {
+              background-image: url('/theme_treehouse/static/src/img/customize/customize_none.gif');
+              border: 1px solid @gray-darker !important;
+              background-position: center;
+            }
+            .active .white,
+            .active .white:hover,
+            .white,
+            .white:hover {
+              background-color: #fff;
+              border: 1px solid @gray-darker !important;
+            }
+            .active .gray-lighter,
+            .active .gray-lighter:hover,
+            .gray-lighter,
+            .gray-lighter:hover {
+              background-color: @gray-lighter;
+              border: 1px solid @gray-lighter;
+            }
+            .active .gray,
+            .active .gray:hover,
+            .gray,
+            .gray:hover {
+              background-color: @gray;
+              border: 1px solid @gray;
+            }
+            .active .gray-darker,
+            .active .gray-darker:hover,
+            .gray-darker,
+            .gray-darker:hover {
+              background-color: @gray-darker;
+              border: 1px solid @gray-darker;
+            }
+            .active .color-alpha,
+            .active .color-alpha:hover,
+            .color-alpha,
+            .color-alpha:hover {
+              background-color: @color-alpha;
+              border: 1px solid @color-alpha;
+            }
+            .active .color-beta,
+            .active .color-beta:hover,
+            .color-beta,
+            .color-beta:hover {
+              background-color: @color-beta;
+              border: 1px solid @color-beta;
+            }
+            .active .color-gamma,
+            .active .color-gamma:hover,
+            .color-gamma,
+            .color-gamma:hover {
+              background-color: @color-gamma;
+              border: 1px solid @color-gamma;
+            }
+            .active .color-delta,
+            .active .color-delta:hover,
+            .color-delta,
+            .color-delta:hover {
+              background-color: @color-delta;
+              border: 1px solid @color-delta;
+            }
+            .active .color-epsilon,
+            .active .color-epsilon:hover,
+            .color-epsilon,
+            .color-epsilon:hover {
+              background-color: @color-epsilon;
+              border: 1px solid @color-epsilon;
+            }
+          }
+          /* BACKGROUND IMAGES */
+          > .dropdown-menu.treehouse-bg-img-selector {
+            width: 515px;
+            .inline {
+              margin: 10px 0 4px 10px;
+              display: block;
+              li {
+                display: inline-block;
+                a {
+                  display: block;
+                  position: relative;
+                  padding: 0;
+                  width: 120px;
+                  height: 70px;
+                  overflow: hidden;
+                  text-align: center;
+                }
+                &.active a:after,
+                a:hover:after {
+                  background-color: #fff;
+                  right: auto;
+                  left: 45px;
+                  font-size: 16px;
+                  width: 30px;
+                  height: 30px;
+                  line-height: 32px;
+                  margin: 20px 0 0 0;
+                }
+              }
+            }
+          }
+          > .dropdown-menu .dropdown-submenu {
+            a:hover:after {
+              content: '';
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Snippets Navbar
+   ================================================== */
+
+#snippet_structure,
+#snippet_content,
+#snippet_feature,
+#snippet_effect{
+  .oe_snippet{
+    margin: 0 0 5px 5px;
+    .oe_snippet_thumbnail_title{
+      margin-top: 5px;
+    }
+    .oe_snippet_thumbnail .oe_snippet_thumbnail_img{
+
+      border: 5px solid inherit;
+      box-shadow: @shadow;
+    }
+    .oe_snippet_thumbnail:hover .oe_snippet_thumbnail_img{
+      transform: scale(1, 1);
+    }
+    .oe_snippet_thumbnail:hover:before{
+      content: "";
+      position: absolute;
+      right: 0;
+      background-image: url('/theme_treehouse/static/src/img/customize/add_snippet_hover.png');
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+/* Demos Page
+   ========================================================================== */
+
+#wrapwrap h1.demo-title {
+  padding: 32px 0;
+  color: @gray-lighter;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400 !important;
+  font-size: 60px;
+}
+
+#wrapwrap h4.demo-subtitle {
+  padding: 10px 20px;
+  border-left: 5px solid @gray-dark;
+  background-image: url('/theme_treehouse/static/src/img/patterns/bg_pattern_demo.png');
+  color: @gray-dark;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400 !important;
+  font-size: 24px;
+}
+
+.demo-icons {
+  .fa-rocket {
+    margin-right: 15px;
+  }
+}
+
+/* Publishing Buttons
+   ========================================================================== */
+
+#wrapwrap .js_publish_management {
+  .btn {
+    border-radius: 0;
+    padding: 6px 12px;
+    text-transform: none;
+    font-size: 14px;
+    &.btn-success {
+      background-color: @brand-success;
+      &:hover {
+        background-color: darken(@brand-success, 10%);
+        border-color: darken(@brand-success, 10%);
+        color: #fff;
+      }
+    }
+    &.btn-danger {
+      background-color: @brand-danger;
+      &:hover {
+        background-color: darken(@brand-danger, 10%);
+        border-color: darken(@brand-danger, 10%);
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* Link to... & Select a media Buttons
+   ========================================================================== */
+
+.modal-body {
+  .link-style li label{
+    width: auto;
+    margin-bottom: 5px;
+  }
+  .nav-tabs a {
+    color: @brand-primary;
+    &:hover {
+      background-color: @brand-primary;
+      color: #fff;
+    }
+  }
+}
+
+/* Colorpicker Editor
+   ========================================================================== */
+
+table.colorpicker{
+  background-color: #fff;
+  button {
+    &.text-white,
+    &.bg-white {
+      background-color: #fff;
+      border: 1px solid @gray-darker !important;
+    }
+    &.text-black,
+    &.bg-black {
+      background-color: #000;
+      border: 1px solid @gray-darker !important;
+    }
+    &.text-gray-lighter,
+    &.bg-gray-lighter {
+      background-color: @gray-lighter;
+      border: 1px solid @gray-lighter;
+    }
+    &.text-gray-light,
+    &.bg-gray-light {
+      background-color: @gray-light;
+      border: 1px solid @gray-light;
+    }
+    &.text-gray,
+    &.bg-gray {
+      background-color: @gray;
+      border: 1px solid @gray;
+    }
+    &.text-gray-dark,
+    &.bg-gray-dark {
+      background-color: @gray-dark;
+      border: 1px solid @gray-dark;
+    }
+    &.text-gray-darker,
+    &.bg-gray-darker {
+      background-color: @gray-darker;
+      border: 1px solid @gray-darker;
+    }
+    &.text-alpha,
+    &.bg-alpha {
+      background-color: @color-alpha;
+      border: 1px solid @color-alpha;
+    }
+    &.text-beta,
+    &.bg-beta {
+      background-color: @color-beta;
+      border: 1px solid @color-beta;
+    }
+    &.text-gamma,
+    &.bg-gamma {
+      background-color: @color-gamma;
+      border: 1px solid @color-gamma;
+    }
+    &.text-delta,
+    &.bg-delta {
+      background-color: @color-delta;
+      border: 1px solid @color-delta;
+    }
+    &.text-epsilon,
+    &.bg-epsilon {
+      background-color: @color-epsilon;
+      border: 1px solid @color-epsilon;
+    }
+  }
+}

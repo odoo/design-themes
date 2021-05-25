@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+    <template name="Text-Block" id="s_text_block_extended" inherit_id="website.s_text_block">
+      <xpath expr="//section[contains(@class, 's_text_block')]//div[contains(@class, 'col-md-12')]" position="attributes">
+        <attribute name="class">col-md-12</attribute>
+      </xpath>
+      <xpath expr="//section[contains(@class, 's_text_block')]//h3" position="attributes">
+        <attribute name="class">text-primary mb0 mt0</attribute>
+      </xpath>
+      <xpath expr="//section[contains(@class, 's_text_block')]//h2" position="attributes">
+        <attribute name="class">mb8</attribute>
+      </xpath>
+      <xpath expr="//section[contains(@class, 's_text_block')]//h3" position="after">
+        <hr class="s_separator hr-full hr-1px hr-solid"/>
+      </xpath>
+    </template>
+
+  </data>
+</openerp>

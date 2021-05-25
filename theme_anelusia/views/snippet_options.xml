@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    <template id="theme_anelusia_website_options_pattern" inherit_id="website.snippet_options">
+        <!-- Background image -->
+        <xpath expr="//div[@data-js='background']/li" position="replace">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><i class="fa fa-picture-o"/> Background Image</a>
+                    <ul class="dropdown-menu">
+                        <li data-select_class="bg-img-01"><a><img src="/website/image/theme_common.image_content_11/250x120" class="center-block"/></a></li>
+                        <li data-select_class="bg-img-02"><a><img src="/website/image/theme_common.image_content_09/250x120" class="center-block"/></a></li>
+                        <li data-select_class="bg-img-03"><a><img src="/website/image/theme_common.image_content_10/250x120" class="center-block"/></a></li>
+                        <li data-select_class="bg-img-04"><a><img src="/website/image/theme_common.image_content_12/250x120" class="center-block"/></a></li>
+                        <li data-select_class="bg-img-05"><a><img src="/website/image/theme_common.image_content_02/250x120" class="center-block"/></a></li>
+                        <li data-select_class="bg-img-06"><a><img src="/website/image/theme_common.image_content_03/250x120" class="center-block"/></a></li>
+                        <li data-select_class="bg-img-07"><a><img src="/website/image/theme_common.image_content_07/250x120" class="center-block"/></a></li>
+                        <li data-select_class=""><a>None</a></li>
+                        <li><a style="background: none; padding: 5px; border-top: 1px solid #ddd;"/></li>
+                        <li data-select_class="oe_custom_bg" data-choose_image="choose_image"><a><b>Choose another image...</b></a></li>
+                    </ul>
+                </li>
+        </xpath>
+
+        <xpath expr="//div[@data-js='background']" position="attributes">
+            <attribute name="data-selector">section, .carousel, .parallax, .color-block, .color-block4, headerwrap, .cube-big, .cube-small, .s_color_blocks_2_block</attribute>
+        </xpath>
+
+        <!-- BG colors -->
+        <xpath expr="//div[@data-js='colorpicker']/li" position="replace">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><i class="fa fa-eyedropper"/> Colors</a>
+                <ul class="dropdown-menu">
+                    <table class="colorpicker">
+                            <tr>
+                                <td><button class="bg-alpha"></button></td>
+                                <td><button class="bg-beta"></button></td>
+                                <td><button class="bg-gamma"></button></td>
+                                <td><button class="bg-delta"></button></td>
+                                <td><button class="bg-epsilon"></button></td>
+                                <td><button class="none">none</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="black"></button></td>
+                                <td><button class="darkgray"></button></td>
+                                <td><button class="gray"></button></td>
+                                <td><button class="lightgray"></button></td>
+                                <td><button class="white"></button></td>
+                            </tr>
+                    </table>
+                </ul>
+            </li>
+        </xpath>
+
+        <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+                <attribute name="data-selector">section, .carousel, .parallax, #footer, .copyright, .product-widget, .mask, .cube-small .popup-container, .s_color_blocks_4_block, .s_event_list>li>.bg-delta, .s_color_blocks_2_block, .big-menu</attribute>
+        </xpath>
+    </template>
+
+    <!-- Font size -->
+    <template id="font_size" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='blog-style']" position="after">
+            <div data-js='typo_size' data-selector="h1, h2, h3, h4, h5, h6, p">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-text-height"/> Font size</a>
+                    <ul class="dropdown-menu toggle">
+                        <li data-select_class=""><a>Auto</a></li>
+                        <li class="divider"/>
+                        <li data-select_class="px14"><a>14px</a></li>
+                        <li data-select_class="px16"><a>16px</a></li>
+                        <li data-select_class="px18"><a>18px</a></li>
+                        <li data-select_class="px22"><a>22px</a></li>
+                        <li class="divider"/>
+                        <li data-select_class="px30"><a>30px</a></li>
+                        <li data-select_class="px36"><a>36px</a></li>
+                        <li data-select_class="px42"><a>42px</a></li>
+                        <li data-select_class="px50"><a>50px</a></li>
+                        <li data-select_class="px60"><a>60px</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Reversed -->
+    <template id="order_reverse" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='colorpicker']/li" position="after">
+            <div data-js='cube-reversed' data-selector=".cube-big">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#"><i class="fa fa-refresh"/>Reversed</a>
+                    <ul class="dropdown-menu toggle">
+                        <li data-select_class=""><a>Auto</a></li>
+                        <li data-select_class="reversed"><a>Reversed</a></li>
+                    </ul>
+                </li>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Top banner parallax -->
+    <template id="top_banner" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js='s_banner_parallax' data-selector=".s_banner_parallax">
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Top banner slider -->
+    <template id="top_slider" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js='s_banner_3' data-selector=".s_banner_3">
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Top products carousel -->
+    <template id="top_products_slider" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js='s_products_carousel' data-selector=".s_products_carousel">
+            </div>
+        </xpath>
+    </template>
+    </data>
+</openerp>

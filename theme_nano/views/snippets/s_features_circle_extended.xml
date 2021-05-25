@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+    <template name="Features Circle Extended" id="s_features_circle_extended" inherit_id="theme_common.s_features_circle">
+
+      <xpath expr="//i[contains(@class, 'fa-bug')]" position="replace">
+        <img class="img img-responsive img-circle center-block" src="/website/image/theme_common.image_content_01" alt=""/>
+      </xpath>
+
+      <xpath expr="//i[contains(@class, 'fa-rocket')]" position="replace">
+        <img class="img img-responsive img-circle center-block" src="/website/image/theme_common.image_content_02" alt=""/>
+      </xpath>
+
+      <xpath expr="//i[contains(@class, 'fa-flask')]" position="replace">
+        <img class="img img-responsive img-circle center-block" src="/website/image/theme_common.image_content_03" alt=""/>
+      </xpath>
+      
+    </template>
+
+  </data>
+</openerp>

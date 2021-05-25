@@ -1,0 +1,128 @@
+@color-alpha: @white;
+@color-beta: @colorPreset3_color1; // middle green
+@color-gamma: @colorPreset3_color2; // orange
+@color-delta: @colorPreset3_color3; // light green
+@color-epsilon: @colorPreset3_color4; // dark green
+@color-zeta: @colorPreset3_color1_dark;
+@color-eta: @colorPreset3_color1_light;
+@color-theta: @colorPreset3_color2_dark;
+@color-iota: @colorPreset3_color2_light;
+@color-kappa: @colorPreset3_color3_dark;
+@color-lambda: @colorPreset3_color3_light;
+@color-mu: @colorPreset3_color4_dark;
+@color-nu: @colorPreset3_color4_light;
+
+/* ============= FONT COLORS ================== */
+
+.text-alpha {color: @white;}
+.text-beta {color: @colorPreset3_color1;}
+.text-gamma {color: @colorPreset3_color2;}
+.text-delta {color: @colorPreset3_color3;}
+.text-epsilon {color: @colorPreset3_color4;}
+
+.text-primary {color: @color-alpha;}
+.text-success {color: @color-beta;}
+.text-info {color: @color-gamma;}
+.text-warning {color: @color-delta;}
+.text-danger {color: @color-epsilon;}
+
+/* ============= THEMES BUTTONS =============== */
+
+@btn-default-bg: @color-alpha;
+@btn-primary-bg: @color-beta;
+@btn-success-bg: @color-gamma;
+@btn-info-bg: @color-delta;
+@btn-warning-bg: @color-epsilon;
+@btn-danger-bg: @black;
+
+/* ============= BG USED FOR NAV ============== */
+
+.bgrgba(0, 0, 0, 0) {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* ============= BGCOLORS ===================== */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-epsilon, @color-mu);
+    .fa {color: @gray;}
+}
+
+.bg-beta {
+    .SetDisplayColor (@color-beta, @gray);
+    .LinkColor (@color-gamma, @color-iota);
+}
+
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @color-alpha);
+    .LinkColor (@gray-dark, @black);
+}
+
+.bg-delta {
+    .SetDisplayColor (@color-delta, @gray);
+    .LinkColor (@color-gamma, @color-iota);
+}
+
+.bg-epsilon {
+    .SetDisplayColor (@color-epsilon, @color-alpha);
+    .LinkColor (@color-delta, @color-kappa);
+}
+
+/* ============= TYPO ========================= */
+
+a {
+    color: @color-epsilon;
+    &:hover, &:focus {
+        color: @color-delta;
+    }
+}
+
+/* ============= STRUCTURE ==================== */
+
+#wrapwrap {
+    .navbar-default .container .navbar-collapse #top_menu {
+        > li {
+            a, span {
+                color: @color-gamma !important;
+            }
+            &:after {
+                background: none repeat scroll 0% 0% @color-mu;
+            }
+        }
+
+        .dropdown-menu > li > a {
+            color: @color-alpha;
+        }
+    }
+
+    > footer {
+        #footer, .container {
+            .LinearGradient (@color-beta, @color-zeta);
+
+            h3, h4 {
+                color: @gray-dark !important;
+            }
+            a {
+                color: @gray;
+                &:hover {
+                    color: @color-alpha;
+                }
+            }
+        }
+    }
+}
+
+.header-info {
+    border-bottom-color: @color-gamma;
+}
+.in, .collapsing {
+    background-color: @color-alpha !important;
+}
+.chart a {
+    color: @color-gamma;
+}
+.copyright {
+    background-color: @color-kappa;
+    color: @gray;
+}

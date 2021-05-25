@@ -1,0 +1,91 @@
+@color-alpha: @white;
+@color-beta: @colorPreset4_color1; // asphalt green
+@color-gamma: @colorPreset4_color2; // light green
+@color-delta: @colorPreset4_color3; // dark green
+@color-epsilon: @colorPreset4_color4; // vivid green
+@color-zeta: @colorPreset4_color1_dark;
+@color-eta: @colorPreset4_color1_light;
+@color-theta: @colorPreset4_color2_dark;
+@color-iota: @colorPreset4_color2_light;
+@color-kappa: @colorPreset4_color3_dark;
+@color-lambda: @colorPreset4_color3_light;
+@color-mu: @colorPreset4_color4_dark;
+@color-nu: @colorPreset4_color4_light;
+
+/* ================== COLORS FOR FONT COLOR ================= */
+
+.text-alpha {color: @white;}
+.text-beta {color: @colorPreset4_color1;}
+.text-gamma {color: @colorPreset4_color2;}
+.text-delta {color: @colorPreset4_color3;}
+.text-epsilon {color: @colorPreset4_color4;}
+
+.text-primary {color: @color-alpha;}
+.text-success {color: @color-beta;}
+.text-info {color: @color-gamma;}
+.text-warning {color: @color-delta;}
+.text-danger {color: red;}
+
+/* ================== rgba(0, 0, 0, 0) BG USED FOR NAV ================= */
+
+.bgrgba(0, 0, 0, 0) {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* ================== color-alpha ================= */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-delta, @color-kappa);
+    .fa {color: @gray;}
+}
+
+/* ================== PLAYFULGREEN ================= */
+
+.bg-beta {
+    .SetDisplayColor (@color-beta, @color-alpha);
+    .LinkColor (@color-epsilon, @color-gamma);
+}
+
+/* ================== PLAYFULPURPLE ================= */
+
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @color-alpha);
+    .LinkColor (@color-epsilon, @color-delta);
+}
+
+/* ================== PLAYFULORANGE ================= */
+
+.bg-delta {
+    .SetDisplayColor (@color-delta, @color-alpha);
+    .LinkColor (@color-beta, @gray);
+}
+
+/* ================== PLAYFULYELLOW ================= */
+
+.bg-epsilon {
+    .SetDisplayColor (@color-epsilon, @gray);
+    .LinkColor (#fa7c16, #d3660e);
+}
+
+/* ==================== TYPO ====================== */
+a {
+    color: @color-delta;
+
+    &:hover, &:focus {
+        color: @color-alpha;
+    }
+}
+
+/* ==================== Structure ====================== */
+
+/* Footer */
+
+#wrapwrap>footer #footer {
+    background-color: @color-beta;
+
+    h4 {
+        color: @color-alpha;
+        border-top-color: @color-delta;
+    }
+}

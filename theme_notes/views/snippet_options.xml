@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+<template id="theme_notes_website_options_pattern" inherit_id="website.snippet_options">
+
+    <!-- Background image -->
+
+    <xpath expr="//div[@data-js='background']//ul" position="replace">
+        <ul class="dropdown-menu">
+          <li data-select_class="bg-img-01"><a><img src="/website/image/theme_common.image_content_11/250x120" class="center-block"/></a></li>
+          <li data-select_class="bg-img-02"><a><img src="/website/image/theme_common.image_content_09/250x120" class="center-block"/></a></li>
+          <li data-select_class="bg-img-03"><a><img src="/website/image/theme_common.image_content_10/250x120" class="center-block"/></a></li>
+          <li data-select_class="bg-img-04"><a><img src="/website/image/theme_common.image_content_12/250x120" class="center-block"/></a></li>
+          <li data-select_class=""><a>None</a></li>
+          <li><a style="background: none; padding: 5px; border-top: 1px solid #ddd;"/></li>
+          <li data-select_class="oe_custom_bg" data-choose_image="choose_image"><a><b>Choose another image...</b></a></li>
+        </ul>
+    </xpath>
+
+    <xpath expr="//div[@data-js='background']" position="attributes">
+        <attribute name="data-selector">section, .carousel, .parallax, .color-block, .color-block4, headerwrap, .cube-big, .cube-small</attribute>
+    </xpath>
+
+    <xpath expr="//div[@data-js='blog-style']" position="attributes">
+        <attribute name="data-selector">section:not(.carousel):not(.parallax):not(.s_product_list)</attribute>
+    </xpath>
+
+    <!-- BG colors -->
+
+    <xpath expr="//div[@data-js='colorpicker']/li/ul/li" position="replace">
+
+      <table class="colorpicker">
+          <tr>
+            <td><button class="bg-alpha"></button></td>
+            <td><button class="bg-beta"></button></td>
+            <td><button class="bg-gamma"></button></td>
+            <td><button class="bg-delta"></button></td>
+            <td><button class="bg-epsilon"></button></td>
+            <td><button class="none">none</button></td>
+          </tr>
+          <tr>
+            <td><button class="black"></button></td>
+            <td><button class="darkgray"></button></td>
+            <td><button class="gray"></button></td>
+            <td><button class="lightgray"></button></td>
+            <td><button class="white"></button></td>
+          </tr>
+      </table>
+
+  </xpath>
+
+  <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+      <attribute name="data-selector">section, .carousel, .parallax, #footer, .copyright, .product-widget, .mask, .cube-small .popup-container, .s_color_blocks_4_block, .s_event_list>li>.bg-delta</attribute>
+  </xpath>
+
+</template>
+
+    </data>
+</openerp>

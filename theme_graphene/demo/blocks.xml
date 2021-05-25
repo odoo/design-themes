@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="website.layout_logo_show"  model="ir.ui.view" >
+      <field name="active" eval="False"/>
+    </record>
+
+    <template id="website.blocks" name="Building Blocks" page="True">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure demo_blocks text-center">
+
+          <section class="parallax s_parallax bg-img-02 move_to_top" style="padding-top: 40px; height: 424px; overflow: hidden; background-attachment: scroll; background-position: 0px 0px;" data-scroll-background-ratio="0.3" data-scroll-background-offset="0" contenteditable="false">
+            <div>
+              <div class="oe_structure container text-center mt32" contenteditable="true">
+                <h1 class="mt128 o_animate o_not-animable title-boxed">Building Blocks</h1>
+              </div>
+            </div>
+          </section>
+
+          <div id="video" class="bg-white" style="height:80px"></div>
+          <h3 class="text-center bg-white mt0 mb0">Media Block</h3>
+          <hr class="mt4 mb4"/>
+          <small class="mt4 mb32">Deligth your visitors with wonderful fullwidth videos</small>
+
+          <div class="text-left mt32">
+            <section class="s_media_block" src="https://player.vimeo.com/video/86224382?badge=0" muted="muted" loop="loop" autoplay="autoplay" iframefit="fitIframe" style="height: 576px;" background="js-rgba(0, 0, 0, 0)">
+              <div class="v-align text-center">
+                <h1 class="text-center o_animate o_not-animable title-boxed">MEDIA BLOCK</h1>
+              </div>
+            </section>
+            <span id="maps"/>
+          </div>
+
+          <h3 class="text-center bg-white mt128 mb0">GOOGLE MAPS</h3>
+          <hr class="mt4 mb4"/>
+          <small class="mt4 mb48">Create and customize easily your maps</small>
+
+          <section class="s_google_map mt32" data-map-type="ROADMAP" data-map-color="" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="flat" style="height: 488px; overflow: hidden;">
+            <div class="map_container"/>
+            <div class="description">
+              <font>Visit us:</font>
+              <span>Our office is located in Paris. TEL (555) 432 2365</span>
+            </div>
+          </section>
+
+          <h3 class="text-center bg-white mt92 mb0">Map Types</h3>
+          <hr class="mt4 mb32"/>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-3 mt32">
+                <h4 class="mb4">Road Map</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="" data-map-zoom="14" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="" style="min-height: 200px; height: 200px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-3 mt32">
+                <h4 class="mb4">Satellite</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="SATELLITE" data-map-color="" data-map-zoom="14" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="" style="min-height: 200px; height: 200px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-3 mt32">
+                <h4 class="mb4">Hybrid</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="HYBRID" data-map-color="" data-map-zoom="14" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="" style="min-height: 200px; height: 200px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-3 mt32">
+                <h4 class="mb4">Terrain</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="TERRAIN" data-map-color="" data-map-zoom="14" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="" style="min-height: 200px; height: 200px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-center bg-white mt92 mb0">Color Variations</h3>
+          <hr class="mt4 mb32"/>
+
+          <div class="container text-center">
+            <div class="row">
+
+              <div class="col-md-6 mt32">
+                <h4 class="mb4">Light Mono</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="lightMonoMap" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="flat" style="height: 288px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-6 mt32">
+                <h4 class="mb4">Cupertino</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="cupertinoMap" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="flat" style="height: 288px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-6 mt32">
+                <h4 class="mb4">Retro</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="retroMap" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="flat" style="height: 288px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-6 mt32">
+                <h4 class="mb4">Cobalt</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="cobaltMap" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="flat" style="height: 288px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-6 mt32">
+                <h4 class="mb4">Flat</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="flatMap" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="flat" style="height: 288px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-6 mt32">
+                <h4 class="mb4">Lilla</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="lillaMap" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="flat" style="height: 288px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-6 mt32">
+                <h4 class="mb4">Caramello</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="carMap" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="flat" style="height: 288px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-6 mt32">
+                <h4 class="mb4">B&#38;W</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="bwMap" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="flat" style="height: 288px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-center bg-white mt92 mb0">Map Zoom <small>(samples)</small></h3>
+          <hr class="mt4 mb32"/>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-3 mt32">
+                <h4 class="mb4">12</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="" data-map-zoom="12" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="" style="min-height: 200px; height: 200px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-3 mt32">
+                <h4 class="mb4">14</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="" data-map-zoom="14" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="" style="min-height: 200px; height: 200px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-3 mt32">
+                <h4 class="mb4">16</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="" data-map-zoom="16" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="" style="min-height: 200px; height: 200px; overflow: hidden;"><div class="map_container"/></section>
+              </div>
+              <div class="col-md-3 mt32">
+                <h4 class="mb4">18</h4>
+                <hr class="mt0 mb4"/>
+                <section class="s_google_map" data-map-type="ROADMAP" data-map-color="" data-map-zoom="18" data-map-gps="(48.856614, 2.3522219000000177)" data-pin-style="" style="min-height: 200px; height: 200px; overflow: hidden;"><div class="map_container"/></section>
+                <span id="posts"/>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-center bg-white mt128 mb0">LATEST POSTS</h3>
+          <hr class="mt4 mb32"/>
+
+          <section class="s_latest_posts_big_picture">
+            <div class="js_get_posts first_is_big" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+          </section>
+
+          <h3 class="text-center bg-white mt92 mb0">Styles</h3>
+          <hr class="mt4 mb32"/>
+
+          <div class="container text-center">
+            <div class="row">
+                <section class="s_latest_posts_big_picture col-md-6 mt32">
+                  <div class="js_get_posts first_is_big effect-marley" data-posts_limit="1" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+                </section>
+                <section class="s_latest_posts_big_picture col-md-6 mt32">
+                  <div class="js_get_posts first_is_big effect-dexter" data-posts_limit="1" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="s_latest_posts_big_picture col-md-6 mt32">
+                  <div class="js_get_posts first_is_big effect-chico" data-posts_limit="1" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+                </section>
+                <section class="s_latest_posts_big_picture col-md-6 mt32">
+                  <div class="js_get_posts first_is_big effect-steve" data-posts_limit="1" data-loading="true" data-template="snippet_latest_posts.s_latest_posts_big_picture_template" contenteditable="False"/>
+                </section>
+            </div>
+          </div>
+
+          <h3 class="text-center bg-white mt128 mb0">Showcase Slider</h3>
+          <hr class="mt4 mb4"/>
+          <small class="mt4 mb48">A new UX solution to show your gallery</small>
+          <div class="container">
+
+            <section class="s_showcase_slider mt32 o_not-animable">
+              <div class="s-ss-slider-wrapper">
+
+                <ul class="s-ss-slider o_animable">
+                  <li class="selected o_not-animable"><img style="max-height: 570px" src="/website/image/theme_common.image_content_20" /></li>
+                  <li><img style="max-height: 570px" class="o_not-animable" src="/website/image/theme_common.image_content_21" /></li>
+                  <li><img style="max-height: 570px" class="o_not-animable" src="/website/image/theme_common.image_content_22" /></li>
+                </ul> <!-- s-ss slider -->
+
+                <ul class="s-ss-slider-navigation">
+                  <li><span contentEditable="false" class="o_not-animable fa fa-chevron-left s-ss-prev inactive" /></li>
+                  <li><span contentEditable="false" class="o_not-animable fa fa-chevron-right s-ss-next" /></li>
+                </ul> <!-- s-ss slider-navigation -->
+
+                <span href="#0" class="s-ss-close fa fa-times">Close</span>
+
+              </div> <!-- s-ss slider-wrapper -->
+
+              <div class="s-ss-item-info o_animable">
+                <h2>My Title</h2>
+
+                <p>A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+
+                <button class="btn btn-primary">Call to action</button>            
+              </div> <!-- s-ss info -->
+            </section>
+
+          </div>
+
+          <h3 class="text-center bg-white mt128 mb0">Showcase</h3>
+          <hr class="mt4 mb48"/>
+
+          <section class="s_showcase">
+            <div class="box">
+              <div class="hidden-xs line"/>
+              <div class="row">
+                <div class="col-md-5 col-sm-5 text-right feature">
+                  <h4>
+                    <i class="fa fa-desktop"/>First feature</h4>
+                  <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                </div>
+                <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
+                  <h4>
+                    <i class="fa fa-heart"/>Another feature</h4>
+                  <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-sm-5 text-right feature">
+                  <h4>
+                    <i class="fa fa-paint-brush "/>Second feature</h4>
+                  <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                </div>
+                <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
+                  <h4>
+                    <i class="fa fa-sliders "/>Last Feature</h4>
+                  <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                </div>
+              </div>
+            </div>
+            <div class="container mt16 text-center">
+              <a class="btn btn-default" href="">Discover all the features</a>
+            </div>
+          </section>
+
+          <h3 class="text-center bg-white mt128 mb0">Masonry Block</h3>
+          <hr class="mt4 mb48"/>
+          <section class="s_masonry_block mt16" style="height: 512px;">
+            <div class="item col-sm-12 col-md-6 bg_patt-05">
+              <div class="main-block text-center">
+                <div class="content">
+                  <h2>A great title</h2>
+                  <p>And a great subtitle</p>
+                </div>
+              </div>
+            </div>
+            <div class="item col-sm-12 col-md-6 bg-gamma-lighter">
+              <div class="block text-center only-bg bg-gamma-darker">
+                <div class="content">
+                  <h3>A great title</h3>
+                  <p>And a great subtitle</p>
+                </div>
+              </div>
+              <div class="block text-center bg_patt-03">
+                <div class="content">
+                  <h3>A great title</h3>
+                  <p>And a great subtitle</p>
+                </div>
+              </div>
+              <div class="block text-center bg_patt-04">
+                <div class="content">
+                  <h3>A great title</h3>
+                  <p>And a great subtitle</p>
+                </div>
+              </div>
+              <div class="block text-center only-bg bg-epsilon-light">
+                <div class="content">
+                  <h3>A great title</h3>
+                  <p>And a great subtitle</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <h3 class="text-center bg-white mt128 mb0">Page Header</h3>
+          <hr class="mt4 mb48"/>
+
+          <section class="s_page_header o_animate_preview text-left only-bg bg-gamma-lighter bg_patt-03"><div class="container"><div class="row"><div class="col-md-12 mt32">
+            <span class="label bg-alpha"> 
+              <span tabindex="-1" contenteditable="false" data-cke-widget-wrapper="1" data-cke-filter="off" class="cke_widget_wrapper cke_widget_inline" data-cke-display-name="i" data-cke-widget-id="26"><i class="fa fa-tag cke_widget_element" data-cke-widget-data="{}" data-cke-widget-keep-attr="0" data-widget="icons"></i></span> <strong>Tags</strong> </span> 
+              <span class="label bg-gamma"> <span tabindex="-1" contenteditable="false" data-cke-widget-wrapper="1" data-cke-filter="off" class="cke_widget_wrapper cke_widget_inline" data-cke-display-name="i" data-cke-widget-id="25"><i class="fa fa-tag cke_widget_element" data-cke-widget-data="{}" data-cke-widget-keep-attr="0" data-widget="icons"></i></span> <strong>Category</strong> </span>
+              <h1>Page Title</h1><p class="lead">Introduce your content in few lines.</p></div></div></div></section>
+
+          <h3 class="text-center bg-white mt128 mb0">Numbers</h3>
+          <hr class="mt4 mb48"/>
+
+          <section class="s_numbers o_animate_preview bg_patt-01 color-gray"><div class="container"><div class="row"><div class="col-md-3 mb32 text-center color-gray"><h1 class="mb0 color-gray">12</h1><p class="color-gray">Useful options</p></div><div class="col-md-3 mb32 color-gray text-center"><h1 class="mb0 color-gray">45</h1><p class="color-gray">Beautiful snippets</p></div><div class="col-md-3 mb32 text-center color-gray"><h1 class="mb0 color-gray">8</h1><p class="color-gray">Amazing pages</p></div><div class="col-md-3 mb32 text-center color-gray"><h1 class="mb0 color-gray">37</h1><p class="color-gray">Outstanding images</p></div></div></div></section>
+
+          <hr class="mt128 mb128"/>
+
+        </div> <!-- #wrap -->
+      </t>
+    </template>
+
+    <record id="graphene_blocks_menu" model="website.menu">
+      <field name="name">Building Blocks</field>
+      <field name="url">/page/blocks</field>
+      <field name="parent_id" ref="website.main_menu"/>
+      <field name="sequence" type="int">12</field>
+    </record>
+
+  </data>
+</openerp>

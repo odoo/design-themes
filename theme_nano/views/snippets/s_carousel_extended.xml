@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+
+    <template name="Banner 2 Extended" id="s_banner_2_extended" inherit_id="theme_common.s_banner_2">
+
+      <xpath expr="//div[contains(@class, 'bg-img-02')]//div[contains(@class, 'carousel-box-content')]" position="attributes">
+        <attribute name="class">col-md-5 carousel-box-content bg-white mt64</attribute>
+      </xpath>
+
+      <xpath expr="//div[contains(@class, 'bg-img-07')]//div[contains(@class, 'carousel-box-content')]" position="attributes">
+        <attribute name="class">col-md-5 col-md-offset-7 carousel-box-content bg-white mt64</attribute>
+      </xpath>
+
+      <xpath expr="//div[contains(@class, 'bg-img-08')]//div[contains(@class, 'carousel-box-content')]" position="attributes">
+        <attribute name="class">col-md-5 carousel-box-content bg-white mt64</attribute>
+      </xpath>
+
+    </template>
+
+  </data>
+</openerp>

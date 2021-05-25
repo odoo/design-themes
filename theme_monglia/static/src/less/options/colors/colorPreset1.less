@@ -1,0 +1,105 @@
+@color-alpha: @white;
+@color-beta: @colorPreset1_color1; // green
+@color-gamma: @colorPreset1_color2; // light blue
+@color-delta: @colorPreset1_color3; // dark gray
+@color-epsilon: @colorPreset1_color4; // orange
+@color-zeta: @colorPreset1_color1_dark;
+@color-eta: @colorPreset1_color1_light;
+@color-theta: @colorPreset1_color2_dark;
+@color-iota: @colorPreset1_color2_light;
+@color-kappa: @colorPreset1_color3_dark;
+@color-lambda: @colorPreset1_color3_light;
+@color-mu: @colorPreset1_color4_dark;
+@color-nu: @colorPreset1_color4_light;
+
+/* ================== COLORS FOR FONT COLOR ================= */
+
+.text-alpha {color: @white;}
+.text-beta {color: @colorPreset1_color1;}
+.text-gamma {color: @colorPreset1_color2;}
+.text-delta {color: @colorPreset1_color3;}
+.text-epsilon {color: @colorPreset1_color4;}
+
+/* ================== BG COLORS ================= */
+
+.bg-alpha {
+    .SetDisplayColor (@color-alpha, @gray);
+    .LinkColor (@color-epsilon, @color-mu);
+    .fa {color: @gray;}
+}
+.bg-beta {
+    .SetDisplayColor (@color-beta, @gray);
+    .LinkColor (@color-epsilon, @color-mu);
+}
+.bg-gamma {
+    .SetDisplayColor (@color-gamma, @gray);
+    .LinkColor (@gray-dark, @color-nu);
+}
+.bg-delta {
+    .SetDisplayColor (@color-delta, @color-alpha);
+    .LinkColor (@color-epsilon, @color-mu);
+}
+.bg-epsilon {
+    .SetDisplayColor (@color-epsilon, @color-alpha);
+    .LinkColor (@color-delta, @black);
+}
+
+a {
+    color: @color-epsilon;
+    &:hover, &:focus {
+        color: @color-mu;
+    }
+}
+
+/* ==================== BUTTON ====================== */
+
+.btn-default {
+    .btn-styles(@color-alpha, @color-alpha, @color-epsilon, @color-delta);
+}
+.btn-primary {
+    .btn-styles(@color-beta, @color-delta, @color-delta, @color-alpha);
+}
+.btn-success {
+    .btn-styles(@color-epsilon, @color-delta, @color-delta, @color-alpha);
+}
+.btn-info {
+    .btn-styles(@color-gamma, @color-delta, @color-delta, @color-alpha);
+}
+.btn-warning {
+    .btn-styles(@color-delta, @color-gamma, @color-gamma, @color-delta);
+}
+.btn-danger {
+    .btn-styles(@black, @color-kappa, @color-alpha, @color-epsilon);
+}
+
+/* ==================== STRUCTURE ====================== */
+
+#wrap {
+    .search {
+        background-color: @color-alpha;
+    }
+}
+#wrapwrap > footer {
+    .container {
+        p, .list-unstyled {
+            color: white;
+            font-size: 14px;
+        }
+        h4 {
+            color: @color-beta;
+            border-left-color: @color-gamma;
+        }
+    }
+    #footer {
+        background-color: @color-delta;
+    }
+}
+.copyright {
+    background-color: @color-delta;
+    color: white;
+}
+#products_grid_before {
+    .open-icon, .close-icon {
+        color: @color-epsilon;
+    }
+}

@@ -1,0 +1,89 @@
+// Postcard Layout
+
+@graphene-layout-top_banner: true;
+
+#graph_header {
+    .navbar{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    .nav li.open > a{
+        background-color: rgba(0, 0, 0, 0);
+        color: #555;
+    }
+    .nav li.open a {
+        color: #555;
+    }
+}
+
+// #wrapwrap{
+//  position: absolute;
+// }
+
+#wrapwrap, main, footer{
+    background-color: rgba(0, 0, 0, 0)!important;
+}
+
+#wrap, footer > .container, footer > #footer{
+    background: #FFF;
+    margin: 0 auto;
+    padding-top: 1px;
+    max-width: 1024px;
+    width: 95%;
+    .box-shadow(0 6px 7px 0px rgba(0, 0, 0, 0.18));
+
+    .container{max-width: 100%}
+}
+
+footer {
+    padding-bottom: 1em;
+}
+
+footer > .container, footer > #footer{
+    border-radius:0;
+    margin-top:0!important;
+    &:last-child{
+        padding-bottom: 1em;
+        margin-bottom: 3em!important;
+    }
+}
+
+#wrapwrap.top_content_enabled.top_content{
+    #graph_header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width:100%;
+
+        a.navbar-brand, .navbar-default a.navbar-brand {
+            color: #fff;
+        }
+        .navbar{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .nav> li > a{
+            color: @gray-lighter;
+        }
+        .nav > li.active > a, .nav> li.hover > a{
+            color: #fff;
+        }
+
+    }
+
+    #wrap{
+        > section, > div, > [class^="s_"] {
+            z-index: 2;
+            position: relative;
+        }
+        > .move_to_top{
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+

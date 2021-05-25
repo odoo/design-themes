@@ -1,0 +1,393 @@
+/* GRAYS --------------------------------------------------------- */
+/* Adjust to vary the intensity of texts ans headings ------------ */
+
+@gray-darker:            lighten(#000, 20%);
+@gray-dark:              lighten(#000, 35%);
+@gray:                   lighten(#000, 45%);
+@gray-light:             lighten(#000, 70%);
+@gray-lighter:           lighten(#000, 80%);
+
+/* COLORS --------------------------------------------------------- */
+
+@color-alpha:   @gray;
+@color-beta:    @gray-lighter;
+@color-gamma:   @gray-light;
+@color-delta:   @gray-darker;
+@color-epsilon: @gray-dark;
+
+/* COLORED BG -------------------------------------------------------- */
+
+.bg-gray-darker {
+    background: @gray-darker;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color:  white;
+    }
+    p {
+        color: @gray-lighter;
+    }
+    & .text-muted {
+        color: @color-alpha;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-gray-dark {
+    background: @gray-dark;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color:  white;
+    }
+    p {
+        color: @gray-lighter;
+    }
+    & .text-muted {
+        color: @color-alpha;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-gray {
+    background: @gray;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color:  white;
+    }
+    p {
+        color: @gray-lighter;
+    }
+    & .text-muted {
+        color: @color-alpha;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-gray-light {
+    background: @gray-light;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color:  white;
+    }
+    p {
+        color: @gray-dark;
+    }
+    & .text-muted {
+        color: @color-alpha;
+    }
+    & .fa {
+        color: white;
+    }
+}
+
+.bg-alpha {
+    .bg-gray-light;
+}
+.bg-beta {
+    .bg-gray;
+}
+.bg-gamma {
+    .bg-black;
+  }
+.bg-delta {
+    .bg-gray-dark;
+  }
+.bg-epsilon {
+    .bg-gray-darker;
+  }
+
+/* TEXT & LINKS -------------------------------------------------------- */
+
+@text-muted:        @color-alpha;
+@link-color:        @color-alpha;
+@link-hover-color:  @color-gamma;
+
+/* BUTTONS --------------------------------------------------------- */
+
+@btn-primary-bg:                 @color-concrete;
+@btn-success-bg:                 @color-blue;
+@btn-info-bg:                    @color-green;
+@btn-warning-bg:                 @color-orange;
+@btn-danger-bg:                  @color-red-dark;
+
+.btn .fa {
+  color: white;}
+
+.btn-default .fa {
+  color: @gray-dark;}
+
+#wrap {
+    border: 1px solid fade(@color-delta, 20%);
+}
+
+/* eCommerce */
+
+#products_grid .oe_product section {
+  padding: 4px 15px 24px 10px;
+  border-top: 1px dotted @color-gamma;
+  background-color: fade(@color-alpha, 40%);
+  h5 a {
+    color: white;
+    font-weight: 300;
+  }
+  &:hover {
+    background-color: fade(@color-alpha, 85%);
+    transition: all 0.3s ease-in-out;
+    color: black;
+  }
+}
+
+#products_grid_before {
+    ul {
+        font-size: 15px;
+        li {
+            a {
+                font-size: 16px;
+                color: @gray-light;
+                margin: 1px 0px;
+
+                &:hover, &:focus {
+                    background-color: fade(@gray-lighter, 30%);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+#products_grid_before  .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: fade(@color-alpha, 40%);
+  padding: 6px 6px;
+}
+
+/* s_icon_box */
+
+.bg-beta .s_icon_box_box:hover .s_icon_box_icon .fa  {
+    transition: all 0.3s ease-in-out;
+    color: @color-delta !important;
+}
+
+.bg-beta .s_icon_box_box:hover .s_icon_box_content h4 {
+    transition: all 0.3s ease-in-out;
+    color: @color-delta !important;
+}
+
+/* s_icon_box_square */
+
+.bg-beta .s_icon_box_square_icon {
+    border-color: white !important;
+    background-color: @color-alpha !important;
+    .fa {
+        color: white !important;
+    }
+    h4 {
+        color: white !important;
+}
+}
+
+.bg-beta .s_icon_box_square_box:hover .s_icon_box_square_icon {
+    border-color: white !important;
+    background-color: white !important;
+    .fa {
+        color: @color-alpha !important;
+    }
+}
+
+.bg-beta .s_icon_box_square_box:hover h4 {
+        color: white !important;
+}
+
+/* s_icon_box_circle */
+
+.bg-beta .s_icon_box_circle_icon {
+    border-color: white !important;
+    background-color: @color-alpha !important;
+    .fa {
+        color: white !important;
+    }
+    h4 {
+        color: white !important;
+}
+}
+
+.bg-beta .s_icon_box_circle_box:hover .s_icon_box_circle_icon {
+    border-color: white !important;
+    background-color: white !important;
+    .fa {
+        color: @color-alpha !important;
+    }
+}
+
+.bg-beta .s_icon_box_circle_box:hover h4 {
+        color: white !important;
+}
+
+/* s_big_icon_circle */
+
+.bg-beta .s_big_icon_circle_icon {
+    background-color: fade(@color-alpha, 0%) !important;
+    border: 6px solid white !important;
+    h5 {
+        color: white !important;
+    }
+    .fa {
+        color: white !important;
+    }
+}
+
+.bg-beta .s_big_icon_circle_box:hover .s_big_icon_circle_icon {
+    background-color: white !important;
+    border-color: @color-alpha;
+    transform: scale(1.1,1.1);
+    .fa {
+        color: @color-alpha !important;
+    }
+    h5 {
+        color: white !important;
+    }
+}
+
+/* s_big_icon_square */
+
+.bg-beta .s_big_icon_square_icon {
+    background-color: fade(@color-alpha, 0%) !important;
+    border: 6px solid white !important;
+    h5 {
+        color: white !important;
+    }
+    .fa {
+        color: white !important;
+    }
+}
+
+.bg-beta .s_big_icon_square_box:hover .s_big_icon_square_icon {
+    background-color: white !important;
+    border-color: @color-alpha;
+    transform: scale(1.1,1.1);
+    .fa {
+        color: @color-alpha !important;
+    }
+    h5 {
+        color: white !important;
+    }
+}
+
+/* --------------- */
+
+/* s_icon_box */
+
+.bg-delta .s_icon_box_box:hover .s_icon_box_icon .fa {
+    transition: all 0.3s ease-in-out;
+    color: @color-delta !important;
+}
+
+.bg-delta .s_icon_box_box:hover .s_icon_box_content h4 {
+    transition: all 0.3s ease-in-out;
+    color: white !important;
+}
+
+/* s_icon_box_square */
+
+.bg-delta .s_icon_box_square_icon {
+    border-color: white !important;
+    background-color: @color-alpha !important;
+    .fa {
+        color: white !important;
+    }
+    h4 {
+        color: white !important;
+}
+}
+
+.bg-delta .s_icon_box_square_box:hover .s_icon_box_square_icon {
+    border-color: white !important;
+    background-color: white !important;
+    .fa {
+        color: @color-alpha !important;
+    }
+}
+
+.s_icon_box_square_box:hover h4 {
+        color: white !important;
+}
+
+/* s_icon_box_circle */
+
+.bg-delta .s_icon_box_circle_icon {
+    border-color: white !important;
+    background-color: @color-alpha !important;
+    .fa {
+        color: white !important;
+    }
+    h4 {
+        color: white !important;
+}
+}
+
+.bg-delta .s_icon_box_circle_box:hover .s_icon_box_circle_icon {
+    border-color: white !important;
+    background-color: white !important;
+    .fa {
+        color: @color-alpha !important;
+    }
+}
+
+.s_icon_box_circle_box:hover h4 {
+        color: white !important;
+}
+
+/* s_big_icon_circle */
+
+.bg-delta .s_big_icon_circle_icon {
+    background-color: fade(@color-alpha, 0%) !important;
+    border: 6px solid white !important;
+    h5 {
+        color: white !important;
+    }
+    .fa {
+        color: white !important;
+    }
+}
+
+.bg-delta .s_big_icon_circle_box:hover .s_big_icon_circle_icon {
+    background-color: white !important;
+    border-color: @color-alpha;
+    transform: scale(1.1,1.1);
+    .fa {
+        color: @color-alpha !important;
+    }
+    h5 {
+        color: white !important;
+    }
+}
+
+/* s_big_icon_square */
+
+.bg-delta .s_big_icon_square_icon {
+    background-color: fade(@color-alpha, 0%) !important;
+    border: 6px solid white !important;
+    h5 {
+        color: white !important;
+    }
+    .fa {
+        color: white !important;
+    }
+}
+
+.bg-delta .s_big_icon_square_box:hover .s_big_icon_square_icon {
+    background-color: white !important;
+    border-color: @color-alpha;
+    transform: scale(1.1,1.1);
+    .fa {
+        color: @color-alpha !important;
+    }
+    h5 {
+        color: white !important;
+    }
+}

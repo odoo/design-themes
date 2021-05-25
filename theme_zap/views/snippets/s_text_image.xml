@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+
+        <template name="Text Image" id="s_text_image" inherit_id="website.s_text_image">
+           <xpath expr="//section[contains(@class, 's_text_image')]//img" position="replace">
+                <img class="img img-responsive" src="/website/image/theme_common.image_content_04" alt=""/>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

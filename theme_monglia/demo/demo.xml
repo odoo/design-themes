@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <openerp>
+        <data>
+
+            <template id="website.demo" page="True" name="Demo Page">
+                <t t-call="website.layout">
+
+                    <div id="wrap" class="oe_structure oe_empty">
+
+                    <section class="s_banner_parallax parallax bg-img-04" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 1313.4px;">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12 hero-bg mb0">
+                                    <h1 class="px50">The concert of the month</h1>
+                                    <h2 class="px30">in pub Monglia.</h2>
+                                    <img alt="#" src="/website/image/theme_common.image_content_01" style="transform: translateX(1%) translateY(-17.5%) scaleX(0.66) scaleY(0.66); animation-play-state: paused; transition: none 0s ease 0s ;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_numbers mt0 darkgray">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 mb32 text-center mt48">
+                                    <h1 class="mb0">
+                                        <font class="text-epsilon">115</font>
+                                    </h1>
+                                    <p>
+                                        <font class="text-epsilon">concerts per year</font>
+                                    </p>
+                                </div>
+                                <div class="col-md-3 mb32 text-center mt48">
+                                    <h1 class="mb0">
+                                        <font class="text-epsilon">1156</font>
+                                    </h1>
+                                    <p>
+                                        <font class="text-epsilon">guests per month</font>
+                                    </p>
+                                </div>
+                                <div class="col-md-3 mb32 text-center mt48">
+                                    <h1 class="mb0">
+                                        <font class="text-epsilon">115</font>
+                                    </h1>
+                                    <p>
+                                        <font class="text-epsilon">different beers</font>
+                                    </p>
+                                </div>
+                                <div class="col-md-3 mb32 text-center mt48">
+                                    <h1 class="mb0">
+                                        <font class="text-epsilon">86</font>
+                                    </h1>
+                                    <p>
+                                        <font class="text-epsilon">different wines</font>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_title_big" style="height: 184px; overflow: hidden;">
+                        <div class="oe_share">
+                            <h1 class="mb32 mt32 text-center"><br/>Attractions in June</h1>
+                        </div>
+                    </section>
+                    <section class="s_event_slide bg-alpha">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2 s_event_slide_title">
+                                    <div class="fa fa-music"/>
+                                    <h3>Upcoming Events</h3>
+                                </div>
+                                <div class="col-md-10 s_event_slide_list">
+                                    <div class="row">
+                                        <div class="col-md-3 event">
+                                            <h4>Fleetwood Mac</h4>
+                                            <div class="header-border center-block"/>
+                                            <p class="text-center">/// 22-10-2014 ///</p>
+                                            <h5>The famous band comes last time in this year, don't miss it!</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam repellendus sunt nobis libero delectus aperiam animi porro, optio expedita odio impedit quae praesentium fugit consequuntur vero architecto, excepturi, maiores aliquid.</p>
+                                            <h5>You get a free drink with your entrance!</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam repellendus sunt nobis libero delectus aperiam animi porro, optio expedita odio impedit quae praesentium fugit consequuntur vero architecto, excepturi, maiores aliquid.
+                                                <br/>
+                                                <br/>
+                                                <img src="/theme_monglia/static/src/img/content/content_img_06.jpg"/>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 event">
+                                            <h4>Basement Jaxx</h4>
+                                            <div class="header-border center-block"/>
+                                            <p class="text-center">/// 28-10-2014 ///</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, inventore accusantium dolores. Ad non necessitatibus recusandae cupiditate animi quibusdam enim earum, nulla, qui. Dolorem sunt impedit similique a quia earum fuga unde, repellendus omnis iure.
+                                                <br/>
+                                                <br/>
+                                                <img src="/theme_monglia/static/src/img/content/content_img_07.jpg"/>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 event">
+                                            <h4>Freak!</h4>
+                                            <div class="header-border center-block"/>
+                                            <p class="text-center">/// 03-11-2014 ///</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ullam minus qui aliquid optio, animi nam odio iste quisquam voluptas laudantium, magni recusandae nemo eligendi!</p>
+                                        </div>
+                                        <div class="col-md-3 event">
+                                            <h4>Animal Cannibals</h4>
+                                            <div class="header-border center-block"/>
+                                            <p class="text-center">/// 08-11-2014 ///</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eius, nam optio dolor mollitia, consectetur asperiores libero illum. Repellendus, molestias consequatur rem ipsa. Tempora omnis eius, ipsam quaerat optio suscipit necessitatibus aliquam obcaecati. Vero quia mollitia repellendus maxime, alias. Harum!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="parallax s_parallax bg-img-03" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 1313.4px; height: 296px; overflow: hidden;">
+                        <div>
+                            <div class="oe_structure"/></div>
+                    </section>
+                    <section class="s_title mt48 mb64">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="text-center px42">Enjoy Quality Food</h1>
+                                    <h3 class="text-muted text-center">during the great concert</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_full_menu">
+                        <div class="container-fluid">
+                            <h2>Menu A'la carte</h2>
+                            <div class="row menu-container">
+                                <div class="col-md-2 text-center">
+                                    <h4>Hamburgers</h4>
+                                    <div class="fa fa-glass"/>
+                                </div>
+                                <div class="col-md-10 s_full_menu_content">
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <img alt="#" class="img img-responsive center-block" src="/website/image/theme_common.image_content_13"/>
+                                        </div>
+                                        <div class="col-md-8 s_full_menu_content_description">
+                                            <h4>Sandwich with Ham and Cheese
+                                                <span class="slash">
+                                                    <span class="price"> | €</span> 9.00
+                                                </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt, eum quae neque officiis dignissimos, veritatis amet, dolorum aperiam tempore sed. Modi rerum velit itaque ex nobis vero necessitatibus adipisci eaque cum iste nisi molestias quibusdam, voluptate odit deserunt, beatae.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <img alt="#" class="img img-responsive center-block" src="/website/image/theme_common.image_content_14"/>
+                                        </div>
+                                        <div class="col-md-8 s_full_menu_content_description">
+                                            <h4>Honey Dijon Chicken Burger
+                                                <span class="slash">
+                                                    <span class="price"> | €</span> 12.00
+                                                </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt, eum quae neque officiis dignissimos, veritatis amet, dolorum aperiam tempore sed. Modi rerum velit itaque ex nobis vero necessitatibus adipisci eaque cum iste nisi molestias quibusdam, voluptate odit deserunt, beatae.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <img alt="#" class="img img-responsive center-block" src="/theme_monglia/static/src/img/content/product_img_03.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                                        </div>
+                                        <div class="col-md-8 s_full_menu_content_description">
+                                            <h4>Chicken Burger
+                                                <span class="slash">
+                                                    <span class="price"> | €</span> 9.00
+                                                </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt, eum quae neque officiis dignissimos, veritatis amet, dolorum aperiam tempore sed. Modi rerum velit itaque ex nobis vero necessitatibus adipisci eaque cum iste nisi molestias quibusdam, voluptate odit deserunt, beatae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row menu-container">
+                                <div class="col-md-2 text-center">
+                                    <h4>Pizzas</h4>
+                                    <div class="fa fa-glass"/></div>
+                                <div class="col-md-10 s_full_menu_content">
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <img alt="#" class="img img-responsive center-block" src="/theme_monglia/static/src/img/content/product_img_11.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                                        </div>
+                                        <div class="col-md-8 s_full_menu_content_description">
+                                            <h4>Pizza Seafood
+                                                <span class="slash">
+                                                    <span class="price"> | €</span> 19.00
+                                                </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt, eum quae neque officiis dignissimos, veritatis amet, dolorum aperiam tempore sed. Modi rerum velit itaque ex nobis vero necessitatibus adipisci eaque cum iste nisi molestias quibusdam, voluptate odit deserunt, beatae.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <img alt="#" class="img img-responsive center-block" src="/theme_monglia/static/src/img/content/product_img_10.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                                        </div>
+                                        <div class="col-md-8 s_full_menu_content_description">
+                                            <h4>Salami Pizza
+                                                <span class="slash">
+                                                    <span class="price"> | €</span> 16.00
+                                                </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt, eum quae neque officiis dignissimos, veritatis amet, dolorum aperiam tempore sed. Modi rerum velit itaque ex nobis vero necessitatibus adipisci eaque cum iste nisi molestias quibusdam, voluptate odit deserunt, beatae.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <img alt="#" class="img img-responsive center-block" src="/theme_monglia/static/src/img/content/product_img_05.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                                        </div>
+                                        <div class="col-md-8 s_full_menu_content_description">
+                                            <h4>Gyros
+                                                <span class="slash">
+                                                    <span class="price"> | €</span> 13.00
+                                                </span>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum incidunt, eum quae neque officiis dignissimos, veritatis amet, dolorum aperiam tempore sed. Modi rerum velit itaque ex nobis vero necessitatibus adipisci eaque cum iste nisi molestias quibusdam, voluptate odit deserunt, beatae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_cubes darkgray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 bg-img-01"/>
+                                <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                                            <div class="cube-heading">
+                                                <h4 class="text-center">A good subtitle</h4>
+                                                <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                            </div>
+                                        </div>
+                                        <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-04"/></div>
+                                    <div class="row">
+                                        <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-02"/>
+                                        <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                                            <div class="cube-heading">
+                                                <h4 class="text-center">A good subtitle</h4>
+                                                <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_picture_text mt48">
+                        <div class="container">
+                            <div class="row mb32 mt32">
+                                <div class="col-md-4 col-sm-12">
+                                    <h3>Try out the finest cocktails</h3>
+                                    <p>Product design is the process of creating a new product to be sold by a business to its customers. A very broad concept, it is essentially the efficient and effective generation and development of ideas through a process that leads to new products.</p>
+                                </div>
+                                <div class="col-md-4 col-sm-12 text-center">
+                                    <img alt="#" src="/website/image/theme_common.image_content_05" class="img img-responsive"/>
+                                    <a href="#">View the menu</a>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <h3>Discover the widest range of wines</h3>
+                                    <p>In a systematic approach, product designers conceptualize and evaluate ideas, turning them into tangible inventions and products. The product designer's role is to combine art, science, and technology to create new products that other people can use.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="jumbotron s_big_message mt0 mb0 bg-epsilon" style="height: 320px; overflow: hidden;">
+                        <div class="container">
+                            <h1>Reserve a table. Today.</h1>
+                            <p>Write one sentence to convince visitor about your message.</p>
+                            <p>
+                                <a class="btn btn-danger btn-lg" href="/page/website.contactus">Contact us </a>
+                            </p>
+                        </div>
+                    </section>
+
+                    </div>
+
+                </t>
+            </template>
+
+        </data>
+    </openerp>

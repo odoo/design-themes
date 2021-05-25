@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <template name="Building Blocks | Structure" id="website.demo_blocks_structure" page="True">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure mb64">
+
+          <section class="bg-gray-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="demo-title mt0 mb0">Structure Blocks</h1>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt32 mb32">Full-width: Carousel</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_banner_2"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Boxed Carousel</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_carousel_boxed"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Features + Circle</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_features_circle"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">3-Columns + Carousel</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_three_columns_carousel"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Page Header</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_page_header"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Medias List</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_medias_list"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Full-width: Text + Image</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_text_image_fw"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Full-width: Image + Text</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_image_text_fw"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Full-width: Text block + Image</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_text_block_image_fw"/>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="demo-subtitle mt64 mb32">Full-width: Four color blocks</h4>
+              </div>
+            </div>
+          </div>
+          <div data-oe-call="theme_common.s_color_blocks_4"/>
+
+        </div>
+      </t>
+    </template>
+
+    <record id="demo_blocks_menu" model="website.menu">
+      <field name="name">Blocks</field>
+      <field name="url">/page/demo_blocks</field>
+      <field name="parent_id" ref="website.main_menu"/>
+      <field name="sequence" type="int">40</field>
+    </record>
+
+    <record id="demo_blocks_structure_menu" model="website.menu">
+      <field name="name">Structure</field>
+      <field name="url">/page/demo_blocks_structure</field>
+      <field name="parent_id" ref="demo_blocks_menu"/>
+      <field name="sequence" type="int">41</field>
+    </record>
+
+  </data>
+</openerp>

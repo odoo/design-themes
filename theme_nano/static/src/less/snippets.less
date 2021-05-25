@@ -1,0 +1,125 @@
+/* BANNER 2
+   ========================================================================== */
+
+@s_banner_2-background-position: inherit;
+
+.s_banner_2{
+  &.carousel{
+    .carousel-control{
+      .carousel-control(0, -9999px, 0);
+    }
+  }
+}
+
+
+/* COLLAPSE
+   ========================================================================== */
+
+.s_collapse{
+  .panel-heading{
+    border-radius: (@border-radius-large * 2);
+  }
+  .panel-group .panel{
+    border-radius: @border-radius-small;
+    border: 0;
+  }
+}
+
+
+/* COMPARISONS
+   ========================================================================== */
+
+#wrapwrap {
+  .s_comparisons{
+    .panel-body.text-muted,
+    .panel-footer .text-muted{
+      opacity: 1;
+      background-color: @gray-lighter !important;
+    }
+    h2{
+      font-size: @font-size-h3;
+      small{
+        color: inherit;
+      }
+    }
+    .panel{
+      .list-group-item.active,
+      .list-group-item.active:hover,
+      .list-group-item.active:focus{
+        background-color: @color-alpha;
+        border-color: @color-alpha;
+      }
+    }
+  }
+}
+
+
+/* IMAGES CAPTIONS FW
+   ========================================================================== */
+
+.s_images_captions_fw [class*=bg-img-]{
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* LABEL
+   ========================================================================== */
+
+@label-border-radius: @border-radius-large;
+@label-padding: 5px 15px;
+
+
+/* MEDIAS LIST
+   ========================================================================== */
+
+.s_medias_list .media > .row{
+  margin: 0;
+  .media-options > .row [class*=col-] {
+    .fa-size-generator(15px);
+    .fa{
+      padding-right: 2px;
+      .border-right-radius(@border-radius-large);
+    }
+  }
+}
+
+
+/* Quotes Slider 2
+   ========================================================================== */
+
+.s_quotes_slider_2{
+  blockquote{
+    padding: 0 20px;
+  }
+}
+
+
+/* TEXT-BLOCK IMAGE FW
+   ========================================================================== */
+
+@s_text_block_image_fw-padding: 0 40px;
+
+
+/* THREE COLUMNS CAROUSEL
+   ========================================================================== */
+
+.s_three_columns_carousel{
+  [class*="bg-"]:first-child{
+    border-left: 20px solid rgba(0, 0, 0, 0);
+  }
+  [class*="bg-"]:last-child{
+    border-right: 20px solid rgba(0, 0, 0, 0);
+  }
+  .fa{
+    padding: 0;
+  }
+  .carousel-control{
+    .carousel-control(5px, 0, 2px);
+  }
+}
+
+@s_numbers-main_bg_color:   @gray-darker;
+
+@s_numbers-numbers_color:   inherit;
+

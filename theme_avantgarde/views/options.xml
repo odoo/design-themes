@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp><data>
+
+  <!-- Customize header  -->
+  <template id="avantgarde_header" inherit_id="website.layout" name="Avantgarde Header">
+    <xpath expr="//div[@id='wrapwrap']/header" position="before">
+      <div id="pre-header">
+        <span class="h5 year"><t t-esc="time.strftime('%Y')"/></span>
+        <span class="pull-right">
+          <a target="_Blank" class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u={url}"><i class="fa fa-facebook"/></a>
+          <a target="_Blank" class="oe_share_twitter" href="https://twitter.com/intent/tweet?text={title}&amp;url={url}"><i class="fa fa-twitter"/></a>
+          <a target="_Blank" class="oe_share_google" href="https://plus.google.com/share?url={url}"><i class="fa fa-google-plus"/></a>
+          <a href="mailto:?body={url}&amp;subject={title}"><i class="fa fa-envelope"/></a>
+        </span>
+      </div>
+    </xpath>
+    <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+      <attribute name="id">avant_header</attribute>
+    </xpath>
+    <xpath expr="//div[@id='wrapwrap']/header//button[@data-target='.navbar-top-collapse']" position="attributes">
+      <attribute name="class">navbar-toggle collapsed</attribute>
+    </xpath>
+    <xpath expr="//head/meta[@name='viewport']" position="replace">
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </xpath>
+
+  </template>
+
+  <!-- Avantgarde's options -->
+  <template id="avant_affix_top_menu" inherit_id="website.layout" customize_show="True" name="Affix top menu">
+    <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+      <attribute name="class">top_menu_affix</attribute>
+    </xpath>
+  </template>
+
+  <template id="avantgarde_colopicker_name" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-js='colorpicker']/li/a" position="replace">
+      <a tabindex="-1" href="#">Background color</a>
+    </xpath>
+  </template>
+
+  <!-- Avantgarde's data selectors -->
+  <template id="avant_data-selectors" inherit_id="website.snippet_options" name="Avantgarde data selectors">
+    <xpath expr="//div[@data-js='background']" position="attributes">
+      <attribute name="data-selector">.s_animated_boxes > .item, .s_masonry_block .item, .s_masonry_block .block, .s_showcase_image figure, .s_parallax, section:not(.s_google_map, .avant_accordition)</attribute>
+    </xpath>
+
+    <xpath expr="//div[@data-js='colorpicker']" position="attributes">
+      <attribute name="data-selector">.s_animated_boxes > .item, .s_masonry_block .item, .s_masonry_block .block,  section:not(.s_google_map, .avant_accordition )</attribute>
+    </xpath> 
+
+    <xpath expr="//div[@data-js='blog-style']" position="attributes">
+      <attribute name="data-selector">section:not(.s_google_map, .s_media_block, .s_showcase_slider)</attribute>
+    </xpath>
+
+    <!-- Animation -->
+
+  </template>
+
+  <!-- Avantgarde's methods -->
+  <template id="avant_js-methods" inherit_id="website.snippet_options" name="Avantgarde data electors">
+    <xpath expr="//div[@data-js='blog-style']" position="after">
+      <div data-js='no_resize' data-selector=".s_latest_posts_big_picture, .s_latest_posts, .s_showcase"/>
+    </xpath>
+  </template>
+
+  <!-- Snippet's Options -->
+  <template id="s_latest_posts_big_picture_options" inherit_id="snippet_latest_posts.s_latest_posts_option">
+    <xpath expr="//div[@data-js='js_get_posts']" position="before">
+      <div data-js='s_latest_posts_style' data-selector=".s_latest_posts_big_picture .js_get_posts">
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-paint-brush"/>List Style</a>
+          <ul class="dropdown-menu">
+            <li data-select_class=""><a>Default</a></li>
+            <li data-select_class="effect-marley"><a>Marley</a></li>
+            <li data-select_class="effect-dexter"><a>Dexter</a></li>
+            <li data-select_class="effect-chico"><a>Silly-Chico</a></li>
+            <li data-select_class="effect-steve"><a>Lonely Steve</a></li>
+          </ul>
+        </li>
+      </div>
+      <div data-js='s_latest_posts_options' data-selector=".s_latest_posts_big_picture .js_get_posts">
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-cogs"/>Options</a>
+          <ul class="dropdown-menu">
+            <li data-toggle_class="first_is_big"><a>First is bigger</a></li>
+          </ul>
+        </li>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- Avantgarde Backgrounds -->
+  <template id="avantgarde_backgrounds" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-js='background']/li" position="replace">
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-picture-o"/>Background Image</a>
+        <ul class="dropdown-menu backgrounds">
+          <li data-select_class=""><a>No image</a></li>
+          <li class="divider"/>
+
+          <li data-choose_image="choose_image" data-select_class="oe_custom_bg">
+            <a><i class="fa fa-upload"/>Upload your image</a></li>
+          <li class="divider"/>
+
+          <li class="col-2" data-select_class="bg-img-01"> <a class="thumb bg-img-01-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-02"> <a class="thumb bg-img-02-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-03"> <a class="thumb bg-img-03-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-04"> <a class="thumb bg-img-04-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-05"> <a class="thumb bg-img-05-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-06"> <a class="thumb bg-img-06-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-07"> <a class="thumb bg-img-07-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-08"> <a class="thumb bg-img-08-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-09"> <a class="thumb bg-img-09-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-10"> <a class="thumb bg-img-10-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-11"> <a class="thumb bg-img-11-thumb"/></li>
+          <li class="col-2" data-select_class="bg-img-12"> <a class="thumb bg-img-12-thumb"/></li>
+        </ul>
+      </li>
+
+      <li class="dropdown-submenu">
+        <a tabindex="-1" href="#"><i class="fa fa-paint-brush"/>Background Pattern</a>
+        <ul class="dropdown-menu backgrounds">
+          <li data-select_class=""><a>No pattern</a></li>
+          <li class="divider"/>
+
+          <li data-choose_image="choose_image" data-select_class="oe_custom_bg">
+            <a><i class="fa fa-upload"/>Upload your pattern</a></li>
+          <li class="divider"/>
+
+          <li class="col-2" data-select_class="bg_patt-01"> <a class="thumb bg_patt-01-thumb"/></li>
+          <li class="col-2" data-select_class="bg_patt-02"> <a class="thumb bg_patt-02-thumb"/></li>
+          <li class="col-2" data-select_class="bg_patt-03"> <a class="thumb bg_patt-03-thumb"/></li>
+          <li class="col-2" data-select_class="bg_patt-04"> <a class="thumb bg_patt-04-thumb"/></li>
+          <li class="col-2" data-select_class="bg_patt-05"> <a class="thumb bg_patt-05-thumb"/></li>
+          <li class="col-2" data-select_class="bg_patt-06"> <a class="thumb bg_patt-06-thumb"/></li>
+        </ul>
+      </li>
+    </xpath>
+  </template>
+
+  <!-- Avantgarde BG Effects -->
+  <template id="avantgarde_bg_effects" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-js='blog-style']" position="after">
+      <div data-js='bg_fx' data-selector="[class^='s_'], section:not(.s_google_map), .s_animated_boxes .item, .s_animated_boxes .slide">
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-sliders"/>Background Effects</a>
+          <ul class="dropdown-menu ">
+            <li data-select_class="insetShadow"><a>Inset Shadow</a></li>
+            <li data-select_class="insetShadowBig"><a>Big Inset Shadow</a></li>
+            <li data-select_class="glossy"><a>Glossy</a></li>
+            <li data-select_class="glossy-medium"><a>Glossy Medium</a></li>
+            <li data-select_class="glossy-soft"><a>Glossy Soft</a></li>
+            <li class="divider"/>
+            <li data-select_class=""><a>No effects</a></li>
+          </ul>
+        </li>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- Avantgarde Color Picker -->
+  <template id="avantgarde_colorpicker_pattern" inherit_id="website.colorpicker">
+    <xpath expr="//table/tr/td" position="replace" />  
+    <xpath expr="//table/tr[last()]" position="replace">
+      <tr>
+        <td><button class="only-text color-alpha"/></td>
+        <td><button class="only-text color-beta"/></td>
+        <td><button class="only-text color-gamma"/></td>
+        <td><button class="only-text color-delta"/></td>
+        <td><button class="only-text color-epsilon"/></td>
+      </tr>
+
+      <tr>
+        <td><button class="only-text color-gray-lighter "/></td>
+        <td><button class="only-text color-gray-light-light"/></td>
+        <td><button class="only-text color-gray-light"/></td>
+        <td><button class="only-text color-gray-light-dark"/></td>
+        <td><button class="only-text color-gray"/></td>
+      </tr>
+      <tr>
+        <td><button class="only-text color-gray-dark-light"/></td>
+        <td><button class="only-text color-gray-dark"/></td>
+        <td><button class="only-text color-gray-dark-dark"/></td>
+        <td><button class="only-text color-gray-darker"/></td>
+        <td><button class="only-text color-gray-darkest"/></td>
+      </tr>
+      <tr>
+        <td><button class="only-text color-white"/></td>
+        <td><button class="only-text color-black"/></td>
+      </tr>
+
+      <tr>
+        <td><button class="only-bg bg-alpha-lighter"/></td>
+        <td><button class="only-bg bg-alpha-light"/></td>
+        <td><button class="only-bg bg-alpha"/></td>
+        <td><button class="only-bg bg-alpha-dark"/></td>
+        <td><button class="only-bg bg-alpha-darker"/></td>
+      </tr>
+
+      <tr>
+        <td><button class="only-bg bg-beta-lighter"/></td>
+        <td><button class="only-bg bg-beta-light"/></td>
+        <td><button class="only-bg bg-beta"/></td>
+        <td><button class="only-bg bg-beta-dark"/></td>
+        <td><button class="only-bg bg-beta-darker"/></td>
+      </tr>
+
+      <tr>
+        <td><button class="only-bg bg-gamma-lighter"/></td>
+        <td><button class="only-bg bg-gamma-light"/></td>
+        <td><button class="only-bg bg-gamma"/></td>
+        <td><button class="only-bg bg-gamma-dark"/></td>
+        <td><button class="only-bg bg-gamma-darker"/></td>
+      </tr>
+
+      <tr>
+        <td><button class="only-bg bg-delta-lighter"/></td>
+        <td><button class="only-bg bg-delta-light"/></td>
+        <td><button class="only-bg bg-delta"/></td>
+        <td><button class="only-bg bg-delta-dark"/></td>
+        <td><button class="only-bg bg-delta-darker"/></td>
+      </tr>
+
+      <tr>
+        <td><button class="only-bg bg-epsilon-lighter"/></td>
+        <td><button class="only-bg bg-epsilon-light"/></td>
+        <td><button class="only-bg bg-epsilon"/></td>
+        <td><button class="only-bg bg-epsilon-dark"/></td>
+        <td><button class="only-bg bg-epsilon-darker"/></td>
+      </tr>
+
+      <tr class="ui-divider-bg" style="display:none"><td colspan="8"><hr style="width: 100%; height: 1px;"/></td></tr>
+
+      <tr>
+        <td><button class="only-bg bg-gray-lighter "/></td>
+        <td><button class="only-bg bg-gray-light-light"/></td>
+        <td><button class="only-bg bg-gray-light"/></td>
+        <td><button class="only-bg bg-gray-light-dark"/></td>
+        <td><button class="only-bg bg-gray"/></td>
+      </tr>
+      <tr>
+        <td><button class="only-bg bg-gray-dark-light"/></td>
+        <td><button class="only-bg bg-gray-dark"/></td>
+        <td><button class="only-bg bg-gray-dark-dark"/></td>
+        <td><button class="only-bg bg-gray-darker"/></td>
+        <td><button class="only-bg bg-gray-darkest"/></td>
+      </tr>
+
+      <tr class="ui-divider-bg" style="display:none"><td colspan="8"><hr style="width: 100%; height: 1px;"/></td></tr>
+
+      <tr>
+        <td><button class="only-bg bg-white"/></td>
+        <td><button class="only-bg bg-black"/></td>
+      </tr>
+    </xpath>
+  </template>
+
+  <!-- Avantgarde Typography -->
+  <template id="avantgarde_typo_pattern" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-js='blog-style']" position="after">
+      <div data-js='typo_pattern' data-selector="h1, h2, h3, h4, h5, h6, p">
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-header"/>Text Tranform</a>
+          <ul class="dropdown-menu toggle">
+            <li data-select_class=""><a>Normal</a></li>
+            <li class="divider"/>
+            <li data-select_class="text-uppercase"><a>Uppercase</a></li>
+            <li data-select_class="text-small_caps"><a>Small Caps</a></li>
+          </ul>
+        </li>
+      </div>
+
+      <div data-js='typo_size' data-selector="p">
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-text-height"/>Font Size</a>
+          <ul class="dropdown-menu toggle">
+            <li data-select_class=""><a>Normal</a></li>
+            <li class="divider"/>
+            <li data-select_class="text-small"><a>Small</a></li>
+            <li data-select_class="text-medium"><a>Medium</a></li>
+            <li data-select_class="text-big"><a>Big</a></li>
+          </ul>
+        </li>
+      </div>
+
+      <div data-js='typo_style' data-selector="p">
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-font"/>Font Style</a>
+          <ul class="dropdown-menu toggle">
+            <li data-select_class=""><a>Normal</a></li>
+            <li class="divider"/>
+            <li data-select_class="drop-caps"><a>Drop Caps</a></li>
+            <li data-select_class="drop-caps_alpha"><a>Drop Caps Alpha</a></li>
+            <li data-select_class="drop-caps_beta"><a>Drop Caps Beta</a></li>
+            <li data-select_class="drop-caps_gamma"><a>Drop Caps Gamma</a></li>
+            <li data-select_class="drop-caps_delta"><a>Drop Caps Delta</a></li>
+            <li data-select_class="drop-caps_epsilon"><a>Drop Caps Epsilon</a></li>
+          </ul>
+        </li>
+      </div>
+
+      <div data-js='typo_pattern' data-selector="h1, h2, h3, h4, h5, h6, p">
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-arrows-h"/>Letter Spacing</a>
+          <ul class="dropdown-menu">
+            <li data-select_class=""><a>No additional spacing</a></li>
+            <li class="divider"/>
+            <li data-select_class="letterSpacing1"><a>1px</a></li>
+            <li data-select_class="letterSpacing2"><a>2px</a></li>
+            <li data-select_class="letterSpacing3"><a>3px</a></li>
+            <li data-select_class="letterSpacing4"><a>4px</a></li>
+            <li data-select_class="letterSpacing5"><a>5px</a></li>
+            <li data-select_class="letterSpacing6"><a>6px</a></li>
+            <li data-select_class="letterSpacing7"><a>7px</a></li>
+            <li data-select_class="letterSpacing8"><a>8px</a></li>
+            <li data-select_class="letterSpacing9"><a>9px</a></li>
+            <li data-select_class="letterSpacing10"><a>10px</a></li>
+          </ul>
+        </li>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- Google Map Options -->
+  <template id="avantgarde_google_map" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-js='blog-style']" position="before">
+      <div data-js='map' data-selector="section.s_google_map">
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#"><i class="fa fa-fw fa-paint-brush"/>Style</a>
+          <ul class="dropdown-menu backgrounds">
+            <li class="col-2" data-map_color="stdMap"><a class="thumb stdMap-thumb"/></li>
+            <li class="col-2" data-map_color="lightMonoMap"><a class="thumb lightMonoMap-thumb"/></li>
+            <li class="col-2" data-map_color="cupertinoMap"><a class="thumb cupertinoMap-thumb"/></li>
+            <li class="col-2" data-map_color="retroMap"><a class="thumb retroMap-thumb"/></li>
+            <li class="col-2" data-map_color="cobaltMap"><a class="thumb cobaltMap-thumb"/></li>
+            <li class="col-2" data-map_color="flatMap"><a class="thumb flatMap-thumb"/></li>
+            <li class="col-2" data-map_color="blueMap"><a class="thumb blueMap-thumb"/></li>
+            <li class="col-2" data-map_color="lillaMap"><a class="thumb lillaMap-thumb"/></li>
+            <li class="col-2" data-map_color="carMap"><a class="thumb carMap-thumb"/></li>
+            <li class="col-2" data-map_color="bwMap"><a class="thumb bwMap-thumb"/></li>
+          </ul>
+        </li>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- Avantgarde Top Banner -->
+  <template id="avantgarde_top_content_options" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-js='blog-style']" position="before">
+      <div data-js='avantgarde_top_banner_options' data-selector=".s_media_block, .s_parallax, .s_google_map">
+        <li class="dropdown-submenu move_to_top_options">
+          <a tabindex="-1" href="#"><i class="fa fa-magic"/>Position</a>
+          <ul class="dropdown-menu ">
+            <li data-select_class=""><a>Normal</a></li>
+            <li data-select_class="move_to_top"><a>Move to top</a></li>
+          </ul>
+        </li>
+      </div>
+    </xpath>
+  </template>
+
+  </data>
+</openerp>

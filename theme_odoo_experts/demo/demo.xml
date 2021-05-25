@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    <template name="Demo Page" id="website.demo" page="True">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+                <section class="s_banner_parallax bg-img-04 parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 1550.1px;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-9 col-sm-12 hero-bg">
+                                <h1>Present your products</h1>
+                                <h2>with this theme.</h2>
+                                <section class="s_button_text">
+                                    <div class="oe_share">
+                                        <a class="btn btn-success btn-lg mt8" href="/page/website.contactus">
+                                            <i class="fa fa-arrow-right"/> Contact Us Now
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="jumbotron s_big_message mt0 mb0">
+                    <div class="container">
+                        <h1>Sell Online. Easily.</h1>
+                        <p>Write one sentence to convince visitor about your message.</p>
+                        <p>
+                            <a class="btn btn-success btn-lg" href="/page/website.contactus">Contact us </a>
+                        </p>
+                    </div>
+                </section>
+                <section class="parallax s_parallax bg-img-05" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 1550.1px; height: 296px; overflow: hidden;">
+                    <div>
+                        <div class="oe_structure"/></div>
+                </section>
+                <section class="s_showcase mt64" style="height: 360px; overflow: hidden;">
+                    <div class="box">
+                        <div class="hidden-xs line"/>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 text-right feature">
+                                <h4>
+                                    <i class="fa fa-desktop"/>First feature
+                                </h4>
+                                <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                            </div>
+                            <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
+                                <h4>
+                                    <i class="fa fa-heart"/>Another feature
+                                </h4>
+                                <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 text-right feature">
+                                <h4>
+                                    <i class="fa fa-paint-brush"/>Second feature
+                                </h4>
+                                <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                            </div>
+                            <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
+                                <h4>
+                                    <i class="fa fa-sliders"/>Last Feature
+                                </h4>
+                                <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt16 text-center">
+                        <a class="btn btn-default" href="https://www.odoo.com">Discover all the features</a>
+                    </div>
+                </section>
+                <section class="s_cubes o_animate bg-beta" style="animation-play-state: paused;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 bg-img-03"/>
+                            <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                <div class="row">
+                                    <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                                        <div class="cube-heading">
+                                            <h4 class="text-center">A good subtitle</h4>
+                                            <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-04"/></div>
+                                <div class="row">
+                                    <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-02"/>
+                                    <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                                        <div class="cube-heading">
+                                            <h4 class="text-center">A good subtitle</h4>
+                                            <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_big_picture">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-12 hero-paragraph">
+                                <h1 class="mt32">Endless Possibilities</h1>
+                                <h2>The only theme you need</h2>
+                                <p>This powerful theme along with its unique structure lets you create any design style with just one theme. These simple yet powerful options allow you to create any type of website. No two versions will ever look the same.</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 hero-image">
+                                <img alt="#" src="/website/image/theme_common.image_content_03" style=""/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="jumbotron s_button mb0 o_animate bg-delta" style="animation-play-state: paused;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 text-muted">
+                                <p class="mb0">
+                                    <strong>50,000+ companies run Odoo to grow their businesses.</strong>
+                                </p>
+                                <p class="mb0">Join us and make your company a better place.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="btn btn-success btn-lg" href="/page/website.contactus">
+                                    <i class="fa fa-arrow-right"/> Contact Us Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_big_picture_text">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 hero-image">
+                                <img alt="#" src="/website/image/theme_common.image_content_02" style=""/>
+                            </div>
+                            <div class="col-md-6 col-sm-12 hero-paragraph">
+                                <h1 class="mt32">Endless Possibilities</h1>
+                                <h2>The only theme you need</h2>
+                                <p>This powerful theme along with its unique structure lets you create any design style with just one theme. These simple yet powerful options allow you to create any type of website. No two versions will ever look the same.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="parallax s_parallax o_animate bg-img-01" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-attachment: scroll; background-position: 0px 1550.1px; height: 288px; overflow: hidden; animation-play-state: paused;">
+                    <div>
+                        <div class="oe_structure"/></div>
+                </section>
+                <section class="s_event_list">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center mt32 mb32">
+                                <h2>Nice and Efficient Events List</h2>
+                                <h3 class="text-muted">Display Your Last Activities</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="s_event_list">
+                                    <li>
+                                        <time class="bg-epsilon" datetime="2014-07-20 0000">
+                                            <span class="s_event_list_day">02</span>
+                                            <span class="s_event_list_month">Jul</span>
+                                            <span class="s_event_list_year">2014</span>
+                                            <span class="s_event_list_time">12:00 AM</span>
+                                        </time>
+                                        <div class="s_event_list_info">
+                                            <h4 class="s_event_list_title">Your Event Name</h4>
+                                            <p class="s_event_list_desc">Write a description of your event here.</p>
+                                            <ul>
+                                                <li style="width:50%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-globe"/> Link 
+                                                    </a>
+                                                </li>
+                                                <li style="width:50%;">
+                                                    <span class="fa fa-info-circle"/> Info
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="s_event_list_social">
+                                            <ul>
+                                                <li class="s_event_list_facebook" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-facebook"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_twitter" style="width: 34%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-twitter"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_google_plus" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-google-plus"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="s_event_list">
+                                    <li>
+                                        <time class="bg-delta" datetime="2014-07-20 0000">
+                                            <span class="s_event_list_day">05</span>
+                                            <span class="s_event_list_month">Sep</span>
+                                            <span class="s_event_list_year">2014</span>
+                                            <span class="s_event_list_time">12:00 AM</span>
+                                        </time>
+                                        <div class="s_event_list_info">
+                                            <h4 class="s_event_list_title">Your Event Name</h4>
+                                            <p class="s_event_list_desc">Write a description of your event here.</p>
+                                            <ul>
+                                                <li style="width:50%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-globe"/> Link 
+                                                    </a>
+                                                </li>
+                                                <li style="width:50%;">
+                                                    <span class="fa fa-info-circle"/> Info
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="s_event_list_social">
+                                            <ul>
+                                                <li class="s_event_list_facebook" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-facebook"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_twitter" style="width: 34%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-twitter"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_google_plus" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-google-plus"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="s_event_list">
+                                    <li>
+                                        <time class="bg-epsilon" datetime="2014-07-20 0000">
+                                            <span class="s_event_list_day">2</span>
+                                            <span class="s_event_list_month">Jul</span>
+                                            <span class="s_event_list_year">2014</span>
+                                            <span class="s_event_list_time">12:00 AM</span>
+                                        </time>
+                                        <div class="s_event_list_info">
+                                            <h4 class="s_event_list_title">Your Event Name</h4>
+                                            <p class="s_event_list_desc">Write a description of your event here.</p>
+                                            <ul>
+                                                <li style="width:50%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-globe"/> Link 
+                                                    </a>
+                                                </li>
+                                                <li style="width:50%;">
+                                                    <span class="fa fa-info-circle"/> Info
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="s_event_list_social">
+                                            <ul>
+                                                <li class="s_event_list_facebook" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-facebook"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_twitter" style="width: 34%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-twitter"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_google_plus" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-google-plus"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="text-center">With this theme you get a list of your events with date, time, description, etc. Select the simple or image mode and edit your content.
+                                    <br/>You can link your events to your favorite social network.
+                                </p>
+                            </div>
+                            <div class="col-md-6 mt32 mb32">
+                                <ul class="s_event_list">
+                                    <li>
+                                        <time class="bg-delta" datetime="2014-07-20">
+                                            <span class="s_event_list_day">18</span>
+                                            <span class="s_event_list_month">Jul</span>
+                                            <span class="s_event_list_year">2014</span>
+                                            <span class="s_event_list_time">ALL DAY</span>
+                                        </time>
+                                        <img class="img-responsive" src="/website/image/theme_common.image_content_09"/>
+                                        <div class="s_event_list_info">
+                                            <h4 class="s_event_list_title">Your Event Name</h4>
+                                            <p class="s_event_list_desc">Write a description of your event here.</p>
+                                            <ul>
+                                                <li style="width:50%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-globe"/> Link 
+                                                    </a>
+                                                </li>
+                                                <li style="width:50%;">
+                                                    <span class="fa fa-info-circle"/> Info
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="s_event_list_social">
+                                            <ul>
+                                                <li class="s_event_list_facebook" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-facebook"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_twitter" style="width: 34%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-twitter"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_google_plus" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-google-plus"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 mt32 mb32">
+                                <ul class="s_event_list">
+                                    <li>
+                                        <time class="bg-delta" datetime="2014-07-20">
+                                            <span class="s_event_list_day">21</span>
+                                            <span class="s_event_list_month">Jul</span>
+                                            <span class="s_event_list_year">2014</span>
+                                            <span class="s_event_list_time">ALL DAY</span>
+                                        </time>
+                                        <div class="s_event_list_icon">
+                                            <i class="fa fa-calendar fa-5x"/>
+                                        </div>
+                                        <div class="s_event_list_info">
+                                            <h4 class="s_event_list_title">Your Event Name</h4>
+                                            <p class="s_event_list_desc">Write a description of your event here.</p>
+                                            <ul>
+                                                <li style="width:50%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-globe"/> Link 
+                                                    </a>
+                                                </li>
+                                                <li style="width:50%;">
+                                                    <span class="fa fa-info-circle"/> Info
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="s_event_list_social">
+                                            <ul>
+                                                <li class="s_event_list_facebook" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-facebook"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_twitter" style="width: 34%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-twitter"/>
+                                                    </a>
+                                                </li>
+                                                <li class="s_event_list_google_plus" style="width: 33%;">
+                                                    <a href="https://www.odoo.com">
+                                                        <span class="fa fa-google-plus"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr class="s_separator"/>
+                <section class="s_big_icon_circle">
+                    <div class="container">
+                        <div class="row mb64">
+                            <div class="col-md-12 text-center mb32">
+                                <h2>Big Icon Circle</h2>
+                                <h3 class="text-muted">A Great Way to Show Your Numbers</h3>
+                            </div>
+                            <div class="col-md-2 col-md-offset-1 mt16 mb32">
+                                <div class="s_big_icon_circle_box">
+                                    <div class="s_big_icon_circle_icon col-md-4 center-block">
+                                        <span class="fa fa-desktop"/>
+                                        <h5>1000 Apps</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mt16 mb32">
+                                <div class="s_big_icon_circle_box">
+                                    <div class="s_big_icon_circle_icon col-md-4">
+                                        <span class="fa fa-users"/>
+                                        <h5>20.000 Users</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mt16 mb32">
+                                <div class="s_big_icon_circle_box">
+                                    <div class="s_big_icon_circle_icon col-md-4">
+                                        <span class="fa fa-user"/>
+                                        <h5>234 Clients</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mt16 mb32">
+                                <div class="s_big_icon_circle_box">
+                                    <div class="s_big_icon_circle_icon col-md-4">
+                                        <span class="fa fa-globe"/>
+                                        <h5>30 Countries</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mt16 mb32">
+                                <div class="s_big_icon_circle_box">
+                                    <div class="s_big_icon_circle_icon col-md-4">
+                                        <span class="fa fa-users"/>
+                                        <h5>75 Partners</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_numbers o_animate bg-delta" style="animation-play-state: paused;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 mb32 text-center">
+                                <h1 class="mb0">
+                                    <font class="text-epsilon">12</font>
+                                </h1>
+                                <p>
+                                    <font class="text-epsilon">Useful options</font>
+                                </p>
+                            </div>
+                            <div class="col-md-3 mb32 text-center">
+                                <h1 class="mb0">45</h1>
+                                <p>Beautiful snippets</p>
+                            </div>
+                            <div class="col-md-3 mb32 text-center">
+                                <h1 class="mb0">
+                                    <font class="text-epsilon">8</font>
+                                </h1>
+                                <p>
+                                    <font class="text-epsilon">Amazing pages</font>
+                                </p>
+                            </div>
+                            <div class="col-md-3 mb32 text-center">
+                                <h1 class="mb0">37</h1>
+                                <p>Outstanding images</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_color_blocks_2">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 s_color_blocks_2_block text-center o_animate bg-delta bg-img-01" style="animation-play-state: paused;">
+                                <span class="fa fa-shield fa-5x center-block"/>
+                                <h2 class="text-center">This Is a Color Block</h2>
+                                <h3 class="text-center text-muted mb16">
+                                    <font class="text-epsilon">Highlight Your Content</font>
+                                </h3>
+                                <p class="text-justify mb32">Color blocks are a simple and effective way to
+                                    <strong>present and highlight your content</strong>. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.
+                                </p>
+                                <a class="btn btn-success" href="https://www.odoo.com/">
+                                    <i class="fa fa-cog"/> More Details
+                                </a>
+                            </div>
+                            <div class="col-md-6 s_color_blocks_2_block bg-gamma text-center">
+                                <span class="fa fa-cube fa-5x center-block"/>
+                                <h2 class="text-center">An Other Color Block</h2>
+                                <h3 class="text-center text-muted mb16">Customize Backgrounds</h3>
+                                <p class="text-justify mb32">Color blocks are a simple and effective way to
+                                    <strong>present and highlight your content</strong>. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.
+                                </p>
+                                <a class="btn btn-default" href="https://www.odoo.com/">
+                                    <i class="fa fa-cog"/> More Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_google_map" data-map-color="" data-map-gps="(50.850344, 4.352701000000025)" data-map-type="ROADMAP" data-map-zoom="12" data-pin-style="flat" style="height: 488px; overflow: hidden;">
+                    <div class="map_container" style="background-color: rgb(229, 227, 223); overflow: hidden;">
+                        <div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;">
+                            <div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default;">
+                                <div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%;">
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                            <div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 586px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 586px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 330px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 330px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 842px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 842px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 586px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 586px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 330px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 330px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 842px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 842px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 74px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 74px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 1098px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 1098px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 74px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 74px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 1098px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 1098px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -182px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -182px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 1354px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 1354px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -182px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: -182px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 1354px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; position: absolute; left: 1354px; top: 513px;"/></div>
+                                        </div>
+                                    </div>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"/>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"/>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                        <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                                            <div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 586px; top: 1px;">
+                                                    <canvas draggable="false" height="512" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" width="512"/>
+                                                </div>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 586px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 330px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 330px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 842px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 842px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 586px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 586px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 330px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 330px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 842px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 842px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 74px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 74px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1098px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1098px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 74px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 74px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1098px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1098px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -182px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -182px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1354px; top: 1px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1354px; top: 257px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -182px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -182px; top: 513px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1354px; top: -255px;"/>
+                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1354px; top: 513px;"/></div>
+                                        </div>
+                                    </div>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                        <div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+                                            <div style="position: absolute; left: 586px; top: 1px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2097!3i1373!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 586px; top: 257px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2097!3i1374!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 330px; top: 1px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2096!3i1373!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 330px; top: 257px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2096!3i1374!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 842px; top: 1px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2098!3i1373!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 842px; top: 257px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2098!3i1374!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 586px; top: -255px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2097!3i1372!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 586px; top: 513px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2097!3i1375!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 330px; top: -255px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2096!3i1372!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 330px; top: 513px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2096!3i1375!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 842px; top: -255px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2098!3i1372!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 842px; top: 513px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2098!3i1375!2m3!1e0!2sm!3i312189815!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 74px; top: 1px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2095!3i1373!2m3!1e0!2sm!3i312188375!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 74px; top: 257px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2095!3i1374!2m3!1e0!2sm!3i312178297!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 1098px; top: 1px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2099!3i1373!2m3!1e0!2sm!3i312186935!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 1098px; top: 257px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2099!3i1374!2m3!1e0!2sm!3i312186935!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 74px; top: -255px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2095!3i1372!2m3!1e0!2sm!3i312188375!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 74px; top: 513px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2095!3i1375!2m3!1e0!2sm!3i312170373!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 1098px; top: -255px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2099!3i1372!2m3!1e0!2sm!3i312186935!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 1098px; top: 513px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts1.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2099!3i1375!2m3!1e0!2sm!3i312168218!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: -182px; top: 1px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2094!3i1373!2m3!1e0!2sm!3i312188375!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: -182px; top: 257px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2094!3i1374!2m3!1e0!2sm!3i312127175!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 1354px; top: 1px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2100!3i1373!2m3!1e0!2sm!3i312186935!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 1354px; top: 257px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2100!3i1374!2m3!1e0!2sm!3i312186935!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: -182px; top: -255px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2094!3i1372!2m3!1e0!2sm!3i312188375!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: -182px; top: 513px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2094!3i1375!2m3!1e0!2sm!3i312170373!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 1354px; top: -255px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2100!3i1372!2m3!1e0!2sm!3i312186935!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                            <div style="position: absolute; left: 1354px; top: 513px; width: 256px; height: 256px; transition: opacity 200ms ease-out 0s;">
+                                                <img draggable="false" src="https://mts0.googleapis.com/vt?pb=!1m4!1m3!1i12!2i2100!3i1375!2m3!1e0!2sm!3i312168218!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!5f2" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 256px; height: 256px;"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"/>
+                                <div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%;">
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"/>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"/>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"/>
+                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"/></div>
+                            </div>
+                            <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                                <div style="width: 62px; height: 26px; cursor: pointer;">
+                                    <a href="https://maps.google.com/maps?ll=50.850344,4.352701&amp;z=12&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" style="position: static; overflow: visible; float: none; display: inline;" target="_blank" title="Click to see this area on Google Maps">
+                                        <img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/google_white2_hdpi.png" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto,Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 570px; top: 154px;">
+                                <div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div>
+                                <div style="font-size: 13px;">Map data ©2015 Google</div>
+                                <div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;">
+                                    <img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"/>
+                                </div>
+                            </div>
+                            <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 167px; bottom: 0px; width: 122px;">
+                                <div class="gm-style-cc" draggable="false" style="-moz-user-select: none;">
+                                    <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                        <div style="width: 1px;"/>
+                                        <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"/></div>
+                                    <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;">
+                                        <a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a>
+                                        <span>Map data ©2015 Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+                                <div style="font-family: Roboto,Arial,sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2015 Google</div>
+                            </div>
+                            <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -moz-user-select: none; position: absolute; right: 96px; bottom: 0px;">
+                                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                    <div style="width: 1px;"/>
+                                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"/></div>
+                                <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;">
+                                    <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);" target="_blank">Terms of Use</a>
+                                </div>
+                            </div>
+                            <div class="gm-style-cc" draggable="false" style="-moz-user-select: none; position: absolute; right: 0px; bottom: 0px;">
+                                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                    <div style="width: 1px;"/>
+                                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"/></div>
+                                <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;">
+                                    <a href="https://www.google.com/maps/@50.850344,4.352701,12z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" target="_new" title="Report errors in the road map or imagery to Google">Report a map error</a>
+                                </div>
+                            </div>
+                            <div class="gmnoprint" controlheight="0" controlwidth="0" draggable="false" style="margin: 5px; -moz-user-select: none; position: absolute; display: none; left: 0px; top: 0px;">
+                                <div class="gmnoprint" controlheight="0" controlwidth="0" style="opacity: 0.6; display: none; position: absolute;">
+                                    <div style="width: 22px; height: 22px; overflow: hidden; position: absolute; cursor: pointer;" title="Rotate map 90 degrees">
+                                        <img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6_hdpi.png" style="position: absolute; left: -38px; top: -360px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <font>Visit us:</font>
+                        <span> Our office is located in the northeast of Brussels. TEL (555) 432 2365 </span>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    </data>
+  </openerp>

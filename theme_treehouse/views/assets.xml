@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+<!-- Jump to website after theme installation
+     ========================================================================== -->
+
+  <data noupdate="1">
+    <record id="base.open_menu" model="ir.actions.todo">
+      <field name="action_id" ref="website.action_website"/>
+      <field name="state">open</field>
+    </record>
+  </data>
+
+  <data>
+
+<!-- LESS
+     ========================================================================== -->
+
+    <template id="less" inherit_id="website.assets_frontend" active="True" priority="1">
+      <xpath expr="." position="inside">
+        <!-- Common -->
+        <link href="/theme_common/static/src/less/mixins.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/fonts.less" rel="stylesheet" type="text/less"/>
+
+        <link href="/theme_common/static/src/less/s_banner_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_carousel_boxed.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_collapse.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_features_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_features_grid_circle.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_four_columns_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_images_captions_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_image_text_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_label.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_masonry_block.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_medias_list.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_news_carousel.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_process_steps_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_progress_bar.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_quotes_slider_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_references_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_tabs.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_team_profiles_2.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_text_image_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_text_block_image_fw.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_common/static/src/less/s_three_columns_carousel.less" rel="stylesheet" type="text/less"/>
+        <!-- Theme -->
+        <link href="/theme_treehouse/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/customize.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/layout.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/mixins.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/theme.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/snippets.less" rel="stylesheet" type="text/less"/>
+
+        <link href="/theme_treehouse/static/src/less/snippets/s_big_message.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/snippets/s_panel_extended.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/snippets/s_quote_extended.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/snippets/s_separator_extended.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/snippets/s_share_extended.less" rel="stylesheet" type="text/less"/>
+        <link href="/theme_treehouse/static/src/less/snippets/s_well_extended.less" rel="stylesheet" type="text/less"/>
+
+        <script type="text/javascript" src="/theme_treehouse/static/src/js/theme_animation.js"></script>
+      </xpath>
+    </template>
+
+<!-- JS
+     ========================================================================== -->
+
+    <template id="assets_editor" inherit_id="website.assets_editor" name="Editor assets">
+      <xpath expr="." position="inside">
+        <script type="text/javascript" src="/theme_common/static/src/js/background_image.js"></script>
+        <script type="text/javascript" src="/theme_common/static/src/js/s_collapse.js"></script>
+        <script type="text/javascript" src="/theme_common/static/src/js/s_progress_bar.js"></script>
+      </xpath>
+    </template>
+  </data>
+</openerp>

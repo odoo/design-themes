@@ -1,0 +1,225 @@
+/* ================== MODAL COLORS ================= */
+
+@modalGreen: #328e7f;
+@modalGreenDark: darken(@modalGreen, 5%);
+@modalGreenLight: lighten(@modalGreen, 15%);
+@modalOrange: #ea5800;
+@modalBlue: #151C24;
+@modalLightBlue: lighten(@modalBlue, 20%);
+
+body #theme_customize_modal {
+    background: rgba(0, 0, 0, 0) !important;
+
+    .modal-header .close {
+        color: white;
+        position: absolute;
+        top: 0.25em;
+        right: 0.4em;
+        opacity: .9;
+    }
+
+    .modal-body.interface {
+        width: 360px;
+        height: 430px;
+
+        padding-top: 0;
+        padding-bottom: 0;
+
+        background-color: @gray;
+        position: relative;
+        font-family: ProximaRegular;
+
+        > .row {
+            height: 100%;
+
+            .left-content {
+                height: 100%;
+                padding: 0;
+                background-color: @modalGreen;
+
+                ul.nav-tabs {
+                    height: 100%;
+                    border: none;
+
+                    > li {
+                        height: percentage(1/6);
+                        float: none;
+
+                        &:hover {
+                            background-color: @modalBlue;
+                        }
+
+                        > a {
+                            display: block;
+                            text-decoration: none;
+                            cursor: pointer;
+                            font-size: 12px;
+
+                            height: 100%;
+                            margin-right: 0px;
+                            padding: 15px 5px;
+                            color: white;
+
+                            border-radius: 0px;
+                            border: none;
+
+                            span {
+                                margin-bottom: 13px;
+                            }
+                        }
+
+                        .a-mixin-orange() {
+                            background-color: @gray;
+                            color: @modalOrange;
+                            border: none;
+                            outline: none;
+                        }
+
+                        &, &.active {
+                            > a {
+                                &:hover, &:focus {
+                                    .a-mixin-orange;
+                                }
+                            }
+                        }
+                        &.active > a {
+                            .a-mixin-orange;
+                        }
+                    }
+                }
+            }
+
+            .right-content {
+                max-height: 100%;
+                overflow: auto;
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+                h4 {
+                    color: @white;
+                    text-align: left;
+                }
+                h6, p {
+                    color: @white;
+                }
+
+                label {
+                    width: 100%;
+                    cursor: pointer;
+
+                    > img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    > div, > img, > h6, > h4 {
+                        border: none;
+                        padding: 3px;
+                    }
+
+                    &.checked {
+                        background-color: @modalLightBlue;
+                        > div, > img, > h6, > h4 {
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+                #color {
+                    > p {
+                        margin-top: 15px;
+                    }
+                    .color-combi {
+                        > div {
+                            display: inline-block;
+                            width: 37px;
+                            height: 37px;
+                            padding: 0px;
+                        }
+
+                        /* ======================= COLOR PRESET 1 ====================== */
+
+                        &.colorPreset1 > div {
+                            &:nth-child(1) {background-color: @white;}
+                            &:nth-child(2) {background-color: @colorPreset1_color1;}
+                            &:nth-child(3) {background-color: @colorPreset1_color2;}
+                            &:nth-child(4) {background-color: @colorPreset1_color3;}
+                            &:nth-child(5) {background-color: @colorPreset1_color4;}
+                        }
+
+                        /* ======================= COLOR PRESET 2 ====================== */
+
+                        &.colorPreset2 > div {
+                            &:nth-child(1) {background-color: @colorPreset2_color1;}
+                            &:nth-child(2) {background-color: @colorPreset2_color2;}
+                            &:nth-child(3) {background-color: @white;}
+                            &:nth-child(4) {background-color: @colorPreset2_color3;}
+                            &:nth-child(5) {background-color: @colorPreset2_color4;}
+                        }
+
+                        /* ======================= COLOR PRESET 3 ====================== */
+
+                        &.colorPreset3 > div {
+                            &:nth-child(1) {background-color: @colorPreset3_color1;}
+                            &:nth-child(2) {background-color: @colorPreset3_color2;}
+                            &:nth-child(3) {background-color: @white;}
+                            &:nth-child(4) {background-color: @colorPreset3_color3;}
+                            &:nth-child(5) {background-color: @colorPreset3_color4;}
+                        }
+
+                        /* ======================= COLOR PRESET 4 ====================== */
+
+                        &.colorPreset4 > div {
+                            &:nth-child(1) {background-color: @colorPreset4_color1;}
+                            &:nth-child(2) {background-color: @colorPreset4_color2;}
+                            &:nth-child(3) {background-color: @white;}
+                            &:nth-child(4) {background-color: @colorPreset4_color3;}
+                            &:nth-child(5) {background-color: @colorPreset4_color4;}
+                        }
+
+                        /* ======================= COLOR PRESET 5 ====================== */
+
+                        &.colorPreset5 > div {
+                            &:nth-child(1) {background-color: @colorPreset5_color1;}
+                            &:nth-child(2) {background-color: @colorPreset5_color2;}
+                            &:nth-child(3) {background-color: @white;}
+                            &:nth-child(4) {background-color: @colorPreset5_color3;}
+                            &:nth-child(5) {background-color: @colorPreset5_color4;}
+                        }
+
+                        /* ======================= COLOR PRESET 6 ====================== */
+
+                        &.colorPreset6 > div {
+                            &:nth-child(1) {background-color: @colorPreset6_color1;}
+                            &:nth-child(2) {background-color: @colorPreset6_color2;}
+                            &:nth-child(3) {background-color: @white;}
+                            &:nth-child(4) {background-color: @colorPreset6_color3;}
+                            &:nth-child(5) {background-color: @colorPreset6_color4;}
+                        }
+                    }
+                }
+
+                #bgcolor {
+                    .bg-white {background-color: @white;}
+                    .bg-beige {background-color: @colorPreset6_color4;}
+                    .bg-gray {background-color: @gray-light;}
+                    .bg-black {background-color: @black;}
+                    .bg-green {background-color: @colorPreset1_color3;}
+                    .bg-blue {background-color: @colorPreset1_color4;}
+                    .bg-indigo {background-color: @colorPreset4_color3;}
+                    .bg-rose {background-color: @colorPreset4_color4;}
+
+                    > label {
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .modal-footer {
+        height: 38px;
+        background-color: @modalGreen;
+        border: none;
+    }
+}

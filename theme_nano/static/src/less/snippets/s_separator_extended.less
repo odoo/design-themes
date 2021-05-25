@@ -1,0 +1,40 @@
+.s_separator{
+  border-color: inherit;
+  border-top: 0;
+  padding: 8px 0;
+  margin: 0 0 16px 0;
+  height: 1px;
+  display: inline-block;
+  width: 100%;
+  border-style: solid;
+   border-bottom-width: 1px;
+  &.hr-small{
+    width: 20%;
+  }
+  &.hr-half{
+    width: 50%;
+  }
+  &.hr-full{
+    width: 100%;
+  }
+  &.hr-dashed{
+    border-style: dashed;
+  }
+  &.hr-dotted{
+    border-style: dotted;
+  }
+  &.hr-double{
+    border-style: double;
+
+  }
+  &.hr-solid{
+    border-style: solid;
+  }
+  .hr-thickness(5);
+  .hr-thickness(@n, @i: 1px) when (@i =< @n) {
+    &.hr-@{i}{
+      border-bottom-width: (@i * 1);
+    }
+    .hr-thickness(@n, (@i + 1));
+  }
+}

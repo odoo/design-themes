@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<!-- Jump to website after theme installation -->
+		<record id="base.open_menu" model="ir.actions.todo">
+			<field name="action_id" ref="website.action_website"/>
+			<field name="state">open</field>
+		</record>
+	</data>
+	<data>
+		<template id="less" name="theme_notes_sale_less" inherit_id="website.assets_frontend">
+			<xpath expr="//link[last()]" position="after">
+				<link href="/theme_notes_sale/static/src/less/theme_ecommerce.less" rel="stylesheet" type="text/less"/>
+			</xpath>
+		</template>
+
+        <template id="assets_frontend" inherit_id="website.assets_frontend" name="theme_notes frontend scripts">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/theme_notes_sale/static/src/js/collapse_categories.js"></script>
+            </xpath>
+        </template>
+
+    	<template id="option_colorPreset1" name="option_colorPreset1" inherit_id="theme_notes.option_colorPreset1">
+            <xpath expr="//link[last()]" position="after">
+                <link href="/theme_notes_sale/static/src/less/options/colors/colorPreset1.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+	</data>
+</openerp>

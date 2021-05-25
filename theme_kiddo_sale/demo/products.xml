@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+        <delete id="product.sub_computers" model="product.public.category"/>
+        <delete id="product.Components" model="product.public.category"/>
+        <delete id="product.devices" model="product.public.category"/>
+        <delete id="product.laptops" model="product.public.category"/>
+        <delete id="product.network" model="product.public.category"/>
+        <delete id="product.Computer_all_in_one" model="product.public.category"/>
+        <delete id="product.External_Hard_Drive" model="product.public.category"/>
+        <delete id="product.Headset" model="product.public.category"/>
+        <delete id="product.Keyboard_Mouse" model="product.public.category"/>
+        <delete id="product.Pen_Drive" model="product.public.category"/>
+        <delete id="product.printer" model="product.public.category"/>
+        <delete id="product.Screen" model="product.public.category"/>
+        <delete id="product.server" model="product.public.category"/>
+        <delete id="product.services" model="product.public.category"/>
+        <delete id="product.Software" model="product.public.category"/>
+        <delete id="product.Speakers" model="product.public.category"/>
+
+        <!-- Create new categories -->
+
+		<record id="lego" model="product.public.category">
+			<field name="name">Lego</field>
+		</record>
+        <record id="City" model="product.public.category">
+            <field name="parent_id" ref="lego"/>
+            <field name="name">City</field>
+        </record>
+        <record id="StarWars" model="product.public.category">
+            <field name="parent_id" ref="lego"/>
+            <field name="name">Star Wars</field>
+        </record>
+        <record id="Ninjago" model="product.public.category">
+            <field name="parent_id" ref="lego"/>
+            <field name="name">Ninjago</field>
+        </record>
+        <record id="Technic" model="product.public.category">
+            <field name="parent_id" ref="lego"/>
+            <field name="name">Technic</field>
+        </record>
+        <record id="puzzles" model="product.public.category">
+            <field name="name">Puzzles</field>
+        </record>
+        <record id="puzzle_children" model="product.public.category">
+            <field name="parent_id" ref="puzzles"/>
+            <field name="name">Children</field>
+        </record>
+        <record id="puzzle_advanced" model="product.public.category">
+            <field name="parent_id" ref="puzzles"/>
+            <field name="name">Advanced</field>
+        </record>
+        <record id="playmobil" model="product.public.category">
+            <field name="name">Playmobil</field>
+        </record>
+
+		<record id="product_4" model="product.product">
+            <field name="name">Lego City</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.City')])]"/>
+            <field name="standard_price">79.0</field>
+            <field name="list_price">79.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_05.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="kiddo_product_5" model="product.product">
+            <field name="name">Lego Technic</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.Technic')])]"/>
+            <field name="standard_price">99.0</field>
+            <field name="list_price">99.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_06.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_6" model="product.product">
+            <field name="name">Lego Star-Wars</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.StarWars')])]"/>
+            <field name="standard_price">49.0</field>
+            <field name="list_price">49.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_07.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_7" model="product.product">
+            <field name="name">Lego Ninjago</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.Ninjago')])]"/>
+            <field name="standard_price">49.0</field>
+            <field name="list_price">49.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_08.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_8" model="product.product">
+            <field name="name">Disney Puzzle 1000 pcs</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.puzzle_advanced')])]"/>
+            <field name="standard_price">49.0</field>
+            <field name="list_price">49.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_09.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_9" model="product.product">
+            <field name="name">Disney Puzzle 800 pcs</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.puzzle_advanced')])]"/>
+            <field name="standard_price">49.0</field>
+            <field name="list_price">49.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_10.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_10" model="product.product">
+            <field name="name">Disney Puzzle 150 pcs</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.puzzle_children')])]"/>
+            <field name="standard_price">49.0</field>
+            <field name="list_price">49.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_11.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_11" model="product.product">
+            <field name="name">Playmobil</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.playmobil')])]"/>
+            <field name="standard_price">69.0</field>
+            <field name="list_price">79.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_12.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_12" model="product.product">
+            <field name="name">Playmobil</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.playmobil')])]"/>
+            <field name="standard_price">79.0</field>
+            <field name="list_price">89.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_13.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_13" model="product.product">
+            <field name="name">Playmobil</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.playmobil')])]"/>
+            <field name="standard_price">79.0</field>
+            <field name="list_price">79.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_14.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_14" model="product.product">
+            <field name="name">Playmobil</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.playmobil')])]"/>
+            <field name="standard_price">79.0</field>
+            <field name="list_price">79.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_15.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+        <record id="product.kiddo_product_15" model="product.product">
+            <field name="name">Playmobil</field>
+            <field name="website_published">True</field>
+            <field name="website_sequence">99</field>
+            <field name="website_size_x">2</field>
+            <field name="website_size_y">2</field>
+            <field name="public_categ_ids" eval="[(6,0,[ref('theme_kiddo_sale.playmobil')])]"/>
+            <field name="standard_price">79.0</field>
+            <field name="list_price">79.0</field>
+            <field name="type">consu</field>
+            <field name="image" type="base64" file="theme_kiddo/static/src/img/content/product_img_16.png"/>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+        </record>
+
+	</data>
+
+</openerp>

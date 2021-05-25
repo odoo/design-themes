@@ -1,0 +1,50 @@
+body {
+    background-image:
+    linear-gradient(
+        fade(@color-epsilon, 30%) 50%,
+        fade(@color-epsilon, 60%)),
+    @bg-pattern-04;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    color: white;
+    .container {
+        .row {
+            .pull-left {
+                color: @color-alpha;
+            }
+            .fa {
+                color: @gray-dark;
+            }
+        }
+    }
+    .container.mt16.mb8 {
+        background: none !important;
+        color:  @color-alpha;
+        .text-muted{
+            background: none !important;
+            color:  white;
+        }
+    }
+    .pull-left {
+      color:  @color-beta;
+  }
+}
+
+footer ul li a {
+  color: @color-delta;
+}
+
+footer ul li a:hover {
+  color: @color-beta;
+  text-decoration: none;
+}
+footer h4 {
+  color: @gray-dark;
+  a, small {
+      color: @gray-dark;
+  }
+}
+
