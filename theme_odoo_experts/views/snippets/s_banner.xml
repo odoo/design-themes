@@ -22,8 +22,8 @@
             <p class="lead">Guided by expertise gained over 20 years of achieving success for clients, we practice with passion and strategic focus on the future.</p>
         </xpath>
         <!-- Button -->
-        <xpath expr="//a" position="replace">
-            <a href="#" class="btn btn-primary mb-2">Discover more</a>
+        <xpath expr="//t[@t-esc='cta_btn_text']" position="replace">
+            <t t-esc="cta_btn_text">Discover More</t>
         </xpath>
     </template>
 </odoo>

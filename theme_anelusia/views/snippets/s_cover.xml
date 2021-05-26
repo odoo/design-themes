@@ -18,7 +18,7 @@
         </xpath>
         <!-- Button -->
         <xpath expr="//a" position="replace">
-            <a href="/contactus" class="btn btn-primary btn-lg mb-2">Discover</a>
+            <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg mb-2"><t t-esc="cta_btn_text">Discover</t></a>
         </xpath>
     </template>
 </odoo>

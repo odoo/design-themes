@@ -14,7 +14,7 @@
                 </h1>
                 <p class="lead">Speed up your work with the last laptop. 3.4Ghz, 8 cores.<br/>
                 You’ll be unstoppable all day long (up to 11 hours).</p>
-                <p><a href="/contactus" class="btn btn-primary mb-2">Discover</a></p>
+                <p><a t-att-href="cta_btn_href" class="btn btn-primary mb-2"><t t-esc="cta_btn_text">Discover</t></a></p>
             </div>
         </xpath>
         <!-- Shape -->

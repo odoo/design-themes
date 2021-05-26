@@ -25,7 +25,7 @@
                     Our mission is to give customers the best experience.<br/>Extensive documentation &amp; guides, an active community,<br/>24/7 support make it a pleasure to work with us.
                 </p>
                 <p style="text-align: right">
-                    <a href="/contactus" class="btn btn-primary btn-lg mb-2 o_default_snippet_text">Contact us</a>
+                    <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg mb-2 o_default_snippet_text"><t t-esc="cta_btn_text">Contact us</t></a>
                 </p>
             </div>
         </div>
