@@ -18,7 +18,7 @@
         </xpath>
         <!-- Button -->
         <xpath expr="//a[hasclass('btn')]" position="replace">
-            <a href="#" class="btn btn-lg btn-primary rounded-circle mb-2">Menu</a>
+            <a t-att-href="cta_btn_href" class="btn btn-lg btn-primary rounded-circle mb-2"><t t-esc="cta_btn_text">Menu</t></a>
         </xpath>
         <!-- Scroll Down button -->
         <xpath expr="//div[hasclass('container')]" position="after">

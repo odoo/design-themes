@@ -21,8 +21,8 @@
             <p class="lead">We are specialist in the sale and rental of residential real estate.</p>
         </xpath>
         <!-- Button -->
-        <xpath expr="//a" position="replace">
-            <a href="#" class="btn btn-primary mb-2">Properties</a>
+        <xpath expr="//t[@t-esc='cta_btn_text']" position="replace">
+            <t t-esc="cta_btn_text">Properties</t>
         </xpath>
     </template>
 </odoo>

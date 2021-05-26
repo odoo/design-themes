@@ -18,8 +18,8 @@
             <p class="lead">Software Innovation as its best.<br/> Harness the power of disruptive technologies to increase your day-to-day business operations.</p>
         </xpath>
         <!-- Button -->
-        <xpath expr="//a" position="replace">
-            <a href="#" class="btn btn-primary mb-2">Our Solutions</a>
+        <xpath expr="//t[@t-esc='cta_btn_text']" position="replace">
+            <t t-esc="cta_btn_text">Our Solutions</t>
         </xpath>
     </template>
 </odoo>

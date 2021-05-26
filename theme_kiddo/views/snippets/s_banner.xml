@@ -16,7 +16,7 @@
                 <p><br/></p>
                 <p class="lead">Because your children deserve the best, we welcome children from 0 to 3 years in a warm and specific environment for the needs of small children</p>
                 <p><br/></p>
-                <a href="#" class="btn btn-primary mb-2">About us</a>
+                <a t-att-href="cta_btn_href" class="btn btn-primary mb-2"><t t-esc="cta_btn_text">About us</t></a>
             </div>
         </xpath>
     </template>
