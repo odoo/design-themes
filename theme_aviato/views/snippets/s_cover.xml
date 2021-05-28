@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_cover" inherit_id="website.s_cover">
+        <!-- Section -->
+        <xpath expr="section" position="attributes">
+            <attribute name="class" add="pt192 pb192" remove="pt96 pb96 s_parallax_is_fixed" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/21","flip":["y"]}</attribute>
+        </xpath>
+
+        <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
+        </xpath>
+
+        <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 50%;"/>
+        </xpath>
+
+       <!-- Shape -->
+      <xpath expr="//div[hasclass('container')]" position="before">
+         <div class="o_we_shape o_web_editor_Wavy_21 o_we_flip_y"/>
+      </xpath>
+
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 class="text-black text-start d-inline-block px-2" style="background-color:rgb(255 255 255 / 50%);">
+                <font style="font-size: 62px;">Travel to any corner of the world</font>
+            </h1>
+        </xpath>
+        <!-- Paragraphs -->
+        <xpath expr="//p" position="replace">
+            <p class="lead text-start d-inline-block px-2 text-black" style="background-color:rgb(255 255 255 / 50%);"><b>A travel agent helps you to plan your trip from start to finish.</b> </p>
+            <p class="lead text-start"><br/></p>
+        </xpath>
+
+        <!-- Button -->
+        <xpath expr="//p/a" position="replace">
+            <p style="text-align: left;">
+                <a href="/contactus" class="btn btn-primary btn-lg mb-2">Plan your trip with us</a>
+            </p>
+        </xpath>
+    </template>
+</odoo>

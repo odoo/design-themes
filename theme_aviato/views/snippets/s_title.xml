@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_title" inherit_id="website.s_title">
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 class="text-center"><font style="font-size: 48px;">Top Destinations</font></h1>
+        </xpath>
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="bg-o-color-3" remove="" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

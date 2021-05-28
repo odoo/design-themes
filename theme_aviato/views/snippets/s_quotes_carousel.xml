@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
+        <xpath expr="//div[hasclass('s_quotes_carousel')]/div/div[1]" position="replace">
+            <div class="carousel-item active pt80 pb80 bg-o-color-2" data-name="Slide">
+                <div class="container">
+                    <blockquote class="s_blockquote s_blockquote_classic blockquote mx-auto w-50" data-name="Blockquote">
+                        <i class="fa fa-1x fa-quote-left rounded float-left bg-o-color-5 s_blockquote_icon"/>
+                        <div class="s_blockquote_content o_cc1">
+                            <p>.</p>
+                            <footer class="blockquote-footer">
+                                <img src="/web/image/website.s_quotes_carousel_demo_image_1" class="s_blockquote_avatar img rounded-circle mr-2" alt=""/>
+                                <span class="s_blockquote_author"><b>Linda and Paulo</b> • From Italy</span>
+                            </footer>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[hasclass('s_quotes_carousel')]/div/div[2]" position="replace">
+            <div class="carousel-item pt80 pb80 bg-o-color-2" data-name="Slide">
+                <div class="container">
+                    <blockquote class="s_blockquote s_blockquote_classic blockquote mx-auto w-50" data-name="Blockquote">
+                        <i class="fa fa-1x fa-quote-left rounded float-left bg-o-color-5 s_blockquote_icon"/>
+                        <div class="s_blockquote_content o_cc1">
+                            <p>.</p>
+                            <footer class="blockquote-footer">
+                                <img src="/web/image/website.s_quotes_carousel_demo_image_2" class="s_blockquote_avatar img rounded-circle mr-2" alt=""/>
+                                <span class="s_blockquote_author"><b>Jacques and Marie</b> • From France</span>
+                            </footer>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[hasclass('s_quotes_carousel')]/div/div[3]" position="replace">
+            <div class="carousel-item pt80 pb80 bg-o-color-2" data-name="Slide">
+                <div class="container">
+                    <blockquote class="s_blockquote s_blockquote_classic blockquote mx-auto w-50" data-name="Blockquote">
+                        <i class="fa fa-1x fa-quote-left rounded float-left bg-o-color-5 s_blockquote_icon"/>
+                        <div class="s_blockquote_content o_cc1">
+                            <p>.</p>
+                            <footer class="blockquote-footer">
+                                <img src="/web/image/website.s_quotes_carousel_demo_image_3" class="s_blockquote_avatar img rounded-circle mr-2" alt=""/>
+                                <span class="s_blockquote_author"><b>Rose and Peter</b> • From United Kingdom</span>
+                            </footer>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </xpath>
+
+         <!-- Quote 1 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[1]/p" position="replace">
+            <p>'It's difficult to describe how awesome the trip was. I feel like my life has changed forever. It would take too long to describe day by day the sights, sounds, architecture, art, food, history, and people that we came across. Ireland was fantastic.</p>
+        </xpath>
+        <!-- Quote 2 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[2]/p" position="replace">
+            <p>As always, Odoo Travel has delivered a truly wonderful travel experience for us. Norway was a great travel destination. The parts of the country we visited were beautiful, people were friendly, everything we ate was delicious, and there were many fun things to see and do.</p>
+        </xpath>
+        <!-- Quote 3 -->
+        <xpath expr="(//div[hasclass('s_blockquote_content')])[3]/p" position="replace">
+            <p> We would like to thank Odoo Travel for organising wonderful tour for us in Delhi, Agra and Rajasthan. Everything was very well organised. Thank you very much for everything! </p>
+        </xpath>
+    </template>
+</odoo>

@@ -16,6 +16,7 @@
         'theme_anelusia',
         'theme_artists',
         'theme_avantgarde',
+        'theme_aviato',
         'theme_beauty',
         'theme_bewise',
         'theme_bistro',
