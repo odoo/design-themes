@@ -1,8 +1,6 @@
-odoo.define("theme_loftspace.tour.loftspace", function (require) {
-"use strict";
+/** @odoo-module */
 
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
+import wTourUtils from 'website.tour_utils';
 
 const snippets = [
     {
@@ -10,21 +8,17 @@ const snippets = [
         name: 'Cover',
     },
     {
-        id: 's_text_image',
-        name: 'Text - Image',
+        id: 's_three_columns',
+        name: 'Columns',
     },
     {
         id: 's_title',
         name: 'Title',
     },
     {
-        id: 's_picture',
-        name: 'Picture',
-    },
-    {
-        id: 's_three_columns',
-        name: 'Columns',
-    },
+        id: 's_images_wall',
+        name: 'Images Wall',
+    },    
     {
         id: 's_call_to_action',
         name: 'Call to Action',
@@ -39,9 +33,7 @@ wTourUtils.registerThemeHomepageTour("loftspace_tour", [
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3]),
     wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.dragNDrop(snippets[5]),
-    wTourUtils.clickOnSnippet(snippets[5]),
+    wTourUtils.clickOnSnippet(snippets[4]),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
 ]);
-});
