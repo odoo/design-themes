@@ -71,11 +71,12 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (25 / 12);
-$o-theme-h2-font-size-multiplier: (18 / 12);
-$o-theme-h3-font-size-multiplier: (16 / 12);
-$o-theme-h4-font-size-multiplier: (14 / 12);
-$o-theme-h5-font-size-multiplier: 1;
+$o-theme-h1-font-size-multiplier: (62 / 16);
+$o-theme-h2-font-size-multiplier: (36 / 16);
+$o-theme-h3-font-size-multiplier: (28 / 16);
+$o-theme-h4-font-size-multiplier: (24 / 16);
+$o-theme-h5-font-size-multiplier: (21 / 16);
+$o-theme-h5-font-size-multiplier: (18 / 16);
 $o-theme-h6-font-size-multiplier: 1;
 
 $o-theme-font-configs: (
@@ -123,16 +124,20 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'loftspace-1',
+        'color-palettes-name': 'graphene-2',
         'header-font-size': .95rem,
-        'btn-border-radius': 0,
-        'btn-border-radius-lg': 0,
-        'btn-border-radius-sm': 0,
+        'btn-border-radius': 5px,
+        'btn-border-radius-lg': 5px,
+        'btn-border-radius-sm': 5px,
+        'btn-padding-y': 8px,
+        'btn-padding-x': 20px,
+        'btn-padding-y-lg': 10px,
+        'btn-padding-x-lg': 30px,
         'font': 'Questrial',
         'headings-font': 'Poppins',
         'navbar-font': 'Poppins',
         'buttons-font': 'Poppins',
-        'header-template': 'default',
+        'header-template': 'centered_logo',
         'footer-template': 'default',
         'link-underline': 'never',
     ),
@@ -165,3 +170,15 @@ $o-color-palettes-compatibility-indexes: (
     22: 'generic-16',
     23: 'generic-17',
 );
+
+//------------------------------------------------------------------------------
+// Shapes
+//------------------------------------------------------------------------------
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Airy/13_001', (1: 5, 4: 5));
+$o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Airy/13_001', (1: 5, 4: 'footer'));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Airy/10', (5: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Airy/03_001', (5: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/07', (2: 1, 5: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/09', (2: 5, 3: 5));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Airy/04_001', 'second', (1: 5));
