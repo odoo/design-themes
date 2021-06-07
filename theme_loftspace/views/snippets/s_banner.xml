@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_banner" inherit_id="website.s_banner">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt144 pb144 o_cc3" remove="pt96 pb96 s_parallax_is_fixed" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/07","flip":[]}</attribute>
+            <attribute name="data-scroll-background-ratio">-3</attribute>
+        </xpath>
+        <!-- Parallax -->
+        <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
+            <attribute name="style">background-image: url('/web/image/website.s_banner_default_image');</attribute>
+        </xpath>
+        <!-- Add shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_bg_filter" style="background-color: rgba(50, 39, 59, 0.85) !important;"/>
+            <div class="o_we_shape o_web_editor_Floats_07"/>
+        </xpath>
+        <!-- Jumbotron -->
+        <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+            <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+        </xpath>   
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1><span style="font-size: 62px;"><b>The art of Design</b></span></h1>
+        </xpath>        
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace">
+            <p class="lead"><br/></p>
+            <p class="lead">Our products are designed for small to medium size companies willing to optimize their performance.</p>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a[hasclass('btn')]" position="attributes">
+            <attribute name="class" remove="mb-2" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

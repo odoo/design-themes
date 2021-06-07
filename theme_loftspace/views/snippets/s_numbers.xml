@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_numbers" inherit_id="website.s_numbers">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt72 pb184 o_cc3" remove="pt24 pb24" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/03_001","flip":["y"]}</attribute>
+        </xpath>
+        <!-- Add shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Airy_03_001 o_we_flip_y"/>
+        </xpath>
+        <!-- Numbers -->
+        <xpath expr="//span[hasclass('s_number')]" position="replace">
+            <span class="s_number text-o-color-1" style="font-size: 62px;">12</span>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_number')])[2]" position="replace">
+            <span class="s_number text-o-color-1" style="font-size: 62px;">45</span>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_number')])[3]" position="replace">
+            <span class="s_number text-o-color-1" style="font-size: 62px;">8</span>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_number')])[4]" position="replace">
+            <span class="s_number text-o-color-1" style="font-size: 62px;">37</span>
+        </xpath>
+    </template>
+</odoo>

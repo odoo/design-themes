@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2">
+        <!-- Left column -->
+        <xpath expr="//div[hasclass('row')]//div" position="replace">
+            <div class="col-lg-6 o_cc o_cc2 text-center" data-oe-shape-data="{'shape':'web_editor/Airy/04_001','flip':[]}">
+                <div class="o_we_shape o_web_editor_Airy_04_001"/>
+                <i class="fa fa-puzzle-piece fa-5x m-3"/>
+                <h2>Furniture assembly</h2>
+                <p>We're working with young and innovative designers who use noble and durable materials.<br/>
+                Thus, we can offer you unique pieces that will brighten up your interior.</p>
+                <a href="#" class="btn btn-primary mb-2">More Details</a>
+            </div>
+        </xpath>
+        <!-- Right column -->
+        <xpath expr="//div[hasclass('row')]//div[2]" position="replace">
+            <div class="col-lg-6 o_cc o_cc4 text-center" data-oe-shape-data="{'shape':'web_editor/Airy/04_001','flip':['x']}">
+                <div class="o_we_shape o_web_editor_Airy_04_001 o_we_flip_x o_second_extra_shape_mapping"/>
+                <i class="fa fa-star-o fa-5x m-3"/>
+                <h2>Unique items</h2>
+                <p>To buy unique pieces is to buy a piece of the artist:<br/>
+                His passion put in the execution of the object, his hours of reflexion, his dexterity.</p>
+                <a href="#" class="btn btn-primary mb-2">More Details</a>
+            </div>
+        </xpath>
+    </template>
+</odoo>

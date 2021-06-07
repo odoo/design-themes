@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_masonry_block" inherit_id="website.s_masonry_block">
+    <!-- Little block #01 -->
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/h3" position="replace">
+            <h3>Ergonomic</h3>
+        </xpath>
+    <!-- Little block #02 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]" position="attributes">
+            <attribute name="class" add="o_cc2" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/h3" position="replace"> 
+            <h3>Modern Design</h3>
+        </xpath>
+    <!-- Little block #03 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]" position="attributes">
+            <attribute name="class" add="o_cc2" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/h3" position="replace">
+            <h3>Innovative</h3>
+        </xpath>
+    <!-- Little block #04 -->
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/h3" position="replace">
+            <h3>Professional</h3>
+        </xpath>
+    </template>
+</odoo>
