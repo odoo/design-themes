@@ -206,7 +206,7 @@
 <!-- ==== Three Columns ===== -->
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Paptic s_three_columns">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="bg-200 pt32 pb32 o_cc o_cc3" add="pt120 pb120" separator=" "/>
+        <attribute name="class" remove="pt32 pb32 o_cc o_cc2" add="pt120 pb120" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/01","flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
@@ -242,7 +242,7 @@
 <!-- ==== Picture ===== -->
 <template id="s_picture" inherit_id="website.s_picture" name="Paptic s_picture">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt72 o_cc o_cc1" remove="bg-200 pt48" separator=" "/>
+        <attribute name="class" add="pt72 o_cc1" remove="o_cc2 pt48" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/08","flip":[]}</attribute>
     </xpath>
 

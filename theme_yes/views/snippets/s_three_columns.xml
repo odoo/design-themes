@@ -3,7 +3,7 @@
     <template id="s_three_columns" inherit_id="website.s_three_columns">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc o_cc1" remove="bg-200" separator=" "/>
+            <attribute name="class" add="o_cc1" remove="o_cc2" separator=" "/>
         </xpath>
         <!-- Column 1 -->
         <xpath expr="//div[hasclass('card-body')]" position="replace">

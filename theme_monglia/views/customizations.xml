@@ -80,7 +80,6 @@
 <!-- ======== MEDIA LIST ======== -->
  <template id="s_media_list" inherit_id="website.s_media_list" name="Monglia s_media_list">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc2" remove="bg-200" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/06","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">

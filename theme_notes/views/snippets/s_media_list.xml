@@ -3,7 +3,7 @@
     <template id="s_media_list" inherit_id="website.s_media_list">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc o_cc4" remove="bg-200" separator=" "/>
+            <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
             <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/01","flip":["y"]}</attribute>
         </xpath>
         <!-- Shape -->
