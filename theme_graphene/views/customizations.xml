@@ -172,10 +172,6 @@
 
 <!-- ======== 3 COLUMNS ======== -->
  <template id="s_three_columns" inherit_id="website.s_three_columns" name="Graphene s_three_columns">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc2" remove="bg-200" separator=" "/>
-    </xpath>
-
     <xpath expr="//div[hasclass('row')]/div//h3[1]" position="replace">
         <h5>Powerful API</h5>
         <div class="s_hr text-left pt8 pb16" data-snippet="s_hr" data-name="Separator">

@@ -3,7 +3,7 @@
     <template id="s_media_list" inherit_id="website.s_media_list">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt56 pb40 o_cc o_cc4" remove="pt32 bg-200" separator=" "/>
+            <attribute name="class" add="pt56 pb40 o_cc4" remove="pt32 o_cc2" separator=" "/>
         </xpath>
         <!-- Row 1 -->
         <xpath expr="(//div[hasclass('s_media_list_item')])[1]//div[hasclass('row')]" position="attributes">

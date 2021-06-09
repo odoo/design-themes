@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="s_three_columns" inherit_id="website.s_three_columns">
-        <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc o_cc2" remove="bg-200" separator=" "/>
-        </xpath>
         <!-- Column 1 -->
         <xpath expr="//div[hasclass('card-body')]" position="replace">
             <div class="card-body">
