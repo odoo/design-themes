@@ -5,10 +5,10 @@
 <template id="s_cover" inherit_id="website.s_cover" name="Graphene s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt160 pb240 s_parallax_no_overflow_hidden" remove="pt96 pb96 s_parallax_is_fixed s_parallax" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_02"/>
+        <div class="o_we_shape o_web_editor_Origins_02_001"/>
     </xpath>
 
     <xpath expr="//h1" position="replace"/>
@@ -42,10 +42,10 @@
 <!-- ======== TEXT-IMAGE ======== -->
  <template id="s_text_image" inherit_id="website.s_text_image" name="Graphene s_text_image">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/03","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["x","y"]}</attribute>
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_03"/>
+        <div class="o_we_shape o_web_editor_Origins_02_001 o_second_extra_shape_mapping o_we_flip_x o_we_flip_y"/>
     </xpath>
     <xpath expr="//h2" position="replace">
         <h3>Unique experiences to drive engagement</h3>

@@ -119,4 +119,6 @@ $o-color-palettes-compatibility-indexes: (
 //------------------------------------------------------------------------------
 
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14', (4: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14_001', (4: rgba(255, 255, 255, 0), 3: 4));
 $o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Origins/14', 'second', (4: 2));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Origins/14_001', 'second', (4: rgba(255, 255, 255, 0), 3: 2));

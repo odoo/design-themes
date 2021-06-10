@@ -168,4 +168,7 @@ $o-theme-color-palettes-compatibility-indexes: (
 
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/03', (3: 5));
 $o-bg-shapes: add-header-shape-colors-mapping('web_editor', 'Origins/07_001', (3: 'menu'));
+$o-bg-shapes: add-header-shape-colors-mapping('web_editor', 'Origins/07_002', (3: 'menu', 4: rgba(255, 255, 255, 0)));
 $o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Origins/14', (4: 'footer'));
+$o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Origins/14_001', (3: 'footer', 4: rgba(255, 255, 255, 0)));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/02_001', (4: 5, 5: rgba(255, 255, 255, 0)));

@@ -74,11 +74,11 @@
 <template id="s_image_text" inherit_id="website.s_image_text" name="Paptic s_image_text">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt96 pb16 o_cc o_cc3" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/03","flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["y"]}</attribute>
     </xpath>
 
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Origins_03 o_we_flip_x"></div>
+        <div class="o_we_shape o_web_editor_Origins_02_001 o_we_flip_y"></div>
     </xpath>
 
     <xpath expr="//img" position="attributes">
@@ -207,10 +207,10 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Paptic s_three_columns">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="pt32 pb32 o_cc o_cc2" add="pt120 pb120" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/01","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Origins_01"></div>
+        <div class="o_we_shape o_web_editor_Origins_02_001"></div>
     </xpath>
     <xpath expr="//div[hasclass('row')]" position="before">
         <h3 style="text-align: center;">SUCCESS STORIES</h3>
