@@ -4,11 +4,11 @@
         <!-- Section -->
         <xpath expr="//section" position="attributes">
             <attribute name="class" add="o_cc o_cc4" remove="bg-200" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/01","flip":["y"]}</attribute>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/01_001","flip":["y"]}</attribute>
         </xpath>
         <!-- Shape -->
         <xpath expr="//div[hasclass('container')]" position="before">
-            <div class="o_we_shape o_web_editor_Blobs_01 o_we_flip_y"/>
+            <div class="o_we_shape o_web_editor_Blobs_01_001 o_we_flip_y"/>
         </xpath>
         <!-- Row 1 -->
         <xpath expr="(//div[hasclass('col-lg-12')])[1]/div" position="replace">

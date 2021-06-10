@@ -4,7 +4,7 @@
         <!-- Section -->
         <xpath expr="//section" position="attributes">
             <attribute name="class" add="o_full_screen_height" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_001","flip":[]}</attribute>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":[]}</attribute>
         </xpath>
         <!-- Title & Paragraph -->
         <xpath expr="//div[hasclass('container')]" position="replace">
@@ -19,7 +19,7 @@
         </xpath>
         <!-- Shape -->
         <xpath expr="//section//*[last()]" position="after">
-            <div class="o_we_shape o_web_editor_Origins_07_001 o_header_extra_shape_mapping"/>
+            <div class="o_we_shape o_web_editor_Origins_07_002 o_header_extra_shape_mapping"/>
         </xpath>
     </template>
 </odoo>
