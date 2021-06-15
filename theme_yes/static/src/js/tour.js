@@ -43,6 +43,6 @@ wTourUtils.registerThemeHomepageTour("yes_tour", [
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.dragNDrop(snippets[5]),
     wTourUtils.clickOnSnippet(snippets[5]),
-    wTourUtils.changeOption('minHeight', 'we-button-group.o_we_user_value_widget', _t('height')),
+    wTourUtils.changeOption('ScrollButton', 'we-button-group.o_we_user_value_widget', _t('height')),
 ]);
 });
