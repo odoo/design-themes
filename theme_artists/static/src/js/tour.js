@@ -33,6 +33,6 @@ wTourUtils.registerThemeHomepageTour("artists_tour", [
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3]),
     wTourUtils.clickOnSnippet(snippets[3]),
-    wTourUtils.changeOption('minHeight', 'we-button-group.o_we_user_value_widget', _t('height')),
+    wTourUtils.changeOption('ScrollButton', 'we-button-group.o_we_user_value_widget', _t('height')),
 ]);
 });
