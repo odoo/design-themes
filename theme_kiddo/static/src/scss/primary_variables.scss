@@ -62,6 +62,10 @@ $o-theme-h5-font-size-multiplier: (20 / 14);
 $o-theme-h6-font-size-multiplier: (16 / 14);
 
 $o-theme-font-configs: (
+    'Varela Round': (
+        'family': ('Varela Round', sans-serif),
+        'url': 'Varela+Round:300,300i,400,400i,600,600i',
+    ),
     'Montserrat': (
         'family': ('Montserrat', sans-serif),  // font update - Proxima -> Montserrat
         'url': 'Montserrat:300,300i,400,400i,600,600i',
@@ -118,31 +122,35 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'kiddo-1',
+        'color-palettes-name': 'kiddo-3',
 
         'font-size-base': (14 / 16) * 1.075rem,
-        'header-font-size': 1.25rem,
+        'header-font-size': 1.15rem,
         'logo-height': 3rem,
         'fixed-logo-height': 3rem,
         'btn-border-radius': 2rem,
-        'btn-padding-y': .75rem,
-        'btn-padding-x': 1.75rem,
+        'btn-border-radius-lg': 2rem,
+        'btn-padding-y': .5rem,
+        'btn-padding-x': 1.25rem,
+        'btn-padding-y-lg': .75rem,
+        'btn-padding-x-lg': 1.5rem,
         'font': 'Montserrat',
-        'headings-font': 'Bubblegum Sans',
-        'navbar-font': 'Bubblegum Sans',
-        'buttons-font': 'Bubblegum Sans',
+        'headings-font': 'Varela Round',
+        'navbar-font': 'Varela Round',
+        'buttons-font': 'Varela Round',
         'link-underline': 'never',
-        'header-template': 'centered_logo',
-        'footer-template': 'minimalist',
+        'header-template': 'default',
+        'footer-template': 'descriptive',
+        'btn-primary-outline': true,
     ),
 );
 
 $o-palette-priority-prefix: 'kiddo';
 
 $o-color-palettes-compatibility-indexes: (
-    1: 'kiddo-1',
+    1: 'kiddo-3',
     2: 'kiddo-2',
-    3: 'kiddo-3',
+    3: 'kiddo-1',
     4: 'kiddo-4',
     5: 'generic-1',
     6: 'generic-2',
@@ -176,8 +184,6 @@ $o-gray-color-palettes-compatibility-indexes: (
 // Shapes
 //------------------------------------------------------------------------------
 
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/13', (4: 4));
-$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Wavy/13', 'second', (4: 3));
-$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Wavy/13_001', 'second', (1: 3));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/19', (5: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14_001', (3: 2, 4: rgba(0, 0, 0, 0)));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/16', (3: 3));
 $o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Wavy/22', (3: 'footer'));
