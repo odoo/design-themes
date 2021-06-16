@@ -1,10 +1,8 @@
-odoo.define("theme_kiddo.tour.kiddo", function (require) {
-"use strict";
+/** @odoo-module */
+import wTourUtils from 'website.tour_utils';
 
 const core = require("web.core");
 const _t = core._t;
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
 
 const snippets = [
     {
@@ -16,12 +14,12 @@ const snippets = [
         name: 'Image - Text',
     },
     {
-        id: 's_product_list',
-        name: 'Items',
+        id: 's_picture',
+        name: 'Picture',
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
+        id: 's_product_list',
+        name: 'Items',
     },
     {
         id: 's_call_to_action',
@@ -41,4 +39,3 @@ wTourUtils.registerThemeHomepageTour("kiddo_tour", [
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4]),
 ]);
-});
