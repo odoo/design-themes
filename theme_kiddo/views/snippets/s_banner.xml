@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_banner" inherit_id="website.s_banner">
-        <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13_001","flip":[]}</attribute>
-        </xpath>
-        <!-- Shape -->
-        <xpath expr="//section/*[last()]" position="after">
-            <div class="o_we_shape o_web_editor_Wavy_13_001"/>
-        </xpath>
-        <!-- Paragraph -->
-        <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
-            <div class="col-lg-6 jumbotron rounded pt32 pb32 o_cc o_cc3 border shadow" style="border-width: 2px !important; border-color: rgb(44, 41, 39) !important; box-shadow: rgb(44, 41, 39) -25px -25px 0px 0px !important;">
-                <h1><font style="font-size: 62px; line-height: 48px;">A little place of paradise.</font></h1>
-                <p><br/></p>
-                <p class="lead">Because your children deserve the best, we welcome children from 0 to 3 years in a warm and specific environment for the needs of small children</p>
-                <p><br/></p>
-                <a t-att-href="cta_btn_href" class="btn btn-primary mb-2"><t t-esc="cta_btn_text">About us</t></a>
-            </div>
-        </xpath>
-    </template>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_background_video s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center" remove="parallax s_parallax_is_fixed" separator=" "/>
+        <attribute name="data-bg-video-src">//player.vimeo.com/video/60112275?autoplay=1&amp;muted=1&amp;loop=1</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/17"}</attribute>
+        <attribute name="style">position: relative; background-image: url("/web/image/website.s_banner_default_image");</attribute>
+    </xpath>
+
+    <!-- Video -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_bg_video_container">
+            <iframe id="o_bg_video_iframe_5" class="o_bg_video_iframe fade show" src="//player.vimeo.com/video/60112275?autoplay=1&amp;muted=1&amp;loop=1" style="width: 100%; height: 146.716%; left: 0px; top: -23.3581%;" frameborder="0"></iframe>
+        </div>
+    </xpath>
+
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_17"/>
+    </xpath>
+
+    <!-- Paragraph -->
+    <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
+        <div class="col-lg-6 pt48 pb48 m-3 m-md-0 p-4 p-md-5 o_colored_level o_cc o_cc3 rounded shadow border" style="border-radius: 35px !important; box-shadow: rgb(104, 70, 114) 0px 0px 35px 0px !important; border-color: rgb(104, 70, 114) !important; border-width: 4px !important; border-style: dotted !important;">
+            <h1><font style="font-size: 62px; line-height: 48px;">A little place of paradise.</font></h1>
+            <p><br/></p>
+            <p class="lead">Because your children deserve the best, we welcome children from 0 to 3 years in a warm and specific environment for the needs of small children</p>
+            <p><br/></p>
+            <a t-att-href="cta_btn_href" class="btn btn-primary mb-2"><t t-esc="cta_btn_text">About us</t></a>
+        </div>
+    </xpath>
+</template>
+
 </odoo>
