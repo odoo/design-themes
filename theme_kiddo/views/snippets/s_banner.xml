@@ -3,15 +3,21 @@
     <template id="s_banner" inherit_id="website.s_banner">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13","flip":[]}</attribute>
+            <attribute name="class" add="o_colored_level s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center o_full_screen_height" remove="parallax s_parallax_is_fixed " separator=" "/>
+            <!-- <attribute name="class" add="" separator=""/>s_banner pt96 pb96 s_parallax_no_overflow_hidden oe_img_bg o_full_screen_height</attribute> -->
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/20","colors":{"c2":"#F8EBD6"},"flip":["y"]}</attribute>
+            <!-- <attribute name="style" add="background-size: contain; background-position: 100% 0px;" separator=" "/> -->
         </xpath>
+        <!-- Parallax removal -->
+        <!-- <xpath expr="//span" position="replace"/> -->
+        <!-- </xpath> -->
         <!-- Shape -->
         <xpath expr="//section/*[last()]" position="after">
-            <div class="o_we_shape o_web_editor_Wavy_13"/>
+            <div class="o_we_shape o_web_editor_Wavy_20" style="background-image: url('/web_editor/shape/web_editor/Wavy/20.svg?c2=%23F8EBD6&amp;flip=y'); background-position: 50% 0%;"/>
         </xpath>
         <!-- Paragraph -->
         <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
-            <div class="col-lg-6 jumbotron rounded pt32 pb32 o_cc o_cc3 border shadow" style="border-width: 2px !important; border-color: rgb(44, 41, 39) !important; box-shadow: rgb(44, 41, 39) -25px -25px 0px 0px !important;">
+            <div class="col-lg-6 pt48 pb48 p-5 o_colored_level o_cc o_cc1 rounded shadow" style="border-radius: 35px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 25px 0px !important;">
                 <h1><font style="font-size: 62px; line-height: 48px;">A little place of paradise.</font></h1>
                 <p><br/></p>
                 <p class="lead">Because your children deserve the best, we welcome children from 0 to 3 years in a warm and specific environment for the needs of small children</p>
