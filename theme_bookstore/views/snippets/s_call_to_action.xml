@@ -3,21 +3,28 @@
     <template id="s_call_to_action" inherit_id="website.s_call_to_action">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_half_screen_height o_cc1 pt64 pb48" remove="o_cc3 pt48 pb24" separator=" "/>
+            <attribute name="class" add="o_cc1 pt128 pb32" remove="o_cc3 pt48 pb24" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/20","flip":["x","y"]}</attribute>
         </xpath>
-        <!-- Paragraph 1 -->
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_20 o_we_flip_y o_we_flip_x"/>
+        </xpath>
+        <!-- Paragraph #1 -->
         <xpath expr="//div[hasclass('col-lg-9')]" position="replace">
             <div class="pb16 col-lg-12 text-center">
-                <h3>Browse through our <b>complete library</b>.</h3>
+                <h2>Browse through <br/>our complete library</h2>
             </div>
         </xpath>
-        <!-- Paragraph 2 -->
-        <xpath expr="//div[hasclass('col-lg-3')]" position="replace">
-            <div class="col-lg-12 pt8">
-                <p style="text-align: center;">
-                    <a t-att-href="cta_btn_href" class="btn btn-secondary btn-lg mb-2"><t t-esc="cta_btn_text">Browse collection</t></a>
-                </p>
-            </div>
+        <!-- Paragraph #2 -->
+        <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+            <attribute name="class" add="col-lg-12" remove="col-lg-3" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-12')][2]/p" position="attributes">
+            <attribute name="style">text-align: center;</attribute>
+        </xpath>
+        <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+            Browse collection
         </xpath>
     </template>
 </odoo>
