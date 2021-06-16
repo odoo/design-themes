@@ -1,17 +1,22 @@
-odoo.define("theme_bookstore.tour.bookstore", function (require) {
-"use strict";
+/** @odoo-module */
 
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
+import wTourUtils from 'website.tour_utils';
+
+const core = require("web.core");
+const _t = core._t;
 
 const snippets = [
     {
-        id: 's_title',
-        name: 'Title',
+        id: 's_cover',
+        name: 'Cover',
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
+        id: 's_masonry_block',
+        name: 'Masonry',
+    },
+    {
+        id: 's_image_text',
+        name: 'Image - Text',
     },
     {
         id: 's_picture',
@@ -20,10 +25,6 @@ const snippets = [
     {
         id: 's_product_list',
         name: 'Items',
-    },
-    {
-        id: 's_text_image',
-        name: 'Text - Image',
     },
     {
         id: 's_call_to_action',
@@ -38,11 +39,9 @@ wTourUtils.registerThemeHomepageTour("bookstore_tour", [
     wTourUtils.dragNDrop(snippets[1]),
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.clickOnSnippet(snippets[3]),
-    wTourUtils.changeBackgroundColor(),
-    wTourUtils.selectColorPalette(),
-    wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4]),
+    wTourUtils.clickOnSnippet(snippets[4]),
+    wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
+    wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[5]),
 ]);
-});
