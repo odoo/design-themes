@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_masonry_block" inherit_id="website.s_masonry_block">    
+    <!-- Little block #1 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/10","flip":[]}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/h3" position="before">
+            <div class="o_we_shape o_web_editor_Rainy_10"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/h3" position="replace">
+            <h3>Science fiction</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/p" position="replace">
+            <p>Discover unknown universes</p>
+        </xpath>
+    <!-- Little block #2 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]" position="attributes">
+            <attribute name="class" add="o_cc1" remove="bg-200" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/02","flip":[]}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/h3" position="before">
+            <div class="o_we_shape o_web_editor_Airy_02"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/h3" position="replace"> 
+            <h3>Biographies</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/p" position="replace">
+            <p>Meet great people</p>
+        </xpath>
+    <!-- Little block #3 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]" position="attributes">
+            <attribute name="class" add="o_cc5" remove="bg-200" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/04","flip":[]}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/h3" position="before">
+            <div class="o_we_shape o_web_editor_Rainy_04"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/h3" position="replace">
+            <h3>Horror</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/p" position="replace">
+            <p>Enjoy your fears</p>
+        </xpath>
+    <!-- Little block #4 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]" position="attributes">
+             <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/26","flip":[]}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/h3" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_26"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/h3" position="replace">
+            <h3>Romance</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/p" position="replace">
+            <p>Read the best love stories</p>
+        </xpath>
+    </template>
+</odoo>

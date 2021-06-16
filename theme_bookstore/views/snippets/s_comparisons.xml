@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_comparisons" inherit_id="website.s_comparisons">
+        <!-- Left card -->
+        <xpath expr="//div[hasclass('row')]//div" position="attributes">
+            <attribute name="class" add="pt64" remove="pt32" separator=" "/>
+        </xpath>
+        <!-- Left card : list items -->
+        <xpath expr="//ul[hasclass('list-group')]" position="replace">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Limited access to collections</li>
+                <li class="list-group-item">Basic account</li>
+                <li class="list-group-item">Get immediately the latest releases</li>
+            </ul>
+        </xpath>
+        <!-- Left card : footer -->
+        <xpath expr="//div[hasclass('card-footer')]" position="replace">
+            <div class="card-footer">
+                <p><i>Satisfied or reimbursed.</i></p>
+                <a href="/contactus" class="btn btn-primary mb-2">Order now</a>
+            </div>
+        </xpath>
+        <!-- Middle card : title -->
+        <xpath expr="(//h4[hasclass('card-header')])[2]" position="replace">
+            <h4 class="card-header">Premium</h4>
+        </xpath>
+        <!-- Middle card : list items -->
+        <xpath expr="(//ul[hasclass('list-group')])[2]" position="replace">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Access to premium collections</li>
+                <li class="list-group-item">VIP account</li>
+                <li class="list-group-item">Get immediately the latest releases</li>
+            </ul>
+        </xpath>
+        <!-- Middle card : footer -->
+        <xpath expr="(//div[hasclass('card-footer')])[2]" position="replace">
+            <div class="card-footer">
+                <p><i>Satisfied or reimbursed.</i></p>
+                <a href="/contactus" class="btn btn-primary mb-2">Order now</a>
+            </div>
+        </xpath>
+        <!-- Right card -->
+        <xpath expr="//div[hasclass('row')]//div[3]" position="attributes">
+            <attribute name="class" add="pt64" remove="pt32" separator=" "/>
+        </xpath>
+        <!-- Right card : list items -->
+        <xpath expr="(//ul[hasclass('list-group')])[3]" position="replace">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Access to all collections</li>
+                <li class="list-group-item">Expert account</li>
+                <li class="list-group-item">Get immediately the latest releases</li>
+            </ul>
+        </xpath>
+        <!-- Right card : footer -->
+        <xpath expr="(//div[hasclass('card-footer')])[3]" position="replace">
+            <div class="card-footer">
+                <p><i>Satisfied or reimbursed.</i></p>
+                <a href="/contactus" class="btn btn-primary mb-2">Order now</a>
+            </div>
+        </xpath>
+    </template>
+</odoo>

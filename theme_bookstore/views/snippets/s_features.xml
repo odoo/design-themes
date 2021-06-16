@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_features" inherit_id="website.s_features">
+    <!-- Left block -->
+        <!-- Icon -->
+        <xpath expr="//div[hasclass('row')]//div//i" position="attributes">
+            <attribute name="class" add="fa-pencil" remove="fa-gear" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]//div//h3" position="replace">
+            <h3>Write your story</h3>
+        </xpath>
+    <!-- Center block -->
+        <!-- Icon -->
+        <xpath expr="//div[hasclass('row')]//div[2]//i" position="attributes">
+            <attribute name="class" add="fa-volume-up" remove="fa-photo" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]//div[2]//h3" position="replace">
+            <h3>Audio books</h3>
+        </xpath>
+    <!-- Right block -->
+        <!-- Icon -->
+        <xpath expr="//div[hasclass('row')]//div[3]//i" position="attributes">
+            <attribute name="class" add="fa-magic" remove="fa-leaf" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]//div[3]//h3" position="replace">
+            <h3>Feel the magic</h3>
+        </xpath>
+    </template>
+</odoo>

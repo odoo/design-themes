@@ -3,11 +3,32 @@
     <template id="s_cover" inherit_id="website.s_cover">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt64 pb64 o_half_screen_height s_parallax_no_overflow_hidden bg-black-50" remove="parallax s_parallax_is_fixed" separator=" "/>
+            <attribute name="class" add="s_parallax_no_overflow_hidden oe_img_bg o_full_screen_height" remove="parallax s_parallax_is_fixed bg-black-50 remove" separator=" "/>
             <attribute name="data-scroll-background-ratio">0</attribute>
-            <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 55%;</attribute>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
+            <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0%;</attribute>
         </xpath>
-        <!-- Parallax -->
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
+            <div class="o_we_bg_filter" style="background-color: rgba(234, 234, 234, 0.9) !important;"/>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Floats_03"/>
+        </xpath>
+        <!-- Disable Parallax -->
         <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center;"><span style="font-size: 62px;">Immerse yourself <br/>in original universes</span></h1>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p[hasclass('lead')]" position="replace">
+            <p class="lead"><br/></p>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a[hasclass('btn')]" position="replace">
+            <a href="#0" class="btn btn-lg btn-primary">Discover more</a>
+        </xpath>
     </template>
 </odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_image_text" inherit_id="website.s_image_text">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc2 pt112 pb112" remove="pt32 pb32" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/20","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_20"/>
+        </xpath>
+        <!-- Image -->
+        <xpath expr="//img" position="attributes">
+            <attribute name="class" add="padding-xl" separator=" "/>
+            <attribute name="src">/web_editor/shape/theme_bookstore/s_image_text.svg?c1=%23763240</attribute>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 class="mb-3">Once upon a time...</h2>
+        </xpath>
+    </template>
+</odoo>
