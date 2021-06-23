@@ -3,7 +3,7 @@
     <template id="s_three_columns" inherit_id="website.s_three_columns">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt80 pb80" remove="pt32 pb32" separator=" "/>
+            <attribute name="class" add="pt80 pb80 bg-200" remove="pt32 pb32 o_cc o_cc2" separator=" "/>
         </xpath>
         <!-- Column #01 -->
         <xpath expr="//div[hasclass('row')]/div[1]//*[hasclass('card-title')]" position="replace">
@@ -12,6 +12,11 @@
         <xpath expr="//div[hasclass('row')]/div[1]//*[hasclass('card-text')]" position="replace">
             <p class="card-text">Recycling water for reuse applications instead of using freshwater supplies can be a water-saving measure.</p>
         </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]//*[hasclass('card-body')]" position="after">
+            <div class="card-footer">
+                <a href="#" class="card-link">Read more</a>
+            </div>
+        </xpath>
         <!-- Column #02 -->
         <xpath expr="//div[hasclass('row')]/div[2]//*[hasclass('card-title')]" position="replace">
             <h4 class="card-title">Habitat Model</h4>
@@ -19,12 +24,22 @@
         <xpath expr="//div[hasclass('row')]/div[2]//*[hasclass('card-text')]" position="replace">
             <p class="card-text">Habitats with a minimum footprint on the planet and a maximum positive impact on the local community.</p>
         </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]//*[hasclass('card-body')]" position="after">
+            <div class="card-footer">
+                <a href="#" class="card-link">Read more</a>
+            </div>
+        </xpath>
         <!-- Column #03 -->
         <xpath expr="//div[hasclass('row')]/div[3]//*[hasclass('card-title')]" position="replace">
             <h4 class="card-title">Organic Garden</h4>
         </xpath>
         <xpath expr="//div[hasclass('row')]/div[3]//*[hasclass('card-text')]" position="replace">
             <p class="card-text">Learn how to use organic gardening methods to grow the freshest food in your fruit and vegetable garden.</p>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[3]//*[hasclass('card-body')]" position="after">
+            <div class="card-footer">
+                <a href="#" class="card-link">Read more</a>
+            </div>
         </xpath>
     </template>
 </odoo>
