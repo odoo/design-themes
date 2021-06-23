@@ -1,8 +1,6 @@
-odoo.define("theme_treehouse.tour.treehouse", function (require) {
-"use strict";
+/** @odoo-module */
 
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
+import wTourUtils from 'website.tour_utils';
 
 const snippets = [
     {
@@ -39,4 +37,3 @@ wTourUtils.registerThemeHomepageTour("treehouse_tour", [
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
 ]);
-});

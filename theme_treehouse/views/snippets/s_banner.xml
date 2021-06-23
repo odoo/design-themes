@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12"}</attribute>
+    </xpath>
+    <xpath expr="//*[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_12"/>
+    </xpath>
+    <xpath expr="//*[hasclass('s_parallax_bg')]" position="attributes">
+        <attribute name="style" add="background-position: 50% 100%;" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Hello Planet.
+    </xpath>
+</template>
+
+</odoo>
