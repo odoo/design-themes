@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_text_block" inherit_id="website.s_text_block">
-        <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt96 pb96" remove="pt40 pb40" separator=" "/>
-        </xpath>
-        <!-- Content -->
-        <xpath expr="//div[hasclass('container')]" position="attributes">
-            <attribute name="class" add="o_container_small" remove="container" separator=" "/>
-        </xpath>
-    </template>
+
+<!-- TODO remove me in master ? -->
+<template id="s_text_block" inherit_id="website.s_text_block">
+</template>
+
 </odoo>
