@@ -3,22 +3,18 @@
 //------------------------------------------------------------------------------//
 
 // Body
-@if o-website-value('font-number') == 1 {
-    // Abel
+@if o-website-value('font') == 'Abel' {
     $o-theme-font-size-lg-multiplier:       (1.25 / 1.125);
     $o-theme-font-size-sm-multiplier:       (1 / 1.125);
 }
-@else if o-website-value('font-number') == 2 {
-    // Dosis
+@else if o-website-value('font') == 'Dosis' {
     $o-theme-font-size-lg-multiplier:       (1.25 / 1.125);
 }
-@else if o-website-value('font-number') == 4 {
-    // Laila
+@else if o-website-value('font') == 'Laila' {
     $o-theme-font-weight-normal:            300;
     $o-theme-font-weight-bold:              600;
 }
-@else if o-website-value('font-number') == 6 {
-    // Poppins
+@else if o-website-value('font') == 'Poppins' {
     $o-theme-font-weight-bold:              600;
 }
 
@@ -79,8 +75,15 @@ $input-placeholder-color:                   o-color('500') !default;
 
 // Cards
 
-$card-spacer-y:                     1rem !default;
-$card-spacer-x:                     1.75rem !default;
-$card-border-width:                 0 !default;
-$card-border-radius:                $border-radius-lg !default;
+$card-spacer-y:                             1rem !default;
+$card-spacer-x:                             1.75rem !default;
+$card-border-width:                         0 !default;
+$card-border-radius:                        $border-radius-lg !default;
 
+//  Alerts
+
+$alert-border-width:                        0;
+
+// Blockquote
+
+$blockquote-font-size:                      $o-font-size-base;

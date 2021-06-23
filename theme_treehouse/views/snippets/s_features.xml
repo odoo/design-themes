@@ -6,14 +6,14 @@
             <attribute name="class" add="pt48 pb48" remove="pt32 pb32" separator=" "/>
         </xpath>
         <!-- Icons -->
-        <xpath expr="//div[hasclass('row')]/div[1]/i" position="attributes">
-            <attribute name="class" add="rounded-circle" remove="rounded" separator=" "/>
+        <xpath expr="(//i)[1]" position="attributes">
+            <attribute name="class" add="fa-2x fa-leaf m-4 rounded-circle" remove="fa-3x fa-gear m-3 rounded" separator=" "/>
         </xpath>
-        <xpath expr="//div[hasclass('row')]/div[2]/i" position="attributes">
-            <attribute name="class" add="rounded-circle" remove="rounded" separator=" "/>
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="fa-2x fa-flash m-4 rounded-circle" remove="fa-3x fa-photo m-3 rounded" separator=" "/>
         </xpath>
-        <xpath expr="//div[hasclass('row')]/div[3]/i" position="attributes">
-            <attribute name="class" add="rounded-circle" remove="rounded" separator=" "/>
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="fa-2x fa-tint m-4 rounded-circle" remove="fa-3x fa-leaf m-3 rounded" separator=" "/>
         </xpath>
     </template>
 </odoo>
