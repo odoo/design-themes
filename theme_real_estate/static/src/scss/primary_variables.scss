@@ -68,23 +68,36 @@ $o-theme-font-configs: (
     ),
 );
 
+$o-theme-h1-font-size-multiplier: (62 / 16);
+$o-theme-h2-font-size-multiplier: (36 / 16);
+$o-theme-h3-font-size-multiplier: (24 / 16);
+$o-theme-h4-font-size-multiplier: (20 / 16);
+$o-theme-h5-font-size-multiplier: (18 / 16);
+$o-theme-h6-font-size-multiplier: (16 / 16);
+
 //------------------------------------------------------------------------------
 // Website customizations
 //------------------------------------------------------------------------------
 
+
+$btn-font-weight: 500;
+
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'real-estate-1',
-        'header-font-size': (18 / 16) * 1rem,
-        'font': 'Nunito',
-        'headings-font': 'Nunito',
-        'navbar-font': 'Nunito',
-        'buttons-font': 'Nunito',
-        'btn-ripple': true,
-        'header-template': 'hamburger',
-        'hamburger-type': 'off-canvas',
-        'hamburger-position': 'left',
-        'footer-template': 'descriptive',
+        'color-palettes-name': 'real-estate-4',
+        // Header
+        'header-template': 'default',
+
+        // Font
+        'font': 'Roboto',
+        'headings-font': 'Roboto',
+        'navbar-font': 'Roboto',
+        'buttons-font': 'Roboto',
+
+        // Buttons
+        'btn-border-radius': 0px,
+        'btn-border-radius-sm': 0px,
+        'btn-border-radius-lg': 0px,
     ),
 );
 
@@ -118,7 +131,7 @@ $o-color-palettes-compatibility-indexes: (
 // Shapes
 //------------------------------------------------------------------------------
 
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/18', (1: 3));
+
+/* Keep for compatibility */
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14', (4: 4));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14_001', (4: rgba(255, 255, 255, 0), 3: 4));
-$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Origins/14', 'second', (4: 2));
-$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Origins/14_001', 'second', (4: rgba(255, 255, 255, 0), 3: 2));
