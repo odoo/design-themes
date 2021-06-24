@@ -1,26 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_three_columns" inherit_id="website.s_three_columns">
-        <!-- Column 1 -->
-        <xpath expr="//div[hasclass('card-body')]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">I sell. What should I do?</h3>
-                <p class="card-text">Discover tips and tricks when you sell a property. Whether it's appointments with the notary, fees, etc...</p>
-            </div>
-        </xpath>
-        <!-- Column 2 -->
-        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">What’s the value of my property?</h3>
-                <p class="card-text">Our online estimation tool, 100% free of charge, will guide you through the different steps to have a rigorous evaluation.</p>
-            </div>
-        </xpath>
-        <!-- Column 3 -->
-        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">Building and renovating</h3>
-                <p class="card-text">Here are some tips to get you started on a new construction or renovation project. Because it can't be improvised. </p>
-            </div>
-        </xpath>
-    </template>
+
+<template id="s_three_columns" inherit_id="website.s_three_columns">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc3 pt0 pb72" remove="o_cc2 pt32 pb32" separator=" "/>
+    </xpath>
+    <!-- Column #1 -->
+    <xpath expr="//h3" position="before">
+        <span class="text-600 font-weight-bold">$295,000</span>
+    </xpath>
+    <xpath expr="//h3" position="replace" mode="inner">
+        House On The Hill
+    </xpath>
+    <xpath expr="//p[hasclass('card-text')]" position="replace" mode="inner">
+        Waste no time in viewing this truly stunning property. The property's surroundings really set it apart, offering idyllic sea views overlooking a park.
+    </xpath>
+    <xpath expr="//p[hasclass('card-text')]" position="after" >
+        <a href="#" class="btn btn-primary mb-0">View details</a>
+    </xpath>
+
+    <!-- Column 2 -->
+    <xpath expr="(//h3)[2]" position="before">
+        <span class="text-600 font-weight-bold">$1,295,000,000</span>
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Moutain View
+    </xpath>
+    <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
+        The house is surrounded by garden terraces that create unique spaces and an intimate ambience. With no overlooking neighbours, the garden offers real privacy.
+    </xpath>
+    <xpath expr="(//p[hasclass('card-text')])[2]" position="after" >
+        <a href="#" class="btn btn-primary mb-0">View details</a>
+    </xpath>
+
+    <!-- Column 3 -->
+    <xpath expr="(//h3)[3]" position="before">
+        <span class="text-600 font-weight-bold">$455,000</span>
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Paradise Residence
+    </xpath>
+    <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
+        Elegant, modern sophisticated architecture with an impressive in large scale home designed with the finest imported finishes. Pyrgon, marble and wood floors...
+    </xpath>
+    <xpath expr="(//p[hasclass('card-text')])[3]" position="after" >
+        <a href="#" class="btn btn-primary mb-0">View details</a>
+    </xpath>
+</template>
+
 </odoo>
