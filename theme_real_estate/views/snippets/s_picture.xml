@@ -6,15 +6,13 @@
             <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
         </xpath>
         <!-- Title -->
-        <xpath expr="//h2" position="replace">
-            <h2 style="text-align: center;">
-                <font style="font-size: 62px;">Open your horizons</font>
-            </h2>
+        <xpath expr="//h2" position="replace" mode="inner">
+            Open your horizons
         </xpath>
         <!-- Paragraphs -->
-        <xpath expr="//p[1]" position="replace">
-            <p class="text-center">We’ve selected properties from all types and all areas.<br/>
-            The house of your dreams is around the corner.</p>
+        <xpath expr="//p[1]" position="replace" mode="inner">
+            We’ve selected properties from all types and all areas.<br/>
+            The house of your dreams is around the corner.
         </xpath>
         <!-- Caption -->
         <xpath expr="//figcaption" position="replace">
