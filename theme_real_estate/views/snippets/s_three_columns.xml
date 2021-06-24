@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc3" remove="bg-200" separator=" "/>
+            <attribute name="class" add="pt0 pb72" remove="pt32 pb32" separator=" "/>
+
+        </xpath>
         <!-- Column 1 -->
         <xpath expr="//div[hasclass('card-body')]" position="replace">
             <div class="card-body">
-                <h3 class="card-title">I sell. What should I do?</h3>
-                <p class="card-text">Discover tips and tricks when you sell a property. Whether it's appointments with the notary, fees, etc...</p>
+                <span class="card-text lead font-weight-bold d-inline-block mb-2">$295,000</span>
+                <h3 class="card-title">House On The Hill</h3>
+                <p class="card-text mb-4"> Waste no time in viewing this truly stunning property. The property's surroundings really set it apart, offering idyllic sea views overlooking a park. </p>
+                <a href="#" class="btn btn-secondary btn-block mb-0">View details</a>
             </div>
         </xpath>
         <!-- Column 2 -->
         <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
             <div class="card-body">
-                <h3 class="card-title">What’s the value of my property?</h3>
-                <p class="card-text">Our online estimation tool, 100% free of charge, will guide you through the different steps to have a rigorous evaluation.</p>
+                <span class="card-text lead font-weight-bold d-inline-block mb-2">$1,295,000,000</span>
+                <h3 class="card-title">Moutain View</h3>
+                <p class="card-text mb-4">The house is surrounded by garden terraces that create unique spaces and an intimate ambience. With no overlooking neighbours, the garden offers real privacy.</p>
+                <a href="#" class="btn btn-secondary btn-block mb-0">View details</a>
             </div>
         </xpath>
         <!-- Column 3 -->
         <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
             <div class="card-body">
-                <h3 class="card-title">Building and renovating</h3>
-                <p class="card-text">Here are some tips to get you started on a new construction or renovation project. Because it can't be improvised. </p>
+                <span class="card-text lead font-weight-bold d-inline-block mb-2">$455,000</span>
+                <h3 class="card-title">Paradise Residence</h3>
+                <p class="card-text mb-4">Elegant, modern sophisticated architecture with an impressive in large scale home designed with the finest imported finishes. Pyrgon, marble and wood floors...</p>
+                <a href="#" class="btn btn-secondary btn-block mb-0">View details</a>
             </div>
         </xpath>
     </template>

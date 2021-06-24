@@ -3,19 +3,17 @@
     <template id="s_image_text" inherit_id="website.s_image_text">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc o_cc4 pb128" remove="pb32" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001","flip":[]}</attribute>
+            <attribute name="class" add="o_cc o_cc1 pb48 pt48" remove="pb32 pb32" separator=" "/>
         </xpath>
-        <!-- Shape -->
-        <xpath expr="//div[hasclass('container')]" position="before">
-            <div class="o_we_shape o_web_editor_Origins_14_001 o_second_extra_shape_mapping"/>
-        </xpath>
+
         <!-- Paragraph -->
         <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="replace">
             <div class="col-lg-6 pt16 pb16">
-                <h2>Bored with your interior?</h2>
+                <h3>Bored with your interior?</h3>
                 <p>Our decoration experts are at your disposal to guide you step by step in the design of your interior and will give you the best advice for your interior design.</p>
                 <p>Discover our tailor-made services to embellish the decoration of your home.</p>
+                <p><br/></p>
+                <p><a href="#" class="btn btn-primary">Explore our services</a></p>
             </div>
         </xpath>
     </template>
