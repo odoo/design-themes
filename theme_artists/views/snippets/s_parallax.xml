@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_parallax" inherit_id="website.s_parallax">
-        <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":["y"]}</attribute>
-        </xpath>
-        <!-- Bg Image -->
-        <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace">
-            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 75%;"/>
-        </xpath>
-        <!-- Shape -->
-        <xpath expr="//section/*[last()]" position="before">
-            <div class="o_we_shape o_web_editor_Airy_12_001 o_we_flip_y"/>
-        </xpath>
-    </template>
+
+<template id="s_parallax" inherit_id="website.s_parallax">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":["y"]}</attribute>
+    </xpath>
+    <!-- Bg Image -->
+    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace">
+        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 75%;"/>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//section/*[last()]" position="before">
+        <div class="o_we_shape o_web_editor_Airy_12_001 o_we_flip_y"/>
+    </xpath>
+</template>
+
 </odoo>
