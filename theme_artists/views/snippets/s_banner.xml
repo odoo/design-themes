@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc3" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/02_001","flip":["y"]}</attribute>
+    </xpath>
+    <!-- Shape & filter -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_bg_filter" style="background-color: rgba(17, 13, 22, 0.85) !important;"/>
+        <div class="o_we_shape o_web_editor_Wavy_02_001 o_we_flip_y"/>
+    </xpath>
+    <!-- Jumbotron -->
+    <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Emotions through the colors
+    </xpath>
+    <xpath expr="//h1" position="after">
+        <p><br/></p>
+    </xpath>
+</template>
+
+</odoo>
