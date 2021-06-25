@@ -3,45 +3,58 @@
     <template id="s_three_columns" inherit_id="website.s_three_columns">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":["y"]}</attribute>
+            <attribute name="class" add="o_cc4 o_colored_level" remove="o_cc2" separator=" "/>
         </xpath>
-        <!-- Shape -->
-        <xpath expr="//div[hasclass('container')]" position="before">
-            <div class="o_we_shape o_web_editor_Airy_12_001 o_we_flip_y"/>
-        </xpath>
-        <!-- Column 1 -->
+        <!-- Column #1 -->
         <xpath expr="//div[hasclass('card')]" position="attributes">
-            <attribute name="class" add="border shadow" separator=" "/>
-            <attribute name="style" add="border-color: rgb(0, 0, 0) !important; border-width: 2px !important; box-shadow: rgba(0, 0, 0, 0.15) -20px 20px 0px 0px !important;" separator=" "/>
+            <attribute name="class" add="shadow" separator=" "/>
+            <attribute name="style" add="border-width: 0px !important;" separator=";"/>
         </xpath>
-        <xpath expr="//div[hasclass('card-body')]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">My Artistic Process</h3>
-                <p class="card-text">The choice of materials, colours are not insignificant, discover more about my artistic process.</p>
-            </div>
+        <!-- Column #1 - Title -->
+        <xpath expr="//div[hasclass('card-body')]//h3" position="replace" mode="inner">
+            My artistic process
         </xpath>
-        <!-- Column 2 -->
+        <!-- Column #1 - Paragraph -->
+        <xpath expr="//div[hasclass('card-body')]//p" position="replace" mode="inner">
+            The choice of materials, colours are not insignificant, discover more about my artistic process.
+        </xpath>
+        <!-- Column #1 - Add a button -->
+        <xpath expr="//div[hasclass('card-body')]//p" position="after">
+            <p><a href="#" class="btn btn-primary">More details</a></p>
+        </xpath>
+        <!-- Column #2 -->
         <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
-            <attribute name="class" add="border shadow" separator=" "/>
-            <attribute name="style" add="border-color: rgb(0, 0, 0) !important; border-width: 2px !important; box-shadow: rgba(0, 0, 0, 0.15) -20px 20px 0px 0px !important;" separator=" "/>
+            <attribute name="class" add="shadow" separator=" "/>
+            <attribute name="style" add="border-width: 0px !important;" separator=";"/>
         </xpath>
-        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">My Work</h3>
-                <p class="card-text">Here is a selection of my works, exhibited in my studio.</p>
-            </div>
+        <!-- Column #2 - Title -->
+        <xpath expr="(//div[hasclass('card-body')])[2]//h3" position="replace" mode="inner">
+            My work
         </xpath>
-        <!-- Column 3 -->
+        <!-- Column #2 - Paragraph -->
+        <xpath expr="(//div[hasclass('card-body')])[2]//p" position="replace" mode="inner">
+            Here is a selection of my works, exhibited in my studio.
+        </xpath>
+        <!-- Column #2 - Add a button -->
+        <xpath expr="(//div[hasclass('card-body')])[2]//p" position="after">
+            <p><a href="#" class="btn btn-primary">Discover</a></p>
+        </xpath>
+        <!-- Column #3 -->
         <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
-            <attribute name="class" add="border shadow" separator=" "/>
-            <attribute name="style" add="border-color: rgb(0, 0, 0) !important; border-width: 2px !important; box-shadow: rgba(0, 0, 0, 0.15) -20px 20px 0px 0px !important;" separator=" "/>
+            <attribute name="class" add="shadow" separator=" "/>
+            <attribute name="style" add="border-width: 0px !important;" separator=";"/>
         </xpath>
-        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">About me</h3>
-                <p class="card-text">Formerly a corporate accountant, I started a professional transition 10 years ago.</p>
-            </div>
+        <!-- Column #3 - Title -->
+        <xpath expr="(//div[hasclass('card-body')])[3]//h3" position="replace" mode="inner">
+            About me
+        </xpath>
+        <!-- Column #3 - Paragraph -->
+        <xpath expr="(//div[hasclass('card-body')])[3]//p" position="replace" mode="inner">
+            Formerly a corporate accountant, I started a professional transition 10 years ago.
+        </xpath>
+        <!-- Column #3 - Add a button -->
+        <xpath expr="(//div[hasclass('card-body')])[3]//p" position="after">
+            <p><a href="/contactus" class="btn btn-primary">Contact me</a></p>
         </xpath>
     </template>
 </odoo>
