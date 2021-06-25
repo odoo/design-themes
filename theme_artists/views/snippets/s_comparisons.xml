@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_comparisons" inherit_id="website.s_comparisons">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc5 o_colored_level" separator=" "/>
+        </xpath>
+        <!-- Card #1 -->
+        <xpath expr="//div[hasclass('row')]//div" position="attributes">
+            <attribute name="class" add="pt64" remove="pt32" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('card')]" position="attributes">
+            <attribute name="class" add="bg-o-color-1" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- First list item -->
+        <xpath expr="//li[hasclass('list-group-item')]" position="replace">
+            <li class="list-group-item">Basic sales &amp; marketing</li>
+        </xpath>
+        <!-- Card #2 -->
+        <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+            <attribute name="class" add="bg-o-color-1" remove="bg-o-color-5" separator=" "/>
+        </xpath>
+        <!-- Card #3 -->
+        <xpath expr="//div[hasclass('row')]//div[3]" position="attributes">
+            <attribute name="class" add="pt64" remove="pt32" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+            <attribute name="class" add="bg-o-color-1" remove="bg-secondary" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

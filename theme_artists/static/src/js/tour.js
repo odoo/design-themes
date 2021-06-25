@@ -8,8 +8,8 @@ var tour = require("web_tour.tour");
 
 const snippets = [
     {
-        id: 's_parallax',
-        name: 'Parallax',
+        id: 's_carousel_wrapper',
+        name: 'Carousel',
     },
     {
         id: 's_text_image',
@@ -18,6 +18,14 @@ const snippets = [
     {
         id: 's_three_columns',
         name: 'Columns',
+    },
+    {
+        id: 's_title',
+        name: 'Title',
+    },
+    {
+        id: 's_image_gallery',
+        name: 'Images Wall',
     },
     {
         id: 's_call_to_action',
@@ -32,7 +40,9 @@ wTourUtils.registerThemeHomepageTour("artists_tour", [
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.clickOnSnippet(snippets[3]),
-    wTourUtils.changeOption('ScrollButton', 'we-button-group.o_we_user_value_widget', _t('height')),
+    wTourUtils.clickOnText(snippets[3], 'h1'),
+    wTourUtils.goBackToBlocks(),
+    wTourUtils.dragNDrop(snippets[4]),
+    wTourUtils.dragNDrop(snippets[5]),
 ]);
 });

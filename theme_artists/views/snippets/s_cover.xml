@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_cover" inherit_id="website.s_cover">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt200 pb200 o_cc4 s_parallax_no_overflow_hidden" remove="pb96 pt96 s_parallax_bg bg-black-50" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Floats_02"/>
+        </xpath>
+        <!-- Remove filter -->
+        <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+        <!-- Remove parallax -->
+        <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center;"><font style="font-size: 62px; font-weight: bold;">Emotions <br/>through the colors</font></h1>
+        </xpath>
+    </template>
+</odoo>
