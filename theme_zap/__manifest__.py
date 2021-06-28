@@ -12,11 +12,14 @@
         'views/images_library.xml',
 
         'views/snippets/s_banner.xml',
+        'views/snippets/s_call_to_action.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_features.xml',
+        'views/snippets/s_masonry_block.xml',
+        'views/snippets/s_media_list.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_references.xml',
-        'views/snippets/s_masonry_block.xml',
+        'views/snippets/s_three_columns.xml',
     ],
     'images': [
         'static/description/zap_cover.gif',

@@ -10,16 +10,16 @@ const snippets = [
         name: 'Banner',
     },
     {
-        id: 's_numbers',
-        name: 'Numbers',
+        id: 's_features',
+        name: 'Features',
     },
     {
         id: 's_color_blocks_2',
         name: 'Big Boxes',
     },
     {
-        id: 's_features',
-        name: 'Features',
+        id: 's_numbers',
+        name: 'Numbers',
     },
     {
         id: 's_masonry_block',

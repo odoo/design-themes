@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt48 pb48" remove="pt32 pb32" separator=" "/>
+        </xpath>
+        <!-- Column #01 -->
+        <xpath expr="//div[hasclass('row')]/div[1]//*[hasclass('card')]" position="attributes">
+            <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[1]//*[hasclass('card-title')]" position="replace">
+            <h4 class="card-title"><b>Services</b></h4>
+        </xpath>
+        <!-- Column #02 -->
+        <xpath expr="//div[hasclass('row')]/div[2]//*[hasclass('card')]" position="attributes">
+            <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]//*[hasclass('card-title')]" position="replace">
+            <h4 class="card-title"><b>Features</b></h4>
+        </xpath>
+        <!-- Column #03 -->
+        <xpath expr="//div[hasclass('row')]/div[3]//*[hasclass('card')]" position="attributes">
+            <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]/div[3]//*[hasclass('card-title')]" position="replace">
+            <h4 class="card-title"><b>Benefits</b></h4>
+        </xpath>
+    </template>
+</odoo>
