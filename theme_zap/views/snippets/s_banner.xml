@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_banner" inherit_id="website.s_banner">
-        <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt152" remove="pt96 pb96" separator=" "/>
-        </xpath>
-        <!-- Column -->
-        <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-            <attribute name="class" add="col-lg-12 text-center pt80 pb80" remove="col-lg-6" separator=" "/>
-        </xpath>
-        <!-- Title -->
-        <xpath expr="//h1" position="replace">
-            <h1><b>Digital Transformation</b></h1>
-        </xpath>
-        <!-- Text -->
-        <xpath expr="//p" position="replace">
-            <p class="lead">Software Innovation as its best.<br/> Harness the power of disruptive technologies to increase your day-to-day business operations.</p>
-        </xpath>
-        <!-- Button -->
-        <xpath expr="//t[@t-esc='cta_btn_text']" position="replace">
-            <t t-esc="cta_btn_text">Our Solutions</t>
-        </xpath>
-    </template>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt256 pb48" remove="pt96 pb96" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/04_001","flip":["y"]}</attribute>
+    </xpath>
+    <xpath expr="//*[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_04_001 o_we_flip_y"/>
+    </xpath>
+    <!-- Column -->
+    <xpath expr="//*[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="col-lg-8 pt48 px-5" remove="col-lg-6 pt32" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        <b>Software innovation</b><br/> as its best.
+    </xpath>
+    <!-- Text -->
+    <xpath expr="//p" position="replace">
+        <p class="lead">Harness the power of disruptive technologies to increase<br/> your day-to-day business operations.</p>
+    </xpath>
+    <xpath expr="//p" position="after">
+        <p><br/></p>
+    </xpath>
+    <!-- Buttons -->
+    <xpath expr="//a//t" position="replace" mode="inner">
+        Our Solutions
+    </xpath>
+</template>
+
 </odoo>

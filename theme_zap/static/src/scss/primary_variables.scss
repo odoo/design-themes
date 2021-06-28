@@ -4,23 +4,33 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'zap-1',
+        'color-palettes-name':              'zap-1',
+
         // Header
         'header-template':                  'hamburger',
         'logo-height':                      2.75rem,
         'fixed-logo-height':                2rem,
         'header-links-style':               'fill',
 
-        'header-font-size':                 (14 / 16) * 1rem,
-        'font-size-base':                   (14 / 16) * 1rem,
-        'hamburger-position':               'right',
-
         // Font
-        'font':                             'Roboto',
-        'headings-font':                    'Montserrat Alternates',
-        'navbar-font':                      'Roboto',
-        'buttons-font':                     'Montserrat Alternates',
+        'font':                             'Lato',
+        'headings-font':                    'Lato',
+        'navbar-font':                      'Lato',
+        'buttons-font':                     'Lato',
+
+        // Buttons
+        'btn-padding-y':                    .625rem,
+        'btn-padding-x':                    1.5rem,
+        'btn-padding-y-sm':                 .375rem,
+        'btn-padding-x-sm':                 .75rem,
+        'btn-padding-y-lg':                 .75rem,
+        'btn-padding-x-lg':                 2rem,
+
         'btn-ripple':                       true,
+
+        'input-padding-y':                  .75rem,
+        'input-padding-y-sm':               .375rem,
+        'input-padding-y-lg':               .75rem,
 
         // Footer
         'footer-template':                  'links',
@@ -51,16 +61,18 @@ $o-theme-font-configs: (
     'Advent Pro': (
         'family': ('Advent Pro', sans-serif),
         'url': 'Advent+Pro:300,300i,400,400i,600,600i',
-        'base': (
-            'font-size-base': 1.125rem,
-        ),
+        'properties': (
+            'base': (
+                'font-size-base':           1.125rem,
+            ),
+        )
     ),
     'Oswald': (
         'family': ('Oswald', sans-serif),
         'url': 'Oswald:300,300i,400,400i,700,700i',
         'properties': (
             'base': (
-                'font-size-base': 1.25rem,
+                'font-size-base':           1.25rem,
             ),
         )
     ),
@@ -82,7 +94,12 @@ $o-theme-font-configs: (
     ),
     'Nunito': (
         'family': ('Nunito', sans-serif),
-        'url': 'Nunito:300,300i,400,400i,700,700i',
+        'url': 'Nunito:300,300i,400,400i,600,600i',
+        'properties' : (
+            'base': (
+                'header-font-size':         (15 / 16) * 1rem,
+            ),
+        )
     ),
 );
 
@@ -90,10 +107,6 @@ $o-theme-font-configs: (
 
 $o-theme-h1-font-size-multiplier:           3;
 $o-theme-h2-font-size-multiplier:           2.5;
-$o-theme-h3-font-size-multiplier:           2;
-$o-theme-h4-font-size-multiplier:           1.75;
-$o-theme-h5-font-size-multiplier:           1.5;
-$o-theme-h6-font-size-multiplier:           1.25;
 
 $o-theme-headings-font-weight:              400;
 
@@ -118,46 +131,46 @@ $o-theme-btn-font-weight:                   400;
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'zap-1': (
-            'alpha':                            #337ab7,
-            'beta':                             #5cb85c,
-            'gamma':                            #5bc0de,
-            'delta':                            #f0ad4e,
-            'epsilon':                          #d9534f,
+            'alpha':                        #337ab7,
+            'beta':                         #5cb85c,
+            'gamma':                        #5bc0de,
+            'delta':                        #f0ad4e,
+            'epsilon':                      #d9534f,
         ),
         'zap-2': (
-            'alpha':                            #ed8c2b,
-            'beta':                             #cf4a30,
-            'gamma':                            #911146,
-            'delta':                            #35203b,
-            'epsilon':                          #88a825,
+            'alpha':                        #ed8c2b,
+            'beta':                         #cf4a30,
+            'gamma':                        #911146,
+            'delta':                        #35203b,
+            'epsilon':                      #88a825,
         ),
         'zap-3': (
-            'alpha':                            #79bd8f,
-            'beta':                             #00a388,
-            'gamma':                            #046380,
-            'delta':                            #4bb5c1,
-            'epsilon':                          #beeb9f,
+            'alpha':                        #79bd8f,
+            'beta':                         #00a388,
+            'gamma':                        #046380,
+            'delta':                        #4bb5c1,
+            'epsilon':                      #beeb9f,
         ),
         'zap-4': (
-            'alpha':                            #16c6cc,
-            'beta':                             #d72d3C,
-            'gamma':                            #ff6d3b,
-            'delta':                            #ffb733,
-            'epsilon':                          #ffd55c,
+            'alpha':                        #16c6cc,
+            'beta':                         #d72d3C,
+            'gamma':                        #ff6d3b,
+            'delta':                        #ffb733,
+            'epsilon':                      #ffd55c,
         ),
         'zap-5': (
-            'alpha':                            #14212b,
-            'beta':                             #e6e2af,
-            'gamma':                            #c9de55,
-            'delta':                            #962d3e,
-            'epsilon':                          #413659,
+            'alpha':                        #14212b,
+            'beta':                         #e6e2af,
+            'gamma':                        #c9de55,
+            'delta':                        #962d3e,
+            'epsilon':                      #413659,
         ),
         'zap-6': (
-            'alpha':                            #ee592f,
-            'beta':                             #59c1b0,
-            'gamma':                            #1fa58d,
-            'delta':                            #f8c63b,
-            'epsilon':                          #dcb038,
+            'alpha':                        #ee592f,
+            'beta':                         #59c1b0,
+            'gamma':                        #1fa58d,
+            'delta':                        #f8c63b,
+            'epsilon':                      #dcb038,
         ),
     )
 );
@@ -189,3 +202,9 @@ $o-color-palettes-compatibility-indexes: (
     22: 'generic-16',
     23: 'generic-17',
 );
+
+//------------------------------------------------------------------------------
+// Shapes
+//------------------------------------------------------------------------------
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/04_001', (3: 4));
