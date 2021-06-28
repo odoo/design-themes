@@ -135,7 +135,7 @@
     <record id="s_banner_default_image" model="theme.ir.attachment">
         <field name="key">website.s_banner_default_image</field>
         <field name="name">website.s_banner_default_image</field>
-        <field name="url">/theme_zap/static/src/img/backgrounds/09.jpg</field>
+        <field name="url">/theme_zap/static/src/img/content/banner.jpg</field>
     </record>
 
     <!-- Cover -->
@@ -171,6 +171,11 @@
         <field name="key">website.s_masonry_block_default_image_1</field>
         <field name="name">website.s_masonry_block_default_image_1</field>
         <field name="url">/theme_zap/static/src/img/backgrounds/16.jpg</field>
+    </record>
+    <record id="s_masonry_block_default_image_2" model="theme.ir.attachment">
+        <field name="key">website.s_masonry_block_default_image_2</field>
+        <field name="name">website.s_masonry_block_default_image_2</field>
+        <field name="url">/theme_zap/static/src/img/content/masonry_block_02.jpg</field>
     </record>
 
     <!-- Carousel -->
@@ -244,5 +249,19 @@
         <field name="key">website.s_company_team_image_4</field>
         <field name="name">website.s_company_team_image_4</field>
         <field name="url">/theme_zap/static/src/img/content/company_team_04.jpg</field>
+    </record>
+
+    <!-- Parallax -->
+    <record id="s_parallax_default_image" model="theme.ir.attachment">
+        <field name="key">website.s_parallax_default_image</field>
+        <field name="name">website.s_parallax_default_image</field>
+        <field name="url">/theme_zap/static/src/img/content/parallax.jpg</field>
+    </record>
+
+    <!-- Color Blocks -->
+    <record id="library_image_08" model="theme.ir.attachment">
+        <field name="key">website.library_image_08</field>
+        <field name="name">website.library_image_08</field>
+        <field name="url">/theme_zap/static/src/img/backgrounds/01.jpg</field>
     </record>
 </odoo>
