@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
-        <!-- Block #01 -->
-        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/*" position="before">
-            <i class="fa fa-star fa-1x text-secondary rounded shadow-sm mx-auto mb-3"/>
-        </xpath>
-        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/h3" position="replace">
-            <h3>Super <b>Easy</b>.</h3>
-        </xpath>
-        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/p" position="replace"/>
-        <!-- Block #02 -->
-        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]" position="replace">
-            <div class="col-lg-6 p-0">
-                <img src="/theme_zap/static/src/img/backgrounds/02.jpg" class="w-100 h-100 align-self-stretch" style="object-fit: cover;" alt=""/>
-            </div>
-        </xpath>
-        <!-- Block #03 -->
-        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]" position="replace">
-            <div class="col-lg-6 text-center p-5"><p class="lead mb-0"><em>Maintain a position of constant change and evolution, while always aiming for your success.</em></p></div>
-        </xpath>
-        <!-- Block #04 -->
-        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/h3" position="replace">
-            <h3>Super <b>Fast</b>.</h3>
-        </xpath>
-        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/p" position="replace"/>
-        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/*" position="before">
-            <i class="fa fa-rocket fa-1x text-primary rounded shadow-sm mx-auto mb-3"/>
-        </xpath>
-    </template>
+
+<template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
+    <!-- Block #01 -->
+    <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc2" separator=" "/>
+    </xpath>
+    <xpath expr="//h3" position="replace"/>
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        <em class="lead">Maintain a position of constant change<br/> and evolution, while always aiming<br/> for your success.</em>
+    </xpath>
+    <!-- Block #02 -->
+    <xpath expr="//h3" position="before">
+        <i class="fa fa-2x fa-star text-o-color-2 rounded-circle shadow mx-auto my-3"/>
+    </xpath>
+    <xpath expr="//h3" position="replace" mode="inner">
+        Super <b>Easy</b>
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner"/>
+    <!-- Block #03 -->
+    <xpath expr="(//h3)[2]" position="before">
+        <i class="fa fa-2x fa-rocket text-o-color-1 rounded-circle shadow mx-auto my-3"/>
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Super <b>Fast</b>
+    </xpath>
+    <xpath expr="(//p)[4]" position="replace" mode="inner"/>
+    <!-- Block #04 -->
+    <xpath expr="(//h3)[3]" position="replace" mode="inner"/>
+    <xpath expr="(//p)[5]" position="replace" mode="inner"/>
+    <xpath expr="//*[hasclass('col-lg-6')][2]//*[hasclass('col-lg-6')][4]" position="attributes">
+        <attribute name="class" add="oe_img_bg" separator=" "/>
+        <attribute name="style" add="background-image: url('/web/image/website.s_masonry_block_default_image_2'); background-position: 50% 0%;" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>
