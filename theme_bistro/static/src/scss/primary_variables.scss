@@ -4,13 +4,15 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'bistro-5',
+        'color-palettes-name':              'bistro-5',
 
         // Header
         'header-template':                  'vertical',
         'hamburger-position':               'right',
         'logo-height':                      3rem,
         'fixed-logo-height':                2rem,
+        'header-links-style':               'pills',
+        'menu-box-shadow':                  none,
 
         // Font
         'font':                             'Poppins',
@@ -19,7 +21,7 @@ $o-website-values-palettes: (
         'buttons-font':                     'Poppins',
 
         // Buttons
-        'btn-padding-y':                    .45rem,
+        'btn-padding-y':                    .5rem,
         'btn-padding-x':                    1.35rem,
         'btn-padding-y-sm':                 .3rem,
         'btn-padding-x-sm':                 .9rem,
@@ -125,46 +127,46 @@ $o-theme-btn-font-weight:                   400;
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'bistro-1': (
-            'alpha':                            #68b581,
-            'beta':                             #00a388,
-            'gamma':                            #046380,
-            'delta':                            #4bb5c1,
-            'epsilon':                          #beeb9f,
+            'alpha':                        #68b581,
+            'beta':                         #00a388,
+            'gamma':                        #046380,
+            'delta':                        #4bb5c1,
+            'epsilon':                      #beeb9f,
         ),
         'bistro-2': (
-            'alpha':                            #a3cc52,
-            'beta':                             #cc4452,
-            'gamma':                            #8e3557,
-            'delta':                            #f7f2b2,
-            'epsilon':                          #4a1a2c,
+            'alpha':                        #a3cc52,
+            'beta':                         #cc4452,
+            'gamma':                        #8e3557,
+            'delta':                        #f7f2b2,
+            'epsilon':                      #4a1a2c,
         ),
         'bistro-3': (
-            'alpha':                            #eebf3e,
-            'beta':                             #e2ad3b,
-            'gamma':                            #bf5c00,
-            'delta':                            #77c4d3,
-            'epsilon':                          #901811,
+            'alpha':                        #eebf3e,
+            'beta':                         #e2ad3b,
+            'gamma':                        #bf5c00,
+            'delta':                        #77c4d3,
+            'epsilon':                      #901811,
         ),
         'bistro-4': (
-            'alpha':                            #0092b2,
-            'beta':                             #046380,
-            'gamma':                            #a8c545,
-            'delta':                            #fff6c5,
-            'epsilon':                          #ffd55c,
+            'alpha':                        #0092b2,
+            'beta':                         #046380,
+            'gamma':                        #a8c545,
+            'delta':                        #fff6c5,
+            'epsilon':                      #ffd55c,
         ),
         'bistro-5': (
-            'alpha':                            #dd7e43,
-            'beta':                             #d45c45,
-            'gamma':                            #911146,
-            'delta':                            #9cc264,
-            'epsilon':                          #306e73,
+            'alpha':                        #dd7e43,
+            'beta':                         #d45c45,
+            'gamma':                        #911146,
+            'delta':                        #9cc264,
+            'epsilon':                      #306e73,
         ),
         'bistro-6': (
-            'alpha':                            #b7ca79,
-            'beta':                             #677e52,
-            'gamma':                            #b0cc99,
-            'delta':                            #89725b,
-            'epsilon':                          #f6e8b1,
+            'alpha':                        #b7ca79,
+            'beta':                         #677e52,
+            'gamma':                        #b0cc99,
+            'delta':                        #89725b,
+            'epsilon':                      #f6e8b1,
         ),
     )
 );
@@ -196,3 +198,11 @@ $o-color-palettes-compatibility-indexes: (
     22: 'generic-16',
     23: 'generic-17',
 );
+
+//------------------------------------------------------------------------------//
+// Shapes
+//------------------------------------------------------------------------------//
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/04_001', (3: 5));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/09_001', (3: 3));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Zigs/06', (5: rgba(0,0,0,0)));
