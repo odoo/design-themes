@@ -5,6 +5,9 @@
         <xpath expr="section" position="attributes">
             <attribute name="class" add="o_full_screen_height" separator=" "/>
         </xpath>
+        <xpath expr="//*[hasclass('s_parallax_bg')]" position="attributes">
+            <attribute name="style" add="background-position: 50% 50%;" remove="background-position: 50% 0;" separator=" "/>
+        </xpath>
         <!-- Title -->
         <xpath expr="//h1" position="replace">
             <h1 style="text-align: center;">
@@ -22,7 +25,7 @@
         </xpath>
         <!-- Scroll Down button -->
         <xpath expr="//div[hasclass('container')]" position="after">
-            <a class="o_scroll_button rounded-circle align-items-center justify-content-center mx-auto bg-o-color-5 mb-2" href="#" title="Scroll down to next section">
+            <a class="o_scroll_button rounded-circle align-items-center justify-content-center mx-auto bg-o-color-5 mb-4" href="#" title="Scroll down to next section">
                 <i class="fa fa-angle-down fa-2x"/>
             </a>
         </xpath>

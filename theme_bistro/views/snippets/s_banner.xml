@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_banner" inherit_id="website.s_banner">
+        <!-- Section -->
+        <xpath expr="section" position="attributes">
+            <attribute name="class" remove="parallax s_parallax_is_fixed"/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/09_001","flip":["x"]}</attribute>
+        </xpath>
+        <xpath expr="//*[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Origins_09_001 o_we_flip_x"/>
+        </xpath>
+        <xpath expr="//*[hasclass('s_parallax_bg')]" position="replace"/>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1>Tasty Meals</h1>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//*[hasclass('jumbotron')]" position="attributes">
+            <attribute name="class" add="shadow" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

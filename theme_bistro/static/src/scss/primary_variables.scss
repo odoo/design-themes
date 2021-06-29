@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'bistro-5',
+        'color-palettes-name':              'bistro-5',
 
         // Header
         'header-template':                  'vertical',
@@ -12,6 +12,8 @@ $o-website-values-palettes: (
         'hamburger-position':               'right',
         'logo-height':                      3rem,
         'fixed-logo-height':                2rem,
+        'header-links-style':               'border-bottom',
+        'menu-box-shadow':                  false,
 
         // Font
         'font':                             'Poppins',
@@ -197,3 +199,10 @@ $o-color-palettes-compatibility-indexes: (
     22: 'generic-16',
     23: 'generic-17',
 );
+
+//------------------------------------------------------------------------------//
+// Shapes
+//------------------------------------------------------------------------------//
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/04_001', (3: 3));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/09_001', (3: 4));

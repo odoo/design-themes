@@ -11,12 +11,17 @@
         'data/ir_asset.xml',
         'views/images_library.xml',
 
+        'views/snippets/s_banner.xml',
+        'views/snippets/s_columns.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_features.xml',
+        'views/snippets/s_image_text.xml',
+        'views/snippets/s_media_list.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_text_block.xml',
+        'views/snippets/s_text_image.xml',
     ],
     'images': [
         'static/description/bistro_cover.jpg',

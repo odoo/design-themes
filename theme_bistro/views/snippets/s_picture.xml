@@ -3,7 +3,11 @@
     <template id="s_picture" inherit_id="website.s_picture">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt80 pb32" remove="pt48 pb24" separator=" "/>
+            <attribute name="class" add="bg-200 pt80 pb32" remove="o_cc2 pt48 pb24" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/04_001","flip":["y"]}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Origins_04_001 o_we_flip_y"/>
         </xpath>
         <!-- Size -->
         <xpath expr="//div[hasclass('col-lg-10')]" position="attributes">
