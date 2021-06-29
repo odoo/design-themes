@@ -9,6 +9,7 @@ class ThemeBistro(models.AbstractModel):
         self.enable_view('website.template_header_vertical')
         self.enable_view('website.template_header_default_align_right')
         self.enable_view('website.template_header_hamburger_align_right')
+        self.enable_view('website.header_navbar_pills_style')
         self.enable_header_off_canvas()
 
         self.disable_view('website.footer_custom')
