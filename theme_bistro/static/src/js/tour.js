@@ -1,8 +1,6 @@
-odoo.define("theme_bistro.tour.bistro", function (require) {
-"use strict";
+/** @odoo-module */
 
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
+import wTourUtils from 'website.tour_utils';
 
 const snippets = [
     {
@@ -37,11 +35,11 @@ wTourUtils.registerThemeHomepageTour("bistro_tour", [
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[1]),
     wTourUtils.dragNDrop(snippets[2]),
+    wTourUtils.clickOnSnippet(snippets[2]),
+    wTourUtils.changeBackgroundColor(),
+    wTourUtils.selectColorPalette(),
+    wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[3]),
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.dragNDrop(snippets[5]),
-    wTourUtils.clickOnSnippet(snippets[5], 'top'),
-    wTourUtils.changeBackgroundColor(),
-    wTourUtils.selectColorPalette(),
 ]);
-});

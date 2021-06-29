@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Section -->
+    <xpath expr="section" position="attributes">
+        <attribute name="class" add="o_half_screen_height" remove="parallax s_parallax_is_fixed" separator=" "/>
+        <attribute name="data-scroll-background-ratio">0</attribute>
+        <attribute name="style">background-image: url('/web/image/website.s_banner_default_image'); background-position: 50% 0;</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/09_001","flip":["x"]}</attribute>
+    </xpath>
+    <xpath expr="//*[hasclass('s_parallax_bg')]" position="replace"/>
+    <xpath expr="//*[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_09_001 o_we_flip_x"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Tasty Meals
+    </xpath>
+</template>
+
+</odoo>
