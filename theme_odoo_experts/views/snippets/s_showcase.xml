@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_showcase" inherit_id="website.s_showcase">
+        <!-- Item #1 - Icon -->
+        <xpath expr="//i" position="attributes">
+            <attribute name="class" add="fa-fw text-o-color-1 fa-comments" remove="text-secondary fa-desktop" separator=" "/>
+        </xpath>
+        <!-- Item #1 - Title -->
+        <xpath expr="//h3" position="replace">
+            <h3>Social Strategy</h3>
+        </xpath>
+        <!-- Item #2 - Icon -->
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="fa-fw text-o-color-1 fa-bar-chart-o" remove="text-secondary fa-paint-brush" separator=" "/>
+        </xpath>
+        <!-- Item #2 - Title -->
+        <xpath expr="(//h3)[2]" position="replace">
+            <h3>Data Analytics</h3>
+        </xpath>
+        <!-- Item #3 - Icon -->
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="fa-fw text-o-color-1 fa-flash" remove="text-secondary fa-heart" separator=" "/>
+        </xpath>
+        <!-- Item #3 - Title -->
+        <xpath expr="(//h3)[3]" position="replace">
+            <h3>Optimization</h3>
+        </xpath>
+        <!-- Item #4 - Icon -->
+        <xpath expr="(//i)[4]" position="attributes">
+            <attribute name="class" add="fa-fw text-o-color-1 fa-star-half-empty" remove="text-secondary fa-gift" separator=" "/>
+        </xpath>
+        <!-- Item #4 - Title -->
+        <xpath expr="(//h3)[4]" position="replace">
+            <h3>Consumer Experience</h3>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a[hasclass('btn')]" position="attributes">
+            <attribute name="class" add="flat" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

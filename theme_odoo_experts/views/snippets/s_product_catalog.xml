@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_product_catalog" inherit_id="website.s_product_catalog">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc3 pt96 pb96" remove="pt48 pb32" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/03_001","flip":[]}</attribute>
+        </xpath>
+        <!-- Filter & shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_bg_filter" style="background-color: rgba(32, 28, 32, 0.85) !important;"/>
+            <div class="o_we_shape o_web_editor_Airy_03_001"/>
+        </xpath>
+        <!-- Title & subtitles -->
+        <xpath expr="//h2" position="replace">
+            <h2>Our services</h2>
+        </xpath>
+        <xpath expr="//h3" position="replace">
+            <h3>Consulting</h3>
+        </xpath>
+        <xpath expr="(//h3)[2]" position="replace">
+            <h3>Strategies</h3>
+        </xpath>
+        <!-- Description -->
+        <xpath expr="//div[hasclass('container')]//p" position="replace">
+            <p>Add a description.</p>
+        </xpath>
+        <!-- List names left column -->
+        <xpath expr="//ul/t/t" position="replace">
+            <t t-set="name">Board Services</t>
+        </xpath>
+        <xpath expr="//ul/t[2]/t" position="replace">
+            <t t-set="name">Executive Transitions</t>
+        </xpath>
+        <xpath expr="//ul/t[3]/t" position="replace">
+            <t t-set="name">Corporate Finance</t>
+        </xpath>
+        <!-- List names right column -->
+        <xpath expr="(//ul)[2]/t/t" position="replace">
+            <t t-set="name">Growth &amp; Innovation</t>
+        </xpath>
+        <xpath expr="(//ul)[2]/t[2]/t" position="replace">
+            <t t-set="name">Digital Strategy</t>
+        </xpath>
+        <xpath expr="(//ul)[2]/t[3]/t" position="replace">
+            <t t-set="name">Business Unit Strategy</t>
+        </xpath>
+    </template>
+</odoo>

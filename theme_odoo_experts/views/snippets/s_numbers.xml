@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_numbers" inherit_id="website.s_numbers">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt200 pb200 oe_img_bg o_bg_img_center o_cc4" remove="pt24 pb24 o_cc2" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/16","flip":[]}</attribute>
+            <attribute name="style">background-image:url('/web_editor/shape/theme_odoo_experts/s_numbers.svg?c1=%23278F84');</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Origins_16"/>
+        </xpath>
+        <!-- Numbers -->
+        <xpath expr="//span[hasclass('s_number')]" position="replace">
+            <span class="s_number" style="font-weight: bolder; font-size: 62px;">12</span>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_number')])[2]" position="replace">
+            <span class="s_number" style="font-weight: bolder; font-size: 62px;">45</span>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_number')])[3]" position="replace">
+            <span class="s_number" style="font-weight: bolder; font-size: 62px;">8</span>
+        </xpath>
+        <xpath expr="(//span[hasclass('s_number')])[4]" position="replace">
+            <span class="s_number" style="font-weight: bolder; font-size: 62px;">37</span>
+        </xpath>
+    </template>
+</odoo>

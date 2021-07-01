@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_features" inherit_id="website.s_features">
+        <!-- Block #1 - Icon -->
+        <xpath expr="//i" position="attributes">
+            <attribute name="class" add="fa-suitcase" remove="fa-gear" separator=" "/>
+        </xpath>
+        <!-- Block #1 - Title -->
+        <xpath expr="//h3" position="replace">
+            <h3>Litigation</h3>
+        </xpath>
+        <!-- Block #2 - Icon -->
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="fa-pencil" remove="fa-photo" separator=" "/>
+        </xpath>
+        <!-- Block #2 - Title -->
+        <xpath expr="(//h3)[2]" position="replace">
+            <h3>Arbitration</h3>
+        </xpath>
+        <!-- Block #3 - Icon -->
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="fa-handshake-o" remove="fa-leaf" separator=" "/>
+        </xpath>
+        <!-- Block #3 - Title -->
+        <xpath expr="(//h3)[3]" position="replace">
+            <h3>Mediation</h3>
+        </xpath>
+    </template>
+</odoo>

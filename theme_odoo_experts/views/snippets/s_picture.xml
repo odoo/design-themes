@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_picture" inherit_id="website.s_picture">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;"><font style="font-size: 62px;">We are ready <br/>to help you</font></h2>
+        </xpath>
+    </template>
+</odoo>

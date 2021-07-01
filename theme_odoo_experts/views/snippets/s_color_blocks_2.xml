@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2">
+        <!-- Box #1 -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/10","flip":["y","x"]}</attribute>
+        </xpath>
+        <!-- Box #1 - Shape -->
+        <xpath expr="//div[hasclass('col-lg-6')]//i" position="before">
+            <div class="o_we_shape o_web_editor_Rainy_10 o_we_flip_y o_we_flip_x"/>
+        </xpath>  
+        <!-- Box #1 - Icon -->
+        <xpath expr="//div[hasclass('col-lg-6')]//i" position="attributes">
+            <attribute name="class" add="fa-handshake-o" remove="fa-shield" separator=" "/>
+        </xpath>  
+        <!-- Box #1 - Title -->
+        <xpath expr="//div[hasclass('col-lg-6')]//h2" position="replace">
+            <h2>Business Strategy</h2>
+            <p><br/></p>
+        </xpath>  
+        <!-- Box #2 -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
+            <attribute name="class" add="o_cc4" remove="o_cc5" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/10","flip":[]}</attribute>
+        </xpath>
+        <!-- Box #2 - Shape -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//i" position="before">
+            <div class="o_we_shape o_web_editor_Rainy_10"/>
+        </xpath>  
+        <!-- Box #2 - Icon -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//i" position="attributes">
+            <attribute name="class" add="fa-bar-chart-o" remove="fa-cube" separator=" "/>
+        </xpath>  
+        <!-- Box #2 - Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//h2" position="replace">
+            <h2>Data Analytics</h2>
+            <p><br/></p>
+        </xpath>  
+    </template>
+</odoo>

@@ -20,6 +20,14 @@ const snippets = [
         name: 'Media List',
     },
     {
+        id: 's_company_team',
+        name: 'Team',
+    },
+    {
+        id: 's_references',
+        name: 'References',
+    },
+    {
         id: 's_call_to_action',
         name: 'Call to Action',
     },
@@ -32,7 +40,10 @@ wTourUtils.registerThemeHomepageTour("odoo_experts_tour", [
     wTourUtils.dragNDrop(snippets[1]),
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.clickOnSnippet(snippets[3]),
-    wTourUtils.changeOption('ScrollButton', 'we-button-group.o_we_user_value_widget', _t('height')),
+    wTourUtils.dragNDrop(snippets[4]),
+    wTourUtils.clickOnSnippet(snippets[4], 'top'),
+    wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
+    wTourUtils.goBackToBlocks(),
+    wTourUtils.dragNDrop(snippets[5]),
 ]);
 });

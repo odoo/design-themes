@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_cover" inherit_id="website.s_cover">
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
+            <div class="o_we_bg_filter" style="background-color: rgba(73, 64, 72, 0.75) !important;"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center;"><span style="font-size: 62px;">Our expertise <br/>at your service</span></h1>
+        </xpath>
+    </template>
+</odoo>

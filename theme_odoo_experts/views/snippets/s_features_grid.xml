@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_features_grid" inherit_id="website.s_features_grid">
+        <!-- Main left title -->
+        <xpath expr="//h2" position="replace">
+            <h2><span style="font-size: 36px;">Our consulting services</span></h2>
+        </xpath>        
+        <!-- Main right title -->
+        <xpath expr="(//h2)[2]" position="replace">
+            <h2><span style="font-size: 36px;">Our legal services</span></h2>
+        </xpath>        
+        <!-- Item #1 -->
+        <xpath expr="//i" position="attributes">
+            <attribute name="class" add="fa-bar-chart-o rounded" remove="fa-font-awesome rounded-circle" separator=" "/>
+        </xpath>
+        <xpath expr="//h4" position="replace">
+            <h4>Data Insights</h4>
+        </xpath>
+        <!-- Item #2 -->
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="fa-crosshairs rounded" remove="fa-files-o rounded-circle" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[2]" position="replace">
+            <h4>Strategies</h4>
+        </xpath>
+        <!-- Item #3 -->
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="fa-flash rounded" remove="fa-trash rounded-circle" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[3]" position="replace">
+            <h4>Optimization</h4>
+        </xpath>
+        <!-- Item #4 -->
+        <xpath expr="(//i)[4]" position="attributes">
+            <attribute name="class" add="fa-suitcase" remove="fa-magic" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[4]" position="replace">
+            <h4>Litigation</h4>
+        </xpath>
+        <!-- Item #5 -->
+        <xpath expr="(//i)[5]" position="attributes">
+            <attribute name="class" add="fa-pencil" remove="fa-eyedropper" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[5]" position="replace">
+            <h4>Arbitration</h4>
+        </xpath>
+        <!-- Item #6 -->
+        <xpath expr="(//i)[6]" position="attributes">
+            <attribute name="class" add="fa-handshake-o" remove="fa-picture-o" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[6]" position="replace">
+            <h4>Mediation</h4>
+        </xpath>
+    </template>
+</odoo>

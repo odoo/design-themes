@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_title" inherit_id="website.s_title">
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center;"><span style="font-size: 62px;">Let's find <br/>the perfect solution</span></h1>
+        </xpath>
+    </template>
+</odoo>
