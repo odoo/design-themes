@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_half_screen_height" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
+    </xpath>
+    <!-- Filter & shape -->
+    <xpath expr="//*[hasclass('container')]" position="before">
+        <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
+        <div class="o_we_shape o_web_editor_Origins_14_001"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1//font" position="replace" mode="inner">
+        Just as you dreamt it.
+    </xpath>
+</template>
+
+</odoo>
