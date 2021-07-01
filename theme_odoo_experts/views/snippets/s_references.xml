@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_references" inherit_id="website.s_references">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb240 pt120 o_cc o_cc2" remove="pt48 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_02_001 o_second_extra_shape_mapping"/>
+    </xpath>
+    <!-- Row -->
+    <xpath expr="//div[hasclass('row')]" position="replace">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-2 pt16 pb16">
+                <img src="/web/image/website.s_reference_demo_image_1" class="img img-fluid mx-auto" alt=""/>
+            </div>
+            <div class="col-lg-2 pt16 pb16">
+                <img src="/web/image/website.s_reference_demo_image_2" class="img img-fluid mx-auto" alt=""/>
+            </div>
+            <div class="col-lg-2 pt16 pb16">
+                <img src="/web/image/website.s_reference_demo_image_3" class="img img-fluid mx-auto" alt=""/>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-lg-2 pt16 pb16">
+                <img src="/web/image/website.s_reference_demo_image_4" class="img img-fluid mx-auto" alt=""/>
+            </div>
+            <div class="col-lg-2 pt16 pb16">
+                <img src="/web/image/website.s_reference_demo_image_5" class="img img-fluid mx-auto" alt=""/>
+            </div>
+            <div class="col-lg-2 pt16 pb16">
+                <img src="/web/image/website.s_reference_default_image_6" class="img img-fluid mx-auto" alt=""/>
+            </div>
+        </div>
+    </xpath>
+</template>
+
+</odoo>
