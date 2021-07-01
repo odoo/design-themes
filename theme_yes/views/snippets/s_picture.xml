@@ -3,21 +3,19 @@
     <template id="s_picture" inherit_id="website.s_picture">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
+            <attribute name="class" add="o_cc5" remove="o_cc2" separator=" "/>
         </xpath>
         <!-- Title -->
-        <xpath expr="//h2" position="replace">
-            <h2 style="text-align: center;">
-                <font style="font-size: 62px;">Love is in the air</font>
-            </h2>
+        <xpath expr="//h2//font" position="replace" mode="inner">
+            Love is in the air
         </xpath>
         <!-- Paragraphs -->
-        <xpath expr="//p[1]" position="replace">
-            <p class="text-center">Intimate or with hundreds of guests. Outdoors or indoors, we organize the wedding of your dreams.</p>
+        <xpath expr="//p" position="replace" mode="inner">
+            Intimate or with hundreds of guests, outdoors or indoors : we organize the wedding of your dreams.
         </xpath>
         <!-- Caption -->
-        <xpath expr="//figcaption" position="replace">
-            <figcaption class="figure-caption text-muted py-3">Wedding of Bernard and Bianca, at the Barn.</figcaption>
+        <xpath expr="//figcaption" position="replace" mode="inner">
+            Stuart and Iliana's wedding at the Barn.
         </xpath>
     </template>
 </odoo>

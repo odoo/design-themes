@@ -3,28 +3,24 @@
     <template id="s_three_columns" inherit_id="website.s_three_columns">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc1" remove="o_cc2" separator=" "/>
+            <attribute name="class" add="o_cc5" remove="o_cc2" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18"}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//*[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Origins_18"/>
         </xpath>
         <!-- Column 1 -->
-        <xpath expr="//div[hasclass('card-body')]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">Ceremonies</h3>
-                <p class="card-text">We create ceremonies that look like you. Couples and families follow one another but each story is unique and deserves to be highlighted in a way that suits you. </p>
-            </div>
+        <xpath expr="//*[hasclass('card-title')]" position="replace" mode="inner">
+            Accomodations
         </xpath>
         <!-- Column 2 -->
-        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">Flowers</h3>
-                <p class="card-text">Our first passion. They are for us the basis of any decoration. In a natural, wild and poetic style, we will be delighted to flower your event.</p>
-            </div>
+        <xpath expr="(//*[hasclass('card-title')])[2]" position="replace" mode="inner">
+            Car Rental
         </xpath>
         <!-- Column 3 -->
-        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">Decoration</h3>
-                <p class="card-text">We will be able to help you to choose everything around the flowers and think everything through with you in the smallest details (candles, table plan, photo corner, reception panels, ...). </p>
-            </div>
+        <xpath expr="(//*[hasclass('card-title')])[3]" position="replace" mode="inner">
+            Make up &amp;amp; Hair
         </xpath>
     </template>
 </odoo>
