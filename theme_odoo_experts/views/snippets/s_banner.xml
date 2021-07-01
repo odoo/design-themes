@@ -2,28 +2,20 @@
 <odoo>
     <template id="s_banner" inherit_id="website.s_banner">
         <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_half_screen_height" separator=" "/>
+        <xpath expr="//section" position="attributes">    
+            <attribute name="class" add="o_cc o_cc5" separator=" "/>
         </xpath>
-        <!-- Shadow -->
-        <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-            <attribute name="class" add="rounded" separator=" "/>
-            <attribute name="style" add="box-shadow: rgb(92, 92, 92) 25px 25px 0px 0px !important; border-radius: 25px !important;" separator=" "/>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('container')]" position="before">    
+            <div class="o_we_bg_filter bg-black-50"/>
+        </xpath>
+        <!-- Jumbotron -->
+        <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+            <attribute name="class" remove="o_cc o_cc1" separator=" "/>
         </xpath>
         <!-- Title -->
-        <xpath expr="//h1" position="replace">
-            <h1>
-                <font style="font-size: 62px; line-height: 48px;">If results matter to you</font>
-            </h1>
-        </xpath>
-        <!-- Paragraphs -->
-        <xpath expr="//p" position="replace">
-            <p><br/></p>
-            <p class="lead">Guided by expertise gained over 20 years of achieving success for clients, we practice with passion and strategic focus on the future.</p>
-        </xpath>
-        <!-- Button -->
-        <xpath expr="//t[@t-esc='cta_btn_text']" position="replace">
-            <t t-esc="cta_btn_text">Discover More</t>
+        <xpath expr="//h1" position="replace" mode="inner">
+            Our expertise <br/>at your service
         </xpath>
     </template>
 </odoo>
