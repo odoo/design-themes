@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_comparisons" inherit_id="website.s_comparisons">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5 pb48 o_colored_level" remove="pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/01","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Airy_01"/>
+    </xpath>
+    <!-- Box #01 -->
+    <xpath expr="//div[hasclass('row')]//div" position="attributes">
+        <attribute name="class" add="pt80" remove="pt32" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('card')]" position="attributes">
+        <attribute name="class" add="bg-o-color-3" remove="bg-200" separator=" "/>
+    </xpath>
+    <!-- Box #01 - Button -->
+    <xpath expr="//div[hasclass('card')]//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="flat" separator=" "/>
+    </xpath>
+    <!-- Box #02 -->
+    <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-5" separator=" "/>
+    </xpath>
+    <!-- Box #02 - Button -->
+    <xpath expr="(//div[hasclass('card')])[2]//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-secondary flat" remove="btn-primary" separator=" "/>
+    </xpath>
+    <!-- Box #03 -->
+    <xpath expr="//div[hasclass('row')]//div[3]" position="attributes">
+        <attribute name="class" add="pt80" remove="pt32" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+        <attribute name="class" add="bg-o-color-3" remove="bg-secondary" separator=" "/>
+    </xpath>
+    <!-- Box #03 - Button -->
+    <xpath expr="(//div[hasclass('card')])[3]//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="flat" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
