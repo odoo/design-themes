@@ -3,22 +3,24 @@
     <template id="s_image_text" inherit_id="website.s_image_text">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc o_cc5" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/04","flip":["x"]}</attribute>
+            <attribute name="class" add="o_cc o_cc5 pt80 pb80" remove="pt32 pb32" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/11","flip":[]}</attribute>
         </xpath>
-        <!-- Shape -->
-        <xpath expr="//div[hasclass('container')]" position="before">
-            <div class="o_we_shape o_web_editor_Blobs_04 o_we_flip_x"/>
+        <!-- Text wrapper -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
+            <attribute name="class" add="offset-lg-2" separator=" "/>
         </xpath>
-        <!-- Paragraph -->
-        <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="replace">
-            <div class="pb16 p-5 border pt32 offset-lg-2 col-lg-6 shadow o_cc o_cc4" style="border-width: 2.5px !important; border-color: rgb(44, 41, 39) !important; box-shadow: rgb(44, 41, 39) 20px -20px 0px 0px !important;">
-              <h2>History</h2>
-              <p>The Miraillet Festival was born in 2002 from a common will of cultural, touristic and institutional actors of the region to propose a major cultural event in the very heart of the region during the summer period.</p>
-              <p><a href="#" class="btn btn-dark mb-2">Discover more</a></p>
-            </div>
+        <!-- Title & Paragraph -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            The History
         </xpath>
-        <!-- Picture -->
+        <xpath expr="//p" position="replace" mode="inner">
+            <br/>
+        </xpath>
+        <xpath expr="//p[2]" position="replace" mode="inner">
+            The Miraillet Festival was born in 2002 from a common will of cultural, touristic and institutional actors of the region to propose a major cultural event in the very heart of the region during the summer period.
+        </xpath>
+        <!-- Img wrapper -->
         <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
             <attribute name="class" add="col-lg-4" remove="col-lg-6" separator=" "/>
         </xpath>
