@@ -1,4 +1,4 @@
-// Theme colors
+// Theme colors - compatibility
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'vehicle-1': (
@@ -45,45 +45,31 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
         ),
     )
 );
-
 //------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (48.83 / 16);
-$o-theme-h2-font-size-multiplier: (39.06 / 16);
-$o-theme-h3-font-size-multiplier: (31.25 / 16);
-$o-theme-h4-font-size-multiplier: (25.00 / 16);
-$o-theme-h5-font-size-multiplier: (20.00 / 16);
-$o-theme-h6-font-size-multiplier: 1.1;
+
+$o-theme-h1-font-size-multiplier: (50 / 16);
+$o-theme-h2-font-size-multiplier: (38 / 16);
+$o-theme-h3-font-size-multiplier: (24 / 16);
+$o-theme-h4-font-size-multiplier: (20 / 16);
+$o-theme-h5-font-size-multiplier: (18 / 16);
+$o-theme-h6-font-size-multiplier: (16 / 16);
+
+$o-theme-headings-font-weight: 600;
 
 $o-theme-font-configs: (
-    'Handlee': (
-        'family': ('Handlee', cursive),
-        'url': 'Handlee:300,300i,400,400i,700,700i',
+    'Fira Code': (
+        'family': ('Fira Code', mono),
+        'url': 'Fira+Code:300,300i,400,400i,700,700i',
     ),
-    'Gruppo': (
-        'family': ('Gruppo', cursive),
-        'url': 'Gruppo:300,300i,400,400i,700,700i',
-    ),
-    'Darker Grotesque': (
-        'family': ('Darker Grotesque', sans-serif),
-        'url': 'Darker+Grotesque:300,300i,500,500i,700,700i',
+    'Fira Sans': (
+        'family': ('Fira Sans', sans-serif),
+        'url': 'Fira Sans:300,300i,400,400i,700,700i',
     ),
     'Droid Sans': (
         'family': ('Droid Sans', sans-serif),
-    ),
-    'Bowlby One SC': (
-        'family': ('Bowlby One SC', cursive),
-        'url': 'Bowlby+One+SC:300,300i,400,400i,700,700i',
-    ),
-    'Lobster': (
-        'family': ('Lobster', cursive),
-        'url': 'Lobster:300,300i,400,400i,700,700i',
-    ),
-    'Nunito': (
-        'family': ('Nunito', sans-serif),
-        'url': 'Nunito:300,300i,400,400i,700,700i',
     ),
     'Raleway': (
         'family': ('Raleway', sans-serif),
@@ -109,22 +95,6 @@ $o-theme-font-configs: (
         'family': ('Roboto', sans-serif),
         'url': 'Roboto:300,300i,400,400i,700,700i',
     ),
-    'Permanent Marker': (
-        'family': ('Permanent Marker', cursive),
-        'url': 'Permanent+Marker:300,300i,400,400i,700,700i',
-    ),
-    'Pacifico': (
-        'family': ('Pacifico', cursive),
-        'url': 'Pacifico:300,300i,400,400i,700,700i',
-    ),
-    'Playfair Display': (
-        'family': ('Playfair Display', serif),
-        'url': 'Playfair+Display:300,300i,400,400i,700,700i',
-    ),
-    'Playfair Display SC': (
-        'family': ('Playfair Display SC', serif),
-        'url': 'Playfair+Display+SC:300,300i,400,400i,700,700i',
-    ),
 );
 
 //------------------------------------------------------------------------------
@@ -135,12 +105,11 @@ $o-website-values-palettes: (
     (
         'color-palettes-name': 'vehicle-1',
 
-        'header-font-size': 1rem,
-        'font': 'Droid Sans',
-        'headings-font': 'Oswald',
-        'navbar-font': 'Oswald',
+        'font': 'Fira Code',
+        'headings-font': 'Fira Sans',
+        'navbar-font': 'Fira Sans',
 
-        'buttons-font': 'Oswald',
+        'buttons-font': 'Fira Sans',
         'btn-primary-outline': false,
         'btn-secondary-outline': true,
 
@@ -155,9 +124,8 @@ $o-website-values-palettes: (
         'btn-font-size': 1.2rem,
         'btn-font-size-lg': 2rem,
 
-        'header-template': 'hamburger',
-        'hamburger-type': 'off-canvas',
-        'hamburger-position': 'left',
+        'header-template': 'default',
+        'header-links-style': 'border-bottom',
         'footer-template': 'minimalist',
     ),
 );
@@ -194,3 +162,12 @@ $o-theme-color-palettes-compatibility-indexes: (
     5: 'vehicle-5',
     6: 'vehicle-6',
 );
+
+//------------------------------------------------------------------------------
+// Shapes
+//------------------------------------------------------------------------------
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/09', (1: 3));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/18', (1: 1));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/05', (1: 1));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Rainy/09_001', (1: 1));

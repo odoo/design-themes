@@ -8,9 +8,5 @@ class ThemeVehicle(models.AbstractModel):
         # For compatibility
         # self.enable_asset('theme_common.compatibility_saas_10_1')
 
-        self.disable_view('website.template_header_default')
-        self.enable_view('website.template_header_hamburger')
-        self.enable_header_off_canvas()
-
         self.disable_view('website.footer_custom')
         self.enable_view('website.template_footer_minimalist')
