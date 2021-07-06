@@ -1,171 +1,368 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- ======== COVER ======== -->
-<template id="s_cover" inherit_id="website.s_cover" name="Vehicle s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb256 pt192 s_parallax_no_overflow_hidden" remove="pt96 pb96 s_parallax_is_fixed s_parallax" separator=" "/>
-    </xpath>
-    <xpath expr="//h1/font" position="replace">
-        <font style="font-size: 62px;font-weight: bold;">Start the Engine</font>
-    </xpath>
-    <xpath expr="//a[hasclass('btn')]" position="replace">
-        <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg mb-2"><t t-esc="cta_btn_text and cta_btn_text.upper()">START THE ENGINE</t></a>
-    </xpath>
-</template>
+    <!-- ======== BANNER ======== -->
+    <template id="s_banner" inherit_id="website.s_banner">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" remove="s_parallax_is_fixed" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
+        </xpath>
 
-<!-- ======== TEXT - IMAGE ======== -->
-<template id="s_text_image" inherit_id="website.s_text_image" name="Vehicle s_text_image">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb144 pt120" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/06","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_06"/>
-    </xpath>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Origins_18 o_we_flip_x"/>
+        </xpath>
+        <!-- Jumbotron -->
+        <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+            <attribute name="class" remove="o_cc1" separator=" "/>
+        </xpath>
+    
+    </template>
 
-    <xpath expr="//div[hasclass('row')]/div" position="attributes">
-        <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
-    </xpath>
-    <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
-        <attribute name="class" add="offset-lg-1" separator=" "/>
-    </xpath>
+    <!-- ======== COVER ======== -->
+    <template id="s_cover" inherit_id="website.s_cover" name="Vehicle s_cover">
+        <xpath expr="section" position="attributes">
+            <attribute name="class" remove="s_parallax_is_fixed pt96 pb96 " add="pt0 pb256" separator=" "/>
+            <attribute name="class" add="o_full_screen_height" separator=" "/>
+        </xpath>
+        <xpath expr="//h1" position="replace">
+            <h1 class="text-center">The New KORAN.</h1>
+        </xpath>
+        <xpath expr="//p" position="replace">
+            <p class="lead text-center"> Take it all. Compliments too.</p>
+        </xpath>
+        <xpath expr="//a[hasclass('btn')]" position="replace">
+            <a t-att-href="cta_btn_href" class="btn btn-primary mb-2"><t t-esc="cta_btn_text and cta_btn_text.upper()">START THE ENGINE</t></a>
+        </xpath>
+    </template>
 
-    <xpath expr="//h2" position="replace">
-        <h1 style="text-align: right;">Live the Dream.</h1>
-    </xpath>
-    <xpath expr="//p" position="replace"/>
-    <xpath expr="//p" position="replace"/>
-    <xpath expr="//p" position="attributes">
-        <attribute name="style" add="text-align: right;" remove="text-align: left;" separator=";"/>
-    </xpath>
+    <!-- ======== TEXT - IMAGE ======== -->
+    <template id="s_text_image" inherit_id="website.s_text_image" name="Vehicle s_text_image">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pb24 pt56" remove="pt32 pb32" separator=" "/>
+        </xpath>
+    
+        <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
+            <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+        </xpath>
 
-</template>
+        <xpath expr="//h2" position="before">
+            <h4 class="text-o-color-1"><b>The world is yours</b></h4>
+        </xpath>
 
-<!-- ======== IMAGE - TEXT ======== -->
-<template id="s_image_text" inherit_id="website.s_image_text" name="Vehicle s_image_text">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb144 pt120" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/07","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_07"/>
-    </xpath>
+        <xpath expr="//h2" position="replace">
+            <h2>No compromise</h2>
+        </xpath>
 
-    <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
-        <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
-    </xpath>
+        <xpath expr="//p" position="replace">
+            <p>Performance and design were the key words during the conception of this super car. No compromises were made to keep the pleasure of driving despite those constraints.</p>
+        </xpath>
+        <xpath expr="//p[2]" position="replace">
+            <p>Take advantage of a free track trial to discover it.</p>
+        </xpath>
+    </template>
 
-    <xpath expr="//h2" position="replace">
-        <h2>No compromise.</h2>
-    </xpath>
+    <!-- ======== IMAGE - TEXT ======== -->
+    <template id="s_image_text" inherit_id="website.s_image_text" name="Vehicle s_image_text">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pb56 pt24" remove="pt32 pb32" separator=" "/>
+        </xpath>
 
-    <xpath expr="//p" position="replace">
-        <p>Performance and design were the key words during the conception of this super car. No compromises were made to keep the pleasure of driving despite those constraints.</p>
-    </xpath>
-    <xpath expr="//p[2]" position="replace">
-        <p>Take advantage of a free track trial to discover it.</p>
-    </xpath>
+        <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
+            <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+        </xpath>
 
-</template>
+            <xpath expr="//h2" position="before">
+            <h4 class="text-o-color-1"><b>A greener lifestyle</b></h4>
+        </xpath>
 
-<!-- ======== MASONERY BLOCK ======== -->
-<template id="s_masonry_block" inherit_id="website.s_masonry_block" name="Vehicle s_masonry_block">
-    <xpath expr="//p" position="replace"/>
+        <xpath expr="//h2" position="replace">
+            <h2>Electric Driving</h2>
+        </xpath>
 
-    <xpath expr="//div[hasclass('h-100')]/div//h3" position="replace">
-        <h3>Electric Engine</h3>
-    </xpath>
-    <xpath expr="//div[hasclass('h-100')]/div//p" position="replace">
-        <p>coupled to a combustion one</p>
-    </xpath>
+    </template>
 
-    <xpath expr="//div[hasclass('h-100')]/div[2]//h3" position="replace">
-        <h3>Cooling</h3>
-    </xpath>
-    <xpath expr="//div[hasclass('h-100')]/div[2]//p" position="replace">
-        <p>by turbo-compressed air</p>
-    </xpath>
+    <!-- ======== NUMBERS ======== -->
+    <template id="s_numbers" inherit_id="website.s_numbers">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc4 pt48 pb48" remove="o_cc2 pt24 pb24" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/09_001","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Rainy_09_001"/>
+        </xpath>
+        <!-- Replace h6 by paragraphs -->
+        <xpath expr="//h6" position="replace">
+            <p>Useful options</p>
+        </xpath>
+        <xpath expr="//h6" position="replace">
+            <p>Beautiful snippets</p>
+        </xpath>
+        <xpath expr="//h6" position="replace">
+            <p>Amazing pages</p>
+        </xpath>
+        <xpath expr="//h6" position="replace">
+            <p>Outstanding images</p>
+        </xpath>
+    </template>
 
-    <xpath expr="//div[hasclass('h-100')]/div[3]//h3" position="replace">
-        <h3>Ceramic</h3>
-    </xpath>
-    <xpath expr="//div[hasclass('h-100')]/div[3]//p" position="replace">
-        <p>braque disks</p>
-    </xpath>
 
-    <xpath expr="//div[hasclass('h-100')]/div[4]//h3" position="replace">
-        <h3>Aeronautical Cockpit</h3>
-    </xpath>
-    <xpath expr="//div[hasclass('h-100')]/div[4]//p" position="replace">
-        <p>And compact interior</p>
-    </xpath>
-</template>
+    <!-- ======== MASONERY BLOCK ======== -->
+    <template id="s_masonry_block" inherit_id="website.s_masonry_block" name="Vehicle s_masonry_block">
+        <xpath expr="//div[hasclass('container-fluid')]" position="replace">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 oe_img_bg o_bg_img_center text-center pb224 pt224" data-name="Block" style="background-image: url(/web/image/website.s_masonry_block_default_image_1);">
+                        <p><br/></p>
+                    </div>
+                    <div class="col-lg-6 o_colored_level o_cc o_cc1">
+                        <div class="row h-100">
+                            <div class="col-lg-8 offset-lg-1 pt24 pb8 pl-24 pr-48 text-left o_cc o_cc1" data-name="Block">
+                                <h3 class="text-o-color-1"><b>From the comfort of your home</b></h3>
+                                <h2>Take a live tour of the new KORAN.</h2>
+                                <p>A KORAN product expert will show you around the car in real time and they can also help book an appointment or test drive for you with your nearest Retailer. All you need is a computer or mobile device with a good Internet connection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
 
-<!-- ======== REFERENCES ======== -->
- <template id="s_references" inherit_id="website.s_references" name="Vehicle s_references">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt120 pb112" remove="pt48 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_05"/>
-    </xpath>
-    <xpath expr="//h2" position="replace">
-        <h2 style="text-align: center;">Our Partners</h2>
-    </xpath>
-    <xpath expr="//p" position="replace"/>
-</template>
+    <!-- ======== REFERENCES ======== -->
+    <template id="s_references" inherit_id="website.s_references" name="Vehicle s_references">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt120 pb112" remove="pt48 pb32" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Origins_05"/>
+        </xpath>
+        <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;">Our Partners</h2>
+        </xpath>
+        <xpath expr="//p" position="replace"/>
+    </template>
 
-<!-- ======== TABLE OF CONTENTS ======== -->
-<template id="s_table_of_content" inherit_id="website.s_table_of_content" name="Vehicle s_table_of_content">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt88 pb128" remove="pt24 pb24" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/10","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_10"/>
-    </xpath>
+    <!-- ======== TABLE OF CONTENTS ======== -->
+    <template id="s_table_of_content" inherit_id="website.s_table_of_content" name="Vehicle s_table_of_content">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt88 pb128" remove="pt24 pb24" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/10","colors":{"c5":"400"},"flip":[]}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Airy_10" style='background-image: url("/web_editor/shape/web_editor/Airy/10.svg?c5=%23CED4DA");'/>
+        </xpath>
 
-    <xpath expr="//div[hasclass('s_table_of_content_main')]/section" position="replace">
-        <section class="pb16">
-            <h1 data-anchor="true">Aerodynamic in Action</h1>
-            <h4>F1 inspired</h4>
-            <p>The design of the car is inspired by F1.</p>
-            <h4>Tested in Wind Tunnel</h4>
-            <p>Our engineers worked in the wind tunnel to obtain the most aerodynamic shape possible.</p>
-            <h4>Carbon and light material</h4>
-            <p>We use carbon and fibreglass to lighten the vehicle.</p>
-        </section>
-    </xpath>
-    <xpath expr="//div[hasclass('s_table_of_content_main')]/section[2]" position="replace">
-        <section class="pb16">
-            <h1 data-anchor="true">Interior Design</h1>
-            <h4>Steering wheel</h4>
-            <p>Controls are located on the steering wheel as for real sports cars.</p>
-            <h4>Confort</h4>
-            <p>Leather seats with 6 positions memory.</p>
-        </section>
-    </xpath>
-</template>
+        <xpath expr="//div[hasclass('s_table_of_content_main')]/section" position="replace">
+            <section class="pb16">
+                <h1 data-anchor="true">Aerodynamic in Action</h1>
+                <h4>F1 inspired</h4>
+                <p>The design of the car is inspired by F1.</p>
+                <h4>Tested in Wind Tunnel</h4>
+                <p>Our engineers worked in the wind tunnel to obtain the most aerodynamic shape possible.</p>
+                <h4>Carbon and light material</h4>
+                <p>We use carbon and fibreglass to lighten the vehicle.</p>
+            </section>
+        </xpath>
+        <xpath expr="//div[hasclass('s_table_of_content_main')]/section[2]" position="replace">
+            <section class="pb16">
+                <h1 data-anchor="true">Interior Design</h1>
+                <h4>Steering wheel</h4>
+                <p>Controls are located on the steering wheel as for real sports cars.</p>
+                <h4>Confort</h4>
+                <p>Leather seats with 6 positions memory.</p>
+            </section>
+        </xpath>
+    </template>
 
-<!-- ======== CALL TO ACTION ======== -->
- <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Vehicle s_call_to_action">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc4" remove="o_cc3" separator=" "/>
-    </xpath>
-    <xpath expr="//h3" position="replace">
-        <h3 style="text-align: right;"><b>50,000 pre-orders</b> already registered.</h3>
-    </xpath>
-    <xpath expr="//p" position="replace">
-        <p style="text-align: right;">Join the early joiners or request for a trial on track.</p>
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
-        <attribute name="class" add="col-lg-8 pt0" remove="col-lg-9 pt8" separator=" "/>
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-8')]/p" position="attributes">
-        <attribute name="style" add="text-align: right;" separator=" "/>
-    </xpath>
-</template>
+    <!-- ======== CALL TO ACTION ======== -->
+    <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Vehicle s_call_to_action">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc4" remove="o_cc3" separator=" "/>
+            <attribute name="class" add="pt96 pb64" remove="pt48 pb24" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/09","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="after">
+            <div class="o_we_shape o_web_editor_Floats_09"/>
+        </xpath>
+        <!-- Content -->
+        <xpath expr="//h3" position="replace">
+            <h3 class="text-left mb-2"><b>50,000 pre-orders</b> already registered.</h3>
+        </xpath>
+        <xpath expr="//p" position="replace">
+            <p class="text-left">Join the early joiners or request for a trial on track.</p>
+        </xpath>
+        <xpath expr="//a" position="attributes">
+            <attribute name="class" remove="btn-lg" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- ======== PICTURE ======== -->
+    <template id="s_picture" inherit_id="website.s_picture" name="Vehicle s_picture">
+    <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt0 pb0" remove="pt48 pb24" separator=" "/>
+        </xpath>
+        <!-- Layout -->
+        <xpath expr="//div[hasclass('container')]" position="replace">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 oe_img_bg o_bg_img_center text-center d-flex flex-column" style="height:850px; background-image: url(/web/image/website.s_picture_default_image);" >
+                        <div class="o_we_bg_filter" style="background-color: rgba(40,40,40,0.50)"></div>
+                        <div class="pt40 d-flex flex-column flex-grow-1">
+                            <h2 class="text-o-color-3">View the all-new KORAN in 3D wherever you are<br/></h2>
+                            <p class="text-o-color-3">Bring the KORAN to life on your smartphone or tablet so you can visualise it for yourself.<br/></p>
+                        </div>
+                        <div class="pb40 d-flex justify-content-center align-items-end">
+                            <span class="text-o-color-3">Our uniquely designed LED headlights are not only gorgeous but powerfully light your way.<br/></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- ======== THREE COLUMNS ======== -->
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc3 pt48 pb48" remove="o_cc o_cc2 pt32 pb32 bg-200" separator=" "/>
+        </xpath>
+        <!-- Card -->
+        <xpath expr="(//div[hasclass('card')])[1]" position="attributes">
+            <attribute name="class" add="border-0 " separator=" "/>
+            <attribute name="style">box-shadow: rgba(0, 0, 0, 0.20) 0px 4px 16px 0px !important;</attribute>
+        </xpath>
+        
+        <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+            <attribute name="class" add="border-0" separator=" "/>
+            <attribute name="style">box-shadow: rgba(0, 0, 0, 0.20) 0px 4px 16px 0px !important;</attribute>
+        </xpath>
+        <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+            <attribute name="class" add="border-0" separator=" "/>
+            <attribute name="style">box-shadow: rgba(0, 0, 0, 0.20) 0px 4px 16px 0px !important;</attribute>
+        </xpath>
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('card-body')]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Koran Mini</h3>
+                <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit est bibendum sollicitudin vestibulum. </p>
+                <span class="card-text lead font-weight-bold d-inline-block mb-4">From $14,000</span>
+                <a href="#" class="btn btn-primary btn-block mb-0 o_cc o_cc4">Configure</a>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Koran GT</h3>
+                <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit est bibendum sollicitudin vestibulum. </p>
+                <span class="card-text lead font-weight-bold d-inline-block mb-4">From $19,000</span>
+                <a href="#" class="btn btn-primary btn-block mb-0 o_cc o_cc4">Configure</a>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
+            <div class="card-body">
+                <h3 class="card-title">Koran EQ</h3>
+                <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit est bibendum sollicitudin vestibulum. </p>
+                <span class="card-text lead font-weight-bold d-inline-block mb-4">From $25,000</span>
+                <a href="#" class="btn btn-primary btn-block mb-0 o_cc o_cc4">Configure</a>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- ======== FEATURES ======== -->
+    <template id="s_features" inherit_id="website.s_features">
+    <!-- Left block -->
+        <!-- Icon -->
+        <xpath expr="//div[hasclass('row')]//div//i" position="attributes">
+            <attribute name="class" add="fa-battery-full" remove="fa-gear" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]//div//h3" position="replace">
+            <h3>Top Speed</h3>
+        </xpath>
+    <!-- Center block -->
+        <!-- Icon -->
+        <xpath expr="//div[hasclass('row')]//div[2]//i" position="attributes">
+            <attribute name="class" add="fa-automobile" remove="fa-photo" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]//div[2]//h3" position="replace">
+            <h3>Long Range</h3>
+        </xpath>
+    <!-- Right block -->
+        <!-- Icon -->
+        <xpath expr="//div[hasclass('row')]//div[3]//i" position="attributes">
+            <attribute name="class" add="fa-cog" remove="fa-leaf" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]//div[3]//h3" position="replace">
+            <h3>Dual Motor</h3>
+        </xpath>
+    </template>
+
+    <!-- ======== FEATURES GRID ======== -->
+    <template id="s_features_grid" inherit_id="website.s_features_grid">
+        <!-- Left Title -->
+        <xpath expr="//h2" position="replace">
+            <h2>Your advantages</h2>
+        </xpath>
+        <!-- Right Title -->
+        <xpath expr="(//h2)[2]" position="replace">
+            <h2>Our web store</h2>
+        </xpath>
+        <!-- Item #1 -->
+        <xpath expr="//i" position="attributes">
+            <attribute name="class" add="rounded-0 bg-o-color-3 text-o-color-1" remove="rounded-circle bg-primary" separator=" "/>
+        </xpath>
+        <!-- Item #2 -->
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="rounded-0 bg-o-color-3 text-o-color-1" remove="rounded-circle bg-primary" separator=" "/>
+        </xpath>
+         <!-- Item #3 -->
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="rounded-0 bg-o-color-3 text-o-color-1" remove="rounded-circle bg-primary" separator=" "/>
+        </xpath>
+        <!-- Item #4 -->
+        <xpath expr="(//i)[4]" position="attributes">
+            <attribute name="class" add="rounded-0 bg-o-color-3 text-o-color-2" remove="rounded bg-secondary" separator=" "/>
+        </xpath>
+        <!-- Item #5 -->
+        <xpath expr="(//i)[5]" position="attributes">
+            <attribute name="class" add="rounded-0 bg-o-color-3 text-o-color-2" remove="rounded bg-secondary" separator=" "/>
+        </xpath>
+        <!-- Item #6 -->
+        <xpath expr="(//i)[6]" position="attributes">
+            <attribute name="class" add="rounded-0 bg-o-color-3 text-o-color-2" remove="rounded bg-secondary" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- ======== FEATURES GRID ======== -->
+    <template id="s_product_list" inherit_id="website.s_product_list">
+        <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)" position="replace">
+            <a t-att-href="url" class="btn btn-primary">Brakes #1</a>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[2]" position="replace">
+            <a t-att-href="url" class="btn btn-primary">Brakes #2</a>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[3]" position="replace">
+            <a t-att-href="url" class="btn btn-primary">Brakes #3</a>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[4]" position="replace">
+            <a t-att-href="url" class="btn btn-primary">Brakes #4</a>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[5]" position="replace">
+            <a t-att-href="url" class="btn btn-primary">Brakes #5</a>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[6]" position="replace">
+            <a t-att-href="url" class="btn btn-primary">Brakes #6</a>
+        </xpath>
+    </template>
 
 </odoo>

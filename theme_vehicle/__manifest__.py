@@ -14,7 +14,7 @@
     ],
     'images': [
         'static/description/vehicle_description.png',
-        'static/description/vehicle_screenshot.jpeg',
+        'static/description/vehicle_screenshot.png',
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-vehicle.odoo.com',
