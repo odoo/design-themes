@@ -54,12 +54,14 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (40 / 16);
-$o-theme-h2-font-size-multiplier: (32 / 16);
+$o-theme-h1-font-size-multiplier: (62 / 16);
+$o-theme-h2-font-size-multiplier: (36 / 16);
 $o-theme-h3-font-size-multiplier: (28 / 16);
 $o-theme-h4-font-size-multiplier: (24 / 16);
 $o-theme-h5-font-size-multiplier: (20 / 16);
 $o-theme-h6-font-size-multiplier: 1;
+
+$o-theme-headings-font-weight: 700;
 
 $o-theme-font-configs: (
     'Cuprum': (
@@ -105,6 +107,10 @@ $o-theme-font-configs: (
         'family': ('Lobster', cursive),
         'url': 'Lobster:300,300i,400,400i,700,700i',
     ),
+    'Montserrat': (
+        'family': ('Montserrat', sans-serif),
+        'url': 'Montserrat:300,300i,400,400i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -114,18 +120,16 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'notes-1',
-        'header-font-size': 1.25rem,
+        'header-font-size': 1rem,
         'logo-height': 3rem,
         'fixed-logo-height': 3rem,
         'font': 'Oxygen',
-        'headings-font': 'Lobster',
-        'navbar-font': 'Lobster',
-        'buttons-font': 'Lobster',
+        'headings-font': 'Montserrat',
+        'navbar-font': 'Montserrat',
+        'buttons-font': 'Montserrat',
         'link-underline': 'never',
-        'header-template': 'hamburger-full',
+        'header-template': 'template_header_default',
         'footer-template': 'descriptive',
-        'hamburger-position': 'right',
-        'hamburger-type': 'off-canvas',
     ),
 );
 
@@ -168,6 +172,14 @@ $o-theme-color-palettes-compatibility-indexes: (
 // Shapes
 //------------------------------------------------------------------------------
 
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/10', (1: 5, 2: 5));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/13_001', (1: 5));
+$o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Wavy/13_001', (1: 'footer'));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/25', (1: 5, 2: 5));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Wavy/25', 'second', (1: 2, 2: 2));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Wavy/25', 'third', (1: 3, 2: 3));
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Blobs/04', (5: 4));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Blobs/01', (2: 5));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Blobs/01_001', (2: 5));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Blobs/01', (2: 2));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Blobs/01_001', (2: 2));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/08', (5: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/12', (5: 4));
