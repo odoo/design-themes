@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/08","flip":["x","y"]}</attribute>
+    </xpath>
+    <!-- Filter & Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_bg_filter bg-black-75"/>
+        <div class="o_we_shape o_web_editor_Floats_08 o_we_flip_x o_we_flip_y"/>
+    </xpath>
+    <!-- Jumbotron -->
+    <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Enjoy the atmosphere
+    </xpath>
+    <!-- Add space between title and paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="before">
+        <p><br/></p>
+    </xpath>
+</template>
+
+</odoo>
