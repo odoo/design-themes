@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_comparisons" inherit_id="website.s_comparisons">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/05","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Floats_05"/>
+        </xpath>
+        <!-- Left card : title -->
+        <xpath expr="//h4[hasclass('card-header')]" position="replace">
+            <h4 class="card-header">Regular</h4>
+        </xpath>
+        <!-- Left card : list items -->
+        <xpath expr="//ul[hasclass('list-group')]" position="replace">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Book your tickets in advance</li>
+                <li class="list-group-item">Free parking</li>
+                <li class="list-group-item"><span class="text-400">VIP Area</span></li>
+                <li class="list-group-item"><span class="text-400">Access to Backstage</span></li>
+            </ul>
+        </xpath>
+        <!-- Left card : footer -->
+        <xpath expr="//div[hasclass('card-footer')]" position="replace">
+            <div class="card-footer">
+                <p><i>Satisfied or reimbursed.</i></p>
+                <a href="/contactus" class="btn btn-primary mb-2">Order now</a>
+            </div>
+        </xpath>
+        <!-- Middle card : title -->
+        <xpath expr="(//h4[hasclass('card-header')])[2]" position="replace">
+            <h4 class="card-header">Premium</h4>
+        </xpath>
+        <!-- Middle card : list items -->
+        <xpath expr="(//ul[hasclass('list-group')])[2]" position="replace">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Book your tickets in advance</li>
+                <li class="list-group-item">Free parking</li>
+                <li class="list-group-item">VIP Area</li>
+                <li class="list-group-item"><span class="text-400">Access to Backstage</span></li>
+            </ul>
+        </xpath>
+        <!-- Middle card : footer -->
+        <xpath expr="(//div[hasclass('card-footer')])[2]" position="replace">
+            <div class="card-footer">
+                <p><i>Satisfied or reimbursed.</i></p>
+                <a href="/contactus" class="btn btn-primary mb-2">Start now</a>
+            </div>
+        </xpath>
+        <!-- Right card : title -->
+        <xpath expr="(//h4[hasclass('card-header')])[3]" position="replace">
+            <h4 class="card-header">Full package</h4>
+        </xpath>
+        <!-- Right card : list items -->
+        <xpath expr="(//ul[hasclass('list-group')])[3]" position="replace">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Book your tickets in advance</li>
+                <li class="list-group-item">Free parking</li>
+                <li class="list-group-item">VIP Area</li>
+                <li class="list-group-item">Access to Backstage</li>
+            </ul>
+        </xpath>
+        <!-- Right card : footer -->
+        <xpath expr="(//div[hasclass('card-footer')])[3]" position="replace">
+            <div class="card-footer">
+                <p><i>Satisfied or reimbursed.</i></p>
+                <a href="/contactus" class="btn btn-primary mb-2">Contact us</a>
+            </div>
+        </xpath>
+    </template>
+</odoo>

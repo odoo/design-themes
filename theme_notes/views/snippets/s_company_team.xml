@@ -3,16 +3,12 @@
     <template id="s_company_team" inherit_id="website.s_company_team">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt144 o_cc o_cc5" remove="pt48" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/08","flip":["x","y"]}</attribute>
+            <attribute name="class" add="o_cc2 pb128" remove="pb48" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13_001","flip":[]}</attribute>
         </xpath>
         <!-- Shape -->
         <xpath expr="//div[hasclass('container')]" position="before">
-            <div class="o_we_shape o_web_editor_Blobs_08 o_we_flip_x o_we_flip_y"/>
-        </xpath>
-        <!-- Title -->
-        <xpath expr="//div[hasclass('row')]" position="before">
-            <h2 class="text-center"><font style="font-size: 62px;">Line Up</font></h2>
+            <div class="o_we_shape o_web_editor_Wavy_13_001"/>
         </xpath>
         <!-- Paragraph 1 -->
         <xpath expr="//div[hasclass('col-lg-8')]" position="replace">
@@ -25,7 +21,7 @@
         <xpath expr="(//div[hasclass('col-lg-8')])[2]" position="replace">
             <div class="col-lg-8">
                 <h4>Aline</h4>
-                <p>Aline, is a French singer, songwriter and producer. In 2016, she was ranked as the most powerful and influential French person by Vanity Fair, who noticed her "radiance of French genius</p>
+                <p>Aline, is a French singer, songwriter and producer. In 2016, she was ranked as the most powerful and influential French person by Vanity Fair, who noticed her "radiance of French genius.</p>
             </div>
         </xpath>
         <!-- Paragraph 3 -->
@@ -39,7 +35,7 @@
         <xpath expr="(//div[hasclass('col-lg-8')])[4]" position="replace">
             <div class="col-lg-8">
                 <h4>Joseris</h4>
-                <p>Joseris is a Belgian band that formed in October 1995. Though originally categorised as a trip hop group, they quickly expanded their sound to the point where they could no longer be described as a lone genre, but rather encompass alternative, electronica, electro-pop, rock, and a mixture of others</p>
+                <p>Joseris is a Belgian band that formed in October 1995. Though originally categorised as a trip hop group, they quickly expanded their sound to the point where they could no longer be described as a lone genre, but rather encompass alternative, electronica, electro-pop, rock, and a mixture of others.</p>
             </div>
         </xpath>
     </template>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_three_columns" inherit_id="website.s_three_columns">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_background_video pt104 pb104" remove="pt32 pb32" separator=" "/>
+            <attribute name="data-bg-video-src">//player.vimeo.com/video/543809400?autoplay=1&amp;muted=1&amp;loop=1</attribute>
+            <attribute name="style">background-image: url('/web/image/website.s_three_columns_default_image');</attribute>
+        </xpath>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_bg_filter bg-black-50"/>
+        </xpath>
+        <!-- Card #1 -->
+        <xpath expr="//div[hasclass('card')]" position="attributes">
+            <attribute name="style">border-width: 0px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 16px 0px !important;</attribute>
+        </xpath>
+        <!-- Card #1 - Title -->
+        <xpath expr="//h3" position="replace">
+            <h3 class="card-title">The scenes</h3>
+        </xpath>
+        <!-- Card #1 - Button -->
+        <xpath expr="//p[hasclass('card-text')]" position="after">
+            <a href="#0" class="btn btn-primary btn-sm">More details</a>
+        </xpath>
+        <!-- Card #2 -->
+        <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+            <attribute name="style">border-width: 0px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 16px 0px !important;</attribute>
+        </xpath>
+        <!-- Card #2 - Title -->
+        <xpath expr="(//h3)[2]" position="replace">
+            <h3 class="card-title">The artists</h3>
+        </xpath>
+        <!-- Card #2 - Button -->
+        <xpath expr="(//p[hasclass('card-text')])[2]" position="after">
+            <a href="#0" class="btn btn-primary btn-sm">More details</a>
+        </xpath>
+        <!-- Card #3 -->
+        <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+            <attribute name="style">border-width: 0px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 16px 0px !important;</attribute>
+        </xpath>
+        <!-- Card #3 - Title -->
+        <xpath expr="(//h3)[3]" position="replace">
+            <h3 class="card-title">Our partners</h3>
+        </xpath>
+        <!-- Card #3 - Button -->
+        <xpath expr="(//p[hasclass('card-text')])[3]" position="after">
+            <a href="#0" class="btn btn-primary btn-sm">More details</a>
+        </xpath>
+    </template>
+</odoo>
