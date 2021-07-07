@@ -52,7 +52,7 @@
     <xpath expr="//p[2]" position="replace">
         <p class="text-o-color-3">
             <a href="#" class="btn btn-lg btn-primary mb-2">START NOW</a>&#160;&#160;&#160;&#160;
-            <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary mb-2"><t t-esc="cta_btn_text.upper()">SCHEDULE A DEMO</t></a>
+            <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary mb-2"><t t-esc="cta_btn_text and cta_btn_text.upper()">SCHEDULE A DEMO</t></a>
         </p>
     </xpath>
 
