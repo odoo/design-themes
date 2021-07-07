@@ -10,7 +10,7 @@
     </xpath>
 </template>
 
-<template id="header_button" inherit_id="website.template_header_default_oe_structure_header_default_1" name="Paptic Header Button">
+<template id="header_button" inherit_id="website.header_call_to_action" name="Paptic Header Button">
     <xpath expr="//a[hasclass('btn')]" position="attributes">
         <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
     </xpath>
