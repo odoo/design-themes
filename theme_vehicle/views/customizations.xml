@@ -10,7 +10,7 @@
         <font style="font-size: 62px;font-weight: bold;">Start the Engine</font>
     </xpath>
     <xpath expr="//a[hasclass('btn')]" position="replace">
-        <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg mb-2"><t t-esc="cta_btn_text.upper()">START THE ENGINE</t></a>
+        <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg mb-2"><t t-esc="cta_btn_text and cta_btn_text.upper()">START THE ENGINE</t></a>
     </xpath>
 </template>
 
