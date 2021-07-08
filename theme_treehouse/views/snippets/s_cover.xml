@@ -3,17 +3,18 @@
     <template id="s_cover" inherit_id="website.s_cover">
         <!-- Section -->
         <xpath expr="section" position="attributes">
-            <attribute name="class" add="pt128 pb128" remove="pt96 pb96" separator=" "/>
+            <attribute name="class" add="pt160 pb160" remove="pt96 pb96" separator=" "/>
         </xpath>
         <!-- Title -->
         <xpath expr="//h1" position="replace">
+            <i class="fa fa-2x fa-bug d-block my-3 mx-auto rounded-circle bg-o-color-4 text-o-color-1"/>
             <h1 style="text-align: center;">
-                <font style="font-size: 62px;"><b>Life on Earth</b></font>
+                <font style="font-size: 62px;"><b>— Life on Earth —</b></font>
             </h1>
         </xpath>
         <!-- Paragraphs -->
         <xpath expr="//p" position="replace">
-            <p class="lead" style="text-align: center;">Our mission is to create a shared plan for saving the planet’s most exceptional wild places.</p>
+            <p class="lead" style="text-align: center;">Our mission is to create a shared plan<br/> for saving the planet’s most exceptional wild places.</p>
             <p class="lead" style="text-align: center;"><br/></p>
         </xpath>
         <!-- Button -->

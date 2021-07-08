@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_picture" inherit_id="website.s_picture">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" remove="o_cc o_cc2" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;">
+                Working Together
+            </h2>
+        </xpath>
+        <!-- Image + Shape -->
+        <xpath expr="//img" position="attributes">
+            <attribute name="class" add="img-fluid" remove="img-thumbnail padding-large" separator=" "/>
+            <attribute name="src">/theme_treehouse/static/src/img/backgrounds/01.jpg</attribute>
+            <attribute name="data-original-src">/theme_treehouse/static/src/img/backgrounds/01.jpg</attribute>
+            <attribute name="data-mimetype">image/svg+xml</attribute>
+            <attribute name="data-shape">web_editor/special/spl_filter_1</attribute>
+            <attribute name="data-shape-colors">;#046380;;;</attribute>
+            <attribute name="data-original-mimetype">image/jpeg</attribute>
+        </xpath>
+    </template>
+</odoo>

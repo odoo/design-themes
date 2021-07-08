@@ -3,7 +3,11 @@
     <template id="s_call_to_action" inherit_id="website.s_call_to_action">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt64 pb48" remove="pt48 pb24 bg-200" separator=" "/>
+            <attribute name="class" add="pt80 pb48" remove="pt48 pb24 bg-200" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/08_001"}</attribute>
+        </xpath>
+        <xpath expr="//section/*" position="before">
+            <div class="o_we_shape o_web_editor_Rainy_08_001"/>
         </xpath>
         <!-- Column #01 -->
         <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
