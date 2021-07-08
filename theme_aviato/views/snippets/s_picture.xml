@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_picture" inherit_id="website.s_picture">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="bg-o-color-3 pt72 overflow-hidden" remove="bg-200 pt48" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["y"]}</attribute>
+        </xpath>
+
+        <xpath expr="//section/div" position="before">
+            <div class="o_we_shape o_web_editor_Bold_01 o_we_flip_y"/>
+        </xpath>
+
+        <xpath expr="//div[hasclass('container')]" position="attributes">
+            <attribute name="class" add="container-fluid px-5 px-lg-0" remove="container" separator=" "/>
+        </xpath>
+
+        <xpath expr="//h2" position="replace"/>
+        <xpath expr="//p" position="replace"/>
+        <xpath expr="//p" position="replace"/>
+
+        <xpath expr="//img" position="attributes">
+            <attribute name="class" add="img-fluid rounded shadow-lg" remove="img-thumbnail padding-large" separator=" "/>
+        </xpath>
+
+        <xpath expr="//figcaption" position="replace">
+            <figcaption class="text-400"><em>Our office in New York</em></figcaption>
+        </xpath>
+
+        <xpath expr="//div[hasclass('row')]/div" position="before">
+            <div class="col-lg offset-lg-2">
+                <h2>Our Travel Agencies</h2>
+                <p/>
+                <div class="row">
+                    <div class="col-lg-6 pt24 bg-white-75">
+                        <h5>Dubai</h5>
+                        <p>10 39th St - Al Karama</p>
+                        <p>+971 4 342 1112</p>
+                        <br/>
+                        <h5>Hong Kong</h5>
+                        <p>149 Queen's Road Central</p>
+                        <p>+852 2810 7588</p>
+                    </div>
+                    <div class="col-lg-6 pt24 bg-white-75">
+                        <h5>Roma</h5>
+                        <p>Via Luigi Galvani, 2, 00183</p>
+                        <p>+39 06 9028 6086</p>
+                        <br/>
+                        <h5>New York</h5>
+                        <p>1633 Broadway 35th floor</p>
+                        <p>+1 212-339-2957</p>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[hasclass('offset-lg-1')]" position="attributes">
+            <attribute name="class" add="col-lg-6 px-0" remove="col-lg-10" separator=" "/>
+            <attribute name="style" remove="text-align: center;" separator=";"/>
+        </xpath>
+    </template>
+</odoo>

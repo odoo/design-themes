@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_text_image" inherit_id="website.s_text_image">
+        <!-- Section -->
+        <xpath  expr="//div[hasclass('container')]" position="attributes">
+            <attribute name="class" add="container-fluid" remove="container" separator=" "/>
+        </xpath>
+
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2>What we can do, <b>for you</b></h2>
+            <p><br/></p>
+        </xpath>
+
+        <!-- Paragraph -->
+        <xpath expr="//p[1]" position="replace">
+            <p>Our team travels widely the globe to bring our clients first-hand knowledge of upcoming destinations, new "hot" hotels and ships, local restaurants, neighborhood hangouts, bars, pubs, the best. beaches and places to visit and not to see.</p>
+        </xpath>
+        <xpath expr="//p[2]" position="replace">
+            <p><br/></p>
+        </xpath>
+        <xpath expr="//p[3]" position="replace">
+        </xpath>
+
+        <!-- layout -->
+        <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
+            <attribute name="class" add="col-lg-4 offset-lg-2" remove="col-lg-6" separator=" "/>
+        </xpath>
+
+        <!-- Image -->
+        <xpath expr="//img" position="attributes">
+            <attribute name="class" add="w-75" separator=" "/>
+            <attribute name="src">/web_editor/shape/theme_aviato/s_text_image.svg?c1=%23d46926</attribute>
+        </xpath>
+
+        <!-- button -->
+
+        <xpath expr="//a" position="attributes">
+            <attribute name="class" add="btn-secondary btn-lg" remove="btn-primary" separator=" "/>
+        </xpath>
+    </template>
+
+</odoo>

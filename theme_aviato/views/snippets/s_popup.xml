@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_popup" inherit_id="website.s_popup">
+        <!-- Text -->
+        <xpath  expr="//div[hasclass('jumbotron')]" position="replace">
+            <div class="col-lg-10 offset-lg-1 text-center o_cc o_cc1 jumbotron rounded pt48 pb48">
+                <h2><font style="font-size: 62px;">Win $200</font></h2>
+                <p class="lead">Check out now and get $200 off your first booking.</p>
+                <a href="#" class="btn btn-primary mb-2">Travel Now</a>
+            </div>
+        </xpath>
+</template>
+</odoo>
