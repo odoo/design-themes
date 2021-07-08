@@ -53,10 +53,8 @@ var WebsiteAnimate = {
                 var state     = $el.css("animation-play-state");
 
                 // We need to offset for the change in position from some animation
-                // So we get the top value of the transform matrix
-                var transformMatrix = $el.css('transform').replace(/[^0-9\-.,]/g, '').split(',');
-                var transformOffset = transformMatrix[13] || transformMatrix[5];
-                var elTop = $el.offset().top - transformOffset;
+                // So we get the top value by not taking CSS transforms into calculations
+                var elTop = self.getElementOffsetTop($el[0]);
 
                 var visible = windowBottom > (elTop + elOffset) && windowTop < (elTop + elHeight - elOffset);
 
@@ -104,6 +102,20 @@ var WebsiteAnimate = {
                 $(window).trigger("resize");
             });
         });
+    },
+
+    // Get element top offset by not taking CSS transforms into calculations
+    getElementOffsetTop: function (el) {
+        var top = 0;
+        var element = el;
+      
+        // Loop through the DOM tree and add its parent's offset to get page offset
+        do {
+          top += element.offsetTop || 0;
+          element = element.offsetParent;
+        } while (element);
+      
+        return top;
     },
 };
 
