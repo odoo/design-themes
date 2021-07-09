@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_numbers" inherit_id="website.s_numbers">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc4 pt96 pb96" remove="o_cc2 pt24 pb24" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/02_001","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Zigs_02_001"/>
+        </xpath>
+        <!-- Container -->
+        <xpath expr="//div[hasclass('container')]" position="attributes">
+            <attribute name="class" add="o_container_small" remove="container" separator=" "/>
+        </xpath>
+        <!-- Number #01 -->
+        <xpath expr="//span[hasclass('s_number')]" position="replace">
+            <span class="s_number display-4" style="font-size: 62px;"><b>12</b></span>
+        </xpath>
+        <!-- Number #02 -->
+        <xpath expr="(//span[hasclass('s_number')])[2]" position="replace">
+            <span class="s_number display-4" style="font-size: 62px;"><b>45</b></span>
+        </xpath>
+        <!-- Number #03 -->
+        <xpath expr="(//span[hasclass('s_number')])[3]" position="replace">
+            <span class="s_number display-4" style="font-size: 62px;"><b>8</b></span>
+        </xpath>
+        <!-- Number #04 -->
+        <xpath expr="(//span[hasclass('s_number')])[4]" position="replace">
+            <span class="s_number display-4" style="font-size: 62px;"><b>37</b></span>
+        </xpath>
+    </template>
+</odoo>

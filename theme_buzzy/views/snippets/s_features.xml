@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_features" inherit_id="website.s_features">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc5" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/09_001","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Rainy_09_001"/>
+        </xpath>
+    <!-- Feature #01 -->
+        <!-- Icon -->
+        <xpath expr="//div[hasclass('row')]//div//i" position="attributes">
+            <attribute name="class" add="fa-shield" remove="fa-gear" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]//div//h3" position="replace">
+            <h3>Built to <br/>your effigy</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('row')]//div//p" position="replace">
+            <p>You will always find the ideal choice adapted to your needs.</p>
+        </xpath>
+    <!-- Feature #02 -->
+        <!-- Icon -->
+        <xpath expr="//div[hasclass('row')]//div[2]//i" position="attributes">
+            <attribute name="class" add="bg-o-color-1 fa-pencil" remove="fa-photo bg-o-color-5" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]//div[2]//h3" position="replace">
+            <h3>Editable from <br/>A to Z</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('row')]//div[2]//p" position="replace">
+            <p>Feel free to edit your content the way like you want.</p>
+        </xpath>
+    <!-- Feature #03 -->
+        <!-- Icon -->
+        <xpath expr="//div[hasclass('row')]//div[3]//i" position="attributes">
+            <attribute name="class" add="bg-o-color-1 fa-line-chart" remove="bg-secondary fa-leaf" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('row')]//div[3]//h3" position="replace">
+            <h3>All data <br/>on your hands</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('row')]//div[3]//p" position="replace">
+            <p>Don't miss any data anymore and get all reports you need.</p>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_media_list" inherit_id="website.s_media_list">   
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="bg-o-color-3" remove="bg-200" separator=" "/>
+        </xpath>
+    <!-- Media item #01 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('s_media_list_item')]/div" position="attributes">
+            <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+        </xpath>
+        <!-- Img -->
+        <xpath expr="//div[hasclass('s_media_list_item')]//img" position="attributes">
+            <attribute name="class" add="padding-xl" separator=" "/>
+            <!-- Enable SVG dynamic color functionality -->
+            <attribute name="src">/web_editor/shape/theme_buzzy/s_media_list-01.svg?c1=%23637BBE</attribute>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('s_media_list_item')]//h3" position="replace">
+            <h3>Increase your teamwork</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('s_media_list_item')]//p" position="replace">
+            <p>Good project needs good management and a good collaboration between your teammates. With our tools you can coordinate your team tasks so everyone knows who's doing what.</p>
+        </xpath>
+    <!-- Media item #02 -->
+        <!-- Main div -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[2]/div" position="attributes">
+            <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
+        </xpath>
+        <!-- Img -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[2]//img" position="attributes">
+            <attribute name="class" add="padding-xl" separator=" "/>
+            <!-- Enable SVG dynamic color functionality -->
+            <attribute name="src">/web_editor/shape/theme_buzzy/s_media_list-02.svg?c1=%23637BBE</attribute>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[2]//h3"  position="replace">
+            <h3>Events manager</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[2]//p" position="replace">
+            <p>Create your own events so speakers from all over the world will join our experts to give inspiring talks on various topics. Stay on top of the latest business management trends &amp; technologies</p>
+        </xpath>
+    <!-- Media item #03 -->
+        <!-- Main div -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[3]/div" position="attributes">
+            <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+        </xpath>
+        <!-- Img -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[3]//img" position="attributes">
+            <attribute name="class" add="padding-xl" separator=" "/>
+            <!-- Enable SVG dynamic color functionality -->
+            <attribute name="src">/web_editor/shape/theme_buzzy/s_media_list-03.svg?c1=%23637BBE</attribute>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[3]//h3" position="replace">
+            <h3>All data on your hands</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[3]//p" position="replace">
+            <p>Don't miss any data anymore and get all reports you need when and where you want. Analyze them easily with our friendly interface and grow your activity.</p>
+        </xpath>
+    </template>
+</odoo>

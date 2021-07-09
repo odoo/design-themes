@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_carousel" inherit_id="website.s_carousel">
+    <!-- Carousel-item #01 -->
+        <!-- Title -->
+        <xpath expr="//div[hasclass('carousel-item')]//h2" position="replace">
+            <h2><span style="font-size: 62px;">Increase your productivity</span></h2>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('carousel-item')]//p" position="replace">
+            <p class="lead">Bring the best for your team, start the journey with our amazing tools.</p>
+        </xpath>
+    <!-- Carousel-item #02 -->
+        <!-- Title -->
+        <xpath expr="//div[hasclass('carousel-item')][2]//h2" position="replace">
+            <h2><span style="font-size: 62px;">Boost your activity</span></h2>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('carousel-item')][2]//p" position="replace">
+            <p class="lead">Every clever company deserve to work with clever tools.</p>
+        </xpath>
+    <!-- Carousel-item #03 -->
+        <!-- Title -->
+        <xpath expr="//div[hasclass('carousel-item')][3]//h2" position="replace">
+            <h2><span class="bg-white" style="font-size: 62px;">Improve your efficiency</span></h2>
+        </xpath>
+        <!-- Subtitle -->
+        <xpath expr="//div[hasclass('carousel-item')][3]//h4" position="replace"/>
+        <!-- Last paragraph -->
+        <xpath expr="//div[hasclass('carousel-item')][3]//p[last()]" position="replace">
+            <p>There is no magic, it's time to get the tools you deserve.</p>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-item')][3]//p[last()]" position="attributes">
+            <attribute name="class" add="text-o-color-4" separator=" "/>
+        </xpath>
+    </template>
+</odoo>

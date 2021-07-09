@@ -20,6 +20,7 @@
         'theme_bewise',
         'theme_bistro',
         'theme_bookstore',
+        'theme_buzzy',
         'theme_clean',
         'theme_cobalt',
         'theme_enark',
