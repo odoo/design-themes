@@ -117,6 +117,20 @@ publicWidget.registry.WebsiteAnimate = publicWidget.Widget.extend({
 
         return this._super.apply(this, arguments);
     },
+    /**
+     * @override
+     */
+    destroy: function () {
+        this._super.apply(this, arguments);
+        // Clean elements
+        this.$target.find('.o_animate').removeClass('o_animating o_animated o_animate_preview o_visible')
+                    .css({
+                        'animation': '',
+                        'animation-name': '',
+                        'animation-play-state': '',
+                        'visibility': '',
+                    });
+    },
 });
 
 // Backward compatibility for enark animation system
