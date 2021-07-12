@@ -23,6 +23,20 @@ var WebsiteAnimate = {
             self.attach_handlers();
         });
     },
+    /**
+     * @override
+     */
+     destroy: function () {
+        this._super.apply(this, arguments);
+        // Clean elements
+        this.$target.find('.o_animate').removeClass('o_animating o_animated o_animate_preview o_visible')
+                    .css({
+                        'animation': '',
+                        'animation-name': '',
+                        'animation-play-state': '',
+                        'visibility': '',
+                    });
+    },
 
     // Bind events and define the scrolling function
     attach_handlers: function () {
