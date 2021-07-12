@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_media_list" inherit_id="website.s_media_list">
+        <!-- Media List Item #1 -->
+        <xpath expr="//div[hasclass('s_media_list_item')]//div[hasclass('row')]" position="attributes">
+            <attribute name="style">border-radius: 3px !important; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 5px 0px !important;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('s_media_list_item')]//div[hasclass('s_media_list_img_wrapper')]" position="attributes">
+            <attribute name="class" remove="col-lg-4" add="col-lg-6" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('s_media_list_item')]//div[hasclass('s_media_list_body')]" position="attributes">
+            <attribute name="class" remove="col-lg-8" add="col-lg-6" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('s_media_list_item')]//h3" position="replace">
+            <h3>Chairs &amp; stools</h3>
+        </xpath>
+        <!-- Media List Item #2 -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[2]//div[hasclass('row')]" position="attributes">
+            <attribute name="class" add="flex-row-reverse" separator=" "/>
+            <attribute name="style">border-radius: 3px !important; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 5px 0px !important;</attribute>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_media_list_item')])[2]//div[hasclass('s_media_list_img_wrapper')]" position="attributes">
+            <attribute name="class" remove="col-lg-4" add="col-lg-6" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_media_list_item')])[2]//div[hasclass('s_media_list_body')]" position="attributes">
+            <attribute name="class" remove="col-lg-8" add="col-lg-6" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_media_list_item')])[2]//h3" position="replace">
+            <h3>Sofas &amp; armchairs</h3>
+        </xpath>
+        <!-- Media List Item #3 -->
+        <xpath expr="(//div[hasclass('s_media_list_item')])[3]//div[hasclass('row')]" position="attributes">
+            <attribute name="style">border-radius: 3px !important; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 5px 0px !important;</attribute>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_media_list_item')])[3]//div[hasclass('s_media_list_img_wrapper')]" position="attributes">
+            <attribute name="class" remove="col-lg-4" add="col-lg-6" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_media_list_item')])[3]//div[hasclass('s_media_list_body')]" position="attributes">
+            <attribute name="class" remove="col-lg-8" add="col-lg-6" separator=" "/>
+        </xpath>
+        <xpath expr="(//div[hasclass('s_media_list_item')])[3]//h3" position="replace">
+            <h3>Tables &amp; bars</h3>
+        </xpath>
+    </template>
+</odoo>

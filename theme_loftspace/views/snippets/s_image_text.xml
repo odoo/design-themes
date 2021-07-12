@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_image_text" inherit_id="website.s_image_text">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt64 pb64" remove="pt32 pb32" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/10","flip":["x"]}</attribute>
+        </xpath>
+        <!-- Add shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Airy_10 o_we_flip_x"/>
+        </xpath>
+        <!-- Img -->
+        <xpath expr="//div[hasclass('row')]//div" position="attributes">
+            <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
+        </xpath>
+        <!-- Column text -->
+        <xpath expr="//div[hasclass('row')]//div[2]" position="attributes">
+            <attribute name="class" add="offset-lg-1" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2>Custom manufacturing</h2>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace">
+            <p>We're working with young and innovative designers who use noble and durable materials. Thus, we can offer you unique pieces that will brighten up your interior.</p>
+        </xpath>
+        <xpath expr="//p[2]" position="replace">
+            <p><br/></p>
+        </xpath>
+    </template>
+</odoo>

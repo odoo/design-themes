@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_features_grid" inherit_id="website.s_features_grid">
+        <!-- Item #1 -->
+        <xpath expr="//i" position="attributes">
+            <attribute name="class" add="text-o-color-4 fa-leaf" remove="fa-font-awesome" separator=" "/>
+        </xpath>
+        <xpath expr="//h4" position="replace">
+            <h4>Respecting nature</h4>
+        </xpath>
+        <!-- Item #2 -->
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="bg-o-color-2 fa-star-o" remove="bg-primary fa-files-o" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[2]" position="replace">
+            <h4>Guarantee of quality</h4>
+        </xpath>
+        <!-- Item #3 -->
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="text-o-color-4 fa-heart" remove="fa-trash" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[3]" position="replace">
+            <h4>Made with love</h4>
+        </xpath>
+        <!-- Item #4 -->
+        <xpath expr="(//i)[4]" position="attributes">
+            <attribute name="class" add="rounded-circle fa-cube" remove="rounded fa-magic" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[4]" position="replace">
+            <h4>Free returns</h4>
+        </xpath>
+        <!-- Item #5 -->
+        <xpath expr="(//i)[5]" position="attributes">
+            <attribute name="class" add="rounded-circle fa-shopping-basket bg-o-color-1 text-o-color-4" remove="rounded fa-eyedropper bg-secondary" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[5]" position="replace">
+            <h4>Pickup in store</h4>
+        </xpath>
+        <!-- Item #6 -->
+        <xpath expr="(//i)[6]" position="attributes">
+            <attribute name="class" add="rounded-circle fa-truck" remove="rounded fa-picture-o" separator=" "/>
+        </xpath>
+        <xpath expr="(//h4)[6]" position="replace">
+            <h4>Express delivery</h4>
+        </xpath>
+    </template>
+</odoo>

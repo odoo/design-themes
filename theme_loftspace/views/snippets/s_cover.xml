@@ -2,13 +2,13 @@
 <odoo>
     <template id="s_cover" inherit_id="website.s_cover">
         <!-- Section -->
-        <xpath expr="section" position="attributes">
-            <attribute name="class" add="o_half_screen_height" separator=" "/>
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_full_screen_height pt232" remove="pt96" separator=" "/>
         </xpath>
         <!-- Title -->
         <xpath expr="//h1" position="replace">
             <h1 style="text-align: center;">
-                <font style="font-size: 62px;"><b>Bringing life to your interior</b></font>
+                <span style="font-size: 62px;"><b>Bringing life to your interior</b></span>
             </h1>
         </xpath>
         <!-- Paragraphs -->

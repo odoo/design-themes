@@ -3,16 +3,16 @@
     <template id="s_picture" inherit_id="website.s_picture">
        <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pt64" remove="pt48" separator=" "/>
+            <attribute name="class" add="pt64 o_cc2" remove="pt48 bg-200" separator=" "/>
         </xpath>
         <!-- Title -->
         <xpath expr="//h2" position="replace">
             <h2 style="text-align: center;">
-                <font style="font-size: 62px;">Made it simple, but significant.</font>
+                <span style="font-size: 62px;">Made it simple, but significant.</span>
             </h2>
         </xpath>
         <!-- Paragraphs -->
-        <xpath expr="//p[1]" position="replace">
+        <xpath expr="//p" position="replace">
             <p class="text-center">Your home should be a story of who you are and a collection of what you love.<br/>
             We can offer you complete guidance in the process of your personal interior project.</p>
         </xpath>
