@@ -1,42 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_three_columns" inherit_id="website.s_three_columns">
-        <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
-        </xpath>
-        <!-- Column 1 -->
-        <xpath expr="//div[hasclass('card')]" position="attributes">
-            <attribute name="class" add="border" separator=" "/>
-            <attribute name="style" add="border-width: 0px !important;" separator=" "/>
-        </xpath>
-        <xpath expr="//div[hasclass('card-body')]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">Reviews and Unboxing</h3>
-                <p class="card-text">Discover what we think about products in those unboxing and review videos.</p>
-            </div>
-        </xpath>
-        <!-- Column 2 -->
-        <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
-            <attribute name="class" add="border" separator=" "/>
-            <attribute name="style" add="border-width: 0px !important;" separator=" "/>
-        </xpath>
-        <xpath expr="(//div[hasclass('card-body')])[2]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">New Gadgets</h3>
-                <p class="card-text">Cool new technology reminds us that even in 2020, we humans can't help but invent, grow, and change.</p>
-            </div>
-        </xpath>
-        <!-- Column 3 -->
-        <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
-            <attribute name="class" add="border" separator=" "/>
-            <attribute name="style" add="border-width: 0px !important;" separator=" "/>
-        </xpath>
-        <xpath expr="(//div[hasclass('card-body')])[3]" position="replace">
-            <div class="card-body">
-                <h3 class="card-title">Repair</h3>
-                <p class="card-text">As we are against programmed obsolescence and waste, we prefer to start by repairing your products before replacing them</p>
-            </div>
-        </xpath>
-    </template>
+
+<template id="s_three_columns" inherit_id="website.s_three_columns">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
+    </xpath>
+    <!-- Column 1 -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Gaming
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        VR takes immersive gaming to another level. From deep environmental interactions to puzzle solving.
+    </xpath>
+    <!-- Column 2 -->
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Design
+    </xpath>
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        From design concept to the showroom, create and manage workflows with better collaboration.
+    </xpath>
+    <!-- Column 3 -->
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Training
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        From high-risk safety simulations and maintenance procedures to soft skills like public speaking.
+    </xpath>
+</template>
+
 </odoo>

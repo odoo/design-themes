@@ -39,11 +39,6 @@
     </record>
 
     <!-- Change default images of snippets -->
-    <record id="s_banner_default_image" model="theme.ir.attachment">
-        <field name="key">website.s_banner_default_image</field>
-        <field name="name">website.s_banner_default_image</field>
-        <field name="url">/theme_kea/static/src/img/snippets/s_banner.jpg</field>
-    </record>
     <record id="s_popup_default_image" model="theme.ir.attachment">
         <field name="key">website.s_popup_default_image</field>
         <field name="name">website.s_popup_default_image</field>
@@ -83,6 +78,41 @@
         <field name="key">website.library_image_07</field>
         <field name="name">website.library_image_07</field>
         <field name="url">/theme_kea/static/src/img/snippets/library_image_07.jpg</field>
+    </record>
+    <record id="library_image_08" model="theme.ir.attachment">
+        <field name="key">website.library_image_08</field>
+        <field name="name">website.library_image_08</field>
+        <field name="url">/theme_kea/static/src/img/snippets/s_image_wall_03.jpg</field>
+    </record>
+    <record id="library_image_02" model="theme.ir.attachment">
+        <field name="key">website.library_image_02</field>
+        <field name="name">website.library_image_02</field>
+        <field name="url">/theme_kea/static/src/img/snippets/s_image_wall_04.jpg</field>
+    </record>
+    <record id="library_image_03" model="theme.ir.attachment">
+        <field name="key">website.library_image_03</field>
+        <field name="name">website.library_image_03</field>
+        <field name="url">/theme_kea/static/src/img/snippets/s_image_wall_01.jpg</field>
+    </record>
+    <record id="library_image_10" model="theme.ir.attachment">
+        <field name="key">website.library_image_10</field>
+        <field name="name">website.library_image_10</field>
+        <field name="url">/theme_kea/static/src/img/snippets/s_image_wall_02.jpg</field>
+    </record>
+    <record id="library_image_05" model="theme.ir.attachment">
+        <field name="key">website.library_image_05</field>
+        <field name="name">website.library_image_05</field>
+        <field name="url">/theme_kea/static/src/img/snippets/s_image_wall_03.jpg</field>
+    </record>
+    <record id="library_image_14" model="theme.ir.attachment">
+        <field name="key">website.library_image_14</field>
+        <field name="name">website.library_image_14</field>
+        <field name="url">/theme_kea/static/src/img/snippets/s_image_wall_04.jpg</field>
+    </record>
+    <record id="library_image_16" model="theme.ir.attachment">
+        <field name="key">website.library_image_16</field>
+        <field name="name">website.library_image_16</field>
+        <field name="url">/theme_kea/static/src/img/snippets/s_image_wall_05.jpg</field>
     </record>
     <record id="s_masonry_block_default_image_1" model="theme.ir.attachment">
         <field name="key">website.s_masonry_block_default_image_1</field>
@@ -213,5 +243,10 @@
         <field name="key">website.s_blockquote_default_image</field>
         <field name="name">website.s_blockquote_default_image</field>
         <field name="url">/theme_kea/static/src/img/snippets/uiface_2.jpg</field>
+    </record>
+    <record id="s_banner_default_image" model="theme.ir.attachment">
+        <field name="key">website.s_banner_default_image</field>
+        <field name="name">website.s_banner_default_image</field>
+        <field name="url">/theme_kea/static/src/img/snippets/s_banner2.jpg</field>
     </record>
 </odoo>
