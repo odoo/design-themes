@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_image_text" inherit_id="website.s_image_text">
-        <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc o_cc4 pt144" remove="pt32" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["y"]}</attribute>
-        </xpath>
-        <!-- Shape -->
-        <xpath expr="//div[hasclass('container')]" position="before">
-            <div class="o_we_shape o_web_editor_Origins_02_001 o_we_flip_y"/>
-        </xpath>
-        <!-- Title & Paragraph -->
-        <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="replace">
-            <div class="col-lg-6 pt16 pb16">
-                <h2>Enter in a new world of control.</h2>
-                <p>Control every electronic device of your house. The coffee machine, the television, the thermostat, everything.</p>
-            </div>
-        </xpath>
-    </template>
+
+<template id="s_image_text" inherit_id="website.s_image_text">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pt232" remove="pt32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","flip":["y"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_22 o_we_flip_y"/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web_editor/shape/theme_kea/s_image_text.svg?c1=o-color-1</attribute>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-2) 100%);" class="text-gradient">Enter in a new world</font>
+    </xpath>
+</template>
+
 </odoo>
