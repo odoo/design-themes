@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2">
+        <!-- Left column -->
+        <xpath expr="//div[hasclass('row')]//div" position="replace">
+            <div class="col-lg-6 o_cc o_cc4 text-center pt208 pb208" data-oe-shape-data='{"shape":"web_editor/Wavy/27","flip":["x","y"]}'>
+                <div class="o_we_shape o_web_editor_Wavy_27 o_we_flip_x o_we_flip_y o_second_extra_shape_mapping"/>
+                <i class="fa fa-paint-brush fa-5x m-3"/>
+                <h2>My artistic process</h2>
+                <p><br/></p>
+                <p>Color blocks are a simple and effective way to <b>present and highlight your content</b>. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</p>
+                <a href="#" class="btn btn-secondary mb-2">More Details</a>
+            </div>
+        </xpath>
+        <!-- Right column -->
+        <xpath expr="//div[hasclass('row')]//div[2]" position="replace">
+            <div class="col-lg-6 o_cc o_cc5 text-center pt208 pb208" data-oe-shape-data='{"shape":"web_editor/Wavy/27","flip":[]}'>
+                <div class="o_we_shape o_web_editor_Wavy_27"/>
+                <i class="fa fa-user-circle-o fa-5x m-3"/>
+                <h2>About me</h2>
+                <p><br/></p>
+                <p>Color blocks are a simple and effective way to <b>present and highlight your content</b>. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</p>
+                <a href="#" class="btn btn-secondary mb-2">More Details</a>
+            </div>
+        </xpath>
+    </template>
+</odoo>

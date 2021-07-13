@@ -3,7 +3,7 @@
     <template id="s_text_image" inherit_id="website.s_text_image">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc o_cc3 pb128" separator=" "/>
+            <attribute name="class" add="o_cc o_cc5 pb128" remove="pb32" separator=" "/>
             <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/04"}</attribute>
         </xpath>
         <!-- Shape -->
@@ -12,8 +12,8 @@
         </xpath>
         <!-- Paragraph -->
         <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
-            <div class="col-lg-6 p-5 border shadow rounded" style="border-width: 1px !important; border-color: rgb(229, 229, 229) !important; border-radius: 20px !important; box-shadow: rgba(0, 0, 0, 0.15) -20px 20px 0px 0px !important;">
-                <h2>Let yourself be transported</h2>
+            <div class="col-lg-6 p-5">
+                <h2><span style="font-size: 48px">Let yourself <br/>be transported</span></h2>
                 <p><br/></p>
                 <p>Welcome to my online home. I invite you to come in, learn more about me and my work, and stop to embrace the slow pleasure of art and beauty.</p>
             </div>
@@ -21,6 +21,9 @@
         <!-- Picture -->
         <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="attributes">
             <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+        </xpath>
+        <xpath expr="//img" position="attributes">
+            <attribute name="class" add="rounded shadow" separator=" "/>
         </xpath>
     </template>
 </odoo>

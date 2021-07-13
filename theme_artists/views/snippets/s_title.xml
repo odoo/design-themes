@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_title" inherit_id="website.s_title">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt256 parallax s_parallax_is_fixed o_cc4" remove="pt40" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":["y"]}</attribute>
+        </xpath>
+        <!-- Shape, parallax background & filter -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_title_default_image');"/>
+            <div class="o_we_bg_filter" style="background-color: rgba(17, 13, 22, 0.85) !important;"/>
+            <div class="o_we_shape o_web_editor_Airy_12_001 o_second_extra_shape_mapping"/>
+        </xpath>
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center;"><span style="font-size: 62px;">It's all about perception</span></h1>
+        </xpath>
+    </template>
+</odoo>
