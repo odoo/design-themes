@@ -2,7 +2,7 @@
     'name': 'Kea Theme',
     'description': 'Kea Theme',
     'category': 'Theme/Technology',
-    'summary': 'Technology, Tech, IT, Computers, Stores',
+    'summary': 'Technology, Tech, IT, Computers, Stores, Virtual Reality',
     'sequence': 200,
     'version': '2.0.0',
     'author': 'Odoo S.A.',
@@ -12,12 +12,16 @@
         'views/images_content.xml',
 
         'views/snippets/s_cover.xml',
-        'views/snippets/s_picture.xml',
         'views/snippets/s_image_text.xml',
+        'views/snippets/s_text_image.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_references.xml',
-
+        'views/snippets/s_color_blocks_2.xml',
+        'views/snippets/s_picture.xml',
+        'views/snippets/s_title.xml',
+        'views/snippets/s_numbers.xml',
+        'views/snippets/s_features.xml',
         ],
     'images': [
         'static/description/kea_description.png',

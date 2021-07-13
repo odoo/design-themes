@@ -3,22 +3,31 @@
     <template id="s_picture" inherit_id="website.s_picture">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc5" remove="o_cc2" separator=" "/>
+            <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/Wavy_03","flip":["y"]}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_web_editor_Wavy_03 o_we_flip_y"/>
         </xpath>
         <!-- Title -->
         <xpath expr="//h2" position="replace">
             <h2 style="text-align: center;">
-                <font style="font-size: 62px;">Don’t miss a frame</font>
+                <font style="font-size: 62px;">Experience a new world</font>
             </h2>
+        </xpath>
+        <!-- Image -->
+        <xpath expr="//img" position="attributes">
+            <attribute name="class" add="rounded-lg" remove="padding-large" separator=" "/>
+            <attribute name="style" add="border-radius:500px !important; min-height: 500px;" separator=" "/>
         </xpath>
         <!-- Paragraphs -->
         <xpath expr="//p[1]" position="replace">
-            <p class="text-center">Our new drone enable transmission up to 15 km away and supports 4K videos.<br/>
-            Keep the contact, even in a tropical storm.</p>
+            <p class="text-center">Put yourself at the center of an extraordinary gaming universe with exclusive games.</p>
         </xpath>
         <!-- Caption -->
         <xpath expr="//figcaption" position="replace">
-            <figcaption class="figure-caption text-muted py-3">The new light design in carbon fibre allow us to improve the battery life. Now, up to 11 hours.</figcaption>
+            <figcaption class="figure-caption text-muted py-3">Watch as a living game world comes alive all around you, with a seamless field of view wherever you look.</figcaption>
         </xpath>
     </template>
 </odoo>
