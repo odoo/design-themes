@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_cover" inherit_id="website.s_cover">
-        <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_full_screen_height" separator=" "/>
-            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":[]}</attribute>
-        </xpath>
-        <!-- Title & Paragraph -->
-        <xpath expr="//div[hasclass('container')]" position="replace">
-            <div class="container s_allow_columns text-center">
-                <h1>
-                    <font style="font-size: 62px;"><b>The Ultimate Laptop</b></font>
-                </h1>
-                <p class="lead">Speed up your work with the last laptop. 3.4Ghz, 8 cores.<br/>
-                You’ll be unstoppable all day long (up to 11 hours).</p>
-                <p><a t-att-href="cta_btn_href" class="btn btn-primary mb-2"><t t-esc="cta_btn_text">Discover</t></a></p>
-            </div>
-        </xpath>
-        <!-- Shape -->
-        <xpath expr="//section//*[last()]" position="after">
-            <div class="o_we_shape o_web_editor_Origins_07_002"/>
-        </xpath>
-    </template>
+
+<template id="s_cover" inherit_id="website.s_cover">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="oe_img_bg o_full_screen_height" remove="parallax s_parallax_is_fixed bg-black-50" separator=" "/>
+        <attribute name="data-scroll-background-ratio">0</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
+        <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;</attribute>
+    </xpath>
+    <!-- Update Filter & Add Shape -->
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
+        <div class="o_we_bg_filter" style="background-color: rgba(0, 0, 0, 0.10)"/>
+        <div class="o_we_shape o_web_editor_Floats_02"/>
+    </xpath>
+    <!-- Disable Parallax -->
+    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        The Revolution <br/> in Virtual Reality
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace">
+        <p class="lead"><br/></p>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace">
+        <a href="#0" class="btn btn-lg btn-primary">Discover more</a>
+    </xpath>
+</template>
+
 </odoo>

@@ -61,17 +61,19 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (36 / 12);
-$o-theme-h2-font-size-multiplier: (30 / 12);
-$o-theme-h3-font-size-multiplier: (24 / 12);
-$o-theme-h4-font-size-multiplier: (18 / 12);
-$o-theme-h5-font-size-multiplier: (14 / 12);
-$o-theme-h6-font-size-multiplier: 1;
+$o-theme-h1-font-size-multiplier: (62 / 16);
+$o-theme-h2-font-size-multiplier: (48 / 16);
+$o-theme-h3-font-size-multiplier: (36 / 16);
+$o-theme-h4-font-size-multiplier: (24 / 16);
+$o-theme-h5-font-size-multiplier: (20 / 16);
+$o-theme-h6-font-size-multiplier: (18 / 16);
+
+$headings-font-weight:700;
 
 $o-theme-font-configs: (
-    'Spartan': (
-        'family': ('Spartan', sans-serif),  // font update - SinKinSans -> Spartan
-        'url': 'Spartan:300,300i,400,400i,700,700i',
+    'Poppins': (
+        'family': ('Poppins', sans-serif), 
+        'url': 'Poppins:300,300i,400,400i,700,700i',
     ),
     'Rajdhani': (
         'family': ('Rajdhani', sans-serif),
@@ -109,21 +111,19 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'kea-1',
-
-        'header-font-size': 1.25rem,
-        'logo-height': 3rem,
-        'fixed-logo-height': 3rem,
-        'font-size-base': .925rem,
+        'color-palettes-name': 'bewise-2',
+        // Fonts
         'font': 'Roboto',
-        'headings-font': 'Barlow Condensed',
-        'navbar-font': 'Barlow Condensed',
-        'buttons-font': 'Barlow Condensed',
+        'headings-font': 'Poppins',
+        'navbar-font': 'Poppins',
+        'buttons-font': 'Poppins',
+        // Links / Buttons
         'link-underline': 'never',
-        'header-links-style': 'outline',
-        'btn-primary-outline': true,
-        'header-template': 'default',
-        'footer-template': 'call_to_action',
+        'btn-border-radius': 10rem,
+        // Footer
+        'footer-template': 'minimalist',
+        'footer-effect': 'slideout_slide_hover',
+        'footer-scrolltop': true,
     ),
 );
 
@@ -166,6 +166,14 @@ $o-theme-color-palettes-compatibility-indexes: (
 // Shapes
 //------------------------------------------------------------------------------
 
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/22', (3: 3));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/02', (1: 4, 2: 3, 3: 2, 4: 3, 5: 5));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Wavy/22', 'second', (3: 3));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/03', (1: 4, 2: 3));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/01', (1: 4, 2: 3, 3: 3, 4: 1, 5: 5));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14_001', (3: 1, 4: 1));
+
+// Keep for compatibility
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/03', (3: 5));
 $o-bg-shapes: add-header-shape-colors-mapping('web_editor', 'Origins/07_001', (3: 'menu'));
 $o-bg-shapes: add-header-shape-colors-mapping('web_editor', 'Origins/07_002', (3: 'menu', 4: rgba(255, 255, 255, 0)));
