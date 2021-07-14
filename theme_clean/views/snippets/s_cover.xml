@@ -6,21 +6,22 @@
             <attribute name="class" add="o_full_screen_height" separator=" "/>
             <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":[]}</attribute>
         </xpath>
-        <!-- Title & Paragraph -->
-        <xpath expr="//div[hasclass('container')]" position="replace">
-            <div class="container s_allow_columns text-center">
-                <h1>
-                    <font style="font-size: 62px;"><b>Sell from your couch</b></font>
-                </h1>
-                <p class="lead">
-                    Make your finances reach a new level with our online management system.<br/>
-                    Track every penny, directly from the confort of your home.
-                </p>
-            </div>
-        </xpath>
         <!-- Shape -->
-        <xpath expr="//section//*[last()]" position="after">
+        <xpath expr="//div[hasclass('container')]" position="before">
             <div class="o_we_shape o_web_editor_Origins_07_002"/>
         </xpath>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
+            <div class="o_we_bg_filter bg-black-50"/>
+        </xpath>
+        <!-- Title & Paragraph -->
+        <xpath expr="//h1" position="replace" mode="inner">
+            <b>Sell from your couch</b>
+        </xpath>
+        <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+            Make your finances reach a new level with our online management system. <br/>Track every penny, directly from the confort of your home.
+        </xpath>
+        <!-- Remove the button -->
+        <xpath expr="//p[2]" position="replace"/>
     </template>
 </odoo>
