@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_banner" inherit_id="website.s_banner">
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_bg_filter" style="background-color: rgba(234, 234, 234, 0.8) !important;"/>
+        </xpath>
+        <!-- Jumbotron -->
+        <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+            <attribute name="class" remove="o_cc1" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1><span style="font-size: 62px;">The best sellers <br/>of the year</span></h1>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a[hasclass('btn')]" position="replace">
+            <a href="#0" class="btn btn-primary">Discover it</a>
+        </xpath>
+    </template>
+</odoo>

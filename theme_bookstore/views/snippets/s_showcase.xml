@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_showcase" inherit_id="website.s_showcase">
+    <!-- Feature #1 -->
+        <!-- Icon -->
+        <xpath expr="//i" position="attributes">
+            <attribute name="class" add="fa-book" remove="fa-desktop" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h3" position="replace">
+            <h3>More than 5000 books</h3>
+        </xpath>
+    <!-- Feature #2 -->
+        <!-- Icon -->
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="fa-map-marker" remove="fa-paint-brush" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="(//h3)[2]" position="replace">
+            <h3>Find your store</h3>
+        </xpath>
+    <!-- Feature #3 -->
+        <!-- Icon -->
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="fa-shopping-cart" remove="fa-heart" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="(//h3)[3]" position="replace">
+            <h3>Click and collect</h3>
+        </xpath>
+    <!-- Feature #4 -->
+        <!-- Title -->
+        <xpath expr="(//h3)[4]" position="replace">
+            <h3>Gift card</h3>
+        </xpath>
+    </template>
+</odoo>
