@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_masonry_block" inherit_id="website.s_masonry_block">
+        <!-- Little block #01 - Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/h3" position="replace">
+            <h3>Social Strategy</h3>
+        </xpath>
+        <!-- Little block #02 - Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]" position="attributes">
+            <attribute name="class" add="bg-o-color-3" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Little block #02 - Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/h3" position="replace"> 
+            <h3>Consumer Experience</h3>
+        </xpath>
+        <!-- Little block #03 - Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]" position="attributes">
+            <attribute name="class" add="bg-o-color-3" remove="bg-200" separator=" "/>
+        </xpath>
+        <!-- Little block #03 - Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/h3" position="replace">
+            <h3>Data Analytics</h3>
+        </xpath>
+        <!-- Little block #04 - Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/h3" position="replace">
+            <h3>Optimization</h3>
+        </xpath>
+    </template>
+</odoo>
