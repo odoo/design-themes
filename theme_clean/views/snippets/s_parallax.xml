@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_parallax" inherit_id="website.s_parallax">
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
+            <div class="o_we_bg_filter" style="background-color: rgba(52, 152, 219, 0.75) !important;"/>
+        </xpath>
+    </template>
+</odoo>
