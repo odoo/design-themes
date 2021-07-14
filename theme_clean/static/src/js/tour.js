@@ -1,8 +1,9 @@
-odoo.define("theme_clean.tour.clean", function (require) {
-"use strict";
+/** @odoo-module */
 
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
+import wTourUtils from 'website.tour_utils';
+
+const core = require("web.core");
+const _t = core._t;
 
 const snippets = [
     {
@@ -10,12 +11,24 @@ const snippets = [
         name: 'Cover',
     },
     {
+        id: 's_text_image',
+        name: 'Text - Image',
+    },
+    {
+        id: 's_title',
+        name: 'Title',
+    },
+    {
+        id: 's_features',
+        name: 'Features',
+    },
+    {
         id: 's_carousel',
         name: 'Carousel',
     },
     {
-        id: 's_text_image',
-        name: 'Text - Image',
+        id: 's_numbers',
+        name: 'Numbers',
     },
     {
         id: 's_three_columns',
@@ -34,9 +47,11 @@ wTourUtils.registerThemeHomepageTour("clean_tour", [
     wTourUtils.dragNDrop(snippets[1]),
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3]),
+    wTourUtils.clickOnSnippet(snippets[3]),
+    wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
+    wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.clickOnSnippet(snippets[4]),
-    wTourUtils.changeBackgroundColor(),
-    wTourUtils.selectColorPalette(),
+    wTourUtils.dragNDrop(snippets[5]),
+    wTourUtils.dragNDrop(snippets[6]),
+    wTourUtils.dragNDrop(snippets[7]),
 ]);
-});
