@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_masonry_block" inherit_id="website.s_masonry_block">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc1" remove="bg-200" separator=" "/>
+            <attribute name="class" add="pt0 pb0" remove="pt48 pb48" separator=" "/>
+        </xpath>
+
+        <!-- Container -->
+        <xpath expr="//section/div" position="attributes">
+            <attribute name="class" add="container" remove="container-fluid" separator=" "/>
+        </xpath>
+
+        <!-- Columns -->
+        <xpath expr="//div[hasclass('oe_img_bg')]" position="attributes">
+            <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('container')]/div/div[1]" position="after">
+            <div class="offset-lg-1"/>
+        </xpath>
+
+
+        <!-- Column 1 -->
+        <xpath expr="//div[hasclass('h-100')]/div[1]" position="replace">
+            <div class="col-lg-6 pt24 pb8 text-left o_cc o_cc1" data-name="Block">
+                <span class="fa fa-star fa-2x"></span>
+                <h4 class="mt-3">Increased Visibility</h4>
+                <p>ncrease Visitor retention. Customer engagement on a website with virtual tour is 5 times longer compared to a site without it.</p>
+            </div>
+        </xpath>
+        <!-- Column 2 -->
+        <xpath expr="//div[hasclass('h-100')]/div[2]" position="replace">
+            <div class="col-lg-6 pt24 pb8 text-left o_cc o_cc1" data-name="Block">
+                <span class="fa fa-camera fa-2x"></span>
+                <h4 class="mt-3">Pro Photo Shoot</h4>
+                <p>They say an image is worth a thousand words and we know you know how important it is to have the best photography.</p>
+            </div>
+        </xpath>
+        <!-- Column 3 -->
+        <xpath expr="//div[hasclass('h-100')]/div[3]" position="replace">
+            <div class="col-lg-6 pt24 pb8 text-left o_cc o_cc1" data-name="Block">
+                <span class="fa fa-tag fa-2x"></span>
+                <h4 class="mt-3">No fixed fees</h4>
+                <p>At Real Estate Agency we have fixed price fees. This means we only charge when your home sale is confirmed..</p>
+            </div>
+        </xpath>
+        <!-- Column 4 -->
+        <xpath expr="//div[hasclass('h-100')]/div[4]" position="replace">
+            <div class="col-lg-6 pt24 pb8 text-left o_cc o_cc1" data-name="Block">
+                <span class="fa fa-check fa-2x"></span>
+                <h4 class="mt-3">Premium Quality</h4>
+                <p>We are committed to delivering high quality services that enhance your brand by allowing visitors to interact virtually.</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -3,12 +3,12 @@
     <template id="s_picture" inherit_id="website.s_picture">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
+            <attribute name="class" add="o_cc o_cc4" remove="o_cc o_cc2" separator=" "/>
         </xpath>
         <!-- Title -->
         <xpath expr="//h2" position="replace">
             <h2 style="text-align: center;">
-                <font style="font-size: 62px;">Open your horizons</font>
+                Open your horizons
             </h2>
         </xpath>
         <!-- Paragraphs -->

@@ -6,23 +6,43 @@ var tour = require("web_tour.tour");
 
 const snippets = [
     {
-        id: 's_banner',
+        id: 's_banner', //0
         name: 'Banner',
     },
     {
-        id: 's_picture',
-        name: 'Picture',
+        id: 's_text', //1
+        name: 'Text',
     },
     {
-        id: 's_image_text',
+        id: 's_text_image', //2
+        name: 'Text - Image',
+    },
+    {
+        id: 's_image_text', //3
         name: 'Image - Text',
     },
     {
-        id: 's_three_columns',
+        id: 's_title', //4
+        name: 'Title',
+    },
+    {
+        id: 's_three_columns', //5
         name: 'Columns',
     },
     {
-        id: 's_quotes_carousel',
+        id: 's_title:last-child', //6
+        name: 'Title',
+    },
+    {
+        id: 's_masonry_block', //7
+        name: 'Masonry',
+    },
+    {
+        id: 's_numbers', //8
+        name: 'Numbers',
+    },
+    {
+        id: 's_quotes_carousel', //9
         name: 'Quotes',
     },
 ];
@@ -34,10 +54,15 @@ wTourUtils.registerThemeHomepageTour("real_estate_tour", [
     wTourUtils.dragNDrop(snippets[1]),
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.clickOnSnippet(snippets[3]),
+    wTourUtils.dragNDrop(snippets[4]),
+    wTourUtils.clickOnSnippet(snippets[4]),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[4]),
+    wTourUtils.dragNDrop(snippets[5]),
+    wTourUtils.dragNDrop(snippets[6]),
+    wTourUtils.dragNDrop(snippets[7]),
+    wTourUtils.dragNDrop(snippets[8]),
+    wTourUtils.dragNDrop(snippets[9]),
 ]);
 });

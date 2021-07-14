@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_text_block" inherit_id="website.s_text_block">
+        <!-- Section/span -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc4 pb56 pt56" remove="s_parallax_bg oe_img_bg pt96 pb96" separator=" "/>
+        </xpath>
+    </template>
+</odoo>
