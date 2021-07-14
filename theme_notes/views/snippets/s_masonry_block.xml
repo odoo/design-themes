@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_masonry_block" inherit_id="website.s_masonry_block">        
+    <!-- Little block #01 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="class" add="o_cc5 oe_img_bg o_bg_img_center" remove="o_cc3" separator=" "/>
+            <attribute name="style">background-image: url('/web/image/website.s_masonry_block_default_image_2');</attribute>
+        </xpath>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/h3" position="before">
+            <div class="o_we_bg_filter" style="background-color: rgba(33, 33, 33, 0.9) !important;"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/h3" position="replace">
+            <h3>Brussels</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/p" position="replace">
+            <p>21th of August</p>
+        </xpath>
+    <!-- Little block #02 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]" position="attributes">
+            <attribute name="class" add="o_cc4 oe_img_bg o_bg_img_center" remove="bg-200" separator=" "/>
+            <attribute name="style">background-image: url('/web/image/website.s_masonry_block_default_image_3');</attribute>
+        </xpath>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/h3" position="before">
+            <div class="o_we_bg_filter" style="background-color: rgba(161, 192, 5, 0.9) !important;"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/h3" position="replace"> 
+            <h3>Paris</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][2]/p" position="replace">
+            <p>24th of August</p>
+        </xpath>
+    <!-- Little block #03 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]" position="attributes">
+            <attribute name="class" add="o_cc3 oe_img_bg o_bg_img_center" remove="bg-200" separator=" "/>
+            <attribute name="style">background-image: url('/web/image/website.s_masonry_block_default_image_4');</attribute>
+        </xpath>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/h3" position="before">
+            <div class="o_we_bg_filter" style="background-color: rgba(155, 150, 180, 0.9) !important;"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/h3" position="replace">
+            <h3>Barcelona</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][3]/p" position="replace">
+            <p>27th of August</p>
+        </xpath>
+    <!-- Little block #04 -->
+        <!-- Main div -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]" position="attributes">
+            <attribute name="class" add="o_cc5 oe_img_bg o_bg_img_center" remove="o_cc4" separator=" "/>
+            <attribute name="style">background-image: url('/web/image/website.s_masonry_block_default_image_5');</attribute>
+        </xpath>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/h3" position="before">
+            <div class="o_we_bg_filter" style="background-color: rgba(33, 33, 33, 0.9) !important;"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/h3" position="replace">
+            <h3>Amsterdam</h3>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')][4]/p" position="replace">
+            <p>4th of September</p>
+        </xpath>
+    </template>
+</odoo>

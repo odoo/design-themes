@@ -12,12 +12,24 @@ const snippets = [
         name: 'Carousel',
     },
     {
-        id: 's_image_text',
-        name: 'Image - Text',
+        id: 's_masonry_block',
+        name: 'Masonry',
+    },
+    {
+        id: 's_text_image',
+        name: 'Text - Image',
+    },
+    {
+        id: 's_product_catalog',
+        name: 'Pricelist',
     },
     {
         id: 's_media_list',
         name: 'Media List',
+    },
+    {
+        id: 's_title',
+        name: 'Title',
     },
     {
         id: 's_company_team',
@@ -32,7 +44,10 @@ wTourUtils.registerThemeHomepageTour("notes_tour", [
     wTourUtils.dragNDrop(snippets[1]),
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.clickOnSnippet(snippets[3]),
-    wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
+    wTourUtils.dragNDrop(snippets[4]),
+    wTourUtils.dragNDrop(snippets[5]),
+    wTourUtils.clickOnText(snippets[5], 'h1'),
+    wTourUtils.goBackToBlocks(),
+    wTourUtils.dragNDrop(snippets[6]),
 ]);
 });

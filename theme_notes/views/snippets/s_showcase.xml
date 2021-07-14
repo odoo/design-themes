@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_showcase" inherit_id="website.s_showcase">
+        <!-- Icon #1 -->
+        <xpath expr="//i" position="attributes">
+            <attribute name="class" add="fa-sun-o" remove="fa-desktop" separator=" "/>
+        </xpath>
+        <!-- Icon #2 -->
+        <xpath expr="(//i)[2]" position="attributes">
+            <attribute name="class" add="fa-building-o" remove="fa-paint-brush" separator=" "/>
+        </xpath>
+        <!-- Icon #3 -->
+        <xpath expr="(//i)[3]" position="attributes">
+            <attribute name="class" add="fa-automobile" remove="fa-heart" separator=" "/>
+        </xpath>
+        <!-- Title #1 -->
+        <xpath expr="//h3" position="replace">
+            <h3>Great sun terrace</h3>
+        </xpath>
+        <!-- Title #2 -->
+        <xpath expr="(//h3)[2]" position="replace">
+            <h3>Hotel room</h3>
+        </xpath>
+        <!-- Title #3 -->
+        <xpath expr="(//h3)[3]" position="replace">
+            <h3>VIP Parking</h3>
+        </xpath>
+        <!-- Title #4 -->
+        <xpath expr="(//h3)[4]" position="replace">
+            <h3>Get your festival T-Shirt</h3>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a[hasclass('btn')]" position="replace">
+            <a href="#" class="btn btn-primary mb-2">All VIP benefits</a>
+        </xpath>
+    </template>
+</odoo>
