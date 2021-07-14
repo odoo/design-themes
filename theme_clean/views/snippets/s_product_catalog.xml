@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_product_catalog" inherit_id="website.s_product_catalog">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc3 parallax s_parallax_is_fixed" separator=" "/>
+            <attribute name="style"/>
+        </xpath>
+        <!-- Filter & Parallax -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_product_catalog_default_image');"/>
+            <div class="o_we_bg_filter" style="background-color: rgba(52, 73, 94, 0.75) !important;"/>
+        </xpath>
+    </template>
+</odoo>

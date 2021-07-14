@@ -6,6 +6,10 @@
             <attribute name="class" add="o_full_screen_height" separator=" "/>
             <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":[]}</attribute>
         </xpath>
+        <!-- Filter -->
+        <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
+            <div class="o_we_bg_filter" style="background-color: rgba(52, 152, 219, 0.75) !important;"/>
+        </xpath>
         <!-- Title & Paragraph -->
         <xpath expr="//div[hasclass('container')]" position="replace">
             <div class="container s_allow_columns text-center">

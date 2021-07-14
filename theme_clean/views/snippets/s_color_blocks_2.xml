@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2">
+        <!-- Column #1 -->
+        <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+            <attribute name="class" add="oe_img_bg" separator=" "/>
+            <attribute name="style">background-image: url('/web/image/website.s_color_blocks_2_default_image_1');</attribute>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/09_001","flip":["y"]}"</attribute>
+        </xpath>
+        <xpath expr="//i" position="before">
+            <div class="o_we_bg_filter" style="background-color: rgba(52, 73, 94, 0.75) !important;"/>
+            <div class="o_we_shape o_web_editor_Origins_09_001 o_we_flip_y"/>
+        </xpath>
+        <!-- Column #2 -->
+        <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="attributes">
+            <attribute name="class" add="oe_img_bg" separator=" "/>
+            <attribute name="style">background-image: url('/web/image/website.s_color_blocks_2_default_image_2');</attribute>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/09_001","flip":["x"]}"</attribute>
+        </xpath>
+        <xpath expr="(//i)[2]" position="before">
+            <div class="o_we_bg_filter" style="background-color: rgba(52, 73, 94, 0.75) !important;"/>
+            <div class="o_we_shape o_web_editor_Origins_09_001 o_we_flip_x"/>
+        </xpath>
+    </template>
+</odoo>

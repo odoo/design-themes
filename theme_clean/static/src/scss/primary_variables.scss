@@ -106,8 +106,8 @@ $o-theme-h1-font-size-multiplier: (41 / 16);
 $o-theme-h2-font-size-multiplier: (34 / 16);
 $o-theme-h3-font-size-multiplier: (28 / 16);
 $o-theme-h4-font-size-multiplier: (20 / 16);
-$o-theme-h5-font-size-multiplier: 1;
-$o-theme-h6-font-size-multiplier: (14 / 16);
+$o-theme-h5-font-size-multiplier: (18 / 16);
+$o-theme-h6-font-size-multiplier: 1;
 
 $o-theme-font-configs: (
     'PT Sans': (
@@ -244,7 +244,11 @@ $o-theme-color-palettes-compatibility-indexes: (
 // Shapes
 //------------------------------------------------------------------------------
 
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Airy/10', (5: 1));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/04_001', (3: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/07_002', (3: rgba(0,0,0,0), 4: rgba(0,0,0,0), 5: 2));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Origins/07_002', 'second', (3: 2, 4: rgba(0,0,0,0), 5: 2));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/09_001', (3: 3));
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14', (4: 4));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14_001', (4: rgba(255, 255, 255, 0), 3: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14_001', (4: rgba(255, 255, 255, 0), 3: 1));
 $o-bg-shapes: add-header-shape-colors-mapping('web_editor', 'Origins/07_001', (3: 'menu', 5: 2));
-$o-bg-shapes: add-header-shape-colors-mapping('web_editor', 'Origins/07_002', (3: 'menu', 5: 2));

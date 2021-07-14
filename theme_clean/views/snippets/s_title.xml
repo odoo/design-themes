@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_title" inherit_id="website.s_title">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc4 o_full_screen_height parallax s_parallax_is_fixed" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":[]}</attribute>
+        </xpath>
+        <!-- Shape & filter -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_title_default_image');"/>
+            <div class="o_we_bg_filter" style="background-color: rgba(52, 152, 219, 0.75) !important;"/>
+            <div class="o_we_shape o_web_editor_Origins_07_002 o_second_extra_shape_mapping"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center;"><span style="font-size: 62px; font-weight: bolder;">We create the perfect <br/>tailored solution for you</span></h1>
+        </xpath>
+    </template>
+</odoo>

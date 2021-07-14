@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_image_text" inherit_id="website.s_image_text">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc4 pt72 pb72" remove="pt32 pb32" separator=" "/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2><span style="font-size: 48px;">Section Subtitle</span></h2>
+            <p><br/></p>
+        </xpath>
+        <!-- Image -->
+        <xpath expr="//img" position="attributes">
+            <attribute name="class" add="rounded-circle" separator=" "/>
+        </xpath>
+    </template>
+</odoo>
