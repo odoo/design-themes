@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_numbers" inherit_id="website.s_numbers">
+    <template id="s_numbers" inherit_id="web_editor.s_numbers">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
             <attribute name="class" add="pt64 pb64" remove="pt48 pb24" separator=" "/>
