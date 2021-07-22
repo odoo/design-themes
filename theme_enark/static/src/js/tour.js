@@ -16,12 +16,16 @@ const snippets = [
         name: 'Picture',
     },
     {
+        id: 's_numbers',
+        name: 'Numbers',
+    },
+    {
         id: 's_text_image',
         name: 'Text - Image',
     },
     {
-        id: 's_media_list',
-        name: 'Media List',
+        id: 's_image_wall',
+        name: 'Images Wall',
     },
     {
         id: 's_call_to_action',
@@ -37,7 +41,6 @@ wTourUtils.registerThemeHomepageTour("enark_tour", [
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3]),
     wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.clickOnSnippet(snippets[4]),
-    wTourUtils.changeOption('ScrollButton', 'we-button-group.o_we_user_value_widget', _t('height')),
+    wTourUtils.dragNDrop(snippets[5]),
 ]);
 });
