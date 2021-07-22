@@ -78,12 +78,12 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (54 / 16);
+$o-theme-h1-font-size-multiplier: (62 / 16);
 $o-theme-h2-font-size-multiplier: (48 / 16);
-$o-theme-h3-font-size-multiplier: (44 / 16);
-$o-theme-h4-font-size-multiplier: (31 / 16);
-$o-theme-h5-font-size-multiplier: (27 / 16);
-$o-theme-h6-font-size-multiplier: (20 / 16);
+$o-theme-h3-font-size-multiplier: (32 / 16);
+$o-theme-h4-font-size-multiplier: (24 / 16);
+$o-theme-h5-font-size-multiplier: (20 / 16);
+$o-theme-h6-font-size-multiplier: (18 / 16);
 
 $o-theme-font-configs: (
     'Ubuntu': (
@@ -139,15 +139,14 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'enark-1',
-        'header-font-size': 1.3rem,
-        'font': 'Raleway',
-        'headings-font': 'Abel',
-        'navbar-font': 'Abel',
-        'buttons-font': 'Abel',
-        'header-template': 'hamburger',
-        'footer-template': 'descriptive',
-        'header-links-style': 'outline',
-        'btn-primary-outline': 'true',
+        'header-font-size':     1rem,
+        'font':                 'Open Sans',
+        'headings-font':        'Bitter',
+        'navbar-font':          'Bitter',
+        'buttons-font':         'Bitter',
+        'footer-template':      'descriptive',
+        'header-links-style':   'outline',
+        'btn-primary-outline':  'true',
     ),
 );
 
