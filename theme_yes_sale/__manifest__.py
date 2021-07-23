@@ -6,4 +6,5 @@
     'version': '1.0',
     'depends': ['theme_kea_sale', 'theme_yes'],
     'auto_install': True,
+    'license': 'LGPL-3',
 }
