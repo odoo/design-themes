@@ -9,4 +9,5 @@
     ],
     'depends': ['theme_graphene', 'website_blog'],
     'auto_install': True,
+    'license': 'LGPL-3',
 }

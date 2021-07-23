@@ -14,6 +14,13 @@
         'static/description/bookstore_description.png',
         'static/description/bookstore_screenshot.jpeg',
     ],
+<<<<<<< HEAD
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-bookstore.odoo.com'
+=======
+    'price': 4,
+    'currency': 'EUR',
+    'live_test_url': 'https://theme-bookstore.odoo.com',
+    'license': 'LGPL-3',
+>>>>>>> 7e97be3... temp
 }

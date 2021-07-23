@@ -10,4 +10,9 @@
         'views/layout.xml',
     ],
     'auto_install': True,
+<<<<<<< HEAD
 }
+=======
+    'license': 'LGPL-3',
+}
+>>>>>>> 7e97be3... temp

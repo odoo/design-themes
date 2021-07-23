@@ -20,4 +20,5 @@
     'depends': ['theme_common'],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-avantgarde.odoo.com',
+    'license': 'LGPL-3',
 }

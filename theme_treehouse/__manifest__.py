@@ -26,4 +26,5 @@
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-treehouse.odoo.com/page/demo_page_01',
+    'license': 'LGPL-3',
 }

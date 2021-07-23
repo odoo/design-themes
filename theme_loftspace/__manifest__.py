@@ -20,4 +20,5 @@
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-loftspace.odoo.com/page/demo',
+    'license': 'LGPL-3',
 }

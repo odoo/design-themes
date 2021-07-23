@@ -18,6 +18,13 @@
         'static/description/graphene_screenshot.jpg',
     ],
     'depends': ['theme_common', 'website_animate'],
+<<<<<<< HEAD
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-graphene.odoo.com'
+=======
+    'price': 199,
+    'currency': 'EUR',
+    'live_test_url': 'https://theme-graphene.odoo.com',
+    'license': 'LGPL-3',
+>>>>>>> 7e97be3... temp
 }

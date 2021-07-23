@@ -20,4 +20,5 @@
     ],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-anelusia.odoo.com/page/demo1',
+    'license': 'LGPL-3',
 }
