@@ -16,5 +16,6 @@
     ],
     'price': 4,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-bookstore.odoo.com'
+    'live_test_url': 'https://theme-bookstore.odoo.com',
+    'license': 'LGPL-3',
 }
