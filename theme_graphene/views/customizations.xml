@@ -221,7 +221,7 @@
 </template>
 
 <!-- ======== COMPARISON ======== -->
- <template id="s_comparisons" inherit_id="website.s_comparisons" name="Graphene s_comparisons">
+ <template id="s_comparisons" inherit_id="web_editor.s_comparisons" name="Graphene s_comparisons">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt56 pb48" remove="pt32 pb32" separator=" "/>
     </xpath>
