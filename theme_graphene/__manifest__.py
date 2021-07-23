@@ -20,5 +20,6 @@
     'depends': ['theme_common', 'website_animate'],
     'price': 199,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-graphene.odoo.com'
+    'live_test_url': 'https://theme-graphene.odoo.com',
+    'license': 'LGPL-3',
 }
