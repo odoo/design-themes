@@ -21,5 +21,6 @@
     ],
     'price': 199,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-nano.odoo.com/page/demo_page_01'
+    'live_test_url': 'https://theme-nano.odoo.com/page/demo_page_01',
+    'license': 'LGPL-3',
 }
