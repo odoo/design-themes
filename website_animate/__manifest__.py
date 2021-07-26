@@ -19,5 +19,6 @@
         'website.assets_editor': [
             'website_animate/static/src/js/o_animate.editor.js',
         ],
-    }
+    },
+    'license': 'LGPL-3',
 }
