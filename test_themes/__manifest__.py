@@ -49,5 +49,6 @@
         'web.assets_frontend': [
             'test_themes/static/src/js/navbar.js',
         ],
-    }
+    },
+    'license': 'LGPL-3',
 }
