@@ -47,4 +47,5 @@
         'views/old_snippets/s_two_columns.xml',
     ],
     'application': False,
+    'license': 'LGPL-3',
 }
