@@ -69,4 +69,5 @@
         'views/s_event_slide.xml',
     ],
     'application': False,
+    'license': 'LGPL-3',
 }
