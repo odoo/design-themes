@@ -13,6 +13,7 @@ var WebsiteAnimate = {
     // Retrieve animable elements and attach handlers.
     start: function () {
         var self   = this;
+        self.$scrollingElement = $().getScrollingElement();
         self.items = $(".o_animate");
         self.items.each(function () {
             var $el = $(this);
@@ -36,7 +37,7 @@ var WebsiteAnimate = {
         })
         .trigger("resize");
 
-        $().getScrollingElement()
+        self.$scrollingElement
         .on("scroll.o_animate, slid.bs.carousel", (_.throttle(function () {
             // _.throttle -> Limit the number of times the scroll function
             // can be called in a given period. (http://underscorejs.org/#throttle)
@@ -73,11 +74,14 @@ var WebsiteAnimate = {
 
     // Set elements to initial state
     reset_animation: function ($el) {
+        var self = this;
         var anim_name = $el.css("animation-name");
 
         $el
         .css({"animation-name" : "dummy-none", "animation-play-state" : ""})
         .removeClass("o_animated o_animating");
+
+        self._toggleOverflowXHidden(false);
 
         // force the browser to redraw using setTimeout
         setTimeout(function () {
@@ -87,16 +91,28 @@ var WebsiteAnimate = {
 
     // Start animation and/or update element's state
     start_animation: function ($el) {
+        var self = this;
         // force the browser to redraw using setTimeout
         setTimeout(function () {
+            self._toggleOverflowXHidden(true);
             $el
             .css({"animation-play-state": "running"})
             .addClass("o_animating")
             .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function (e) {
                 $el.addClass("o_animated").removeClass("o_animating");
+                self._toggleOverflowXHidden(false);
                 $(window).trigger("resize");
             });
         });
+    },
+
+    // show/hide the horizontal scrollbar (on the #wrapwrap)
+    _toggleOverflowXHidden: function (add) {
+        if (add) {
+            this.$scrollingElement[0].classList.add('o_wanim_overflow_x_hidden');
+        } else if (!this.$scrollingElement.find('.o_animating').length) {
+            this.$scrollingElement[0].classList.remove('o_wanim_overflow_x_hidden');
+        }
     },
 
     // Get element top offset by not taking CSS transforms into calculations
@@ -127,6 +143,13 @@ publicWidget.registry.WebsiteAnimate = publicWidget.Widget.extend({
         $(".o_animate").css("visibility", "visible");
 
         return this._super.apply(this, arguments);
+    },
+    /**
+     * @override
+     */
+    destroy: function () {
+        WebsiteAnimate.$scrollingElement[0].classList.remove('o_wanim_overflow_x_hidden');
+        this._super.apply(this, arguments);
     },
 });
 
