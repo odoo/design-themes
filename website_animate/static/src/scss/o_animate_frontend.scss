@@ -10,9 +10,16 @@
     backface-visibility: hidden; // avoid flickering
     text-rendering: geometricPrecision; // take care of animated titles
     visibility: hidden;
+
+    &:not(.o_animating) {
+        transform: none !important;
+    }
 }
 .o_animate_preview {
     visibility: visible;
+}
+.o_wanim_overflow_x_hidden {
+    overflow-x: hidden !important;
 }
 
 @-moz-keyframes o_animate_timeline_duration {
