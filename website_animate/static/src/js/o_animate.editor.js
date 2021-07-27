@@ -5,12 +5,19 @@ var sOptions = require('web_editor.snippets.options');
 
 function forceAnimation() {
     var $els = $();
+    const $scrollingElement = $().getScrollingElement();
     _.each(arguments, function (el) {
         $els = $els.add(el);
     });
     $els.css('animation-name', 'dummy');
     void $els[0].offsetWidth;
+    $els.addClass('o_animating');
+    $scrollingElement[0].classList.add('o_wanim_overflow_x_hidden');
     $els.css('animation-name', '');
+    $els.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function (e) {
+        $scrollingElement[0].classList.remove('o_wanim_overflow_x_hidden');
+        $els.removeClass('o_animating');
+    });
 }
 
 //  Animations
