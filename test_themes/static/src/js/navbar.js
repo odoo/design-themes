@@ -2,6 +2,7 @@ odoo.define('test_themes.website_selector', function (require) {
 'use strict';
 
 const websiteNavbarData = require('website.navbar');
+const { registry } = require("@web/core/registry");
 
 const TestThemesWebsiteSelector = websiteNavbarData.WebsiteNavbarActionWidget.extend({
     /**
@@ -18,7 +19,10 @@ const TestThemesWebsiteSelector = websiteNavbarData.WebsiteNavbarActionWidget.ex
 
 });
 
-websiteNavbarData.websiteNavbarRegistry.add(TestThemesWebsiteSelector, '#website_switcher');
+registry.category("website_navbar_widgets").add("TestThemesWebsiteSelector", {
+    Widget: TestThemesWebsiteSelector,
+    selector: '#website_switcher',
+});
 
 return {
     TestThemesWebsiteSelector: TestThemesWebsiteSelector,
