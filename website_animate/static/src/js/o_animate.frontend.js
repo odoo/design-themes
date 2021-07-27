@@ -55,7 +55,7 @@ var WebsiteAnimate = {
 
                 // We need to offset for the change in position from some animation
                 // So we get the top value by not taking CSS transforms into calculations
-                var elTop = self.getElementOffsetTop($el[0]);
+                var elTop = self.getElementOffsetTop($el[0]) - $().getScrollingElement().scrollTop();
 
                 var visible = windowBottom > (elTop + elOffset) && windowTop < (elTop + elHeight - elOffset);
 
