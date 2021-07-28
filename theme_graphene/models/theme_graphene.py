@@ -9,7 +9,7 @@ class ThemeGraphene(models.AbstractModel):
         # self.enable_asset('theme_common.compatibility_saas_10_2')
 
         self.disable_view('website.template_header_default')
-        self.enable_view('website.template_header_centered_logo')
+        self.enable_view('website.template_header_contact')
         self.enable_header_off_canvas()
 
         self.disable_view('website.footer_custom')
