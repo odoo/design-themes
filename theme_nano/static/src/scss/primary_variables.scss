@@ -4,27 +4,29 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'nano-1',
+        'color-palettes-name':              'nano-1',
 
         // Header
-        'header-template':                  'sidebar',
+        'header-template':                  'centered_logo',
         'hamburger-type':                   'off-canvas',
         'hamburger-position':               'left',
         'header-font-size':                 1rem,
         'header-links-style':               'fill',
+        'menu-border-radius':               0,
+        'menu-box-shadow':                  none,
 
         // Font
-        'font':                             'Nunito',
+        'font':                             'Oxygen',
         'headings-font':                    'Nunito',
-        'navbar-font':                      'Nunito',
+        'navbar-font':                      'Oxygen',
         'buttons-font':                     'Nunito',
 
         // Body
-        'font-size-base':                   1rem,
+        'layout':                           'postcard',
         'btn-ripple':                       true,
 
         // Footer
-        'footer-template':                  'minimalist',
+        'footer-template':                  'descriptive',
         'footer-effect':                    'slideout_slide_hover',
         'footer-scrolltop':                 true,
     ),
@@ -45,7 +47,7 @@ $o-theme-font-configs: (
     ),
     'Dosis': (
         'family': ('Dosis', sans-serif),
-        'url': 'Dosis:300,300i,400,400i,700,700i',
+        'url': 'Dosis:300,400,500',
     ),
     'Lato': (
         'family': ('Lato', sans-serif),
@@ -54,16 +56,20 @@ $o-theme-font-configs: (
     'Advent Pro': (
         'family': ('Advent Pro', sans-serif),
         'url': 'Advent+Pro:300,300i,400,400i,600,600i',
-        'base': (
-            'font-size-base':               1.125rem,
-        ),
+        'properties' : (
+            'base': (
+                'font-size-base':           1.125rem,
+            ),
+        )
     ),
     'Oswald': (
         'family': ('Oswald', sans-serif),
         'url': 'Oswald:200,200i,400,400i,500,500i',
-        'base': (
-            'font-size-base':               1.25rem,
-        ),
+        'properties' : (
+            'base': (
+                'font-size-base':           1.25rem,
+            ),
+        )
     ),
     'Oxygen': (
         'family': ('Oxygen', sans-serif),
@@ -77,15 +83,35 @@ $o-theme-font-configs: (
         'family': ('Merriweather', serif),
         'url': 'Merriweather:300,300i,400,400i,700,700i',
     ),
-    'Montserrat Alternates': (
-        'family': ('Montserrat Alternates', sans-serif),
-        'url': 'Montserrat+Alternates:300,300i,400,400i,600,600i',
+    'Montserrat': (
+        'family': ('Montserrat', sans-serif),
+        'url': 'Montserrat:300,300i,400,400i,600,600i',
     ),
     'Nunito': (
         'family': ('Nunito', sans-serif),
         'url': 'Nunito:300,300i,400,400i,700,700i',
     ),
 );
+
+// Headings
+
+$o-theme-h1-font-size-multiplier:           3;
+$o-theme-h2-font-size-multiplier:           2.5;
+
+$o-theme-headings-font-weight:              400;
+
+// Texts
+
+$o-theme-font-size-lg-multiplier:           1.25;
+$o-theme-font-size-sm-multiplier:           .875;
+
+$o-theme-font-weight-light:                 300;
+$o-theme-font-weight-normal:                400;
+$o-theme-font-weight-bold:                  700;
+
+// Buttons
+
+$o-theme-btn-font-weight:                   400;
 
 //------------------------------------------------------------------------------//
 // Colors
@@ -95,46 +121,46 @@ $o-theme-font-configs: (
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'nano-1': (
-            'alpha':                            #ed8558,
-            'beta':                             #74bcc5,
-            'gamma':                            #7cc086,
-            'delta':                            #afd5a6,
-            'epsilon':                          #f3da80,
+            'alpha':                        #ed8558,
+            'beta':                         #74bcc5,
+            'gamma':                        #7cc086,
+            'delta':                        #afd5a6,
+            'epsilon':                      #f3da80,
         ),
         'nano-2': (
-            'alpha':                            #ed8c2b,
-            'beta':                             #cf4a30,
-            'gamma':                            #911146,
-            'delta':                            #35203b,
-            'epsilon':                          #88a825,
+            'alpha':                        #ed8c2b,
+            'beta':                         #cf4a30,
+            'gamma':                        #911146,
+            'delta':                        #35203b,
+            'epsilon':                      #88a825,
         ),
         'nano-3': (
-            'alpha':                            #79bd8f,
-            'beta':                             #00a388,
-            'gamma':                            #046380,
-            'delta':                            #4bb5C1,
-            'epsilon':                          #beeb9f,
+            'alpha':                        #79bd8f,
+            'beta':                         #00a388,
+            'gamma':                        #046380,
+            'delta':                        #4bb5C1,
+            'epsilon':                      #beeb9f,
         ),
         'nano-4': (
-            'alpha':                            #16c6cc,
-            'beta':                             #d72d3c,
-            'gamma':                            #ff6d3b,
-            'delta':                            #ffb733,
-            'epsilon':                          #ffd55c,
+            'alpha':                        #16c6cc,
+            'beta':                         #d72d3c,
+            'gamma':                        #ff6d3b,
+            'delta':                        #ffb733,
+            'epsilon':                      #ffd55c,
         ),
         'nano-5': (
-            'alpha':                            #14212b,
-            'beta':                             #e6e2af,
-            'gamma':                            #c9de55,
-            'delta':                            #962d3e,
-            'epsilon':                          #413659,
+            'alpha':                        #14212b,
+            'beta':                         #e6e2af,
+            'gamma':                        #c9de55,
+            'delta':                        #962d3e,
+            'epsilon':                      #413659,
         ),
         'nano-6': (
-            'alpha':                            #db5d6b,
-            'beta':                             #ea958e,
-            'gamma':                            #fffcdb,
-            'delta':                            #d4e090,
-            'epsilon':                          #79d4be,
+            'alpha':                        #db5d6b,
+            'beta':                         #ea958e,
+            'gamma':                        #fffcdb,
+            'delta':                        #d4e090,
+            'epsilon':                      #79d4be,
         ),
     )
 );
@@ -166,3 +192,9 @@ $o-color-palettes-compatibility-indexes: (
     22: 'generic-16',
     23: 'generic-17',
 );
+
+//------------------------------------------------------------------------------
+// Shapes
+//------------------------------------------------------------------------------
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Bold/12_001', (1: rgba(0, 0, 0, .5), 2: rgba(0, 0, 0, .25)));
