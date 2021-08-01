@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt256 o_cc o_cc5" remove="pt96 pb96" separator=" "/>
+        <attribute name="style" add="background-position: 50% 100%;" remove="background-position: 50% 0;" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/12_001"}</attribute>
+    </xpath>
+    <xpath expr="//*[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Bold_12_001"/>
+    </xpath>
+    <xpath expr="//*[hasclass('container')]" position="attributes">
+        <attribute name="class" add="container-fluid" remove="container" separator=" "/>
+    </xpath>
+    <!-- Box -->
+    <xpath expr="//*[hasclass('jumbotron')]" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
