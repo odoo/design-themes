@@ -4,7 +4,7 @@
     'category': 'Theme/Education',
     'summary': 'University, Education, Schools, Young, Play, Kids',
     'sequence': 240,
-    'version': '2.0.0',
+    'version': '2.1.0',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
@@ -15,8 +15,16 @@
         ],
     'images': [
         'static/description/bewise_description.jpg',
-        'static/description/bewise_screenshot.jpeg',
+        'static/description/bewise_screenshot.jpg',
     ],
+    'images_preview_theme': {
+        'website.s_cover_default_image': '/theme_bewise/static/src/img/backgrounds/college_bg.jpg',
+        'website.s_text_image_default_image': '/theme_bewise/static/src/img/content/college_graduate.jpg',
+        'website.s_image_text_default_image': '/theme_bewise/static/src/img/content/college_students.jpg',
+        'website.s_media_list_default_image_1': '/theme_bewise/static/src/img/content/college_media_1.jpg',
+        'website.s_media_list_default_image_2': '/theme_bewise/static/src/img/content/college_media_2.jpg',
+        'website.s_quotes_carousel_demo_image_0': '/theme_bewise/static/src/img/backgrounds/college_bg_4.jpg',
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-bewise.odoo.com',
     'assets': {

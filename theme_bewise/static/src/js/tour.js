@@ -1,11 +1,8 @@
-odoo.define("theme_bewise.tour.bewise", function (require) {
-"use strict";
+/** @odoo-module */
+import wTourUtils from 'website.tour_utils';
 
 const core = require("web.core");
 const _t = core._t;
-
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
 
 const snippets = [
     {
@@ -33,8 +30,8 @@ const snippets = [
         name: 'Quotes',
     },
     {
-        id: 's_company_team',
-        name: 'Team',
+        id: 's_color_blocks_2',
+        name: 'Big Boxes',
     },
 ];
 
@@ -45,11 +42,11 @@ wTourUtils.registerThemeHomepageTour("bewise_tour", [
     wTourUtils.dragNDrop(snippets[1], 'top'),
     wTourUtils.dragNDrop(snippets[2], 'top'),
     wTourUtils.dragNDrop(snippets[3], 'top'),
+    wTourUtils.clickOnSnippet(snippets[3], 'top'),
+    wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
+    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
+    wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4], 'top'),
     wTourUtils.dragNDrop(snippets[5], 'top'),
     wTourUtils.dragNDrop(snippets[6], 'top'),
-    wTourUtils.clickOnSnippet(snippets[6], 'top'),
-    wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
-    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
 ]);
-});
