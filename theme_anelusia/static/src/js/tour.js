@@ -1,17 +1,23 @@
-odoo.define("theme_anelusia.tour.anelusia", function (require) {
-"use strict";
+/** @odoo-module */
 
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
+import wTourUtils from 'website.tour_utils';
 
 const snippets = [
     {
-        id: 's_cover',
-        name: 'Cover',
+        id: 's_banner',
+        name: 'Banner',
     },
     {
         id: 's_images_wall',
         name: 'Images Wall',
+    },
+    {
+        id: 's_color_blocks_2',
+        name: 'Big Boxes',
+    },
+    {
+        id: 's_references',
+        name: 'References',
     },
     {
         id: 's_media_list',
@@ -20,6 +26,10 @@ const snippets = [
     {
         id: 's_company_team',
         name: 'Team',
+    },
+    {
+        id: 's_call_to_action',
+        name: 'Call to Action',
     },
 ];
 
@@ -33,5 +43,8 @@ wTourUtils.registerThemeHomepageTour("anelusia_tour", [
     wTourUtils.clickOnSnippet(snippets[3], 'top'),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
+    wTourUtils.goBackToBlocks(),
+    wTourUtils.dragNDrop(snippets[4]),
+    wTourUtils.dragNDrop(snippets[5]),
+    wTourUtils.dragNDrop(snippets[6]),
 ]);
-});
