@@ -16,20 +16,6 @@
         <field name="url">/theme_cobalt/static/src/img/pictures/s_banner.jpg</field>
     </record>
 
-    <!-- Text - Image -->
-    <record id="s_text_image_default_image" model="theme.ir.attachment">
-        <field name="key">website.s_text_image_default_image</field>
-        <field name="name">website.s_text_image_default_image</field>
-        <field name="url">/theme_cobalt/static/src/img/illustrations/s_text_image_default_image.svg</field>
-    </record>
-
-    <!-- Image - Text -->
-    <record id="s_image_text_default_image" model="theme.ir.attachment">
-        <field name="key">website.s_image_text_default_image</field>
-        <field name="name">website.s_image_text_default_image</field>
-        <field name="url">/theme_cobalt/static/src/img/illustrations/s_image_text_default_image.svg</field>
-    </record>
-
     <!-- (Big) Picture -->
     <record id="s_picture_default_image" model="theme.ir.attachment">
         <field name="key">website.s_picture_default_image</field>
@@ -43,9 +29,9 @@
         <field name="name">website.library_image_11</field>
         <field name="url">/theme_cobalt/static/src/img/pictures/s_three_columns_1.jpg</field>
     </record>
-    <record id="library_image_13" model="theme.ir.attachment">
-        <field name="key">website.library_image_13</field>
-        <field name="name">website.library_image_13</field>
+    <record id="s_three_columns_default_image_2" model="theme.ir.attachment">
+        <field name="key">s_three_columns_default_image_2</field>
+        <field name="name">s_three_columns_default_image_2</field>
         <field name="url">/theme_cobalt/static/src/img/pictures/s_three_columns_2.jpg</field>
     </record>
     <record id="library_image_07" model="theme.ir.attachment">
@@ -200,5 +186,48 @@
         <field name="key">website.s_popup_default_image</field>
         <field name="name">website.s_popup_default_image</field>
         <field name="url">/theme_cobalt/static/src/img/pictures/s_popup.jpeg</field>
+    </record>
+
+    <!-- Images Wall -->
+    <record id="library_image_10" model="theme.ir.attachment">
+        <field name="key">website.library_image_10</field>
+        <field name="name">website.library_image_10</field>
+        <field name="url">/theme_cobalt/static/src/img/pictures/s_image_4.jpg</field>
+    </record>
+    <record id="library_image_13" model="theme.ir.attachment">
+        <field name="key">website.library_image_13</field>
+        <field name="name">website.library_image_13</field>
+        <field name="url">/theme_cobalt/static/src/img/pictures/s_image_2.jpg</field>
+    </record>
+    <record id="library_image_05" model="theme.ir.attachment">
+        <field name="key">website.library_image_05</field>
+        <field name="name">website.library_image_05</field>
+        <field name="url">/theme_cobalt/static/src/img/pictures/s_image_5.jpg</field>
+    </record>
+    <record id="library_image_16" model="theme.ir.attachment">
+        <field name="key">website.library_image_16</field>
+        <field name="name">website.library_image_16</field>
+        <field name="url">/theme_cobalt/static/src/img/pictures/s_image_3.jpg</field>
+    </record>
+    <record id="library_image_14" model="theme.ir.attachment">
+        <field name="key">website.library_image_14</field>
+        <field name="name">website.library_image_14</field>
+        <field name="url">/theme_cobalt/static/src/img/pictures/s_image_6.jpg</field>
+    </record>
+    <!-- Images Gallery -->
+    <record id="library_image_08" model="theme.ir.attachment">
+        <field name="key">website.library_image_08</field>
+        <field name="name">website.library_image_08</field>
+        <field name="url">/theme_cobalt/static/src/img/pictures/s_gallery_1.jpg</field>
+    </record>
+    <record id="library_image_03" model="theme.ir.attachment">
+        <field name="key">website.library_image_03</field>
+        <field name="name">website.library_image_03</field>
+        <field name="url">/theme_cobalt/static/src/img/pictures/s_image_1.jpg</field>
+    </record>
+    <record id="library_image_02" model="theme.ir.attachment">
+        <field name="key">website.library_image_02</field>
+        <field name="name">website.library_image_02</field>
+        <field name="url">/theme_cobalt/static/src/img/pictures/s_gallery_3.jpg</field>
     </record>
 </odoo>
