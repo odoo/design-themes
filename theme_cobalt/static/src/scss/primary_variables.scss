@@ -2,11 +2,11 @@
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (48.83 / 16);
-$o-theme-h2-font-size-multiplier: (39.06 / 16);
-$o-theme-h3-font-size-multiplier: (31.25 / 16);
-$o-theme-h4-font-size-multiplier: (25.00 / 16);
-$o-theme-h5-font-size-multiplier: (20.00 / 16);
+$o-theme-h1-font-size-multiplier: (62 / 16);
+$o-theme-h2-font-size-multiplier: (48 / 16);
+$o-theme-h3-font-size-multiplier: (32 / 16);
+$o-theme-h4-font-size-multiplier: (24 / 16);
+$o-theme-h5-font-size-multiplier: (20 / 16);
 $o-theme-h6-font-size-multiplier: 1.1;
 
 $o-theme-font-configs: (
@@ -35,20 +35,12 @@ $o-website-values-palettes: (
         'navbar-font': 'Inter',
         'buttons-font': 'Inter',
 
-        'font-size-base': (14 / 16) * 1rem,
-        'header-font-size': (14 / 16) * 1rem,
-
         'hamburger-type': 'off-canvas',
         'menu-box-shadow': false,
 
         'btn-ripple': true,
         'btn-secondary-outline': true,
-        'btn-font-size': (14 / 16) * 1rem,
         'btn-border-radius': 2px,
-
-        'btn-font-size-lg': (12 / 16) * 1rem,
-        'btn-padding-y-lg': 1rem,
-        'btn-padding-x-lg': 3.3rem,
     ),
 );
 
@@ -78,7 +70,9 @@ $o-color-palettes-compatibility-indexes: (
 //------------------------------------------------------------------------------
 // Shapes
 //------------------------------------------------------------------------------
-
+// Keep for compatibility
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Blobs/03', (2: 2));
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Bold/01', (2: 2));
 $o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Bold/01', (2: 'footer'));
+// New
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/11_001', (3: 1));
