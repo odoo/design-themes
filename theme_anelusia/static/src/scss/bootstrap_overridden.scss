@@ -33,7 +33,7 @@ $box-shadow-lg:                             0 0 .3125rem rgba(0,0,0,.25) !defaul
 
 $font-weight-normal:                        if(o-website-value('font-number') == 4, 300, 500) !default;
 
-$headings-font-weight:                      700 !default;
+$headings-font-weight:                      $o-theme-headings-font-weight !default;
 
 // Dropdowns
 //
