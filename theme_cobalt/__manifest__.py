@@ -16,6 +16,14 @@
         'static/description/cobalt_poster.jpg',
         'static/description/cobalt_screenshot.jpg',
     ],
+    'images_preview_theme': {
+        'website.library_image_03': '/theme_cobalt/static/src/img/pictures/s_image_1.jpg',
+        'website.library_image_14': '/theme_cobalt/static/src/img/pictures/s_image_6.jpg',
+        'website.library_image_10': '/theme_cobalt/static/src/img/pictures/s_image_4.jpg',
+        'website.library_image_13': '/theme_cobalt/static/src/img/pictures/s_image_2.jpg',
+        'website.library_image_16': '/theme_cobalt/static/src/img/pictures/s_image_3.jpg',
+        'website.library_image_05': '/theme_cobalt/static/src/img/pictures/s_image_5.jpg',
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-cobalt.odoo.com',
     'assets': {

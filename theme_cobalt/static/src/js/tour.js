@@ -1,16 +1,11 @@
-odoo.define("theme_cobalt.tour.cobalt", function (require) {
-"use strict";
+/** @odoo-module */
 
-const core = require("web.core");
-const _t = core._t;
-
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
+import wTourUtils from 'website.tour_utils';
 
 const snippets = [
     {
-        id: 's_text_image',
-        name: 'Image - Text',
+        id: 's_banner',
+        name: 'Banner',
     },
     {
         id: 's_references',
@@ -21,12 +16,16 @@ const snippets = [
         name: 'Text - Image',
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
+        id: 's_color_blocks_2',
+        name: 'Big Boxes',
     },
     {
-        id: 's_picture',
-        name: 'Picture',
+        id: 's_title',
+        name: 'Title',
+    },
+    {
+        id: 's_image_gallery',
+        name: 'Images Wall',
     },
 ];
 
@@ -41,8 +40,6 @@ wTourUtils.registerThemeHomepageTour("cobalt_tour", [
     wTourUtils.dragNDrop(snippets[3]),
 
     wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.clickOnSnippet(snippets[4], 'top'),
-    wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
-    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
+    wTourUtils.dragNDrop(snippets[5]),
+
 ]);
-});
