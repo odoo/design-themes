@@ -16,7 +16,7 @@
         'static/description/graphene_poster.jpg',
         'static/description/graphene_screenshot.jpg',
     ],
-    'depends': ['theme_common', 'website_animate'],
+    'depends': ['theme_common'],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-graphene.odoo.com',
     'assets': {

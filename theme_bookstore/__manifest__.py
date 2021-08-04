@@ -6,7 +6,7 @@
     'sequence': 250,
     'version': '2.0.0',
     'author': 'Odoo S.A.',
-    'depends': ['theme_common', 'website_animate'],
+    'depends': ['theme_common'],
     'data': [
         'data/ir_asset.xml',
         'views/images.xml',
