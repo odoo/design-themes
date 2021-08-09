@@ -1,10 +1,9 @@
-odoo.define("theme_orchid.tour.orchid", function (require) {
-"use strict";
+/** @odoo-module */
+
+import wTourUtils from 'website.tour_utils';
 
 const core = require("web.core");
 const _t = core._t;
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
 
 const snippets = [
     {
@@ -45,8 +44,5 @@ wTourUtils.registerThemeHomepageTour("orchid_tour", [
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.dragNDrop(snippets[5]),
-    wTourUtils.clickOnSnippet(snippets[5]),
-    wTourUtils.changeBackgroundColor(),
-    wTourUtils.selectColorPalette(),
+    wTourUtils.clickOnText(snippets[5], 'h3'),
 ]);
-});

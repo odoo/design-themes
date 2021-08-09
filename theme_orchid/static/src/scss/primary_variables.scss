@@ -2,12 +2,14 @@
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (25 / 12);
-$o-theme-h2-font-size-multiplier: (18 / 12);
-$o-theme-h3-font-size-multiplier: (16 / 12);
-$o-theme-h4-font-size-multiplier: (14 / 12);
-$o-theme-h5-font-size-multiplier: 1;
-$o-theme-h6-font-size-multiplier: 1;
+$o-theme-h1-font-size-multiplier: (62 / 16);
+$o-theme-h2-font-size-multiplier: (48 / 16);
+$o-theme-h3-font-size-multiplier: (36 / 16);
+$o-theme-h4-font-size-multiplier: (24 / 16);
+$o-theme-h5-font-size-multiplier: (21 / 16);
+$o-theme-h6-font-size-multiplier: (18 / 16);
+
+$o-theme-headings-font-weight: 600;
 
 $o-theme-font-configs: (
     'Heebo': (
@@ -46,6 +48,10 @@ $o-theme-font-configs: (
         'family': ('Muli', sans-serif),
         'url': 'Muli:300,300i,400,400i,700,700i',
     ),
+    'Cormorant Garamond': (
+        'family': ('Cormorant Garamond', serif),
+        'url': 'Cormorant+Garamond:300,300i,400,400i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -54,9 +60,9 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'orchid-1',
+        'color-palettes-name': 'orchid-7',
         'font': 'Questrial',
-        'headings-font': 'Questrial',
+        'headings-font': 'Cormorant Garamond',
         'navbar-font': 'Questrial',
         'buttons-font': 'Questrial',
         'header-template': 'default',
@@ -97,6 +103,9 @@ $o-color-palettes-compatibility-indexes: (
 //------------------------------------------------------------------------------
 
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/05', (1: 4, 5: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/04', (5: 4));
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/07', (3: 4));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/22', (3: 3));
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/23', (3: 1));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/01_001', (3: 1));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/01_001', (3: 2));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/12', (2: 2, 5: 4));
