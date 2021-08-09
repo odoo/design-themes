@@ -16,6 +16,12 @@
         'static/description/vehicle_description.png',
         'static/description/vehicle_screenshot.jpeg',
     ],
+    'images_preview_theme': {
+        'website.s_cover_default_image': '/theme_vehicle/static/src/img/snippets/s_cover.jpg',
+        'website.s_text_image_default_image': '/theme_vehicle/static/src/img/snippets/s_text_image.jpg',
+        'website.s_masonry_block_default_image_1': '/theme_vehicle/static/src/img/snippets/s_masonry_block.jpg',
+        'website.s_image_text_default_image': '/theme_vehicle/static/src/img/snippets/s_image_text.jpg',
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-vehicle.odoo.com',
     'assets': {
