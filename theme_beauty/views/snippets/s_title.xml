@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_title" inherit_id="website.s_title">
-        <!-- Section -->
-        <xpath expr="//section" position="attributes">
-            <attribute name="class" add="o_cc o_cc4" separator=" "/>
-        </xpath>
-        <!-- Title -->
-        <xpath expr="//h1" position="replace">
-            <h1 style="text-align: center;">
-                <font style="font-size: 62px;">Close your eyes and let yourself go in the expert hands of our beauticians.</font>
-            </h1>
-        </xpath>
-    </template>
+
+<template id="s_title" inherit_id="website.s_title">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc4 pt80" remove="pt40" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13_001","flip":["y"]}</attribute>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Close your eyes and let yourself go in the expert hands of our beauticians.
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_13_001 o_we_flip_y"/>
+    </xpath>
+</template>
+
 </odoo>

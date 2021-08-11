@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt168 pb168" remove="pt48 pb24" separator=" "/>
+    </xpath>
+    <!-- Change position of background image -->
+    <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
+        <attribute name="style" add="background-position: 50% 100%;" remove="background-position: 50% 0;" separator=";"/>
+    </xpath>
+    <!-- Jumbotron -->
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc1" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
