@@ -55,10 +55,10 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (36 / 14);
-$o-theme-h2-font-size-multiplier: (30 / 14);
-$o-theme-h3-font-size-multiplier: (24 / 14);
-$o-theme-h4-font-size-multiplier: (18 / 14);
+$o-theme-h1-font-size-multiplier: (48 / 14);
+$o-theme-h2-font-size-multiplier: (36 / 14);
+$o-theme-h3-font-size-multiplier: (30 / 14);
+$o-theme-h4-font-size-multiplier: (24 / 14);
 $o-theme-h5-font-size-multiplier: 1;
 $o-theme-h6-font-size-multiplier: (12 / 14);
 
@@ -137,23 +137,18 @@ $o-website-values-palettes: (
     (
         'color-palettes-name': 'monglia-1',
 
-        'header-font-size': (18 / 16) * 1rem,
+        'header-font-size': (20 / 16) * 1rem,
         'font': 'Roboto',
         'headings-font': 'Darker Grotesque',
         'navbar-font': 'Darker Grotesque',
-        'buttons-font': 'Darker Grotesque',
-        'header-template': 'hamburger',
-        'hamburger-type': 'off-canvas',
-        'hamburger-position': 'left',
+        'buttons-font': 'Roboto',
         'footer-template': 'minimalist',
 
         'btn-border-radius': 0,
         'btn-border-radius-sm': 0,
         'btn-border-radius-lg': 0,
-        'btn-font-size': 1.2rem,
         'btn-padding-y': .474rem,
         'btn-padding-x': 1.25rem,
-        'btn-font-size-lg': 2rem,
         'btn-padding-y-lg': .4rem,
         'btn-padding-x-lg': 2rem,
     ),
@@ -186,3 +181,7 @@ $o-color-palettes-compatibility-indexes: (
     22: 'generic-16',
     23: 'generic-17',
 );
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Blocks/04', (5:5, 3:2, 2:3, 1:4));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Blocks/04', 'second', (5:5, 3:2, 2:3, 1:4));
+
