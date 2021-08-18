@@ -5,14 +5,8 @@
 
 <!-- ==== Headers ===== -->
 <template id="header_shadow" inherit_id="website.template_header_default" name="Cobalt Header Shadow">
-    <xpath expr="//nav" position="attributes">
-        <attribute name="class" remove="shadow-sm" separator=" "/>
-    </xpath>
-</template>
-
-<template id="header_button" inherit_id="website.template_header_default_oe_structure_header_default_1" name="Cobalt Header Button">
-    <xpath expr="//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
+    <xpath expr="//t[@t-set='_navbar_classes']" position="attributes">
+        <attribute name="t-valuef" remove="shadow-sm" separator=" "/>
     </xpath>
 </template>
 
