@@ -45,7 +45,7 @@ var WebsiteAnimate = {
             var direction = (windowTop < lastScroll) ? -1 : 1;
             lastScroll = windowTop;
 
-            self.items.each(function () {
+            $(".o_animate").each(function () {
                 var $el       = $(this);
                 var elHeight  = $el.height();
                 var elOffset  = direction * Math.max((elHeight * self.offsetRatio), self.offsetMin);
