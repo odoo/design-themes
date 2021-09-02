@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_masonry_block" inherit_id="website.s_masonry_block">
+    <template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
         <!-- Column 1 -->
         <xpath expr="(//div[hasclass('col-lg-6')])[3]" position="replace">
             <div class="col-lg-6 o_cc o_cc4 text-center">

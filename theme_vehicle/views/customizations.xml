@@ -70,7 +70,7 @@
 </template>
 
 <!-- ======== MASONERY BLOCK ======== -->
-<template id="s_masonry_block" inherit_id="website.s_masonry_block" name="Vehicle s_masonry_block">
+<template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template" name="Vehicle s_masonry_block">
     <xpath expr="//p" position="replace"/>
 
     <xpath expr="//div[hasclass('h-100')]/div//h3" position="replace">
