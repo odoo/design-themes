@@ -1,11 +1,6 @@
-odoo.define("theme_paptic.tour.paptic", function (require) {
-"use strict";
+/** @odoo-module */
 
-const core = require("web.core");
-const _t = core._t;
-
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
+import wTourUtils from 'website.tour_utils';
 
 const snippets = [
     {
@@ -24,6 +19,14 @@ const snippets = [
         id: 's_three_columns',
         name: 'Columns',
     },
+    {
+        id: 's_comparisons',
+        name: 'Comparisons',
+    },
+    {
+        id: 's_call_to_action',
+        name: 'Call to Action',
+    },
 ];
 
 
@@ -31,9 +34,9 @@ wTourUtils.registerThemeHomepageTour("paptic_tour", [
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
-
     wTourUtils.dragNDrop(snippets[1], 'top'),
     wTourUtils.dragNDrop(snippets[2], 'top'),
     wTourUtils.dragNDrop(snippets[3], 'top'),
+    wTourUtils.dragNDrop(snippets[4], 'top'),
+    wTourUtils.dragNDrop(snippets[5], 'top'),
 ]);
-});

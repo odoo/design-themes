@@ -10,13 +10,13 @@
     </xpath>
 </template>
 
-
 <!-- Snippets -->
 
 <!-- ==== Cover ===== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Paptic s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0 pt192" remove="pt96 pb96 bg-black-50 s_parallax_is_fixed s_parallax" separator=" "/>
+        <attribute name="class" add="pb0 pt192 o_cc o_cc5" remove="pt96 pb96 bg-black-50 s_parallax_is_fixed s_parallax" separator=" "/>
+        <attribute name="data-scroll-background-ratio">0</attribute>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":["x"]}</attribute>
     </xpath>
 
@@ -35,16 +35,15 @@
     <!-- Remove color filter -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
 
-
     <xpath expr="//h1" position="replace">
-        <h1 class="text-o-color-4">Grow your Business.<br/>Optimize your time.</h1>
+        <h1>Grow your Business.<br/>Optimize your time.</h1>
     </xpath>
     <xpath expr="//p" position="replace">
-        <p class="text-o-color-3">&#160;</p>
+        <p>&#160;</p>
     </xpath>
 
     <xpath expr="//p[2]" position="replace">
-        <p class="text-o-color-3">
+        <p>
             <a href="#" class="btn btn-lg btn-primary mb-2">START NOW</a>&#160;&#160;&#160;&#160;
             <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary mb-2"><t t-esc="cta_btn_text and cta_btn_text.upper()">SCHEDULE A DEMO</t></a>
         </p>
@@ -55,7 +54,7 @@
         <div class="row">
             <div class="o_colored_level col-lg-6"/>
             <div class="o_colored_level col-lg-6">
-                <img src="/web_editor/shape/theme_paptic/s_cover_person.svg?c1=%236772E5" style="width: 100%;" alt="Man waiting at the airport"/>
+                <img src="/web_editor/shape/theme_paptic/s_cover_person.svg?c1=o-color-1" style="width: 100%;" alt="Man waiting at the airport"/>
             </div>
         </div>
     </xpath>
@@ -69,7 +68,7 @@
 <!-- ==== Image-Text ===== -->
 <template id="s_image_text" inherit_id="website.s_image_text" name="Paptic s_image_text">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt96 pb16 o_cc o_cc3" remove="pt32 pb32" separator=" "/>
+        <attribute name="class" add="pt160 pb16 o_cc o_cc3" remove="pt32 pb32" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["y"]}</attribute>
     </xpath>
 
@@ -78,15 +77,17 @@
     </xpath>
 
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web_editor/shape/theme_paptic/s_image_text.svg?c1=%236772E5</attribute>
+        <attribute name="src">/web_editor/shape/theme_paptic/s_image_text.svg?c1=o-color-1</attribute>
     </xpath>
 
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
         <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
     </xpath>
 
-    <xpath expr="//h2" position="replace">
-        <h2>Help you grow</h2>
+    <xpath expr="//h2" position="replace" mode="inner">
+        <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-3) 100%);" class="text-gradient">Help you grow</font>
+    </xpath>
+    <xpath expr="//h2" position="after">
         <p>&#160;</p>
     </xpath>
 
@@ -104,7 +105,7 @@
     </xpath>
 
     <xpath expr="//a[hasclass('btn')]" position="replace">
-        <a href="#" class="btn btn-link mb-2">DISCOVER MORE <i class="fa fa-chevron-right"/></a>
+        <a href="#" class="btn btn-link mb-2">DISCOVER MORE &#160;<i class="fa fa-chevron-right"/></a>
     </xpath>
 
     <xpath expr="//img" position="attributes">
@@ -117,22 +118,23 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt80 pb88 o_cc o_cc3" remove="pt32 pb32" separator=" "/>
     </xpath>
-
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web_editor/shape/theme_paptic/s_text_image.svg?c1=%236772E5</attribute>
+        <attribute name="src">/web_editor/shape/theme_paptic/s_text_image.svg?c1=o-color-1</attribute>
     </xpath>
-
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="offset-lg-1" separator=" "/>
     </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-3) 100%);" class="text-gradient">A Section Subtitle</font>
+    </xpath>
 </template>
 
 <!-- ==== Showcase ===== -->
 <template id="s_showcase" inherit_id="website.s_showcase" name="Paptic s_showcase">
-     <xpath expr="//i[hasclass('text-secondary')]" position="attributes">
+    <xpath expr="//i[hasclass('text-secondary')]" position="attributes">
         <attribute name="class" remove="text-secondary" separator=" "/>
     </xpath>
     <xpath expr="//i[hasclass('text-secondary')]" position="attributes">
@@ -151,13 +153,17 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt96 pb80" remove="pt40 pb40" separator=" "/>
     </xpath>
-     <xpath expr="//h1" position="replace">
-        <h1 style="text-align: center">Unique experiences.</h1>
+     <xpath expr="//h1" position="replace" mode="inner">
+        Unique experiences.
     </xpath>
 </template>
 
 <!-- ======== QUOTES ======== -->
  <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Paptic s_quotes_carousel">
+    <!-- Remove preset color -->
+    <xpath expr="//section/div" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2" separator=" "/>
+    </xpath>
     <!-- Assign slide3 as 'active' and move it in first position -->
     <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
         <attribute name="class" remove="active" separator=" "/>
@@ -202,36 +208,63 @@
 <!-- ==== Three Columns ===== -->
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Paptic s_three_columns">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt32 pb32 o_cc o_cc2" add="pt120 pb120" separator=" "/>
+        <attribute name="class" remove="pt32 pb32 o_cc2" add="pt120 pb120 o_cc3 o_colored_level" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
         <div class="o_we_shape o_web_editor_Origins_02_001"></div>
     </xpath>
     <xpath expr="//div[hasclass('row')]" position="before">
-        <h3 style="text-align: center;">SUCCESS STORIES</h3>
+        <h3 style="text-align: center;"><font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-3) 100%);" class="text-gradient">SUCCESS STORIES</font></h3>
         <p>&#160;</p>
     </xpath>
-    <xpath expr="//div[hasclass('row')]/div/div" position="replace">
-        <img class="d-block img-fluid figure-img rounded shadow-lg img-thumbnail padding-medium" src="/web/image/website.s_three_columns_default_image_1" alt="s_three_columns_1"/>
-        &#160;
-        <h5 class="text-o-color-3">HeyNosf Inc. Digital Transformation</h5>
-        &#160;
-        <p>HeyNosf Inc. is a communication agency that was founded in 2006, by Jean-Louis Dewinter. He always had a strong interest in languages and decided to create a company reflecting his own interests.</p>
+
+    <!-- Card #1 -->
+    <xpath expr="//div[hasclass('card')]" position="attributes">
+        <attribute name="style" add="border-width: 0px !important; box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.05) !important;" separator=";"/>
     </xpath>
-    <xpath expr="//div[hasclass('row')]/div[2]/div" position="replace">
-        <img class="d-block img-fluid figure-img rounded shadow-lg img-thumbnail padding-medium" src="/web/image/website.s_three_columns_default_image_2" alt="s_three_columns_2"/>
-        &#160;
-        <h5 class="text-o-color-3">Fallanzy Integration Explained</h5>
-        &#160;
-        <p>Fallanzy has been active in the workspace design and ergonomics consulting business for over 20 years. Discover how we answered to the challenges of this company.</p>
+    <!-- Card #1 - Title & text -->
+    <xpath expr="//h3[hasclass('card-title')]" position="replace" mode="inner">
+        HeyNosf Inc. Digital Transformation
     </xpath>
-    <xpath expr="//div[hasclass('row')]/div[3]/div" position="replace">
-        <img class="d-block img-fluid figure-img rounded shadow-lg img-thumbnail padding-medium" src="/web/image/website.s_three_columns_default_image_3" alt="s_three_columns_3"/>
-        &#160;
-        <h5 class="text-o-color-3">Hotels Improvement Study</h5>
-        &#160;
-        <p>Our solution is suitable for Hotels as well. We help management to optimize their time and employee to be more efficient and more productive. Discover our study.</p>
+    <xpath expr="//p[hasclass('card-text')]" position="replace" mode="inner">
+        HeyNosf Inc. is a communication agency that was founded in 2006, by Jean-Louis Dewinter. He always had a strong interest in languages and decided to create a company reflecting his own interests.
+    </xpath>
+    <!-- Card #1 - Image -->
+    <xpath expr="//img[hasclass('card-img-top')]" position="attributes">
+        <attribute name="style">padding: 8px !important;</attribute>
+    </xpath>
+
+    <!-- Card #2 -->
+    <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+        <attribute name="style" add="border-width: 0px !important; box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.05) !important;" separator=";"/>
+    </xpath>
+    <!-- Card #2 - Title & text -->
+    <xpath expr="(//h3[hasclass('card-title')])[2]" position="replace" mode="inner">
+        Fallanzy Integration Explained
+    </xpath>
+    <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
+        Fallanzy has been active in the workspace design and ergonomics consulting business for over 20 years. Discover how we answered to the challenges of this company.
+    </xpath>
+    <!-- Card #2 - Image -->
+    <xpath expr="(//img[hasclass('card-img-top')])[2]" position="attributes">
+        <attribute name="style">padding: 8px !important;</attribute>
+    </xpath>
+
+    <!-- Card #3 -->
+    <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+        <attribute name="style" add="border-width: 0px !important; box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.05) !important;" separator=";"/>
+    </xpath>
+    <!-- Card #3 - Title & text -->
+    <xpath expr="(//h3[hasclass('card-title')])[3]" position="replace" mode="inner">
+        Hotels Improvement Study
+    </xpath>
+    <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
+        Our solution is suitable for Hotels as well. We help management to optimize their time and employee to be more efficient and more productive. Discover our study.
+    </xpath>
+    <!-- Card #3 - Image -->
+    <xpath expr="(//img[hasclass('card-img-top')])[3]" position="attributes">
+        <attribute name="style">padding: 8px !important;</attribute>
     </xpath>
 </template>
 
@@ -239,16 +272,165 @@
 <template id="s_picture" inherit_id="website.s_picture" name="Paptic s_picture">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt72 o_cc1" remove="o_cc2 pt48" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/08","flip":[]}</attribute>
     </xpath>
-
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Bold_08"/>
-    </xpath>
-
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web_editor/shape/theme_paptic/s_picture.svg?c1=%236772E5</attribute>
-        <attribute name="class" add="" remove="img-thumbnail padding-large" separator=" "/>
+        <attribute name="src">/web_editor/shape/theme_paptic/s_picture.svg?c1=o-color-1</attribute>
+        <attribute name="class" add="img-fluid" remove="img-thumbnail" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ==== Comparisons ===== -->
+<template id="s_comparisons" inherit_id="website.s_comparisons" name="Paptic s_comparisons">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt0 pb80" remove="pt32 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_03"/>
+    </xpath>
+    <!-- Left card -->
+    <xpath expr="//div[hasclass('card')]" position="attributes">
+        <attribute name="class" add="bg-o-color-2" remove="bg-200" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ==== Call to action ===== -->
+<template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Paptic s_call_to_action">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt120 pb120 o_cc1" remove="pt48 pb24 o_cc3" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":["y"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Airy_12_001 o_we_flip_y"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        <b>50,000+ companies</b> run Paptic to grow their businesses.
+    </xpath>
+</template>
+
+<!-- ==== Banner ===== -->
+<template id="s_banner" inherit_id="website.s_banner" name="Paptic s_banner">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
+    <!-- Jumbotron -->
+    <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ==== Numbers ===== -->
+<template id="s_numbers" inherit_id="website.s_numbers" name="Paptic s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt80 pb80 o_cc4" remove="pt24 pb24 o_cc2" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/01_001","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Blocks_01_001"/>
+    </xpath>
+</template>
+
+<!-- ==== Big Boxes ===== -->
+<template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2" name="Paptic s_color_blocks_2">
+    <!-- Left column -->
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03","flip":["y"]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')]/i" position="before">
+        <div class="o_we_shape o_web_editor_Blocks_03 o_we_flip_y"/>
+    </xpath>
+    <!-- Right column -->
+    <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03","flip":["x","y"]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][2]/i" position="before">
+        <div class="o_we_shape o_web_editor_Blocks_03 o_we_flip_x o_we_flip_y"/>
+    </xpath>
+</template>
+
+<!-- ==== Features ===== -->
+<template id="s_features" inherit_id="website.s_features" name="Paptic s_features">
+    <xpath expr="//div[hasclass('container')]" position="attributes">
+        <attribute name="class" add="container-fluid" remove="container" separator=" "/>
+    </xpath>
+    <!-- Column #1 -->
+    <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
+        <attribute name="class" add="o_cc o_cc4" separator=" "/>
+    </xpath>
+    <!-- Column #2 -->
+    <xpath expr="//div[hasclass('col-lg-4')][2]" position="attributes">
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][2]/i" position="attributes">
+        <attribute name="class" add="bg-o-color-2" remove="bg-o-color-5" separator=" "/>
+    </xpath>
+    <!-- Column #3 -->
+    <xpath expr="//div[hasclass('col-lg-4')][3]" position="attributes">
+        <attribute name="class" add="o_cc o_cc2" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][3]/i" position="attributes">
+        <attribute name="class" add="bg-o-color-3" remove="bg-secondary" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ==== Media List ===== -->
+<template id="s_media_list" inherit_id="website.s_media_list" name="Paptic s_media_list">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc3 pt80 pb80" remove="o_cc2 pt32 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":["x"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_07_002 o_we_flip_x"/>
+    </xpath>
+    <!-- Container -->
+    <xpath expr="//div[hasclass('container')]" position="attributes">
+        <attribute name="class" add="o_container_small" remove="container" separator=" "/>
+    </xpath>
+    <!-- Item #1 -->
+    <xpath expr="//div[hasclass('s_media_list_item')]/div" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+    <!-- Item #2 -->
+    <xpath expr="//div[hasclass('s_media_list_item')][2]/div" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+    <!-- Item #3 -->
+    <xpath expr="//div[hasclass('s_media_list_item')][3]/div" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ==== Features Grid ===== -->
+<template id="s_features_grid" inherit_id="website.s_features_grid" name="Paptic s_features_grid">
+    <!-- Icon #4 -->
+    <xpath expr="(//i)[4]" position="attributes">
+        <attribute name="class" add="rounded-circle bg-o-color-3" remove="rounded bg-secondary" separator=" "/>
+    </xpath>
+    <!-- Icon #5 -->
+    <xpath expr="(//i)[5]" position="attributes">
+        <attribute name="class" add="rounded-circle bg-o-color-3" remove="rounded bg-secondary" separator=" "/>
+    </xpath>
+    <!-- Icon #6 -->
+    <xpath expr="(//i)[6]" position="attributes">
+        <attribute name="class" add="rounded-circle bg-o-color-3" remove="rounded bg-secondary" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ==== Pricelist ===== -->
+<template id="s_product_catalog" inherit_id="website.s_product_catalog" name="Paptic s_product_catalog">
+    <!-- Filter -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_bg_filter bg-white-75"/>
     </xpath>
 </template>
 
