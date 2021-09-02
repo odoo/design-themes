@@ -4,7 +4,7 @@
     'category': 'Theme/Corporate',
     'summary': 'Consultancy, Design, Tech, Computers, IT, Blogs',
     'sequence': 110,
-    'version': '2.0.0',
+    'version': '2.1.0',
     'author': 'Odoo S.A.',
     'depends': ['website'],
     'data': [
@@ -16,6 +16,11 @@
         'static/description/paptic_poster.jpg',
         'static/description/paptic_screenshot.jpg',
     ],
+    'images_preview_theme': {
+        'website.s_three_columns_default_image_1': '/theme_paptic/static/src/img/pictures/s_three_columns_1.jpg',
+        'website.s_three_columns_default_image_2': '/theme_paptic/static/src/img/pictures/s_three_columns_2.jpg',
+        'website.s_three_columns_default_image_3': '/theme_paptic/static/src/img/pictures/s_three_columns_3.jpg',
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-paptic.odoo.com',
     'assets': {
