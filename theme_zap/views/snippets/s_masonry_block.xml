@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="s_masonry_block" inherit_id="website.s_masonry_block">
+    <template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
         <!-- Block #01 -->
         <xpath expr="//div[hasclass('col-lg-6')][2]//div[hasclass('col-lg-6')]/*" position="before">
             <i class="fa fa-star fa-1x text-secondary rounded shadow-sm mx-auto mb-3"/>
