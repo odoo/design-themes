@@ -1,33 +1,26 @@
-odoo.define("theme_avantgarde.tour.avantgarde", function (require) {
-"use strict";
-
-const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
+/** @odoo-module */
+import wTourUtils from 'website.tour_utils';
 
 const snippets = [
     {
-        id: 's_title',
-        name: 'Title',
+        id: 's_cover',
+        name: 'Cover',
     },
     {
-        id: 's_carousel',
-        name: 'Carousel',
+        id: 's_picture',
+        name: 'Picture',
+    },
+    {
+        id: 's_three_columns',
+        name: 'Columns',
     },
     {
         id: 's_text_image',
-        name: 'Image - Text',
+        name: 'Text - Image',
     },
     {
-        id: 's_images_wall',
-        name: 'Images Wall',
-    },
-    {
-        id: 's_references',
-        name: 'References',
-    },
-    {
-        id: 's_quotes_carousel',
-        name: 'Quotes',
+        id: 's_call_to_action',
+        name: 'Call to Action',
     },
 ];
 
@@ -35,17 +28,11 @@ wTourUtils.registerThemeHomepageTour("avantgarde_tour", [
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.clickOnText(snippets[0], 'h1', 'left'),
     wTourUtils.goBackToBlocks(),
-
     wTourUtils.dragNDrop(snippets[1], 'left'),
-
     wTourUtils.dragNDrop(snippets[2], 'bottom'),
     wTourUtils.clickOnSnippet(snippets[2], 'top'),
-    wTourUtils.changeBackgroundColor('top'),
-    wTourUtils.selectColorPalette(),
+    wTourUtils.changePaddingSize('top'),
     wTourUtils.goBackToBlocks(),
-
     wTourUtils.dragNDrop(snippets[3], 'top'),
-
     wTourUtils.dragNDrop(snippets[4], 'top'),
 ]);
-});
