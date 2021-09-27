@@ -133,7 +133,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'notes';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'notes-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'notes-1',

@@ -114,7 +114,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'graphene';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'graphene-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'graphene-1',

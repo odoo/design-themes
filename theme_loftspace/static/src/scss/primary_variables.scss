@@ -143,7 +143,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'loftspace';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'graphene-2');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'loftspace-1',

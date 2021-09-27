@@ -205,7 +205,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'clean';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'clean-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'clean-1',

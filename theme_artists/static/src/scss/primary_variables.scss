@@ -108,7 +108,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'artists';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'artists-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'artists-1',

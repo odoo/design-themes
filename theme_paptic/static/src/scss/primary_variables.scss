@@ -57,7 +57,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'paptic';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'paptic-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'paptic-1',

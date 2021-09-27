@@ -135,7 +135,7 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     )
 );
 
-$o-palette-priority-prefix: 'anelusia';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'generic-17');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'anelusia-1',
