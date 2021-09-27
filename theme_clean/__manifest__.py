@@ -39,6 +39,10 @@
         'website.s_three_columns_default_image_2': '/theme_clean/static/src/img/content/image_content_23.jpg',
         'website.s_three_columns_default_image_3': '/theme_clean/static/src/img/content/image_content_24.jpg',
     },
+    'snippet_lists': {
+        'homepage': ['s_cover', 's_text_image', 's_title', 's_features', 's_carousel', 's_numbers',
+                     's_three_columns', 's_call_to_action'],
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-clean.odoo.com',
     'assets': {

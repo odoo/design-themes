@@ -23,7 +23,7 @@
         'views/snippets/s_numbers.xml',
         'views/snippets/s_features.xml',
         'views/snippets/s_image_gallery.xml',
-        ],
+    ],
     'images': [
         'static/description/kea_description.png',
         'static/description/kea_screenshot.jpg',
@@ -33,9 +33,12 @@
         'website.s_picture_default_image': '/theme_kea/static/src/img/snippets/s_picture.jpg',
         'website.s_quotes_carousel_demo_image_1': '/theme_kea/static/src/img/snippets/s_quotes_carousel_1.jpg',
         'website.s_quotes_carousel_demo_image_2': '/theme_kea/static/src/img/snippets/s_quotes_carousel_2.jpg',
-        'website.s_media_list_default_image_1': '/theme_kea/static/src/img/snippets/s_media_list_1.jpg', 
-        'website.s_media_list_default_image_2': '/theme_kea/static/src/img/snippets/s_media_list_2.jpg', 
+        'website.s_media_list_default_image_1': '/theme_kea/static/src/img/snippets/s_media_list_1.jpg',
+        'website.s_media_list_default_image_2': '/theme_kea/static/src/img/snippets/s_media_list_2.jpg',
         'website.s_media_list_default_image_3': '/theme_kea/static/src/img/snippets/s_media_list_3.jpg',
+    },
+    'snippet_lists': {
+        'homepage': ['s_cover', 's_text_image', 's_picture', 's_image_text', 's_color_blocks_2', 's_media_list'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-kea.odoo.com',

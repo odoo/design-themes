@@ -30,8 +30,7 @@
         'views/snippets/s_parallax.xml',
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_quotes_carousel.xml',
-
-        ],
+    ],
     'images': [
         'static/description/notes_description.jpg',
         'static/description/notes_screenshot.jpg',
@@ -44,6 +43,9 @@
         'website.s_media_list_default_image_1': '/theme_notes/static/src/img/content/content_img_25.jpg',
         'website.s_media_list_default_image_2': '/theme_notes/static/src/img/content/content_img_26.jpg',
         'website.s_media_list_default_image_3': '/theme_notes/static/src/img/content/content_img_27.jpg',
+    },
+    'snippet_lists': {
+        'homepage': ['s_carousel', 's_masonry_block', 's_text_image', 's_product_catalog', 's_media_list', 's_company_team'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-notes.odoo.com',
