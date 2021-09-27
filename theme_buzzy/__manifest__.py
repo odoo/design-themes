@@ -40,12 +40,14 @@
         'views/snippets/s_countdown.xml',
         'views/snippets/s_text_highlight.xml',
         'views/snippets/s_blockquote.xml',
-    
     ],
     'images': [
         'static/description/buzzy_cover.jpg',
         'static/description/buzzy_screenshot.jpg',
     ],
+    'snippet_lists': {
+        'homepage': ['s_banner', 's_text_image', 's_three_columns', 's_image_text', 's_numbers', 's_call_to_action'],
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-buzzy.odoo.com',
     'assets': {

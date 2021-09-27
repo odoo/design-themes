@@ -28,8 +28,7 @@
         'views/snippets/s_features_grid.xml',
         'views/snippets/s_product_list.xml',
         'views/snippets/s_quotes_carousel.xml',
-
-        ],
+    ],
     'images': [
         'static/description/odoo_experts_description.jpg',
         'static/description/odoo_experts_screenshot.jpg',
@@ -39,6 +38,9 @@
         'website.s_media_list_default_image_1': '/theme_odoo_experts/static/src/img/snippets/s_media_list_1.jpg',
         'website.s_media_list_default_image_2': '/theme_odoo_experts/static/src/img/snippets/s_media_list_2.jpg',
         'website.s_media_list_default_image_3': '/theme_odoo_experts/static/src/img/snippets/s_media_list_3.jpg',
+    },
+    'snippet_lists': {
+        'homepage': ['s_cover', 's_image_text', 's_media_list', 's_company_team', 's_references', 's_call_to_action'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-odoo-experts.odoo.com',

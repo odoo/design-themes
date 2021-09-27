@@ -33,8 +33,7 @@
         'views/snippets/s_product_list.xml',
         'views/snippets/s_process_steps.xml',
         'views/snippets/s_color_blocks_2.xml',
-
-        ],
+    ],
     'images': [
         'static/description/artists_description.jpg',
         'static/description/artists_screenshot.jpg',
@@ -52,6 +51,9 @@
         'website.library_image_10': '/theme_artists/static/src/img/snippets/library_image_10.jpg',
         'website.library_image_14': '/theme_artists/static/src/img/snippets/library_image_05.jpg',
         'website.library_image_16': '/theme_artists/static/src/img/snippets/library_image_16.jpg',
+    },
+    'snippet_lists': {
+        'homepage': ['s_carousel', 's_text_image', 's_three_columns', 's_title', 's_images_wall', 's_call_to_action'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-artists.odoo.com',
