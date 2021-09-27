@@ -36,6 +36,10 @@
         'website.s_product_catalog_default_image': '/theme_bistro/static/src/img/backgrounds/16.jpg',
         'website.s_quotes_carousel_demo_image_1': '/theme_bistro/static/src/img/backgrounds/19.jpg',
     },
+    'snippet_lists': {
+        'homepage': ['s_cover', 's_features', 's_picture', 's_product_catalog', 's_text_block', 's_quotes_carousel'],
+        'pricing': ["s_text_image", "s_product_catalog"],
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-bistro.odoo.com',
     'assets': {

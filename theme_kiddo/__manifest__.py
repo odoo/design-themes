@@ -17,7 +17,6 @@
         'views/snippets/s_product_list.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_cover.xml',
-
     ],
     'images': [
         'static/description/Kiddo_description.png',
@@ -26,6 +25,9 @@
     'images_preview_theme': {
         'website.s_banner_default_image': '/theme_kiddo/static/src/img/snippets/s_banner.jpg',
         'website.s_picture_default_image': '/theme_kiddo/static/src/img/content/content_img_15.jpg',
+    },
+    'snippet_lists': {
+        'homepage': ['s_banner', 's_image_text', 's_picture', 's_product_list', 's_call_to_action'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-kiddo.odoo.com',

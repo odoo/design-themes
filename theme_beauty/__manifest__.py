@@ -25,8 +25,7 @@
         'views/snippets/s_media_list.xml',
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_product_catalog.xml',
-
-        ],
+    ],
     'images': [
         'static/description/beauty_description.jpg',
         'static/description/beauty_screenshot.jpg',
@@ -40,6 +39,9 @@
         'website.s_product_list_default_image_4': '/theme_beauty/static/src/img/snippets/s_product_4.jpg',
         'website.s_product_list_default_image_5': '/theme_beauty/static/src/img/snippets/s_product_5.jpg',
         'website.s_product_list_default_image_6': '/theme_beauty/static/src/img/snippets/s_product_6.jpg',
+    },
+    'snippet_lists': {
+        'homepage': ['s_cover', 's_text_image', 's_title', 's_product_list', 's_company_team', 's_call_to_action'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-beauty.odoo.com',

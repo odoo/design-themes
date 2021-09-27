@@ -41,6 +41,9 @@
         'website.s_three_columns_default_image_2': '/theme_treehouse/static/src/img/content/three_columns_02.jpg',
         'website.s_three_columns_default_image_3': '/theme_treehouse/static/src/img/content/three_columns_03.jpg',
     },
+    'snippet_lists': {
+        'homepage': ['s_cover', 's_text_image', 's_title', 's_three_columns', 's_call_to_action'],
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-treehouse.odoo.com',
     'assets': {

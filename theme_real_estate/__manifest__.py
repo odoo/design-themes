@@ -36,7 +36,11 @@
         'website.s_three_columns_default_image_2': '/theme_real_estate/static/src/img/snippets/library_image_13.jpg',
         'website.s_three_columns_default_image_3': '/theme_real_estate/static/src/img/snippets/library_image_07.jpg',
         'website.s_masonry_block_default_image_1': '/theme_real_estate/static/src/img/snippets/s_masonry_block.jpg',
-        'website.s_quotes_carousel_demo_image_1': '/theme_real_estate/static/src/img/snippets/s_quotes_carousel_1.jpg', 
+        'website.s_quotes_carousel_demo_image_1': '/theme_real_estate/static/src/img/snippets/s_quotes_carousel_1.jpg',
+    },
+    'snippet_lists': {
+        'homepage': ['s_banner', 's_text_block', 's_text_image', 's_image_text', 's_title', 's_three_columns',
+                     's_title', 's_masonry_block', 's_numbers', 's_quotes_carousel'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-real-estate.odoo.com',

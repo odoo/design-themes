@@ -11,8 +11,7 @@
         'data/ir_asset.xml',
         'views/images_content.xml',
         'views/customizations.xml',
-
-        ],
+    ],
     'images': [
         'static/description/monglia_description.png',
         'static/description/monglia_screenshot.jpeg',
@@ -32,6 +31,10 @@
         'website.library_image_02': '/theme_monglia/static/src/img/snippets/library_image_05.jpg',
         'website.library_image_14': '/theme_monglia/static/src/img/snippets/library_image_14.jpg',
         'website.library_image_16': '/theme_monglia/static/src/img/snippets/library_image_16.jpg',
+    },
+    'snippet_lists': {
+        'homepage': ['s_cover', 's_title', 's_text_block', 's_three_columns', 's_images_wall',
+                     's_title', 's_media_list', 's_text_image'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-monglia.odoo.com',
