@@ -165,7 +165,7 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     )
 );
 
-$o-palette-priority-prefix: 'nano';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'nano-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'nano-1',

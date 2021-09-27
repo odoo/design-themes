@@ -175,7 +175,7 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     )
 );
 
-$o-palette-priority-prefix: 'zap';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'zap-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'zap-1',
