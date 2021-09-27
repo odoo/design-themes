@@ -43,6 +43,9 @@
         'website.s_reference_demo_image_5': '/theme_nano/static/src/img/snippets/s_reference_05.png',
         'website.s_reference_default_image_6': '/theme_nano/static/src/img/snippets/s_reference_06.png',
     },
+    'snippet_lists': {
+        'homepage': ['s_cover', 's_features', 's_text_block', 's_images_wall', 's_parallax', 's_references'],
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-nano.odoo.com',
     'assets': {

@@ -45,6 +45,9 @@
         'website.library_image_03': '/theme_yes/static/src/img/snippets/library_image_03.jpg',
         'website.library_image_02': '/theme_yes/static/src/img/snippets/library_image_02.jpg',
     },
+    'snippet_lists': {
+        'homepage': ['s_cover', 's_title', 's_company_team', 's_media_list', 's_images_wall', 's_quotes_carousel'],
+    },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-yes.odoo.com',
     'assets': {
