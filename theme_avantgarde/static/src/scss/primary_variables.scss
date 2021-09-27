@@ -196,7 +196,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'avantgarde';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'avantgarde-3');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'avantgarde-1',

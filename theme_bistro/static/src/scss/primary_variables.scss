@@ -171,7 +171,7 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     )
 );
 
-$o-palette-priority-prefix: 'bistro';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'bistro-5');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'bistro-1',

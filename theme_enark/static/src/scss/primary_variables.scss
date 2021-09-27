@@ -150,7 +150,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'enark';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'enark-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'enark-1',
