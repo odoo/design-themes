@@ -44,7 +44,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'cobalt';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'cobalt-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'cobalt-1',

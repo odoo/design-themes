@@ -154,7 +154,7 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-palette-priority-prefix: 'monglia';
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'monglia-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'monglia-1',
