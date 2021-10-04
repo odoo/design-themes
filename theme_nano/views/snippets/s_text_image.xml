@@ -7,7 +7,7 @@
         <attribute name="class" add="o_cc o_cc5 pt48 pb48" remove="pt32 pb32" separator=" "/>
     </xpath>
     <xpath expr="//*[hasclass('container')]" position="attributes">
-        <attribute name="class" add="container-fluid px-0" remove="container" separator=" "/>
+        <attribute name="class" add="container-fluid" remove="container" separator=" "/>
     </xpath>
     <!-- Image + Shape -->
     <xpath expr="//img" position="attributes">
