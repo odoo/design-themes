@@ -22,6 +22,12 @@ function forceAnimation() {
 
 //  Animations
 sOptions.registry.o_animate = sOptions.Class.extend({
+    /**
+     * @override
+     */
+    async onBuilt() {
+        this.$target[0].classList.toggle('o_animate_preview', this.$target[0].classList.contains('o_animate'));
+    },
 
     //--------------------------------------------------------------------------
     // Options
