@@ -14,7 +14,7 @@ var WebsiteAnimate = {
     start: function () {
         var self   = this;
         self.$scrollingElement = $().getScrollingElement();
-        self.items = $(".o_animate");
+        self.items = $("#wrapwrap .o_animate");
         self.items.each(function () {
             var $el = $(this);
             // Set all monitored elements to initial state
@@ -48,7 +48,7 @@ var WebsiteAnimate = {
             var direction = (windowTop < lastScroll) ? -1 : 1;
             lastScroll = windowTop;
 
-            $(".o_animate").each(function () {
+            $("#wrapwrap .o_animate").each(function () {
                 var $el       = $(this);
                 var elHeight  = $el.height();
                 var elOffset  = direction * Math.max((elHeight * self.offsetRatio), self.offsetMin);
@@ -140,7 +140,7 @@ publicWidget.registry.WebsiteAnimate = publicWidget.Widget.extend({
         WebsiteAnimate.start();
         // Then we render all the elements, the ones which are invisible
         // in state 0 (like fade_in for example) will stay invisible.
-        $(".o_animate").css("visibility", "visible");
+        this.$target.find('.o_animate').css("visibility", "visible");
 
         return this._super.apply(this, arguments);
     },
