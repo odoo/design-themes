@@ -21,6 +21,19 @@
         <pattern width="1" height="1" id="theme_bistro_s_quotes_carousel_demo_image_2_id" patternunits="objectBoundingBox">
             <image width="30" height="30" preserveAspectRatio="xMidYMid slice" href="/web/image/website.s_quotes_carousel_demo_image_3"/>
         </pattern>
+        <filter id="filter_readability_bistro">
+            <feColorMatrix in="SourceGraphic" type="saturate" values="0"/>
+            <feComponentTransfer>
+                <feFuncR type="table" tableValues="1 0"/>
+                <feFuncG type="table" tableValues="1 0"/>
+                <feFuncB type="table" tableValues="1 0"/>
+            </feComponentTransfer>
+            <feComponentTransfer>
+                <feFuncR type="linear" slope="10000" intercept="-4999.5"/>
+                <feFuncG type="linear" slope="10000" intercept="-4999.5"/>
+                <feFuncB type="linear" slope="10000" intercept="-4999.5"/>
+            </feComponentTransfer>
+        </filter>
     </defs>
 
     <!-- Layout -->
@@ -28,15 +41,15 @@
 
         <g data-name="Header" class="svgc_menu">
             <rect width="700" height="70" fill="#MENU_COLOR" class="svgc_menu_bg"/>
-            <circle cx="75" cy="16" r="8" fill="#MENU_COLOR" class="svgc_text" opacity="0.8"/>
-            <circle cx="100" cy="16" r="8" fill="#MENU_COLOR" class="svgc_text" opacity="0.8"/>
-            <circle cx="125" cy="16" r="8" fill="#MENU_COLOR" class="svgc_text" opacity="0.8"/>
-            <text x="333" y="22" fill="#MENU_COLOR" class="svgc_text" font-size="14" font-family="Poppins, sans-serif" font-weight="500">LOGO</text>
-            <rect width="50" height="8" x="580" y="12" rx="2" fill="#MENU_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="560" height="1" x="70" y="35" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="40" height="8" x="280" y="48" rx="2" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="40" height="8" x="330" y="48" rx="2" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="40" height="8" x="380" y="48" rx="2" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
+            <circle cx="75" cy="16" r="8" fill="#MENU_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_readability_bistro)"/>
+            <circle cx="100" cy="16" r="8" fill="#MENU_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_readability_bistro)"/>
+            <circle cx="125" cy="16" r="8" fill="#MENU_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_readability_bistro)"/>
+            <text x="333" y="22" fill="#MENU_COLOR" class="svgc_text" font-size="14" font-family="Poppins, sans-serif" font-weight="500" filter="url(#filter_readability_bistro)">LOGO</text>
+            <rect width="50" height="8" x="580" y="12" rx="2" fill="#MENU_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_readability_bistro)"/>
+            <rect width="560" height="1" x="70" y="35" fill="#MENU_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_readability_bistro)"/>
+            <rect width="40" height="8" x="280" y="48" rx="2" fill="#MENU_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_readability_bistro)"/>
+            <rect width="40" height="8" x="330" y="48" rx="2" fill="#MENU_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_readability_bistro)"/>
+            <rect width="40" height="8" x="380" y="48" rx="2" fill="#MENU_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_readability_bistro)"/>
         </g>
 
         <g data-name="Cover">
@@ -48,7 +61,7 @@
             <rect width="120" height="7" x="290" y="245" rx="2" fill="#FFFFFD" opacity="0.8"/>
             <g class="svgc_btn_group">
                 <rect width="80" height="24" rx="12" x="310" y="305" fill="#3AADAA"/>
-                <text x="324" y="322" fill="#3AADAA" class="svgc_text" font-size="12" font-family="Poppins, sans-serif" font-weight="500">Discover</text>
+                <text x="324" y="322" fill="#3AADAA" class="svgc_text" font-size="12" font-family="Poppins, sans-serif" font-weight="500" filter="url(#filter_readability_bistro)">Discover</text>
             </g>
             <path d="M-329.166,20V12.1c7.291,0,7.291-12.1,14.583-12.1S-307.291,12.1-300,12.1V20Zm-29.167,0V12.1c7.292,0,7.292-12.1,14.584-12.1s7.291,12.1,14.584,12.1V20ZM-387.5,20V12.1c7.291,0,7.291-12.1,14.584-12.1s7.291,12.1,14.583,12.1V20Zm-29.166,0V12.1c7.291,0,7.291-12.1,14.583-12.1s7.292,12.1,14.584,12.1V20Zm-29.167,0V12.1c7.292,0,7.292-12.1,14.584-12.1s7.291,12.1,14.584,12.1V20ZM-475,20V12.1c7.291,0,7.291-12.1,14.584-12.1s7.291,12.1,14.583,12.1V20Zm-29.166,0V12.1c7.291,0,7.291-12.1,14.583-12.1S-482.291,12.1-475,12.1V20Zm-29.167,0V12.1c7.292,0,7.292-12.1,14.584-12.1s7.291,12.1,14.584,12.1V20ZM-562.5,20V12.1c7.291,0,7.291-12.1,14.584-12.1s7.291,12.1,14.583,12.1V20Zm-29.166,0V12.1c7.291,0,7.291-12.1,14.583-12.1s7.292,12.1,14.584,12.1V20Zm-29.167,0V12.1c7.292,0,7.292-12.1,14.584-12.1s7.291,12.1,14.584,12.1V20ZM-650,20V12.1c7.291,0,7.291-12.1,14.584-12.1s7.291,12.1,14.583,12.1V20Zm-29.166,0V12.1c7.291,0,7.291-12.1,14.583-12.1S-657.291,12.1-650,12.1V20Zm-29.167,0V12.1c7.292,0,7.292-12.1,14.584-12.1s7.291,12.1,14.584,12.1V20ZM-737.5,20V12.1c7.291,0,7.291-12.1,14.584-12.1s7.291,12.1,14.583,12.1V20Zm-29.166,0V12.1c7.291,0,7.291-12.1,14.583-12.1s7.292,12.1,14.584,12.1V20Zm-29.167,0V12.1c7.292,0,7.292-12.1,14.584-12.1s7.291,12.1,14.584,12.1V20ZM-825,20V12.1c7.291,0,7.291-12.1,14.584-12.1s7.291,12.1,14.583,12.1V20Zm-29.166,0V12.1c7.291,0,7.291-12.1,14.583-12.1S-832.291,12.1-825,12.1V20Zm-29.167,0V12.1c7.292,0,7.292-12.1,14.584-12.1s7.291,12.1,14.584,12.1V20ZM-912.5,20V12.1c7.291,0,7.291-12.1,14.584-12.1s7.291,12.1,14.583,12.1V20Zm-29.166,0V12.1c7.291,0,7.291-12.1,14.583-12.1s7.292,12.1,14.584,12.1V20Zm-29.167,0V12.1c7.292,0,7.292-12.1,14.584-12.1s7.291,12.1,14.584,12.1V20ZM-1000,20V12.1c7.291,0,7.291-12.1,14.584-12.1s7.291,12.1,14.583,12.1V20Z" transform="translate(1000 381)" fill="#FFFFFD"/>
         </g>
@@ -78,11 +91,11 @@
         <g data-name="Picture">
             <rect width="700" height="160" x="0" y="590" fill="#383E45"/>
             <rect width="700" height="260" x="0" y="750" fill="#3AADAA"/>
-            <text x="278" y="645" fill="#383E45" class="svgc_text" font-size="24" font-family="Poppins, sans-serif" font-weight="500">Section Title</text>
-            <rect width="140" height="6" rx="2" x="280" y="667" fill="#383E45" class="svgc_text"/>
+            <text x="278" y="645" fill="#383E45" class="svgc_text" font-size="24" font-family="Poppins, sans-serif" font-weight="500" filter="url(#filter_readability_bistro)">Section Title</text>
+            <rect width="140" height="6" rx="2" x="280" y="667" fill="#383E45" class="svgc_text" filter="url(#filter_readability_bistro)"/>
             <rect width="370" height="250" rx="4" x="165" y="700" fill="#FFFFFF"/>
             <rect width="350" height="230" rx="4" x="175" y="710" fill="url(#theme_bistro_s_picture_default_image_id)" class="img_reference_s_picture_default_image"/>
-            <rect width="140" height="6" rx="2" x="280" y="972" fill="#3AADAA" class="svgc_text" opacity=".5"/>
+            <rect width="140" height="6" rx="2" x="280" y="972" fill="#3AADAA" class="svgc_text" opacity=".5" filter="url(#filter_readability_bistro)"/>
         </g>
 
         <g data-name="Pricelist">
@@ -138,19 +151,19 @@
 
         <g data-name="Footer" class="svgc_footer">
             <rect width="700" height="155" x="0" y="1660" fill="#FOOTER_COLOR" class="svgc_footer_bg"/>
-            <circle cx="320" cy="1700" r="12" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <circle cx="350" cy="1700" r="12" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <circle cx="380" cy="1700" r="12" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="287" height="6" rx="2" x="207" y="1730" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="129" height="6" rx="2" x="344" y="1747" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="65" height="6" rx="2" x="242" y="1747" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-            <text x="330" y="1785" fill="#FOOTER_COLOR" class="svgc_text" font-size="14" font-family="Poppins, sans-serif" font-weight="500">LOGO</text>
+            <circle cx="320" cy="1700" r="12" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_readability_bistro)"/>
+            <circle cx="350" cy="1700" r="12" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_readability_bistro)"/>
+            <circle cx="380" cy="1700" r="12" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_readability_bistro)"/>
+            <rect width="287" height="6" rx="2" x="207" y="1730" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_readability_bistro)"/>
+            <rect width="129" height="6" rx="2" x="344" y="1747" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_readability_bistro)"/>
+            <rect width="65" height="6" rx="2" x="242" y="1747" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_readability_bistro)"/>
+            <text x="330" y="1785" fill="#FOOTER_COLOR" class="svgc_text" font-size="14" font-family="Poppins, sans-serif" font-weight="500" filter="url(#filter_readability_bistro)">LOGO</text>
         </g>
 
         <g data-name="Copyright">
             <rect width="700" height="35" x="0" y="1815" fill="#3AADAA"/>
             <circle cx="615" cy="1815" r="15" fill="#FOOTER_COLOR"/>
-            <rect width="120" height="6" rx="2" x="70" y="1830" fill="#3AADAA" class="svgc_text"/>
+            <rect width="120" height="6" rx="2" x="70" y="1830" fill="#3AADAA" class="svgc_text" filter="url(#filter_readability_bistro)"/>
         </g>
 
     </g>
