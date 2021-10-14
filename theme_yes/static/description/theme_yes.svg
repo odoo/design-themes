@@ -55,21 +55,34 @@
         <pattern width="1" height="1" id="theme_yes_library_image_02_id" patternunits="objectBoundingBox">
             <image width="178" height="260" preserveAspectRatio="xMidYMid slice" href="#library_image_02_url"/>
         </pattern>
+        <filter id="filter_readability_yes">
+            <feColorMatrix in="SourceGraphic" type="saturate" values="0"/>
+            <feComponentTransfer>
+                <feFuncR type="table" tableValues="1 0"/>
+                <feFuncG type="table" tableValues="1 0"/>
+                <feFuncB type="table" tableValues="1 0"/>
+            </feComponentTransfer>
+            <feComponentTransfer>
+                <feFuncR type="linear" slope="10000" intercept="-4999.5"/>
+                <feFuncG type="linear" slope="10000" intercept="-4999.5"/>
+                <feFuncB type="linear" slope="10000" intercept="-4999.5"/>
+            </feComponentTransfer>
+        </filter>
     </defs>
 
     <g id="theme_yes_preview">
 
         <g data-name="Header" class="svgc_menu">
             <rect width="700" height="40" fill="#MENU_COLOR"/>
-            <rect width="40" height="8" rx="2" x="140" y="16" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="40" height="8" rx="2" x="190" y="16" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="40" height="8" rx="2" x="240" y="16" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="50" height="8" rx="2" x="491" y="16" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
+            <rect width="40" height="8" rx="2" x="140" y="16" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.5"/>
+            <rect width="40" height="8" rx="2" x="190" y="16" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.5"/>
+            <rect width="40" height="8" rx="2" x="240" y="16" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.5"/>
+            <rect width="50" height="8" rx="2" x="491" y="16" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.5"/>
             <g class="svgc_btn_group">
                 <rect width="70" height="20" rx="10" x="560" y="10" fill="#3AADAA"/>
-                <text x="574" y="24" fill="#3AADAA" class="svgc_text" font-size="12" font-family="Trebuchet MS, sans-serif" font-weight="400">Contact</text>
+                <text x="574" y="24" fill="#3AADAA" class="svgc_text" filter="url(#filter_readability_yes)" font-size="12" font-family="Trebuchet MS, sans-serif" font-weight="400">Contact</text>
             </g>
-            <text x="70" y="24" fill="#MENU_COLOR" class="svgc_text" font-size="14" font-family="Trebuchet MS, sans-serif" font-weight="700">LOGO</text>
+            <text x="70" y="24" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" font-size="14" font-family="Trebuchet MS, sans-serif" font-weight="700">LOGO</text>
         </g>
 
         <g data-name="Cover">
@@ -79,7 +92,7 @@
             <rect width="180" height="8" rx="3" x="260" y="240" fill="#FFFFFD" opacity="0.8"/>
             <g class="svgc_btn_group">
                 <rect width="70" height="20" rx="10" x="315" y="275" fill="#3AADAA"/>
-                <text x="330" y="290" fill="#3AADAA" class="svgc_text" font-size="12" font-family="Trebuchet MS, sans-serif" font-weight="400">Details</text>
+                <text x="330" y="290" fill="#3AADAA" class="svgc_text" filter="url(#filter_readability_yes)" font-size="12" font-family="Trebuchet MS, sans-serif" font-weight="400">Details</text>
             </g>
             <path d="M700,232.305c-72.558,10.2-202.176,16.993-350,16.993S72.558,242.505,0,232.305v32H700Z" transform="translate(0 160)" fill="#F6F6F6"/>
         </g>
@@ -126,8 +139,8 @@
                 </g>
                 <rect width="80" height="110" x="445" y="790" fill="url(#theme_yes_s_media_list_default_image_2_id)"/>
                 <text x="185" y="823" fill="#fff" font-size="18" font-family="Playfair Display, serif" font-weight="500">Entry Title</text>
-                <rect width="150" height="6" rx="2" x="185" y="850" fill="#383E45" class="svgc_text" opacity="0.8"/>
-                <rect width="200" height="6" rx="2" x="185" y="838" fill="#383E45" class="svgc_text" opacity="0.8"/>
+                <rect width="150" height="6" rx="2" x="185" y="850" fill="#383E45" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+                <rect width="200" height="6" rx="2" x="185" y="838" fill="#383E45" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
                 <g class="svgc_btn_group">
                     <rect width="70" height="20" rx="10" x="185" y="866" fill="#3AADAA"/>
                 </g>
@@ -171,28 +184,28 @@
 
         <g data-name="Footer" class="svgc_footer">
             <rect width="700" height="135" x="0" y="1680" fill="#FOOTER_COLOR" class="svgc_footer_bg"/>
-            <text x="70" y="1726" fill="#FOOTER_COLOR" class="svgc_text" font-size="16" font-family="Trebuchet MS, sans-serif" font-weight="500">Section Title</text>
-            <rect width="240" height="6" rx="2" x="70" y="1740" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="240" height="6" rx="2" x="70" y="1764" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="240" height="6" rx="2" x="70" y="1752" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="147" height="6" rx="2" x="70" y="1776" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="90" height="6" rx="2" x="392" y="1752" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="90" height="6" rx="2" x="392" y="1740" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="90" height="6" rx="2" x="392" y="1764" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="50" height="6" rx="2" x="392" y="1776" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <text x="392" y="1724" fill="#FOOTER_COLOR" class="svgc_text" font-size="12" font-family="Trebuchet MS, sans-serif" font-weight="500">Entry Title</text>
-            <rect width="90" height="6" rx="2" x="540" y="1740" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <rect width="90" height="6" rx="2" x="540" y="1752" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-            <text x="540" y="1724" fill="#FOOTER_COLOR" class="svgc_text" font-size="12" font-family="Trebuchet MS, sans-serif" font-weight="500">Entry Title</text>
-            <circle r="8" cx="548" cy="1775" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-            <circle r="8" cx="570" cy="1775" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-            <circle r="8" cx="591" cy="1775" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-            <circle r="8" cx="612" cy="1775" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
+            <text x="70" y="1726" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" font-size="16" font-family="Trebuchet MS, sans-serif" font-weight="500">Section Title</text>
+            <rect width="240" height="6" rx="2" x="70" y="1740" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <rect width="240" height="6" rx="2" x="70" y="1764" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <rect width="240" height="6" rx="2" x="70" y="1752" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <rect width="147" height="6" rx="2" x="70" y="1776" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <rect width="90" height="6" rx="2" x="392" y="1752" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <rect width="90" height="6" rx="2" x="392" y="1740" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <rect width="90" height="6" rx="2" x="392" y="1764" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <rect width="50" height="6" rx="2" x="392" y="1776" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <text x="392" y="1724" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" font-size="12" font-family="Trebuchet MS, sans-serif" font-weight="500">Entry Title</text>
+            <rect width="90" height="6" rx="2" x="540" y="1740" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <rect width="90" height="6" rx="2" x="540" y="1752" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.8"/>
+            <text x="540" y="1724" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" font-size="12" font-family="Trebuchet MS, sans-serif" font-weight="500">Entry Title</text>
+            <circle r="8" cx="548" cy="1775" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.5"/>
+            <circle r="8" cx="570" cy="1775" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.5"/>
+            <circle r="8" cx="591" cy="1775" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.5"/>
+            <circle r="8" cx="612" cy="1775" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_readability_yes)" opacity="0.5"/>
         </g>
 
         <g data-name="Copyright">
             <rect width="700" height="35" x="0" y="1815" fill="#3AADAA"/>
-            <rect width="120" height="6" rx="2" x="70" y="1830" fill="#3AADAA" class="svgc_text"/>
+            <rect width="120" height="6" rx="2" x="70" y="1830" fill="#3AADAA" class="svgc_text" filter="url(#filter_readability_yes)"/>
         </g>
 
     </g>
