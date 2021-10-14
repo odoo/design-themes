@@ -45,19 +45,32 @@
         <pattern width="1" height="1" id="theme_notes_s_media_list_default_image_3_id" patternunits="objectBoundingBox">
             <image width="280" height="141" preserveAspectRatio="xMidYMid slice" href="#s_media_list_default_image_3_url"/>
         </pattern>
+        <filter id="filter_theme_notes">
+            <feColorMatrix in="SourceGraphic" type="saturate" values="0"/>
+            <feComponentTransfer>
+            <feFuncR type="table" tableValues="1 0"/>
+            <feFuncG type="table" tableValues="1 0"/>
+            <feFuncB type="table" tableValues="1 0"/>
+            </feComponentTransfer>
+            <feComponentTransfer>
+            <feFuncR type="linear" slope="10000" intercept="-4999.5"/>
+            <feFuncG type="linear" slope="10000" intercept="-4999.5"/>
+            <feFuncB type="linear" slope="10000" intercept="-4999.5"/>
+            </feComponentTransfer>
+        </filter>
     </defs>
     <g fill="none" fill-rule="evenodd" class="theme_notes">
         <rect width="700" height="1850" fill="#FFFFFF"/>
         <g class="svgc_menu">
             <rect width="700" height="37" class="svgc_menu_bg" fill="#MENU_COLOR"/>
-            <path class="svgc_text" opacity="1" fill="#MENU_COLOR" fill-rule="nonzero" d="M76.345 23v-1.521h-3.741v-7.206h-1.845V23h5.586zm4.68.12c.77 0 1.463-.176 2.08-.527.619-.35 1.107-.86 1.467-1.528.36-.667.539-1.477.539-2.429 0-.951-.18-1.761-.54-2.429-.359-.667-.847-1.176-1.465-1.527-.618-.351-1.312-.527-2.082-.527-.775 0-1.471.176-2.088.527-.616.35-1.104.86-1.461 1.527-.358.668-.537 1.478-.537 2.43 0 .948.179 1.756.537 2.424a3.753 3.753 0 0 0 1.461 1.53c.617.352 1.313.528 2.088.528zm0-1.633a2.08 2.08 0 0 1-1.168-.328c-.333-.219-.59-.54-.774-.963-.183-.423-.275-.943-.275-1.56 0-.616.092-1.136.275-1.56.183-.423.441-.744.774-.962a2.075 2.075 0 0 1 1.167-.328c.446 0 .835.109 1.168.328.332.218.59.54.773.963.184.423.275.943.275 1.56 0 .616-.091 1.136-.275 1.559-.183.423-.44.744-.773.963a2.075 2.075 0 0 1-1.168.328zm9.277 1.632c.733 0 1.384-.148 1.952-.445a3.292 3.292 0 0 0 1.338-1.27c.324-.55.486-1.208.486-1.975v-1.1h-3.652v1.39h1.872l-.004.126c-.017.237-.07.452-.157.645l-.073.14a1.591 1.591 0 0 1-.682.633c-.296.15-.654.224-1.071.224-.46 0-.86-.111-1.198-.334-.338-.223-.6-.548-.784-.974-.184-.426-.277-.943-.277-1.551s.094-1.123.281-1.545c.188-.422.45-.744.787-.965a2.086 2.086 0 0 1 1.174-.332c.238 0 .456.03.654.089.197.06.373.146.528.258.155.112.286.248.394.409.108.16.192.344.252.552h1.875a3.19 3.19 0 0 0-.405-1.187 3.27 3.27 0 0 0-.812-.931 3.741 3.741 0 0 0-1.135-.607 4.3 4.3 0 0 0-1.381-.216 4.21 4.21 0 0 0-1.607.303 3.756 3.756 0 0 0-1.3.882 4.021 4.021 0 0 0-.867 1.413c-.206.555-.309 1.186-.309 1.894 0 .92.173 1.715.518 2.384a3.725 3.725 0 0 0 1.447 1.547c.62.362 1.338.543 2.156.543zm8.958 0c.77 0 1.463-.175 2.081-.526.618-.35 1.107-.86 1.466-1.528.36-.667.54-1.477.54-2.429 0-.951-.18-1.761-.54-2.429-.36-.667-.848-1.176-1.466-1.527s-1.311-.527-2.081-.527c-.776 0-1.472.176-2.088.527-.617.35-1.104.86-1.462 1.527-.358.668-.537 1.478-.537 2.43 0 .948.179 1.756.537 2.424.358.668.845 1.178 1.462 1.53.616.352 1.312.528 2.088.528zm0-1.632c-.446 0-.836-.11-1.168-.328-.332-.219-.59-.54-.773-.963-.184-.423-.275-.943-.275-1.56 0-.616.091-1.136.275-1.56.183-.423.44-.744.773-.962a2.075 2.075 0 0 1 1.168-.328c.446 0 .835.109 1.167.328.333.218.59.54.774.963.183.423.275.943.275 1.56 0 .616-.092 1.136-.275 1.559-.184.423-.441.744-.774.963a2.075 2.075 0 0 1-1.167.328z"/>
+            <path class="svgc_text" opacity="1" fill="#MENU_COLOR" fill-rule="nonzero" filter="url(#filter_theme_notes)" d="M76.345 23v-1.521h-3.741v-7.206h-1.845V23h5.586zm4.68.12c.77 0 1.463-.176 2.08-.527.619-.35 1.107-.86 1.467-1.528.36-.667.539-1.477.539-2.429 0-.951-.18-1.761-.54-2.429-.359-.667-.847-1.176-1.465-1.527-.618-.351-1.312-.527-2.082-.527-.775 0-1.471.176-2.088.527-.616.35-1.104.86-1.461 1.527-.358.668-.537 1.478-.537 2.43 0 .948.179 1.756.537 2.424a3.753 3.753 0 0 0 1.461 1.53c.617.352 1.313.528 2.088.528zm0-1.633a2.08 2.08 0 0 1-1.168-.328c-.333-.219-.59-.54-.774-.963-.183-.423-.275-.943-.275-1.56 0-.616.092-1.136.275-1.56.183-.423.441-.744.774-.962a2.075 2.075 0 0 1 1.167-.328c.446 0 .835.109 1.168.328.332.218.59.54.773.963.184.423.275.943.275 1.56 0 .616-.091 1.136-.275 1.559-.183.423-.44.744-.773.963a2.075 2.075 0 0 1-1.168.328zm9.277 1.632c.733 0 1.384-.148 1.952-.445a3.292 3.292 0 0 0 1.338-1.27c.324-.55.486-1.208.486-1.975v-1.1h-3.652v1.39h1.872l-.004.126c-.017.237-.07.452-.157.645l-.073.14a1.591 1.591 0 0 1-.682.633c-.296.15-.654.224-1.071.224-.46 0-.86-.111-1.198-.334-.338-.223-.6-.548-.784-.974-.184-.426-.277-.943-.277-1.551s.094-1.123.281-1.545c.188-.422.45-.744.787-.965a2.086 2.086 0 0 1 1.174-.332c.238 0 .456.03.654.089.197.06.373.146.528.258.155.112.286.248.394.409.108.16.192.344.252.552h1.875a3.19 3.19 0 0 0-.405-1.187 3.27 3.27 0 0 0-.812-.931 3.741 3.741 0 0 0-1.135-.607 4.3 4.3 0 0 0-1.381-.216 4.21 4.21 0 0 0-1.607.303 3.756 3.756 0 0 0-1.3.882 4.021 4.021 0 0 0-.867 1.413c-.206.555-.309 1.186-.309 1.894 0 .92.173 1.715.518 2.384a3.725 3.725 0 0 0 1.447 1.547c.62.362 1.338.543 2.156.543zm8.958 0c.77 0 1.463-.175 2.081-.526.618-.35 1.107-.86 1.466-1.528.36-.667.54-1.477.54-2.429 0-.951-.18-1.761-.54-2.429-.36-.667-.848-1.176-1.466-1.527s-1.311-.527-2.081-.527c-.776 0-1.472.176-2.088.527-.617.35-1.104.86-1.462 1.527-.358.668-.537 1.478-.537 2.43 0 .948.179 1.756.537 2.424.358.668.845 1.178 1.462 1.53.616.352 1.312.528 2.088.528zm0-1.632c-.446 0-.836-.11-1.168-.328-.332-.219-.59-.54-.773-.963-.184-.423-.275-.943-.275-1.56 0-.616.091-1.136.275-1.56.183-.423.44-.744.773-.962a2.075 2.075 0 0 1 1.168-.328c.446 0 .835.109 1.167.328.333.218.59.54.774.963.183.423.275.943.275 1.56 0 .616-.092 1.136-.275 1.559-.184.423-.441.744-.774.963a2.075 2.075 0 0 1-1.167.328z"/>
             <g opacity=".6" transform="translate(145 15)">
-                <rect width="37" height="7" fill="#MENU_COLOR" class="svgc_text"/>
-                <rect width="37" height="7" x="58" fill="#MENU_COLOR" class="svgc_text"/>
-                <rect width="37" height="7" x="116" fill="#MENU_COLOR" class="svgc_text"/>
-                <rect width="37" height="7" x="174" fill="#MENU_COLOR" class="svgc_text"/>
+                <rect width="37" height="7" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="37" height="7" x="58" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="37" height="7" x="116" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="37" height="7" x="174" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
             </g>
-            <rect width="37" height="7" x="593" y="15" fill="#MENU_COLOR" opacity="1" class="svgc_text"/>
+            <rect width="37" height="7" x="593" y="15" fill="#MENU_COLOR" opacity="1" class="svgc_text" filter="url(#filter_theme_notes)"/>
         </g>
         <g class="s_masonry_block" transform="translate(-1407 -241)">
             <rect fill="url(#theme_notes_s_masonry_block_default_image_1_id)" class="img_reference_s_masonry_block_default_image_1"  width="350" height="196" transform="translate(1407 588)"/>
@@ -70,15 +83,15 @@
                 <rect width="86.811" height="2" fill="#212529"/>
                 <rect width="71.811" height="2" transform="translate(8 5)" fill="#212529"/>
             </g>
-            <text transform="translate(1796 733)" fill="#3AADAA" class="svgc_text" font-size="18" font-family="Arial-BoldMT, Arial, sans-serif" font-weight="700"><tspan x="0" y="0">Entry Title</tspan></text>
+            <text transform="translate(1796 733)" fill="#3AADAA" class="svgc_text" filter="url(#filter_theme_notes)" font-size="18" font-family="Arial-BoldMT, Arial, sans-serif" font-weight="700"><tspan x="0" y="0">Entry Title</tspan></text>
             <g transform="translate(1801 744.324)" opacity="0.4">
-                <rect width="86.811" height="2" fill="#3AADAA" class="svgc_text"/>
-                <rect width="71.811" height="2" transform="translate(8 5)" fill="#3AADAA" class="svgc_text"/>
+                <rect width="86.811" height="2" fill="#3AADAA" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="71.811" height="2" transform="translate(8 5)" fill="#3AADAA" class="svgc_text" filter="url(#filter_theme_notes)"/>
             </g>
-            <text transform="translate(1970 634)" fill="#7C6576" class="svgc_text" font-size="18" font-family="Arial-BoldMT, Arial, sans-serif" font-weight="700"><tspan x="0" y="0">Entry Title</tspan></text>
+            <text transform="translate(1970 634)" fill="#7C6576" class="svgc_text" filter="url(#filter_theme_notes)" font-size="18" font-family="Arial-BoldMT, Arial, sans-serif" font-weight="700"><tspan x="0" y="0">Entry Title</tspan></text>
             <g transform="translate(1976 646.125)" opacity="0.4">
-                <rect width="86.811" height="2" fill="#7C6576" class="svgc_text"/>
-                <rect width="71.811" height="2" transform="translate(8 5)" fill="#7C6576" class="svgc_text"/>
+                <rect width="86.811" height="2" fill="#7C6576" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="71.811" height="2" transform="translate(8 5)" fill="#7C6576" class="svgc_text" filter="url(#filter_theme_notes)"/>
             </g>
             <text transform="translate(1970 733)" fill="#3AADAA" font-size="18" font-family="Arial-BoldMT, Arial, sans-serif" font-weight="700"><tspan x="0" y="0">Entry Title</tspan></text>
             <g transform="translate(1976 744.324)" opacity="0.4">
@@ -246,27 +259,27 @@
         <g transform="translate(0 1713)" class="svgc_footer">
             <rect width="700" height="147" transform="translate(0 -10)" class="svgc_footer_bg" fill="#FOOTER_COLOR"/>
             <g transform="translate(0 -31)">
-                <circle cx="7.5" cy="7.5" r="7.5" transform="translate(559 100)" fill="#FOOTER_COLOR" class="svgc_text"/>
-                <circle cx="7.5" cy="7.5" r="7.5" transform="translate(587 100)" fill="#FOOTER_COLOR" class="svgc_text"/>
-                <circle cx="7.5" cy="7.5" r="7.5" transform="translate(615 100)" fill="#FOOTER_COLOR" class="svgc_text"/>
+                <circle cx="7.5" cy="7.5" r="7.5" transform="translate(559 100)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <circle cx="7.5" cy="7.5" r="7.5" transform="translate(587 100)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <circle cx="7.5" cy="7.5" r="7.5" transform="translate(615 100)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
             </g>
             <g transform="translate(84 -1717)">
-                <rect width="71" height="2" transform="translate(475 1773)" fill="#FOOTER_COLOR" class="svgc_text"/>
-                <rect width="59" height="2" transform="translate(475 1778)" fill="#FOOTER_COLOR" class="svgc_text"/>
+                <rect width="71" height="2" transform="translate(475 1773)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="59" height="2" transform="translate(475 1778)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
             </g>
             <g transform="translate(401.371 56)" opacity="0.4">
-                <rect width="111" height="2" transform="translate(-4.372)" fill="#FOOTER_COLOR" class="svgc_text"/>
-                <rect width="72" height="2" transform="translate(-4.372 5)" fill="#FOOTER_COLOR" class="svgc_text"/>
-                <rect width="103" height="2" transform="translate(-4.372 10)" fill="#FOOTER_COLOR" class="svgc_text"/>
-                <rect width="115" height="2" transform="translate(-4.372 15)" fill="#FOOTER_COLOR" class="svgc_text"/>
+                <rect width="111" height="2" transform="translate(-4.372)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="72" height="2" transform="translate(-4.372 5)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="103" height="2" transform="translate(-4.372 10)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="115" height="2" transform="translate(-4.372 15)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
             </g>
             <g transform="translate(70 56)" opacity="0.4">
-                <rect width="233" height="2" fill="#FOOTER_COLOR" class="svgc_text"/>
-                <rect width="218" height="2" transform="translate(0 5)" fill="#FOOTER_COLOR" class="svgc_text"/>
-                <rect width="233" height="2" transform="translate(0 10)" fill="#FOOTER_COLOR" class="svgc_text"/>
-                <rect width="218" height="2" transform="translate(0 15)" fill="#FOOTER_COLOR" class="svgc_text"/>
+                <rect width="233" height="2" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="218" height="2" transform="translate(0 5)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="233" height="2" transform="translate(0 10)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
+                <rect width="218" height="2" transform="translate(0 15)" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_notes)"/>
             </g>
-            <text transform="translate(69 42)" fill="#FOOTER_COLOR" opacity="1" class="svgc_text" font-size="16" font-family="Arial-BoldMT, Arial, sans-serif" font-weight="700"><tspan x="0" y="0">Entry Title</tspan></text>
+            <text transform="translate(69 42)" fill="#FOOTER_COLOR" opacity="1" class="svgc_text" filter="url(#filter_theme_notes)" font-size="16" font-family="Arial-BoldMT, Arial, sans-serif" font-weight="700"><tspan x="0" y="0">Entry Title</tspan></text>
         </g>
     </g>
 </svg>

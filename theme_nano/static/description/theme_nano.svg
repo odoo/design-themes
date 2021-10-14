@@ -30,6 +30,19 @@
         <pattern width="1" height="1" id="theme_nano_s_parallax_default_image_id" patternunits="objectBoundingBox">
             <image width="560" height="240" preserveAspectRatio="xMidYMid slice" href="#s_parallax_default_image_url"/>
         </pattern>
+        <filter id="filter_theme_nano">
+            <feColorMatrix in="SourceGraphic" type="saturate" values="0"/>
+            <feComponentTransfer>
+            <feFuncR type="table" tableValues="1 0"/>
+            <feFuncG type="table" tableValues="1 0"/>
+            <feFuncB type="table" tableValues="1 0"/>
+            </feComponentTransfer>
+            <feComponentTransfer>
+            <feFuncR type="linear" slope="10000" intercept="-4999.5"/>
+            <feFuncG type="linear" slope="10000" intercept="-4999.5"/>
+            <feFuncB type="linear" slope="10000" intercept="-4999.5"/>
+            </feComponentTransfer>
+        </filter>
     </defs>
 
     <!-- Layout -->
@@ -39,12 +52,12 @@
 
         <g data-name="Header" class="svgc_menu">
             <rect width="560" height="50" x="70" y="0" fill="#MENU_COLOR" class="svgc_menu_bg"/>
-            <rect width="30" height="8" x="600" y="20" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <text x="330" y="30" font-size="14" font-family="Nunito" font-weight="600" fill="#MENU_COLOR" class="svgc_text">LOGO</text>
-            <rect width="40" height="8" x="70" y="20" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="40" height="8" x="120" y="20" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <rect width="40" height="8" x="170" y="20" fill="#MENU_COLOR" class="svgc_text" opacity="0.5"/>
-            <circle cx="582" cy="25" r="8" fill="#MENU_COLOR" class="svgc_text" opacity="0.8"/>
+            <rect width="30" height="8" x="600" y="20" fill="#MENU_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+            <text x="330" y="30" font-size="14" font-family="Nunito" font-weight="600" fill="#MENU_COLOR" class="svgc_text" filter="url(#filter_theme_nano)">LOGO</text>
+            <rect width="40" height="8" x="70" y="20" fill="#MENU_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+            <rect width="40" height="8" x="120" y="20" fill="#MENU_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+            <rect width="40" height="8" x="170" y="20" fill="#MENU_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+            <circle cx="582" cy="25" r="8" fill="#MENU_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_theme_nano)"/>
         </g>
 
         <g data-name="Cover">
@@ -58,7 +71,7 @@
             <rect width="120" height="8" rx="2" x="290" y="204" fill="#FFFFFD" opacity="0.8"/>
             <g class="svgc_btn_group">
                 <rect width="80" height="26" rx="4" x="308" y="267" fill="#3AADAA"/>
-                <text x="324" y="284" fill="#3AADAA" class="svgc_text" font-size="10" font-family="Nunito" font-weight="600">Contact us</text>
+                <text x="324" y="284" fill="#3AADAA" class="svgc_text" font-size="10" font-family="Nunito" font-weight="600" filter="url(#filter_theme_nano)">Contact us</text>
             </g>
         </g>
 
@@ -66,21 +79,21 @@
             <rect width="560" height="230" x="70" y="390" fill="#383E45"/>
             <g data-name="Feature_1">
                 <rect width="50" height="50" rx="4" x="137" y="445" fill="#3AADAA"/>
-                <text x="115" y="528" fill="#383E45" class="svgc_text" font-size="18" font-family="Nunito" font-weight="600">Feature #01</text>
-                <rect width="90" height="6" rx="2" x="117" y="545" fill="#383E45" class="svgc_text"/>
-                <rect width="50" height="6" rx="2" x="137" y="559" fill="#383E45" class="svgc_text"/>
+                <text x="115" y="528" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)" font-size="18" font-family="Nunito" font-weight="600">Feature #01</text>
+                <rect width="90" height="6" rx="2" x="117" y="545" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)"/>
+                <rect width="50" height="6" rx="2" x="137" y="559" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)"/>
             </g>
             <g data-name="Feature_2">
                 <rect width="50" height="50" rx="4" x="324" y="445" fill="#FFFFFF"/>
-                <text x="300" y="528" fill="#383E45" class="svgc_text" font-size="18" font-family="Nunito" font-weight="600">Feature #02</text>
-                <rect width="90" height="6" rx="2" x="304" y="545" fill="#383E45" class="svgc_text"/>
-                <rect width="50" height="6" rx="2" x="324" y="559" fill="#383E45" class="svgc_text"/>
+                <text x="300" y="528" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)" font-size="18" font-family="Nunito" font-weight="600">Feature #02</text>
+                <rect width="90" height="6" rx="2" x="304" y="545" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)"/>
+                <rect width="50" height="6" rx="2" x="324" y="559" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)"/>
             </g>
             <g data-name="Feature_3">
                 <rect width="50" height="50" rx="4" x="512" y="445" fill="#7C6576"/>
-                <text x="488" y="528" fill="#383E45" class="svgc_text" font-size="18" font-family="Nunito" font-weight="600">Feature #03</text>
-                <rect width="90" height="6" rx="2" x="492" y="545" fill="#383E45" class="svgc_text"/>
-                <rect width="50" height="6" rx="2" x="512" y="559" fill="#383E45" class="svgc_text"/>
+                <text x="488" y="528" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)" font-size="18" font-family="Nunito" font-weight="600">Feature #03</text>
+                <rect width="90" height="6" rx="2" x="492" y="545" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)"/>
+                <rect width="50" height="6" rx="2" x="512" y="559" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)"/>
             </g>
         </g>
 
@@ -118,41 +131,41 @@
             <rect width="89" height="60" x="447" y="1550" fill="#FFFFFD"/>
             <rect width="89" height="60" x="258" y="1550" fill="#FFFFFD"/>
             <rect width="89" height="60" x="541" y="1550" fill="#FFFFFD"/>
-            <rect width="140" height="6" rx="2" x="280" y="1520" fill="#383E45" class="svgc_text"/>
-            <text x="300" y="1500" fill="#383E45" class="svgc_text" font-size="18" font-family="Nunito" font-weight="600">Section Title</text>
+            <rect width="140" height="6" rx="2" x="280" y="1520" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)"/>
+            <text x="300" y="1500" fill="#383E45" class="svgc_text" font-size="18" font-family="Nunito" font-weight="600" filter="url(#filter_theme_nano)">Section Title</text>
         </g>
 
         <g data-name="Footer" class="svgc_footer">
             <rect width="560" height="150" x="70" y="1650" fill="#FOOTER_COLOR" class="svgc_footer_bg"/>
             <g data-name="Column_1">
-                <text x="90" y="1700" font-size="16" font-family="Nunito" font-weight="600" fill="#FOOTER_COLOR" class="svgc_text">Section Title</text>
-                <rect width="240" height="6" rx="2" x="90" y="1720" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-                <rect width="240" height="6" rx="2" x="90" y="1744" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-                <rect width="240" height="6" rx="2" x="90" y="1732" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-                <rect width="147" height="6" rx="2" x="90" y="1756" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
+                <text x="90" y="1700" font-size="16" font-family="Nunito" font-weight="600" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_nano)">Section Title</text>
+                <rect width="240" height="6" rx="2" x="90" y="1720" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+                <rect width="240" height="6" rx="2" x="90" y="1744" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+                <rect width="240" height="6" rx="2" x="90" y="1732" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+                <rect width="147" height="6" rx="2" x="90" y="1756" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
             </g>
             <g data-name="Column_2">
-                <text x="390" y="1704" font-size="12" font-family="Nunito" font-weight="600" fill="#FOOTER_COLOR" class="svgc_text">Entry Title</text>
-                <rect width="90" height="6" rx="2" x="390" y="1732" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-                <rect width="90" height="6" rx="2" x="390" y="1720" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-                <rect width="90" height="6" rx="2" x="390" y="1744" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-                <rect width="50" height="6" rx="2" x="390" y="1756" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
+                <text x="390" y="1704" font-size="12" font-family="Nunito" font-weight="600" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_nano)">Entry Title</text>
+                <rect width="90" height="6" rx="2" x="390" y="1732" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+                <rect width="90" height="6" rx="2" x="390" y="1720" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+                <rect width="90" height="6" rx="2" x="390" y="1744" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+                <rect width="50" height="6" rx="2" x="390" y="1756" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
             </g>
             <g data-name="Column_3">
-                <text x="520" y="1704" font-size="12" font-family="Nunito" font-weight="600" fill="#FOOTER_COLOR" class="svgc_text">Entry Title</text>
-                <rect width="90" height="6" rx="2" x="520" y="1720" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-                <rect width="90" height="6" rx="2" x="520" y="1732" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5"/>
-                <circle cx="529" cy="1758" r="8" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-                <circle cx="550" cy="1758" r="8" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-                <circle cx="571" cy="1758" r="8" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
-                <circle cx="592" cy="1758" r="8" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8"/>
+                <text x="520" y="1704" font-size="12" font-family="Nunito" font-weight="600" fill="#FOOTER_COLOR" class="svgc_text" filter="url(#filter_theme_nano)">Entry Title</text>
+                <rect width="90" height="6" rx="2" x="520" y="1720" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+                <rect width="90" height="6" rx="2" x="520" y="1732" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.5" filter="url(#filter_theme_nano)"/>
+                <circle cx="529" cy="1758" r="8" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_theme_nano)"/>
+                <circle cx="550" cy="1758" r="8" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_theme_nano)"/>
+                <circle cx="571" cy="1758" r="8" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_theme_nano)"/>
+                <circle cx="592" cy="1758" r="8" fill="#FOOTER_COLOR" class="svgc_text" opacity="0.8" filter="url(#filter_theme_nano)"/>
             </g>
         </g>
 
         <g data-name="Copyright">
             <rect width="560" height="50" x="70" y="1800" fill="#383E45"/>
             <circle cx="350" cy="1800" r="15" fill="#383E45"/>
-            <rect width="120" height="6" rx="2" x="71" y="1822" fill="#383E45" class="svgc_text"/>
+            <rect width="120" height="6" rx="2" x="71" y="1822" fill="#383E45" class="svgc_text" filter="url(#filter_theme_nano)"/>
         </g>
     </g>
 
