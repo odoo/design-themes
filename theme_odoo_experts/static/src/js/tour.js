@@ -5,24 +5,28 @@ import { _t } from 'web.core';
 
 const snippets = [
     {
-        id: 's_cover',
-        name: 'Cover',
-    },
-    {
-        id: 's_image_text',
-        name: 'Image - Text',
-    },
-    {
-        id: 's_media_list',
-        name: 'Media List',
-    },
-    {
-        id: 's_company_team',
-        name: 'Team',
+        id: 's_picture',
+        name: 'Picture',
     },
     {
         id: 's_references',
         name: 'References',
+    },
+    {
+        id: 's_text_image',
+        name: 'Image - Text',
+    },
+    {
+        id: 's_text_image',
+        name: 'Text - Image',
+    },
+    {
+        id: 's_title',
+        name: 'Title',
+    },
+    {
+        id: 's_comparisons',
+        name: 'Comparisons',
     },
     {
         id: 's_call_to_action',
@@ -32,14 +36,16 @@ const snippets = [
 
 wTourUtils.registerThemeHomepageTour("odoo_experts_tour", [
     wTourUtils.dragNDrop(snippets[0]),
-    wTourUtils.clickOnText(snippets[0], 'h1'),
-    wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[1]),
     wTourUtils.dragNDrop(snippets[2]),
+    wTourUtils.clickOnText(snippets[2], 'h2'),
+    wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[3]),
     wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.clickOnSnippet(snippets[4], 'top'),
-    wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
-    wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[5]),
+    wTourUtils.clickOnSnippet(snippets[5], 'top'),
+    wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
+    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
+    wTourUtils.goBackToBlocks(),
+    wTourUtils.dragNDrop(snippets[6]),
 ]);
