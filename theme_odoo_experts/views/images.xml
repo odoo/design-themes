@@ -206,4 +206,21 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="url">/theme_odoo_experts/static/src/img/snippets/s_product_catalog_default_image.jpg</field>
 </record>
 
+<!-- Use custom records to prevent some images from changing by the Configurator -->
+<record id="s_image_text_device" model="theme.ir.attachment">
+    <field name="key">website.s_image_text_device</field>
+    <field name="name">website.s_image_text_device</field>
+    <field name="url">/theme_odoo_experts/static/src/img/snippets/s_image_text_device.jpg</field>
+</record>
+<record id="s_image_text_device_perspective" model="theme.ir.attachment">
+    <field name="key">website.s_image_text_device_perspective</field>
+    <field name="name">website.s_image_text_device_perspective</field>
+    <field name="url">/theme_odoo_experts/static/src/img/snippets/s_image_text_device_perspective.jpg</field>
+</record>
+<record id="s_picture_default_image_bg" model="theme.ir.attachment">
+    <field name="key">website.s_picture_default_image_bg</field>
+    <field name="name">website.s_picture_default_image_bg</field>
+    <field name="url">/theme_odoo_experts/static/src/img/snippets/s_picture_bg.jpg</field>
+</record>
+
 </odoo>
