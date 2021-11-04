@@ -12,7 +12,6 @@
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Bold_12_001 o_we_flip_x"/>
     </xpath>
-    <xpath expr="//*[hasclass('o_we_bg_filter')]" position="replace"/>
     <xpath expr="//*[hasclass('s_parallax_bg')]" position="replace"/>
     <!-- Title & Text -->
     <xpath expr="//h1//font" position="replace" mode="inner">
@@ -24,4 +23,3 @@
 </template>
 
 </odoo>
-
