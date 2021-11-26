@@ -14,8 +14,8 @@ const snippets = [
         name: 'Image - Text',
     },
     {
-        id: 's_picture',
-        name: 'Picture',
+        id: 's_three_columns',
+        name: 'Columns',
     },
     {
         id: 's_product_list',

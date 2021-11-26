@@ -55,7 +55,7 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 //------------------------------------------------------------------------------
 
 $o-theme-h1-font-size-multiplier: (40 / 14);
-$o-theme-h2-font-size-multiplier: (32 / 14);
+$o-theme-h2-font-size-multiplier: (38 / 14);
 $o-theme-h3-font-size-multiplier: (28 / 14);
 $o-theme-h4-font-size-multiplier: (24 / 14);
 $o-theme-h5-font-size-multiplier: (20 / 14);
@@ -122,10 +122,10 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'kiddo-3',
+        'color-palettes-name': 'default-16',
 
         'font-size-base': (14 / 16) * 1.075rem,
-        'header-font-size': 1.15rem,
+        'header-font-size': .875rem,
         'logo-height': 3rem,
         'fixed-logo-height': 3rem,
         'btn-border-radius': 2rem,
@@ -140,12 +140,9 @@ $o-website-values-palettes: (
         'buttons-font': 'Varela Round',
         'link-underline': 'never',
         'header-template': 'default',
-        'footer-template': 'descriptive',
-        'btn-primary-outline': true,
+        'footer-template': 'centered',
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'kiddo-3');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'kiddo-3',
