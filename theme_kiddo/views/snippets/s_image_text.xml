@@ -4,25 +4,46 @@
 <template id="s_image_text" inherit_id="website.s_image_text">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc2 pb72" remove="pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/20"}</attribute>
+        <attribute name="class" add="o_cc o_cc2 pb64 pt64" remove="pb32 pt32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/13","flip":["x"]}</attribute>
     </xpath>
 
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_20"/>
+        <div class="o_we_shape o_web_editor_Floats_13 o_we_flip_x"/>
     </xpath>
 
-    <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-6')][2]" position="replace">
-        <div class="p-5 col-lg-6 o_cc o_cc2 text-center">
-            <h2 style="font-size: 48px;">Activities</h2>
-            <p><br/></p>
-            <p>Our team is composed of experienced nursery nurses.</p>
-            <p>They will propose to your children educational activities, playful, varied and adapted to the stage of development.</p>
-            <p><br/></p>
-            <p><a href="#" class="btn btn-primary mb-2">Discover more</a></p>
+    <!-- Last column -->
+    <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="attributes">
+        <attribute name="class" add="offset-lg-1 col-lg-5" remove="col-lg-6" separator=" "/>
+    </xpath>
+
+    <!-- Title & Paragraphs -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Activities
+    </xpath>
+    <xpath expr="//h2" position="after">
+        <div class="s_hr text-left pb32 pt8" data-snippet="s_hr" data-name="Separator">
+            <hr class="w-50 mr-auto" style="border-top: 4px dotted var(--o-color-2) !important;"/>
         </div>
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        Our team is composed of experienced nursery nurses.
+    </xpath>
+    <xpath expr="//p[2]" position="replace" mode="inner">
+        They will propose to your children educational activities, playful, varied and adapted to the stage of development.
+    </xpath>
+    <xpath expr="//p[2]" position="after">
+        <p><br/></p>
+    </xpath>
+    
+    <!-- Img -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web_editor/image_shape/website.s_image_text_default_image/web_editor/basic/bsc_square_rounded_2.svg</attribute>
+        <attribute name="data-shape">web_editor/basic/bsc_square_rounded_2</attribute>
+        <attribute name="data-original-mimetype">image/jpeg</attribute>
+        <attribute name="data-file-name">s_image_text.svg</attribute>
+        <attribute name="data-shape-colors">;;;;</attribute>
     </xpath>
 </template>
 

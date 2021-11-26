@@ -4,73 +4,99 @@
 <template id="s_product_list" inherit_id="website.s_product_list">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc3"  separator=" "/>
+        <attribute name="class" add="pt96 pb96" separator=" "/>
     </xpath>
+
     <!-- Container -->
-    <xpath expr="//div[hasclass('container-fluid')]" position="replace">
-        <div class="container">
-            <!-- Row 1 -->
-            <div class="row py-5 justify-content-center">
-                <!-- Item 1 -->
-                <div class="h-100 p-0 mx-5 mx-md-auto col-md-3 o_cc o_cc2 border rounded shadow pb64" style="border-radius: 15px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 25px 0px !important; border-width: 4px !important; border-color: rgb(104, 70, 114) !important; border-style: dashed !important;">
-                    <a href="#">
-                        <img src="/web/image/website.s_product_list_default_image_1" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
-                    </a>
-                    <div class="s_product_list_item_link pb24">
-                        <a href="#" class="btn btn-primary">View item</a>
-                    </div>
-                </div>
-                <!-- Item 2 -->
-                <div class="h-100 p-0 p-0 mx-5 mx-md-auto col-md-3 offset-md-1 o_cc o_cc2 border rounded shadow pb64" style="border-radius: 15px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 25px 0px !important; border-width: 4px !important; border-color: rgb(104, 70, 114) !important; border-style: dotted !important;">
-                    <a href="#">
-                        <img src="/web/image/website.s_product_list_default_image_2" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
-                    </a>
-                    <div class="s_product_list_item_link pb24">
-                        <a href="#" class="btn btn-primary">View item</a>
-                    </div>
-                </div>
-                <!-- Item 3 -->
-                <div class="h-100 p-0 mx-5 mx-md-auto col-md-3 offset-md-1 o_cc o_cc2 border rounded shadow pb64" style="border-radius: 15px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 25px 0px !important; border-width: 4px !important; border-color: rgb(104, 70, 114) !important; border-style: dashed !important;">
-                    <a href="#">
-                        <img src="/web/image/website.s_product_list_default_image_3" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
-                    </a>
-                    <div class="s_product_list_item_link pb24">
-                        <a href="#" class="btn btn-primary">View item</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Row 2 -->
-            <div class="row pb48 justify-content-center">
-                <!-- Item 4 -->
-                <div class="h-100 p-0 mx-5 mx-md-auto col-md-3 o_cc o_cc2 border rounded shadow pb64" style="border-radius: 15px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 25px 0px !important; border-width: 4px !important; border-color: rgb(104, 70, 114) !important; border-style: dotted !important;">
-                    <a href="#">
-                        <img src="/web/image/website.s_product_list_default_image_4" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
-                    </a>
-                    <div class="s_product_list_item_link pb24">
-                        <a href="#" class="btn btn-primary">View item</a>
-                    </div>
-                </div>
-                <!-- Item 5 -->
-                <div class="h-100 w-100 p-0 mx-5 mx-md-auto col-md-3 offset-md-1 o_cc o_cc2 border rounded shadow pb64" style="border-radius: 15px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 25px 0px !important; border-width: 4px !important; border-color: rgb(104, 70, 114) !important; border-style: dashed !important;">
-                    <a href="#">
-                        <img src="/web/image/website.s_product_list_default_image_5" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
-                    </a>
-                    <div class="s_product_list_item_link pb24">
-                        <a href="#" class="btn btn-primary">View item</a>
-                    </div>
-                </div>
-                <!-- Item 6 -->
-                <div class="h-100 p-0 mx-5 mx-md-auto col-md-3 offset-md-1 o_cc o_cc2 border rounded shadow pb64" style="border-radius: 15px !important; box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 25px 0px !important; border-width: 4px !important; border-color: rgb(104, 70, 114) !important; border-style: dotted !important;">
-                    <a href="#">
-                        <img src="/web/image/website.s_product_list_default_image_6" alt="" class="img img-fluid w-100 p-4" style="max-height: 100%;"/>
-                    </a>
-                    <div class="s_product_list_item_link pb24">
-                        <a href="#" class="btn btn-primary">View item</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <xpath expr="//div[hasclass('container-fluid')]" position="attributes">
+        <attribute name="class" add="container" remove="container-fluid" separator=" "/>
     </xpath>
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="class" add="justify-content-center" separator=" "/>
+    </xpath>
+    
+    <!-- Item n°1 -->
+    <xpath expr="//div[hasclass('col-lg-2')]" position="attributes">
+        <attribute name="class" add="border rounded mx-3" separator=" "/>
+        <attribute name="style">border-radius: 16px !important; border-width: 4px !important; border-style: dotted !important; border-color: var(--o-color-2) !important;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_product_list_item_link')]" position="attributes">
+        <attribute name="class" add="pb24" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_product_list_item_link')]//a" position="replace">
+        <a t-att-href="url">About us</a>
+    </xpath>
+    <!-- Item n°1 : SVG with dynamic color -->
+    <xpath expr="//div[hasclass('col-lg-2')]//img" position="attributes">
+        <attribute name="src">/web_editor/shape/theme_kiddo/s_product_list_1.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
+    </xpath>
+    
+    <!-- Item n°2 -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[2]" position="attributes">
+        <attribute name="class" add="border rounded mx-3" separator=" "/>
+        <attribute name="style">border-radius: 16px !important; border-width: 4px !important; border-style: dotted !important; border-color: var(--o-color-2) !important;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_product_list_item_link')])[2]" position="attributes">
+        <attribute name="class" add="pb24" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_product_list_item_link')])[2]//a" position="replace">
+        <a t-att-href="url">Our team</a>
+    </xpath>
+    <!-- Item n°2 : SVG with dynamic color -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[2]//img" position="attributes">
+        <attribute name="src">/web_editor/shape/theme_kiddo/s_product_list_2.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
+    </xpath>
+    
+    <!-- Item n°3 -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[3]" position="attributes">
+        <attribute name="class" add="border rounded mx-3" separator=" "/>
+        <attribute name="style">border-radius: 16px !important; border-width: 4px !important; border-style: dotted !important; border-color: var(--o-color-2) !important;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_product_list_item_link')])[3]" position="attributes">
+        <attribute name="class" add="pb24" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_product_list_item_link')])[3]//a" position="replace">
+        <a t-att-href="url">Playground</a>
+    </xpath>
+    <!-- Item n°3 : SVG with dynamic color -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[3]//img" position="attributes">
+        <attribute name="src">/web_editor/shape/theme_kiddo/s_product_list_3.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
+    </xpath>
+    
+    <!-- Item n°4 -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[4]" position="attributes">
+        <attribute name="class" add="border rounded mx-3" separator=" "/>
+        <attribute name="style">border-radius: 16px !important; border-width: 4px !important; border-style: dotted !important; border-color: var(--o-color-2) !important;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_product_list_item_link')])[4]" position="attributes">
+        <attribute name="class" add="pb24" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_product_list_item_link')])[4]//a" position="replace">
+        <a t-att-href="url">Events</a>
+    </xpath>
+    <!-- Item n°4 : SVG with dynamic color -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[4]//img" position="attributes">
+        <attribute name="src">/web_editor/shape/theme_kiddo/s_product_list_4.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
+    </xpath>
+    
+    <!-- Item n°5 -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[5]" position="attributes">
+        <attribute name="class" add="border rounded mx-3" separator=" "/>
+        <attribute name="style">border-radius: 16px !important; border-width: 4px !important; border-style: dotted !important; border-color: var(--o-color-2) !important;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_product_list_item_link')])[5]" position="attributes">
+        <attribute name="class" add="pb24" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_product_list_item_link')])[5]//a" position="replace">
+        <a t-att-href="url">Visit us</a>
+    </xpath>
+    <!-- Item n°5 : SVG with dynamic color -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[5]//img" position="attributes">
+        <attribute name="src">/web_editor/shape/theme_kiddo/s_product_list_6.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
+    </xpath>
+    
+    <!-- Remove last item -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[6]" position="replace"/>
 </template>
 
 </odoo>

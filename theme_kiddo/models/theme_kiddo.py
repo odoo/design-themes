@@ -8,7 +8,7 @@ class ThemeKiddo(models.AbstractModel):
         self.enable_view('website.template_header_default_align_right')
 
         self.disable_view('website.footer_custom')
-        self.enable_view('website.template_footer_descriptive')
+        self.enable_view('website.template_footer_centered')
 
         # For compatibility
         # self.enable_asset('theme_common.compatibility_saas_10_1')

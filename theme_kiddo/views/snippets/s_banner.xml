@@ -4,34 +4,31 @@
 <template id="s_banner" inherit_id="website.s_banner">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_background_video s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center" remove="parallax s_parallax_is_fixed" separator=" "/>
-        <attribute name="data-bg-video-src">//player.vimeo.com/video/60112275?autoplay=1&amp;muted=1&amp;loop=1</attribute>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/17"}</attribute>
-        <attribute name="style">position: relative; background-image: url("/web/image/website.s_banner_default_image");</attribute>
+        <attribute name="class" add="s_parallax_no_overflow_hidden o_full_screen_height oe_img_bg o_bg_img_center pb216 pt72 o_cc o_cc5" remove="parallax s_parallax_is_fixed pt96 pb96" separator=" "/>
+        <attribute name="data-scroll-background-ratio">0</attribute>
+        <attribute name="style">background-image: url("/web/image/website.s_banner_default_image");</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","flip":["x"]}</attribute>
     </xpath>
 
-    <!-- Video -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_bg_video_container">
-            <iframe id="o_bg_video_iframe_5" class="o_bg_video_iframe fade show" src="//player.vimeo.com/video/60112275?autoplay=1&amp;muted=1&amp;loop=1" style="width: 100%; height: 146.716%; left: 0px; top: -23.3581%;" frameborder="0"></iframe>
-        </div>
-    </xpath>
+    <!-- Remove parallax bg -->
+    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
 
-    <!-- Shape -->
+    <!-- Shape & filter -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_17"/>
+        <div class="o_we_bg_filter" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.15) 100%) !important;"/>
+        <div class="o_we_shape o_web_editor_Wavy_22 o_we_flip_x"/>
     </xpath>
 
     <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
-        <div class="col-lg-6 pt48 pb48 m-3 m-md-0 p-4 p-md-5 o_colored_level o_cc o_cc3 rounded shadow border" style="border-radius: 35px !important; box-shadow: rgb(104, 70, 114) 0px 0px 35px 0px !important; border-color: rgb(104, 70, 114) !important; border-width: 4px !important; border-style: dotted !important;">
-            <h1><font style="font-size: 62px; line-height: 48px;">A little place of paradise.</font></h1>
-            <p><br/></p>
-            <p class="lead">Because your children deserve the best, we welcome children from 0 to 3 years in a warm and specific environment for the needs of small children</p>
-            <p><br/></p>
-            <a t-att-href="cta_btn_href" class="btn btn-primary mb-2"><t t-esc="cta_btn_text">About us</t></a>
-        </div>
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
     </xpath>
+    <xpath expr="//h1//font" position="replace" mode="inner">
+        A little place <br/>of paradise
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+    </xpath>    
 </template>
 
 </odoo>
