@@ -13,7 +13,3 @@ class ThemeCommon(models.AbstractModel):
         self.disable_asset('Option colors 06 variables SCSS')
         self.disable_asset('Option colors 07 variables SCSS')
         self.disable_asset('Option colors 08 variables SCSS')
-
-        # For compatibility
-        # self.enable_asset('theme_common.compatibility_saas_11_4_variables')
-        # self.enable_asset('theme_common.compatibility_saas_11_4')
