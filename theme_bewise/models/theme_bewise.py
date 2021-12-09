@@ -11,5 +11,5 @@ class ThemeBewise(models.AbstractModel):
         self.disable_view('website.footer_custom')
         self.enable_view('website.template_footer_headline')
 
-        self.enable_asset('website.ripple_effect_scss')
-        self.enable_asset('website.ripple_effect_js')
+        self.enable_asset("website.ripple_effect_scss")
+        self.enable_asset("website.ripple_effect_js")
