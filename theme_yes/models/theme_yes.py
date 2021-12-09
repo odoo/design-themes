@@ -7,3 +7,6 @@ class ThemeYes(models.AbstractModel):
     def _theme_yes_post_copy(self, mod):
         self.disable_view('website.footer_custom')
         self.enable_view('website.template_footer_descriptive')
+
+        self.enable_asset('Ripple effect SCSS')
+        self.enable_asset('Ripple effect JS')

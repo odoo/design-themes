@@ -17,5 +17,5 @@ class ThemeBistro(models.AbstractModel):
         self.enable_view('website.template_footer_slideout')
         self.enable_view('website.option_footer_scrolltop')
 
-        self.enable_asset('website.ripple_effect_scss')
-        self.enable_asset('website.ripple_effect_js')
+        self.enable_asset('Ripple effect SCSS')
+        self.enable_asset('Ripple effect JS')
