@@ -1,21 +1,17 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_nano
+# 	* theme_nano
 # 
 # Translators:
-# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2019
-# ced903afe967c2a46d1036224972db9d, 2019
-# Martin Trigaux, 2019
-# David Arnold <blaggacao@users.noreply.github.com>, 2019
-# José Vicente <txusev@gmail.com>, 2019
+# Martin Trigaux, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:53+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: José Vicente <txusev@gmail.com>, 2019\n"
+"POT-Creation-Date: 2021-12-13 08:00+0000\n"
+"PO-Revision-Date: 2021-12-13 08:08+0000\n"
+"Last-Translator: Martin Trigaux, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,81 +20,91 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "<i class=\"fa fa-paint-brush\"/>Style"
-msgstr "<i class=\"fa fa-paint-brush\"/>Estilo"
-
-#. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.preHeader
-msgid "<i class=\"fa fa-plus-circle\"/>Add..."
-msgstr "<i class=\"fa fa-plus-circle\"/>Añadir..."
-
-#. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "Boxed"
-msgstr "Archivado"
-
-#. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Hide"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_parallax
+msgid ""
+"<font class=\"bg-o-color-5\">Feel free to come up with your big idea. <br/> "
+"We take care of the rest.</font>"
 msgstr ""
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Icons Bar"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "Adaptable"
 msgstr ""
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Icons Bar Position"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cover
+msgid "Creative Studio"
 msgstr ""
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Left"
-msgstr "Izquierda"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Details"
+msgstr "Detalles"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Menu"
-msgstr "Menú"
-
-#. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "Muted"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "Durable"
 msgstr ""
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Right"
-msgstr "Derecha"
-
-#. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Show"
-msgstr "Mostrar"
-
-#. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Side Navigation"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Handcrafted"
 msgstr ""
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Standard"
-msgstr "Estándar"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Innovative"
+msgstr ""
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "Intuitive"
+msgstr ""
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Made in Santa's Workshop. High quality fabric &amp; exclusive designs."
+msgstr ""
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid ""
+"People should love the things they own. Things should be built to last."
+msgstr ""
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Tailored"
+msgstr ""
 
 #. module: theme_nano
 #: model:ir.model,name:theme_nano.model_theme_utils
 msgid "Theme Utils"
+msgstr "Herramientas del tema"
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Transforming traditional crafts — with a shot of modern savvy!"
 msgstr ""
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "Underline"
-msgstr "Subrayado"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "We build modular solutions."
+msgstr ""
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "Uppercase"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cover
+msgid ""
+"We combine smart design with rich technology <br/>to craft innovative "
+"products."
+msgstr ""
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "We craft long-lasting goods."
+msgstr ""
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "We create easy-to-use products."
 msgstr ""
