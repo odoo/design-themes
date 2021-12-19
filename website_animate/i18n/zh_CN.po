@@ -1,18 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * website_animate
+# 	* website_animate
 # 
 # Translators:
-# liAnGjiA <liangjia@qq.com>, 2019
-# Jeanphy <hzh0292@qq.com>, 2019
+# Martin Trigaux, 2021
+# Jeanphy <hzh0292@qq.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:57+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: Jeanphy <hzh0292@qq.com>, 2019\n"
+"POT-Creation-Date: 2021-12-13 07:08+0000\n"
+"PO-Revision-Date: 2021-12-13 07:14+0000\n"
+"Last-Translator: Jeanphy <hzh0292@qq.com>, 2021\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,63 +22,18 @@ msgstr ""
 
 #. module: website_animate
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "1000ms"
-msgstr "1000毫秒"
+msgid "Animate"
+msgstr ""
 
 #. module: website_animate
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "1000ms (default)"
-msgstr "1000毫秒（默认）"
+msgid "Animation Delay"
+msgstr ""
 
 #. module: website_animate
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "1500ms"
-msgstr "1500毫秒"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "2000ms"
-msgstr "2000毫秒"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "2500ms"
-msgstr "2500毫秒"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "3000ms"
-msgstr "3000毫秒"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "500ms"
-msgstr "500毫秒"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "<i class=\"fa fa-bolt\"/>Animate"
-msgstr "动画"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "<i class=\"fa fa-clock-o\"/>Animation Delay"
-msgstr "动画延迟"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "<i class=\"fa fa-cogs\"/>Animation Options"
-msgstr "动画选项"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "<i class=\"fa fa-hourglass-half\"/>Animation Duration"
-msgstr "动画时效"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "Attention Seekers"
-msgstr "聚焦"
+msgid "Animation Duration"
+msgstr ""
 
 #. module: website_animate
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
@@ -99,11 +54,6 @@ msgstr "从左弹入"
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
 msgid "Bounce In-Right"
 msgstr "从右弹入"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "Bouncing"
-msgstr "弹跳"
 
 #. module: website_animate
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
@@ -142,11 +92,6 @@ msgstr "从上淡入"
 
 #. module: website_animate
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "Fading"
-msgstr "消退"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
 msgid "Flash"
 msgstr "闪烁"
 
@@ -159,16 +104,6 @@ msgstr "水平翻入"
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
 msgid "Flip-In-Y"
 msgstr "垂直翻入"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "Flippers"
-msgstr "翻转"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "No delay (default)"
-msgstr "无延时（默认）"
 
 #. module: website_animate
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
@@ -192,11 +127,6 @@ msgstr "右下方旋转"
 
 #. module: website_animate
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "Rotating"
-msgstr "旋转"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
 msgid "Shake"
 msgstr "摇晃"
 
@@ -204,11 +134,6 @@ msgstr "摇晃"
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
 msgid "Tada"
 msgstr "哒哒"
-
-#. module: website_animate
-#: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
-msgid "Zoom"
-msgstr "缩放"
 
 #. module: website_animate
 #: model_terms:ir.ui.view,arch_db:website_animate.o_animate_options
