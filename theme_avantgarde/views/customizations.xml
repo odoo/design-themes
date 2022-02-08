@@ -38,7 +38,7 @@
     </xpath>
     <xpath expr="//font" position="attributes">
         <attribute name="class" add="text-break" separator=" "/>
-        <attribute name="style" add="font-weight: bolder;" separator=" "/>
+        <attribute name="style" add="font-weight: bold;" separator=" "/>
     </xpath>
     <xpath expr="//font" position="replace" mode="inner">
         Design Methodology
@@ -80,7 +80,7 @@
         <attribute name="style">border-color: rgb(11, 13, 99) !important; box-shadow: rgb(11, 13, 99) -25px -25px 0px 0px !important; border-width: 8px !important;</attribute>
     </xpath>
     <xpath expr="//h3" position="replace" mode="inner">
-        <span style="font-weight: bolder;">Excellence</span>
+        <span style="font-weight: bold;">Excellence</span>
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[1]" position="replace" mode="inner">
         We conduct state-of-the-art research and development to solve complex design challenges, taking the latest advances out of the lab and into the hands of architects and engineers.</xpath>
@@ -89,7 +89,7 @@
         <attribute name="style">border-color: rgb(255, 255, 255) !important; border-width: 8px !important; box-shadow: rgb(78, 77, 77) 0px 0px 100px -40px !important;</attribute>
     </xpath>
     <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        <span style="font-weight: bolder;">Collaboration</span>
+        <span style="font-weight: bold;">Collaboration</span>
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
         We thrive on rich collaborations to push our thinking. A continuous state of reinvention, driven by our partners in the process, is essential to our work.
@@ -99,7 +99,7 @@
         <attribute name="style">box-shadow: rgb(240, 142, 128) 25px 25px 0px 0px !important; border-color: rgb(240, 142, 128) !important; border-width: 8px !important;</attribute>
     </xpath>
     <xpath expr="(//h3)[3]" position="replace" mode="inner">
-        <span style="font-weight: bolder;">Sustainability</span>
+        <span style="font-weight: bold;">Sustainability</span>
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
         Sustainability is at the heart of our design approach. We audit projects against global standards as well as our own, more comprehensive, responsibility framework.
@@ -115,7 +115,7 @@
         <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-6" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
-        <span class="text-break" style="font-size: 62px; font-weight: bolder;">Our R&amp;D Approach</span>
+        <span class="text-break" style="font-size: 62px; font-weight: bold;">Our R&amp;D Approach</span>
     </xpath>
     <xpath expr="//p" position="before">
         <p><br/></p>
@@ -169,7 +169,7 @@
         <div class="o_we_shape o_web_editor_Origins_14_001"/>
     </xpath>
     <xpath expr="//h3" position="replace">
-        <h3 style="text-align: right;"><b>Since 1992</b> creating around the world.</h3>
+        <h3 style="text-align: right;"><span style="font-weight: bold;">Since 1992</span> creating around the world.</h3>
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
         We partner with ambitious clients. We’d love to hear from you.

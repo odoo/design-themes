@@ -46,7 +46,7 @@
         <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="before">
-        <h4 class="text-o-color-1"><b>The world is yours</b></h4>
+        <h4 class="text-o-color-1"><span style="font-weight: bold;">The world is yours</span></h4>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         No compromise
@@ -75,7 +75,7 @@
         <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="before">
-        <h4 class="text-o-color-1"><b>A greener lifestyle</b></h4>
+        <h4 class="text-o-color-1"><span style="font-weight: bold;">A greener lifestyle</span></h4>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         Electric Driving
@@ -113,12 +113,12 @@
     </xpath>
     <!-- Block #02 -->
     <xpath expr="//h3" position="replace" mode="inner">
-        Electrifying <b>Performance</b>.
+        Electrifying <span style="font-weight: bold;">Performance</span>.
     </xpath>
     <xpath expr="(//p)[2]" position="replace" mode="inner"/>
     <!-- Block #03 -->
     <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        Smarter <b>Range</b>.
+        Smarter <span style="font-weight: bold;">Range</span>.
     </xpath>
     <xpath expr="(//p)[3]" position="replace" mode="inner"/>
 </template>
@@ -151,7 +151,7 @@
     </xpath>
     <!-- Content -->
     <xpath expr="//h3" position="replace" mode="inner">
-        <b>50,000 pre-orders</b> already registered.
+        <span style="font-weight: bold;">50,000 pre-orders</span> already registered.
     </xpath>
     <xpath expr="//h3" position="attributes">
         <attribute name="style" add="text-align: left;" separator=" "/>
@@ -225,7 +225,7 @@
         <p><a href="#" class="btn btn-primary btn-block mb-0 o_cc o_cc4">Configure</a></p>
     </xpath>
     <xpath expr="//p[hasclass('card-text')]" position="after">
-        <span class="d-inline-block mb-4"><b>From $14,000</b></span>
+        <span class="d-inline-block mb-4"><span style="font-weight: bold;">From $14,000</span></span>
     </xpath>
     <!-- Column 2 -->
     <xpath expr="(//h3)[2]" position="replace" mode="inner">
@@ -238,7 +238,7 @@
         <p><a href="#" class="btn btn-primary btn-block mb-0 o_cc o_cc4">Configure</a></p>
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[2]" position="after">
-        <span class="d-inline-block mb-4"><b>From $19,000</b></span>
+        <span class="d-inline-block mb-4"><span style="font-weight: bold;">From $19,000</span></span>
     </xpath>
     <!-- Column 3 -->
     <xpath expr="(//h3)[3]" position="replace" mode="inner">
@@ -251,7 +251,7 @@
         <p><a href="#" class="btn btn-primary btn-block mb-0 o_cc o_cc4">Configure</a></p>
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[3]" position="after">
-        <span class="d-inline-block mb-4"><b>From $25,000</b></span>
+        <span class="d-inline-block mb-4"><span style="font-weight: bold;">From $25,000</span></span>
     </xpath>
 </template>
 

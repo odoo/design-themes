@@ -14,7 +14,7 @@
         <i class="fa fa-2x fa-image bg-o-color-1 m-3 rounded-circle"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[1]/h3" position="replace" mode="inner">
-        <b>Stunning visuals</b>
+        <span style="font-weight: bold;">Stunning visuals</span>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[1]/p" position="replace" mode="inner">
         Tell what's the value for the customer for this feature.
@@ -27,7 +27,7 @@
         <i class="fa fa-2x fa-eye bg-o-color-5 m-3 rounded-circle"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/h3" position="replace" mode="inner">
-        <b>360-degree vision</b>
+        <span style="font-weight: bold;">360-degree vision</span>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/p" position="replace" mode="inner">
         Write what the customer would like to know, not what you want to show.
@@ -40,7 +40,7 @@
         <attribute name="class" add="fa-2x fa-microphone rounded-circle" remove="fa-3x fa-leaf rounded" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/h3" position="replace" mode="inner">
-        <b>Built in mic</b>
+        <span style="font-weight: bold;">Built in mic</span>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/p" position="replace" mode="inner">
         A small explanation of this great feature, in clear words.
