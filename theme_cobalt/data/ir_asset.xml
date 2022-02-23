@@ -8,6 +8,13 @@
     <field name="path">theme_cobalt/static/src/scss/primary_variables.scss</field>
 </record>
 
+<record id="theme_cobalt.portal_scss" model="theme.ir.asset">
+    <field name="key">theme_cobalt.portal_scss</field>
+    <field name="name">Portal variables SCSS</field>
+    <field name="bundle">web.assets_frontend</field>
+    <field name="path">theme_cobalt/static/src/scss/portal.scss</field>
+</record>
+
 <record id="theme_cobalt.bootstrap_overridden_scss" model="theme.ir.asset">
     <field name="key">theme_cobalt.bootstrap_overridden_scss</field>
     <field name="name">Bootstrap overridden SCSS</field>
