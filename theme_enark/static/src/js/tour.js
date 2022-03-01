@@ -1,10 +1,7 @@
 odoo.define("theme_enark.tour.enark", function (require) {
 "use strict";
 
-const core = require("web.core");
-const _t = core._t;
 const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
 
 const snippets = [
     {
