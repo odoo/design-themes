@@ -2,7 +2,6 @@ odoo.define("theme_real_estate.tour.real_estate", function (require) {
 "use strict";
 
 const wTourUtils = require("website.tour_utils");
-var tour = require("web_tour.tour");
 
 const snippets = [
     {

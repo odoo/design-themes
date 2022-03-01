@@ -1,9 +1,7 @@
 /** @odoo-module */
 
 import wTourUtils from 'website.tour_utils';
-
-const core = require("web.core");
-const _t = core._t;
+import { _t } from 'web.core';
 
 const snippets = [
     {
