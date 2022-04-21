@@ -132,7 +132,7 @@
             </div>
             <div data-js="o_animate_options"
                 t-att-data-selector="o_animate_selector"
-                data-exclude=".o_not-animable">
+                data-exclude=".o_not-animable, .dropdown *">
                 <we-collapse-area class="d-none"> <!-- Visible only if an animation is active (js) -->
                     <we-toggler><i class="fa fa-fw fa-cogs"/> Animation Options</we-toggler>
                     <we-collapse class="o_anim_ul_options">

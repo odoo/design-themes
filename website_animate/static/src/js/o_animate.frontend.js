@@ -13,7 +13,7 @@ var WebsiteAnimate = {
     // Retrieve animable elements and attach handlers.
     start: function () {
         var self   = this;
-        self.items = $(".o_animate");
+        self.items = $(".o_animate").not(".dropdown .o_animate");
         self.items.each(function () {
             var $el = $(this);
             // Set all monitored elements to initial state
@@ -45,7 +45,7 @@ var WebsiteAnimate = {
             var direction = (windowTop < lastScroll) ? -1 : 1;
             lastScroll = windowTop;
 
-            $(".o_animate").each(function () {
+            $(".o_animate").not(".dropdown .o_animate").each(function () {
                 var $el       = $(this);
                 var elHeight  = $el.height();
                 var elOffset  = direction * Math.max((elHeight * self.offsetRatio), self.offsetMin);
