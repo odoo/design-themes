@@ -43,5 +43,22 @@ sOptions.registry.o_animate = sOptions.Class.extend({
             this.$target.toggleClass('o_animate_preview o_animate', !!widgetValue);
         }
     },
+
+    //--------------------------------------------------------------------------
+    // Private
+    //--------------------------------------------------------------------------
+
+    /**
+     * @override
+     */
+    async _computeWidgetVisibility(widgetName, params) {
+        const classes = params.optionsPossibleValues.selectClass;
+        if (classes && classes.includes('o_animate_both_scroll')) {
+            // Hide the "Each time it becomes visible" option if the target is
+            // inside a dropdown (e.g. mega menu).
+            return !this.$target.closest('.dropdown').length;
+        }
+        return this._super(...arguments);
+    },
 });
 });

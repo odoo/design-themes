@@ -11,7 +11,7 @@
     text-rendering: geometricPrecision; // take care of animated titles
     visibility: hidden;
 
-    &:not(.o_animating) {
+    &:not(.o_animating):not(.o_animate_in_dropdown) {
         transform: none !important;
     }
 }
