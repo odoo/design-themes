@@ -159,7 +159,7 @@
 <!-- ==== Picture ===== -->
 <template id="s_picture" inherit_id="website.s_picture" name="Cobalt s_picture">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="bg-o-color-3 pt72 overflow-hidden" remove="o_cc o_cc2 pt48" separator=" "/>
+        <attribute name="class" add="pt72 overflow-hidden" remove="o_cc o_cc2 pt48" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["y"]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
