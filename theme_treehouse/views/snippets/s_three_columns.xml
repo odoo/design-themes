@@ -4,7 +4,7 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt80 pb80 bg-200" remove="pt32 pb32 o_cc o_cc2" separator=" "/>
+        <attribute name="class" add="pt80 pb80" remove="pt32 pb32 o_cc o_cc2" separator=" "/>
     </xpath>
     <!-- Column #01 -->
     <xpath expr="(//*[hasclass('card-title')])[1]" position="replace" mode="inner">
