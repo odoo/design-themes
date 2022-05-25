@@ -77,7 +77,7 @@
     </xpath>
     <xpath expr="//*[hasclass('card')]" position="attributes">
         <attribute name="class" add="shadow border" separator=" "/>
-        <attribute name="style">border-color: rgb(11, 13, 99) !important; box-shadow: rgb(11, 13, 99) -25px -25px 0px 0px !important; border-width: 8px !important;</attribute>
+        <attribute name="style">border-color: var(--o-color-2) !important; box-shadow: var(--o-color-2) -25px -25px 0px 0px !important; border-width: 8px !important;</attribute>
     </xpath>
     <xpath expr="//h3" position="replace" mode="inner">
         <span style="font-weight: bolder;">Excellence</span>
@@ -86,7 +86,7 @@
         We conduct state-of-the-art research and development to solve complex design challenges, taking the latest advances out of the lab and into the hands of architects and engineers.</xpath>
     <xpath expr="(//*[hasclass('card')])[2]" position="attributes">
         <attribute name="class" add="shadow border" separator=" "/>
-        <attribute name="style">border-color: rgb(255, 255, 255) !important; border-width: 8px !important; box-shadow: rgb(78, 77, 77) 0px 0px 100px -40px !important;</attribute>
+        <attribute name="style">border-color: var(--o-color-4) !important; border-width: 8px !important; box-shadow: var(--o-color-5) 0px 0px 100px -40px !important;</attribute>
     </xpath>
     <xpath expr="(//h3)[2]" position="replace" mode="inner">
         <span style="font-weight: bolder;">Collaboration</span>
@@ -96,7 +96,7 @@
     </xpath>
     <xpath expr="(//*[hasclass('card')])[3]" position="attributes">
         <attribute name="class" add="shadow border" separator=" "/>
-        <attribute name="style">box-shadow: rgb(240, 142, 128) 25px 25px 0px 0px !important; border-color: rgb(240, 142, 128) !important; border-width: 8px !important;</attribute>
+        <attribute name="style">box-shadow: var(--o-color-1) 25px 25px 0px 0px !important; border-color: var(--o-color-1) !important; border-width: 8px !important;</attribute>
     </xpath>
     <xpath expr="(//h3)[3]" position="replace" mode="inner">
         <span style="font-weight: bolder;">Sustainability</span>
@@ -205,7 +205,7 @@
     </xpath>
 
     <xpath expr="//h2/font" position="replace">
-        <font style="font-size: 62px; background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Making Simple</font>
+        <font style="font-size: 62px; background-color: var(--o-color-4);" class="o_default_snippet_text">Making Simple</font>
     </xpath>
 </template>
 
