@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
-<template id="user_navbar" inherit_id="website.user_navbar" name="User Navbar Themes">
+<!-- TODO: This will be reimplemented following the frontend UI being moved to the backend -->
+<!-- <template id="user_navbar" inherit_id="website.user_navbar" name="User Navbar Themes">
     <xpath expr="//a[hasclass('js_multi_website_switch')]" position="attributes">
         <attribute name="t-att-title">multi_website_website['theme_img']</attribute>
         <attribute name="data-toggle">tooltip</attribute>
     </xpath>
-</template>
+</template> -->
 
 </odoo>
