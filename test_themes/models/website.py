@@ -1,11 +1,19 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import models
+from odoo import api, models
 
 
 class Website(models.Model):
     _inherit = 'website'
+
+    @api.model
+    def get_test_themes_websites_theme_preview(self):
+        websites_themes = self.env['website'].get_test_themes_websites()
+        return {
+            website.id: f"/web/image/{website.theme_id.sudo().image_ids[0].id}"
+            for website in websites_themes.filtered(lambda w: w.theme_id.sudo().image_ids)
+        }
 
     def get_test_themes_websites(self):
         website_imd_ids = self.env['ir.model.data'].sudo().search([
