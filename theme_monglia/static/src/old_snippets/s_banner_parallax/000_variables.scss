@@ -15,7 +15,7 @@ $s-banner-parallax-h1-size: 50px;
     padding: 0;
 }
 @mixin s-banner-parallax-height-hook {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         height: 100vh !important;
     }
 }

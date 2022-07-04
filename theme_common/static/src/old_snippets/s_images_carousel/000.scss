@@ -1,7 +1,7 @@
 .s_images_carousel {
     height: 400px;
     &.carousel {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             height: auto !important;
         }
         .carousel-inner,

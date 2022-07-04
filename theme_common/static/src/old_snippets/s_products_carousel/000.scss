@@ -66,7 +66,7 @@
             color: o-color('alpha');
             text-align: center;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 padding-top: 20px;
                 text-align: center;
             }
@@ -79,7 +79,7 @@
                 font-size: 85px;
                 text-shadow: 1px 1px 11px rgba(0, 0, 0, 0.86);
 
-                @include media-breakpoint-down(sm) {
+                @include media-breakpoint-down(md) {
                     font-size: 65px;
                 }
                 @media screen and (max-width: 360px) {

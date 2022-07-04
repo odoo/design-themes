@@ -34,7 +34,7 @@
                 overflow: hidden;
                 overflow-y: scroll;
                 padding-top: 40px;
-                @include media-breakpoint-down(sm) {
+                @include media-breakpoint-down(md) {
                     overflow: visible;
                     height: auto;
                 }

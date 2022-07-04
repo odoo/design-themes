@@ -17,7 +17,7 @@
     img {
         max-height: 80px;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         [class*="col-lg-"] {
             padding-bottom: 15px;
         }
@@ -110,7 +110,7 @@
             @include s-banner-3-col-center-hook;
             padding-left: $s-banner-3-padding;
             color: $s-banner-3-hero-bg-color;
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 top: 0px;
                 text-align: center;
                 padding-left: 0px;
@@ -399,7 +399,7 @@
         font-weight: 300;
     }
     .row > div > img {
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             max-height: 100px;
         }
     }
@@ -637,7 +637,7 @@
             float: left;
             padding: 0 44px 0 0;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 width: 100%;
                 padding: 0;
             }
@@ -663,7 +663,7 @@
                     border-right: 0 solid #ccc;
                     border-bottom: 15px solid rgba(0, 0, 0, 0);
                     content: " ";
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(md) {
                         display: none;
                     }
                 }
@@ -678,7 +678,7 @@
                     border-right: 0 solid $s-timeline-color;
                     border-bottom: 14px solid rgba(0, 0, 0, 0);
                     content: " ";
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(md) {
                         display: none;
                     }
                 }
@@ -703,7 +703,7 @@
             border-bottom-right-radius: 50%;
             border-bottom-left-radius: 50%;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 display: none;
             }
         }
@@ -712,7 +712,7 @@
             float: right;
             padding: 0 0 0 44px;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 padding: 0;
                 margin-top: 20px;
             }
@@ -740,7 +740,7 @@
             float: right;
             padding: 0 0 0 44px;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 padding: 0;
             }
 
@@ -821,7 +821,7 @@ $s-timeline-company-color: o-color('alpha') !default;
     margin-top: 5px;
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
     #wrapwrap ul.timeline:before {
         display: none;
     }
@@ -959,7 +959,7 @@ $s-timeline-company-color: o-color('alpha') !default;
     }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
     #wrapwrap .s_timeline_icons ul.timeline {
         text-align: center;
         &:before{
@@ -1119,7 +1119,7 @@ $s-timeline-company-color: o-color('alpha') !default;
             height: 100%;
             > div {
                 height: 100%;
-                @include media-breakpoint-down(md) {
+                @include media-breakpoint-down(lg) {
                     height: auto !important;
                 }
             }
@@ -1128,7 +1128,7 @@ $s-timeline-company-color: o-color('alpha') !default;
     .carousel-inner {
         width: 80%;
         margin: 0 10%;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             width: 100%;
             margin: 0;
         }
@@ -1168,7 +1168,7 @@ $s-timeline-company-color: o-color('alpha') !default;
         @include carousel-control(15px, 0, 2px);
         .fa {
             margin-top: -21px;
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 top: 65px;
                 margin-top: 0;
             }
@@ -1186,7 +1186,7 @@ $s-timeline-company-color: o-color('alpha') !default;
 #wrapwrap .s_medias_list {
     background-color: if($s-medias-list-bg-color-main != null, $s-medias-list-bg-color-main, gray('200'));
     .media {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             height: auto !important;
         }
         > .row {
