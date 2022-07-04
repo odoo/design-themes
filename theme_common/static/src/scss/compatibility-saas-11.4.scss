@@ -317,7 +317,7 @@
 #wrapwrap .s_separator_shade hr {
     height: 2px;
     border-top: 0;
-    background: gray('700');
+    background: map-get($grays, '700');
     border-radius: 5px;
 }
 
@@ -411,7 +411,7 @@
     color: white;
     padding-top: 32px;
     p {
-        color: gray('800');
+        color: map-get($grays, '800');
         font-size: 16px;
     }
 }
@@ -436,7 +436,7 @@
     &.quotecarousel {
         padding: 0;
     }
-    @include blockquote-layout(#fff, gray('900'));
+    @include blockquote-layout(#fff, map-get($grays, '900'));
     .carousel-indicators {
         @include carousel-indicators(5px, -5px);
     }
@@ -602,7 +602,7 @@
         position: absolute;
         content: " ";
         width: 3px;
-        background-color: gray('200');
+        background-color: map-get($grays, '200');
         left: 50%;
         margin-left: -1.5px;
     }
@@ -787,17 +787,17 @@
 
 #wrapwrap .s_timeline_title {
     margin-top: 0;
-    color: gray('800');
+    color: map-get($grays, '800');
 }
 
 #wrapwrap .s_timeline_info {
     margin-top: 0;
-    color: gray('700');
+    color: map-get($grays, '700');
 }
 
 #wrapwrap .s_timeline_date {
     margin-top: 0;
-    color: gray('800');
+    color: map-get($grays, '800');
 }
 
 $s-timeline-company-color: o-color('alpha') !default;
@@ -808,13 +808,13 @@ $s-timeline-company-color: o-color('alpha') !default;
 }
 
 #wrapwrap .s_timeline_heading {
-    color: gray('800');
+    color: map-get($grays, '800');
 }
 
 #wrapwrap .s_timeline_body > p,
 #wrapwrap .s_timeline_body > ul {
     margin-bottom: 0;
-    color: gray('800');
+    color: map-get($grays, '800');
 }
 
 #wrapwrap .s_timeline_body > p + p {
@@ -855,7 +855,7 @@ $s-timeline-company-color: o-color('alpha') !default;
         top: 10px;
         bottom: 10px;
         left: 50%;
-        background-color: gray('700');
+        background-color: map-get($grays, '700');
     }
 
     li {
@@ -875,7 +875,7 @@ $s-timeline-company-color: o-color('alpha') !default;
         .timeline-content-double {
             position: relative;
             width: 50%;
-            color: gray('900');
+            color: map-get($grays, '900');
             &:after {
                 content: '';
                 position: absolute;
@@ -883,8 +883,8 @@ $s-timeline-company-color: o-color('alpha') !default;
                 right: 30px;
                 display: inline-block;
                 border-top: 5px solid rgba(0, 0, 0, 0);
-                border-left: 5px solid gray('900');
-                border-right: 0 solid gray('900');
+                border-left: 5px solid map-get($grays, '900');
+                border-right: 0 solid map-get($grays, '900');
                 border-bottom: 5px solid rgba(0, 0, 0, 0);
             }
 
@@ -922,7 +922,7 @@ $s-timeline-company-color: o-color('alpha') !default;
             line-height: 30px;
             margin-left: -40px;
             background-color: #fff;
-            color: gray('900');
+            color: map-get($grays, '900');
             font-weight: 700;
             text-align: center;
             z-index: $zindex-navbar;
@@ -967,7 +967,7 @@ $s-timeline-company-color: o-color('alpha') !default;
         }
 
         li {
-            border-bottom: 1px solid gray('200');
+            border-bottom: 1px solid map-get($grays, '200');
             &:last-child{
                 border-bottom: 0;
             }
@@ -1177,15 +1177,15 @@ $s-timeline-company-color: o-color('alpha') !default;
 }
 
 #wrapwrap .s_references_2 {
-    @include blockquote-layout(gray('200'), gray('900'));
+    @include blockquote-layout(map-get($grays, '200'), map-get($grays, '900'));
     .carousel-indicators {
         @include carousel-indicators(-15px, -10px);
     }
 }
 
 #wrapwrap .s_medias_list {
-    background-color: if($s-medias-list-bg-color-main != null, $s-medias-list-bg-color-main, gray('200'));
-    .media {
+    background-color: if($s-medias-list-bg-color-main != null, $s-medias-list-bg-color-main, map-get($grays, '200'));
+    .d-flex {
         @include media-breakpoint-down(lg) {
             height: auto !important;
         }
@@ -1200,7 +1200,7 @@ $s-timeline-company-color: o-color('alpha') !default;
             }
             .media-options {
                 height: 100%;
-                background-color: gray('200');
+                background-color: map-get($grays, '200');
                 > .row {
                     margin: 0;
                     [class*="col-"]{

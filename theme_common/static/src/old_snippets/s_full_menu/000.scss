@@ -8,10 +8,10 @@
             font-size: 20px;
         }
         .menu-container > .s_full_menu_content {
-            border-left: 3px solid gray('200');
+            border-left: 3px solid map-get($grays, '200');
             .row {
                 .s_full_menu_content_description {
-                    border-bottom: 1px solid gray('200');
+                    border-bottom: 1px solid map-get($grays, '200');
                     padding-bottom: 15px;
                     line-height: 1;
                     span {

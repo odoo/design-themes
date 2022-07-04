@@ -10,8 +10,8 @@
     }
 }
 
-.black { @include bg-compatibility-mixin($black, gray('600')); }
-.darkgray { @include bg-compatibility-mixin(gray('800'), $white); }
-.gray { @include bg-compatibility-mixin(gray('700'), $white); }
-.lightgray { @include bg-compatibility-mixin(gray('200'), gray('700')); }
-.white { @include bg-compatibility-mixin($white, gray('700')); }
+.black { @include bg-compatibility-mixin($black, map-get($grays, '600')); }
+.darkgray { @include bg-compatibility-mixin(map-get($grays, '800'), $white); }
+.gray { @include bg-compatibility-mixin(map-get($grays, '700'), $white); }
+.lightgray { @include bg-compatibility-mixin(map-get($grays, '200'), map-get($grays, '700')); }
+.white { @include bg-compatibility-mixin($white, map-get($grays, '700')); }
