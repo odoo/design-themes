@@ -92,7 +92,7 @@
         &:hover {
             color: theme-color('primary');
         }
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             top: auto;
             bottom: 0;
         }
@@ -145,16 +145,16 @@
 //------------------------------------------------------------------------------
 
 @mixin o-theme-responsive-spacing-classes($lg, $md, $sm, $xs) {
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
         @include o-spacing-all($lg);
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         @include o-spacing-all($md);
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         @include o-spacing-all($sm);
     }
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
         @include o-spacing-all($xs);
     }
 }
@@ -269,7 +269,7 @@
 }
 
 @mixin o-theme-cfa-header-responsive-sizes() {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         h1 {
             font-size: 30px;
         }
@@ -346,7 +346,7 @@
     @include media-breakpoint-up(md) {
         display: $display;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         padding: $media-padding;
     }
     .divider {
@@ -563,7 +563,7 @@
     }
     .oe_cart {
         .btn {
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 padding: 10px;
             }
         }
@@ -617,7 +617,7 @@
     }
     .wizard {
         box-shadow: none;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             padding-right: 0px;
             li {
                 padding-left: 7px;

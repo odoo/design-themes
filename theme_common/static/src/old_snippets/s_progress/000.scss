@@ -2,7 +2,7 @@
     > div > .row > div {
         border-left-width: 1px;
         border-left-style: solid;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             border-bottom-width: 1px;
             border-bottom-style: solid;
             border-left-width: 0;
@@ -27,7 +27,7 @@
         padding: 10px;
         text-align: center;
         min-height: 230px;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             min-height: 50px;
         }
 
@@ -56,14 +56,14 @@
         height: 25px;
         text-align: right;
         width: 100%;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             display: none;
         }
     }
     .progress-content {
         padding: 10px 25px;
         min-height: 230px;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             min-height: 50px;
         }
         h1 {

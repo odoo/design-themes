@@ -61,7 +61,7 @@
         opacity: 1;
         cursor: pointer;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         [class*="col-lg-"] > p {
             padding: 0 30px;
         }
