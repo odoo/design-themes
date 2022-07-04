@@ -32,7 +32,7 @@
     </xpath>
     <!-- Center the blockquote -->
     <xpath expr="(//blockquote)[2]" position="attributes">
-        <attribute name="class" add="mx-auto" remove="mr-auto" separator=" "/>
+        <attribute name="class" add="mx-auto" remove="me-auto" separator=" "/>
     </xpath>
 
     <!-- Quote 3 -->
@@ -46,7 +46,7 @@
     </xpath>
     <!-- Center the blockquote -->
     <xpath expr="(//blockquote)[3]" position="attributes">
-        <attribute name="class" add="mx-auto" remove="ml-auto" separator=" "/>
+        <attribute name="class" add="mx-auto" remove="ms-auto" separator=" "/>
     </xpath>
 </template>
 

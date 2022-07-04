@@ -116,11 +116,11 @@
     // Comparisons
     .s_comparisons {
         .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
-            background-color: theme-color('primary');
-            border-color: theme-color('primary');
+            background-color: map-get($theme-colors, 'primary');
+            border-color: map-get($theme-colors, 'primary');
         }
         .panel-body h2 small {
-            color: gray('900');
+            color: map-get($grays, '900');
         }
     }
 

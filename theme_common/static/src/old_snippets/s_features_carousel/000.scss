@@ -40,17 +40,17 @@
         border-bottom: {
             width: $s-features-carousel-border-width;
             style: $s-features-carousel-border-style;
-            color: if(s-features-carousel-border-color != null, $s-features-carousel-border-color, gray('600'));
+            color: if(s-features-carousel-border-color != null, $s-features-carousel-border-color, map-get($grays, '600'));
         }
         text-align: center;
         padding-bottom: 30px;
     }
     .carousel-indicators {
-        border-top: 1px dotted gray('600');
+        border-top: 1px dotted map-get($grays, '600');
         padding-top: 32px;
         visibility: $s-features-carousel-indicators-visible;
         li {
-            border: 1px solid gray('200');
+            border: 1px solid map-get($grays, '200');
         }
     }
     .carousel-indicators .active {

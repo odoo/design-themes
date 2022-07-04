@@ -20,7 +20,7 @@
     </xpath>
     <!-- Carousel item #2 - blockquote -->
     <xpath expr="//div[hasclass('carousel-item')][2]//blockquote" position="attributes">
-        <attribute name="class" add="mx-auto" remove="mr-auto" separator=" "/>
+        <attribute name="class" add="mx-auto" remove="me-auto" separator=" "/>
     </xpath>
     <!-- Carousel item #3 - filter -->
     <xpath expr="//div[hasclass('carousel-item')][3]//div[hasclass('container')]" position="before">
@@ -32,7 +32,7 @@
     </xpath>
     <!-- Carousel item #3 - blockquote -->
     <xpath expr="//div[hasclass('carousel-item')][3]//blockquote" position="attributes">
-        <attribute name="class" add="mx-auto" remove="ml-auto" separator=" "/>
+        <attribute name="class" add="mx-auto" remove="ms-auto" separator=" "/>
     </xpath>
 </template>
 
