@@ -4,7 +4,7 @@
     padding: 30px 0;
     border-radius: $s-discount-box-border-radius;
     position: relative;
-    box-shadow: 0px 0px 5px 0px rgba(gray('700'), 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(map-get($grays, '700'), 0.5);
     word-wrap: break-word;
 
     &:before {
@@ -63,7 +63,7 @@
 #wrapwrap .s_discount_descr {
     text-align: center;
     font-size: 13px;
-    color: gray('800');
+    color: map-get($grays, '800');
     margin-top: 10px;
     padding: 20px 25px;
     @include s-discount-descr-hook;
@@ -92,7 +92,7 @@
     border-radius: 4px;
     margin-top: 10px;
     background: #f0f0f0;
-    color: gray('800');
+    color: map-get($grays, '800');
     .code {
         padding: 10px 15px;
     }

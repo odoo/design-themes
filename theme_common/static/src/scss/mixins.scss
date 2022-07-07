@@ -83,16 +83,16 @@
 @mixin carousel-control($position, $fa-position, $fa-padding) {
     opacity: 1;
     text-shadow: none;
-    color: gray('900');
+    color: map-get($grays, '900');
     font-size: inherit;
     width: 5%;
     .fa {
         top: 50%;
         background-color: #fff;
         &:hover {
-            color: theme-color('primary');
+            color: map-get($theme-colors, 'primary');
         }
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             top: auto;
             bottom: 0;
         }
@@ -145,16 +145,16 @@
 //------------------------------------------------------------------------------
 
 @mixin o-theme-responsive-spacing-classes($lg, $md, $sm, $xs) {
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
         @include o-spacing-all($lg);
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         @include o-spacing-all($md);
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         @include o-spacing-all($sm);
     }
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
         @include o-spacing-all($xs);
     }
 }
@@ -252,24 +252,24 @@
             // designed... should we keep this ?
             @each $color, $alias in ('success': 'epsilon', 'info': 'gamma', 'warning': 'delta') {
                 &.btn-#{$color} {
-                    @include button-variant(theme-color($alias), theme-color($alias));
+                    @include button-variant(map-get($theme-colors, $alias), map-get($theme-colors, $alias));
                 }
                 &.btn-outline-#{$color} {
-                    @include button-outline-variant(theme-color($alias));
+                    @include button-outline-variant(map-get($theme-colors, $alias));
                 }
             }
             &.btn-danger {
-                @include button-variant(gray('black'), gray('black'));
+                @include button-variant(map-get($grays, 'black'), map-get($grays, 'black'));
             }
             &.btn-outline-danger {
-                @include button-outline-variant(gray('black'), gray('black'));
+                @include button-outline-variant(map-get($grays, 'black'), map-get($grays, 'black'));
             }
         }
     }
 }
 
 @mixin o-theme-cfa-header-responsive-sizes() {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         h1 {
             font-size: 30px;
         }
@@ -288,7 +288,7 @@
     border-right-width: 0px;
     border-radius: 0px;
     @if $with-color {
-        color: gray('700');
+        color: map-get($grays, '700');
     }
 
     &:focus {
@@ -346,7 +346,7 @@
     @include media-breakpoint-up(md) {
         display: $display;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         padding: $media-padding;
     }
     .divider {
@@ -396,13 +396,13 @@
 }
 
 @mixin o-theme-cfa-ecommerce-classes(
-    $nav-link-color: o-color('epsilon'), $nav-link-hover-color: o-color('beta'), $nav-link-hover-bg-color: gray('800'),
+    $nav-link-color: o-color('epsilon'), $nav-link-hover-color: o-color('beta'), $nav-link-hover-bg-color: map-get($grays, '800'),
     $nav-link-active-bg-color: rgba(0, 0, 0, 0), $nav-link-active-color: o-color('epsilon'),
-    $js-attributes-padding: 0px 15px 15px 15px, $js-attributes-strong-color: o-color('gamma'), $js-attributes-label-color: gray('700'),
+    $js-attributes-padding: 0px 15px 15px 15px, $js-attributes-strong-color: o-color('gamma'), $js-attributes-label-color: map-get($grays, '700'),
     $h6-padding-y: 10px, $h6-font-size: 13px, $h6-text-align: left, $h6-border-top: 0, $h6-border-bottom: 0, $h6-color: o-color('delta'),
     $price-font-size: 12px, $product-price-padding: 0, $product-price-align: left, $btn-secondary-padding: 5px 10px,
-    $right-column-border-bottom: 1px solid gray('700'), $right-column-color: gray('700'), $right-column-font-weight: bold,
-    $add-cart-bg-color: gray('700'), $add-cart-color: white, $add-cart-width: auto, $price-h4: 25px) {
+    $right-column-border-bottom: 1px solid map-get($grays, '700'), $right-column-color: map-get($grays, '700'), $right-column-font-weight: bold,
+    $add-cart-bg-color: map-get($grays, '700'), $add-cart-color: white, $add-cart-width: auto, $price-h4: 25px) {
 
     .breadcrumb {
         padding-top: 20px;
@@ -435,10 +435,10 @@
     }
     .oe_product  {
         .btn.btn-danger {
-            @include button-variant(theme-color('danger'), theme-color('danger'));
+            @include button-variant(map-get($theme-colors, 'danger'), map-get($theme-colors, 'danger'));
         }
         .text-danger {
-            color: theme-color('danger') !important;
+            color: map-get($theme-colors, 'danger') !important;
         }
         .o_wsale_product_information {
             padding: 0px 15px;
@@ -563,7 +563,7 @@
     }
     .oe_cart {
         .btn {
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 padding: 10px;
             }
         }
@@ -571,7 +571,7 @@
             background-color: rgba(0, 0, 0, 0);
         }
         strong {
-            color: gray('700');
+            color: map-get($grays, '700');
         }
         #cart_products img {
             max-width: 100px;
@@ -594,7 +594,7 @@
         font-size: 18px;
     }
     #right_column {
-        color: gray('700');
+        color: map-get($grays, '700');
         a {
             color: red;
         }
@@ -617,7 +617,7 @@
     }
     .wizard {
         box-shadow: none;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             padding-right: 0px;
             li {
                 padding-left: 7px;
@@ -701,10 +701,10 @@
 
 @mixin o-theme-chd-bg-gradient-classes() {
     .bg_gradient_primary_down {
-        background-image: linear-gradient( rgba(theme-color('primary'), 0), rgba(theme-color('primary'), 1) ),;
+        background-image: linear-gradient( rgba(map-get($theme-colors, 'primary'), 0), rgba(map-get($theme-colors, 'primary'), 1) ),;
     }
     .bg_gradient_primary_up {
-        background-image: linear-gradient( rgba(theme-color('primary'), 1), rgba(theme-color('primary'), 0) ),;
+        background-image: linear-gradient( rgba(map-get($theme-colors, 'primary'), 1), rgba(map-get($theme-colors, 'primary'), 0) ),;
     }
     .bg_gradient_white_down_thumb {
         background-image: linear-gradient( rgba(#ccc, 1), rgba(white, 0.5) ),;
@@ -923,7 +923,7 @@
             &:before {
                 content: "";
                 width: 1px;
-                background-color: gray('200');
+                background-color: map-get($grays, '200');
                 height: 100%;
                 @include o-position-absolute(0, auto, 0, -10%);
             }
@@ -968,7 +968,7 @@
                             label.css_attribute_color {
                                 opacity: 0.8;
                                 cursor: pointer;
-                                border: 1px solid gray('600');
+                                border: 1px solid map-get($grays, '600');
                                 box-shadow: inset 0 0 0 2px #fff;
                                 border-radius: 2px;
 
@@ -1126,8 +1126,8 @@
         .input-group .form-control {
             height: auto;
             padding: $padding;
-            color: gray('900');
-            @include border-left-radius(20px);
+            color: map-get($grays, '900');
+            @include border-start-radius(20px);
 
             + .input-group-append button {
                 padding: 6px 20px;
@@ -1138,10 +1138,10 @@
         // Ask a question - Button
         .btn-group .btn {
             padding: 6px 12px;
-            @include border-right-radius(0);
+            @include border-end-radius(0);
             &.dropdown-toggle {
-                @include border-left-radius(0);
-                @include border-right-radius(20px);
+                @include border-start-radius(0);
+                @include border-end-radius(20px);
             }
         }
         // Ask a question - Editor icons

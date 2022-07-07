@@ -7,7 +7,7 @@ $s-discount-amount-size: 70px;
     color: o-color('alpha');
 }
 @mixin s-discount-box-hook {
-    color: gray('700');
+    color: map-get($grays, '700');
 
     .s_discount_open-code {
         color: o-color('gamma');

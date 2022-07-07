@@ -6,7 +6,7 @@ $s-banner-parallax-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     width: 100%;
     text-align: center;
     bottom: -30px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         top: 100px;
     }
 }
@@ -14,7 +14,7 @@ $s-banner-parallax-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     vertical-align: bottom;
 }
 @mixin s-banner-parallax-height-hook {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         height: 100vh !important;
     }
 }

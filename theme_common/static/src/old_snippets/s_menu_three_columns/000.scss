@@ -7,7 +7,7 @@
             height: 150px;
             position: relative;
             padding: 0;
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 height: 100px;
             }
             @media only screen and (max-width : 360px) { // FIXME
@@ -25,7 +25,7 @@
             h2 {
                 line-height: 150px;
                 margin-top: 0;
-                @include media-breakpoint-down(sm) {
+                @include media-breakpoint-down(md) {
                     line-height: 100px;
                     line-height: 100px;
                 }

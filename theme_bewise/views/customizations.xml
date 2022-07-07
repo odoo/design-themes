@@ -83,7 +83,7 @@
     </xpath>
     <xpath expr="//p[2]" position="replace">
         <p>Journalists, directors, developers, etc. working effectively in their fields of excellence.</p>
-        <div class="s_hr text-left p0 pb32" data-snippet="s_hr" data-name="Separator">
+        <div class="s_hr text-start p0 pb32" data-snippet="s_hr" data-name="Separator">
             <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: var(--o-color-3) !important;"/>
         </div>
     </xpath>
@@ -109,7 +109,7 @@
     </xpath>
     <xpath expr="//p[2]" position="replace">
         <p>All students benefit from individualised support.</p>
-        <div class="s_hr text-left p0 pb32" data-snippet="s_hr" data-name="Separator">
+        <div class="s_hr text-start p0 pb32" data-snippet="s_hr" data-name="Separator">
             <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: var(--o-color-3) !important;"/>
         </div>
     </xpath>
@@ -191,7 +191,7 @@
     </xpath>
     <!-- Slide #2 - blockquote -->
     <xpath expr="(//blockquote)[2]" position="attributes">
-        <attribute name="class" add="w-75 mx-auto" remove="w-50 mr-auto" separator=" "/>
+        <attribute name="class" add="w-75 mx-auto" remove="w-50 me-auto" separator=" "/>
     </xpath>
     <xpath expr="(//blockquote)[2]//i" position="attributes">
         <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
@@ -210,7 +210,7 @@
     </xpath>
     <!-- Slide #3 - blockquote -->
     <xpath expr="(//blockquote)[3]" position="attributes">
-        <attribute name="class" add="w-75 mx-auto" remove="w-50 ml-auto" separator=" "/>
+        <attribute name="class" add="w-75 mx-auto" remove="w-50 ms-auto" separator=" "/>
     </xpath>
     <xpath expr="(//blockquote)[3]//i" position="attributes">
         <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>

@@ -23,12 +23,12 @@ $s-big-icon-circle-icon-size: 150px;
 @mixin s-big-icon-circle-height-hook {
     height: 100vh;
     padding-top: 0;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
         height: 100%;
     }
     .row {
         height: 100vh;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             height: 100%;
         }
     }
@@ -40,7 +40,7 @@ $s-big-icon-circle-icon-size: 150px;
 @mixin s-big-icon-circle-fa-hook {
     height: 100px;
     line-height: 70px;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
         height: 80px;
     }
 }

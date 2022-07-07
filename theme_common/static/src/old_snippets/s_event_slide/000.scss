@@ -22,8 +22,8 @@
                 background-color: o-color('epsilon');
             }
             > .row > div {
-                border-right: 1px solid gray('200');
-                border-bottom: 1px solid gray('200');
+                border-right: 1px solid map-get($grays, '200');
+                border-bottom: 1px solid map-get($grays, '200');
                 text-align: left;
                 h4 {
                     text-align: center;
@@ -34,7 +34,7 @@
                 overflow: hidden;
                 overflow-y: scroll;
                 padding-top: 40px;
-                @include media-breakpoint-down(sm) {
+                @include media-breakpoint-down(md) {
                     overflow: visible;
                     height: auto;
                 }

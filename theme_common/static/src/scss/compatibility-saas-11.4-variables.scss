@@ -4,7 +4,7 @@
     li {
         width: 12px;
         height: 12px;
-        border-color: gray('900');
+        border-color: map-get($grays, '900');
         margin: 0;
         &:hover {
             border-color: o-color('alpha');
@@ -15,7 +15,7 @@
             margin: 0;
         }
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         bottom: $bottom-sm;
     }
 }

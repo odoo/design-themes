@@ -3,7 +3,7 @@ $s-banner-parallax-text-color: o-color('alpha') !default;
 #wrapwrap .s_banner_parallax {
     margin-bottom: 0px !important;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         background-position: $s-banner-parallax-bg-position;
     }
     @include s-banner-parallax-height-hook;
@@ -19,7 +19,7 @@ $s-banner-parallax-text-color: o-color('alpha') !default;
                 color: $s-banner-parallax-text-color;
                 @include s-banner-parallax-hero-bg-hook;
 
-                @include media-breakpoint-down(sm) {
+                @include media-breakpoint-down(md) {
                     text-align: center;
                     padding-left: 15px;
                 }

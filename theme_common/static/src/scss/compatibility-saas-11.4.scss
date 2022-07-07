@@ -17,7 +17,7 @@
     img {
         max-height: 80px;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         [class*="col-lg-"] {
             padding-bottom: 15px;
         }
@@ -110,7 +110,7 @@
             @include s-banner-3-col-center-hook;
             padding-left: $s-banner-3-padding;
             color: $s-banner-3-hero-bg-color;
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 top: 0px;
                 text-align: center;
                 padding-left: 0px;
@@ -317,7 +317,7 @@
 #wrapwrap .s_separator_shade hr {
     height: 2px;
     border-top: 0;
-    background: gray('700');
+    background: map-get($grays, '700');
     border-radius: 5px;
 }
 
@@ -399,7 +399,7 @@
         font-weight: 300;
     }
     .row > div > img {
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             max-height: 100px;
         }
     }
@@ -411,7 +411,7 @@
     color: white;
     padding-top: 32px;
     p {
-        color: gray('800');
+        color: map-get($grays, '800');
         font-size: 16px;
     }
 }
@@ -436,7 +436,7 @@
     &.quotecarousel {
         padding: 0;
     }
-    @include blockquote-layout(#fff, gray('900'));
+    @include blockquote-layout(#fff, map-get($grays, '900'));
     .carousel-indicators {
         @include carousel-indicators(5px, -5px);
     }
@@ -602,7 +602,7 @@
         position: absolute;
         content: " ";
         width: 3px;
-        background-color: gray('200');
+        background-color: map-get($grays, '200');
         left: 50%;
         margin-left: -1.5px;
     }
@@ -637,7 +637,7 @@
             float: left;
             padding: 0 44px 0 0;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 width: 100%;
                 padding: 0;
             }
@@ -663,7 +663,7 @@
                     border-right: 0 solid #ccc;
                     border-bottom: 15px solid rgba(0, 0, 0, 0);
                     content: " ";
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(md) {
                         display: none;
                     }
                 }
@@ -678,7 +678,7 @@
                     border-right: 0 solid $s-timeline-color;
                     border-bottom: 14px solid rgba(0, 0, 0, 0);
                     content: " ";
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(md) {
                         display: none;
                     }
                 }
@@ -703,7 +703,7 @@
             border-bottom-right-radius: 50%;
             border-bottom-left-radius: 50%;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 display: none;
             }
         }
@@ -712,7 +712,7 @@
             float: right;
             padding: 0 0 0 44px;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 padding: 0;
                 margin-top: 20px;
             }
@@ -740,7 +740,7 @@
             float: right;
             padding: 0 0 0 44px;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 padding: 0;
             }
 
@@ -787,17 +787,17 @@
 
 #wrapwrap .s_timeline_title {
     margin-top: 0;
-    color: gray('800');
+    color: map-get($grays, '800');
 }
 
 #wrapwrap .s_timeline_info {
     margin-top: 0;
-    color: gray('700');
+    color: map-get($grays, '700');
 }
 
 #wrapwrap .s_timeline_date {
     margin-top: 0;
-    color: gray('800');
+    color: map-get($grays, '800');
 }
 
 $s-timeline-company-color: o-color('alpha') !default;
@@ -808,20 +808,20 @@ $s-timeline-company-color: o-color('alpha') !default;
 }
 
 #wrapwrap .s_timeline_heading {
-    color: gray('800');
+    color: map-get($grays, '800');
 }
 
 #wrapwrap .s_timeline_body > p,
 #wrapwrap .s_timeline_body > ul {
     margin-bottom: 0;
-    color: gray('800');
+    color: map-get($grays, '800');
 }
 
 #wrapwrap .s_timeline_body > p + p {
     margin-top: 5px;
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
     #wrapwrap ul.timeline:before {
         display: none;
     }
@@ -855,7 +855,7 @@ $s-timeline-company-color: o-color('alpha') !default;
         top: 10px;
         bottom: 10px;
         left: 50%;
-        background-color: gray('700');
+        background-color: map-get($grays, '700');
     }
 
     li {
@@ -875,7 +875,7 @@ $s-timeline-company-color: o-color('alpha') !default;
         .timeline-content-double {
             position: relative;
             width: 50%;
-            color: gray('900');
+            color: map-get($grays, '900');
             &:after {
                 content: '';
                 position: absolute;
@@ -883,8 +883,8 @@ $s-timeline-company-color: o-color('alpha') !default;
                 right: 30px;
                 display: inline-block;
                 border-top: 5px solid rgba(0, 0, 0, 0);
-                border-left: 5px solid gray('900');
-                border-right: 0 solid gray('900');
+                border-left: 5px solid map-get($grays, '900');
+                border-right: 0 solid map-get($grays, '900');
                 border-bottom: 5px solid rgba(0, 0, 0, 0);
             }
 
@@ -922,7 +922,7 @@ $s-timeline-company-color: o-color('alpha') !default;
             line-height: 30px;
             margin-left: -40px;
             background-color: #fff;
-            color: gray('900');
+            color: map-get($grays, '900');
             font-weight: 700;
             text-align: center;
             z-index: $zindex-navbar;
@@ -959,7 +959,7 @@ $s-timeline-company-color: o-color('alpha') !default;
     }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
     #wrapwrap .s_timeline_icons ul.timeline {
         text-align: center;
         &:before{
@@ -967,7 +967,7 @@ $s-timeline-company-color: o-color('alpha') !default;
         }
 
         li {
-            border-bottom: 1px solid gray('200');
+            border-bottom: 1px solid map-get($grays, '200');
             &:last-child{
                 border-bottom: 0;
             }
@@ -1119,7 +1119,7 @@ $s-timeline-company-color: o-color('alpha') !default;
             height: 100%;
             > div {
                 height: 100%;
-                @include media-breakpoint-down(md) {
+                @include media-breakpoint-down(lg) {
                     height: auto !important;
                 }
             }
@@ -1128,7 +1128,7 @@ $s-timeline-company-color: o-color('alpha') !default;
     .carousel-inner {
         width: 80%;
         margin: 0 10%;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             width: 100%;
             margin: 0;
         }
@@ -1168,7 +1168,7 @@ $s-timeline-company-color: o-color('alpha') !default;
         @include carousel-control(15px, 0, 2px);
         .fa {
             margin-top: -21px;
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 top: 65px;
                 margin-top: 0;
             }
@@ -1177,16 +1177,16 @@ $s-timeline-company-color: o-color('alpha') !default;
 }
 
 #wrapwrap .s_references_2 {
-    @include blockquote-layout(gray('200'), gray('900'));
+    @include blockquote-layout(map-get($grays, '200'), map-get($grays, '900'));
     .carousel-indicators {
         @include carousel-indicators(-15px, -10px);
     }
 }
 
 #wrapwrap .s_medias_list {
-    background-color: if($s-medias-list-bg-color-main != null, $s-medias-list-bg-color-main, gray('200'));
-    .media {
-        @include media-breakpoint-down(md) {
+    background-color: if($s-medias-list-bg-color-main != null, $s-medias-list-bg-color-main, map-get($grays, '200'));
+    .d-flex {
+        @include media-breakpoint-down(lg) {
             height: auto !important;
         }
         > .row {
@@ -1200,7 +1200,7 @@ $s-timeline-company-color: o-color('alpha') !default;
             }
             .media-options {
                 height: 100%;
-                background-color: gray('200');
+                background-color: map-get($grays, '200');
                 > .row {
                     margin: 0;
                     [class*="col-"]{
