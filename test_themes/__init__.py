@@ -10,12 +10,7 @@ def post_init_hook(cr, registry):
     ''' Create a new website for each theme and install the theme on it. '''
     env = api.Environment(cr, SUPERUSER_ID, {})
     IrModule = env['ir.module.module']
-
-    themes = IrModule.search([
-        ('category_id', 'child_of', env.ref('base.module_category_theme').id),
-    ], order='name')
-    exclude_list = ['_common', '_blog', '_sale']
-    themes = themes.filtered(lambda t: not any([ex for ex in exclude_list if ex in t.name]))
+    themes = IrModule.search(IrModule.get_themes_domain(), order='name')
     assert len(themes) == len(env.ref('base.module_test_themes').dependencies_id)
 
     xmlids = []
