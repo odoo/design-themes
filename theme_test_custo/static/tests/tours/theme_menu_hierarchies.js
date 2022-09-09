@@ -9,6 +9,7 @@ wTourUtils.registerEditionTour('theme_menu_hierarchies', {
     {
         content: 'Check Mega Menu is correctly created',
         trigger: 'iframe #top_menu a.o_mega_menu_toggle',
+        timeout: 20000,
     }, {
         content: 'Check Mega Menu content',
         trigger: 'iframe #top_menu div.o_mega_menu.show .fa-cube',
