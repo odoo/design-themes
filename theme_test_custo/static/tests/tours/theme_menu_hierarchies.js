@@ -2,14 +2,13 @@
 
 import wTourUtils from 'website.tour_utils';
 
-wTourUtils.registerEditionTour('theme_menu_hierarchies', {
+wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
     url: '/example',
     test: true,
 }, [
     {
         content: 'Check Mega Menu is correctly created',
         trigger: 'iframe #top_menu a.o_mega_menu_toggle',
-        timeout: 20000,
     }, {
         content: 'Check Mega Menu content',
         trigger: 'iframe #top_menu div.o_mega_menu.show .fa-cube',
