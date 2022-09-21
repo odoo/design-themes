@@ -39,6 +39,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("clean_tour", [
+    wTourUtils.assertCssVariable('--color-palettes-name', '"clean-1"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),

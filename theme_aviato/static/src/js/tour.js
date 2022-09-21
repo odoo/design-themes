@@ -31,6 +31,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("aviato_tour", [
+    wTourUtils.assertCssVariable('--color-palettes-name', '"treehouse-5"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
