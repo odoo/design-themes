@@ -31,6 +31,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("vehicle_tour", [
+    wTourUtils.assertCssVariable('--color-palettes-name', '"vehicle-1"'),
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
