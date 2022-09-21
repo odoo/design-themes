@@ -31,6 +31,7 @@ const snippets = [
 
 
 wTourUtils.registerThemeHomepageTour("cobalt_tour", [
+    wTourUtils.assertCssVariable('--color-palettes-name', '"cobalt-1"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
@@ -41,5 +42,4 @@ wTourUtils.registerThemeHomepageTour("cobalt_tour", [
 
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.dragNDrop(snippets[5]),
-
 ]);

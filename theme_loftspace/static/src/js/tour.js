@@ -26,6 +26,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("loftspace_tour", [
+    wTourUtils.assertCssVariable('--color-palettes-name', '"graphene-2"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),

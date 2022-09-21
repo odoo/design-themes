@@ -30,6 +30,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("beauty_tour", [
+    wTourUtils.assertCssVariable('--color-palettes-name', '"beauty-1"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
