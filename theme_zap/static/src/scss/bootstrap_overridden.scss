@@ -3,13 +3,13 @@
 //------------------------------------------------------------------------------//
 
 // Headings
-@if o-website-value('headings-font') == 'Roboto' {
+@if nth($o-theme-headings-font, 1) == 'Roboto' {
     $o-theme-headings-font-weight:          500;
 }
-@else if o-website-value('headings-font') == 'Nunito' {
+@else if nth($o-theme-headings-font, 1) == 'Nunito' {
     $o-theme-headings-font-weight:          600;
 }
-@else if o-website-value('headings-font') == 'Advent Pro' {
+@else if nth($o-theme-headings-font, 1) == 'Advent Pro' {
     $o-theme-headings-font-weight:          600;
 }
 
@@ -37,19 +37,19 @@
 }
 
 // Buttons
-@if o-website-value('buttons-font') == 'Roboto' {
+@if nth($o-theme-buttons-font, 1) == 'Roboto' {
     $o-theme-btn-font-weight:               500;
 }
-@else if o-website-value('buttons-font') == 'Advent Pro' {
+@else if nth($o-theme-buttons-font, 1) == 'Advent Pro' {
     $o-theme-btn-font-weight:               600;
 }
-@else if o-website-value('buttons-font') == 'Oswald' {
+@else if nth($o-theme-buttons-font, 1) == 'Oswald' {
     $o-theme-btn-font-weight:               200;
 }
-@else if o-website-value('buttons-font') == 'Open Sans' {
+@else if nth($o-theme-buttons-font, 1) == 'Open Sans' {
     $o-theme-btn-font-weight:               600;
 }
-@else if o-website-value('buttons-font') == 'Montserrat Alternates' {
+@else if nth($o-theme-buttons-font, 1) == 'Montserrat Alternates' {
     $o-theme-btn-font-weight:               600;
 }
 
