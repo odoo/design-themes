@@ -96,11 +96,9 @@ $o-website-values-palettes: (
         'color-palettes-name': 'graphene-1',
 
         'font-size-base': 1rem,
-        
+
         'font': 'Source Sans Pro',
         'headings-font': 'Assistant',
-        'navbar-font': 'Source Sans Pro',
-        'buttons-font': 'Source Sans Pro',
 
         'btn-ripple': true,
         'layout': 'boxed',
@@ -148,4 +146,3 @@ $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/02_001', (4: 2,
 $o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Origins/02_001', 'second', (4: 2, 5: rgba(0, 0, 0, 0)));
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/06_001', (3: 2));
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Zigs/01_001', (2: 4));
-
