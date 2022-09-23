@@ -106,21 +106,19 @@
 </template>
 
 <template id="s_masonry_block_image_texts_image_template" inherit_id="website.s_masonry_block_image_texts_image_template" name="Vehicle s_masonry_block">
-    <xpath expr="//div[hasclass('col-lg-3')]" position="replace">
-        <div class="col-lg-3 oe_img_bg text-center pt224 pb224" data-name="Block" style="background-image: url(/web/image/website.s_parallax_default_image);">
-            <p><br/></p>
-        </div>
+    <xpath expr="//div[hasclass('col-lg-3')]" position="replace" mode="inner">
+        <img src="/web/image/website.s_parallax_default_image" class="img img-fluid mx-auto" alt=""/>
     </xpath>
     <!-- Block #02 -->
     <xpath expr="//h3" position="replace" mode="inner">
         Electrifying <b>Performance</b>.
     </xpath>
-    <xpath expr="(//p)[2]" position="replace" mode="inner"/>
+    <xpath expr="//p" position="replace" mode="inner"/>
     <!-- Block #03 -->
     <xpath expr="(//h3)[2]" position="replace" mode="inner">
         Smarter <b>Range</b>.
     </xpath>
-    <xpath expr="(//p)[3]" position="replace" mode="inner"/>
+    <xpath expr="(//p)[2]" position="replace" mode="inner"/>
 </template>
 
 <!-- ======== REFERENCES ======== -->
