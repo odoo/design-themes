@@ -2,7 +2,7 @@
 <odoo>
 
 <!-- Background Shape -->
-<template id="snippet_options_background_options" inherit_id="web_editor.snippet_options_background_options" name="Background Shape Custom Option">
+<template id="snippet_options_background_options" inherit_id="website.snippet_options_background_options" name="Background Shape Custom Option">
     <xpath expr="//we-select-pager[hasclass('o_we_shape_menu')]/we-select-page[last()]" position="after">
         <we-select-page string="Custom Shapes">
             <we-button data-shape="theme_test_custo/hexagons/01" data-select-label="Hexagon 01"/>
