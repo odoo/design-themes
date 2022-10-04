@@ -22,7 +22,7 @@
 </record>
 
 <!-- Image Shape -->
-<template id="snippet_options" inherit_id="web_editor.snippet_options" name="Image Shape Custom Option">
+<template id="snippet_options" inherit_id="website.snippet_options" name="Image Shape Custom Option">
     <xpath expr="//we-select-pager[@data-name='shape_img_opt']/we-select-page[last()]" position="after">
         <we-select-page string="Custom Shapes">
             <we-button data-set-img-shape="theme_test_custo/blob/01" data-select-label="Blob 01"/>
