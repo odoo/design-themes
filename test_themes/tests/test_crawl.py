@@ -30,6 +30,7 @@ class Crawler(HttpCase):
                 for name in websites_themes_names:
                     if name != website.theme_id.name:
                         self.assertFalse('/%s/static/src' % name in r.text, "Ensure other themes do not pollute current one")
+                self._gc_filestore()
 
         # 1. Test as public user
         test_crawling()
