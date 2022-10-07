@@ -2,6 +2,9 @@
 <odoo>
     <template id="s_carousel" inherit_id="website.s_carousel">
         <!-- Container -->
+        <!-- TODO in master: remove the `content` classes in the div with the
+            class `row`, to avoid having unwanted dropzones when dragging inner
+            content. -->
         <xpath expr="//div[hasclass('carousel-inner')]" position="replace">
             <div class="carousel-inner">
                 <!-- Slide 1 -->
