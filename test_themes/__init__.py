@@ -24,5 +24,5 @@ def post_init_hook(cr, registry):
             'record': website,
             'noupdate': True,  # Avoid unlink on -u
         })
-        theme._theme_get_stream_themes()._theme_load(website)
+        theme.with_context(apply_new_theme=True)._theme_get_stream_themes()._theme_load(website)
     env['ir.model.data']._update_xmlids(xmlids)
