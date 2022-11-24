@@ -9,7 +9,7 @@ odoo.define('theme_common.s_css_slider_frontend', function (require) {
 
         start: function () {
             var self = this;
-            var $container = self.$target;
+            var $container = self.$el;
             $container.find(".s_css_slider_pagination").remove();
             // create slider pagination
             var sliderPagination = self.createSliderPagination($container);
