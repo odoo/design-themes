@@ -17,34 +17,34 @@ odoo.define("theme_common.s_showcase_slider_frontend", function (require) {
             this._super.apply(this, arguments);
             _.defer(this.unbindEvents.bind(this)); // FIXME delayed to counter a web_editor bug which off all click event
             this.destroyPagination();
-            this.$target.removeClass("active");
+            this.$el.removeClass("active");
         },
 
         bindEvents: function () {
             // Enlarge image on click if not already enlarged
-            this.$target.on("click.s_showcase_slider", ".s_ss_slider", (function (e) {
-                if (this.$target.hasClass("active")) return;
+            this.$el.on("click.s_showcase_slider", ".s_ss_slider", (function (e) {
+                if (this.$el.hasClass("active")) return;
 
-                this.$target
+                this.$el
                     .addClass("active")
                     .one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", (function () {
-                        dom.scrollTo(this.$target[0], {
+                        dom.scrollTo(this.el, {
                             duration: 200,
                             extraOffset: 70,
                         });
-                        this.$target.trigger("transitionIsFinished");
+                        this.$el.trigger("transitionIsFinished");
                     }).bind(this));
             }).bind(this));
 
             // Close the enlarged image on close icon click
-            this.$target.on("click.s_showcase_slider", ".s_ss_close", (function (e) {
-                this.$target.removeClass("active");
+            this.$el.on("click.s_showcase_slider", ".s_ss_close", (function (e) {
+                this.$el.removeClass("active");
             }).bind(this));
 
             // Handle click navigation
-            this.$target.on("click.s_showcase_slider", ".s_ss_prev", this.prevSlide.bind(this));
-            this.$target.on("click.s_showcase_slider", ".s_ss_next", this.nextSlide.bind(this));
-            this.$target.on("click.s_showcase_slider", ".s_ss_slider_pagination > li > a", (function (e) {
+            this.$el.on("click.s_showcase_slider", ".s_ss_prev", this.prevSlide.bind(this));
+            this.$el.on("click.s_showcase_slider", ".s_ss_next", this.nextSlide.bind(this));
+            this.$el.on("click.s_showcase_slider", ".s_ss_slider_pagination > li > a", (function (e) {
                 e.preventDefault();
                 var $selectedDot = $(e.currentTarget).parent();
                 if ($selectedDot.hasClass("selected")) return;
@@ -53,7 +53,7 @@ odoo.define("theme_common.s_showcase_slider_frontend", function (require) {
 
             // Keyboard slider navigation
             $(document).on("keyup.s_showcase_slider", (function (e) {
-                if (!this.$target.hasClass("active")) return;
+                if (!this.$el.hasClass("active")) return;
 
                 switch (e.which) {
                     case $.ui.keyCode.LEFT:
@@ -63,24 +63,24 @@ odoo.define("theme_common.s_showcase_slider_frontend", function (require) {
                         this.nextSlide();
                         break;
                     case $.ui.keyCode.ESCAPE:
-                        this.$target.removeClass("active");
+                        this.$el.removeClass("active");
                         break;
                 }
             }).bind(this));
         },
 
         unbindEvents: function () {
-            this.$target.off(".s_showcase_slider");
+            this.$el.off(".s_showcase_slider");
             $(document).off(".s_showcase_slider");
         },
 
         createPagination: function () { // FIXME pagination should be saved with editor but keep this for compatibility
-            this.$target.find(".s_ss_slider_pagination").remove(); // Remove saved-with-editor pagination
+            this.$el.find(".s_ss_slider_pagination").remove(); // Remove saved-with-editor pagination
 
             this.$pagination = $("<ul/>", {class: "s_ss_slider_pagination"});
-            this.$pagination.insertAfter(this.$target.find(".s_ss_slider_navigation"));
+            this.$pagination.insertAfter(this.$el.find(".s_ss_slider_navigation"));
 
-            var nbSlides = this.$target.find(".s_ss_slider").children().length;
+            var nbSlides = this.$el.find(".s_ss_slider").children().length;
             for (var i = 0 ; i < nbSlides ; i++) {
                 this.$pagination.append("<li><a href=\"#\"></a></li>");
             }
@@ -96,24 +96,24 @@ odoo.define("theme_common.s_showcase_slider_frontend", function (require) {
         },
 
         prevSlide: function () {
-            var nbSlides = this.$target.find(".s_ss_slider").children().length;
+            var nbSlides = this.$el.find(".s_ss_slider").children().length;
             var currentIndex = this.getCurrentIndex();
             this.changeSlide(currentIndex > 0 ? (currentIndex - 1) : (nbSlides - 1));
         },
 
         nextSlide: function () {
-            var nbSlides = this.$target.find(".s_ss_slider").children().length;
+            var nbSlides = this.$el.find(".s_ss_slider").children().length;
             var currentIndex = this.getCurrentIndex();
             this.changeSlide((currentIndex + 1) % nbSlides);
         },
 
         getCurrentIndex: function () {
-            return this.$target.find(".s_ss_slider > .selected").index();
+            return this.$el.find(".s_ss_slider > .selected").index();
         },
 
         changeSlide: function (n) {
-            var $slides = this.$target.find(".s_ss_slider > li").removeClass("selected");
-            this.$target.find(".s_ss_slider_pagination > li").removeClass("selected");
+            var $slides = this.$el.find(".s_ss_slider > li").removeClass("selected");
+            this.$el.find(".s_ss_slider_pagination > li").removeClass("selected");
 
             var $slide = $slides.eq(n).addClass("selected");
             $slides.removeClass("move-left");
@@ -124,9 +124,9 @@ odoo.define("theme_common.s_showcase_slider_frontend", function (require) {
         },
 
         updateNavigation: function () {
-            var $active = this.$target.find(".s_ss_slider > .selected");
-            this.$target.find(".s_ss_prev").toggleClass("inactive", $active.is(":first-child"));
-            this.$target.find(".s_ss_next").toggleClass("inactive", $active.is(":last-child"));
+            var $active = this.$el.find(".s_ss_slider > .selected");
+            this.$el.find(".s_ss_prev").toggleClass("inactive", $active.is(":first-child"));
+            this.$el.find(".s_ss_next").toggleClass("inactive", $active.is(":last-child"));
         },
     });
 });
