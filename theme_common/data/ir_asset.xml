@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+<!--
+TODO this is apparently dead code: when converted to ir.asset in version 14.x,
+they were also moved to this file... which is not included in the manifest. So,
+upgrade scripts might have treated the existing file additions (via views) as
+custom code and converted them but none should be linked to this code anymore.
+To remove in master. It was compatibility code meant to be removed now anyway.
+-->
+
 <record id="theme_common.s_clonable_boxes_000_scss" model="theme.ir.asset">
     <field name="key">theme_common.s_clonable_boxes_000_scss</field>
     <field name="name">Clonable boxes 000 SCSS</field>
