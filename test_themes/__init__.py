@@ -3,12 +3,9 @@
 
 from . import models
 
-from odoo import api, SUPERUSER_ID
 
-
-def post_init_hook(cr, registry):
+def post_init_hook(env):
     ''' Create a new website for each theme and install the theme on it. '''
-    env = api.Environment(cr, SUPERUSER_ID, {})
     IrModule = env['ir.module.module']
     themes = IrModule.search(IrModule.get_themes_domain(), order='name')
     assert len(themes) == len(env.ref('base.module_test_themes').dependencies_id)
