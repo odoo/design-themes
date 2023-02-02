@@ -15,6 +15,13 @@ var WebsiteAnimate = {
         var self   = this;
         self.$scrollingElement = $().getScrollingElement();
         self.items = $("#wrapwrap .o_animate");
+        // Fix for "transform: none" not overriding keyframe transforms on
+        // iPhone 8 and lower.
+        self.forceOverflowXHidden = false;
+        if (self.items[0] && window.getComputedStyle(self.items[0]).transform !== 'none') {
+            self._toggleOverflowXHidden(true);
+            self.forceOverflowXHidden = true;
+        }
         self.items.each(function () {
             var $el = $(this);
             if ($el[0].closest('.dropdown')) {
@@ -112,6 +119,9 @@ var WebsiteAnimate = {
 
     // show/hide the horizontal scrollbar (on the #wrapwrap)
     _toggleOverflowXHidden: function (add) {
+        if (this.forceOverflowXHidden) {
+            return;
+        }
         if (add) {
             this.$scrollingElement[0].classList.add('o_wanim_overflow_x_hidden');
         } else if (!this.$scrollingElement.find('.o_animating').length) {
