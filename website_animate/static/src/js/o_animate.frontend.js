@@ -15,13 +15,22 @@ var WebsiteAnimate = {
         var self   = this;
         self.$scrollingElement = $().getScrollingElement();
         self.items = $("#wrapwrap .o_animate");
+
         // Fix for "transform: none" not overriding keyframe transforms on
-        // iPhone 8 and lower.
+        // some iPhone using Safari. Note that all animated elements are checked
+        // (not only one) as the bug is not systematic and may depend on some
+        // other conditions (for example: an animated image in a block which is
+        // hidden on mobile would not have the issue).
+        const couldOverflowBecauseOfSafariBug = [...this.items].some(el => {
+            return window.getComputedStyle(el).transform !== 'none';
+        });
         self.forceOverflowXHidden = false;
-        if (self.items[0] && window.getComputedStyle(self.items[0]).transform !== 'none') {
+        if (couldOverflowBecauseOfSafariBug) {
             self._toggleOverflowXHidden(true);
+            // Now prevent any call to _toggleOverflowXHidden to have an effect
             self.forceOverflowXHidden = true;
         }
+
         self.items.each(function () {
             var $el = $(this);
             if ($el[0].closest('.dropdown')) {
