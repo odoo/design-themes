@@ -21,7 +21,7 @@
     </xpath>
 
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04 o_we_flip_x"/>
+        <div class="o_we_shape o_web_editor_Blocks_04" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-4&amp;c5=o-color-5&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
 
     <!-- Enable SVG dynamic color functionality -->
@@ -73,7 +73,7 @@
     </xpath>
 
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Origins_02_001 o_we_flip_y"></div>
+        <div class="o_we_shape o_web_editor_Origins_02_001" style="background-image: url('/web_editor/shape/web_editor/Origins/02_001.svg?c4=o-color-4&amp;c5=o-color-2&amp;flip=y'); background-position: 50% 0%;"></div>
     </xpath>
 
     <xpath expr="//img" position="attributes">
@@ -303,7 +303,7 @@
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_12_001 o_we_flip_y"/>
+        <div class="o_we_shape o_web_editor_Airy_12_001" style="background-image: url('/web_editor/shape/web_editor/Airy/12_001.svg?c1=o-color-5&amp;c3=o-color-4&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h3" position="replace" mode="inner">
@@ -345,7 +345,7 @@
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03","flip":["y"]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]/i" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_03 o_we_flip_y"/>
+        <div class="o_we_shape o_web_editor_Blocks_03" style="background-image: url('/web_editor/shape/web_editor/Blocks/03.svg?c1=o-color-1&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 0%"/>
     </xpath>
     <!-- Right column -->
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
@@ -353,7 +353,7 @@
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03","flip":["x","y"]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-6')][2]/i" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_03 o_we_flip_x o_we_flip_y"/>
+        <div class="o_we_shape o_web_editor_Blocks_03" style="background-image: url('/web_editor/shape/web_editor/Blocks/03.svg?c1=o-color-1&amp;c4=o-color-4&amp;flip=xy'); background-position: 50% 0%"/>
     </xpath>
 </template>
 
@@ -390,7 +390,7 @@
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_07_002 o_we_flip_x"/>
+        <div class="o_we_shape o_web_editor_Origins_07_002" style="background-image: url('/web_editor/shape/web_editor/Origins/07_002.svg?c3=o-color-4&amp;c4=o-color-2&amp;c5=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
     <!-- Container -->
     <xpath expr="//div[hasclass('container')]" position="attributes">
