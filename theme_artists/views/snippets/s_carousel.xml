@@ -31,7 +31,7 @@
     <!-- Shape & filter -->
     <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-black-25"/>
-        <div class="o_we_shape o_web_editor_Origins_16 o_we_flip_y"/>
+        <div class="o_we_shape o_web_editor_Origins_16" style="background-image: url('/web_editor/shape/web_editor/Origins/16.svg?c3=o-color-5&amp;flip=y'); background-position: 50% 50%;"/>
     </xpath>
     <!-- Content -->
     <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('carousel-content')]" position="replace">

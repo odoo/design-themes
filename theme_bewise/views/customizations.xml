@@ -46,7 +46,7 @@
     <!-- Filter & shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-black-50"/>
-        <div class="o_we_shape o_web_editor_Origins_18 o_we_flip_x"/>
+        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-1&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
     <!-- Wrap -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
@@ -125,7 +125,7 @@
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_11 o_we_flip_x"/>
+        <div class="o_we_shape o_web_editor_Blobs_11" style="background-image: url('/web_editor/shape/web_editor/Blobs/11.svg?c1=o-color-1&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
     <xpath expr="//h6" position="replace" mode="inner">
         Faculties
@@ -162,7 +162,7 @@
     </xpath>
     <!-- Shape -->
     <xpath expr="//ol[hasclass('carousel-indicators')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_14_001 o_we_flip_y"/>
+        <div class="o_we_shape o_web_editor_Origins_14_001" style="background-image: url('/web_editor/shape/web_editor/Origins/14_001.svg?c3=o-color-4&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
     <!-- Slide #1 -->
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
