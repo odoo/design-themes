@@ -4,7 +4,7 @@
     'category': 'Theme/Personal',
     'summary': 'Wedding, Love, Photography, Services',
     'sequence': 330,
-    'version': '2.0.0',
+    'version': '2.0',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [

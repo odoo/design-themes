@@ -4,7 +4,7 @@
     'category': 'Theme/Creative',
     'summary': 'Artist, Arts, Galleries, Creative, Paintings, Photography, Shows, Stores',
     'sequence': 310,
-    'version': '2.1.0',
+    'version': '2.1',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [

@@ -4,7 +4,7 @@
     'category': 'Theme/Services',
     'summary': 'Event, Restaurants, Bars, Pubs, Cafes, Catering, Food, Drinks, Concerts, Shows, Musics, Dance, Party',
     'sequence': 260,
-    'version': '2.0.0',
+    'version': '2.0',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [

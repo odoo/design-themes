@@ -4,7 +4,7 @@
     'category': 'Theme/Retail',
     'summary': 'Band, Musics, Sound, Concerts, Artists, Records, Event, Food, Stores',
     'sequence': 280,
-    'version': '2.1.0',
+    'version': '2.1',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [

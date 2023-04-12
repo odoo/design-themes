@@ -4,7 +4,7 @@
     'category': 'Theme/Lifestyle',
     'summary': 'Maker, Agencies, Creative, Design, IT, Services, Fancy',
     'sequence': 270,
-    'version': '2.0.0',
+    'version': '2.0',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [

@@ -4,7 +4,7 @@
     'category': 'Theme/Technology',
     'summary': 'Technology, Tech, IT, Computers, Stores, Virtual Reality',
     'sequence': 200,
-    'version': '2.0.0',
+    'version': '2.0',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [

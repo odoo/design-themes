@@ -4,7 +4,7 @@
     'category': 'Theme/Corporate',
     'summary': 'Architect, Corporate, Business, Finance, Services',
     'sequence': 190,
-    'version': '2.0.0',
+    'version': '2.0',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [

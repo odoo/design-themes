@@ -4,7 +4,7 @@
     'category': 'Theme/Retail',
     'summary': 'Diversity, Fashions, Trends, Clothes, Shoes, Sports, Fitness, Stores',
     'sequence': 180,
-    'version': '2.1.0',
+    'version': '2.1',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [

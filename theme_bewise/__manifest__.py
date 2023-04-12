@@ -4,7 +4,7 @@
     'category': 'Theme/Education',
     'summary': 'University, Education, Schools, Young, Play, Kids',
     'sequence': 240,
-    'version': '2.1.0',
+    'version': '2.1',
     'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
