@@ -29,11 +29,9 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         trigger: 'iframe footer ul li a[href="/dogs"]',
         run: () => null, // It's a check.
     },
-    wTourUtils.clickOnEdit(),
+    ...wTourUtils.clickOnEditAndWaitEditMode(),
     {
         content: 'Click on footer',
-        // TODO: this extra_trigger should be part of the `clickOnEdit` util
-        extra_trigger: "#oe_snippets.o_loaded",
         trigger: 'iframe footer',
     }, {
         content: 'The theme custom footer template should be listed and selected',
