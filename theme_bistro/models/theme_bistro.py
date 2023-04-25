@@ -6,8 +6,6 @@ class ThemeBistro(models.AbstractModel):
 
     def _theme_bistro_post_copy(self, mod):
         self.enable_view('website.template_header_vertical')
-        self.enable_view('website.template_header_default_align_right')
-        self.enable_view('website.template_header_hamburger_align_right')
         self.enable_view('website.header_navbar_pills_style')
 
         self.enable_view('website.template_footer_centered')
