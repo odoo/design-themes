@@ -1,7 +1,6 @@
-odoo.define("theme_vehicle.tour.vehicle", function (require) {
-"use strict";
+/** @odoo-module **/
 
-const wTourUtils = require("website.tour_utils");
+import wTourUtils from "website.tour_utils";
 
 const snippets = [
     {
@@ -44,4 +43,3 @@ wTourUtils.registerThemeHomepageTour("vehicle_tour", [
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
 ]);
-});

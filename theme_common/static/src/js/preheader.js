@@ -1,8 +1,7 @@
-odoo.define('theme_common.preheader', function (require) {
-'use strict';
+/** @odoo-module **/
 
-var publicWidget = require('web.public.widget');
-require('website.content.menu');
+import publicWidget from "web.public.widget";
+import "website.content.menu";
 
 publicWidget.registry.StandardAffixedHeader.include({
     /**
@@ -111,5 +110,3 @@ const BaseDisappearingPreheader = {
 
 publicWidget.registry.DisappearingHeader.include(BaseDisappearingPreheader);
 publicWidget.registry.FadeOutHeader.include(BaseDisappearingPreheader);
-
-});

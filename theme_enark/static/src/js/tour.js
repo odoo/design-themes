@@ -1,7 +1,6 @@
-odoo.define("theme_enark.tour.enark", function (require) {
-"use strict";
+/** @odoo-module **/
 
-const wTourUtils = require("website.tour_utils");
+import wTourUtils from "website.tour_utils";
 
 const snippets = [
     {
@@ -41,4 +40,3 @@ wTourUtils.registerThemeHomepageTour("enark_tour", [
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.dragNDrop(snippets[5]),
 ]);
-});

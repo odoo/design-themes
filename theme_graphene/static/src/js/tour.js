@@ -1,7 +1,6 @@
-odoo.define("theme_graphene.tour.graphene", function (require) {
-"use strict";
+/** @odoo-module **/
 
-const wTourUtils = require("website.tour_utils");
+import wTourUtils from "website.tour_utils";
 
 const snippets = [
     {
@@ -43,4 +42,3 @@ wTourUtils.registerThemeHomepageTour("graphene_tour", [
     wTourUtils.changeBackgroundColor('left'),
     wTourUtils.selectColorPalette(),
 ]);
-});

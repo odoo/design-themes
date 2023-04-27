@@ -1,7 +1,6 @@
-odoo.define('theme_common.s_animated_boxes_frontend', function (require) {
-    'use strict';
+/** @odoo-module **/
 
-var publicWidget = require('web.public.widget');
+import publicWidget from "web.public.widget";
 
 /**
  * This is a fix for some apple devices.
@@ -11,5 +10,4 @@ var publicWidget = require('web.public.widget');
  */
 publicWidget.registry._fixAnimatedBoxesAppleClick = publicWidget.registry._fixAppleCollapse.extend({
     selector: '.s_animated_boxes .item',
-});
 });
