@@ -3,7 +3,8 @@
 
 <!-- Background Shape -->
 <template id="snippet_options_background_options" inherit_id="website.snippet_options_background_options" name="Background Shape Custom Option">
-    <xpath expr="//we-select-pager[hasclass('o_we_shape_menu')]/we-select-page[last()]" position="after">
+    <xpath expr="//we-select-pager[hasclass('o_we_bg_shape_menu')]/div/div[last()]/we-select-page[last()]" position="after">
+        <we-title>Custom Shapes</we-title>
         <we-select-page string="Custom Shapes">
             <we-button data-shape="theme_test_custo/hexagons/01" data-select-label="Hexagon 01"/>
             <we-button data-shape="theme_test_custo/curves/01" data-select-label="Curve 01"/>
@@ -23,7 +24,8 @@
 
 <!-- Image Shape -->
 <template id="snippet_options" inherit_id="website.snippet_options" name="Image Shape Custom Option">
-    <xpath expr="//we-select-pager[@data-name='shape_img_opt']/we-select-page[last()]" position="after">
+    <xpath expr="//we-select-pager[@data-name='shape_img_opt']/div/div[last()]/we-select-page[last()]" position="after">
+        <we-title>Custom Shapes</we-title>
         <we-select-page string="Custom Shapes">
             <we-button data-set-img-shape="theme_test_custo/blob/01" data-select-label="Blob 01"/>
         </we-select-page>
