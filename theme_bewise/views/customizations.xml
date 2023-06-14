@@ -181,7 +181,7 @@
         I have learned a lot, and I have realised professional projects thanks to the support of the mentors! The team is always at the top and always looking for solutions to problems, I felt accompanied and supported! It's not easy every day, but it's a great adventure!
     </xpath>
     <xpath expr="//span[hasclass('s_blockquote_author')]" position="replace" mode="inner">
-        <b>Iris DOE</b> • Graduated in 2019
+        <span style="font-weight: bold;">Iris DOE</span> • Graduated in 2019
     </xpath>
     <!-- Slide #2 -->
     <xpath expr="//div[hasclass('carousel-item')][2]" position="attributes">
@@ -200,7 +200,7 @@
         Thanks to its innovative system, the school offers a diplomatic training during which we are followed by a "mentor", a sort of "tutor"!
     </xpath>
     <xpath expr="(//span[hasclass('s_blockquote_author')])[2]" position="replace" mode="inner">
-        <b>Jane DOE</b> • Graduated in 2017
+        <span style="font-weight: bold;">Jane DOE</span> • Graduated in 2017
     </xpath>
     <!-- Slide #3 -->
     <xpath expr="//div[hasclass('carousel-item')][3]" position="attributes">
@@ -219,7 +219,7 @@
         Great support and quality courses! A mentor helps you move forward and can be contacted through flexible schedules. Everything you need to start your career on the web.
     </xpath>
     <xpath expr="(//span[hasclass('s_blockquote_author')])[3]" position="replace" mode="inner">
-        <b>John DOE</b> • Graduated in 2016
+        <span style="font-weight: bold;">John DOE</span> • Graduated in 2016
     </xpath>
 </template>
 
@@ -234,7 +234,7 @@
     </xpath>
     <!-- Title -->
     <xpath expr="//h3" position="replace">
-        <h4><b>3,000 students</b> graduate each year find a job within 2 months</h4>
+        <h4><span style="font-weight: bold;">3,000 students</span> graduate each year find a job within 2 months</h4>
     </xpath>
     <!-- Subtitle -->
     <xpath expr="//div[hasclass('col-lg-9')]/p" position="replace" mode="inner">
@@ -256,28 +256,28 @@
     </xpath>
     <!-- Profile #1 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div//h4" position="replace" mode="inner">
-        <b>Tony Fred, Faculty Head of IT</b>
+        <span style="font-weight: bold;">Tony Fred, Faculty Head of IT</span>
     </xpath>
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div//p" position="replace" mode="inner">
         Tony received a degree in Electrical and Mechanical Engineering and a Ph D. degree in 1998 and 2004. After a post-doctoral experience  he joined the school as professor of mechatronics in 2006. In 2010, he became Head of IT.
     </xpath>
     <!-- Profile #2 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[2]//h4" position="replace" mode="inner">
-        <b>Mich Stark, IT Officer</b>
+        <span style="font-weight: bold;">Mich Stark, IT Officer</span>
     </xpath>
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[2]//p" position="replace" mode="inner">
         He is professor in the Institute of Mechanics, Materials and Civil Engineering since 2000. He lectures in mechanical drawing and mechanical design for undergraduate and graduate students. He is active in Problem and Project based learning. He is the promoter of 8 doctoral theses.
     </xpath>
     <!-- Profile #3 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[3]//h4" position="replace" mode="inner">
-        <b>Aline Turner, Law professor</b>
+        <span style="font-weight: bold;">Aline Turner, Law professor</span>
     </xpath>
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[3]//p" position="replace" mode="inner">
         She has been practicing law at the French-speaking Brussels Bar since 2006. She has worked in various major law firms based in Brussels, as member and then head of their litigation/arbitration practice groups.
     </xpath>
     <!-- Profile #4 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[4]//h4" position="replace" mode="inner">
-        <b>Iris Joe, team leader professor</b>
+        <span style="font-weight: bold;">Iris Joe, team leader professor</span>
     </xpath>
 </template>
 

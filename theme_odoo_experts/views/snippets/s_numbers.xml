@@ -14,16 +14,16 @@
     </xpath>
     <!-- Numbers -->
     <xpath expr="//span[hasclass('s_number')]" position="replace" mode="inner">
-        <b>12</b>
+        <span style="font-weight: bold;">12</span>
     </xpath>
     <xpath expr="(//span[hasclass('s_number')])[2]" position="replace" mode="inner">
-        <b>45</b>
+        <span style="font-weight: bold;">45</span>
     </xpath>
     <xpath expr="(//span[hasclass('s_number')])[3]" position="replace" mode="inner">
-        <b>8</b>
+        <span style="font-weight: bold;">8</span>
     </xpath>
     <xpath expr="(//span[hasclass('s_number')])[4]" position="replace" mode="inner">
-        <b>37</b>
+        <span style="font-weight: bold;">37</span>
     </xpath>
 </template>
 
