@@ -7,14 +7,14 @@ publicWidget.registry.s_showcase_slider = publicWidget.Widget.extend({
     selector: ".s_showcase_slider",
 
     start: function () {
-        _.defer(this.bindEvents.bind(this)); // FIXME delayed to counter a web_editor bug which off all click event
+        setTimeout(this.bindEvents.bind(this), 0); // FIXME delayed to counter a web_editor bug which off all click event
         this.createPagination();
         return this._super.apply(this, arguments);
     },
 
     destroy: function () {
         this._super.apply(this, arguments);
-        _.defer(this.unbindEvents.bind(this)); // FIXME delayed to counter a web_editor bug which off all click event
+        setTimeout(this.unbindEvents.bind(this), 0); // FIXME delayed to counter a web_editor bug which off all click event
         this.destroyPagination();
         this.$el.removeClass("active");
     },
