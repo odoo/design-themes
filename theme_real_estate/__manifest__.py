@@ -5,7 +5,6 @@
     'summary': 'Real Estate, Agencies, Construction, Services, Accomodations, Lodging, Hosting, Houses, Appartments, Vacations, Holidays, Travels',
     'sequence': 320,
     'version': '2.0.0',
-    'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
         'data/ir_asset.xml',
