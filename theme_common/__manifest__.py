@@ -11,6 +11,5 @@
         'views/old_snippets/s_page_header.xml',
         'views/old_snippets/s_three_columns_circle.xml',
     ],
-    'application': False,
     'license': 'LGPL-3',
 }

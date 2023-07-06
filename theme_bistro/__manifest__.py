@@ -5,7 +5,6 @@
     'summary': 'Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering',
     'sequence': 220,
     'version': '2.0.0',
-    'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
         'data/ir_asset.xml',
