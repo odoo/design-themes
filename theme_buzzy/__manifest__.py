@@ -5,7 +5,6 @@
     'summary': 'Corporate, Services, Technology, Shapes, Illustrations',
     'sequence': 140,
     'version': '1.0.0',
-    'author': 'Odoo S.A.',
     'depends': ['website'],
     'data': [
         'data/ir_asset.xml',

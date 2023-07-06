@@ -5,7 +5,6 @@
     'summary': 'University, Education, Schools, Young, Play, Kids',
     'sequence': 240,
     'version': '2.1.0',
-    'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
         'data/ir_asset.xml',

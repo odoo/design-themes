@@ -5,7 +5,6 @@
     'summary': 'Vehicle, Cars, Motorbikes, Bikes, Tires, Transports, Repair, Mechanics, Garages, Sports, Services',
     'sequence': 300,
     'version': '2.0.0',
-    'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
         'data/ir_asset.xml',

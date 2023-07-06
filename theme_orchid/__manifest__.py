@@ -5,7 +5,6 @@
     'summary': 'Florist, Gardens, Flowers, Nature, Green, Beauty, Stores',
     'sequence': 230,
     'version': '2.0.0',
-    'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
         'data/ir_asset.xml',
