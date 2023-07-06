@@ -5,7 +5,6 @@
     'summary': 'Environment, Nature, Ecology, Sustainable Development, Non Profit, NGO, Travels',
     'sequence': 140,
     'version': '2.0.0',
-    'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
         'data/ir_asset.xml',
