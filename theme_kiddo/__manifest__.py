@@ -5,7 +5,6 @@
     'summary': 'Nursery, Toys, Games, Kids, Boys, Girls, Stores',
     'sequence': 290,
     'version': '2.1.0',
-    'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
         'data/ir_asset.xml',
