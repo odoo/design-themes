@@ -5,7 +5,6 @@
     'summary': 'Consultancy, Design, Tech, Computers, IT, Blogs',
     'sequence': 110,
     'version': '2.1.0',
-    'author': 'Odoo S.A.',
     'depends': ['website'],
     'data': [
         'data/ir_asset.xml',

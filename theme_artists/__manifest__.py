@@ -5,7 +5,6 @@
     'summary': 'Artist, Arts, Galleries, Creative, Paintings, Photography, Shows, Stores',
     'sequence': 310,
     'version': '2.1.0',
-    'author': 'Odoo S.A.',
     'depends': ['theme_common'],
     'data': [
         'data/ir_asset.xml',
