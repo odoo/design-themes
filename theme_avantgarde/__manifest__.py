@@ -5,7 +5,6 @@
     'summary': 'Design, Fine Art, Artwork, Creative, Creativity, Galleries, Trends, Shows, Magazines, Blogs',
     'sequence': 150,
     'version': '2.0.0',
-    'author': 'Odoo S.A.',
     'data': [
         'data/ir_asset.xml',
         'views/images_library.xml',

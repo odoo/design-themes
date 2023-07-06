@@ -42,7 +42,6 @@
         'theme_zap',
     ],
     'installable': True,
-    'application': False,
     'post_init_hook': 'post_init_hook',
     'assets': {
         'website.assets_editor': [
