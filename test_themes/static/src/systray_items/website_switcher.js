@@ -1,6 +1,6 @@
 /** @odoo-module **/
 
-import { patch } from 'web.utils';
+import { patch } from '@web/legacy/js/core/utils';
 import { useService } from '@web/core/utils/hooks';
 import { WebsiteSwitcherSystray } from '@website/systray_items/website_switcher';
 

@@ -1,6 +1,6 @@
 /** @odoo-module */
-import wTourUtils from 'website.tour_utils';
-import { _t } from 'web.core';
+import wTourUtils from '@website/js/tours/tour_utils';
+import { _t } from '@web/legacy/js/services/core';
 
 const snippets = [
     {

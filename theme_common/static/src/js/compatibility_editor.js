@@ -1,6 +1,6 @@
 /** @odoo-module **/
 
-import sOptions from "web_editor.snippets.options";
+import sOptions from "@web_editor/js/editor/snippets.options";
 
 sOptions.registry.BackgroundImage.include({
     /**
