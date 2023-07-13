@@ -1,6 +1,6 @@
 /** @odoo-module */
 
-import wTourUtils from 'website.tour_utils';
+import wTourUtils from '@website/js/tours/tour_utils';
 
 const snippets = [
     {
@@ -18,7 +18,7 @@ const snippets = [
     {
         id: 's_images_wall',
         name: 'Images Wall',
-    },    
+    },
     {
         id: 's_call_to_action',
         name: 'Call to Action',

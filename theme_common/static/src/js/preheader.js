@@ -1,7 +1,7 @@
 /** @odoo-module **/
 
-import publicWidget from "web.public.widget";
-import "website.content.menu";
+import publicWidget from "@web/legacy/js/public/public_widget";
+import "@website/js/content/menu";
 
 publicWidget.registry.StandardAffixedHeader.include({
     /**

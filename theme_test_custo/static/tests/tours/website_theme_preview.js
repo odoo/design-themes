@@ -1,8 +1,8 @@
 /** @odoo-module */
 
-import tour from "web_tour.tour";
+import { registry } from "@web/core/registry";
 
-tour.register("website_theme_preview", {
+registry.category("web_tour.tours").add("website_theme_preview", {
     test: true,
     url: "/web#action=website.action_website_configuration",
 },

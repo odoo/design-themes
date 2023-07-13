@@ -1,6 +1,6 @@
 /** @odoo-module **/
 
-import publicWidget from "web.public.widget";
+import publicWidget from "@web/legacy/js/public/public_widget";
 
 publicWidget.registry.s_css_slider = publicWidget.Widget.extend({
     selector: ".s_css_slider",
