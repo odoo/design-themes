@@ -1,7 +1,7 @@
 /** @odoo-module */
 
 import wTourUtils from '@website/js/tours/tour_utils';
-import { _t } from '@web/legacy/js/services/core';
+import { _t } from "@web/core/l10n/translation";
 
 const snippets = [
     {
@@ -30,7 +30,7 @@ const snippets = [
     },
 ];
 
-wTourUtils.registerThemeHomepageTour("aviato_tour", [
+wTourUtils.registerThemeHomepageTour("aviato_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"treehouse-5"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),

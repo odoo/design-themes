@@ -5,7 +5,7 @@ import wTourUtils from '@website/js/tours/tour_utils';
 wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
     url: '/example',
     test: true,
-}, [
+}, () => [
     {
         content: 'Check Mega Menu is correctly created',
         trigger: 'iframe #top_menu a.o_mega_menu_toggle',

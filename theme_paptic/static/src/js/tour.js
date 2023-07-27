@@ -30,7 +30,7 @@ const snippets = [
 ];
 
 
-wTourUtils.registerThemeHomepageTour("paptic_tour", [
+wTourUtils.registerThemeHomepageTour("paptic_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"paptic-1"'),
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),

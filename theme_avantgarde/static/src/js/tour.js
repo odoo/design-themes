@@ -24,7 +24,7 @@ const snippets = [
     },
 ];
 
-wTourUtils.registerThemeHomepageTour("avantgarde_tour", [
+wTourUtils.registerThemeHomepageTour("avantgarde_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"avantgarde-3"'),
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.clickOnText(snippets[0], 'h1', 'left'),
