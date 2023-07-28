@@ -12,6 +12,8 @@ patch(WebsiteSwitcherSystray.prototype, 'test_themes_website_switcher_systray', 
 
         this.orm = useService('orm');
         this.tooltips = useState({});
+        // Disable the notification service to avoid having a notification for each theme.
+        this.notificationService = { add: () => () => null };
 
         onMounted(async () => {
             const themesWebsites = await this.orm.call('website', 'get_test_themes_websites_theme_preview');
