@@ -29,7 +29,7 @@ const snippets = [
     },
 ];
 
-wTourUtils.registerThemeHomepageTour("artists_tour", [
+wTourUtils.registerThemeHomepageTour("artists_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"artists-1"'),
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.dragNDrop(snippets[1]),

@@ -1,7 +1,7 @@
 /** @odoo-module */
 
 import wTourUtils from '@website/js/tours/tour_utils';
-import { _t } from '@web/legacy/js/services/core';
+import { _t } from "@web/core/l10n/translation";
 
 const snippets = [
     {
@@ -30,7 +30,7 @@ const snippets = [
     },
 ];
 
-wTourUtils.registerThemeHomepageTour("orchid_tour", [
+wTourUtils.registerThemeHomepageTour("orchid_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"orchid-7"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1'),

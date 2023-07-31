@@ -29,7 +29,7 @@ const snippets = [
     },
 ];
 
-wTourUtils.registerThemeHomepageTour("nano_tour", [
+wTourUtils.registerThemeHomepageTour("nano_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"nano-1"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),

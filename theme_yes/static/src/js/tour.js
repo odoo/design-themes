@@ -29,7 +29,7 @@ const snippets = [
     },
 ];
 
-wTourUtils.registerThemeHomepageTour("yes_tour", [
+wTourUtils.registerThemeHomepageTour("yes_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"yes-3"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.dragNDrop(snippets[1]),
