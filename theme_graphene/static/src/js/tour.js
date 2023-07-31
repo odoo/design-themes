@@ -26,7 +26,7 @@ const snippets = [
 ];
 
 
-wTourUtils.registerThemeHomepageTour("graphene_tour", [
+wTourUtils.registerThemeHomepageTour("graphene_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"graphene-1"'),
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
