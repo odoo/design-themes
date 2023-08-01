@@ -63,7 +63,7 @@
     </xpath>
     <!-- Row #2 - Add a button -->
     <xpath expr="(//div[hasclass('s_media_list_body')])[2]//p" position="after">
-        <a href="#" class="btn btn-primary mb-2">More info</a>
+        <a href="#" class="btn btn-primary">More info</a>
     </xpath>
 
     <!-- Row #3 -->
@@ -92,7 +92,7 @@
     </xpath>
     <!-- Row #3 - Add a button -->
     <xpath expr="(//div[hasclass('s_media_list_body')])[3]//a" position="replace">
-        <a href="#" class="btn btn-primary mb-2">More info</a>
+        <a href="#" class="btn btn-primary">More info</a>
     </xpath>
 </template>
 

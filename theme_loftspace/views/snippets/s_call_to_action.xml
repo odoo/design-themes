@@ -27,6 +27,9 @@
     <xpath expr="//div[hasclass('col-lg-12')]/p" position="attributes">
         <attribute name="style" add="text-align: center;" remove="text-align: right;" separator=";"/>
     </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="mb-2" separator=" "/>
+    </xpath>
     <!-- Add secondary button -->
     <xpath expr="//a[hasclass('btn')]" position="before">
         <a href="#" class="btn btn-secondary btn-lg me-2 mb-2">Our services</a>
