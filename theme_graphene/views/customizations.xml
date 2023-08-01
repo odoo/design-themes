@@ -23,7 +23,7 @@
                     Our mission is to give customers the best experience.<br/>Extensive documentation &amp; guides, an active community,<br/>24/7 support make it a pleasure to work with us.
                 </p>
                 <p style="text-align: right">
-                    <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg mb-2 o_default_snippet_text"><t t-esc="cta_btn_text">Contact us</t></a>
+                    <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg o_default_snippet_text"><t t-esc="cta_btn_text">Contact us</t></a>
                 </p>
             </div>
         </div>
@@ -222,16 +222,16 @@
         <div class="o_we_shape o_web_editor_Origins_06_001" style="background-image: url('/web_editor/shape/web_editor/Origins/06_001.svg?c3=o-color-3&amp;c4=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div//a" position="replace">
-        <a href="/contactus" class="btn btn-primary mb-2">Start Now</a>
+        <a href="/contactus" class="btn btn-primary">Start Now</a>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]//a" position="replace">
-        <a href="/contactus" class="btn btn-primary mb-2">Start Now</a>
+        <a href="/contactus" class="btn btn-primary">Start Now</a>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]//li[2]" position="replace">
         <li class="list-group-item">Access to all modules</li>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]//a" position="replace">
-        <a href="/contactus" class="btn btn-primary mb-2">Start Now</a>
+        <a href="/contactus" class="btn btn-primary">Start Now</a>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]//li[2]" position="replace">
         <li class="list-group-item">Access to all modules and features</li>
