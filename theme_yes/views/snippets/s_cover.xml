@@ -11,8 +11,11 @@
         <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
     </xpath>
     <!-- Title -->
+    <xpath expr="//h1" position="attributes">
+        <attribute name="class" add="display-1-fs" remove="display-3-fs" separator=" "/>
+    </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
-        <font style="font-size: 92px; font-weight: bold;">Once in a lifetime moments</font>
+        Once in a lifetime moments
     </xpath>
     <!-- Paragraph -->
     <xpath expr="//p" position="replace" mode="inner">

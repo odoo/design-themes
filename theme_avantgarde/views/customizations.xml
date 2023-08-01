@@ -9,10 +9,10 @@
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
         <attribute name="style" remove="background-position: 50% 0;" add="background-position: 50% 80%;" separator=";"/>
     </xpath>
-    <xpath expr="//font" position="attributes">
+    <xpath expr="//h1" position="attributes">
         <attribute name="class" add="text-o-color-1 text-break" separator=" "/>
     </xpath>
-    <xpath expr="//font" position="replace" mode="inner">
+    <xpath expr="//h1" position="replace" mode="inner">
         We are Avantgarde.
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
@@ -40,12 +40,9 @@
     </xpath>
     <xpath expr="//h2" position="attributes">
         <attribute name="style" remove="text-align: center;" separator=" "/>
-    </xpath>
-    <xpath expr="//font" position="attributes">
         <attribute name="class" add="text-break" separator=" "/>
-        <attribute name="style" add="font-weight: bolder;" separator=" "/>
     </xpath>
-    <xpath expr="//font" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Design Methodology
     </xpath>
     <xpath expr="//p" position="attributes">
