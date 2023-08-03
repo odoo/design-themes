@@ -1,14 +1,14 @@
 /** @odoo-module **/
 
-import { patch } from '@web/legacy/js/core/utils';
+import { patch } from "@web/core/utils/patch";
 import { useService } from '@web/core/utils/hooks';
 import { WebsiteSwitcherSystray } from '@website/systray_items/website_switcher';
 
 const { onMounted, useState } = owl;
 
-patch(WebsiteSwitcherSystray.prototype, 'test_themes_website_switcher_systray', {
+patch(WebsiteSwitcherSystray.prototype, {
     setup() {
-        this._super();
+        super.setup();
 
         this.orm = useService('orm');
         this.tooltips = useState({});
