@@ -223,11 +223,4 @@
     </xpath>
 </template>
 
-<!-- ======== BANNER ======== -->
-<template id="s_banner" inherit_id="website.s_banner" name="Avantgarde s_banner">
-    <xpath expr="//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-lg" separator=" "/>
-    </xpath>
-</template>
-
 </odoo>
