@@ -9,20 +9,12 @@
     </xpath>
     <!-- Filter & Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_bg_filter bg-black-75"/>
         <div class="o_we_shape o_web_editor_Floats_08" style="background-image: url('/web_editor/shape/web_editor/Floats/08.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-3&amp;c5=o-color-1&amp;flip=xy'); background-position: 100% 100%;"/>
     </xpath>
     <!-- Jumbotron -->
-    <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
-        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
-    </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
         Enjoy the atmosphere
-    </xpath>
-    <!-- Add space between title and paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="before">
-        <p><br/></p>
     </xpath>
 </template>
 
