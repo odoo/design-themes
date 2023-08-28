@@ -5,12 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2 pt152 pb152 o_colored_level" remove="pt48 pb24 o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/14"}</attribute>
-    </xpath>
-
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_14"/>
     </xpath>
 
     <!-- Paragraph -->
@@ -25,6 +19,18 @@
 
     <!-- Remove last column with button -->
     <xpath expr="//div[hasclass('col-lg-3')]" position="replace"/>
+</template>
+
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/14"}</attribute>
+    </xpath>
+
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_14"/>
+    </xpath>
 </template>
 
 </odoo>

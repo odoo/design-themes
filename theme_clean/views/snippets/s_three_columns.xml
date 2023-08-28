@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc1" remove="o_cc2" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/04_001","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_04_001"/>
     </xpath>
     <!-- Column #1 -->
     <xpath expr="//div[hasclass('card')]" position="attributes">
@@ -40,6 +35,17 @@
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
         Composed of 25 people from 25 to 66 years, we’re a young and dynamic company. We have open positions, do not hesitate to contact us.
+    </xpath>
+</template>
+
+<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/04_001","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_04_001"/>
     </xpath>
 </template>
 

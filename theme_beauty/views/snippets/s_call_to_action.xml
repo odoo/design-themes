@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt128 pb128" remove="pt48 pb24 bg-200" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/05_001","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_05_001"/>
     </xpath>
     <!-- Layout -->
     <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
@@ -28,6 +23,17 @@
     <!-- Button -->
     <xpath expr="(//div[hasclass('col-lg-12')])[2]/p" position="attributes">
         <attribute name="style" add="text-align: center;" remove="text-align: right;" separator=";"/>
+    </xpath>
+</template>
+
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/05_001","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Rainy_05_001"/>
     </xpath>
 </template>
 

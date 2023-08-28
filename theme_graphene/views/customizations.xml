@@ -5,10 +5,6 @@
 <template id="s_cover" inherit_id="website.s_cover" name="Graphene s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt160 pb240 s_parallax_no_overflow_hidden" remove="pt96 pb96 s_parallax_is_fixed s_parallax" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_02_001"/>
     </xpath>
     <xpath expr="//h1" position="replace"/>
     <xpath expr="//p" position="replace"/>
@@ -30,14 +26,19 @@
     </xpath>
 </template>
 
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover" name="Graphene s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//section/div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_02_001"/>
+    </xpath>
+</template>
+
 <!-- ======== TEXT-IMAGE ======== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Graphene s_text_image">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb96 pt0" remove="pb32 pt32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["x","y"]}</attribute>
-    </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_02_001 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Origins/02_001.svg?c4=o-color-3&amp;c5=rgba%280%2C%200%2C%200%2C%200%29&amp;flip=xy'); background-position: 50% 0%;"/>
     </xpath>
     <xpath expr="//h2" position="replace">
         <h3>Unique experiences to drive engagement</h3>
@@ -62,6 +63,15 @@
     </xpath>
     <xpath expr="//a[hasclass('btn')]" position="attributes">
         <attribute name="class" add="btn-lg btn-secondary" remove="btn-primary" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image" name="Graphene s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["x","y"]}</attribute>
+    </xpath>
+    <xpath expr="//section/div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_02_001 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Origins/02_001.svg?c4=o-color-3&amp;c5=rgba%280%2C%200%2C%200%2C%200%29&amp;flip=xy'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 
@@ -91,10 +101,6 @@
 <!-- ======== STEPS ======== -->
 <template id="s_process_steps" inherit_id="website.s_process_steps" name="Graphene s_process_steps">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_05"/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         Add to Cart
@@ -126,11 +132,7 @@
 <!-- ======== COMPANY TEAM ======== -->
 <template id="s_company_team" inherit_id="website.s_company_team" name="Graphene s_company_team">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
         <attribute name="class" add="pb64" remove="pb48" separator=" "/>
-    </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_05"/>
     </xpath>
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div//h4" position="replace" mode="inner">
         Tony Fred, <small><b>CEO</b></small>
@@ -155,6 +157,15 @@
     </xpath>
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[4]//p" position="replace" mode="inner">
         <small>Iris, with her international experience, helps us easily understand the numbers and improves them. She is determined to drive success and delivers her professional acumen to bring the company to the next level.</small>
+    </xpath>
+</template>
+
+<template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team" name="Graphene s_company_team">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//section/div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_05"/>
     </xpath>
 </template>
 
@@ -209,10 +220,6 @@
 <template id="s_comparisons" inherit_id="website.s_comparisons" name="Graphene s_comparisons">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb48 pt24 o_cc o_cc4" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/06_001","flip":["x"]}</attribute>
-    </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_06_001" style="background-image: url('/web_editor/shape/web_editor/Origins/06_001.svg?c3=o-color-3&amp;c4=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div//a" position="replace">
         <a href="/contactus" class="btn btn-primary">Start Now</a>
@@ -231,6 +238,15 @@
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]//li[4]" position="replace">
         <li class="list-group-item">24/7 support</li>
+    </xpath>
+</template>
+
+<template id="configurator_s_comparisons" inherit_id="website.configurator_s_comparisons" name="Graphene s_comparisons">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/06_001","flip":["x"]}</attribute>
+    </xpath>
+    <xpath expr="//section/div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_06_001" style="background-image: url('/web_editor/shape/web_editor/Origins/06_001.svg?c3=o-color-3&amp;c4=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 
@@ -262,10 +278,6 @@
 <template id="s_picture" inherit_id="website.s_picture" name="Graphene s_picture">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb0 pt48" remove="pb24 pt48" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/01_001","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Zigs_01_001"/>
     </xpath>
     <!-- Content -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -276,6 +288,15 @@
     </xpath>
     <xpath expr="//img" position="attributes">
         <attribute name="class" add="p-0 border-0" separator=" " />
+    </xpath>
+</template>
+
+<template id="configurator_s_picture" inherit_id="website.configurator_s_picture" name="Graphene s_picture">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/01_001","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//section/div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Zigs_01_001"/>
     </xpath>
 </template>
 

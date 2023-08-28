@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc1 pt112 pb112" remove="o_cc2 pt24 pb24" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
     <!-- Titles -->
     <xpath expr="//h6" position="replace" mode="inner">
@@ -23,6 +18,17 @@
     </xpath>
     <xpath expr="//h6" position="replace" mode="inner">
         Outstanding images
+    </xpath>
+</template>
+
+<template id="configurator_s_numbers" inherit_id="website.configurator_s_numbers">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
 </template>
 

@@ -5,11 +5,6 @@
     <!-- Quotes carousel -->
     <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//ol[hasclass('carousel-indicators')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_22"/>
     </xpath>
     <!-- Quote 1 -->
     <xpath expr="(//div[hasclass('s_blockquote_content')])[1]/p" position="replace" mode="inner">
@@ -47,6 +42,17 @@
     <!-- Center the blockquote -->
     <xpath expr="(//blockquote)[3]" position="attributes">
         <attribute name="class" add="mx-auto" remove="ms-auto" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_quotes_carousel" inherit_id="website.configurator_s_quotes_carousel">
+    <!-- Shape option -->
+    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//ol[hasclass('carousel-indicators')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_22"/>
     </xpath>
 </template>
 

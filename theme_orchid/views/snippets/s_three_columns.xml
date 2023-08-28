@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc1 pt80 pb80" remove="o_cc2 pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/04","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_04"/>
     </xpath>
     <!-- Row -->
     <xpath expr="//div[hasclass('row')]" position="attributes">
@@ -77,6 +72,17 @@
         <attribute name="data-original-mimetype">image/jpeg</attribute>
         <attribute name="data-file-name">library_image_07.svg</attribute>
         <attribute name="data-shape-colors">;o-color-1;;;o-color-2</attribute>
+    </xpath>
+</template>
+
+<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/04","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_04"/>
     </xpath>
 </template>
 

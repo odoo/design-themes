@@ -5,17 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_full_screen_height o_cc o_cc1" remove="bg-black-50" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/14"}</attribute>
     </xpath>
 
     <!-- Filter -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
         <attribute name="class" add="bg-white-75" remove="bg-black-50" separator=" "/>
-    </xpath>
-
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_14"/>
     </xpath>
 
     <!-- Heading -->
@@ -46,6 +40,18 @@
     <!-- Button -->
     <xpath expr="//a[hasclass('btn')]" position="attributes">
         <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/14"}</attribute>
+    </xpath>
+
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_14"/>
     </xpath>
 </template>
 

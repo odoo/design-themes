@@ -6,10 +6,6 @@
     <!-- Content -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc2 pt152 pb128" remove="pt96 pb96" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/11_001","flip":["y"]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Origins_11_001" style="background-image: url('/web_editor/shape/web_editor/Origins/11_001.svg?c3=o-color-4&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
     <!-- Row - remove grid mode -->
     <xpath expr="//div[hasclass('row')]" position="attributes">
@@ -50,16 +46,20 @@
     </xpath>
 </template>
 
+<template id="configurator_s_banner" inherit_id="website.configurator_s_banner" name="Cobalt s_banner">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/11_001","flip":["y"]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Origins_11_001" style="background-image: url('/web_editor/shape/web_editor/Origins/11_001.svg?c3=o-color-4&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 100%;"/>
+    </xpath>
+</template>
+
 <!-- ==== Image-Text ===== -->
 <template id="s_image_text" inherit_id="website.s_image_text" name="Cobalt s_image_text">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt152 pb128" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/03","flip":[]}</attribute>
-    </xpath>
-
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_03"/>
     </xpath>
     <!-- Layout -->
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
@@ -78,6 +78,15 @@
     </xpath>
     <xpath expr="//p[last()-1]" position="replace"/>
     <xpath expr="//a[hasclass('btn')]" position="replace"/>
+</template>
+
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text" name="Cobalt s_image_text">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/03","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_03"/>
+    </xpath>
 </template>
 
 <!-- ==== Text-Image ===== -->
@@ -152,14 +161,19 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Cobalt s_three_columns">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc o_cc2 pt32 pb32" add="pt72 pb120" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["x"]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Bold_01" style="background-image: url('/web_editor/shape/web_editor/Bold/01.svg?c2=o-color-3&amp;flip=x'); background-position: 50% 0%;"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]" position="before">
         <h2 style="text-align: center;">Latest projects</h2>
         <p/>
+    </xpath>
+</template>
+
+<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns" name="Cobalt s_three_columns">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["x"]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Bold_01" style="background-image: url('/web_editor/shape/web_editor/Bold/01.svg?c2=o-color-3&amp;flip=x'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 
@@ -174,10 +188,6 @@
 <template id="s_picture" inherit_id="website.s_picture" name="Cobalt s_picture">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt72 overflow-hidden" remove="o_cc o_cc2 pt48" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["y"]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Bold_01" style="background-image: url('/web_editor/shape/web_editor/Bold/01.svg?c2=o-color-3&amp;flip=y'); background-position: 50% 100%;"></div>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="attributes">
         <attribute name="class" add="container-fluid px-5 px-lg-0" remove="container" separator=" "/>
@@ -187,6 +197,15 @@
     </xpath>
     <xpath expr="//figcaption" position="replace">
         <figcaption class="text-400"><em>Our office in Dhaka</em></figcaption>
+    </xpath>
+</template>
+
+<template id="configurator_s_picture" inherit_id="website.configurator_s_picture" name="Cobalt s_picture">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["y"]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Bold_01" style="background-image: url('/web_editor/shape/web_editor/Bold/01.svg?c2=o-color-3&amp;flip=y'); background-position: 50% 100%;"></div>
     </xpath>
 </template>
 

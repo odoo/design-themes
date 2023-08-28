@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc2 pb104" remove="pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/04","flip":["x"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_04" style="background-image: url('/web_editor/shape/web_editor/Wavy/04.svg?c1=o-color-1&amp;c5=o-color-1&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
     <!-- Text wrapper -->
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
@@ -33,6 +28,17 @@
         <attribute name="data-original-mimetype">image/jpeg</attribute>
         <attribute name="data-file-name">s_carousel_2.svg</attribute>
         <attribute name="data-shape-colors">o-color-2;o-color-2;;;o-color-5</attribute>
+    </xpath>
+</template>
+
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/04","flip":["x"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_04" style="background-image: url('/web_editor/shape/web_editor/Wavy/04.svg?c1=o-color-1&amp;c5=o-color-1&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
 </template>
 

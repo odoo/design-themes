@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc5" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/09_001","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_09_001"/>
     </xpath>
     <!-- Feature #2 - Icon -->
     <xpath expr="//div[hasclass('row')]//div[2]//i" position="attributes">
@@ -18,6 +13,17 @@
     <!-- Feature #3 - Icon -->
     <xpath expr="//div[hasclass('row')]//div[3]//i" position="attributes">
         <attribute name="class" add="bg-o-color-1" remove="bg-secondary" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_features" inherit_id="website.configurator_s_features">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/09_001","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Rainy_09_001"/>
     </xpath>
 </template>
 

@@ -5,6 +5,12 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt120 pb120" remove="pt48 pb48" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->

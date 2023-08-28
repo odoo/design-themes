@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc4" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/17","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_17"/>
     </xpath>
     <!-- Card #1 -->
     <xpath expr="//div[hasclass('card')]" position="attributes">
@@ -31,6 +26,17 @@
     </xpath>
     <xpath expr="(//a[hasclass('btn')])[3]" position="attributes">
         <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_comparisons" inherit_id="website.configurator_s_comparisons">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/17","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_17"/>
     </xpath>
 </template>
 

@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_full_screen_height" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_07_002"/>
     </xpath>
     <!-- Filter -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
@@ -24,6 +19,17 @@
     </xpath>
     <!-- Remove the button -->
     <xpath expr="//p[2]" position="replace"/>
+</template>
+
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_07_002"/>
+    </xpath>
 </template>
 
 </odoo>

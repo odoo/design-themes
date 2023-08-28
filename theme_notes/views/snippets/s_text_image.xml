@@ -5,7 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc1 pt80 pb80" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/11","flip":["x"]}</attribute>
     </xpath>
     <!-- Title & Paragraph -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -23,6 +22,13 @@
     <!-- Image wrapper -->
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
         <attribute name="class" add="col-lg-4 offset-lg-2" remove="col-lg-6" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/11","flip":["x"]}</attribute>
     </xpath>
 </template>
 

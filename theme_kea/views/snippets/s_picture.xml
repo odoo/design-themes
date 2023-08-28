@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/03","flip":["y"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_03" style="background-image: url('/web_editor/shape/web_editor/Wavy/03.svg?c1=o-color-1&amp;c2=o-color-2&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -33,6 +28,17 @@
     <!-- Caption -->
     <xpath expr="//figcaption" position="replace">
         <figcaption class="figure-caption text-muted py-3">Watch as a living game world comes alive all around you, with a seamless field of view wherever you look.</figcaption>
+    </xpath>
+</template>
+
+<template id="configurator_s_picture" inherit_id="website.configurator_s_picture">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/03","flip":["y"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_03" style="background-image: url('/web_editor/shape/web_editor/Wavy/03.svg?c1=o-color-1&amp;c2=o-color-2&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
 </template>
 

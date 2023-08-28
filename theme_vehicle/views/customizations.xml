@@ -74,6 +74,12 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4 pt48 pb48" remove="o_cc2 pt24 pb24" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_numbers" inherit_id="website.configurator_s_numbers">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/09_001","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
@@ -112,10 +118,6 @@
 <template id="s_references" inherit_id="website.s_references" name="Vehicle s_references">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc1 pt120 pb112" remove="pt48 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_05"/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         Our Partners
@@ -123,16 +125,20 @@
     <xpath expr="//p" position="replace"/>
 </template>
 
-    <!-- ======== CALL TO ACTION ======== -->
+<template id="configurator_s_references" inherit_id="website.configurator_s_references" name="Vehicle s_references">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_05"/>
+    </xpath>
+</template>
+
+<!-- ======== CALL TO ACTION ======== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Vehicle s_call_to_action">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5 pt96 pb64" remove="o_cc3 pt48 pb24" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/09","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_09"/>
     </xpath>
     <!-- Content -->
     <xpath expr="//h3" position="replace" mode="inner">
@@ -149,6 +155,17 @@
     </xpath>
     <xpath expr="//a" position="attributes">
         <attribute name="class" remove="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action" name="Vehicle s_call_to_action">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/09","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_09"/>
     </xpath>
 </template>
 

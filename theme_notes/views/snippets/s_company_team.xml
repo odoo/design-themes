@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc2 pb128" remove="pb48" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13_001","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_13_001"/>
     </xpath>
     <!-- Member #1 -->
     <xpath expr="//div[hasclass('col-lg-8')]//h4" position="replace" mode="inner">
@@ -38,6 +33,17 @@
     </xpath>
     <xpath expr="(//div[hasclass('col-lg-8')])[4]//p" position="replace" mode="inner">
         Joseris is a Belgian band that formed in October 1995. Though originally categorised as a trip hop group, they quickly expanded their sound to the point where they could no longer be described as a lone genre, but rather encompass alternative, electronica, electro-pop, rock, and a mixture of others.
+    </xpath>
+</template>
+
+<template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/13_001","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_13_001"/>
     </xpath>
 </template>
 

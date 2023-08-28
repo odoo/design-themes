@@ -17,11 +17,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb0 pt192 o_cc o_cc5" remove="pt96 pb96 bg-black-50 s_parallax_is_fixed s_parallax" separator=" "/>
         <attribute name="data-scroll-background-ratio">0</attribute>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":["x"]}</attribute>
-    </xpath>
-
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-4&amp;c5=o-color-5&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
 
     <!-- Enable SVG dynamic color functionality -->
@@ -65,15 +60,20 @@
     </xpath>
 </template>
 
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover" name="Paptic s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":["x"]}</attribute>
+    </xpath>
+
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Blocks_04" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-4&amp;c5=o-color-5&amp;flip=x'); background-position: 50% 100%;"/>
+    </xpath>
+</template>
+
 <!-- ==== Image-Text ===== -->
 <template id="s_image_text" inherit_id="website.s_image_text" name="Paptic s_image_text">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt160 pb16 o_cc o_cc3" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["y"]}</attribute>
-    </xpath>
-
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Origins_02_001" style="background-image: url('/web_editor/shape/web_editor/Origins/02_001.svg?c4=o-color-4&amp;c5=o-color-2&amp;flip=y'); background-position: 50% 0%;"></div>
     </xpath>
 
     <xpath expr="//img" position="attributes">
@@ -110,6 +110,16 @@
 
     <xpath expr="//img" position="attributes">
         <attribute name="class" add="pull-right" remove="img-fluid" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text" name="Paptic s_image_text">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["y"]}</attribute>
+    </xpath>
+
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Origins_02_001" style="background-image: url('/web_editor/shape/web_editor/Origins/02_001.svg?c4=o-color-4&amp;c5=o-color-2&amp;flip=y'); background-position: 50% 0%;"></div>
     </xpath>
 </template>
 
@@ -209,10 +219,6 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Paptic s_three_columns">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="pt32 pb32 o_cc2" add="pt120 pb120 o_cc3 o_colored_level" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Origins_02_001"></div>
     </xpath>
     <xpath expr="//div[hasclass('row')]" position="before">
         <h3 style="text-align: center;"><font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-3) 100%);" class="text-gradient">SUCCESS STORIES</font></h3>
@@ -268,6 +274,15 @@
     </xpath>
 </template>
 
+<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns" name="Paptic s_three_columns">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Origins_02_001"></div>
+    </xpath>
+</template>
+
 <!-- ==== Picture ===== -->
 <template id="s_picture" inherit_id="website.s_picture" name="Paptic s_picture">
     <xpath expr="//section" position="attributes">
@@ -283,11 +298,6 @@
 <template id="s_comparisons" inherit_id="website.s_comparisons" name="Paptic s_comparisons">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt0 pb80" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_03"/>
     </xpath>
     <!-- Left card -->
     <xpath expr="//div[hasclass('card')]" position="attributes">
@@ -295,19 +305,36 @@
     </xpath>
 </template>
 
+<template id="configurator_s_comparisons" inherit_id="website.configurator_s_comparisons" name="Paptic s_comparisons">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_03"/>
+    </xpath>
+</template>
+
 <!-- ==== Call to action ===== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Paptic s_call_to_action">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt120 pb120 o_cc1" remove="pt48 pb24 o_cc3" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        <b>50,000+ companies</b> run Paptic to grow their businesses.
+    </xpath>
+</template>
+
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action" name="Paptic s_call_to_action">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":["y"]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Airy_12_001" style="background-image: url('/web_editor/shape/web_editor/Airy/12_001.svg?c1=o-color-5&amp;c3=o-color-4&amp;flip=y'); background-position: 50% 100%;"/>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
-        <b>50,000+ companies</b> run Paptic to grow their businesses.
     </xpath>
 </template>
 
@@ -322,6 +349,12 @@
 <template id="s_numbers" inherit_id="website.s_numbers" name="Paptic s_numbers">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt80 pb80 o_cc4" remove="pt24 pb24 o_cc2" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_numbers" inherit_id="website.configurator_s_numbers" name="Paptic s_numbers">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/01_001","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
@@ -378,11 +411,6 @@
 <template id="s_media_list" inherit_id="website.s_media_list" name="Paptic s_media_list">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc3 pt80 pb80" remove="o_cc2 pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":["x"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_07_002" style="background-image: url('/web_editor/shape/web_editor/Origins/07_002.svg?c3=o-color-4&amp;c4=o-color-2&amp;c5=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
     <!-- Container -->
     <xpath expr="//div[hasclass('container')]" position="attributes">
@@ -399,6 +427,17 @@
     <!-- Item #3 -->
     <xpath expr="//div[hasclass('s_media_list_item')][3]/div" position="attributes">
         <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_media_list" inherit_id="website.configurator_s_media_list" name="Paptic s_media_list">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":["x"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_07_002" style="background-image: url('/web_editor/shape/web_editor/Origins/07_002.svg?c3=o-color-4&amp;c4=o-color-2&amp;c5=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 
