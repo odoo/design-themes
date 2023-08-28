@@ -316,14 +316,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc5" separator=" "/>
     </xpath>
-    <!-- Jumbotron -->
-    <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
-        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
-    </xpath>
 </template>
 
 <!-- ==== Numbers ===== -->
