@@ -5,12 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc2 pb64 pt64" remove="pb32 pt32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/13","flip":["x"]}</attribute>
-    </xpath>
-
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_13" style="background-image: url('/web_editor/shape/web_editor/Floats/13.svg?c1=o-color-1&amp;c2=o-color-2&amp;c5=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 
     <!-- Last column -->
@@ -44,6 +38,18 @@
         <attribute name="data-original-mimetype">image/jpeg</attribute>
         <attribute name="data-file-name">s_image_text.svg</attribute>
         <attribute name="data-shape-colors">;;;;</attribute>
+    </xpath>
+</template>
+
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/13","flip":["x"]}</attribute>
+    </xpath>
+
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_13" style="background-image: url('/web_editor/shape/web_editor/Floats/13.svg?c1=o-color-1&amp;c2=o-color-2&amp;c5=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 

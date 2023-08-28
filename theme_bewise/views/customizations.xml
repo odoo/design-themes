@@ -6,12 +6,7 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt200 pb200 o_cc o_cc5 oe_img_bg o_bg_img_center" remove="bg-black-50 s_parallax_is_fixed parallax pt96 pb96" separator=" "/>
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 50%;</attribute>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/08_001","flip":[]}</attribute>
         <attribute name="data-scroll-background-ratio">0</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_08_001"/>
     </xpath>
     <!-- Remove the background image for parallax -->
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
@@ -29,6 +24,16 @@
     </xpath>
     <xpath expr="//p" position="after">
     <p><br/></p>
+    </xpath>
+</template>
+
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover" name="Be Wise s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/08_001","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Rainy_08_001"/>
     </xpath>
 </template>
 
@@ -88,10 +93,6 @@
 <template id="s_numbers" inherit_id="website.s_numbers" name="Be Wise s_numbers">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":["x"]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_11" style="background-image: url('/web_editor/shape/web_editor/Blobs/11.svg?c1=o-color-1&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
     <xpath expr="//h6" position="replace" mode="inner">
         Faculties
@@ -110,6 +111,15 @@
     </xpath>
 </template>
 
+<template id="configurator_s_numbers" inherit_id="website.configurator_s_numbers" name="Be Wise s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":["x"]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_11" style="background-image: url('/web_editor/shape/web_editor/Blobs/11.svg?c1=o-color-1&amp;flip=x'); background-position: 50% 50%;"/>
+    </xpath>
+</template>
+
 <!-- ======== QUOTES ======== -->
 <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Be Wise s_quotes_carousel">
     <!-- Section : Add a main background to the carousel -->
@@ -124,11 +134,6 @@
     <!-- Carousel -->
     <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
         <attribute name="class" add="s_carousel_rounded" remove="o_cc o_cc2 s_carousel_default" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001","flip":["y"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//ol[hasclass('carousel-indicators')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_14_001" style="background-image: url('/web_editor/shape/web_editor/Origins/14_001.svg?c3=o-color-4&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
     <!-- Slide #1 -->
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
@@ -189,15 +194,19 @@
     </xpath>
 </template>
 
-<!-- ======== CALL TO ACTION ======== -->
-<template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Be Wise s_call_to_action">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":[]}</attribute>
+<template id="configurator_s_quotes_carousel" inherit_id="website.configurator_s_quotes_carousel" name="Be Wise s_quotes_carousel">
+    <!-- Shape option -->
+    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001","flip":["y"]}</attribute>
     </xpath>
     <!-- Shape -->
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_11"/>
+    <xpath expr="//ol[hasclass('carousel-indicators')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_14_001" style="background-image: url('/web_editor/shape/web_editor/Origins/14_001.svg?c3=o-color-4&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
+</template>
+
+<!-- ======== CALL TO ACTION ======== -->
+<template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Be Wise s_call_to_action">
     <!-- Title -->
     <xpath expr="//h3" position="replace">
         <h4><b>3,000 students</b> graduate each year find a job within 2 months</h4>
@@ -212,14 +221,18 @@
     </xpath>
 </template>
 
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action" name="Be Wise s_call_to_action">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_11"/>
+    </xpath>
+</template>
+
 <!-- ======== TEAM ======== -->
 <template id="s_company_team" inherit_id="website.s_company_team" name="Be Wise s_company_team">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/09","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_09"/>
-    </xpath>
     <!-- Profile #1 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div//h4" position="replace" mode="inner">
         <b>Tony Fred, Faculty Head of IT</b>
@@ -244,6 +257,15 @@
     <!-- Profile #4 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[4]//h4" position="replace" mode="inner">
         <b>Iris Joe, team leader professor</b>
+    </xpath>
+</template>
+
+<template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team" name="Be Wise s_company_team">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/09","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_09"/>
     </xpath>
 </template>
 
@@ -344,13 +366,6 @@
 
 <!-- ======== MEDIA LIST ======== -->
 <template id="s_media_list" inherit_id="website.s_media_list" name="Be Wise s_media_list">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/04_001","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_04_001"/>
-    </xpath>
     <!-- Item #1 -->
     <xpath expr="//div[hasclass('s_media_list_item')]" position="attributes">
         <attribute name="class" add="col-lg-10" remove="col-lg-12" separator=" "/>
@@ -395,6 +410,16 @@
     </xpath>
 </template>
 
+<template id="configurator_s_media_list" inherit_id="website.configurator_s_media_list" name="Be Wise s_media_list">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/04_001","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Airy_04_001"/>
+    </xpath>
+</template>
+
 <!-- ======== COMPARISONS ======== -->
 <template id="s_comparisons" inherit_id="website.s_comparisons" name="Be Wise s_comparisons">
     <xpath expr="//div[hasclass('card')]//li[hasclass('list-group-item')]" position="replace" mode="inner">
@@ -429,11 +454,19 @@
 <template id="s_product_catalog" inherit_id="website.s_product_catalog" name="Be Wise s_product_catalog">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc5 pt120 pb120" remove="pt48 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/06","flip":[]}</attribute>
     </xpath>
-    <!-- Filter & shape -->
+    <!-- Filter -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-black-75"/>
+    </xpath>
+</template>
+
+<template id="configurator_s_product_catalog" inherit_id="website.configurator_s_product_catalog" name="Be Wise s_product_catalog">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/06","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Floats_06"/>
     </xpath>
 </template>

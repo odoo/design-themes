@@ -5,7 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_full_screen_height bg-black-15 o_cc o_cc5" remove="bg-black-50" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/09","flip":[]}</attribute>
     </xpath>
     <!-- Change position of background image -->
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
@@ -15,10 +14,6 @@
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
         <attribute name="class" add="bg-black-15" remove="bg-black-50" separator=" "/>
     </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_09"/>
-    </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
         Working beauty <br/>from the inside out
@@ -26,6 +21,17 @@
     <!-- Paragraphs -->
     <xpath expr="//p[2]" position="replace"/>
     <xpath expr="//p[1]" position="replace"/>
+</template>
+
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/09","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_09"/>
+    </xpath>
 </template>
 
 </odoo>

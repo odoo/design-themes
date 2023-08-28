@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<template id="s_parallax" inherit_id="website.s_parallax">
-    <!-- Section -->
+<template id="configurator_s_parallax" inherit_id="website.configurator_s_parallax">
+    <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/08_001","flip":[]}</attribute>
     </xpath>

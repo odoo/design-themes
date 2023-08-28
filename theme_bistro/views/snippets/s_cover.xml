@@ -2,15 +2,9 @@
 <odoo>
 
 <template id="s_cover" inherit_id="website.s_cover">
-    <!-- Section -->
-    <xpath expr="section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/06"}</attribute>
-    </xpath>
+    <!-- Parallax -->
     <xpath expr="//*[hasclass('s_parallax_bg')]" position="attributes">
         <attribute name="style" add="background-position: 50% 100%;" remove="background-position: 50% 0;" separator=" "/>
-    </xpath>
-    <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Zigs_06"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1//font" position="replace" mode="inner">
@@ -29,6 +23,17 @@
     <!-- Button -->
     <xpath expr="//a//t" position="replace" mode="inner">
         Our Menu
+    </xpath>
+</template>
+
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
+    <!-- Shape option -->
+    <xpath expr="section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/06"}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//*[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Zigs_06"/>
     </xpath>
 </template>
 

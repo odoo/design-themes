@@ -5,13 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb72 pt96 oe_img_bg o_bg_img_center" remove="pt48 pb24" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
         <attribute name="style">background-image: url('/web/image/website.s_call_to_action_default_image'); background-position: 50% 34%;</attribute>
     </xpath>
-    <!-- Shape & filter -->
+    <!-- Filter -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-black-50"/>
-        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h3" position="replace">
@@ -27,6 +25,17 @@
     </xpath>
     <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
         Get your ticket
+    </xpath>
+</template>
+
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
 </template>
 

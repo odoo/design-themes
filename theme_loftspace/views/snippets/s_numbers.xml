@@ -5,9 +5,15 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt80 pb192 o_cc5" remove="pt24 pb24 o_cc2" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_numbers" inherit_id="website.configurator_s_numbers">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/03_001","flip":["y"]}</attribute>
     </xpath>
-    <!-- Add shape -->
+    <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Airy_03_001" style="background-image: url('/web_editor/shape/web_editor/Airy/03_001.svg?c5=o-color-1&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>

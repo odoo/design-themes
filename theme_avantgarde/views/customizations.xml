@@ -5,13 +5,9 @@
 <template id="s_cover" inherit_id="website.s_cover" name="Avantgarde s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="s_parallax_no_overflow_hidden o_full_screen_height" remove="s_parallax_is_fixed s_parallax" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
         <attribute name="style" remove="background-position: 50% 0;" add="background-position: 50% 80%;" separator=";"/>
-    </xpath>
-    <xpath expr="//div[hasclass('s_allow_columns')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
     <xpath expr="//font" position="attributes">
         <attribute name="class" add="text-o-color-1 text-break" separator=" "/>
@@ -25,6 +21,15 @@
     </xpath>
     <xpath expr="//a[hasclass('btn')]" position="attributes">
         <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover" name="Avantgarde s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_allow_columns')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 
@@ -70,10 +75,6 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Avantgarde s_three_columns">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt120 pb240 o_full_screen_height" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/20"}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_20"/>
     </xpath>
     <xpath expr="//*[hasclass('card')]" position="attributes">
         <attribute name="class" add="shadow border" separator=" "/>
@@ -103,6 +104,15 @@
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
         Sustainability is at the heart of our design approach. We audit projects against global standards as well as our own, more comprehensive, responsibility framework.
+    </xpath>
+</template>
+
+<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns" name="Avantgarde s_three_columns">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/20"}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_20"/>
     </xpath>
 </template>
 
@@ -163,10 +173,6 @@
 
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc3 o_half_screen_height pt0" remove="pt48" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_14_001"/>
     </xpath>
     <xpath expr="//h3" position="replace">
         <h3 style="text-align: right;"><b>Since 1992</b> creating around the world.</h3>
@@ -188,6 +194,16 @@
     </xpath>
     <xpath expr="//a[hasclass('btn')]" position="attributes">
         <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action" name="Avantgarde s_call_to_action">
+
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_14_001"/>
     </xpath>
 </template>
 

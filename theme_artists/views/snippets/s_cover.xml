@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt200 pb200 o_cc o_cc4" remove="pb96 pt96 s_parallax_bg parallax s_parallax_is_fixed bg-black-50" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
     </xpath>
     <!-- Remove filter & parallax -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
@@ -20,6 +15,17 @@
     </xpath>
     <xpath expr="//h1" position="after">
         <p><br/></p>
+    </xpath>
+</template>
+
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_02"/>
     </xpath>
 </template>
 

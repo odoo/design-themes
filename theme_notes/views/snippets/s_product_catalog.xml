@@ -6,12 +6,10 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc5 pb160 pt160 parallax s_parallax_is_fixed s_parallax_no_overflow_hidden o_full_screen_height" remove="pb32 pt48" separator=" "/>
         <attribute name="data-scroll-background-ratio">1</attribute>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/10","flip":[]}</attribute>
     </xpath>
-    <!-- Shape & Background image -->
+    <!-- Background image -->
     <xpath expr="//section/*" position="before">
         <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url('/web/image/website.s_product_catalog_default_image');"/>
-        <div class="o_we_shape o_web_editor_Wavy_10"/>
     </xpath>
     <!-- Title & subtitles -->
     <xpath expr="//h2" position="replace">
@@ -66,6 +64,17 @@
     </xpath>
     <xpath expr="(//ul)[2]/t[3]/t[2]" position="replace" mode="inner">
         $115.50
+    </xpath>
+</template>
+
+<template id="configurator_s_product_catalog" inherit_id="website.configurator_s_product_catalog">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/10","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//section/*" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_10"/>
     </xpath>
 </template>
 

@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt64 pb64 o_cc1" remove="pt32 pb32 o_cc2" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
     <!-- Row #1 -->
     <xpath expr="//div[hasclass('s_media_list_item')]" position="attributes">
@@ -67,6 +62,17 @@
     <!-- Row #3 - Image -->
     <xpath expr="(//div[hasclass('s_media_list_item')])[3]//div[hasclass('s_media_list_img_wrapper')]" position="attributes">
         <attribute name="class" add="col-lg-3" remove="col-lg-4" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_media_list" inherit_id="website.configurator_s_media_list">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
 </template>
 

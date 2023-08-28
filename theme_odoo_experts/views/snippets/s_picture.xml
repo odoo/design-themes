@@ -5,13 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc2" add="o_cc1 oe_img_bg" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/08","flip":["y"]}</attribute>
         <attribute name="style">background-image: url('/web/image/website.s_picture_default_image_bg'); background-position: center;</attribute>
     </xpath>
-    <!-- Shape & filter -->
+    <!-- Filter -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-white-75"/>
-        <div class="o_we_shape o_web_editor_Wavy_08" style="background-image: url('/web_editor/shape/web_editor/Wavy/08.svg?c2=o-color-3&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace">
@@ -44,6 +42,17 @@
     </xpath>
     <!-- Remove figcaption -->
     <xpath expr="//figcaption" position="replace"/>
+</template>
+
+<template id="configurator_s_picture" inherit_id="website.configurator_s_picture">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/08","flip":["y"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_08" style="background-image: url('/web_editor/shape/web_editor/Wavy/08.svg?c2=o-color-3&amp;flip=y'); background-position: 50% 100%;"/>
+    </xpath>
 </template>
 
 </odoo>

@@ -5,10 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt48 pb48" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/10", "flip":["x","y"]}</attribute>
-    </xpath>
-    <xpath expr="//*[hasclass('oe_structure')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_10" style="background-image: url('/web_editor/shape/web_editor/Rainy/10.svg?c1=o-color-1&amp;c3=o-color-3&amp;flip=xy'); background-position: 50% 50%;"/>
     </xpath>
     <!-- Content -->
     <xpath expr="//*[hasclass('oe_structure')]" position="inside">
@@ -17,6 +13,17 @@
                 <h3 style="text-align: center;"><font class="bg-o-color-5">Feel free to come up with your big idea. <br/> We take care of the rest.</font></h3>
             </div>
         </section>
+    </xpath>
+</template>
+
+<template id="configurator_s_parallax" inherit_id="website.configurator_s_parallax">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/10", "flip":["x","y"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//*[hasclass('oe_structure')]" position="before">
+        <div class="o_we_shape o_web_editor_Rainy_10" style="background-image: url('/web_editor/shape/web_editor/Rainy/10.svg?c1=o-color-1&amp;c3=o-color-3&amp;flip=xy'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 

@@ -2,14 +2,6 @@
 <odoo>
 
 <template id="s_image_text" inherit_id="website.s_image_text">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_01"/>
-    </xpath>
     <!-- Column #1 -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
@@ -37,6 +29,17 @@
     </xpath>
     <xpath expr="//p[2]" position="replace" mode="inner">
         We see our role as that of a legal partner responsible for constantly finding practical and pragmatic solutions that are adapted to our clients' needs.
+    </xpath>
+</template>
+
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Bold_01"/>
     </xpath>
 </template>
 

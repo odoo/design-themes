@@ -5,12 +5,10 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height pt208 pb256" remove="pt96 pb96" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
     </xpath>
-    <!-- Filter & shape -->
+    <!-- Filter -->
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
-        <div class="o_we_shape o_web_editor_Origins_14_001"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
@@ -29,6 +27,17 @@
         <a class="o_scroll_button rounded-circle align-items-center justify-content-center mx-auto mb-5 text-white o_not_editable" href="#" contenteditable="false" title="" style="background-color: rgba(25, 41, 37, 0.55) !important;" data-bs-original-title="Scroll down to next section">
             <i class="fa fa-chevron-down fa-1x"></i>
         </a>
+    </xpath>
+</template>
+
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//*[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_14_001"/>
     </xpath>
 </template>
 

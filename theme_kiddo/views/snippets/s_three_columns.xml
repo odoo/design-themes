@@ -5,12 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc1 pt112 pb0" remove="o_cc2 pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001","flip":["y"]}</attribute>
-    </xpath>
-
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_14_001" style="background-image: url('/web_editor/shape/web_editor/Origins/14_001.svg?c3=o-color-3&amp;c4=rgba%280%2C%200%2C%200%2C%200%29&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 
     <!-- Column n°1 -->
@@ -107,6 +101,18 @@
     </xpath>
     <xpath expr="(//p)[3]" position="replace" mode="inner">
         You are welcome to come and see the nursery and meet the team at any time convenient to you.
+    </xpath>
+</template>
+
+<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001","flip":["y"]}</attribute>
+    </xpath>
+
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_14_001" style="background-image: url('/web_editor/shape/web_editor/Origins/14_001.svg?c3=o-color-3&amp;c4=rgba%280%2C%200%2C%200%2C%200%29&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 

@@ -5,7 +5,6 @@
    <!-- Section -->
    <xpath expr="//section" position="attributes">
       <attribute name="class" add="pb120 pt256 oe_img_bg o_bg_img_center" remove="pt96 pb96" separator=" "/>
-      <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
       <!-- Enable SVG dynamic color functionality -->
       <attribute name="style">background-image:url('/web_editor/shape/theme_buzzy/s_banner.svg?c1=o-color-1'); background-position: 50% 37%</attribute>
    </xpath>
@@ -15,10 +14,6 @@
    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
    <!-- Remove hr -->
    <xpath expr="//div[hasclass('s_hr')]" position="replace"/>
-   <!-- Shape -->
-   <xpath expr="//div[hasclass('container')]" position="before">
-      <div class="o_we_shape o_web_editor_Origins_02_001"/>
-   </xpath>
    <!-- Row - remove grid mode -->
    <xpath expr="//div[hasclass('row')]" position="attributes">
       <attribute name="class" remove="o_grid_mode" separator=" "/>
@@ -42,6 +37,17 @@
    <xpath expr="//div[hasclass('col-lg-6')]//p[2]" position="attributes">
       <attribute name="class" add="mb-0" separator=" "/>
    </xpath>
+</template>
+
+<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_02_001"/>
+    </xpath>
 </template>
 
 </odoo>

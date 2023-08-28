@@ -93,10 +93,6 @@
  <template id="s_text_image" inherit_id="website.s_text_image" name="Monglia s_text_image">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt56 pb40 o_cc o_cc1" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":["y"]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-3&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" remove="col-lg-6" add="col-lg-5 offset-lg-1" separator=" "/>
@@ -117,6 +113,15 @@
     <xpath expr="//p[2]" position="replace"/>
     <xpath expr="//a" position="replace">
         <a href="/contactus" class="btn btn-primary">Learn more</a>
+    </xpath>
+</template>
+
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image" name="Monglia s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":["y"]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Blocks_04 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-3&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 
@@ -191,10 +196,6 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb0 o_cc o_cc5" remove="pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04"></div>
     </xpath>
     <xpath expr="//h3" position="replace" mode="inner">
         Wilson Holt
@@ -204,6 +205,15 @@
     </xpath>
     <xpath expr="(//h3)[3]" position="replace" mode="inner">
         Bruce Porter
+    </xpath>
+</template>
+
+<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Blocks_04"></div>
     </xpath>
 </template>
 

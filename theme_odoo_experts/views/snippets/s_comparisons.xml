@@ -2,14 +2,6 @@
 <odoo>
 
 <template id="s_comparisons" inherit_id="website.s_comparisons">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/04","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_04"/>
-    </xpath>
     <!-- Box #01 -->
     <xpath expr="//div[hasclass('row')]//div" position="attributes">
         <attribute name="class" add="pt80" remove="pt32" separator=" "/>
@@ -30,6 +22,17 @@
     </xpath>
     <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
         <attribute name="class" add="bg-o-color-3" remove="bg-secondary" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_comparisons" inherit_id="website.configurator_s_comparisons">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/04","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_04"/>
     </xpath>
 </template>
 

@@ -5,11 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt120 pb104 o_cc4" remove="pt48 pb24 o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
     </xpath>
     <!-- Title & subtitle -->
     <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
@@ -39,6 +34,17 @@
     </xpath>
     <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
         Discover it
+    </xpath>
+</template>
+
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_02"/>
     </xpath>
 </template>
 

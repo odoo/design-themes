@@ -5,10 +5,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc3 pt64" remove="o_cc2 pt48 pb24" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/04_001"}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_04_001"/>
     </xpath>
     <!-- Size -->
     <xpath expr="//div[hasclass('col-lg-10')]" position="attributes">
@@ -25,6 +21,17 @@
     <!-- Caption -->
     <xpath expr="//figcaption" position="replace" mode="inner">
         The perfect dessert to share for the table.
+    </xpath>
+</template>
+
+<template id="configurator_s_picture" inherit_id="website.configurator_s_picture">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/04_001"}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_04_001"/>
     </xpath>
 </template>
 

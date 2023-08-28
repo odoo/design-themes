@@ -5,6 +5,12 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb120 pt120 o_cc5" remove="pb24 pt24 o_cc2" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_numbers" inherit_id="website.configurator_s_numbers">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->
