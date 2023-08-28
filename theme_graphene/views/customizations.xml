@@ -30,13 +30,6 @@
     </xpath>
 </template>
 
-<!-- ======== BANNER ======== -->
-<template id="s_banner" inherit_id="website.s_banner" name="Graphene s_banner">
-    <xpath expr="//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-lg" separator=" "/>
-    </xpath>
-</template>
-
 <!-- ======== TEXT-IMAGE ======== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Graphene s_text_image">
     <xpath expr="//section" position="attributes">
