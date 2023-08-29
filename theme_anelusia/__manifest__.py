@@ -15,7 +15,7 @@
         'views/snippets/s_cover.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_media_list.xml',
-        'views/snippets/s_banner.xml',
+        'views/snippets/s_text_cover.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_references.xml',
         'views/snippets/s_call_to_action.xml',
@@ -45,7 +45,7 @@
         'website.s_media_list_default_image_2': '/theme_anelusia/static/src/img/snippets/s_media_list_2.jpg',
     },
     'snippet_lists': {
-        'homepage': ['s_banner', 's_images_wall', 's_color_blocks_2', 's_references',
+        'homepage': ['s_text_cover', 's_images_wall', 's_color_blocks_2', 's_references',
                      's_media_list', 's_company_team', 's_call_to_action'],
     },
     'license': 'LGPL-3',

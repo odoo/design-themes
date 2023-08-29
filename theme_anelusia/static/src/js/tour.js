@@ -4,7 +4,7 @@ import wTourUtils from '@website/js/tours/tour_utils';
 
 const snippets = [
     {
-        id: 's_banner',
+        id: 's_text_cover',
         name: 'Banner',
     },
     {
