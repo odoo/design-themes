@@ -29,6 +29,7 @@
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_title.xml',
+        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/odoo_experts_description.jpg',
@@ -40,6 +41,11 @@
     },
     'configurator_snippets': {
         'homepage': ['s_picture', 's_references', 's_image_text', 's_text_image', 's_title', 's_comparisons', 's_call_to_action'],
+    },
+    'new_page_templates': {
+        'about': {
+            'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
+        },
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-odoo-experts.odoo.com',

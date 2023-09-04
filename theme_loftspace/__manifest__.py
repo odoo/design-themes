@@ -25,6 +25,7 @@
         'views/snippets/s_features_grid.xml',
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_product_catalog.xml',
+        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/loftspace_description.jpg',
@@ -45,6 +46,11 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_three_columns', 's_title', 's_images_wall', 's_call_to_action'],
+    },
+    'new_page_templates': {
+        'about': {
+            'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
+        },
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-loftspace.odoo.com',

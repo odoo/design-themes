@@ -10,6 +10,7 @@
         'data/ir_asset.xml',
         'views/images.xml',
         'views/customizations.xml',
+        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/vehicle_description.png',
@@ -25,6 +26,14 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_image_text', 's_picture', 's_masonry_block', 's_call_to_action'],
+    },
+    'new_page_templates': {
+        'about': {
+            'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
+        },
+        'team': {
+            '5': ['s_text_block_h1', 's_text_block', 's_image_gallery', 's_picture'],
+        },
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-vehicle.odoo.com',
