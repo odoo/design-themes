@@ -26,6 +26,7 @@
         'views/snippets/s_text_image.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_title.xml',
+        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/yes_description.png',
@@ -46,6 +47,11 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_title', 's_company_team', 's_media_list', 's_images_wall', 's_quotes_carousel'],
+    },
+    'new_page_templates': {
+        'about': {
+            'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
+        },
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-yes.odoo.com',

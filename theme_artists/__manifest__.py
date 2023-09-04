@@ -32,6 +32,7 @@
         'views/snippets/s_product_list.xml',
         'views/snippets/s_process_steps.xml',
         'views/snippets/s_color_blocks_2.xml',
+        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/artists_description.jpg',

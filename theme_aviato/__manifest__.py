@@ -19,6 +19,7 @@
         'views/snippets/s_popup.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_quotes_carousel.xml',
+        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/aviato_cover.jpg',

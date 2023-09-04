@@ -28,6 +28,7 @@
         'views/snippets/s_numbers.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_quotes_carousel.xml',
+        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/anelusia_description.jpg',
