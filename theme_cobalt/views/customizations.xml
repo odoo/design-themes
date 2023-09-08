@@ -5,15 +5,27 @@
 <template id="s_banner" inherit_id="website.s_banner" name="Cobalt s_banner">
     <!-- Content -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc2 pt152 pb128" remove="parallax pt96 pb96" separator=" "/>
+        <attribute name="class" add="o_cc o_cc2 pt152 pb128" remove="pt96 pb96" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/11_001","flip":["y"]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
         <div class="o_we_shape o_web_editor_Origins_11_001" style="background-image: url('/web_editor/shape/web_editor/Origins/11_001.svg?c3=o-color-4&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" remove="jumbotron rounded pt32 pb32 o_cc o_cc1" separator=" "/>
+    <!-- Row - remove grid mode -->
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="class" remove="o_grid_mode" separator=" "/>
     </xpath>
+    <!-- Jumbotron -->
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="o_grid_item g-height-4 g-col-lg-5 col-lg-5" separator=" "/>
+        <attribute name="style"/>
+    </xpath>
+    <!-- Remove grid images -->
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
+    <!-- Remove hr -->
+    <xpath expr="//div[hasclass('s_hr')]" position="replace"/>
     <!-- Image -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="after">
         <div class="pt16 pb16 o_colored_level col-lg-5 offset-lg-1">
@@ -21,18 +33,20 @@
         </div>
     </xpath>
     <!-- Content -->
+    <xpath expr="//h1" position="attributes">
+        <attribute name="class" remove="display-1" separator=" "/>
+    </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
         The ultimate marketing platform for brands
     </xpath>
     <xpath expr="//p" position="replace">
         <p class="lead">Building game-changing digital experiences designed to set your brand apart.</p>
-        <p><br/></p>
     </xpath>
-    <xpath expr="//t[@t-esc='cta_btn_text']" position="replace" mode="inner">
-        Start now
+    <xpath expr="//div[hasclass('col-lg-6')]//p[2]" position="attributes">
+        <attribute name="class" add="mb-0" separator=" "/>
     </xpath>
     <xpath expr="//a" position="attributes">
-        <attribute name="class" add="btn-lg flat" separator=" "/>
+        <attribute name="class" add="flat" separator=" "/>
     </xpath>
 </template>
 
