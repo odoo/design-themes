@@ -44,7 +44,7 @@
         'static/description/buzzy_cover.jpg',
         'static/description/buzzy_screenshot.jpg',
     ],
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_banner', 's_text_image', 's_three_columns', 's_image_text', 's_numbers', 's_call_to_action'],
     },
     'license': 'LGPL-3',

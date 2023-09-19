@@ -43,7 +43,7 @@
         'website.s_media_list_default_image_2': '/theme_notes/static/src/img/content/content_img_26.jpg',
         'website.s_media_list_default_image_3': '/theme_notes/static/src/img/content/content_img_27.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_carousel', 's_masonry_block', 's_text_image', 's_product_catalog', 's_media_list', 's_company_team'],
     },
     'license': 'LGPL-3',

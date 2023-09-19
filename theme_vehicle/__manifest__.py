@@ -23,7 +23,7 @@
         'website.s_parallax_default_image': '/theme_vehicle/static/src/img/snippets/s_parallax.jpg',
         'website.s_picture_default_image': '/theme_vehicle/static/src/img/snippets/s_picture.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_image_text', 's_picture', 's_masonry_block', 's_call_to_action'],
     },
     'license': 'LGPL-3',

@@ -31,7 +31,7 @@
         'website.library_image_14': '/theme_monglia/static/src/img/snippets/library_image_14.jpg',
         'website.library_image_16': '/theme_monglia/static/src/img/snippets/library_image_16.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_cover', 's_title', 's_text_block', 's_three_columns', 's_images_wall',
                      's_title', 's_media_list', 's_text_image'],
     },

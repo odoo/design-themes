@@ -39,7 +39,7 @@
         'website.s_product_list_default_image_5': '/theme_beauty/static/src/img/snippets/s_product_5.jpg',
         'website.s_product_list_default_image_6': '/theme_beauty/static/src/img/snippets/s_product_6.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_title', 's_product_list', 's_company_team', 's_call_to_action'],
     },
     'license': 'LGPL-3',

@@ -42,7 +42,7 @@
         'website.s_product_list_default_image_5': '/theme_bookstore/static/src/img/snippets/s_product_5.jpg',
         'website.s_product_list_default_image_6': '/theme_bookstore/static/src/img/snippets/s_product_6.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_cover', 's_masonry_block', 's_image_text', 's_picture', 's_product_list', 's_call_to_action'],
     },
     'license': 'LGPL-3',

@@ -36,7 +36,7 @@
         'website.library_image_08': '/theme_enark/static/src/img/snippets/library_image_05.jpg',
         'website.library_image_02': '/theme_enark/static/src/img/snippets/library_image_16.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_banner', 's_picture', 's_numbers', 's_text_image', 's_images_wall', 's_call_to_action'],
     },
     'license': 'LGPL-3',

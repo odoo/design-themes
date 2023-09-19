@@ -20,7 +20,7 @@
         'website.s_parallax_default_image': '/theme_graphene/static/src/img/pictures/content_12.jpg',
         'website.s_picture_default_image': '/theme_graphene/static/src/img/pictures/content_04.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_numbers', 's_picture', 's_comparisons'],
     },
     'depends': ['theme_common'],
