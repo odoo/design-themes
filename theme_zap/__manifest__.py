@@ -35,7 +35,7 @@
         'website.s_masonry_block_default_image_1': '/theme_zap/static/src/img/backgrounds/16.jpg',
         'website.library_image_02': '/theme_zap/static/src/img/content/masonry_block_02.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_banner', 's_three_columns', 's_color_blocks_2', 's_features', 's_masonry_block', 's_references'],
     },
     'license': 'LGPL-3',

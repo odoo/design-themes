@@ -23,7 +23,7 @@
         'website.s_media_list_default_image_2': '/theme_bewise/static/src/img/content/college_media_2.jpg',
         'website.s_quotes_carousel_demo_image_0': '/theme_bewise/static/src/img/backgrounds/college_bg_4.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_cover', 's_call_to_action', 's_text_image', 's_numbers', 's_image_text', 's_quotes_carousel', 's_color_blocks_2'],
     },
     'license': 'LGPL-3',

@@ -32,7 +32,7 @@
         'website.s_three_columns_default_image_2': '/theme_orchid/static/src/img/snippets/library_image_13.jpg',
         'website.s_three_columns_default_image_3': '/theme_orchid/static/src/img/snippets/library_image_07.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_cover', 's_image_text', 's_text_image', 's_three_columns', 's_quotes_carousel', 's_call_to_action'],
     },
     'license': 'LGPL-3',

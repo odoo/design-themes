@@ -31,7 +31,7 @@
         'website.s_three_columns_default_image_3': '/theme_aviato/static/src/img/content/s_three_columns_3.jpg',
         'website.s_picture_default_image': '/theme_aviato/static/src/img/content/s_picture.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_image_text', 's_title', 's_three_columns', 's_picture'],
     },
     'license': 'LGPL-3',

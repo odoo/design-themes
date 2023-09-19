@@ -43,7 +43,7 @@
         'website.library_image_16': '/theme_loftspace/static/src/img/snippets/s_images_wall_04.jpg',
         'website.library_image_13': '/theme_loftspace/static/src/img/snippets/s_images_wall_03.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_cover', 's_three_columns', 's_title', 's_images_wall', 's_call_to_action'],
     },
     'license': 'LGPL-3',

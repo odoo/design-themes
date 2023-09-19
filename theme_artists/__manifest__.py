@@ -51,7 +51,7 @@
         'website.library_image_14': '/theme_artists/static/src/img/snippets/library_image_05.jpg',
         'website.library_image_16': '/theme_artists/static/src/img/snippets/library_image_16.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_carousel', 's_text_image', 's_three_columns', 's_title', 's_images_wall', 's_call_to_action'],
     },
     'license': 'LGPL-3',

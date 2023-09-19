@@ -37,7 +37,7 @@
         'website.s_masonry_block_default_image_1': '/theme_real_estate/static/src/img/snippets/s_masonry_block.jpg',
         'website.s_quotes_carousel_demo_image_1': '/theme_real_estate/static/src/img/snippets/s_quotes_carousel_1.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_banner', 's_text_block', 's_text_image', 's_image_text', 's_title', 's_three_columns',
                      's_title', 's_masonry_block', 's_numbers', 's_quotes_carousel'],
     },

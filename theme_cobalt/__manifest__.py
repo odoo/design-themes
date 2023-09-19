@@ -23,7 +23,7 @@
         'website.library_image_16': '/theme_cobalt/static/src/img/pictures/s_image_3.jpg',
         'website.library_image_05': '/theme_cobalt/static/src/img/pictures/s_image_5.jpg',
     },
-    'snippet_lists': {
+    'configurator_snippets': {
         'homepage': ['s_banner', 's_references', 's_text_image', 's_color_blocks_2', 's_images_wall'],
     },
     'license': 'LGPL-3',
