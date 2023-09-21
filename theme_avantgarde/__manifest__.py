@@ -20,7 +20,7 @@
         'website.s_picture_default_image': '/theme_avantgarde/static/src/img/pictures/bg_image_14.jpg',
         'website.s_three_columns_default_image_1': '/theme_avantgarde/static/src/img/pictures/bg_image_15',
         'website.s_three_columns_default_image_2': '/theme_avantgarde/static/src/img/pictures/bg_image_16.jpg',
-        'website.s_three_columns_default_image_2': '/theme_avantgarde/static/src/img/pictures/bg_image_17.jpg',
+        'website.s_three_columns_default_image_3': '/theme_avantgarde/static/src/img/pictures/bg_image_17.jpg',
         'website.s_text_image_default_image': '/theme_avantgarde/static/src/img/pictures/bg_image_13.jpg',
     },
     'snippet_lists': {
