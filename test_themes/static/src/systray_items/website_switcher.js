@@ -3,8 +3,7 @@
 import { patch } from "@web/core/utils/patch";
 import { useService } from '@web/core/utils/hooks';
 import { WebsiteSwitcherSystray } from '@website/systray_items/website_switcher';
-
-const { onMounted, useState } = owl;
+import { onMounted, useState } from "@odoo/owl";
 
 patch(WebsiteSwitcherSystray.prototype, {
     setup() {
