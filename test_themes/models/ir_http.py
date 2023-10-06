@@ -8,8 +8,7 @@ from odoo.http import request
 class Http(models.AbstractModel):
     _inherit = 'ir.http'
 
-    @classmethod
-    def _pre_dispatch(cls, rule, args):
+    def _pre_dispatch(self, rule, args):
         # Allow public user to use `fw` query string in test mode to ease tests
         force_website_id = request.httprequest.args.get('fw')
         if (request.registry.in_test_mode() or tools.config.options['test_enable']) and force_website_id:
