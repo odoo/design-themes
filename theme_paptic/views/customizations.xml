@@ -298,21 +298,15 @@
 <template id="s_comparisons" inherit_id="website.s_comparisons" name="Paptic s_comparisons">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt0 pb80" remove="pt32 pb32" separator=" "/>
-    </xpath>
-    <!-- Left card -->
-    <xpath expr="//div[hasclass('card')]" position="attributes">
-        <attribute name="class" add="bg-o-color-2" remove="bg-200" separator=" "/>
-    </xpath>
-</template>
-
-<template id="configurator_s_comparisons" inherit_id="website.configurator_s_comparisons" name="Paptic s_comparisons">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Floats_03"/>
+    </xpath>
+    <!-- Left card -->
+    <xpath expr="//div[hasclass('card')]" position="attributes">
+        <attribute name="class" add="bg-o-color-2" remove="bg-200" separator=" "/>
     </xpath>
 </template>
 
@@ -349,12 +343,6 @@
 <template id="s_numbers" inherit_id="website.s_numbers" name="Paptic s_numbers">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt80 pb80 o_cc4" remove="pt24 pb24 o_cc2" separator=" "/>
-    </xpath>
-</template>
-
-<template id="configurator_s_numbers" inherit_id="website.configurator_s_numbers" name="Paptic s_numbers">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/01_001","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->

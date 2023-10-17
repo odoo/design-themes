@@ -3,50 +3,6 @@
 
 <!-- General customizations -->
 
-<template id="new_page_template_s_call_to_action" inherit_id="website.new_page_template_s_call_to_action">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_s_call_to_action_about" inherit_id="website.new_page_template_s_call_to_action_about">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_s_call_to_action_digital" inherit_id="website.new_page_template_s_call_to_action_digital">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_s_call_to_action_menu" inherit_id="website.new_page_template_s_call_to_action_menu">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_s_comparisons" inherit_id="website.new_page_template_s_comparisons">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
@@ -58,15 +14,13 @@
     </xpath>
 </template>
 
-<template id="new_page_template_s_numbers" inherit_id="website.new_page_template_s_numbers">
-    <!-- Shape option -->
+<template id="new_page_template_s_product_catalog" inherit_id="website.new_page_template_s_product_catalog">
+    <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/10","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data"/>
     </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_10"/>
-    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
 
 <!-- Snippet customization Basic Pages -->
@@ -111,17 +65,6 @@
 
 <!-- Snippet customization Landing Pages -->
 
-<template id="new_page_template_landing_s_showcase" inherit_id="website.new_page_template_landing_s_showcase">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/05","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_05"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
@@ -156,6 +99,15 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
     </xpath>
+</template>
+
+<template id="new_page_template_pricing_s_showcase" inherit_id="website.new_page_template_pricing_s_showcase">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
 
 <template id="new_page_template_pricing_s_text_block_h1" inherit_id="website.new_page_template_pricing_s_text_block_h1">

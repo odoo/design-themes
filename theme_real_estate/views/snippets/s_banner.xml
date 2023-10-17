@@ -5,11 +5,13 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc3 parallax s_parallax_is_fixed" remove="pt96 pb96" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
         <attribute name="data-scroll-background-ratio">1</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
         <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_banner_default_image'); background-position: 50% 0;"/>
         <div class="o_we_bg_filter bg-black-50"/>
+        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 
     <!-- Row - remove grid mode -->
@@ -50,17 +52,6 @@
     </xpath>
     <xpath expr="//a[@t-att-href='cta_btn_href']" position="replace" mode="inner">
         See properties
-    </xpath>
-</template>
-
-<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="after">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 

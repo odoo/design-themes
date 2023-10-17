@@ -20,7 +20,25 @@
     </xpath>
 </template>
 
+<template id="new_page_template_s_picture_only" inherit_id="website.new_page_template_s_picture_only">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
+
 <!-- Snippet customization Basic Pages -->
+
+<template id="new_page_template_basic_s_picture" inherit_id="website.new_page_template_basic_s_picture">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
 
 <!-- Snippet customization About Pages -->
 
@@ -39,15 +57,6 @@
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Origins_02_001"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_about_s_picture" inherit_id="website.new_page_template_about_s_picture">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/01_001","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Zigs_01_001"/>
     </xpath>
 </template>
 
@@ -157,6 +166,15 @@
 </template>
 
 <!-- Snippet customization Team Pages -->
+
+<template id="new_page_template_team_s_picture" inherit_id="website.new_page_template_team_s_picture">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
 
 <template id="new_page_template_team_s_text_block_h1" inherit_id="website.new_page_template_team_s_text_block_h1">
     <xpath expr="//section" position="attributes">

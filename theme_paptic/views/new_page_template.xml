@@ -56,15 +56,13 @@
     </xpath>
 </template>
 
-<template id="new_page_template_s_numbers" inherit_id="website.new_page_template_s_numbers">
-    <!-- Shape option -->
+<template id="new_page_template_s_comparisons" inherit_id="website.new_page_template_s_comparisons">
+    <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/01_001","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data"/>
     </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_01_001"/>
-    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
 
 <template id="new_page_template_s_three_columns" inherit_id="website.new_page_template_s_three_columns">

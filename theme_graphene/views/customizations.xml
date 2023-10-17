@@ -278,6 +278,10 @@
 <template id="s_picture" inherit_id="website.s_picture" name="Graphene s_picture">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb0 pt48" remove="pb24 pt48" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/01_001","flip":[]}</attribute>
+    </xpath>
+    <xpath expr="//section/div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Zigs_01_001"/>
     </xpath>
     <!-- Content -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -288,15 +292,6 @@
     </xpath>
     <xpath expr="//img" position="attributes">
         <attribute name="class" add="p-0 border-0" separator=" " />
-    </xpath>
-</template>
-
-<template id="configurator_s_picture" inherit_id="website.configurator_s_picture" name="Graphene s_picture">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/01_001","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Zigs_01_001"/>
     </xpath>
 </template>
 

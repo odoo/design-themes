@@ -39,6 +39,15 @@
 
 <!-- General customizations -->
 
+<template id="new_page_template_s_media_list" inherit_id="website.new_page_template_s_media_list">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
+
 <!-- Snippet customization Basic Pages -->
 
 <template id="new_page_template_basic_2_s_text_block_h1" inherit_id="website.new_page_template_basic_2_s_text_block_h1">
@@ -54,11 +63,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_03"/>
     </xpath>
 </template>
 
@@ -78,11 +82,6 @@
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
 </template>
 
@@ -90,12 +89,17 @@
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
     </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
+</template>
+
+
+<template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
     </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
 
 <template id="new_page_template_about_map_s_text_block_h1" inherit_id="website.new_page_template_about_map_s_text_block_h1">
@@ -106,26 +110,10 @@
 
 <!-- Snippet customization Landing Pages -->
 
-<template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_03"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_03"/>
     </xpath>
 </template>
 
@@ -141,28 +129,12 @@
     </xpath>
 </template>
 
-<template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_03"/>
-    </xpath>
-</template>
-
 <!-- Snippet customization Gallery Pages -->
 
 <template id="new_page_template_gallery_s_cover" inherit_id="website.new_page_template_gallery_s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_03"/>
     </xpath>
 </template>
 
@@ -180,11 +152,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/03","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_03"/>
     </xpath>
 </template>
 

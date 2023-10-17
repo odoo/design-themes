@@ -5,6 +5,10 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt40 pb48 o_cc o_cc5" remove="pt32 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12"}</attribute>
+    </xpath>
+    <xpath expr="//*[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
     <!-- Column #01 -->
     <xpath expr="//h3" position="replace" mode="inner">
@@ -29,16 +33,6 @@
     </xpath>
     <xpath expr="(//p)[3]" position="replace" mode="inner">
         We craft long-lasting goods.
-    </xpath>
-</template>
-
-<template id="configurator_s_features" inherit_id="website.configurator_s_features">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12"}</attribute>
-    </xpath>
-    <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
 </template>
 

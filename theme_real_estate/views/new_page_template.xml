@@ -11,6 +11,15 @@
 
 <!-- General customizations -->
 
+<template id="new_page_template_s_banner" inherit_id="website.new_page_template_s_banner">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
+
 <template id="new_page_template_s_text_block_h2_contact" inherit_id="website.new_page_template_s_text_block_h2_contact">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc4" separator=" "/>

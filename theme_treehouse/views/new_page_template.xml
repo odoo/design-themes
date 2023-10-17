@@ -11,50 +11,6 @@
 
 <!-- General customizations -->
 
-<template id="new_page_template_s_call_to_action" inherit_id="website.new_page_template_s_call_to_action">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/08_001"}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_08_001"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_s_call_to_action_about" inherit_id="website.new_page_template_s_call_to_action_about">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/08_001"}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_08_001"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_s_call_to_action_digital" inherit_id="website.new_page_template_s_call_to_action_digital">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/08_001"}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_08_001"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_s_call_to_action_menu" inherit_id="website.new_page_template_s_call_to_action_menu">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/08_001"}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_08_001"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_s_three_columns" inherit_id="website.new_page_template_s_three_columns">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt0" remove="pt80" separator=" "/>
@@ -70,17 +26,6 @@
 </template>
 
 <!-- Snippet customization About Pages -->
-
-<template id="new_page_template_about_s_banner" inherit_id="website.new_page_template_about_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12"}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
-    </xpath>
-</template>
 
 <template id="new_page_template_about_s_cover" inherit_id="website.new_page_template_about_s_cover">
     <xpath expr="//section" position="attributes">
@@ -104,17 +49,6 @@
     <xpath expr="//p" position="replace"/>
 </template>
 
-<template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12"}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
@@ -133,18 +67,16 @@
     </xpath>
 </template>
 
-<!-- Snippet customization Gallery Pages -->
-
-<template id="new_page_template_gallery_s_banner" inherit_id="website.new_page_template_gallery_s_banner">
-    <!-- Shape option -->
+<template id="new_page_template_landing_5_s_banner" inherit_id="website.new_page_template_landing_5_s_banner">
+    <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12"}</attribute>
+        <attribute name="data-oe-shape-data"/>
     </xpath>
-    <!-- Shape -->
-    <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
-    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
+
+<!-- Snippet customization Gallery Pages -->
 
 <template id="new_page_template_gallery_s_cover" inherit_id="website.new_page_template_gallery_s_cover">
     <xpath expr="//section" position="attributes">
