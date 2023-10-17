@@ -42,17 +42,6 @@
     </xpath>
 </template>
 
-<template id="new_page_template_s_features" inherit_id="website.new_page_template_s_features">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/14","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_14"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_s_numbers" inherit_id="website.new_page_template_s_numbers">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
@@ -86,14 +75,8 @@
 </template>
 
 <template id="new_page_template_about_s_cover" inherit_id="website.new_page_template_about_s_cover">
-    <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
     </xpath>
 </template>
 
@@ -147,28 +130,6 @@
     </xpath>
 </template>
 
-<template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_landing_2_s_text_block_h2" inherit_id="website.new_page_template_landing_2_s_text_block_h2">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
@@ -184,17 +145,6 @@
 <template id="new_page_template_landing_3_s_text_block_h2" inherit_id="website.new_page_template_landing_3_s_text_block_h2">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
-    </xpath>
-</template>
-
-<template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
     </xpath>
 </template>
 
@@ -223,14 +173,8 @@
 </template>
 
 <template id="new_page_template_gallery_s_cover" inherit_id="website.new_page_template_gallery_s_cover">
-    <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
     </xpath>
 </template>
 
@@ -282,11 +226,6 @@
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
     </xpath>
 </template>
 

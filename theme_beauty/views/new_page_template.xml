@@ -48,11 +48,16 @@
 <template id="new_page_template_s_numbers" inherit_id="website.new_page_template_s_numbers">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/10","flip":[]}</attribute>
     </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_10"/>
+</template>
+
+<template id="new_page_template_s_picture" inherit_id="website.new_page_template_s_picture">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
     </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
 
 <template id="new_page_template_s_picture_only" inherit_id="website.new_page_template_s_picture_only" primary="True">
@@ -86,10 +91,6 @@
 <template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/10","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_10"/>
     </xpath>
 </template>
 

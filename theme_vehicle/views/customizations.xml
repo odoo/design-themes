@@ -139,6 +139,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5 pt96 pb64" remove="o_cc3 pt48 pb24" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/09","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_09"/>
     </xpath>
     <!-- Content -->
     <xpath expr="//h3" position="replace" mode="inner">
@@ -155,17 +160,6 @@
     </xpath>
     <xpath expr="//a" position="attributes">
         <attribute name="class" remove="btn-lg" separator=" "/>
-    </xpath>
-</template>
-
-<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action" name="Vehicle s_call_to_action">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/09","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_09"/>
     </xpath>
 </template>
 

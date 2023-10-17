@@ -11,15 +11,49 @@
 
 <!-- General customizations -->
 
-<template id="new_page_template_s_images_wall" inherit_id="website.new_page_template_s_images_wall">
-    <!-- Shape option -->
+<template id="new_page_template_s_image_gallery" inherit_id="website.new_page_template_s_image_gallery">
+    <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12"}</attribute>
+        <attribute name="data-oe-shape-data"/>
     </xpath>
-    <!-- Shape -->
-    <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
+
+<template id="new_page_template_s_media_list" inherit_id="website.new_page_template_s_media_list">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
     </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
+
+<template id="new_page_template_s_three_columns" inherit_id="website.new_page_template_s_three_columns">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
+
+<template id="new_page_template_s_three_columns_2nd" inherit_id="website.new_page_template_s_three_columns_2nd">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
+
+<template id="new_page_template_s_three_columns_menu" inherit_id="website.new_page_template_s_three_columns_menu">
+    <!-- Remove shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Remove shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
 
 <!-- Snippet customization Basic Pages -->

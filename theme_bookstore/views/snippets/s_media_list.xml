@@ -5,6 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc2" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/10","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Wavy_10"/>
     </xpath>
     <!-- Container -->
     <xpath expr="//div[hasclass('container')]" position="attributes">
@@ -24,17 +29,6 @@
     <!-- Media item #3 -->
     <xpath expr="//div[hasclass('s_media_list_item')][3]/div" position="attributes">
         <attribute name="class" remove="o_cc o_cc1" separator=" "/>
-    </xpath>
-</template>
-
-<template id="configurator_s_media_list" inherit_id="website.configurator_s_media_list">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/10","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_10"/>
     </xpath>
 </template>
 

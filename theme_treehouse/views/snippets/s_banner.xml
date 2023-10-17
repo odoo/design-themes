@@ -5,21 +5,15 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc3" separator=" "/>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Hello Planet.
-    </xpath>
-</template>
-
-<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12"}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Floats_12"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Hello Planet.
     </xpath>
 </template>
 

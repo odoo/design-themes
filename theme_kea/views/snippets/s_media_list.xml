@@ -5,6 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2 pt64 pb64" remove="o_cc1 pt32 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/01","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_01"/>
     </xpath>
     <!-- Row 1 -->
     <xpath expr="(//div[hasclass('row')])[2]" position="attributes">
@@ -77,17 +82,6 @@
     </xpath>
     <xpath expr="(//p)[3]" position="replace" mode="inner">
         Use this snippet to build various types of components that feature a left- or right-aligned image alongside textual content. Duplicate the element to create a list that fits your needs.
-    </xpath>
-</template>
-
-<template id="configurator_s_media_list" inherit_id="website.configurator_s_media_list">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/01","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_01"/>
     </xpath>
 </template>
 

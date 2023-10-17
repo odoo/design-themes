@@ -5,6 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt120 pb120" remove="pt48 pb48" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/05","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_05"/>
     </xpath>
 </template>
 

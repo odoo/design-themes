@@ -5,9 +5,13 @@
 <template id="s_cover" inherit_id="website.s_cover" name="Avantgarde s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="s_parallax_no_overflow_hidden o_full_screen_height" remove="s_parallax_is_fixed s_parallax" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
         <attribute name="style" remove="background-position: 50% 0;" add="background-position: 50% 80%;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_allow_columns')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
     <xpath expr="//h1" position="attributes">
         <attribute name="class" add="text-o-color-1 text-break" separator=" "/>
@@ -21,15 +25,6 @@
     </xpath>
     <xpath expr="//a[hasclass('btn')]" position="attributes">
         <attribute name="class" add="btn-lg" separator=" "/>
-    </xpath>
-</template>
-
-<template id="configurator_s_cover" inherit_id="website.configurator_s_cover" name="Avantgarde s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('s_allow_columns')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 

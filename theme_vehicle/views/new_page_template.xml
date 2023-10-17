@@ -17,50 +17,6 @@
 
 <!-- General customizations -->
 
-<template id="new_page_template_s_call_to_action" inherit_id="website.new_page_template_s_call_to_action">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/09","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_09"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_s_call_to_action_about" inherit_id="website.new_page_template_s_call_to_action_about">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/09","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_09"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_s_call_to_action_digital" inherit_id="website.new_page_template_s_call_to_action_digital">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/09","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_09"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_s_call_to_action_menu" inherit_id="website.new_page_template_s_call_to_action_menu">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/09","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_09"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_s_references" inherit_id="website.new_page_template_s_references">
     <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
