@@ -20,9 +20,8 @@ class Crawler(HttpCase):
                 # Ensure theme is rendering without crashing
                 r = self.url_open('/?fw=%s&debug=assets' % website.id)
                 self.assertEqual(r.status_code, 200, "Ensure theme is rendering without crashing")
-
                 # Ensure correct theme is actually loaded, see commit message
-                theme_asset_url = '/web/assets/debug/%s/web.assets_frontend.css' % website.id
+                theme_asset_url = self.env['ir.asset']._get_asset_bundle_url('web.assets_frontend.css', 'debug', {'website_id': website.id})
                 self.assertTrue(theme_asset_url in r.text)
                 r = self.url_open(theme_asset_url)
                 self.assertTrue('/%s/static/src' % website.theme_id.name in r.text, "Ensure theme is actually loaded")
