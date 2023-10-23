@@ -5,7 +5,7 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="style"/>
-        <attribute name="class" add="s_parallax parallax s_parallax_is_fixed o_cc o_cc5 pt120 pb104" remove="pt48 pb32" separator=" "/>
+        <attribute name="class" add="parallax s_parallax_is_fixed o_cc o_cc5 pt120 pb104" remove="pt48 pb32" separator=" "/>
         <attribute name="data-scroll-background-ratio">1</attribute>
     </xpath>
     <xpath expr="//*[hasclass('container')]" position="before">

@@ -213,10 +213,6 @@
     <xpath expr="//div[hasclass('col-lg-9')]/p" position="replace" mode="inner">
         Join them and increase your chances to get hired.
     </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-lg" separator=" "/>
-    </xpath>
 </template>
 
 <!-- ======== TEAM ======== -->
@@ -329,13 +325,13 @@
 <template id="s_features" inherit_id="website.s_features" name="Be Wise s_features">
     <!-- Icons -->
     <xpath expr="//i" position="attributes">
-        <attribute name="class" add="bg-o-color-4" remove="bg-primary" separator=" "/>
+        <attribute name="class" add="bg-o-color-4" remove="bg-o-color-1" separator=" "/>
     </xpath>
     <xpath expr="(//i)[2]" position="attributes">
         <attribute name="class" add="bg-o-color-4" remove="bg-o-color-5" separator=" "/>
     </xpath>
     <xpath expr="(//i)[3]" position="attributes">
-        <attribute name="class" add="bg-o-color-4" remove="bg-secondary" separator=" "/>
+        <attribute name="class" add="bg-o-color-4" remove="bg-o-color-2" separator=" "/>
     </xpath>
 </template>
 
@@ -417,13 +413,13 @@
 <template id="s_features_grid" inherit_id="website.s_features_grid" name="Be Wise s_features_grid">
     <!-- Icons -->
     <xpath expr="//i" position="attributes">
-        <attribute name="class" add="bg-o-color-2" remove="fa-2x bg-primary" separator=" "/>
+        <attribute name="class" add="bg-o-color-2" remove="fa-2x bg-o-color-1" separator=" "/>
     </xpath>
     <xpath expr="(//i)[2]" position="attributes">
-        <attribute name="class" add="bg-o-color-2" remove="fa-2x bg-primary" separator=" "/>
+        <attribute name="class" add="bg-o-color-2" remove="fa-2x bg-o-color-1" separator=" "/>
     </xpath>
     <xpath expr="(//i)[3]" position="attributes">
-        <attribute name="class" add="bg-o-color-2" remove="fa-2x bg-primary" separator=" "/>
+        <attribute name="class" add="bg-o-color-2" remove="fa-2x bg-o-color-1" separator=" "/>
     </xpath>
     <xpath expr="(//i)[4]" position="attributes">
         <attribute name="class" add="rounded-circle" remove="fa-2x rounded" separator=" "/>

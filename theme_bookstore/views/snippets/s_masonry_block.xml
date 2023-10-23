@@ -22,7 +22,6 @@
     <!-- Little block #2 -->
     <!-- Main div -->
     <xpath expr="//div[hasclass('col-lg-3')][2]" position="attributes">
-        <attribute name="class" add="o_cc o_cc1" remove="bg-200" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/02","flip":[]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-3')][2]/h3" position="before">
@@ -40,7 +39,7 @@
     <!-- Little block #3 -->
     <!-- Main div -->
     <xpath expr="//div[hasclass('col-lg-3')][3]" position="attributes">
-        <attribute name="class" add="o_cc o_cc5" remove="bg-200" separator=" "/>
+        <attribute name="class" add="o_cc5" remove="bg-200 o_cc4" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/04","flip":[]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-3')][3]/h3" position="before">
