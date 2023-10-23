@@ -8,7 +8,7 @@
     </xpath>
     <!-- Column #01 -->
     <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
-        <attribute name="class" add="o_cc o_cc1 pt48 pb48" separator=" "/>
+        <attribute name="class" add="o_cc o_cc1 pt48 pb48" remove="pt32 pb32" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[1]/i" position="replace">
         <i class="fa fa-2x fa-image bg-o-color-1 m-3 rounded-circle"/>
@@ -21,7 +21,7 @@
     </xpath>
     <!-- Column #02 -->
     <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
-        <attribute name="class" add="o_cc o_cc1 pt48 pb48" separator=" "/>
+        <attribute name="class" add="o_cc o_cc1 pt48 pb48" remove="pt32 pb32" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/i" position="replace">
         <i class="fa fa-2x fa-eye bg-o-color-5 m-3 rounded-circle"/>
@@ -34,7 +34,7 @@
     </xpath>
     <!-- Column #03 -->
     <xpath expr="//div[hasclass('row')]/div[3]" position="attributes">
-        <attribute name="class" add="o_cc o_cc1 pt48 pb48" separator=" "/>
+        <attribute name="class" add="o_cc o_cc1 pt48 pb48" remove="pt32 pb32" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/i" position="attributes">
         <attribute name="class" add="fa-2x fa-microphone rounded-circle" remove="fa-3x fa-leaf rounded" separator=" "/>

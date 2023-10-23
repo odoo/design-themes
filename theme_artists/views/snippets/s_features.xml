@@ -13,11 +13,11 @@
     </xpath>
     <!-- Feature #01 - Icon -->
     <xpath expr="//i" position="attributes">
-        <attribute name="class" add="bg-o-color-5" remove="bg-primary" separator=" "/>
+        <attribute name="class" add="bg-o-color-5" remove="bg-o-color-1" separator=" "/>
     </xpath>
     <!-- Feature #03 - Icon -->
     <xpath expr="(//i)[3]" position="attributes">
-        <attribute name="class" add="bg-o-color-5" remove="bg-secondary" separator=" "/>
+        <attribute name="class" add="bg-o-color-5" remove="bg-o-color-2" separator=" "/>
     </xpath>
 </template>
 

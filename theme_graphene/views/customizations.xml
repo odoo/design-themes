@@ -62,7 +62,7 @@
         <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
     </xpath>
     <xpath expr="//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-lg btn-secondary" remove="btn-primary" separator=" "/>
+        <attribute name="class" add="btn-lg" remove="btn-primary" separator=" "/>
     </xpath>
 </template>
 
@@ -291,7 +291,7 @@
         Put your people at the heart of your marketing with tools that help you get to know your audience <br/>and see who you should be talking to.
     </xpath>
     <xpath expr="//img" position="attributes">
-        <attribute name="class" add="p-0 border-0" separator=" " />
+        <attribute name="class" add="p-0 border-0" remove="padding-large" separator=" " />
     </xpath>
 </template>
 

@@ -164,7 +164,7 @@
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Avantgarde s_call_to_action">
 
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc3 o_half_screen_height pt0" remove="pt48" separator=" "/>
+        <attribute name="class" add="o_half_screen_height pt0" remove="pt48" separator=" "/>
     </xpath>
     <xpath expr="//h3" position="replace">
         <h3 style="text-align: right;"><b>Since 1992</b> creating around the world.</h3>
@@ -183,9 +183,6 @@
     </xpath>
     <xpath expr="//div[hasclass('col-lg-4')]/p" position="attributes">
         <attribute name="style" add="text-align: left;" remove="text-align: right;" separator=";"/>
-    </xpath>
-    <xpath expr="//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-lg" separator=" "/>
     </xpath>
 </template>
 
