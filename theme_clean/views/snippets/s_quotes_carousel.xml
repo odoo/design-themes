@@ -4,7 +4,6 @@
 <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
     <!-- Section -->
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
-        <attribute name="class" add="oe_img_bg o_bg_img_center" separator=" "/>
         <attribute name="style">background-image: url('/web/image/website.s_quotes_carousel_demo_image_3'); background-position: 50% 50%;</attribute>
     </xpath>
 </template>

@@ -4,7 +4,7 @@
 <template id="s_media_list" inherit_id="website.s_media_list">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2 pt64 pb64" remove="o_cc1 pt32 pb32" separator=" "/>
+        <attribute name="class" add="pt64 pb64" remove="pt32 pb32" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/01","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->

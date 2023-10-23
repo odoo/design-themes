@@ -2,10 +2,6 @@
 <odoo>
 
 <template id="s_media_list" inherit_id="website.s_media_list">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_colored_level" separator=" "/>
-    </xpath>
     <!-- Media List Item #1 -->
     <xpath expr="//div[hasclass('s_media_list_item')]//div[hasclass('row')]" position="attributes">
         <attribute name="style">border-radius: 3px !important; box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05) !important;</attribute>
