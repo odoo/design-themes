@@ -31,7 +31,7 @@
     <xpath expr="(//*[hasclass('container')])[3]" position="before">
         <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
     </xpath>
-    <xpath expr="//*[hasclass('carousel-item')][2]" position="attributes">
+    <xpath expr="//*[hasclass('carousel-item')][3]" position="attributes">
         <attribute name="class" add="pt152 pb152" remove="pt128 pb128" separator=" "/>
     </xpath>
     <xpath expr="(//*[hasclass('carousel-content')])[3]" position="replace">

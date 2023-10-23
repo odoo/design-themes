@@ -14,14 +14,14 @@
         <attribute name="class" add="bg-o-color-1" remove="bg-o-color-5" separator=" "/>
     </xpath>
     <xpath expr="(//div[hasclass('card')])[2]//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-secondary" remove="bg-primary" separator=" "/>
+        <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
     </xpath>
     <!-- Box #03 -->
     <xpath expr="//div[hasclass('row')]//div[3]" position="attributes">
         <attribute name="class" add="pt80" remove="pt32" separator=" "/>
     </xpath>
     <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
-        <attribute name="class" add="bg-o-color-3" remove="bg-secondary" separator=" "/>
+        <attribute name="class" add="bg-o-color-3" remove="bg-o-color-2" separator=" "/>
     </xpath>
 </template>
 
