@@ -27,15 +27,9 @@
 
 <!-- Snippet customization About Pages -->
 
-<template id="new_page_template_about_s_text_block_h1" inherit_id="website.new_page_template_about_s_text_block_h1">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0" remove="pb40" separator=" "/>
-    </xpath>
-</template>
-
 <template id="new_page_template_about_full_1_s_text_block_h1" inherit_id="website.new_page_template_about_full_1_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0 pb0 pt40" remove="pb40 pt40" separator=" "/>
+        <attribute name="class" add="pb0" remove="pb40" separator=" "/>
     </xpath>
 </template>
 
@@ -51,9 +45,21 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc3" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="o_half_screen_height" separator=" "/>
+        <attribute name="class" remove="o_cc3 o_half_screen_height" separator=" "/>
     </xpath>
 </template>
 
@@ -65,15 +71,22 @@
 
 <!-- Snippet customization Landing Pages -->
 
-<template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
+<template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" remove="pt128 pb128" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
+    <xpath expr="//section" position="attributes">
+        <!-- Added by both theme and new page template -->
+        <attribute name="class" add="o_half_screen_height" remove="o_half_screen_height" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_landing_2_s_three_columns" inherit_id="website.new_page_template_landing_2_s_three_columns">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
     </xpath>
 </template>
 
@@ -85,21 +98,9 @@
 
 <!-- Snippet customization Gallery Pages -->
 
-<template id="new_page_template_gallery_s_cover" inherit_id="website.new_page_template_gallery_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
-    </xpath>
-</template>
-
 <!-- Snippet customization Services Pages -->
 
 <!-- Snippet customization Pricing Pages -->
-
-<template id="new_page_template_pricing_s_cover" inherit_id="website.new_page_template_pricing_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
-    </xpath>
-</template>
 
 <template id="new_page_template_pricing_s_showcase" inherit_id="website.new_page_template_pricing_s_showcase">
     <!-- Remove shape option -->

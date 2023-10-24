@@ -60,6 +60,12 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_full_s_text_image" inherit_id="website.new_page_template_about_full_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt0 pb56" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_full_1_s_text_block_h1" inherit_id="website.new_page_template_about_full_1_s_text_block_h1">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2" separator=" "/>
@@ -69,6 +75,12 @@
 <template id="new_page_template_about_full_1_s_text_block_h2" inherit_id="website.new_page_template_about_full_1_s_text_block_h2">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40 pb40" separator=" "/>
     </xpath>
 </template>
 
@@ -86,7 +98,7 @@
 
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc3 parallax" separator=" "/>
+        <attribute name="class" add="o_cc5" remove="o_cc3 parallax pt0" separator=" "/>
         <attribute name="style" remove="background-image: none;" separator=" "/>
     </xpath>
     <xpath expr="//div" position="attributes">
@@ -104,10 +116,17 @@
 
 <template id="new_page_template_landing_s_text_image" inherit_id="website.new_page_template_landing_s_text_image">
     <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt0 pb56" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/02_001","flip":["x","y"]}</attribute>
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Origins_02_001 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Origins/02_001.svg?c4=o-color-3&amp;c5=rgba%280%2C%200%2C%200%2C%200%29&amp;flip=xy'); background-position: 50% 0%;"/>
+    </xpath>
+</template>
+
+<template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt160 pb240" separator=" "/>
     </xpath>
 </template>
 
@@ -132,6 +151,12 @@
 </template>
 
 <!-- Snippet customization Services Pages -->
+
+<template id="new_page_template_services_s_text_image" inherit_id="website.new_page_template_services_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt0 pb56" separator=" "/>
+    </xpath>
+</template>
 
 <!-- Snippet customization Pricing Pages -->
 
@@ -179,6 +204,12 @@
 <template id="new_page_template_team_s_text_block_h1" inherit_id="website.new_page_template_team_s_text_block_h1">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_team_s_text_image" inherit_id="website.new_page_template_team_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt0 pb56" separator=" "/>
     </xpath>
 </template>
 

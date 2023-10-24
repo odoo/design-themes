@@ -54,6 +54,18 @@
     </xpath>
 </template>
 
+<template id="new_page_template_s_text_block_h1" inherit_id="website.new_page_template_s_text_block_h1">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc1 pb0" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_s_text_block_h2" inherit_id="website.new_page_template_s_text_block_h2">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc1 pb0" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_s_text_block_h2_contact" inherit_id="website.new_page_template_s_text_block_h2_contact">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="pb40 pb96" separator=" "/>
@@ -67,13 +79,13 @@
 
 <template id="new_page_template_basic_s_text_block_h1" inherit_id="website.new_page_template_basic_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5 pb40" remove="pb96 o_cc1" separator=" "/>
+        <attribute name="class" add="pb40" remove="pb96" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_basic_2_s_text_block_h1" inherit_id="website.new_page_template_basic_2_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc1 pb96" remove="pb40 o_cc5" separator=" "/>
+        <attribute name="class" add="pb96" remove="pb0 pb40 o_cc5" separator=" "/>
     </xpath>
 </template>
 
@@ -98,7 +110,7 @@
 
 <template id="new_page_template_about_s_text_block_h1" inherit_id="website.new_page_template_about_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="pb96" separator=" "/>
+        <attribute name="class" remove="pb96" separator=" "/>
     </xpath>
 </template>
 
@@ -110,19 +122,32 @@
 
 <template id="new_page_template_about_full_1_s_text_block_h1" inherit_id="website.new_page_template_about_full_1_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5 pb0" remove="o_cc5 pb40 pt40" separator=" "/>
+        <attribute name="class" add="pb0" remove="pb40 pt40" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_about_full_1_s_text_block_h2" inherit_id="website.new_page_template_about_full_1_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pb96" separator=" "/>
+        <attribute name="class" add="o_cc1" remove="o_cc5 pb96" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_full_s_image_text" inherit_id="website.new_page_template_about_full_s_image_text">
+    <xpath expr="//section" position="attributes">
+        <!-- pt48 added by both theme and new page template -->
+        <attribute name="class" add="pt48" remove="pt48 pb48" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_about_full_s_text_block_h1" inherit_id="website.new_page_template_about_full_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt40" remove="pb0" separator=" "/>
+        <attribute name="class" add="pb0" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_full_s_text_image" inherit_id="website.new_page_template_about_full_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" separator=" "/>
     </xpath>
 </template>
 
@@ -139,18 +164,33 @@
 </template>
 
 <template id="new_page_template_about_map_s_text_block_h1" inherit_id="website.new_page_template_about_map_s_text_block_h1">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb0" separator=" "/>
+    </xpath>
     <xpath expr="//h1" position="replace" mode="inner">About Us</xpath>
 </template>
 
 <template id="new_page_template_about_map_s_text_block_h2" inherit_id="website.new_page_template_about_map_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb40" remove="pb96" separator=" "/>
+        <attribute name="class" add="o_cc1 pb40" remove="o_cc5 pb96" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_mini_s_text_block_2nd" inherit_id="website.new_page_template_about_mini_s_text_block_2nd">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt40" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_about_mini_s_text_block_h2" inherit_id="website.new_page_template_about_mini_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0" remove="pb96" separator=" "/>
+        <attribute name="class" add="o_cc1 pb0" remove="o_cc5 pb96" separator=" "/>
     </xpath>
     <xpath expr="//*[hasclass('container')]" position="attributes">
         <attribute name="class" add="o_container_small" remove="container" separator=" "/>
@@ -165,13 +205,14 @@
 
 <template id="new_page_template_about_personal_s_text_block_h2" inherit_id="website.new_page_template_about_personal_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2 pb40 pt40" remove="o_cc3 pb96 pt96" separator=" "/>
+        <!-- o_cc is defined in both theme and new page template -->
+        <attribute name="class" add="o_cc o_cc2 pb40 pt40" remove="o_cc o_cc3 o_cc5 pb0 pb96 pt96" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_about_timeline_s_text_block_h2" inherit_id="website.new_page_template_about_timeline_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5 pb40" remove="pb96" separator=" "/>
+        <attribute name="class" add="pb40" remove="pb96" separator=" "/>
     </xpath>
 </template>
 
@@ -186,9 +227,16 @@
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
 
+<template id="new_page_template_landing_s_text_image" inherit_id="website.new_page_template_landing_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt200 pb200" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/12_001","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//*[hasclass('container')]" position="before">
@@ -209,13 +257,13 @@
 
 <template id="new_page_template_landing_2_s_text_block_h2" inherit_id="website.new_page_template_landing_2_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="pb96 o_cc2" separator=" "/>
+        <attribute name="class" add="pb0" remove="pb96 o_cc2" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_landing_3_s_text_block_h2" inherit_id="website.new_page_template_landing_3_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="pb96 o_cc2" separator=" "/>
+        <attribute name="class" add="pb0" remove="pb96 o_cc2" separator=" "/>
     </xpath>
 </template>
 
@@ -231,7 +279,7 @@
 
 <template id="new_page_template_landing_4_s_text_block_h2" inherit_id="website.new_page_template_landing_4_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5 pb40" remove="pb40 pb96" separator=" "/>
+        <attribute name="class" add="pb40" remove="pb40 pb96" separator=" "/>
     </xpath>
 </template>
 
@@ -248,6 +296,13 @@
     </xpath>
 </template>
 
+<template id="new_page_template_gallery_s_image_text_2nd" inherit_id="website.new_page_template_gallery_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <!-- pt48 is defined by both theme and new page template -->
+        <attribute name="class" add="pt48" remove="pt40 pt48 pb48" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_gallery_s_media_list" inherit_id="website.new_page_template_gallery_s_media_list">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc1" remove="o_cc2" separator=" "/>
@@ -256,7 +311,7 @@
 
 <template id="new_page_template_gallery_s_text_block_h2" inherit_id="website.new_page_template_gallery_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="pb96" separator=" "/>
+        <attribute name="class" add="pb0" remove="pb96" separator=" "/>
     </xpath>
 </template>
 
@@ -264,19 +319,31 @@
 
 <template id="new_page_template_services_s_text_block_h1" inherit_id="website.new_page_template_services_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pb96" separator=" "/>
+        <attribute name="class" add="o_cc1 pb0" remove="o_cc5 pb96" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_services_s_text_block_h2" inherit_id="website.new_page_template_services_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pb96" separator=" "/>
+        <attribute name="class" add="o_cc1 pb0" remove="o_cc5 pb96" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_services_s_text_cover" inherit_id="website.new_page_template_services_s_text_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_services_s_text_image" inherit_id="website.new_page_template_services_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_services_3_s_parallax" inherit_id="website.new_page_template_services_3_s_parallax">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" separator=" "/>
     </xpath>
 </template>
 
@@ -299,21 +366,34 @@
     </xpath>
 </template>
 
+<template id="new_page_template_pricing_s_image_text_2nd" inherit_id="website.new_page_template_pricing_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <!-- Defined by both theme and new page template -->
+        <attribute name="class" add="pt48" remove="pt48" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_pricing_s_text_block_h1" inherit_id="website.new_page_template_pricing_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pb96" separator=" "/>
+        <attribute name="class" add="pb0 o_cc1" remove="o_cc5 pb96" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_pricing_s_text_block_h2" inherit_id="website.new_page_template_pricing_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pb96" separator=" "/>
+        <attribute name="class" add="pb0 o_cc1" remove="o_cc5 pb96" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_pricing_4_s_image_text_2nd" inherit_id="website.new_page_template_pricing_4_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40 pb48" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_pricing_5_s_text_block_h1" inherit_id="website.new_page_template_pricing_5_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb96" separator=" "/>
+        <attribute name="class" add="pb96" remove="pb0" separator=" "/>
     </xpath>
 </template>
 
@@ -321,7 +401,13 @@
 
 <template id="new_page_template_team_s_text_block_h1" inherit_id="website.new_page_template_team_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="pb96" separator=" "/>
+        <attribute name="class" remove="pb96" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_team_s_text_image" inherit_id="website.new_page_template_team_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" separator=" "/>
     </xpath>
 </template>
 
@@ -339,13 +425,13 @@
 
 <template id="new_page_template_team_2_s_text_block_h1" inherit_id="website.new_page_template_team_2_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="o_cc5 pb0" separator=" "/>
+        <attribute name="class" add="o_cc1" remove="o_cc5 pb0" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_team_3_s_text_block_h1" inherit_id="website.new_page_template_team_3_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="o_cc5 pb40" separator=" "/>
+        <attribute name="class" add="o_cc1" remove="o_cc5 pb40" separator=" "/>
     </xpath>
 </template>
 

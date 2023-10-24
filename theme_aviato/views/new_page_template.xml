@@ -28,9 +28,21 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_full_s_image_text" inherit_id="website.new_page_template_about_full_s_image_text">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc2" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb40 pt40" separator=" "/>
     </xpath>
 </template>
 
@@ -41,6 +53,12 @@
 </template>
 
 <!-- Snippet customization Landing Pages -->
+
+<template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt192 pb192" separator=" "/>
+    </xpath>
+</template>
 
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <xpath expr="//section" position="attributes">  
@@ -90,6 +108,12 @@
     </xpath>
 </template>
 
+<template id="new_page_template_gallery_s_image_text_2nd" inherit_id="website.new_page_template_gallery_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Services Pages -->
 
 <!-- Snippet customization Pricing Pages -->
@@ -100,6 +124,12 @@
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Wavy_21" style="background-image: url('/web_editor/shape/web_editor/Wavy/21.svg?c2=o-color-4&amp;flip=y'); background-position: 50% 100%;"/>
+    </xpath>
+</template>
+
+<template id="new_page_template_pricing_s_image_text_2nd" inherit_id="website.new_page_template_pricing_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56" separator=" "/>
     </xpath>
 </template>
 
