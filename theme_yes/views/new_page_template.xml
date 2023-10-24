@@ -118,6 +118,13 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
+    <xpath expr="//section" position="attributes">
+        <!-- Defined in both theme and new page template -->
+        <attribute name="class" add="o_half_screen_height" remove="pt40 pb40 o_half_screen_height" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_mini_s_text_block_2nd" inherit_id="website.new_page_template_about_mini_s_text_block_2nd">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2" separator=" "/>
@@ -144,6 +151,13 @@
     </xpath>
 </template>
 
+<template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
+    <xpath expr="//section" position="attributes">
+        <!-- pb256 is defined by both theme and new page template -->
+        <attribute name="class" add="pb256" remove="pt208 pb256" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
@@ -158,7 +172,7 @@
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_half_screen_height" remove="o_half_screen_height" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
     </xpath>
     <!-- Shape -->
@@ -182,7 +196,7 @@
 <template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_half_screen_height" remove="o_half_screen_height" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
     </xpath>
     <!-- Shape -->
@@ -207,7 +221,7 @@
 <template id="new_page_template_gallery_s_cover" inherit_id="website.new_page_template_gallery_s_cover">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_half_screen_height" remove="o_half_screen_height" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
     </xpath>
     <!-- Shape -->
@@ -229,12 +243,18 @@
 <template id="new_page_template_pricing_s_cover" inherit_id="website.new_page_template_pricing_s_cover">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_half_screen_height" remove="o_half_screen_height" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Origins_14_001" style="background-image: url('/web_editor/shape/web_editor/Origins/14.svg?c1=o-color-1&amp;c5=o-color-1&amp;flip=x'); background-position: 50% 100%;"/>
+    </xpath>
+</template>
+
+<template id="new_page_template_pricing_3_s_carousel" inherit_id="website.new_page_template_pricing_3_s_carousel">
+    <xpath expr="//*[hasclass('carousel-item')][3]" position="attributes">
+        <attribute name="class" add="pt128 pb128" remove="pt152 pb152" separator=" "/>
     </xpath>
 </template>
 

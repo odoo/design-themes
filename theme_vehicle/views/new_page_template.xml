@@ -57,14 +57,29 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_full_s_image_text" inherit_id="website.new_page_template_about_full_s_image_text">
+    <xpath expr="//section" position="attributes">
+        <!-- pb56 is defined by both theme and new page template -->
+        <attribute name="class" add="pb56" remove="pt24 pb56" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc3" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/09_001","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Rainy_09_001"/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_full_s_text_image" inherit_id="website.new_page_template_about_full_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <!-- pb56 is defined by both theme and new page template -->
+        <attribute name="class" add="pt56" remove="pt56 pb24" separator=" "/>
     </xpath>
 </template>
 
@@ -79,13 +94,33 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt0 pb40" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc3" remove="o_cc4" separator=" "/>
+        <attribute name="class" remove="o_cc4 pt0" separator=" "/>
     </xpath>
 </template>
 
 <!-- Snippet customization Landing Pages -->
+
+<template id="new_page_template_landing_s_text_image" inherit_id="website.new_page_template_landing_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <!-- pt56 is defined in both theme and new page template -->
+        <attribute name="class" add="pt56" remove="pt56 pb24" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
+    <xpath expr="//section" position="attributes">
+        <!-- pb256 is defined in both theme and new page template -->
+        <attribute name="class" add="pb256" remove="pt0 pb256" separator=" "/>
+    </xpath>
+</template>
 
 <template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
     <xpath expr="//section" position="attributes">
@@ -131,7 +166,21 @@
     </xpath>
 </template>
 
+<template id="new_page_template_gallery_s_image_text_2nd" inherit_id="website.new_page_template_gallery_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <!-- pb56 is defined in both theme and new page template -->
+        <attribute name="class" add="pb56" remove="pt24 pb56" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Services Pages -->
+
+<template id="new_page_template_services_s_text_image" inherit_id="website.new_page_template_services_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <!-- pt56 is defined in both theme and new page template -->
+        <attribute name="class" add="pt56" remove="pt56 pb24" separator=" "/>
+    </xpath>
+</template>
 
 <!-- Snippet customization Pricing Pages -->
 
@@ -141,11 +190,25 @@
     </xpath>
 </template>
 
+<template id="new_page_template_pricing_s_image_text_2nd" inherit_id="website.new_page_template_pricing_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <!-- pb56 is defined in both theme and new page template -->
+        <attribute name="class" add="pb56" remove="pt24 pb56" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Team Pages -->
 
 <template id="new_page_template_team_s_text_block_h1" inherit_id="website.new_page_template_team_s_text_block_h1">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc3" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_team_s_text_image" inherit_id="website.new_page_template_team_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <!-- pt56 is defined in both theme and new page template -->
+        <attribute name="class" add="pt56" remove="pt56 pb24" separator=" "/>
     </xpath>
 </template>
 
