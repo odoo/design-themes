@@ -72,23 +72,34 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_full_s_image_text" inherit_id="website.new_page_template_about_full_s_image_text">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56 pt48" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1 o_cc3" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_full_s_text_image" inherit_id="website.new_page_template_about_full_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56 pt56" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_full_1_s_text_block_h1" inherit_id="website.new_page_template_about_full_1_s_text_block_h1">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc2" separator=" "/>
     </xpath>
 </template>
 
-<template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
-    </xpath>
-</template>
-
 <template id="new_page_template_about_map_s_numbers" inherit_id="website.new_page_template_about_map_s_numbers">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
     </xpath>
 </template>
 
@@ -96,6 +107,7 @@
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc1 pt0" separator=" "/>
         <attribute name="data-oe-shape-data"/>
     </xpath>
     <!-- Remove shape -->
@@ -109,6 +121,12 @@
 </template>
 
 <!-- Snippet customization Landing Pages -->
+
+<template id="new_page_template_landing_s_text_image" inherit_id="website.new_page_template_landing_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56 pt56" separator=" "/>
+    </xpath>
+</template>
 
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <!-- Section -->
@@ -138,7 +156,19 @@
     </xpath>
 </template>
 
+<template id="new_page_template_gallery_s_image_text_2nd" inherit_id="website.new_page_template_gallery_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56 pt48" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Services Pages -->
+
+<template id="new_page_template_services_s_text_image" inherit_id="website.new_page_template_services_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56 pt56" separator=" "/>
+    </xpath>
+</template>
 
 <template id="new_page_template_services_1_s_text_block_h1" inherit_id="website.new_page_template_services_1_s_text_block_h1">
     <xpath expr="//section" position="attributes">
@@ -155,6 +185,18 @@
     </xpath>
 </template>
 
+<template id="new_page_template_pricing_s_image_text_2nd" inherit_id="website.new_page_template_pricing_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56 pt48" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Team Pages -->
+
+<template id="new_page_template_team_s_text_image" inherit_id="website.new_page_template_team_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56 pt56" separator=" "/>
+    </xpath>
+</template>
 
 </odoo>
