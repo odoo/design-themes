@@ -5,7 +5,7 @@ class ThemeNano(models.AbstractModel):
     _inherit = 'theme.utils'
 
     def _theme_nano_post_copy(self, mod):
-        self.enable_view('website.template_header_centered_logo')
+        self.enable_view('website.template_header_search')
         self.enable_view('website.header_navbar_pills_style')
 
         self.enable_view('website.template_footer_descriptive')
