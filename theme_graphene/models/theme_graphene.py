@@ -5,7 +5,7 @@ class ThemeGraphene(models.AbstractModel):
     _inherit = 'theme.utils'
 
     def _theme_graphene_post_copy(self, mod):
-        self.enable_view('website.template_header_contact')
+        self.enable_view('website.template_header_sales_two')
 
         self.enable_view('website.template_footer_centered')
 
