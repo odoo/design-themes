@@ -107,6 +107,7 @@
 <template id="new_page_template_about_full_s_image_text" inherit_id="website.new_page_template_about_full_s_image_text">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/04","flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->
@@ -115,9 +116,22 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <!-- Defined in both theme and new page template -->
+        <attribute name="class" add="o_cc3" remove="o_cc3" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_full_s_text_block_h1" inherit_id="website.new_page_template_about_full_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2 pb40 pb40 pt40" remove="pb0" separator=" "/>
+        <attribute name="class" add="o_cc2 pb40" remove="pb0" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_full_s_text_image" inherit_id="website.new_page_template_about_full_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt56 pb56" separator=" "/>
     </xpath>
 </template>
 
@@ -139,6 +153,13 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <!-- Defined in both theme and new page template -->
+        <attribute name="class" add="o_cc3" remove="o_cc3" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Landing Pages -->
 
 <template id="new_page_template_landing_s_showcase" inherit_id="website.new_page_template_landing_s_showcase">
@@ -150,6 +171,7 @@
 <template id="new_page_template_landing_s_text_image" inherit_id="website.new_page_template_landing_s_text_image">
     <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt56 pb56" separator=" "/>
         <attribute name="data-oe-shape-data"/>
     </xpath>
     <!-- Remove shape -->
@@ -201,6 +223,13 @@
     </xpath>
 </template>
 
+<template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
+    <xpath expr="//section" position="attributes">
+        <!-- o_half_screen_height is defined by both theme and new page template -->
+        <attribute name="class" add="o_half_screen_height" remove="o_half_screen_height" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Gallery Pages -->
 
 <template id="new_page_template_gallery_s_cover" inherit_id="website.new_page_template_gallery_s_cover">
@@ -225,6 +254,12 @@
     </xpath>
 </template>
 
+<template id="new_page_template_gallery_s_image_text_2nd" inherit_id="website.new_page_template_gallery_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Services Pages -->
 
 <template id="new_page_template_services_s_image_text" inherit_id="website.new_page_template_services_s_image_text">
@@ -235,6 +270,12 @@
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Wavy_04" style="background-image: url('/web_editor/shape/web_editor/Wavy/04.svg?c1=o-color-1&amp;c5=o-color-1&amp;flip=x'); background-position: 50% 100%;"/>
+    </xpath>
+</template>
+
+<template id="new_page_template_services_s_text_image" inherit_id="website.new_page_template_services_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt56 pb56" separator=" "/>
     </xpath>
 </template>
 
@@ -262,11 +303,18 @@
     </xpath>
 </template>
 
+<template id="new_page_template_pricing_s_image_text_2nd" inherit_id="website.new_page_template_pricing_s_image_text_2nd">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb56" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Team Pages -->
 
 <template id="new_page_template_team_s_text_image" inherit_id="website.new_page_template_team_s_text_image">
     <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt56 pb56" separator=" "/>
         <attribute name="data-oe-shape-data"/>
     </xpath>
     <!-- Remove shape -->

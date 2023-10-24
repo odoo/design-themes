@@ -33,19 +33,6 @@
     </xpath>
 </template>
 
-<template id="new_page_template_s_picture_only" inherit_id="website.new_page_template_s_picture_only" primary="True">
-    <xpath expr="//a" position="replace"/>
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/08","flip":["y"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_08" style="background-image: url('/web_editor/shape/web_editor/Wavy/08.svg?c2=o-color-3&amp;flip=y'); background-position: 50% 100%;"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_s_product_catalog" inherit_id="website.new_page_template_s_product_catalog">
     <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
@@ -90,7 +77,7 @@
     <xpath expr="//a" position="replace"/>
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/08","flip":["y"]}</attribute>
     </xpath>
     <!-- Shape -->
@@ -117,7 +104,7 @@
     <xpath expr="//a" position="replace"/>
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/08","flip":["y"]}</attribute>
     </xpath>
     <!-- Shape -->
@@ -132,6 +119,24 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc3" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_full_s_text_image" inherit_id="website.new_page_template_about_full_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt56 pb56" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc3 pt0" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_personal_s_text_block_h2" inherit_id="website.new_page_template_about_personal_s_text_block_h2">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc3" separator=" "/>
@@ -139,6 +144,12 @@
 </template>
 
 <!-- Snippet customization Landing Pages -->
+
+<template id="new_page_template_landing_s_text_image" inherit_id="website.new_page_template_landing_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt56 pb56" separator=" "/>
+    </xpath>
+</template>
 
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <xpath expr="//section" position="attributes">
@@ -156,6 +167,12 @@
 
 <!-- Snippet customization Services Pages -->
 
+<template id="new_page_template_services_s_text_image" inherit_id="website.new_page_template_services_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt56 pb56" separator=" "/>
+    </xpath>
+</template>
+
 <!-- Snippet customization Pricing Pages -->
 
 <template id="new_page_template_pricing_s_cover" inherit_id="website.new_page_template_pricing_s_cover">
@@ -169,6 +186,12 @@
 <template id="new_page_template_team_s_text_block_h1" inherit_id="website.new_page_template_team_s_text_block_h1">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_team_s_text_image" inherit_id="website.new_page_template_team_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt56 pb56" separator=" "/>
     </xpath>
 </template>
 

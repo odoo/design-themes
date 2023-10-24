@@ -51,9 +51,24 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <!-- Added by both theme and new page template -->
+        <attribute name="class" add="o_cc3" remove="o_cc3" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
+        <!-- Added by both theme and new page template -->
+        <attribute name="class" add="o_cc3" remove="o_cc3" separator=" "/>
         <attribute name="data-oe-shape-data"/>
     </xpath>
     <!-- Remove shape -->
@@ -61,6 +76,12 @@
 </template>
 
 <!-- Snippet customization Landing Pages -->
+
+<template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt200 pb200" separator=" "/>
+    </xpath>
+</template>
 
 <template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
     <!-- Shape option -->
