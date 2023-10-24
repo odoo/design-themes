@@ -6,7 +6,6 @@ class ThemeArtists(models.AbstractModel):
 
     def _theme_artists_post_copy(self, mod):
         self.enable_view('website.template_header_hamburger')
-        self.enable_header_off_canvas()
 
         self.enable_view('website.template_footer_centered')
 
