@@ -6,7 +6,6 @@ class ThemeGraphene(models.AbstractModel):
 
     def _theme_graphene_post_copy(self, mod):
         self.enable_view('website.template_header_contact')
-        self.enable_header_off_canvas()
 
         self.enable_view('website.template_footer_centered')
 
