@@ -1,18 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_artists
+# 	* theme_artists
 # 
 # Translators:
-# liAnGjiA <liangjia@qq.com>, 2019
+# Wil Odoo, 2023
+# Benson <Benson.Dr@Gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:52+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: liAnGjiA <liangjia@qq.com>, 2019\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"POT-Creation-Date: 2023-09-28 12:23+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Benson <Benson.Dr@Gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -20,6 +21,138 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_carousel
+msgid "<b>Painting concept / April 2021</b>"
+msgstr "<b>绘画概念/四月 2021</b>"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_carousel
+msgid "<b>Photoshoot / June 2021</b>"
+msgstr "<b>拍摄/六月 2021</b>"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_carousel
+msgid "<b>Typographic collection / March 2021</b>"
+msgstr "<b>排版收藏/三月 2021</b>"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_call_to_action
+msgid "<b>Want to discover more?</b>"
+msgstr "<b>想要了解更多?</b>"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
+msgid "About me"
+msgstr "关于我"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_carousel
+msgid "Aquitani"
+msgstr "Aquitani"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_comparisons
+msgid "Basic sales &amp; marketing"
+msgstr "基本销售和营销"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
+msgid "Contact me"
+msgstr "联系我"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_call_to_action
+msgid "Contact me for a visit of my studio."
+msgstr "联系我来参观我的工作室."
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
+msgid "Discover"
+msgstr "探索"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_image_text
+msgid "Discover <br/>my works"
+msgstr "探索<br/>我的作品"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_cover
+msgid "Emotions <br/>through the colors"
+msgstr "情感<br/>通过颜色传递"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_banner
+msgid "Emotions through the colors"
+msgstr "通过颜色传递情感"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
+msgid ""
+"Formerly a corporate accountant, I started a professional transition 10 "
+"years ago."
+msgstr "以前是企业会计师，10 年前开始专业转型."
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
+msgid "Here is a selection of my works, exhibited in my studio."
+msgstr "这是我的作品选集，在我的工作室展出."
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_carousel
+msgid "Immemorabili"
+msgstr "Immemorabili"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_title
+msgid "It's all about perception"
+msgstr "一切都与感知有关"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_text_image
+msgid "Let yourself <br/>be transported"
+msgstr "让你自己<br/>被传送"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
+msgid "More details"
+msgstr "更多细节"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_product_list
+msgid "More info"
+msgstr "更多信息"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
+msgid "My artistic process"
+msgstr "我的艺术历程"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
+msgid "My work"
+msgstr "我的工作"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
+msgid ""
+"The choice of materials, colours are not insignificant, discover more about "
+"my artistic process."
+msgstr "材料的选择，色彩，发现更多我的艺术历程."
+
+#. module: theme_artists
 #: model:ir.model,name:theme_artists.model_theme_utils
 msgid "Theme Utils"
-msgstr "主题实用工具"
+msgstr "主题用途"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_carousel
+msgid "Vincam"
+msgstr "我会赢"
+
+#. module: theme_artists
+#: model_terms:theme.ir.ui.view,arch:theme_artists.s_text_image
+msgid ""
+"Welcome to my online home. I invite you to come in, learn more about me and "
+"my work, and stop to embrace the slow pleasure of art and beauty."
+msgstr "欢迎来到我的联机主页. 我邀请你进来，更多地了解我和我的工作，停下来拥抱艺术和美丽的缓慢乐趣."

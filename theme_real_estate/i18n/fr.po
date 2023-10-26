@@ -1,21 +1,352 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_real_estate
+# 	* theme_real_estate
+# 
+# Translators:
+# Wil Odoo, 2023
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:58+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2023-09-28 12:22+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "100+"
+msgstr "100+"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "14,000"
+msgstr "14.000"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "142"
+msgstr "142"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "97%"
+msgstr "97%"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid "<b>Iris Doe</b> • Customer, sold an appartement"
+msgstr "<b>Iris Doe</b> • Cliente, a vendu un appartement"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid "<b>Jane Doe</b> • Customer, bought a house"
+msgstr "<b>Jane Doe</b> • Cliente, a acheté une maison"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid "<b>John Doe</b> • Customer, bought an appartement"
+msgstr "<b>John Doe</b> • Client, a acheté un appartement"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
+msgid "<b>Real Estate Agency.<br/>Near You.</b>"
+msgstr "<b>Agence immobilière.<br/>Près de chez vous.</b>"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "<span class=\"text-600 fw-bold\">$1,295,000,000</span>"
+msgstr "<span class=\"text-600 fw-bold\">1.295.000.000 $</span>"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "<span class=\"text-600 fw-bold\">$295,000</span>"
+msgstr "<span class=\"text-600 fw-bold\">295.000 $</span>"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "<span class=\"text-600 fw-bold\">$455,000</span>"
+msgstr "<span class=\"text-600 fw-bold\">455.000 $</span>"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid ""
+"Amazing team! smiling, always nice to talk with, they always have the best "
+"advices for you, adapted to your needs!"
+msgstr ""
+"Une équipe formidable ! Souriante, toujours agréable à parler, ils vous "
+"donnent les meilleurs conseils, adaptés à vos besoins !"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_image
+msgid "Are you thinking of selling?"
+msgstr "Vous envisagez de vendre ?"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_block
+msgid ""
+"At <b>Odoo Travel Agency</b> our agents are more than a consultant, they are"
+" fellow <b>travelers with a passion</b> to help you explore the world. With "
+"more than 75 years combined experience you can be sure we are devoted to "
+"finding the best solutions for your travel plans."
+msgstr ""
+"À l'<b>Agence de voyage Odoo</b>, nos agents sont plus que des conseillers, "
+"ce sont des compagnons de <b>voyage passionnés</b> qui vous aideront à "
+"explorer le monde. Avec plus de 75 ans d'expérience combinée, vous pouvez "
+"être sûr que nous sommes dévoués à trouver les meilleures solutions pour vos"
+" projets de voyage."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid ""
+"At Real Estate Agency we have fixed price fees. This means we only charge "
+"when your home sale is confirmed."
+msgstr ""
+"À l'Agence immobilière, nous pratiquons des honoraires à prix fixe. Cela "
+"signifie que nous ne facturons que lorsque la vente de votre maison est "
+"confirmée."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
+msgid "Bored with your interior?"
+msgstr "Vous en avez assez de votre intérieur ?"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
+msgid ""
+"Discover our tailor-made services to embellish the decoration of your home."
+msgstr ""
+"Découvrez nos services sur mesure pour embellir la décoration de votre "
+"maison."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid ""
+"Elegant, modern sophisticated architecture with an impressive in large scale"
+" home designed with the finest imported finishes. Marble and wood floors..."
+msgstr ""
+"Une architecture élégante, moderne et sophistiquée avec une impressionnante "
+"maison à grande échelle conçue avec les finitions importées les plus "
+"raffinées. Du marbre et des planchers en bois..."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
+msgid "Explore our services"
+msgstr "Découvrez nos services"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid ""
+"From start to finish, they were extremely professional, friendly, helpful "
+"and easy to do business with. Very happy with the experience and the "
+"company."
+msgstr ""
+"Du début à la fin, ils ont été extrêmement professionnels, sympathiques, "
+"serviables et il a été facile de faire des affaires avec eux. Je suis très "
+"satisfait de l'expérience et de l'entreprise."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "House On The Hill"
+msgstr "La maison sur la colline"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid ""
+"Increase Visitor retention. Customer engagement on a website with virtual "
+"tour is 5 times longer compared to a site without it."
+msgstr ""
+"Augmentation de la rétention des visiteurs. L'engagement des clients sur un "
+"site web avec visite virtuelle est 5 fois plus long que sur un site sans "
+"visite virtuelle."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "Increased Visibility"
+msgstr "Visibilité accrue "
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_image
+msgid ""
+"Make an appointment for a free valuation of your property. We visit the property, advise you on a realistic asking price and we explain our way of working. <br/>\n"
+"        You can decide in all freedom whether or not you would like to work with us for the sale of your property."
+msgstr ""
+"Prenez rendez-vous pour une évaluation gratuite de votre bien. Nous visitons le bien, nous vous conseillons sur un prix de vente réaliste et nous vous expliquons notre méthode de travail. <br/>\n"
+"Vous pouvez décider en toute liberté si vous souhaitez ou non travailler avec nous pour la vente de votre bien."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "Moutain View"
+msgstr "Vue montagne"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "No fixed fees"
+msgstr "Aucuns honoraires fixes"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
+msgid ""
+"Now you can find more than 5,000+ property choices with our professional "
+"agents!<br/>"
+msgstr ""
+"Désormais, vous pouvez trouver plus de 5.000 choix de propriétés grâce à nos"
+" agents professionnels !<br/>"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
+msgid "Open your horizons"
+msgstr "Élargissez vos horizons"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
+msgid ""
+"Our decoration experts are at your disposal to guide you step by step in the"
+" design of your interior and will give you the best advice for your interior"
+" design."
+msgstr ""
+"Nos experts en décoration sont à votre disposition pour vous guider pas à "
+"pas dans l'aménagement de votre intérieur et vous donner les meilleurs "
+"conseils pour votre décoration d'intérieur."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "Paradise Residence"
+msgstr "Résidence Paradis"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid ""
+"Positive energy, great team spirit, hard workers and awesome people! I "
+"warmly recommend them!"
+msgstr ""
+"Une énergie positive, un grand esprit d'équipe, des travailleurs acharnés et"
+" des gens formidables ! Je les recommande vivement !"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "Premium Quality"
+msgstr "Qualité Premium"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "Pro Photo Shoot"
+msgstr "Séance photo professionnelle"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
+msgid "Property on the coasts of the Mediterranean."
+msgstr "Propriété sur les côtes de la Méditerranée."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
+msgid "See properties"
+msgstr "Voir les propriétés"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid ""
+"The house is surrounded by garden terraces that create unique spaces and an "
+"intimate ambience. With no overlooking neighbours, the garden offers real "
+"privacy."
+msgstr ""
+"La maison est entourée de terrasses qui créent des espaces uniques et une "
+"ambiance intime. Sans vis-à-vis, le jardin offre une réelle intimité."
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
 msgid "Theme Utils"
+msgstr "Thèmes utiles"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid ""
+"They say an image is worth a thousand words and we know you know how "
+"important it is to have the best photography."
 msgstr ""
+"On dit qu'une image vaut mille mots et nous savons que vous savez à quel "
+"point il est important d'avoir la meilleure photo."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "View details"
+msgstr "Voir les détails"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
+msgid "Want To Become A Real Estate Agent?"
+msgstr "Vous voulez devenir agent immobilier ?"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid ""
+"Waste no time in viewing this truly stunning property. The property's "
+"surroundings really set it apart, offering idyllic sea views overlooking a "
+"park."
+msgstr ""
+"Ne perdez pas de temps à visiter cette superbe propriété. Les environs de la"
+" propriété la distinguent vraiment, offrant des vues idylliques sur la mer "
+"et sur un parc."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_block
+msgid ""
+"We are <b>Odoo Travel Agency</b>, dedicated to making your vacation dreams "
+"come true! Overwhelmed with too many choices on the internet? We offer you "
+"answers, support, advice, and itineraries that will amaze you with their "
+"<b>thoroughness and thoughtfulness</b>."
+msgstr ""
+"Nous sommes l'<b>Agence de voyage Odoo</b>, dédiée à la réalisation de vos "
+"rêves de vacances ! Vous êtes submergé par le trop grand nombre de choix sur"
+" internet ? Nous vous offrons des réponses, du soutien, des conseils et des "
+"itinéraires qui vous surprendront par leur <b>rigueur et leur attention</b>."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid ""
+"We are committed to delivering high quality services that enhance your brand"
+" by allowing visitors to interact virtually."
+msgstr ""
+"Nous nous engageons à fournir des services de haute qualité qui améliorent "
+"votre marque en permettant aux visiteurs d'interagir virtuellement."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
+msgid "We'll help you to grow your career and growth."
+msgstr "Nous vous aiderons à développer votre carrière et votre croissance."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
+msgid ""
+"We’ve selected properties from all types and all areas.<br/>\n"
+"        The house of your dreams is around the corner."
+msgstr ""
+"Nous avons sélectionné des biens de tous types et de toutes régions.<br/>\n"
+"        La maison de vos rêves est au coin de la rue."
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "amazing agents"
+msgstr "agents formidables"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "happy customers"
+msgstr "clients heureux"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "offices"
+msgstr "bureaux"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "properties already sold"
+msgstr "biens déjà vendus"

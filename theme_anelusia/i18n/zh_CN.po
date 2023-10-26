@@ -1,19 +1,20 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_anelusia
+# 	* theme_anelusia
 # 
 # Translators:
-# Martin Trigaux, 2019
-# liAnGjiA <liangjia@qq.com>, 2019
+# 稀饭~~ <wangwhai@qq.com>, 2023
+# Wil Odoo, 2023
+# Benson <Benson.Dr@Gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 09:01+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: liAnGjiA <liangjia@qq.com>, 2019\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"POT-Creation-Date: 2023-09-28 12:23+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Benson <Benson.Dr@Gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -21,26 +22,212 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: theme_anelusia
-#: model_terms:theme.ir.ui.view,arch:theme_anelusia.option_layout_hamburger
-msgid "<span class=\"new-toggle-text\">MENU</span>"
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_references
+msgid ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%,"
+" var(--o-color-2) 100%);\" class=\"text-gradient\">Our top brands</font>"
 msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%,"
+" var(--o-color-2) 100%);\" class=\"text-gradient\">我们的顶级品牌</font>"
 
 #. module: theme_anelusia
-#: model_terms:theme.ir.ui.view,arch:theme_anelusia.theme_customize
-msgid "Hamburger"
-msgstr "汉堡包"
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
+msgid ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-5) 100%);\" class=\"text-gradient\">Mich Stark</font>\n"
+"        <br/>Sports Reporter"
+msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-5) 100%);\" class=\"text-gradient\">米奇·史塔克</font>\n"
+"        <br/>体育记者"
 
 #. module: theme_anelusia
-#: model_terms:theme.ir.ui.view,arch:theme_anelusia.theme_customize
-msgid "Menu"
-msgstr "菜单"
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
+msgid ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-5) 100%);\" class=\"text-gradient\">Tony Fred</font>\n"
+"        <br/>Editor-in-chief"
+msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-5) 100%);\" class=\"text-gradient\">Tony Fred</font>\n"
+"        <br/>主编"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
+msgid ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-2) 0%, var(--o-color-5) 100%);\" class=\"text-gradient\">Aline Turner</font>\n"
+"        <br/>Photograph"
+msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-2) 0%, var(--o-color-5) 100%);\" class=\"text-gradient\">Aline Turner</font>\n"
+"        <br/>摄影师"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
+msgid ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-2) 0%, var(--o-color-5) 100%);\" class=\"text-gradient\">Iris Joe</font>\n"
+"        <br/>Political Reporter"
+msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-2) 0%, var(--o-color-5) 100%);\" class=\"text-gradient\">Iris Joe</font>\n"
+"        <br/>政治记者"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
+msgid ""
+"Aline is one of the iconic people in life who can say they love what they "
+"do. She likes to capture the moment from another point of view, another "
+"perspective."
+msgstr "艾琳是生活中的标志性人物之一，他们可以说自己热爱自己的工作. 她喜欢从另一个角度，另一个角度捕捉这一刻."
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_color_blocks_2
+msgid ""
+"Are you looking for sustainable clothing for men or women? Discover our "
+"exclusive fashion brand for both of you."
+msgstr "您在寻找男士或女士的可持续服装吗? 探索我们为你们俩打造的专属时尚品牌."
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_call_to_action
+msgid "Be yourself, create your own style"
+msgstr "做你自己，创造你自己的风格"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_cover
+msgid "Color Matters"
+msgstr "色彩问题"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_banner
+msgid ""
+"Color trends are already waiting to spring <br/>into action for the  next summer.\n"
+"        <br/>\n"
+"        <br/>"
+msgstr ""
+"色彩趋势已经在等待春天<br/>明年夏天付诸行动.\n"
+"        <br/>\n"
+"        <br/>"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_cover
+msgid ""
+"Color trends are already waiting to spring into action for the next summer.\n"
+"        <br/>\n"
+"        <br/>"
+msgstr ""
+"色彩趋势已经在等待明年夏天生效.\n"
+"        <br/>\n"
+"        <br/>"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_cover
+msgid "Discover"
+msgstr "探索"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_banner
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_call_to_action
+msgid "Discover it"
+msgstr "探索它"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_call_to_action
+msgid "Discover the new summer collection."
+msgstr "探索全新夏季系列."
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_references
+msgid "Every style for everybody."
+msgstr "适合每个人的每一种风格."
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_color_blocks_2
+msgid "Fancy for them"
+msgstr "对他们来说很喜欢"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_color_blocks_2
+msgid "Fashion for her"
+msgstr "时尚为她"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
+msgid ""
+"Founder and chief visionary, Tony is the driving force behind the company. "
+"He loves to keep his hands full by participating in the development of the "
+"magazine and does not hesitate to carry out field surveys."
+msgstr "创始人兼首席远见者托尼是公司背后的推动力. 他喜欢通过参与杂志的开发来保持双手忙碌，并毫不犹豫地进行实地调查."
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
+msgid ""
+"Go off beaten track and discover unexpected and curious places. Here’s our "
+"ultimate guide to the best-kept secret spots that you simply must visit!"
+msgstr "走出人迹罕至的地方，发现意想不到和好奇的地方. 这是您必须拜访最完好的秘密景点的终极指南!"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
+msgid ""
+"Iris, with her international experience, helps us easily understand global "
+"politics. She is determined to drive success and delivers her professional "
+"acumen to bring the magazine to the next level."
+msgstr "Iris 凭借她的国际经验，帮助我们轻松了解全球政治. 她决心推动成功，并以她的专业敏锐度将杂志提升到一个新的水平."
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
+msgid ""
+"Mich loves taking on challenges. With his multi-year experience as a "
+"journalist, he wanted to join a team that puts people at the center of the "
+"stories."
+msgstr "Mich 喜欢接受挑战. 凭借多年的记者经验，他想加入一个以人为本的团队."
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_color_blocks_2
+msgid "More Details"
+msgstr "更多细节"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_color_blocks_2
+msgid ""
+"Perfectly combined by fashion experts. Get fresh outfit ideas for the new "
+"season and every occasion. Discover what's made for him."
+msgstr "由时尚专家完美结合. 为新一季和每一个场合获取新鲜的服装创意. 发现什么是为他做的."
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
+msgid "Read more"
+msgstr "阅读更多"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_color_blocks_2
+msgid ""
+"Refresh your daily rotation with our women’s clothing range. Discover our "
+"last collection for her for the next summer."
+msgstr "使用我们的女装系列让您的日常轮换焕然一新. 探索我们为她准备的明年夏天的最后一个系列."
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_color_blocks_2
+msgid "Style for him"
+msgstr "适合他的风格"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
+msgid "Summer Essentials"
+msgstr "夏季必备品"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_banner
+msgid "The next<br/> summer<br/> collection"
+msgstr "下一个<br/>夏季<br/>系列"
+
+#. module: theme_anelusia
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
+msgid ""
+"The right summer essentials can make the difference between a good time and "
+"a stand-out great time. Discover our selection for everyday wear during the "
+"warm summer months."
+msgstr "正确的夏季必需品可以在美好时光和非凡的美好时光之间产生差异. 在温暖的夏季发现我们的日常穿着选择."
 
 #. module: theme_anelusia
 #: model:ir.model,name:theme_anelusia.model_theme_utils
 msgid "Theme Utils"
-msgstr "主题实用工具"
+msgstr "主题用途"
 
 #. module: theme_anelusia
-#: model_terms:theme.ir.ui.view,arch:theme_anelusia.theme_customize
-msgid "Top Bar"
-msgstr "顶栏"
+#: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
+msgid "World's top Hidden gems"
+msgstr "世界顶级的隐藏宝石"

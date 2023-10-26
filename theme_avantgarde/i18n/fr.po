@@ -1,215 +1,159 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_avantgarde
+# 	* theme_avantgarde
 # 
 # Translators:
-# Martin Trigaux, 2019
-# Fabien Pinckaers <fp@openerp.com>, 2019
-# Frédéric LIETART <stuff@tifred.fr>, 2019
-# Clo <clo@odoo.com>, 2019
-# Eloïse Stilmant <est@odoo.com>, 2019
+# Wil Odoo, 2023
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:51+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: Eloïse Stilmant <est@odoo.com>, 2019\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2023-09-28 12:22+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "<i class=\"fa fa-font\"/>Font Style"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_call_to_action
+msgid "<b>Since 1992</b> creating around the world."
+msgstr "<b>Depuis 1992</b> nous créons dans le monde entier."
+
+#. module: theme_avantgarde
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_carousel
+msgid ""
+"<font style=\"font-size: 62px; background-color: var(--o-color-4);\" "
+"class=\"o_default_snippet_text\">Making Simple</font>"
 msgstr ""
+"<font style=\"font-size: 62px; background-color: var(--o-color-4);\" "
+"class=\"o_default_snippet_text\">Faire simple</font>"
 
 #. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_google_map
-msgid "<i class=\"fa fa-fw fa-paint-brush\"/>Style"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_text_image
+msgid ""
+"<span class=\"text-break\" style=\"font-size: 62px; font-weight: "
+"bolder;\">Our R&amp;D Approach</span>"
 msgstr ""
+"<span class=\"text-break\" style=\"font-size: 62px; font-weight: "
+"bolder;\">Notre approche R&amp;D</span>"
 
 #. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "<i class=\"fa fa-header\"/>Text Tranform"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_three_columns
+msgid "<span style=\"font-weight: bolder;\">Collaboration</span>"
+msgstr "<span style=\"font-weight: bolder;\">Collaboration</span>"
+
+#. module: theme_avantgarde
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_three_columns
+msgid "<span style=\"font-weight: bolder;\">Excellence</span>"
+msgstr "<span style=\"font-weight: bolder;\">Excellence</span>"
+
+#. module: theme_avantgarde
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_three_columns
+msgid "<span style=\"font-weight: bolder;\">Sustainability</span>"
+msgstr "<span style=\"font-weight: bolder;\">Durabilité</span>"
+
+#. module: theme_avantgarde
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_picture
+msgid "Design Methodology"
+msgstr "Méthodologie de conception"
+
+#. module: theme_avantgarde
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_text_image
+msgid ""
+"Making innovative design requires us to push the limits of technological "
+"possibilities. As a group of in-house specialists, we develop and implement "
+"computational workflows and new technologies."
 msgstr ""
+"L'élaboration d'un design innovant nous oblige à repousser les limites des "
+"possibilités technologiques. En tant que groupe de spécialistes internes, "
+"nous développons et mettons en œuvre des flux de travail informatiques et de"
+" nouvelles technologies."
 
 #. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_top_content_options
-msgid "<i class=\"fa fa-magic\"/>Position"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_picture
+msgid ""
+"Our design methodology is rooted in our core values.<br/>\n"
+"        We combine a wide spectrum of technologies with a good portion of creativity."
 msgstr ""
+"Notre méthodologie de conception est ancrée dans nos valeurs fondamentales.<br/>\n"
+"        Nous combinons un large éventail de technologies avec une bonne dose de créativité."
 
 #. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_bg_effects
-msgid "<i class=\"fa fa-sliders\"/>Background Effects"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_three_columns
+msgid ""
+"Sustainability is at the heart of our design approach. We audit projects "
+"against global standards as well as our own, more comprehensive, "
+"responsibility framework."
 msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_header
-msgid "Add your custom text here"
-msgstr ""
-
-#. module: theme_avantgarde
-#. openerp-web
-#: code:addons/theme_avantgarde/static/src/xml/s_media_block_modal_ext.xml:12
-#, python-format
-msgid "Animated colors"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_bg_effects
-msgid "Big Inset Shadow"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "Drop Caps"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "Drop Caps Alpha"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "Drop Caps Beta"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "Drop Caps Delta"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "Drop Caps Epsilon"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "Drop Caps Gamma"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_bg_effects
-msgid "Glossy"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_bg_effects
-msgid "Glossy Medium"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_bg_effects
-msgid "Glossy Soft"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.theme_customize
-msgid "Hide"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_bg_effects
-msgid "Inset Shadow"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.theme_customize
-msgid "Logo"
-msgstr "Logo"
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_top_content_options
-msgid "Move to top"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_bg_effects
-msgid "No effects"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.theme_customize
-msgid "None"
-msgstr "Aucun"
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_top_content_options
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "Normal"
-msgstr "Normale"
-
-#. module: theme_avantgarde
-#. openerp-web
-#: code:addons/theme_avantgarde/static/src/xml/s_media_block_modal_ext.xml:21
-#, python-format
-msgid "Opacity"
-msgstr "Opacité"
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.theme_customize
-msgid "Pre Header"
-msgstr ""
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.theme_customize
-msgid "Show"
-msgstr "Montrer"
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "Small Caps"
-msgstr "Petits Majuscules"
-
-#. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.theme_customize
-msgid "Standard"
-msgstr "Standard"
-
-#. module: theme_avantgarde
-#. openerp-web
-#: code:addons/theme_avantgarde/static/src/xml/s_media_block_modal_ext.xml:13
-#, python-format
-msgid "Static Black"
-msgstr ""
+"La durabilité est au cœur de notre approche de la conception. Nous vérifions"
+" les projets par rapport aux normes mondiales et à notre propre cadre de "
+"responsabilité plus complet."
 
 #. module: theme_avantgarde
 #: model:ir.model,name:theme_avantgarde.model_theme_utils
 msgid "Theme Utils"
+msgstr "Thèmes utiles"
+
+#. module: theme_avantgarde
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_text_image
+msgid ""
+"Through a mixture of project-based work and standalone research, we make "
+"efficient projects, adaptable in the face of change."
 msgstr ""
+"Grâce à une combinaison de travaux basés sur les projets et de recherches "
+"indépendantes, nous réalisons des projets efficaces et adaptables au "
+"changement."
 
 #. module: theme_avantgarde
-#. openerp-web
-#: code:addons/theme_avantgarde/static/src/xml/s_media_block_modal_ext.xml:11
-#, python-format
-msgid "Transparent"
-msgstr "Transparent"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_cover
+msgid "We are Avantgarde."
+msgstr "Nous sommes Avantgarde."
 
 #. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.avantgarde_typo_pattern
-msgid "Uppercase"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_picture
+msgid "We carry out an interdisciplinary design process."
+msgstr "Nous mettons en œuvre un processus de conception interdisciplinaire."
+
+#. module: theme_avantgarde
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_three_columns
+msgid ""
+"We conduct state-of-the-art research and development to solve complex design"
+" challenges, taking the latest advances out of the lab and into the hands of"
+" architects and engineers."
 msgstr ""
+"Nous menons des activités de recherche et développement de pointe pour "
+"résoudre des problèmes de conception complexes, en faisant sortir les "
+"dernières avancées du laboratoire et en les mettant à disposition des "
+"architectes et des ingénieurs."
 
 #. module: theme_avantgarde
-#. openerp-web
-#: code:addons/theme_avantgarde/static/src/xml/s_media_block_modal_ext.xml:8
-#, python-format
-msgid "Video background"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_cover
+msgid ""
+"We create architecture, landscapes, interiors, product design and graphic design.<br/>\n"
+"        Our methods allow us to explore a future that is equitable, data-driven, and green."
 msgstr ""
+"Nous créons des architectures, des paysages, des intérieurs, des produits et des graphiques.<br/>\n"
+"Nos méthodes nous permettent d'explorer un avenir durable, axé sur les données, et vert."
 
 #. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.theme_customize
-msgid "Wide"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_call_to_action
+msgid "We partner with ambitious clients. We’d love to hear from you."
 msgstr ""
+"Nous travaillons en partenariat avec des clients ambitieux. Contactez-nous !"
 
 #. module: theme_avantgarde
-#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.theme_customize
-msgid "Year"
-msgstr "Année"
+#: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_three_columns
+msgid ""
+"We thrive on rich collaborations to push our thinking. A continuous state of"
+" reinvention, driven by our partners in the process, is essential to our "
+"work."
+msgstr ""
+"Nous prospérons grâce à d'intéressantes collaborations qui stimulent nos "
+"réflexions. Un état permanent de réinvention, motivé par nos partenaires, "
+"est essentiel à notre travail."

@@ -1,21 +1,229 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_bookstore
+# 	* theme_bookstore
+# 
+# Translators:
+# Wil Odoo, 2023
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:53+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2023-09-28 12:23+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_text_image
+msgid ""
+"<br/>\n"
+"        Discover all the publications. There is probably your next favorite book amoung them."
+msgstr ""
+"<br/>\n"
+"        Découvrez toutes les publications. Votre nouveau livre préféré se trouve probablement parmi elles."
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_image_text
+msgid ""
+"<br/>\n"
+"        Discover the history of Belgium in this well-documented book with many illustrations and testimonials."
+msgstr ""
+"<br/>\n"
+"        Découvrez l'histoire de la Belgique dans ce livre bien documenté avec de nombreuses illustrations et témoignages."
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
+msgid "A Belgian Story"
+msgstr "Une histoire belge"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_numbers
+msgid "Amazing pages"
+msgstr "Pages incroyables"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
+msgid "At the Mars conquest"
+msgstr "À la conquête de Mars"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_numbers
+msgid "Beautiful snippets"
+msgstr "Beaux snippets"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_masonry_block_default_template
+msgid "Biographies"
+msgstr "Biographies"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_call_to_action
+msgid "Browse collection"
+msgstr "Parcourir la collection"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_call_to_action
+msgid "Browse through <br/>our complete library"
+msgstr "Parcourez notre <br/>bibliothèque complète"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_banner
+msgid "Discover it"
+msgstr "Découvrez-la"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_cover
+msgid "Discover more"
+msgstr "Découvrir plus"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_picture
+msgid "Discover our <br/>limited editions"
+msgstr "Découvrez nos <br/>éditions limitées"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
+msgid ""
+"Discover the history of Belgium in this well-documented book with many "
+"illustrations and testimonials."
+msgstr ""
+"Découvrez l'histoire de la Belgique dans ce livre bien documenté avec de "
+"nombreuses illustrations et témoignages."
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_masonry_block_default_template
+msgid "Discover unknown universes"
+msgstr "Découvrez des univers inconnus"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_picture
+msgid "Don't rely on a book's cover,"
+msgstr "Ne vous fiez pas à la couverture d'un livre,"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_masonry_block_default_template
+msgid "Enjoy your fears"
+msgstr "Aimez vos peurs"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_picture
+msgid ""
+"Explore our top-end Collector's Editions. <br/>Signed and limited tributes "
+"to some of the most outstanding writers of all time."
+msgstr ""
+"Découvrez nos éditions de collection haut de gamme. <br/>Des hommages signés"
+" et limités à certains des écrivains les plus remarquables de tous les "
+"temps."
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_masonry_block_default_template
+msgid "Horror"
+msgstr "Horreur"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_cover
+msgid "Immerse yourself <br/>in original universes"
+msgstr "Plongez dans <br/>des univers originaux"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_image_text
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
+msgid ""
+"Learn about the difficulties encountered by NASA engineers in sending the "
+"first men to Mars."
+msgstr ""
+"Découvrez les difficultés rencontrés par les ingénieurs de la NASA pour "
+"envoyer les premiers hommes sur Mars."
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_masonry_block_default_template
+msgid "Meet great people"
+msgstr "Rencontrez de grands personnages"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_image_text
+msgid "Once upon a time..."
+msgstr "Il était une fois..."
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_numbers
+msgid "Outstanding images"
+msgstr "Des images exceptionnelles"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_text_image
+msgid "Probably your next <br/>favorite book"
+msgstr "Probablement votre nouveau <br/>livre préféré"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
+msgid "Re-edition"
+msgstr "Réédition"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_masonry_block_default_template
+msgid "Read the best love stories"
+msgstr "Lisez les plus belles histoires d'amour"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_title
+msgid "Reading means borrowing"
+msgstr "Lire, c'est emprunter"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_masonry_block_default_template
+msgid "Romance"
+msgstr "Romance"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_masonry_block_default_template
+msgid "Science fiction"
+msgstr "Science-fiction"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_banner
+msgid "The best sellers <br/>of the year"
+msgstr "Les meilleures ventes <br/>de l'année"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
+msgid ""
+"The first re-edition of this Latin dictionary, from 1460. Printed originally"
+" on the Gutenberg press."
+msgstr ""
+"La première réédition de ce dictionnaire latin, de 1460. Imprimé à l'origine"
+" sur la presse de Gutenberg."
 
 #. module: theme_bookstore
 #: model:ir.model,name:theme_bookstore.model_theme_utils
 msgid "Theme Utils"
-msgstr ""
+msgstr "Thèmes utiles"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_numbers
+msgid "Useful options"
+msgstr "Options utiles"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_product_list
+msgid "View the book"
+msgstr "Voir le livre"
+
+#. module: theme_bookstore
+#: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_picture
+msgid "discover more about it"
+msgstr "découvrez-le plutôt"
+
+#. module: theme_bookstore
+#. odoo-javascript
+#: code:addons/theme_bookstore/static/src/js/tour.js:0
+#, python-format
+msgid "width"
+msgstr "largeur"

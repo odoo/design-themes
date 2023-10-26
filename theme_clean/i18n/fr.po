@@ -1,35 +1,181 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_clean
+# 	* theme_clean
 # 
 # Translators:
-# Martin Trigaux, 2019
+# Wil Odoo, 2023
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 09:03+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: Martin Trigaux, 2019\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2023-09-28 12:21+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_clean
-#: model_terms:theme.ir.ui.view,arch:theme_clean.clean_snippet_options
-msgid "<i class=\"fa fa-barcode\"/>Gradients"
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_call_to_action
+msgid "<b>50,000 people</b>, run Clean to grow their financial wealth."
 msgstr ""
+"<b>50.000 personnes</b> utilisent Clean pour faire fructifier leur "
+"patrimoine financier."
 
 #. module: theme_clean
-#: model_terms:theme.ir.ui.view,arch:theme_clean.clean_snippet_options
-msgid "None"
-msgstr "Aucun"
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_cover
+msgid "<b>Sell from your couch</b>"
+msgstr "<b>Vendez depuis votre fauteuil</b>"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_title
+msgid "<b>We create the perfect <br/>tailored solution for you</b>"
+msgstr "<b>Nous créons la solution parfaite <br/>adaptée à vos besoins</b>"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+msgid ""
+"<br/>At any moment, you may contact our advisor through the in-app video "
+"meeting system."
+msgstr ""
+"<br/>Vous pouvez contacter notre conseiller à tout moment par le biais du "
+"système de vidéoconférence in-app."
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+msgid ""
+"<br/>We integrate digital tools and solutions for better insights, enabling "
+"data-driven planning."
+msgstr ""
+"<br/>Nous intégrons des outils et des solutions numériques pour une "
+"meilleure compréhension, permettant une planification basée sur les données."
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+msgid ""
+"<br/>We invest in strategic advice tailored to your<br/>\n"
+"                            business problems and needs."
+msgstr ""
+"<br/>Nous investissons dans les conseils stratégiques adaptés aux<br/>\n"
+"                            problèmes et besoins de votre entreprise."
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_features
+msgid "All in one"
+msgstr "Tout-en-un"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
+msgid ""
+"Composed of 25 people from 25 to 66 years, we’re a young and dynamic "
+"company. We have open positions, do not hesitate to contact us."
+msgstr ""
+"Composée de 25 personnes de 25 à 66 ans, notre entreprise est jeune et "
+"dynamique. Nous avons des postes vacants, n'hésitez pas à nous contacter."
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_features
+msgid "Easy to use"
+msgstr "Facile d'utilisation"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+msgid "Efficient team processes"
+msgstr "Processus d'équipe efficaces"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_text_image
+msgid "Everything you need, <br/>totally free"
+msgstr "Tout ce dont vous avez besoin, <br/>complètement gratuit"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_call_to_action
+msgid "Join them and make the right money move."
+msgstr "Rejoignez-les et faites le bon choix en matière d'argent."
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_cover
+msgid ""
+"Make your finances reach a new level with our online management system. "
+"<br/>Track every penny, directly from the comfort of your home."
+msgstr ""
+"Faites passer vos finances à la vitesse supérieure grâce à notre système de "
+"gestion en ligne. <br/>Suivez chaque centime, directement depuis votre "
+"domicile."
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
+msgid "Our mission"
+msgstr "Notre mission"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
+msgid "Our team"
+msgstr "Notre équipe"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
+msgid "Our values"
+msgstr "Nos valeurs"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+msgid "Personal adviser"
+msgstr "Conseiller personnel"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
+msgid ""
+"Provide clear and concise financial advices to make your financial wealth "
+"grow. And this, completely free of charge."
+msgstr ""
+"Fournir des conseils financiers clairs et concis pour faire fructifier votre"
+" patrimoine financier. Et ce totalement gratuitement."
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_features
+msgid "Secured"
+msgstr "Sécurisé"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+msgid "Simplify things"
+msgstr "Simplifier les choses"
 
 #. module: theme_clean
 #: model:ir.model,name:theme_clean.model_theme_utils
 msgid "Theme Utils"
+msgstr "Thèmes utiles"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_text_image
+msgid ""
+"Track every expenses, uncover new ways to save, choose the right credit "
+"cards. <br/>All those advices and much more are included and totally free of"
+" charge."
 msgstr ""
+"Suivez toutes vos dépenses, découvrez de nouvelles façons d'épargner, "
+"choisissez les bonnes cartes de crédit. <br/>Tous ces conseils et bien plus "
+"encore sont inclus et totalement gratuits."
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
+msgid ""
+"We created our company to improve the work-life balance. We believe that we "
+"need to focus on our family more than our work and finances."
+msgstr ""
+"Nous avons créé notre entreprise pour améliorer l'équilibre entre vie privée"
+" et vie personnelle. Nous pensons que nous devons nous concentrer davantage "
+"sur notre famille que sur notre travail et nos finances."
+
+#. module: theme_clean
+#. odoo-javascript
+#: code:addons/theme_clean/static/src/js/tour.js:0
+#, python-format
+msgid "width"
+msgstr "largeur"

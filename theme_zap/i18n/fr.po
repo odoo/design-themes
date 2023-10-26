@@ -1,21 +1,151 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_zap
+# 	* theme_zap
+# 
+# Translators:
+# Alexandre Fayolle <alexandre.fayolle@camptocamp.com>, 2023
+# Wil Odoo, 2023
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:56+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2023-09-28 12:21+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_banner
+msgid "<b>Software innovation</b><br/> at its best."
+msgstr "<b>L'innovation logicielle</b><br/> au mieux."
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_masonry_block_default_template
+msgid ""
+"<em class=\"lead\">Maintain a position of constant change<br/> and "
+"evolution, while always aiming<br/> for your success.</em>"
+msgstr ""
+"<em class=\"lead\">Conservez une position de changement <br/> et d'évolution"
+" constante, tout en visant toujours<br/> le succès.</em>"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_numbers
+msgid "<font class=\"text-o-color-1\">Customers</font>"
+msgstr "<font class=\"text-o-color-1\">Clients</font>"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_numbers
+msgid "<font class=\"text-o-color-1\">Languages</font>"
+msgstr "<font class=\"text-o-color-1\">Langues</font>"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_numbers
+msgid "<font class=\"text-o-color-1\">Projects</font>"
+msgstr "<font class=\"text-o-color-1\">Projets</font>"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_numbers
+msgid "<font class=\"text-o-color-1\">Solutions</font>"
+msgstr "<font class=\"text-o-color-1\">Solutions</font>"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
+msgid "All our data centers <br/>are emission-free."
+msgstr ""
+"Tous nos centres de données <br/>fonctionnent entièrement sans émissions."
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
+msgid "All types of files <br/>are allowed."
+msgstr "Tous les types de fichiers <br/>sont autorisés."
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_three_columns
+msgid "Benefits"
+msgstr "Avantages"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_color_blocks_2
+msgid "Cloud <b>Solution</b>"
+msgstr "<b>Solution</b> cloud"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
+msgid "Eco-Friendly"
+msgstr "Respectueux de l'environnement"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_three_columns
+msgid "Features"
+msgstr "Fonctionnalités"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_banner
+msgid ""
+"Harness the power of disruptive technologies to increase<br/> your day-to-"
+"day business operations."
+msgstr ""
+"Exploitez la puissance des technologies de rupture pour améliorer<br/> vos "
+"activités commerciales quotidiennes."
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_color_blocks_2
+msgid ""
+"Keep your files in one place. <br/>Manage documents online with an easy to "
+"use interface. <br/>Rely on an highly secure cloud storage."
+msgstr ""
+"Conservez vos fichiers en un seul endroit. <br/>Gérez vos documents en ligne"
+" à l'aide d'une interface facile d'utilisation. <br/>Appuyez-vous sur un "
+"stockage cloud hautement sécurisé."
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_references
+msgid "Our <b>References</b>"
+msgstr "Nos <b>références</b>"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_banner
+msgid "Our Solutions"
+msgstr "Nos solutions"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
+msgid "Security"
+msgstr "Sécurité"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_three_columns
+msgid "Services"
+msgstr "Services"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_masonry_block_default_template
+msgid "Super <b>Easy</b>"
+msgstr "Super <b>facile</b>"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_masonry_block_default_template
+msgid "Super <b>Fast</b>"
+msgstr "Super <b>rapide</b>"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
+msgid "Support"
+msgstr "Assistance"
 
 #. module: theme_zap
 #: model:ir.model,name:theme_zap.model_theme_utils
 msgid "Theme Utils"
-msgstr ""
+msgstr "Thèmes utiles"
+
+#. module: theme_zap
+#: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
+msgid "We keep you safe <br/>in the cloud."
+msgstr "Nous assurons votre sécurité <br/>dans le cloud."

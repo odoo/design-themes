@@ -1,21 +1,187 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_kiddo
+# 	* theme_kiddo
+# 
+# Translators:
+# Wil Odoo, 2023
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:53+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2023-09-28 12:22+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_call_to_action
+msgid "2,000 parents<br/> brought their kid to our nursery."
+msgstr "2.000 parents<br/> ont confié leur enfant à notre crèche."
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_banner
+msgid "A little place <br/>of paradise"
+msgstr "Un petit coin <br/>de paradis"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_product_list
+msgid "About us"
+msgstr "À propos de nous"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_image_text
+msgid "Activities"
+msgstr "Activités"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
+msgid ""
+"All activities are planned to meet each child’s individual needs. This "
+"approach will help your child to develop to the best of their ability."
+msgstr ""
+"Toutes les activités visent à répondre aux besoins individuels de chaque "
+"enfant. Cette approche aidera votre enfant à se développer au mieux de ses "
+"capacités."
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_call_to_action
+msgid "Contact us"
+msgstr "Contactez-nous"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_call_to_action
+msgid "Entrust us with your children and go to work with peace of mind"
+msgstr "Confiez-nous vos enfants et partez travailler en toute sérénité"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_product_list
+msgid "Events"
+msgstr "Événements"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
+msgid "For every kid"
+msgstr "Pour tous les enfants"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_cover
+msgid "Kiddo Nursery"
+msgstr "Crèche Kiddo"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_picture
+msgid "Letting each child explore and grow at their own pace"
+msgstr "Chaque enfant explore et grandit à son propre rythme"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
+msgid "Open-door policy"
+msgstr "Politique de la porte ouverte"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
+msgid ""
+"Our aim is to make the early years of your child’s life as enjoyable, "
+"rewarding and positive as possible."
+msgstr ""
+"Notre objectif est de rendre les premières années de la vie de votre enfant "
+"aussi agréables, gratifiantes et positives que possible."
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
+msgid "Our mission"
+msgstr "Notre mission"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_picture
+msgid ""
+"Our qualified staff ensure that each childs' needs are always recognised and"
+" fulfilled."
+msgstr ""
+"Notre personnel qualifié veille à ce que les besoins de chaque enfant soient"
+" toujours reconnus et satisfaits."
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_product_list
+msgid "Our team"
+msgstr "Notre équipe"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_image_text
+msgid "Our team is composed of experienced nursery nurses."
+msgstr "Notre équipe se compose de puéricultrices expérimentées."
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_product_list
+msgid "Playground"
+msgstr "Terrain de jeu"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_cover
+msgid ""
+"The countryside nursery since 2002.<br/>\n"
+"        A truly unique service in a highly secure and tranquil setting."
+msgstr ""
+"La crèche de campagne depuis 2002.<br/>\n"
+"Un service réellement unique dans un environnement hautement sécurisé et tranquille."
 
 #. module: theme_kiddo
 #: model:ir.model,name:theme_kiddo.model_theme_utils
 msgid "Theme Utils"
+msgstr "Thèmes utiles"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_image_text
+msgid ""
+"They will propose to your children educational activities, playful, varied "
+"and adapted to the stage of development."
 msgstr ""
+"Elles proposeront à vos enfants des activités éducatives, ludiques, variées "
+"et adaptées à leur stade de développement."
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_banner
+msgid ""
+"This is a simple hero unit, a simple jumbotron-style component for calling "
+"extra attention to featured content or information."
+msgstr ""
+"Il s'agit d'une simple unité de héros, un simple composant de style "
+"jumbotron pour attirer une attention supplémentaire sur le contenu ou les "
+"informations vedettes."
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_picture
+msgid ""
+"Through stimulating and fun activities, our aim<br/>\n"
+"        is to promote all areas of a childs' development."
+msgstr ""
+"Par le biais d'activités stimulantes et amusantes, notre objectif<br/>\n"
+"        est de promouvoir tous les aspects du développement de l'enfant."
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_product_list
+msgid "Visit us"
+msgstr "Venez nous rendre visite"
+
+#. module: theme_kiddo
+#: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
+msgid ""
+"You are welcome to come and see the nursery and meet the team at any time "
+"convenient to you."
+msgstr ""
+"Nous vous invitons à venir visiter la crèche et rencontrer l'équipe à un "
+"moment qui vous convient le mieux."
+
+#. module: theme_kiddo
+#. odoo-javascript
+#: code:addons/theme_kiddo/static/src/js/tour.js:0
+#, python-format
+msgid "width"
+msgstr "largeur"

@@ -1,21 +1,393 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_yes
+# 	* theme_yes
+# 
+# Translators:
+# Wil Odoo, 2023
+# William Henrotin <whe@odoo.com>, 2023
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 09:02+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2023-09-28 12:21+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_call_to_action
+msgid "<b>345 couples</b> trusted us to organize their wedding."
+msgstr ""
+"<b>345 couples</b> nous ont fait confiance pour organiser leur mariage."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_cover
+msgid ""
+"<font style=\"font-size: 92px; font-weight: bold;\">Once in a lifetime "
+"moments</font>"
+msgstr ""
+"<font style=\"font-size: 92px; font-weight: bold;\">Des moments "
+"uniques</font>"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_company_team
+msgid ""
+"<font style=\"font-weight: bolder;\" class=\"text-o-color-1\">The "
+"Designer</font>"
+msgstr ""
+"<font style=\"font-weight: bolder;\" class=\"text-o-"
+"color-1\">Créatrice</font>"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_company_team
+msgid ""
+"<font style=\"font-weight: bolder;\" class=\"text-o-color-1\">The Founder "
+"&amp; Planner</font>"
+msgstr ""
+"<font style=\"font-weight: bolder;\" class=\"text-o-color-1\">Fondatrice & "
+"Organisatrice</font>"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
+msgid ""
+"<span class=\"s_blockquote_author\"><b>Jack and Mary</b> • Married in "
+"2019</span>"
+msgstr ""
+"<span class=\"s_blockquote_author\"><b>Jack et Mary</b> • Mariés en "
+"2019</span>"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
+msgid ""
+"<span class=\"s_blockquote_author\"><b>Linda and Paul</b> • Married in "
+"2020</span>"
+msgstr ""
+"<span class=\"s_blockquote_author\"><b>Linda et Paul</b> • Mariés en "
+"2020</span>"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
+msgid ""
+"<span class=\"s_blockquote_author\"><b>Rose and Peter</b> • Renewed their "
+"vows in 2021</span>"
+msgstr ""
+"<span class=\"s_blockquote_author\"><b>Rose et Peter</b> • Ont renouvelé "
+"leurs vœux en 2021</span>"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_media_list
+msgid "<span style=\"font-size: 36px;\">Engagement ceremonies</span>"
+msgstr "<span style=\"font-size: 36px;\">Cérémonies de fiançailles</span>"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_media_list
+msgid "<span style=\"font-size: 36px;\">Vow renewals</span>"
+msgstr "<span style=\"font-size: 36px;\">Renouvellement des vœux</span>"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_media_list
+msgid "<span style=\"font-size: 36px;\">Wedding Receptions</span>"
+msgstr "<span style=\"font-size: 36px;\">Réceptions de mariage</span>"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns
+msgid "Accomodations"
+msgstr "Hébergements"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_media_list
+msgid ""
+"As a full service experience, we monitor all aspects of your wedding from "
+"planning to execution."
+msgstr ""
+"Proposant un service complet, nous surveillons tous les aspects de votre "
+"mariage, de la planification à l'exécution."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_company_team
+msgid ""
+"As a passionate wedding designer with a romantic soul, Clair adores "
+"celebrating the special moments in life in magical places and creating an "
+"authentic experience for couples."
+msgstr ""
+"Organisatrice de mariages passionnées à l'âme romantique, Claire adore "
+"célébrer les moments spéciaux de la vie dans des endroits magiques et créer "
+"une expérience authentique pour les couples."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Attire"
+msgstr "Habillement"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns
+msgid "Car Rental"
+msgstr "Location de voiture"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Caterers"
+msgstr "Traiteur"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
+msgid "Check out our gallery"
+msgstr "Visitez notre galerie"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Check out our list of favorite caterers."
+msgstr "Consultez la liste de nos traiteurs préférés."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Check out our list of favorite venues."
+msgstr "Consultez la liste de nos lieux préférés."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_company_team
+msgid "Clair Stark"
+msgstr "Claire Stark"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "FAQ"
+msgstr "FAQ"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Find a Caterer"
+msgstr "Trouvez un traiteur"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_text_image
+msgid "Find a photographer"
+msgstr "Trouvez un photographe"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_image_text
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Find a venue"
+msgstr "Trouvez un lieu"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Find the answers to all your questions <br/>in our FAQ."
+msgstr "Trouvez toutes les réponses à vos questions <br/>dans notre FAQ."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Find the perfect outfit for before, during and after the main event."
+msgstr ""
+"Trouvez la tenue idéale avant, pendant et après l'événement principal."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
+msgid ""
+"From the beginning of our planning process, our planner was incredible! She "
+"made us feel heard, gave great suggestions and was always just an email or "
+"call away when we had any last minute questions. Couldn't have done it "
+"without her!"
+msgstr ""
+"Dès le début de la planification, notre organisatrice a été incroyable ! "
+"Elle nous a fait sentir écoutés, nous a donné d'excellentes suggestions et "
+"était toujours disponible par email ou par téléphone lorsque nous avions des"
+" questions de dernière minute. Nous n'aurions jamais pu nous passer d'elle !"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
+msgid "Get in touch"
+msgstr "Contactez-nous"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
+msgid ""
+"Get inspired with the latest trends and advice from our wedding experts."
+msgstr ""
+"Laissez-vous inspirer par les dernières tendances et les conseils de nos "
+"experts en mariage."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Go to FAQ"
+msgstr "Allez au FAQ"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_picture
+msgid ""
+"Intimate or with hundreds of guests, outdoors or indoors : we organize the "
+"wedding of your dreams."
+msgstr ""
+"Intime ou avec des centaines d'invités, en plein air ou en intérieur : nous "
+"organisons le mariage de vos rêves."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_call_to_action
+msgid "Join them and let us help you make this day unforgettable."
+msgstr ""
+"Rejoignez-les et laissez-nous vous aider à rendre cette journée inoubliable."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_banner
+msgid "Just as you dreamt it."
+msgstr "Comme vous l'avez rêvé."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
+msgid "Let us plan your perfect day"
+msgstr "Laissez-nous organiser votre journée parfaite."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_company_team
+msgid "Livia Sailor"
+msgstr "Livia Sailor"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_company_team
+msgid ""
+"Livia is our head wedding coordinator and stylist, she'll turn any of your "
+"ideas into reality, making sure your wedding day is smooth and looks better "
+"than anything you have ever seen on Pinterest."
+msgstr ""
+"Livia est notre styliste et coordinatrice de mariage en chef. Elle "
+"transforme vos idées en réalité et s'assure que votre journée de mariage se "
+"déroule sans encombre et soit plus belle que tout ce que vous avez pu voir "
+"sur Pinterest."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_picture
+msgid "Love is in the air"
+msgstr "L'amour est dans l'air"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns
+msgid "Make up &amp;amp; Hair"
+msgstr "Maquillage & Coiffure"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_title
+msgid "Meet our team"
+msgstr "Rencontrez notre équipe"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_cover
+msgid "Meet us"
+msgstr "Nous rencontrer"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
+msgid ""
+"Our wedding coordinator made the entire process so much less stressful. She "
+"was more than kind, accommodating, and helpful in more ways than one! She "
+"always answered my emails within a day and thoroughly. She went above and "
+"beyond, I would recommend her to anyone!"
+msgstr ""
+"Notre coordinatrice de mariage a rendu l'organisation tellement moins "
+"stressante. Elle a été plus que gentille, accommodante et utile à plus d'un "
+"titre ! Elle a toujours répondu à mes emails dans la journée et de manière "
+"détaillée. Elle s'est surpassée et je la recommanderais à tout le monde !"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_media_list
+msgid "See how others renewed their vows"
+msgstr "Découvrez comment d'autres ont renouvelé leurs vœux "
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
+msgid "See the blog"
+msgstr "Voir le blog"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Shop"
+msgstr "Boutique"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_media_list
+msgid "Start planning your engagement"
+msgstr "Commencez à planifier vos fiançailles"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_media_list
+msgid "Start planning your wedding"
+msgstr "Commencez à planifier votre mariage"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_picture
+msgid "Stuart and Iliana's wedding at the Barn."
+msgstr "Le mariage de Stuart et Iliana dans la grange."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
+msgid "Take a look at some of our favourite weddings."
+msgstr "Découvrez quelques-uns de nos mariages préférés."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
+msgid ""
+"Thank you so much for being a part of our special day. It was so nice "
+"working with you. Without your help the day would not have been as perfect "
+"as it was."
+msgstr ""
+"Merci beaucoup d'avoir participé à notre journée spéciale. Ce fut un plaisir"
+" de travailler avec vous. Sans votre aide, la journée n'aurait pas été aussi"
+" parfaite qu'elle l'a été."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_media_list
+msgid ""
+"The heartfelt exchange of wedding vows is often the most memorable part of a"
+" marriage ceremony."
+msgstr ""
+"L'échange sincère des vœux de mariage est souvent la partie la plus "
+"mémorable d'une cérémonie de mariage."
 
 #. module: theme_yes
 #: model:ir.model,name:theme_yes.model_theme_utils
 msgid "Theme Utils"
+msgstr "Thèmes utiles"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block_default_template
+msgid "Venues"
+msgstr "Lieux"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
+msgid "View our blog for inspiration"
+msgstr "Consultez notre blog pour plus d'inspiration"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
+msgid "View our work"
+msgstr "Voyez notre travail"
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
+msgid ""
+"We are focused on providing high-quality service and customer satisfaction."
 msgstr ""
+"Nous nous engageons à fournir un service de haute qualité et à satisfaire "
+"nos clients."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_media_list
+msgid ""
+"We’ll help you mark the engagement milestone with an unforgettable ceremony."
+msgstr ""
+"Nous vous aidons à marquer l'étape des fiançailles par une cérémonie "
+"inoubliable."
+
+#. module: theme_yes
+#: model_terms:theme.ir.ui.view,arch:theme_yes.s_cover
+msgid "You focus on the big day, let us focus on you."
+msgstr ""
+"Vous vous concentrez sur le grand jour, laissez-nous nous concentrer sur "
+"vous."
