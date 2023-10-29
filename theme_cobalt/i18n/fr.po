@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -11,45 +12,50 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 08:00+0000\n"
 "PO-Revision-Date: 2021-12-13 08:08+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
 msgid "<em>Our office in Dhaka</em>"
-msgstr ""
+msgstr "<em>Nos bureaux à Dacca</em>"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_color_blocks_2
 msgid ""
 "Are you a startup or a seasoned company looking for a new brand identity?"
 msgstr ""
+"Êtes-vous une start-up ou une société bien établie à la recherche d'une "
+"nouvelle identité ?"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_color_blocks_2
 msgid "Are you an established brand looking for ongoing creative services?"
 msgstr ""
+"Êtes-vous une marque établie à la recherche de services créatifs continus ?"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_banner
 msgid ""
 "Building game-changing digital experiences designed to set your brand apart."
 msgstr ""
+"Construire des expériences numériques révolutionnaires qui permettent à "
+"votre marque de se démarquer."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
 msgid "Digital Transformation"
-msgstr ""
+msgstr "Transformation numérique"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
 msgid "Latest projects"
-msgstr ""
+msgstr "Derniers projets"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
@@ -57,6 +63,8 @@ msgid ""
 "Leader in digital business, we’re helping companies of all sizes to thrive "
 "in an ever-changing landscape."
 msgstr ""
+"Leader dans le secteur du numérique, nous aidons les sociétés de toute "
+"taille à prospérer dans un environnement en constante évolution."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_banner
@@ -73,7 +81,7 @@ msgstr "Projets"
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_call_to_action
 msgid "START NOW"
-msgstr ""
+msgstr "COMMENCER MAINTENANT"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_banner
@@ -83,12 +91,12 @@ msgstr "Commencer maintenant"
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_image_text
 msgid "Strategy synchronising multiple channels"
-msgstr ""
+msgstr "Stratégie de synchronisation des canaux multiples"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_banner
 msgid "The ultimate marketing platform for brands"
-msgstr ""
+msgstr "La plateforme de marketing ultime pour les marques"
 
 #. module: theme_cobalt
 #: model:ir.model,name:theme_cobalt.model_theme_utils
@@ -101,6 +109,8 @@ msgid ""
 "We create a consistent customer experience through a detailed digital "
 "strategy built on precise customer research."
 msgstr ""
+"Nous créons une expérience client cohérente grâce à une stratégie numérique "
+"détaillée fondée sur une étude précise de la clientèle."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
@@ -109,13 +119,16 @@ msgid ""
 "mobile applications and websites. Check our portfolio from clients around "
 "the world."
 msgstr ""
+"Nous avons acquis une solide expérience dans la création d'applications "
+"mobiles et de sites web natifs et multiplateformes. Consultez notre "
+"portefeuille de clients dans le monde entier."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
 msgid "Web &amp; App Development"
-msgstr ""
+msgstr "Développement de sites web & d'apps"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
 msgid "What we can do, <b>for you</b><br/>"
-msgstr ""
+msgstr "Ce que nous pouvons faire, <b>pour vous</b><br/>"

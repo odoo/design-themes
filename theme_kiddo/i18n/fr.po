@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -11,18 +12,18 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 08:00+0000\n"
 "PO-Revision-Date: 2021-12-13 08:08+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_call_to_action
 msgid "<b>2,000 parents</b> brought their kid to our nursery."
-msgstr ""
+msgstr "<b>2.000 parents</b> ont confié leur enfant à notre crèche."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_banner
@@ -30,6 +31,8 @@ msgid ""
 "<font style=\"font-size: 62px; line-height: 48px;\">A little place of "
 "paradise.</font>"
 msgstr ""
+"<font style=\"font-size: 62px; line-height: 48px;\">Un petit coin de "
+"paradis.</font>"
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_banner
@@ -47,6 +50,9 @@ msgid ""
 "Because your children deserve the best, we welcome children from 0 to 3 "
 "years in a warm and specific environment for the needs of small children"
 msgstr ""
+"Parce que vos enfants méritent ce qu'il y a de mieux, nous accueillons les "
+"enfants de 0 à 3 ans dans un cadre chaleureux et adapté aux besoins des "
+"petits enfants."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_image_text
@@ -56,17 +62,17 @@ msgstr "Découvrir"
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_call_to_action
 msgid "Entrust us with your children and go to work with peace of mind."
-msgstr ""
+msgstr "Confiez-nous vos enfants et partez travailler en toute sérénité."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_cover
 msgid "Kiddo Nursery"
-msgstr ""
+msgstr "Crèche Kiddo"
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_picture
 msgid "Letting each child explore and grow at their own pace"
-msgstr ""
+msgstr "Chaque enfant explore et grandit à son propre rythme"
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_picture
@@ -74,11 +80,13 @@ msgid ""
 "Our qualified staff ensure that each childs' needs are always recognised and"
 " fulfilled."
 msgstr ""
+"Notre personnel qualifié veille à ce que les besoins de chaque enfant soient"
+" toujours reconnus et satisfaits."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_image_text
 msgid "Our team is composed of experienced nursery nurses."
-msgstr ""
+msgstr "Notre équipe se compose de puéricultrices expérimentées."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_cover
@@ -86,6 +94,8 @@ msgid ""
 "The countryside nursery since 2002.<br/>\n"
 "        A truly unique service in a highly secure and tranquil setting."
 msgstr ""
+"La crèche de campagne depuis 2002.<br/>\n"
+"Un service réellement unique dans un environnement hautement sécurisé et tranquille."
 
 #. module: theme_kiddo
 #: model:ir.model,name:theme_kiddo.model_theme_utils
@@ -98,6 +108,8 @@ msgid ""
 "They will propose to your children educational activities, playful, varied "
 "and adapted to the stage of development."
 msgstr ""
+"Elles proposeront à vos enfants des activités éducatives, ludiques, variées "
+"et adaptées à leur stade de développement."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_picture
@@ -105,15 +117,17 @@ msgid ""
 "Through stimulating and fun activities, our aim<br/>\n"
 "        is to promote all areas of a childs' development."
 msgstr ""
+"Par le biais d'activités stimulantes et amusantes, notre objectif<br/>\n"
+"        est de promouvoir tous les aspects du développement de l'enfant."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_product_list
 msgid "View item"
-msgstr ""
+msgstr "Afficher l'article"
 
 #. module: theme_kiddo
 #. openerp-web
 #: code:addons/theme_kiddo/static/src/js/tour.js:0
 #, python-format
 msgid "width"
-msgstr ""
+msgstr "largeur"
