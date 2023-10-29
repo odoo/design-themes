@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,13 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:06+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_banner
@@ -26,6 +26,8 @@ msgid ""
 "<font style=\"font-size: 62px; line-height: 48px;\">A Different "
 "Viewpoint.</font>"
 msgstr ""
+"<font style=\"font-size: 62px; line-height: 48px;\">Un point de vue "
+"différent.</font>"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_picture
@@ -33,21 +35,23 @@ msgid ""
 "<font style=\"font-size: 62px; line-height: 48px;\">Creating places that "
 "enhance the human experience.</font>"
 msgstr ""
+"<font style=\"font-size: 62px; line-height: 48px;\">Créer des endroits qui "
+"mettent en valeur l'expérience humaine.</font>"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_call_to_action
 msgid "As <b>436 clients</b> before you, let’s work together"
-msgstr ""
+msgstr "Comme <b>436 clients</b> avant vous, travaillons ensemble"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_text_image
 msgid "Building Castle in Cloud"
-msgstr ""
+msgstr "Construire des châteaux dans les nuages"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
 msgid "Construction site"
-msgstr ""
+msgstr "Site de construction"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
@@ -64,12 +68,12 @@ msgstr "Découvrir"
 #. module: theme_enark
 #: model:ir.model.fields,field_description:theme_enark.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.enark_snippet_options
 msgid "Gradients"
-msgstr ""
+msgstr "Gradients"
 
 #. module: theme_enark
 #: model:ir.model.fields,field_description:theme_enark.field_theme_utils__id
@@ -79,7 +83,7 @@ msgstr "ID"
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
 msgid "Know our clients."
-msgstr ""
+msgstr "Connaître nos clients."
 
 #. module: theme_enark
 #: model:ir.model.fields,field_description:theme_enark.field_theme_utils____last_update
@@ -89,7 +93,7 @@ msgstr "Dernière modification le"
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
 msgid "Nature friendly"
-msgstr ""
+msgstr "Respectueux de l'environnement"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.enark_snippet_options
@@ -100,7 +104,7 @@ msgstr "Aucun"
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
 msgid ""
 "Our creations integrate and are in perfect harmony with their environment."
-msgstr ""
+msgstr "Nos créations sont en parfaite harmonie avec leur environnement."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
@@ -109,6 +113,9 @@ msgid ""
 "our close collaboration with the workers and our sustained presence on the "
 "construction sites."
 msgstr ""
+"Notre maîtrise des techniques de construction s'est construite au fil du "
+"temps grâce à notre collaboration étroite avec les ouvriers et à notre "
+"présence soutenue sur les chantiers."
 
 #. module: theme_enark
 #: model:ir.model,name:theme_enark.model_theme_utils
@@ -119,6 +126,7 @@ msgstr "Thèmes utiles"
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_picture
 msgid "We always put people and nature at the center of our projects."
 msgstr ""
+"Nous plaçons toujours les personnes et la nature au cœur de nos projets."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
@@ -126,6 +134,8 @@ msgid ""
 "We always start by exploring our clients goals, priorities, lifestyle, and "
 "tastes."
 msgstr ""
+"Nous commençons toujours par explorer les objectifs, les priorités, le mode "
+"de vie et les goûts de nos clients."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_banner
@@ -134,6 +144,10 @@ msgid ""
 "commercial and office sectors. Our projects are built all over the world, in"
 " urban and natural environments."
 msgstr ""
+"Nous sommes un cabinet d'architecture contemporaine qui travaille "
+"principalement dans les secteurs résidentiel, commercial et de bureau. Nos "
+"projets sont réalisés dans le monde entier, dans des environnements urbains "
+"et naturels."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_text_image
@@ -142,10 +156,13 @@ msgid ""
 "criteria that Zumthor considers to be important in creating an architectural"
 " atmosphere."
 msgstr ""
+"Lors de la conception d'un concept architectural, nous prenons en compte les"
+" neuf critères que Zumthor estime importants pour créer une atmosphère "
+"architecturale."
 
 #. module: theme_enark
 #. openerp-web
 #: code:addons/theme_enark/static/src/js/tour.js:0
 #, python-format
 msgid "height"
-msgstr ""
+msgstr "hauteur"

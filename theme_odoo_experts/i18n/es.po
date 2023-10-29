@@ -5,6 +5,7 @@
 # Translators:
 # Martin Trigaux, 2021
 # Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021
+# Fernanda Alvarez, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,18 +13,18 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021\n"
-"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"Last-Translator: Fernanda Alvarez, 2023\n"
+"Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_call_to_action
 msgid "50,000+ CLIENTS TRUST US TO PROTECT THEIR ASSETS"
-msgstr ""
+msgstr "MÁS DE 50,000 CLIENTES CONFÍAN EN NOSOTROS PARA PROTEGER SUS BIENES"
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_banner
@@ -31,21 +32,23 @@ msgid ""
 "<font style=\"font-size: 62px; line-height: 48px;\">If results matter to "
 "you</font>"
 msgstr ""
+"<font style=\"font-size: 62px; line-height: 48px;\">Si le interesan los "
+"resultados...</font>"
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_media_list
 msgid "Arbitration"
-msgstr ""
+msgstr "Arbitraje"
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_call_to_action
 msgid "Contact us for a personalized meeting"
-msgstr ""
+msgstr "Contáctenos para una agendar una reunión personalizada."
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_banner
 msgid "Discover more"
-msgstr "Descubra más"
+msgstr "Más información"
 
 #. module: theme_odoo_experts
 #: model:ir.model.fields,field_description:theme_odoo_experts.field_theme_utils__display_name
@@ -58,6 +61,9 @@ msgid ""
 "Guided by expertise gained over 20 years of achieving success for clients, "
 "we practice with passion and strategic focus on the future."
 msgstr ""
+"Gracias a la experiencia adquirida durante más de 20 años de hacer que "
+"nuestros clientes tengan éxito, ejercemos con pasión y nos enfocamos en el "
+"futuro."
 
 #. module: theme_odoo_experts
 #: model:ir.model.fields,field_description:theme_odoo_experts.field_theme_utils__id
@@ -71,6 +77,10 @@ msgid ""
 "assistance of a mediator who has no decision-making power. The result, if "
 "mediation succeeds, is a solution which is agreeable to all parties."
 msgstr ""
+"Gracias a la mediación, las partes involucradas encuentran una solución para"
+" su conflicto, con ayuda de un mediador que no tiene poder en la toma de "
+"decisiones. El resultado de una mediación exitosa es una solución aceptable "
+"para todas las partes."
 
 #. module: theme_odoo_experts
 #: model:ir.model.fields,field_description:theme_odoo_experts.field_theme_utils____last_update
@@ -80,7 +90,7 @@ msgstr "Última modificación el"
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_media_list
 msgid "Litigation"
-msgstr "Litigio"
+msgstr "Litigación"
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_media_list
@@ -88,16 +98,18 @@ msgid ""
 "Litigation is our core-business. Our lawyers have been involved in many "
 "high-profile cases for 20 years."
 msgstr ""
+"Somos especialistas en litigación. Nuestros abogados han participado en "
+"varios casos importantes durante 20 años."
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_media_list
 msgid "Mediation"
-msgstr ""
+msgstr "Mediación"
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_image_text
 msgid "Our Vision"
-msgstr ""
+msgstr "Nuestra visión"
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_media_list
@@ -105,6 +117,8 @@ msgid ""
 "Over the past years, our lawyers have gained significant experience in "
 "arbitration, both as counsel as well as arbitrators."
 msgstr ""
+"En los últimos años, nuestros abogados han adquirido bastante experiencia en"
+" estrategias de arbitraje al ejercer funciones como asesores y arbitradores."
 
 #. module: theme_odoo_experts
 #: model:ir.model,name:theme_odoo_experts.model_theme_utils
@@ -118,6 +132,9 @@ msgid ""
 "finding practical and pragmatic solutions that are adapted to our clients' "
 "needs."
 msgstr ""
+"Consideramos que nuestra función es tomar el papel de un socio legal que se "
+"encargue de encontrar constantemente soluciones prácticas y pragmáticas que "
+"se adapten a las necesidades de nuestros clientes."
 
 #. module: theme_odoo_experts
 #: model_terms:theme.ir.ui.view,arch:theme_odoo_experts.s_image_text
@@ -126,10 +143,13 @@ msgid ""
 "necessary, to assist in their settlement by choosing the most appropriate "
 "method: conciliation, mediation, arbitration, or judicial proceedings."
 msgstr ""
+"Trabajamos a diario en estrategias para prevenir conflictos y, si es "
+"necesario, ayudar a solucionarlos con el método más adecuado: conciliación, "
+"mediación, arbitraje o procedimientos judiciales."
 
 #. module: theme_odoo_experts
 #. openerp-web
 #: code:addons/theme_odoo_experts/static/src/js/tour.js:0
 #, python-format
 msgid "height"
-msgstr ""
+msgstr "altura"

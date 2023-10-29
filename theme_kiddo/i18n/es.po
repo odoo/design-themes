@@ -5,6 +5,9 @@
 # Translators:
 # Martin Trigaux, 2021
 # Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021
+# Lucia Pacheco, 2023
+# Fernanda Alvarez, 2023
+# Iran Villalobos López, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,18 +15,18 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021\n"
-"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"Last-Translator: Iran Villalobos López, 2023\n"
+"Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_call_to_action
 msgid "<b>2,000 parents</b> brought their kid to our nursery."
-msgstr ""
+msgstr "Más de <b>2,000 padres</b> confían en nosotros."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_banner
@@ -31,6 +34,8 @@ msgid ""
 "<font style=\"font-size: 62px; line-height: 48px;\">A little place of "
 "paradise.</font>"
 msgstr ""
+"<font style=\"font-size: 62px; line-height: 48px;\">Un pedacito de "
+"paraíso.</font>"
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_banner
@@ -49,6 +54,9 @@ msgid ""
 "Aiming to achieve the best physical, mental, emotional and social "
 "development of children, our centre promotes active learning strategies"
 msgstr ""
+"Nuestro objetivo es lograr el desarrollo físico, mental, emocional y social "
+"más óptimo de los niños. Nuestro centro promueve estrategias de aprendizaje "
+"activo. "
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
@@ -56,6 +64,8 @@ msgid ""
 "All activities are primarily aimed at procuring pleasure, and at the "
 "psychomotor, cognitive and affective development of the child."
 msgstr ""
+"Todas las actividades están enfocadas principalmente en brindar satisfacción"
+" y en el desarrollo psicomotriz, cognitivo y afectivo del niño.  "
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_banner
@@ -63,6 +73,8 @@ msgid ""
 "Because your children deserve the best, we welcome children from 0 to 3 "
 "years in a warm and specific environment for the needs of small children"
 msgstr ""
+"Sus hijos merecen lo mejor. Proporcionamos un ambiente cálido y específico "
+"para las necesidades de los niños pequeños, entre los 0 y 3 años."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_image_text
@@ -77,7 +89,7 @@ msgstr "Nombre mostrado"
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_call_to_action
 msgid "Entrust us with your children and go to work with peace of mind."
-msgstr ""
+msgstr "Vaya a trabajar tranquilo mientras nosotros cuidamos de sus hijos"
 
 #. module: theme_kiddo
 #: model:ir.model.fields,field_description:theme_kiddo.field_theme_utils__id
@@ -92,17 +104,17 @@ msgstr "Última modificación el"
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
 msgid "Nursery"
-msgstr ""
+msgstr "Guardería"
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_image_text
 msgid "Our team is composed of experienced nursery nurses."
-msgstr ""
+msgstr "Nuestro equipo está compuesto de enfermeras experimentadas."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
 msgid "Philosophy"
-msgstr ""
+msgstr "Filosofía"
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
@@ -110,6 +122,8 @@ msgid ""
 "Since 2020, we welcome children from 0 to 3 years in a warm and specific "
 "environment for the needs of small children."
 msgstr ""
+"Desde el 2020, recibimos niños desde los 0 a los 3 años en un ambiente "
+"cálido y particular para las necesidades de los niños más pequeños. "
 
 #. module: theme_kiddo
 #: model:ir.model,name:theme_kiddo.model_theme_utils
@@ -122,6 +136,8 @@ msgid ""
 "They will propose to your children educational activities, playful, varied "
 "and adapted to the stage of development."
 msgstr ""
+"Propondrán a sus hijos actividades educativas, lúdicas, variadas y adaptadas"
+" a la etapa de desarrollo."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_product_list
@@ -133,4 +149,4 @@ msgstr "Ver ítem"
 #: code:addons/theme_kiddo/static/src/js/tour.js:0
 #, python-format
 msgid "width"
-msgstr ""
+msgstr "ancho"

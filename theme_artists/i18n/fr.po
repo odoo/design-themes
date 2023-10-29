@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,28 +12,28 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:03+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
 msgid "About me"
-msgstr ""
+msgstr "À propos de moi"
 
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_call_to_action
 msgid "Contact me for a visit of my studio."
-msgstr ""
+msgstr "Contactez-moi pour visiter mon studio."
 
 #. module: theme_artists
 #: model:ir.model.fields,field_description:theme_artists.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
@@ -41,11 +41,13 @@ msgid ""
 "Formerly a corporate accountant, I started a professional transition 10 "
 "years ago."
 msgstr ""
+"Ancienne comptable d'entreprise, j'ai entamé une reconversion "
+"professionnelle il y a 10 ans."
 
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
 msgid "Here is a selection of my works, exhibited in my studio."
-msgstr ""
+msgstr "Voici une sélection de mes œuvres, exposées dans mon studio."
 
 #. module: theme_artists
 #: model:ir.model.fields,field_description:theme_artists.field_theme_utils__id
@@ -60,17 +62,17 @@ msgstr "Dernière modification le"
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_text_image
 msgid "Let yourself be transported"
-msgstr ""
+msgstr "Laissez-vous transporter"
 
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
 msgid "My Artistic Process"
-msgstr ""
+msgstr "Mon processus artistique"
 
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
 msgid "My Work"
-msgstr ""
+msgstr "Mes oeuvres "
 
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_three_columns
@@ -78,6 +80,8 @@ msgid ""
 "The choice of materials, colours are not insignificant, discover more about "
 "my artistic process."
 msgstr ""
+"Le choix des matériaux et des couleurs n'est pas anodin. Découvrez-en plus "
+"sur mon processus artistique."
 
 #. module: theme_artists
 #: model:ir.model,name:theme_artists.model_theme_utils
@@ -87,7 +91,7 @@ msgstr "Thèmes utiles"
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_call_to_action
 msgid "Want to <b>discover more</b>?"
-msgstr ""
+msgstr "Envie d'en <b>savoir plus</b> ?"
 
 #. module: theme_artists
 #: model_terms:theme.ir.ui.view,arch:theme_artists.s_text_image
@@ -95,10 +99,13 @@ msgid ""
 "Welcome to my online home. I invite you to come in, learn more about me and "
 "my work, and stop to embrace the slow pleasure of art and beauty."
 msgstr ""
+"Bienvenue dans ma maison en ligne. Je vous invite à entrer, à en apprendre "
+"plus sur moi et sur mes œuvres et à savourer le lent plaisir de l'art et de "
+"la beauté."
 
 #. module: theme_artists
 #. openerp-web
 #: code:addons/theme_artists/static/src/js/tour.js:0
 #, python-format
 msgid "height"
-msgstr ""
+msgstr "hauteur"

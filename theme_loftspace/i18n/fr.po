@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,13 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:06+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_cover
@@ -26,6 +26,7 @@ msgid ""
 "<font style=\"font-size: 62px;\"><b>Bringing life to your "
 "interior</b></font>"
 msgstr ""
+"<font style=\"font-size: 62px;\"><b>Donner vie à votre intérieur</b></font>"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_title
@@ -33,26 +34,28 @@ msgid ""
 "<font style=\"font-size: 62px;\"><b>Everything is designed.<br/> Few things "
 "are designed well.</b></font>"
 msgstr ""
+"<font style=\"font-size: 62px;\"><b>Tout est design.<br/> Mais peu de choses"
+" sont bien conçues.</b></font>"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_picture
 msgid "<font style=\"font-size: 62px;\">Made it simple, but significant.</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Simple, mais significatif.</font>"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_cover
 msgid "Discover More"
-msgstr ""
+msgstr "En découvrir plus"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_cover
 msgid "Discover our unique pieces of furnitures selected for you."
-msgstr ""
+msgstr "Découvrez nos meubles uniques, sélectionnés pour vous."
 
 #. module: theme_loftspace
 #: model:ir.model.fields,field_description:theme_loftspace.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
@@ -60,16 +63,18 @@ msgid ""
 "Every week our shop receive new products. Some are only on sale for a "
 "limited period of time."
 msgstr ""
+"Notre boutique reçoit de nouveaux produits chaque semaine. Certains ne sont "
+"en vente que pour une période limitée."
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
 msgid "For the whole Family"
-msgstr ""
+msgstr "Pour toute la famille"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_picture
 msgid "Home is where your story begins."
-msgstr ""
+msgstr "La maison est là où votre histoire commence."
 
 #. module: theme_loftspace
 #: model:ir.model.fields,field_description:theme_loftspace.field_theme_utils__id
@@ -84,12 +89,12 @@ msgstr "Dernière modification le"
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_text_image
 msgid "Selected for you"
-msgstr ""
+msgstr "Sélectionné pour vous"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
 msgid "Tailored advice"
-msgstr ""
+msgstr "Conseils personnalisés"
 
 #. module: theme_loftspace
 #: model:ir.model,name:theme_loftspace.model_theme_utils
@@ -103,11 +108,14 @@ msgid ""
 "                of the object, his hours of reflexion, his dexterity... It is a committed, ethical act, which encourages a\n"
 "                responsible and direct economy."
 msgstr ""
+"Acheter des meubles uniques, c'est acheter une partie de l'artiste : sa passion dans la réalisation\n"
+"                de l'objet, ses heures de réflexion, sa dextérité... C'est un acte engagé et éthique qui encourage\n"
+"                une économie responsable et directe."
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
 msgid "Unique Items"
-msgstr ""
+msgstr "Articles uniques"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_text_image
@@ -115,6 +123,8 @@ msgid ""
 "We’re working with young and innovative designers who use noble and durable materials.\n"
 "            Thus, we can offer you unique pieces that will brighten up your interior and life."
 msgstr ""
+"Nous travaillons avec des designers jeunes et innovants qui utilisent des matériaux nobles et durables. \n"
+"Ainsi, nous pouvons vous proposer des meubles uniques qui égayeront votre intérieur et votre vie."
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
@@ -122,11 +132,13 @@ msgid ""
 "Whether it is to help you see clearly in a project, to confirm a choice or when you have\n"
 "                no idea about the layout of your interior, our advisers are there to accompany you throughout your project."
 msgstr ""
+"Que ce soit pour vous aider à y voir plus clair dans un projet, pour confirmer un choix ou pour \n"
+"aménager votre intérieur, nos conseillers vous accompagnent tout au long de votre projet."
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_call_to_action
 msgid "Would you like more information about a product?"
-msgstr ""
+msgstr "Souhaiteriez-vous plus d'informations sur un produit ?"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_picture
@@ -134,3 +146,5 @@ msgid ""
 "Your home should be a story of who you are and a collection of what you love.<br/>\n"
 "            We can offer you complete guidance in the process of your personal interior project."
 msgstr ""
+"Votre maison doit être une histoire de qui vous êtes et une collection de ce que vous aimez.<br/>\n"
+"            Nous pouvons vous offrir un accompagnement complet dans le processus de votre projet d'intérieur personnel."

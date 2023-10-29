@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,43 +12,43 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_title
 msgid "<font style=\"font-size: 62px;\"><b>Reading means borrowing.</b></font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\"><b>Lire, c'est emprunter.</b></font>"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_picture
 msgid "<font style=\"font-size: 62px;\">Limited editions</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Éditions limitées</font>"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
 msgid "A Belgian Story"
-msgstr ""
+msgstr "Une histoire belge"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
 msgid "At the Mars conquest"
-msgstr ""
+msgstr "À la conquête de Mars"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_call_to_action
 msgid "Browse collection"
-msgstr ""
+msgstr "Parcourir la collection"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_call_to_action
 msgid "Browse through our <b>complete library</b>."
-msgstr ""
+msgstr "Parcourez notre <b>bibliothèque complète</b>."
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_text_image
@@ -56,6 +56,8 @@ msgid ""
 "Discover all the publications. There is probably your next favorite book "
 "amoung them."
 msgstr ""
+"Découvrez toutes les publications. Votre nouveau livre préféré se trouve "
+"probablement parmi elles."
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
@@ -63,16 +65,18 @@ msgid ""
 "Discover the history of Belgium in this well-documented book with many "
 "illustrations and testimonials."
 msgstr ""
+"Découvrez l'histoire de la Belgique dans ce libre bien documenté avec de "
+"nombreuses illustrations et témoignages."
 
 #. module: theme_bookstore
 #: model:ir.model.fields,field_description:theme_bookstore.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_picture
 msgid "Don't rely on a book's cover"
-msgstr ""
+msgstr "Ne vous fiez pas à la couverture d'un livre"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_picture
@@ -80,6 +84,8 @@ msgid ""
 "Explore our top-end Collector's Editions.<br/>\n"
 "            Signed and limited tributes to some of the most outstanding writers of all time."
 msgstr ""
+"Découvrez nos éditions de collection haut de gamme.<br/>\n"
+"            Des hommages signés et limités à certains des écrivains les plus remarquables de tous les temps."
 
 #. module: theme_bookstore
 #: model:ir.model.fields,field_description:theme_bookstore.field_theme_utils__id
@@ -97,6 +103,8 @@ msgid ""
 "Learn about the difficulties encountered by NASA engineers in sending the "
 "first men to Mars."
 msgstr ""
+"Découvrez les difficultés rencontrés par les ingénieurs de la NASA pour "
+"envoyer les premiers hommes sur Mars."
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_text_image
@@ -106,12 +114,12 @@ msgstr "En savoir plus"
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_text_image
 msgid "Probably your next favorite book"
-msgstr ""
+msgstr "Probablement votre nouveau livre préféré"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
 msgid "Re-edition"
-msgstr ""
+msgstr "Réédition"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
@@ -119,6 +127,8 @@ msgid ""
 "The first re-edition of this Latin dictionary, from 1460. Printed originally"
 " on the Gutenberg press."
 msgstr ""
+"La première réédition de ce dictionnaire latin, de 1460. Imprimé à l'origine"
+" sur la presse de Gutenberg."
 
 #. module: theme_bookstore
 #: model:ir.model,name:theme_bookstore.model_theme_utils
@@ -128,4 +138,4 @@ msgstr "Thèmes utiles"
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_product_list
 msgid "View item"
-msgstr ""
+msgstr "Afficher l'article"

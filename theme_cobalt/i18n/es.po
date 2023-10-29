@@ -6,6 +6,10 @@
 # Martin Trigaux, 2021
 # Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021
 # Jonatan Gk, 2022
+# marcescu, 2022
+# Iran Villalobos López, 2023
+# Fernanda Alvarez, 2023
+# Lucia Pacheco, 2023
 # 
 msgid ""
 msgstr ""
@@ -13,23 +17,23 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:03+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Jonatan Gk, 2022\n"
-"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"Last-Translator: Lucia Pacheco, 2023\n"
+"Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
 msgid "<em>Our offices in Dhaka</em>"
-msgstr ""
+msgstr "<em>Nuestras oficinas en Dhaka</em>"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
 msgid "Abu Dhabi"
-msgstr ""
+msgstr "Abu Dabi"
 
 #. module: theme_cobalt
 #. openerp-web
@@ -42,22 +46,22 @@ msgstr "Forma del fondo"
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
 msgid "Calgary"
-msgstr ""
+msgstr "Calgary"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
 msgid "DISCOVER MORE"
-msgstr ""
+msgstr "DESCUBRA MÁS"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
 msgid "Dhaka"
-msgstr ""
+msgstr "Dhaka"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
 msgid "Digital Transformation"
-msgstr ""
+msgstr "Transformación digital"
 
 #. module: theme_cobalt
 #: model:ir.model.fields,field_description:theme_cobalt.field_theme_utils__display_name
@@ -67,17 +71,17 @@ msgstr "Nombre mostrado"
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
 msgid "Earthquake Monitor"
-msgstr ""
+msgstr "Monitor de terremotos"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
 msgid "Frank Clothes eCommerce"
-msgstr ""
+msgstr "Comercio electrónico de Frank Clothes"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
 msgid "Hey Balàzs!"
-msgstr ""
+msgstr "Hey Balàzs!"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
@@ -97,7 +101,7 @@ msgstr "Última modificación el"
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
 msgid "Latest projects"
-msgstr ""
+msgstr "Nuestros últimos proyectos"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
@@ -105,11 +109,13 @@ msgid ""
 "Leader in digital business, we’re helping companies of all sizes to thrive "
 "in an ever-changing landscape."
 msgstr ""
+"Líder en negocios digitales, le ayudamos a las empresas de todos los tamaños"
+" a prosperar en un panorama en constante cambio.  "
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
 msgid "Marketing Promotion &amp; Strategy"
-msgstr ""
+msgstr "Promoción y estrategia de marketing"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
@@ -117,17 +123,21 @@ msgid ""
 "Opened in 2011, this office holds the Sales team for Americas and is "
 "composed of 100 people."
 msgstr ""
+"Inaugurada en 2011, esta oficina alberga al equipo de Ventas para América y "
+"está compuesta por 100 personas."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
 msgid "Our Offices"
-msgstr ""
+msgstr "Nuestras oficinas"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
 msgid ""
 "Our first step in Asia, opened in 2020. Holds Sales and Services department."
 msgstr ""
+"Nuestra primera oficina en Asia abrió en el 2020 y alberga a los equipos de "
+"ventas y servicios."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_picture
@@ -135,22 +145,24 @@ msgid ""
 "R&amp;D department. Where the magic happens. We’re recruiting devs, so "
 "contact us."
 msgstr ""
+"Departamento de  I+D, donde ocurre la magia. Estamos reclutando "
+"desarrolladores, así que ponte en contacto con nosotros."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
 msgid "READ MORE"
-msgstr ""
+msgstr "MÁS INFORMACIÓN"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_image_text
 msgid "Reach more People.<br/>Grow your Business."
-msgstr ""
+msgstr "Llega a más gente.<br/>Crece tu negocio."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_call_to_action
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_image_text
 msgid "START NOW"
-msgstr ""
+msgstr "COMIENZA AHORA"
 
 #. module: theme_cobalt
 #: model:ir.model,name:theme_cobalt.model_theme_utils
@@ -163,6 +175,8 @@ msgid ""
 "This is our headquarter. That’s where, we’re building the strategy of the "
 "company."
 msgstr ""
+"Esta es nuestra oficina principal. Ahí construimos la estrategia de la "
+"empresa."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
@@ -170,6 +184,8 @@ msgid ""
 "This minimalist weather application was created to be multi-platform. It’s "
 "available for iPhone or Android phones."
 msgstr ""
+"Esta aplicación meteorológica minimalista fue creada para ser "
+"multiplataforma. Está disponible para iPhone o Android."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
@@ -177,6 +193,8 @@ msgid ""
 "We developed this application to  help the population of Goma living under "
 "the threat of a volcano.Now it’s available for every area."
 msgstr ""
+"Desarrollamos esta aplicación para ayudar a la población de Goma que vive "
+"bajo la amenaza de un volcán. Ahora está disponible para todas las zonas."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
@@ -185,6 +203,9 @@ msgid ""
 "mobile applications and websites. Check our portfolio from clients around "
 "the world."
 msgstr ""
+"Hemos acumulado una sólida experiencia en la creación de aplicaciones "
+"móviles y sitios web nativos y de plataforma. Consulta nuestro portafolio de"
+" nuestros clientes alrededor del mundo.  "
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
@@ -192,11 +213,13 @@ msgid ""
 "We wanted to propose a friendly shopping experience for the fans of Frank "
 "Clothes. Read more how we developed it."
 msgstr ""
+"Queríamos proponer una experiencia de compra agradable para los amantes de "
+"Frank Clothes. Lee más sobre cómo la desarrollamos."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
 msgid "Web &amp; App Development"
-msgstr ""
+msgstr "Desarrollo de aplicaciones web"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
@@ -205,23 +228,26 @@ msgid ""
 "actionable plan to influence people about your business, generate more "
 "leads, and boost customer engagement."
 msgstr ""
+"Elaboraremos con usted una estrategia de promoción clara. De este modo, "
+"dispondrá de un plan práctico para dar a conocer su empresa, generar más "
+"clientes potenciales e impulsar la interacción de los clientes."
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_text_image
 msgid "What we can do, <b>for you</b>"
-msgstr ""
+msgstr "Lo que podemos hacer <b>por ti</b>"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
 msgid "s_three_columns_1"
-msgstr ""
+msgstr "s_three_columns_1"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
 msgid "s_three_columns_2"
-msgstr ""
+msgstr "s_three_columns_2"
 
 #. module: theme_cobalt
 #: model_terms:theme.ir.ui.view,arch:theme_cobalt.s_three_columns
 msgid "s_three_columns_3"
-msgstr ""
+msgstr "s_three_columns_3"

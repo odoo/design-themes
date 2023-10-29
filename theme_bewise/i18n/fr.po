@@ -6,7 +6,7 @@
 # Martin Trigaux, 2021
 # Tivisse <yti@odoo.com>, 2021
 # Cécile Collart <cco@odoo.com>, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -14,24 +14,26 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_call_to_action
 msgid "<b>3,000 students</b> graduate each year find a job within 2 months"
 msgstr ""
+"<b>3.000 étudiants</b> sont diplômés chaque année et trouvent un emploi dans"
+" les deux mois qui suivent"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_cover
 msgid ""
 "<font style=\"font-size: 62px;font-weight: bold;\">Always at the top</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;font-weight: bold;\">Toujours au top</font>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_quotes_carousel
@@ -39,6 +41,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>Iris DOE</b> • Graduated in "
 "2019</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>Iris DOE</b> • Diplômée en "
+"2019</span>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_quotes_carousel
@@ -46,6 +50,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>Jane DOE</b> • Graduated in "
 "2017</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>Jane DOE</b> • Diplômée en "
+"2017</span>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_quotes_carousel
@@ -53,21 +59,22 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>John DOE</b> • Graduated in "
 "2016</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>John DOE</b> • Diplômé en 2016</span>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
 msgid "<span class=\"s_number display-4\">16,456</span>"
-msgstr ""
+msgstr "<span class=\"s_number display-4\">16.456</span>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
 msgid "Aline Turner, <small><b>Law professor</b></small>"
-msgstr ""
+msgstr "Aline Turner, <small><b>Professeur de droit</b></small>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_image_text
 msgid "All students benefit from individualised support."
-msgstr ""
+msgstr "Tous les étudiants bénéficient d'un soutien individualisé."
 
 #. module: theme_bewise
 #. openerp-web
@@ -80,22 +87,22 @@ msgstr "Forme d'arrière-plan"
 #. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_text_image
 msgid "Driven by Excellence"
-msgstr ""
+msgstr "Motivé par l'excellence"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
 msgid "Faculties"
-msgstr ""
+msgstr "Facultés"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_title
 msgid "Faculty Team"
-msgstr ""
+msgstr "Corps professoral"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_quotes_carousel
@@ -104,6 +111,9 @@ msgid ""
 "be contacted through flexible schedules. Everything you need to start your "
 "career on the web."
 msgstr ""
+"Un excellent soutien et des cours de qualité ! Un mentor vous aide à "
+"progresser et est disponible à des heures flexibles. Tout ce qu'il faut pour"
+" démarrer votre carrière sur le web."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
@@ -113,6 +123,11 @@ msgid ""
 "design for undergraduate and graduate students.   He is active in Problem "
 "and Project based learning. He is the promoter of 8 doctoral theses."
 msgstr ""
+"Il est professeur à l'Institut de Mécanique, Matériaux et Génie Civil depuis"
+" 2000. Il enseigne le dessin mécanique et la conception mécanique aux "
+"étudiants de premier et deuxième cycles. Il est actif dans le domaine de "
+"l'apprentissage basé sur les problèmes et les projets. Il est le promoteur "
+"de 8 thèses de doctorat."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_quotes_carousel
@@ -122,6 +137,10 @@ msgid ""
 " for solutions to problems, I felt accompanied and supported! It's not easy "
 "every day, but it's a great adventure!"
 msgstr ""
+"J'ai beaucoup appris et j'ai réalisé des projets professionnels grâce au "
+"soutien des mentors ! L'équipe est toujours au top et cherche toujours des "
+"solutions aux problèmes. Je me suis sentie accompagnée et soutenue ! Ce "
+"n'est pas facile tous les jours, mais c'est une belle aventure !"
 
 #. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils__id
@@ -131,12 +150,12 @@ msgstr "ID"
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
 msgid "Iris Joe, <small><b>team leader professor</b></small>"
-msgstr ""
+msgstr "Iris Joe, <small><b>professeur chef d'équipe</b></small>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_call_to_action
 msgid "Join them and increase your chances to get hired."
-msgstr ""
+msgstr "Rejoignez-les et augmentez vos chances d'être embauché."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_text_image
@@ -144,6 +163,8 @@ msgid ""
 "Journalists, directors, developers, etc. working effectively in their fields"
 " of excellence."
 msgstr ""
+"Des journalistes, directeurs, développeurs et bien d'autres encore "
+"travaillent efficacement dans leurs domaines d'excellence."
 
 #. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils____last_update
@@ -153,17 +174,17 @@ msgstr "Dernière modification le"
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
 msgid "Libraries"
-msgstr ""
+msgstr "Bibliothèques"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
 msgid "Mich Stark, <small><b>IT Officer</b></small>"
-msgstr ""
+msgstr "Mich Stark, <small><b>Responsable informatique</b></small>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
 msgid "Nationalities"
-msgstr ""
+msgstr "Nationalités"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_cover
@@ -171,6 +192,8 @@ msgid ""
 "Our university has topped the The World University<br/>Rankings for a fifth "
 "consecutive year."
 msgstr ""
+"Notre université est au tête du classement mondial des universités<br/>pour "
+"la cinquième année consécutive."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
@@ -179,6 +202,10 @@ msgid ""
 "She has worked in various major law firms based in Brussels, as member and "
 "then head of their litigation/arbitration practice groups."
 msgstr ""
+"Elle est avocate au barreau francophone de Bruxelles depuis 2006. Elle a "
+"travaillé dans plusieurs grands cabinets d'avocats basés à Bruxelles, en "
+"tant que membre, puis responsable de leurs groupes de pratique en matière de"
+" contentieux/arbitrage."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
@@ -191,6 +218,9 @@ msgid ""
 "Teachers are selected among experts of their domains. They are not just "
 "professors, they are professionals in their field of expertise."
 msgstr ""
+"Les enseignants sont sélectionnés parmi les experts de leur domaine. Ce ne "
+"sont pas seulement des professeurs, ce sont des professionnels dans leur "
+"domaine d'expertise."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_quotes_carousel
@@ -198,6 +228,9 @@ msgid ""
 "Thanks to its innovative system, the school offers a diplomatic training "
 "during which we are followed by a \"mentor\", a sort of \"tutor\"!"
 msgstr ""
+"Grâce à son système innovant, l'école propose une formation diplomatique "
+"durant laquelle nous sommes suivis par un \"mentor\", une sorte de "
+"\"tuteur\" !"
 
 #. module: theme_bewise
 #: model:ir.model,name:theme_bewise.model_theme_utils
@@ -208,6 +241,7 @@ msgstr "Thèmes utiles"
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
 msgid "Tony Fred, <small><b>Faculty Head of IT</b></small>"
 msgstr ""
+"Tony Fred, <small><b>Responsable de la faculté d'informatique</b></small>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
@@ -216,6 +250,10 @@ msgid ""
 "degree in 1998 and 2004. After a post-doctoral experience  he joined the "
 "school as professor of mechatronics in 2006. In 2010, he became Head of IT."
 msgstr ""
+"Tony a obtenu le diplôme en Génie électrique et mécanique et un doctorat en "
+"1998 et 2004. Après une expérience post-doctorale, il a rejoint l'école en "
+"tant que professeur de mécatronique en 2006. En 2010, il est devenu chef de "
+"la faculté d'informatique."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_image_text
@@ -223,8 +261,11 @@ msgid ""
 "We make sure that everyone blossoms. We keep a human size in a warm and "
 "modern setting. All students benefit from individualised support."
 msgstr ""
+"Nous veillons à ce que chaque étudiant s'épanouisse. Nous gardons une taille"
+" humaine dans un cadre chaleureux et moderne. Tous les étudiants bénéficient"
+" d'un soutien individuel."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_image_text
 msgid "What makes us different?"
-msgstr ""
+msgstr "Qu'est-ce qui nous différencie ?"

@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,38 +12,39 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:03+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_cover
 msgid "21/22 December"
-msgstr ""
+msgstr "21/22 décembre"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_call_to_action
 msgid "<b>APPLY FOR OUR V.I.P. CARD</b>"
-msgstr ""
+msgstr "<b>DEMANDER NOTRE CARTE V.I.P.</b>"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_cover
 msgid "<font style=\"font-size: 62px; font-weight: bold;\">X²O Festival</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px; font-weight: bold;\">Festival X²O</font>"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_carousel
 msgid "<font style=\"font-size: 62px;\">Martina Clarck</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Martina Clarck</font>"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_cover
 msgid "After a year's absence, the free and independent festival is back."
 msgstr ""
+"Après un an d'absence, le festival gratuit et indépendant est de retour."
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_carousel
@@ -53,7 +54,7 @@ msgstr "Découvrir"
 #. module: theme_monglia
 #: model:ir.model.fields,field_description:theme_monglia.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_media_list
@@ -62,6 +63,9 @@ msgid ""
 "the largest concert venue in Europe. Book your tickets now, there won't be "
 "room for everybody."
 msgstr ""
+"Des DJs et artistes électro se retrouvent chaque année pour le festival de "
+"danse électro dans la plus grande salle de concept d'Europe. Réservez vos "
+"tickets dès maintenant ! Les places sont limitées."
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_image_text
@@ -69,6 +73,8 @@ msgid ""
 "Every evening, renowned mixologists take turns preparing the best cocktails "
 "for you. Drink responsibly."
 msgstr ""
+"Chaque soir, des mixologues de renom se relaient pour vous préparer les "
+"meilleurs cocktails. À consommer avec modération."
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_media_list
@@ -77,6 +83,10 @@ msgid ""
 "festivals to prove it. Grab your cowboy hat and boots because we've put "
 "together the best country bands in the USA."
 msgstr ""
+"Tout le monde sait que les États-Unis sont le berceau de la musique country,"
+" et les festivals le prouvent. Mettez votre chapeau de cowboy et vos "
+"santiags, car nous avons réuni les meilleurs groupes de musique country des "
+"États-Unis."
 
 #. module: theme_monglia
 #: model:ir.model.fields,field_description:theme_monglia.field_theme_utils__id
@@ -96,7 +106,7 @@ msgstr "En savoir plus"
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_image_text
 msgid "Mixology"
-msgstr ""
+msgstr "Mixologie"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_cover
@@ -104,16 +114,18 @@ msgid ""
 "More than ever young talents are honoured on the big stage with more famous "
 "artists."
 msgstr ""
+"Plus que jamais, les jeunes talents sont mis à l'honneur sur la grande scène"
+" aux côtés d'artistes plus célèbres."
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_title
 msgid "NEXT <font class=\"text-o-color-1\">EVENTS</font>"
-msgstr ""
+msgstr "PROCHAINS <font class=\"text-o-color-1\">ÉVÉNEMENTS</font>"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_media_list
 msgid "Old Town Road"
-msgstr ""
+msgstr "Old Town Road"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_text_image
@@ -121,6 +133,8 @@ msgid ""
 "Open 24/7, the club welcomes you and your friends in a relaxed and friendly "
 "atmosphere."
 msgstr ""
+"Ouvert 24 heures sur 24 et 7 jours sur 7, le club vous accueille vous et vos"
+" amis dans une ambiance détendue et conviviale."
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_cover
@@ -130,12 +144,12 @@ msgstr "Faites défiler jusqu'à la section suivante"
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_media_list
 msgid "Smack My Band Up"
-msgstr ""
+msgstr "Smack My Band Up"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_media_list
 msgid "Sodade Club"
-msgstr ""
+msgstr "Sodade Club"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_media_list
@@ -143,16 +157,20 @@ msgid ""
 "Sodade is a beautiful concept that is difficult to put into words, but can "
 "be experienced by enjoying the diverse range of music on offer."
 msgstr ""
+"Sodade est un beau concept, difficile à décrire, mais qui peut être vécu en "
+"appréciant la diversité de l'offre musicale."
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_text_image
 msgid "The Club"
-msgstr ""
+msgstr "Le club"
 
 #. module: theme_monglia
 #: model_terms:theme.ir.ui.view,arch:theme_monglia.s_call_to_action
 msgid "The vip card allows you to benefit from tickets before everyone else."
 msgstr ""
+"Grâce à la carte V.I.P., vous pouvez bénéficier de tickets avant tout le "
+"monde."
 
 #. module: theme_monglia
 #: model:ir.model,name:theme_monglia.model_theme_utils
@@ -165,3 +183,5 @@ msgid ""
 "This is the first full-length studio release in seven years for the British "
 "singer-songwriter."
 msgstr ""
+"Il s'agit du premier album studio complet en sept ans pour l'auteur-"
+"compositeur-interprète britannique."

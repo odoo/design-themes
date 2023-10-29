@@ -5,6 +5,9 @@
 # Translators:
 # Martin Trigaux, 2021
 # Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021
+# Fernanda Alvarez, 2023
+# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2023
+# Iran Villalobos López, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,20 +15,20 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:06+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021\n"
-"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"Last-Translator: Iran Villalobos López, 2023\n"
+"Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_cover
 msgid ""
 "<font style=\"font-size: 62px;\"><b>Bringing life to your "
 "interior</b></font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\"><b>Ilumina tus interiores</b></font>"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_title
@@ -33,21 +36,24 @@ msgid ""
 "<font style=\"font-size: 62px;\"><b>Everything is designed.<br/> Few things "
 "are designed well.</b></font>"
 msgstr ""
+"<font style=\"font-size: 62px;\"><b>Todo está diseñado...<br/> pero pocas "
+"cosas están bien diseñadas.</b></font>"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_picture
 msgid "<font style=\"font-size: 62px;\">Made it simple, but significant.</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Simple, pero característico.</font>"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_cover
 msgid "Discover More"
-msgstr ""
+msgstr "Más información"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_cover
 msgid "Discover our unique pieces of furnitures selected for you."
 msgstr ""
+"Descubre nuestras únicas piezas de muebles que seleccionamos para ti. "
 
 #. module: theme_loftspace
 #: model:ir.model.fields,field_description:theme_loftspace.field_theme_utils__display_name
@@ -60,16 +66,18 @@ msgid ""
 "Every week our shop receive new products. Some are only on sale for a "
 "limited period of time."
 msgstr ""
+"Nuestra tienda recibe nuevos productos cada semana. Algunos estarán a la "
+"venta solo por tiempo limitado. "
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
 msgid "For the whole Family"
-msgstr ""
+msgstr "Para toda la familia"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_picture
 msgid "Home is where your story begins."
-msgstr ""
+msgstr "El hogar es dónde tu historia comienza."
 
 #. module: theme_loftspace
 #: model:ir.model.fields,field_description:theme_loftspace.field_theme_utils__id
@@ -84,12 +92,12 @@ msgstr "Última modificación el"
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_text_image
 msgid "Selected for you"
-msgstr ""
+msgstr "La selección para ti."
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
 msgid "Tailored advice"
-msgstr ""
+msgstr "Consejos a la medida"
 
 #. module: theme_loftspace
 #: model:ir.model,name:theme_loftspace.model_theme_utils
@@ -103,11 +111,14 @@ msgid ""
 "                of the object, his hours of reflexion, his dexterity... It is a committed, ethical act, which encourages a\n"
 "                responsible and direct economy."
 msgstr ""
+"Cuando compras piezas únicas compras una parte del artista: la pasión que puso en el\n"
+"                proyecto, las horas invertidas, su pericia...Es un acto ético y dedicado gracias al cual existe una\n"
+"                economía responsable y directa."
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
 msgid "Unique Items"
-msgstr ""
+msgstr "Artículos únicos"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_text_image
@@ -115,6 +126,8 @@ msgid ""
 "We’re working with young and innovative designers who use noble and durable materials.\n"
 "            Thus, we can offer you unique pieces that will brighten up your interior and life."
 msgstr ""
+"Estamos trabajando con diseñadores jóvenes e innovadores que usan materiales elevados y durables.\n"
+"            Es por ello que le podemos ofrecerte piezas únicas que iluminaran tu interior."
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
@@ -122,11 +135,13 @@ msgid ""
 "Whether it is to help you see clearly in a project, to confirm a choice or when you have\n"
 "                no idea about the layout of your interior, our advisers are there to accompany you throughout your project."
 msgstr ""
+"No importa si lo que buscas es claridad en un proyecto, confirmar una elección o solo si\n"
+"                no tienes idea de como diseñar tu interior, nuestros consultores están aquí para acompañarlo durante todo el proyecto."
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_call_to_action
 msgid "Would you like more information about a product?"
-msgstr ""
+msgstr "¿Le gustaría saber más sobre un producto?"
 
 #. module: theme_loftspace
 #: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_picture
@@ -134,3 +149,5 @@ msgid ""
 "Your home should be a story of who you are and a collection of what you love.<br/>\n"
 "            We can offer you complete guidance in the process of your personal interior project."
 msgstr ""
+"Su hogar debe contar tu historia y ser una colección de lo que amas.<br/>\n"
+"            Te podemos ofrecer una ayuda completa para el proceso del diseño de tu espacio personal. "

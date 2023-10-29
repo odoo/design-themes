@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,23 +12,25 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:03+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_cover
 msgid "<font style=\"font-size: 62px;\"><b>The Ultimate Laptop</b></font>"
 msgstr ""
+"<font style=\"font-size: 62px;\"><b>L'ordinateur portable par "
+"excellence</b></font>"
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_picture
 msgid "<font style=\"font-size: 62px;\">Don’t miss a frame</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Ne manquez pas une image</font>"
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_three_columns
@@ -36,6 +38,8 @@ msgid ""
 "As we are against programmed obsolescence and waste, we prefer to start by "
 "repairing your products before replacing them"
 msgstr ""
+"Comme nous sommes contre l'obsolescence programmée et le gaspillage, nous "
+"préférons commencer par réparer vos produits avant de les remplacer"
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_image_text
@@ -43,6 +47,8 @@ msgid ""
 "Control every electronic device of your house. The coffee machine, the "
 "television, the thermostat, everything."
 msgstr ""
+"Contrôlez tous les appareils électroniques de votre maison. La machine à "
+"café, la télévision, le thermostat, tout."
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_three_columns
@@ -50,6 +56,9 @@ msgid ""
 "Cool new technology reminds us that even in 2020, we humans can't help but "
 "invent, grow, and change."
 msgstr ""
+"Les nouvelles technologies branchées nous rappellent que, même en 2020, "
+"nous, les humains, nous pouvons pas nous empêcher d'inventer, de grandir et "
+"de changer."
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_cover
@@ -61,16 +70,18 @@ msgstr "Découvrir"
 msgid ""
 "Discover what we think about products in those unboxing and review videos."
 msgstr ""
+"Découvrez ce que nous pensons des produits dans ces vidéos de déballage et "
+"d'évaluation."
 
 #. module: theme_kea
 #: model:ir.model.fields,field_description:theme_kea.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_image_text
 msgid "Enter in a new world of control."
-msgstr ""
+msgstr "Entrez dans un nouveau monde de contrôle."
 
 #. module: theme_kea
 #: model:ir.model.fields,field_description:theme_kea.field_theme_utils__id
@@ -85,12 +96,12 @@ msgstr "Dernière modification le"
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
 msgid "Motherboard Repair"
-msgstr ""
+msgstr "Réparation de la carte mère"
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_three_columns
 msgid "New Gadgets"
-msgstr ""
+msgstr "Nouveaux gadgets"
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
@@ -98,6 +109,9 @@ msgid ""
 "No. 1 in Macbook and iPhone motherboard repair in the world. ​We are the "
 "preferred subcontractor for many electronic repair companies."
 msgstr ""
+"N° 1 mondial de la réparation de cartes mères de Macbook et d'iPhone. Nous "
+"sommes le sous-traitant privilégié de nombreuses entreprises de réparation "
+"électronique."
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_picture
@@ -105,6 +119,8 @@ msgid ""
 "Our new drone enable transmission up to 15 km away and supports 4K videos.<br/>\n"
 "            Keep the contact, even in a tropical storm."
 msgstr ""
+"Notre nouveau drone permet de transmettre jusqu'à 15 km de distance et prend en charge les vidéos 4K.<br/>\n"
+"Gardez le contact, même en cas de tempête tropicale."
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
@@ -119,7 +135,7 @@ msgstr "Réparer"
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_three_columns
 msgid "Reviews and Unboxing"
-msgstr ""
+msgstr "Critiques et déballage"
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
@@ -132,6 +148,8 @@ msgid ""
 "Speed up your work with the last laptop. 3.4Ghz, 8 cores.<br/>\n"
 "                You’ll be unstoppable all day long (up to 11 hours)."
 msgstr ""
+"Accélérez votre travail avec le dernier ordinateur portable. 3,4 Ghz, 8 coeurs.<br/>\n"
+"On ne vous arrêtera plus (jusqu'à 11 heures) ! "
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_picture
@@ -139,6 +157,9 @@ msgid ""
 "The new light design in carbon fibre allow us to improve the battery life. "
 "Now, up to 11 hours."
 msgstr ""
+"Le nouveau design de la lumière en fibre de carbone nous a permis "
+"d'améliorer l'autonomie de la batterie. Désormais, elle peut atteindre 11 "
+"heures."
 
 #. module: theme_kea
 #: model:ir.model,name:theme_kea.model_theme_utils
@@ -151,6 +172,9 @@ msgid ""
 "We make it a point of honour to offer you a 5-star service. We are here to "
 "answer all your hardware problems from smartphone, tablets to your computer."
 msgstr ""
+"Nous mettons un point d'honneur à vous offrir un service 5 étoiles. Nous "
+"sommes là pour répondre à tous vos problèmes de matériel, du smartphone à la"
+" tablette, en passant par votre ordinateur."
 
 #. module: theme_kea
 #: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
@@ -159,10 +183,14 @@ msgid ""
 " get the best quality available on the market at the best price. All our "
 "interventions are guaranteed for a period of one year."
 msgstr ""
+"Nous n'utilisons que des pièces d'origine ou de qualité équivalente. Nous "
+"veillons à ce que vous obteniez la meilleure qualité disponible sur le "
+"marché au meilleur prix. Toutes nos interventions sont garanties pour une "
+"période d'un an."
 
 #. module: theme_kea
 #. openerp-web
 #: code:addons/theme_kea/static/src/js/tour.js:0
 #, python-format
 msgid "width"
-msgstr ""
+msgstr "largeur"

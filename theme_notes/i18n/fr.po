@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,13 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:08+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_media_list
@@ -26,31 +26,33 @@ msgid ""
 "<font style=\"\" class=\"text-o-color-1\">Continue reading</font>\n"
 "                        <i class=\"align-middle fa fa-long-arrow-right ml-1 text-o-color-1\"/>"
 msgstr ""
+"<font style=\"\" class=\"text-o-color-1\">Continuer la lecture</font>\n"
+"                        <i class=\"align-middle fa fa-long-arrow-right ml-1 text-o-color-1\"/>"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_carousel
 msgid "<font style=\"font-size: 62px;\">6 Days Pass</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Pass de 6 jours</font>"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
 msgid "<font style=\"font-size: 62px;\">Line Up</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Line Up</font>"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_carousel
 msgid "<font style=\"font-size: 62px;\">Miraillet Festival</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Festival Miraillet</font>"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_carousel
 msgid "<font style=\"font-size: 62px;\">Recent Editions</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Éditions récentes</font>"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
 msgid "Aline"
-msgstr ""
+msgstr "Aline"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
@@ -59,6 +61,9 @@ msgid ""
 "as the most powerful and influential French person by Vanity Fair, who "
 "noticed her \"radiance of French genius"
 msgstr ""
+"Aline est une chanteuse, auteure-compositrice et productrice française. En "
+"2016, elle a été élue Française la plus puissante et influente par Vanity "
+"Fair, qui a remarqué son \"rayonnement du génie français\"."
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_media_list
@@ -68,7 +73,7 @@ msgstr "Découvrir"
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_image_text
 msgid "Discover more"
-msgstr "Découvrir"
+msgstr "Découvrir plus"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_carousel
@@ -76,11 +81,13 @@ msgid ""
 "Discover what makes the reputation of the Miraillet festival through these "
 "after-movies."
 msgstr ""
+"Découvrez ce qui fait la réputation du Festival Miraillet à travers ces "
+"aftermovies."
 
 #. module: theme_notes
 #: model:ir.model.fields,field_description:theme_notes.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_carousel
@@ -88,11 +95,13 @@ msgid ""
 "From the 12th to the 17th of August, come and enjoy the atmosphere at the "
 "Mirallet Festival. Discover the line up below."
 msgstr ""
+"Du 12 au 17 août, venez profiter de l'ambiance du Festival Miraillet. "
+"Découvrez le line up ci-dessous."
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_media_list
 msgid "Go to the Miraillet Festival"
-msgstr ""
+msgstr "Allez au Festival Miraillet"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_image_text
@@ -107,7 +116,7 @@ msgstr "ID"
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
 msgid "Joseris"
-msgstr ""
+msgstr "Joseris"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
@@ -118,6 +127,11 @@ msgid ""
 "encompass alternative, electronica, electro-pop, rock, and a mixture of "
 "others"
 msgstr ""
+"Joseris est un groupe belge qui s'est formé en octobre 1995. Bien que "
+"catégorisé à l'origine comme un groupe de trip-hop, il a rapidement élargi "
+"son son au point de ne plus pouvoir être décrit comme un genre unique, mais "
+"plutôt d'englober l'alternatif, l'électronique, l'électro-pop, le rock et un"
+" mélange d'autres genres."
 
 #. module: theme_notes
 #: model:ir.model.fields,field_description:theme_notes.field_theme_utils____last_update
@@ -127,7 +141,7 @@ msgstr "Dernière modification le"
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
 msgid "Mich Starck"
-msgstr ""
+msgstr "Mich Starck"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
@@ -136,6 +150,10 @@ msgid ""
 " nine million albums and thirty million singles worldwide. In 2011, he was "
 "voted as the number one DJ in the DJ Mag Top 100 DJs poll."
 msgstr ""
+"Mich Starck est un DJ, producteur de disques et auteur-compositeur français."
+" Il a vendu plus de neuf millions d'albums et trente millions de singles "
+"dans le monde. En 2011, il a été élu premier DJ dans le sondage DJ Mag "
+"Top100 DJs."
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_carousel
@@ -150,6 +168,9 @@ msgid ""
 " event for people with reduced mobility and people affected by or carrying a"
 " disability."
 msgstr ""
+"Cette année encore, le festival et les associations à but non lucratif "
+"mettent en oeuvre les moyens nécessaires pour faciliter l'accès à "
+"l'événement des personnes à mobilité réduite et des personnes handicapées."
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_image_text
@@ -158,6 +179,10 @@ msgid ""
 "touristic and institutional actors of the region to propose a major cultural"
 " event in the very heart of the region during the summer period."
 msgstr ""
+"Le Festival Miraillet est né en 2002 d'une volonté commune des acteurs "
+"culturels, touristiques et institutionnels de la région de proposer un "
+"événement culturel majeur au cœur même de la région pendant la période "
+"estivale."
 
 #. module: theme_notes
 #: model:ir.model,name:theme_notes.model_theme_utils
@@ -167,18 +192,20 @@ msgstr "Thèmes utiles"
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_media_list
 msgid "Ticketing and ticketing timetables"
-msgstr ""
+msgstr "Billetterie et horaires"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_carousel
 msgid ""
 "Tickets will be on sale soon. Do not miss our 6 Days Pass. Free camping!"
 msgstr ""
+"Les tickets sont bientôt en vente. Ne manquez pas notre Passe de 6 jours. "
+"Camping gratuit !"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
 msgid "Tony"
-msgstr ""
+msgstr "Tony"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
@@ -187,11 +214,14 @@ msgid ""
 "because of the controversial nature of his lyrics. He has also established a"
 " label, and developed a line of jewellery."
 msgstr ""
+"Tony est loué pour la qualité de son flow et de ses beats, mais souvent "
+"critiqué en raison de la nature controversée de ses paroles. Il a également "
+"créé un label et développé une ligne de bijoux."
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_media_list
 msgid "Wheelchair accessibility"
-msgstr ""
+msgstr "Accessibilité en fauteuil roulant"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_media_list
@@ -199,6 +229,9 @@ msgid ""
 "Where and when to exchange your festival bracelets? Where to buy food and "
 "drink tickets? What is the price for children? The answer can be found here!"
 msgstr ""
+"Où et quand échanger les bracelets du festival ? Où acheter les tickets de "
+"restauration ? Quel est le prix pour les enfants ? Toutes les réponses se "
+"trouvent ici !"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_media_list
@@ -208,10 +241,14 @@ msgid ""
 "city centre where there are a lot of cars. Please make sure to park your "
 "bikes in the designated areas of the city."
 msgstr ""
+"Trouvez ici les différents moyens de transport pour vous rendre au festival."
+" Le festival est accessible à vélo. Attention, vous roulerez dans le centre-"
+"ville où il y a beaucoup de voitures. Veillez à stationner vos vélos dans "
+"les zones prévues à cet effet dans la ville."
 
 #. module: theme_notes
 #. openerp-web
 #: code:addons/theme_notes/static/src/js/tour.js:0
 #, python-format
 msgid "width"
-msgstr ""
+msgstr "largeur"

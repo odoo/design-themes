@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2021
 # Cécile Collart <cco@odoo.com>, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -13,38 +13,39 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:14+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_call_to_action
 msgid "<b>50,000 pre-orders</b> already registered."
-msgstr ""
+msgstr "<b>50.000 précommandes</b> déjà enregistrées."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cover
 msgid "<font style=\"font-size: 62px;font-weight: bold;\">Start the Engine</font>"
 msgstr ""
+"<font style=\"font-size: 62px;font-weight: bold;\">Démarrez le moteur</font>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "Aerodynamic in Action"
-msgstr ""
+msgstr "L'aérodynamisme en action"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_masonry_block
 msgid "Aeronautical Cockpit"
-msgstr ""
+msgstr "Cockpit aéronautique"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_masonry_block
 msgid "And compact interior"
-msgstr ""
+msgstr "Et intérieur compact"
 
 #. module: theme_vehicle
 #. openerp-web
@@ -57,42 +58,44 @@ msgstr "Forme d'arrière-plan"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "Carbon and light material"
-msgstr ""
+msgstr "Matériau léger et en carbone"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_masonry_block
 msgid "Ceramic"
-msgstr ""
+msgstr "Céramique"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "Confort"
-msgstr ""
+msgstr "Confort"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "Controls are located on the steering wheel as for real sports cars."
 msgstr ""
+"Les commandes sont situées sur le volant, comme pour toutes les vraies "
+"voitures de sport."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_masonry_block
 msgid "Cooling"
-msgstr ""
+msgstr "Refroidissement"
 
 #. module: theme_vehicle
 #: model:ir.model.fields,field_description:theme_vehicle.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_masonry_block
 msgid "Electric Engine"
-msgstr ""
+msgstr "Moteur électrique"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "F1 inspired"
-msgstr ""
+msgstr "Inspiré par la F1"
 
 #. module: theme_vehicle
 #: model:ir.model.fields,field_description:theme_vehicle.field_theme_utils__id
@@ -102,12 +105,12 @@ msgstr "ID"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "Interior Design"
-msgstr ""
+msgstr "Design intérieur"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_call_to_action
 msgid "Join the early joiners or request for a trial on track."
-msgstr ""
+msgstr "Rejoignez les premiers inscrits ou demandez un essai sur circuit."
 
 #. module: theme_vehicle
 #: model:ir.model.fields,field_description:theme_vehicle.field_theme_utils____last_update
@@ -117,17 +120,17 @@ msgstr "Dernière modification le"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "Leather seats with 6 positions memory."
-msgstr ""
+msgstr "Sièges en cuir avec mémoire de 6 positions."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_text_image
 msgid "Live the Dream."
-msgstr ""
+msgstr "Vivez le rêve."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_image_text
 msgid "No compromise."
-msgstr ""
+msgstr "Aucun compromis."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_references
@@ -140,6 +143,8 @@ msgid ""
 "Our engineers worked in the wind tunnel to obtain the most aerodynamic shape"
 " possible."
 msgstr ""
+"Nos ingénieurs ont travaillé dans la soufflerie pour obtenir la forme la "
+"plus aérodynamique possible."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_image_text
@@ -148,31 +153,34 @@ msgid ""
 "super car. No compromises were made to keep the pleasure of driving despite "
 "those constraints."
 msgstr ""
+"Performance et design ont été les maîtres mots lors de la conception de "
+"cette super voiture. Aucun compromis n'a été fait pour conserver le plaisir "
+"de conduire malgré ces contraintes."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cover
 msgid "START THE ENGINE"
-msgstr ""
+msgstr "DÉMARREZ LE MOTEUR"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "Steering wheel"
-msgstr ""
+msgstr "Volant"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_image_text
 msgid "Take advantage of a free track trial to discover it."
-msgstr ""
+msgstr "Profitez d'un essai gratuit sur circuit pour le découvrir."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "Tested in Wind Tunnel"
-msgstr ""
+msgstr "Testé en soufflerie"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "The design of the car is inspired by F1."
-msgstr ""
+msgstr "Le design du véhicule est inspiré par la F1."
 
 #. module: theme_vehicle
 #: model:ir.model,name:theme_vehicle.model_theme_utils
@@ -183,18 +191,19 @@ msgstr "Thèmes utiles"
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_table_of_content
 msgid "We use carbon and fibreglass to lighten the vehicle."
 msgstr ""
+"Nous utilisons le carbone et la fibre de verre pour alléger le véhicule."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_masonry_block
 msgid "braque disks"
-msgstr ""
+msgstr "disques de frein"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_masonry_block
 msgid "by turbo-compressed air"
-msgstr ""
+msgstr "par air turbocompressé"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_masonry_block
 msgid "coupled to a combustion one"
-msgstr ""
+msgstr "couplé à un moteur à combustion"

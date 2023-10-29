@@ -5,6 +5,9 @@
 # Translators:
 # Martin Trigaux, 2021
 # Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021
+# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2023
+# Fernanda Alvarez, 2023
+# Iran Villalobos López, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,23 +15,23 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:04+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021\n"
-"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"Last-Translator: Iran Villalobos López, 2023\n"
+"Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_image_text
 msgid "Always Improving"
-msgstr ""
+msgstr "Siempre buscamos mejorar"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_image_text
 msgid "DISCOVER MORE <i class=\"fa fa-chevron-right\"/>"
-msgstr ""
+msgstr "MÁS INFORMACIÓN <i class=\"fa fa-chevron-right\"/>"
 
 #. module: theme_paptic
 #: model:ir.model.fields,field_description:theme_paptic.field_theme_utils__display_name
@@ -38,7 +41,7 @@ msgstr "Nombre mostrado"
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
 msgid "Fallanzy Integration Explained"
-msgstr ""
+msgstr "Cómo fue la integración de Fallanzy"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
@@ -47,21 +50,24 @@ msgid ""
 "business for over 20 years. Discover how we answered to the challenges of "
 "this company."
 msgstr ""
+"Fallanzy ha trabajado en el diseño de espacios de trabajo y ergonomía desde "
+"hace 20 años. Descubre cómo ayudamos a solucionar los problemas de esta "
+"empresa. "
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_cover
 msgid "Grow your Business<br/>Optimize your time."
-msgstr ""
+msgstr "Haz crecer tu negocio.<br/>Optimiza tu tiempo."
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_image_text
 msgid "Help you grow"
-msgstr ""
+msgstr "Te ayudamos a crecer"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
 msgid "HeyNosf Inc. Digital Transformation"
-msgstr ""
+msgstr "La transformación digital de HeyNosf Inc."
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
@@ -70,11 +76,14 @@ msgid ""
 "Louis Dewinter. He always had a strong interest in languages and decided to "
 "create a company reflecting his own interests."
 msgstr ""
+"Jean-Louis Dewinter fundó la agencia de comunicación HeyNosf Inc. en el "
+"2006. Siempre le interesaron mucho los idiomas y decidió crear una empresa "
+"donde pudiera explotar su pasión. "
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
 msgid "Hotels Improvement Study"
-msgstr ""
+msgstr "Estudio sobre las mejoras en los hoteles"
 
 #. module: theme_paptic
 #: model:ir.model.fields,field_description:theme_paptic.field_theme_utils__id
@@ -89,7 +98,7 @@ msgstr "Última modificación el"
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_cover
 msgid "Man waiting at the airport"
-msgstr ""
+msgstr "Hombre esperando en el aeropuerto"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
@@ -98,26 +107,29 @@ msgid ""
 "their time and employee to be more efficient and more productive. Discover "
 "our study."
 msgstr ""
+"Incluso los hoteles se pueden beneficiar de utilizar nuestra solución. Los "
+"gerentes perderán menos tiempo y los empleados serán más eficientes y "
+"productivos. Obtén más información sobre nuestro estudio. "
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_cover
 msgid "SCHEDULE A DEMO"
-msgstr ""
+msgstr "AGENDA UNA DEMOSTRACIÓN"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_cover
 msgid "START NOW"
-msgstr ""
+msgstr "COMIENZA AHORA"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
 msgid "SUCCESS STORIES"
-msgstr ""
+msgstr "HISTORIAS DE ÉXITO"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_image_text
 msgid "Scalable and Modular"
-msgstr ""
+msgstr "Escalable y modular"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_image_text
@@ -125,6 +137,8 @@ msgid ""
 "Thanks to our running release system, benefit from all updates (security and"
 " new features) in real time."
 msgstr ""
+"Con nuestro sistema de versiones en funcionamiento podrá beneficiarse de "
+"todas las actualizaciones (de seguridad y funciones nuevas) en tiempo real. "
 
 #. module: theme_paptic
 #: model:ir.model,name:theme_paptic.model_theme_utils
@@ -134,7 +148,7 @@ msgstr "Herramientas del tema"
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_title
 msgid "Unique experiences."
-msgstr ""
+msgstr "Experiencias únicas. "
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_image_text
@@ -142,18 +156,20 @@ msgid ""
 "Whether you start small or are already a large company, our solution adapts "
 "to your needs and grows with you."
 msgstr ""
+"No importa si su empresa es grande o pequeña, nuestra solución se adapta a "
+"sus necesidades y crece con ustedes. "
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
 msgid "s_three_columns_1"
-msgstr ""
+msgstr "s_three_columns_1"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
 msgid "s_three_columns_2"
-msgstr ""
+msgstr "s_three_columns_2"
 
 #. module: theme_paptic
 #: model_terms:theme.ir.ui.view,arch:theme_paptic.s_three_columns
 msgid "s_three_columns_3"
-msgstr ""
+msgstr "s_three_columns_3"

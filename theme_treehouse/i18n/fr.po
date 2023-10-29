@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,43 +12,44 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:14+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_call_to_action
 msgid "<b>Help us protect and preserve</b> for future generations"
 msgstr ""
+"<b>Aidez-nous à protéger et à préserver</b> pour les générations futures"
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_cover
 msgid "<font style=\"font-size: 62px;\"><b>Life on Earth</b></font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\"><b>La vie sur terre</b></font>"
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_title
 msgid "Changing the world is possible.<br/> We’ve done it before."
-msgstr ""
+msgstr "Il est possible de changer le monde.<br/> Nous l'avons déjà fait."
 
 #. module: theme_treehouse
 #: model:ir.model.fields,field_description:theme_treehouse.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_cover
 msgid "Get involved"
-msgstr ""
+msgstr "Engagez-vous"
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
 msgid "Habitat Model"
-msgstr ""
+msgstr "Modèle d'habitat"
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
@@ -56,6 +57,8 @@ msgid ""
 "Habitats with a minimum footprint on the planet and a maximum positive "
 "impact on the local community."
 msgstr ""
+"Des habitats avec une empreinte minimale sur la planète et un impact positif"
+" maximal sur la communauté locale."
 
 #. module: theme_treehouse
 #: model:ir.model.fields,field_description:theme_treehouse.field_theme_utils__id
@@ -65,7 +68,7 @@ msgstr "ID"
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_call_to_action
 msgid "Join us and make the planet a better place."
-msgstr ""
+msgstr "Rejoignez-nous et faites de la planète un endroit meilleur."
 
 #. module: theme_treehouse
 #: model:ir.model.fields,field_description:theme_treehouse.field_theme_utils____last_update
@@ -78,11 +81,13 @@ msgid ""
 "Learn how to use organic gardening methods to grow the freshest food in your"
 " fruit and vegetable garden."
 msgstr ""
+"Apprenez à utiliser des méthodes de jardinage biologique pour cultiver des "
+"fruits et légumes frais."
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
 msgid "Organic Garden"
-msgstr ""
+msgstr "Jardin biologique"
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_cover
@@ -90,11 +95,13 @@ msgid ""
 "Our mission is to create a shared plan for saving the planet’s most "
 "exceptional wild places."
 msgstr ""
+"Notre mission consiste à créer une stratégie commune pour sauver les espaces"
+" sauvages les plus exceptionnels de la planète."
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
 msgid "Recycling water"
-msgstr ""
+msgstr "Recycler l'eau"
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
@@ -102,16 +109,18 @@ msgid ""
 "Recycling water for reuse applications instead of using freshwater supplies "
 "can be a water-saving measure."
 msgstr ""
+"Recycler l'eau pour la réutiliser au lieu d'utiliser des réserves d'eau "
+"douce permet d'économiser de l'eau."
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_text_image
 msgid "Shaping our future"
-msgstr ""
+msgstr "Façonner notre avenir"
 
 #. module: theme_treehouse
 #: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_color_blocks_2
 msgid "Sky is the limit"
-msgstr ""
+msgstr "Le ciel est la limite"
 
 #. module: theme_treehouse
 #: model:ir.model,name:theme_treehouse.model_theme_utils
@@ -124,3 +133,6 @@ msgid ""
 "With all the global problems our planet faces today,<br/> communities of "
 "people concerned with them are growing<br/> to prevent the negative impact."
 msgstr ""
+"Face à tous les problèmes mondiaux auxquels notre planète est confrontée ce "
+"jour,<br/> les communautés de personnes qui s'y intéressent se "
+"multiplient<br/> pour en prévenir les effets négatifs."

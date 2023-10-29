@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,18 +12,18 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:04+0000\n"
 "PO-Revision-Date: 2021-12-13 07:14+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_banner
 msgid "<b>Digital Transformation</b>"
-msgstr ""
+msgstr "<b>Transformation numérique</b>"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_masonry_block
@@ -31,51 +31,53 @@ msgid ""
 "<em>Maintain a position of constant change and evolution, while always "
 "aiming for your success.</em>"
 msgstr ""
+"<em>Conservez une position de changement et d'évolution constante, tout en "
+"visant toujours le succès.</em>"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_numbers
 msgid "<span class=\"s_number display-4\">4500</span>"
-msgstr ""
+msgstr "<span class=\"s_number display-4\">4.500</span>"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
 msgid "All our data centers are emission-free."
-msgstr ""
+msgstr "Tous nos centres de données fonctionnent entièrement sans émission."
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
 msgid "All types of files are allowed."
-msgstr ""
+msgstr "Tous types de fichiers sont autorisés."
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_numbers
 msgid "Available Languages"
-msgstr ""
+msgstr "Langues disponibles"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_numbers
 msgid "Business Solutions"
-msgstr ""
+msgstr "Solutions commerciales"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_color_blocks_2
 msgid "Cloud <b>Solution</b>"
-msgstr ""
+msgstr "<b>Solution</b> cloud"
 
 #. module: theme_zap
 #: model:ir.model.fields,field_description:theme_zap.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
 msgid "Eco-Friendly"
-msgstr ""
+msgstr "Respectueux de l'environnement"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_numbers
 msgid "Happy Customers"
-msgstr ""
+msgstr "Clients heureux"
 
 #. module: theme_zap
 #: model:ir.model.fields,field_description:theme_zap.field_theme_utils__id
@@ -88,6 +90,9 @@ msgid ""
 "Keep your files in one place. Manage documents online with an easy to use "
 "interface. Rely on an highly secure cloud storage."
 msgstr ""
+"Conservez vos fichiers en un seul endroit. Gérez vos documents en ligne à "
+"l'aide d'une interface facile d'utilisation. Appuyez-vous sur un stockage "
+"cloud hautement sécurisé."
 
 #. module: theme_zap
 #: model:ir.model.fields,field_description:theme_zap.field_theme_utils____last_update
@@ -102,17 +107,17 @@ msgstr "En savoir plus"
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_numbers
 msgid "Ongoing Projects"
-msgstr ""
+msgstr "Projets en cours"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_references
 msgid "Our <b>References</b>"
-msgstr ""
+msgstr "Nos <b>Références</b>"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_banner
 msgid "Our Solutions"
-msgstr ""
+msgstr "Nos solutions"
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
@@ -125,16 +130,19 @@ msgid ""
 "Software Innovation as its best.<br/> Harness the power of disruptive "
 "technologies to increase your day-to-day business operations."
 msgstr ""
+"L'innovation logicielle dans toute sa splendeur.<br/> Exploitez la puissance"
+" des technologies de rupture pour améliorer vos activités commerciales "
+"quotidiennes."
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_masonry_block
 msgid "Super <b>Easy</b>."
-msgstr ""
+msgstr "Super <b>facile</b>."
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_masonry_block
 msgid "Super <b>Fast</b>."
-msgstr ""
+msgstr "Super <b>rapide</b>."
 
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
@@ -149,4 +157,4 @@ msgstr "Thèmes utiles"
 #. module: theme_zap
 #: model_terms:theme.ir.ui.view,arch:theme_zap.s_features
 msgid "We keep you safe in the cloud."
-msgstr ""
+msgstr "Nous assurons votre sécurité dans le cloud."

@@ -6,6 +6,9 @@
 # Martin Trigaux, 2021
 # Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021
 # Jonatan Gk, 2022
+# marcescu, 2022
+# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2023
+# Lucia Pacheco, 2023
 # 
 msgid ""
 msgstr ""
@@ -13,18 +16,18 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Jonatan Gk, 2022\n"
-"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"Last-Translator: Lucia Pacheco, 2023\n"
+"Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
 msgid "<font style=\"font-size: 62px;\"><b>Daily Fresh Food</b></font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\"><b>Comida Fresca Diaria</b></font>"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_text_block
@@ -33,6 +36,9 @@ msgid ""
 "new products and receipts. <b>While respecting seasons' products and "
 "nature.</b>"
 msgstr ""
+"Nuestra cocina es saludable y solo usamos productos locales. Nuestra meta es"
+" innovar constantemente nuestros productos y recetas <b>sin dejar de "
+"respetar los productos en temporada y la naturaleza.</b>"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
@@ -40,6 +46,8 @@ msgid ""
 "A truly exquisite dining experience. I highly recommend the Mustard Sauce, "
 "out of this world."
 msgstr ""
+"Una experiencia culinaria exquisita. Recomiendo la salsa de mostaza, es "
+"deliciosa."
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_text_block
@@ -49,11 +57,15 @@ msgid ""
 "delicious cakes that satisfy your sweet tooth. <b>And each day, you’ll "
 "discover our Today’s Special.</b>"
 msgstr ""
+"En Bistro siempre encontrarás comida saludable. <br/>Visítanos en nuestro "
+"brunch de los domingos, donde podrás encontrar jugos nutritivos y deliciosos"
+" pasteles para quitarte el antojo de algo dulce. <b>Todos los días podrás "
+"probar nuestro especial del día. </b>"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_features
 msgid "Breakfast"
-msgstr ""
+msgstr "Desayuno"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
@@ -61,11 +73,13 @@ msgid ""
 "Cosy and friendly, good atmosphere and super food. Especially the spiced "
 "fruit crumble."
 msgstr ""
+"Este es un restaurante íntimo y agradable, con un maravilloso ambiente y "
+"comida deliciosa. Lo mejor es el pastel de fruta. "
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_features
 msgid "Dinner"
-msgstr ""
+msgstr "Cena"
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__display_name
@@ -78,6 +92,8 @@ msgid ""
 "Enjoy tasty food with friends.<br/><small>From <b>6:30 am</b> to <b>10:30 "
 "am</b></small>"
 msgstr ""
+"Disfruta de una deliciosa comida con tus amigos.<br/><small>De <b>6:30 "
+"am</b> a <b>10:30 am</b></small>"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_features
@@ -85,6 +101,8 @@ msgid ""
 "Help you start your morning right.<br/><small>From <b>7:30 pm</b> to "
 "<b>10:30 pm</b></small>"
 msgstr ""
+"Te ayuda a empezar bien tu mañana<br/><small>De <b>7:30 pm</b> a<b>10:30 "
+"pm</b></small>"
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__id
@@ -109,7 +127,7 @@ msgstr "Menú"
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
 msgid "Only local and fresh products to keep you healthy."
-msgstr ""
+msgstr "Sólo productos locales y frescos para mantenerte sano."
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
@@ -122,6 +140,8 @@ msgid ""
 "Take a break from your busy schedule.<br/><small>From <b>11:30 pm</b> to "
 "<b>14:30 am</b></small>"
 msgstr ""
+"Tómese un descanso de su apretada agenda.<br/><small>Desde <b>11:30 pm</b> "
+"to <b>14:30 am</b></small>"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_picture
@@ -129,11 +149,13 @@ msgid ""
 "Taste our chef special, the macon two shells of almond macaroon<br/> topped "
 "with a creamy orange blossom scent."
 msgstr ""
+"Prueba el especial de nuestro chef: un macarrón de almendra <br/> con notas "
+"cítricas y textura cremosa. "
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_picture
 msgid "The perfect dessert to share for the table."
-msgstr ""
+msgstr "El postre perfecto para compartir en la mesa."
 
 #. module: theme_bistro
 #: model:ir.model,name:theme_bistro.model_theme_utils
@@ -144,8 +166,9 @@ msgstr "Herramientas del tema"
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
 msgid "This place is perfect for groups or a casual date night."
 msgstr ""
+"Este lugar es perfecto para grupos, o para una noche de una cita informal."
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_picture
 msgid "Today's special"
-msgstr ""
+msgstr "El especial de hoy"

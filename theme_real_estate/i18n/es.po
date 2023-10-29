@@ -5,6 +5,8 @@
 # Translators:
 # Martin Trigaux, 2021
 # Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021
+# Lucia Pacheco, 2023
+# Iran Villalobos López, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,13 +14,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:14+0000\n"
-"Last-Translator: Jose Ramon Garcia <jrgarcia.cosin@gmail.com>, 2021\n"
-"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"Last-Translator: Iran Villalobos López, 2023\n"
+"Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
@@ -26,11 +28,13 @@ msgid ""
 "<font style=\"font-size: 48px;\">Real Estate Agencies.<br/>\n"
 "                Near You.</font>"
 msgstr ""
+"<font style=\"font-size: 48px;\">Agencias de bienes raíces.<br/>\n"
+"                cerca de tí.</font>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
 msgid "<font style=\"font-size: 62px;\">Open your horizons</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Expande tus horizontes</font>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -38,6 +42,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>Iris Doe</b> • Customer, sold an "
 "appartement</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>Iris Doe</b> • Cliente, vendió un "
+"departamento</span>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -45,6 +51,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>Jane Doe</b> • Customer, bought a "
 "house</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>Jane Doe</b> • Cliente, compró una "
+"casa</span>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -52,6 +60,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>John Doe</b> • Customer, bought an "
 "appartement</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>John Doe</b> • Cliente, compró un "
+"departamento</span>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -59,22 +69,27 @@ msgid ""
 "Amazing team! smiling, always nice to talk with, they always have the best "
 "advices for you, adapted to your needs!"
 msgstr ""
+"¡El mejor equipo! Siempre sonrientes y amables al hablar con ellos. Si "
+"necesitas un consejo, siempre te ofrecen uno que se adapte a tus "
+"necesidades."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid "Bored with your interior?"
-msgstr ""
+msgstr "¿Cansado de su interior?"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "Building and renovating"
-msgstr ""
+msgstr "Construir y renovar"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
 msgstr ""
+"Conozca nuestros servicios hechos a la medida para mejorar la decoración de "
+"su hogar."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -82,6 +97,8 @@ msgid ""
 "Discover tips and tricks when you sell a property. Whether it's appointments"
 " with the notary, fees, etc..."
 msgstr ""
+"Aprende trucos y consejos para vender una propiedad, ya sea citas con el "
+"notario, cuotas, etc.."
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__display_name
@@ -95,6 +112,9 @@ msgid ""
 "and easy to do business with. Very happy with the experience and the "
 "company."
 msgstr ""
+"Fueron extremadamente profesionales, amables, serviciales y agradables "
+"durante todo el proceso. Estamos muy contentos con la experiencia y con la "
+"empresa."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -102,11 +122,13 @@ msgid ""
 "Here are some tips to get you started on a new construction or renovation "
 "project. Because it can't be improvised."
 msgstr ""
+"Estos son algunos consejos para que comiences un nuevo proyecto de "
+"construcción o renovación. No puedes solo improvisar."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "I sell. What should I do?"
-msgstr ""
+msgstr "Vendo, pero ¿qué debo hacer?"
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__id
@@ -125,6 +147,9 @@ msgid ""
 " design of your interior and will give you the best advice for your interior"
 " design."
 msgstr ""
+"Nuestros expertos en decoración están a su disposición para guiarle paso a "
+"paso en el diseño de su interior y le darán los mejores consejos para su "
+"interior."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -132,6 +157,8 @@ msgid ""
 "Our online estimation tool, 100% free of charge, will guide you through the "
 "different steps to have a rigorous evaluation."
 msgstr ""
+"Nuestra herramienta de estimación en línea, 100% gratuita, te guiará a lo "
+"largo de los diferentes pasos necesarios para una evaluación rigurosa. "
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -139,6 +166,8 @@ msgid ""
 "Positive energy, great team spirit, hard workers and awesome people! I "
 "warmly recommend them!"
 msgstr ""
+"Transmiten una energía positiva, tienen un gran espíritu de equipo, trabajan"
+" duro y son gente estupenda. Los recomiendo totalmente."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
@@ -148,7 +177,7 @@ msgstr "Propiedades"
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
 msgid "Property on the coasts of the Mediterranean."
-msgstr ""
+msgstr "Propiedades en las costas del Mediterráneo."
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
@@ -159,6 +188,7 @@ msgstr "Herramientas del tema"
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
 msgid "We are specialist in the sale and rental of residential real estate."
 msgstr ""
+"Somos especialistas en la venta y renta de bienes raíces residenciales."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
@@ -166,8 +196,10 @@ msgid ""
 "We’ve selected properties from all types and all areas.<br/>\n"
 "            The house of your dreams is around the corner."
 msgstr ""
+"Seleccionamos propiedades de todos los tipos y de todas las zonas.<br/>\n"
+"            La casa de tus sueños está a la vuelta de la esquina."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "What’s the value of my property?"
-msgstr ""
+msgstr "¿Cuál es el valor de mi propiedad?"

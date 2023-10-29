@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,43 +12,45 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:03+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_carousel
 msgid "<font style=\"font-size: 48px;\">Creative Studio</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 48px;\">Studio créatif</font>"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
 msgid "Adaptable"
-msgstr ""
+msgstr "Adaptable"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_image_text
 msgid "Come up with your big idea. <br/>We take care of the rest."
 msgstr ""
+"N'hésitez pas à nous faire part de votre grande idée. <br/>Nous nous "
+"occupons du reste."
 
 #. module: theme_nano
 #: model:ir.model.fields,field_description:theme_nano.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
 msgid "Handcrafted"
-msgstr ""
+msgstr "Artisanal"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_image_text
 msgid "How we Work"
-msgstr ""
+msgstr "Comment nous travaillons"
 
 #. module: theme_nano
 #: model:ir.model.fields,field_description:theme_nano.field_theme_utils__id
@@ -58,7 +60,7 @@ msgstr "ID"
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
 msgid "Intuitive"
-msgstr ""
+msgstr "Intuitif"
 
 #. module: theme_nano
 #: model:ir.model.fields,field_description:theme_nano.field_theme_utils____last_update
@@ -69,17 +71,21 @@ msgstr "Dernière modification le"
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
 msgid "Made in Santa's Workshop. High quality fabric &amp; exclusive designs."
 msgstr ""
+"Fabriqué dans l'atelier du Père Noël. Tissu de haute qualité &amp; designs "
+"exclusifs."
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
 msgid ""
 "People should love the things they own. Things should be built to last."
 msgstr ""
+"Les gens devraient aimer les objets qu'ils possèdent. Les objets doivent "
+"être construits pour durer."
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
 msgid "Tailored"
-msgstr ""
+msgstr "Personnalisé"
 
 #. module: theme_nano
 #: model:ir.model,name:theme_nano.model_theme_utils
@@ -92,18 +98,20 @@ msgid ""
 "We combine smart design with rich technology <br/>to craft innovative "
 "products."
 msgstr ""
+"Nous combinons un design intelligent avec une technologie de pointe "
+"<br/>pour créer des produits innovants."
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
 msgid "We create easy-to-use products."
-msgstr ""
+msgstr "Nous créons des produits faciles d'utilisation."
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
 msgid "We create modular solutions."
-msgstr ""
+msgstr "Nous construisons des solutions modulaires."
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_image_text
 msgid "“Soon is not as good as now.” <br/><b>~Seth Godin</b><br/>"
-msgstr ""
+msgstr "“Soon is not as good as now.” <br/><b>~Seth Godin</b><br/>"

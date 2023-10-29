@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2021
 # Cécile Collart <cco@odoo.com>, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -13,33 +13,36 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:06+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_call_to_action
 msgid "<b>50,000 people</b>, run Clean to grow their financial wealth."
 msgstr ""
+"<b>50.000 personnes</b> utilisent Clean pour accroître leur patrimoine "
+"financier."
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_cover
 msgid "<font style=\"font-size: 62px;\"><b>Sell from your couch</b></font>"
 msgstr ""
+"<font style=\"font-size: 62px;\"><b>Vendre depuis votre fauteuil</b></font>"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
 msgid "<font style=\"font-size: 62px;\">Efficient team processes.</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Des processus d'équipe efficaces.</font>"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
 msgid "<font style=\"font-size: 62px;\">Personal adviser.</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">Conseiller personnel.</font>"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
@@ -47,6 +50,8 @@ msgid ""
 "At any moment, you may contact our advisor through the in-app video meeting "
 "system."
 msgstr ""
+"Vous pouvez contacter notre conseiller à tout moment par le biais du système"
+" de vidéoconférence in-app."
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
@@ -54,16 +59,18 @@ msgid ""
 "Composed of 25 people from 25 to 66 years, we’re a young and dynamic "
 "company. We have open positions, do not hesitate to contact us."
 msgstr ""
+"Composée de 25 personnes de 25 à 66 ans, notre entreprise est jeune et "
+"dynamique. Nous avons des postes vacants, n'hésitez pas à nous contacter."
 
 #. module: theme_clean
 #: model:ir.model.fields,field_description:theme_clean.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_text_image
 msgid "Everything you need, totally free"
-msgstr ""
+msgstr "Tout ce dont vous avez besoin, complètement gratuit"
 
 #. module: theme_clean
 #: model:ir.model.fields,field_description:theme_clean.field_theme_utils__id
@@ -73,7 +80,7 @@ msgstr "ID"
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_call_to_action
 msgid "Join them and make the right money move."
-msgstr ""
+msgstr "Rejoignez-les et faites le bon choix en matière d'argent."
 
 #. module: theme_clean
 #: model:ir.model.fields,field_description:theme_clean.field_theme_utils____last_update
@@ -86,11 +93,13 @@ msgid ""
 "Make your finances reach a new level with our online management system.<br/>\n"
 "                    Track every penny, directly from the confort of your home."
 msgstr ""
+"Faites passer vos finances à la vitesse supérieure grâce à notre système de gestion en ligne.<br/>\n"
+"                    Suivez chaque centime, directement depuis votre domicile."
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
 msgid "Our mission"
-msgstr ""
+msgstr "Notre mission"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
@@ -100,7 +109,7 @@ msgstr "Notre équipe"
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
 msgid "Our values"
-msgstr ""
+msgstr "Nos valeurs"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
@@ -108,11 +117,13 @@ msgid ""
 "Provide clear and concise financial advices to make your financial wealth "
 "grow. And this, completely free of charge"
 msgstr ""
+"Fournir des conseils financiers clairs et concis pour faire fructifier votre"
+" patrimoine financier. Et ce totalement gratuitement."
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
 msgid "Simplify things."
-msgstr ""
+msgstr "Simplifier les choses."
 
 #. module: theme_clean
 #: model:ir.model,name:theme_clean.model_theme_utils
@@ -125,6 +136,8 @@ msgid ""
 "Track every expenses, uncover new ways to save, choose the right credit cards.<br/>\n"
 "                All those advices and much more are included and totally free of charge."
 msgstr ""
+"Suivez toutes vos dépenses, découvrez de nouvelles façons d'épargner, choisissez les bonnes cartes de crédit.<br/>\n"
+"                Tous ces conseils et bien plus encore sont inclus et totalement gratuits."
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
@@ -132,6 +145,9 @@ msgid ""
 "We created our company to improve the work-life balance. We believe that we "
 "need to focus on our family more than our work and finances."
 msgstr ""
+"Nous avons créé notre entreprise pour améliorer l'équilibre entre vie privée"
+" et vie personnelle. Nous pensons que nous devons nous concentrer davantage "
+"sur notre famille que sur notre travail et nos finances."
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
@@ -139,6 +155,8 @@ msgid ""
 "We integrate digital tools and solutions for better insights, enabling data-"
 "driven planning."
 msgstr ""
+"Nous intégrons des outils et des solutions numériques pour une meilleure "
+"compréhension permettant une planification basée sur les données."
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
@@ -146,3 +164,5 @@ msgid ""
 "We invest in strategic advice tailored to your<br/>\n"
 "                                business problems and needs."
 msgstr ""
+"Nous investissons dans les conseils stratégiques adaptés aux<br/>\n"
+"problèmes et besoins de votre entreprise."

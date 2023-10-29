@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
-# Geoffrey_GMF <gmf@odoo.com>, 2021
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,33 +12,34 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:14+0000\n"
-"Last-Translator: Geoffrey_GMF <gmf@odoo.com>, 2021\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_call_to_action
 msgid "<b>345 couples</b> trusted us to organize their wedding."
 msgstr ""
+"<b>345 couples</b> nous ont fait confiance pour organiser leur mariage."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block
 msgid "<em>Sparkling, dynamic and smiling.</em>"
-msgstr ""
+msgstr "<em>Pétillant, dynamique et souriant.</em>"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block
 msgid "<em>Warm, attentive and caring.</em>"
-msgstr ""
+msgstr "<em>Chalereux, attentif et attentionné.</em>"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_picture
 msgid "<font style=\"font-size: 62px;\">Love is in the air</font>"
-msgstr ""
+msgstr "<font style=\"font-size: 62px;\">L'amour est dans l'air</font>"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
@@ -46,6 +47,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>Jack and Mary</b> • Married in "
 "2019</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>Jack et Mary</b> • Mariés en "
+"2019</span>"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
@@ -53,6 +56,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>Linda and Paul</b> • Married in "
 "2020</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>Linda ey Paul</b> • Mariés en "
+"2020</span>"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
@@ -60,37 +65,41 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>Rose and Peter</b> • Married in "
 "2020</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>Rose et Peter</b> • Mariés en "
+"2020</span>"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
 msgid "A touch of Magic"
-msgstr ""
+msgstr "Une touche de magie"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns
 msgid "Ceremonies"
-msgstr ""
+msgstr "Cérémonies"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns
 msgid "Decoration"
-msgstr ""
+msgstr "Décoration"
 
 #. module: theme_yes
 #: model:ir.model.fields,field_description:theme_yes.field_theme_utils__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns
 msgid "Flowers"
-msgstr ""
+msgstr "Fleurs"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
 msgid ""
 "Get inspired with the latest trends and advice from our wedding experts."
 msgstr ""
+"Laissez-vous inspirer par les dernières tendances et les conseils de nos "
+"experts en mariage."
 
 #. module: theme_yes
 #: model:ir.model.fields,field_description:theme_yes.field_theme_utils__id
@@ -100,7 +109,7 @@ msgstr "ID"
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
 msgid "Ideas and tips"
-msgstr ""
+msgstr "Idées et conseils"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_picture
@@ -108,11 +117,14 @@ msgid ""
 "Intimate or with hundreds of guests. Outdoors or indoors, we organize the "
 "wedding of your dreams."
 msgstr ""
+"Intime ou avec des centaines d'invités. En plein air ou en intérieur, nous "
+"organisons le mariage de vos rêves."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_call_to_action
 msgid "Join them and let us help you make this day unforgettable."
 msgstr ""
+"Rejoignez-les et laissez-nous vous aider à rendre cette journée inoubliable."
 
 #. module: theme_yes
 #: model:ir.model.fields,field_description:theme_yes.field_theme_utils____last_update
@@ -125,6 +137,9 @@ msgid ""
 "No matter where in the world you want to get married. Our directory of "
 "international wedding professionals can help you celebrate."
 msgstr ""
+"Quel que soit l'endroit du monde où vous souhaitez vous marier. Nos annuaire"
+" de professionnels du mariage international peut vous aider à célébrer "
+"l'événement."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns
@@ -132,16 +147,21 @@ msgid ""
 "Our first passion. They are for us the basis of any decoration. In a "
 "natural, wild and poetic style, we will be delighted to flower your event."
 msgstr ""
+"Notre première passion. Elles sont pour nous la base de toute décoration. "
+"Dans un style naturel, sauvage et poétique, nous nous ferons un plaisir de "
+"fleurir votre événement."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
 msgid "Plan your destination"
-msgstr ""
+msgstr "Planifiez votre destination"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
 msgid "The organisation was perfect. Flowers and decoration were sumptuous."
 msgstr ""
+"L'organisation était parfaite. Les fleurs et la décoration étaient "
+"somptueses."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
@@ -149,6 +169,8 @@ msgid ""
 "The staff was anticipatory and responsive, the food was excellent, and the "
 "venue was beautiful."
 msgstr ""
+"Le personnel était prévoyant et réactif. La nourriture était excellente et "
+"le lieu simplement magnifique."
 
 #. module: theme_yes
 #: model:ir.model,name:theme_yes.model_theme_utils
@@ -161,12 +183,16 @@ msgid ""
 "They are a great venue: clean, gorgeous, elegant and very workable for a lot"
 " of different kinds of events."
 msgstr ""
+"C'est un lieu exceptionnel : propre, magnifique, élégant et parfaitement "
+"adapté à de nombreux types d'événements."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_carousel
 msgid ""
 "We are focused on providing high-quality service and customer satisfaction."
 msgstr ""
+"Nous nous engageons à fournir un service de haute qualité et à satisfaire "
+"nos clients."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns
@@ -175,6 +201,9 @@ msgid ""
 "another but each story is unique and deserves to be highlighted in a way "
 "that suits you."
 msgstr ""
+"Nous créons des cérémonies qui vous ressemblent. Les couples et les familles"
+" se suivent, mais chaque histoire est unique et mérite d'être mise en valeur"
+" d'une manière qui vous resemble."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns
@@ -183,15 +212,18 @@ msgid ""
 "think everything through with you in the smallest details (candles, table "
 "plan, photo corner, reception panels, ...)."
 msgstr ""
+"Nous pourrons vous aider à choisir tout ce qui entour les fleurs et "
+"réfléchir avec vous aux moindres détails (bougies, plan de table, coin "
+"photo, panneaux de réception, ...)."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_picture
 msgid "Wedding of Bernard and Bianca, at the Barn."
-msgstr ""
+msgstr "Mariage de Bernard et Bianca, dans la grange."
 
 #. module: theme_yes
 #. openerp-web
 #: code:addons/theme_yes/static/src/js/tour.js:0
 #, python-format
 msgid "height"
-msgstr ""
+msgstr "hauteur"
