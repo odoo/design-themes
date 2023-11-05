@@ -5,6 +5,7 @@
 # Translators:
 # Martin Trigaux, 2021
 # Friederike Fasterling-Nesselbosch, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,18 +13,19 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:06+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Friederike Fasterling-Nesselbosch, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_call_to_action
 msgid "<b>50,000 people</b>, run Clean to grow their financial wealth."
 msgstr ""
+"<b>50.000 persone</b>, utilizzano Clean per far crescere le proprie finanze."
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_cover
@@ -53,6 +55,8 @@ msgid ""
 "Composed of 25 people from 25 to 66 years, we’re a young and dynamic "
 "company. We have open positions, do not hesitate to contact us."
 msgstr ""
+"La nostra azienda, giovane e dinamica, è composta da 25 persone dai 25 ai 66"
+" anni. Abbiamo posizioni aperte, non esitare a contattarci."
 
 #. module: theme_clean
 #: model:ir.model.fields,field_description:theme_clean.field_theme_utils__display_name
@@ -72,7 +76,7 @@ msgstr "ID"
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_call_to_action
 msgid "Join them and make the right money move."
-msgstr ""
+msgstr "Unisciti a loro e fai la scelta giusta."
 
 #. module: theme_clean
 #: model:ir.model.fields,field_description:theme_clean.field_theme_utils____last_update
@@ -89,7 +93,7 @@ msgstr ""
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
 msgid "Our mission"
-msgstr ""
+msgstr "La nostra missione"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
@@ -99,7 +103,7 @@ msgstr "La nostra squadra"
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
 msgid "Our values"
-msgstr ""
+msgstr "I nostri valori"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
@@ -131,6 +135,9 @@ msgid ""
 "We created our company to improve the work-life balance. We believe that we "
 "need to focus on our family more than our work and finances."
 msgstr ""
+"Abbiamo creato la nostra azienda per migliorare l'equilibrio tra lavoro e "
+"vita privata. Crediamo che sia necessario concentrarsi sulla famiglia più "
+"che sul lavoro e sulle finanze."
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel

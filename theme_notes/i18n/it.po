@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -11,13 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:08+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_media_list
@@ -49,7 +50,7 @@ msgstr ""
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
 msgid "Aline"
-msgstr ""
+msgstr "Aline"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
@@ -75,6 +76,8 @@ msgid ""
 "Discover what makes the reputation of the Miraillet festival through these "
 "after-movies."
 msgstr ""
+"Scopri perché il festival Miraillet è così celebre attraverso questi "
+"filmati."
 
 #. module: theme_notes
 #: model:ir.model.fields,field_description:theme_notes.field_theme_utils__display_name
@@ -106,7 +109,7 @@ msgstr "ID"
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
 msgid "Joseris"
-msgstr ""
+msgstr "Joseris"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
@@ -126,7 +129,7 @@ msgstr "Ultima modifica il"
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
 msgid "Mich Starck"
-msgstr ""
+msgstr "Mich Starck"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
@@ -135,6 +138,10 @@ msgid ""
 " nine million albums and thirty million singles worldwide. In 2011, he was "
 "voted as the number one DJ in the DJ Mag Top 100 DJs poll."
 msgstr ""
+"Mich Starck è un DJ, produttore discografico e cantautore francese. Ha "
+"venduto oltre nove milioni di album e trenta milioni di singoli in tutto il "
+"mondo. Nel 2011 è stato votato come DJ numero uno nel sondaggio DJ Mag Top "
+"100 DJs."
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_carousel
@@ -157,6 +164,9 @@ msgid ""
 "touristic and institutional actors of the region to propose a major cultural"
 " event in the very heart of the region during the summer period."
 msgstr ""
+"Il Festival Miraillet è nato nel 2002 dalla volontà comune degli attori "
+"culturali, turistici e istituzionali della regione di proporre un grande "
+"evento culturale nel cuore della regione durante il periodo estivo."
 
 #. module: theme_notes
 #: model:ir.model,name:theme_notes.model_theme_utils
@@ -173,11 +183,13 @@ msgstr ""
 msgid ""
 "Tickets will be on sale soon. Do not miss our 6 Days Pass. Free camping!"
 msgstr ""
+"I biglietti saranno presto in vendita. Non farti scappare il PAss da 6 "
+"giorni. Aree campeggio gratuita!"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
 msgid "Tony"
-msgstr ""
+msgstr "Tony"
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_company_team
@@ -186,6 +198,9 @@ msgid ""
 "because of the controversial nature of his lyrics. He has also established a"
 " label, and developed a line of jewellery."
 msgstr ""
+"Tony è apprezzato per la qualità del suo flow e dei suoi beat ma spesso "
+"viene criticato per la natura controversa dei suoi testi. Ha anche fondato "
+"un'etichetta e sviluppato una linea di gioielli."
 
 #. module: theme_notes
 #: model_terms:theme.ir.ui.view,arch:theme_notes.s_media_list
@@ -213,4 +228,4 @@ msgstr ""
 #: code:addons/theme_notes/static/src/js/tour.js:0
 #, python-format
 msgid "width"
-msgstr ""
+msgstr "profondità"

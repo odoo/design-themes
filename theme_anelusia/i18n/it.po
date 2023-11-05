@@ -5,6 +5,7 @@
 # Translators:
 # Martin Trigaux, 2021
 # Sergio Zanchetta <primes2h@gmail.com>, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,13 +13,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_cover
@@ -37,6 +38,9 @@ msgid ""
 "do. She likes to capture the moment from another point of view, another "
 "perspective."
 msgstr ""
+"Aline è una persona iconica, di quelle che possono vantarsi di amare il "
+"proprio lavoro. Ama catturare i momenti da un altro punto di vista, una "
+"prospettiva completamente diversa."
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_cover
@@ -61,6 +65,9 @@ msgid ""
 "He loves to keep his hands full by participating in the development of the "
 "magazine and does not hesitate to carry out field surveys."
 msgstr ""
+"Fondatore e capo visionario, Tony è la forza motrice dell'azienda. Ama "
+"tenersi occupato partecipando allo sviluppo del software, del giornale e non"
+" esita a effettuare indagini sul campo."
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
@@ -68,6 +75,9 @@ msgid ""
 "Go off beaten track and discover unexpected and curious places. Here’s our "
 "ultimate guide to the best-kept secret spots that you simply must visit!"
 msgstr ""
+"Abbandona i sentieri battuti e scopri luoghi inaspettati e curiosi. Ecco la "
+"nostra guida definitiva ai luoghi segreti meglio custoditi che dovete "
+"assolutamente visitare!"
 
 #. module: theme_anelusia
 #: model:ir.model.fields,field_description:theme_anelusia.field_theme_utils__id
@@ -86,6 +96,9 @@ msgid ""
 "politics. She is determined to drive success and delivers her professional "
 "acumen to bring the magazine to the next level."
 msgstr ""
+"Grazie alla sua esperienza internazionale, Iris aiuta a comprendere le "
+"politiche mondiali. È determinata ad avere successo mettendo le sue capacità"
+" professionali al servizio del gironale per renderlo sempre più famoso."
 
 #. module: theme_anelusia
 #: model:ir.model.fields,field_description:theme_anelusia.field_theme_utils____last_update
@@ -104,6 +117,9 @@ msgid ""
 "journalist, he wanted to join a team that puts people at the center of the "
 "stories."
 msgstr ""
+"Mich ama affrontare le sfide. Grazie alla sua esperienza pluriennale come "
+"giornalista, ha voluto unirsi a un team che mette le persone al centro delle"
+" storie."
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
@@ -113,7 +129,7 @@ msgstr "Leggi di più"
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
 msgid "Summer Essentials"
-msgstr ""
+msgstr "I capi essenziali per l'estate"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
@@ -136,4 +152,4 @@ msgstr ""
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_media_list
 msgid "World's top Hidden gems"
-msgstr ""
+msgstr "Le migliori perle nascoste del mondo"

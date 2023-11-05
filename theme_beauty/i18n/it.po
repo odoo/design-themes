@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -11,13 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:06+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_beauty
 #: model_terms:theme.ir.ui.view,arch:theme_beauty.s_call_to_action
@@ -41,7 +42,7 @@ msgstr ""
 #. module: theme_beauty
 #: model_terms:theme.ir.ui.view,arch:theme_beauty.s_company_team
 msgid "Aline"
-msgstr ""
+msgstr "Aline"
 
 #. module: theme_beauty
 #: model:ir.model.fields,field_description:theme_beauty.field_theme_utils__display_name
@@ -64,12 +65,12 @@ msgstr "ID"
 #. module: theme_beauty
 #: model_terms:theme.ir.ui.view,arch:theme_beauty.s_company_team
 msgid "Iris"
-msgstr ""
+msgstr "Iris"
 
 #. module: theme_beauty
 #: model_terms:theme.ir.ui.view,arch:theme_beauty.s_call_to_action
 msgid "Join us and enjoy the pleasure of caring for yourself."
-msgstr ""
+msgstr "Vieni a trovarci e scopri il piacere di prenderti cura di te stessa."
 
 #. module: theme_beauty
 #: model:ir.model.fields,field_description:theme_beauty.field_theme_utils____last_update
@@ -79,12 +80,12 @@ msgstr "Ultima modifica il"
 #. module: theme_beauty
 #: model_terms:theme.ir.ui.view,arch:theme_beauty.s_company_team
 msgid "Mich"
-msgstr ""
+msgstr "Mich"
 
 #. module: theme_beauty
 #: model_terms:theme.ir.ui.view,arch:theme_beauty.s_text_image
 msgid "Pamper Yourself"
-msgstr ""
+msgstr "Prenditi cura di te stessa"
 
 #. module: theme_beauty
 #: model:ir.model,name:theme_beauty.model_theme_utils
@@ -94,4 +95,4 @@ msgstr "Utilità tema"
 #. module: theme_beauty
 #: model_terms:theme.ir.ui.view,arch:theme_beauty.s_company_team
 msgid "Tony"
-msgstr ""
+msgstr "Tony"

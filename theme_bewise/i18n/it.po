@@ -6,6 +6,7 @@
 # Martin Trigaux, 2021
 # Friederike Fasterling-Nesselbosch, 2021
 # Sergio Zanchetta <primes2h@gmail.com>, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -13,13 +14,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_call_to_action
@@ -66,7 +67,7 @@ msgstr ""
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_image_text
 msgid "All students benefit from individualised support."
-msgstr ""
+msgstr "Tutti gli studenti beneficiano del supporto individuale."
 
 #. module: theme_bewise
 #. openerp-web
@@ -84,12 +85,12 @@ msgstr "Nome visualizzato"
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_text_image
 msgid "Driven by Excellence"
-msgstr ""
+msgstr "Eccellenze"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
 msgid "Faculties"
-msgstr ""
+msgstr "Facoltà"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_title
@@ -103,6 +104,9 @@ msgid ""
 "be contacted through flexible schedules. Everything you need to start your "
 "career on the web."
 msgstr ""
+"Grande supporto e corsi di qualità! Un mentore ti aiuta ad andare avanti e "
+"può essere contattato con orari flessibili. Tutto ciò di cui hai bisogno per"
+" iniziare una carriera sul web."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
@@ -121,6 +125,10 @@ msgid ""
 " for solutions to problems, I felt accompanied and supported! It's not easy "
 "every day, but it's a great adventure!"
 msgstr ""
+"Ho imparato molto e ho realizzato progetti professionali grazie al supporto "
+"dei mentori! Il team è sempre al top e sempre alla ricerca di soluzioni ai "
+"problemi, mi sono sentita accompagnata e sostenuta! Non è facile ogni giorno"
+" ma è una grande avventura!"
 
 #. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils__id
@@ -135,7 +143,7 @@ msgstr ""
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_call_to_action
 msgid "Join them and increase your chances to get hired."
-msgstr ""
+msgstr "Unisciti a loro e aumenta le possibilità di essere assunto"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_text_image
@@ -143,6 +151,8 @@ msgid ""
 "Journalists, directors, developers, etc. working effectively in their fields"
 " of excellence."
 msgstr ""
+"Giornalisti, registi, sviluppatori, ecc. che lavorano efficacemente nei loro"
+" campi di eccellenza."
 
 #. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils____last_update
@@ -162,7 +172,7 @@ msgstr ""
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
 msgid "Nationalities"
-msgstr ""
+msgstr "Nazionalità"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_cover
@@ -170,6 +180,8 @@ msgid ""
 "Our university has topped the The World University<br/>Rankings for a fifth "
 "consecutive year."
 msgstr ""
+"La nostra università ha dominato le classifiche delle<br/> università "
+"migliori del mondo per il quinto anno consecutivo"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
@@ -178,6 +190,10 @@ msgid ""
 "She has worked in various major law firms based in Brussels, as member and "
 "then head of their litigation/arbitration practice groups."
 msgstr ""
+"Dal 2006 esercita la professione forense presso l'Ordine degli Avvocati di "
+"Bruxelles di lingua francese. Ha lavorato in diversi importanti studi legali"
+" con sede a Bruxelles, come membro e poi responsabile dei loro gruppi di "
+"pratica di contenzioso/arbitrato."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
@@ -197,6 +213,9 @@ msgid ""
 "Thanks to its innovative system, the school offers a diplomatic training "
 "during which we are followed by a \"mentor\", a sort of \"tutor\"!"
 msgstr ""
+"Grazie al proprio sistema innovativo, la scuola offre una formazione di "
+"stampo diplomatico durante la quale siamo seguiti da un \"mentore\", una "
+"sorta di \"tutor\"!"
 
 #. module: theme_bewise
 #: model:ir.model,name:theme_bewise.model_theme_utils
@@ -215,6 +234,10 @@ msgid ""
 "degree in 1998 and 2004. After a post-doctoral experience  he joined the "
 "school as professor of mechatronics in 2006. In 2010, he became Head of IT."
 msgstr ""
+"Tony ha conseguito la laurea in Ingegneria elettrica e meccanica e il "
+"dottorato di ricerca rispettivamente nel 1998 e nel 2004. Dopo un'esperienza"
+" post-dottorato, nel 2006 è entrato a far parte della scuola come professore"
+" di meccatronica. Nel 2010 è diventato responsabile del settore IT."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_image_text
@@ -226,4 +249,4 @@ msgstr ""
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_image_text
 msgid "What makes us different?"
-msgstr ""
+msgstr "Cosa ci rende diversi?"

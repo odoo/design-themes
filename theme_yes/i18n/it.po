@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -11,18 +12,19 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:14+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_call_to_action
 msgid "<b>345 couples</b> trusted us to organize their wedding."
 msgstr ""
+"<b>345 coppie</b> si sono affidate a noi per organizzare il loro matrimonio."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_masonry_block
@@ -45,6 +47,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>Jack and Mary</b> • Married in "
 "2019</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>Jack e Mary</b> • Sposati nel "
+"2019</span>"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
@@ -52,6 +56,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>Linda and Paul</b> • Married in "
 "2020</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>Linda e Paul</b> • Sposati nel "
+"2020</span>"
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_quotes_carousel
@@ -90,6 +96,8 @@ msgstr ""
 msgid ""
 "Get inspired with the latest trends and advice from our wedding experts."
 msgstr ""
+"Lasciati ispirare dalle ultime tendenze e dai consigli dei nostri esperti di"
+" matrimonio."
 
 #. module: theme_yes
 #: model:ir.model.fields,field_description:theme_yes.field_theme_utils__id
@@ -112,6 +120,8 @@ msgstr ""
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_call_to_action
 msgid "Join them and let us help you make this day unforgettable."
 msgstr ""
+"Unitevi a loro e lasciate che vi aiutiamo a rendere questo giorno "
+"indimenticabile."
 
 #. module: theme_yes
 #: model:ir.model.fields,field_description:theme_yes.field_theme_utils____last_update
@@ -166,6 +176,8 @@ msgstr ""
 msgid ""
 "We are focused on providing high-quality service and customer satisfaction."
 msgstr ""
+"Il nostro obiettivo è fornire un servizio di alta qualità e la soddisfazione"
+" del cliente."
 
 #. module: theme_yes
 #: model_terms:theme.ir.ui.view,arch:theme_yes.s_three_columns

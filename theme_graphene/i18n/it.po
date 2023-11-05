@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -11,23 +12,23 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
 msgid "24/7 support"
-msgstr ""
+msgstr "Supporto 24/7"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_call_to_action
 msgid "<b>50,000+ companies</b> run our software."
-msgstr ""
+msgstr "<b>Oltre 50,000 aziende</b> utilizzano il nostro software."
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
@@ -61,6 +62,9 @@ msgid ""
 "they do. She mentors 100+ in-house developers and looks after the community "
 "of thousands of developers.</small>"
 msgstr ""
+"<small>Aline è una persona iconica, di quelle che possono vantarsi di amare "
+"il proprio lavoro. Supervisiona oltre 100 sviluppatori interni e si occupa "
+"della comunità, che conta migliaia di sviluppatori.</small>"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
@@ -69,6 +73,9 @@ msgid ""
 "company. He loves to keep his hands full by participating in the development"
 " of the software, marketing, and customer experience strategies.</small>"
 msgstr ""
+"<small>Fondatore e capo visionario, Tony è la forza motrice dell'azienda. "
+"Ama tenersi occupato partecipando allo sviluppo del software, del marketing "
+"e delle strategie relative all'esperienza del cliente.</small>"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
@@ -78,6 +85,10 @@ msgid ""
 "delivers her professional acumen to bring the company to the next "
 "level.</small>"
 msgstr ""
+"<small>Grazie alla sua esperienza internazionale, Iris aiuta a comprendere "
+"le cifre e a migliorarle. È determinata ad avere successo mettendo le sue "
+"capacità professionali al servizio dell'azienda per aiutarla a "
+"progredire.</small> "
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
@@ -86,21 +97,24 @@ msgid ""
 "Commercial Director in the software industry, Mich has helped the company to"
 " get where it is today. Mich is among the best minds.</small>"
 msgstr ""
+"<small>Mich ama affrontare le sfide. Grazie alla sua pluriennale esperienza "
+"come direttore commerciale nell'industria del software, Mich ha contributo "
+"al successo attuale dell'azienda. È una tra le menti più brillanti.</small>"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
 msgid "Access to all modules"
-msgstr ""
+msgstr "Accesso a tutti i moduli"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
 msgid "Access to all modules and features"
-msgstr ""
+msgstr "Accesso a tutti i moduli e funzionalità"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
 msgid "Aline Turner, <small><b>CTO</b></small>"
-msgstr ""
+msgstr "Aline Turner, <small><b>CTO</b></small>"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
@@ -120,7 +134,7 @@ msgstr "ID"
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
 msgid "Iris Joe, <small><b>CFO</b></small>"
-msgstr ""
+msgstr "Iris Joe, <small><b>CFO</b></small>"
 
 #. module: theme_graphene
 #: model:ir.model.fields,field_description:theme_graphene.field_theme_utils____last_update
@@ -130,12 +144,12 @@ msgstr "Ultima modifica il"
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
 msgid "Mich Stark, <small><b>COO</b></small>"
-msgstr ""
+msgstr "Mich Stark, <small><b>COO</b></small>"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
 msgid "Mobile Experience"
-msgstr ""
+msgstr "Esperienza mobile"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
@@ -144,11 +158,14 @@ msgid ""
 "documentation &amp; guides, an active community,<br/>24/7 support make it a "
 "pleasure to work with us."
 msgstr ""
+"La nostra missione è di fornire ai cliente la migliore esperienza.<br/> Una "
+"documentazione esaustiva, delle guide, una community attiva,<br/>supporto "
+"24/7 rendono piacevole lavorare con noi.  "
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
 msgid "Powerful API"
-msgstr ""
+msgstr "Un'API potentissima"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
@@ -156,6 +173,8 @@ msgid ""
 "Probably the only CRM with a full mobile experience. Never wondered how it "
 "works? That's because it just works"
 msgstr ""
+"Probabilmente l'unico CRM a fornire un'esperienza mobile completa. Ti sei "
+"mai chiesto come funziona?"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
@@ -165,7 +184,7 @@ msgstr "Inizia ora"
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
 msgid "Support Team"
-msgstr ""
+msgstr "Team di assistenza"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
@@ -173,6 +192,8 @@ msgid ""
 "Thanks to our API, Developers report building their solutions 4x faster. "
 "Discover why and how."
 msgstr ""
+"Grazie alla nostra API, gli sviluppatori riferiscono di aver costruito le "
+"loro soluzioni quattro volte più velocemente. Scopri come e perché."
 
 #. module: theme_graphene
 #: model:ir.model,name:theme_graphene.model_theme_utils
@@ -182,12 +203,12 @@ msgstr "Utilità tema"
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
 msgid "Tony Fred, <small><b>CEO</b></small>"
-msgstr ""
+msgstr "Tony Fred, <small><b>CEO</b></small>"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
 msgid "Unique experiences to drive engagement"
-msgstr ""
+msgstr "Esperienze uniche per stimolare il coinvolgimento"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
@@ -195,6 +216,8 @@ msgid ""
 "Users are looking to consume engaging content.<br/>We empowers our teams to "
 "create the most relevant content."
 msgstr ""
+"Gli utenti vogliono usufruire di contenuti interessanti.<br/>Formiamo i "
+"nostri team al fine di creare contenuti rilevanti."
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
@@ -202,8 +225,10 @@ msgid ""
 "We have a support team that will do everything to answer you as quickly as "
 "the voice assistants."
 msgstr ""
+"Abbiamo un team di assistenza che farà di tutto per risponderti il prima "
+"possibile."
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
 msgid "We have one goal in mind, the user satisfaction."
-msgstr ""
+msgstr "Abbiamo un solo obiettivo in mente, la soddisfazione dell'utente."

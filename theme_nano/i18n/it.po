@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -11,13 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:03+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_carousel
@@ -27,7 +28,7 @@ msgstr ""
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
 msgid "Adaptable"
-msgstr ""
+msgstr "Adattabilità"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_image_text
@@ -42,7 +43,7 @@ msgstr "Nome visualizzato"
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
 msgid "Handcrafted"
-msgstr ""
+msgstr "Fatto a mano"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_image_text
@@ -57,7 +58,7 @@ msgstr "ID"
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
 msgid "Intuitive"
-msgstr ""
+msgstr "Intutitività"
 
 #. module: theme_nano
 #: model:ir.model.fields,field_description:theme_nano.field_theme_utils____last_update
@@ -68,17 +69,21 @@ msgstr "Ultima modifica il"
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
 msgid "Made in Santa's Workshop. High quality fabric &amp; exclusive designs."
 msgstr ""
+"Realizzato nel laboratorio di Babbo Natale. Tessuto di alta qualità e "
+"fantasie esclusive."
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
 msgid ""
 "People should love the things they own. Things should be built to last."
 msgstr ""
+"Le persone dovrebbero amare le cose che possiedono, per questo devono durare"
+" a lungo."
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
 msgid "Tailored"
-msgstr ""
+msgstr "Su misura"
 
 #. module: theme_nano
 #: model:ir.model,name:theme_nano.model_theme_utils
@@ -91,11 +96,13 @@ msgid ""
 "We combine smart design with rich technology <br/>to craft innovative "
 "products."
 msgstr ""
+"Combiniamo un design intelligente con una ricca tecnologia <br/>per "
+"realizzare prodotti innovativi."
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
 msgid "We create easy-to-use products."
-msgstr ""
+msgstr "Creiamo prodotti facili da usare."
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_features

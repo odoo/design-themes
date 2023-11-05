@@ -5,6 +5,7 @@
 # Translators:
 # Sergio Zanchetta <primes2h@gmail.com>, 2021
 # Martin Trigaux, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,13 +13,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_title
@@ -33,17 +34,17 @@ msgstr ""
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
 msgid "A Belgian Story"
-msgstr ""
+msgstr "Una storia belga"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
 msgid "At the Mars conquest"
-msgstr ""
+msgstr "Alla conquista di Marte"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_call_to_action
 msgid "Browse collection"
-msgstr ""
+msgstr "Carica collezione"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_call_to_action
@@ -63,6 +64,8 @@ msgid ""
 "Discover the history of Belgium in this well-documented book with many "
 "illustrations and testimonials."
 msgstr ""
+"Scopri la storia del Belgio grazie a questo libro ricco di illustrazioni e "
+"testimonianze."
 
 #. module: theme_bookstore
 #: model:ir.model.fields,field_description:theme_bookstore.field_theme_utils__display_name
@@ -97,6 +100,8 @@ msgid ""
 "Learn about the difficulties encountered by NASA engineers in sending the "
 "first men to Mars."
 msgstr ""
+"Quali sono state le difficoltà affrontate dagli ingengeri NASA per la "
+"spedizione del primo uomo su Marte?"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_text_image
@@ -111,7 +116,7 @@ msgstr ""
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
 msgid "Re-edition"
-msgstr ""
+msgstr "Riedizione"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_three_columns
@@ -119,6 +124,8 @@ msgid ""
 "The first re-edition of this Latin dictionary, from 1460. Printed originally"
 " on the Gutenberg press."
 msgstr ""
+"La prima riedizione di questo dizionario latino, del 1460. Stampato "
+"originariamente con la macchina da stampa Gutenberg."
 
 #. module: theme_bookstore
 #: model:ir.model,name:theme_bookstore.model_theme_utils

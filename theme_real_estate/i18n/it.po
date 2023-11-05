@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -11,13 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:14+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
@@ -58,11 +59,13 @@ msgid ""
 "Amazing team! smiling, always nice to talk with, they always have the best "
 "advices for you, adapted to your needs!"
 msgstr ""
+"Un team fantastico! Sorridente, sempre piacevole parlare con loro, hanno "
+"sempre i migliori consigli per te, adatti alle tue esigenze!"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid "Bored with your interior?"
-msgstr ""
+msgstr "Sei stufo del tuo arredamento?"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -74,6 +77,7 @@ msgstr ""
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
 msgstr ""
+"Scopri i nostri servizi su misura per abbellire la decorazione di casa."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -94,6 +98,9 @@ msgid ""
 "and easy to do business with. Very happy with the experience and the "
 "company."
 msgstr ""
+"Dall'inizio alla fine sono stati estremamente professionali, cordiali, "
+"disponibili e facili da gestire. Sono molto soddisfatto dell'esperienza e "
+"dell'azienda."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -124,6 +131,9 @@ msgid ""
 " design of your interior and will give you the best advice for your interior"
 " design."
 msgstr ""
+"I nostri esperti di decorazione sono a disposizione per guidarti passo dopo "
+"passo nella progettazione degli interni e ti daranno i migliori consigli di "
+"arredamento."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -138,6 +148,8 @@ msgid ""
 "Positive energy, great team spirit, hard workers and awesome people! I "
 "warmly recommend them!"
 msgstr ""
+"Energia positiva, grande spirito di squadra, grandi lavoratori e persone "
+"fantastiche! Li raccomando caldamente!"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
@@ -147,7 +159,7 @@ msgstr "Proprietà"
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
 msgid "Property on the coasts of the Mediterranean."
-msgstr ""
+msgstr "Proprietà lungo le coste del Mediterraneo."
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils

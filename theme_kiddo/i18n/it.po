@@ -5,6 +5,7 @@
 # Translators:
 # Sergio Zanchetta <primes2h@gmail.com>, 2021
 # Martin Trigaux, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,13 +13,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 07:05+0000\n"
 "PO-Revision-Date: 2021-12-13 07:13+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_call_to_action
@@ -97,7 +98,7 @@ msgstr ""
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_image_text
 msgid "Our team is composed of experienced nursery nurses."
-msgstr ""
+msgstr "Il nostro team è composto da puericultrici con esperienza."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_three_columns
@@ -122,6 +123,8 @@ msgid ""
 "They will propose to your children educational activities, playful, varied "
 "and adapted to the stage of development."
 msgstr ""
+"Proporranno ai tuoi bambini attività educative divertenti, diversificate e "
+"idonee per la fase di sviluppo."
 
 #. module: theme_kiddo
 #: model_terms:theme.ir.ui.view,arch:theme_kiddo.s_product_list
@@ -133,4 +136,4 @@ msgstr "Vedi articolo"
 #: code:addons/theme_kiddo/static/src/js/tour.js:0
 #, python-format
 msgid "width"
-msgstr ""
+msgstr "profondità"
