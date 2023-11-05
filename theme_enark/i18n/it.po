@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2021
+# Marianna Ciofani, 2023
 # 
 msgid ""
 msgstr ""
@@ -11,13 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 08:00+0000\n"
 "PO-Revision-Date: 2021-12-13 08:08+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Marianna Ciofani, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_parallax
@@ -25,51 +26,53 @@ msgid ""
 "<i>“One of the great beauties of architecture is that each time, it is like "
 "life starting all over again.”</i>"
 msgstr ""
+"<i>“Una delle grandi bellezze dell'architettura è che ogni volta è come se "
+"la vita ricominciasse daccapo.”</i>"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_banner
 msgid "A Different Viewpoint."
-msgstr ""
+msgstr "Un punto di vista diverso."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_call_to_action
 msgid "As <b>436 clients</b> before you, let’s work together"
-msgstr ""
+msgstr "Abbiamo lavorato con <b>436 clienti</b>, ora è il tuo momento"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_text_image
 msgid "Building Castle in Cloud"
-msgstr ""
+msgstr "Castelli tra le nuvole"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
 msgid "Construction site"
-msgstr ""
+msgstr "Cantiere"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_picture
 msgid "Creating places that enhance the human experience."
-msgstr ""
+msgstr "Creiamo luoghi che migliorano l'esperienza umana."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_banner
 msgid "Discover More"
-msgstr ""
+msgstr "Scopri di più"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.enark_snippet_options
 msgid "Gradients"
-msgstr ""
+msgstr "Sfumature"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
 msgid "Know our clients."
-msgstr ""
+msgstr "Conosci i nostri clienti."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
 msgid "Nature friendly"
-msgstr ""
+msgstr "Amici della natura"
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.enark_snippet_options
@@ -80,7 +83,7 @@ msgstr "Nessuna"
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
 msgid ""
 "Our creations integrate and are in perfect harmony with their environment."
-msgstr ""
+msgstr "Le nostre creazioni sono in perfetta armonia con l'ambiente."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
@@ -89,6 +92,9 @@ msgid ""
 "our close collaboration with the workers and our sustained presence on the "
 "construction sites."
 msgstr ""
+"La nostra padronanza delle tecniche di costruzione si è consolidata nel "
+"tempo grazie alla stretta collaborazione con i lavoratori e alla presenza "
+"costante nei cantieri."
 
 #. module: theme_enark
 #: model:ir.model,name:theme_enark.model_theme_utils
@@ -98,7 +104,7 @@ msgstr "Utilità tema"
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_picture
 msgid "We always put people and nature at the center of our projects."
-msgstr ""
+msgstr "Al centro dei nostri progetti ci sono sempre le persone e la natura."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_media_list
@@ -106,6 +112,8 @@ msgid ""
 "We always start by exploring our clients goals, priorities, lifestyle, and "
 "tastes."
 msgstr ""
+"Il primo passo è individuare gli obiettivi, le priorità, lo stile di vita e "
+"i gusti dei nostri clienti."
 
 #. module: theme_enark
 #: model_terms:theme.ir.ui.view,arch:theme_enark.s_banner
@@ -122,3 +130,6 @@ msgid ""
 "criteria that Zumthor considers to be important in creating an architectural"
 " atmosphere."
 msgstr ""
+"Quando progettiamo un concetto architettonico, teniamo conto dei nove "
+"criteri che Zumthor considera importanti per creare un'atmosfera "
+"architettonica."
