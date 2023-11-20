@@ -5,7 +5,7 @@ import wTourUtils from '@website/js/tours/tour_utils';
 const snippets = [
     {
         id: 's_text_cover',
-        name: 'Banner',
+        name: 'Text Cover',
     },
     {
         id: 's_images_wall',
