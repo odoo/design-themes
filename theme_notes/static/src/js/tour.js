@@ -33,7 +33,7 @@ const snippets = [
 wTourUtils.registerThemeHomepageTour("notes_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"notes-1"'),
     wTourUtils.dragNDrop(snippets[0]),
-    wTourUtils.clickOnText(snippets[0], 'h1'),
+    wTourUtils.clickOnText(snippets[0], 'h2'),
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[1]),
     wTourUtils.dragNDrop(snippets[2]),
