@@ -244,15 +244,6 @@
     </xpath>
 </template>
 
-<template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team" name="Be Wise s_company_team">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/09","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_09"/>
-    </xpath>
-</template>
-
 <!-- ======== BIG BOXES ======== -->
 <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2" name="Be Wise s_color_blocks_2">
     <!-- Left column -->

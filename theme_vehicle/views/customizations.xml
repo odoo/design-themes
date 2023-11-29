@@ -77,17 +77,6 @@
     </xpath>
 </template>
 
-<template id="configurator_s_numbers" inherit_id="website.configurator_s_numbers">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/09_001","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_09_001"/>
-    </xpath>
-</template>
-
 <!-- ======== MASONRY BLOCK ======== -->
 <template id="s_masonry_block" inherit_id="website.s_masonry_block">
     <xpath expr="//t[@t-call]" position="attributes">
@@ -123,15 +112,6 @@
         Our Partners
     </xpath>
     <xpath expr="//p" position="replace"/>
-</template>
-
-<template id="configurator_s_references" inherit_id="website.configurator_s_references" name="Vehicle s_references">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_05"/>
-    </xpath>
 </template>
 
 <!-- ======== CALL TO ACTION ======== -->

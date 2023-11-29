@@ -12,14 +12,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
-    <!-- Shape option -->
-    <xpath expr="section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/09_001","flip":["x"]}</attribute>
-    </xpath>
-    <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_09_001" style="background-image: url('/web_editor/shape/web_editor/Origins/09_001.svg?c3=o-color-2&amp;flip=x'); background-position: 50% 0%;"/>
-    </xpath>
-</template>
-
 </odoo>
