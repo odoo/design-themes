@@ -80,15 +80,6 @@
     <xpath expr="//a[hasclass('btn')]" position="replace"/>
 </template>
 
-<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text" name="Cobalt s_image_text">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/03","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_03"/>
-    </xpath>
-</template>
-
 <!-- ==== Text-Image ===== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Cobalt s_text_image">
     <!-- Section -->
@@ -168,15 +159,6 @@
     </xpath>
 </template>
 
-<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns" name="Cobalt s_three_columns">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["x"]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Bold_01" style="background-image: url('/web_editor/shape/web_editor/Bold/01.svg?c2=o-color-3&amp;flip=x'); background-position: 50% 0%;"/>
-    </xpath>
-</template>
-
 <!-- ==== Call To Action ===== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Cobalt s_call_to_action">
     <xpath expr="//t[@t-esc='cta_btn_text']" position="replace" mode="inner">
@@ -197,15 +179,6 @@
     </xpath>
     <xpath expr="//figcaption" position="replace">
         <figcaption class="text-400"><em>Our office in Dhaka</em></figcaption>
-    </xpath>
-</template>
-
-<template id="configurator_s_picture" inherit_id="website.configurator_s_picture" name="Cobalt s_picture">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/01","flip":["y"]}</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Bold_01" style="background-image: url('/web_editor/shape/web_editor/Bold/01.svg?c2=o-color-3&amp;flip=y'); background-position: 50% 100%;"></div>
     </xpath>
 </template>
 

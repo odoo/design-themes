@@ -57,14 +57,4 @@
     <xpath expr="(//div[hasclass('s_media_list_body')])[3]//a" position="replace"/>
 </template>
 
-<template id="configurator_s_media_list" inherit_id="website.configurator_s_media_list">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/09_001","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_09_001"/>
-    </xpath>
-</template>
 </odoo>

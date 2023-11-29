@@ -160,15 +160,6 @@
     </xpath>
 </template>
 
-<template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team" name="Graphene s_company_team">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
-    </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_05"/>
-    </xpath>
-</template>
-
 <!-- ======== 3 COLUMNS ======== -->
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Graphene s_three_columns">
     <xpath expr="//div[hasclass('row')]/div//h3[1]" position="replace">

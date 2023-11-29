@@ -12,15 +12,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_product_catalog" inherit_id="website.configurator_s_product_catalog">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/17","flip":["y"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//section/*" position="before">
-        <div class="o_we_shape o_web_editor_Origins_17" style="background-image: url('/web_editor/shape/web_editor/Origins/17.svg?c3=o-color-5&amp;flip=y'); background-position: 50% 50%;"/>
-    </xpath>
-</template>
-
 </odoo>

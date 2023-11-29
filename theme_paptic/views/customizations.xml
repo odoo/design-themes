@@ -418,17 +418,6 @@
     </xpath>
 </template>
 
-<template id="configurator_s_media_list" inherit_id="website.configurator_s_media_list" name="Paptic s_media_list">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/07_002","flip":["x"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('o_container_small')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_07_002" style="background-image: url('/web_editor/shape/web_editor/Origins/07_002.svg?c3=o-color-4&amp;c4=o-color-2&amp;c5=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
-    </xpath>
-</template>
-
 <!-- ==== Features Grid ===== -->
 <template id="s_features_grid" inherit_id="website.s_features_grid" name="Paptic s_features_grid">
     <!-- Icon #4 -->
