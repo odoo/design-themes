@@ -35,6 +35,8 @@
     },
     'configurator_snippets': {
         'homepage': ['s_banner', 's_image_text', 's_three_columns', 's_product_list', 's_call_to_action'],
+        # TODO In master, remove unused templates instead.
+        '_': ['s_picture'],
     },
     'new_page_templates': {
         'about': {

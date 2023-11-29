@@ -26,6 +26,8 @@
     },
     'configurator_snippets': {
         'homepage': ['s_banner', 's_references', 's_text_image', 's_color_blocks_2', 's_images_wall'],
+        # TODO In master, remove unused templates instead.
+        '_': ['s_image_text', 's_three_columns', 's_picture'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-cobalt.odoo.com',

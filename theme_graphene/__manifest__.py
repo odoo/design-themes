@@ -23,6 +23,8 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_numbers', 's_picture', 's_comparisons'],
+        # TODO In master, remove unused templates instead.
+        '_': ['s_company_team'],
     },
     'new_page_templates': {
         'about': {
