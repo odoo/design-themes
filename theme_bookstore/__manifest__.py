@@ -45,6 +45,8 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_masonry_block', 's_image_text', 's_picture', 's_product_list', 's_call_to_action'],
+        # TODO In master, remove unused templates instead.
+        '_': ['s_product_catalog'],
     },
     'new_page_templates': {
         'about': {
