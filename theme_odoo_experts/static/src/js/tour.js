@@ -6,7 +6,7 @@ import { _t } from "@web/core/l10n/translation";
 const snippets = [
     {
         id: 's_picture',
-        name: 'Picture',
+        name: 'Title - Image',
     },
     {
         id: 's_references',
