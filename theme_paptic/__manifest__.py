@@ -7,6 +7,7 @@
     'version': '2.1.0',
     'depends': ['website'],
     'data': [
+        'data/generate_primary_template.xml',
         'data/ir_asset.xml',
         'views/images.xml',
         'views/customizations.xml',
