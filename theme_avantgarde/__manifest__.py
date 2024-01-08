@@ -6,6 +6,7 @@
     'sequence': 150,
     'version': '2.0.0',
     'data': [
+        'data/generate_primary_template.xml',
         'data/ir_asset.xml',
         'views/images_library.xml',
         'views/customizations.xml',
