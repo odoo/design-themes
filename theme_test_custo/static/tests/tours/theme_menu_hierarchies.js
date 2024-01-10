@@ -8,21 +8,21 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
 }, () => [
     {
         content: 'Check Mega Menu is correctly created',
-        trigger: 'iframe #top_menu a.o_mega_menu_toggle',
+        trigger: "iframe .top_menu a.o_mega_menu_toggle",
     }, {
         content: 'Check Mega Menu content',
-        trigger: 'iframe #top_menu div.o_mega_menu.show .fa-cube',
+        trigger: "iframe .top_menu div.o_mega_menu.show .fa-cube",
         run: () => null, // It's a check.
     }, {
         content: 'Check new top level menu is correctly created',
-        trigger: 'iframe #top_menu .nav-item.dropdown .dropdown-toggle:contains("Example 1")',
+        trigger: 'iframe .top_menu .nav-item.dropdown .dropdown-toggle:contains("Example 1")',
     }, {
         content: 'Check sub menu are correctly created',
-        trigger: 'iframe #top_menu .dropdown-menu.show a.dropdown-item:contains("Item 1")',
+        trigger: 'iframe .top_menu .dropdown-menu.show a.dropdown-item:contains("Item 1")',
         run: () => null, // It's a check.
     }, {
         content: 'The new menu hierarchy should not be included in the navbar',
-        trigger: 'iframe body:not(:has(#top_menu a[href="/dogs"]))',
+        trigger: 'iframe body:not(:has(.top_menu a[href="/dogs"]))',
         run: () => null, // It's a check.
     }, {
         content: 'The new menu hierarchy should be inside the footer',
