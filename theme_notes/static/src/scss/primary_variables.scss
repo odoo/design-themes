@@ -57,9 +57,6 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 $o-theme-h1-font-size-multiplier: (62 / 16);
 $o-theme-h2-font-size-multiplier: (36 / 16);
 $o-theme-h3-font-size-multiplier: (28 / 16);
-$o-theme-h4-font-size-multiplier: (24 / 16);
-$o-theme-h5-font-size-multiplier: (20 / 16);
-$o-theme-h6-font-size-multiplier: 1;
 
 $o-theme-headings-font-weight: 700;
 
@@ -128,7 +125,6 @@ $o-website-values-palettes: (
         'navbar-font': 'Montserrat',
         'buttons-font': 'Montserrat',
         'link-underline': 'never',
-        'header-template': 'default',
         'footer-template': 'descriptive',
     ),
 );
