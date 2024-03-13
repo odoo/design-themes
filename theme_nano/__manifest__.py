@@ -9,6 +9,7 @@
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
+        'data/theme_website_design.xml',
         'views/images_library.xml',
 
         'views/snippets/s_banner.xml',

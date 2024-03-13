@@ -8,6 +8,7 @@
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
+        'data/theme_website_design.xml',
         'views/images_library.xml',
         'views/customizations.xml',
         'views/new_page_template.xml',
