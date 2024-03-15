@@ -175,7 +175,7 @@
         <attribute name="class" add="container-fluid px-5 px-lg-0" remove="container" separator=" "/>
     </xpath>
     <xpath expr="//img" position="attributes">
-        <attribute name="class" add="img-fluid" remove="img-thumbnail padding-large" separator=" "/>
+        <attribute name="class" remove="img-thumbnail padding-large" separator=" "/>
     </xpath>
     <xpath expr="//figcaption" position="replace">
         <figcaption class="text-400"><em>Our office in Dhaka</em></figcaption>
