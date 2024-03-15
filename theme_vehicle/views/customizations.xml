@@ -159,7 +159,7 @@
     </xpath>
     <!-- Image + Shape -->
     <xpath expr="//img" position="attributes">
-        <attribute name="class" add="img-fluid" remove="img-thumbnail padding-large" separator=" "/>
+        <attribute name="class" remove="img-thumbnail padding-large" separator=" "/>
         <attribute name="src">/web/image/website.s_picture_default_image</attribute>
         <attribute name="data-file-name">01.svg</attribute>
     </xpath>
