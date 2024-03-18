@@ -172,7 +172,7 @@ class TestNewPageTemplates(TransactionCase):
                             # Only look at blocks in website.snippets
                             html_tree = blocks_el[0]
                         for el in html_tree.xpath('//*[@class]'):
-                            classes = el.attrib['class'].split(' ')
+                            classes = el.attrib['class'].split()
                             classes_inventory.update(classes)
                             if len(classes) != len(set(classes)):
                                 errors.append("Using %r, view %r contains duplicate classes: %r" % (theme_name, view.key, classes))
