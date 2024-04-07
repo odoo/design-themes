@@ -1,23 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_nano
+# 	* theme_nano
 # 
 # Translators:
-# e2f <projects@e2f.com>, 2019
-# Martin Trigaux, 2019
-# v2exerer <9010446@qq.com>, 2019
-# waveyeung <waveyeung@qq.com>, 2019
-# Xia Fajin <xia.fajin@elico-corp.com>, 2019
-# liAnGjiA <liangjia@qq.com>, 2019
+# 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2024
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 17.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:53+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: liAnGjiA <liangjia@qq.com>, 2019\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"POT-Creation-Date: 2023-09-28 12:23+0000\n"
+"PO-Revision-Date: 2024-03-28 13:42+0000\n"
+"Last-Translator: Wil Odoo, 2024\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -25,81 +21,96 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "<i class=\"fa fa-paint-brush\"/>Style"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_parallax
+msgid ""
+"<font class=\"bg-o-color-5\">Feel free to come up with your big idea. <br/> "
+"We take care of the rest.</font>"
+msgstr "<font class=\"bg-o-color-5\">欢迎提出您的好主意。 <br/> 剩下的交给我们。</font>"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.preHeader
-msgid "<i class=\"fa fa-plus-circle\"/>Add..."
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_nano.new_page_template_about_map_s_text_block_h1
+msgid "About Us"
+msgstr "关于我们"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "Boxed"
-msgstr "盒装的"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "Adaptable"
+msgstr "适应性强"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Hide"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cover
+msgid "Creative Studio"
+msgstr "创意工作室"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Icons Bar"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Details"
+msgstr "细节"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Icons Bar Position"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "Durable"
+msgstr "耐用"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Left"
-msgstr "左"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Handcrafted"
+msgstr "手工制作"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Menu"
-msgstr "菜单"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Innovative"
+msgstr "创新"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "Muted"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "Intuitive"
+msgstr "直观"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Right"
-msgstr "右"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Made in Santa's Workshop. High quality fabric &amp; exclusive designs."
+msgstr "圣诞老人工作室制造。优质面料和独家设计。"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Show"
-msgstr "显示"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid ""
+"People should love the things they own. Things should be built to last."
+msgstr "人们应该热爱自己拥有的东西。东西应该经久耐用。"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Side Navigation"
-msgstr ""
-
-#. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.customize_modal
-msgid "Standard"
-msgstr "标准"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Tailored"
+msgstr "量身定制"
 
 #. module: theme_nano
 #: model:ir.model,name:theme_nano.model_theme_utils
 msgid "Theme Utils"
-msgstr "主题实用工具"
+msgstr "主题用途"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "Underline"
-msgstr "下划线"
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_three_columns
+msgid "Transforming traditional crafts — with a shot of modern savvy!"
+msgstr "改造传统工艺，注入现代智慧！"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.snippet_options
-msgid "Uppercase"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "We build modular solutions."
+msgstr "我们提供模块化解决方案。"
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cover
+msgid ""
+"We combine smart design with rich technology <br/>to craft innovative "
+"products."
+msgstr "我们将智能设计与丰富的技术<br/>相结合，精心打造创新产品。"
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "We craft long-lasting goods."
+msgstr "我们的产品经久耐用。"
+
+#. module: theme_nano
+#: model_terms:theme.ir.ui.view,arch:theme_nano.s_features
+msgid "We create easy-to-use products."
+msgstr "我们创造易于使用的产品。"
