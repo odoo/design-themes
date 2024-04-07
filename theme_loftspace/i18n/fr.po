@@ -1,21 +1,117 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_loftspace
+# 	* theme_loftspace
+# 
+# Translators:
+# Jolien De Paepe, 2024
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 17.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 09:02+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2023-09-28 12:22+0000\n"
+"PO-Revision-Date: 2024-04-03 11:20+0000\n"
+"Last-Translator: Wil Odoo, 2024\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_cover
+msgid "<b>Bringing life to your interior</b>"
+msgstr "<b>Donner vie à votre intérieur</b>"
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_title
+msgid "<b>Everything is designed.<br/> Few things are designed well.</b>"
+msgstr "<b>Tout est conçu.<br/> Mais peu de choses sont bien conçues.</b>"
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_cover
+msgid "Discover More"
+msgstr "En découvrir plus"
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_cover
+msgid "Discover our unique pieces of furniture selected for you."
+msgstr "Découvrez nos meubles uniques, sélectionnés pour vous."
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
+msgid ""
+"Every week our shop receive new products. Some are only on sale for a "
+"limited period of time."
+msgstr ""
+"Notre boutique reçoit de nouveaux produits chaque semaine. Certains ne sont "
+"en vente que pour une période limitée."
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
+msgid "For the whole Family"
+msgstr "Pour toute la famille"
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_banner
+msgid ""
+"Our products are designed for small to medium size companies willing to "
+"optimize their performance."
+msgstr ""
+"Nos produits sont destinés aux petites et moyennes entreprises qui "
+"souhaitent optimiser leurs prestations."
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_call_to_action
+msgid "Our services"
+msgstr "Nos services"
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
+msgid "Tailored advice"
+msgstr "Conseils personnalisés"
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_banner
+msgid "The art of Design"
+msgstr "L'art du Design"
 
 #. module: theme_loftspace
 #: model:ir.model,name:theme_loftspace.model_theme_utils
 msgid "Theme Utils"
+msgstr "Thèmes utiles"
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
+msgid ""
+"To buy unique pieces is to buy a piece of the artist: His passion put in the"
+" execution of the object, his hours of reflexion, his dexterity... It is a "
+"committed, ethical act, which encourages a responsible and direct economy."
 msgstr ""
+"Acheter des meubles uniques, c'est acheter une partie de l'artiste : sa "
+"passion dans la réalisation de l'objet, ses heures de réflexion, sa "
+"dextérité... C'est un acte engagé et éthique qui encourage une économie "
+"responsable et directe."
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
+msgid "Unique Items"
+msgstr "Articles uniques"
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_three_columns
+msgid ""
+"Whether it is to help you see clearly in a project, to confirm a choice or "
+"when you have no idea about the layout of your interior, our advisers are "
+"there to accompany you throughout your project."
+msgstr ""
+"Que ce soit pour vous aider à y voir plus clair dans un projet, pour "
+"confirmer un choix ou pour aménager votre intérieur, nos conseillers vous "
+"accompagnent tout au long de votre projet."
+
+#. module: theme_loftspace
+#: model_terms:theme.ir.ui.view,arch:theme_loftspace.s_call_to_action
+msgid "Would you like more information <br/>about a product?"
+msgstr "Souhaiteriez-vous plus d'informations <br/>sur un produit ?"
