@@ -1,18 +1,3 @@
-@function o-theme-common-add-color-variations($from, $to, $variations: ('light': 10%, 'dark': -10%)) {
-    $color-variations: ();
-    @each $color-name in ('alpha', 'beta', 'gamma', 'delta', 'epsilon') {
-        $color: map-get($from, $color-name);
-        @if $color != null {
-            @each $variation-name, $amount in $variations {
-                $color-variations: map-merge($color-variations, (
-                    '#{$color-name}-#{$variation-name}': adjust-color($color, $lightness: $amount),
-                ));
-            }
-        }
-    }
-    @return map-merge($color-variations, $to);
-}
-
 @mixin fa-size-generator($base-size) {
     .fa {
         text-align: center;
