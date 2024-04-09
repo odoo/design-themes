@@ -1,3 +1,17 @@
+// From old theme common.
+@mixin o-theme-chd-big-icons-styles($bg-color: o-color('alpha'), $border-color: o-color('alpha'),
+    $transform: scale(1.1, 1.1), $fa-color: white, $h5-color: white) {
+
+    background-color: $bg-color !important;
+    border-color: $border-color;
+    transform: $transform;
+    .fa {
+        color: $fa-color !important;
+    }
+    h5.o_default_snippet_text {
+        color: $h5-color !important;
+    }
+}
 
 /* Big Icon Circle */
 @include o-theme-chd-big-icons-classes(0, none);

@@ -1,3 +1,76 @@
+// From old theme common.
+@mixin fa-size-generator($base-size) {
+    .fa {
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .fa,
+    .fa.fa-1x {
+        width: ($base-size + 20px);
+        height: ($base-size + 20px);
+        line-height: ($base-size + 20px);
+    }
+    .fa.fa-2x {
+        width: ($base-size + 40px);
+        height: ($base-size + 40px);
+        line-height: ($base-size + 40px);
+    }
+    .fa.fa-3x {
+        width: ($base-size + 60px);
+        height: ($base-size + 60px);
+        line-height: ($base-size + 60px);
+    }
+    .fa.fa-4x {
+        width: ($base-size + 80px);
+        height: ($base-size + 80px);
+        line-height: ($base-size + 80px);
+    }
+    .fa.fa-5x {
+        width: ($base-size + 100px);
+        height: ($base-size + 100px);
+        line-height: ($base-size + 100px);
+    }
+}
+
+@mixin carousel-control($position, $fa-position, $fa-padding) {
+    opacity: 1;
+    text-shadow: none;
+    color: map-get($grays, '900');
+    font-size: inherit;
+    width: 5%;
+    .fa {
+        top: 50%;
+        background-color: #fff;
+        &:hover {
+            color: map-get($theme-colors, 'primary');
+        }
+        @include media-breakpoint-down(md) {
+            top: auto;
+            bottom: 0;
+        }
+    }
+    @include fa-size-generator(20px);
+    &.left {
+        background-image: none;
+        left: $position;
+        .fa {
+            left: $fa-position;
+            right: auto;
+            padding-right: $fa-padding;
+        }
+    }
+    &.right {
+        background-image: none;
+        right: $position;
+        .fa {
+            right: $fa-position;
+            left: auto;
+            padding-left: $fa-padding;
+        }
+    }
+}
+
 #wrapwrap {
 
     // Carousel
