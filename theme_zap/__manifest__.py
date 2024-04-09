@@ -5,7 +5,7 @@
     'summary': 'Digital, Marketing, Copywriting, Media, Events, Non Profit, NGO, Corporate, Business, Services',
     'sequence': 160,
     'version': '2.0.0',
-    'depends': ['theme_common'],
+    'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
