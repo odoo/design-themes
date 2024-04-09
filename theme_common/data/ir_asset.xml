@@ -65,18 +65,4 @@
     <field name="active" eval="False"/>
 </record>
 
-<record id="theme_common.primary_variables_scss" model="theme.ir.asset">
-    <field name="key">theme_common.primary_variables_scss</field>
-    <field name="name">Primary variables SCSS</field>
-    <field name="bundle">web._assets_primary_variables</field>
-    <field name="path">theme_common/static/src/scss/primary_variables.scss</field>
-</record>
-
-<record id="theme_common.fonts_scss" model="theme.ir.asset">
-    <field name="key">theme_common.fonts_scss</field>
-    <field name="name">Fonts SCSS</field>
-    <field name="bundle">web.assets_frontend</field>
-    <field name="path">theme_common/static/src/scss/fonts.scss</field>
-</record>
-
 </odoo>
