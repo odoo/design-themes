@@ -9,6 +9,7 @@ registry.category("web_tour.tours").add("website_theme_preview", {
 [{
     content: "Click on create new website",
     trigger: 'button[name="action_website_create_new"]',
+    run: "click",
 }, {
     content: "insert website name",
     trigger: '[name="name"] input',
@@ -16,17 +17,21 @@ registry.category("web_tour.tours").add("website_theme_preview", {
 }, {
     content: "Validate the website creation modal",
     trigger: "button.btn-primary",
+    run: "click",
 },
 // Configurator first screen
 {
     content: "Click Skip and start from scratch",
     trigger: "button:contains('Skip and start from scratch')",
+    run: "click",
 }, {
     content: "Click on the Live preview of a theme",
     trigger: ".o_theme_preview .o_button_area .btn-secondary:contains('Live Preview')",
+    run: "click",
 }, {
     content: "Switch from desktop to mobile preview",
     trigger: ".btn[for=themeViewerMobile]",
+    run: "click",
 }, {
     content: "Check that the mobile view is active",
     trigger: ".o_view_form_theme_preview_controller .o_field_iframe > div.is_mobile:visible",
@@ -34,6 +39,7 @@ registry.category("web_tour.tours").add("website_theme_preview", {
 }, {
     content: "Switch back to desktop",
     trigger: ".btn[for=themeViewerDesktop]",
+    run: "click",
 }, {
     content: "Check that the desktop view is active",
     trigger: ".o_view_form_theme_preview_controller .o_field_iframe > div:not(.is_mobile):visible",
