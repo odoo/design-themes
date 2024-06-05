@@ -25,7 +25,7 @@
                             <h5 class="mb-4">Useful Links</h5>
                             <ul class="list-unstyled">
                                 <li t-foreach="request.env['website.menu'].search([('url', '=', '/main-menu-animals'), ('website_id', '=', request.website.id)]).child_id" t-as="menu">
-                                    <a t-att-href="menu.url" t-esc="menu.name"/>
+                                    <a t-att-href="menu.url" t-out="menu.name"/>
                                 </li>
                             </ul>
                         </div>
