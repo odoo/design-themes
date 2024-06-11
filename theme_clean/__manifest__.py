@@ -52,14 +52,14 @@
         'views/new_page_template.xml',
     ],
     'images': [
-        'static/description/clean_description.jpg',
-        'static/description/clean_screenshot.jpg',
+        'static/description/clean_description.webp',
+        'static/description/clean_screenshot.webp',
     ],
     'images_preview_theme': {
-        'website.s_image_text_default_image': '/theme_clean/static/src/img/content/image_content_20.jpg',
-        'website.s_banner_default_image': '/theme_clean/static/src/img/backgrounds/bg_snippet_07.jpg',
-        'website.s_text_image_default_image': '/theme_clean/static/src/img/content/image_content_19.jpg',
-        'website.s_picture_default_image': '/theme_clean/static/src/img/content/image_content_21.jpg',
+        'website.s_image_text_default_image': '/theme_clean/static/src/img/content/image_content_20.webp',
+        'website.s_banner_default_image': '/theme_clean/static/src/img/backgrounds/bg_snippet_07.webp',
+        'website.s_text_image_default_image': '/theme_clean/static/src/img/content/image_content_19.webp',
+        'website.s_picture_default_image': '/theme_clean/static/src/img/content/image_content_21.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_banner', 's_color_blocks_2', 's_title', 's_text_image', 's_image_text', 's_numbers_showcase', 's_company_team', 's_accordion_image', 's_cta_card'], 
