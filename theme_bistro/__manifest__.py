@@ -29,14 +29,14 @@
 
     ],
     'images': [
-        'static/description/bistro_cover.jpg',
-        'static/description/bistro_screenshot.jpg',
+        'static/description/bistro_cover.webp',
+        'static/description/bistro_screenshot.webp',
     ],
     'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_bistro/static/src/img/backgrounds/17.jpg',
-        'website.s_picture_default_image': '/theme_bistro/static/src/img/content/picture.jpg',
-        'website.s_product_catalog_default_image': '/theme_bistro/static/src/img/backgrounds/16.jpg',
-        'website.s_quotes_carousel_demo_image_1': '/theme_bistro/static/src/img/backgrounds/19.jpg',
+        'website.s_cover_default_image': '/theme_bistro/static/src/img/backgrounds/17.webp',
+        'website.s_picture_default_image': '/theme_bistro/static/src/img/content/picture.webp',
+        'website.s_product_catalog_default_image': '/theme_bistro/static/src/img/backgrounds/16.webp',
+        'website.s_quotes_carousel_demo_image_1': '/theme_bistro/static/src/img/backgrounds/19.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_features', 's_picture', 's_product_catalog', 's_text_block', 's_quotes_carousel'],

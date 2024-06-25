@@ -14,13 +14,13 @@
         'views/new_page_template.xml',
     ],
     'images': [
-        'static/description/paptic_poster.jpg',
-        'static/description/paptic_screenshot.jpg',
+        'static/description/paptic_poster.webp',
+        'static/description/paptic_screenshot.webp',
     ],
     'images_preview_theme': {
-        'website.s_three_columns_default_image_1': '/theme_paptic/static/src/img/pictures/s_three_columns_1.jpg',
-        'website.s_three_columns_default_image_2': '/theme_paptic/static/src/img/pictures/s_three_columns_2.jpg',
-        'website.s_three_columns_default_image_3': '/theme_paptic/static/src/img/pictures/s_three_columns_3.jpg',
+        'website.s_three_columns_default_image_1': '/theme_paptic/static/src/img/pictures/s_three_columns_1.webp',
+        'website.s_three_columns_default_image_2': '/theme_paptic/static/src/img/pictures/s_three_columns_2.webp',
+        'website.s_three_columns_default_image_3': '/theme_paptic/static/src/img/pictures/s_three_columns_3.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_image_text', 's_references', 's_three_columns', 's_comparisons', 's_call_to_action'],

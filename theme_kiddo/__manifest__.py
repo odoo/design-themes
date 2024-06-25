@@ -24,15 +24,15 @@
         'views/new_page_template.xml',
     ],
     'images': [
-        'static/description/kiddo_description.jpg',
-        'static/description/kiddo_screenshot.jpg',
+        'static/description/kiddo_description.webp',
+        'static/description/kiddo_screenshot.webp',
     ],
     'images_preview_theme': {
-        'website.s_banner_default_image': '/theme_kiddo/static/src/img/snippets/s_banner.jpg',
-        'website.s_image_text_default_image': '/theme_kiddo/static/src/img/snippets/s_image_text.jpg',
-        'website.s_three_columns_default_image_1': '/theme_kiddo/static/src/img/snippets/s_three_columns_default_image_1.jpg',
-        'website.s_three_columns_default_image_2': '/theme_kiddo/static/src/img/snippets/s_three_columns_default_image_2.jpg',
-        'website.s_three_columns_default_image_3': '/theme_kiddo/static/src/img/snippets/s_three_columns_default_image_3.jpg',
+        'website.s_banner_default_image': '/theme_kiddo/static/src/img/snippets/s_banner.webp',
+        'website.s_image_text_default_image': '/theme_kiddo/static/src/img/snippets/s_image_text.webp',
+        'website.s_three_columns_default_image_1': '/theme_kiddo/static/src/img/snippets/s_three_columns_default_image_1.webp',
+        'website.s_three_columns_default_image_2': '/theme_kiddo/static/src/img/snippets/s_three_columns_default_image_2.webp',
+        'website.s_three_columns_default_image_3': '/theme_kiddo/static/src/img/snippets/s_three_columns_default_image_3.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_banner', 's_image_text', 's_three_columns', 's_product_list', 's_call_to_action'],
