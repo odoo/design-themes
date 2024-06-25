@@ -5,7 +5,7 @@
     'summary': 'Travel, Excursion, Plane, Tour, Agency ',
     'sequence': 130,
     'version': '1.0.0',
-    'depends': ['theme_common'],
+    'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
