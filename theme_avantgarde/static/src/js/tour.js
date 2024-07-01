@@ -26,14 +26,14 @@ const snippets = [
 
 wTourUtils.registerThemeHomepageTour("avantgarde_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"avantgarde-3"'),
-    wTourUtils.dragNDrop(snippets[0], 'top'),
-    wTourUtils.clickOnText(snippets[0], 'h1', 'left'),
+    ...wTourUtils.dragNDrop(snippets[0], 'top'),
+    ...wTourUtils.clickOnText(snippets[0], 'h1', 'left'),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[1], 'left'),
-    wTourUtils.dragNDrop(snippets[2], 'bottom'),
-    wTourUtils.clickOnSnippet(snippets[2], 'top'),
+    ...wTourUtils.dragNDrop(snippets[1], 'left'),
+    ...wTourUtils.dragNDrop(snippets[2], 'bottom'),
+    ...wTourUtils.clickOnSnippet(snippets[2], 'top'),
     wTourUtils.changePaddingSize('top'),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[3], 'top'),
-    wTourUtils.dragNDrop(snippets[4], 'top'),
+    ...wTourUtils.dragNDrop(snippets[3], 'top'),
+    ...wTourUtils.dragNDrop(snippets[4], 'top'),
 ]);

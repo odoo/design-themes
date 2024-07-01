@@ -31,15 +31,15 @@ const snippets = [
 
 wTourUtils.registerThemeHomepageTour("kea_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"bewise-2"'),
-    wTourUtils.dragNDrop(snippets[0]),
-    wTourUtils.clickOnText(snippets[0], 'h1'),
+    ...wTourUtils.dragNDrop(snippets[0]),
+    ...wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[1]),
-    wTourUtils.dragNDrop(snippets[2]),
-    wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.dragNDrop(snippets[5]),
-    wTourUtils.clickOnSnippet(snippets[5], 'top'),
+    ...wTourUtils.dragNDrop(snippets[1]),
+    ...wTourUtils.dragNDrop(snippets[2]),
+    ...wTourUtils.dragNDrop(snippets[3]),
+    ...wTourUtils.dragNDrop(snippets[4]),
+    ...wTourUtils.dragNDrop(snippets[5]),
+    ...wTourUtils.clickOnSnippet(snippets[5], 'top'),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
 ]);

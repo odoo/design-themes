@@ -32,15 +32,15 @@ const snippets = [
 
 wTourUtils.registerThemeHomepageTour("notes_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"notes-1"'),
-    wTourUtils.dragNDrop(snippets[0]),
-    wTourUtils.clickOnText(snippets[0], 'h2'),
+    ...wTourUtils.dragNDrop(snippets[0]),
+    ...wTourUtils.clickOnText(snippets[0], 'h2'),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[1]),
-    wTourUtils.dragNDrop(snippets[2]),
-    wTourUtils.clickOnSnippet(snippets[2]),
+    ...wTourUtils.dragNDrop(snippets[1]),
+    ...wTourUtils.dragNDrop(snippets[2]),
+    ...wTourUtils.clickOnSnippet(snippets[2]),
     wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.dragNDrop(snippets[5]),
+    ...wTourUtils.dragNDrop(snippets[3]),
+    ...wTourUtils.dragNDrop(snippets[4]),
+    ...wTourUtils.dragNDrop(snippets[5]),
 ]);

@@ -27,14 +27,14 @@ const snippets = [
 
 wTourUtils.registerThemeHomepageTour("treehouse_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"treehouse-1"'),
-    wTourUtils.dragNDrop(snippets[0]),
-    wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
+    ...wTourUtils.dragNDrop(snippets[0]),
+    ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[1]),
-    wTourUtils.dragNDrop(snippets[2]),
-    wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.clickOnSnippet(snippets[4], 'top'),
+    ...wTourUtils.dragNDrop(snippets[1]),
+    ...wTourUtils.dragNDrop(snippets[2]),
+    ...wTourUtils.dragNDrop(snippets[3]),
+    ...wTourUtils.dragNDrop(snippets[4]),
+    ...wTourUtils.clickOnSnippet(snippets[4], 'top'),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
 ]);
