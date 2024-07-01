@@ -32,15 +32,15 @@ const snippets = [
 
 wTourUtils.registerThemeHomepageTour("bookstore_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"generic-8"'),
-    wTourUtils.dragNDrop(snippets[0]),
-    wTourUtils.clickOnText(snippets[0], 'h1'),
+    ...wTourUtils.dragNDrop(snippets[0]),
+    ...wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[1]),
-    wTourUtils.dragNDrop(snippets[2]),
-    wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.clickOnSnippet(snippets[4]),
+    ...wTourUtils.dragNDrop(snippets[1]),
+    ...wTourUtils.dragNDrop(snippets[2]),
+    ...wTourUtils.dragNDrop(snippets[3]),
+    ...wTourUtils.dragNDrop(snippets[4]),
+    ...wTourUtils.clickOnSnippet(snippets[4]),
     wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[5]),
+    ...wTourUtils.dragNDrop(snippets[5]),
 ]);

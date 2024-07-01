@@ -31,12 +31,12 @@ const snippets = [
 
 wTourUtils.registerThemeHomepageTour("yes_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"yes-3"'),
-    wTourUtils.dragNDrop(snippets[0]),
-    wTourUtils.dragNDrop(snippets[1]),
-    wTourUtils.clickOnText(snippets[1], 'h2'),
+    ...wTourUtils.dragNDrop(snippets[0]),
+    ...wTourUtils.dragNDrop(snippets[1]),
+    ...wTourUtils.clickOnText(snippets[1], 'h2'),
     wTourUtils.goBackToBlocks(),
-    wTourUtils.dragNDrop(snippets[2]),
-    wTourUtils.dragNDrop(snippets[3]),
-    wTourUtils.dragNDrop(snippets[4]),
-    wTourUtils.dragNDrop(snippets[5]),
+    ...wTourUtils.dragNDrop(snippets[2]),
+    ...wTourUtils.dragNDrop(snippets[3]),
+    ...wTourUtils.dragNDrop(snippets[4]),
+    ...wTourUtils.dragNDrop(snippets[5]),
 ]);
