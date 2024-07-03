@@ -18,12 +18,12 @@
         'static/description/vehicle_screenshot.png',
     ],
     'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_vehicle/static/src/img/snippets/s_cover.jpg',
-        'website.s_text_image_default_image': '/theme_vehicle/static/src/img/snippets/s_text_image.jpg',
-        'website.s_masonry_block_default_image_1': '/theme_vehicle/static/src/img/snippets/s_masonry_block.jpg',
-        'website.s_image_text_default_image': '/theme_vehicle/static/src/img/snippets/s_image_text.jpg',
-        'website.s_parallax_default_image': '/theme_vehicle/static/src/img/snippets/s_parallax.jpg',
-        'website.s_picture_default_image': '/theme_vehicle/static/src/img/snippets/s_picture.jpg',
+        'website.s_cover_default_image': '/theme_vehicle/static/src/img/snippets/s_cover.webp',
+        'website.s_text_image_default_image': '/theme_vehicle/static/src/img/snippets/s_text_image.webp',
+        'website.s_masonry_block_default_image_1': '/theme_vehicle/static/src/img/snippets/s_masonry_block.webp',
+        'website.s_image_text_default_image': '/theme_vehicle/static/src/img/snippets/s_image_text.webp',
+        'website.s_parallax_default_image': '/theme_vehicle/static/src/img/snippets/s_parallax.webp',
+        'website.s_picture_default_image': '/theme_vehicle/static/src/img/snippets/s_picture.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_image_text', 's_picture', 's_masonry_block', 's_call_to_action'],

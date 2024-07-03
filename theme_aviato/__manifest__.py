@@ -23,15 +23,15 @@
         'views/new_page_template.xml',
     ],
     'images': [
-        'static/description/aviato_cover.jpg',
-        'static/description/aviato_screenshot.jpg',
+        'static/description/aviato_cover.webp',
+        'static/description/aviato_screenshot.webp',
     ],
     'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_aviato/static/src/img/content/s_cover.jpg',
-        'website.s_three_columns_default_image_1': '/theme_aviato/static/src/img/content/s_three_columns_1.jpg',
-        'website.s_three_columns_default_image_2': '/theme_aviato/static/src/img/content/s_three_columns_2.jpg',
-        'website.s_three_columns_default_image_3': '/theme_aviato/static/src/img/content/s_three_columns_3.jpg',
-        'website.s_picture_default_image': '/theme_aviato/static/src/img/content/s_picture.jpg',
+        'website.s_cover_default_image': '/theme_aviato/static/src/img/content/s_cover.webp',
+        'website.s_three_columns_default_image_1': '/theme_aviato/static/src/img/content/s_three_columns_1.webp',
+        'website.s_three_columns_default_image_2': '/theme_aviato/static/src/img/content/s_three_columns_2.webp',
+        'website.s_three_columns_default_image_3': '/theme_aviato/static/src/img/content/s_three_columns_3.webp',
+        'website.s_picture_default_image': '/theme_aviato/static/src/img/content/s_picture.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_image_text', 's_title', 's_three_columns', 's_picture'],
