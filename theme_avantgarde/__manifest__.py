@@ -27,7 +27,7 @@
     'configurator_snippets': {
         'homepage': ['s_cover', 's_picture', 's_three_columns', 's_text_image', 's_call_to_action'],
     },
-    'depends': ['theme_common'],
+    'depends': ['website'],
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-avantgarde.odoo.com',
     'assets': {

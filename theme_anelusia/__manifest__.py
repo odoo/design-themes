@@ -5,7 +5,7 @@
     'summary': 'Diversity, Fashions, Trends, Clothes, Shoes, Sports, Fitness, Stores',
     'sequence': 180,
     'version': '2.1.0',
-    'depends': ['theme_common'],
+    'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
