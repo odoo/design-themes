@@ -6,26 +6,32 @@ const snippets = [
     {
         id: 's_banner',
         name: 'Banner',
+        groupName: "Intro",
     },
     {
         id: 's_three_columns',
         name: 'Columns',
+        groupName: "Content",
     },
     {
         id: 's_color_blocks_2',
         name: 'Big Boxes',
+        groupName: "Content",
     },
     {
         id: 's_features',
         name: 'Features',
+        groupName: "Content",
     },
     {
         id: 's_masonry_block',
         name: 'Masonry',
+        groupName: "Images",
     },
     {
         id: 's_references',
         name: 'References',
+        groupName: "People",
     },
 ];
 

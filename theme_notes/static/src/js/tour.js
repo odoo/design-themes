@@ -7,26 +7,32 @@ const snippets = [
     {
         id: 's_carousel',
         name: 'Carousel',
+        groupName: "Intro",
     },
     {
         id: 's_masonry_block',
         name: 'Masonry',
+        groupName: "Images",
     },
     {
         id: 's_text_image',
         name: 'Text - Image',
+        groupName: "Content",
     },
     {
         id: 's_product_catalog',
         name: 'Pricelist',
+        groupName: "Content",
     },
     {
         id: 's_media_list',
         name: 'Media List',
+        groupName: "Content",
     },
     {
         id: 's_company_team',
         name: 'Team',
+        groupName: "People",
     },
 ];
 

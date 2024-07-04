@@ -6,34 +6,42 @@ const snippets = [
     {
         id: 's_cover',
         name: 'Cover',
+        groupName: "Intro",
     },
     {
         id: 's_title',
         name: 'Title',
+        groupName: "Text",
     },
     {
         id: 's_text_block',
         name: 'Text',
+        groupName: "Text",
     },
     {
         id: 's_three_columns',
         name: 'Columns',
+        groupName: "Content",
     },
     {
-        id: 's_image_wall',
+        id: 's_images_wall',
         name: 'Images Wall',
+        groupName: "Images",
     },
     {
         id: 's_title',
         name: 'Title',
+        groupName: "Text",
     },
     {
         id: 's_media_list',
         name: 'Media List',
+        groupName: "Content",
     },
     {
         id: 's_text_image',
         name: 'Text - Image',
+        groupName: "Content",
     },
 ];
 
