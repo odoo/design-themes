@@ -6,26 +6,32 @@ const snippets = [
     {
         id: 's_cover',
         name: 'Cover',
+        groupName: "Intro",
     },
     {
         id: 's_text_image',
         name: 'Text - Image',
+        groupName: "Content",
     },
     {
         id: 's_picture',
         name: 'Title - Image',
+        groupName: "Images",
     },
     {
         id: 's_image_text',
         name: 'Image - Text',
+        groupName: "Content",
     },
     {
         id: 's_color_blocks_2',
         name: 'Big Boxes',
+        groupName: "Content",
     },
     {
         id: 's_media_list',
         name: 'Media List',
+        groupName: "Content",
     },
 ];
 

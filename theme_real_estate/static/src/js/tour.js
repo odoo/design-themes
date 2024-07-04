@@ -6,42 +6,52 @@ const snippets = [
     {
         id: 's_banner',
         name: 'Banner',
+        groupName: "Intro",
     },
     {
         id: 's_text_block',
         name: 'Text',
+        groupName: "Text",
     },
     {
         id: 's_text_image',
         name: 'Text - Image',
+        groupName: "Content",
     },
     {
         id: 's_image_text',
         name: 'Image - Text',
+        groupName: "Content",
     },
     {
         id: 's_title',
         name: 'Title',
+        groupName: "Text",
     },
     {
         id: 's_three_columns',
         name: 'Columns',
+        groupName: "Content",
     },
     {
-        id: 's_title:last-child',
+        id: 's_title',
         name: 'Title',
+        groupName: "Text",
     },
     {
         id: 's_masonry_block',
         name: 'Masonry',
+        groupName: "Images",
     },
     {
         id: 's_numbers',
         name: 'Numbers',
+        groupName: "Content",
     },
     {
         id: 's_quotes_carousel',
         name: 'Quotes',
+        groupName: "People",
     },
 ];
 
