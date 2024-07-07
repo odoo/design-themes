@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Wil Odoo, 2024
-# Alina Lisnenko <alina.lisnenko@erp.co.ua>, 2024
+# Collex100, 2024
 # 
 msgid ""
 msgstr ""
@@ -12,13 +12,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-28 12:22+0000\n"
 "PO-Revision-Date: 2024-03-28 13:42+0000\n"
-"Last-Translator: Alina Lisnenko <alina.lisnenko@erp.co.ua>, 2024\n"
-"Language-Team: Ukrainian (https://app.transifex.com/odoo/teams/41243/uk/)\n"
+"Last-Translator: Collex100, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: uk\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
@@ -43,22 +43,22 @@ msgstr "97%"
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid "<b>Iris Doe</b> • Customer, sold an appartement"
-msgstr "<b>Iris Doe</b> • Customer, sold an appartement"
+msgstr "<b>Айрис Доу</b> - Клиент, продал квартиру"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid "<b>Jane Doe</b> • Customer, bought a house"
-msgstr "<b>Jane Doe</b> • Клієнт, купив будинок"
+msgstr "<b>Неизвестный</b> - клиент, купил дом"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid "<b>John Doe</b> • Customer, bought an appartement"
-msgstr "<b>John Doe</b> • Замовник, купив квартиру"
+msgstr "<b>Неизвестный</b> - Клиент, купил квартиру"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
 msgid "<b>Real Estate Agency.<br/>Near You.</b>"
-msgstr "<b>Агенція нерухомості.<br/>Поруч з вами.</b>"
+msgstr "<b>Агентство недвижимости.<br/>Рядом с вами.</b>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -81,13 +81,13 @@ msgid ""
 "Amazing team! smiling, always nice to talk with, they always have the best "
 "advices for you, adapted to your needs!"
 msgstr ""
-"Чудова команда! усміхнені, завжди приємні у спілкуванні, у них завжди є "
-"найкращі поради для вас, адаптовані до ваших потреб!"
+"Удивительная команда! Улыбчивые, всегда приятные в общении, у них всегда "
+"есть лучшие советы для вас, адаптированные к вашим потребностям!"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_image
 msgid "Are you thinking of selling?"
-msgstr "Думаєте про продаж?"
+msgstr "Вы думаете о продаже?"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_block
@@ -97,10 +97,10 @@ msgid ""
 "more than 75 years combined experience you can be sure we are devoted to "
 "finding the best solutions for your travel plans."
 msgstr ""
-"В <b>туристичній агенції Odoo</b> наші агенти — це більше, ніж консультанти,"
-" вони <b>попутники, які прагнуть</b>  допомогти вам досліджувати світ. Маючи"
-" понад 75 років спільного досвіду, ви можете бути впевнені, що ми прагнемо "
-"знайти найкращі рішення для ваших запланованих подорожей."
+"В <b>туристическом агентстве Odoo</b> наши агенты - это не просто "
+"консультанты, это попутчики, <b>страстно жела</b> ющие помочь вам познать "
+"мир. Имея более чем 75-летний опыт работы, вы можете быть уверены, что мы "
+"готовы найти лучшие решения для ваших туристических планов."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
@@ -108,20 +108,19 @@ msgid ""
 "At Real Estate Agency we have fixed price fees. This means we only charge "
 "when your home sale is confirmed."
 msgstr ""
-"В агентстві нерухомості ми маємо фіксовані ціни. Це означає, що ми стягуємо "
-"плату лише після підтвердження продажу вашого будинку."
+"В агентстве недвижимости действуют фиксированные цены. Это означает, что мы "
+"берем плату только после подтверждения продажи вашего дома."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid "Bored with your interior?"
-msgstr "Вам набрид ваш інтервʼєр?"
+msgstr "Вам надоел ваш интерьер?"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
-msgstr ""
-"Відкрийте для себе наші індивідуальні послуги, щоб прикрасити свій дім."
+msgstr "Откройте для себя наши индивидуальные услуги, чтобы украсить ваш дом."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -129,14 +128,14 @@ msgid ""
 "Elegant, modern sophisticated architecture with an impressive in large scale"
 " home designed with the finest imported finishes. Marble and wood floors..."
 msgstr ""
-"Елегантна сучасна витончена архітектура з вражаючим великим будинком, "
-"спроектованим із використанням найкращої імпортної обробки. Мармурова та "
-"дерев'яна підлога..."
+"Элегантный, современный, изысканный архитектурный проект с впечатляющим по "
+"масштабу домом, спроектированным с использованием лучших импортных "
+"отделочных материалов. Мраморные и деревянные полы..."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid "Explore our services"
-msgstr "Відкрийте для себе наші послуги"
+msgstr "Изучите наши услуги"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -145,14 +144,13 @@ msgid ""
 "and easy to do business with. Very happy with the experience and the "
 "company."
 msgstr ""
-"Від початку до кінця вони були надзвичайно професійними, доброзичливими, "
-"корисними та з ними легко вести бізнес. Дуже задоволений досвідом і "
-"компанією."
+"От начала и до конца они были чрезвычайно профессиональны, дружелюбны, "
+"полезны и с ними было легко иметь дело. Очень довольны опытом и компанией."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "House On The Hill"
-msgstr "Будинок на горі"
+msgstr "Дом на холме"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
@@ -160,13 +158,13 @@ msgid ""
 "Increase Visitor retention. Customer engagement on a website with virtual "
 "tour is 5 times longer compared to a site without it."
 msgstr ""
-"Збільшіть утримання відвідувачів. Залучення клієнтів на веб-сайті з "
-"віртуальним туром у 5 разів довше, ніж на сайті без нього."
+"Повышение удержания посетителей. Вовлеченность клиентов на сайте с "
+"виртуальным туром в 5 раз выше, чем на сайте без него."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
 msgid "Increased Visibility"
-msgstr "Підвищена видимість"
+msgstr "Повышенная видимость"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_image
@@ -174,18 +172,18 @@ msgid ""
 "Make an appointment for a free valuation of your property. We visit the property, advise you on a realistic asking price and we explain our way of working. <br/>\n"
 "        You can decide in all freedom whether or not you would like to work with us for the sale of your property."
 msgstr ""
-"Запишіться на безкоштовну оцінку вашого майна. Ми відвідуємо помешкання, проконсультуємо вас щодо реалістичної ціни та пояснюємо наш спосіб роботи. <br/>\n"
-"        Ви можете вільно вирішувати, чи бажаєте ви працювати з нами для продажу вашого майна."
+"Запишитесь на бесплатную оценку вашей недвижимости. Мы осмотрим недвижимость, посоветуем вам реалистичную цену и расскажем о наших методах работы. <br/>\n"
+"        Вы можете свободно решить, хотите ли вы сотрудничать с нами при продаже вашей недвижимости."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "Moutain View"
-msgstr "Гірський вид"
+msgstr "Маутен Вью"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
 msgid "No fixed fees"
-msgstr "Без фіксованих комісій"
+msgstr "Никаких фиксированных платежей"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
@@ -193,13 +191,13 @@ msgid ""
 "Now you can find more than 5,000+ property choices with our professional "
 "agents!<br/>"
 msgstr ""
-"Тепер у наших професійних агентів ви можете знайти понад 5000 варіантів "
-"нерухомості!<br/>"
+"Теперь вы можете найти более 5 000+ вариантов недвижимости с помощью наших "
+"профессиональных агентов!<br/>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
 msgid "Open your horizons"
-msgstr "Відкрийте ваші горизонти"
+msgstr "Откройте свои горизонты"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
@@ -208,14 +206,13 @@ msgid ""
 " design of your interior and will give you the best advice for your interior"
 " design."
 msgstr ""
-"Наші експерти з декорування у вашому розпорядженні, щоб крок за кроком "
-"допомогти вам створити дизайн вашого інтер’єру та дати вам найкращі поради "
-"щодо дизайну інтер’єру."
+"Наши специалисты по декорированию всегда готовы помочь вам шаг за шагом и "
+"дать лучшие советы по оформлению интерьера."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "Paradise Residence"
-msgstr "Райська Резиденція"
+msgstr "Райская резиденция"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -223,28 +220,28 @@ msgid ""
 "Positive energy, great team spirit, hard workers and awesome people! I "
 "warmly recommend them!"
 msgstr ""
-"Позитивна енергія, чудовий командний дух, працьовитість та чудові люди! Щиро"
-" рекомендую їх!"
+"Позитивная энергия, отличный командный дух, усердные работники и потрясающие"
+" люди! Я от всей души рекомендую их!"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
 msgid "Premium Quality"
-msgstr "Преміум якість"
+msgstr "Премиальное качество"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
 msgid "Pro Photo Shoot"
-msgstr "Професійна зйомка"
+msgstr "Профессиональная фотосессия"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
 msgid "Property on the coasts of the Mediterranean."
-msgstr "Нерухомість на узбережжі Середземного моря."
+msgstr "Недвижимость на побережье Средиземного моря."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
 msgid "See properties"
-msgstr "Переглянути властивості"
+msgstr "Посмотреть свойства"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -253,14 +250,14 @@ msgid ""
 "intimate ambience. With no overlooking neighbours, the garden offers real "
 "privacy."
 msgstr ""
-"Будинок оточений садовими терасами, які створюють унікальний простір і "
-"інтимну атмосферу. У саду немає сусідів, які б були на виду, що забезпечує "
-"справжнє усамітнення."
+"Дом окружен садовыми террасами, которые создают уникальное пространство и "
+"интимную атмосферу. Благодаря отсутствию соседей, сад предлагает настоящее "
+"уединение."
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
 msgid "Theme Utils"
-msgstr "Утиліти теми"
+msgstr "Тематические утилиты"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
@@ -268,18 +265,18 @@ msgid ""
 "They say an image is worth a thousand words and we know you know how "
 "important it is to have the best photography."
 msgstr ""
-"Кажуть, що зображення варте тисячі слів, і ми знаємо, що ви знаєте, "
-"наскільки важливо мати найкращу фотографію."
+"Говорят, что изображение стоит тысячи слов, и мы знаем, что вы понимаете, "
+"как важно иметь лучшие фотографии."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "View details"
-msgstr "Переглянути деталі"
+msgstr "Посмотреть детали"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "Want To Become A Real Estate Agent?"
-msgstr "Хочете стати агентом нерухомості?"
+msgstr "Хотите стать агентом по недвижимости?"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -288,9 +285,9 @@ msgid ""
 "surroundings really set it apart, offering idyllic sea views overlooking a "
 "park."
 msgstr ""
-"Не гайте часу на перегляд цієї справді приголомшливої ​​власності. Околиці "
-"помешкання справді виділяють його, відкриваючи ідилічні види на море та "
-"парк."
+"Не теряйте времени, чтобы посмотреть на этот поистине потрясающий дом. "
+"Окрестности дома действительно выделяют его среди других, предлагая "
+"идиллический вид на море и парк."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_block
@@ -300,10 +297,10 @@ msgid ""
 "answers, support, advice, and itineraries that will amaze you with their "
 "<b>thoroughness and thoughtfulness</b>."
 msgstr ""
-"Ми <b>турагентство Odoo</b>, присвячене втіленню ваших мрій про відпустку! "
-"Переповнені надто великим вибором в Інтернеті? Ми пропонуємо вам відповіді, "
-"підтримку, поради та маршрути, які вразять вас своїми <b>ретельністю та "
-"продуманістю</b>."
+"Мы - <b>туристическое агентство Odoo</b>, которое стремится воплотить ваши "
+"мечты об отпуске в реальность! Перегружены слишком большим выбором в "
+"интернете? Мы предлагаем вам ответы, поддержку, советы и маршруты, которые "
+"поразят вас своей <b>тщательностью и продуманностью</b>."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
@@ -311,13 +308,13 @@ msgid ""
 "We are committed to delivering high quality services that enhance your brand"
 " by allowing visitors to interact virtually."
 msgstr ""
-"Ми прагнемо надавати високоякісні послуги, які покращують ваш бренд, "
-"дозволяючи відвідувачам взаємодіяти віртуально."
+"Мы стремимся предоставлять высококачественные услуги, которые укрепляют ваш "
+"бренд, позволяя посетителям взаимодействовать с вами виртуально."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "We'll help you to grow your career and growth."
-msgstr "Ми допоможемо вам у кар'єрному зростанні."
+msgstr "Мы поможем вам в карьерном росте и развитии."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
@@ -325,25 +322,25 @@ msgid ""
 "We’ve selected properties from all types and all areas.<br/>\n"
 "        The house of your dreams is around the corner."
 msgstr ""
-"Ми вибрали нерухомість усіх типів і всіх областей.<br/>\n"
-"        Будинок вашої мрії вже за рогом."
+"Мы отобрали недвижимость всех типов и во всех районах.<br/>\n"
+"        Дом вашей мечты уже не за горами."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
 msgid "amazing agents"
-msgstr "чудові агенти"
+msgstr "удивительные агенты"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
 msgid "happy customers"
-msgstr "щасливі клієнти"
+msgstr "счастливые клиенты"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
 msgid "offices"
-msgstr "офіси"
+msgstr "офисы"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
 msgid "properties already sold"
-msgstr "нерухомості вже продано"
+msgstr "недвижимость уже продана"
