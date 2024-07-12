@@ -418,22 +418,6 @@
     </xpath>
 </template>
 
-<!-- ==== Features Grid ===== -->
-<template id="s_features_grid" inherit_id="website.s_features_grid" name="Paptic s_features_grid">
-    <!-- Icon #4 -->
-    <xpath expr="(//i)[4]" position="attributes">
-        <attribute name="class" add="rounded-circle bg-o-color-3" remove="rounded bg-o-color-2" separator=" "/>
-    </xpath>
-    <!-- Icon #5 -->
-    <xpath expr="(//i)[5]" position="attributes">
-        <attribute name="class" add="rounded-circle bg-o-color-3" remove="rounded bg-o-color-2" separator=" "/>
-    </xpath>
-    <!-- Icon #6 -->
-    <xpath expr="(//i)[6]" position="attributes">
-        <attribute name="class" add="rounded-circle bg-o-color-3" remove="rounded bg-o-color-2" separator=" "/>
-    </xpath>
-</template>
-
 <!-- ==== Pricelist ===== -->
 <template id="s_product_catalog" inherit_id="website.s_product_catalog" name="Paptic s_product_catalog">
     <!-- Filter -->
