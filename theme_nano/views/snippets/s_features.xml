@@ -3,7 +3,7 @@
     <template id="s_features" inherit_id="website.s_features">
         <!-- Section -->
         <xpath expr="//section" position="attributes">
-            <attribute name="class" add="pb48" remove="pb32" separator=" "/>
+            <attribute name="class" add="pb48" remove="pb64" separator=" "/>
         </xpath>
         <!-- Column #01 -->
         <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
@@ -12,8 +12,8 @@
         <xpath expr="//div[hasclass('row')]/div[1]/i" position="replace">
             <i class="fa fa-3x fa-asterisk rounded bg-o-color-5 m-4"></i>
         </xpath>
-        <xpath expr="//div[hasclass('row')]/div[1]/h3" position="replace">
-            <h2>Intuitive</h2>
+        <xpath expr="//div[hasclass('row')]/div[1]/h5" position="replace">
+            <h5>Intuitive</h5>
         </xpath>
         <xpath expr="//div[hasclass('row')]/div[1]/p" position="replace">
             <p>We create easy-to-use products.</p>
@@ -25,8 +25,8 @@
         <xpath expr="//div[hasclass('row')]/div[2]/i" position="replace">
             <i class="fa fa-3x fa-arrows-alt rounded bg-primary m-4"></i>
         </xpath>
-        <xpath expr="//div[hasclass('row')]/div[2]/h3" position="replace">
-            <h2>Adaptable</h2>
+        <xpath expr="//div[hasclass('row')]/div[2]/h5" position="replace">
+            <h5>Adaptable</h5>
         </xpath>
         <xpath expr="//div[hasclass('row')]/div[2]/p" position="replace">
             <p>We create modular solutions.</p>
