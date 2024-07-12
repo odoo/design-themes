@@ -193,11 +193,8 @@
 
 <!-- ======== CALL TO ACTION ======== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Graphene s_call_to_action">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc3" separator=" "/>
-    </xpath>
     <xpath expr="//h3" position="replace">
-        <h3 style="text-align: right;"><b>50,000+ companies</b> run our software.</h3>
+        <h3 style="text-align: right;">50,000+ companies run our software.</h3>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
         <attribute name="class" add="col-lg-8" remove="col-lg-9" separator=" "/>

@@ -4,7 +4,7 @@
 <template id="s_call_to_action" inherit_id="website.s_call_to_action">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt128 pb128" remove="pt48 pb24 bg-200" separator=" "/>
+        <attribute name="class" add="pt128 pb128" remove="pt64 pb64" separator=" "/>
     </xpath>
     <!-- Layout -->
     <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
