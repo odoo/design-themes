@@ -294,11 +294,11 @@
 <!-- ==== Call to action ===== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Paptic s_call_to_action">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt120 pb120 o_cc1" remove="pt48 pb24 o_cc3" separator=" "/>
+        <attribute name="class" add="pt120 pb120 o_cc1" remove="pt64 pb64 o_cc5" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h3" position="replace" mode="inner">
-        <b>50,000+ companies</b> run Paptic to grow their businesses.
+        50,000+ companies run Paptic to grow their businesses.
     </xpath>
 </template>
 
