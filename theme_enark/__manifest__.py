@@ -19,7 +19,6 @@
         'views/snippets/s_media_list.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_parallax.xml',
-        'views/snippets/s_numbers.xml',
         'views/snippets/s_image_gallery.xml',
         'views/new_page_template.xml',
     ],
