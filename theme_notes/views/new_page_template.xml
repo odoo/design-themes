@@ -134,7 +134,7 @@
 
 <template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc2 pt24 pb24" remove="o_cc3 pt0 pb0" separator=" "/>
+        <attribute name="class" add="o_cc2 pt24 pb24" remove="o_cc3 pt0 pb0" separator=" "/>
     </xpath>
 </template>
 
@@ -161,7 +161,7 @@
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <xpath expr="//section" position="attributes">
         <!-- pt0 is defined by both theme and new page template -->
-        <attribute name="class" add="o_cc pt0" remove="pt0" separator=" "/>
+        <attribute name="class" add="pt0" remove="pt0" separator=" "/>
     </xpath>
 </template>
 
