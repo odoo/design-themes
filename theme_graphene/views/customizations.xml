@@ -223,7 +223,7 @@
 <!-- ======== NUMBERS ======== -->
 <template id="s_numbers" inherit_id="website.s_numbers" name="Graphene s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="oe_img_bg o_bg_img_center pb56 pt56 s_parallax_no_overflow_hidden parallax s_parallax_is_fixed" remove="pb24 pt24" separator=" "/>
+        <attribute name="class" add="oe_img_bg o_bg_img_center pb56 pt56 s_parallax_no_overflow_hidden parallax s_parallax_is_fixed o_cc3" remove="pb80 pt80 o_cc1" separator=" "/>
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
         <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_parallax_default_image'); background-position: 50% 75%;"/>
@@ -237,9 +237,6 @@
         <attribute name="class" add="text-white" separator=" "/>
     </xpath>
     <xpath expr="(//div[hasclass('row')]/div/span)[3]" position="attributes">
-        <attribute name="class" add="text-white" separator=" "/>
-    </xpath>
-    <xpath expr="(//div[hasclass('row')]/div/span)[4]" position="attributes">
         <attribute name="class" add="text-white" separator=" "/>
     </xpath>
 </template>

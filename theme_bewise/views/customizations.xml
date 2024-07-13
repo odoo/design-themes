@@ -83,7 +83,7 @@
 <!-- ======== NUMBERS ======== -->
 <template id="s_numbers" inherit_id="website.s_numbers" name="Be Wise s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
+        <attribute name="class" add="o_cc3" remove="o_cc1" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
@@ -97,12 +97,6 @@
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/h6" position="replace" mode="inner">
         Libraries
-    </xpath>
-    <xpath expr="//div[hasclass('row')]/div[4]/h6" position="replace" mode="inner">
-        Students
-    </xpath>
-    <xpath expr="//div[hasclass('row')]/div[4]/span" position="replace" mode="inner" >
-        16,456
     </xpath>
 </template>
 

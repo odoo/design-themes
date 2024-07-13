@@ -106,6 +106,12 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc3" separator=" "/>
+    </xpath>
+</template>
+
 <template id="new_page_template_about_personal_s_text_block_h2" inherit_id="website.new_page_template_about_personal_s_text_block_h2">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc3" separator=" "/>
