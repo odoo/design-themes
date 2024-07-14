@@ -233,33 +233,33 @@
 <!-- ======== FEATURES ======== -->
 <template id="s_features" inherit_id="website.s_features">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc1" remove="o_cc2 pt32 pb32 bg-200" separator=" "/>
+        <attribute name="class" add="o_cc1" remove="pt64 pb64" separator=" "/>
     </xpath>
     <!-- Left block -->
     <!-- Icon -->
     <xpath expr="//i" position="attributes">
-        <attribute name="class" add="fa-automobile" remove="fa-gear" separator=" "/>
+        <attribute name="class" add="fa-automobile" remove="fa-paper-plane-o" separator=" "/>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('row')]/div[1]/div/h3" position="replace" mode="inner">
         Top Speed
     </xpath>
     <!-- Center block -->
     <!-- Icon -->
     <xpath expr="(//i)[2]" position="attributes">
-        <attribute name="class" add="fa-battery-full" remove="fa-photo" separator=" "/>
+        <attribute name="class" add="fa-battery-full" remove="fa-credit-card" separator=" "/>
     </xpath>
     <!-- Title -->
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('row')]/div[2]/div/h3" position="replace" mode="inner">
         Long Range
     </xpath>
     <!-- Right block -->
     <!-- Icon -->
     <xpath expr="(//i)[3]" position="attributes">
-        <attribute name="class" add="fa-cog" remove="fa-leaf" separator=" "/>
+        <attribute name="class" add="fa-cog" remove="fa-flag-o" separator=" "/>
     </xpath>
     <!-- Title -->
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('row')]/div[3]/div/h3" position="replace" mode="inner">
         Dual Motor
     </xpath>
 </template>

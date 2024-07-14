@@ -11,13 +11,17 @@
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Rainy_09_001"/>
     </xpath>
+    <!-- Feature #1 - Icon -->
+    <xpath expr="//div[hasclass('row')]//div[1]//i" position="attributes">
+        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
+    </xpath>
     <!-- Feature #2 - Icon -->
     <xpath expr="//div[hasclass('row')]//div[2]//i" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-5" separator=" "/>
+        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
     </xpath>
     <!-- Feature #3 - Icon -->
     <xpath expr="//div[hasclass('row')]//div[3]//i" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
+        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
     </xpath>
 </template>
 
