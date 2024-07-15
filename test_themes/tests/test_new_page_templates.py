@@ -75,7 +75,7 @@ CONFLICTUAL_CLASSES_RE = {
     # Snippets
     re.compile(r'^s_.*'): [
         's_alert_md',
-        's_blockquote_classic',
+        's_blockquote_with_icon', 's_blockquote',
         's_carousel_bordered', 's_carousel_default', 's_carousel_rounded',
         's_dynamic', 's_dynamic_empty', 's_dynamic_snippet_blog_posts',
         's_blog_posts_effect_marley', 's_blog_post_big_picture',
