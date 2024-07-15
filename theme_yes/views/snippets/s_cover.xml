@@ -4,7 +4,7 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height pt208 pb256" remove="pt96 pb96" separator=" "/>
+        <attribute name="class" add="o_half_screen_height pt208 pb256" remove="pt232 pb232" separator=" "/>
     </xpath>
     <!-- Filter -->
     <xpath expr="//*[hasclass('container')]" position="before">

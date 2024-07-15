@@ -4,7 +4,7 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_full_screen_height o_cc o_cc1" remove="bg-black-50" separator=" "/>
+        <attribute name="class" add="o_full_screen_height o_cc1" remove="bg-black-50 o_cc4" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/14"}</attribute>
     </xpath>
 
@@ -44,9 +44,10 @@
     </xpath>
 
     <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-lg" separator=" "/>
+    <xpath expr="//a[@t-att-href='cta_btn_href'][1]" position="attributes">
+        <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
     </xpath>
+    <xpath expr="//a[@t-att-href='cta_btn_href'][2]" position="replace"/>
 </template>
 
 </odoo>
