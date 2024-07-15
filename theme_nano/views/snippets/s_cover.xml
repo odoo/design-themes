@@ -4,7 +4,7 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5 pt200 pb200" remove="parallax s_parallax_is_fixed bg-black-50 pt96 pb96" separator=" "/>
+        <attribute name="class" add="o_cc5 pt200 pb200" remove="parallax s_parallax_is_fixed bg-black-50 pt232 pb232 o_cc4" separator=" "/>
         <attribute name="data-scroll-background-ratio">0</attribute>
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;</attribute>
     </xpath>

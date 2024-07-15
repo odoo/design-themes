@@ -33,7 +33,7 @@
  <template id="s_cover" inherit_id="website.s_cover" name="Monglia s_cover">
     <!-- Customize elements -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_full_screen_height o_cc o_cc5" separator=" "/>
+        <attribute name="class" add="o_full_screen_height o_cc5" remove="o_cc4" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
         <div class="o_we_bg_filter bg-black-25"/>
@@ -47,9 +47,6 @@
     </xpath>
     <xpath expr="//p[3]" position="attributes">
         <attribute name="style" add="text-align: left;" remove="text-align: center;" separator=";"/>
-    </xpath>
-    <xpath expr="//a[hasclass('btn')]" position="attributes">
-        <attribute name="class" add="btn-lg" separator=" "/>
     </xpath>
     <!-- Create column -->
     <xpath expr="//div[hasclass('container')]" position="inside">
@@ -65,6 +62,11 @@
         <h2>21/22 December</h2><br/>
         <xpath expr="//div[hasclass('container')]/p"  position="move"/>
     </xpath>
+    <!-- Button -->
+    <xpath expr="//a[@t-att-href='cta_btn_href'][1]" position="attributes">
+        <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
+    </xpath>
+    <xpath expr="//a[@t-att-href='cta_btn_href'][2]" position="replace"/>
 </template>
 
 <!-- ======== MEDIA LIST ======== -->

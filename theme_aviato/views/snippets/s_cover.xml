@@ -4,7 +4,7 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt192 pb192" remove="pt96 pb96 s_parallax_is_fixed" separator=" "/>
+        <attribute name="class" add="pt192 pb192" remove="pt232 pb232 s_parallax_is_fixed" separator=" "/>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace">
         <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 50%;"/>
