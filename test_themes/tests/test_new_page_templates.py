@@ -89,7 +89,7 @@ CONFLICTUAL_CLASSES_RE = {
         's_product_catalog_dish_name', 's_product_catalog_dish_dot_leaders',
         's_table_of_content_vertical_navbar', 's_table_of_content_navbar_sticky', 's_table_of_content_navbar_wrap',
         's_timeline_card',
-        's_website_form_custom', 's_website_form_dnone', 's_website_form_field', 's_website_form_input', 's_website_form_mark',
+        's_website_form_custom', 's_website_form_dnone', 's_website_form_field', 's_website_form_input', 's_website_form_mark', 's_website_form_submit', 's_website_form_no_submit_label',
         's_donation_btn', 's_donation_custom_btn',
     ],
     # Text

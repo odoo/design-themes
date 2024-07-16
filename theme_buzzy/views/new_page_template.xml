@@ -114,7 +114,7 @@
 
 <template id="new_page_template_s_website_form" inherit_id="website.new_page_template_s_website_form">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" separator=" "/>
+        <attribute name="class" add="o_cc5" remove="o_cc2" separator=" "/>
     </xpath>
 </template>
 
