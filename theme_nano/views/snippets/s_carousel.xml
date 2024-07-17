@@ -4,7 +4,7 @@
 <template id="s_carousel" inherit_id="website.s_carousel">
     <!-- Carousel -->
     <xpath expr="//*[hasclass('s_carousel')]" position="attributes">
-        <attribute name="class" add="s_carousel_bordered carousel-fade bg-o-color-4" remove="s_carousel_default" separator=" "/>
+        <attribute name="class" add="carousel-fade bg-o-color-4" separator=" "/>
     </xpath>
     <!-- Slide #01 -->
     <xpath expr="//*[hasclass('carousel-content')][1]" position="attributes">

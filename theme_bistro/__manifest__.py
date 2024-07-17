@@ -28,6 +28,7 @@
         'views/snippets/s_text_image.xml',
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_key_benefits.xml',
+        'views/snippets/s_carousel.xml',
         'views/new_page_template.xml',
 
     ],

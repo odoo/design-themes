@@ -103,17 +103,13 @@
 <!-- ======== QUOTES ======== -->
 <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Be Wise s_quotes_carousel">
     <!-- Section : Add a main background to the carousel -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="oe_img_bg o_bg_img_center" separator=" "/>
+    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
+        <attribute name="class" add="oe_img_bg o_bg_img_center s_carousel_rounded" remove="o_cc o_cc2 s_carousel_boxed" separator=" "/>
         <attribute name="style">background-image: url('/web/image/website.s_quotes_carousel_demo_image_2');</attribute>
     </xpath>
     <!-- Filter -->
-    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="before">
+    <xpath expr="//div[hasclass('carousel-inner')]" position="before">
         <div class="o_we_bg_filter bg-black-15"/>
-    </xpath>
-    <!-- Carousel -->
-    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
-        <attribute name="class" add="s_carousel_rounded" remove="o_cc o_cc2 s_carousel_default" separator=" "/>
     </xpath>
     <!-- Slide #1 -->
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
@@ -171,7 +167,7 @@
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001","flip":["y"]}</attribute>
     </xpath>
     <!-- Shape -->
-    <xpath expr="//ol[hasclass('carousel-indicators')]" position="before">
+    <xpath expr="//div[hasclass('carousel-indicators')]" position="before">
         <div class="o_we_shape o_web_editor_Origins_14_001" style="background-image: url('/web_editor/shape/web_editor/Origins/14_001.svg?c3=o-color-4&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
@@ -333,14 +329,23 @@
 
 <!-- ======== CAROUSEL ======== -->
 <template id="s_carousel" inherit_id="website.s_carousel" name="Be Wise s_carousel">
-    <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
+    <xpath expr="(//div[hasclass('carousel-item')])[2]" position="attributes">
         <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[2]//div[hasclass('container')]" position="before">
+        <div class="o_we_bg_filter bg-black-50"/>
     </xpath>
     <xpath expr="//div[hasclass('carousel-item')][3]" position="attributes">
         <attribute name="style" add="background-position: 50% 25%" separator=";"/>
     </xpath>
     <xpath expr="//div[hasclass('carousel-item')][3]//p[last()]" position="replace" mode="inner">
         <font class="bg-o-color-4">Good copy starts with understanding how your product or service helps your customers. Simple words communicate better than big words and pompous language.</font>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-item')]//a" position="attributes">
+        <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[2]//a" position="attributes">
+        <attribute name="class" add="btn-secondary" remove="btn-primary" separator=" "/>
     </xpath>
 </template>
 

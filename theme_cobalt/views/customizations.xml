@@ -131,6 +131,13 @@
     </xpath>
 </template>
 
+<!-- ======== CAROUSEL ======== -->
+<template id="s_carousel" inherit_id="website.s_carousel" name="Cobalt s_carousel">
+    <xpath expr="(//div[hasclass('carousel-content')])[3]" position="attributes">
+        <attribute name="class" add="o_cc o_cc4" separator=" "/>
+    </xpath>
+</template>
+
 <!-- ==== References ===== -->
 <template id="s_references" inherit_id="website.s_references" name="Cobalt s_references">
     <xpath expr="//section" position="attributes">
@@ -187,14 +194,6 @@
     </xpath>
     <xpath expr="//figcaption" position="replace">
         <figcaption class="figure-caption text-400"><em>Our office in Dhaka</em></figcaption>
-    </xpath>
-</template>
-
-<!-- ==== Images Gallery ===== -->
- <template id="s_image_gallery" inherit_id="website.s_image_gallery">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="s_image_gallery_cover" separator=" "/>
     </xpath>
 </template>
 
