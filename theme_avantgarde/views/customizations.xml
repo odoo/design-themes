@@ -220,4 +220,10 @@
     </xpath>
 </template>
 
+<!-- ======== PRICELIST ======== -->
+<template id="s_product_catalog" inherit_id="website.s_product_catalog">
+    <!-- Remove filter -->
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+</template>
+
 </odoo>

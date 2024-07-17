@@ -396,9 +396,14 @@
 
 <!-- ==== Pricelist ===== -->
 <template id="s_product_catalog" inherit_id="website.s_product_catalog" name="Paptic s_product_catalog">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
+    </xpath>
     <!-- Filter -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_bg_filter bg-white-75"/>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
+        <attribute name="class" remove="bg-white-85" separator=" "/>
+        <attribute name="style">background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(178, 255, 218, 1) 100%);</attribute>
     </xpath>
 </template>
 
