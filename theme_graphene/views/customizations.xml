@@ -268,10 +268,10 @@
 <!-- ======== PICTURE ======== -->
 <template id="s_picture" inherit_id="website.s_picture" name="Graphene s_picture">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0 pt48" remove="pb24 pt48" separator=" "/>
+        <attribute name="class" add="pb0 pt48" remove="pb64 pt64" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/01_001","flip":[]}</attribute>
     </xpath>
-    <xpath expr="//section/div[hasclass('container')]" position="before">
+    <xpath expr="//section/div[hasclass('o_container_small')]" position="before">
         <div class="o_we_shape o_web_editor_Zigs_01_001"/>
     </xpath>
     <!-- Content -->
@@ -280,9 +280,6 @@
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
         Put your people at the heart of your marketing with tools that help you get to know your audience <br/>and see who you should be talking to.
-    </xpath>
-    <xpath expr="//img" position="attributes">
-        <attribute name="class" add="p-0 border-0" remove="padding-large" separator=" " />
     </xpath>
 </template>
 

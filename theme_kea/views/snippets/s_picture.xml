@@ -4,7 +4,7 @@
 <template id="s_picture" inherit_id="website.s_picture">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
+        <attribute name="class" add="o_cc3" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -12,7 +12,6 @@
     </xpath>
     <!-- Image -->
     <xpath expr="//img" position="attributes">
-        <attribute name="class" remove="img-thumbnail" separator=" "/>
         <attribute name="style">width: 100%;</attribute>
         <attribute name="src">/web_editor/image_shape/website.s_media_list_default_image_1/web_editor/geometric_round/geo_round_blob_medium.svg</attribute>
         <attribute name="data-shape">web_editor/geometric_round/geo_round_blob_medium</attribute>
@@ -37,7 +36,7 @@
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/03","flip":["y"]}</attribute>
     </xpath>
     <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
+    <xpath expr="//div[hasclass('o_container_small')]" position="before">
         <div class="o_we_shape o_web_editor_Wavy_03" style="background-image: url('/web_editor/shape/web_editor/Wavy/03.svg?c1=o-color-1&amp;c2=o-color-2&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
 </template>

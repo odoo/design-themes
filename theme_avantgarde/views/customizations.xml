@@ -31,7 +31,7 @@
 <!-- ======== PICTURE ======== -->
 <template id="s_picture" inherit_id="website.s_picture" name="Avantgarde s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt144 pb128" remove="pt48 pb24" separator=" "/>
+        <attribute name="class" add="pt144 pb128" remove="pt64 pb64" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="attributes">
         <attribute name="style" remove="text-align: center;" separator=" "/>
@@ -48,7 +48,6 @@
         We combine a wide spectrum of technologies with a good portion of creativity.
     </xpath>
     <xpath expr="//img" position="attributes">
-        <attribute name="class" remove="img-thumbnail" separator=" "/>
         <attribute name="src">/web_editor/image_shape/website.s_picture_default_image/web_editor/composition/composition_organic_line.svg?c2=o-color-2</attribute>
         <attribute name="data-shape">web_editor/composition/composition_organic_line</attribute>
         <attribute name="data-original-mimetype">image/jpeg</attribute>
