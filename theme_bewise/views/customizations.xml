@@ -239,16 +239,12 @@
 <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2" name="Be Wise s_color_blocks_2">
     <!-- Left column -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="oe_img_bg o_bg_img_center o_cc5" remove="o_cc3" separator=" "/>
+        <attribute name="class" add="oe_img_bg o_bg_img_center o_cc5" remove="o_cc4" separator=" "/>
         <attribute name="style">background-image: url('/web/image/website.s_media_list_default_image_1');</attribute>
     </xpath>
     <!-- Left column - Filter -->
-    <xpath expr="//div[hasclass('col-lg-6')]//i" position="before">
+    <xpath expr="//div[hasclass('col-lg-6')]//h2" position="before">
         <div class="o_we_bg_filter bg-black-50"/>
-    </xpath>
-    <!-- Left column - Icon -->
-    <xpath expr="//div[hasclass('col-lg-6')]//i" position="attributes">
-        <attribute name="class" add="fa-3x fa-book" remove="fa-5x fa-shield" separator=" "/>
     </xpath>
     <!-- Left column - Title -->
     <xpath expr="//div[hasclass('col-lg-6')]//h2" position="replace" mode="inner">
@@ -271,12 +267,8 @@
         <attribute name="style">background-image: url('/web/image/website.s_media_list_default_image_2');</attribute>
     </xpath>
     <!-- Right column - Filter -->
-    <xpath expr="//div[hasclass('col-lg-6')][2]//i" position="before">
+    <xpath expr="//div[hasclass('col-lg-6')][2]//h2" position="before">
         <div class="o_we_bg_filter bg-black-50"/>
-    </xpath>
-    <!-- Right column - Icon -->
-    <xpath expr="//div[hasclass('col-lg-6')][2]//i" position="attributes">
-        <attribute name="class" add="fa-3x fa-institution" remove="fa-5x fa-cube" separator=" "/>
     </xpath>
     <!-- Right column - Title -->
     <xpath expr="//div[hasclass('col-lg-6')][2]//h2" position="replace" mode="inner">

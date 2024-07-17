@@ -344,17 +344,18 @@
 <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2" name="Paptic s_color_blocks_2">
     <!-- Left column -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="o_cc3 text-center" remove="o_cc4" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03","flip":["y"]}</attribute>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]/i" position="before">
+    <xpath expr="//div[hasclass('col-lg-6')]/h2" position="before">
         <div class="o_we_shape o_web_editor_Blocks_03" style="background-image: url('/web_editor/shape/web_editor/Blocks/03.svg?c1=o-color-1&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 0%"/>
     </xpath>
     <!-- Right column -->
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
-        <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
+        <attribute name="class" add="o_cc3 text-center" remove="o_cc5" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03","flip":["x","y"]}</attribute>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')][2]/i" position="before">
+    <xpath expr="//div[hasclass('col-lg-6')][2]/h2" position="before">
         <div class="o_we_shape o_web_editor_Blocks_03" style="background-image: url('/web_editor/shape/web_editor/Blocks/03.svg?c1=o-color-1&amp;c4=o-color-4&amp;flip=xy'); background-position: 50% 0%"/>
     </xpath>
 </template>
