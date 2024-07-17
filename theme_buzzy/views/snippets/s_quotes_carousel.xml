@@ -4,11 +4,11 @@
 <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
     <!-- Carousel -->
     <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
-        <attribute name="class" add="s_carousel_rounded o_cc5" remove="s_carousel_default o_cc2" separator=" "/>
+        <attribute name="class" add="s_carousel_rounded o_cc5" remove="s_carousel_boxed o_cc2 carousel-dark" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/10","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
-    <xpath expr="//ol[hasclass('carousel-indicators')]" position="before">
+    <xpath expr="//div[hasclass('carousel-inner')]" position="before">
         <div class="o_we_shape o_web_editor_Rainy_10"/>
     </xpath>
     <!-- Carousel items - Remove background image -->

@@ -4,11 +4,7 @@
 <template id="s_image_gallery" inherit_id="website.s_image_gallery">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="s_image_gallery_cover o_full_screen_height" separator=" "/>
-    </xpath>
-    <!-- Container -->
-    <xpath expr="//div[hasclass('container')]" position="attributes">
-        <attribute name="class" add="container-fluid" remove="container" separator=" "/>
+        <attribute name="class" add="s_image_gallery_indicators_arrows_boxed" separator=" "/>
     </xpath>
 </template>
 

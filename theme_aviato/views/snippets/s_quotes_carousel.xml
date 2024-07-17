@@ -3,8 +3,11 @@
 
 <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
     <!-- Quote 1 -->
+    <xpath expr="//blockquote" position="attributes">
+        <attribute name="class" add="w-75" remove="w-50" separator=" "/>
+    </xpath>
     <xpath expr="(//p[hasclass('s_blockquote_quote')])[1]" position="replace" mode="inner">
-        It's difficult to describe how awesome the trip was. I feel like my life has changed forever. It would take too long to describe day by day the sights, sounds, architecture, art, food, history, and people that we came across. Ireland was fantastic.
+        It would take too long to describe day by day the sights, sounds, and people that we came across. Ireland was fantastic.
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//strong" position="replace" mode="inner">
         Linda and Paulo
@@ -14,7 +17,7 @@
     </xpath>
     <!-- Quote 2 -->
     <xpath expr="(//p[hasclass('s_blockquote_quote')])[2]" position="replace" mode="inner">
-        As always, Odoo Travel has delivered a truly wonderful travel experience for us. Norway was a great travel destination. The parts of the country we visited were beautiful, people were friendly, everything we ate was delicious, and there were many fun things to see and do.
+        The parts of the country we visited were beautiful, people were friendly, everything we ate was delicious, and there were many fun things to see and do.
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//strong" position="replace" mode="inner">
         Jacques and Marie
@@ -24,7 +27,7 @@
     </xpath>
     <!-- Quote 3 -->
     <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace"  mode="inner">
-        We would like to thank Odoo Travel for organising wonderful tour for us in Delhi, Agra and Rajasthan. Everything was very well organised. Thank you very much for everything!
+        Everything was very well organised. Thank you very much for everything!
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//strong" position="replace" mode="inner">
         Rose and Peter

@@ -214,20 +214,36 @@
 
 <!-- ======== CAROUSEL ======== -->
 <template id="s_carousel" inherit_id="website.s_carousel" name="Avantgarde s_carousel">
-    <!-- Assign slide3 as 'active' and move it in first position -->
-    <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
-        <attribute name="class" remove="active" separator=" "/>
+    <xpath expr="//div[hasclass('s_carousel')]" position="attributes">
+        <attribute name="class" add="s_carousel_controllers_indicators_outside s_carousel_rounded carousel-dark" remove="s_carousel_default" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="attributes">
-        <attribute name="class" add="active" separator=" "/>
+    <xpath expr="//div[hasclass('carousel-indicators')]" position="attributes">
+        <attribute name="class" add="s_carousel_indicators_dots" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('carousel-inner')]/div" position="before">
-        <xpath expr="//div[hasclass('carousel-inner')]/div[3]" position="move"/>
+    <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[2]" position="attributes">
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[3]" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-item')]//div[hasclass('o_we_bg_filter')]" position="replace">
+        <div class="o_we_bg_filter bg-black-50"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[2]//div[hasclass('container')]" position="before">
+        <div class="o_we_bg_filter bg-black-50"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[3]//div[hasclass('container')]" position="before">
+        <div class="o_we_bg_filter bg-black-50"/>
     </xpath>
 
-    <xpath expr="//h2/font" position="replace">
-        <font style="font-size: 62px; background-color: var(--o-color-4);" class="o_default_snippet_text">Making Simple</font>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Making Simple
     </xpath>
+    <xpath expr="//div[hasclass('carousel-item')]//p[2]" position="replace"/>
+    <xpath expr="(//div[hasclass('carousel-item')])[2]//p[2]" position="replace"/>
 </template>
 
 <!-- ======== QUOTES ======== -->

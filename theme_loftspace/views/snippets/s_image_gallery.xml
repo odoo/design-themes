@@ -2,13 +2,9 @@
 <odoo>
 
 <template id="s_image_gallery" inherit_id="website.s_image_gallery">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="s_image_gallery_cover" separator=" "/>
-    </xpath>
     <!-- Container -->
-    <xpath expr="//div[hasclass('container')]" position="attributes">
-        <attribute name="class" add="container-fluid" remove="container" separator=" "/>
+    <xpath expr="//div[hasclass('o_container_small')]" position="attributes">
+        <attribute name="class" add="container" remove="o_container_small" separator=" "/>
     </xpath>
 </template>
 
