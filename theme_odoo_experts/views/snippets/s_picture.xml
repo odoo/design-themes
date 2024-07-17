@@ -4,11 +4,11 @@
 <template id="s_picture" inherit_id="website.s_picture">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="o_cc2" add="o_cc1 oe_img_bg" separator=" "/>
+        <attribute name="class" add="o_cc1 oe_img_bg" separator=" "/>
         <attribute name="style">background-image: url('/web/image/website.s_picture_default_image_bg'); background-position: center;</attribute>
     </xpath>
     <!-- Filter -->
-    <xpath expr="//div[hasclass('container')]" position="before">
+    <xpath expr="//div[hasclass('o_container_small')]" position="before">
         <div class="o_we_bg_filter bg-white-75"/>
     </xpath>
     <!-- Title -->
@@ -26,7 +26,7 @@
         They are here to help you grow your business!
     </xpath>
     <!-- Add a button -->
-    <xpath expr="//p[2]" position="after">
+    <xpath expr="//p[1]" position="after">
         <p style="text-align: center;">
             <a t-att-href="cta_btn_href" class="btn btn-primary rounded-circle btn-lg"><t t-esc="cta_btn_text">Contact Us</t></a>
         </p>
@@ -50,7 +50,7 @@
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/08","flip":["y"]}</attribute>
     </xpath>
     <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
+    <xpath expr="//div[hasclass('o_container_small')]" position="before">
         <div class="o_we_shape o_web_editor_Wavy_08" style="background-image: url('/web_editor/shape/web_editor/Wavy/08.svg?c2=o-color-3&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
 </template>

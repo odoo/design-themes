@@ -286,11 +286,10 @@
 <!-- ==== Picture ===== -->
 <template id="s_picture" inherit_id="website.s_picture" name="Paptic s_picture">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt72 o_cc1" remove="o_cc2 pt48" separator=" "/>
+        <attribute name="class" add="pt72 o_cc1" remove="pt64" separator=" "/>
     </xpath>
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web_editor/shape/theme_paptic/s_picture.svg?c1=o-color-1</attribute>
-        <attribute name="class" remove="img-thumbnail" separator=" "/>
     </xpath>
 </template>
 
