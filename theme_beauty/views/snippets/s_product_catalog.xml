@@ -3,8 +3,8 @@
 
 <template id="s_product_catalog" inherit_id="website.s_product_catalog">
     <!-- Filter -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_bg_filter bg-white-75"/>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
+        <attribute name="class" add="bg-white-75" remove="bg-white-85" separator=" "/>
     </xpath>
 </template>
 

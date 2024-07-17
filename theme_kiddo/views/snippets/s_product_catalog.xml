@@ -8,8 +8,8 @@
     </xpath>
 
     <!-- Filter -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_bg_filter bg-black-25"/>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
+        <div class="o_we_bg_filter bg-black-75"/>
     </xpath>
 </template>
 

@@ -13,6 +13,8 @@
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Airy_11"/>
     </xpath>
+    <!-- Remove filter -->
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
 </template>
 
 </odoo>

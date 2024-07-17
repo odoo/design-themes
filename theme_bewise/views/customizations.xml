@@ -417,11 +417,11 @@
 <!-- ======== PRICELIST ======== -->
 <template id="s_product_catalog" inherit_id="website.s_product_catalog" name="Be Wise s_product_catalog">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5 pt120 pb120" remove="pt48 pb32" separator=" "/>
+        <attribute name="class" add="o_cc o_cc5 pt120 pb120" remove="pt64 pb64" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/06","flip":[]}</attribute>
     </xpath>
     <!-- Filter & shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
         <div class="o_we_bg_filter bg-black-75"/>
         <div class="o_we_shape o_web_editor_Floats_06"/>
     </xpath>
