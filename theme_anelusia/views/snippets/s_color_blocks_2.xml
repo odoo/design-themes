@@ -4,11 +4,11 @@
 <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2">
     <!-- Column #1 -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="col-lg-4" remove="col-lg-6" separator=" "/>
+        <attribute name="class" add="col-lg-4 o_cc3 text-center" remove="col-lg-6 o_cc4" separator=" "/>
     </xpath>
     <!-- Column #1 - Icon -->
-    <xpath expr="//i" position="attributes">
-        <attribute name="class" add="fa-venus" remove="fa-shield" separator=" "/>
+    <xpath expr="//h2" position="before">
+        <i class="fa fa-5x m-3 fa-venus"/>
     </xpath>
     <!-- Column #1 - Title -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -25,11 +25,11 @@
 
     <!-- Column #2 -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="col-lg-4 o_cc4" remove="col-lg-6 o_cc5" separator=" "/>
+        <attribute name="class" add="o_cc4 col-lg-4 text-center" remove="o_cc5 col-lg-6" separator=" "/>
     </xpath>
     <!-- Column #2 - Icon -->
-    <xpath expr="(//i)[2]" position="attributes">
-        <attribute name="class" add="fa-mars" remove="fa-cube" separator=" "/>
+    <xpath expr="(//h2)[2]" position="before">
+        <i class="fa fa-5x m-3 fa-mars"/>
     </xpath>
     <!-- Column #2 - Title -->
     <xpath expr="(//h2)[2]" position="replace" mode="inner">
@@ -48,7 +48,7 @@
     <xpath expr="(//div[hasclass('col-lg-4')])[2]" position="after">
         <div class="col-lg-4 o_cc o_cc5 text-center">
             <i class="fa fa-venus-mars fa-5x m-3"/>
-            <h2>Fancy for them</h2>
+            <h2 class="h3-fs">Fancy for them</h2>
             <p>Are you looking for sustainable clothing for men or women? Discover our exclusive fashion brand for both of you.</p>
             <a href="#" class="btn btn-primary btn-lg">More Details</a>
         </div>

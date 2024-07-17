@@ -4,10 +4,7 @@
 <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2">
     <!-- Column #01 -->
     <xpath expr="//*[hasclass('row')]/*[1]" position="attributes">
-        <attribute name="class" add="o_cc4 pt96 pb96" remove="o_cc3 text-center" separator=" "/>
-    </xpath>
-    <xpath expr="//i" position="replace">
-        <i class="fa fa-2x fa-cloud bg-white text-o-color-1 rounded-circle shadow my-4"/>
+        <attribute name="class" add="pt96 pb96" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         Cloud <b>Solution</b>
