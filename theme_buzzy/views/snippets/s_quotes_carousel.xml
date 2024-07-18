@@ -11,16 +11,6 @@
     <xpath expr="//ol[hasclass('carousel-indicators')]" position="before">
         <div class="o_we_shape o_web_editor_Rainy_10"/>
     </xpath>
-    <!-- Icons quote -->
-    <xpath expr="//i" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
-    </xpath>
-    <xpath expr="(//i)[2]" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
-    </xpath>
-    <xpath expr="(//i)[3]" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
-    </xpath>
     <!-- Carousel items - Remove background image -->
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
         <attribute name="style"/>
@@ -30,6 +20,16 @@
     </xpath>
     <xpath expr="(//div[hasclass('carousel-item')])[3]" position="attributes">
         <attribute name="style"/>
+    </xpath>
+    <!-- Authors -->
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//span//span" position="attributes">
+        <attribute name="class" add="text-o-color-2" remove="text-muted"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//span//span" position="attributes">
+        <attribute name="class" add="text-o-color-2" remove="text-muted"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//span//span" position="attributes">
+        <attribute name="class" add="text-o-color-2" remove="text-muted"/>
     </xpath>
 </template>
 

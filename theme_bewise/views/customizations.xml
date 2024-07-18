@@ -135,14 +135,11 @@
     <xpath expr="//blockquote" position="attributes">
         <attribute name="class" add="w-75" remove="w-50" separator=" "/>
     </xpath>
-    <xpath expr="//blockquote//i" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
-    </xpath>
     <xpath expr="//blockquote//p" position="replace" mode="inner">
         I have learned a lot, and I have realised professional projects thanks to the support of the mentors! The team is always at the top and always looking for solutions to problems, I felt accompanied and supported! It's not easy every day, but it's a great adventure!
     </xpath>
-    <xpath expr="//span[hasclass('s_blockquote_author')]" position="replace" mode="inner">
-        <b>Iris DOE</b> • Graduated in 2019
+    <xpath expr="//div[hasclass('s_blockquote_author')]//span//span" position="replace" mode="inner">
+        Graduated in 2019
     </xpath>
     <!-- Slide #2 -->
     <xpath expr="//div[hasclass('carousel-item')][2]" position="attributes">
@@ -152,16 +149,13 @@
     </xpath>
     <!-- Slide #2 - blockquote -->
     <xpath expr="(//blockquote)[2]" position="attributes">
-        <attribute name="class" add="w-75 mx-auto" remove="w-50 me-auto" separator=" "/>
-    </xpath>
-    <xpath expr="(//blockquote)[2]//i" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
+        <attribute name="class" add="w-75" remove="w-50" separator=" "/>
     </xpath>
     <xpath expr="(//blockquote)[2]//p" position="replace" mode="inner">
         Thanks to its innovative system, the school offers an academic training during which we are followed by a "mentor", a sort of "tutor"!
     </xpath>
-    <xpath expr="(//span[hasclass('s_blockquote_author')])[2]" position="replace" mode="inner">
-        <b>Jane DOE</b> • Graduated in 2017
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//span//span" position="replace" mode="inner">
+        Graduated in 2017
     </xpath>
     <!-- Slide #3 -->
     <xpath expr="//div[hasclass('carousel-item')][3]" position="attributes">
@@ -171,16 +165,13 @@
     </xpath>
     <!-- Slide #3 - blockquote -->
     <xpath expr="(//blockquote)[3]" position="attributes">
-        <attribute name="class" add="w-75 mx-auto" remove="w-50 ms-auto" separator=" "/>
-    </xpath>
-    <xpath expr="(//blockquote)[3]//i" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
+        <attribute name="class" add="w-75" remove="w-50" separator=" "/>
     </xpath>
     <xpath expr="(//blockquote)[3]//p" position="replace" mode="inner">
         Great support and quality courses! A mentor helps you move forward and can be contacted through flexible schedules. Everything you need to start your career on the web.
     </xpath>
-    <xpath expr="(//span[hasclass('s_blockquote_author')])[3]" position="replace" mode="inner">
-        <b>John DOE</b> • Graduated in 2016
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//span//span" position="replace" mode="inner">
+        Graduated in 2016
     </xpath>
 </template>
 
