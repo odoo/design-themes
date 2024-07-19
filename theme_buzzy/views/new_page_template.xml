@@ -66,12 +66,6 @@
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
 
-<template id="new_page_template_s_features" inherit_id="website.new_page_template_s_features">
-    <xpath expr="//div[hasclass('row')]//div[3]//i" position="attributes">
-        <attribute name="class" add="bg-o-color-2" remove="bg-o-color-3" separator=" "/>
-    </xpath>
-</template>
-
 <template id="new_page_template_s_product_catalog" inherit_id="website.new_page_template_s_product_catalog">
     <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
