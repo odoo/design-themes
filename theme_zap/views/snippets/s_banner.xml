@@ -18,8 +18,6 @@
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
-    <!-- Remove hr -->
-    <xpath expr="//div[hasclass('s_hr')]" position="replace"/>
     <!-- Column -->
     <xpath expr="//*[hasclass('col-lg-5')]" position="attributes">
         <attribute name="class" add="col-lg-8 pt48 pb32 px-5 o_cc o_cc1 rounded" remove="o_grid_item g-height-4 g-col-lg-5 col-lg-5" separator=" "/>
