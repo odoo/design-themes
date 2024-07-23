@@ -98,24 +98,6 @@
     </xpath>
 </template>
 
-<!-- ======== STEPS ======== -->
-<template id="s_process_steps" inherit_id="website.s_process_steps" name="Graphene s_process_steps">
-    <xpath expr="//section" position="attributes">
-    </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Add to Cart
-    </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Sign In
-    </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Pay
-    </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Get Delivered
-    </xpath>
-</template>
-
 <!-- ======== CAROUSEL ======== -->
 <template id="s_carousel" inherit_id="website.s_carousel" name="Graphene s_carousel">
     <xpath expr="//div[hasclass('carousel-inner')]/div[1]" position="attributes">

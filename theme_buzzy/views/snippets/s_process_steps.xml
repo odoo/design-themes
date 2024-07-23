@@ -11,17 +11,17 @@
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Rainy_08_001"/>
     </xpath>
-    <!-- Icon #2 -->
-    <xpath expr="(//i)[2]" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-5" separator=" "/>
+    <xpath expr="//div[hasclass('s_process_step_number')]" position="attributes">
+        <attribute name="class" add="bg-black-15" remove="bg-primary-light" separator=" "/>
     </xpath>
-    <!-- Icon #3 -->
-    <xpath expr="(//i)[3]" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
+    <xpath expr="(//div[hasclass('s_process_step_number')])[2]" position="attributes">
+        <attribute name="class" add="bg-black-15" remove="bg-primary-light" separator=" "/>
     </xpath>
-    <!-- Icon #4 -->
-    <xpath expr="(//i)[4]" position="attributes">
-        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
+    <xpath expr="(//div[hasclass('s_process_step_number')])[3]" position="attributes">
+        <attribute name="class" add="bg-black-15" remove="bg-primary-light" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_process_step_number')])[4]" position="attributes">
+        <attribute name="class" add="bg-black-15" remove="bg-primary-light" separator=" "/>
     </xpath>
 </template>
 
