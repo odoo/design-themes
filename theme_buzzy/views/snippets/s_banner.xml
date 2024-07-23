@@ -12,8 +12,6 @@
    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
-   <!-- Remove hr -->
-   <xpath expr="//div[hasclass('s_hr')]" position="replace"/>
    <!-- Row - remove grid mode -->
    <xpath expr="//div[hasclass('row')]" position="attributes">
       <attribute name="class" remove="o_grid_mode" separator=" "/>
