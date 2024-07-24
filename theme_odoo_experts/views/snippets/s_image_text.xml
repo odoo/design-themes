@@ -15,10 +15,6 @@
         <attribute name="data-shape-colors">;;;;o-color-5</attribute>
         <attribute name="style">padding: 48px !important;</attribute>
     </xpath>
-    <!-- Column #2 -->
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="offset-lg-1" separator=" "/>
-    </xpath>
     <!-- Column #2 - Title -->
     <xpath expr="//h2" position="replace" mode="inner">
         A solution for <br/>every need

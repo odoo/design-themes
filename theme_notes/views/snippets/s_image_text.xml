@@ -4,12 +4,12 @@
 <template id="s_image_text" inherit_id="website.s_image_text">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5 pt80 pb80" remove="pt32 pb32" separator=" "/>
+        <attribute name="class" add="o_cc o_cc5" remove="pt80 pb80" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/11","flip":[]}</attribute>
     </xpath>
     <!-- Text wrapper -->
-    <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
-        <attribute name="class" add="offset-lg-2" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="offset-lg-2" remove="offset-lg-1" separator=" "/>
     </xpath>
     <!-- Title & Paragraph -->
     <xpath expr="//h2" position="replace" mode="inner">
