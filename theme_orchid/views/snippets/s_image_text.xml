@@ -4,11 +4,7 @@
 <template id="s_image_text" inherit_id="website.s_image_text">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc2 pb104" remove="pb32" separator=" "/>
-    </xpath>
-    <!-- Text wrapper -->
-    <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
-        <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+        <attribute name="class" add="o_cc o_cc2 pb104" remove="pb80" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">

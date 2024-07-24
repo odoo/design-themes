@@ -128,10 +128,7 @@
 <!-- ======== IMAGE - TEXT ======== -->
 <template id="s_image_text" inherit_id="website.s_image_text" name="Monglia s_image_text">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc2 pt104 pb104" remove="pt32 pb32" separator=" "/>
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
-        <attribute name="class" remove="col-lg-6" add="col-lg-5 offset-lg-1" separator=" "/>
+        <attribute name="class" add="o_cc o_cc2 pt104 pb104" remove="pt80 pb80" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-1) 25%, var(--o-color-2) 100%);" class="text-gradient">Mixology</font>
