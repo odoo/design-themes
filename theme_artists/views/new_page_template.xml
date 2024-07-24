@@ -43,8 +43,8 @@
 </template>
 
 <template id="new_page_template_s_comparisons" inherit_id="website.new_page_template_s_comparisons">
-    <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
-        <attribute name="class" add="bg-o-color-2" remove="bg-o-color-1" separator=" "/>
+    <xpath expr="(//a[hasclass('btn')])[3]" position="attributes">
+        <attribute name="class" add="btn-success" remove="btn-outline-primary" separator=" "/>
     </xpath>
 </template>
 

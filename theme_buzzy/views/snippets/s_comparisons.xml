@@ -8,21 +8,21 @@
     </xpath>
     <!-- Box #1 -->
     <xpath expr="//div[hasclass('row')]//div" position="attributes">
-        <attribute name="class" add="pt88" remove="pt32" separator=" "/>
+        <attribute name="class" add="pt16" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('row')]//div/div" position="attributes">
-        <attribute name="class" add="shadow bg-o-color-5" remove="bg-200" separator=" "/>
+        <attribute name="class" add="shadow" separator=" "/>
     </xpath>
     <!-- Box #2 -->
     <xpath expr="//div[hasclass('row')]//div[2]/div" position="attributes">
-        <attribute name="class" add="shadow bg-o-color-1" remove="bg-o-color-5" separator=" "/>
+        <attribute name="class" add="shadow" separator=" "/>
     </xpath>
     <!-- Box #3 -->
     <xpath expr="//div[hasclass('row')]//div[3]" position="attributes">
-        <attribute name="class" add="pt88" remove="pt32" separator=" "/>
+        <attribute name="class" add="pt16" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('row')]//div[3]/div" position="attributes">
-        <attribute name="class" add="shadow bg-o-color-5" remove="bg-o-color-2" separator=" "/>
+        <attribute name="class" add="shadow" separator=" "/>
     </xpath>
 </template>
 
