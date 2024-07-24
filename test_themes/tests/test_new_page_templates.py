@@ -87,6 +87,7 @@ CONFLICTUAL_CLASSES_RE = {
         's_parallax_is_fixed', 's_parallax_no_overflow_hidden',
         's_process_steps_connector_line',
         's_product_catalog_dish_name', 's_product_catalog_dish_dot_leaders',
+        's_progress_bar_label_inline',
         's_table_of_content_vertical_navbar', 's_table_of_content_navbar_sticky', 's_table_of_content_navbar_wrap',
         's_timeline_card',
         's_website_form_custom', 's_website_form_dnone', 's_website_form_field', 's_website_form_input', 's_website_form_mark', 's_website_form_submit', 's_website_form_no_submit_label',
