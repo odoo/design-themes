@@ -4,7 +4,7 @@
 <template id="s_text_image" inherit_id="website.s_text_image">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb64 pt64" remove="pb32 pt32" separator=" "/>
+        <attribute name="class" add="pb64 pt64" remove="pb80 pt80" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/13","flip":["y"]}</attribute>
     </xpath>
 
@@ -14,8 +14,8 @@
     </xpath>
 
     <!-- First column -->
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="offset-lg-1 col-lg-5" remove="col-lg-6" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="offset-lg-1" separator=" "/>
     </xpath>
 
     <!-- Separator -->

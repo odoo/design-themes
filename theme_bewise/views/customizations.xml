@@ -37,11 +37,11 @@
     <xpath expr="//h2" position="replace" mode="inner">
         Driven by Excellence
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-6" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-5" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="col-lg-5 offset-lg-1" remove="col-lg-6" separator=" "/>
+        <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
         <br/>

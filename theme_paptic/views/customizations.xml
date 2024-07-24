@@ -126,16 +126,10 @@
 <!-- ==== Text-Image ===== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Paptic s_text_image">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt80 pb88 o_cc o_cc3" remove="pt32 pb32" separator=" "/>
+        <attribute name="class" add="pb88 o_cc o_cc3" remove="pb80" separator=" "/>
     </xpath>
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web_editor/shape/theme_paptic/s_text_image.svg?c1=o-color-1</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="offset-lg-1" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-3) 100%);" class="text-gradient">A Section Subtitle</font>
