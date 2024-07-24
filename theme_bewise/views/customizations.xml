@@ -374,8 +374,8 @@
 
 <!-- ======== COMPARISONS ======== -->
 <template id="s_comparisons" inherit_id="website.s_comparisons" name="Be Wise s_comparisons">
-    <xpath expr="//div[hasclass('card')]//li[hasclass('list-group-item')]" position="replace" mode="inner">
-        Basic sales &amp; marketing
+    <xpath expr="(//a[hasclass('btn')])[3]" position="attributes">
+        <attribute name="class" add="btn-success" remove="btn-outline-primary" separator=" "/>
     </xpath>
 </template>
 
