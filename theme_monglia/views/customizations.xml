@@ -92,10 +92,10 @@
 <!-- ======== TEXT - IMAGE ======== -->
  <template id="s_text_image" inherit_id="website.s_text_image" name="Monglia s_text_image">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt56 pb40 o_cc o_cc1" remove="pt32 pb32" separator=" "/>
+        <attribute name="class" add="pt56 pb40 o_cc o_cc1" remove="pt80 pb80" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" remove="col-lg-6" add="col-lg-5 offset-lg-1" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="offset-lg-1" separator=" "/>
     </xpath>
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web_editor/image_shape/website.s_text_image_default_image/web_editor/geometric/geo_square_3.svg</attribute>

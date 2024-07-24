@@ -84,7 +84,7 @@
 <template id="s_text_image" inherit_id="website.s_text_image" name="Cobalt s_text_image">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt80 pb88" remove="pt32 pb32" separator=" "/>
+        <attribute name="class" add="pb88" remove="pb80" separator=" "/>
     </xpath>
     <!-- Content -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -101,9 +101,6 @@
         <h5>Web &amp; App Development</h5>
         <p>We have collected solid experience in building native and cross-platform mobile applications and websites. Check our portfolio from clients around the world.</p>
         <br/>
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="col-lg-7" remove="col-lg-6" separator=" "/>

@@ -112,8 +112,8 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc3 o_full_screen_height" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-6" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-5" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         <span class="text-break" style="font-size: 62px; font-weight: bolder;">Our R&amp;D Approach</span>
@@ -133,11 +133,7 @@
     <xpath expr="//a[hasclass('btn')]" position="attributes">
         <attribute name="class" add="btn-lg" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
-        <attribute name="class" add="offset-lg-1" separator=" "/>
-    </xpath>
     <xpath expr="//img" position="attributes">
-        <attribute name="class" remove="img-thumbnail" separator=" "/>
         <attribute name="src">/web_editor/image_shape/website.s_text_image_default_image/web_editor/composition/composition_triangle_line.svg?c1=o-color-1</attribute>
         <attribute name="data-shape">web_editor/composition/composition_triangle_line</attribute>
         <attribute name="data-original-mimetype">image/jpeg</attribute>
