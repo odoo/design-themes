@@ -223,25 +223,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2 o_spc-medium" remove="o_cc5 o_spc-small" separator=" "/>
     </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[2]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[3]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[4]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[5]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[6]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
 </template>
 
 </odoo>

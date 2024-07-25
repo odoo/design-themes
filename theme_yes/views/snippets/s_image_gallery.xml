@@ -15,16 +15,6 @@
     <xpath expr="//*[hasclass('container')]" position="attributes">
         <attribute name="class" add="o_container_small" remove="container" separator=" "/>
     </xpath>
-    <!-- Images -->
-    <xpath expr="//*[hasclass('carousel-item')]//img" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="//*[hasclass('carousel-item')][2]//img" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="//*[hasclass('carousel-item')][3]//img" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
 </template>
 
 </odoo>

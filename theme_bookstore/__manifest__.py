@@ -25,6 +25,7 @@
         'views/snippets/s_media_list.xml',
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_features_grid.xml',
+        'views/snippets/s_image_gallery.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/new_page_template.xml',
