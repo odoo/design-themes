@@ -200,6 +200,25 @@
     <xpath expr="//div[hasclass('col-lg-6')][2]/img" position="after">
         <img class="img img-fluid d-block" src="/web/image/website.library_image_16" data-index="1" data-name="Image"/>
     </xpath>
+    <!-- Remove image roundness -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[4]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[5]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[6]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
 </template>
 
 <!-- ======== BIG BOXES ======== -->

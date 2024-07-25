@@ -20,6 +20,24 @@
     <xpath expr="//div[hasclass('container')]" position="attributes">
         <attribute name="class" add="container-fluid" remove="container" separator=" "/>
     </xpath>
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[4]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[5]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[6]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
 </template>
 
 </odoo>

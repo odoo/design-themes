@@ -10,25 +10,6 @@
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
-    <!-- Images -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[2]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[3]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[4]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[5]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//img)[6]" position="attributes">
-        <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
 </template>
 
 </odoo>
