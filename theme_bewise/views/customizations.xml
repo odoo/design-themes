@@ -206,28 +206,40 @@
 <template id="s_company_team" inherit_id="website.s_company_team" name="Be Wise s_company_team">
     <!-- Profile #1 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div//h4" position="replace" mode="inner">
-        <b>Tony Fred, Faculty Head of IT</b>
+        <b>Tony Fred</b>
     </xpath>
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div//p" position="replace" mode="inner">
+        Faculty Head of IT
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')]//p[2]" position="replace" mode="inner">
         Tony received a degree in Electrical and Mechanical Engineering and a Ph D. degree in 1998 and 2004. After a post-doctoral experience  he joined the school as professor of mechatronics in 2006. In 2010, he became Head of IT.
     </xpath>
     <!-- Profile #2 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[2]//h4" position="replace" mode="inner">
-        <b>Mich Stark, IT Officer</b>
+        <b>Mich Stark</b>
     </xpath>
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[2]//p" position="replace" mode="inner">
+        IT Officer
+    </xpath>
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[2]//p[2]" position="replace" mode="inner">
         He is professor in the Institute of Mechanics, Materials and Civil Engineering since 2000. He lectures in mechanical drawing and mechanical design for undergraduate and graduate students. He is active in Problem and Project based learning. He is the promoter of 8 doctoral theses.
     </xpath>
     <!-- Profile #3 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[3]//h4" position="replace" mode="inner">
-        <b>Aline Turner, Law professor</b>
+        <b>Aline Turner</b>
     </xpath>
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[3]//p" position="replace" mode="inner">
+        Law professor
+    </xpath>
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[3]//p[2]" position="replace" mode="inner">
         She has been practicing law at the French-speaking Brussels Bar since 2006. She has worked in various major law firms based in Brussels, as member and then head of their litigation/arbitration practice groups.
     </xpath>
     <!-- Profile #4 -->
     <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[4]//h4" position="replace" mode="inner">
-        <b>Iris Joe, team leader professor</b>
+        <b>Iris Joe</b>
+    </xpath>
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]/div[4]//p" position="replace" mode="inner">
+        Team leader professor
     </xpath>
 </template>
 

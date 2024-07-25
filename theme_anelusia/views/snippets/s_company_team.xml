@@ -14,10 +14,13 @@
     <!-- Team #01 - Title -->
     <xpath expr="//div[hasclass('col-lg-6')]//h4" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-5) 100%);" class="text-gradient">Tony Fred</font>
-        <br/>Editor-in-chief
+    </xpath>
+    <!-- Team #01 - Work Description -->
+    <xpath expr="//div[hasclass('col-lg-6')]//p" position="replace" mode="inner">
+        Editor-in-chief
     </xpath>
     <!-- Team #01 - Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-6')]//p" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-6')]//p[2]" position="replace" mode="inner">
         Founder and chief visionary, Tony is the driving force behind the company. He loves to keep his hands full by participating in the development of the magazine and does not hesitate to carry out field surveys.
     </xpath>
     <!-- Team #01 - Img -->
@@ -36,10 +39,14 @@
     <!-- Team #02 - Title -->
     <xpath expr="//div[hasclass('col-lg-6')][2]//h4" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-5) 100%);" class="text-gradient">Mich Stark</font>
-        <br/>Sports Reporter
+        <br/>
+    </xpath>
+    <!-- Team #02 - Work Description -->
+    <xpath expr="//div[hasclass('col-lg-6')][2]//p" position="replace" mode="inner">
+        Sports Reporter
     </xpath>
     <!-- Team #02 - Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-6')][2]//p" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-6')][2]//p[2]" position="replace" mode="inner">
         Mich loves taking on challenges. With his multi-year experience as a journalist, he wanted to join a team that puts people at the center of the stories.
     </xpath>
     <!-- Team #02 - Img -->
@@ -58,10 +65,13 @@
     <!-- Team #03 - Title -->
     <xpath expr="//div[hasclass('col-lg-6')][3]//h4" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-2) 0%, var(--o-color-5) 100%);" class="text-gradient">Aline Turner</font>
-        <br/>Photograph
+    </xpath>
+    <!-- Team #03 - Work Description -->
+    <xpath expr="//div[hasclass('col-lg-6')][3]//p" position="replace" mode="inner">
+        Photograph
     </xpath>
     <!-- Team #03 - Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-6')][3]//p" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-6')][3]//p[2]" position="replace" mode="inner">
         Aline is one of the iconic people in life who can say they love what they do. She likes to capture the moment from another point of view, another perspective.
     </xpath>
     <!-- Team #03 - Img -->
@@ -80,10 +90,13 @@
     <!-- Team #04 - Title -->
     <xpath expr="//div[hasclass('col-lg-6')][4]//h4" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-2) 0%, var(--o-color-5) 100%);" class="text-gradient">Iris Joe</font>
-        <br/>Political Reporter
+    </xpath>
+    <!-- Team #04 - Work Description -->
+    <xpath expr="//div[hasclass('col-lg-6')][3]//p" position="replace" mode="inner">
+        Political Reporter
     </xpath>
     <!-- Team #04 - Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-6')][4]//p" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-6')][4]//p[2]" position="replace" mode="inner">
         Iris, with her international experience, helps us easily understand global politics. She is determined to drive success and delivers her professional acumen to bring the magazine to the next level.
     </xpath>
     <!-- Team #04 - Img -->
