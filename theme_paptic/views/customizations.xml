@@ -194,12 +194,7 @@
 
 <!-- ==== References ===== -->
 <template id="s_references" inherit_id="website.s_references" name="Paptic s_references">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc1" separator=" "/>
-    </xpath>
-
-    <xpath expr="//h2" position="replace"/>
-    <xpath expr="//p" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="replace"/>
 </template>
 
 <!-- ==== Three Columns ===== -->
