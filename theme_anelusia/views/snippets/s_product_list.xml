@@ -4,11 +4,26 @@
 <template id="s_product_list" inherit_id="website.s_product_list">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt72 pb72" separator=" "/>
+        <attribute name="class" add="pt72 pb72" remove="pt64 pb64" separator=" "/>
     </xpath>
-    <!-- Container -->
-    <xpath expr="//div[hasclass('container-fluid')]" position="attributes">
-        <attribute name="class" add="container" remove="container-fluid" separator=" "/>
+    <!-- Cards -->
+    <xpath expr="//div[hasclass('col-lg-2')]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][2]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][3]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][4]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][5]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][6]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
     </xpath>
     <!-- Item #1 - Img -->
     <xpath expr="//img" position="attributes">
