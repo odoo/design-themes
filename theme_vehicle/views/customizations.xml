@@ -412,22 +412,22 @@
 
 <!-- ======== PRODUCT LIST ======== -->
 <template id="s_product_list" inherit_id="website.s_product_list">
-    <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')]//h3" position="replace" mode="inner">
         Brakes #1
     </xpath>
-    <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[2]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][2]//h3" position="replace" mode="inner">
         Brakes #2
     </xpath>
-    <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[3]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][3]//h3" position="replace" mode="inner">
         Brakes #3
     </xpath>
-    <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[4]" position="replace"  mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][4]//h3" position="replace"  mode="inner">
         Brakes #4
     </xpath>
-    <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[5]" position="replace"  mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][5]//h3" position="replace"  mode="inner">
         Brakes #5
     </xpath>
-    <xpath expr="(//div[hasclass('s_product_list_item_link')]//a)[6]" position="replace"  mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][6]//h3" position="replace"  mode="inner">
         Brakes #6
     </xpath>
 </template>

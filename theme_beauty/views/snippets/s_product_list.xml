@@ -4,53 +4,85 @@
 <template id="s_product_list" inherit_id="website.s_product_list">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt96 pb96" separator=" "/>
-    </xpath>
-    <!-- Container -->
-    <xpath expr="//div[hasclass('container-fluid')]" position="attributes">
-        <attribute name="class" add="container" remove="container-fluid" separator=" "/>
+        <attribute name="class" add="pt96 pb96" remove="pt64 pb64" separator=" "/>
     </xpath>
     <!-- Item #1 -->
-    <xpath expr="//img" position="attributes">
+    <xpath expr="//div[hasclass('col-lg-2')]//img" position="attributes">
         <attribute name="class" add="rounded-circle" separator=" "/>
     </xpath>
-    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')]//figure" position="attributes">
+        <attribute name="class" remove="ratio-4x3" add="ratio-1x1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')]//h3" position="replace" mode="inner">
         Make-up
     </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
     <!-- Item #2 -->
-    <xpath expr="(//img)[2]" position="attributes">
+    <xpath expr="//div[hasclass('col-lg-2')][2]//img" position="attributes">
         <attribute name="class" add="rounded-circle" separator=" "/>
     </xpath>
-    <xpath expr="(//a[hasclass('btn')])[2]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][2]//figure" position="attributes">
+        <attribute name="class" remove="ratio-4x3" add="ratio-1x1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][2]//h3" position="replace" mode="inner">
         Skin gel
     </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][2]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
     <!-- Item #3 -->
-    <xpath expr="(//img)[3]" position="attributes">
+    <xpath expr="//div[hasclass('col-lg-2')][3]//img" position="attributes">
         <attribute name="class" add="rounded-circle" separator=" "/>
     </xpath>
-    <xpath expr="(//a[hasclass('btn')])[3]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][3]//figure" position="attributes">
+        <attribute name="class" remove="ratio-4x3" add="ratio-1x1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][3]//h3" position="replace" mode="inner">
         Lipstick
     </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][3]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
     <!-- Item #4 -->
-    <xpath expr="(//img)[4]" position="attributes">
+    <xpath expr="//div[hasclass('col-lg-2')][4]//img" position="attributes">
         <attribute name="class" add="rounded-circle" separator=" "/>
     </xpath>
-    <xpath expr="(//a[hasclass('btn')])[4]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][4]//figure" position="attributes">
+        <attribute name="class" remove="ratio-4x3" add="ratio-1x1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][4]//h3" position="replace" mode="inner">
         Eyeliner
     </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][4]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
     <!-- Item #5 -->
-    <xpath expr="(//img)[5]" position="attributes">
+    <xpath expr="//div[hasclass('col-lg-2')][5]//img" position="attributes">
         <attribute name="class" add="rounded-circle" separator=" "/>
     </xpath>
-    <xpath expr="(//a[hasclass('btn')])[5]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][5]//figure" position="attributes">
+        <attribute name="class" remove="ratio-4x3" add="ratio-1x1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][5]//h3" position="replace" mode="inner">
         Perfume
     </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][5]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
+    </xpath>
     <!-- Item #6 -->
-    <xpath expr="(//img)[6]" position="attributes">
+    <xpath expr="//div[hasclass('col-lg-2')][6]//img" position="attributes">
         <attribute name="class" add="rounded-circle" separator=" "/>
     </xpath>
-    <xpath expr="(//a[hasclass('btn')])[6]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-2')][6]//figure" position="attributes">
+        <attribute name="class" remove="ratio-4x3" add="ratio-1x1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][6]//h3" position="replace" mode="inner">
         Essential oils
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')][6]//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-width: 0px !important;</attribute>
     </xpath>
 </template>
 
