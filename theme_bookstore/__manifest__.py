@@ -28,6 +28,7 @@
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_quotes_carousel.xml',
+        'views/snippets/s_connections.xml',
         'views/new_page_template.xml',
     ],
     'images': [

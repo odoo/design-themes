@@ -224,4 +224,12 @@
     </xpath>
 </template>
 
+<!-- ======== CONNECTIONS ======== -->
+<template id="s_connections" inherit_id="website.s_connections">
+    <!-- Left column -->
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>
