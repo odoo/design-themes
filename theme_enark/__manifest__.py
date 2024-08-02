@@ -21,6 +21,7 @@
         'views/snippets/s_parallax.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_image_gallery.xml',
+        'views/snippets/s_striped_top.xml',
         'views/new_page_template.xml',
     ],
     'images': [
