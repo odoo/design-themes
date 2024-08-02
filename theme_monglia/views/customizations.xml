@@ -69,6 +69,14 @@
     <xpath expr="//a[@t-att-href='cta_btn_href'][2]" position="replace"/>
 </template>
 
+<!-- ======== STRIPED TOP ======== -->
+<template id="s_striped_top" inherit_id="website.s_striped_top">
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_picture_default_image</attribute>
+    </xpath>
+</template>
+
 <!-- ======== MEDIA LIST ======== -->
  <template id="s_media_list" inherit_id="website.s_media_list" name="Monglia s_media_list">
     <xpath expr="//div[hasclass('container')]/div/div[1]//h3" position="replace" mode="inner">
