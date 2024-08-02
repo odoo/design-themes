@@ -178,6 +178,17 @@
     </xpath>
 </template>
 
+<!-- ==== Motto ===== -->
+<template id="s_motto" inherit_id="website.s_motto" name="Paptic s_motto">
+    <!-- Shape -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Floats/09','showOnMobile':false, 'animated': true}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="attributes">
+        <attribute name="class" remove="o_web_editor_Floats_07" add="o_web_editor_Floats_09" separator=" "/>
+    </xpath>
+</template>
+
 <!-- ======== CAROUSEL ======== -->
  <template id="s_carousel" inherit_id="website.s_carousel" name="Paptic s_carousel">
     <xpath expr="(//div[hasclass('carousel-item')])[2]" position="attributes">
