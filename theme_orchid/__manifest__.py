@@ -14,6 +14,7 @@
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_text_image.xml',
+        'views/snippets/s_motto.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_image_punchy.xml',
         'views/snippets/s_three_columns.xml',

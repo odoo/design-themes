@@ -16,6 +16,7 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_product_list.xml',
+        'views/snippets/s_motto.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_company_team_shapes.xml',
