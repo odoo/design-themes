@@ -13,6 +13,7 @@
 
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_banner.xml',
+        'views/snippets/s_striped_top.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_product_list.xml',

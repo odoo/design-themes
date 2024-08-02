@@ -12,6 +12,7 @@
         'views/images.xml',
 
         'views/snippets/s_cta_box.xml',
+        'views/snippets/s_striped_top.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_picture.xml',

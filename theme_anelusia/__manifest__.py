@@ -15,6 +15,7 @@
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_company_team.xml',
         'views/snippets/s_cover.xml',
+        'views/snippets/s_striped_top.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_carousel.xml',
         'views/snippets/s_media_list.xml',
