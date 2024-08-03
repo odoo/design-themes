@@ -15,6 +15,7 @@
         'views/snippets/s_banner.xml',
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_call_to_action.xml',
+        'views/snippets/s_sidegrid.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_features.xml',

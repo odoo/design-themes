@@ -15,6 +15,7 @@
         'views/snippets/s_banner.xml',
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_call_to_action.xml',
+        'views/snippets/s_sidegrid.xml',
         'views/snippets/s_carousel.xml',
         'views/snippets/s_company_team.xml',
         'views/snippets/s_cover.xml',

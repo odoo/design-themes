@@ -23,6 +23,7 @@
         'views/snippets/s_text_cover.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_company_team_shapes.xml',
+        'views/snippets/s_sidegrid.xml',
         'views/snippets/s_references.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_comparisons.xml',

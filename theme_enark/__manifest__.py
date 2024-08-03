@@ -21,6 +21,7 @@
         'views/snippets/s_picture.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_freegrid.xml',
+        'views/snippets/s_sidegrid.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_parallax.xml',
