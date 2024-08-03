@@ -24,6 +24,7 @@
         'views/snippets/s_cover.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_image_title.xml',
+        'views/snippets/s_framed_intro.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_color_blocks_2.xml',

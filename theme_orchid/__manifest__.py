@@ -28,6 +28,7 @@
         'views/snippets/s_numbers.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_media_list.xml',
+        'views/snippets/s_framed_intro.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_quadrant.xml',

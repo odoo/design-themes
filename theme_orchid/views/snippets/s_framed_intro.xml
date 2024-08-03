@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_framed_intro" inherit_id="website.s_framed_intro">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Blossoms for Every Moment: Fresh, Vibrant, and Beautiful
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_three_columns_default_image_2</attribute>
+    </xpath>
+</template>
+
+</odoo>

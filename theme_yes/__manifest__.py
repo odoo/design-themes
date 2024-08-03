@@ -25,6 +25,7 @@
         'views/snippets/s_images_wall.xml',
         'views/snippets/s_image_punchy.xml',
         'views/snippets/s_masonry_block.xml',
+        'views/snippets/s_framed_intro.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_popup.xml',
