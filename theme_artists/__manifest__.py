@@ -15,6 +15,7 @@
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_parallax.xml',
         'views/snippets/s_text_image.xml',
+        'views/snippets/s_framed_intro.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_carousel.xml',
