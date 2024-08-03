@@ -77,6 +77,26 @@
     </xpath>
 </template>
 
+<!-- ======== SIDEGRID ======== -->
+<template id="s_sidegrid" inherit_id="website.s_sidegrid">
+    <!-- Images -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+        <attribute name="src">/web/image/website.s_text_image_default_image</attribute>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+        <attribute name="src">/web/image/website.s_banner_default_image_2</attribute>
+    </xpath>
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+        <attribute name="src">/web/image/website.s_banner_default_image</attribute>
+    </xpath>
+    <xpath expr="(//img)[4]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+</template>
+
 <!-- ======== MEDIA LIST ======== -->
  <template id="s_media_list" inherit_id="website.s_media_list" name="Monglia s_media_list">
     <xpath expr="//div[hasclass('container')]/div/div[1]//h3" position="replace" mode="inner">

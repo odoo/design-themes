@@ -31,6 +31,7 @@
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_features_wall.xml',
+        'views/snippets/s_sidegrid.xml',
         'views/snippets/s_features_grid.xml',
         'views/snippets/s_product_list.xml',
         'views/snippets/s_parallax.xml',

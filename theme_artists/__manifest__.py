@@ -21,6 +21,7 @@
         'views/snippets/s_title.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_image_punchy.xml',
+        'views/snippets/s_sidegrid.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_features.xml',
