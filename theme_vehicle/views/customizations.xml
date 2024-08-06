@@ -66,6 +66,14 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGE HEXAGONAL ======== -->
+<template id="s_image_hexagonal" inherit_id="website.s_image_hexagonal">
+    <!-- Title -->
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="src">/web/image/website.s_cover_default_image</attribute>
+    </xpath>
+</template>
+
 <!-- ======== NUMBERS ======== -->
 <template id="s_numbers" inherit_id="website.s_numbers">
     <!-- Section -->
