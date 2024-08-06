@@ -148,6 +148,18 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGE HEXAGONAL ======== -->
+<template id="s_image_hexagonal" inherit_id="website.s_image_hexagonal">
+    <!-- Section -->
+    <xpath expr="section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
+    <!-- Images -->
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="src">/web/image/website.s_text_cover_default_image</attribute>
+    </xpath>
+</template>
+
 <!-- ======== CAROUSEL ======== -->
  <template id="s_carousel" inherit_id="website.s_carousel" name="Monglia s_carousel">
     <xpath expr="//h2" position="replace" mode="inner">

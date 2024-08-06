@@ -33,6 +33,7 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_unveil.xml',
+        'views/snippets/s_image_hexagonal.xml',
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_pricelist_boxed.xml',
