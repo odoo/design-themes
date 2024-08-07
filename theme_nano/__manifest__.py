@@ -19,6 +19,7 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_images_wall.xml',
         'views/snippets/s_parallax.xml',
+        'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_references.xml',
         'views/snippets/s_text_block.xml',
         'views/snippets/s_text_image.xml',

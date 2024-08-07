@@ -423,5 +423,80 @@
     </xpath>
 </template>
 
+<!-- ======== PRICELIST BOXED ======== -->
+<template id="s_pricelist_boxed" inherit_id="website.s_pricelist_boxed">
+    <!-- Layout -->
+    <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+
+    <!-- Texts -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our Luxury Vehicle Services
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Discover our exclusive range of services for luxury vehicles, designed to provide unparalleled quality and sophistication. Experience excellence on every drive.
+    </xpath>
+    <xpath expr="//h3" position="replace" mode="inner">
+        ✽&#160;&#160;Maintenance &amp; Care
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        ✽&#160;&#160;Customization &amp; Upgrades
+    </xpath>
+    <xpath expr="//t[@t-set='name']" position="replace" mode="inner">
+        Premium Detailing Package
+    </xpath>
+    <xpath expr="//t[@t-set='price']" position="replace" mode="inner">
+        $450.00
+    </xpath>
+    <xpath expr="//t[@t-set='description']" position="replace" mode="inner">
+        Comprehensive detailing service including exterior polishing, interior cleaning, and protective coatings for a showroom finish.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[2]" position="replace" mode="inner">
+        Full-Service Maintenance
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[2]" position="replace" mode="inner">
+        $800.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[2]" position="replace" mode="inner">
+        Complete maintenance service covering engine check, transmission fluid change, brake inspection, and system diagnostics for optimal performance.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[3]" position="replace" mode="inner">
+        Luxury Vehicle Servicing
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[3]" position="replace" mode="inner">
+        $1,200.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[3]" position="replace" mode="inner">
+        Specialized servicing tailored for high-end vehicles, including advanced diagnostics, custom parts, and manufacturer-recommended procedures.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[4]" position="replace" mode="inner">
+        Custom Interior Upgrades
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[4]" position="replace" mode="inner">
+        $2,500.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[4]" position="replace" mode="inner">
+        Tailored interior enhancements including premium leather upholstery, bespoke trims, and advanced infotainment systems for a unique driving experience.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[5]" position="replace" mode="inner">
+        High-Performance Tuning
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[5]" position="replace" mode="inner">
+        $3,000.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[5]" position="replace" mode="inner">
+        Performance tuning service including engine optimization, suspension upgrades, and exhaust modifications to enhance driving dynamics and power.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[6]" position="replace" mode="inner">
+        Exclusive Exterior Customization
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[6]" position="replace" mode="inner">
+        $4,000.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[6]" position="replace" mode="inner">
+        Personalized exterior modifications such as custom paint jobs, aerodynamic enhancements, and bespoke alloy wheels to reflect your style.
+    </xpath>
+</template>
 
 </odoo>
