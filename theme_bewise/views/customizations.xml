@@ -482,4 +482,74 @@
     </xpath>
 </template>
 
+<!-- ======== PRICELIST BOXED ======== -->
+<template id="s_pricelist_boxed" inherit_id="website.s_pricelist_boxed">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Essential School Supplies
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Equip yourself for success with our range of essential items available to support your learning experience.
+    </xpath>
+    <xpath expr="//h3" position="replace" mode="inner">
+        ✽&#160;&#160;Classroom Supplies
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        ✽&#160;&#160;Technology Essentials
+    </xpath>
+    <xpath expr="//t[@t-set='name']" position="replace" mode="inner">
+        Notebooks
+    </xpath>
+    <xpath expr="//t[@t-set='price']" position="replace" mode="inner">
+        $5.00 each
+    </xpath>
+    <xpath expr="//t[@t-set='description']" position="replace" mode="inner">
+        High-quality lined notebooks for taking notes, available for all students to support their daily learning needs.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[2]" position="replace" mode="inner">
+        Pencils and Pens
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[2]" position="replace" mode="inner">
+        $3.00 per set
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[2]" position="replace" mode="inner">
+        A variety of pencils and pens provided for writing assignments, note-taking, and completing tests and quizzes.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[3]" position="replace" mode="inner">
+        Art Supplies Kit
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[3]" position="replace" mode="inner">
+        $15.00 per kit
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[3]" position="replace" mode="inner">
+        Complete set of art supplies including colored pencils, markers, paints, and brushes to encourage creativity in art classes.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[4]" position="replace" mode="inner">
+        Tablets
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[4]" position="replace" mode="inner">
+        $150.00 each
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[4]" position="replace" mode="inner">
+        Personal tablets for each student, equipped with educational apps and internet access to enhance learning and research.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[5]" position="replace" mode="inner">
+        Laptops
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[5]" position="replace" mode="inner">
+        $300.00 each
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[5]" position="replace" mode="inner">
+        School-issued laptops with software for online classes, assignments, and projects to ensure students have access to digital resources.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[6]" position="replace" mode="inner">
+        Scientific Calculators
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[6]" position="replace" mode="inner">
+        $20.00 each
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[6]" position="replace" mode="inner">
+        Advanced scientific calculators for math and science courses, helping students perform complex calculations with ease.
+    </xpath>
+</template>
+
 </odoo>

@@ -298,4 +298,74 @@
     </xpath>
 </template>
 
+<!-- ======== PRICELIST BOXED ======== -->
+<template id="s_pricelist_boxed" inherit_id="website.s_pricelist_boxed">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our Photography Services
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Capture your moments with our range of professional photography services. Expertly crafted to make every memory unforgettable.
+    </xpath>
+    <xpath expr="//h3" position="replace" mode="inner">
+        ✽&#160;&#160;Event Photography
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        ✽&#160;&#160;Portrait Photography
+    </xpath>
+    <xpath expr="//t[@t-set='name']" position="replace" mode="inner">
+        Wedding Day Coverage
+    </xpath>
+    <xpath expr="//t[@t-set='price']" position="replace" mode="inner">
+        $2,000.00
+    </xpath>
+    <xpath expr="//t[@t-set='description']" position="replace" mode="inner">
+        Comprehensive wedding day photography service capturing every special moment, from the ceremony to the reception.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[2]" position="replace" mode="inner">
+        Corporate Event Package
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[2]" position="replace" mode="inner">
+        $1,500.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[2]" position="replace" mode="inner">
+        Professional coverage for corporate events, including conferences, award ceremonies, and networking events.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[3]" position="replace" mode="inner">
+        Concert Photography
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[3]" position="replace" mode="inner">
+        $1,800.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[3]" position="replace" mode="inner">
+        Dynamic concert photography capturing the energy of live performances with high-quality images of artists and audience.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[4]" position="replace" mode="inner">
+        Family Portrait Session
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[4]" position="replace" mode="inner">
+        $500.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[4]" position="replace" mode="inner">
+        A relaxed portrait session for families, capturing genuine moments and smiles in a comfortable setting.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[5]" position="replace" mode="inner">
+        Professional Headshots
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[5]" position="replace" mode="inner">
+        $250.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[5]" position="replace" mode="inner">
+        High-quality headshots perfect for business profiles, LinkedIn, or personal branding, taken in our studio or on location.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[6]" position="replace" mode="inner">
+        Creative Portrait Session
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[6]" position="replace" mode="inner">
+        $700.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[6]" position="replace" mode="inner">
+        Artistic portrait photography with creative lighting and backgrounds, ideal for personal projects or portfolio work.
+    </xpath>
+</template>
+
 </odoo>

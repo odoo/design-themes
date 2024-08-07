@@ -284,5 +284,11 @@ Check in theme_kea's primary_variables.scss, theme.scss and theme_common's mixin
     <field name="name">website.s_accordion_image_default_image</field>
     <field name="url">/theme_yes/static/src/img/snippets/s_banner.jpg</field>
 </record>
+<!-- // Pricelist Boxed // -->
+<record id="s_pricelist_boxed_default_background" model="theme.ir.attachment">
+    <field name="key">website.s_pricelist_boxed_default_background</field>
+    <field name="name">website.s_pricelist_boxed_default_background</field>
+    <field name="url">/theme_yes/static/src/img/snippets/s_pricelist_boxed_default_background.jpg</field>
+</record>
 
 </odoo>

@@ -22,6 +22,7 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_picture.xml',
+        'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_comparisons.xml',
