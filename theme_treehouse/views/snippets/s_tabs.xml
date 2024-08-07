@@ -7,17 +7,17 @@
         <attribute name="class" add="o_cc o_cc2 pt64 pb64" remove="pt48 pb48" separator=" "/>
     </xpath>
     <xpath expr="//*[hasclass('nav')]" position="attributes">
-        <attribute name="class" add="card-header-tabs nav-tabs" remove="justify-content-center nav-pills" separator=" "/>
+        <attribute name="class" add="nav-tabs card-header-tabs mx-0 px-2 border-bottom" remove="nav-underline" separator=" "/>
     </xpath>
     <!-- Card -->
     <xpath expr="//*[hasclass('s_tabs_main')]" position="attributes">
         <attribute name="class" add="card" separator=" "/>
     </xpath>
     <xpath expr="//*[hasclass('s_tabs_content')]" position="attributes">
-        <attribute name="class" add="card-body" separator=" "/>
+        <attribute name="class" add="card-body p-3" separator=" "/>
     </xpath>
     <xpath expr="//*[hasclass('s_tabs_nav')]" position="attributes">
-        <attribute name="class" add="card-header" separator=" "/>
+        <attribute name="class" add="card-header o_cc o_cc4 px-0 border-0" separator=" "/>
     </xpath>
 </template>
 
