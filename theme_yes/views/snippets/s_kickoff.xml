@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_kickoff" inherit_id="website.s_kickoff">
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Your Love Story begins here,
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Let's Start Planning<br/>Your Dream Day!
+    </xpath>
+</template>
+
+</odoo>
