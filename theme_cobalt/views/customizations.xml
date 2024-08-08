@@ -255,4 +255,16 @@
     </xpath>
 </template>
 
+<!-- ======== PRICELIST BOXED ======== -->
+<template id="s_pricelist_boxed" inherit_id="website.s_pricelist_boxed" name="Cobalt s_pricelist_boxed">
+    <xpath expr="//section" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="o_cc o_cc2" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/08','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_container_small')]" position="before">
+        <div class="o_we_shape o_web_editor_Bold_08"/>
+    </xpath>
+</template>
+
 </odoo>

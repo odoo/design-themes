@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_pricelist_boxed" inherit_id="website.s_pricelist_boxed">
+    <xpath expr="//section" position="attributes">
+        <attribute name="style"/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/13_001','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','animated':'true'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_container_small')]" position="before">
+        <div class="o_we_shape o_web_editor_Airy_13_001 o_we_animated"/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc1 rounded" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

@@ -346,4 +346,11 @@
     </xpath>
 </template>
 
+<!-- ======== PRICELIST BOXED ======== -->
+<template id="s_pricelist_boxed" inherit_id="website.s_pricelist_boxed">
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" remove="shadow rounded" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>
