@@ -49,6 +49,7 @@
         'views/snippets/s_quadrant.xml',
         'views/snippets/s_big_number.xml',
         'views/snippets/s_wavy_grid.xml',
+        'views/snippets/s_text_cover.xml',
         'views/new_page_template.xml',
     ],
     'images': [

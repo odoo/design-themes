@@ -438,6 +438,11 @@ Check in images.scss, primary_variables.scss, main.scss and theme_common's mixin
     <field name="name">website.s_kickoff_default_image</field>
     <field name="url">/theme_graphene/static/src/img/pictures/s_kickoff_default_image.jpg</field>
 </record>
+<record id="s_text_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_text_cover_default_image</field>
+    <field name="name">website.s_text_cover_default_image</field>
+    <field name="url">/theme_graphene/static/src/img/pictures/bg_image_08.jpg</field>
+</record>
 
 <!-- Intro Pill -->
 <record id="s_intro_pill_default_image" model="theme.ir.attachment">

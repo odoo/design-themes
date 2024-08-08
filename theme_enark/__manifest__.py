@@ -46,6 +46,7 @@
         'views/snippets/s_wavy_grid.xml',
         'views/snippets/s_shape_image.xml',
         'views/snippets/s_images_constellation.xml',
+        'views/snippets/s_text_cover.xml',
         'views/new_page_template.xml',
     ],
     'images': [
