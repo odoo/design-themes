@@ -95,7 +95,7 @@ CONFLICTUAL_CLASSES_RE = {
     ],
     # Text
     re.compile(r'^text-(?!(center|end|start|bg-|lg-)).*$'): [
-        'text-break',
+        'text-break', 'text-decoration-none', 'text-reset',
     ],
     re.compile(r'^text-bg-.*$'): [],
     re.compile(r'^text-lg-.*$'): [],
