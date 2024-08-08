@@ -4,11 +4,10 @@
 <template id="s_references" inherit_id="website.s_references">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt0 pb56 o_cc o_cc2" remove="pt48 pb32" separator=" "/>
+        <attribute name="class" add="pt0 pb56 o_cc2" remove="pt80 pb80 o_cc1" separator=" "/>
     </xpath>
-    <!-- Remove title and subtitle -->
-    <xpath expr="//h2" position="replace"/>
-    <xpath expr="//p" position="replace"/>
+    <!-- Remove title, subtitle and button -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="replace"/>
 </template>
 
 </odoo>
