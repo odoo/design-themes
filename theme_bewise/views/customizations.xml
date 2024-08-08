@@ -421,4 +421,16 @@
     </xpath>
 </template>
 
+<!-- ======== UNVEIL ======== -->
+<template id="s_unveil" inherit_id="website.s_unveil">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Unlock Your Full Potential
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Empower your future with our comprehensive academic programs and supportive learning environment.
+    </xpath>
+</template>
+
 </odoo>

@@ -23,6 +23,7 @@
         'views/snippets/s_numbers.xml',
         'views/snippets/s_features.xml',
         'views/snippets/s_image_gallery.xml',
+        'views/snippets/s_unveil.xml',
         'views/new_page_template.xml',
     ],
     'images': [
