@@ -30,6 +30,7 @@
         'views/snippets/s_parallax.xml',
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_quotes_carousel.xml',
+        'views/snippets/s_unveil.xml',
         'views/new_page_template.xml',
     ],
     'images': [
