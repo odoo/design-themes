@@ -114,12 +114,6 @@
     </xpath>
 </template>
 
-<template id="new_page_template_about_s_text_cover" inherit_id="website.new_page_template_about_s_text_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc2" separator=" "/>
-    </xpath>
-</template>
-
 <template id="new_page_template_about_full_1_s_text_block_h1" inherit_id="website.new_page_template_about_full_1_s_text_block_h1">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb0" remove="pb40 pt40" separator=" "/>
@@ -326,12 +320,6 @@
 <template id="new_page_template_services_s_text_block_h2" inherit_id="website.new_page_template_services_s_text_block_h2">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc1 pb0" remove="o_cc5 pb96" separator=" "/>
-    </xpath>
-</template>
-
-<template id="new_page_template_services_s_text_cover" inherit_id="website.new_page_template_services_s_text_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc2" separator=" "/>
     </xpath>
 </template>
 
