@@ -280,5 +280,10 @@ Check in theme_monglia's primary_variables.scss, theme.scss and theme_common's m
     <field name="name">website.s_kickoff_default_image</field>
     <field name="url">/theme_vehicle/static/src/img/snippets/s_kickoff_default_image.jpg</field>
 </record>
+<record id="s_text_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_text_cover_default_image</field>
+    <field name="name">website.s_text_cover_default_image</field>
+    <field name="url">/theme_vehicle/static/src/img/snippets/s_masonry_block.jpg</field>
+</record>
 
 </odoo>

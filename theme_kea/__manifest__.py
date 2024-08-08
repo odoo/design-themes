@@ -39,6 +39,7 @@
         'views/snippets/s_image_title.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_quadrant.xml',
+        'views/snippets/s_text_cover.xml',
         'views/new_page_template.xml',
     ],
     'images': [

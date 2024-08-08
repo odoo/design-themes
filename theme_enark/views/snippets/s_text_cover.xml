@@ -6,16 +6,17 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc3" separator=" "/>
     </xpath>
+    <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
-        The next<br/> summer<br/> collection
+        Present your<br/>works. Easily.
     </xpath>
     <!-- Paragraph -->
     <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        <br/>Color trends are already waiting to spring into action for the  next summer.<br/>
+        <br/>Showcase your architectural designs online with a user-friendly platform that simplifies all the steps, from setup to project display, making it easy to highlight your work and attract potential clients.<br/>
     </xpath>
     <!-- Button -->
     <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Discover it
+        Get started
     </xpath>
 </template>
 

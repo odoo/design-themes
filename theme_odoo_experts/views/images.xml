@@ -282,5 +282,10 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="name">website.s_picture_default_image_bg</field>
     <field name="url">/theme_odoo_experts/static/src/img/snippets/s_picture_bg.jpg</field>
 </record>
+<record id="s_text_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_text_cover_default_image</field>
+    <field name="name">website.s_text_cover_default_image</field>
+    <field name="url">/theme_odoo_experts/static/src/img/snippets/s_quotes_carousel_2.jpg</field>
+</record>
 
 </odoo>

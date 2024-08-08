@@ -474,4 +474,19 @@
     </xpath>
 </template>
 
+<!-- ======== TEXT COVER ======== -->
+<template id="s_text_cover" inherit_id="website.s_text_cover">
+    <xpath expr="//h1" position="replace" mode="inner">
+        Design Online. <br/>Effortlessly.
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        <br/>Present your architectural projects online with a user-friendly platform that streamlines all the steps, from setup to project showcase, making it easy to share your vision with clients.<br/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Learn more
+    </xpath>
+</template>
+
 </odoo>

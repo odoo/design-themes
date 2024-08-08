@@ -40,6 +40,7 @@
         'views/snippets/s_key_images.xml',
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_quadrant.xml',
+        'views/snippets/s_text_cover.xml',
         'views/new_page_template.xml',
 
     ],
