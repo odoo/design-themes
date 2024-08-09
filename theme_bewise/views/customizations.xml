@@ -349,6 +349,17 @@
         Immerse yourself in a diverse campus community with opportunities for international exchange, cultural enrichment, and personal growth.
     </xpath>
 </template>
+<!-- ======== IMAGE PUNCHY ======== -->
+<template id="s_image_punchy" inherit_id="website.s_image_punchy">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc2" add="o_cc3" separator=" "/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_carousel_default_image_1</attribute>
+    </xpath>
+</template>
 
 <!-- ======== FEATURES ======== -->
 <template id="s_features" inherit_id="website.s_features" name="Be Wise s_features">
