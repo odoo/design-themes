@@ -224,4 +224,12 @@
     </xpath>
 </template>
 
+<!-- ======== STRIPED TOP ======== -->
+<template id="s_striped_top" inherit_id="website.s_striped_top">
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_picture_default_image</attribute>
+    </xpath>
+</template>
+
 </odoo>
