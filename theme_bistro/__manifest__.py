@@ -18,6 +18,7 @@
         'views/snippets/s_cover.xml',
         'views/snippets/s_features.xml',
         'views/snippets/s_image_text.xml',
+        'views/snippets/s_image_punchy.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_picture.xml',
