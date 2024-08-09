@@ -180,15 +180,17 @@
 
 <!-- ======== CAROUSEL ======== -->
  <template id="s_carousel" inherit_id="website.s_carousel" name="Paptic s_carousel">
-    <!-- Assign slide2 as 'active' and move it in first position -->
-    <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
-        <attribute name="class" remove="active" separator=" "/>
+    <xpath expr="(//div[hasclass('carousel-item')])[2]" position="attributes">
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('carousel-inner')]/div[2]" position="attributes">
-        <attribute name="class" add="active" separator=" "/>
+    <xpath expr="(//div[hasclass('carousel-item')])[3]" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('carousel-inner')]/div" position="before">
-        <xpath expr="//div[hasclass('carousel-inner')]/div[2]" position="move"/>
+    <xpath expr="(//div[hasclass('container')])[2]" position="before">
+        <div class="o_we_bg_filter bg-white-75"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('container')])[3]" position="before">
+        <div class="o_we_bg_filter bg-white-75"/>
     </xpath>
 </template>
 

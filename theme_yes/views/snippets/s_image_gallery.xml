@@ -4,16 +4,11 @@
 <template id="s_image_gallery" inherit_id="website.s_image_gallery">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="s_image_gallery_indicators_dots" remove="s_image_gallery_indicators_rounded" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12", "flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
-    <xpath expr="//*[hasclass('container')]" position="before">
+    <xpath expr="//*[hasclass('o_container_small')]" position="before">
         <div class="o_we_shape o_web_editor_Floats_12"/>
-    </xpath>
-    <!-- Container -->
-    <xpath expr="//*[hasclass('container')]" position="attributes">
-        <attribute name="class" add="o_container_small" remove="container" separator=" "/>
     </xpath>
 </template>
 
