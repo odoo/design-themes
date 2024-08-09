@@ -728,6 +728,18 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGE FRAME ======== -->
+<template id="s_image_frame" inherit_id="website.s_image_frame">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc1" add="o_cc4" separator=" "/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_quotes_carousel_demo_image_1</attribute>
+    </xpath>
+</template>
+
 <!-- ======== INTRO PILL ======== -->
 <template id="s_intro_pill" inherit_id="website.s_intro_pill">
     <!-- Title -->
