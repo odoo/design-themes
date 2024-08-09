@@ -426,5 +426,12 @@
         Technology that drives success
     </xpath>
 </template>
+<!-- ======== IMAGE PUNCHY ======== -->
+<template id="s_image_punchy" inherit_id="website.s_image_punchy">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc2" add="o_cc1" separator=" "/>
+    </xpath>
+</template>
 
 </odoo>

@@ -277,6 +277,18 @@
     </xpath>
 </template>
 
+<!-- ==== Image Punchy ===== -->
+<template id="s_image_punchy" inherit_id="website.s_image_punchy">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc2" add="o_cc4" separator=" "/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_parallax_default_image</attribute>
+    </xpath>
+</template>
+
 <!-- ==== Comparisons ===== -->
 <template id="s_comparisons" inherit_id="website.s_comparisons" name="Paptic s_comparisons">
     <xpath expr="//section" position="attributes">

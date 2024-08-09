@@ -24,6 +24,7 @@
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_text_image.xml',
+        'views/snippets/s_image_punchy.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_numbers_showcase.xml',

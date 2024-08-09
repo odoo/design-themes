@@ -17,6 +17,7 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_text_image.xml',
+        'views/snippets/s_image_punchy.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_popup.xml',
