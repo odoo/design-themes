@@ -478,6 +478,14 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGE FRAME ======== -->
+<template id="s_image_frame" inherit_id="website.s_image_frame">
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_carousel_default_image_1</attribute>
+    </xpath>
+</template>
+
 <!-- ======== BIG NUMBER ======== -->
 <template id="s_big_number" inherit_id="website.s_big_number">
     <!-- Section -->

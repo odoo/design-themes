@@ -489,6 +489,18 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGE FRAME ======== -->
+<template id="s_image_frame" inherit_id="website.s_image_frame">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc1" add="o_cc3" separator=" "/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/theme_graphene.image_content_10</attribute>
+    </xpath>
+</template>
+
 <!-- ======== BIG NUMBER ======== -->
 <template id="s_big_number" inherit_id="website.s_big_number">
     <!-- Section -->
