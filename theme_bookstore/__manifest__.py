@@ -24,6 +24,7 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_key_images.xml',
+        'views/snippets/s_images_mosaic.xml',
         'views/snippets/s_showcase.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_features_wall.xml',

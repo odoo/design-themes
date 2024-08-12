@@ -566,6 +566,15 @@
         Discover your new favorite drink today
     </xpath>
 </template>
+<!-- ======== IMAGES MOSAIC ======== -->
+<template id="s_images_mosaic" inherit_id="website.s_images_mosaic">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Experience Our New Festival Events
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        Discover the latest attractions and performances at our festival.
+    </xpath>
+</template>
 
 <!-- ======== BIG NUMBER ======== -->
 <template id="s_big_number" inherit_id="website.s_big_number">

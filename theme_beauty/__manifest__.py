@@ -26,6 +26,7 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_image_punchy.xml',
         'views/snippets/s_image_title.xml',
+        'views/snippets/s_images_mosaic.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_pricelist_boxed.xml',
