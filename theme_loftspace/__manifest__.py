@@ -24,6 +24,7 @@
         'views/snippets/s_banner.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_image_title.xml',
+        'views/snippets/s_images_mosaic.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_color_blocks_2.xml',

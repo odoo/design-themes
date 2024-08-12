@@ -677,6 +677,15 @@
         Trust us to keep your luxury vehicle in pristine condition
     </xpath>
 </template>
+<!-- ======== IMAGES MOSAIC ======== -->
+<template id="s_images_mosaic" inherit_id="website.s_images_mosaic">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our Luxury Vehicle Services
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        Explore premium maintenance and bespoke care for your high-end car.
+    </xpath>
+</template>
 
 <!-- ======== BIG NUMBER ======== -->
 <template id="s_big_number" inherit_id="website.s_big_number">
