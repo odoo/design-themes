@@ -143,6 +143,30 @@
     </xpath>
 </template>
 
+<!-- ======== CTA Box ======== -->
+<template id="s_cta_box" inherit_id="website.s_cta_box">
+    <!-- Card -->
+    <xpath expr="//div[hasclass('card')]" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc4" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+       The best car dealer<br/>in your local area
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Looking for a leasing plan or a brand new car ? We got you covered<br/><br/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/theme_vehicle/static/src/img/content/content_img_02.jpg</attribute>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Contact us
+    </xpath>
+</template>
+
 <!-- ======== PICTURE ======== -->
 <template id="s_picture" inherit_id="website.s_picture" name="Vehicle s_picture">
     <!-- Section -->

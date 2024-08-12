@@ -12,6 +12,7 @@
         'views/snippets_options.xml',
         'views/image_library.xml',
 
+        'views/snippets/s_cta_box.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_text_image.xml',

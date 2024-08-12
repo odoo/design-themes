@@ -162,6 +162,30 @@
     </xpath>
 </template>
 
+<!-- ======== CTA Box ======== -->
+<template id="s_cta_box" inherit_id="website.s_cta_box">
+    <!-- Card -->
+    <xpath expr="//div[hasclass('card')]" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc4" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Make a real difference,<br/>join our company !
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Looking for a fresh new start? View our job offers<br/><br/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">theme_graphene/static/src/img/pictures/bg_image_04.jpg</attribute>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        View more
+    </xpath>
+</template>
+
 <!-- ======== COMPARISON ======== -->
 <template id="s_comparisons" inherit_id="website.s_comparisons" name="Graphene s_comparisons">
     <xpath expr="//section" position="attributes">

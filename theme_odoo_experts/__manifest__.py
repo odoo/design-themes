@@ -11,6 +11,7 @@
         'data/ir_asset.xml',
         'views/images.xml',
 
+        'views/snippets/s_cta_box.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_image_text.xml',

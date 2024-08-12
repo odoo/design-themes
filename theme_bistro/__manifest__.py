@@ -13,6 +13,7 @@
 
         'views/layout.xml',
 
+        'views/snippets/s_cta_box.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_columns.xml',
         'views/snippets/s_cover.xml',

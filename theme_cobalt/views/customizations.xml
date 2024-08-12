@@ -157,6 +157,26 @@
     </xpath>
 </template>
 
+<!-- ======== CTA Box ======== -->
+<template id="s_cta_box" inherit_id="website.s_cta_box">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Discover our data-driven strategy
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace" mode="inner">
+        No assumptions, every decision is based on data<br/><br/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/theme_cobalt/static/src/img/pictures/s_image_3.jpg</attribute>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Our services
+    </xpath>
+</template>
+
 <!-- ==== Picture ===== -->
 <template id="s_picture" inherit_id="website.s_picture" name="Cobalt s_picture">
     <xpath expr="//section" position="attributes">

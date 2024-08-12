@@ -196,6 +196,26 @@
     </xpath>
 </template>
 
+<!-- ======== CTA Box ======== -->
+<template id="s_cta_box" inherit_id="website.s_cta_box">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Your next university<br/>is just a few clicks away
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace" mode="inner">
+        View our courses and contact us to leverage your knowledge<br/><br/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/theme_bewise/static/src/img/content/college_students.jpg</attribute>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Our courses
+    </xpath>
+</template>
+
 <!-- ======== TEAM ======== -->
 <template id="s_company_team" inherit_id="website.s_company_team" name="Be Wise s_company_team">
     <!-- Profile #1 -->
