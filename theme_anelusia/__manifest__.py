@@ -12,6 +12,7 @@
         'views/images_content.xml',
         'views/images_library.xml',
 
+        'views/snippets/s_cta_box.xml',
         'views/snippets/s_company_team.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_image_gallery.xml',
