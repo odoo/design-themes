@@ -4,12 +4,12 @@
 <template id="s_title" inherit_id="website.s_title">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt64 pb64 o_half_screen_height parallax s_parallax_is_fixed bg-black-50" remove="pt40 pb40" separator=" "/>
-        <attribute name="data-scroll-background-ratio">1</attribute>
+        <attribute name="class" add="pt120 pb120 o_cc o_cc5" remove="pt40 pb40" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/03_001','colors':{'c5':'o-color-1'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','animated':'true'}</attribute>
     </xpath>
+    <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_banner_default_image'); background-position: 50% 50%;"/>
-        <div class="o_we_bg_filter bg-black-50"/>
+        <div class="o_we_shape o_web_editor_Airy_03_001 o_we_animated" style="background-image: url('/web_editor/shape/web_editor/Airy/03_001.svg?c5=o-color-1');"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">

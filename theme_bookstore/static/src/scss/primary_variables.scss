@@ -51,6 +51,10 @@ $o-theme-font-configs: (
         'family': ('DM Serif Display', serif),
         'url': 'DM+Serif+Display:400,400i',
     ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,,400,400i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -59,20 +63,22 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'generic-8',
+        'color-palettes-name': 'default-26',
         'header-font-size': 1rem,
-        'btn-border-radius': 0px,
-        'btn-border-radius-sm': 0px,
-        'btn-border-radius-lg': 0px,
-        'font': 'Source Sans Pro',
+        'btn-border-radius': 8px,
+        'btn-border-radius-sm': 4px,
+        'btn-border-radius-lg': 12px,
+        'btn-padding-x': 16px,
+        'btn-padding-x-lg': 20px,
+        'btn-padding-y-lg': 12px,
+        'font': 'Inter',
         'headings-font': 'DM Serif Display',
-        'header-template': 'sales_one',
-        'footer-template': 'links',
+        'header-template': 'search',
         'link-underline': 'never',
     ),
 );
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'generic-8');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'default-26');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'bookstore-1',

@@ -5,8 +5,8 @@ import { _t } from "@web/core/l10n/translation";
 
 const snippets = [
     {
-        id: 's_cover',
-        name: 'Cover',
+        id: 's_banner',
+        name: 'Banner',
         groupName: "Intro",
     },
     {
@@ -15,29 +15,24 @@ const snippets = [
         groupName: "Images",
     },
     {
-        id: 's_image_text',
-        name: 'Image - Text',
+        id: 's_process_steps',
+        name: 'Steps',
         groupName: "Content",
     },
     {
-        id: 's_picture',
-        name: 'Title - Image',
-        groupName: "Images",
-    },
-    {
-        id: 's_product_list',
-        name: 'Items',
+        id: 's_showcase',
+        name: 'Showcase',
         groupName: "Content",
     },
     {
-        id: 's_call_to_action',
-        name: 'Call to Action',
-        groupName: "Content",
+        id: 's_title',
+        name: 'Title',
+        groupName: "Text",
     },
 ];
 
 wTourUtils.registerThemeHomepageTour("bookstore_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"generic-8"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-26"'),
     ...wTourUtils.dragNDrop(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
@@ -48,5 +43,4 @@ wTourUtils.registerThemeHomepageTour("bookstore_tour", () => [
     ...wTourUtils.clickOnSnippet(snippets[4]),
     wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
     wTourUtils.goBackToBlocks(),
-    ...wTourUtils.dragNDrop(snippets[5]),
 ]);
