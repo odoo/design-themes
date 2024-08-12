@@ -14,6 +14,7 @@
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_carousel.xml',
         'views/snippets/s_image_text.xml',
+        'views/snippets/s_images_mosaic.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_company_team.xml',
         'views/snippets/s_masonry_block.xml',

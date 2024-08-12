@@ -410,4 +410,14 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGES MOSAIC ======== -->
+<template id="s_images_mosaic" inherit_id="website.s_images_mosaic">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our Luxury Vehicle Services
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        Explore premium maintenance and bespoke care for your high-end car.
+    </xpath>
+</template>
+
 </odoo>

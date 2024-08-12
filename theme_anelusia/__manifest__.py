@@ -27,6 +27,7 @@
         'views/snippets/s_showcase.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_image_text.xml',
+        'views/snippets/s_images_mosaic.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_quotes_carousel.xml',

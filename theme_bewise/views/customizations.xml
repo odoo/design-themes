@@ -477,4 +477,14 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGES MOSAIC ======== -->
+<template id="s_images_mosaic" inherit_id="website.s_images_mosaic">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our Latest Academic Programs
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        Explore our new courses and programs for your educational journey.
+    </xpath>
+</template>
+
 </odoo>

@@ -18,6 +18,7 @@
         'views/snippets/s_company_team.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_image_text.xml',
+        'views/snippets/s_images_mosaic.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_images_wall.xml',
         'views/snippets/s_masonry_block.xml',
