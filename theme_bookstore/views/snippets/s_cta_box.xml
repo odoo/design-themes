@@ -20,7 +20,7 @@
     </xpath>
     <!-- Button -->
     <xpath expr="//a[hasclass('btn')]" position="replace">
-        <a t-att-href="cta_btn_href" class="btn btn-lg btn-primary"><span class="fa fa-shopping-cart"/> Shop Now</a>
+        <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary">Start Now<i class="fa fa-angle-right ms-2" role="img"/></a>
     </xpath>
 </template>
 
