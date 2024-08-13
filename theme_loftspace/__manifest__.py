@@ -40,6 +40,7 @@
         'views/snippets/s_key_images.xml',
         'views/snippets/s_quadrant.xml',
         'views/snippets/s_big_number.xml',
+        'views/snippets/s_empowerment.xml',
         'views/new_page_template.xml',
     ],
     'images': [
