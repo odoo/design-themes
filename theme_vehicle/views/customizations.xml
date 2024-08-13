@@ -588,5 +588,17 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGE TITLE ======== -->
+<template id="s_image_title" inherit_id="website.s_image_title">
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
+        <attribute name="class" add="bg-black-75" remove="bg-black-50" separator=" "/>
+    </xpath>
+    <xpath expr="//h1" position="replace" mode="inner">
+        A Deep Dive into Luxury and Innovation
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Transform your driving experience with our exclusive collection, where opulence meets cutting-edge technology. Elevate your journey with vehicles that blend sophistication and performance seamlessly.
+    </xpath>
+</template>
 
 </odoo>
