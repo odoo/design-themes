@@ -49,6 +49,7 @@
         'views/snippets/s_image_frame.xml',
         'views/snippets/s_wavy_grid.xml',
         'views/snippets/s_text_cover.xml',
+        'views/snippets/s_empowerment.xml',
         'views/new_page_template.xml',
     ],
     'images': [

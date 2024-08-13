@@ -43,6 +43,7 @@
         'views/snippets/s_image_title.xml',
         'views/snippets/s_big_number.xml',
         'views/snippets/s_images_constellation.xml',
+        'views/snippets/s_empowerment.xml',
         'views/new_page_template.xml',
     ],
     'images': [
