@@ -16,7 +16,7 @@
         <attribute name="style">border-width: 0px !important;</attribute>
     </xpath>
     <!-- Column 1 - Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//h5" position="replace" mode="inner">
         Local Producers
     </xpath>
     <!-- Column 1 - Paragraph -->
@@ -37,7 +37,7 @@
         <attribute name="style">border-width: 0px !important;</attribute>
     </xpath>
     <!-- Column 2 - Title -->
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+    <xpath expr="(//h5)[2]" position="replace" mode="inner">
         Bio Flowers
     </xpath>
     <!-- Column 2 - Paragraph -->
@@ -58,7 +58,7 @@
         <attribute name="style">border-width: 0px !important;</attribute>
     </xpath>
     <!-- Column 3 - Title -->
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+    <xpath expr="(//h5)[3]" position="replace" mode="inner">
         Eco-Friendly Packaging
     </xpath>
     <!-- Column 3 - Paragraph -->

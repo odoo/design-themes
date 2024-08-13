@@ -225,13 +225,16 @@
         <attribute name="style" add="border-width: 0px !important; box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.05) !important;" separator=";"/>
     </xpath>
     <!-- Card #1 - Title & text -->
-    <xpath expr="//h3[hasclass('card-title')]" position="replace" mode="inner">
+    <xpath expr="//h5[hasclass('card-title')]" position="replace" mode="inner">
         HeyNosf Inc. Digital Transformation
     </xpath>
     <xpath expr="//p[hasclass('card-text')]" position="replace" mode="inner">
         HeyNosf Inc. is a communication agency that was founded in 2006, by Jean-Louis Dewinter. He always had a strong interest in languages and decided to create a company reflecting his own interests.
     </xpath>
     <!-- Card #1 - Image -->
+    <xpath expr="(//figure)[1]"  position="attributes">
+        <attribute name="class" remove="ratio-16x9" add="ratio-1x1" separator=" "/>
+    </xpath>
     <xpath expr="//img[hasclass('card-img-top')]" position="attributes">
         <attribute name="style">padding: 8px !important;</attribute>
     </xpath>
@@ -241,13 +244,16 @@
         <attribute name="style" add="border-width: 0px !important; box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.05) !important;" separator=";"/>
     </xpath>
     <!-- Card #2 - Title & text -->
-    <xpath expr="(//h3[hasclass('card-title')])[2]" position="replace" mode="inner">
+    <xpath expr="(//h5[hasclass('card-title')])[2]" position="replace" mode="inner">
         Fallanzy Integration Explained
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
         Fallanzy has been active in the workspace design and ergonomics consulting business for over 20 years. Discover how we answered to the challenges of this company.
     </xpath>
     <!-- Card #2 - Image -->
+    <xpath expr="(//figure)[2]"  position="attributes">
+        <attribute name="class" remove="ratio-16x9" add="ratio-1x1" separator=" "/>
+    </xpath>
     <xpath expr="(//img[hasclass('card-img-top')])[2]" position="attributes">
         <attribute name="style">padding: 8px !important;</attribute>
     </xpath>
@@ -257,13 +263,16 @@
         <attribute name="style" add="border-width: 0px !important; box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.05) !important;" separator=";"/>
     </xpath>
     <!-- Card #3 - Title & text -->
-    <xpath expr="(//h3[hasclass('card-title')])[3]" position="replace" mode="inner">
+    <xpath expr="(//h5[hasclass('card-title')])[3]" position="replace" mode="inner">
         Hotels Improvement Study
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
         Our solution is suitable for Hotels as well. We help management to optimize their time and employee to be more efficient and more productive. Discover our study.
     </xpath>
     <!-- Card #3 - Image -->
+    <xpath expr="(//figure)[3]"  position="attributes">
+        <attribute name="class" remove="ratio-16x9" add="ratio-1x1" separator=" "/>
+    </xpath>
     <xpath expr="(//img[hasclass('card-img-top')])[3]" position="attributes">
         <attribute name="style">padding: 8px !important;</attribute>
     </xpath>

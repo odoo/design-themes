@@ -6,9 +6,19 @@
     <xpath expr="//div[hasclass('row')]//div" position="attributes">
         <attribute name="class" add="pt16" separator=" "/>
     </xpath>
+    <xpath expr="//*[hasclass('card')]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Center card -->
+    <xpath expr="(//*[hasclass('card')])[2]" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+    </xpath>
     <!-- Right card -->
     <xpath expr="//div[hasclass('row')]//div[3]" position="attributes">
         <attribute name="class" add="pt16" separator=" "/>
+    </xpath>
+    <xpath expr="(//*[hasclass('card')])[3]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
     </xpath>
 </template>
 
