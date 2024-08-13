@@ -11,14 +11,15 @@
    <!-- Remove grid images -->
    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
-   <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
+   <xpath expr="//div[hasclass('col-lg-5')]" position="replace"/>
    <!-- Row - remove grid mode -->
    <xpath expr="//div[hasclass('row')]" position="attributes">
       <attribute name="class" remove="o_grid_mode" separator=" "/>
+      <attribute name="data-row-count"/>
    </xpath>
    <!-- Jumbotron -->
-   <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
-      <attribute name="class" add="col-lg-6 o_cc o_cc1 pt32 pb32 shadow rounded" remove="o_grid_item g-height-4 g-col-lg-5 col-lg-5" separator=" "/>
+   <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
+      <attribute name="class" add="col-lg-6 o_cc o_cc1 pt32 pb32 shadow rounded" remove="o_grid_item g-height-10 g-col-lg-4 col-lg-4" separator=" "/>
       <attribute name="style"/>
    </xpath>
    <!-- Title -->
