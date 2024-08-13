@@ -140,7 +140,7 @@
 
 <!-- ======== 3 COLUMNS ======== -->
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Graphene s_three_columns">
-    <xpath expr="//div[hasclass('row')]/div//h3[1]" position="replace">
+    <xpath expr="//div[hasclass('row')]/div//h5[1]" position="replace">
         <h5>Powerful API</h5>
         <div class="s_hr pt8 pb16" data-snippet="s_hr" data-name="Separator">
             <hr class="w-100 mx-auto" style="border-top-color: var(--o-color-3) !important;"/>
@@ -149,7 +149,7 @@
     <xpath expr="//div[hasclass('row')]/div//p[1]" position="replace" mode="inner">
         Thanks to our API, Developers report building their solutions 4x faster. Discover why and how.
     </xpath>
-    <xpath expr="//div[hasclass('row')]/div[2]//h3[1]" position="replace">
+    <xpath expr="//div[hasclass('row')]/div[2]//h5[1]" position="replace">
         <h5>Mobile Experience</h5>
         <div class="s_hr pt8 pb16" data-snippet="s_hr" data-name="Separator">
             <hr class="w-100 mx-auto" style="border-top-color: var(--o-color-3) !important;"/>
@@ -158,7 +158,7 @@
     <xpath expr="//div[hasclass('row')]/div[2]//p[1]" position="replace" mode="inner">
         Probably the only CRM with a full mobile experience. Never wondered how it works? That's because it just works
     </xpath>
-    <xpath expr="//div[hasclass('row')]/div[3]//h3[1]" position="replace">
+    <xpath expr="//div[hasclass('row')]/div[3]//h5[1]" position="replace">
         <h5>Support Team</h5>
         <div class="s_hr pt8 pb16" data-snippet="s_hr" data-name="Separator">
             <hr class="w-100 mx-auto" style="border-top-color: var(--o-color-3) !important;"/>

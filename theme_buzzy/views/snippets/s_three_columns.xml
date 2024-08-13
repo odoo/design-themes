@@ -4,13 +4,16 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns">
     <!-- Column #1 -->
     <!-- Img -->
+    <xpath expr="//figure" position="attributes">
+        <attribute name="class" remove="ratio ratio-16x9" separator=" "/>
+    </xpath>
     <xpath expr="//div[hasclass('card')]//img" position="attributes">
         <attribute name="style">padding: 32px !important;</attribute>
         <!-- Enable SVG dynamic color functionality -->
         <attribute name="src">/web_editor/shape/theme_buzzy/s_three_columns-01.svg?c1=o-color-1</attribute>
     </xpath>
     <!-- Title -->
-    <xpath expr="//div[hasclass('card')]//h3" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('card')]//h5" position="replace" mode="inner">
         Built to <br/>your effigy
     </xpath>
     <!-- Paragraph -->
@@ -20,13 +23,16 @@
 
     <!-- Column #2 -->
     <!-- Img -->
+    <xpath expr="(//figure)[2]"  position="attributes">
+        <attribute name="class" remove="ratio ratio-16x9" separator=" "/>
+    </xpath>
     <xpath expr="(//div[hasclass('card')])[2]//img" position="attributes">
         <attribute name="style">padding: 32px !important;</attribute>
         <!-- Enable SVG dynamic color functionality -->
         <attribute name="src">/web_editor/shape/theme_buzzy/s_three_columns-02.svg?c1=o-color-1</attribute>
     </xpath>
     <!-- Title -->
-    <xpath expr="(//div[hasclass('card')])[2]//h3" position="replace" mode="inner">
+    <xpath expr="(//div[hasclass('card')])[2]//h5" position="replace" mode="inner">
         Editable from <br/>A to Z
     </xpath>
     <!-- Paragraph -->
@@ -36,13 +42,16 @@
 
     <!-- Column #3 -->
     <!-- Img -->
+    <xpath expr="(//figure)[3]"  position="attributes">
+        <attribute name="class" remove="ratio ratio-16x9" separator=" "/>
+    </xpath>
     <xpath expr="(//div[hasclass('card')])[3]//img" position="attributes">
         <attribute name="style">padding: 32px !important;</attribute>
         <!-- Enable SVG dynamic color functionality -->
         <attribute name="src">/web_editor/shape/theme_buzzy/s_three_columns-03.svg?c1=o-color-1</attribute>
     </xpath>
     <!-- Title -->
-    <xpath expr="(//div[hasclass('card')])[3]//h3" position="replace" mode="inner">
+    <xpath expr="(//div[hasclass('card')])[3]//h5" position="replace" mode="inner">
         All data <br/>in your hands
     </xpath>
     <!-- Paragraph -->
