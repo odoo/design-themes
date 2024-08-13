@@ -640,4 +640,14 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGE TITLE ======== -->
+<template id="s_image_title" inherit_id="website.s_image_title">
+    <xpath expr="//h1" position="replace" mode="inner">
+        A Deep Dive into Knowledge and Innovation
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Transform your future with our cutting-edge programs, where education meets opportunity. Elevate your learning experience with courses that blend academic excellence and practical skills seamlessly.
+    </xpath>
+</template>
+
 </odoo>

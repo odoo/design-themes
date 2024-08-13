@@ -20,6 +20,7 @@
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_image_text.xml',
+        'views/snippets/s_image_title.xml',
         'views/snippets/s_showcase.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_features_wall.xml',

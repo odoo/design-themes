@@ -631,5 +631,17 @@
     </xpath>
 </template>
 
+<!-- ==== Image Title ===== -->
+<template id="s_image_title" inherit_id="website.s_image_title" name="Paptic s_image_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc5 oe_img_bg" separator=" "/>
+        <attribute name="style"/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/02_001','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_02_001"/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+</template>
 
 </odoo>

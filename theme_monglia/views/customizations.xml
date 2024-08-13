@@ -470,5 +470,23 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGE TITLE ======== -->
+<template id="s_image_title" inherit_id="website.s_image_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="oe_img_bg" separator=" "/>
+        <attribute name="style"/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/08','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Bold_08"/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+    <xpath expr="//h1" position="replace" mode="inner">
+        A Deep Dive into Fun and Innovation
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Transform your experience with our vibrant festival lineup, where entertainment meets creativity. Elevate your celebration with events that blend excitement and artistry seamlessly.
+    </xpath>
+</template>
 
 </odoo>

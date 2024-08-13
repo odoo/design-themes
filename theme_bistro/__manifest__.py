@@ -21,6 +21,7 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_image_punchy.xml',
+        'views/snippets/s_image_title.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_numbers.xml',

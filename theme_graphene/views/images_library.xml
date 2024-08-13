@@ -354,6 +354,11 @@ Check in images.scss, primary_variables.scss, main.scss and theme_common's mixin
     <field name="name">website.s_accordion_image_default_image</field>
     <field name="url">/theme_graphene/static/src/img/pictures/content_06.jpg</field>
 </record>
+<record id="s_image_title_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_image_title_default_image</field>
+    <field name="name">website.s_image_title_default_image</field>
+    <field name="url">/theme_graphene/static/src/img/pictures/content_01.jpg</field>
+</record>
 
 <record id="library_image_02" model="theme.ir.attachment">
     <field name="key">website.library_image_02</field>
