@@ -42,6 +42,7 @@
         'views/snippets/s_text_highlight.xml',
         'views/snippets/s_blockquote.xml',
         'views/snippets/s_numbers_showcase.xml',
+        'views/snippets/s_accordion_image.xml',
         'views/new_page_template.xml',
     ],
     'images': [

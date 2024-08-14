@@ -278,5 +278,11 @@ Check in theme_kea's primary_variables.scss, theme.scss and theme_common's mixin
     <field name="name">website.s_newsletter_block</field>
     <field name="url">/theme_yes/static/src/img/snippets/s_newsletter.jpg</field>
 </record>
+<!-- // Accordion Image // -->
+<record id="s_accordion_image_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_accordion_image_default_image</field>
+    <field name="name">website.s_accordion_image_default_image</field>
+    <field name="url">/theme_yes/static/src/img/snippets/s_banner.jpg</field>
+</record>
 
 </odoo>

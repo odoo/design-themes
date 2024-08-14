@@ -26,6 +26,7 @@
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_text_block.xml',
         'views/snippets/s_text_image.xml',
+        'views/snippets/s_accordion_image.xml',
         'views/new_page_template.xml',
 
     ],
