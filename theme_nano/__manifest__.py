@@ -25,6 +25,7 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_numbers_showcase.xml',
+        'views/snippets/s_key_benefits.xml',
         'views/new_page_template.xml',
     ],
     'images': [

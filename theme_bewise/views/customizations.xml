@@ -453,4 +453,28 @@
     </xpath>
 </template>
 
+<!-- ======== KEY BENEFITS ======== -->
+<template id="s_key_benefits" inherit_id="website.s_key_benefits">
+    <!-- Titles -->
+    <xpath expr="(//h3)[1]" position="replace" mode="inner">
+        Tailored Academic Programs
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        24/7 Academic Support
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Exclusive Opportunities
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
+        Explore customized academic programs designed to match your interests and career goals, providing a personalized educational experience.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][3]/p" position="replace" mode="inner">
+        Receive continuous assistance and guidance from our dedicated staff, available around the clock to help with your academic needs.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][4]/p" position="replace" mode="inner">
+        Gain access to unique scholarships, internships, and research programs that enhance your educational journey and career prospects.
+    </xpath>
+</template>
+
 </odoo>
