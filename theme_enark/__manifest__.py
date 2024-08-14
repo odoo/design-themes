@@ -22,6 +22,7 @@
         'views/snippets/s_parallax.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_unveil.xml',
+        'views/snippets/s_key_benefits.xml',
         'views/new_page_template.xml',
     ],
     'images': [

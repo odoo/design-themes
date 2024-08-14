@@ -26,6 +26,7 @@
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_unveil.xml',
+        'views/snippets/s_key_benefits.xml',
         'views/new_page_template.xml',
     ],
     'images': [

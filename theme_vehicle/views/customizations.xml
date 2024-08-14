@@ -386,4 +386,28 @@
     </xpath>
 </template>
 
+<!-- ======== KEY BENEFITS ======== -->
+<template id="s_key_benefits" inherit_id="website.s_key_benefits">
+    <!-- Titles -->
+    <xpath expr="(//h3)[1]" position="replace" mode="inner">
+        Custom Vehicle Options
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Comprehensive Support
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Exclusive Features
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
+        We offer personalized vehicle configurations to match your preferences and needs, ensuring you get the perfect fit for your lifestyle.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][3]/p" position="replace" mode="inner">
+        Our team provides full support throughout your vehicle purchase and ownership experience, from initial consultation to ongoing service.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][4]/p" position="replace" mode="inner">
+        Discover unique and advanced features that set our vehicles apart, providing you with exceptional performance and cutting-edge technology.
+    </xpath>
+</template>
+
 </odoo>

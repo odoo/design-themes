@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_key_benefits" inherit_id="website.s_key_benefits">
+    <!-- Titles -->
+    <xpath expr="(//h3)[1]" position="replace" mode="inner">
+        Bespoke Art Creations
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Dedicated Artist Support
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Exclusive Artworks
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
+        We craft personalized artworks that capture your vision and style, delivering unique pieces that reflect your individuality.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][3]/p" position="replace" mode="inner">
+        Receive ongoing guidance and assistance throughout your project, ensuring that your artistic needs and preferences are fully realized.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][4]/p" position="replace" mode="inner">
+        Explore one-of-a-kind pieces and limited editions that showcase exceptional creativity and offer a distinctive touch to your collection.
+    </xpath>
+</template>
+
+</odoo>

@@ -275,4 +275,28 @@
     </xpath>
 </template>
 
+<!-- ======== KEY BENEFITS ======== -->
+<template id="s_key_benefits" inherit_id="website.s_key_benefits">
+    <!-- Titles -->
+    <xpath expr="(//h3)[1]" position="replace" mode="inner">
+        Tailored Development Plans
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Continuous Project Support
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Innovative Solutions
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
+        We create customized development strategies that meet your project’s unique requirements, ensuring successful outcomes.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][3]/p" position="replace" mode="inner">
+        Our team offers ongoing support throughout every phase of development, ensuring your project stays on track and on time.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][4]/p" position="replace" mode="inner">
+        Leverage cutting-edge technologies and innovative approaches that drive your development projects forward and deliver exceptional results.
+    </xpath>
+</template>
+
 </odoo>

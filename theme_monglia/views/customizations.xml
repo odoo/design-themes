@@ -264,4 +264,28 @@
     </xpath>
 </template>
 
+<!-- ======== KEY BENEFITS ======== -->
+<template id="s_key_benefits" inherit_id="website.s_key_benefits">
+    <!-- Titles -->
+    <xpath expr="(//h3)[1]" position="replace" mode="inner">
+        Tailored Event Planning
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        End-to-End Coordination
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Exclusive Experiences
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
+        We create custom event experiences designed to match your vision, ensuring every detail aligns perfectly with your goals.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][3]/p" position="replace" mode="inner">
+        Our team provides full support from planning to execution, making sure your event runs smoothly and leaves a lasting impression.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][4]/p" position="replace" mode="inner">
+        Access unique venues, entertainment, and services that elevate your event and make it truly unforgettable.
+    </xpath>
+</template>
+
 </odoo>
