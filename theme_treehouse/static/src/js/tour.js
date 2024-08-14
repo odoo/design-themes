@@ -21,7 +21,7 @@ const snippets = [
     {
         id: 's_three_columns',
         name: 'Columns',
-        groupName: "Content",
+        groupName: "Columns",
     },
     {
         id: 's_call_to_action',
