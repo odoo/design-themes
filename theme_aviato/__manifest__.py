@@ -23,6 +23,7 @@
         'views/snippets/s_title.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_features_wall.xml',
+        'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_key_benefits.xml',

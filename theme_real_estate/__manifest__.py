@@ -25,6 +25,7 @@
         'views/snippets/s_numbers.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_image_gallery.xml',
+        'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_key_benefits.xml',

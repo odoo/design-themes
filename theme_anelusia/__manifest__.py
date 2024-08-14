@@ -39,6 +39,7 @@
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_pricelist_boxed.xml',
+        'views/snippets/s_striped_center_top.xml',
         'views/new_page_template.xml',
     ],
     'images': [

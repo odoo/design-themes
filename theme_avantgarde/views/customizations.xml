@@ -383,5 +383,24 @@
         Artistic portrait photography with creative lighting and backgrounds, ideal for personal projects or portfolio work.
     </xpath>
 </template>
+ <!-- ======== STRIPED CENTER TOP ======== -->
+<template id="s_striped_center_top" inherit_id="website.s_striped_center_top">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Design Your World with Creativity
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Stay ahead with cutting-edge design trends, fine art, and creative inspirations that shape the future of galleries, shows, and digital media.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Discover More
+    </xpath>
+    <!-- Figcaption -->
+    <xpath expr="//figcaption" position="replace" mode="inner">
+        Where creativity knows no bounds
+    </xpath>
+</template>
 
 </odoo>
