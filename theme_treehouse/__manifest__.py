@@ -33,6 +33,7 @@
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_title.xml',
+        'views/snippets/s_quadrant.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_pricelist_boxed.xml',

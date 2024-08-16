@@ -354,6 +354,22 @@
     </xpath>
 </template>
 
+<!-- ======== QUADRANT ======== -->
+<template id="s_quadrant" inherit_id="website.s_quadrant">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Events &amp; Dining
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Experience unforgettable moments at our events. From fine dining to live music, we create the perfect atmosphere for any occasion.<br/><br/> Let us make your event one to remember.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Plan an Event
+    </xpath>
+</template>
+
 <!-- ======== KEY BENEFITS ======== -->
 <template id="s_key_benefits" inherit_id="website.s_key_benefits">
     <!-- Titles -->

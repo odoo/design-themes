@@ -286,6 +286,22 @@
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
 </template>
 
+<!-- ======== QUADRANT ======== -->
+<template id="s_quadrant" inherit_id="website.s_quadrant">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Innovating Through Art
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Stay ahead of the curve with our latest insights in design and fine art. Our content explores the intersection of creativity and trends, offering fresh perspectives for galleries and digital media.<br/><br/> Engage with the future of art.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Read More
+    </xpath>
+</template>
+
 <!-- ======== UNVEIL ======== -->
 <template id="s_unveil" inherit_id="website.s_unveil">
     <!-- Section -->

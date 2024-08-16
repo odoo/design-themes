@@ -479,6 +479,22 @@
     </xpath>
 </template>
 
+<!-- ======== QUADRANT ======== -->
+<template id="s_quadrant" inherit_id="website.s_quadrant">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Vehicle Services
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Keep your vehicle in top condition with our expert repair and maintenance services. From cars to motorbikes, we’ve got you covered.<br/><br/> Drive with confidence and style.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Book a Service
+    </xpath>
+</template>
+
 <!-- ======== KEY BENEFITS ======== -->
 <template id="s_key_benefits" inherit_id="website.s_key_benefits">
     <!-- Titles -->
