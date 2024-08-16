@@ -504,6 +504,22 @@
     </xpath>
 </template>
 
+<!-- ======== QUADRANT ======== -->
+<template id="s_quadrant" inherit_id="website.s_quadrant">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        IT Consultancy
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Unlock your business potential with our IT consultancy services. We offer strategic advice and cutting-edge solutions to keep you ahead in the tech world.<br/><br/> Let us guide your digital transformation.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Get Started
+    </xpath>
+</template>
+
 <!-- ==== Accordion Image ===== -->
 <template id="s_accordion_image" inherit_id="website.s_accordion_image" name="Paptic s_accordion_image">
     <xpath expr="//section" position="attributes">

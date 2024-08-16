@@ -39,6 +39,7 @@
         'views/snippets/s_motto.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_striped_top.xml',
+        'views/snippets/s_quadrant.xml',
         'views/new_page_template.xml',
 
     ],

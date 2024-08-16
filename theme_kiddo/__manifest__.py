@@ -30,6 +30,7 @@
         'views/snippets/s_image_punchy.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_unveil.xml',
+        'views/snippets/s_quadrant.xml',
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_key_benefits.xml',

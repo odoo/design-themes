@@ -562,6 +562,22 @@
     </xpath>
 </template>
 
+<!-- ======== QUADRANT ======== -->
+<template id="s_quadrant" inherit_id="website.s_quadrant">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Academic Excellence
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Empower your academic journey with our comprehensive programs designed for university students. From research opportunities to campus life, we foster an environment where knowledge and innovation thrive.<br/><br/> Prepare for a future of success.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Explore Programs
+    </xpath>
+</template>
+
 <!-- ======== KEY BENEFITS ======== -->
 <template id="s_key_benefits" inherit_id="website.s_key_benefits">
     <!-- Titles -->

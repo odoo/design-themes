@@ -28,6 +28,7 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_freegrid.xml',
+        'views/snippets/s_quadrant.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_key_benefits.xml',
