@@ -1,23 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_graphene
+# 	* theme_graphene
 # 
 # Translators:
-# e2f <projects@e2f.com>, 2019
-# Martin Trigaux, 2019
-# Xia Fajin <xia.fajin@elico-corp.com>, 2019
-# fausthuang, 2019
-# Lisa Zhang <lzh@odoo.com>, 2019
-# liAnGjiA <liangjia@qq.com>, 2019
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server saas~17.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 09:01+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: liAnGjiA <liangjia@qq.com>, 2019\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"POT-Creation-Date: 2024-07-15 12:21+0000\n"
+"PO-Revision-Date: 2024-07-16 11:36+0000\n"
+"Last-Translator: Wil Odoo, 2024\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -25,143 +20,193 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_typo_pattern
-msgid "<i class=\"fa fa-font\"/>Font Family"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "24/7 support"
+msgstr "24/7 支持"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_call_to_action
+msgid "<b>50,000+ companies</b> run our software."
+msgstr "<b>50,000 多家公司</b>使用我们的软件。"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
+msgid "<b>Making the difference.</b>"
+msgstr "<b>与众不同。</b>"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Aline is one of the iconic people in life who can say they love what "
+"they do. She mentors 100+ in-house developers and looks after the community "
+"of thousands of developers.</small>"
 msgstr ""
+"<small>Aline 是生活中可以说热爱自己工作的标志性人物之一。她指导着 100 多名内部开发人员，并照顾着数千名开发人员的社区。</small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_google_map
-msgid "<i class=\"fa fa-fw fa-paint-brush\"/>Style"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Founder and chief visionary, Tony is the driving force behind the "
+"company. He loves to keep his hands full by participating in the development"
+" of the software, marketing, and customer experience strategies.</small>"
 msgstr ""
+"<small>托尼是公司的创始人和首席远见者，也是公司背后的推动力。他热衷于参与软件开发、市场营销和客户体验战略，从而让自己的双手变得充实。</small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_top_content_options
-msgid "<i class=\"fa fa-magic\"/>Position"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Iris, with her international experience, helps us easily understand "
+"the numbers and improves them. She is determined to drive success and "
+"delivers her professional acumen to bring the company to the next "
+"level.</small>"
 msgstr ""
+"<small>Iris "
+"拥有丰富的国际经验，帮助我们轻松理解数字并改进数字。她决心推动公司取得成功，并以自己的专业敏锐性将公司带入新的高度。</small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_typo_pattern
-msgid "<i class=\"fa fa-paint-brush\"/>Text Effects"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Mich loves taking on challenges. With his multi-year experience as "
+"Commercial Director in the software industry, Mich has helped the company to"
+" get where it is today. Mich is among the best minds.</small>"
 msgstr ""
+"<small>Mich 喜欢接受挑战。凭借在软件行业担任多年商务总监的经验，Mich 帮助公司取得了今天的成就。Mich "
+"是最优秀的人才之一。</small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_bg_effects
-msgid "<i class=\"fa fa-sliders\"/>Background Effects"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "Access to all modules"
+msgstr "访问所有模块"
 
 #. module: theme_graphene
-#. openerp-web
-#: code:addons/theme_graphene/static/src/xml/s_media_block_modal_ext.xml:12
-msgid "Animated colors"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "Access to all modules and features"
+msgstr "访问所有模块和功能"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_bg_effects
-msgid "Big Inset Shadow"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Add to Cart"
+msgstr "加入购物车"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_typo_pattern
-msgid "Boxed"
-msgstr "盒装的"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Aline Turner, <small><b>CTO</b></small>"
+msgstr "阿琳-特纳 <small><b>首席技术官</b></small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_typo_pattern
-msgid "Default"
-msgstr "默认"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
+msgid "Contact us"
+msgstr "联系我们"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_bg_effects
-msgid "Glossy"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Get Delivered"
+msgstr "得到交付"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_bg_effects
-msgid "Glossy Medium"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_picture
+msgid "Grow with Us"
+msgstr "与我们一起成长"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_bg_effects
-msgid "Glossy Soft"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Iris Joe, <small><b>CFO</b></small>"
+msgstr "伊里斯-乔 <small><b>首席财务官</b></small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_bg_effects
-msgid "Inset Shadow"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Mich Stark, <small><b>COO</b></small>"
+msgstr "Mich Stark <small><b>首席运营官</b></small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_google_map
-msgid "Light Mono"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid "Mobile Experience"
+msgstr "移动体验"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_top_content_options
-msgid "Move to top"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
+msgid ""
+"Our mission is to give customers the best experience.<br/>Extensive "
+"documentation &amp; guides, an active community,<br/>24/7 support make it a "
+"pleasure to work with us."
+msgstr "我们的使命是为客户提供最佳体验。<br/>丰富的文档和指南、活跃的社区、<br/>24/7 全天候的支持，让与我们合作成为一种享受。"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_bg_effects
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_typo_pattern
-msgid "No effects"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Pay"
+msgstr "支付"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_top_content_options
-msgid "Normal"
-msgstr "一般"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid "Powerful API"
+msgstr "强大的应用程序接口"
 
 #. module: theme_graphene
-#. openerp-web
-#: code:addons/theme_graphene/static/src/xml/s_media_block_modal_ext.xml:21
-msgid "Opacity"
-msgstr "不透明度"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid ""
+"Probably the only CRM with a full mobile experience. Never wondered how it "
+"works? That's because it just works"
+msgstr "可能是唯一一款具有完整移动体验的 CRM。从未想过它是如何工作的？那是因为它就是好用"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.theme_customize
-msgid "Postcard"
-msgstr "明信片"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_picture
+msgid ""
+"Put your people at the heart of your marketing with tools that help you get "
+"to know your audience <br/>and see who you should be talking to."
+msgstr "将您的受众置于营销的核心位置，这些工具可帮助您了解受众<br/>，并知道您应该与谁交谈。"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_typo_pattern
-msgid "Sans-Serif"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Sign In"
+msgstr "登录"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.theme_customize
-msgid "Sans-serif"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "Start Now"
+msgstr "现在开始"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_typo_pattern
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.theme_customize
-msgid "Serif"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid "Support Team"
+msgstr "支持团队"
 
 #. module: theme_graphene
-#. openerp-web
-#: code:addons/theme_graphene/static/src/xml/s_media_block_modal_ext.xml:13
-msgid "Static Black"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid ""
+"Thanks to our API, Developers report building their solutions 4x faster. "
+"Discover why and how."
+msgstr "得益于我们的应用程序接口（API），开发人员报告说，他们构建解决方案的速度提高了 4 倍。了解原因和方法。"
 
 #. module: theme_graphene
 #: model:ir.model,name:theme_graphene.model_theme_utils
 msgid "Theme Utils"
-msgstr "主题实用工具"
+msgstr "主题用途"
 
 #. module: theme_graphene
-#. openerp-web
-#: code:addons/theme_graphene/static/src/xml/s_media_block_modal_ext.xml:11
-msgid "Transparent"
-msgstr "透明"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Tony Fred, <small><b>CEO</b></small>"
+msgstr "托尼-弗雷德 <small><b>首席执行官</b></small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.graphene_typo_pattern
-msgid "Underlined"
-msgstr "下划线"
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
+msgid "Unique experiences to drive engagement"
+msgstr "推动参与的独特体验"
 
 #. module: theme_graphene
-#. openerp-web
-#: code:addons/theme_graphene/static/src/xml/s_media_block_modal_ext.xml:8
-msgid "Video background"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
+msgid ""
+"Users are looking to consume engaging content.<br/>We empowers our teams to "
+"create the most relevant content."
+msgstr "<br/>我们帮助团队创建最相关的内容。"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
+msgid ""
+"We have a support team that will do everything to answer you as quickly as "
+"the voice assistants."
+msgstr "我们的支持团队会尽一切努力，像语音助手一样快速回答您的问题。"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
+msgid "We have one goal in mind, the user satisfaction."
+msgstr "我们的目标只有一个，那就是让用户满意。"
