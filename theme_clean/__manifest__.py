@@ -22,6 +22,7 @@
         'views/snippets/s_numbers.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_image_text.xml',
+        'views/snippets/s_key_images.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_product_catalog.xml',

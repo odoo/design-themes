@@ -489,4 +489,35 @@
     </xpath>
 </template>
 
+<!-- ======== KEY IMAGES ======== -->
+<template id="s_key_images" inherit_id="website.s_key_images" name="Monglia s_key_images">
+    <!-- Layout -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/04",'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Bold_04"/>
+    </xpath>
+
+    <!-- Texts -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Explore Our Exquisite Cocktail Collection
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Crafting Unique Flavors for Every Taste
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
+        Signature cocktails with a twist of elegance
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
+        Refreshing classics and innovative creations
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
+        Perfectly balanced mixes to delight your palate
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
+        Discover your new favorite drink today
+    </xpath>
+</template>
+
 </odoo>

@@ -20,6 +20,7 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_images_wall.xml',
+        'views/snippets/s_key_images.xml',
         'views/snippets/s_parallax.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_references.xml',

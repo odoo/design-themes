@@ -41,6 +41,7 @@
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_striped_center_top.xml',
+        'views/snippets/s_key_images.xml',
         'views/new_page_template.xml',
     ],
     'images': [

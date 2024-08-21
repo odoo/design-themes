@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_key_images" inherit_id="website.s_key_images">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Discover a World of Stories
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Find Your Next Favorite Book Here
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
+        Explore a wide range of genres for every reader
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
+        From bestsellers to hidden gems, we've got it all
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
+        Cozy up with a book from our carefully curated selection
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
+        Join our community of book lovers
+    </xpath>
+</template>
+
+</odoo>

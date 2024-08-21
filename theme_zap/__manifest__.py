@@ -22,6 +22,7 @@
         'views/snippets/s_numbers.xml',
         'views/snippets/s_references.xml',
         'views/snippets/s_image_text.xml',
+        'views/snippets/s_key_images.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_freegrid.xml',
