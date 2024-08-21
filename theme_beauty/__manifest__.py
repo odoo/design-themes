@@ -31,6 +31,7 @@
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_numbers_showcase.xml',
+        'views/snippets/s_features_wall.xml',
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_carousel.xml',

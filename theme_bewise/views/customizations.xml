@@ -325,6 +325,31 @@
     </xpath>
 </template>
 
+<!-- ======== FEATURES WALL ======== -->
+<template id="s_features_wall" inherit_id="website.s_features_wall">
+    <!-- Card 1 -->
+    <xpath expr="//div[hasclass('g-col-lg-3')]//h3" position="replace" mode="inner">
+        Innovative Academic Programs
+    </xpath>
+    <xpath expr="//div[hasclass('g-col-lg-3')]//p" position="replace" mode="inner">
+        Explore cutting-edge courses designed to prepare you for success in today’s evolving job market and academic fields.
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="//div[hasclass('g-col-lg-3')][4]//h3" position="replace" mode="inner">
+        World-Class Faculty
+    </xpath>
+    <xpath expr="//div[hasclass('g-col-lg-3')][4]//p" position="replace" mode="inner">
+        Learn from distinguished professors and industry experts dedicated to providing exceptional education and mentorship.
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="//div[hasclass('g-col-lg-3')][6]//h3" position="replace" mode="inner">
+        Global Student Experience
+    </xpath>
+    <xpath expr="//div[hasclass('g-col-lg-3')][6]//p" position="replace" mode="inner">
+        Immerse yourself in a diverse campus community with opportunities for international exchange, cultural enrichment, and personal growth.
+    </xpath>
+</template>
+
 <!-- ======== FEATURES ======== -->
 <template id="s_features" inherit_id="website.s_features" name="Be Wise s_features">
     <!-- Icons -->
