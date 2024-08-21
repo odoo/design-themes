@@ -574,4 +574,12 @@
     </xpath>
 </template>
 
+<!-- ======== IMAGES CONSTELLATIONS ======== -->
+<template id="s_images_constellation" inherit_id="website.s_images_constellation">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>
