@@ -17,6 +17,7 @@
         'views/snippets/s_banner.xml',
         'views/snippets/s_columns.xml',
         'views/snippets/s_cover.xml',
+        'views/snippets/s_card_offset.xml',
         'views/snippets/s_features.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_media_list.xml',

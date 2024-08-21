@@ -16,6 +16,7 @@
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_cover.xml',
+        'views/snippets/s_card_offset.xml',
         'views/snippets/s_features.xml',
         'views/snippets/s_masonry_block.xml',
         'views/snippets/s_media_list.xml',

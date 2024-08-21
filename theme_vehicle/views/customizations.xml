@@ -423,5 +423,24 @@
     </xpath>
 </template>
 
+<!-- ======== CARD OFFSET ======== -->
+<template id="s_card_offset" inherit_id="website.s_card_offset">
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.library_image_05</attribute>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Reliable Vehicle Services &amp; Repairs
+    </xpath>
+    <!-- Paragraph 1 -->
+    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
+        Keep your vehicle in top condition with our comprehensive repair and maintenance services. From cars to motorbikes, we offer expert solutions to ensure safe and smooth rides.
+    </xpath>
+    <!-- Paragraph 2 -->
+    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
+        Drive with confidence.
+    </xpath>
+</template>
 
 </odoo>

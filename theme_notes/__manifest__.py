@@ -20,6 +20,7 @@
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_cover.xml',
+        'views/snippets/s_card_offset.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_three_columns.xml',
