@@ -392,6 +392,18 @@
     </xpath>
 </template>
 
+<!-- ======== Features Wall ======== -->
+<template id="s_features_wall" inherit_id="website.s_features_wall">
+    <!-- Card 1 Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_three_columns_default_image_1</attribute>
+    </xpath>
+    <!-- Card 2 Image-->
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="src">/web/image/website.s_three_columns_default_image_3</attribute>
+    </xpath>
+</template>
+
 <!-- ==== Media List ===== -->
 <template id="s_media_list" inherit_id="website.s_media_list" name="Paptic s_media_list">
     <xpath expr="//section" position="attributes">

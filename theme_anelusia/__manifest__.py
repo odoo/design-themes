@@ -29,6 +29,7 @@
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_showcase.xml',
         'views/snippets/s_text_image.xml',
+        'views/snippets/s_features_wall.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_three_columns.xml',

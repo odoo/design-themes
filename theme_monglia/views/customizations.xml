@@ -285,6 +285,31 @@
     </xpath>
 </template>
 
+<!-- ======== FEATURES WALL======== -->
+<template id="s_features_wall" inherit_id="website.s_features_wall">
+    <!-- Card 1 -->
+    <xpath expr="//div[hasclass('g-col-lg-3')]//h3" position="replace" mode="inner">
+        Customized Event Planning
+    </xpath>
+    <xpath expr="//div[hasclass('g-col-lg-3')]//p" position="replace" mode="inner">
+        Create unforgettable events with personalized planning services tailored to your specific needs and preferences.
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="//div[hasclass('g-col-lg-3')][4]//h3" position="replace" mode="inner">
+        Themed Party Design
+    </xpath>
+    <xpath expr="//div[hasclass('g-col-lg-3')][4]//p" position="replace" mode="inner">
+        Transform any venue with unique and creative themes that make your party stand out and impress your guests.
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="//div[hasclass('g-col-lg-3')][6]//h3" position="replace" mode="inner">
+        Complete Event Management
+    </xpath>
+    <xpath expr="//div[hasclass('g-col-lg-3')][6]//p" position="replace" mode="inner">
+        Enjoy a stress-free experience with end-to-end event management, from logistics to execution and everything in between.
+    </xpath>
+</template>
+
 <!-- ======== UNVEIL ======== -->
 <template id="s_unveil" inherit_id="website.s_unveil">
     <!-- Section -->

@@ -23,6 +23,7 @@
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_parallax.xml',
         'views/snippets/s_image_gallery.xml',
+        'views/snippets/s_features_wall.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_carousel.xml',
