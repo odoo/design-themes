@@ -42,6 +42,7 @@
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_big_number.xml',
+        'views/snippets/s_images_constellation.xml',
         'views/new_page_template.xml',
     ],
     'images': [
