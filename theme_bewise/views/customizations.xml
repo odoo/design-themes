@@ -650,4 +650,26 @@
     </xpath>
 </template>
 
+<!-- ======== KEY IMAGES ======== -->
+<template id="s_key_images" inherit_id="website.s_key_images" name="Be Wise s_key_images">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Empowering Minds, Shaping Futures
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Explore Our World of Knowledge and Innovation
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
+        Diverse programs for a diverse world
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
+        Leading research that drives change
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
+        A vibrant community of thinkers and innovators
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
+        Building the leaders of tomorrow
+    </xpath>
+</template>
+
 </odoo>

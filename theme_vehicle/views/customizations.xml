@@ -601,4 +601,26 @@
     </xpath>
 </template>
 
+<!-- ======== KEY IMAGES ======== -->
+<template id="s_key_images" inherit_id="website.s_key_images" name="Vehicle s_key_images">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Discover Excellence in Luxury Vehicle Care
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Premium Services for Your High-End Automotive Needs
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
+        State-of-the-art facilities for superior maintenance
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
+        Expert technicians specializing in luxury and exotic vehicles
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
+        Personalized service to ensure your vehicle's optimal performance
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
+        Trust us to keep your luxury vehicle in pristine condition
+    </xpath>
+</template>
+
 </odoo>
