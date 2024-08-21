@@ -17,6 +17,7 @@
         'views/snippets/s_carousel.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_motto.xml',
+        'views/snippets/s_card_offset.xml',
         'views/snippets/s_features.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_freegrid.xml',

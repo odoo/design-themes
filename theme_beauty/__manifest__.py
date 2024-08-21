@@ -14,6 +14,7 @@
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_striped_top.xml',
+        'views/snippets/s_card_offset.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_company_team.xml',
