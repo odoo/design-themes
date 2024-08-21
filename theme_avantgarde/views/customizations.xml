@@ -495,6 +495,30 @@
     </xpath>
 </template>
 
+<!-- ======== CARD OFFSET ======== -->
+<template id="s_card_offset" inherit_id="website.s_card_offset">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Innovative Design Meets Fine Art
+    </xpath>
+    <!-- Paragraph 1 -->
+    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
+        Stay ahead of the curve with our insights on design and fine art. Explore the intersection of creativity and innovation through our galleries, shows, and digital media.
+    </xpath>
+    <!-- Paragraph 2 -->
+    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
+        Discover the future of design today.
+    </xpath>
+</template>
+
 <!-- ======== BIG NUMBER ======== -->
 <template id="s_big_number" inherit_id="website.s_big_number">
     <!-- Section -->

@@ -21,6 +21,7 @@
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_sidegrid.xml',
         'views/snippets/s_cover.xml',
+        'views/snippets/s_card_offset.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_key_images.xml',

@@ -23,6 +23,7 @@
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_cover.xml',
+        'views/snippets/s_card_offset.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_framed_intro.xml',

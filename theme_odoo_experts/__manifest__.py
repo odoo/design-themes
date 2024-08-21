@@ -22,6 +22,7 @@
         'views/snippets/s_references.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_cover.xml',
+        'views/snippets/s_card_offset.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_color_blocks_2.xml',
