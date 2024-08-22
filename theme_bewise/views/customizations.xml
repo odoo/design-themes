@@ -773,4 +773,44 @@
     </xpath>
 </template>
 
+<!-- ===== WAVY GRID ======== -->
+<template id="s_wavy_grid" inherit_id="website.s_wavy_grid">
+    <!-- Layout -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/06','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_web_editor_Airy_06"/>
+    </xpath>
+
+    <!-- Texts -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        What we offer to our students
+    </xpath>
+    <xpath expr="//h3" position="replace" mode="inner">
+        Personalized Education
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        We provide tailored academic programs to match your individual goals. Our faculty works closely with you to ensure a successful journey from enrollment to graduation.
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Sustainable Learning
+    </xpath>
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        Your success is our mission. Our support services are always available, ensuring you have a rewarding and enriching academic experience.
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Quality and Expertise
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        With extensive experience and deep academic knowledge, we offer insights and education that keep you ahead in your field of study.
+    </xpath>
+    <xpath expr="(//h3)[4]" position="replace" mode="inner">
+        Innovation and Research
+    </xpath>
+    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        We provide cutting-edge research opportunities and innovative programs. Leveraging the latest advancements, we help you achieve your academic and career goals.
+    </xpath>
+</template>
+
 </odoo>
