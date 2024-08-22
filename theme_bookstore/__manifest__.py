@@ -21,6 +21,7 @@
         'views/snippets/s_cover.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_showcase.xml',
+        'views/snippets/s_freegrid.xml',
         'views/snippets/s_masonry_block.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_numbers.xml',

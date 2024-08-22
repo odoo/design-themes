@@ -20,6 +20,7 @@
         'views/snippets/s_title.xml',
         'views/snippets/s_features.xml',
         'views/snippets/s_numbers.xml',
+        'views/snippets/s_freegrid.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_comparisons.xml',

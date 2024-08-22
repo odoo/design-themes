@@ -370,6 +370,22 @@
     </xpath>
 </template>
 
+<!-- ======== FREE GRID ======== -->
+<template id="s_freegrid" inherit_id="website.s_freegrid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Reliable Vehicle Services and Maintenance
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Keep your vehicle in top condition with our comprehensive repair and maintenance services. From cars to motorbikes, we offer expert solutions to ensure safe and smooth rides.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Book a Service
+    </xpath>
+</template>
+
 <!-- ======== UNVEIL ======== -->
 <template id="s_unveil" inherit_id="website.s_unveil">
     <!-- Section -->

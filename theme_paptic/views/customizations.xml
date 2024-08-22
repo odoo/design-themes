@@ -428,6 +428,22 @@
     </xpath>
 </template>
 
+<!-- ======== FREE GRID ======== -->
+<template id="s_freegrid" inherit_id="website.s_freegrid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Expert Consultancy in Tech and Design
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Optimize your business with our consultancy services in technology and design. We provide strategic advice and innovative solutions to help you stay ahead in the digital age.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Unlock Your Potential
+    </xpath>
+</template>
+
 <!-- ======== UNVEIL ======== -->
 <template id="s_unveil" inherit_id="website.s_unveil">
     <!-- Section -->

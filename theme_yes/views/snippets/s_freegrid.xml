@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_freegrid" inherit_id="website.s_freegrid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Capture Your Love Story in Beautiful Photos
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Let us help you capture the magic of your special day. Our professional photography services ensure that your wedding memories are preserved beautifully for a lifetime.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        View Portfolio
+    </xpath>
+</template>
+
+</odoo>

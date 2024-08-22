@@ -275,6 +275,22 @@
     </xpath>
 </template>
 
+<!-- ======== FREE GRID ======== -->
+<template id="s_freegrid" inherit_id="website.s_freegrid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Robotics and Technology
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Embrace the future with our advanced robotics and technology services. We provide innovative solutions that enhance productivity and drive business success in the digital age.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Discover Robotics
+    </xpath>
+</template>
+
 <!-- ======== UNVEIL ======== -->
 <template id="s_unveil" inherit_id="website.s_unveil">
     <!-- Section -->
