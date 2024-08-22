@@ -40,6 +40,7 @@
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_key_images.xml',
+        'views/snippets/s_intro_pill.xml',
         'views/new_page_template.xml',
     ],
     'images': [
