@@ -23,6 +23,7 @@
         'views/snippets/s_references.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_comparisons.xml',
+        'views/snippets/s_freegrid.xml',
         'views/snippets/s_product_list.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_showcase.xml',

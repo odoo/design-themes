@@ -458,6 +458,22 @@
     </xpath>
 </template>
 
+<!-- ======== FREE GRID ======== -->
+<template id="s_freegrid" inherit_id="website.s_freegrid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Shaping the Future of Education and Learning
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Our educational programs are designed to empower students with the knowledge and skills they need for the future. Explore our innovative approach to learning and personal development.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Learn More
+    </xpath>
+</template>
+
 <!-- ======== KEY BENEFITS ======== -->
 <template id="s_key_benefits" inherit_id="website.s_key_benefits">
     <!-- Titles -->

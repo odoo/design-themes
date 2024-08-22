@@ -17,6 +17,7 @@
         'views/snippets/s_text_image.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_media_list.xml',
+        'views/snippets/s_freegrid.xml',
         'views/snippets/s_references.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_picture.xml',

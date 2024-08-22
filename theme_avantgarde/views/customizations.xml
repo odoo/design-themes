@@ -274,6 +274,22 @@
     </xpath>
 </template>
 
+<!-- ======== FREE GRID ======== -->
+<template id="s_freegrid" inherit_id="website.s_freegrid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Innovative Design and Art That Inspire Change
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Dive into the world of design and fine art with our collection of forward-thinking pieces. Discover how creativity drives change in the art world through our exclusive exhibitions and publications.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Discover More
+    </xpath>
+</template>
+
 <!-- ======== KEY BENEFITS ======== -->
 <template id="s_key_benefits" inherit_id="website.s_key_benefits">
     <!-- Titles -->

@@ -257,6 +257,22 @@
     </xpath>
 </template>
 
+<!-- ======== FREE GRID ======== -->
+<template id="s_freegrid" inherit_id="website.s_freegrid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Elevate Your Events with Unforgettable Experiences
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        From intimate gatherings to grand celebrations, our event services are designed to create memorable experiences. Enjoy the finest food, drinks, and entertainment at our restaurants and venues.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Plan Your Event
+    </xpath>
+</template>
+
 <!-- ======== UNVEIL ======== -->
 <template id="s_unveil" inherit_id="website.s_unveil">
     <!-- Section -->

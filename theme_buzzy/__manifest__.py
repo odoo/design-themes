@@ -22,6 +22,7 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_features.xml',
+        'views/snippets/s_freegrid.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_showcase.xml',

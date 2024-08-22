@@ -23,6 +23,7 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_picture.xml',
+        'views/snippets/s_freegrid.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_tabs.xml',
         'views/snippets/s_text_block.xml',

@@ -18,6 +18,7 @@
         'views/snippets/s_company_team.xml',
         'views/snippets/s_masonry_block.xml',
         'views/snippets/s_product_catalog.xml',
+        'views/snippets/s_freegrid.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_text_image.xml',
