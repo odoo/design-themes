@@ -34,6 +34,7 @@
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_big_number.xml',
         'views/snippets/s_image_frame.xml',
+        'views/snippets/s_wavy_grid.xml',
         'views/new_page_template.xml',
     ],
     'images': [

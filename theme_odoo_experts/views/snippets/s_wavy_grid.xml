@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_wavy_grid" inherit_id="website.s_wavy_grid">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2"/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/04_001','colors':{'c3':'o-color-1'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_web_editor_Origins_04_001" style="background-image: url('/web_editor/shape/web_editor/Origins/04_001.svg?c3=o-color-1');"/>
+    </xpath>
+</template>
+
+</odoo>

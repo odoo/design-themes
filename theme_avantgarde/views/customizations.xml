@@ -510,5 +510,36 @@
     </xpath>
 </template>
 
+<!-- ===== WAVY GRID ======== -->
+<template id="s_wavy_grid" inherit_id="website.s_wavy_grid">
+    <xpath expr="//h2" position="replace" mode="inner">
+        What we envision for our clients
+    </xpath>
+    <xpath expr="//h3" position="replace" mode="inner">
+        Revolutionary Concepts
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        We design groundbreaking solutions that push the boundaries of creativity. Our team collaborates with you to bring visionary ideas to life from start to finish.
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Sustainable Innovation
+    </xpath>
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        Your satisfaction fuels our drive. Our support team is ever-ready to guide you, ensuring a seamless and impactful experience.
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Excellence and Innovation
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        With profound expertise and forward-thinking strategies, we deliver insights that keep you ahead of the curve.
+    </xpath>
+    <xpath expr="(//h3)[4]" position="replace" mode="inner">
+        Expertise and Vision
+    </xpath>
+    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        We offer cutting-edge innovations to tackle modern challenges. Embracing the latest advancements, we help you redefine success.
+    </xpath>
+</template>
+
 </odoo>
 
