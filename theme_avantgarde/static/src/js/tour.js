@@ -1,5 +1,5 @@
 /** @odoo-module */
-import wTourUtils from '@website/js/tours/tour_utils';
+import * as wTourUtils from '@website/js/tours/tour_utils';
 
 const snippets = [
     {

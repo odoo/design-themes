@@ -1,6 +1,6 @@
 /** @odoo-module */
 
-import wTourUtils from '@website/js/tours/tour_utils';
+import * as wTourUtils from '@website/js/tours/tour_utils';
 import { stepUtils } from "@web_tour/tour_service/tour_utils";
 
 wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
