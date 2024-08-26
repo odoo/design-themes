@@ -39,6 +39,7 @@
         'views/snippets/s_key_images.xml',
         'views/snippets/s_intro_pill.xml',
         'views/snippets/s_big_number.xml',
+        'views/snippets/s_shape_image.xml',
         'views/new_page_template.xml',
     ],
     'images': [
