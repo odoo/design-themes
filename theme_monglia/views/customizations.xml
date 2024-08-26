@@ -777,4 +777,17 @@
     </xpath>
 </template>
 
+<!-- ======== SHAPE IMAGE ======== -->
+<template id="s_shape_image" inherit_id="website.s_shape_image">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Event planning services
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace" mode="inner">
+        We specialize in organizing memorable events tailored to your needs. From weddings to corporate functions, our expert team handles every detail to ensure a seamless and exceptional experience for you and your guests.
+    </xpath>
+    <xpath expr="//p[2]" position="replace"/>
+</template>
+
 </odoo>
