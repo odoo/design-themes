@@ -16,7 +16,7 @@ const snippets = [
     {
         id: 's_three_columns',
         name: 'Columns',
-        groupName: "Content",
+        groupName: "Columns",
     },
     {
         id: 's_product_list',
