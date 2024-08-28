@@ -34,7 +34,7 @@
                     <t t-call="portal.user_dropdown">
                         <t t-set="_user_name" t-value="true"/>
                         <t t-set="_item_class" t-valuef="nav-item dropdown ml-auto"/>
-                        <t t-set="_link_class" t-valuef="nav-link text-900"/>
+                        <t t-set="_link_class" t-valuef="btn nav-link text-900"/>
                     </t>
                 </t>
             </div>
