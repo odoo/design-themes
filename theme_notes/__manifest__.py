@@ -25,6 +25,7 @@
         'views/snippets/s_numbers.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_color_blocks_2.xml',
+        'views/snippets/s_company_team_shapes.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_features_grid.xml',

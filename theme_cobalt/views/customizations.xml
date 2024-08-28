@@ -113,6 +113,13 @@
     </xpath>
 </template>
 
+<!-- ======== COMPANY TEAM SHAPES ======== -->
+<template id="s_company_team_shapes" inherit_id="website.s_company_team_shapes" name="Cobalt s_company_team_shapes">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
+    </xpath>
+</template>
+
 <!-- ======== QUOTES ======== -->
  <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Cobalt s_quotes_carousel">
     <!-- Assign slide3 as 'active' and move it in first position -->
