@@ -34,6 +34,7 @@
         'views/snippets/s_company_team.xml',
         'views/snippets/s_product_list.xml',
         'views/snippets/s_color_blocks_2.xml',
+        'views/snippets/s_company_team_shapes.xml',
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_image_hexagonal.xml',

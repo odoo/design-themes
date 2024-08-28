@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_company_team_shapes" inherit_id="website.s_company_team_shapes">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc5 pb168" remove="o_cc2 pb48" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/14','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_container_small')]" position="before">
+        <div class="o_we_shape o_web_editor_Airy_14"/>
+    </xpath>
+</template>
+
+</odoo>
