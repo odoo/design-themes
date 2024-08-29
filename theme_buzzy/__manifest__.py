@@ -37,6 +37,7 @@
         'views/snippets/s_product_list.xml',
         'views/snippets/s_tabs.xml',
         'views/snippets/s_references.xml',
+        'views/snippets/s_references_social.xml',
         'views/snippets/s_faq_collapse.xml',
         'views/snippets/s_timeline.xml',
         'views/snippets/s_process_steps.xml',
