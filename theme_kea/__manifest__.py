@@ -23,6 +23,7 @@
         'views/snippets/s_media_list.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_references.xml',
+        'views/snippets/s_references_social.xml',
         'views/snippets/s_motto.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_features_wall.xml',
