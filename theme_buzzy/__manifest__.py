@@ -29,6 +29,7 @@
         'views/snippets/s_showcase.xml',
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_company_team.xml',
+        'views/snippets/s_company_team_basic.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_features_grid.xml',
         'views/snippets/s_table_of_content.xml',

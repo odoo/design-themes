@@ -291,6 +291,35 @@
     </xpath>
 </template>
 
+<!-- ======== TEAM BASIC ======== -->
+<template id="s_company_team_basic" inherit_id="website.s_company_team_basic">
+    <xpath expr="//h3" position="replace" mode="inner">
+        Discover our dedicated staff
+    </xpath>
+    <!-- Profile #1 -->
+    <xpath expr="(//h4)[1]" position="replace" mode="inner">
+        Tony Fred
+    </xpath>
+    <xpath expr="(//p[hasclass('o_small-fs')])[1]" position="replace" mode="inner">
+        Faculty Head of IT
+    </xpath>
+    <!-- Profile #2 -->
+    <xpath expr="(//h4)[2]" position="replace" mode="inner">
+        Mich Stark
+    </xpath>
+    <xpath expr="(//p[hasclass('o_small-fs')])[2]" position="replace" mode="inner">
+        IT Officer
+    </xpath>
+    <!-- Profile #3 -->
+    <xpath expr="(//p[hasclass('o_small-fs')])[3]" position="replace" mode="inner">
+        Law professor
+    </xpath>
+    <!-- Profile #4 -->
+    <xpath expr="(//p[hasclass('o_small-fs')])[4]" position="replace" mode="inner">
+        Physics professor
+    </xpath>
+</template>
+
 <!-- ======== BIG BOXES ======== -->
 <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2" name="Be Wise s_color_blocks_2">
     <!-- Left column -->
