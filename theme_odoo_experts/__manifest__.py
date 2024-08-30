@@ -21,6 +21,7 @@
         'views/snippets/s_company_team.xml',
         'views/snippets/s_references.xml',
         'views/snippets/s_references_social.xml',
+        'views/snippets/s_references_grid.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_card_offset.xml',

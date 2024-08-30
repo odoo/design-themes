@@ -27,6 +27,7 @@
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_references.xml',
         'views/snippets/s_references_social.xml',
+        'views/snippets/s_references_grid.xml',
         'views/snippets/s_text_block.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_three_columns.xml',
