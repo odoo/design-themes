@@ -26,6 +26,7 @@
         'views/snippets/s_references_social.xml',
         'views/snippets/s_references_grid.xml',
         'views/snippets/s_motto.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_picture.xml',
