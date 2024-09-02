@@ -629,6 +629,13 @@
     </xpath>
 </template>
 
+<template id="s_company_team_grid" inherit_id="website.s_company_team_grid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
+    </xpath>
+</template>
+
 <!-- ======== FREE GRID ======== -->
 <template id="s_freegrid" inherit_id="website.s_freegrid">
     <!-- Title -->

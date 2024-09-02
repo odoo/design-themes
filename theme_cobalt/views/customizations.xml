@@ -706,4 +706,12 @@
     </xpath>
 </template>
 
+<!-- ======== COMPANY TREAM GRID ======== -->
+<template id="s_company_team_grid" inherit_id="website.s_company_team_grid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc1" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>

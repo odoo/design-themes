@@ -50,6 +50,7 @@
         'views/snippets/s_carousel_intro.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_image_hexagonal.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_intro_pill.xml',
         'views/snippets/s_big_number.xml',

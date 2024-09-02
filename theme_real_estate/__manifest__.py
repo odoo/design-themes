@@ -27,6 +27,7 @@
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_quotes_carousel_minimal.xml',
         'views/snippets/s_freegrid.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/snippets/s_text_block.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_masonry_block.xml',
