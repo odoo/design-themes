@@ -28,6 +28,7 @@
         'views/snippets/s_image_title.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_images_mosaic.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_numbers_list.xml',
         'views/snippets/s_picture.xml',
