@@ -567,4 +567,31 @@
     </xpath>
 </template>
 
+<!-- ======== BIG NUMBER ======== -->
+<template id="s_big_number" inherit_id="website.s_big_number">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18"}</attribute>
+    </xpath>
+
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_web_editor_Origins_18 o_we_animated"/>
+    </xpath>
+
+    <!-- Text -->
+    <xpath expr="//h2/div" position="attributes">
+        <attribute name="style" add="font-size: 7.75rem;" remove="font-size: 10.75rem;" separator=";"/>
+    </xpath>
+    <xpath expr="//h2/div" position="replace" mode="inner">
+        <font class="text-gradient" style="background-image: linear-gradient(0deg, rgb(237, 7, 104) 0%, rgb(222, 222, 222) 59%);">
+            250+
+        </font>
+    </xpath>
+    <xpath expr="//h2/following-sibling::div" position="replace" mode="inner">
+        events organized
+    </xpath>
+</template>
+
+
 </odoo>
