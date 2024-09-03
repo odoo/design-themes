@@ -131,6 +131,13 @@
     </xpath>
 </template>
 
+<!-- ======== CAROUSEL INTRO ======== -->
+<template id="s_carousel_intro" inherit_id="website.s_carousel_intro" name="Graphene s_carousel_intro">
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
+        Leading the future with innovation
+    </xpath>
+</template>
+
 <!-- ======== COMPANY TEAM ======== -->
 <template id="s_company_team" inherit_id="website.s_company_team" name="Graphene s_company_team">
     <xpath expr="//section" position="attributes">

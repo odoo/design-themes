@@ -532,6 +532,28 @@
     </xpath>
 </template>
 
+<!-- ======== CAROUSEL INTRO ======== -->
+<template id="s_carousel_intro" inherit_id="website.s_carousel_intro" name="Vehicle s_carousel_intro">
+    <xpath expr="//h1" position="replace" mode="inner">
+        Driving excellence with luxury vehicles
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Premium automotive services
+    </xpath>
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
+        Experience top-tier luxury
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Discover unparalleled automotive care with our expert services that blend precision, luxury, and exceptional performance.
+    </xpath>
+    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
+        Elevate your driving experience with our bespoke maintenance and repair solutions.
+    </xpath>
+    <xpath expr="(//p[hasclass('lead')])[3]" position="replace" mode="inner">
+        Explore more and find premium services for your luxury vehicle, crafted to ensure unrivaled quality and customer satisfaction.
+    </xpath>
+</template>
+
 <!-- ======== PRICELIST BOXED ======== -->
 <template id="s_pricelist_boxed" inherit_id="website.s_pricelist_boxed">
     <!-- Layout -->
