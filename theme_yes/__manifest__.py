@@ -18,6 +18,7 @@
         'views/snippets/s_sidegrid.xml',
         'views/snippets/s_carousel.xml',
         'views/snippets/s_company_team.xml',
+        'views/snippets/s_company_team_detail.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_card_offset.xml',
         'views/snippets/s_image_text.xml',
