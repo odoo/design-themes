@@ -12,6 +12,7 @@
         'views/images_library.xml',
 
         'views/snippets/s_framed_intro.xml',
+        'views/snippets/s_carousel_intro.xml',
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_carousel.xml',

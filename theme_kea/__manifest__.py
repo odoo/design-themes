@@ -38,6 +38,7 @@
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_carousel.xml',
         'views/snippets/s_cards_grid.xml',
+        'views/snippets/s_carousel_intro.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_image_hexagonal.xml',

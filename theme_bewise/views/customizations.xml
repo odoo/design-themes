@@ -466,6 +466,28 @@
     </xpath>
 </template>
 
+<!-- ======== CAROUSEL INTRO ======== -->
+<template id="s_carousel_intro" inherit_id="website.s_carousel_intro" name="Be Wise s_carousel_intro">
+    <xpath expr="//h1" position="replace" mode="inner">
+        Empowering your academic future
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Programs designed for you
+    </xpath>
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
+        Discover your potential
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Enhance your knowledge and skills with our comprehensive courses that prepare you for success, every step of the way.
+    </xpath>
+    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
+        Refresh your career with our innovative programs and expert faculty.
+    </xpath>
+    <xpath expr="(//p[hasclass('lead')])[3]" position="replace" mode="inner">
+        Explore more and find courses that align with your goals, crafted for academic excellence and personal growth.
+    </xpath>
+</template>
+
 <!-- ======== MEDIA LIST ======== -->
 <template id="s_media_list" inherit_id="website.s_media_list" name="Be Wise s_media_list">
     <!-- Shape options -->

@@ -205,6 +205,28 @@
     </xpath>
 </template>
 
+<!-- ======== CAROUSEL INTRO ======== -->
+<template id="s_carousel_intro" inherit_id="website.s_carousel_intro" name="s_carousel_intro s_carousel">
+    <!-- Layout -->
+    <xpath expr="//div[hasclass('carousel')]" position="attributes">
+        <attribute name="class" remove="carousel-dark" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[2]" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[3]" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+    </xpath>
+
+    <!-- Texts -->
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
+        Leading the future with innovation
+    </xpath>
+</template>
+
 <!-- ==== References ===== -->
 <template id="s_references" inherit_id="website.s_references" name="Paptic s_references">
     <xpath expr="//div[hasclass('col-lg-12')]" position="replace"/>
