@@ -17,6 +17,7 @@
         'views/snippets/s_banner.xml',
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_cover.xml',
+        'views/snippets/s_company_team_detail.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_pricelist_boxed.xml',
