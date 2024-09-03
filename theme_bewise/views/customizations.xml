@@ -841,4 +841,98 @@
     </xpath>
 </template>
 
+<!-- ======== COMPANY TEAM DETAIL ======== -->
+<template id="s_company_team_detail" inherit_id="website.s_company_team_detail">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc2 o_colored_level" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Team Member #1 -->
+    <xpath expr="(//div[hasclass('col-lg-4')])[1]" position="attributes">
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[1]/p[hasclass('text-muted')]" position="replace" mode="inner">
+        IT Professor
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[1]/p[last()]" position="replace" mode="inner">
+        James Mitchell is an esteemed IT university professor with over 20 years of experience in teaching and research.
+    </xpath>
+    <!-- Team Member #2 -->
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]" position="attributes">
+        <attribute name="class" add="o_cc o_cc4" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]/p[hasclass('text-muted')]" position="replace" mode="inner">
+        Law Professor
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]/p[last()]" position="replace" mode="inner">
+        Sophia Benett is a dedicated law professor known for her expertise in constitutional law and advocacy.
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]//i[hasclass('fa-github')]" position="attributes">
+        <attribute name="class" add="text-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]//i[hasclass('fa-linkedin')]" position="attributes">
+        <attribute name="class" add="text-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]//i[hasclass('fa-instagram')]" position="attributes">
+        <attribute name="class" add="text-o-color-3" separator=" "/>
+    </xpath>
+    <!-- Team Member #3 -->
+    <xpath expr="(//div[hasclass('col-lg-4')])[3]" position="attributes">
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[3]/p[hasclass('text-muted')]" position="replace" mode="inner">
+        Mathematics Professor
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[3]/p[last()]" position="replace" mode="inner">
+        Olivia Reed is a passionate mathematics teacher with a deep understanding of algebra, calculus, and mathematical modeling.
+    </xpath>
+    <!-- Team Member #4 -->
+    <xpath expr="(//div[hasclass('col-lg-4')])[4]" position="attributes">
+        <attribute name="class" add="o_cc o_cc4" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[4]/p[hasclass('text-muted')]" position="replace" mode="inner">
+        Physics Professor
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[4]/p[last()]" position="replace" mode="inner">
+        Emily Carter is a physics lecturer who specializes in quantum mechanics and theoretical physics.
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[4]//i[hasclass('fa-github')]" position="attributes">
+        <attribute name="class" add="text-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[4]//i[hasclass('fa-linkedin')]" position="attributes">
+        <attribute name="class" add="text-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[4]//i[hasclass('fa-instagram')]" position="attributes">
+        <attribute name="class" add="text-o-color-3" separator=" "/>
+    </xpath>
+    <!-- Team Member #5 -->
+    <xpath expr="(//div[hasclass('col-lg-4')])[5]" position="attributes">
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[5]/p[hasclass('text-muted')]" position="replace" mode="inner">
+        Economics Teacher
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[5]/p[last()]" position="replace" mode="inner">
+        Alexander Rivera is an economics professor focused on macroeconomic theory and international finance.
+    </xpath>
+    <!-- Team Member #6 -->
+    <xpath expr="(//div[hasclass('col-lg-4')])[6]" position="attributes">
+        <attribute name="class" add="o_cc o_cc4" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[6]/p[hasclass('text-muted')]" position="replace" mode="inner">
+        Chemistry Professor
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[6]/p[last()]" position="replace" mode="inner">
+        Daniel Foster is a chemistry professor renowned for his research in organic chemistry and sustainable materials.
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[6]//i[hasclass('fa-github')]" position="attributes">
+        <attribute name="class" add="text-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[6]//i[hasclass('fa-linkedin')]" position="attributes">
+        <attribute name="class" add="text-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[6]//i[hasclass('fa-instagram')]" position="attributes">
+        <attribute name="class" add="text-o-color-3" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>
