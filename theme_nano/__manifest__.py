@@ -32,6 +32,7 @@
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_striped_center_top.xml',
+        'views/snippets/s_big_number.xml',
         'views/new_page_template.xml',
     ],
     'images': [

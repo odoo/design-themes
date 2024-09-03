@@ -663,4 +663,26 @@
     </xpath>
 </template>
 
+<!-- ======== BIG NUMBER ======== -->
+<template id="s_big_number" inherit_id="website.s_big_number">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/08"}</attribute>
+    </xpath>
+
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_web_editor_Bold_08"/>
+    </xpath>
+
+    <!-- Text -->
+    <xpath expr="//h2/div" position="replace" mode="inner">
+        <font class="text-gradient" style="background-image: linear-gradient(0deg, rgb(29, 32, 48) 0%, rgb(222, 222, 222) 49%);">
+            87%
+        </font>
+    </xpath>
+    <xpath expr="//h2/following-sibling::div" position="replace" mode="inner">
+        customer satisfaction
+    </xpath>
+</template>
 </odoo>

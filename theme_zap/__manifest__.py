@@ -35,6 +35,7 @@
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_image_title.xml',
+        'views/snippets/s_big_number.xml',
         'views/new_page_template.xml',
     ],
     'images': [
