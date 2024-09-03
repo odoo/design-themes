@@ -38,6 +38,7 @@
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_carousel.xml',
+        'views/snippets/s_carousel_intro.xml',
         'views/snippets/s_image_hexagonal.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_big_number.xml',

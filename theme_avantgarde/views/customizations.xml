@@ -266,6 +266,28 @@
     <xpath expr="(//div[hasclass('carousel-item')])[2]//p[2]" position="replace"/>
 </template>
 
+<!-- ======== CAROUSEL INTRO ======== -->
+<template id="s_carousel_intro" inherit_id="website.s_carousel_intro" name="Avantgarde s_carousel_intro">
+    <xpath expr="//h1" position="replace" mode="inner">
+        Defining the future of creativity
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Innovative concepts tailored for you
+    </xpath>
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
+        Unleash your vision
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Embrace cutting-edge ideas that challenge norms and redefine the boundaries of modern creativity, every single day.
+    </xpath>
+    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
+        Transform your approach with our forward-thinking strategies.
+    </xpath>
+    <xpath expr="(//p[hasclass('lead')])[3]" position="replace" mode="inner">
+        Explore more and discover innovative projects that align with your avant-garde vision, crafted for impact and disruption.
+    </xpath>
+</template>
+
 <!-- ======== QUOTES ======== -->
  <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Avantgarde s_quotes_carousel">
     <!-- Assign slide2 as 'active' and move it in first position -->
