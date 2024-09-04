@@ -46,7 +46,7 @@
 
 <template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
+        <attribute name="class" remove="o_cc3" separator=" "/>
     </xpath>
 </template>
 
@@ -59,7 +59,7 @@
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <xpath expr="//section" position="attributes">
         <!-- o_colored_level is defined by both theme and new page template -->
-        <attribute name="class" add="o_cc2 o_colored_level" remove="o_cc3 o_colored_level pt0" separator=" "/>
+        <attribute name="class" add="pt64" remove="o_cc3 o_colored_level pt0" separator=" "/>
     </xpath>
 </template>
 

@@ -124,13 +124,16 @@
     <xpath expr="//section/div" position="before">
         <div class="o_we_shape o_web_editor_Blobs_11" style="background-image: url('/web_editor/shape/web_editor/Blobs/11.svg?c1=o-color-1&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
-    <xpath expr="//h6" position="replace" mode="inner">
+    <xpath expr="//span[hasclass('h5-fs')]" position="replace" mode="inner">
         Faculties
     </xpath>
-    <xpath expr="//div[hasclass('row')]/div[2]/h6" position="replace" mode="inner">
+    <xpath expr="(//span[hasclass('s_number')])[2]" position="replace" mode="inner">
+        47
+    </xpath>
+    <xpath expr="(//span[hasclass('h5-fs')])[2]" position="replace" mode="inner">
         Nationalities
     </xpath>
-    <xpath expr="//div[hasclass('row')]/div[3]/h6" position="replace" mode="inner">
+    <xpath expr="(//span[hasclass('h5-fs')])[3]" position="replace" mode="inner">
         Libraries
     </xpath>
 </template>
