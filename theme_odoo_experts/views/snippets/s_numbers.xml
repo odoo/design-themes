@@ -8,14 +8,14 @@
         <attribute name="style">background-image:url('/web_editor/shape/theme_odoo_experts/s_numbers.svg?c1=o-color-1');</attribute>
     </xpath>
     <!-- Numbers -->
-    <xpath expr="//span[hasclass('s_number')]" position="replace" mode="inner">
-        <b>12</b>
+    <xpath expr="//span[hasclass('h5-fs')]" position="replace" mode="inner">
+        <strong>Useful options</strong>
     </xpath>
-    <xpath expr="(//span[hasclass('s_number')])[2]" position="replace" mode="inner">
-        <b>45</b>
+    <xpath expr="(//span[hasclass('h5-fs')])[2]" position="replace" mode="inner">
+        <strong>More leads</strong>
     </xpath>
-    <xpath expr="(//span[hasclass('s_number')])[3]" position="replace" mode="inner">
-        <b>8</b>
+    <xpath expr="(//span[hasclass('h5-fs')])[3]" position="replace" mode="inner">
+        <strong>Amazing pages</strong>
     </xpath>
 </template>
 

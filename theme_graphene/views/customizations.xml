@@ -248,16 +248,6 @@
         <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_parallax_default_image'); background-position: 50% 75%;"/>
         <div class="o_we_bg_filter bg-black-75"></div>
     </xpath>
-    <!-- Content -->
-    <xpath expr="//div[hasclass('row')]/div/span" position="attributes">
-        <attribute name="class" add="text-white" separator=" "/>
-    </xpath>
-    <xpath expr="(//div[hasclass('row')]/div/span)[2]" position="attributes">
-        <attribute name="class" add="text-white" separator=" "/>
-    </xpath>
-    <xpath expr="(//div[hasclass('row')]/div/span)[3]" position="attributes">
-        <attribute name="class" add="text-white" separator=" "/>
-    </xpath>
 </template>
 
 <!-- ======== PICTURE ======== -->

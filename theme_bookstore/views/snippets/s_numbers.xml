@@ -12,14 +12,20 @@
         <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
     <!-- Titles -->
-    <xpath expr="//h6" position="replace" mode="inner">
-        Useful options
+    <xpath expr="//span[hasclass('h5-fs')]" position="replace" mode="inner">
+        Unique references
     </xpath>
-    <xpath expr="//h6" position="replace" mode="inner">
-        Beautiful snippets
+    <xpath expr="(//span[hasclass('s_number')])[2]" position="replace" mode="inner">
+        98%
     </xpath>
-    <xpath expr="//h6" position="replace" mode="inner">
-        Amazing pages
+    <xpath expr="(//span[hasclass('h5-fs')])[2]" position="replace" mode="inner">
+        Happy customers
+    </xpath>
+    <xpath expr="(//span[hasclass('s_number')])[3]" position="replace" mode="inner">
+        418
+    </xpath>
+    <xpath expr="(//span[hasclass('h5-fs')])[3]" position="replace" mode="inner">
+        Stores around the world
     </xpath>
 </template>
 
