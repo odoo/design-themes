@@ -212,6 +212,9 @@
 
 <!-- ======== QUOTES ======== -->
  <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Monglia s_quotes_carousel">
+    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
+        <attribute name="class" remove="carousel-dark" separator=" "/>
+    </xpath>
     <!-- Assign slide3 as 'active' and move it in first position -->
     <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
         <attribute name="class" remove="active" separator=" "/>
