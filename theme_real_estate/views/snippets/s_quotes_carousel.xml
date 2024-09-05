@@ -2,6 +2,9 @@
 <odoo>
 
 <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
+    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
+        <attribute name="class" remove="carousel-dark" separator=" "/>
+    </xpath>
     <!-- Quote 1 -->
     <xpath expr="(//p[hasclass('s_blockquote_quote')])[1]" position="replace" mode="inner">
         Amazing team! smiling, always nice to talk with, they always have the best advices for you, adapted to your needs!

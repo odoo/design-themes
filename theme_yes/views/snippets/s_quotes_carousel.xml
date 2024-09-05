@@ -9,7 +9,7 @@
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
         <attribute name="style" add="background-image: url('/web/image/website.s_quotes_carousel_demo_image_0'); background-position: 50% 25%;" separator="; "/>
     </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
+    <xpath expr="//blockquote" position="before">
         <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
     </xpath>
     <xpath expr="(//p[hasclass('s_blockquote_quote')])[1]" position="replace" mode="inner">
@@ -25,7 +25,7 @@
     <xpath expr="(//*[hasclass('carousel-item')])[2]" position="attributes">
         <attribute name="style" add="background-position: 50% 25%;" remove="background-position: 50% 50%;" separator="; "/>
     </xpath>
-    <xpath expr="(//div[hasclass('container')])[2]" position="before">
+    <xpath expr="(//blockquote)[2]" position="before">
         <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//strong" position="replace" mode="inner">
@@ -38,7 +38,7 @@
     <xpath expr="(//*[hasclass('carousel-item')])[3]" position="attributes">
         <attribute name="style" add="background-position: 50% 20%;" remove="background-position: 50% 50%;" separator="; "/>
     </xpath>
-    <xpath expr="(//div[hasclass('container')])[3]" position="before">
+    <xpath expr="(//blockquote)[3]" position="before">
         <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
     </xpath>
     <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
