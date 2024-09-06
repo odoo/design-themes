@@ -65,7 +65,8 @@ CONFLICTUAL_CLASSES_RE = {
     re.compile(r'^(p(y|b)?-?\d+|padding-.+)$'): ['p0'],
     # Font awesome
     re.compile(r'^fa-\dx$'): [],
-    re.compile(r'^fa-...+'): [],
+    # Whitelist workaround for s_social_media inner snippet Layout: None
+    re.compile(r'^fa-...+'): ['fa-stack'],
     # Rounded
     re.compile(r'^rounded-.+'): [],
     # Shadow
