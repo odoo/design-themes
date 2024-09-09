@@ -24,6 +24,7 @@
         'views/snippets/s_sidegrid.xml',
         'views/snippets/s_framed_intro.xml',
         'views/snippets/s_product_list.xml',
+        'views/snippets/s_quotes_carousel_minimal.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_image_punchy.xml',

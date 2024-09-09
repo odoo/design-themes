@@ -839,4 +839,26 @@
     </xpath>
 </template>
 
+<!-- ===== QUOTES MINIMAL ======== -->
+<template id="s_quotes_carousel_minimal" inherit_id="website.s_quotes_carousel_minimal" name="Vehicle s_quotes_carousel_minimal">
+    <!-- Layout -->
+    <xpath expr="//div[hasclass('carousel')]" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/08','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-inner')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_08"/>
+    </xpath>
+
+    <!-- Texts -->
+    <xpath expr="//p[hasclass('s_blockquote_quote')]" position="replace" mode="inner">
+        " Their service is exceptional. <br/>Premium care, top-notch quality, and unparalleled attention to detail. "
+    </xpath>
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[2]" position="replace" mode="inner">
+        " A premier choice for luxury cars. <br/>Expert maintenance, exquisite service, and utmost professionalism. "
+    </xpath>
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
+        " Outstanding service and craftsmanship! <br/>They ensure every luxury vehicle is in perfect condition. "
+    </xpath>
+</template>
+
 </odoo>

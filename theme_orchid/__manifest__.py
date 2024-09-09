@@ -25,6 +25,7 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_carousel_intro.xml',
+        'views/snippets/s_quotes_carousel_minimal.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_freegrid.xml',

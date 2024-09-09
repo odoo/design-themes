@@ -210,6 +210,22 @@
     </xpath>
 </template>
 
+<!-- ===== QUOTES MINIMAL ======== -->
+<template id="s_quotes_carousel_minimal" inherit_id="website.s_quotes_carousel_minimal" name="Be Wise s_quotes_carousel_minimal">
+    <xpath expr="//p[hasclass('s_blockquote_quote')]" position="replace" mode="inner">
+        " Their programs transformed my career. Innovative, challenging, and inspiring. "
+    </xpath>
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[2]" position="replace" mode="inner">
+        " A leading institution for growth. <br/>Supportive, forward-thinking, and academically rigorous. "
+    </xpath>
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
+        " Outstanding education and support! <br/>They consistently exceed my expectations. "
+    </xpath>
+    <xpath expr="//span[hasclass('text-muted')]" position="replace"/>
+    <xpath expr="//span[hasclass('text-muted')]" position="replace"/>
+    <xpath expr="//span[hasclass('text-muted')]" position="replace"/>
+</template>
+
 <!-- ======== CALL TO ACTION ======== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Be Wise s_call_to_action">
     <!-- Shape options -->
