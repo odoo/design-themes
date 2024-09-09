@@ -26,6 +26,7 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_quotes_carousel.xml',
+        'views/snippets/s_quotes_carousel_minimal.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_image_punchy.xml',
         'views/snippets/s_product_catalog.xml',

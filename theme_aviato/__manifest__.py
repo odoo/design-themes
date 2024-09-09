@@ -27,6 +27,7 @@
         'views/snippets/s_popup.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_quotes_carousel.xml',
+        'views/snippets/s_quotes_carousel_minimal.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_quadrant.xml',

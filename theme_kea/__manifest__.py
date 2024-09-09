@@ -24,6 +24,7 @@
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_picture.xml',
+        'views/snippets/s_quotes_carousel_minimal.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_features.xml',

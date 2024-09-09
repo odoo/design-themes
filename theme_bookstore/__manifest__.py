@@ -37,6 +37,7 @@
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_quotes_carousel.xml',
+        'views/snippets/s_quotes_carousel_minimal.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_quadrant.xml',
         'views/snippets/s_numbers_showcase.xml',
