@@ -41,6 +41,7 @@
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_quotes_carousel.xml',
+        'views/snippets/s_quotes_carousel_minimal.xml',
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_company_team.xml',
