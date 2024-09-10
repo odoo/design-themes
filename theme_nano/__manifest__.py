@@ -47,6 +47,7 @@
         'views/snippets/s_image_text_overlap.xml',
         'views/snippets/s_company_team_basic.xml',
         'views/snippets/s_cta_mobile.xml',
+        'views/snippets/s_company_team_spotlight.xml',
         'views/new_page_template.xml',
     ],
     'images': [
