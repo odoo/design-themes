@@ -61,6 +61,7 @@
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_company_team.xml',
         'views/snippets/s_company_team_basic.xml',
+        'views/snippets/s_company_team_spotlight.xml',
         'views/snippets/s_product_list.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_company_team_shapes.xml',
