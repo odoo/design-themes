@@ -4,7 +4,16 @@
 <template id="s_title" inherit_id="website.s_title">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt72" remove="pt40" separator=" "/>
+        <attribute name="class" add="pt120 pb120 o_cc o_cc4" remove="pt40 pb40" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/07','showOnMobile':true}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Airy_07" style="background-image: url('/web_editor/shape/web_editor/Airy/07.svg"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Where every house becomes a home.
     </xpath>
 </template>
 
