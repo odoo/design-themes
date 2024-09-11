@@ -11,15 +11,6 @@
 
 <!-- General customizations -->
 
-<template id="new_page_template_s_banner" inherit_id="website.new_page_template_s_banner">
-    <!-- Remove shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data"/>
-    </xpath>
-    <!-- Remove shape -->
-    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
-</template>
-
 <template id="new_page_template_s_text_block_h1" inherit_id="website.new_page_template_s_text_block_h1">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="pb0" separator=" "/>
@@ -53,17 +44,6 @@
 </template>
 
 <!-- Snippet customization About Pages -->
-
-<template id="new_page_template_about_s_banner" inherit_id="website.new_page_template_about_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="after">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
-    </xpath>
-</template>
 
 <template id="new_page_template_about_s_text_block_h1" inherit_id="website.new_page_template_about_s_text_block_h1">
     <xpath expr="//section" position="attributes">
@@ -129,14 +109,9 @@
     </xpath>
 </template>
 
-<template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
-    <!-- Shape option -->
+<template id="new_page_template_s_cover" inherit_id="website.new_page_template_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="after">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
+        <attribute name="class" remove="pt176 pb176" separator=" "/>
     </xpath>
 </template>
 
@@ -159,17 +134,6 @@
 </template>
 
 <!-- Snippet customization Gallery Pages -->
-
-<template id="new_page_template_gallery_s_banner" inherit_id="website.new_page_template_gallery_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="after">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
-    </xpath>
-</template>
 
 <template id="new_page_template_gallery_s_image_text_2nd" inherit_id="website.new_page_template_gallery_s_image_text_2nd">
     <xpath expr="//section" position="attributes">
@@ -200,7 +164,7 @@
 
 <template id="new_page_template_services_0_s_three_columns" inherit_id="website.new_page_template_services_0_s_three_columns">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc4" remove="o_cc3" separator=" "/>
+        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
     </xpath>
 </template>
 
@@ -234,9 +198,9 @@
 </template>
 
 <template id="new_page_template_team_0_s_three_columns" inherit_id="website.new_page_template_team_0_s_three_columns">
-    <xpath expr="//span" position="replace"/>
-    <xpath expr="(//div[hasclass('col-lg-4')])[2]//span" position="replace"/>
-    <xpath expr="(//div[hasclass('col-lg-4')])[3]//span" position="replace"/>
+    <xpath expr="(//div[hasclass('col-lg-4')])[1]//p" position="replace"/>
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]//p" position="replace"/>
+    <xpath expr="(//div[hasclass('col-lg-4')])[3]//p" position="replace"/>
 </template>
 
 <template id="new_page_template_team_1_s_text_block_h1" inherit_id="website.new_page_template_team_1_s_text_block_h1">

@@ -13,6 +13,7 @@
 
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_banner.xml',
+        'views/snippets/s_cover.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_cards_grid.xml',
         'views/snippets/s_striped_top.xml',
@@ -30,6 +31,7 @@
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_masonry_block.xml',
         'views/snippets/s_numbers.xml',
+        'views/snippets/s_references.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_striped_center_top.xml',
@@ -54,18 +56,16 @@
         'static/description/real_estate_screenshot.jpg',
     ],
     'images_preview_theme': {
-        'website.s_banner_default_image': '/theme_real_estate/static/src/img/snippets/s_banner.jpg',
+        'website.s_cover_default_image': '/theme_real_estate/static/src/img/snippets/s_cover.jpg',
         'website.s_text_image_default_image': '/theme_real_estate/static/src/img/snippets/s_text_image.jpg',
         'website.s_image_text_default_image': '/theme_real_estate/static/src/img/snippets/s_image_text.jpg',
         'website.s_three_columns_default_image_1': '/theme_real_estate/static/src/img/snippets/library_image_11.jpg',
         'website.s_three_columns_default_image_2': '/theme_real_estate/static/src/img/snippets/library_image_13.jpg',
         'website.s_three_columns_default_image_3': '/theme_real_estate/static/src/img/snippets/library_image_07.jpg',
-        'website.s_masonry_block_default_image_1': '/theme_real_estate/static/src/img/snippets/s_masonry_block.jpg',
-        'website.s_quotes_carousel_demo_image_1': '/theme_real_estate/static/src/img/snippets/s_quotes_carousel_1.jpg',
+        'website.s_quotes_carousel_demo_image_0': '/theme_real_estate/static/src/img/snippets/s_quotes_carousel_1.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_text_block', 's_text_image', 's_image_text', 's_title', 's_three_columns',
-                     's_title', 's_masonry_block', 's_numbers', 's_quotes_carousel'],
+        'homepage': ['s_cover', 's_text_image', 's_image_text', 's_three_columns', 's_title', 's_references', 's_numbers_showcase', 's_quotes_carousel', 's_call_to_action'],
     },
     'new_page_templates': {
         'about': {
