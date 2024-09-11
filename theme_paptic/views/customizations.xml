@@ -758,5 +758,28 @@
         Unlock your business potential.
     </xpath>
 </template>
+<!-- ==== Cards Grid ===== -->
+<template id="s_cards_grid" inherit_id="website.s_cards_grid">
+    <!-- Card 1 -->
+    <xpath expr="(//div[hasclass('s_card')])[1]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="(//div[hasclass('s_card')])[2]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="(//div[hasclass('s_card')])[3]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+    </xpath>
+    <!-- Card 4 -->
+    <xpath expr="(//div[hasclass('s_card')])[4]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+    </xpath>
+</template>
 
 </odoo>

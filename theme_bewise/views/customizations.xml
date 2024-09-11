@@ -735,6 +735,42 @@
     </xpath>
 </template>
 
+
+<template id="s_cards_grid" inherit_id="website.s_cards_grid">
+    <!-- Title -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Elevate Your Academic Journey
+    </xpath>
+    <!-- Card 1 -->
+    <xpath expr="(//h5)[1]" position="replace" mode="inner">
+        Cutting-Edge Research Facilities
+    </xpath>
+    <xpath expr="(//p)[1]" position="replace" mode="inner">
+        Explore our state-of-the-art research facilities, equipped with the latest technology to support groundbreaking research and innovative projects.
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+        Personalized Academic Support
+    </xpath>
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        Benefit from tailored academic advising and support services, designed to guide you through your educational journey.
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+        Advanced Learning Programs
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        Engage in our cutting-edge learning programs that offer specialized courses, hands-on experiences for in-depth exploration in your field of interest.
+    </xpath>
+    <!-- Card 4 -->
+    <xpath expr="(//h5)[4]" position="replace" mode="inner">
+        Expert Faculty and Mentorship
+    </xpath>
+    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        Learn from distinguished faculty members and industry experts who provide mentorship, guidance, and support to help you excel in your studies and future career.
+    </xpath>
+</template>
+
 <!-- ======== KEY IMAGES ======== -->
 <template id="s_key_images" inherit_id="website.s_key_images" name="Be Wise s_key_images">
     <xpath expr="//h2" position="replace" mode="inner">
