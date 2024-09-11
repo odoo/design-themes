@@ -66,36 +66,34 @@ $o-theme-font-configs: (
         'family': ('Playfair Display SC', serif),
         'url': 'Playfair+Display+SC:300,300i,400,400i,700,700i',
     ),
+    'IBM Plex Sans': (
+        'family': ('IBM Plex Sans', sans-serif),
+        'url': 'IBM+Plex+Sans:300,300i,400,400i,700,700i',
+    ),
 );
-
-$o-theme-h1-font-size-multiplier: (62 / 16);
-$o-theme-h2-font-size-multiplier: (36 / 16);
-$o-theme-h3-font-size-multiplier: (24 / 16);
-$o-theme-h4-font-size-multiplier: (20 / 16);
-$o-theme-h5-font-size-multiplier: (18 / 16);
 
 //------------------------------------------------------------------------------
 // Website customizations
 //------------------------------------------------------------------------------
 
-
-$btn-font-weight: 500;
-
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'real-estate-4',
+        'color-palettes-name': 'default-28',
         // Font
         'font': 'Roboto',
+        'headings-font': 'IBM Plex Sans',
 
         // Buttons
         'btn-border-radius': 0px,
         'btn-border-radius-sm': 0px,
         'btn-border-radius-lg': 0px,
+        'btn-padding-y-lg': 0.75rem,
+        'btn-padding-x-lg': 1.75rem,
         'btn-ripple': true,
     ),
 );
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'real-estate-4');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'default-28');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'real-estate-1',

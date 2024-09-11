@@ -14,6 +14,10 @@
     <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
         View Listings
     </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
     <!-- Figcaption -->
     <xpath expr="//figcaption" position="replace" mode="inner">
         Homes built with care

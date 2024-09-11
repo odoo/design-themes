@@ -4,11 +4,21 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc3 pt0 pb72" remove="o_cc2 pt32 pb32" separator=" "/>
+        <attribute name="class" add="o_cc1 pt64 pb64" remove="o_cc2 pt32 pb32" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//div[hasclass('col-lg-4')]" position="before">
+        <div class="col-lg-12">
+            <h2 class="h3-fs">Discover our latest properties</h2>
+            <p class="lead">Carefully handpicked by our experts</p>
+        </div>
     </xpath>
     <!-- Column #1 -->
+    <xpath expr="//div[hasclass('card')]" position="attributes">
+        <attribute name="style">border-radius: 0px !important;</attribute>
+    </xpath>
     <xpath expr="//h5" position="before">
-        <span class="text-600 fw-bold">$295,000</span>
+        <p class="h4-fs">$295,000</p>
     </xpath>
     <xpath expr="//h5" position="replace" mode="inner">
         House On The Hill
@@ -21,22 +31,28 @@
     </xpath>
 
     <!-- Column 2 -->
+    <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
+        <attribute name="style">border-radius: 0px !important;</attribute>
+    </xpath>
     <xpath expr="(//h5)[2]" position="before">
-        <span class="text-600 fw-bold">$1,295,000,000</span>
+        <p class="h4-fs">$1,295,000,000</p>
     </xpath>
     <xpath expr="(//h5)[2]" position="replace" mode="inner">
         Moutain View
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
-        The house is surrounded by garden terraces that create unique spaces and an intimate ambience. With no overlooking neighbours, the garden offers real privacy.
+        The house is surrounded by garden terraces that create an intimate ambience. With no overlooking neighbours, the garden offers real privacy.
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[2]" position="after" >
         <a href="#" class="btn btn-primary mb-0">View details</a>
     </xpath>
 
     <!-- Column 3 -->
+    <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+        <attribute name="style">border-radius: 0px !important;</attribute>
+    </xpath>
     <xpath expr="(//h5)[3]" position="before">
-        <span class="text-600 fw-bold">$455,000</span>
+        <p class="h4-fs">$455,000</p>
     </xpath>
     <xpath expr="(//h5)[3]" position="replace" mode="inner">
         Paradise Residence
