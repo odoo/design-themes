@@ -16,6 +16,7 @@
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_columns.xml',
+        'views/snippets/s_cards_grid.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_card_offset.xml',
         'views/snippets/s_features.xml',

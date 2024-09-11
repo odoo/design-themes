@@ -14,6 +14,7 @@
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_carousel.xml',
         'views/snippets/s_striped_top.xml',
+        'views/snippets/s_cards_grid.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_images_mosaic.xml',
         'views/snippets/s_media_list.xml',

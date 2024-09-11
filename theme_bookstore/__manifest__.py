@@ -15,6 +15,7 @@
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_three_columns.xml',
+        'views/snippets/s_cards_grid.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_product_list.xml',
