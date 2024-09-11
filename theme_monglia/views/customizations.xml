@@ -567,4 +567,40 @@
     </xpath>
 </template>
 
+<!-- ======== CARDS GRID ======== -->
+<template id="s_cards_grid" inherit_id="website.s_cards_grid">
+    <!-- Title -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Exquisite Cocktails to Elevate Your Experience
+    </xpath>
+    <!-- Card 1 -->
+    <xpath expr="(//h5)[1]" position="replace" mode="inner">
+        Berry Bliss Sangria
+    </xpath>
+    <xpath expr="(//p)[1]" position="replace" mode="inner">
+        A delightful mix of red wine, fresh berries, orange juice, and a hint of brandy, served chilled for a refreshing, fruity experience with every sip.
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+        Tropical Mojito
+    </xpath>
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        A refreshing mix of white rum, fresh mint, lime juice, and a splash of soda, perfect for a vibrant, tropical flavor that dances on the palate.
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+        Spicy Margarita
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        A zesty blend of tequila, lime juice, and a hint of jalapeño, balanced with a touch of agave syrup for a fiery twist on a classic favorite.
+    </xpath>
+    <!-- Card 4 -->
+    <xpath expr="(//h5)[4]" position="replace" mode="inner">
+        Smoky Old Fashioned
+    </xpath>
+    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        A rich mix of bourbon, bitters, and a hint of smoked oak, finished with an orange peel and a cherry, offering a deep, complex flavor.
+    </xpath>
+</template>
+
 </odoo>

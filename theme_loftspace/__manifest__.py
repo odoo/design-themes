@@ -21,6 +21,7 @@
         'views/snippets/s_sidegrid.xml',
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_freegrid.xml',
+        'views/snippets/s_cards_grid.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_image_title.xml',
