@@ -4,19 +4,9 @@ import * as wTourUtils from "@website/js/tours/tour_utils";
 
 const snippets = [
     {
-        id: 's_banner',
-        name: 'Banner',
+        id: 's_cover',
+        name: 'Cover',
         groupName: "Intro",
-    },
-    {
-        id: 's_text_block',
-        name: 'Text',
-        groupName: "Text",
-    },
-    {
-        id: 's_text_image',
-        name: 'Text - Image',
-        groupName: "Content",
     },
     {
         id: 's_image_text',
@@ -24,9 +14,9 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_title',
-        name: 'Title',
-        groupName: "Text",
+        id: 's_image_text',
+        name: 'Image - Text',
+        groupName: "Content",
     },
     {
         id: 's_three_columns',
@@ -39,13 +29,13 @@ const snippets = [
         groupName: "Text",
     },
     {
-        id: 's_masonry_block',
-        name: 'Masonry',
-        groupName: "Images",
+        id: 's_references',
+        name: 'References',
+        groupName: "People",
     },
     {
-        id: 's_numbers',
-        name: 'Numbers',
+        id: 's_numbers_showcase',
+        name: 'Numbers Showcase',
         groupName: "Content",
     },
     {
@@ -53,10 +43,15 @@ const snippets = [
         name: 'Quotes',
         groupName: "People",
     },
+    {
+        id: 's_call_to_action',
+        name: 'Call To Action',
+        groupName: "Content",
+    },
 ];
 
 wTourUtils.registerThemeHomepageTour("real_estate_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"real-estate-4"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-28"'),
     ...wTourUtils.dragNDrop(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),

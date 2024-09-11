@@ -3,62 +3,14 @@
 
 <template id="s_masonry_block" inherit_id="website.s_masonry_block" name="Masonry">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt32" remove="pt48" separator=" "/>
+        <attribute name="class" remove="pt48 pb48" separator=" "/>
+        <attribute name="data-masonry-template">default_reversed</attribute>
     </xpath>
-</template>
-
-<template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
-    <!-- Little block #1 -->
-    <xpath expr="//div[hasclass('col-lg-4')]/h3" position="before">
-        <span class="fa fa-star fa-2x mb-4"></span>
+    <xpath expr="//section/div" position="attributes">
+        <attribute name="class" remove="container" add="container-fluid" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-4')]/h3" position="replace" mode="inner">
-        Increased Visibility
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-4')]/p" position="replace" mode="inner">
-        Increase Visitor retention with virtual tours.
-    </xpath>
-
-    <!-- Little block #2 -->
-    <xpath expr="//div[hasclass('col-lg-4')][2]/h3" position="before">
-        <span class="fa fa-tag fa-2x mb-4"></span>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-4')][2]/h3" position="replace" mode="inner">
-        No fixed fees
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
-        We have fixed price fees. We only charge when your sale is confirmed.
-    </xpath>
-
-    <!-- Little block #3 -->
-    <xpath expr="//div[hasclass('col-lg-3')]/h3" position="before">
-        <span class="fa fa-camera fa-2x mb-4"></span>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-3')]/h3" position="replace" mode="inner">
-        Pro Photo Shoot
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-3')]/p" position="replace" mode="inner">
-        An image is worth a thousand words.
-    </xpath>
-
-    <!-- Little block #4 -->
-    <!-- Main div -->
-    <xpath expr="//div[hasclass('col-lg-3')][2]/h3" position="before">
-        <span class="fa fa-check fa-2x mb-4"></span>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-3')][2]/h3" position="replace" mode="inner">
-        Premium Quality
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-3')][2]/p" position="replace" mode="inner">
-        We deliver high quality services.
+    <xpath expr="//section/div" position="replace" mode="inner">
+        <t t-call="website.s_masonry_block_reversed_template"/>
     </xpath>
 </template>
 
