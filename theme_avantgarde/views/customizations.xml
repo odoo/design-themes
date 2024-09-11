@@ -496,6 +496,10 @@
     <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
         Discover More
     </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_image_title_default_image</attribute>
+    </xpath>
     <!-- Figcaption -->
     <xpath expr="//figcaption" position="replace" mode="inner">
         Where creativity knows no bounds
