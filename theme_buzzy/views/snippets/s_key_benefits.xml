@@ -2,6 +2,24 @@
 <odoo>
 
 <template id="s_key_benefits" inherit_id="website.s_key_benefits">
+    <!-- Layout -->
+    <xpath expr="//p[hasclass('lead')]" position="attributes">
+        <attribute name="style">text-align: center;"</attribute>
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+        <attribute name="class">display-4-fs</attribute>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        <span style="font-weight: normal;">Discover our</span><br/><span style="font-weight: normal;">main <span class="o_text_highlight o_translate_inline o_text_highlight_bold_2 o_text_highlight_fill" style="--text-highlight-width: 6px;"><span class="o_text_highlight_item">three benefits<svg fill="none" class="o_text_highlight_svg o_content_no_merge position-absolute overflow-visible top-0 start-0 w-100 h-100 pe-none"><path stroke-width="var(--text-highlight-width)" stroke="var(--text-highlight-color)" stroke-linecap="round" fill="var(--text-highlight-color)" transform="scale(2.043671875, 1.8604651162790697)" d="M193.221 20.193c.555 1.245.863 2.005 1.22 2.734 1.399 2.84 2.758 5.757 1.607 9.509-1.21 3.95-3.651 4.208-6.072 4.314-5.059.212-10.129.152-15.178.592-15.873 1.367-31.737 3.585-47.619 4.238-19.921.82-39.862.638-59.802.486-13.938-.106-27.887-.88-41.825-1.428-4.018-.151-8.046-.47-12.064-.896-2.758-.304-4.772-2.46-6.21-6.182-.645-1.656-1.756-2.993-2.798-4.177-2.768-3.13-5.06-6.38-3.899-12.502C.9 15.226.393 13.16.165 11.307c-.715-5.818.903-9.524 4.722-9.646 10.218-.35 20.437-.38 30.655-.577C51.236.78 66.94-.04 82.635.264c14.652.273 29.296 1.655 43.948 2.643 19.822 1.336 39.643 2.02 59.455-.426.923-.121 1.835-.5 2.758-.622 1.329-.183 2.688-.456 4.008-.274 3.829.501 7.073 5.666 7.192 11.21.09 4.466-1.418 6.213-6.775 7.428v-.03Z" class="o_text_highlight_path_bold_2"></path></svg></span></span></span>
+    </xpath>
+    <xpath expr="(//span[hasclass('display-3-fs')])[2]" position="attributes">
+        <attribute name="class" add="text-o-color-2" remove="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('display-3-fs')])[3]" position="attributes">
+        <attribute name="class" add="text-o-color-5" remove="text-o-color-1" separator=" "/>
+    </xpath>
+
     <!-- Titles -->
     <xpath expr="(//h3)[1]" position="replace" mode="inner">
         Strategic Solutions

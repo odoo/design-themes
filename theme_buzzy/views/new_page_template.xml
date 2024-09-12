@@ -39,33 +39,6 @@
 
 <!-- General customizations -->
 
-<template id="new_page_template_s_call_to_action" inherit_id="website.new_page_template_s_call_to_action">
-    <!-- Remove shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data"/>
-    </xpath>
-    <!-- Remove shape -->
-    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
-</template>
-
-<template id="new_page_template_s_call_to_action_about" inherit_id="website.new_page_template_s_call_to_action_about">
-    <!-- Remove shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data"/>
-    </xpath>
-    <!-- Remove shape -->
-    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
-</template>
-
-<template id="new_page_template_s_call_to_action_menu" inherit_id="website.new_page_template_s_call_to_action_menu">
-    <!-- Remove shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data"/>
-    </xpath>
-    <!-- Remove shape -->
-    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
-</template>
-
 <template id="new_page_template_s_product_catalog" inherit_id="website.new_page_template_s_product_catalog">
     <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
@@ -101,11 +74,12 @@
 <template id="new_page_template_s_three_columns" inherit_id="website.new_page_template_s_three_columns">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":[]}</attribute>
+        <attribute name="class" remove="o_cc o_cc2" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/12_001','colors':{'c1':'o-color-1','c3':'o-color-4'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_12_001"/>
+        <div class="o_we_shape o_web_editor_Airy_12_001" style="background-image: url('/web_editor/shape/web_editor/Airy/12_001.svg?c1=o-color-1&amp;c3=o-color-4');"/>
     </xpath>
 </template>
 
@@ -148,11 +122,11 @@
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4 pt80 pb80" remove="o_cc2 pt40 pb40" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/13_001","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/13_001','colors':{'c1':'o-color-4','c4':'o-color-4'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_13_001"/>
+        <div class="o_we_shape o_web_editor_Airy_13_001" style="background-image: url('/web_editor/shape/web_editor/Airy/13_001.svg?c1=o-color-4&amp;c4=o-color-4');"/>
     </xpath>
 </template>
 
@@ -329,11 +303,11 @@
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4 pt80 pb80" remove="o_cc2 pt40 pb0" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/13_001","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/13_001','colors':{'c1':'o-color-4','c4':'o-color-4'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_13_001"/>
+        <div class="o_we_shape o_web_editor_Airy_13_001" style="background-image: url('/web_editor/shape/web_editor/Airy/13_001.svg?c1=o-color-4&amp;c4=o-color-4');"/>
     </xpath>
 </template>
 

@@ -9,34 +9,34 @@ const snippets = [
         groupName: "Intro",
     },
     {
-        id: 's_text_image',
-        name: 'Text - Image',
+        id: 's_discovery',
+        name: 'Discovery',
+        groupName: "Intro",
+    },
+    {
+        id: 's_showcase',
+        name: 'Showcase',
         groupName: "Content",
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
+        id: 's_key_benefits',
+        name: 'Key benefits',
         groupName: "Columns",
     },
     {
-        id: 's_image_text',
-        name: 'Image - Text',
+        id: 's_accordion_image',
+        name: 'Accordion Image',
         groupName: "Content",
     },
     {
-        id: 's_numbers',
-        name: 'Numbers',
-        groupName: "Content",
-    },
-    {
-        id: 's_call_to_action',
-        name: 'Call to Action',
+        id: 's_cta_box',
+        name: 'Box Call to Action',
         groupName: "Content",
     },
 ];
 
 wTourUtils.registerThemeHomepageTour("buzzy_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"kiddo-2"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-24"'),
     ...wTourUtils.dragNDrop(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
