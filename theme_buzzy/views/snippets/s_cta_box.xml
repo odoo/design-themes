@@ -4,8 +4,17 @@
 <template id="s_cta_box" inherit_id="website.s_cta_box">
     <!-- Card -->
     <xpath expr="//div[hasclass('card')]" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc4" separator=" "/>
+        <attribute name="class" add="o_cc3" remove="o_cc4" separator=" "/>
+        <attribute name="style" add="border-radius: 12px !important;" separator=";"/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Blobs/02','colors':{'c1':'o-color-1','c2':'o-color-5'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
+    <xpath expr="//div[hasclass('card-body')]" position="before">
+        <div class="o_we_shape o_web_editor_Blobs_02" style="background-image: url('/web_editor/shape/web_editor/Blobs/02.svg?c1=o-color-1&amp;c2=o-color-5');"/>
+    </xpath>
+    <xpath expr="//div[hasclass('card-body')]" position="attributes">
+        <attribute name="style">text-align: center;</attribute>
+    </xpath>
+    <xpath expr="//figure" position="replace"/>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
         Discover our<br/>different open-spaces
@@ -14,13 +23,18 @@
     <xpath expr="//p" position="replace" mode="inner">
         Looking for a place to work ? We got you covered<br/><br/>
     </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/theme_buzzy/static/src/img/photos/library_image_03.jpg</attribute>
-    </xpath>
     <!-- Button -->
     <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
         Learn more
+    </xpath>
+</template>
+
+<template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
+    <xpath expr="//div[hasclass('card')]" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Blobs/10_001','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_web_editor_Blobs_10_001"/>
     </xpath>
 </template>
 

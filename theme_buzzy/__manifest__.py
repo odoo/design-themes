@@ -12,6 +12,7 @@
         'views/images_library.xml',
 
         'views/snippets/s_cta_box.xml',
+        'views/snippets/s_discovery.xml',
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_banner.xml',
@@ -55,6 +56,7 @@
         'views/snippets/s_carousel.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_image_hexagonal.xml',
+        'views/snippets/s_image_punchy.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_key_images.xml',
@@ -69,7 +71,7 @@
         'static/description/buzzy_screenshot.jpg',
     ],
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_text_image', 's_three_columns', 's_image_text', 's_numbers', 's_call_to_action'],
+        'homepage': ['s_banner', 's_discovery', 's_showcase', 's_key_benefits', 's_accordion_image', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {

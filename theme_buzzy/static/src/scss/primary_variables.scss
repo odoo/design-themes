@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'kiddo-2',
+        'color-palettes-name':              'default-24',
 
         // Header
         'logo-height':                      2.75rem,
@@ -12,25 +12,21 @@ $o-website-values-palettes: (
 
         // Font
         'font':                             'Montserrat',
+        'headings-font':                    'Quicksand',
 
         // Buttons
-        'btn-padding-y':                    .45rem,
-        'btn-padding-x':                    1.35rem,
+        'btn-padding-x':                    1rem,
         'btn-padding-y-sm':                 .3rem,
-        'btn-padding-x-sm':                 .9rem,
-        'btn-padding-y-lg':                 .6rem,
-        'btn-padding-x-lg':                 1.8rem,
+        'btn-padding-x-sm':                 .75rem,
+        'btn-padding-y-lg':                 1.25rem,
+        'btn-padding-x-lg':                 2.5rem,
         'btn-border-radius':                10rem,
         'btn-border-radius-sm':             10rem,
         'btn-border-radius-lg':             10rem,
         'btn-ripple':                       true,
 
-        'input-padding-y':                  .45rem,
-        'input-padding-y-sm':               .3rem,
-        'input-padding-y-lg':               .6rem,
-
         // Footer
-        'footer-template':                  'minimalist',
+        'footer-template':                  'headline',
         'footer-effect':                    'slideout_slide_hover',
         'footer-scrolltop':                 true,
     ),
@@ -40,7 +36,7 @@ $o-website-values-palettes: (
 // Palettes
 //------------------------------------------------------------------------------
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'kiddo-2');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'default-24');
 
 //------------------------------------------------------------------------------
 // Fonts
@@ -98,6 +94,15 @@ $o-theme-font-configs: (
     'Montserrat': (
         'family': ('Montserrat', serif),
         'url': 'Montserrat:300,300i,400,400i,600,600i',
+        'properties': (
+            'base': (
+                'font-size-base':           (14 / 16) * 1rem,
+            ),
+        )
+    ),
+    'Quicksand': (
+        'family': ('Quicksand', sans-serif),
+        'url': 'Quicksand:300,400,600',
     ),
 );
 

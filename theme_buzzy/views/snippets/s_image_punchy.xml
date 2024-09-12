@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_image_punchy" inherit_id="website.s_image_punchy">
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web_editor/image_shape/website.s_image_punchy_default_image/web_editor/geometric/geo_slanted.svg</attribute>
+        <attribute name="data-shape">web_editor/geometric/geo_slanted</attribute>
+        <attribute name="data-original-mimetype">image/jpeg</attribute>
+        <attribute name="data-file-name">s_image_punchy_default_image.svg</attribute>
+        <attribute name="data-shape-colors">;;;;</attribute>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        DRIVING INNOVATION
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="class" add="g-height-5" remove="g-height-6" separator=" "/>
+        <attribute name="style">grid-area: 9 / 6 / 14 / 13; z-index: 2;</attribute>
+    </xpath>
+</template>
+
+</odoo>
