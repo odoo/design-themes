@@ -2,29 +2,63 @@
 <odoo>
 
 <template id="s_key_images" inherit_id="website.s_key_images">
-    <!-- Layout -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    <!-- Texts -->
+    <xpath expr="//h2" position="before">
+        <p class="o_small">
+            New in Store
+        </p>
+    </xpath>
+    <xpath expr="//h2" position="replace">
+        <h3>Creating pieces that resonate with enduring quality,<br/>elegant simplicity, and sustainable innovation.</h3>
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace"/>
+
+    <!-- First col -->
+    <xpath expr="//div[hasclass('col-lg-3')]//p" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-3')]/p/img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])//p[2]" position="before">
+        <h4>Carmine Leather Sofa</h4>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]//p[2]" position="replace">
+        <p class="lead">$80.00</p>
     </xpath>
 
-    <!-- Texts -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Transform Your Space with Elegant Furniture
+    <!-- Second col -->
+    <xpath expr="//div[hasclass('col-lg-3')][2]//p" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-3')][2]/p/img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
     </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Stylish and Functional Pieces for Every Room
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[2]" position="before">
+        <h4>Oakridge Dining Set</h4>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
-        Discover quality craftsmanship and timeless designs
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[2]" position="replace">
+        <p class="lead">$184.00</p>
     </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
-        From contemporary to classic, find your perfect style
+
+    <!-- Third col -->
+    <xpath expr="//div[hasclass('col-lg-3')][3]//p" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-3')][3]/p/img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
     </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
-        Customizable options to suit your unique taste
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[2]" position="before">
+        <h4>Mapleton Chair</h4>
     </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
-        Elevate your home with our exceptional furniture selection
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[2]" position="replace">
+        <p class="lead">$349.00</p>
+    </xpath>
+
+    <!-- Last col -->
+    <xpath expr="//div[hasclass('col-lg-3')][4]//p" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-3')][4]//p/img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[2]" position="before">
+        <h4>Birchwood Stool</h4>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[2]" position="replace">
+        <p class="lead">$859.00</p>
     </xpath>
 </template>
 
