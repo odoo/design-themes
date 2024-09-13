@@ -2,9 +2,16 @@
 <odoo>
 
 <template id="s_image_title" inherit_id="website.s_image_title">
+    <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc4" remove="o_cc5" separator=" "/>
+        <attribute name="class" add="pt144 pb144" remove="pt32 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/07_002','colors':{'c3':'o-color-4','c4':'rgba(0,0,0,0)','c5':'o-color-4'},'flip':['y']}</attribute>
     </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_07_002" style="background-image: url('/web_editor/shape/web_editor/Origins/07_002.svg?c3=o-color-4&amp;c4=rgba(0,0,0,0)&amp;c5=o-color-4&amp;flip=y'); background-position: 50% 100%;"/>
+    </xpath>
+
 </template>
 
 </odoo>
