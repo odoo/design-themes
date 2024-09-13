@@ -6,14 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_colored_level o_cc o_cc2" separator=" "/>
     </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="class" add="img-thumbnail" separator=" "/>
-        <attribute name="style" add="padding: 15px;" separator=";"/>
-    </xpath>
-    <xpath expr="//p[2]" position="after">
-        <p><br/></p>
-    </xpath>
 </template>
 
 </odoo>

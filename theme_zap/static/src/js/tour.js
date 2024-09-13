@@ -4,39 +4,44 @@ import * as wTourUtils from '@website/js/tours/tour_utils';
 
 const snippets = [
     {
-        id: 's_banner',
-        name: 'Banner',
+        id: 's_discovery',
+        name: 'Discovery',
         groupName: "Intro",
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
+        id: 's_key_images',
+        name: 'Key Images',
         groupName: "Columns",
     },
     {
-        id: 's_color_blocks_2',
-        name: 'Big Boxes',
+        id: 's_striped',
+        name: 'Striped',
         groupName: "Content",
     },
     {
-        id: 's_features',
-        name: 'Features',
+        id: 's_showcase',
+        name: 'Showcase',
         groupName: "Content",
     },
     {
-        id: 's_masonry_block',
-        name: 'Masonry',
+        id: 's_image_title',
+        name: 'Image Title',
         groupName: "Images",
     },
     {
-        id: 's_references',
-        name: 'References',
-        groupName: "People",
+        id: 's_numbers_charts',
+        name: 'Numbers Charts',
+        groupName: "Content",
+    },
+    {
+        id: 's_cta_card',
+        name: 'CTA Card',
+        groupName: "Content",
     },
 ];
 
 wTourUtils.registerThemeHomepageTour("zap_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"zap-1"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"base-2"'),
     ...wTourUtils.dragNDrop(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
@@ -48,4 +53,5 @@ wTourUtils.registerThemeHomepageTour("zap_tour", () => [
     ...wTourUtils.clickOnSnippet(snippets[5], 'top'),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
+    ...wTourUtils.dragNDrop(snippets[6]),
 ]);

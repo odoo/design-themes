@@ -4,16 +4,14 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'zap-1',
+        'color-palettes-name':              'base-2',
 
         // Header
-        'header-template':                  'hamburger',
-        'logo-height':                      2.75rem,
-        'fixed-logo-height':                2rem,
-        'header-links-style':               'fill',
+        'header-template':                  'sales_four',
 
         // Font
-        'font':                             'Lato',
+        'font':                             'Open Sans',
+        'headings-font':                    'Manrope',
 
         // Buttons
         'btn-padding-y':                    .625rem,
@@ -98,6 +96,10 @@ $o-theme-font-configs: (
             ),
         )
     ),
+    'Manrope': (
+        'family': ('Manrope', sans-serif),
+        'url': 'Manrope:300,300i,400,400i,600,600i',
+    ),
 );
 
 // Headings
@@ -168,8 +170,6 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
         ),
     )
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'zap-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'zap-1',

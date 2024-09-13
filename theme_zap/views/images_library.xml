@@ -411,6 +411,14 @@
     <field name="url">/theme_zap/static/src/img/content/s_images_mosaic_default_image_5.jpg</field>
 </record>
 
+<!-- Showcase -->
+<record id="s_showcase_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_showcase_default_image</field>
+    <field name="name">website.s_showcase_default_image</field>
+    <field name="url">/theme_zap/static/src/img/content/s_showcase_default_image.jpg</field>
+</record>
+
+
 <!-- Intro Pill -->
 <record id="s_intro_pill_default_image" model="theme.ir.attachment">
     <field name="key">website.s_intro_pill_default_image</field>
@@ -465,6 +473,13 @@
     <field name="key">website.s_empowerment_default_image</field>
     <field name="name">website.s_empowerment_default_image</field>
     <field name="url">/theme_zap/static/src/img/content/s_empowerment_default_image.jpg</field>
+</record>
+
+<!-- Text Cover -->
+<record id="s_text_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_text_cover_default_image</field>
+    <field name="name">website.s_text_cover_default_image</field>
+    <field name="url">/theme_zap/static/src/img/content/s_text_cover.jpg</field>
 </record>
 
 </odoo>
