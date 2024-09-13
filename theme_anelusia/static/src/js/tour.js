@@ -29,9 +29,9 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_company_team',
-        name: 'Team',
-        groupName: "People",
+        id: 's_key_images',
+        name: 'Key Images',
+        groupName: "Columns",
     },
     {
         id: 's_call_to_action',
@@ -41,18 +41,18 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("anelusia_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"generic-17"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-25"'),
     ...wTourUtils.dragNDrop(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.dragNDrop(snippets[1]),
     ...wTourUtils.dragNDrop(snippets[2], 'top'),
     ...wTourUtils.dragNDrop(snippets[3]),
-    ...wTourUtils.clickOnSnippet(snippets[3], 'top'),
+    ...wTourUtils.dragNDrop(snippets[4]),
+    ...wTourUtils.clickOnSnippet(snippets[4], 'top'),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
     wTourUtils.goBackToBlocks(),
-    ...wTourUtils.dragNDrop(snippets[4]),
     ...wTourUtils.dragNDrop(snippets[5]),
     ...wTourUtils.dragNDrop(snippets[6]),
 ]);
