@@ -9,6 +9,43 @@
     </xpath>
 </template>
 
+<template id="new_page_template_about_s_features" inherit_id="website.new_page_template_about_s_features">
+    <xpath expr="//div[hasclass('row')]/div[1]/div/h3" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[2]/div/h3" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[3]/div/h3" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[1]/div/p" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[2]/div/p" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[3]/div/p" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+</template>
+
+<!-- Landing -->
+
+<template id="new_page_template_landing_s_features" inherit_id="website.new_page_template_landing_s_features">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt48" separator=" "/>
+    </xpath>
+</template>
+
+<!-- Gallery -->
+
+<template id="new_page_template_gallery_s_banner" inherit_id="website.new_page_template_gallery_s_banner">
+    <xpath expr="//h1" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+</template>
+
 <!-- General customizations -->
 
 <template id="new_page_template_s_call_to_action" inherit_id="website.new_page_template_s_call_to_action">
@@ -93,13 +130,12 @@
 <!-- Snippet customization About Pages -->
 
 <template id="new_page_template_about_s_banner" inherit_id="website.new_page_template_about_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/07","flip":[]}</attribute>
+    <!-- Text -->
+    <xpath expr="//h1" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
     </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_07"/>
+    <xpath expr="//p" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
     </xpath>
 </template>
 
@@ -175,17 +211,6 @@
     </xpath>
 </template>
 
-<template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/07","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_07"/>
-    </xpath>
-</template>
-
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
@@ -194,17 +219,6 @@
 </template>
 
 <!-- Snippet customization Gallery Pages -->
-
-<template id="new_page_template_gallery_s_banner" inherit_id="website.new_page_template_gallery_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/07","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_07"/>
-    </xpath>
-</template>
 
 <template id="new_page_template_gallery_s_cover" inherit_id="website.new_page_template_gallery_s_cover">
     <!-- Section -->
@@ -315,6 +329,12 @@
 <template id="new_page_template_team_2_s_text_block_h1" inherit_id="website.new_page_template_team_2_s_text_block_h1">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc2" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_s_image_text" inherit_id="website.new_page_template_about_s_image_text">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt64 pb64" separator=" "/>
     </xpath>
 </template>
 
