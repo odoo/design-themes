@@ -18,6 +18,10 @@
     <xpath expr="//figcaption" position="replace" mode="inner">
         Crafted with passion for every season
     </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="style">width: 50% !important;</attribute>
+    </xpath>
 </template>
 
 </odoo>

@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'generic-17',
+        'color-palettes-name': 'default-25',
 
         // Header
         'header-font-size':                 1rem,
@@ -131,7 +131,7 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     )
 );
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'generic-17');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'default-25');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'anelusia-1',
