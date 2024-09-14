@@ -207,4 +207,16 @@
     </xpath>
 </template>
 
+<template id="new_page_template_s_image_text" inherit_id="website.new_page_template_s_image_text">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt64 pb64" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_s_text_image" inherit_id="website.new_page_template_s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt64 pb64" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>
