@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_numbers_list" inherit_id="website.s_numbers_list">
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="col-lg-7" remove="col-lg-5" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h3" position="replace">
+        <p class="o_small">SOME NUMBERS</p>
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace">
+        <h3>Over the last decade, we've help many businesses to grow.</h3>
+    </xpath>
+    <!-- Second row -->
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="col-lg-5" remove="col-lg-6 offset-lg-1" separator=" "/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
+        <div class="col-6 col-lg-12 pt16 pb16" data-name="Number">
+            <span class="h2-fs">200+</span>
+            <p>Successful Projects</p>
+            <div class="s_hr pt16 pb0">
+                <hr class="w-100 mx-auto"/>
+            </div>
+        </div>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][2]" position="replace">
+        <div class="col-6 col-lg-12 pt16 pb16" data-name="Number">
+            <span class="h2-fs">95%</span>
+            <p>Client Retentation Rate</p>
+            <div class="s_hr pt16 pb0">
+                <hr class="w-100 mx-auto"/>
+            </div>
+        </div>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][3]" position="replace">
+        <div class="col-6 col-lg-12 pt16 pb16" data-name="Number">
+            <span class="h2-fs">50M</span>
+            <p>Revenue Generated for Clients</p>
+            <div class="s_hr pt16 pb0">
+                <hr class="w-100 mx-auto"/>
+            </div>
+        </div>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')]" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-6')][2]" position="replace"/>
+</template>
+
+</odoo>

@@ -5,9 +5,9 @@ import { _t } from "@web/core/l10n/translation";
 
 const snippets = [
     {
-        id: 's_picture',
-        name: 'Title - Image',
-        groupName: "Images",
+        id: 's_mockup_image',
+        name: 'Mockup Image',
+        groupName: "content",
     },
     {
         id: 's_references',
@@ -25,24 +25,24 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_title',
-        name: 'Title',
-        groupName: "Text",
-    },
-    {
-        id: 's_comparisons',
-        name: 'Comparisons',
+        id: 's_showcase',
+        name: 'Showcase',
         groupName: "Content",
     },
     {
-        id: 's_call_to_action',
-        name: 'Call to Action',
+        id: 's_faq_collapse',
+        name: 'FAQ Block',
+        groupName: "Text",
+    },
+    {
+        id: 's_cta_box',
+        name: 'Box Call to Action',
         groupName: "Content",
     },
 ];
 
 wTourUtils.registerThemeHomepageTour("odoo_experts_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"odoo-experts-1"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-11"'),
     ...wTourUtils.insertSnippet(snippets[0]),
     ...wTourUtils.insertSnippet(snippets[1]),
     ...wTourUtils.insertSnippet(snippets[2]),
