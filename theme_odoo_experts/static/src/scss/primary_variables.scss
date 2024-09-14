@@ -51,17 +51,17 @@ $o-theme-font-configs: (
         'family': ('Anton', sans-serif),
         'url': 'Anton:300,300i,400,400i,700,700i',
     ),
-    'Lato': (
-        'family': ('Lato', sans-serif),
-        'url': 'Lato:300,300i,400,400i,700,700i',
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,700,700i',
     ),
     'Oswald': (
         'family': ('Oswald', sans-serif),
         'url': 'Oswald:300,300i,400,400i,700,700i',
     ),
-    'Work Sans': (
-        'family': ('Work Sans', sans-serif),
-        'url': 'Work+Sans:300,300i,400,400i,700,700i',
+    'Manrope': (
+        'family': ('Manrope', sans-serif),
+        'url': 'Manrope:300,300i,400,400i,700,700i',
     ),
 );
 
@@ -71,30 +71,29 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'odoo-experts-1',
+        'color-palettes-name': 'default-11',
         'logo-height': (52 / 16) * 1rem,
         'fixed-logo-height': (52 / 16) * 1rem,
         'header-font-size': 1rem,
-        'btn-border-radius': 10rem,
-        'btn-border-radius-lg': 10rem,
-        'btn-border-radius-sm': 10rem,
+        'btn-border-radius': .5rem,
+        'btn-border-radius-lg': .5rem,
+        'btn-border-radius-sm': .5rem,
         'btn-padding-y': .45rem,
         'btn-padding-x': 1.35rem,
         'btn-padding-y-sm': .3rem,
         'btn-padding-x-sm': .9rem,
         'btn-padding-y-lg': .6rem,
         'btn-padding-x-lg': 1.8rem,
-        'font': 'Lato',
-        'headings-font': 'Work Sans',
-        'navbar-font': 'Work Sans',
-        'header-template': 'sales_three',
+        'font': 'Inter',
+        'headings-font': 'Manrope',
+        'navbar-font': 'Inter',
+        'header-template': 'default',
         'footer-template': 'contact',
         'link-underline': 'never',
     ),
 );
 
 $o-palette-priority-prefix: 'odoo-experts';
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'odoo-experts-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'odoo-experts-1',
