@@ -19,7 +19,7 @@
             <h3 style="text-align: center;">2,000 parents<br/> brought their kid to our nursery.</h3>
             <p style="text-align: center;">Entrust us with your children and go to work with peace of mind</p>
             <p><br/></p>
-            <p style="text-align: center;"><a t-att-href="cta_btn_href" class="btn btn-primary btn-lg"><t t-esc="cta_btn_text">Contact us</t></a></p>
+            <p style="text-align: center;"><a t-att-href="cta_btn_href" class="btn btn-primary btn-lg"><t t-out="cta_btn_text">Contact us</t></a></p>
         </div>
     </xpath>
 
