@@ -14,13 +14,13 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_numbers',
-        name: 'Numbers',
+        id: 's_numbers_grid',
+        name: 'Numbers Grid',
         groupName: "Content",
     },
     {
-        id: 's_picture',
-        name: 'Title - Image',
+        id: 's_mockup_image',
+        name: 'Mockup Image',
         groupName: "Images",
     },
     {
@@ -28,11 +28,16 @@ const snippets = [
         name: 'Comparisons',
         groupName: "Content",
     },
+    {
+        id: 's_references',
+        name: 'References',
+        groupName: "Content",
+    },
 ];
 
 
 wTourUtils.registerThemeHomepageTour("graphene_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"graphene-1"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"base-1"'),
     ...wTourUtils.dragNDrop(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks('left'),

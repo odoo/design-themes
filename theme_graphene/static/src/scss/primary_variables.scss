@@ -93,24 +93,23 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'graphene-1',
+        'color-palettes-name': 'base-1',
 
         'font': 'Source Sans Pro',
         'headings-font': 'Assistant',
 
         'btn-ripple': true,
-        'layout': 'boxed',
-        'header-template': 'sales_three',
+        'header-template': 'stretch',
         'footer-template': 'centered',
 
         'btn-font-size-lg': 1rem,
         'btn-padding-y-lg': .6rem,
         'btn-padding-x-lg': 2.2rem,
-        'btn-border-radius-lg': 2px,
+        'btn-border-radius': 2px,
+        'btn-border-radius-sm': 2px,
+        'btn-border-radius-lg': 4px,
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'graphene-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'graphene-1',
