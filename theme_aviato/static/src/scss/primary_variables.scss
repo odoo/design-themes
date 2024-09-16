@@ -15,15 +15,15 @@ $o-theme-h6-font-size-multiplier: (20 / 16);
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'treehouse-5',
+        'color-palettes-name': 'default-16',
 
         // Header
         'logo-height': 3rem,
         'fixed-logo-height': 2rem,
 
         // Font
-        'font': 'Open Sans',
-        'headings-font': 'Libre Baskerville',
+        'font': 'Lato',
+        'headings-font': 'Playfair Display',
 
         // Buttons
         'btn-padding-y': .45rem,
@@ -48,12 +48,6 @@ $o-website-values-palettes: (
 );
 
 //------------------------------------------------------------------------------
-// Palettes
-//------------------------------------------------------------------------------
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'treehouse-5');
-
-//------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
 
@@ -69,6 +63,10 @@ $o-theme-font-configs: (
     'Lato': (
         'family': ('Lato', sans-serif),
         'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'Playfair Display': (
+        'family': ('Playfair Display', serif),
+        'url': 'Playfair+Display:400,400i,700,700i',
     ),
     'Advent Pro': (
         'family': ('Advent Pro', sans-serif),
@@ -95,7 +93,7 @@ $o-theme-font-configs: (
 );
 
 //------------------------------------------------------------------------------
-// Fonts
+// Background Shapes
 //------------------------------------------------------------------------------
 
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/21', (2: 1));

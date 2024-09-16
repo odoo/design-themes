@@ -1,12 +1,11 @@
 /** @odoo-module */
 
 import * as wTourUtils from '@website/js/tours/tour_utils';
-import { _t } from "@web/core/l10n/translation";
 
 const snippets = [
     {
-        id: 's_cover',
-        name: 'Cover',
+        id: 's_banner',
+        name: 'Banner',
         groupName: "Intro",
     },
     {
@@ -20,24 +19,39 @@ const snippets = [
         groupName: "Content",
     },
     {
+        id: 's_picture',
+        name: 'Title - Image',
+        groupName: "Images",
+    },
+    {
         id: 's_title',
         name: 'Title',
         groupName: "Text",
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
-        groupName: "Columns",
+        id: 's_masonry_block',
+        name: 'Masonry',
+        groupName: "Images",
     },
     {
-        id: 's_picture',
-        name: 'Title - Image',
-        groupName: "Images",
+        id: 's_company_team',
+        name: 'Team',
+        groupName: "People",
+    },
+    {
+        id: 's_showcase',
+        name: 'Showcase',
+        groupName: "Content",
+    },
+    {
+        id: 's_quotes_carousel',
+        name: 'Quotes',
+        groupName: "People",
     },
 ];
 
 wTourUtils.registerThemeHomepageTour("aviato_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"treehouse-5"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-16"'),
     ...wTourUtils.insertSnippet(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
@@ -46,7 +60,7 @@ wTourUtils.registerThemeHomepageTour("aviato_tour", () => [
     ...wTourUtils.insertSnippet(snippets[3]),
     ...wTourUtils.insertSnippet(snippets[4]),
     ...wTourUtils.insertSnippet(snippets[5]),
-    ...wTourUtils.clickOnSnippet(snippets[5], 'top'),
-    wTourUtils.changeOption('ColoredLevelBackground', 'we-button[data-toggle-bg-shape]', _t('Background Shape')),
-    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
+    ...wTourUtils.insertSnippet(snippets[6]),
+    ...wTourUtils.insertSnippet(snippets[7]),
+    ...wTourUtils.insertSnippet(snippets[8]),
 ]);
