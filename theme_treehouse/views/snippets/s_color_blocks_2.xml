@@ -4,12 +4,17 @@
 <template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2">
     <!-- Column #01 -->
     <xpath expr="//h2" position="replace" mode="inner">
-        Sky is the limit.
+        A Call for Environmental Protection
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        <br/>
+        Environmental protection is the practice of safeguarding the natural world from harmful human activities and preserving ecosystems for future generations. It involves efforts to reduce pollution, conserve biodiversity, and sustainably manage natural resources such as air, water, and soil.
+        <br/>
     </xpath>
     <!-- Column #02 -->
     <xpath expr="//div[hasclass('row')]/*[2]" position="replace">
         <div class="col-lg-6 p-0">
-            <img src="/theme_treehouse/static/src/img/backgrounds/06.jpg" class="w-100 h-100" style="object-fit: cover;" alt=""/>
+            <img src="/web/image/website.s_text_image_default_image" class="w-100 h-100" style="object-fit: cover;" alt=""/>
         </div>
     </xpath>
 </template>
