@@ -18,14 +18,12 @@
     ],
     'images_preview_theme': {
         'website.s_cover_default_image': '/theme_avantgarde/static/src/img/pictures/bg_image_08.jpg',
-        'website.s_picture_default_image': '/theme_avantgarde/static/src/img/pictures/bg_image_14.jpg',
-        'website.s_three_columns_default_image_1': '/theme_avantgarde/static/src/img/pictures/bg_image_15',
-        'website.s_three_columns_default_image_2': '/theme_avantgarde/static/src/img/pictures/bg_image_16.jpg',
-        'website.s_three_columns_default_image_3': '/theme_avantgarde/static/src/img/pictures/bg_image_17.jpg',
-        'website.s_text_image_default_image': '/theme_avantgarde/static/src/img/pictures/bg_image_13.jpg',
+        'website.library_image_13': '/theme_avantgarde/static/src/img/pictures/library_image_13.jpg',
+        'website.library_image_03': '/theme_avantgarde/static/src/img/pictures/library_image_03.jpg',
+        'website.library_image_16': '/theme_avantgarde/static/src/img/pictures/library_image_16.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_picture', 's_three_columns', 's_text_image', 's_call_to_action'],
+        'homepage': ['s_sidegrid', 's_features_wall', 's_masonry_block', 's_carousel', 's_timeline', 's_quadrant'],
     },
     'depends': ['theme_common'],
     'license': 'LGPL-3',

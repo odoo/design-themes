@@ -21,15 +21,75 @@
     <xpath expr="//div[hasclass('s_allow_columns')]" position="before">
         <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
-    <xpath expr="//h1" position="attributes">
-        <attribute name="class" add="text-o-color-1 text-break" separator=" "/>
-    </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
         We are Avantgarde.
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
         We create architecture, landscapes, interiors, product design and graphic design.<br/>
         Our methods allow us to explore a future that is equitable, data-driven, and green.
+    </xpath>
+</template>
+
+<!-- ======== SIDEGRID ======== -->
+<template id="s_sidegrid" inherit_id="website.s_sidegrid" name="Avantgarde s_sidegrid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_colored_level pt0 pb0" remove="pt56 pb56" separator=" "/>
+    </xpath>
+    <!-- Container -->
+    <xpath expr="//div[hasclass('container')]" position="attributes">
+        <attribute name="class" add="container-fluid" remove="container" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        <div class="d-inline text-o-color-1">Avantgarde</div>
+    </xpath>
+    <xpath expr="//h1" position="attributes">
+        <attribute name="class" remove="display-4" add="display-1" separator=" "/>
+        <attribute name="style">text-align: right;</attribute>
+    </xpath>
+    <!-- Pararaph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Art gallery
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="attributes">
+        <attribute name="class" add="h2-fs" separator=" "/>
+        <attribute name="style">text-align: right;</attribute>
+    </xpath>
+    <!-- Grid Item 1 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+        <attribute name="style" remove="--grid-item-padding-x: 24px" add="--grid-item-padding-y: 40px; --grid-item-padding-x: 40px;" separator=";"/>
+    </xpath>
+    <!-- Grid Item 2 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="class" add="o_cc o_cc4" separator=" "/>
+        <attribute name="style" add="--grid-item-padding-y: 0px; --grid-item-padding-x: 0px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]//img" position="replace"/>
+    <!-- Grid Item 3 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
+        <attribute name="style" add="--grid-item-padding-y: 0px; --grid-item-padding-x: 0px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Grid Item 4 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
+        <attribute name="style" add="--grid-item-padding-y: 0px; --grid-item-padding-x: 0px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Grid Item 5 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="attributes">
+        <attribute name="class" add="o_cc o_cc2" separator=" "/>
+        <attribute name="style" add="--grid-item-padding-y: 40px; --grid-item-padding-x: 40px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]//img" position="replace"/>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="inside">
+        <h2 class="display-2-fs">✴ San Francisco</h2>
+        <p class="lead">Come visit us from Tuesday 9 AM to Saturday 6 PM</p>
     </xpath>
 </template>
 
@@ -65,11 +125,10 @@
         We combine a wide spectrum of technologies with a good portion of creativity.
     </xpath>
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web_editor/image_shape/website.s_picture_default_image/web_editor/composition/composition_organic_line.svg?c2=o-color-2</attribute>
-        <attribute name="data-shape">web_editor/composition/composition_organic_line</attribute>
+        <attribute name="src">/web_editor/image_shape/website.s_picture_default_image/web_editor/panel/panel_duo_step.svg</attribute>
+        <attribute name="data-shape">web_editor/panel/panel_duo_step</attribute>
         <attribute name="data-original-mimetype">image/jpeg</attribute>
         <attribute name="data-file-name">bg_image_14.svg</attribute>
-        <attribute name="data-shape-colors">;o-color-2;;;</attribute>
     </xpath>
     <xpath expr="//figcaption" position="attributes">
         <attribute name="style" add="text-align: right;" separator=";"/>
@@ -82,7 +141,7 @@
 <!-- ======== COLUMNS ======== -->
 <template id="s_three_columns" inherit_id="website.s_three_columns" name="Avantgarde s_three_columns">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt120 pb240 o_full_screen_height" remove="pt32 pb32" separator=" "/>
+        <attribute name="class" add="pt120 pb120" remove="pt32 pb32" separator=" "/>
     </xpath>
     <xpath expr="//*[hasclass('card')]" position="attributes">
         <attribute name="class" add="shadow border" separator=" "/>
@@ -127,7 +186,7 @@
 <!-- ======== TEXT-IMAGE ======== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Avantgarde s_text_image">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc3 o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
         <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-5" separator=" "/>
@@ -151,11 +210,10 @@
         <attribute name="class" add="btn-lg" separator=" "/>
     </xpath>
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web_editor/image_shape/website.s_text_image_default_image/web_editor/composition/composition_triangle_line.svg?c1=o-color-1</attribute>
-        <attribute name="data-shape">web_editor/composition/composition_triangle_line</attribute>
+        <attribute name="src">/web_editor/image_shape/website.s_text_image_default_image/web_editor/panel/panel_trio_out_r.svg</attribute>
+        <attribute name="data-shape">web_editor/panel/panel_trio_out_r</attribute>
         <attribute name="data-original-mimetype">image/jpeg</attribute>
         <attribute name="data-file-name">bg_image_13.svg</attribute>
-        <attribute name="data-shape-colors">;o-color-1;;;</attribute>
     </xpath>
 </template>
 
@@ -174,10 +232,6 @@
 
 <!-- ======== CALL TO ACTION ======== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Avantgarde s_call_to_action">
-
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height pt0" remove="pt64" separator=" "/>
-    </xpath>
     <xpath expr="//h3" position="replace">
         <h3 style="text-align: right;"><b>Since 1992</b> creating around the world.</h3>
     </xpath>
@@ -222,21 +276,8 @@
     </xpath>
 </template>
 
-<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action" name="Avantgarde s_call_to_action">
-
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_14_001"/>
-    </xpath>
-</template>
-
 <!-- ======== CAROUSEL ======== -->
 <template id="s_carousel" inherit_id="website.s_carousel" name="Avantgarde s_carousel">
-    <xpath expr="//div[hasclass('s_carousel')]" position="attributes">
-        <attribute name="class" add="s_carousel_controllers_indicators_outside s_carousel_rounded carousel-dark" remove="s_carousel_default" separator=" "/>
-    </xpath>
     <xpath expr="//div[hasclass('carousel-indicators')]" position="attributes">
         <attribute name="class" add="s_carousel_indicators_dots" separator=" "/>
     </xpath>
@@ -260,7 +301,7 @@
     </xpath>
 
     <xpath expr="//h2" position="replace" mode="inner">
-        Making Simple
+        ARTWORK
     </xpath>
     <xpath expr="//div[hasclass('carousel-item')]//p[2]" position="replace"/>
     <xpath expr="(//div[hasclass('carousel-item')])[2]//p[2]" position="replace"/>
@@ -312,15 +353,15 @@
 <template id="s_quadrant" inherit_id="website.s_quadrant">
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
-        Innovating Through Art
+        Avantgarde Gallery
     </xpath>
     <!-- Paragraph -->
     <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Stay ahead of the curve with our latest insights in design and fine art. Our content explores the intersection of creativity and trends, offering fresh perspectives for galleries and digital media.<br/><br/> Engage with the future of art.
+        250 Executive Park Blvd, Suite 3400<br/>San Francisco CA 94134<br/>United States
     </xpath>
     <!-- Button -->
     <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Read More
+        Get Directions
     </xpath>
 </template>
 
@@ -654,6 +695,144 @@
     <!-- Button -->
     <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
         Learn more
+    </xpath>
+</template>
+
+<!-- ======== FEATURES WALL ======== -->
+<template id="s_features_wall" inherit_id="website.s_features_wall" name="Avantgarde s_features_wall">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc3 pt104 pb104" remove="pt56 pb56" separator=" "/>
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+    <!-- Text -->
+    <xpath expr="//h2" position="before">
+        <p>From 12th September to 20th February</p>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        The Boston Public Library Collection
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        The Boston Public Library's exhibit features lovely bird and flower paintings, bringing together nature, art, and science.
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="after">
+        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-ticket"/> Book your tickets</a>
+    </xpath>
+    <!-- Feature 1 -->
+    <xpath expr="(//img)[1]" position="attributes">
+        <attribute name="class" add="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//h3)[1]" position="replace" mode="inner">
+        Diverse Wildlife
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        Discover a variety of animals from around the world, beautifully captured in these detailed, scientific paintings.
+    </xpath>
+    <!-- Feature 2 -->
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" add="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Vintage Style
+    </xpath>
+    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        Step back in time with classic, hand-painted illustrations that showcase the charm of old-world artistry.
+    </xpath>
+    <!-- Feature 3 -->
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="class" add="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        For all the family
+    </xpath>
+    <xpath expr="(//p)[5]" position="replace" mode="inner">
+        This exhibition offers something for everyone, with fascinating artwork that will captivate both kids and adults alike.
+    </xpath>
+</template>
+
+<!-- ======== MASONRY ======== -->
+<template id="s_masonry_block" inherit_id="website.s_masonry_block">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" separator=" "/>
+        <attribute name="data-masonry-template">alternate_text_image_text</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="replace">
+        <t t-call="website.s_masonry_block_alternation_text_image_text_template"/>
+    </xpath>
+</template>
+
+<template id="s_masonry_block_alternation_text_image_text_template" inherit_id="website.s_masonry_block_alternation_text_image_text_template">
+    <!-- Block #1 -->
+    <!-- Main div -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]" position="attributes">
+        <attribute name="style" remove="background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-2) 100%);" add="--grid-item-padding-x: 40px;" separator=";"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]/h3" position="replace" mode="inner">
+        ✽<br/>Coming up in March<br/>✽
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]/p" position="replace"/>
+
+    <!-- Block #2 -->
+    <!-- Main div -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
+        <attribute name="class" remove="o_cc2" add="o_cc4" separator=" "/>
+        <attribute name="style" remove="background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-1) 100%);" add="--grid-item-padding-x: 40px;" separator=";"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/h3" position="replace" mode="inner">
+        ✽<br/>Our very new collection<br/>✽
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/p" position="replace"/>
+</template>
+
+<!-- ======== TIMELINE ======== -->
+<template id="s_timeline" inherit_id="website.s_timeline">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our history
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Discover the journey that made us the most popular gallery in town.
+    </xpath>
+    <!-- Event 1 -->
+    <xpath expr="(//div[hasclass('card')])[1]//small" position="replace" mode="inner">
+        13/06/2024
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[1]//h3" position="replace" mode="inner">
+        First Culture Award ®
+    </xpath>
+    <!-- Event 2 -->
+    <xpath expr="(//div[hasclass('card')])[2]//small" position="replace" mode="inner">
+        25/10/2019
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[2]//h3" position="replace" mode="inner">
+        We open the cafeteria!
+    </xpath>
+    <!-- Event 3 -->
+    <xpath expr="(//div[hasclass('card')])[3]//small" position="replace" mode="inner">
+        25/06/2019
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[3]//h3" position="replace" mode="inner">
+        Arrival of Aline Turner at the head of the Gallery
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[3]//p" position="after">
+        <img alt="" src="/web/image/website.s_company_team_image_3" class="img img-fluid rounded"/>
+    </xpath>
+    <!-- Event 4 -->
+    <xpath expr="(//div[hasclass('card')])[4]//small" position="replace" mode="inner">
+        23/10/2015
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[4]//h3" position="replace" mode="inner">
+        Purchase of the building
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[4]//p" position="after">
+        <img alt="" src="/web/image/website.s_banner_default_image" class="img img-fluid rounded"/>
     </xpath>
 </template>
 
