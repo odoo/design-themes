@@ -676,6 +676,9 @@
     <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
         Transform your driving experience with our exclusive collection, where opulence meets cutting-edge technology. Elevate your journey with vehicles that blend sophistication and performance seamlessly.
     </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes" mode="inner">
+        <attribute name="style" add="--grid-item-padding-y: 12px;" remove="--grid-item-padding-y: 24px;" separator=";"/>
+    </xpath>
 </template>
 
 <!-- ======== KEY IMAGES ======== -->
