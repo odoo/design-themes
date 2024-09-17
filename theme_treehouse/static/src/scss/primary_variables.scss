@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'treehouse-1',
+        'color-palettes-name':              'default-28',
 
         // Header
         'logo-height':                      2.75rem,
@@ -159,7 +159,7 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     )
 );
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'treehouse-1');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'default-28');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'treehouse-1',
