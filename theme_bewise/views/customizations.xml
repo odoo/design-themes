@@ -771,6 +771,10 @@
     <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
         Transform your future with our cutting-edge programs, where education meets opportunity. Elevate your learning experience with courses that blend academic excellence and practical skills seamlessly.
     </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes" mode="inner">
+        <attribute name="class" add="g-height-4" remove="g-height-3" separator=" "/>
+        <attribute name="style" add="--grid-item-padding-y: 32px; grid-area: 6 / 6 / 10 / 13;" remove="--grid-item-padding-y: 24px; grid-area: 7 / 6 / 10 / 13;" separator=";"/>
+    </xpath>
 </template>
 
 
