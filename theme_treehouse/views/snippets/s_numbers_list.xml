@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_numbers_list" inherit_id="website.s_numbers_list">
+    <!-- Layout -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Key milestones in our environmental impact
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        <br/>
+        From carbon footprint reduction to renewable energy adoption and biodiversity preservation, our key milestones reflect our commitment to creating a sustainable future for all.
+    </xpath>
+    <!-- Numbers -->
+    <xpath expr="//span[hasclass('h2-fs')]" position="replace" mode="inner">
+        45%
+    </xpath>
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        Reduction in carbon emissions
+    </xpath>
+    <xpath expr="(//span[hasclass('h2-fs')])[2]" position="replace" mode="inner">
+        2 Million
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        Trees Planted
+    </xpath>
+    <xpath expr="(//span[hasclass('h2-fs')])[3]" position="replace" mode="inner">
+        85%
+    </xpath>
+    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        Waste diversion rate
+    </xpath>
+    <xpath expr="(//span[hasclass('h2-fs')])[4]" position="replace" mode="inner">
+        1.2 Billion
+    </xpath>
+    <xpath expr="(//p)[5]" position="replace" mode="inner">
+        Liters of water saved
+    </xpath>
+    <xpath expr="(//span[hasclass('h2-fs')])[5]" position="replace" mode="inner">
+        60%
+    </xpath>
+    <xpath expr="(//p)[6]" position="replace" mode="inner">
+        Renewable Energy usage
+    </xpath>
+    <xpath expr="(//span[hasclass('h2-fs')])[6]" position="replace" mode="inner">
+        500,000
+    </xpath>
+    <xpath expr="(//p)[7]" position="replace" mode="inner">
+        Tons of materials recycled
+    </xpath>
+</template>
+
+</odoo>
