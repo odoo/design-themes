@@ -1,58 +1,47 @@
 /** @odoo-module */
 import * as wTourUtils from '@website/js/tours/tour_utils';
-import { _t } from "@web/core/l10n/translation";
 
 const snippets = [
     {
-        id: 's_cover',
-        name: 'Cover',
+        id: 's_striped_center_top',
+        name: 'Striped Center Top',
         groupName: "Intro",
     },
     {
-        id: 's_call_to_action',
-        name: 'Call to Action',
-        groupName: "Content",
-    },
-    {
-        id: 's_text_image',
-        name: 'Text - Image',
-        groupName: "Content",
-    },
-    {
-        id: 's_numbers',
-        name: 'Numbers',
-        groupName: "Content",
-    },
-    {
-        id: 's_image_text',
-        name: 'Image - Text',
-        groupName: "Content",
-    },
-    {
-        id: 's_quotes_carousel',
-        name: 'Quotes',
-        groupName: "People",
+        id: 's_title',
+        name: 'Title',
+        groupName: "Text",
     },
     {
         id: 's_color_blocks_2',
         name: 'Big Boxes',
         groupName: "Content",
     },
+    {
+        id: 's_faq_collapse',
+        name: 'FAQ Block',
+        groupName: "Text",
+    },
+    {
+        id: 's_masonry_block',
+        name: 'Masonry',
+        groupName: "Images",
+    },
+    {
+        id: 's_company_team_shapes',
+        name: 'Team Shapes',
+        groupName: "People",
+    },
 ];
 
 wTourUtils.registerThemeHomepageTour("bewise_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"bewise-1"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-19"'),
     ...wTourUtils.dragNDrop(snippets[0], 'top'),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.dragNDrop(snippets[1], 'top'),
     ...wTourUtils.dragNDrop(snippets[2], 'top'),
     ...wTourUtils.dragNDrop(snippets[3], 'top'),
-    ...wTourUtils.clickOnSnippet(snippets[3], 'top'),
-    wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
-    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
-    wTourUtils.goBackToBlocks(),
     ...wTourUtils.dragNDrop(snippets[4], 'top'),
     ...wTourUtils.dragNDrop(snippets[5], 'top'),
-    ...wTourUtils.dragNDrop(snippets[6], 'top'),
 ]);
