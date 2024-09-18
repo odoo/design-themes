@@ -59,13 +59,13 @@ $o-theme-h5-font-size-multiplier: (18 / 16);
 $o-theme-headings-font-weight: 600;
 
 $o-theme-font-configs: (
-    'Fira Code': (
-        'family': ('Fira Code', mono),
-        'url': 'Fira+Code:300,300i,400,400i,700,700i',
+    'Oswald': (
+        'family': ('Oswald', sans-serif),
+        'url': 'Oswald:300,300i,400,400i,700,700i',
     ),
-    'Fira Sans': (
-        'family': ('Fira Sans', sans-serif),
-        'url': 'Fira Sans:300,300i,400,400i,700,700i',
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,,400,400i,700,700i',
     ),
     'Droid Sans': (
         'family': ('Droid Sans', sans-serif),
@@ -86,10 +86,6 @@ $o-theme-font-configs: (
         'family': ('Open Sans Condensed', sans-serif),
         'url': 'Open+Sans+Condensed:300,300i,400,400i,700,700i',
     ),
-    'Oswald': (
-        'family': ('Oswald', sans-serif),
-        'url': 'Oswald:300,300i,400,400i,700,700i',
-    ),
     'Roboto': (
         'family': ('Roboto', sans-serif),
         'url': 'Roboto:300,300i,400,400i,700,700i',
@@ -104,11 +100,11 @@ $o-website-values-palettes: (
     (
         'color-palettes-name': 'vehicle-1',
 
-        'font': 'Fira Code',
-        'headings-font': 'Fira Sans',
-        'navbar-font': 'Fira Sans',
+        'font': 'Inter',
+        'headings-font': 'Oswald',
+        'navbar-font': 'Inter',
 
-        'buttons-font': 'Fira Sans',
+        'buttons-font': 'Inter',
         'btn-secondary-outline': true,
 
         'btn-border-width': 2px,

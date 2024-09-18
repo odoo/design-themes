@@ -19,14 +19,20 @@
     ],
     'images_preview_theme': {
         'website.s_cover_default_image': '/theme_vehicle/static/src/img/snippets/s_cover.jpg',
-        'website.s_text_image_default_image': '/theme_vehicle/static/src/img/snippets/s_text_image.jpg',
-        'website.s_masonry_block_default_image_1': '/theme_vehicle/static/src/img/snippets/s_masonry_block.jpg',
-        'website.s_image_text_default_image': '/theme_vehicle/static/src/img/snippets/s_image_text.jpg',
-        'website.s_parallax_default_image': '/theme_vehicle/static/src/img/snippets/s_parallax.jpg',
+        'website.s_three_columns_default_image_1': '/theme_vehicle/static/src/img/snippets/s_three_columns_1.jpg',
+        'website.s_three_columns_default_image_2': '/theme_vehicle/static/src/img/snippets/s_three_columns_2.jpg',
+        'website.s_three_columns_default_image_3': '/theme_vehicle/static/src/img/snippets/s_three_columns_3.jpg',
         'website.s_picture_default_image': '/theme_vehicle/static/src/img/snippets/s_picture.jpg',
+        'website.s_key_images_default_image_1': '/theme_vehicle/static/src/img/snippets/s_images_wall_5.jpg',
+        'website.s_key_images_default_image_2': '/theme_vehicle/static/src/img/snippets/s_img_gallery_1.jpg',
+        'website.s_key_images_default_image_3': '/theme_vehicle/static/src/img/snippets/s_masonry_block_2.jpg',
+        'website.s_key_images_default_image_4': '/theme_vehicle/static/src/img/snippets/s_images_wall_2.jpg',
+        'website.s_media_list_default_image_1': '/theme_vehicle/static/src/img/snippets/s_media_list_1.jpg',
+        'website.s_media_list_default_image_2': '/theme_vehicle/static/src/img/snippets/s_media_list_2.jpg',
+        'website.s_media_list_default_image_3': '/theme_vehicle/static/src/img/snippets/s_media_list_3.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_text_image', 's_image_text', 's_picture', 's_masonry_block', 's_call_to_action'],
+        'homepage': ['s_cover', 's_title', 's_three_columns', 's_picture', 's_key_images', 's_numbers_charts', 's_media_list'],
     },
     'new_page_templates': {
         'about': {
