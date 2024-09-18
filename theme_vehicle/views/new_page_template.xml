@@ -47,7 +47,7 @@
 
 <template id="new_page_template_about_s_cover" inherit_id="website.new_page_template_about_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" remove="o_half_screen_height" separator=" "/>
     </xpath>
 </template>
 
@@ -115,10 +115,17 @@
     </xpath>
 </template>
 
+<template id="new_page_template_s_cover" inherit_id="website.new_page_template_s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_half_screen_height" separator=" "/>
+    </xpath>
+</template>
+
+
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
     <xpath expr="//section" position="attributes">
         <!-- pb256 is defined in both theme and new page template -->
-        <attribute name="class" add="pb256" remove="pt0 pb256" separator=" "/>
+        <attribute name="class" add="pb80 pt80" remove="pt256 pb256 pt0 pb0" separator=" "/>
     </xpath>
 </template>
 
@@ -133,7 +140,7 @@
 
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" remove="o_half_screen_height" separator=" "/>
     </xpath>
 </template>
 
@@ -162,7 +169,7 @@
 
 <template id="new_page_template_gallery_s_cover" inherit_id="website.new_page_template_gallery_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" remove="o_half_screen_height" separator=" "/>
     </xpath>
 </template>
 
@@ -186,7 +193,7 @@
 
 <template id="new_page_template_pricing_s_cover" inherit_id="website.new_page_template_pricing_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" remove="o_half_screen_height" separator=" "/>
     </xpath>
 </template>
 
