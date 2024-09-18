@@ -4,17 +4,19 @@
 <!-- ======== COVER ======== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Vehicle s_cover">
     <xpath expr="section" position="attributes">
-        <attribute name="class" remove="pt232 pb232" add="o_full_screen_height pt0 pb256" separator=" "/>
+        <attribute name="class" remove="s_parallax_is_fixed o_full_screen_height pt232 pb232" add="o_half_screen_height pt0 pb0" separator=" "/>
+        <attribute name="data-scroll-background-ratio">1.5</attribute>
     </xpath>
-    <xpath expr="//h1" position="replace" mode="inner">
-        The New KORAN X
+    <xpath expr="//h1" position="replace">
+        <h1 style="text-align: center;">The New KORAN X</h1>
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
-        Take it all. Compliments too.
+        Take it all. Compliments too. <br/><br/>
     </xpath>
     <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
         Start the engine
     </xpath>
+    <xpath expr="(//a[hasclass('btn')])[2]" position="replace"/>
 </template>
 
 <template id="s_striped_top" inherit_id="website.s_striped_top">
@@ -36,6 +38,19 @@
     </xpath>
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_three_columns_default_image_1</attribute>
+    </xpath>
+</template>
+
+<!-- ======== TITLE ======== -->
+<template id="s_title" inherit_id="website.s_title">
+    <xpath expr="//h2" position="replace">
+        <h2 style="text-align: left;">All our models</h2>
+    </xpath>
+</template>
+
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pt64 pb0" remove="pt40 pb40" separator=" "/>
     </xpath>
 </template>
 
@@ -240,6 +255,10 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" separator=" "/>
     </xpath>
+    <!-- Container -->
+    <xpath expr="//section/div[hasclass('o_container_small')]" position="attributes">
+        <attribute name="class" add="container" remove="o_container_small" separator=" "/>
+    </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace">
         <h2 class="text-center">View the all-new KORAN in 3D wherever you are</h2>
@@ -257,7 +276,7 @@
         <span class="text-o-color-3">Our uniquely designed LED headlights are not only gorgeous but powerfully light your way.</span>
     </xpath>
     <!-- Filter -->
-    <xpath expr="//div[hasclass('o_container_small')]" position="before">
+    <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-black-50"/>
     </xpath>
 </template>
@@ -281,28 +300,34 @@
 
 <!-- ======== THREE COLUMNS ======== -->
 <template id="s_three_columns" inherit_id="website.s_three_columns">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc3 pt48 pb48" remove="o_cc2 pt32 pb32 bg-200" separator=" "/>
-    </xpath>
-    <!-- Card -->
-    <xpath expr="(//div[hasclass('card')])[1]" position="attributes">
-        <attribute name="style">border-width: 0px !important; box-shadow: rgba(0, 0, 0, 0.20) 0px 4px 16px 0px !important;</attribute>
-    </xpath>
-
-    <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
-        <attribute name="style">border-width: 0px !important; box-shadow: rgba(0, 0, 0, 0.20) 0px 4px 16px 0px !important;</attribute>
-    </xpath>
-    <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
-        <attribute name="style">border-width: 0px !important; box-shadow: rgba(0, 0, 0, 0.20) 0px 4px 16px 0px !important;</attribute>
-    </xpath>
     <!-- Column 1 -->
     <xpath expr="//h5" position="replace" mode="inner">
         Koran Mini
     </xpath>
         <xpath expr="//p[hasclass('card-text')]" position="replace" mode="inner">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit est bibendum sollicitudin vestibulum.
+        Unleashing power with elegance, the Koran Mini blends advanced engineering with classic design, delivering a thrilling ride that’s both swift and smooth.
     </xpath>
+    <!-- Column 2 -->
+    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+        Koran X
+    </xpath>
+        <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
+        A bold statement in every detail, the Koran X captures the spirit of modern adventure. Built for those who refuse to compromise on performance and style.
+    </xpath>
+    <!-- Column 3 -->
+    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+        Koran GT
+    </xpath>
+        <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
+        Designed for the thrill-seeker, the Koran GT brings race-inspired performance to the streets. Precision-tuned for speed, it promises an driving experience.
+    </xpath>
+</template>
+
+<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt0 pb64" remove="pt32 pb32" separator=" "/>
+    </xpath>
+    <!-- Column 1 -->
     <xpath expr="//p[hasclass('card-text')]" position="after">
         <p><a href="#" class="btn btn-primary btn-block mb-0 o_cc o_cc4">Configure</a></p>
     </xpath>
@@ -310,12 +335,6 @@
         <span class="d-inline-block mb-4"><b>From $14,000</b></span>
     </xpath>
     <!-- Column 2 -->
-    <xpath expr="(//h5)[2]" position="replace" mode="inner">
-        Koran GT
-    </xpath>
-        <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit est bibendum sollicitudin vestibulum.
-    </xpath>
     <xpath expr="(//p[hasclass('card-text')])[2]" position="after">
         <p><a href="#" class="btn btn-primary btn-block mb-0 o_cc o_cc4">Configure</a></p>
     </xpath>
@@ -323,12 +342,6 @@
         <span class="d-inline-block mb-4"><b>From $19,000</b></span>
     </xpath>
     <!-- Column 3 -->
-    <xpath expr="(//h5)[3]" position="replace" mode="inner">
-        Koran EQ
-    </xpath>
-        <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit est bibendum sollicitudin vestibulum.
-    </xpath>
     <xpath expr="(//p[hasclass('card-text')])[3]" position="after">
         <p><a href="#" class="btn btn-primary btn-block mb-0 o_cc o_cc4">Configure</a></p>
     </xpath>
@@ -687,6 +700,9 @@
 
 <!-- ======== KEY IMAGES ======== -->
 <template id="s_key_images" inherit_id="website.s_key_images" name="Vehicle s_key_images">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb0" remove="pb72" separator=" "/>
+    </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         Discover Excellence in Luxury Vehicle Care
     </xpath>
@@ -898,6 +914,47 @@
     <!-- Second Button -->
     <xpath expr="//a[hasclass('btn')][2]" position="replace" mode="inner">
         Book a test drive
+    </xpath>
+</template>
+
+<!-- ======== NUMBERS CHARTS ======== -->
+<template id="s_numbers_charts" inherit_id="website.s_numbers_charts" name="Vehicle s_numbers_charts">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt88 pb88" remove="pt48 pb48" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')]//h3" position="replace">
+        <h2>Key Metrics of our Achievements</h2>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')]//p" position="replace" mode="inner">
+        Our commitment to innovation, performance, and sustainability drives us forward, enabling us to deliver excellence across all categories of the automotive industry.
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]//p" position="replace" mode="inner">
+        $ 2.4B
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]//p[2]" position="replace" mode="inner">
+        Clients saved $2.4 billion by choosing our eco-efficient and cost-effective vehicles.
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]//p" position="replace" mode="inner">
+        +300,000
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]//p[2]" position="replace" mode="inner">
+        We proudly serve over 300,000 satisfied customers.
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]//p[3]" position="replace" mode="inner">
+        75% of our clients choose to upgrade to the latest models every 3 years, showcasing strong brand loyalty and trust.
+    </xpath>
+</template>
+
+<!-- ======== MEDIA LIST ======== -->
+<template id="s_media_list" inherit_id="website.s_media_list" name="Vehicle s_media_list">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt72 pb72 o_cc5" remove="pt32 pb32 o_cc2" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_nb_column_fixed')]" position="before">
+        <h2 style="text-align: left;">News</h2>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-12')])[2]//div" position="attributes">
+        <attribute name="class" add="flex-row-reverse" separator=" "/>
     </xpath>
 </template>
 
