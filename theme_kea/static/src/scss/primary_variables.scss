@@ -70,7 +70,7 @@ $headings-font-weight:700;
 
 $o-theme-font-configs: (
     'Poppins': (
-        'family': ('Poppins', sans-serif), 
+        'family': ('Poppins', sans-serif),
         'url': 'Poppins:300,300i,400,400i,700,700i',
     ),
     'Rajdhani': (
@@ -117,7 +117,12 @@ $o-website-values-palettes: (
         'buttons-font': 'Poppins',
         // Links / Buttons
         'link-underline': 'never',
+        'btn-padding-y': .5rem,
+        'btn-padding-x': 1rem,
+        'btn-padding-y-lg': .75rem,
+        'btn-padding-x-lg': 1.5rem,
         'btn-border-radius': 10rem,
+        'btn-border-radius-lg': 10rem,
         // Footer
         'footer-template': 'minimalist',
         'footer-effect': 'slideout_slide_hover',

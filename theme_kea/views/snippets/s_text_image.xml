@@ -2,10 +2,6 @@
 <odoo>
 
 <template id="s_text_image" inherit_id="website.s_text_image">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc2 pt64 pb232" remove="pt80 pb80" separator=" "/>
-    </xpath>
     <!-- Image -->
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web_editor/shape/theme_kea/s_text_image.svg?c1=o-color-1</attribute>
@@ -20,8 +16,9 @@
 </template>
 
 <template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
-    <!-- Shape option -->
+    <!-- Section -->
     <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pb232" remove="pb80" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->
