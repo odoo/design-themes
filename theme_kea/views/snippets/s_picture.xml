@@ -4,7 +4,7 @@
 <template id="s_picture" inherit_id="website.s_picture">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc3" separator=" "/>
+        <attribute name="class" add="o_cc3 pb80 pt80" remove="pb64 pt64" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
