@@ -5,11 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt200 pb200" remove="pt232 pb232 s_parallax_bg parallax s_parallax_is_fixed bg-black-50" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Floats/02','colors':{'c1':'o-color-1','c2':'o-color-1'},'flip':[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_02"/>
+        <div class="o_we_shape o_web_editor_Floats_02 o_we_animated" style="background-image: url('/web_editor/shape/web_editor/Floats/02.svg?c1=o-color-1&amp;c2=o-color-1');"/>
     </xpath>
     <!-- Remove filter & parallax -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
