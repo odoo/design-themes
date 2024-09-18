@@ -51,6 +51,19 @@
     </xpath>
 </template>
 
+<!-- ======== TITLE ======== -->
+<template id="s_title" inherit_id="website.s_title" name="Be Wise s_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Empower young minds
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" remove="display-3-fs" separator=" "/>
+    </xpath>
+</template>
+
 <!-- ======== TEXT-IMAGE ======== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Be Wise s_text_image">
     <xpath expr="//h2" position="replace" mode="inner">
@@ -752,6 +765,9 @@
     <xpath expr="//h1" position="replace" mode="inner">
         Shaping Tomorrow's <br/>Game Changers
     </xpath>
+    <xpath expr="//h1" position="attributes">
+        <attribute name="class" add="display-3-fs" separator=" "/>
+    </xpath>
     <!-- Paragraph -->
     <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
         Empower young minds with quality education and engaging learning experiences that nurture creativity, play, and academic excellence.
@@ -762,7 +778,7 @@
     </xpath>
     <!-- Figcaption -->
     <xpath expr="//figcaption" position="replace" mode="inner">
-        Where learning meets fun
+        Where tradition meets innovation – a legacy of excellence in education.
     </xpath>
 </template>
 
@@ -1108,6 +1124,17 @@
     <!-- Second Button -->
     <xpath expr="//a[hasclass('btn')][2]" position="replace" mode="inner">
         Request Information
+    </xpath>
+</template>
+
+<!-- ======== COMPANY TEAM SHAPES ======== -->
+<template id="configurator_s_company_team_shapes" inherit_id="website.configurator_s_company_team_shapes">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05",'colors':{'c3': 'o-color-4'}}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_container_small')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_05" style="background-image: url('/web_editor/shape/web_editor%2FOrigins%2F05.svg?c3=o-color-4');"/>
     </xpath>
 </template>
 
