@@ -38,16 +38,16 @@ const snippets = [
 
 wTourUtils.registerThemeHomepageTour("orchid_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"orchid-7"'),
-    ...wTourUtils.dragNDrop(snippets[0]),
+    ...wTourUtils.insertSnippet(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
-    ...wTourUtils.dragNDrop(snippets[1]),
-    ...wTourUtils.dragNDrop(snippets[2]),
-    ...wTourUtils.dragNDrop(snippets[3]),
+    ...wTourUtils.insertSnippet(snippets[1]),
+    ...wTourUtils.insertSnippet(snippets[2]),
+    ...wTourUtils.insertSnippet(snippets[3]),
     ...wTourUtils.clickOnSnippet(snippets[3]),
     wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
     wTourUtils.goBackToBlocks(),
-    ...wTourUtils.dragNDrop(snippets[4]),
-    ...wTourUtils.dragNDrop(snippets[5]),
+    ...wTourUtils.insertSnippet(snippets[4]),
+    ...wTourUtils.insertSnippet(snippets[5]),
     ...wTourUtils.clickOnText(snippets[5], 'h3'),
 ]);
