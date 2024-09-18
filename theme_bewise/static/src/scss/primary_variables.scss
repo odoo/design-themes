@@ -41,14 +41,11 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (56 / 21);
-$o-theme-h2-font-size-multiplier: (36 / 21);
-$o-theme-h3-font-size-multiplier: (28 / 21);
-$o-theme-h4-font-size-multiplier: (24 / 21);
-$o-theme-h5-font-size-multiplier: 1;
-$o-theme-h6-font-size-multiplier: (18 / 21);
-
 $o-theme-font-configs: (
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
     'Lato': (
         'family': ('Lato', sans-serif),
         'url': 'Lato:300,300i,400,400i,700,700i',
@@ -101,23 +98,14 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'bewise-1',
+        'color-palettes-name': 'default-19',
 
-        'header-font-size': (20 / 16) * 1rem,
-        'font-size-base': 1.3125rem,
-
-        'font': 'Darker Grotesque',
-        'headings-font': 'Raleway',
+        'font': 'Source Sans Pro',
+        'headings-font': 'Darker Grotesque',
 
         'footer-template': 'headline',
-
-        'btn-font-size-lg': 1.65rem,
-        'btn-padding-y-lg': .5rem,
-        'btn-ripple': true,
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'bewise-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'bewise-1',
@@ -147,12 +135,3 @@ $o-theme-color-palettes-compatibility-indexes: (
     3: 'bewise-3',
     4: 'bewise-4',
 );
-
-//------------------------------------------------------------------------------
-// Shapes
-//------------------------------------------------------------------------------
-
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14_001', (3: 1, 4: 1));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Rainy/08_001', (1: 1, 4: 1));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/06', (1: 3, 2: 5, 3: 5, 5: 3));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Airy/04_001', (1: 3));
