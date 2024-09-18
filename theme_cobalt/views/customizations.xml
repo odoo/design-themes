@@ -500,4 +500,11 @@
     </xpath>
 </template>
 
+<!-- ==== Cover ===== -->
+<template id="s_cover" inherit_id="website.s_cover" name="Cobalt s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc5" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>

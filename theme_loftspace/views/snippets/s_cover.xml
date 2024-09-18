@@ -4,7 +4,7 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_full_screen_height o_cc3" remove="o_cc4" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
