@@ -274,7 +274,7 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
 <record id="s_accordion_image_default_image" model="theme.ir.attachment">
     <field name="key">website.s_accordion_image_default_image</field>
     <field name="name">website.s_accordion_image_default_image</field>
-    <field name="url">/theme_bookstore/static/src/img/snippets/s_banner_2.jpg</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_accordion_image.jpg</field>
 </record>
 <record id="s_image_title_default_image" model="theme.ir.attachment">
     <field name="key">website.s_image_title_default_image</field>
@@ -412,6 +412,13 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="key">website.s_empowerment_default_image</field>
     <field name="name">website.s_empowerment_default_image</field>
     <field name="url">/theme_bookstore/static/src/img/snippets/s_empowerment_default_image.jpg</field>
+</record>
+
+<!-- Text Cover -->
+<record id="s_text_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_text_cover_default_image</field>
+    <field name="name">website.s_text_cover_default_image</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_text_cover.jpg</field>
 </record>
 
 </odoo>

@@ -58,6 +58,8 @@
         'views/snippets/s_shape_image.xml',
         'views/snippets/s_images_constellation.xml',
         'views/snippets/s_text_cover.xml',
+        'views/snippets/s_accordion.xml',
+        'views/snippets/s_accordion_image.xml',
         'views/new_page_template.xml',
     ],
     'images': [
@@ -65,18 +67,18 @@
         'static/description/bookstore_screenshot.jpg',
     ],
     'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_bookstore/static/src/img/snippets/s_cover.jpg',
-        'website.s_masonry_block_default_image_1': '/theme_bookstore/static/src/img/snippets/s_masonry_block.jpg',
-        'website.s_picture_default_image': '/theme_bookstore/static/src/img/snippets/s_picture.jpg',
         'website.s_product_list_default_image_1': '/theme_bookstore/static/src/img/snippets/s_product_1.jpg',
-        'website.s_product_list_default_image_2': '/theme_bookstore/static/src/img/snippets/s_product_2.jpg',
-        'website.s_product_list_default_image_3': '/theme_bookstore/static/src/img/snippets/s_product_3.jpg',
-        'website.s_product_list_default_image_4': '/theme_bookstore/static/src/img/snippets/s_product_4.jpg',
-        'website.s_product_list_default_image_5': '/theme_bookstore/static/src/img/snippets/s_product_5.jpg',
-        'website.s_product_list_default_image_6': '/theme_bookstore/static/src/img/snippets/s_product_6.jpg',
+        'website.s_banner_default_image_3': '/theme_bookstore/static/src/img/snippets/s_banner_3.jpg',
+        'website.s_image_text_default_image': '/theme_bookstore/static/src/img/snippets/s_image_text.jpg',
+        'website.library_image_02': '/theme_bookstore/static/src/img/snippets/library_image_02.jpg',
+        'website.s_cover_default_image': '/theme_bookstore/static/src/img/snippets/s_cover.jpg',
+        'website.s_media_list_default_image_1': '/theme_bookstore/static/src/img/snippets/s_media_list_1.jpg',
+        'website.s_image_text_default_image': '/theme_bookstore/static/src/img/snippets/s_image_text.jpg',
+        'website.s_media_list_default_image_2': '/theme_bookstore/static/src/img/snippets/s_media_list_2.jpg',
+        'website.s_text_image_default_image': '/theme_bookstore/static/src/img/snippets/s_text_image.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_masonry_block', 's_process_steps', 's_showcase', 's_title'],
+        'homepage': ['s_banner', 's_key_images', 's_title', 's_accordion_image', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {
