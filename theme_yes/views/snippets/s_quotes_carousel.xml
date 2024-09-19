@@ -2,18 +2,20 @@
 <odoo>
 
 <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
-    <xpath expr="//div[hasclass('carousel')]" position="attributes">
-        <attribute name="class" remove="carousel-dark" separator=" "/>
+    <!-- Carousel -->
+    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('carousel-inner')]" position="before">
+        <div class="o_we_shape o_web_editor_Floats_12"/>
     </xpath>
     <!-- Quote 1 -->
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
-        <attribute name="style" remove="background-position: 50% 50%;" add="background-position: 50% 25%;" separator=";"/>
-    </xpath>
-    <xpath expr="//blockquote" position="before">
-        <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
+        <attribute name="style"/>
     </xpath>
     <xpath expr="(//p[hasclass('s_blockquote_quote')])[1]" position="replace" mode="inner">
-        Thank you so much for being a part of our special day. It was so nice working with you. Without your help the day would not have been as perfect as it was.
+        They turned our dream into reality with ease and professionalism!
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//strong" position="replace" mode="inner">
         Linda and Paul
@@ -23,10 +25,10 @@
     </xpath>
     <!-- Quote 2 -->
     <xpath expr="(//*[hasclass('carousel-item')])[2]" position="attributes">
-        <attribute name="style" add="background-position: 50% 25%;" remove="background-position: 50% 50%;" separator=";"/>
+        <attribute name="style"/>
     </xpath>
-    <xpath expr="(//blockquote)[2]" position="before">
-        <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[1]" position="replace" mode="inner">
+        They made our big day stree-free and absolutely beautiful!
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//strong" position="replace" mode="inner">
         Jack and Mary
@@ -36,13 +38,10 @@
     </xpath>
     <!-- Quote 3 -->
     <xpath expr="(//*[hasclass('carousel-item')])[3]" position="attributes">
-        <attribute name="style" add="background-position: 50% 20%;" remove="background-position: 50% 50%;" separator=";"/>
-    </xpath>
-    <xpath expr="(//blockquote)[3]" position="before">
-        <div class="o_we_bg_filter" style="background-color: rgba(25, 41, 37, 0.55) !important;"/>
+        <attribute name="style"/>
     </xpath>
     <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
-        From the beginning of our planning process, our planner was incredible! She made us feel heard, gave great suggestions and was always just an email or call away when we had any last minute questions. Couldn't have done it without her!
+        Everything was so well-coordinated, we couldn't have asked for more!
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//strong" position="replace" mode="inner">
         Rose and Peter
