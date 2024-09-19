@@ -4,7 +4,12 @@
 <template id="s_showcase" inherit_id="website.s_showcase">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt80 pb80" remove="pt48 pb48" separator=" "/>
+        <attribute name="class" add="pt128 pb128 o_cc o_cc5" remove="pt48 pb48" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/11_001', 'colors':{'c3':'o-color-4','c4':'o-color-5'}, 'flip':['y']}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_11_001" style="background-image: url('/web_editor/shape/web_editor/Origins/11_001.svg?c3=o-color-4&amp;c4=o-color-5&amp;flip=y'); background-position: 0% 100%;"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h3" position="replace" mode="inner">
@@ -32,6 +37,10 @@
     </xpath>
     <xpath expr="//div[hasclass('col-12')][4]//p" position="replace" mode="inner">
         Discover rare and unique books waiting to be found. Unearth hidden gems in our collection.
+    </xpath>
+    <!-- Link -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Discover the books
     </xpath>
     <!-- Image -->
     <xpath expr="//img" position="attributes">

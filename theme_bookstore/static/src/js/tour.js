@@ -10,24 +10,24 @@ const snippets = [
         groupName: "Intro",
     },
     {
-        id: 's_masonry_block',
-        name: 'Masonry',
-        groupName: "Images",
-    },
-    {
-        id: 's_process_steps',
-        name: 'Steps',
-        groupName: "Content",
-    },
-    {
-        id: 's_showcase',
-        name: 'Showcase',
-        groupName: "Content",
+        id: 's_key_images',
+        name: 'Key Images',
+        groupName: "Columns",
     },
     {
         id: 's_title',
         name: 'Title',
         groupName: "Text",
+    },
+    {
+        id: 's_accordion_image',
+        name: 'Accordion Image',
+        groupName: "Content",
+    },
+    {
+        id: 's_cta_box',
+        name: 'CTA Box',
+        groupName: "Content",
     },
 ];
 
