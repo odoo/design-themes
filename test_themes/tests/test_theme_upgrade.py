@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 from odoo.addons.website.tools import MockRequest
 from odoo.tests import standalone

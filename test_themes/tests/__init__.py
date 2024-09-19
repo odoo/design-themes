@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 # The order of these tests is important, as the last one will uninstall this
 # module. Ideally, the tests would be independent from one another but for now,
