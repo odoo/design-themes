@@ -2,9 +2,15 @@
 <odoo>
 
 <template id="s_image_frame" inherit_id="website.s_image_frame">
-    <!-- Image -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/02_001','colors':{'c4':'o-color-5','c5':'o-color-1'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_02_001" style="background-image: url('/web_editor/shape/web_editor/Origins/02_001.svg?c4=o-color-5&amp;c5=o-color-1');"/>
+    </xpath>
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
+        <attribute name="style"/>
     </xpath>
 </template>
 

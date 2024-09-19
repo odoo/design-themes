@@ -58,15 +58,14 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'beauty-1',
+        'color-palettes-name': 'default-light-3',
 
         'header-font-size': (18 / 16) * 1rem,
 
         'font': 'Questrial',
         'headings-font': 'DM Serif Display',
 
-        'header-template': 'sales_one',
-        'header-links-style': 'outline',
+        'header-template': 'default',
 
         // Buttons
         'btn-padding-y':                    .45rem,
@@ -80,8 +79,6 @@ $o-website-values-palettes: (
         'btn-border-radius-lg':             10rem,
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'beauty-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'beauty-1',

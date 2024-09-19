@@ -430,5 +430,20 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="name">website.s_empowerment_default_image</field>
     <field name="url">/theme_beauty/static/src/img/snippets/s_empowerment_default_image.jpg</field>
 </record>
+<record id="s_text_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_text_cover_default_image</field>
+    <field name="name">website.s_text_cover_default_image</field>
+    <field name="url">/theme_beauty/static/src/img/snippets/library_image_16.jpg</field>
+</record>
+<record id="s_pricelist_boxed_default_background" model="theme.ir.attachment">
+    <field name="key">website.s_pricelist_boxed_default_background</field>
+    <field name="name">website.s_pricelist_boxed_default_background</field>
+    <field name="url">/theme_beauty/static/src/img/snippets/s_pricelist_boxed_default_background.jpg</field>
+</record>
+<record id="s_image_frame_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_image_frame_default_image</field>
+    <field name="name">website.s_image_frame_default_image</field>
+    <field name="url">/theme_beauty/static/src/img/snippets/s_image_frame_default_image.jpg</field>
+</record>
 
 </odoo>

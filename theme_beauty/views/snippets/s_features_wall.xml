@@ -2,6 +2,23 @@
 <odoo>
 
 <template id="s_features_wall" inherit_id="website.s_features_wall">
+    <!-- Layout -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/07_002','colors':{'c3':'o-color-4','c4':'o-color-4','c5':'o-color-1'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_web_editor_Airy_04_001')]" position="replace">
+        <div class="o_we_shape o_web_editor_Origins_07_002" style="background-image: url('/web_editor/shape/web_editor/Origins/07_002.svg?c3=o-color-4&amp;c4=o-color-4&amp;c5=o-color-1');"/>
+    </xpath>
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" add="rounded-circle" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" add="rounded-circle" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="class" add="rounded-circle" separator=" "/>
+    </xpath>
+
     <!-- Card 1 -->
     <xpath expr="//div[hasclass('g-col-lg-3')]//h3" position="replace" mode="inner">
         Natural Skincare Products
