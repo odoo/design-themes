@@ -4,7 +4,7 @@
 <template id="s_product_list" inherit_id="website.s_product_list">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5 pb80 pt96" remove="pt64 pb64" separator=" "/>
+        <attribute name="class" add="o_cc o_cc3 pb80 pt96" remove="pt64 pb64" separator=" "/>
     </xpath>
     <!-- Item #1 -->
     <xpath expr="//div[hasclass('col-lg-2')]//h3/a" position="replace" mode="inner">

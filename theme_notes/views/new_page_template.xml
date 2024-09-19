@@ -11,15 +11,6 @@
 
 <!-- General customizations -->
 
-<template id="new_page_template_s_call_to_action_digital" inherit_id="website.new_page_template_s_call_to_action_digital">
-    <!-- Remove shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data"/>
-    </xpath>
-    <!-- Remove shape -->
-    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
-</template>
-
 <template id="new_page_template_s_carousel" inherit_id="website.new_page_template_s_carousel">
     <!-- Slide #1 - Shape option -->
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">

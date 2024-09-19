@@ -4,12 +4,70 @@
 <template id="s_three_columns" inherit_id="website.s_three_columns">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt104 pb104" remove="pt32 pb32" separator=" "/>
-        <attribute name="style">background-image: url('/web/image/website.s_three_columns_default_image');</attribute>
+        <attribute name="class" add="o_cc4 pt80 pb120" remove="o_cc2 pt32 pb32" separator=" "/>
     </xpath>
-    <!-- Filter -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_bg_filter bg-black-50"/>
+    <!-- Title -->
+    <xpath expr="//div[hasclass('row')]/." position="before">
+        <div class="col-lg-12">
+            <h2 style="text-align: center;">
+                <span class="o_text_highlight o_text_highlight_underline o_translate_inline" style="--text-highlight-width: 4px; --text-highlight-color: var(--o-color-4);"><span class="o_text_highlight_item">Upcoming concerts<svg fill="none" class="o_text_highlight_svg o_content_no_merge position-absolute overflow-visible top-0 start-0 w-100 h-100 pe-none"><path stroke-width="var(--text-highlight-width)" stroke="var(--text-highlight-color)" stroke-linecap="round" d="M 0,44 h 371.046875" class="o_text_highlight_path_underline"></path></svg></span></span>
+            </h2>
+            <p>
+                <br/>
+            </p>
+        </div>
+    </xpath>
+    <!-- Card 1 -->
+    <xpath expr="//div[hasclass('s_card')]" position="attributes">
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_card')]//h5" position="replace">
+        <h4 class="card-title">Belgium Tour</h4>
+    </xpath>
+    <xpath expr="//div[hasclass('s_card')]//p" position="replace">
+        <p class="o_small_fs">24th AUGUST</p>
+        <p>Discover the new album live.</p>
+        <p>
+            <br/>
+        </p>
+        <p>
+            <a class="btn btn-primary" href="#">Get your tickets</a>
+        </p>
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="(//div[hasclass('s_card')])[2]" position="attributes">
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_card')])[2]//img" position="attributes">
+        <attribute name="src">/web/image/website.s_carousel_default_image_2</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_card')])[2]//h5" position="replace">
+        <h4 class="card-title">Barcelona Night</h4>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_card')])[2]//p" position="replace">
+        <p class="o_small_fs">27th AUGUST</p>
+        <p>Get up close with the artists.</p>
+        <p>
+            <br/>
+        </p>
+        <p>
+            <a class="btn btn-primary" href="#">Get your tickets</a>
+        </p>
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="(//div[hasclass('s_card')])[3]" position="attributes">
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_card')])[3]//h5" position="replace">
+        <h4 class="card-title">Amsterdam Tour</h4>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_card')])[3]//p" position="replace">
+        <p class="o_small_fs">9th SEPTEMBER</p>
+        <p>Tour Grand Final.</p>
+        <p><br/></p>
+        <p>
+            <a class="btn btn-primary" href="#">Get your tickets</a>
+        </p>
     </xpath>
 </template>
 

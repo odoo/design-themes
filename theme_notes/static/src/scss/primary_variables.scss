@@ -108,6 +108,10 @@ $o-theme-font-configs: (
         'family': ('Montserrat', sans-serif),
         'url': 'Montserrat:300,300i,400,400i,700,700i',
     ),
+    'Open Sans': (
+        'family': ('Open Sans', sans-serif),
+        'url': 'Open+Sans:300,300i,400,400i,600,600i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -116,11 +120,11 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'notes-1',
+        'color-palettes-name': 'default-19',
         'header-font-size': 1rem,
         'logo-height': 3rem,
         'fixed-logo-height': 3rem,
-        'font': 'Oxygen',
+        'font': 'Open Sans',
         'headings-font': 'Montserrat',
         'navbar-font': 'Montserrat',
         'buttons-font': 'Montserrat',
@@ -128,8 +132,6 @@ $o-website-values-palettes: (
         'footer-template': 'descriptive',
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'notes-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'notes-1',
