@@ -56,6 +56,8 @@
         'views/snippets/s_shape_image.xml',
         'views/snippets/s_text_cover.xml',
         'views/snippets/s_empowerment.xml',
+        'views/snippets/s_image_text_overlap.xml',
+        'views/snippets/s_features.xml',
         'views/new_page_template.xml',
     ],
     'images': [
@@ -68,15 +70,20 @@
         'website.s_media_list_default_image_2': '/theme_yes/static/src/img/snippets/s_media_list_2.jpg',
         'website.s_media_list_default_image_3': '/theme_yes/static/src/img/snippets/s_media_list_3.jpg',
         'website.s_quotes_carousel_demo_image_0': '/theme_yes/static/src/img/snippets/s_quotes_carousel_1.jpg',
-        'website.library_image_10': '/theme_yes/static/src/img/snippets/library_image_10.jpg',
-        'website.library_image_05': '/theme_yes/static/src/img/snippets/library_image_05.jpg',
+        'website.s_cover_default_image': '/theme_yes/static/src/img/snippets/s_cover.jpg',
+        'website.s_picture_default_image': '/theme_yes/static/src/img/snippets/s_cover.jpg',
+        'website.library_image_10': '/theme_yes/static/src/img/snippets/library_image_10.webp',
+        'website.library_image_05': '/theme_yes/static/src/img/snippets/library_image_05.webp',
         'website.library_image_08': '/theme_yes/static/src/img/snippets/library_image_08.jpg',
-        'website.library_image_13': '/theme_yes/static/src/img/snippets/library_image_13.jpg',
+        'website.library_image_13': '/theme_yes/static/src/img/snippets/library_image_13.webp',
         'website.library_image_03': '/theme_yes/static/src/img/snippets/library_image_03.jpg',
         'website.library_image_02': '/theme_yes/static/src/img/snippets/library_image_02.jpg',
+        'website.library_image_14': '/theme_yes/static/src/img/snippets/library_image_14.webp',
+        'website.library_image_16': '/theme_yes/static/src/img/snippets/library_image_16.webp',
+        'website.s_parallax_default_image': '/theme_yes/static/src/img/snippets/s_parallax.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_title', 's_company_team', 's_media_list', 's_images_wall', 's_quotes_carousel'],
+        'homepage': ['s_kickoff', 's_title', 's_company_team', 's_image_text_overlap', 's_features', 's_freegrid', 's_quotes_carousel', 's_call_to_action'],
     },
     'new_page_templates': {
         'about': {
