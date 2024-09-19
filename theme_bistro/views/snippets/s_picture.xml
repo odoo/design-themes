@@ -24,15 +24,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_picture" inherit_id="website.configurator_s_picture">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/04_001"}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('o_container_small')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_04_001"/>
-    </xpath>
-</template>
-
 </odoo>

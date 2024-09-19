@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'bistro-5',
+        'color-palettes-name':              'default-22',
 
         // Header
         'header-template':                  'vertical',
@@ -33,7 +33,7 @@ $o-website-values-palettes: (
         'input-padding-y-lg':               .6rem,
 
         // Footer
-        'footer-template':                  'centered',
+        'footer-template':                  'default',
         'footer-effect':                    'slideout_slide_hover',
         'footer-scrolltop':                 true,
     ),
@@ -163,8 +163,6 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
         ),
     )
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'bistro-5');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'bistro-1',
