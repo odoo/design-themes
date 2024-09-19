@@ -3,11 +3,14 @@
 
 <template id="s_company_team_shapes" inherit_id="website.s_company_team_shapes">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5 pb168" remove="o_cc2 pb48" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/14','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="class" add="o_cc1 pt80 pb80" remove="o_cc2 pt48 pb48" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/05','colors':{'c3':'o-color-1'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('o_container_small')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_14"/>
+        <div class="o_we_shape o_web_editor_Origins_05" style="background-image: url('/web_editor/shape/web_editor/Origins/05.svg?c3=o-color-1');"></div>
+    </xpath>
+    <xpath expr="//h2" position="replace">
+            <h2 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_underline" style="--text-highlight-width: 4px; --text-highlight-color: var(--o-color-4);"><span class="o_text_highlight_item">Meet The Band<svg fill="none" class="o_text_highlight_svg o_content_no_merge position-absolute overflow-visible top-0 start-0 w-100 h-100 pe-none"><path stroke-width="var(--text-highlight-width)" stroke="var(--text-highlight-color)" stroke-linecap="round" d="M 0,44 h 285.4921875" class="o_text_highlight_path_underline"></path></svg></span></span></h2>
     </xpath>
 </template>
 

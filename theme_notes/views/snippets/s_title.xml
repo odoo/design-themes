@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_title" inherit_id="website.s_title">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc1 pt80 pb80" remove="o_cc2 pt40 pb40" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/05','colors':{'c3':'o-color-4'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_05 bg-o-color-1" style="background-image: url('/web_editor/shape/web_editor/Origins/05.svg?c3=o-color-4');"></div>
+    </xpath>
+    <xpath expr="//h2" position="replace">
+        <h2 style="text-align: center;">#PulseOfTheFuture</h2>
+    </xpath>
+</template>
+
+</odoo>

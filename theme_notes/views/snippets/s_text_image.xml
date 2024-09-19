@@ -4,25 +4,29 @@
 <template id="s_text_image" inherit_id="website.s_text_image">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc1" separator=" "/>
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/11","flip":["x"]}</attribute>
     </xpath>
     <!-- Title & Paragraph -->
     <xpath expr="//h2" position="replace" mode="inner">
-        About the Festival
+        <span class="o_text_highlight o_translate_inline o_text_highlight_underline" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-1);"><span class="o_text_highlight_item">Our History<svg fill="none" class="o_text_highlight_svg o_content_no_merge position-absolute overflow-visible top-0 start-0 w-100 h-100 pe-none"><path stroke-width="var(--text-highlight-width)" stroke="var(--text-highlight-color)" stroke-linecap="round" d="M 0,34 h 168.0625" class="o_text_highlight_path_underline"></path></svg></span></span>
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
         <br/>
     </xpath>
     <xpath expr="//p[2]" position="replace" mode="inner">
-        The Miraillet Festival was born in 2002 from a common will of cultural, touristic and institutional actors of the region to propose a major cultural event in the very heart of the region during the summer period.
+        <p>Their early days were spent playing small gigs at local clubs, where they rapidly gained a reputation for their high-energy performances and innovative sound. As they honed their craft, their fanbase grew, fueled by word-of-mouth buzz and their undeniable chemistry on stage.</p>
+        <p>With each new release, Nova Pulse has continued to evolve, experimenting with different genres while staying true to their unique style. Their relentless drive and commitment to making authentic, powerful music have brought them to where they are today—a band on the brink of rock stardom.</p>
     </xpath>
-    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
-        Discover more
-    </xpath>
+    <!-- Remove the button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace"/>
     <!-- Image wrapper -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="col-lg-4 offset-lg-2" remove="col-lg-6 offset-lg-1" separator=" "/>
+    </xpath>
+    <!-- Text wrapper -->
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-5" separator=" "/>
     </xpath>
 </template>
 

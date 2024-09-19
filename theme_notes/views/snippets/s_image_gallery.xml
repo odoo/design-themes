@@ -9,9 +9,28 @@
 </template>
 
 <template id="s_images_wall" inherit_id="website.s_images_wall">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb80" remove="pt24 pb24" separator=" "/>
+        <attribute name="data-oe-shape-data" add="{'shape':'web_editor/Origins/07_002','colors':{'c3':'o-color-1','c4':'o-color-4','c5':'o-color-1'},'flip':['x'],'showOnMobile':false,'shapeAnimationSpeed':'0'}"/>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_web_editor_Origins_07_002" style="background-image: url('/web_editor/shape/web_editor/Origins/07_002.svg?c3=o-color-1&amp;c4=o-color-4&amp;c5=o-color-1&amp;flip=x');"></div>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/." position="before">
+        <div class="col-lg-12">
+            <h2 style="text-align: center;"><span class="o_text_highlight o_text_highlight_underline o_translate_inline" style="--text-highlight-color: var(--o-color-4); --text-highlight-width: 3px;"><span class="o_text_highlight_item">Band Gallery<svg fill="none" class="o_text_highlight_svg o_content_no_merge position-absolute overflow-visible top-0 start-0 w-100 h-100 pe-none"><path stroke-width="var(--text-highlight-width)" stroke="var(--text-highlight-color)" stroke-linecap="round" d="M 0,44 h 241.765625" class="o_text_highlight_path_underline"></path></svg></span></span></h2>
+            <p>
+                <br/>
+            </p>
+        </div>
+    </xpath>
     <!-- First image -->
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.library_image_19</attribute>
+    </xpath>
+    <!-- Third image -->
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="src">/web/image/website.s_cover_default_image</attribute>
     </xpath>
 </template>
 

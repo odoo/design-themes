@@ -12,7 +12,7 @@
     </xpath>
     <!-- Column #1 -->
     <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
-        <attribute name="class" add="pt104 pb64 o_cc o_cc5" separator=" "/>
+        <attribute name="class" add="pt104 pb64 o_cc o_cc3" separator=" "/>
     </xpath>
     <!-- Column #2 -->
     <xpath expr="(//div[hasclass('col-lg-4')])[2]" position="attributes">
@@ -24,7 +24,7 @@
     </xpath>
     <!-- Column #3 -->
     <xpath expr="(//div[hasclass('col-lg-4')])[3]" position="attributes">
-        <attribute name="class" add="pt104 pb104 o_cc o_cc2" remove="pt24 pb24" separator=" "/>
+        <attribute name="class" add="pt104 pb104 o_cc o_cc4" remove="pt24 pb24" separator=" "/>
     </xpath>
     <!-- Column #3 - Text -->
     <xpath expr="(//span[hasclass('s_number')])[2]" position="replace" mode="inner">
@@ -35,7 +35,7 @@
     </xpath>
     <!-- Column #4 -->
     <xpath expr="(//div[hasclass('col-lg-4')])[4]" position="attributes">
-        <attribute name="class" add="pt104 pb104 o_cc o_cc3" remove="pt24 pb24" separator=" "/>
+        <attribute name="class" add="pt104 pb104 o_cc o_cc2" remove="pt24 pb24" separator=" "/>
     </xpath>
     <!-- Column #4 - Text -->
     <xpath expr="(//span[hasclass('h5-fs')])[3]" position="replace" mode="inner">
