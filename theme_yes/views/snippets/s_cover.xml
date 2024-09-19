@@ -33,15 +33,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/14_001"}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_14_001"/>
-    </xpath>
-</template>
-
 </odoo>
