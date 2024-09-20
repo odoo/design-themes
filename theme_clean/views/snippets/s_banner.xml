@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_banner" inherit_id="website.s_banner">
+    <!-- Text -->
+    <xpath expr="//h1" position="replace">
+        <h1 class="display-3 o_default_snippet_text">Unleash your <strong class="o_default_snippet_text"><span class="o_text_highlight o_translate_inline o_text_highlight_circle_2 o_text_highlight_fill" style="--text-highlight-width: 6px;"><span class="o_text_highlight_item">potential<svg fill="none" class="o_text_highlight_svg o_content_no_merge position-absolute overflow-visible top-0 start-0 w-100 h-100 pe-none"><path stroke-width="var(--text-highlight-width)" stroke="var(--text-highlight-color)" stroke-linecap="round" fill="var(--text-highlight-color)" transform="scale(1.2835546875, 0.6916666666666667)" d="M112.58 21.164h18.516c-.478-.176-1.722-.64-2.967-1.105.101-.401.214-.803.315-1.192 12.255 2.912 24.561 5.573 36.716 8.823 5.896 1.582 11.628 3.967 17.171 6.527 10.433 4.832 14.418 14.22 16.479 24.739.377 1.92.566 3.878.83 5.823 2.212 15.94-5.858 23.986-21.595 33.813-.993.615-2.288.79-3.181 1.494-14.229 11.308-31.412 14.32-48.608 17.107-29.01 4.694-57.431 2.209-84.91-8.372-8.145-3.138-16.164-6.853-23.706-11.22C6.176 90.986 1.16 80.053.193 67.25c-1.798-23.809 9.025-42.485 30.356-53.304C44.678 6.793 59.8 3.367 75.45 2.375 90.583 1.42 105.793.379 120.927.78c16.089.427 32.041 3.05 46.911 9.84 2.074.941 3.67 2.912 4.915 5.083-9.73-1.443-19.433-2.987-29.175-4.305-4.89-.665-9.842-1.067-14.77-1.33-23.82-1.28-47.376.514-70.391 7.003a133.771 133.771 0 0 0-22.639 8.648c-17.9 8.786-27.616 26.935-25.567 46.364.666 6.263 3.507 11.133 9.05 14.308 26.862 15.401 55.748 21.965 86.645 19.819 15.561-1.08 31.01-2.787 45.767-8.284 11.099-4.142 21.658-9.25 30.595-17.195 9.779-8.698 11.715-18.55 5.669-30.249-1.131-2.196-3.256-4.079-5.33-5.56-7.981-5.736-17.773-7.48-26.459-11.534-13.249-6.175-27.541-6.916-41.343-10.167-.817-.188-1.571-.64-2.35-.966.037-.364.088-.728.125-1.092Z" class="o_text_highlight_path_circle_2"></path></svg></span></span>.</strong></h1>
+    </xpath>
+    <!-- Remove panels -->
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[2]" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="replace"/>
+    <!-- Image Layout -->
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="attributes">
+        <attribute name="class" add="g-col-lg-6 col-lg-6" remove="o_grid_item g-col-lg-4 col-lg-4" separator=" "/>
+        <attribute name="style" add="grid-area: 1 / 7 / 11 / 13;" remove="grid-area: 1 / 8 / 11 / 12;" separator=" "/>
+    </xpath>
+    <!-- Img -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web_editor/image_shape/website.s_banner_default_image_2/web_editor/composition/composition_oval_line.svg?c2=o-color-2</attribute>
+        <attribute name="data-shape">web_editor/composition/composition_oval_line</attribute>
+        <attribute name="data-original-mimetype">image/jpeg</attribute>
+        <attribute name="data-file-name">s_banner_2.svg</attribute>
+        <attribute name="data-shape-colors">;#34495E;;;</attribute>
+    </xpath>
+</template>
+
+</odoo>

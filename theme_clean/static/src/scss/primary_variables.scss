@@ -117,9 +117,13 @@ $o-theme-font-configs: (
         'family': ('Ubuntu', sans-serif),
         'url': 'Ubuntu:300,300i,400,400i,700,700i',
     ),
-    'Bitter': (
-        'family': ('Bitter', serif),
-        'url': 'Bitter:300,300i,400,400i,700,700i',
+    'IBM Plex Sans': (
+        'family': ('IBM Plex Sans', sans-serif),
+        'url': 'IBM+Plex+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,700,700i',
     ),
     'Noto Serif': ( // font update - Droid Serif -> Noto+Serif
         'family': ('Noto Serif', serif),
@@ -145,46 +149,6 @@ $o-theme-font-configs: (
         'family': ('Josefin Slab', serif),
         'url': 'Josefin+Slab:300,300i,400,400i,700,700i',
     ),
-    'Abel': (
-        'family': ('Abel', sans-serif),
-        'url': 'Abel:300,300i,400,400i,700,700i',
-    ),
-    'Mulish': (
-        'family': ('Mulish', sans-serif),
-        'url': 'Mulish:300,300i,400,400i,700,700i',
-    ),
-    'Libre Baskerville': (
-        'family': ('Libre Baskerville', serif),
-        'url': 'Libre+Baskerville:300,300i,400,400i,700,700i',
-    ),
-    'Medula One': (
-        'family': ('Medula One', cursive),
-        'url': 'Medula+One:300,300i,400,400i,700,700i',
-    ),
-    'Montserrat Alternates': (
-        'family': ('Montserrat Alternates', sans-serif),
-        'url': 'Montserrat+Alternates:300,300i,400,400i,700,700i',
-    ),
-    'Imprima': (
-        'family': ('Imprima', sans-serif),
-        'url': 'Imprima:300,300i,400,400i,700,700i',
-    ),
-    'Oswald': (
-        'family': ('Oswald', sans-serif),
-        'url': 'Oswald:300,300i,400,400i,700,700i',
-    ),
-    'Quattrocento': (
-        'family': ('Quattrocento', serif),
-        'url': 'Quattrocento:300,300i,400,400i,700,700i',
-    ),
-    'Vollkorn': (
-        'family': ('Vollkorn', serif),
-        'url': 'Vollkorn:300,300i,400,400i,700,700i',
-    ),
-    'Alice': (
-        'family': ('Alice', serif),
-        'url': 'Alice:300,300i,400,400i,700,700i',
-    ),
 );
 
 //------------------------------------------------------------------------------
@@ -194,12 +158,10 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'clean-1',
-        'headings-font': 'Dosis',
-        'navbar-font': 'Dosis',
-        'buttons-font': 'Dosis',
-        'header-template': 'hamburger',
-        'hamburger-position': 'right',
-        'footer-template': 'contact',
+        'headings-font': 'IBM Plex Sans',
+        'navbar-font': 'Inter',
+        'buttons-font': 'Inter',
+        'header-template': 'default',
     ),
 );
 

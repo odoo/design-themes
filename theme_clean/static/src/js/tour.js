@@ -1,17 +1,16 @@
 /** @odoo-module */
 
 import * as wTourUtils from '@website/js/tours/tour_utils';
-import { _t } from "@web/core/l10n/translation";
 
 const snippets = [
     {
-        id: 's_cover',
-        name: 'Cover',
+        id: 's_banner',
+        name: 'Banner',
         groupName: "Intro",
     },
     {
-        id: 's_text_image',
-        name: 'Text - Image',
+        id: 's_color_blocks_2',
+        name: 'Big Boxes',
         groupName: "Content",
     },
     {
@@ -20,28 +19,33 @@ const snippets = [
         groupName: "Text",
     },
     {
-        id: 's_features',
-        name: 'Features',
+        id: 's_text_image',
+        name: 'Text - Image',
         groupName: "Content",
     },
     {
-        id: 's_carousel',
-        name: 'Carousel',
-        groupName: "Intro",
-    },
-    {
-        id: 's_numbers',
-        name: 'Numbers',
+        id: 's_image_text',
+        name: 'Image - Text',
         groupName: "Content",
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
-        groupName: "Columns",
+        id: 's_numbers_showcase',
+        name: 'Numbers Showcase',
+        groupName: "Content",
     },
     {
-        id: 's_call_to_action',
-        name: 'Call to Action',
+        id: 's_company_team',
+        name: 'Team',
+        groupName: "People",
+    },
+    {
+        id: 's_accordion_image',
+        name: 'Accordion Image',
+        groupName: "Content",
+    },
+    {
+        id: 's_cta_card',
+        name: 'Card Call to Action',
         groupName: "Content",
     },
 ];
@@ -54,11 +58,9 @@ wTourUtils.registerThemeHomepageTour("clean_tour", () => [
     ...wTourUtils.dragNDrop(snippets[1]),
     ...wTourUtils.dragNDrop(snippets[2]),
     ...wTourUtils.dragNDrop(snippets[3]),
-    ...wTourUtils.clickOnSnippet(snippets[3]),
-    wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
-    wTourUtils.goBackToBlocks(),
     ...wTourUtils.dragNDrop(snippets[4]),
     ...wTourUtils.dragNDrop(snippets[5]),
     ...wTourUtils.dragNDrop(snippets[6]),
     ...wTourUtils.dragNDrop(snippets[7]),
+    ...wTourUtils.dragNDrop(snippets[8]),
 ]);
