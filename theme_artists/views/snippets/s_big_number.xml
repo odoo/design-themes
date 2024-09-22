@@ -13,15 +13,15 @@
     </xpath>
 
     <!-- Text -->
-    <xpath expr="//h2/div" position="attributes">
+    <xpath expr="//h2/span" position="attributes">
         <attribute name="style" add="font-size: 7.75rem;" remove="font-size: 10.75rem;" separator=";"/>
     </xpath>
-    <xpath expr="//h2/div" position="replace" mode="inner">
-        <font class="text-gradient" style="background-image: linear-gradient(0deg, rgb(165, 78, 223) 8%, rgb(222, 222, 222) 80%);">
+    <xpath expr="//h2/span" position="replace" mode="inner">
+        <font class="text-gradient" style="background-image: linear-gradient(0deg, var(--o-color-1) 25%, var(--o-color-4) 90%);">
             250+
         </font>
     </xpath>
-    <xpath expr="//h2/following-sibling::div" position="replace" mode="inner">
+    <xpath expr="//p/span" position="replace" mode="inner">
         songs released
     </xpath>
 </template>
