@@ -2,9 +2,14 @@
 <odoo>
 
 <template id="s_cta_box" inherit_id="website.s_cta_box">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pt0" remove="pt80" separator=" "/>
+    </xpath>
     <!-- Card -->
     <xpath expr="//div[hasclass('card')]" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc4" separator=" "/>
+        <attribute name="style" add="border-radius: 0px !important;" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -17,6 +22,7 @@
     <!-- Image -->
     <xpath expr="//img" position="attributes">
         <attribute name="src">/theme_enark/static/src/img/snippets/library_image_02.jpg</attribute>
+        <attribute name="class" remove="rounded-end" separator=" "/>
     </xpath>
     <!-- Button -->
     <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">

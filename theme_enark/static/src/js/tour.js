@@ -4,24 +4,24 @@ import * as wTourUtils from "@website/js/tours/tour_utils";
 
 const snippets = [
     {
-        id: 's_banner',
-        name: 'Banner',
-        groupName: "Intro",
+        id: 's_freegrid',
+        name: 'Free grid',
+        groupName: "Columns",
     },
     {
-        id: 's_picture',
-        name: 'Title - Image',
-        groupName: "Images",
+        id: 's_features_wall',
+        name: 'Features Wall',
+        groupName: "Columns",
     },
     {
-        id: 's_numbers',
-        name: 'Numbers',
+        id: 's_numbers_list',
+        name: 'Numbers list',
         groupName: "Content",
     },
     {
-        id: 's_text_image',
-        name: 'Text - Image',
-        groupName: "Content",
+        id: 's_title',
+        name: 'Title',
+        groupName: "Text",
     },
     {
         id: 's_images_wall',
@@ -29,14 +29,19 @@ const snippets = [
         groupName: "Images",
     },
     {
-        id: 's_call_to_action',
-        name: 'Call to Action',
+        id: 's_references',
+        name: 'References',
+        groupName: "People",
+    },
+    {
+        id: 's_cta_box',
+        name: 'Box Call to Action',
         groupName: "Content",
     },
 ];
 
 wTourUtils.registerThemeHomepageTour("enark_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"enark-1"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-light-12"'),
     ...wTourUtils.dragNDrop(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
@@ -45,4 +50,5 @@ wTourUtils.registerThemeHomepageTour("enark_tour", () => [
     ...wTourUtils.dragNDrop(snippets[3]),
     ...wTourUtils.dragNDrop(snippets[4]),
     ...wTourUtils.dragNDrop(snippets[5]),
+    ...wTourUtils.dragNDrop(snippets[6]),
 ]);
