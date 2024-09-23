@@ -2,6 +2,10 @@
 <odoo>
 
 <template id="s_freegrid" inherit_id="website.s_freegrid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc5 pt56 pb56" remove="o_cc1 pt64 pb64" separator=" "/>
+    </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
         Where Creativity Meets Innovation in Art

@@ -52,33 +52,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_carousel" inherit_id="website.configurator_s_carousel">
-    <!-- Carousel-item #01 -->
-    <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/16","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('carousel-item')]//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_16"/>
-    </xpath>
-
-    <!-- Carousel-item #02 -->
-    <xpath expr="//div[hasclass('carousel-item')][2]" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/16","flip":["y"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_16" style="background-image: url('/web_editor/shape/web_editor/Origins/16.svg?c3=o-color-5&amp;flip=y'); background-position: 50% 50%;"/>
-    </xpath>
-
-    <!-- Carousel-item #03 -->
-    <xpath expr="//div[hasclass('carousel-item')][3]" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/16","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('carousel-item')][3]//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_16"/>
-    </xpath>
-</template>
-
 </odoo>
