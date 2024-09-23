@@ -723,9 +723,25 @@
 
 <!-- ======== CARD OFFSET ======== -->
 <template id="s_card_offset" inherit_id="website.s_card_offset">
+    <!-- Grid items -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="style" add="--grid-item-padding-y: 64px;" remove="--grid-item-padding-y: 40px;" separator=";"/>
+    </xpath>
     <!-- Image -->
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Expert Consultancy in Tech &amp; Design
+    </xpath>
+    <!-- Paragraph 1 -->
+    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
+        Optimize your business with our consultancy services in technology and design. We provide strategic advice and innovative solutions to help you stay ahead in the digital age.
+    </xpath>
+    <!-- Paragraph 2 -->
+    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
+        Unlock your business potential.
     </xpath>
 </template>
 
@@ -762,24 +778,7 @@
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 </template>
-<template id="s_card_offset" inherit_id="website.s_card_offset">
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
-        Expert Consultancy in Tech &amp; Design
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Optimize your business with our consultancy services in technology and design. We provide strategic advice and innovative solutions to help you stay ahead in the digital age.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Unlock your business potential.
-    </xpath>
-</template>
+
 <!-- ==== Cards Grid ===== -->
 <template id="s_cards_grid" inherit_id="website.s_cards_grid">
     <!-- Card 1 -->
