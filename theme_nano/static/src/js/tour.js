@@ -4,24 +4,9 @@ import * as wTourUtils from '@website/js/tours/tour_utils';
 
 const snippets = [
     {
-        id: 's_cover',
-        name: 'Cover',
+        id: 's_discovery',
+        name: 'Discovery',
         groupName: "Intro",
-    },
-    {
-        id: 's_features',
-        name: 'Features',
-        groupName: "Content",
-    },
-    {
-        id: 's_text_block',
-        name: 'Text',
-        groupName: "Text",
-    },
-    {
-        id: 's_images_wall',
-        name: 'Images Wall',
-        groupName: "Images",
     },
     {
         id: 's_parallax',
@@ -29,9 +14,39 @@ const snippets = [
         groupName: "Images",
     },
     {
+        id: 's_text_block',
+        name: 'Text',
+        groupName: "Text",
+    },
+    {
+        id: 's_key_images',
+        name: 'Key Images',
+        groupName: "Columns",
+    },
+    {
+        id: 's_image_text_overlap',
+        name: 'Image - Text Overlap',
+        groupName: "Content",
+    },
+    {
+        id: 's_company_team',
+        name: 'Team',
+        groupName: "People",
+    },
+    {
         id: 's_references',
         name: 'References',
         groupName: "People",
+    },
+    {
+        id: 's_numbers',
+        name: 'Numbers',
+        groupName: "Content",
+    },
+    {
+        id: 's_cta_box',
+        name: 'Box Call to Action',
+        groupName: "Content",
     },
 ];
 
