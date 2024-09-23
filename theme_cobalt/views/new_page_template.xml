@@ -46,9 +46,10 @@
 
 <template id="new_page_template_about_s_banner" inherit_id="website.new_page_template_about_s_banner">
     <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/11_001","flip":["y"]}</attribute>
     </xpath>
-    <xpath expr="//section/div" position="before">
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
         <div class="o_we_shape o_web_editor_Origins_11_001" style="background-image: url('/web_editor/shape/web_editor/Origins/11_001.svg?c3=o-color-4&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
 </template>
@@ -96,9 +97,10 @@
 
 <template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
     <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/11_001","flip":["y"]}</attribute>
     </xpath>
-    <xpath expr="//section/div" position="before">
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
         <div class="o_we_shape o_web_editor_Origins_11_001" style="background-image: url('/web_editor/shape/web_editor/Origins/11_001.svg?c3=o-color-4&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
 </template>
