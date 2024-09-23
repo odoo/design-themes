@@ -19,14 +19,16 @@
 </template>
 
 <template id="configurator_s_title" inherit_id="website.configurator_s_title">
-    <!-- Shape option -->
+    <!-- Remove parallax for the configurator -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_001","flip":[]}</attribute>
+        <attribute name="class" add="pb0 pt64" remove="parallax s_parallax_is_fixed pt256 pb40" separator=" "/>
+        <attribute name="data-scroll-background-ratio">0</attribute>
     </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_12_001 o_second_extra_shape_mapping"/>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" remove="display-3-fs" separator=" "/>
     </xpath>
+    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
 </template>
 
 </odoo>

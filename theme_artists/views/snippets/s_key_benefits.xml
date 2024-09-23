@@ -2,6 +2,10 @@
 <odoo>
 
 <template id="s_key_benefits" inherit_id="website.s_key_benefits">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5 pt56 pb56" remove="pt48 pb48" separator=" "/>
+    </xpath>
     <!-- Titles -->
     <xpath expr="(//h3)[1]" position="replace" mode="inner">
         Bespoke Art Creations
