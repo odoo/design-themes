@@ -42,6 +42,10 @@
         'views/snippets/s_shape_image.xml',
         'views/snippets/s_text_cover.xml',
         'views/snippets/s_empowerment.xml',
+        'views/snippets/s_discovery.xml',
+        'views/snippets/s_numbers.xml',
+        'views/snippets/s_image_text_overlap.xml',
+        'views/snippets/s_company_team_basic.xml',
         'views/new_page_template.xml',
     ],
     'images': [
@@ -57,6 +61,7 @@
         'website.library_image_03': '/theme_nano/static/src/img/snippets/s_images_wall_05.jpg',
         'website.library_image_02': '/theme_nano/static/src/img/snippets/s_images_wall_06.jpg',
         'website.s_parallax_default_image': '/theme_nano/static/src/img/snippets/s_parallax.jpg',
+        'website.s_picture_default_image': '/theme_nano/static/src/img/snippets/s_picture.jpg',
         'website.s_reference_demo_image_1': '/theme_nano/static/src/img/snippets/s_reference_01.png',
         'website.s_reference_demo_image_2': '/theme_nano/static/src/img/snippets/s_reference_02.png',
         'website.s_reference_demo_image_3': '/theme_nano/static/src/img/snippets/s_reference_03.png',
@@ -65,7 +70,7 @@
         'website.s_reference_default_image_6': '/theme_nano/static/src/img/snippets/s_reference_06.png',
     },
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_features', 's_text_block', 's_images_wall', 's_parallax', 's_references'],
+        'homepage': ['s_discovery', 's_parallax', 's_text_block', 's_key_images', 's_image_text_overlap', 's_company_team_basic', 's_references', 's_numbers', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {
