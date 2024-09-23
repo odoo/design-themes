@@ -16,6 +16,10 @@ $o-theme-font-configs: (
         'family': ('Abril Fatface', serif),
         'url': 'Abril+Fatface:300,300i,400,400i,700,700i',
     ),
+    'Poppins': (
+        'family': ('Poppins', sans-serif),
+        'url': 'Poppins:300,300i,400,400i,700,700i',
+    ),
 );
 
 
@@ -25,19 +29,27 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'cobalt-1',
+        'color-palettes-name': 'default-8',
 
         'font': 'Inter',
+        'headings-font': 'Poppins',
 
         'headings-line-height': 1.1,
 
         'btn-ripple': true,
-        'btn-secondary-outline': true,
-        'btn-border-radius': 2px,
+        'btn-border-radius': 10rem,
+        'btn-border-radius-sm': 10rem,
+        'btn-border-radius-lg': 10rem,
+        'btn-padding-y': .5rem,
+        'btn-padding-x': 1rem,
+        'btn-padding-y-lg': 1rem,
+        'btn-padding-x-lg': 2rem,
+        'btn-padding-x-sm': .5rem,
+        'header-template': 'boxed',
+        'header-links-style': 'pills',
+        'footer-template': 'call_to_action',
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'cobalt-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'cobalt-1',
