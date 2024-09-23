@@ -4,19 +4,19 @@ import * as wTourUtils from '@website/js/tours/tour_utils';
 
 const snippets = [
     {
-        id: 's_carousel',
-        name: 'Carousel',
+        id: 's_sidegrid',
+        name: 'Side Grid',
         groupName: "Intro",
     },
     {
-        id: 's_text_image',
-        name: 'Text - Image',
+        id: 's_product_catalog',
+        name: 'Product Catalog',
         groupName: "Content",
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
-        groupName: "Columns",
+        id: 's_cta_box',
+        name: 'Box Call to Action',
+        groupName: "Content",
     },
     {
         id: 's_title',
@@ -24,14 +24,19 @@ const snippets = [
         groupName: "Text",
     },
     {
+        id: 's_image_frame',
+        name: 'Image Frame',
+        groupName: "Images",
+    },
+    {
         id: 's_images_wall',
         name: 'Images Wall',
         groupName: "Images",
     },
     {
-        id: 's_call_to_action',
-        name: 'Call to Action',
-        groupName: "Content",
+        id: 's_shape_image',
+        name: 'Shape Image',
+        groupName: "Images",
     },
 ];
 
@@ -47,4 +52,5 @@ wTourUtils.registerThemeHomepageTour("artists_tour", () => [
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.dragNDrop(snippets[4]),
     ...wTourUtils.dragNDrop(snippets[5]),
+    ...wTourUtils.dragNDrop(snippets[6]),
 ]);
