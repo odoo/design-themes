@@ -85,6 +85,10 @@ $o-theme-font-configs: (
         'family': ('Montserrat', sans-serif),
         'url': 'Montserrat:300,300i,400,400i,700,700i',
     ),
+    'Bebas Neue': (
+        'family': ('Bebas Neue', sans-serif),
+        'url': 'Bebas+Neue:400,700',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -96,11 +100,23 @@ $o-website-values-palettes: (
         'color-palettes-name': 'artists-1',
         'header-font-size': (13 / 16) * 1rem,
         'font': 'Montserrat',
-        'headings-font': 'Oxygen',
+        'headings-font': 'Bebas Neue',
         'btn-ripple': true,
-        'header-template': 'hamburger',
+        'header-template': 'vertical',
         'footer-template': 'centered',
         'link-underline': 'never',
+        'btn-padding-y': .5rem,
+        'btn-padding-x': 1rem,
+        'btn-padding-y-sm': .25rem,
+        'btn-padding-x-sm': .5rem,
+        'btn-padding-y-lg': .75rem,
+        'btn-padding-x-lg': 1.5rem,
+        'btn-border-radius': 2px,
+        'btn-border-radius-sm': 2px,
+        'btn-border-radius-lg': 2px,
+        'input-border-radius': 2px,
+        'input-border-radius-sm': 2px,
+        'input-border-radius-lg': 2px,
     ),
 );
 
