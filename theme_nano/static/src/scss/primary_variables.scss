@@ -7,24 +7,29 @@ $o-website-values-palettes: (
         'color-palettes-name':              'nano-1',
 
         // Header
-        'header-template':                  'search',
         'header-font-size':                 1rem,
         'header-links-style':               'fill',
         'menu-border-radius':               0,
 
         // Font
-        'font':                             'Oxygen',
-        'headings-font':                    'Nunito',
-        'buttons-font':                     'Nunito',
+        'font':                             'Inter',
+        'headings-font':                    'Manrope',
+        'buttons-font':                     'Manrope',
+
+        // Buttons
+        'btn-padding-y':                    .5rem,
+        'btn-padding-x':                    1rem,
+        'btn-padding-y-lg':                 1rem,
+        'btn-padding-x-lg':                 2rem,
+        'btn-border-radius':                10rem,
+        'btn-border-radius-sm':             10rem,
+        'btn-border-radius-lg':             10rem,
 
         // Body
-        'layout':                           'postcard',
         'btn-ripple':                       true,
 
         // Footer
         'footer-template':                  'descriptive',
-        'footer-effect':                    'slideout_slide_hover',
-        'footer-scrolltop':                 true,
     ),
 );
 
@@ -87,6 +92,14 @@ $o-theme-font-configs: (
         'family': ('Nunito', sans-serif),
         'url': 'Nunito:300,300i,400,400i,700,700i',
     ),
+    'Manrope': (
+        'family': ('Manrope', sans-serif),
+        'url': 'Manrope:300,300i,400,400i,700,700i',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,700,700i',
+    ),
 );
 
 // Headings
@@ -114,7 +127,7 @@ $o-theme-btn-font-weight:                   400;
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'nano-1': (
-            'alpha':                        #ed8558,
+            'alpha':                        #e33a07,
             'beta':                         #74bcc5,
             'gamma':                        #7cc086,
             'delta':                        #afd5a6,

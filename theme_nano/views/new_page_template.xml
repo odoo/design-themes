@@ -39,30 +39,21 @@
 
 <!-- General customizations -->
 
-<template id="new_page_template_s_parallax" inherit_id="website.new_page_template_s_parallax">
-    <!-- Remove shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data"/>
-    </xpath>
-    <!-- Remove shape -->
-    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
-</template>
-
 <template id="new_page_template_s_text_block" inherit_id="website.new_page_template_s_text_block">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5 pt40" remove="pt96 o_cc1" separator=" "/>
+        <attribute name="class" add="pt40" remove="pt96 o_cc1" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_s_text_block_h1" inherit_id="website.new_page_template_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc1 pb0" separator=" "/>
+        <attribute name="class" remove="o_cc1 pb0" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_s_text_block_h2" inherit_id="website.new_page_template_s_text_block_h2">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc1 pb0" separator=" "/>
+        <attribute name="class" remove="o_cc1 pb0" separator=" "/>
     </xpath>
 </template>
 
@@ -193,7 +184,13 @@
 
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" remove="o_cc3" separator=" "/>
+        <attribute name="class" remove="o_cc3" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_full_s_numbers" inherit_id="website.new_page_template_about_full_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc3" separator=" "/>
     </xpath>
 </template>
 
