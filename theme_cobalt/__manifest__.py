@@ -17,16 +17,8 @@
         'static/description/cobalt_poster.jpg',
         'static/description/cobalt_screenshot.jpg',
     ],
-    'images_preview_theme': {
-        'website.library_image_03': '/theme_cobalt/static/src/img/pictures/s_image_1.jpg',
-        'website.library_image_14': '/theme_cobalt/static/src/img/pictures/s_image_6.jpg',
-        'website.library_image_10': '/theme_cobalt/static/src/img/pictures/s_image_4.jpg',
-        'website.library_image_13': '/theme_cobalt/static/src/img/pictures/s_image_2.jpg',
-        'website.library_image_16': '/theme_cobalt/static/src/img/pictures/s_image_3.jpg',
-        'website.library_image_05': '/theme_cobalt/static/src/img/pictures/s_image_5.jpg',
-    },
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_references', 's_text_image', 's_color_blocks_2', 's_images_wall'],
+        'homepage': ['s_banner', 's_image_text', 's_key_images', 's_text_image', 's_company_team_detail', 's_references_grid'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-cobalt.odoo.com',
