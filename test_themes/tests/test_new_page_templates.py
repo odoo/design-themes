@@ -190,6 +190,12 @@ class TestNewPageTemplates(TransactionCase):
                                 conflict.difference_update(white_list)
                                 if len(conflict) > 1:
                                     errors.append("Using %r, view %r contains conflicting classes: %r in %r (according to pattern %r)" % (theme_name, view.key, conflict, classes, conflicting_classes_re.pattern))
+                        for el in html_tree.xpath('//*[@style]'):
+                            styles = el.attrib['style'].split(';')
+                            non_empty_styles = filter(lambda style: style, styles)
+                            property_names = list(map(lambda style: style.split(':')[0].strip(), non_empty_styles))
+                            if len(property_names) != len(set(property_names)):
+                                errors.append("Using %r, view %r contains duplicate style properties: %r" % (theme_name, view.key, el.attrib['style']))
                     except Exception:
                         _logger.error("Using %r, view %r cannot be rendered", theme_name, view.key)
                         errors.append("Using %r, view %r cannot be rendered" % (theme_name, view.key))
