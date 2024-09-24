@@ -99,7 +99,7 @@
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc3 parallax pt0" separator=" "/>
-        <attribute name="style" remove="background-image: none;" separator=" "/>
+        <attribute name="style" remove="background-image: none;" separator=";"/>
     </xpath>
     <xpath expr="//div" position="attributes">
         <attribute name="class" remove="bg-black-75" separator=" "/>

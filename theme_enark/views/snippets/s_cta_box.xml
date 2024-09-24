@@ -9,7 +9,7 @@
     <!-- Card -->
     <xpath expr="//div[hasclass('card')]" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc4" separator=" "/>
-        <attribute name="style" add="border-radius: 0px !important;" separator=" "/>
+        <attribute name="style" add="border-radius: 0px !important;" separator=";"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
