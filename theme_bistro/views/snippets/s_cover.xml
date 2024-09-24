@@ -4,7 +4,7 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Parallax -->
     <xpath expr="//*[hasclass('s_parallax_bg')]" position="attributes">
-        <attribute name="style" add="background-position: 50% 100%;" remove="background-position: 50% 0;" separator=";"/>
+        <attribute name="style" add="background-position: 50% 100%;" remove="background-position: 50% 75%;" separator=";"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
