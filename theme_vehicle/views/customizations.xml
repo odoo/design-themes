@@ -562,6 +562,10 @@
 
 <!-- ======== CAROUSEL INTRO ======== -->
 <template id="s_carousel_intro" inherit_id="website.s_carousel_intro" name="Vehicle s_carousel_intro">
+    <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="class" add="g-height-3" remove="g-height-2" separator=" "/>
+        <attribute name="style" add="grid-area: 6 / 7 / 9 / 11;" remove="grid-area: 7 / 7 / 9 / 11;" separator=";"/>
+    </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
         Driving excellence with luxury vehicles
     </xpath>
