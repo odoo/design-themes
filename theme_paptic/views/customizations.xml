@@ -757,7 +757,7 @@
 <!-- ===== WAVY GRID ======== -->
 <template id="s_wavy_grid" inherit_id="website.s_wavy_grid">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc3"/>
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
         <attribute name="data-oe-shape-data"/>
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
@@ -785,22 +785,22 @@
     <!-- Card 1 -->
     <xpath expr="(//div[hasclass('s_card')])[1]" position="attributes">
         <attribute name="class" add="border" separator=" "/>
-        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <!-- Card 2 -->
     <xpath expr="(//div[hasclass('s_card')])[2]" position="attributes">
         <attribute name="class" add="border" separator=" "/>
-        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <!-- Card 3 -->
     <xpath expr="(//div[hasclass('s_card')])[3]" position="attributes">
         <attribute name="class" add="border" separator=" "/>
-        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <!-- Card 4 -->
     <xpath expr="(//div[hasclass('s_card')])[4]" position="attributes">
         <attribute name="class" add="border" separator=" "/>
-        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
 </template>
 
