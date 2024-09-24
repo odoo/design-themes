@@ -1,6 +1,6 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from lxml import html
+from lxml import etree, html
 
 import logging
 import re
@@ -209,4 +209,42 @@ class TestNewPageTemplates(TransactionCase):
         for known_classes_re in CONFLICTUAL_CLASSES_RE:
             classes_inventory = [cl for cl in filter(lambda cl: not known_classes_re.findall(cl), classes_inventory)]
         _logger.info("Unknown classes encountered: %r", sorted(list(classes_inventory)))
+        self.assertFalse(errors, "No error should have been collected")
+
+    def test_attribute_separator(self):
+        ATTRIBUTE_SEPARATORS = {
+            'class': ' ',
+            'style': ';',
+            'sizes': ',',
+            'itemref': ' ',
+        }
+        View = self.env['ir.ui.view']
+        errors = []
+        view_count = 0
+
+        for module_name in ['website', *map(lambda website: website.theme_id.name, self.env['website'].get_test_themes_websites())]:
+            views = View.search([
+                '|', '|',
+                ('key', 'like', escape_psql(f'{module_name}.s_')),
+                ('key', 'like', escape_psql(f'{module_name}.configurator')),
+                ('key', 'like', escape_psql(f'{module_name}.new_page')),
+            ])
+            for view in views:
+                try:
+                    xml_tree = etree.fromstring(view.arch_db)
+                except etree.LxmlError:
+                    _logger.error("Using %r, view %r cannot be parsed: %r", module_name, view.key, view.arch_db)
+                    errors.append("Using %r, view %r cannot be parsed: %r" % (module_name, view.key, view.arch_db))
+                    continue
+                for el in xml_tree.xpath('//attribute[@add] | //attribute[@remove]'):
+                    attribute_name = el.attrib['name']
+                    if attribute_name in ATTRIBUTE_SEPARATORS:
+                        current_separator = el.attrib.get('separator', ',')
+                        expected_separator = ATTRIBUTE_SEPARATORS[attribute_name]
+                        if current_separator != expected_separator:
+                            errors.append("Using %r, view %r uses separator %r to modify attribute %r" % (module_name, view.key, current_separator, attribute_name))
+            view_count += len(views)
+
+        _logger.info("Tested %s views", view_count)
+        self.assertGreater(view_count, 2500, "Test should have checked many views")
         self.assertFalse(errors, "No error should have been collected")
