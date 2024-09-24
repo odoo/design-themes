@@ -219,6 +219,15 @@
     <xpath expr="//div[hasclass('carousel-inner')]" position="before">
         <div class="o_we_shape o_web_editor_Wavy_08"/>
     </xpath>
+    <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[2]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('carousel-item')])[3]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
 
     <!-- Texts -->
     <xpath expr="//h1" position="replace" mode="inner">

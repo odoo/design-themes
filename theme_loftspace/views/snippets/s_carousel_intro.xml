@@ -15,6 +15,10 @@
     <xpath expr="(//div[hasclass('carousel-item')])[3]" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
     </xpath>
+    <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="class" add="g-height-3" remove="g-height-2" separator=" "/>
+        <attribute name="style" add="grid-area: 6 / 7 / 9 / 11;" remove="grid-area: 7 / 7 / 9 / 11;" separator=";"/>
+    </xpath>
 
     <!-- Texts -->
     <xpath expr="//h1" position="replace" mode="inner">

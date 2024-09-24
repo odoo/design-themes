@@ -484,6 +484,9 @@
 
 <!-- ======== CAROUSEL INTRO ======== -->
 <template id="s_carousel_intro" inherit_id="website.s_carousel_intro" name="Be Wise s_carousel_intro">
+    <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="style" add="--grid-item-padding-y: 0px;" remove="--grid-item-padding-y: 20px;" separator=";"/>
+    </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
         Empowering your academic future
     </xpath>
