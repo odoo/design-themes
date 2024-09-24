@@ -8,7 +8,7 @@
     </xpath>
     <!-- Change position of background image -->
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
-        <attribute name="style" add="background-position: 50% 50%;" remove="background-position: 50% 0;" separator=";"/>
+        <attribute name="style" add="background-position: 50% 50%;" remove="background-position: 50% 75%;" separator=";"/>
     </xpath>
     <!-- Filter -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
