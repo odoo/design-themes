@@ -33,7 +33,7 @@
     <xpath expr="//*[hasclass('col-lg-3')][2]" position="replace" mode="inner"/>
 
     <xpath expr="//*[hasclass('col-lg-3')][2]" position="attributes">
-        <attribute name="style" add="background-image:url(/web/image/website.s_masonry_block_default_image_2)" separator="; "/>
+        <attribute name="style" add="background-image:url(/web/image/website.s_masonry_block_default_image_2)" separator=";"/>
         <attribute name="class" add="oe_img_bg o_bg_img_center" separator=" "/>
     </xpath>
 </template>

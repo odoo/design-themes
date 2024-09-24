@@ -8,7 +8,7 @@
     </xpath>
     <!-- Grid gap -->
     <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
-        <attribute name="style" add="gap: 8px;" separator=" "/>
+        <attribute name="style" add="gap: 8px;" separator=";"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -17,32 +17,32 @@
     <!-- Column #01 -->
     <xpath expr="//div[hasclass('col-lg-2')][1]" position="attributes">
         <attribute name="class" add="o_cc o_cc1" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=";"/>
     </xpath>
     <!-- Column #02 -->
     <xpath expr="//div[hasclass('col-lg-2')][2]" position="attributes">
         <attribute name="class" add="o_cc o_cc1" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=";"/>
     </xpath>
     <!-- Column #03 -->
     <xpath expr="//div[hasclass('col-lg-2')][3]" position="attributes">
         <attribute name="class" add="o_cc o_cc1" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=";"/>
     </xpath>
     <!-- Column #04 -->
     <xpath expr="//div[hasclass('col-lg-2')][4]" position="attributes">
         <attribute name="class" add="o_cc o_cc1" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=";"/>
     </xpath>
     <!-- Column #05 -->
     <xpath expr="//div[hasclass('col-lg-2')][5]" position="attributes">
         <attribute name="class" add="o_cc o_cc1" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=";"/>
     </xpath>
     <!-- Column #06 -->
     <xpath expr="//div[hasclass('col-lg-2')][6]" position="attributes">
         <attribute name="class" add="o_cc o_cc1" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px !important;" separator=";"/>
     </xpath>
 </template>
 

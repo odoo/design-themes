@@ -9,7 +9,7 @@
     <!-- Wrapper -->
     <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">        
         <attribute name="class" add="border" separator=" "/>
-        <attribute name="style" add="padding:24px; border-width: 1px !important; border-color: rgb(70, 77, 83) !important; border-radius: 4px !important;"/>
+        <attribute name="style" add="padding:24px; border-width: 1px !important; border-color: rgb(70, 77, 83) !important; border-radius: 4px !important;" separator=";"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>

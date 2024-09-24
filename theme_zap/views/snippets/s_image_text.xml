@@ -9,7 +9,7 @@
     <!-- Image -->
     <xpath expr="//img" position="attributes">
         <attribute name="class" add="img-thumbnail" separator=" "/>
-        <attribute name="style" add="padding: 15px;" separator=" "/>
+        <attribute name="style" add="padding: 15px;" separator=";"/>
     </xpath>
     <xpath expr="//p[2]" position="after">
         <p><br/></p>
