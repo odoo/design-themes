@@ -9,7 +9,7 @@
     <!-- Column #01 -->
     <xpath expr="//*[hasclass('row')]/*[1]" position="attributes">
         <attribute name="class" add="o_cc o_cc1 pt32 pb32 rounded text-center" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=";"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[1]/div[hasclass('s_hr')]" position="replace"/>
     <xpath expr="//i" position="replace">
@@ -24,7 +24,7 @@
     <!-- Column #02 -->
     <xpath expr="//*[hasclass('row')]/*[2]" position="attributes">
         <attribute name="class" add="o_cc o_cc1 pt32 pb32 rounded text-center" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=";"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/div[hasclass('s_hr')]" position="replace"/>
     <xpath expr="(//i)[2]" position="replace">
@@ -39,7 +39,7 @@
     <!-- Column #03 -->
     <xpath expr="//*[hasclass('row')]/*[3]" position="attributes">
         <attribute name="class" add="o_cc o_cc1 pt32 pb32 rounded text-center" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=" "/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=";"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/div[hasclass('s_hr')]" position="replace"/>
     <xpath expr="(//i)[3]" position="replace">

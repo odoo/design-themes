@@ -23,13 +23,13 @@
     </xpath>
     <!-- Authors -->
     <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//span//span" position="attributes">
-        <attribute name="class" add="text-o-color-2" remove="text-muted"/>
+        <attribute name="class" add="text-o-color-2" remove="text-muted" separator=" "/>
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//span//span" position="attributes">
-        <attribute name="class" add="text-o-color-2" remove="text-muted"/>
+        <attribute name="class" add="text-o-color-2" remove="text-muted" separator=" "/>
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//span//span" position="attributes">
-        <attribute name="class" add="text-o-color-2" remove="text-muted"/>
+        <attribute name="class" add="text-o-color-2" remove="text-muted" separator=" "/>
     </xpath>
 </template>
 

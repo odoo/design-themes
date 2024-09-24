@@ -5,15 +5,15 @@
     <!-- Items -->
     <xpath expr="//*[hasclass('s_media_list_item')][1]/div" position="attributes">
         <attribute name="class" add="rounded" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;"/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=";"/>
     </xpath>
     <xpath expr="//*[hasclass('s_media_list_item')][2]/div" position="attributes">
         <attribute name="class" add="rounded" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;"/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=";"/>
     </xpath>
     <xpath expr="//*[hasclass('s_media_list_item')][3]/div" position="attributes">
         <attribute name="class" add="rounded" separator=" "/>
-        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;"/>
+        <attribute name="style" add="box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px !important;" separator=";"/>
     </xpath>
 </template>
 

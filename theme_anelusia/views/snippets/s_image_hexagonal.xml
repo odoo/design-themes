@@ -9,7 +9,7 @@
         <attribute name="class" add="o_snippet_mobile_invisible d-none d-lg-block" separator=" "/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
-        <attribute name="style" add="--grid-item-padding-x: 24px; --grid-item-padding-y: 24px;" separator=" "/>
+        <attribute name="style" add="--grid-item-padding-x: 24px; --grid-item-padding-y: 24px;" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
         <attribute name="class" remove="o_snippet_mobile_invisible d-none d-lg-block" separator=" "/>

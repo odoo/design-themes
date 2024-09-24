@@ -14,7 +14,7 @@
     <!-- Card 1 -->
     <xpath expr="(//div[hasclass('s_card')])[1]" position="attributes">
         <attribute name="class" add="border" separator=" "/>
-        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <xpath expr="(//h5)[1]" position="replace" mode="inner">
         Unique Creative Vision
@@ -25,7 +25,7 @@
     <!-- Card 2 -->
     <xpath expr="(//div[hasclass('s_card')])[2]" position="attributes">
         <attribute name="class" add="border" separator=" "/>
-        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <xpath expr="(//h5)[2]" position="replace" mode="inner">
         Original and Handcrafted Works
@@ -36,7 +36,7 @@
     <!-- Card 3 -->
     <xpath expr="(//div[hasclass('s_card')])[3]" position="attributes">
         <attribute name="class" add="border" separator=" "/>
-        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <xpath expr="(//h5)[3]" position="replace" mode="inner">
         Bold Use of Color and Texture
@@ -47,7 +47,7 @@
     <!-- Card 4 -->
     <xpath expr="(//div[hasclass('s_card')])[4]" position="attributes">
         <attribute name="class" add="border" separator=" "/>
-        <attribute name="style" add="border-width: 0px !important;" separator=" "/>
+        <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <xpath expr="(//h5)[4]" position="replace" mode="inner">
         Personalized Art Commissions

@@ -51,14 +51,14 @@
         <attribute name="class" add="pt144 pb128" remove="pt64 pb64" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="attributes">
-        <attribute name="style" remove="text-align: center;" separator=" "/>
+        <attribute name="style" remove="text-align: center;" separator=";"/>
         <attribute name="class" add="text-break" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         Design Methodology
     </xpath>
     <xpath expr="//p" position="attributes">
-        <attribute name="style" remove="text-align: center;" separator=" "/>
+        <attribute name="style" remove="text-align: center;" separator=";"/>
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
         Our design methodology is rooted in our core values.<br/>
@@ -72,7 +72,7 @@
         <attribute name="data-shape-colors">;o-color-2;;;</attribute>
     </xpath>
     <xpath expr="//figcaption" position="attributes">
-        <attribute name="style" add="text-align: right;" separator=" "/>
+        <attribute name="style" add="text-align: right;" separator=";"/>
     </xpath>
     <xpath expr="//figcaption" position="replace" mode="inner">
         We carry out an interdisciplinary design process.
@@ -188,7 +188,7 @@
         <attribute name="class" add="col-lg-8" remove="col-lg-9" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-8')]/p" position="attributes">
-        <attribute name="style" add="text-align: right;" separator=" "/>
+        <attribute name="style" add="text-align: right;" separator=";"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
         <attribute name="class" add="col-lg-4" remove="col-lg-3" separator=" "/>

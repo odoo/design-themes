@@ -8,7 +8,7 @@
     </xpath>
     <!-- Column #01 -->
     <xpath expr="//*[hasclass('s_card')]" position="attributes">
-        <attribute name="style" add="--card-img-aspect-ratio: 132%" separator="; "/>
+        <attribute name="style" add="--card-img-aspect-ratio: 132%" separator=";"/>
     </xpath>
     <xpath expr="//figure" position="attributes">
         <attribute name="class" remove="ratio-16x9" add="o_card_img_ratio_custom" separator=" "/>
@@ -24,7 +24,7 @@
     </xpath>
     <!-- Column #02 -->
     <xpath expr="(//*[hasclass('s_card')])[2]" position="attributes">
-        <attribute name="style" add="--card-img-aspect-ratio: 132%" separator="; "/>
+        <attribute name="style" add="--card-img-aspect-ratio: 132%" separator=";"/>
     </xpath>
     <xpath expr="(//figure)[2]"  position="attributes">
         <attribute name="class" remove="ratio-16x9" add="o_card_img_ratio_custom" separator=" "/>
@@ -40,7 +40,7 @@
     </xpath>
     <!-- Column #03 -->
     <xpath expr="(//*[hasclass('s_card')])[3]" position="attributes">
-        <attribute name="style" add="--card-img-aspect-ratio: 132%" separator="; "/>
+        <attribute name="style" add="--card-img-aspect-ratio: 132%" separator=";"/>
     </xpath>
     <xpath expr="(//figure)[3]"  position="attributes">
         <attribute name="class" remove="ratio-16x9" add="o_card_img_ratio_custom" separator=" "/>
