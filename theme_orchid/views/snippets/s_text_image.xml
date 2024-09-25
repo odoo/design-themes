@@ -40,15 +40,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/07","flip":["x"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_07" style="background-image: url('/web_editor/shape/web_editor/Wavy/07.svg?c3=o-color-1&amp;flip=x'); background-position: 50% 0%;"/>
-    </xpath>
-</template>
-
 </odoo>
