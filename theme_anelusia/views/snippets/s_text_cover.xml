@@ -11,7 +11,7 @@
         <attribute name="data-row-count">15</attribute>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div" position="attributes">
-        <attribute name="class" add="g-height-9" remove="g-height-10 o_cc o_cc1" separator=" "/>
+        <attribute name="class" add="g-col-lg-6 col-lg-6" remove="g-col-lg-5 col-lg-5 o_cc o_cc1" separator=" "/>
         <attribute name="style">z-index: 1; grid-area: 4 / 2 / 13 / 8; --grid-item-padding-x: 24px; --grid-item-padding-y: 24px; text-align: right;</attribute>
     </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
@@ -27,7 +27,7 @@
     </xpath>
     <!-- Image -->
     <xpath expr="//div[hasclass('row')]//div[2]" position="attributes">
-        <attribute name="class" add="g-col-lg-4 col-lg-4 g-height-15" remove="g-height-12 g-col-lg-6 col-lg-6 o_cc o_cc1 pt48 pb48" separator=" "/>
+        <attribute name="class" add="g-col-lg-4 col-lg-4 g-height-15" remove="g-height-11 g-col-lg-6 col-lg-6 o_cc o_cc1" separator=" "/>
         <attribute name="style">grid-area: 1 / 9 / 16 / 13; --grid-item-padding-x: 0px; --grid-item-padding-y: 0px; background-image: url('/web/image/website.s_text_cover_default_image');</attribute>
     </xpath>
 </template>
