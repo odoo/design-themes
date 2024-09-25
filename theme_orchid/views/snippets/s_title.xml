@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5 o_colored_level pt160" remove="pt40" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/07_002','colors':{'c3':'o-color-3','c4':'o-color-5','c5':'o-color-5'},'flip':['x'],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Origins_07_002 o_shape_show_mobile" style="background-image: url('/web_editor/shape/web_editor%2FOrigins%2F07_002.svg?c3=o-color-3&amp;c4=o-color-5&amp;c5=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" remove="display-3-fs" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our Creations
+    </xpath>
+    <xpath expr="//h2" position="after">
+        <p class="lead" style="text-align: center">Explore our handcrafted floral arrangements, each meticulously designed to convey beauty, elegance, and a touch of nature's artistry.</p>
+    </xpath>
+</template>
+
+</odoo>

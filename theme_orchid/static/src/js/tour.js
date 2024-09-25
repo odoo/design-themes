@@ -1,53 +1,67 @@
 /** @odoo-module */
 
 import * as wTourUtils from '@website/js/tours/tour_utils';
-import { _t } from "@web/core/l10n/translation";
+
 
 const snippets = [
     {
-        id: 's_cover',
-        name: 'Cover',
+        id: 's_kickoff',
+        name: 'Kickoff',
         groupName: "Intro",
     },
     {
-        id: 's_image_text',
-        name: 'Image - Text',
-        groupName: "Content",
-    },
-    {
-        id: 's_text_image',
-        name: 'Text - Image',
-        groupName: "Content",
-    },
-    {
-        id: 's_three_columns',
-        name: 'Columns',
+        id: 's_key_images',
+        name: 'Key Images',
         groupName: "Columns",
     },
     {
-        id: 's_quotes_carousel',
-        name: 'Quotes',
+        id: 's_process_steps',
+        name: 'Steps',
+        groupName: "Content",
+    },
+    {
+        id: 's_freegrid',
+        name: 'Free grid',
+        groupName: "Columns",
+    },
+    {
+        id: 's_image_text_overlap',
+        name: 'Image - Text Overlap',
+        groupName: "Content",
+    },
+    {
+        id: 's_company_team_basic',
+        name: 'Team Basic',
         groupName: "People",
     },
     {
-        id: 's_call_to_action',
-        name: 'Call to Action',
-        groupName: "Content",
+        id: 's_title',
+        name: 'Title',
+        groupName: "Text",
+    },
+    {
+        id: 's_images_wall',
+        name: 'Images Wall',
+        groupName: "Images",
+    },
+    {
+        id: 's_references',
+        name: 'References',
+        groupName: "People",
     },
 ];
 
 wTourUtils.registerThemeHomepageTour("orchid_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"orchid-7"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-light-9"'),
     ...wTourUtils.insertSnippet(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[1]),
     ...wTourUtils.insertSnippet(snippets[2]),
     ...wTourUtils.insertSnippet(snippets[3]),
-    ...wTourUtils.clickOnSnippet(snippets[3]),
-    wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
-    wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[4]),
     ...wTourUtils.insertSnippet(snippets[5]),
-    ...wTourUtils.clickOnText(snippets[5], 'h3'),
+    ...wTourUtils.insertSnippet(snippets[6]),
+    ...wTourUtils.insertSnippet(snippets[7]),
+    ...wTourUtils.insertSnippet(snippets[8]),
 ]);

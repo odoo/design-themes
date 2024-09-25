@@ -46,15 +46,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_quotes_carousel" inherit_id="website.configurator_s_quotes_carousel">
-    <!-- Shape option -->
-    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","flip":[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('carousel-indicators')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_22"/>
-    </xpath>
-</template>
-
 </odoo>
