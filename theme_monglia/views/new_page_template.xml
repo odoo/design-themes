@@ -58,7 +58,7 @@
 
 <template id="new_page_template_about_full_1_s_text_block_h1" inherit_id="website.new_page_template_about_full_1_s_text_block_h1">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt40" remove="o_cc2 pt0" separator=" "/>
+        <attribute name="class" remove="o_cc2" separator=" "/>
     </xpath>
 </template>
 
@@ -94,21 +94,6 @@
 <template id="new_page_template_about_map_s_text_block_h1" inherit_id="website.new_page_template_about_map_s_text_block_h1">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc2" separator=" "/>
-    </xpath>
-</template>
-
-<template id="new_page_template_about_map_s_text_block_2nd" inherit_id="website.new_page_template_about_map_s_text_block_2nd">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt40" separator=" "/>
-    </xpath>
-</template>
-
-<template id="new_page_template_about_mini_s_text_block_2nd" inherit_id="website.new_page_template_about_mini_s_text_block_2nd">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt40" remove="pt0" separator=" "/>
-    </xpath>
-    <xpath expr="//p" position="attributes">
-        <attribute name="style" remove="font-size:36px;" separator=";"/>
     </xpath>
 </template>
 
@@ -151,12 +136,6 @@
     </xpath>
 </template>
 
-<template id="new_page_template_landing_4_s_text_block_h2" inherit_id="website.new_page_template_landing_4_s_text_block_h2">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt40" remove="pt0" separator=" "/>
-    </xpath>
-</template>
-
 <template id="new_page_template_landing_5_s_banner" inherit_id="website.new_page_template_landing_5_s_banner">
     <xpath expr="//section" position="attributes">
         <!-- Added both by theme and new page template -->
@@ -185,12 +164,6 @@
     </xpath>
 </template>
 
-<template id="new_page_template_gallery_2_s_text_block_2nd" inherit_id="website.new_page_template_gallery_2_s_text_block_2nd">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt40" remove="pt0" separator=" "/>
-    </xpath>
-</template>
-
 <!-- Snippet customization Services Pages -->
 
 <template id="new_page_template_services_s_text_image" inherit_id="website.new_page_template_services_s_text_image">
@@ -203,21 +176,10 @@
     </xpath>
 </template>
 
-<template id="new_page_template_services_0_s_text_block_2nd" inherit_id="website.new_page_template_services_0_s_text_block_2nd">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt40" remove="pt0" separator=" "/>
-    </xpath>
-</template>
 
 <template id="new_page_template_services_2_s_text_image" inherit_id="website.new_page_template_services_2_s_text_image">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt56 pb56" remove="pb40" separator=" "/>
-    </xpath>
-</template>
-
-<template id="new_page_template_services_3_s_text_block_h1" inherit_id="website.new_page_template_services_3_s_text_block_h1">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0" remove="pb40" separator=" "/>
     </xpath>
 </template>
 
@@ -236,13 +198,6 @@
     </xpath>
 </template>
 
-<template id="new_page_template_pricing_0_s_text_block_2nd" inherit_id="website.new_page_template_pricing_0_s_text_block_2nd">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt40" remove="pt0" separator=" "/>
-    </xpath>
-</template>
-
-
 <!-- Snippet customization Team Pages -->
 
 <template id="new_page_template_team_s_text_image" inherit_id="website.new_page_template_team_s_text_image">
@@ -254,18 +209,6 @@
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_web_editor_Floats_13" style="background-image: url('/web_editor/shape/web_editor/Floats/13.svg?c1=o-color-1&amp;c2=o-color-2&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 50%;"/>
-    </xpath>
-</template>
-
-<template id="new_page_template_team_0_s_text_block_h1" inherit_id="website.new_page_template_team_0_s_text_block_h1">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0" remove="pb40" separator=" "/>
-    </xpath>
-</template>
-
-<template id="new_page_template_team_1_s_text_block_h1" inherit_id="website.new_page_template_team_1_s_text_block_h1">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0" remove="pb40" separator=" "/>
     </xpath>
 </template>
 
