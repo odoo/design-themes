@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="configurator_s_references" inherit_id="website.configurator_s_references">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc2 o_colored_level pt136" remove="o_cc1 pt40 pt80" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/07_002','colors':{'c3':'o-color-5','c4':'o-color-3','c5':'o-color-3'},'showOnMobile':true}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_web_editor_Origins_07_002 o_shape_show_mobile" style="background-image: url('/web_editor/shape/web_editor%2FOrigins%2F07_002.svg?c3=o-color-5&amp;c4=o-color-3&amp;c5=o-color-3');"></div>
+    </xpath>
+</template>
+
+</odoo>
