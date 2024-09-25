@@ -17,13 +17,8 @@
         'static/description/paptic_poster.jpg',
         'static/description/paptic_screenshot.jpg',
     ],
-    'images_preview_theme': {
-        'website.s_three_columns_default_image_1': '/theme_paptic/static/src/img/pictures/s_three_columns_1.jpg',
-        'website.s_three_columns_default_image_2': '/theme_paptic/static/src/img/pictures/s_three_columns_2.jpg',
-        'website.s_three_columns_default_image_3': '/theme_paptic/static/src/img/pictures/s_three_columns_3.jpg',
-    },
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_image_text', 's_references', 's_three_columns', 's_comparisons', 's_call_to_action'],
+        'homepage': ['s_cover', 's_references', 's_image_text', 's_text_image', 's_masonry_block', 's_faq_list', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {

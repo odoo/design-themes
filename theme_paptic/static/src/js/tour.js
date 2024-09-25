@@ -9,28 +9,33 @@ const snippets = [
         groupName: "Intro",
     },
     {
-        id: 's_image_text',
-        name: 'Image - Text',
-        groupName: "Content",
-    },
-    {
         id: 's_references',
         name: 'References',
         groupName: "People",
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
-        groupName: "Columns",
-    },
-    {
-        id: 's_comparisons',
-        name: 'Comparisons',
+        id: 's_image_text',
+        name: 'Image - Text',
         groupName: "Content",
     },
     {
-        id: 's_call_to_action',
-        name: 'Call to Action',
+        id: 's_text_image',
+        name: 'Text - Image',
+        groupName: "Content",
+    },
+    {
+        id: 's_masonry_block',
+        name: 'Masonry',
+        groupName: "Images",
+    },
+    {
+        id: 's_faq_list',
+        name: 'FAQ List',
+        groupName: "Text",
+    },
+    {
+        id: 's_cta_box',
+        name: 'CTA Box',
         groupName: "Content",
     },
 ];
