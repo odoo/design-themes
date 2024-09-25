@@ -4,6 +4,10 @@
 //------------------------------------------------------------------------------
 
 // Theme colors
+$default-light-3: map-get($o-color-palettes, 'default-light-3');
+$default-light-3: map-merge($default-light-3, ('body': 'o-color-2'));
+$o-color-palettes: map-merge($o-color-palettes, ('default-light-3': $default-light-3));
+
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'monglia-1': (
@@ -55,14 +59,16 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (48 / 14);
-$o-theme-h2-font-size-multiplier: (36 / 14);
-$o-theme-h3-font-size-multiplier: (30 / 14);
-$o-theme-h4-font-size-multiplier: (24 / 14);
-$o-theme-h5-font-size-multiplier: 1;
-$o-theme-h6-font-size-multiplier: (12 / 14);
 
 $o-theme-font-configs: (
+    'Bungee': (
+        'family': ('Bungee', sans-serif),
+        'url': 'Bungee:400',
+    ),
+    'Roboto Mono': (
+        'family': ('Roboto Mono', monospace),
+        'url': 'Roboto+Mono:300,300i,400,400i,700,700i',
+    ),
     'Handlee': (
         'family': ('Handlee', cursive),
         'url': 'Handlee:300,300i,400,400i,700,700i',
@@ -135,26 +141,20 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'monglia-1',
+        'color-palettes-name': 'default-light-3',
 
-        'header-font-size': (20 / 16) * 1rem,
-        'font': 'Roboto',
-        'headings-font': 'Darker Grotesque',
-        'navbar-font': 'Darker Grotesque',
-        'buttons-font': 'Roboto',
+        'layout': 'boxed',
+        'font': 'Roboto Mono',
+        'headings-font': 'Bungee',
+        'navbar-font': 'Roboto Mono',
+        'buttons-font': 'Roboto Mono',
         'footer-template': 'minimalist',
 
         'btn-border-radius': 0,
         'btn-border-radius-sm': 0,
         'btn-border-radius-lg': 0,
-        'btn-padding-y': .474rem,
-        'btn-padding-x': 1.25rem,
-        'btn-padding-y-lg': .4rem,
-        'btn-padding-x-lg': 2rem,
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'monglia-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'monglia-1',
