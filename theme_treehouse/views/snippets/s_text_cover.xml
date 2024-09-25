@@ -2,9 +2,9 @@
 <odoo>
 
 <template id="s_text_cover" inherit_id="website.s_text_cover">
-    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+    <xpath expr="//div[hasclass('o_grid_item')]" position="attributes">
         <attribute name="style" add="grid-area: 2 / 3 / 11 / 9;" remove="grid-area: 2 / 3 / 11 / 8;" separator=";"/>
-        <attribute name="class" add="g-col-lg-6" remove="g-col-lg-5" separator=" "/>
+        <attribute name="class" add="g-col-lg-6 col-lg-6" remove="g-col-lg-5 col-lg-5" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
