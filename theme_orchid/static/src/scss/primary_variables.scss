@@ -2,14 +2,6 @@
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (62 / 16);
-$o-theme-h2-font-size-multiplier: (48 / 16);
-$o-theme-h3-font-size-multiplier: (36 / 16);
-$o-theme-h5-font-size-multiplier: (21 / 16);
-$o-theme-h6-font-size-multiplier: (18 / 16);
-
-$o-theme-headings-font-weight: 600;
-
 $o-theme-font-configs: (
     'Heebo': (
         'family': ('Heebo', sans-serif),
@@ -51,6 +43,14 @@ $o-theme-font-configs: (
         'family': ('Cormorant Garamond', serif),
         'url': 'Cormorant+Garamond:300,300i,400,400i,700,700i',
     ),
+    'Elsie': (
+        'family': ('Elsie', serif),
+        'url': 'Elsie:400,900',
+    ),
+    'DM Sans': (
+        'family': ('DM Sans', serif),
+        'url': 'DM+Sans:300,300i,400,400i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -59,14 +59,13 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'orchid-7',
-        'font': 'Questrial',
-        'headings-font': 'Cormorant Garamond',
+        'color-palettes-name': 'default-light-9',
+        'font': 'DM Sans',
+        'headings-font': 'Elsie',
+        'header-template': 'sales_four',
         'footer-template': 'descriptive',
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'orchid-7');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'orchid-1',
