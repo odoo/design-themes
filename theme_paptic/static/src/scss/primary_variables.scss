@@ -2,16 +2,15 @@
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (48 / 14);
-$o-theme-h2-font-size-multiplier: (38 / 14);
-$o-theme-h4-font-size-multiplier: (24 / 14);
-$o-theme-h5-font-size-multiplier: (21 / 14);
-$o-theme-h6-font-size-multiplier: (18 / 14);
-
 $o-theme-font-configs: (
     'Inter': (
-        'family': ('Inter', serif),
+        'family': ('Inter', sans-serif),
         'url': 'Inter:400,400i,600,600i,800,800i',
+    ),
+
+    'Inter Tight': (
+        'family': ('Inter Tight', sans-serif),
+        'url': 'Inter+Tight:400,400i,600,600i,700,700i',
     ),
 
     'Nunito': (
@@ -20,7 +19,7 @@ $o-theme-font-configs: (
     ),
 
     'Abril Fatface': (
-        'family': ('Nunito', serif),
+        'family': ('Abril Fatface', serif),
         'url': 'Abril+Fatface:300,300i,400,400i,700,700i',
     ),
 );
@@ -32,28 +31,18 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'paptic-1',
+        'color-palettes-name': 'base-2',
 
         'font': 'Inter',
-        'headings-font': 'Nunito',
-        'navbar-font': 'Nunito',
-        'buttons-font': 'Nunito',
+        'headings-font': 'Inter Tight',
 
-        'font-size-base': (14 / 16) * 1rem,
-        'header-font-size': (14 / 16) * 1rem,
-        'headings-line-height': 1.1,
+        'footer-template': 'headline',
 
-        'btn-ripple': true,
-
-        'btn-font-size': (14 / 16) * 1rem,
-        'btn-border-radius': 2px,
-
-        'btn-font-size-lg': (14 / 16) * 1rem,
-        'btn-padding-x-lg': (28 / 16) * 1rem,
+        'btn-border-radius-lg': .5rem,
+        'btn-padding-y-lg': .75rem,
+        'btn-padding-x-lg': 1.5rem,
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'paptic-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'paptic-1',
