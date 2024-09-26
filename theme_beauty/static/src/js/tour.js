@@ -16,7 +16,7 @@ const snippets = [
     {
         id: 's_pricelist_boxed',
         name: 'Pricelist Boxed',
-        groupName: "Content",
+        groupName: "Text",
     },
     {
         id: 's_features_wall',
