@@ -12,10 +12,6 @@
     <xpath expr="//h2" position="replace" mode="inner">
         DRIVING INNOVATION
     </xpath>
-    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
-        <attribute name="class" add="g-height-5" remove="g-height-6" separator=" "/>
-        <attribute name="style">grid-area: 9 / 6 / 14 / 13; z-index: 2;</attribute>
-    </xpath>
 </template>
 
 </odoo>
