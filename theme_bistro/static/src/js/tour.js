@@ -16,7 +16,7 @@ const snippets = [
     {
         id: 's_pricelist_cafe',
         name: 'Pricelist cafe',
-        groupName: "Content",
+        groupName: "Text",
     },
     {
         id: 's_quotes_carousel',
