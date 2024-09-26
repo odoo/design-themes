@@ -99,6 +99,9 @@
         <attribute name="style" remove="--grid-item-padding-y: 16px;" add="--grid-item-padding-y: 24px;" separator=";"/>
     </xpath>
     <!-- Delete Row #2 -->
+    <xpath expr="//*[@data-row-count]" position="attributes">
+        <attribute name="data-row-count">3</attribute>
+    </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="replace"/>
     <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="replace"/>
     <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="replace"/>
@@ -423,6 +426,9 @@
         <attribute name="class" add="rounded" separator=" "/>
     </xpath>
     <!-- Remove Title / Paragraph / Button -->
+    <xpath expr="//*[@data-row-count]" position="attributes">
+        <attribute name="data-row-count">10</attribute>
+    </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[7]" position="replace"/>
     <xpath expr="(//div[hasclass('o_grid_item')])[7]" position="replace"/>
 </template>
