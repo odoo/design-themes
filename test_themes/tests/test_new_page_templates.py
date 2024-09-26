@@ -196,6 +196,40 @@ class TestNewPageTemplates(TransactionCase):
                             property_names = list(map(lambda style: style.split(':')[0].strip(), non_empty_styles))
                             if len(property_names) != len(set(property_names)):
                                 errors.append("Using %r, view %r contains duplicate style properties: %r" % (theme_name, view.key, el.attrib['style']))
+                        for grid_el in html_tree.xpath("//div[contains(concat(' ', normalize-space(@class), ' '), ' o_grid_mode ')]"):
+                            if 'data-row-count' not in grid_el.attrib:
+                                errors.append("Using %r, view %r defines a grid mode row without row count" % (theme_name, view.key))
+                                continue
+                            row_count = int(grid_el.attrib['data-row-count'])
+                            max_row = 0
+                            for item_el in grid_el.xpath(".//div[contains(concat(' ', normalize-space(@class), ' '), ' o_grid_item ')]"):
+                                classes = item_el.attrib['class'].split()
+                                styles = item_el.attrib['style'].split(';')
+                                grid_area_style = list(filter(lambda style: style.strip().startswith('grid-area:'), styles))
+                                if not grid_area_style:
+                                    errors.append("Using %r, view %r does not specify a grid-area for its grid item" % (theme_name, view.key))
+                                    continue
+                                grid_area = grid_area_style[0].split(':')[1].strip()
+                                top, left, bottom, right = map(int, grid_area.split('/'))
+                                max_row = max(max_row, bottom)
+                                height_class = f'g-height-{bottom - top}'
+                                if height_class not in classes:
+                                    errors.append("Using %r, view %r does not specify %r for grid item %r (%r)" % (theme_name, view.key, height_class, grid_area, classes))
+                                width_class = f'g-col-lg-{right - left}'
+                                if width_class not in classes:
+                                    errors.append("Using %r, view %r does not specify %r for grid item %r (%r)" % (theme_name, view.key, width_class, grid_area, classes))
+                                non_grid_width_class = f'col-lg-{right - left}'
+                                if non_grid_width_class not in classes:
+                                    errors.append("Using %r, view %r does not specify %r for grid item %r (%r)" % (theme_name, view.key, non_grid_width_class, grid_area, classes))
+                                padding_classes = list(filter(lambda klass: klass.startswith('pb') or klass.startswith('pt'), classes))
+                                if padding_classes:
+                                    errors.append("Using %r, view %r specifies unnecessary padding classes on grid item %r" % (theme_name, view.key, padding_classes))
+                            if row_count != max_row - 1:
+                                errors.append("Using %r, view %r defines %r as row count while %r is reached" % (theme_name, view.key, row_count, max_row))
+                        for el in html_tree.xpath('//*[@data-row-count]'):
+                            classes = el.attrib['class'].split()
+                            if 'o_grid_mode' not in classes:
+                                errors.append("Using %r, view %r defines a row count on a non-grid mode row" % (theme_name, view.key))
                     except Exception:
                         _logger.error("Using %r, view %r cannot be rendered", theme_name, view.key)
                         errors.append("Using %r, view %r cannot be rendered" % (theme_name, view.key))
