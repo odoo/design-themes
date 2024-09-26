@@ -13,11 +13,6 @@
         <div class="o_we_shape o_web_editor_Floats_13" style="background-image: url('/web_editor/shape/web_editor/Floats/13.svg?c1=o-color-1&amp;c2=o-color-2&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 50%;"/>
     </xpath>
 
-    <!-- First column -->
-    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
-        <attribute name="class" add="offset-lg-1" separator=" "/>
-    </xpath>
-
     <!-- Separator -->
     <xpath expr="//h2" position="after">
         <div class="s_hr pb32 pt8" data-snippet="s_hr" data-name="Separator">
