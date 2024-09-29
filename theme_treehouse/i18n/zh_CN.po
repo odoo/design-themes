@@ -1,19 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_treehouse
+# 	* theme_treehouse
 # 
 # Translators:
-# e2f <projects@e2f.com>, 2019
-# Xia Fajin <xia.fajin@elico-corp.com>, 2019
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server saas~17.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:54+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: Xia Fajin <xia.fajin@elico-corp.com>, 2019\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"POT-Creation-Date: 2024-07-15 12:23+0000\n"
+"PO-Revision-Date: 2024-09-25 18:03+0000\n"
+"Last-Translator: Wil Odoo, 2024\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -21,48 +20,111 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.preheader
-msgid "<i class=\"fa fa-envelope fa-1x\"/>Contact"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_text_image
+msgid "<b>ABOUT US</b>"
+msgstr "<b>关于我们</b>"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.preheader
-msgid "<i class=\"fa fa-map-marker fa-1x\"/>Meet us"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_cover
+msgid "<font style=\"font-size: 62px;\"><b>— Life on Earth —</b></font>"
+msgstr "<font style=\"font-size: 62px;\"><b>— 地球上的生命 —</b></font>"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "<i class=\"fa fa-paint-brush\"/>Style"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_title
+msgid "Changing the world is possible.<br/> We’ve done it before."
+msgstr "改变世界是可能的。<br/> 我们曾经做到过。"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.preheader
-msgid "<i class=\"fa fa-plus-circle\"/>Add..."
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_cover
+msgid "Get involved"
+msgstr "参与其中"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "Boxed"
-msgstr "盒装的"
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid "Habitat Model"
+msgstr "生境模型"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "Muted"
-msgstr ""
-
-#. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_share_extended
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
 msgid ""
-"Share\n"
-"                    <i class=\"text-muted fa fa-hand-o-right fa-1x\"/>"
-msgstr ""
+"Habitats with a minimum footprint on the planet and a maximum positive "
+"impact on the local community."
+msgstr "对地球的影响最小、对当地社区的积极影响最大的栖息地。"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "Underline"
-msgstr "下划线"
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_banner
+msgid "Hello Planet."
+msgstr "你好，星球"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "Uppercase"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_call_to_action
+msgid "Help us protect and preserve for future generations"
+msgstr "帮助我们为子孙后代保护和保存"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_call_to_action
+msgid "Join us and make the planet a better place."
+msgstr "加入我们，让地球变得更美好。"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid ""
+"Learn how to use organic gardening methods to grow the freshest food in your"
+" fruit and vegetable garden."
+msgstr "学习如何使用有机园艺方法在果蔬园中种植最新鲜的食物。"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid "Organic Garden"
+msgstr "有机花园"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_cover
+msgid ""
+"Our mission is to create a shared plan<br/> for saving the planet’s most "
+"exceptional wild places."
+msgstr "我们的使命是制定一项共同计划<br/> ，拯救地球上最特殊的野生地方。"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid "Read more"
+msgstr "阅读更多"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid "Recycling water"
+msgstr "循环用水"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid ""
+"Recycling water for reuse applications instead of using freshwater supplies "
+"can be a water-saving measure."
+msgstr "将水回收再利用，而不是使用淡水供应，是一项节水措施。"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_text_image
+msgid "Shaping our future"
+msgstr "塑造我们的未来"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_color_blocks_2
+msgid "Sky is the limit."
+msgstr "天空才是极限"
+
+#. module: theme_treehouse
+#: model:ir.model,name:theme_treehouse.model_theme_utils
+msgid "Theme Utils"
+msgstr "主题用途"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_text_image
+msgid ""
+"With all the global problems our planet faces today,<br/> communities of "
+"people concerned with them are growing<br/> to prevent the negative impact."
+msgstr "面对当今地球面临的各种全球性问题，<br/> ，关注这些问题的<br/> 群体正在不断壮大，以防止负面影响。"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_picture
+msgid "Working Together"
+msgstr "合作机会"

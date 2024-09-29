@@ -1,68 +1,141 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * theme_treehouse
+# 	* theme_treehouse
 # 
 # Translators:
-# 44fd1b7fd1ad5b321e37d151521961ad, 2019
-# Clo <clo@odoo.com>, 2019
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server saas~17.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 08:54+0000\n"
-"PO-Revision-Date: 2019-04-24 11:21+0000\n"
-"Last-Translator: Clo <clo@odoo.com>, 2019\n"
-"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2024-07-15 12:23+0000\n"
+"PO-Revision-Date: 2024-09-25 18:03+0000\n"
+"Last-Translator: Wil Odoo, 2024\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.preheader
-msgid "<i class=\"fa fa-envelope fa-1x\"/>Contact"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_text_image
+msgid "<b>ABOUT US</b>"
+msgstr "<b>À PROPOS DE NOUS</b>"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.preheader
-msgid "<i class=\"fa fa-map-marker fa-1x\"/>Meet us"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_cover
+msgid "<font style=\"font-size: 62px;\"><b>— Life on Earth —</b></font>"
+msgstr "<font style=\"font-size: 62px;\"><b>— La vie sur terre —</b></font>"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "<i class=\"fa fa-paint-brush\"/>Style"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_title
+msgid "Changing the world is possible.<br/> We’ve done it before."
+msgstr "Il est possible de changer le monde.<br/> Nous l'avons déjà fait."
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.preheader
-msgid "<i class=\"fa fa-plus-circle\"/>Add..."
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_cover
+msgid "Get involved"
+msgstr "Engagez-vous"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "Boxed"
-msgstr "En boîte"
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid "Habitat Model"
+msgstr "Modèle d'habitat"
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "Muted"
-msgstr ""
-
-#. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_share_extended
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
 msgid ""
-"Share\n"
-"                    <i class=\"text-muted fa fa-hand-o-right fa-1x\"/>"
+"Habitats with a minimum footprint on the planet and a maximum positive "
+"impact on the local community."
 msgstr ""
+"Des habitats avec une empreinte minimale sur la planète et un impact positif"
+" maximal sur la communauté locale."
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "Underline"
-msgstr "Souligner"
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_banner
+msgid "Hello Planet."
+msgstr "Bonjour la planète."
 
 #. module: theme_treehouse
-#: model_terms:theme.ir.ui.view,arch:theme_treehouse.treehouse_options
-msgid "Uppercase"
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_call_to_action
+msgid "Help us protect and preserve for future generations"
+msgstr "Aidez-nous à protéger et à préserver pour les générations futures"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_call_to_action
+msgid "Join us and make the planet a better place."
+msgstr "Rejoignez-nous et faisons de la planète un endroit meilleur."
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid ""
+"Learn how to use organic gardening methods to grow the freshest food in your"
+" fruit and vegetable garden."
 msgstr ""
+"Apprenez à utiliser des méthodes de jardinage biologique pour cultiver des "
+"fruits et légumes frais."
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid "Organic Garden"
+msgstr "Jardin biologique"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_cover
+msgid ""
+"Our mission is to create a shared plan<br/> for saving the planet’s most "
+"exceptional wild places."
+msgstr ""
+"Notre mission consiste à créer une stratégie commune<br/> pour sauver les "
+"espaces sauvages les plus exceptionnels de la planète."
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid "Read more"
+msgstr "En savoir plus"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid "Recycling water"
+msgstr "Recycler l'eau"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_three_columns
+msgid ""
+"Recycling water for reuse applications instead of using freshwater supplies "
+"can be a water-saving measure."
+msgstr ""
+"Recycler l'eau pour la réutiliser au lieu d'utiliser des réserves d'eau "
+"douce permet d'économiser de l'eau."
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_text_image
+msgid "Shaping our future"
+msgstr "Façonner notre avenir"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_color_blocks_2
+msgid "Sky is the limit."
+msgstr "Le ciel est la limite"
+
+#. module: theme_treehouse
+#: model:ir.model,name:theme_treehouse.model_theme_utils
+msgid "Theme Utils"
+msgstr "Thèmes utiles"
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_text_image
+msgid ""
+"With all the global problems our planet faces today,<br/> communities of "
+"people concerned with them are growing<br/> to prevent the negative impact."
+msgstr ""
+"Face à tous les problèmes mondiaux auxquels notre planète est confrontée ce "
+"jour,<br/> les communautés de personnes qui s'y intéressent se "
+"multiplient<br/> pour en prévenir les effets négatifs."
+
+#. module: theme_treehouse
+#: model_terms:theme.ir.ui.view,arch:theme_treehouse.s_picture
+msgid "Working Together"
+msgstr "Travailler ensemble"
