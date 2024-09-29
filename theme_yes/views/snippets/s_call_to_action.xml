@@ -3,7 +3,8 @@
 
 <template id="s_call_to_action" inherit_id="website.s_call_to_action">
     <xpath expr="//section" position="attributes">
-        <attribute name="style" add="background-image:url(/web/image/website.s_parallax_default_image)" separator=";"/>
+        <attribute name="style" add="background-image: url('/web/image/website.s_parallax_default_image');" separator=";"/>
+        <attribute name="class" add="oe_img_bg o_bg_img_center" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-black-25"/>
