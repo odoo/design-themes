@@ -80,7 +80,7 @@
         'website.library_image_02': '/theme_yes/static/src/img/snippets/library_image_02.jpg',
         'website.library_image_14': '/theme_yes/static/src/img/snippets/library_image_14.webp',
         'website.library_image_16': '/theme_yes/static/src/img/snippets/library_image_16.webp',
-        'website.s_parallax_default_image': '/theme_yes/static/src/img/snippets/s_parallax.jpg',
+        'website.s_parallax_default_image': '/theme_yes/static/src/img/snippets/s_parallax.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_kickoff', 's_title', 's_company_team', 's_image_text_overlap', 's_features', 's_freegrid', 's_quotes_carousel', 's_call_to_action'],
