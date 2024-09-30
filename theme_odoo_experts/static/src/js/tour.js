@@ -7,7 +7,7 @@ const snippets = [
     {
         id: 's_mockup_image',
         name: 'Mockup Image',
-        groupName: "content",
+        groupName: "Content",
     },
     {
         id: 's_references',

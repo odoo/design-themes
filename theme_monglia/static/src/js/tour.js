@@ -51,7 +51,7 @@ const snippets = [
     {
         id: 's_faq_collapse',
         name: 'FAQ',
-        groupName: "text",
+        groupName: "Text",
     },
     {
         id: 's_references',

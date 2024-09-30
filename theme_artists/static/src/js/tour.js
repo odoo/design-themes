@@ -11,7 +11,7 @@ const snippets = [
     {
         id: 's_product_catalog',
         name: 'Product Catalog',
-        groupName: "Content",
+        groupName: "Text",
     },
     {
         id: 's_cta_box',
@@ -36,7 +36,7 @@ const snippets = [
     {
         id: 's_shape_image',
         name: 'Shape Image',
-        groupName: "Images",
+        groupName: "Content",
     },
 ];
 
