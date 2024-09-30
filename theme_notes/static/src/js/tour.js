@@ -12,17 +12,17 @@ const snippets = [
     {
         id: 's_image_text',
         name: 'Image Text',
-        groupName: "Images",
+        groupName: "Content",
     },
     {
         id: 's_three_columns',
         name: 'Three Columns',
-        groupName: "Content",
+        groupName: "Columns",
     },
     {
         id: 's_images_wall',
         name: 'Images Wall',
-        groupName: "Content",
+        groupName: "Images",
     },
     {
         id: 's_text_image',
@@ -37,7 +37,7 @@ const snippets = [
     {
         id: 's_title',
         name: 'Title',
-        groupName: "Content",
+        groupName: "Text",
     },
     {
         id: 's_call_to_action',
@@ -49,7 +49,7 @@ const snippets = [
 wTourUtils.registerThemeHomepageTour("notes_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"default-19"'),
     ...wTourUtils.insertSnippet(snippets[0]),
-    ...wTourUtils.clickOnText(snippets[0], 'h2'),
+    ...wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[1]),
     ...wTourUtils.insertSnippet(snippets[2]),

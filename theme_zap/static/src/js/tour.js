@@ -53,5 +53,6 @@ wTourUtils.registerThemeHomepageTour("zap_tour", () => [
     ...wTourUtils.clickOnSnippet(snippets[5], 'top'),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
+    wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[6]),
 ]);

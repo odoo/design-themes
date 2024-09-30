@@ -26,7 +26,7 @@ const snippets = [
     {
         id: 's_features',
         name: 'Features',
-        groupName: "Content>",
+        groupName: "Content",
     },
     {
         id: 's_call_to_action',
