@@ -68,12 +68,10 @@
     ],
     'images_preview_theme': {
         'website.s_product_list_default_image_1': '/theme_bookstore/static/src/img/snippets/s_product_1.jpg',
-        'website.s_banner_default_image_3': '/theme_bookstore/static/src/img/snippets/s_banner_3.jpg',
         'website.s_image_text_default_image': '/theme_bookstore/static/src/img/snippets/s_image_text.jpg',
         'website.library_image_02': '/theme_bookstore/static/src/img/snippets/library_image_02.jpg',
         'website.s_cover_default_image': '/theme_bookstore/static/src/img/snippets/s_cover.jpg',
         'website.s_media_list_default_image_1': '/theme_bookstore/static/src/img/snippets/s_media_list_1.jpg',
-        'website.s_image_text_default_image': '/theme_bookstore/static/src/img/snippets/s_image_text.jpg',
         'website.s_media_list_default_image_2': '/theme_bookstore/static/src/img/snippets/s_media_list_2.jpg',
         'website.s_text_image_default_image': '/theme_bookstore/static/src/img/snippets/s_text_image.jpg',
     },
