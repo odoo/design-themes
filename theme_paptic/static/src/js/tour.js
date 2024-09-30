@@ -42,7 +42,7 @@ const snippets = [
 
 
 wTourUtils.registerThemeHomepageTour("paptic_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"paptic-1"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"base-2"'),
     ...wTourUtils.insertSnippet(snippets[0], 'top'),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
