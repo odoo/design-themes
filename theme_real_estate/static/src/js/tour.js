@@ -67,5 +67,4 @@ wTourUtils.registerThemeHomepageTour("real_estate_tour", () => [
     ...wTourUtils.insertSnippet(snippets[6]),
     ...wTourUtils.insertSnippet(snippets[7]),
     ...wTourUtils.insertSnippet(snippets[8]),
-    ...wTourUtils.insertSnippet(snippets[9]),
 ]);
