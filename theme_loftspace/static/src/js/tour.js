@@ -57,7 +57,6 @@ wTourUtils.registerThemeHomepageTour("loftspace_tour", () => [
     ...wTourUtils.insertSnippet(snippets[5]),
     ...wTourUtils.insertSnippet(snippets[6]),
     ...wTourUtils.insertSnippet(snippets[7]),
-    ...wTourUtils.insertSnippet(snippets[8]),
     ...wTourUtils.clickOnSnippet(snippets[4]),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
