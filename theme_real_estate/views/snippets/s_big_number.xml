@@ -14,13 +14,13 @@
     </xpath>
 
     <!-- Text -->
-    <xpath expr="//h2/div" position="attributes">
+    <xpath expr="//h2/span" position="attributes">
         <attribute name="style" add="font-size: 9.375rem;" remove="font-size: 10.75rem;" separator=";"/>
     </xpath>
-    <xpath expr="//h2/div" position="replace" mode="inner">
+    <xpath expr="//h2/span" position="replace" mode="inner">
         85%
     </xpath>
-    <xpath expr="//h2/following-sibling::div" position="replace" mode="inner">
+    <xpath expr="//p/span" position="replace" mode="inner">
         customers satisfaction
     </xpath>
 </template>

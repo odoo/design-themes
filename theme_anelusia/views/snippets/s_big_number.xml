@@ -13,12 +13,12 @@
     </xpath>
 
     <!-- Text -->
-    <xpath expr="//h2/div" position="replace" mode="inner">
-        <font class="text-gradient" style="background-image: linear-gradient(0deg, rgb(29, 32, 48) 25%, rgb(222, 222, 222) 80%);">
+    <xpath expr="//h2/span" position="replace" mode="inner">
+        <font class="text-gradient" style="background-image: linear-gradient(15deg, var(--o-color-1) 25%, var(--o-color-5) 100%);">
             100+
         </font>
     </xpath>
-    <xpath expr="//h2/following-sibling::div" position="replace" mode="inner">
+    <xpath expr="//p/span" position="replace" mode="inner">
         happy customers
     </xpath>
 </template>
