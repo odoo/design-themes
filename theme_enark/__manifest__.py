@@ -51,6 +51,7 @@
         'views/snippets/s_images_constellation.xml',
         'views/snippets/s_text_cover.xml',
         'views/snippets/s_empowerment.xml',
+        'views/snippets/s_numbers_boxed.xml',
         'views/new_page_template.xml',
     ],
     'images': [
