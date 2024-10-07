@@ -103,6 +103,7 @@
         'views/snippets/s_empowerment.xml',
         'views/snippets/s_cta_mobile.xml',
         'views/snippets/s_website_form_cover.xml',
+        'views/snippets/s_numbers_boxed.xml',
         'views/new_page_template.xml',
     ],
     'images': [
