@@ -24,13 +24,13 @@ def test_01_theme_upgrade_post_copy(env):
         except Exception:
             pass
 
-    ofs_specific_view = Website.viewref('website.option_footer_scrolltop')
+    tfd_specific_view = Website.viewref('website.template_footer_descriptive')
     fls_specific_view = Website.viewref('portal.footer_language_selector')
     theme_nano_module = env.ref('base.module_theme_nano')
 
     def _simulate_user_manual_change():
         # Change some website options that will be changed by Theme Nano
-        ofs_specific_view.active = False
+        tfd_specific_view.active = False
         fls_specific_view.active = True
 
     # 2. Simulate some website option change made by the user
@@ -40,7 +40,7 @@ def test_01_theme_upgrade_post_copy(env):
     with MockRequest(env, website=website):
         theme_nano_module.with_context(website_id=website.id).button_choose_theme()
 
-    assert Website.viewref('website.option_footer_scrolltop').active is True, \
+    assert Website.viewref('website.template_footer_descriptive').active is True, \
         "Theme Nano custo should be applied"
     assert Website.viewref('portal.footer_language_selector').active is False, \
         "Theme Nano custo should be applied (2)"
@@ -53,7 +53,7 @@ def test_01_theme_upgrade_post_copy(env):
     env.reset()  # clear the set of environments
     env = env()  # get an environment that refers to the new registry
 
-    assert Website.viewref('website.option_footer_scrolltop').active is False, \
+    assert Website.viewref('website.template_footer_descriptive').active is False, \
         "Theme Nano custo should NOT be applied"
     assert Website.viewref('portal.footer_language_selector').active is True, \
         "Theme Nano custo should NOT be applied (2)"
