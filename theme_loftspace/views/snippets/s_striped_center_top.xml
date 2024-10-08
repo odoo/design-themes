@@ -14,6 +14,10 @@
     <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
         Furnish Your Home
     </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_quotes_carousel_demo_image_1</attribute>
+    </xpath>
     <!-- Figcaption -->
     <xpath expr="//figcaption" position="replace" mode="inner">
         Elegance in every piece

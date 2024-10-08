@@ -14,6 +14,10 @@
     <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
         View Our Portfolio
     </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/theme_common.image_content_03</attribute>
+    </xpath>
     <!-- Figcaption -->
     <xpath expr="//figcaption" position="replace" mode="inner">
         Moments crafted with love
