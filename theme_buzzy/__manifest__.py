@@ -64,6 +64,7 @@
         'views/snippets/s_image_frame.xml',
         'views/snippets/s_wavy_grid.xml',
         'views/snippets/s_empowerment.xml',
+        'views/snippets/s_split_intro.xml',
         'views/new_page_template.xml',
     ],
     'images': [

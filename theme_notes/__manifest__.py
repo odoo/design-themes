@@ -63,6 +63,7 @@
         'views/snippets/s_shape_image.xml',
         'views/snippets/s_text_cover.xml',
         'views/snippets/s_empowerment.xml',
+        'views/snippets/s_split_intro.xml',
         'views/new_page_template.xml',
     ],
     'images': [
