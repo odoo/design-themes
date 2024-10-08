@@ -958,4 +958,24 @@
     </xpath>
 </template>
 
+<!-- ======== COMPANY TEAM SPOTLIGHT ======== -->
+<template id="s_company_team_spotlight" inherit_id="website.s_company_team_spotlight">
+    <!-- Team #01 -->
+    <xpath expr="//p"  position="replace" mode="inner">
+        General Manager
+    </xpath>
+    <!-- Team #02 -->
+    <xpath expr="(//p)[2]"  position="replace" mode="inner">
+        Sales Manager
+    </xpath>
+    <!-- Team #03 -->
+    <xpath expr="(//p)[3]"  position="replace" mode="inner">
+        Service Manager
+    </xpath>
+    <!-- Team #04 -->
+    <xpath expr="(//p)[4]"  position="replace" mode="inner">
+        Parts Manager
+    </xpath>
+</template>
+
 </odoo>

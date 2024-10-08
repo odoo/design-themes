@@ -45,6 +45,7 @@
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_image_hexagonal.xml',
+        'views/snippets/s_company_team_spotlight.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_kickoff.xml',
