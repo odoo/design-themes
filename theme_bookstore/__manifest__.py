@@ -60,6 +60,7 @@
         'views/snippets/s_text_cover.xml',
         'views/snippets/s_accordion.xml',
         'views/snippets/s_accordion_image.xml',
+        'views/snippets/s_numbers_boxed.xml',
         'views/new_page_template.xml',
     ],
     'images': [

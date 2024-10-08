@@ -58,6 +58,7 @@
         'views/snippets/s_empowerment.xml',
         'views/snippets/s_image_text_overlap.xml',
         'views/snippets/s_features.xml',
+        'views/snippets/s_numbers_boxed.xml',
         'views/new_page_template.xml',
     ],
     'images': [
