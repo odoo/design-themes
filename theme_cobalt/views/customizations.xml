@@ -28,7 +28,7 @@
     <!-- Image -->
     <xpath expr="//div[hasclass('col-lg-4')]" position="after">
         <div class="col-lg-8 d-lg-block d-none o_snippet_mobile_invisible">
-            <img src="/web_editor/shape/theme_cobalt/s_banner_2.svg?c1=o-color-1" style="width: 100%;" alt=""/>
+            <img src="/web_editor/shape/theme_cobalt/s_banner_2.svg?c1=o-color-1" class="img img-fluid mx-auto" style="width: 100%;" alt=""/>
         </div>
     </xpath>
     <!-- Content -->
@@ -55,7 +55,7 @@
         <attribute name="class" add="pt24 pb24" remove="pt16 pb16" separator=" "/>
     </xpath>
     <xpath expr="//img" position="replace">
-        <img src="/web_editor/shape/theme_cobalt/s_image_text_2.svg?c1=o-color-1" style="width: 100%;" alt="Marketing"/>
+        <img src="/web_editor/shape/theme_cobalt/s_image_text_2.svg?c1=o-color-1" class="img img-fluid mx-auto" style="width: 100%;" alt="Marketing"/>
     </xpath>
     <!-- Content -->
     <xpath expr="//h2" position="replace">
@@ -80,7 +80,7 @@
         <h2>Unlock the possibilities of what we can offer you</h2>
     </xpath>
     <xpath expr="//img" position="replace">
-        <img src="/web_editor/shape/theme_cobalt/s_text_image.svg?c1=o-color-1" style="width: 100%;" alt="Marketing"/>
+        <img src="/web_editor/shape/theme_cobalt/s_text_image.svg?c1=o-color-1" class="img img-fluid mx-auto" style="width: 100%;" alt="Marketing"/>
     </xpath>
     <xpath expr="//p" position="replace"/>
     <xpath expr="//p" position="replace">
