@@ -44,6 +44,7 @@
         'views/snippets/s_motto.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_striped_top.xml',
+        'views/snippets/s_company_team_card.xml',
         'views/snippets/s_quadrant.xml',
         'views/snippets/s_intro_pill.xml',
         'views/snippets/s_big_number.xml',
