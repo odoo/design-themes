@@ -25,7 +25,7 @@
     <!-- Image -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="after">
         <div class="pt16 pb16 o_colored_level col-lg-5 offset-lg-1">
-            <img src="/web_editor/shape/theme_cobalt/s_banner.svg?c1=o-color-1" style="width: 100%;" alt="Marketing"/>
+            <img src="/web_editor/shape/theme_cobalt/s_banner.svg?c1=o-color-1" class="img img-fluid mx-auto" style="width: 100%;" alt="Marketing"/>
         </div>
     </xpath>
     <!-- Content -->
@@ -67,7 +67,7 @@
     </xpath>
     <!-- Image -->
     <xpath expr="//img" position="replace">
-        <img src="/web_editor/shape/theme_cobalt/s_image_text.svg?c1=o-color-1" style="width: 100%;" alt="Marketing"/>
+        <img src="/web_editor/shape/theme_cobalt/s_image_text.svg?c1=o-color-1" class="img img-fluid mx-auto" style="width: 100%;" alt="Marketing"/>
     </xpath>
     <!-- Content -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -100,7 +100,7 @@
         What we can do, <b>for you</b><br/>
     </xpath>
     <xpath expr="//img" position="replace">
-            <img src="/web_editor/shape/theme_cobalt/s_text_image.svg?c1=o-color-1" style="width: 100%;" alt="Marketing"/>
+            <img src="/web_editor/shape/theme_cobalt/s_text_image.svg?c1=o-color-1" class="img img-fluid mx-auto" style="width: 100%;" alt="Marketing"/>
     </xpath>
     <xpath expr="//p" position="replace"/>
     <xpath expr="//p" position="replace">
