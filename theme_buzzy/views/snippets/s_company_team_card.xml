@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_company_team_card" inherit_id="website.s_company_team_card" name="Buzzy's s_company_team_card">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
