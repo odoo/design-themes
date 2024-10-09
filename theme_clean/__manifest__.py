@@ -46,6 +46,7 @@
         'views/snippets/s_images_constellation.xml',
         'views/snippets/s_empowerment.xml',
         'views/snippets/s_numbers_boxed.xml',
+        'views/snippets/s_company_team_card.xml',
         'views/new_page_template.xml',
     ],
     'images': [
