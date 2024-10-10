@@ -35,6 +35,7 @@
         'views/snippets/s_media_list.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_popup.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_quotes_carousel.xml',
