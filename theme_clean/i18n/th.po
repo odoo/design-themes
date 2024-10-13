@@ -7,9 +7,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~17.4\n"
+"Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 12:23+0000\n"
+"POT-Creation-Date: 2024-10-07 13:30+0000\n"
 "PO-Revision-Date: 2024-09-25 18:03+0000\n"
 "Last-Translator: Wil Odoo, 2024\n"
 "Language-Team: Thai (https://app.transifex.com/odoo/teams/41243/th/)\n"
@@ -20,50 +20,61 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_big_number
+msgid "90%"
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_call_to_action
 msgid "<b>50,000 people</b>, run Clean to grow their financial wealth."
 msgstr "<b>50,000 คน</b>เรียกใช้ Clean เพื่อเพิ่มความมั่งคั่งทางการเงิน"
 
 #. module: theme_clean
-#: model_terms:theme.ir.ui.view,arch:theme_clean.s_cover
-msgid "<b>Sell from your couch</b>"
-msgstr "<b>ขายจากโซฟาของคุณ</b>"
-
-#. module: theme_clean
-#: model_terms:theme.ir.ui.view,arch:theme_clean.s_title
-msgid "<b>We create the perfect <br/>tailored solution for you</b>"
-msgstr "<b>เราสร้างโซลูชันที่เหมาะกับคุณ<br/>อย่างสมบูรณ์แบบ</b>"
-
-#. module: theme_clean
-#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_empowerment
 msgid ""
-"<br/>At any moment, you may contact our advisor through the in-app video "
-"meeting system."
+"<br/>Providing reliable legal solutions tailored to your needs.<br/><br/>"
 msgstr ""
-"<br/>คุณสามารถติดต่อที่ปรึกษาของเราได้ตลอดเวลาผ่านระบบการประชุมทางวิดีโอในแอป"
 
 #. module: theme_clean
-#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_empowerment
 msgid ""
-"<br/>We integrate digital tools and solutions for better insights, enabling "
-"data-driven planning."
+"<i class=\"fa fa-fw fa-info-circle o_not-animable\" role=\"img\"/>  Trusted "
+"expertise"
 msgstr ""
-"<br/>เราผสานรวมเครื่องมือและโซลูชันดิจิทัลเพื่อข้อมูลเชิงลึกที่ดีขึ้น "
-"ช่วยให้สามารถวางแผนที่ขับเคลื่อนด้วยข้อมูลได้"
 
 #. module: theme_clean
-#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_benefits
 msgid ""
-"<br/>We invest in strategic advice tailored to your<br/>\n"
-"                            business problems and needs."
+"Access specialized resources and expert insights that strengthen your case "
+"and keep you informed on all legal matters."
 msgstr ""
-"<br/>เราลงทุนในคำแนะนำเชิงกลยุทธ์ที่เหมาะกับปัญหา<br/>\n"
-"                            และความต้องการทางธุรกิจของคุณ"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_features
 msgid "All in one"
 msgstr "ทั้งหมดในที่เดียว"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+msgid ""
+"At any moment, you may contact our advisor through the in-app video meeting "
+"system."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_empowerment
+msgid "Book an appointment"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Business Strategy Consulting"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Cloud Computing Solutions"
+msgstr ""
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
@@ -76,6 +87,40 @@ msgstr ""
 "โปรดอย่าลังเลที่จะติดต่อเรา"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid ""
+"Comprehensive financial planning, including risk assessment, investment "
+"strategy, and tax optimization for your business."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid ""
+"Customized HR solutions, including talent acquisition, employee training, "
+"and performance management to boost productivity."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_benefits
+msgid "Customized Legal Strategies"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_images
+msgid "Customized solutions for your business needs"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Digital Marketing Services"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_images
+msgid "Driving Success Through Innovation"
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_features
 msgid "Easy to use"
 msgstr "ใช้งานง่าย"
@@ -86,14 +131,89 @@ msgid "Efficient team processes"
 msgstr "กระบวนการทำงานเป็นทีมที่มีประสิทธิภาพ"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_images
+msgid "Empowering Businesses to Reach New Heights"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid ""
+"Enhance your business operations with our comprehensive suite of "
+"professional services, tailored to meet your corporate needs."
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_text_image
 msgid "Everything you need, <br/>totally free"
 msgstr "ทุกสิ่งที่คุณต้องการ<br/>ฟรีทั้งหมด"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_benefits
+msgid "Exclusive Legal Resources"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_striped_center_top
+msgid "Expert Legal Services for <br/>Business Success"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_card_offset
+msgid "Expert Legal Solutions for Business"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid ""
+"Expert advice on business planning, market analysis, and competitive "
+"strategy to help your company achieve its goals."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_images
+msgid "Expert advice to navigate complex challenges"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Financial Advisory Services"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Human Resources Management"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "IT Support Services"
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_call_to_action
 msgid "Join them and make the right money move."
 msgstr "เข้าร่วมกับพวกเขาและสร้างรายได้ให้ถูกต้อง"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_freegrid
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_striped_center_top
+msgid "Learn More"
+msgstr "เรียนรู้เพิ่มเติม"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_freegrid
+msgid "Legal Expertise for the Modern Business World"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_card_offset
+msgid "Legal expertise you can trust."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_cta_box
+msgid "Looking for a new opportunity ? Explore our job offers<br/><br/>"
+msgstr ""
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_cover
@@ -105,9 +225,54 @@ msgstr ""
 "<br/>ติดตามเงินทุกบาททุกสตางค์ได้โดยตรงจากบ้านของคุณอย่างสะดวกสบาย"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_unveil
+msgid "Maximize Your Financial Growth"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_card_offset
+msgid ""
+"Navigate the complexities of corporate law with our expert legal services. "
+"We provide the support your business needs to thrive in today’s fast-paced "
+"world."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_striped_center_top
+msgid ""
+"Navigate the complexities of the business world with our expert legal "
+"services, tailored to ensure your corporate success."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_empowerment
+msgid "Navigating legal complexities<br/>with Cornerstone Law Group"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_benefits
+msgid "Ongoing Client Support"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Our Corporate Services"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_cta_box
+msgid "Our jobs"
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
 msgid "Our mission"
 msgstr "ภารกิจของเรา"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_empowerment
+msgid "Our services"
+msgstr "บริการของเรา"
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
@@ -115,14 +280,31 @@ msgid "Our team"
 msgstr "ทีมของเรา"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_benefits
+msgid ""
+"Our team provides continuous support throughout your legal journey, guiding "
+"you through every step with clarity and care."
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
 msgid "Our values"
 msgstr "คุณค่าของเรา"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_images
+msgid "Partner with us to unlock your potential"
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
 msgid "Personal adviser"
 msgstr "ที่ปรึกษาส่วนตัว"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_images
+msgid "Proven strategies for sustainable growth"
+msgstr ""
 
 #. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
@@ -134,14 +316,78 @@ msgstr ""
 " และทั้งหมดนี้ไม่มีค่าใช้จ่ายใดๆ ทั้งสิ้น"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_empowerment
+msgid "Read client testimonials   <i class=\"fa fa-long-arrow-right\" role=\"img\"/>"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid ""
+"Reliable IT support, network management, and cybersecurity solutions to "
+"safeguard your business operations and data integrity."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid ""
+"Scalable cloud services to enhance your business’s flexibility and data "
+"accessibility, supporting remote work and collaboration."
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_features
 msgid "Secured"
 msgstr "ปลอดภัย"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_cover
+msgid "Sell from your couch"
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
 msgid "Simplify things"
 msgstr "ทำให้ทุกอย่างง่ายขึ้น"
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Starting at $1,500"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Starting at $1,800"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Starting at $2,000"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Starting at $2,500"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "Starting at $3,000"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_freegrid
+msgid ""
+"Stay ahead in the business world with our expert legal services. We offer "
+"comprehensive solutions that protect your interests and support your "
+"business growth in today’s competitive environment."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid ""
+"Strategic online marketing, SEO optimization, and social media management to"
+" boost your brand visibility and customer engagement."
+msgstr ""
 
 #. module: theme_clean
 #: model:ir.model,name:theme_clean.model_theme_utils
@@ -159,6 +405,38 @@ msgstr ""
 "<br/>คำแนะนำทั้งหมดรวมอยู่ในนั้นโดยไม่มีค่าใช้จ่ายใดๆทั้งสิ้น"
 
 #. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_striped_center_top
+msgid "Trust, integrity, and results"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_banner
+msgid ""
+"Unleash your <strong class=\"o_default_snippet_text\"><span "
+"class=\"o_text_highlight o_translate_inline o_text_highlight_circle_2 "
+"o_text_highlight_fill\">potential</span>.</strong>"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_unveil
+msgid ""
+"Unlock sales opportunities and achieve financial success with our expert "
+"guidance."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_color_blocks_2
+msgid ""
+"We are committed to helping you achieve success with unparalleled support "
+"and expert guidance, every step of the way."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_title
+msgid "We create the perfect <br/>tailored solution for you"
+msgstr ""
+
+#. module: theme_clean
 #: model_terms:theme.ir.ui.view,arch:theme_clean.s_three_columns
 msgid ""
 "We created our company to improve the work-life balance. We believe that we "
@@ -168,7 +446,36 @@ msgstr ""
 "เราเชื่อว่าเราต้องให้ความสำคัญกับครอบครัวมากกว่างานและการเงิน"
 
 #. module: theme_clean
-#. odoo-javascript
-#: code:addons/theme_clean/static/src/js/tour.js:0
-msgid "width"
-msgstr "ความกว้าง"
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_key_benefits
+msgid ""
+"We develop tailored legal strategies that align with your specific needs, "
+"ensuring effective and precise solutions."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+msgid ""
+"We integrate digital tools and solutions for better insights, enabling data-"
+"driven planning."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_carousel
+msgid ""
+"We invest in strategic advice tailored to your business problems and needs."
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_cta_box
+msgid "We're constantly looking<br/>for new talents"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "✽  Consulting Services"
+msgstr ""
+
+#. module: theme_clean
+#: model_terms:theme.ir.ui.view,arch:theme_clean.s_pricelist_boxed
+msgid "✽  Technology Solutions"
+msgstr ""
