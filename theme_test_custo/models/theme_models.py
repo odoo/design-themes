@@ -3,8 +3,8 @@
 from odoo import models
 
 
-class TestThemeCustom(models.AbstractModel):
-    _inherit = 'theme.utils'
+class ThemeUtils(models.AbstractModel):
+    _inherit = ['theme.utils']
 
     @property
     def _header_templates(self):

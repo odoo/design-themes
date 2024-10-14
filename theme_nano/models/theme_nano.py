@@ -1,8 +1,8 @@
 from odoo import models
 
 
-class ThemeNano(models.AbstractModel):
-    _inherit = 'theme.utils'
+class ThemeUtils(models.AbstractModel):
+    _inherit = ['theme.utils']
 
     def _theme_nano_post_copy(self, mod):
 

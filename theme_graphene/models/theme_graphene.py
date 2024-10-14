@@ -1,8 +1,8 @@
 from odoo import models
 
 
-class ThemeGraphene(models.AbstractModel):
-    _inherit = 'theme.utils'
+class ThemeUtils(models.AbstractModel):
+    _inherit = ['theme.utils']
 
     def _theme_graphene_post_copy(self, mod):
         self.enable_view('website.template_header_stretch')

@@ -1,8 +1,8 @@
 from odoo import models
 
 
-class ThemeTreehouse(models.AbstractModel):
-    _inherit = 'theme.utils'
+class ThemeUtils(models.AbstractModel):
+    _inherit = ['theme.utils']
 
     def _theme_treehouse_post_copy(self, mod):
         self.disable_view('website.header_visibility_standard')

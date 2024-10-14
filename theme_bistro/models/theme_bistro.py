@@ -1,8 +1,8 @@
 from odoo import models
 
 
-class ThemeBistro(models.AbstractModel):
-    _inherit = 'theme.utils'
+class ThemeUtils(models.AbstractModel):
+    _inherit = ['theme.utils']
 
     def _theme_bistro_post_copy(self, mod):
         self.enable_view('website.template_header_vertical')
