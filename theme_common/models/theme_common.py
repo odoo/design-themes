@@ -1,8 +1,8 @@
 from odoo import models
 
 
-class ThemeCommon(models.AbstractModel):
-    _inherit = 'theme.utils'
+class ThemeUtils(models.AbstractModel):
+    _inherit = ['theme.utils']
 
     def _theme_common_post_copy(self, mod):
         # Reset all default color when switching themes

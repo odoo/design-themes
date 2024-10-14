@@ -4,7 +4,7 @@ from odoo import api, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = ['website']
 
     @api.model
     def get_test_themes_websites_theme_preview(self):
