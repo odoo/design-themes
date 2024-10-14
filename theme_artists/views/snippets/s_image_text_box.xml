@@ -4,7 +4,7 @@
 <template id="s_image_text_box" inherit_id="website.s_image_text_box">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+        <attribute name="class" add="o_colored_level o_cc o_cc5" separator=" "/>
         <attribute name="data-oe-shape-data">{'shape': 'web_editor/Connections/08','colors':{'c5':'o-color-1'}}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="attributes">
