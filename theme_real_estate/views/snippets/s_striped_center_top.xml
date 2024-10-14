@@ -17,6 +17,7 @@
     <!-- Image -->
     <xpath expr="//img" position="attributes">
         <attribute name="class" remove="rounded" separator=" "/>
+        <attribute name="src">/web/image/website.s_accordion_image_default_image</attribute>
     </xpath>
     <!-- Figcaption -->
     <xpath expr="//figcaption" position="replace" mode="inner">
