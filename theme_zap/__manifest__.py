@@ -46,6 +46,7 @@
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_striped.xml',
+        'views/snippets/s_company_team_card.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_big_number.xml',
         'views/snippets/s_images_constellation.xml',

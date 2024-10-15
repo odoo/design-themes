@@ -40,6 +40,7 @@
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_showcase.xml',
         'views/snippets/s_quadrant.xml',
+        'views/snippets/s_company_team_card.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_accordion_image.xml',
         'views/snippets/s_key_benefits.xml',
