@@ -55,6 +55,7 @@
         'views/snippets/s_image_hexagonal.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_key_images.xml',
+        'views/snippets/s_company_team_spotlight.xml',
         'views/snippets/s_quadrant.xml',
         'views/snippets/s_intro_pill.xml',
         'views/snippets/s_big_number.xml',
