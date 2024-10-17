@@ -32,6 +32,7 @@
         'views/snippets/s_text_block.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_three_columns.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_quadrant.xml',
         'views/snippets/s_numbers_showcase.xml',
