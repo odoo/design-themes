@@ -958,4 +958,12 @@
     </xpath>
 </template>
 
+<!-- ======== COMPARISONS HORIZONTAL ======== -->
+<template id="s_comparisons_horizontal" inherit_id="website.s_comparisons_horizontal">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>
