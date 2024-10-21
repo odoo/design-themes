@@ -1029,4 +1029,20 @@
     <xpath expr="//p" position="replace"/>
 </template>
 
+<!-- ======== COMPARISONS HORIZONTAL ======== -->
+<template id="s_comparisons_horizontal" inherit_id="website.s_comparisons_horizontal">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc4" separator=" "/>
+    </xpath>
+    <!-- Card 1 -->
+    <xpath expr="//div[hasclass('s_card')]" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="(//div[hasclass('s_card')])[2]" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>
