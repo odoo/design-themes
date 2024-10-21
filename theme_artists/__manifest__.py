@@ -20,6 +20,7 @@
         'views/snippets/s_text_image.xml',
         'views/snippets/s_framed_intro.xml',
         'views/snippets/s_card_offset.xml',
+        'views/snippets/s_comparisons_horizontal.xml',
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_cards_grid.xml',
