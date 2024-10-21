@@ -38,6 +38,7 @@
         'views/snippets/s_company_team_detail.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_comparisons.xml',
+        'views/snippets/s_comparisons_horizontal.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_quadrant.xml',
         'views/snippets/s_unveil.xml',

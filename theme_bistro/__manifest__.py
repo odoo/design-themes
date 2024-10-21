@@ -19,6 +19,7 @@
         'views/snippets/s_cards_grid.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_card_offset.xml',
+        'views/snippets/s_comparisons_horizontal.xml',
         'views/snippets/s_features.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_freegrid.xml',
