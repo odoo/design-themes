@@ -15,6 +15,7 @@
         'views/snippets/s_banner.xml',
         'views/snippets/s_discovery.xml',
         'views/snippets/s_comparisons.xml',
+        'views/snippets/s_comparisons_horizontal.xml',
         'views/snippets/s_showcase.xml',
         'views/snippets/s_cta_card.xml',
         'views/snippets/s_striped_top.xml',

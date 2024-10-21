@@ -17,6 +17,7 @@
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_cards_grid.xml',
         'views/snippets/s_carousel_intro.xml',
+        'views/snippets/s_comparisons_horizontal.xml',
         'views/snippets/s_image_text.xml',
         'views/snippets/s_images_mosaic.xml',
         'views/snippets/s_media_list.xml',

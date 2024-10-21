@@ -28,6 +28,7 @@
         'views/snippets/s_image_text_overlap.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_carousel_intro.xml',
+        'views/snippets/s_comparisons_horizontal.xml',
         'views/snippets/s_quotes_carousel_minimal.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_call_to_action.xml',
