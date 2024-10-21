@@ -958,4 +958,19 @@
     </xpath>
 </template>
 
+<!-- ======== SPLIT INTRO ======== -->
+<template id="s_split_intro" inherit_id="website.s_split_intro">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Left column -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Drive away in<br/>your dream car
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        <br/>Discover our wide range of vehicles tailored to your lifestyle. As your trusted car dealer, we offer personalized service and competitive pricing to help you find the perfect car. Whether you want a sedan, SUV, or truck, we make your car-buying experience easy and satisfying.<br/><br/>
+    </xpath>
+</template>
+
 </odoo>
