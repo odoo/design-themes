@@ -26,6 +26,7 @@
         'views/snippets/s_cards_soft.xml',
         'views/snippets/s_carousel.xml',
         'views/snippets/s_carousel_intro.xml',
+        'views/snippets/s_carousel_cards.xml',
         'views/snippets/s_cta_mockups.xml',
         'views/snippets/s_cta_card.xml',
         'views/snippets/s_faq_list.xml',
