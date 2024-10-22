@@ -94,6 +94,7 @@
         'views/snippets/s_table_of_content.xml',
         'views/snippets/s_tabs.xml',
         'views/snippets/s_timeline.xml',
+        'views/snippets/s_timeline_images.xml',
         'views/snippets/s_timeline_list.xml',
         'views/snippets/s_title_form.xml',
         'views/snippets/s_unveil.xml',
