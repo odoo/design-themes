@@ -24,6 +24,7 @@
         'views/snippets/s_title.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_quotes_carousel_minimal.xml',
+        'views/snippets/s_quotes_carousel_compact.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_sidegrid.xml',
