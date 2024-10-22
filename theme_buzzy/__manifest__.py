@@ -59,6 +59,7 @@
         'views/snippets/s_image_punchy.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_company_team_card.xml',
+        'views/snippets/s_timeline_images.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_big_number.xml',
