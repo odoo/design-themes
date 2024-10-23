@@ -11,10 +11,6 @@ $s-big-icon-circle-icon-size: 120px;
             .fa {
                 color: o-color('alpha') !important;
             }
-            h5.o_default_snippet_text {
-                color: $font-color;
-                margin-top: 20px;
-            }
         }
         &:hover .s_big_icons_icon {
             @include o-theme-chd-big-icons-styles($h5-color: o-color('alpha'));
