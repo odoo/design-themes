@@ -11,14 +11,14 @@
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
     <xpath expr="//div[hasclass('col-lg-4')]" position="replace">
         <div class="col-lg-5 pt16 pb16">
-            <h1 class="o_default_snippet_text">
+            <h1>
                 Unlock the
                 <span class="o_text_highlight o_translate_inline o_text_highlight_circle_1" style="--text-highlight-color: var(--o-color-1); --text-highlight-width: 6px;"><span class="o_text_highlight_item">growth</span></span>
                 of your business
             </h1>
             <p>With over 15 years of proven success, we deliver expert guidance and strategic insights for your business’s future.</p>
             <p><br/></p>
-            <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg o_default_snippet_text"><t t-esc="cta_btn_text">Learn more</t></a>
+            <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg"><t t-esc="cta_btn_text">Learn more</t></a>
         </div>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">

@@ -4,7 +4,7 @@
 <template id="s_banner" inherit_id="website.s_banner">
     <!-- Text -->
     <xpath expr="//h1" position="replace">
-        <h1 class="display-3 o_default_snippet_text">Unleash your <strong class="o_default_snippet_text"><span class="o_text_highlight o_translate_inline o_text_highlight_circle_2 o_text_highlight_fill">potential</span>.</strong></h1>
+        <h1 class="display-3">Unleash your <strong><span class="o_text_highlight o_translate_inline o_text_highlight_circle_2 o_text_highlight_fill">potential</span>.</strong></h1>
     </xpath>
     <!-- Remove panels -->
     <xpath expr="(//div[hasclass('o_grid_item_image')])[2]" position="replace"/>
