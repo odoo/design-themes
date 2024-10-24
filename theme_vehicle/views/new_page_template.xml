@@ -38,10 +38,7 @@
 
 <template id="new_page_template_about_s_banner" inherit_id="website.new_page_template_about_s_banner">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
+        <attribute name="style">background-image: linear-gradient(180deg, var(--o-color-3) 0%, var(--o-color-4) 100%);</attribute>
     </xpath>
 </template>
 
@@ -131,10 +128,7 @@
 
 <template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
+        <attribute name="style">background-image: linear-gradient(180deg, var(--o-color-3) 0%, var(--o-color-4) 100%);</attribute>
     </xpath>
 </template>
 
@@ -160,10 +154,7 @@
 
 <template id="new_page_template_gallery_s_banner" inherit_id="website.new_page_template_gallery_s_banner">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-4&amp;flip=x'); background-position: 50% 50%;"/>
+        <attribute name="style">background-image: linear-gradient(180deg, var(--o-color-3) 0%, var(--o-color-4) 100%);</attribute>
     </xpath>
 </template>
 

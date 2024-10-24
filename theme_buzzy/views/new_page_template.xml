@@ -51,11 +51,11 @@
 <template id="new_page_template_s_showcase" inherit_id="website.new_page_template_s_showcase">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04",'colors':{'c1':'o-color-1','c2':'o-color-2','c3':'rgba(0,0,0,0)','c5':'o-color-5'},"flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_03"/>
+        <div class="o_we_shape o_web_editor_Blocks_04" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=rgba(0,0,0,0)&amp;c5=o-color-5');"/>
     </xpath>
 </template>
 

@@ -3,8 +3,8 @@
 
 <template id="s_masonry_block" inherit_id="website.s_masonry_block" name="Masonry">
     <xpath expr="//section" position="replace">
-        <section class="s_masonry_block o_cc1 pt24 pb104" data-vcss="001" data-vxml="001" data-oe-shape-data="{'shape':'web_editor/Origins/04_001','flip':[],'showOnMobile':true}">
-            <div class="o_we_shape o_web_editor_Origins_04_001 o_shape_show_mobile"/>
+        <section class="s_masonry_block o_cc1 pt24 pb104" data-vcss="001" data-vxml="001" data-oe-shape-data="{'shape':'web_editor/Connections/20','colors':{'c5':'o-color-3'},'flip':['y'],'showOnMobile':true}">
+            <div class="o_we_shape o_web_editor_Connections_20 o_shape_show_mobile" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0%;"/>
             <div class="container">
                 <t t-call="website.s_masonry_block_default_template"/>
             </div>

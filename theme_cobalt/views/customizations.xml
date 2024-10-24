@@ -6,10 +6,10 @@
     <!-- Content -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt24 pb80" remove="pt96 pb96" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/04_001','flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/20','colors':{'c5': 'o-color-3'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_04_001" style="background-image: url('/web_editor/shape/web_editor/Origins/04_001.svg?c3=o-color-3&amp;flip=y');"/>
+        <div class="o_we_shape o_web_editor_Connections_20" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-3');"/>
     </xpath>
     <!-- Row - remove grid mode -->
     <xpath expr="//div[hasclass('row')]" position="attributes">
@@ -468,10 +468,10 @@
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt112" remove="pt72" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/14_001','colors':{'c3':'o-color-3','c4':'o-color-4'},'flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/06','colors':{'c5':'o-color-3'},'flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_14_001" style="background-image: url('/web_editor/shape/web_editor/Origins/14_001.svg?c3=o-color-3&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_web_editor_Connections_06" style="background-image: url('/web_editor/shape/web_editor/Connections/06.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 
     <!-- Numbers -->
@@ -674,10 +674,10 @@
 <template id="s_company_team_detail" inherit_id="website.s_company_team_detail">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5 pt96" remove="o_cc1 pt64" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/11_001','colors':{'c3':'o-color-4','c4':'o-color-5'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/05','colors':{'c5':'o-color-4'},'flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_11_001" style="background-image: url('/web_editor/shape/web_editor/Origins/11_001.svg?c3=o-color-4&amp;c4=o-color-5');"/>
+        <div class="o_we_shape o_web_editor_Connections_05" style="background-image: url('/web_editor/shape/web_editor/Connections/05.svg?c5=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
         <attribute name="class" add="col-lg-3" remove="col-lg-4" separator=" "/>
@@ -699,10 +699,10 @@
 <template id="s_references_grid" inherit_id="website.s_references_grid">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt112" remove="pt64" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/14_001','colors':{'c3':'o-color-5','c4':'o-color-4'},'flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/06','flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_14_001" style="background-image: url('/web_editor/shape/web_editor/Origins/14_001.svg?c3=o-color-5&amp;c4=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_web_editor_Connections_06" style="background-image: url('/web_editor/shape/web_editor/Connections/06.svg?c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 

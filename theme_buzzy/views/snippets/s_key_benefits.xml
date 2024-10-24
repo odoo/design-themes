@@ -3,6 +3,10 @@
 
 <template id="s_key_benefits" inherit_id="website.s_key_benefits">
     <!-- Layout -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
     <xpath expr="//p[hasclass('lead')]" position="attributes">
         <attribute name="style">text-align: center;"</attribute>
     </xpath>

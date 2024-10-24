@@ -4,11 +4,11 @@
 <template id="s_cta_box" inherit_id="website.s_cta_box">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc5 pt0 pb120" remove="pt80 pb80" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/04_001', 'flip':[], 'showOnMobile':true}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/20','colors':{'c5': 'o-color-4'}, 'flip':['y'], 'showOnMobile':true}</attribute>
     </xpath>
 
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_04_001" style="background-image: url('/web_editor/shape/web_editor/Origins/04_001.svg?c3=o-color-4'); background-position: 50% 100%;"/>
+        <div class="o_we_shape o_web_editor_Connections_20" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
     <!-- Card -->
     <xpath expr="//div[hasclass('card')]" position="attributes">
