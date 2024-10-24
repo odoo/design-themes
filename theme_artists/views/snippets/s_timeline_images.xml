@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_timeline_images" inherit_id="website.s_timeline_images">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
+    <!-- Milestone #1-->
+    <xpath expr="//div[hasclass('s_timeline_images_card')]" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="//span[hasclass('o_dot')]" position="attributes">
+        <attribute name="class" add="text-o-color-4" remove="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_dot_line')]" position="attributes">
+        <attribute name="style">border-color: var(--o-color-1) !important;</attribute>
+    </xpath>
+    <!-- Milestone #2 -->
+    <xpath expr="(//div[hasclass('s_timeline_images_card')])[2]" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('o_dot')])[2]" position="attributes">
+        <attribute name="class" add="text-o-color-4" remove="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_dot_line')])[2]" position="attributes">
+        <attribute name="style">border-color: var(--o-color-1) !important;</attribute>
+    </xpath>
+</template>
+
+</odoo>
