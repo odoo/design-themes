@@ -534,10 +534,10 @@
 <template id="s_key_images" inherit_id="website.s_key_images" name="Graphene s_key_images">
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/04_001','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/20','colors':{'c5': 'o-color-3'},'flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_04_001"/>
+        <div class="o_we_shape o_web_editor_Connections_20" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0;"/>
     </xpath>
 
     <!-- Texts -->

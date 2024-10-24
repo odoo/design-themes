@@ -13,13 +13,12 @@
 <template id="s_cover" inherit_id="website.s_cover" name="Avantgarde s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="s_parallax_no_overflow_hidden o_full_screen_height" remove="s_parallax_is_fixed s_parallax" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
         <attribute name="style" remove="background-position: 50% 75%;" add="background-position: 50% 80%;" separator=";"/>
     </xpath>
-    <xpath expr="//div[hasclass('s_allow_columns')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_18" style="background-image: url('/web_editor/shape/web_editor/Origins/18.svg?c1=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
+        <attribute name="class" remove="bg-black-50" add="bg-black-75" separator=" "/>
     </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
         We are Avantgarde.
@@ -176,10 +175,10 @@
 
 <template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns" name="Avantgarde s_three_columns">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/20"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Connections/02","colors":{"c5":"o-color-1"}}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_20"/>
+        <div class="o_we_shape o_web_editor_Connections_02" style="background-image: url('/web_editor/shape/web_editor/Connections/02.svg?c5=o-color-1');"/>
     </xpath>
 </template>
 
@@ -594,13 +593,13 @@
 <template id="s_big_number" inherit_id="website.s_big_number">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/03"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04"}</attribute>
         <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
     </xpath>
 
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Blocks_03"/>
+        <div class="o_we_shape o_web_editor_Blocks_04"/>
     </xpath>
 
     <!-- Text -->

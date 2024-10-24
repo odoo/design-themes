@@ -19,11 +19,11 @@
 <template id="configurator_s_product_catalog" inherit_id="website.configurator_s_product_catalog">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Zigs/06"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Connections/18","colors":{"c5": "o-color-4"}}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Zigs_06"/>
+        <div class="o_we_shape o_web_editor_Connections_18" style="background-image: url('/web_editor/shape/web_editor/Connections/18.svg?c5=o-color-4');"/>
     </xpath>
 </template>
 

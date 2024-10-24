@@ -697,13 +697,12 @@
 <template id="s_big_number" inherit_id="website.s_big_number">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/18"}</attribute>
+        <attribute name="data-oe-shape-data"/>
+        <attribute name="style">background-image: linear-gradient(60deg, var(--o-color-5) 0%, var(--o-color-1) 200%);</attribute>
     </xpath>
 
     <!-- Shape -->
-    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Origins_18 o_we_animated"/>
-    </xpath>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
 
     <!-- Text -->
     <xpath expr="//h2/div" position="attributes">

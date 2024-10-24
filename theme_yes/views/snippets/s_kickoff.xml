@@ -5,14 +5,14 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="data-scroll-background-ratio"/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/11_001",'colors':{'c3':'o-color-3', 'c4':'rgba(0, 0, 0, 0.5)'},"flip":["y"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Connections/05",'colors':{'c5':'o-color-3'},"flip":[]}</attribute>
         <attribute name="style" add="background-image:url(/web/image/website.s_kickoff_default_image)" separator=";"/>
         <attribute name="class" add="pt0 pb0 oe_img_bg o_bg_img_center o_full_screen_height" remove="s_parallax s_parallax_is_fixed pt232 pb88" separator=" "/>
     </xpath>
         <!-- Remove Parallax + shape -->
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Origins_11_001" style="background-image: url('/web_editor/shape/web_editor/Origins/11_001.svg?c3=o-color-3&amp;c4=rgba(0, 0, 0, 0.5)&amp;flip=y'); background-position: 50% 100%;"/>
+        <div class="o_we_shape o_web_editor_Connections_05" style="background-image: url('/web_editor/shape/web_editor/Connections/05.svg?c5=o-color-3');"/>
     </xpath>
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
         <attribute name="class" add="bg-black-25" remove="bg-black-50" separator=" "/>

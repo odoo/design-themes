@@ -4,14 +4,14 @@
 <template id="s_freegrid" inherit_id="website.s_freegrid">
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/04_001','colors':{'c3':'o-color-5'},'flip':[],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/20','flip':['y'],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
         <attribute name="class" add="pt128" remove="pt64" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
         <attribute name="data-row-count">17</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container-fluid')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_04_001 o_shape_show_mobile" style="background-image: url('/web_editor/shape/web_editor/Origins/04_001.svg?c3=o-color-5');"/>
+        <div class="o_we_shape o_web_editor_Connections_20 o_shape_show_mobile" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
     <xpath expr="//div[hasclass('container-fluid')]" position="attributes">
         <attribute name="class" add="container" remove="container-fluid" separator=" "/>
