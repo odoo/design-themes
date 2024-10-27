@@ -5,6 +5,7 @@
 # Translators:
 # Wil Odoo, 2024
 # Daye Jeong, 2024
+# Sarah Park, 2024
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-07 13:31+0000\n"
 "PO-Revision-Date: 2024-09-25 18:03+0000\n"
-"Last-Translator: Daye Jeong, 2024\n"
+"Last-Translator: Sarah Park, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/odoo/teams/41243/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,21 +26,21 @@ msgstr ""
 msgid ""
 "\" A premier choice for luxury cars. <br/>Expert maintenance, exquisite "
 "service, and utmost professionalism. \""
-msgstr ""
+msgstr "\" 럭셔리 차량을 위한 최고의 선택. <br/>전문가를 통한 정비, 섬세한 서비스, 최고의 전문성. \""
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_quotes_carousel_minimal
 msgid ""
 "\" Outstanding service and craftsmanship! <br/>They ensure every luxury "
 "vehicle is in perfect condition. \""
-msgstr ""
+msgstr "\" 뛰어난 서비스와 장인정신! <br/>모든 럭셔리 차량에 대한 완벽한 상태 유지를 보장합니다. \""
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_quotes_carousel_minimal
 msgid ""
 "\" Their service is exceptional. <br/>Premium care, top-notch quality, and "
 "unparalleled attention to detail. \""
-msgstr ""
+msgstr "\" 서비스가 정말 탁월합니다. <br/>프리미엄 케어, 최고 수준의 품질, 그리고 디테일에 있어서 견줄 수 없는 세심함. \""
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_numbers_charts
@@ -86,7 +87,7 @@ msgstr "+300,000"
 msgid ""
 "75% of our clients choose to upgrade to the latest models every 3 years, "
 "showcasing strong brand loyalty and trust."
-msgstr ""
+msgstr "고객의 75%가 3년마다 최신 모델로 업그레이드하여 강력한 브랜드 충성도와 신뢰도를 보여줍니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_call_to_action
@@ -108,7 +109,7 @@ msgstr "<b>세상을 모두 가져 보세요.</b>"
 msgid ""
 "<br/>Offering a wide selection of quality cars to suit every need and "
 "budget.<br/><br/>"
-msgstr ""
+msgstr "<br/>모든 요구와 예산에 맞는 다양한 고품질 차량을 제공합니다.<br/><br/>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_big_number
@@ -117,13 +118,16 @@ msgid ""
 "            87%\n"
 "        </font>"
 msgstr ""
+"<font class=\"text-gradient\" style=\"background-image: linear-gradient(0deg, rgb(29, 32, 48) 0%, rgb(222, 222, 222) 49%);\">\n"
+"            87%\n"
+"        </font>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_empowerment
 msgid ""
 "<i class=\"fa fa-fw fa-info-circle o_not-animable\" role=\"img\"/>  Top-"
 "rated vehicles"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-info-circle o_not-animable\" role=\"img\"/>  최고급 차량"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.configurator_s_three_columns
@@ -150,7 +154,7 @@ msgstr "</span>독특한 디자인의 LED 헤드라이트로 화려하면서도 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_image_title
 msgid "A Deep Dive into Luxury and Innovation"
-msgstr ""
+msgstr "럭셔리와 혁신에 대한 깊이있는 탐구"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_three_columns
@@ -159,6 +163,7 @@ msgid ""
 "adventure. Built for those who refuse to compromise on performance and "
 "style."
 msgstr ""
+"모든 디테일이 대담하게 표현된 코란 X는 현대적 모험가 정신을 담아냈습니다. 성능과 스타일에 타협하지 않는 고객들을 위해 제작되었습니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cards_grid
@@ -166,6 +171,7 @@ msgid ""
 "Achieve optimal performance with a sleek, aerodynamic design that reduces "
 "drag and enhances stability, ensuring superior speed and efficiency."
 msgstr ""
+"공기 저항을 줄이고 안정성을 강화하여 뛰어난 속도와 효율성을 보장하는 세련되고 공기역학적인 디자인으로 최적의 성능을 발휘합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cards_grid
@@ -175,31 +181,31 @@ msgstr "공기역학 디자인"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_title
 msgid "All our models"
-msgstr ""
+msgstr "전체 모델"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_wall
 msgid ""
 "Benefit from competitive financing plans and leasing options designed to "
 "make your car purchase as affordable as possible."
-msgstr ""
+msgstr "경쟁력 있는 할부 프로그램과 리스 옵션을 통해서 최대한 경제적으로 차량을 구매할 수 있습니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid "Bespoke Automotive Solutions"
-msgstr ""
+msgstr "맞춤형 자동차 솔루션"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_freegrid
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_quadrant
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_striped_center_top
 msgid "Book a Service"
-msgstr ""
+msgstr "서비스 예약"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_empowerment
 msgid "Book a test drive"
-msgstr ""
+msgstr "시승 예약"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_product_list
@@ -241,14 +247,14 @@ msgstr "스마트폰이나 태블릿에서 KORAN을 생생하게 구현하여 �
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_empowerment
 msgid "Browse our inventory   <i class=\"fa fa-long-arrow-right\" role=\"img\"/>"
-msgstr ""
+msgstr "보유 차량 둘러보기   <i class=\"fa fa-long-arrow-right\" role=\"img\"/>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_numbers_charts
 msgid ""
 "Clients saved $2.4 billion by choosing our eco-efficient and cost-effective "
 "vehicles."
-msgstr ""
+msgstr "고객들은 친환경적이고 가성비가 뛰어난 저희 차량을 선택함으로써 24억 달러를 절감했습니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
@@ -256,6 +262,7 @@ msgid ""
 "Complete maintenance service covering engine check, transmission fluid "
 "change, brake inspection, and system diagnostics for optimal performance."
 msgstr ""
+"엔진 점검, 변속기 오일 교환, 브레이크 검사 및 시스템 진단 등을 포함한 최적의 성능을 보장하기 위한 완벽한 유지 관리 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
@@ -267,7 +274,7 @@ msgstr "종합적인 지원"
 msgid ""
 "Comprehensive detailing service including exterior polishing, interior "
 "cleaning, and protective coatings for a showroom finish."
-msgstr ""
+msgstr "쇼룸 마감을 위한 외부 광택, 실내 세차 및 보호 코팅 등 디테일을 아우르는 종합 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.configurator_s_three_columns
@@ -282,12 +289,12 @@ msgstr "문의하기"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Custom Interior Upgrades"
-msgstr ""
+msgstr "맞춤형 인테리어 업그레이드"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
 msgid "Custom Vehicle Options"
-msgstr ""
+msgstr "맞춤형 차량 옵션"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_three_columns
@@ -296,11 +303,13 @@ msgid ""
 "performance to the streets. Precision-tuned for speed, it promises an "
 "driving experience."
 msgstr ""
+"스릴을 추구하는 운전자를 위해 설계된 코란 GT는 레이스에서 영감을 받은 성능을 도로에서 선보입니다. 스피드를 위해 정밀하게 튜닝되어 "
+"드라이빙 경험을 보장받을 수 있습니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
 msgid "Discover Excellence in Luxury Vehicle Care"
-msgstr ""
+msgstr "럭셔리 차량 관리의 우수성을 확인해 보세요"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
@@ -309,45 +318,46 @@ msgid ""
 "provide unparalleled quality and sophistication. Experience excellence on "
 "every drive."
 msgstr ""
+"비교가 불가능하도록 품질과 세련미가 넘치게 설계된 럭셔리 차량을 위한 전용 서비스를 확인해 보세요. 주행할 때마다 우수성을 경험합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
 msgid ""
 "Discover unique and advanced features that set our vehicles apart, providing"
 " you with exceptional performance and cutting-edge technology."
-msgstr ""
+msgstr "고유하고 특별한 기능이 탑재되어 더욱 차별화되는 차량의 탁월한 성능과 최첨단 기술을 느껴보세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_carousel_intro
 msgid ""
 "Discover unparalleled automotive care with our expert services that blend "
 "precision, luxury, and exceptional performance."
-msgstr ""
+msgstr "정밀성, 고급스러움, 탁월한 성능이 어우러진 전문 서비스로 비할 수 없는 차량 관리를 경험해 보세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_framed_intro
 msgid "Drive Your Dream: Quality Cars for Every Journey"
-msgstr ""
+msgstr "꿈의 주행을 실현합니다: 모든 여정을 위한 최고급 차량"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_striped_center_top
 msgid "Drive with Confidence and Style"
-msgstr ""
+msgstr "자신감 넘치고 스타일리시한 드라이빙"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_card_offset
 msgid "Drive with confidence."
-msgstr ""
+msgstr "자신감 넘치는 주행"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_unveil
 msgid "Drive your Passion"
-msgstr ""
+msgstr "열정의 주행을 실현합니다"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_carousel_intro
 msgid "Driving excellence with luxury vehicles"
-msgstr ""
+msgstr "럭셔리 차량과 함께 하는 탁월한 드라이빙"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features
@@ -369,7 +379,7 @@ msgstr "짜릿한 <b>성과</b>."
 msgid ""
 "Elevate your driving experience with our bespoke maintenance and repair "
 "solutions."
-msgstr ""
+msgstr "맞춤형 유지관리 및 수리 솔루션으로 운전 경험을 향상시킵니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cards_grid
@@ -378,16 +388,18 @@ msgid ""
 "systems and precise steering, offering unmatched agility and cornering "
 "capabilities."
 msgstr ""
+"최첨단 서스펜션 시스템과 정겨한 스티어링으로 탁월한 제어력과 반응성을 즐길 수 있으며, 타의 추종을 불허하는 민첩성과 코너링 성능을 느낄"
+" 수 있습니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid "Excellence and Craftsmanship"
-msgstr ""
+msgstr "탁월함과 장인 정신"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Exclusive Exterior Customization"
-msgstr ""
+msgstr "독특한 외관 커스터마이징"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
@@ -401,56 +413,57 @@ msgid ""
 "performance engine, designed for an exhilarating driving experience on both "
 "the track and the road."
 msgstr ""
+"트랙과 도로 모두에서 짜릿한 운전 경험을 할 수 있도록 설계된 고성능 스포츠카 엔진으로 스릴 넘치는 가속과 최고 속도를 경험하세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_carousel_intro
 msgid "Experience top-tier luxury"
-msgstr ""
+msgstr "최고급 럭셔리를 경험해 보세요"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_wall
 msgid "Expert Vehicle Service"
-msgstr ""
+msgstr "전문가 차량 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
 msgid "Expert technicians specializing in luxury and exotic vehicles"
-msgstr ""
+msgstr "럭셔리 및 특이 차량 전문 기술자"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_carousel_intro
 msgid ""
 "Explore more and find premium services for your luxury vehicle, crafted to "
 "ensure unrivaled quality and customer satisfaction."
-msgstr ""
+msgstr "더 자세한 내용을 살펴보고 범접할 수 없는 품질과 고객 만족을 보장해 드리는 고급 차량용 프리미엄 서비스를 확인해 보세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_unveil
 msgid ""
 "Explore our exceptional range of cars designed for performance and luxury."
-msgstr ""
+msgstr "성능과 고급스러움을 위해 설계된 뛰어난 차량 라인업을 살펴보세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_wall
 msgid ""
 "Explore our extensive inventory of new and pre-owned cars to find the "
 "perfect vehicle that fits your needs and budget."
-msgstr ""
+msgstr "다양한 신차와 중고 차량 보유 상황을 확인해 보시고 필요에 맞추어 예산에 맞는 완벽한 차량을 찾으세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_images_mosaic
 msgid "Explore premium maintenance and bespoke care for your high-end car."
-msgstr ""
+msgstr "고급 차량을 위한 프리미엄 정비 및 맞춤형 케어를 살펴보세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_empowerment
 msgid "Find your perfect ride<br/>with premium car sales"
-msgstr ""
+msgstr "프리미엄 차량 판매를 통해<br/>완벽한 차량을 찾으세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_wall
 msgid "Flexible Financing Options"
-msgstr ""
+msgstr "유연한 파이낸싱 옵션"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
@@ -474,11 +487,12 @@ msgid ""
 "controls, and premium materials, all crafted to enhance your driving "
 "pleasure and comfort."
 msgstr ""
+"전의 즐거움과 편안함을 향상시키도록 제작된 스포츠 시트, 직관적인 컨트롤, 프리미엄 소재로 운전자 중심의 드라이빙석에 푹 빠져 보세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid "Innovation and Performance"
-msgstr ""
+msgstr "혁신과 성능"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_call_to_action
@@ -490,7 +504,7 @@ msgstr "얼리버드 가입에 함께 하시거나 정식 체험판을 신청하
 msgid ""
 "Keep your car in top condition with our comprehensive service and "
 "maintenance options, handled by skilled technicians."
-msgstr ""
+msgstr "숙련된 테크니션이 서비스하는 종합 서비스 및 보수 옵션으로 차량을 최상의 상태로 유지하세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_card_offset
@@ -500,6 +514,8 @@ msgid ""
 "maintenance services. From cars to motorbikes, we offer expert solutions to "
 "ensure safe and smooth rides."
 msgstr ""
+"종합 수리 및 보수 서비스로 차량을 최상의 상태로 유지하세요. 자동차에서 바이크에 이르기까지 안전하고 부드러운 주행을 보장하기 위한 "
+"전문가 솔루션을 제공합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_quadrant
@@ -508,18 +524,20 @@ msgid ""
 "services. From cars to motorbikes, we’ve got you covered.<br/><br/> Drive "
 "with confidence and style."
 msgstr ""
+"전문 수리 및 보수 서비스로 차량을 최상의 상태로 유지하세요. 자동차에서 바이크까지 모든 서비스를 제공해 "
+"드립니다.<br/><br/>자신감 있게 스타일리시한 주행을 해 보세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_striped_center_top
 msgid ""
 "Keep your vehicles running smoothly with our expert repair and maintenance "
 "services, designed for performance and reliability."
-msgstr ""
+msgstr "성능과 안정성을 위해 만들어진 전문적인 수리 및 보수 서비스로 차량 작동을 원활하게 유지합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_numbers_charts
 msgid "Key Metrics of our Achievements"
-msgstr ""
+msgstr "주요 성과 지표"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_three_columns
@@ -545,12 +563,12 @@ msgstr "장거리"
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cta_box
 msgid ""
 "Looking for a leasing plan or a brand new car ? We got you covered<br/><br/>"
-msgstr ""
+msgstr "리스 플랜이나 신차를 찾고 계신가요? 저희가 도와드리겠습니다<br/><br/>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Luxury Vehicle Servicing"
-msgstr ""
+msgstr "럭셔리 차량 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_media_list
@@ -566,7 +584,7 @@ msgstr "타협이란 없습니다."
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_images_mosaic
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Our Luxury Vehicle Services"
-msgstr ""
+msgstr "럭셔리 차량 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_references
@@ -585,13 +603,14 @@ msgid ""
 "forward, enabling us to deliver excellence across all categories of the "
 "automotive industry."
 msgstr ""
+"저희의 헌신은 혁신, 성과, 지속 가능성을 이끌고 있으며, 자동차 산업의 모든 카테고리에 있어서 탁월하게 발전시키고 있습니다. "
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
 msgid ""
 "Our team provides full support throughout your vehicle purchase and "
 "ownership experience, from initial consultation to ongoing service."
-msgstr ""
+msgstr "저희 팀은 초기 상담부터 지속적인 서비스에 이르기까지 차량 구매 및 소유 경험 전반에 걸쳐 완벽하게 지원하고 있습니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_grid
@@ -613,19 +632,19 @@ msgstr ""
 msgid ""
 "Performance tuning service including engine optimization, suspension "
 "upgrades, and exhaust modifications to enhance driving dynamics and power."
-msgstr ""
+msgstr "엔진 최적화, 서스펜션 업그레이드, 배기구 개조 등 성능 튜닝 서비스를 통해 주행에 있어서 역동성과 파워를 향상시킵니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid ""
 "Personalized exterior modifications such as custom paint jobs, aerodynamic "
 "enhancements, and bespoke alloy wheels to reflect your style."
-msgstr ""
+msgstr "고객의 스타일을 반영하여 맞춤형 도장, 공기 역학적인 개선, 맞춤형 합금 휠 등에 외부 커스텀 개조를 적용합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
 msgid "Personalized service to ensure your vehicle's optimal performance"
-msgstr ""
+msgstr "차량의 최적 성능을 보장하기 위한 맞춤형 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cards_grid
@@ -635,32 +654,32 @@ msgstr "정밀 핸들링"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_striped_center_top
 msgid "Precision in every detail"
-msgstr ""
+msgstr "모든 디테일에 있어서의 정밀성"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Premium Detailing Package"
-msgstr ""
+msgstr "프리미엄 디테일 패키지"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
 msgid "Premium Services for Your High-End Automotive Needs"
-msgstr ""
+msgstr "하이엔드 차량을 위한 프리미엄 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_carousel_intro
 msgid "Premium automotive services"
-msgstr ""
+msgstr "프리미엄 차량 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_card_offset
 msgid "Reliable Vehicle Services &amp; Repairs"
-msgstr ""
+msgstr "신뢰할 수 있는 차량 서비스 및 수리"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_freegrid
 msgid "Reliable Vehicle Services and Maintenance"
-msgstr ""
+msgstr "신뢰할 수 있는 차량 서비스 및 정비"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_masonry_block_image_texts_image_template
@@ -672,7 +691,7 @@ msgstr "더 스마트해진 <b>주행 거리</b>."
 msgid ""
 "Specialized servicing tailored for high-end vehicles, including advanced "
 "diagnostics, custom parts, and manufacturer-recommended procedures."
-msgstr ""
+msgstr "하이 엔드 차량에 맞게 고급 진단, 맞춤형 부품, 제조업체 권장 절차 등이 포함되어 있는 맞춤형 전문 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cards_grid
@@ -687,7 +706,7 @@ msgstr "엔진 시동"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
 msgid "State-of-the-art facilities for superior maintenance"
-msgstr ""
+msgstr "최상의 정비를 위한 최첨단 시설"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
@@ -700,6 +719,7 @@ msgid ""
 "Tailored interior enhancements including premium leather upholstery, bespoke"
 " trims, and advanced infotainment systems for a unique driving experience."
 msgstr ""
+"프리미엄 가죽 내장재, 맞춤형 트림, 최처단 인포테인먼트 시스템 등 맞춤형 인테리어로 개선한 특별한 드라이빙 경험을 선사합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_text_image
@@ -709,7 +729,7 @@ msgstr "무료 체험판을 통해 확인해 보세요."
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cover
 msgid "Take it all. Compliments too. <br/><br/>"
-msgstr ""
+msgstr "전부 드립니다. 칭찬해 주시는 걸 잊지 마세요.<br/><br/>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cover
@@ -719,7 +739,7 @@ msgstr "새로운 코란 X"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cta_box
 msgid "The best car dealer<br/>in your local area"
-msgstr ""
+msgstr "지역 내<br/>최고의 자동차 딜러"
 
 #. module: theme_vehicle
 #: model:ir.model,name:theme_vehicle.model_theme_utils
@@ -738,16 +758,18 @@ msgid ""
 "opulence meets cutting-edge technology. Elevate your journey with vehicles "
 "that blend sophistication and performance seamlessly."
 msgstr ""
+"고급스러움과 최첨단 기술이 결합된 특별한 컬렉션으로 운전 경험에 혁신을 선사합니다. 세련미와 성능이 완벽하게 조화를 이루는 차량으로 "
+"여행을 한 단계 업그레이드하세요."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
 msgid "Trust us to keep your luxury vehicle in pristine condition"
-msgstr ""
+msgstr "고객의 럭셔리 차량을 최상의 상태로 유지해 드립니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cards_grid
 msgid "Unleash the Power of Our Sports Cars"
-msgstr ""
+msgstr "스포츠카의 파워를 느껴보세요"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_three_columns
@@ -756,6 +778,8 @@ msgid ""
 "with classic design, delivering a thrilling ride that’s both swift and "
 "smooth."
 msgstr ""
+"우아함과 함께 강력한 파워를 발휘하는 코란 미니는 최첨단 엔지니어링과 클래식한 디자인을 결합하여 빠르면서도 부드러운 스릴 넘치는 승차감을"
+" 선사합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_quadrant
@@ -773,6 +797,7 @@ msgid ""
 "We offer personalized vehicle configurations to match your preferences and "
 "needs, ensuring you get the perfect fit for your lifestyle."
 msgstr ""
+"고객의 선호와 필요에 맞는 맞춤형 차량을 구성하여 제공함으로써 고객님의 라이프스타일에 꼭 맞는 차량을 찾을 수 있도록 해 드립니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
@@ -781,28 +806,29 @@ msgid ""
 "Leveraging cutting-edge features, we ensure every vehicle provides "
 "exceptional performance and sophistication."
 msgstr ""
+"최신 자동차 기술과 디자인을 도입하였습니다. 최첨단 기능을 활용하여 모든 차량이 뛰어난 성능과 정교함을 발휘하도록 보장합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_numbers_charts
 msgid "We proudly serve over 300,000 satisfied customers."
-msgstr ""
+msgstr "30만 명 이상의 고객에게 만족스러운 서비스를 제공하고 있습니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid ""
 "We provide tailored luxury vehicles designed to meet your specific "
 "preferences."
-msgstr ""
+msgstr "고객의 취향에 맞추어 설계된 맞춤형 고급 차량을 제공합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid "What we offer to our clients"
-msgstr ""
+msgstr "고객에게 제공하는 서비스"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_wall
 msgid "Wide Vehicle Selection"
-msgstr ""
+msgstr "다양한 차량 선택"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
@@ -810,7 +836,7 @@ msgid ""
 "With extensive experience and superior craftsmanship, we provide high-end "
 "vehicles that deliver unmatched performance and style, ensuring a luxurious "
 "driving experience."
-msgstr ""
+msgstr "풍부한 경험과 뛰어난 장인 정신으로, 비교 불가능한 성능과 스타일을 갖춘 고급 차량을 통해 럭셔리한 운전 경험을 보장합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_grid
@@ -820,7 +846,7 @@ msgstr "나의 장점"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid "Your satisfaction and environmental impact are our priorities."
-msgstr ""
+msgstr "고객의 만족과 환경에 미치는 영향을 최우선으로 생각합니다."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_big_number
@@ -830,9 +856,9 @@ msgstr "고객 만족"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "✽  Customization &amp; Upgrades"
-msgstr ""
+msgstr "✽  맞춤형 &amp; 업그레이드"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "✽  Maintenance &amp; Care"
-msgstr ""
+msgstr "✽  보수 &amp; 관리"
