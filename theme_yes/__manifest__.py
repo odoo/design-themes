@@ -63,6 +63,7 @@
         'views/snippets/s_features.xml',
         'views/snippets/s_numbers_boxed.xml',
         'views/snippets/s_split_intro.xml',
+        'views/snippets/s_numbers_framed.xml',
         'views/new_page_template.xml',
     ],
     'images': [

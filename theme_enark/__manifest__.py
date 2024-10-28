@@ -55,6 +55,7 @@
         'views/snippets/s_numbers_boxed.xml',
         'views/snippets/s_company_team_card.xml',
         'views/snippets/s_split_intro.xml',
+        'views/snippets/s_numbers_framed.xml',
         'views/new_page_template.xml',
     ],
     'images': [
