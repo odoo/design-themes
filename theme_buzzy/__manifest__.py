@@ -65,6 +65,7 @@
         'views/snippets/s_wavy_grid.xml',
         'views/snippets/s_empowerment.xml',
         'views/snippets/s_numbers_boxed.xml',
+        'views/snippets/s_numbers_framed.xml',
         'views/new_page_template.xml',
     ],
     'images': [
