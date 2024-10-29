@@ -103,6 +103,7 @@ CONFLICTUAL_CLASSES_RE = {
         's_timeline_card',
         's_website_form_custom', 's_website_form_dnone', 's_website_form_field', 's_website_form_input', 's_website_form_mark', 's_website_form_submit', 's_website_form_no_submit_label',
         's_donation_btn', 's_donation_custom_btn', 's_newsletter_subscribe_form_input_small',
+        's_tabs_common', 's_tabs_nav_vertical', 's_tabs_nav_with_descriptions',
     ],
     # Text
     re.compile(r'^text-(?!(center|end|start|bg-|lg-)).*$'): [
