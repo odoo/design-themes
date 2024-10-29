@@ -39,6 +39,7 @@
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_striped_center_top.xml',
+        'views/snippets/s_tabs_images.xml',
         'views/snippets/s_big_number.xml',
         'views/snippets/s_image_frame.xml',
         'views/snippets/s_shape_image.xml',
