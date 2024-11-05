@@ -13,7 +13,6 @@
 
         'views/snippets/s_carousel_intro.xml',
         'views/snippets/s_cta_box.xml',
-        'views/snippets/s_banner.xml',
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_image_text.xml',

@@ -12,7 +12,6 @@
         'views/images.xml',
 
         'views/snippets/s_cta_box.xml',
-        'views/snippets/s_banner.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_picture.xml',
         'views/snippets/s_cards_grid.xml',
