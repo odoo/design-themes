@@ -98,6 +98,7 @@
         'views/snippets/s_title_form.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_empowerment.xml',
+        'views/snippets/s_form_aside.xml',
         'views/new_page_template.xml',
     ],
     'images': [
