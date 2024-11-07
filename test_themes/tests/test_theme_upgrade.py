@@ -50,8 +50,7 @@ def test_01_theme_upgrade_post_copy(env):
 
     # 5. Upgrade Theme Nano
     theme_nano_module.button_immediate_upgrade()
-    env.reset()  # clear the set of environments
-    env = env()  # get an environment that refers to the new registry
+    env.transaction.reset()  # clear the set of environments
 
     assert Website.viewref('website.template_footer_descriptive').active is False, \
         "Theme Nano custo should NOT be applied"
