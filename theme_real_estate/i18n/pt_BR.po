@@ -7,9 +7,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server saas~17.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-07 13:28+0000\n"
+"POT-Creation-Date: 2024-07-15 12:23+0000\n"
 "PO-Revision-Date: 2024-07-16 11:36+0000\n"
 "Last-Translator: Wil Odoo, 2024\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/odoo/teams/41243/pt_BR/)\n"
@@ -20,40 +20,14 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel_minimal
-msgid ""
-"\" A top choice for real estate. <br/>Expert guidance, great deals, and "
-"exceptional support throughout. \""
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "100+"
+msgstr "100+"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel_minimal
-msgid ""
-"\" Exceptional results and service! <br/>They made finding and buying our "
-"home a smooth experience. \""
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel_minimal
-msgid ""
-"\" Their service was outstanding. <br/>Professional, reliable, and truly "
-"understanding our needs. \""
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "$1,295,000,000"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "$295,000"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "$455,000"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "14,000"
+msgstr "14.000"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
@@ -62,18 +36,23 @@ msgstr "142"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
-msgid "14K"
-msgstr ""
+msgid "97%"
+msgstr "97%"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_big_number
-msgid "85%"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid "<b>Iris Doe</b> • Customer, sold an appartement"
+msgstr "<b>Iris Doe</b> • Cliente, vendeu um apartamento"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
-msgid "98%"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid "<b>Jane Doe</b> • Customer, bought a house"
+msgstr "<b>Jane Doe</b> • Cliente, comprou uma casa"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
+msgid "<b>John Doe</b> • Customer, bought an appartement"
+msgstr "<b>John Doe</b> • Cliente, comprou um apartamento"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
@@ -81,44 +60,19 @@ msgid "<b>Real Estate Agency.<br/>Near You.</b>"
 msgstr "<b>Imobiliárias<br/>perto de você.</b>"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_empowerment
-msgid ""
-"<br/>Connecting you with the perfect property through personalized "
-"guidance.<br/><br/>"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "<span class=\"text-600 fw-bold\">$1,295,000,000</span>"
+msgstr "<span class=\"text-600 fw-bold\">US$ 1.295.000.000</span>"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
-msgid ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
-"all in one"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "<span class=\"text-600 fw-bold\">$295,000</span>"
+msgstr "<span class=\"text-600 fw-bold\">US$ 295.000</span>"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_striped_top
-msgid ""
-"<font class=\"text-o-color-2\">ESTATE®.</font> Your Easy Home Search, All in"
-" One"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_empowerment
-msgid ""
-"<i class=\"fa fa-fw fa-info-circle o_not-animable\" role=\"img\"/>  Prime "
-"properties"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_title
-msgid "A Deep Dive into Properties and Innovation"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_benefits
-msgid ""
-"Access unique and high-value properties that are not widely available, "
-"giving you an edge in finding exceptional real estate opportunities."
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
+msgid "<span class=\"text-600 fw-bold\">$455,000</span>"
+msgstr "<span class=\"text-600 fw-bold\">US$ 455.000</span>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -149,101 +103,18 @@ msgstr ""
 "seus planos de viagem."
 
 #. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid ""
+"At Real Estate Agency we have fixed price fees. This means we only charge "
+"when your home sale is confirmed."
+msgstr ""
+"Aqui na Agência Imobiliária, temos taxas de preços fixas. Isso significa que"
+" só cobramos quando a venda do imóvel está confirmada."
+
+#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid "Bored with your interior?"
 msgstr "Enjoou da sua decoração?"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_intro_pill
-msgid "Browse properties"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Carefully handpicked by our experts"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cards_grid
-msgid "Charming Suburban Home"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Commercial Property Management"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid ""
-"Comprehensive management services for residential properties, including "
-"tenant screening, rent collection, and maintenance coordination."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_empowerment
-msgid "Contact an agent"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cta_box
-msgid "Contact us"
-msgstr "Entre em contato"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cards_grid
-msgid "Contemporary Penthouse"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
-msgid "Customer, bought a house"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
-msgid "Customer, bought an appartement"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
-msgid "Customer, sold an appartement"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_benefits
-msgid "Dedicated Client Support"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid ""
-"Dedicated services for rental properties, from marketing and tenant "
-"placement to ongoing maintenance and tenant relations."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_images
-msgid "Discover Your Dream Property with Us"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cards_grid
-msgid ""
-"Discover modern elegance in this chic penthouse, featuring sleek "
-"architecture, top-of-the-line amenities, and breathtaking cityscape views, "
-"ideal for those who appreciate luxury and style."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Discover our latest properties"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cta_box
-msgid "Discover our properties"
-msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
@@ -252,35 +123,6 @@ msgid ""
 msgstr ""
 "Conheça nossos serviços personalizados para embelezar a decoração da sua "
 "casa."
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_intro_pill
-msgid "Discover our<br/>new properties"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_striped_center_top
-msgid ""
-"Discover premium real estate services, from buying and selling homes to "
-"vacation accommodations and property management."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_carousel_intro
-msgid ""
-"Discover your perfect home with our expert real estate services that offer a"
-" seamless experience from search to closing."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_images
-msgid "Diverse property listings to match your lifestyle"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_features_wall
-msgid "Dream Home Search"
-msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
@@ -293,167 +135,9 @@ msgstr ""
 "de lei, etc."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid ""
-"End-to-end support for home buyers and sellers, including property searches,"
-" negotiations, and closing coordination."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_carousel_intro
-msgid ""
-"Enhance your property journey with our personalized advice and diverse "
-"listings."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cards_grid
-msgid ""
-"Enjoy the comfort of this delightful suburban home with a spacious yard, "
-"cozy interior, and family-friendly neighborhood, perfect for making lasting "
-"memories."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_benefits
-msgid "Exclusive Listings"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_features_wall
-msgid ""
-"Experience a smooth real estate transaction with our expert guidance and "
-"support throughout the buying and selling process."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cards_grid
-msgid ""
-"Experience city living at its finest in this expansive urban loft, featuring"
-" high ceilings, open-plan living spaces, and modern finishes, all in a prime"
-" location."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_images
-msgid "Expert Guidance for Buying, Selling, and Renting Homes"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_features_wall
-msgid "Expert Property Valuation"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid ""
-"Expert management for commercial properties, focusing on maximizing "
-"occupancy, lease administration, and facility management."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cards_grid
-msgid "Explore Our Featured Properties"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_images_mosaic
-msgid "Explore Our Property Listings"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_carousel_intro
-msgid ""
-"Explore more and find real estate solutions that fit your goals, crafted to "
-"provide a smooth and successful property experience."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid ""
-"Explore our comprehensive range of real estate services designed to meet all"
-" your property needs, whether buying, selling, or renting."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_shape_image
-msgid ""
-"Explore our range of real estate services tailored to your needs. Whether "
-"buying, selling, or renting, our expert team provides personalized guidance "
-"and support to help you make informed decisions and achieve your property "
-"goals."
-msgstr ""
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid "Explore our services"
 msgstr "Conheça nossos serviços"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_unveil
-msgid ""
-"Explore stunning properties and beautiful interiors to discover your perfect"
-" space."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_carousel_intro
-msgid "Explore your ideal property"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_striped_center_top
-msgid "Find Your Dream Home"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_images
-msgid "Find the perfect property with our dedicated team"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_unveil
-msgid "Find your dream home"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quadrant
-msgid ""
-"Find your dream property with our real estate services. Whether you’re "
-"looking to buy, sell, or rent, we offer expert guidance and personalized "
-"solutions.<br/><br/> Your perfect home is just a click away."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_images_mosaic
-msgid "Find your ideal home with our newest real estate offerings."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_card_offset
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_freegrid
-msgid ""
-"Find your perfect home or investment property with our comprehensive real "
-"estate services. We guide you through every step, from buying and selling to"
-" property management."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_features_wall
-msgid ""
-"Find your perfect home with our personalized search services, tailored to "
-"match your lifestyle and preferences."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_carousel_intro
-msgid "Finding your dream home made easy"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_empowerment
-msgid "Finding your dream home<br/>with expert real estate services"
-msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -466,49 +150,23 @@ msgstr ""
 "e bons de negociar. Fiquei muito contente com a experiência e com a empresa."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_features_wall
-msgid ""
-"Get accurate and comprehensive property valuations from our experienced team"
-" to help you make informed decisions."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Home Buying and Selling Assistance"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_striped_center_top
-msgid "Homes built with care"
-msgstr ""
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "House On The Hill"
 msgstr "Casa na montanha"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cards_grid
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
 msgid ""
-"Indulge in opulence with this stunning waterfront villa, boasting panoramic "
-"views, a private pool, and exquisite design elements that offer a serene and"
-" exclusive living experience."
+"Increase Visitor retention. Customer engagement on a website with virtual "
+"tour is 5 times longer compared to a site without it."
 msgstr ""
+"Aumentar a retenção de visitantes. O engajamento dos clientes em um site com"
+" tour virtual é 5 vezes maior em comparação a sites que não têm."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_wavy_grid
-msgid "Innovation and Service"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cta_box
-msgid "Looking for a brand new property ? We got you covered<br/><br/>"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cards_grid
-msgid "Luxurious Waterfront Villa"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "Increased Visibility"
+msgstr "Visibilidade aumentada"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_image
@@ -520,14 +178,14 @@ msgstr ""
 "        Você pode decidir com toda a liberdade se quer ou não trabalhar conosco na venda doo seu imóvel."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_images
-msgid "Market insights and property evaluations you can trust"
-msgstr ""
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "Moutain View"
 msgstr "Vista das montanhas"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "No fixed fees"
+msgstr "Sem taxas fixas"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
@@ -544,11 +202,6 @@ msgid "Open your horizons"
 msgstr "Abra seus horizontes"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Our Real Estate Services"
-msgstr ""
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Our decoration experts are at your disposal to guide you step by step in the"
@@ -559,21 +212,9 @@ msgstr ""
 "melhores recomendações e guiar você passo a passo no design do seu interior."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_benefits
-msgid ""
-"Our team provides continuous support throughout the buying or selling "
-"process, ensuring a smooth and stress-free experience."
-msgstr ""
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "Paradise Residence"
 msgstr "Residência paradisíaca"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_benefits
-msgid "Personalized Property Searches"
-msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -585,21 +226,14 @@ msgstr ""
 "incríveis! Recomendo fortemente!"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid ""
-"Professional property valuation and appraisal services to provide accurate "
-"market value assessments for buying or selling."
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "Premium Quality"
+msgstr "Qualidade Premium"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_images
-msgid "Professional support for seamless transactions"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Property Valuation and Appraisal"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
+msgid "Pro Photo Shoot"
+msgstr "Sessão de fotos profissionais"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_picture
@@ -607,129 +241,19 @@ msgid "Property on the coasts of the Mediterranean."
 msgstr "Imóvel na costa do Mediterrâneo."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_wavy_grid
-msgid "Quality and Expertise"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quadrant
-msgid "Real Estate"
-msgstr "Imobiliária"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Real Estate Investment Consulting"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_freegrid
-msgid "Real Estate Solutions Tailored for You"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_card_offset
-msgid "Real Estate Solutions for You"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_shape_image
-msgid "Real estate services"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_carousel_intro
-msgid "Real estate solutions tailored for you"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Rental Property Services"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Residential Property Management"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_features_wall
-msgid "Seamless Buying &amp; Selling"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_striped_top
-msgid "Search Now"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_empowerment
-msgid "Search for homes"
-msgstr ""
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_banner
 msgid "See properties"
 msgstr "Ver imóveis"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cards_grid
-msgid "Spacious Urban Loft"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Starting at $1,000"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Starting at $2,000"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Starting at $300"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Starting at $400/month"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Starting at $500/month"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "Starting at $800/month"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid ""
-"Strategic advice for real estate investors, including market analysis, "
-"property selection, and investment portfolio management."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_wavy_grid
-msgid "Sustainable Living Options"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_wavy_grid
-msgid "Tailored Property Solutions"
-msgstr ""
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid ""
-"The house is surrounded by garden terraces that create an intimate ambience."
-" With no overlooking neighbours, the garden offers real privacy."
+"The house is surrounded by garden terraces that create unique spaces and an "
+"intimate ambience. With no overlooking neighbours, the garden offers real "
+"privacy."
 msgstr ""
+"A casa é rodeada por terraços de jardim que criam espaços únicos e ambientes"
+" íntimos. Sem visão dos vizinhos, o jardim oferece muita privacidade."
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
@@ -737,29 +261,18 @@ msgid "Theme Utils"
 msgstr "Utilitários de temas"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_title
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
 msgid ""
-"Transform your real estate journey with our exceptional listings, where "
-"modern design meets practicality. Elevate your property search with options "
-"that blend style and functionality seamlessly."
+"They say an image is worth a thousand words and we know you know how "
+"important it is to have the best photography."
 msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_freegrid
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quadrant
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_striped_center_top
-msgid "View Listings"
-msgstr ""
+"Dizem que uma imagem vale mais do que mil palavras e sabemos o quão "
+"importante é ter as fotos certas."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
 msgid "View details"
 msgstr "Ver detalhes"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_empowerment
-msgid "View our listings   <i class=\"fa fa-long-arrow-right\" role=\"img\"/>"
-msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
@@ -791,27 +304,13 @@ msgstr ""
 "<b>meticulosidade e consideração</b>."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_key_benefits
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_masonry_block_default_template
 msgid ""
-"We offer customized property searches based on your specific preferences and"
-" needs, helping you find the perfect home or investment."
+"We are committed to delivering high quality services that enhance your brand"
+" by allowing visitors to interact virtually."
 msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_wavy_grid
-msgid ""
-"We provide personalized real estate services to match your unique needs. Our"
-" team works with you to find the perfect property and guide you through "
-"every step of the process."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_wavy_grid
-msgid ""
-"We utilize the latest technology and innovative approaches to enhance your "
-"property search. Our dedicated team ensures a seamless experience from start"
-" to finish."
-msgstr ""
+"Temos o compromisso de entregar serviços de alta qualidade que potencializem"
+" sua marca possibilitando que visitantes interajam virtualmente."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
@@ -828,59 +327,9 @@ msgstr ""
 "        A casa dos seus sonhos está logo ali."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_wavy_grid
-msgid "What we offer to our clients"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_title
-msgid "Where every house becomes a home."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_striped_top
-msgid ""
-"With a simple click, finding your dream home has never been easier. Explore "
-"your future with ease and confidence."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
-msgid ""
-"With a simple click, finding your dream home has never been "
-"easier.<br/><br/>"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_wavy_grid
-msgid ""
-"With extensive market knowledge and industry experience, we offer insights "
-"and services that help you make informed decisions and secure the best "
-"deals."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_card_offset
-msgid "Your dream home awaits."
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_wavy_grid
-msgid ""
-"Your satisfaction and sustainability are our goals. Our experienced agents "
-"are always available to assist, ensuring you find eco-friendly properties "
-"that meet your needs."
-msgstr ""
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
 msgid "amazing agents"
 msgstr "agentes incríveis"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_big_number
-msgid "customers satisfaction"
-msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
@@ -889,15 +338,10 @@ msgstr "clientes satisfeitos"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
+msgid "offices"
+msgstr "escritórios"
+
+#. module: theme_real_estate
+#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_numbers
 msgid "properties already sold"
 msgstr "imóveis já vendidos"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "✽  Property Management"
-msgstr ""
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_pricelist_boxed
-msgid "✽  Real Estate Consulting"
-msgstr ""

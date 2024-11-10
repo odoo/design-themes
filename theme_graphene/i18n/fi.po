@@ -3,17 +3,19 @@
 # 	* theme_graphene
 # 
 # Translators:
-# Martin Trigaux, 2024
 # Veikko Väätäjä <veikko.vaataja@gmail.com>, 2024
+# Martin Trigaux, 2024
+# Mikko Salmela <salmemik@gmail.com>, 2024
 # Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2024
+# Miika Nissi <miika.nissi@tawasta.fi>, 2024
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server saas~17.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-07 13:30+0000\n"
+"POT-Creation-Date: 2024-07-15 12:21+0000\n"
 "PO-Revision-Date: 2024-07-16 11:36+0000\n"
-"Last-Translator: Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2024\n"
+"Last-Translator: Miika Nissi <miika.nissi@tawasta.fi>, 2024\n"
 "Language-Team: Finnish (https://app.transifex.com/odoo/teams/41243/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,53 +24,86 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_benefits
-msgid "24/7 Client Support"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "24/7 support"
+msgstr "24/7 tuki"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_call_to_action
-msgid "50,000+ companies run our software."
-msgstr ""
+msgid "<b>50,000+ companies</b> run our software."
+msgstr "<b>yli 50 000 yritystä</b> käyttää ohjelmistoamme."
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_big_number
-msgid "90%"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
+msgid "<b>Making the difference.</b>"
+msgstr "<b>Tehdään ero.</b>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_empowerment
-msgid "<br/>Delivering top-tier solutions with a personal touch.<br/><br/>"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_empowerment
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
 msgid ""
-"<i class=\"fa fa-fw fa-info-circle o_not-animable\" "
-"role=\"img\"/>  Customer-first approach"
+"<small>Aline is one of the iconic people in life who can say they love what "
+"they do. She mentors 100+ in-house developers and looks after the community "
+"of thousands of developers.</small>"
 msgstr ""
+"<small>Aline on yksi niistä ikonisista ihmisistä, jotka voivat sanoa "
+"rakastavansa työtään. Hän opastaa yli 100 sisäistä kehittäjää ja huolehtii "
+"tuhansien kehittäjien yhteisöstä.</small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_unveil
-msgid "Boost your brand visibility"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Business Strategy Consulting"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Cloud Computing Solutions"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
 msgid ""
-"Comprehensive financial planning, including risk assessment, investment "
-"strategy, and tax optimization for your business."
+"<small>Founder and chief visionary, Tony is the driving force behind the "
+"company. He loves to keep his hands full by participating in the development"
+" of the software, marketing, and customer experience strategies.</small>"
 msgstr ""
+"<small>Perustaja ja päävisionääri Tony on yrityksen kantava voima. Hän "
+"rakastaa pitää kädet täynnä työtä osallistumalla ohjelmistojen, "
+"markkinoinnin ja asiakaskokemusstrategioiden kehittämiseen.</small>"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Iris, with her international experience, helps us easily understand "
+"the numbers and improves them. She is determined to drive success and "
+"delivers her professional acumen to bring the company to the next "
+"level.</small>"
+msgstr ""
+"<small>Kansainvälisen kokemuksensa ansiosta Iris auttaa meitä ymmärtämään "
+"numeroita ja parantamaan niitä. Hän pyrkii määrätietoisesti edistämään "
+"menestystä ja tuo ammattitaitonsa avulla yrityksen seuraavalle "
+"tasolle.</small>"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid ""
+"<small>Mich loves taking on challenges. With his multi-year experience as "
+"Commercial Director in the software industry, Mich has helped the company to"
+" get where it is today. Mich is among the best minds.</small>"
+msgstr ""
+"<small>Mich rakastaa haasteita. Monivuotisen kokemuksensa ansiosta, jonka "
+"hän on saanut kaupallisena johtajana ohjelmistoteollisuudessa, Mich on "
+"auttanut yritystä pääsemään nykyiseen asemaansa. Mich kuuluu parhaiden "
+"aivojen joukkoon.</small>"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "Access to all modules"
+msgstr "Pääsy kaikkiin moduuleihin"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "Access to all modules and features"
+msgstr "Pääsy kaikkiin moduuleihin ja ominaisuuksiin"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Add to Cart"
+msgstr "Lisää ostoskoriin"
+
+#. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Aline Turner, <small><b>CTO</b></small>"
+msgstr "Aline Turner, <small><b>TEKNOLOGIAJOHTAJA</b></small>"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
@@ -76,107 +111,9 @@ msgid "Contact us"
 msgstr "Ota yhteyttä"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_empowerment
-msgid "Contact us today"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid ""
-"Customized HR solutions, including talent acquisition, employee training, "
-"and performance management to boost productivity."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_images
-msgid "Customized solutions for your business needs"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Digital Marketing Services"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_freegrid
-msgid "Discover Robotics"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_images
-msgid "Driving Success Through Innovation"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_card_offset
-msgid "Embrace the future of technology."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_freegrid
-msgid ""
-"Embrace the future with our advanced robotics and technology services. We "
-"provide innovative solutions that enhance productivity and drive business "
-"success in the digital age."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_images
-msgid "Empowering Businesses to Reach New Heights"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_unveil
-msgid ""
-"Engage your audience with our cutting-edge content and marketing strategies."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid ""
-"Enhance your business operations with our comprehensive suite of "
-"professional services, tailored to meet your corporate needs."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_empowerment
-msgid "Exceeding expectations<br/>with PrimeService Co."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_benefits
-msgid "Exclusive Service Benefits"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid ""
-"Expert advice on business planning, market analysis, and competitive "
-"strategy to help your company achieve its goals."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_images
-msgid "Expert advice to navigate complex challenges"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_striped_center_top
-msgid "Explore Our Technology"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_card_offset
-msgid ""
-"Explore the forefront of technology with our robotics and IT services. We "
-"deliver innovative solutions designed to enhance corporate efficiency and "
-"drive success."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Financial Advisory Services"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Get Delivered"
+msgstr "Saa toimitettuna"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_picture
@@ -184,56 +121,19 @@ msgid "Grow with Us"
 msgstr "Kasva kanssamme"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Human Resources Management"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Iris Joe, <small><b>CFO</b></small>"
+msgstr "Iris Joe, <small><b>TALOUSJOHTAJA</b></small>"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "IT Support Services"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_striped_center_top
-msgid "Innovation through advanced tech"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_striped_center_top
-msgid ""
-"Lead the future with cutting-edge robotics and technology solutions, "
-"designed to revolutionize your business operations."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_carousel_intro
-msgid "Leading the future with innovation"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cta_box
-msgid "Looking for a fresh new start? View our job offers<br/><br/>"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cta_box
-msgid "Make a real difference,<br/>join our company !"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
-msgid "Making the difference."
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Mich Stark, <small><b>COO</b></small>"
+msgstr "Mich Stark, <small><b>OPERATIIVINEN JOHTAJA</b></small>"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
 msgid "Mobile Experience"
 msgstr "Mobiilikokemus"
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Our Corporate Services"
-msgstr ""
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cover
@@ -247,21 +147,9 @@ msgstr ""
 "työskentelystä miellyttävää."
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_empowerment
-msgid "Our services"
-msgstr "Palvelumme"
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_benefits
-msgid ""
-"Our team is available around the clock to assist you, providing prompt and "
-"reliable support whenever you need it."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_images
-msgid "Partner with us to unlock your potential"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Pay"
+msgstr "Maksa"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
@@ -278,11 +166,6 @@ msgstr ""
 "koskaan miettinyt, miten se toimii? Koska se vain toimii"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_images
-msgid "Proven strategies for sustainable growth"
-msgstr ""
-
-#. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_picture
 msgid ""
 "Put your people at the heart of your marketing with tools that help you get "
@@ -292,87 +175,19 @@ msgstr ""
 "tutustua yleisöösi <br/>ja nähdä, kenelle sinun pitäisi puhua."
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_empowerment
-msgid "Read our reviews   <i class=\"fa fa-long-arrow-right\" role=\"img\"/>"
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_process_steps
+msgid "Sign In"
+msgstr "Kirjaudu sisään"
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid ""
-"Reliable IT support, network management, and cybersecurity solutions to "
-"safeguard your business operations and data integrity."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_card_offset
-msgid "Robotics &amp; Technology for Tomorrow"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_freegrid
-msgid "Robotics and Technology"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_striped_center_top
-msgid "Robotics and Technology Driving Innovation"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid ""
-"Scalable cloud services to enhance your business’s flexibility and data "
-"accessibility, supporting remote work and collaboration."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Starting at $1,500"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Starting at $1,800"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Starting at $2,000"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Starting at $2,500"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "Starting at $3,000"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid ""
-"Strategic online marketing, SEO optimization, and social media management to"
-" boost your brand visibility and customer engagement."
-msgstr ""
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_comparisons
+msgid "Start Now"
+msgstr "Aloita nyt"
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
 msgid "Support Team"
 msgstr "tukitiimiin"
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_benefits
-msgid "Tailored Service Solutions"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_benefits
-msgid ""
-"Take advantage of unique benefits and value-added services that set us apart"
-" and enhance your overall experience."
-msgstr ""
 
 #. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
@@ -389,6 +204,11 @@ msgid "Theme Utils"
 msgstr "Teeman työkalut"
 
 #. module: theme_graphene
+#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_company_team
+msgid "Tony Fred, <small><b>CEO</b></small>"
+msgstr "Tony Fred, <small><b>TOIMITUSJOHTAJA</b></small>"
+
+#. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
 msgid "Unique experiences to drive engagement"
 msgstr "Ainutlaatuiset kokemukset sitoutumisen lisäämiseksi"
@@ -403,11 +223,6 @@ msgstr ""
 " mahdollisuuden luoda mahdollisimman relevanttia sisältöä."
 
 #. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_cta_box
-msgid "View more"
-msgstr ""
-
-#. module: theme_graphene
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_three_columns
 msgid ""
 "We have a support team that will do everything to answer you as quickly as "
@@ -420,20 +235,3 @@ msgstr ""
 #: model_terms:theme.ir.ui.view,arch:theme_graphene.s_text_image
 msgid "We have one goal in mind, the user satisfaction."
 msgstr "Meillä on yksi tavoite mielessä, käyttäjän tyytyväisyys."
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_key_benefits
-msgid ""
-"We provide customized service offerings designed to meet your specific "
-"needs, ensuring optimal results and client satisfaction."
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "✽  Consulting Services"
-msgstr ""
-
-#. module: theme_graphene
-#: model_terms:theme.ir.ui.view,arch:theme_graphene.s_pricelist_boxed
-msgid "✽  Technology Solutions"
-msgstr ""
