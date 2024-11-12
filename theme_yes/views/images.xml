@@ -490,4 +490,11 @@ Check in theme_kea's primary_variables.scss, theme.scss and theme_common's mixin
     <field name="url">/theme_yes/static/src/img/snippets/s_cover.jpg</field>
 </record>
 
+<!-- // Website Form Cover // -->
+<record id="s_website_form_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_website_form_cover_default_image</field>
+    <field name="name">website.s_website_form_cover_default_image</field>
+    <field name="url">/theme_yes/static/src/img/snippets/library_image_10.webp</field>
+</record>
+
 </odoo>

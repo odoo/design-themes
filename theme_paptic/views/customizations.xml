@@ -744,6 +744,18 @@
     </xpath>
 </template>
 
+<!-- ==== FORM COVER ===== -->
+<template id="s_website_form_cover" inherit_id="website.s_website_form_cover">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
+    </xpath>
+    <!-- Form -->
+    <xpath expr="(//div[hasclass('col-lg-6')])[2]" position="attributes">
+        <attribute name="class" add="o_cc o_cc3" separator=" "/>
+    </xpath>
+</template>
+
 <!-- ==== Masonry Block ===== -->
 <template id="s_masonry_block_images_template" inherit_id="website.s_masonry_block_images_template">
     <xpath expr="//div[hasclass('row')]" position="attributes">

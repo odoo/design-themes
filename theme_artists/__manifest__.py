@@ -100,6 +100,7 @@
         'views/snippets/s_unveil.xml',
         'views/snippets/s_empowerment.xml',
         'views/snippets/s_cta_mobile.xml',
+        'views/snippets/s_website_form_cover.xml',
         'views/new_page_template.xml',
     ],
     'images': [
