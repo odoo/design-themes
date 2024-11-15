@@ -5,9 +5,6 @@
 </t>
 
 <t t-name="test_themes.WebsiteSwitcherSystray" t-inherit="website.WebsiteSwitcherSystray" t-inherit-mode="extension">
-    <xpath expr="//DropdownItem" position="attributes">
-        <attribute name="attrs">this.tooltips[element.id]</attribute>
-    </xpath>
     <!-- With this module installed, disable the warning -->
     <xpath expr="//DropdownItem/t[@t-if='!element.domain']" position="replace">
     </xpath>
