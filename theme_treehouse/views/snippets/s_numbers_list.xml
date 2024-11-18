@@ -16,40 +16,28 @@
         From carbon footprint reduction to renewable energy adoption and biodiversity preservation, our key milestones reflect our commitment to creating a sustainable future for all.
     </xpath>
     <!-- Numbers -->
-    <xpath expr="//span[hasclass('h2-fs')]" position="replace" mode="inner">
-        45%
-    </xpath>
     <xpath expr="(//p)[2]" position="replace" mode="inner">
+        <span class="h2-fs">45%</span><br/>
         Reduction in carbon emissions
     </xpath>
-    <xpath expr="(//span[hasclass('h2-fs')])[2]" position="replace" mode="inner">
-        2 Million
-    </xpath>
     <xpath expr="(//p)[3]" position="replace" mode="inner">
-        Trees Planted
-    </xpath>
-    <xpath expr="(//span[hasclass('h2-fs')])[3]" position="replace" mode="inner">
-        85%
-    </xpath>
-    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        <span class="h2-fs">85%</span><br/>
         Waste diversion rate
     </xpath>
-    <xpath expr="(//span[hasclass('h2-fs')])[4]" position="replace" mode="inner">
-        1.2 Billion
-    </xpath>
-    <xpath expr="(//p)[5]" position="replace" mode="inner">
-        Liters of water saved
-    </xpath>
-    <xpath expr="(//span[hasclass('h2-fs')])[5]" position="replace" mode="inner">
-        60%
-    </xpath>
-    <xpath expr="(//p)[6]" position="replace" mode="inner">
+    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        <span class="h2-fs">60%</span><br/>
         Renewable Energy usage
     </xpath>
-    <xpath expr="(//span[hasclass('h2-fs')])[6]" position="replace" mode="inner">
-        500,000
+    <xpath expr="(//p)[5]" position="replace" mode="inner">
+        <span class="h2-fs">2 Million</span><br/>
+        Trees Planted
+    </xpath>
+    <xpath expr="(//p)[6]" position="replace" mode="inner">
+        <span class="h2-fs">1.2 Billion</span><br/>
+        Liters of water saved
     </xpath>
     <xpath expr="(//p)[7]" position="replace" mode="inner">
+        <span class="h2-fs">500,000</span><br/>
         Tons of materials recycled
     </xpath>
 </template>

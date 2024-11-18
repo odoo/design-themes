@@ -10,34 +10,31 @@
     <xpath expr="//div[hasclass('container')]" position="attributes">
         <attribute name="class" add="container-fluid" remove="container" separator=" "/>
     </xpath>
-    <!-- Column #1 -->
-    <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
+    <!-- Title & Subtitle -->
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
         <attribute name="class" add="pt104 pb64 o_cc o_cc3" separator=" "/>
     </xpath>
-    <!-- Column #2 -->
-    <xpath expr="(//div[hasclass('col-lg-4')])[2]" position="attributes">
+    <!-- First KPI -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[1]" position="attributes">
         <attribute name="class" add="pt104 pb104 o_cc o_cc1" remove="pt24 pb24" separator=" "/>
     </xpath>
-    <!-- Column #2 - Text -->
    <xpath expr="//span[hasclass('h5-fs')]" position="replace" mode="inner">
         Editions through the Europe
     </xpath>
-    <!-- Column #3 -->
-    <xpath expr="(//div[hasclass('col-lg-4')])[3]" position="attributes">
+    <!-- Second KPI -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[2]" position="attributes">
         <attribute name="class" add="pt104 pb104 o_cc o_cc4" remove="pt24 pb24" separator=" "/>
     </xpath>
-    <!-- Column #3 - Text -->
     <xpath expr="(//span[hasclass('s_number')])[2]" position="replace" mode="inner">
         72
     </xpath>
     <xpath expr="(//span[hasclass('h5-fs')])[2]" position="replace" mode="inner">
         Artists from around the world
     </xpath>
-    <!-- Column #4 -->
-    <xpath expr="(//div[hasclass('col-lg-4')])[4]" position="attributes">
+    <!-- Third KPI -->
+    <xpath expr="(//div[hasclass('col-lg-2')])[3]" position="attributes">
         <attribute name="class" add="pt104 pb104 o_cc o_cc2" remove="pt24 pb24" separator=" "/>
     </xpath>
-    <!-- Column #4 - Text -->
     <xpath expr="(//span[hasclass('h5-fs')])[3]" position="replace" mode="inner">
         Scenes outdoor &amp; indoor
     </xpath>
