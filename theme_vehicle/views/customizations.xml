@@ -746,12 +746,12 @@
     </xpath>
 
     <!-- Text -->
-    <xpath expr="//h2/div" position="replace" mode="inner">
-        <font class="text-gradient" style="background-image: linear-gradient(0deg, rgb(29, 32, 48) 0%, rgb(222, 222, 222) 49%);">
+    <xpath expr="//h2/span" position="replace" mode="inner">
+        <font class="text-gradient" style="background-image: linear-gradient(0deg, var(--o-color-5) 0%, var(--o-color-4) 90%);">
             87%
         </font>
     </xpath>
-    <xpath expr="//h2/following-sibling::div" position="replace" mode="inner">
+    <xpath expr="//p/span" position="replace" mode="inner">
         customer satisfaction
     </xpath>
 </template>

@@ -13,10 +13,10 @@
     </xpath>
 
     <!-- Text -->
-    <xpath expr="//h2/div" position="replace" mode="inner">
+    <xpath expr="//h2/span" position="replace" mode="inner">
         50+
     </xpath>
-    <xpath expr="//h2/following-sibling::div" position="replace" mode="inner">
+    <xpath expr="//p/span" position="replace" mode="inner">
         varieties of flowers to choose from
     </xpath>
 </template>
