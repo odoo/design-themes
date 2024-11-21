@@ -41,6 +41,7 @@
         'views/snippets/s_image_frame.xml',
         'views/snippets/s_shape_image.xml',
         'views/snippets/s_text_cover.xml',
+        'views/snippets/s_timeline_images.xml',
         'views/snippets/s_empowerment.xml',
         'views/snippets/s_discovery.xml',
         'views/snippets/s_numbers.xml',
