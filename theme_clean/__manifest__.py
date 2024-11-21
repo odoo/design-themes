@@ -23,6 +23,7 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_call_to_action.xml',
         'views/snippets/s_company_team.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_features.xml',
         'views/snippets/s_numbers.xml',

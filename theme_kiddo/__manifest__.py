@@ -55,6 +55,7 @@
         'views/snippets/s_images_constellation.xml',
         'views/snippets/s_text_cover.xml',
         'views/snippets/s_empowerment.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/new_page_template.xml',
     ],
     'images': [
