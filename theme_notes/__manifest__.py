@@ -54,6 +54,7 @@
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_image_hexagonal.xml',
         'views/snippets/s_striped_center_top.xml',
+        'views/snippets/s_company_team_card.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_quadrant.xml',
         'views/snippets/s_intro_pill.xml',
