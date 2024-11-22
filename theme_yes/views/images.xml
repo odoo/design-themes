@@ -482,5 +482,11 @@ Check in theme_kea's primary_variables.scss, theme.scss and theme_common's mixin
     <field name="name">website.s_empowerment_default_image</field>
     <field name="url">/theme_yes/static/src/img/snippets/s_empowerment_default_image.jpg</field>
 </record>
+<!-- // Split intro // -->
+<record id="s_split_intro_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_split_intro_default_image</field>
+    <field name="name">website.s_split_intro_default_image</field>
+    <field name="url">/theme_yes/static/src/img/snippets/s_split_intro_default_image.jpg</field>
+</record>
 
 </odoo>
