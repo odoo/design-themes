@@ -27,5 +27,18 @@ patch(WebsiteSwitcherSystray.prototype, 'test_themes_website_switcher_systray', 
             }
         });
     },
+
+    getElements() {
+        // Add tooltip information
+        const elements = this._super();
+        return elements.map((elem) => {
+            elem.dataset = {
+                ...elem.dataset,
+                ...this.tooltips[elem.id]
+            };
+            return elem
+        });
+    },
+
     template: 'test_themes.WebsiteSwitcherSystray',
 });
