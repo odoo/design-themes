@@ -23,7 +23,7 @@
         'website.library_image_16': '/theme_avantgarde/static/src/img/pictures/library_image_16.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_sidegrid', 's_features_wall', 's_masonry_block', 's_carousel', 's_timeline', 's_quadrant'],
+        'homepage': ['s_sidegrid', 's_features_wall', 's_carousel', 's_timeline', 's_quadrant'],
     },
     'depends': ['theme_common'],
     'license': 'LGPL-3',

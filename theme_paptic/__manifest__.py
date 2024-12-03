@@ -18,7 +18,7 @@
         'static/description/paptic_screenshot.jpg',
     ],
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_references', 's_image_text', 's_text_image', 's_masonry_block', 's_faq_list', 's_cta_box'],
+        'homepage': ['s_cover', 's_references', 's_image_text', 's_text_image', 's_masonry_block_images_template', 's_faq_list', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {

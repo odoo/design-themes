@@ -755,47 +755,6 @@
     </xpath>
 </template>
 
-<!-- ======== MASONRY ======== -->
-<template id="s_masonry_block" inherit_id="website.s_masonry_block">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt48 pb48" separator=" "/>
-        <attribute name="data-masonry-template">alternate_text_image_text</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="replace" mode="inner">
-        <t t-call="website.s_masonry_block_alternation_text_image_text_template"/>
-    </xpath>
-    <xpath expr="//section/div" position="attributes">
-        <attribute name="class" remove="container" add="container-fluid" separator=" "/>
-    </xpath>
-</template>
-
-<template id="s_masonry_block_alternation_text_image_text_template" inherit_id="website.s_masonry_block_alternation_text_image_text_template">
-    <!-- Block #1 -->
-    <!-- Main div -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[1]" position="attributes">
-        <attribute name="style" remove="background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-2) 100%);" add="--grid-item-padding-x: 40px;" separator=";"/>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[1]/h3" position="replace" mode="inner">
-        ✽<br/>Coming up in March<br/>✽
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[1]/p" position="replace"/>
-
-    <!-- Block #2 -->
-    <!-- Main div -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
-        <attribute name="class" remove="o_cc2" add="o_cc4" separator=" "/>
-        <attribute name="style" remove="background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-1) 100%);" add="--grid-item-padding-x: 40px;" separator=";"/>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[3]/h3" position="replace" mode="inner">
-        ✽<br/>Our very new collection<br/>✽
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[3]/p" position="replace"/>
-</template>
-
 <!-- ======== TIMELINE ======== -->
 <template id="s_timeline" inherit_id="website.s_timeline">
     <!-- Title -->
