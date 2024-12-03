@@ -65,7 +65,7 @@
         'website.s_quotes_carousel_demo_image_0': '/theme_real_estate/static/src/img/snippets/s_quotes_carousel_1.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_text_image', 's_image_text', 's_three_columns', 's_title', 's_references', 's_numbers_showcase', 's_quotes_carousel', 's_call_to_action'],
+        'homepage': ['s_cover', 's_text_image', 's_image_text', 's_three_columns', 's_title', 's_references', 's_numbers_showcase', 's_quotes_carousel', 's_call_to_action'],  # FIXME the svg displays masonry???
     },
     'new_page_templates': {
         'about': {
