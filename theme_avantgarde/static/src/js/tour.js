@@ -13,11 +13,6 @@ const snippets = [
         groupName: "Columns",
     },
     {
-        id: 's_masonry_block',
-        name: 'Masonry',
-        groupName: "Images",
-    },
-    {
         id: 's_carousel',
         name: 'Carousel',
         groupName: "Intro",
@@ -40,11 +35,7 @@ wTourUtils.registerThemeHomepageTour("avantgarde_tour", () => [
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'left'),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[1], 'left'),
-    ...wTourUtils.insertSnippet(snippets[2], 'bottom'),
-    ...wTourUtils.clickOnSnippet(snippets[2], 'top'),
-    wTourUtils.changePaddingSize('top'),
-    wTourUtils.goBackToBlocks(),
+    ...wTourUtils.insertSnippet(snippets[2], 'top'),
     ...wTourUtils.insertSnippet(snippets[3], 'top'),
     ...wTourUtils.insertSnippet(snippets[4], 'top'),
-    ...wTourUtils.insertSnippet(snippets[5], 'top'),
 ]);

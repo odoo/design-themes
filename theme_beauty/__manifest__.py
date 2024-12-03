@@ -76,7 +76,7 @@
         'website.s_carousel_default_image_2': '/theme_beauty/static/src/img/snippets/s_carousel_2.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_intro_pill', 's_masonry_block', 's_pricelist_boxed', 's_features_wall', 's_image_frame', 's_call_to_action'],
+        'homepage': ['s_intro_pill', 's_masonry_block_mosaic_template', 's_pricelist_boxed', 's_features_wall', 's_image_frame', 's_call_to_action'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-beauty.odoo.com',

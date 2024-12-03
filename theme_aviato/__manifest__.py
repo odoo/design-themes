@@ -72,7 +72,7 @@
         'website.s_quotes_carousel_demo_image_0': '/theme_aviato/static/src/img/content/s_quote_bg_1.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_text_image', 's_image_text', 's_picture', 's_title', 's_masonry_block', 's_company_team', 's_showcase', 's_quotes_carousel'],
+        'homepage': ['s_banner', 's_text_image', 's_image_text', 's_picture', 's_title', 's_masonry_block_default_template', 's_company_team', 's_showcase', 's_quotes_carousel'],
     },
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-aviato.odoo.com',
