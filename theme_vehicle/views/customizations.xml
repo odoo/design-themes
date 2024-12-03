@@ -156,35 +156,6 @@
     </xpath>
 </template>
 
-<!-- ======== MASONRY BLOCK ======== -->
-<template id="s_masonry_block" inherit_id="website.s_masonry_block">
-    <xpath expr="//t[@t-call]" position="attributes">
-        <attribute name="t-call">website.s_masonry_block_image_texts_image_template</attribute>
-    </xpath>
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-masonry-template">image_text_image</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="attributes">
-        <attribute name="class" add="container-fluid" remove="container" separator=" "></attribute>
-    </xpath>
-</template>
-
-<template id="s_masonry_block_image_texts_image_template" inherit_id="website.s_masonry_block_image_texts_image_template" name="Vehicle s_masonry_block">
-    <xpath expr="//div[hasclass('col-lg-3')]" position="replace" mode="inner">
-        <img src="/web/image/website.s_parallax_default_image" class="img img-fluid mx-auto" alt=""/>
-    </xpath>
-    <!-- Block #02 -->
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        Electrifying <b>Performance</b>.
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner"/>
-    <!-- Block #03 -->
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
-        Smarter <b>Range</b>.
-    </xpath>
-    <xpath expr="(//p)[2]" position="replace" mode="inner"/>
-</template>
-
 <!-- ======== REFERENCES ======== -->
 <template id="s_references" inherit_id="website.s_references" name="Vehicle s_references">
     <xpath expr="//section" position="attributes">
