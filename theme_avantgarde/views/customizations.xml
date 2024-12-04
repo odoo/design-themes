@@ -762,8 +762,11 @@
         <attribute name="class" remove="pt48 pb48" separator=" "/>
         <attribute name="data-masonry-template">alternate_text_image_text</attribute>
     </xpath>
-    <xpath expr="//section/div" position="replace">
+    <xpath expr="//section/div" position="replace" mode="inner">
         <t t-call="website.s_masonry_block_alternation_text_image_text_template"/>
+    </xpath>
+    <xpath expr="//section/div" position="attributes">
+        <attribute name="class" remove="container" add="container-fluid" separator=" "/>
     </xpath>
 </template>
 
