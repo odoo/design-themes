@@ -280,14 +280,8 @@
     <xpath expr="//div[hasclass('carousel-indicators')]" position="attributes">
         <attribute name="class" add="s_carousel_indicators_dots" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
-        <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
-    </xpath>
     <xpath expr="(//div[hasclass('carousel-item')])[2]" position="attributes">
-        <attribute name="class" add="o_cc o_cc3" separator=" "/>
-    </xpath>
-    <xpath expr="(//div[hasclass('carousel-item')])[3]" position="attributes">
-        <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('carousel-item')]//div[hasclass('o_we_bg_filter')]" position="replace">
         <div class="o_we_bg_filter bg-black-50"/>
