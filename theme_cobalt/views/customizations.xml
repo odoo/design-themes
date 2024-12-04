@@ -181,7 +181,7 @@
 
 <!-- ==== Call To Action ===== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Cobalt s_call_to_action">
-    <xpath expr="//t[@t-esc='cta_btn_text']" position="replace" mode="inner">
+    <xpath expr="//t[@t-out='cta_btn_text']" position="replace" mode="inner">
         START NOW
     </xpath>
 </template>
