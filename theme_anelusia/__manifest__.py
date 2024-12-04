@@ -21,6 +21,7 @@
         'views/snippets/s_image_gallery.xml',
         'views/snippets/s_carousel.xml',
         'views/snippets/s_carousel_intro.xml',
+        'views/snippets/s_comparisons_horizontal.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_text_cover.xml',
