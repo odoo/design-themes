@@ -78,6 +78,7 @@ CONFLICTUAL_CLASSES_RE = {
         's_blockquote_with_icon', 's_blockquote',
         's_carousel_default', 's_carousel_rounded', 's_carousel_boxed',
         's_carousel_indicators_dots', 's_carousel_indicators_hidden', 's_carousel_controllers_indicators_outside',
+        's_carousel_cards_with_img', 's_carousel_cards_card',
         's_quotes_carousel',
         's_dynamic', 's_dynamic_empty',
         's_dynamic_snippet_blog_posts', 's_blog_posts_effect_marley', 's_blog_post_big_picture', 's_blog_posts_post_picture_size_default',
