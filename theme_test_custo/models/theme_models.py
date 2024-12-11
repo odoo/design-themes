@@ -4,7 +4,7 @@ from odoo import models
 
 
 class ThemeUtils(models.AbstractModel):
-    _inherit = ['theme.utils']
+    _inherit = 'theme.utils'
 
     @property
     def _header_templates(self):
