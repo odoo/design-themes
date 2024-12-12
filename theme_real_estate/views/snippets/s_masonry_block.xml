@@ -4,13 +4,6 @@
 <template id="s_masonry_block" inherit_id="website.s_masonry_block" name="Masonry">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="pt48 pb48" separator=" "/>
-        <attribute name="data-masonry-template">default_reversed</attribute>
-    </xpath>
-    <xpath expr="//section/div" position="attributes">
-        <attribute name="class" remove="container" add="container-fluid" separator=" "/>
-    </xpath>
-    <xpath expr="//section/div" position="replace" mode="inner">
-        <t t-call="website.s_masonry_block_reversed_template"/>
     </xpath>
 </template>
 

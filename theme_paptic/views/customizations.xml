@@ -745,15 +745,6 @@
 </template>
 
 <!-- ==== Masonry Block ===== -->
-<template id="s_masonry_block" inherit_id="website.s_masonry_block">
-    <xpath expr="//t[@t-call='website.s_masonry_block_default_template']" position="replace">
-        <t t-call="website.s_masonry_block_images_template"/>
-    </xpath>
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-masonry-template">images</attribute>
-    </xpath>
-</template>
-
 <template id="s_masonry_block_images_template" inherit_id="website.s_masonry_block_images_template">
     <xpath expr="//div[hasclass('row')]" position="attributes">
         <attribute name="data-row-count">11</attribute>

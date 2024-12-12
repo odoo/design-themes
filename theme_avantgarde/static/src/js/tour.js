@@ -13,11 +13,6 @@ const snippets = [
         groupName: "Columns",
     },
     {
-        id: 's_masonry_block',
-        name: 'Masonry',
-        groupName: "Images",
-    },
-    {
         id: 's_carousel',
         name: 'Carousel',
         groupName: "Intro",
