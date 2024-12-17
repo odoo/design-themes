@@ -36,7 +36,7 @@ patch(WebsiteSwitcherSystray.prototype, 'test_themes_website_switcher_systray', 
                 ...elem.dataset,
                 ...this.tooltips[elem.id]
             };
-            return elem
+            return elem;
         });
     },
 
