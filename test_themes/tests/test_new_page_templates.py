@@ -73,6 +73,13 @@ CONFLICTUAL_CLASSES_RE = {
     # Shapes
     re.compile(r'^o_web_editor_[A-Z].+'): [],
     # Snippets
+    # TODO our convention (badly followed) for classes which are specific to a
+    # snippet's inner components or options is to start that class with the
+    # class specific to the snippet itself. For instance, for a s_some_stuff
+    # snippet, use s_some_stuff_button or s_some_stuff_small. The test here
+    # flags as wrong such an usecase... unless you explicitly whitelist it. It
+    # should be smarter than that and make following our convention always ok
+    # without the need to change this test's whitelist.
     re.compile(r'^s_.*'): [
         's_alert_md',
         's_blockquote_with_icon', 's_blockquote',
@@ -93,7 +100,7 @@ CONFLICTUAL_CLASSES_RE = {
         's_table_of_content_vertical_navbar', 's_table_of_content_navbar_sticky', 's_table_of_content_navbar_wrap',
         's_timeline_card',
         's_website_form_custom', 's_website_form_dnone', 's_website_form_field', 's_website_form_input', 's_website_form_mark', 's_website_form_submit', 's_website_form_no_submit_label',
-        's_donation_btn', 's_donation_custom_btn',
+        's_donation_btn', 's_donation_custom_btn', 's_newsletter_subscribe_form_input_small',
     ],
     # Text
     re.compile(r'^text-(?!(center|end|start|bg-|lg-)).*$'): [
