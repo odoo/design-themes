@@ -336,6 +336,11 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="name">website.s_website_form_overlay_default_image</field>
     <field name="url">/theme_bookstore/static/src/img/snippets/s_banner.jpg</field>
 </record>
+<record id="s_website_form_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_website_form_cover_default_image</field>
+    <field name="name">website.s_website_form_cover_default_image</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_unveil_3.jpg</field>
+</record>
 
 <!-- Quadrant -->
 <record id="s_quadrant_default_image_1" model="theme.ir.attachment">
