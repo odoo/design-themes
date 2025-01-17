@@ -600,12 +600,12 @@
     </xpath>
 
     <!-- Text -->
-    <xpath expr="//h2/div" position="replace" mode="inner">
-        <font class="text-gradient" style="background-image: linear-gradient(0deg, rgb(56, 60, 214) 0%, rgb(255, 255, 255) 65%);">
+    <xpath expr="//h2/span" position="replace" mode="inner">
+        <font class="text-gradient" style="background-image: linear-gradient(0deg, var(--o-color-1) 0%, var(--o-color-4) 90%);">
             50+
         </font>
     </xpath>
-    <xpath expr="//h2/following-sibling::div" position="replace" mode="inner">
+    <xpath expr="//p/span" position="replace" mode="inner">
         projects shipped
     </xpath>
 </template>
