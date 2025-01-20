@@ -614,6 +614,30 @@
     </xpath>
 </template>
 
+<!-- ======== COMPANY TEAM GRID ======== -->
+<template id="s_company_team_grid" inherit_id="website.s_company_team_grid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Team #01 -->
+    <xpath expr="(//div[hasclass('card')])[1]" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
+    </xpath>
+    <!-- Team #03 -->
+    <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
+    </xpath>
+    <!-- Team #04 -->
+    <xpath expr="(//div[hasclass('card')])[4]" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
+    </xpath>
+    <!-- Team #05 -->
+    <xpath expr="(//div[hasclass('card')])[5]" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
+    </xpath>
+</template>
+
 <!-- ======== STRIPED CENTER TOP ======== -->
 <template id="s_striped_center_top" inherit_id="website.s_striped_center_top">
     <!-- Title -->

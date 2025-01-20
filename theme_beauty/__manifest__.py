@@ -36,6 +36,7 @@
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_company_team_shapes.xml',
         'views/snippets/s_company_team_detail.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/snippets/s_media_list.xml',
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_product_catalog.xml',

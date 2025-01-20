@@ -27,6 +27,7 @@
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_company_team_shapes.xml',
         'views/snippets/s_sidegrid.xml',
+        'views/snippets/s_company_team_grid.xml',
         'views/snippets/s_references.xml',
         'views/snippets/s_references_social.xml',
         'views/snippets/s_references_grid.xml',
