@@ -28,7 +28,7 @@
     <!-- Add a button -->
     <xpath expr="//p[1]" position="after">
         <p style="text-align: center;">
-            <a t-att-href="cta_btn_href" class="btn btn-primary rounded-circle btn-lg"><t t-esc="cta_btn_text">Contact Us</t></a>
+            <a t-att-href="cta_btn_href" class="btn btn-primary rounded-circle btn-lg"><t t-out="cta_btn_text">Contact Us</t></a>
         </p>
     </xpath>
     <!-- Image -->
