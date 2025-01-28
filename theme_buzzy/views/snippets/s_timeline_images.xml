@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_timeline_images" inherit_id="website.s_timeline_images">
+   <!-- Milestone #1-->
+   <xpath expr="//span[hasclass('o_dot')]" position="attributes">
+      <attribute name="class" add="text-o-color-2" remove="text-o-color-1" separator=" "/>
+   </xpath>
+   <!-- Milestone #2 -->
+   <xpath expr="(//span[hasclass('o_dot')])[2]" position="attributes">
+      <attribute name="class" add="text-o-color-2" remove="text-o-color-1" separator=" "/>
+   </xpath>
+</template>
+
+</odoo>
