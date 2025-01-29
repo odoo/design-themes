@@ -33,6 +33,7 @@
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_quotes_carousel.xml',
+        'views/snippets/s_quotes_carousel_compact.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_key_benefits.xml',
