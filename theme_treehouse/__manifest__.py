@@ -19,6 +19,7 @@
         'views/snippets/s_carousel_intro.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_comparisons.xml',
+        'views/snippets/s_comparisons_horizontal.xml',
         'views/snippets/s_company_team_detail.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_card_offset.xml',
