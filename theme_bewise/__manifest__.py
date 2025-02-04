@@ -26,6 +26,7 @@
     'configurator_snippets': {
         'homepage': ['s_striped_center_top', 's_title', 's_color_blocks_2', 's_faq_collapse', 's_masonry_block_default_template', 's_company_team_shapes'],
     },
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-bewise.odoo.com',
     'assets': {
