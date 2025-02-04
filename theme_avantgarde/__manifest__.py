@@ -26,6 +26,7 @@
         'homepage': ['s_sidegrid', 's_features_wall', 's_carousel', 's_timeline', 's_quadrant'],
     },
     'depends': ['theme_common'],
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-avantgarde.odoo.com',
     'assets': {
