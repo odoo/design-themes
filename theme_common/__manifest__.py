@@ -11,5 +11,6 @@
         'views/old_snippets/s_page_header.xml',
         'views/old_snippets/s_three_columns_circle.xml',
     ],
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
 }
