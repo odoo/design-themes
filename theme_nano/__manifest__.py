@@ -34,6 +34,7 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_quadrant.xml',
+        'views/snippets/s_quotes_carousel_compact.xml',
         'views/snippets/s_numbers_showcase.xml',
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_striped_center_top.xml',

@@ -49,6 +49,7 @@
         'views/snippets/s_comparisons.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_quotes_carousel_minimal.xml',
+        'views/snippets/s_quotes_carousel_compact.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_key_benefits.xml',
         'views/snippets/s_pricelist_boxed.xml',

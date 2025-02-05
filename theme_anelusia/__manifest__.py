@@ -46,6 +46,7 @@
         'views/snippets/s_three_columns.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_quotes_carousel_minimal.xml',
+        'views/snippets/s_quotes_carousel_compact.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_image_hexagonal.xml',
         'views/snippets/s_numbers_showcase.xml',
