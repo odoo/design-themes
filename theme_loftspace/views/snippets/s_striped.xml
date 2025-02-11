@@ -12,7 +12,8 @@
        <attribute name="data-row-count">14</attribute>
     </xpath>
     <!-- Remove the title -->
-    <xpath expr="//div[hasclass('col-lg-12')]" position="replace"/>
+    <xpath expr="//h2" position="replace"/>
+    <xpath expr="//p" position="replace"/>
 
     <xpath expr="//div[hasclass('row')]/div" position="attributes">
         <attribute name="class" add="o_grid_item o_grid_item_image g-col-lg-8 g-height-12" remove="pt24 pb24" separator=" "/>
