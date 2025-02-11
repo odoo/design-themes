@@ -6,9 +6,11 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-12')]" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('container')]/h2" position="replace">
         <h2 style="text-align: center;">Trusted by industry leaders</h2>
     </xpath>
+    <xpath expr="//div[hasclass('container')]/p" position="replace"/>
+    <xpath expr="//div[hasclass('container')]/p" position="replace"/>
     <xpath expr="//div[hasclass('col-lg-2')]" position="attributes">
         <attribute name="class" add="offset-lg-1" separator=" "/>
     </xpath>
