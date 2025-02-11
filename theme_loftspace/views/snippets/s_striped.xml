@@ -12,10 +12,11 @@
        <attribute name="data-row-count">14</attribute>
     </xpath>
     <!-- Remove the title -->
-    <xpath expr="//div[hasclass('col-lg-12')]" position="replace"/>
+    <xpath expr="//h2" position="replace"/>
+    <xpath expr="//p" position="replace"/>
 
     <xpath expr="//div[hasclass('row')]/div" position="attributes">
-        <attribute name="class" add="o_grid_item o_grid_item_image g-col-lg-8 g-height-12" remove="pt24 pb24" separator=" "/>
+        <attribute name="class" add="o_grid_item o_grid_item_image g-col-lg-8 g-height-12" remove="pt48 pb24" separator=" "/>
         <attribute name="style" add="grid-area: 3 / 1 / 15 / 9; --grid-item-padding-y: 0px; --grid-item-padding-x: 0px;" separator=";"/>
     </xpath>
 </template>
