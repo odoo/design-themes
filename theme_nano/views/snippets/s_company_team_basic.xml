@@ -6,11 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
     </xpath>
-   <!-- Row - remove grid mode -->
-    <xpath expr="//div[hasclass('row')]" position="attributes">
-        <attribute name="class" remove="o_grid_mode" separator=" "/>
-        <attribute name="data-row-count"/>
-    </xpath>
     <xpath expr="//h3" position="replace">
         <h2 style="text-align: center;">Our talented crew</h2>
     </xpath>
@@ -18,16 +13,9 @@
         <p class="lead" style="text-align: center;">Meet the masterminds behind our agency. With them, your project is in good hands for sure.</p>
     </xpath>
 
-    <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
-        <attribute name="class" add="pb40" remove="o_grid_item g-col-lg-12 g-height-2" separator=" "/>
-        <attribute name="style" remove="grid-area: 1 / 1 / 3 / 13; --grid-item-padding-y: 32px; --grid-item-padding-x: 32px; z-index: 1;" separator=";"/>
-    </xpath>
-
     <!-- Profile #1 -->
     <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
-        <attribute name="class" remove="o_grid_item g-col-6 g-col-lg-3 g-height-8" separator=" "/>
-        <attribute name="style" remove="grid-area: 3 / 1 / 11 / 4; --grid-item-padding-y: 16px; --grid-item-padding-x: 32px; z-index: 2;" separator=";"/>
+        <attribute name="class" add="pt40" remove="pt16" separator=" "/>
     </xpath>
     <xpath expr="(//img)[1]" position="attributes">
         <attribute name="class" add="rounded" remove="rounded-circle" separator=" "/>
@@ -40,8 +28,7 @@
     </xpath>
     <!-- Profile #2 -->
     <xpath expr="//div[hasclass('col-lg-3')][2]" position="attributes">
-        <attribute name="class" remove="o_grid_item g-col-6 g-col-lg-3 g-height-8" separator=" "/>
-        <attribute name="style" remove="grid-area: 3 / 4 / 11 / 7; --grid-item-padding-y: 16px; --grid-item-padding-x: 32px; z-index: 3;" separator=";"/>
+        <attribute name="class" add="pt40" remove="pt16" separator=" "/>
     </xpath>
     <xpath expr="(//img)[2]" position="attributes">
         <attribute name="class" add="rounded" remove="rounded-circle" separator=" "/>
@@ -54,8 +41,7 @@
     </xpath>
     <!-- Profile #3 -->
     <xpath expr="//div[hasclass('col-lg-3')][3]" position="attributes">
-        <attribute name="class" remove="o_grid_item g-col-6 g-col-lg-3 g-height-8" separator=" "/>
-        <attribute name="style" remove="grid-area: 3 / 7 / 11 / 10; --grid-item-padding-y: 16px; --grid-item-padding-x: 32px; z-index: 4;" separator=";"/>
+        <attribute name="class" add="pt40" remove="pt16" separator=" "/>
     </xpath>
     <xpath expr="(//img)[3]" position="attributes">
         <attribute name="class" add="rounded" remove="rounded-circle" separator=" "/>
@@ -68,8 +54,7 @@
     </xpath>
     <!-- Profile #4 -->
     <xpath expr="//div[hasclass('col-lg-3')][4]" position="attributes">
-        <attribute name="class" remove="o_grid_item g-col-6 g-col-lg-3 g-height-8" separator=" "/>
-        <attribute name="style" remove="grid-area: 3 / 10 / 11 / 13; --grid-item-padding-y: 16px; --grid-item-padding-x: 32px; z-index: 5;" separator=";"/>
+        <attribute name="class" add="pt40" remove="pt16" separator=" "/>
     </xpath>
     <xpath expr="(//img)[4]" position="attributes">
         <attribute name="class" add="rounded" remove="rounded-circle" separator=" "/>

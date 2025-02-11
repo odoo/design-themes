@@ -7,7 +7,8 @@
         <attribute name="class" add="pt0 pb56 o_cc2" remove="pt64 pb64 o_cc1" separator=" "/>
     </xpath>
     <!-- Remove title, subtitle -->
-    <xpath expr="//div[hasclass('row')]/div" position="replace"/>
+    <xpath expr="//h2" position="replace"/>
+    <xpath expr="//p" position="replace"/>
 </template>
 
 </odoo>
