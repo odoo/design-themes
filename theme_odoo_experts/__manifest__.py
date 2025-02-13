@@ -53,6 +53,7 @@
         'views/snippets/s_showcase.xml',
         'views/snippets/s_mockup_image.xml',
         'views/snippets/s_numbers_boxed.xml',
+        'views/snippets/s_numbers_framed.xml',
         'views/new_page_template.xml',
     ],
     'images': [
