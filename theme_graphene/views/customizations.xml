@@ -587,11 +587,8 @@
     </xpath>
 
     <!-- Text -->
-    <xpath expr="//h2/div" position="replace" mode="inner">
+    <xpath expr="//h2/span" position="replace" mode="inner">
         90%
-    </xpath>
-    <xpath expr="//h2/following-sibling::div" position="attributes">
-        <attribute name="style" add="font-size: 7.75rem;" remove="font-size: 2.25rem;" separator=";"/>
     </xpath>
 </template>
 
