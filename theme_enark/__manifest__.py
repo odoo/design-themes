@@ -86,6 +86,7 @@
             '2': ['s_text_cover', 's_image_text', 's_text_image', 's_image_text_2nd', 's_call_to_action'],
         },
     },
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-enark.odoo.com',
     'assets': {

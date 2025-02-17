@@ -85,6 +85,7 @@
     'configurator_snippets': {
         'homepage': ['s_text_cover', 's_images_wall', 's_color_blocks_2', 's_references', 's_media_list','s_key_images', 's_call_to_action'],
     },
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-anelusia.odoo.com',
     'assets': {

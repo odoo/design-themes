@@ -20,6 +20,7 @@
     'configurator_snippets': {
         'homepage': ['s_banner', 's_image_text', 's_key_images', 's_text_image', 's_company_team_detail', 's_references_grid'],
     },
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-cobalt.odoo.com',
     'assets': {
