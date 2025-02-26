@@ -3,11 +3,11 @@
 
 <template id="s_company_team_basic" inherit_id="website.s_company_team_basic">
     <!-- Team #01 - Title -->
-    <xpath expr="//div[hasclass('o_grid_mode')]/div[2]/h4" position="replace" mode="inner">
+    <xpath expr="//h4" position="replace" mode="inner">
         Tony Fred
     </xpath>
     <!-- Team #01 - Work Description -->
-    <xpath expr="//div[hasclass('o_grid_mode')]/div[2]/p[last()]" position="replace" mode="inner">
+    <xpath expr="//p[hasclass('o_small-fs')]" position="replace" mode="inner">
         Editor-in-chief
     </xpath>
     <!-- Team #01 - Img -->
@@ -21,11 +21,11 @@
     </xpath>
 
     <!-- Team #02 - Title -->
-    <xpath expr="//div[hasclass('o_grid_mode')]/div[3]/h4" position="replace" mode="inner">
+    <xpath expr="(//h4)[2]" position="replace" mode="inner">
         Mich Stark
     </xpath>
     <!-- Team #02 - Work Description -->
-    <xpath expr="//div[hasclass('o_grid_mode')]/div[3]/p[last()]" position="replace" mode="inner">
+    <xpath expr="(//p[hasclass('o_small-fs')])[2]" position="replace" mode="inner">
         Sports Reporter
     </xpath>
     <!-- Team #02 - Img -->
@@ -39,11 +39,11 @@
     </xpath>
 
     <!-- Team #03 - Title -->
-    <xpath expr="//div[hasclass('o_grid_mode')]/div[4]/h4" position="replace" mode="inner">
+    <xpath expr="(//h4)[3]" position="replace" mode="inner">
         Aline Turner
     </xpath>
     <!-- Team #03 - Work Description -->
-    <xpath expr="//div[hasclass('o_grid_mode')]/div[4]/p[last()]" position="replace" mode="inner">
+    <xpath expr="(//p[hasclass('o_small-fs')])[3]" position="replace" mode="inner">
         Photograph
     </xpath>
     <!-- Team #03 - Img -->
@@ -57,11 +57,11 @@
     </xpath>
 
     <!-- Team #04 - Title -->
-    <xpath expr="//div[hasclass('o_grid_mode')]/div[5]/h4" position="replace" mode="inner">
+    <xpath expr="(//h4)[4]" position="replace" mode="inner">
         Iris Joe
     </xpath>
     <!-- Team #04 - Work Description -->
-    <xpath expr="//div[hasclass('o_grid_mode')]/div[5]/p[last()]" position="replace" mode="inner">
+    <xpath expr="(//p[hasclass('o_small-fs')])[4]" position="replace" mode="inner">
         Political Reporter
     </xpath>
     <!-- Team #04 - Img -->
