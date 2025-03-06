@@ -6,7 +6,7 @@ import logging
 import re
 
 from odoo.addons.website.tools import MockRequest
-from odoo.tests import tagged, TransactionCase
+from odoo.tests import TransactionCase
 from odoo.tools import escape_psql
 
 _logger = logging.getLogger(__name__)
@@ -115,7 +115,6 @@ CONFLICTUAL_CLASSES_RE = {
 }
 
 
-@tagged('post_install', '-at_install')
 class TestNewPageTemplates(TransactionCase):
 
     def test_template_names(self):
