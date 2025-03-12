@@ -5,12 +5,12 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/04"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/04_001","colors":{"c5":"o-color-1"}}</attribute>
     </xpath>
 
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Blobs_04"/>
+        <div class="o_we_shape o_web_editor_Blobs_04_001" style="background-image: url('/web_editor/shape/web_editor/Blobs/04_001.svg?c5=o-color-1');"/>
     </xpath>
 
     <!-- Text -->

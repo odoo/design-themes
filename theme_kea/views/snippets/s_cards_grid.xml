@@ -4,10 +4,10 @@
 <template id="s_cards_grid" inherit_id="website.s_cards_grid">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/07_001','flip':[],'showOnMobile':false}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/01_001','colors':{'c5':'o-color-2'},'flip':[],'showOnMobile':false}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_07_001"/>
+        <div class="o_we_shape o_web_editor_Bold_01_001" style="background-image: url('/web_editor/shape/web_editor/Bold/01_001.svg?c5=o-color-2');"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h3" position="replace" mode="inner">

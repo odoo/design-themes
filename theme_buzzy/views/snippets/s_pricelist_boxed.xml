@@ -6,10 +6,10 @@
     <xpath expr="//section" position="attributes">
         <attribute name="data-scroll-background-ratio"/>
         <attribute name="class" add="o_cc o_cc3" remove="parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/05','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/15','colors':{'c5': 'o-color-3'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_05"/>
+        <div class="o_we_shape o_web_editor_Bold_15" style="background-image: url('/web_editor/shape/web_editor/Bold/15.svg?c5=o-color-3');"/>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
 

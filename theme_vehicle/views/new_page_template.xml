@@ -19,10 +19,10 @@
 
 <template id="new_page_template_s_references" inherit_id="website.new_page_template_s_references">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/15","colors":{"c5":"o-color-3"},"flip":[]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_05"/>
+        <div class="o_we_shape o_web_editor_Bold_15" style="background-image: url('/web_editor/shape/web_editor/Bold/15.svg?c5=o-color-3');"/>
     </xpath>
 </template>
 

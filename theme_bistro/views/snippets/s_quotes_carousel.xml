@@ -6,13 +6,13 @@
     <xpath expr="//*[hasclass('s_quotes_carousel')]" position="attributes">
         <attribute name="class" add="s_carousel_default oe_img_bg o_bg_img_center" remove="s_carousel_boxed carousel-dark o_cc o_cc2" separator=" "/>
         <attribute name="style">background-image: url('/web/image/website.s_quotes_carousel_demo_image_1');</attribute>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/19','colors':{'c5':'o-color-1'},'flip':['x'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/16','colors':{'c5':'o-color-1'},'flip':['x'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('carousel-indicators')]" position="attributes">
         <attribute name="class" remove="s_carousel_indicators_dots" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('carousel-inner')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_19" style="background-image: url('/web_editor/shape/web_editor/Origins/19.svg?c5=o-color-1&amp;flip=x');"/>
+        <div class="o_we_shape o_web_editor_Bold_16" style="background-image: url('/web_editor/shape/web_editor/Bold/16.svg?c5=o-color-1&amp;flip=x');"/>
     </xpath>
     <xpath expr="//blockquote" position="attributes">
         <attribute name="class" add="s_blockquote_default" remove="s_blockquote_with_icon" separator=" "/>

@@ -16,11 +16,11 @@
     <xpath expr="//section" position="attributes">
         <!-- Added by both theme and new page template -->
         <attribute name="class" add="o_colored_level" remove="o_colored_level" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/16","flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Containers/05","colors":{"c5":"o-color-2"},"flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_container_small')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_16" style="background-image: url('/web_editor/shape/web_editor/Origins/16.svg?c3=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
+        <div class="o_we_shape o_web_editor_Containers_05" style="background-image: url('/web_editor/shape/web_editor/Containers/05.svg?c5=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 
@@ -40,11 +40,11 @@
     <xpath expr="//section" position="attributes">
         <!-- Added by both theme and new page template -->
         <attribute name="class" add="o_colored_level" remove="o_colored_level" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/16","flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Containers/05","colors":{"c5":"o-color-2"},"flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_container_small')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_16" style="background-image: url('/web_editor/shape/web_editor/Origins/16.svg?c3=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
+        <div class="o_we_shape o_web_editor_Containers_05" style="background-image: url('/web_editor/shape/web_editor/Containers/05.svg?c5=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 
@@ -68,11 +68,11 @@
 <template id="new_page_template_about_s_banner" inherit_id="website.new_page_template_about_s_banner">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22_001","colors":{"c5":"o-color-4"},"flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_22" style="background-image: url('/web_editor/shape/web_editor/Wavy/22.svg?c3=o-color-4&amp;flip=x'); background-position: 50% 100%;"/>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_web_editor_Wavy_22_001" style="background-image: url('/web_editor/shape/web_editor/Wavy/22_001.svg?c5=o-color-4&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
 </template>
 
@@ -87,11 +87,11 @@
     <xpath expr="//section" position="attributes">
         <!-- Added by both theme and new page template -->
         <attribute name="class" add="o_colored_level" remove="o_colored_level" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/16","flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Containers/05","colors":{"c5":"o-color-2"},"flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_container_small')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_16" style="background-image: url('/web_editor/shape/web_editor/Origins/16.svg?c3=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
+        <div class="o_we_shape o_web_editor_Containers_05" style="background-image: url('/web_editor/shape/web_editor/Containers/05.svg?c5=o-color-2&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 
@@ -162,11 +162,11 @@
 <template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22_001","colors":{"c5":"o-color-3"},"flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_22" style="background-image: url('/web_editor/shape/web_editor/Wavy/22.svg?c3=o-color-3&amp;flip=x'); background-position: 50% 100%;"/>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_web_editor_Wavy_22_001" style="background-image: url('/web_editor/shape/web_editor/Wavy/22_001.svg?c5=o-color-3&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
 </template>
 
@@ -220,11 +220,11 @@
 <template id="new_page_template_gallery_s_banner" inherit_id="website.new_page_template_gallery_s_banner">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22","flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/22_001","colors":{"c5":"o-color-4"},"flip":["x"]}</attribute>
     </xpath>
     <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_22" style="background-image: url('/web_editor/shape/web_editor/Wavy/22.svg?c3=o-color-4&amp;flip=x'); background-position: 50% 100%;"/>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_web_editor_Wavy_22_001" style="background-image: url('/web_editor/shape/web_editor/Wavy/22_001.svg?c5=o-color-4&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
 </template>
 

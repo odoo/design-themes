@@ -2,12 +2,6 @@
 <odoo>
 
 <template id="s_image_title" inherit_id="website.s_image_title">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Blobs/12','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_12"/>
-    </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
         A Deep Dive into Virtual Reality and Innovation
     </xpath>
