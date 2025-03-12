@@ -5,18 +5,18 @@
     <!-- Left column -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="o_cc2" remove="o_cc4" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/04_001','flip':[]}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Grids/02",'colors':{'c5':'rgba(0,0,0,0.25)'},'flip':[]}</attribute>
     </xpath>
     <xpath expr="//h2" position="before">
-        <div class="o_we_shape o_web_editor_Airy_04_001"/>
+        <div class="o_we_shape o_web_editor_Grids_02" style="background-image: url('/web_editor/shape/web_editor/Grids/02.svg?c5=rgba(0,0,0,0.25)');"/>
     </xpath>
     <!-- Right column -->
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc5" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/04_001','flip':['x']}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Grids/02",'colors':{'c5':'rgba(0,0,0,0.25)'},'flip':['x']}</attribute>
     </xpath>
     <xpath expr="(//h2)[2]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_04_001 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Airy/04_001.svg?c1=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
+        <div class="o_we_shape o_web_editor_Grids_02" style="background-image: url('/web_editor/shape/web_editor/Grids/02.svg?c5=rgba(0,0,0,0.25)&amp;flip=x'); background-position: 0% 50%;"/>
     </xpath>
 </template>
 

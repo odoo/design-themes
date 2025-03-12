@@ -6,10 +6,10 @@
     <xpath expr="//section" position="attributes">
         <attribute name="data-scroll-background-ratio"/>
         <attribute name="class" remove="parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/13_001','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','animated':'true'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/13_002','colors':{'c5':'o-color-1','c3':'o-color-4'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','animated':'true'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_13_001 o_we_animated"/>
+        <div class="o_we_shape o_web_editor_Airy_13_002 o_we_animated"  style="background-image: url('/web_editor/shape/web_editor/Airy/13_002.svg?c5=o-color-1&amp;c3=o-color-4');"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
         <attribute name="class" add="o_cc3" remove="o_cc1 rounded" separator=" "/>

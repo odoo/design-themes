@@ -21,12 +21,12 @@
 
 <template id="configurator_s_image_text_overlap" inherit_id="website.configurator_s_image_text_overlap">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Origins/19','flip':[],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/16','flip':[],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
         <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
     </xpath>
 
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_19 o_shape_show_mobile"/>
+        <div class="o_we_shape o_web_editor_Bold_16 o_shape_show_mobile"/>
     </xpath>
 
     <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">

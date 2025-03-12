@@ -132,10 +132,10 @@
 <template id="s_numbers" inherit_id="website.s_numbers" name="Be Wise s_numbers">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc3" remove="o_cc1" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/05_001"}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_11" style="background-image: url('/web_editor/shape/web_editor/Blobs/11.svg?c1=o-color-1&amp;flip=x'); background-position: 50% 50%;"/>
+        <div class="o_we_shape o_web_editor_Blobs_05_001" style="background-image: url('/web_editor/shape/web_editor/Blobs/05_001.svg?c1=rgba(0,0,0,0.25)');"/>
     </xpath>
     <xpath expr="//span[hasclass('h5-fs')]" position="replace" mode="inner">
         Faculties
@@ -243,11 +243,11 @@
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Be Wise s_call_to_action">
     <!-- Shape options -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/11","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/05_001","flip":["x","y"]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_11"/>
+        <div class="o_we_shape o_web_editor_Blobs_05_001" style="background-image: url('/web_editor/shape/web_editor/Blobs/05_001.svg?c1=rgba(0,0,0,0.25)&amp;flip=xy'); background-position: 50% 0%;"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h3" position="replace">
@@ -524,11 +524,11 @@
 <template id="s_media_list" inherit_id="website.s_media_list" name="Be Wise s_media_list">
     <!-- Shape options -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/04_001","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Grids/02","colors":{"c5":"rgba(0,0,0,0.25)"},"flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_04_001"/>
+        <div class="o_we_shape o_web_editor_Grids_02" style="background-image: url('/web_editor/shape/web_editor/Grids/02.svg?c5=rgba(0,0,0,0.25)');"/>
     </xpath>
     <!-- Item #1 -->
     <xpath expr="//div[hasclass('s_media_list_item')]" position="attributes">
@@ -898,17 +898,17 @@
 <template id="s_big_number" inherit_id="website.s_big_number">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/06_001"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/20","colors":{"c5":"o-color-4","c1":"o-color-4"}}</attribute>
     </xpath>
 
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Bold_06_001 bg-o-color-4" style="background-image: url('/web_editor/shape/web_editor/Bold/06_001.svg?c3=o-color-1&amp;');"/>
+        <div class="o_we_shape o_web_editor_Bold_20 bg-rgba(0,0,0,0.25)" style="background-image: url('/web_editor/shape/web_editor/Bold/20.svg?c5=o-color-4&amp;c1=o-color-4');"/>
     </xpath>
 
     <!-- Text -->
     <xpath expr="//h2/span" position="replace" mode="inner">
-        <font class="text-gradient" style="background-image: linear-gradient(0deg, var(--o-color-1) 0%, var(--o-color-4) 90%);">60+</font>
+        <font class="text-gradient" style="background-image: linear-gradient(0deg, var(--rgba(0,0,0,0.25)) 0%, var(--o-color-4) 90%);">60+</font>
     </xpath>
     <xpath expr="//p/span" position="replace" mode="inner">
         academic programs available
@@ -919,10 +919,10 @@
 <template id="s_wavy_grid" inherit_id="website.s_wavy_grid">
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/06','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/06_001','colors':{'c5':'o-color-3'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Airy_06"/>
+        <div class="o_we_shape o_web_editor_Airy_06_001" style="background-image: url('/web_editor/shape/web_editor/Airy/06_001.svg?c5=o-color-3');"/>
     </xpath>
 
     <!-- Texts -->
@@ -1137,11 +1137,11 @@
 <!-- ======== COMPANY TEAM SHAPES ======== -->
 <template id="configurator_s_company_team_shapes" inherit_id="website.configurator_s_company_team_shapes">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Origins/05",'colors':{'c3': 'o-color-4'}}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/15", "colors":{"c5": "o-color-4"}}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_container_small')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_05" style="background-image: url('/web_editor/shape/web_editor%2FOrigins%2F05.svg?c3=o-color-4');"/>
+        <div class="o_we_shape o_web_editor_Bold_15" style="background-image: url('/web_editor/shape/web_editor/Bold/15.svg?c5=o-color-4');"/>
     </xpath>
 </template>
 
@@ -1149,12 +1149,12 @@
 <template id="s_numbers_boxed" inherit_id="website.s_numbers_boxed">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/08", "colors":{"c1": "o-color-1"}, "flip":[], "showOnMobile":true}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/17", "colors":{"c5": "rgba(0,0,0,0.25)"}, "flip":[], "showOnMobile":true}</attribute>
         <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_08" style="background-image: url('/web_editor/shape/web_editor/Blobs/08.svg?c1=o-color-1&amp;);"/>
+        <div class="o_we_shape o_web_editor_Blobs_17" style="background-image: url('/web_editor/shape/web_editor/Blobs/17.svg?c5=rgba(0,0,0,0.25)');"/>
     </xpath>
     <!-- Grid Item -->
     <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">

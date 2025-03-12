@@ -4,10 +4,10 @@
 <template id="s_wavy_grid" inherit_id="website.s_wavy_grid">
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Blobs/12','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Blobs/17','colors':{'c5':'o-color-3'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Blobs_12"/>
+        <div class="o_we_shape o_web_editor_Blobs_17" style="background-image: url('/web_editor/shape/web_editor/Blobs/17.svg?c5=o-color-3');"/>
     </xpath>
 
     <!-- Texts -->

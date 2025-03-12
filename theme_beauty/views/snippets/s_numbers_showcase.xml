@@ -5,11 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Wavy/11','flip':['x']}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Wavy/11_001','colors':{'c5':'o-color-1'},'flip':['x']}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_11" style="background-image: url('/web_editor/shape/web_editor/Wavy/11.svg?c1=o-color-1&amp;c4=o-color-4&amp;flip=x');"/>
+        <div class="o_we_shape o_web_editor_Wavy_11_001" style="background-image: url('/web_editor/shape/web_editor/Wavy/11_001.svg?c5=o-color-1&amp;flip=x');"/>
     </xpath>
     <!-- Grid items -->
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">

@@ -4,10 +4,10 @@
 <template id="s_features_wall" inherit_id="website.s_features_wall">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/10','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/10_001','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Airy_10"/>
+        <div class="o_we_shape o_web_editor_Airy_10_001"/>
     </xpath>
     <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
         <attribute name="style">gap: 0px 16px;</attribute>

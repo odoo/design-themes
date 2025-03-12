@@ -4,12 +4,12 @@
 <template id="s_big_number" inherit_id="website.s_big_number">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/14"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/14_001","colors":{"c5":"o-color-1"}}</attribute>
     </xpath>
 
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Airy_14"/>
+        <div class="o_we_shape o_web_editor_Airy_14_001" style="background-image: url('/web_editor/shape/web_editor/Airy/14_001.svg?c5=o-color-1');"/>
     </xpath>
 
     <!-- Text -->

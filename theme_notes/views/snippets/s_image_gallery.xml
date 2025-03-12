@@ -11,10 +11,10 @@
 <template id="s_images_wall" inherit_id="website.s_images_wall">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb80" remove="pt24 pb24" separator=" "/>
-        <attribute name="data-oe-shape-data" add="{'shape':'web_editor/Origins/07_002','colors':{'c3':'o-color-1','c4':'o-color-4','c5':'o-color-1'},'flip':['x'],'showOnMobile':false,'shapeAnimationSpeed':'0'}"/>
+        <attribute name="data-oe-shape-data" add="{'shape':'web_editor/Bold/14','colors':{'c5':'o-color-1','c1':'o-color-1'},'showOnMobile':false,'shapeAnimationSpeed':'0'}"/>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Origins_07_002" style="background-image: url('/web_editor/shape/web_editor/Origins/07_002.svg?c3=o-color-1&amp;c4=o-color-4&amp;c5=o-color-1&amp;flip=x');"></div>
+        <div class="o_we_shape o_web_editor_Bold_14" style="background-image: url('/web_editor/shape/web_editor/Bold/14.svg?c5=o-color-1&amp;c1=o-color-1');"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/." position="before">
         <div class="col-lg-12">

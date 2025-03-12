@@ -5,11 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_half_screen_height o_cc4" remove="o_cc1" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/10","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/10_001","colors":{"c5":"rgba(0,0,0,0.25)"},"flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_10"/>
+        <div class="o_we_shape o_web_editor_Airy_10_001" style="background-image: url('/web_editor/shape/web_editor/Airy/10_001.svg?c5=rgba(0,0,0,0.25)');"/>
     </xpath>
 </template>
 

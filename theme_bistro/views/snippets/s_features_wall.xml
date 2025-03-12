@@ -4,11 +4,11 @@
 <template id="s_features_wall" inherit_id="website.s_features_wall">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/06"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/06_001"}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Blobs_06 o_we_animated"/>
+        <div class="o_we_shape o_web_editor_Blobs_06_001 o_we_animated"/>
     </xpath>
     <!-- Card 1 -->
     <xpath expr="//div[hasclass('g-col-lg-3')]//h3" position="replace" mode="inner">
