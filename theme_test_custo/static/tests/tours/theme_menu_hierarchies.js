@@ -5,7 +5,6 @@ import { stepUtils } from "@web_tour/tour_service/tour_utils";
 
 wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
     url: '/example',
-    test: true,
 }, () => [
     stepUtils.waitIframeIsReady(),
     {
