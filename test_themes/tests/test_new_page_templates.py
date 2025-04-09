@@ -77,39 +77,6 @@ CONFLICTUAL_CLASSES_RE = {
     re.compile(r'^shadow-.+'): [],
     # Shapes
     re.compile(r'^o_web_editor_[A-Z].+'): [],
-    # Snippets
-    # TODO our convention (badly followed) for classes which are specific to a
-    # snippet's inner components or options is to start that class with the
-    # class specific to the snippet itself. For instance, for a s_some_stuff
-    # snippet, use s_some_stuff_button or s_some_stuff_small. The test here
-    # flags as wrong such an usecase... unless you explicitly whitelist it. It
-    # should be smarter than that and make following our convention always ok
-    # without the need to change this test's whitelist.
-    re.compile(r'^s_.*'): [
-        's_alert_md',
-        's_blockquote_with_icon', 's_blockquote',
-        's_carousel_default', 's_carousel_rounded', 's_carousel_boxed',
-        's_carousel_indicators_dots', 's_carousel_indicators_hidden', 's_carousel_controllers_indicators_outside',
-        's_carousel_cards_with_img', 's_carousel_cards_card',
-        's_quotes_carousel',
-        's_dynamic', 's_dynamic_empty',
-        's_dynamic_snippet_blog_posts', 's_blog_posts_effect_marley', 's_blog_post_big_picture', 's_blog_posts_post_picture_size_default',
-        's_event_upcoming_snippet', 's_event_event_picture',
-        's_col_no_bgcolor', 's_col_no_resize',
-        's_image_gallery', 's_image_gallery_indicators_arrows_boxed', 's_image_gallery_indicators_arrows_rounded',
-        's_image_gallery_indicators_dots', 's_image_gallery_indicators_squared', 's_image_gallery_indicators_rounded', 's_image_gallery_indicators_hidden', 's_image_gallery_indicators_bars', 's_image_gallery_indicators_outside','s_image_gallery_controllers_outside_arrows_right', 's_image_gallery_controllers_outside',
-        's_newsletter_list', 's_newsletter_subscribe_form',
-        's_parallax_is_fixed', 's_parallax_no_overflow_hidden',
-        's_process_steps_connector_line',
-        's_product_catalog_dish_name', 's_product_catalog_dish_dot_leaders',
-        's_progress_bar_label_hidden', 's_progress_bar_label_inline',
-        's_rating_no_title',
-        's_table_of_content_vertical_navbar', 's_table_of_content_navbar_sticky', 's_table_of_content_navbar_wrap',
-        's_timeline_card',
-        's_website_form_custom', 's_website_form_dnone', 's_website_form_field', 's_website_form_input', 's_website_form_mark', 's_website_form_submit', 's_website_form_no_submit_label',
-        's_donation_btn', 's_donation_custom_btn', 's_newsletter_subscribe_form_input_small',
-        's_tabs_common', 's_tabs_nav_vertical', 's_tabs_nav_with_descriptions',
-    ],
     # Text
     re.compile(r'^text-(?!(center|end|start|bg-|lg-)).*$'): [
         'text-break', 'text-decoration-none', 'text-reset',
@@ -119,6 +86,37 @@ CONFLICTUAL_CLASSES_RE = {
     # Width
     re.compile(r'^w-\d*$'): [],
 }
+# Special case for "s_" classes that respect our convention: classes that share
+# the same base and follow the naming pattern (s_some, s_some_button) are not
+# flagged as conflicting. Explicitly whitelist exceptions that don't follow the
+# pattern only.
+# TODO all these classes were processed but we might want to re-check them all
+# to minimize the list if possible.
+S_CLASSES_WHITELIST = [
+    # Classes that rightfully belong here at the moment
+    's_col_no_bgcolor', 's_col_no_resize', 's_allow_columns',
+    's_nb_column_fixed', 's_dialog_preview',
+    's_parallax_is_fixed', 's_parallax_bg', 's_parallax_no_overflow_hidden',
+    's_carousel_cards_card', 's_timeline_card', 's_blog_posts', 's_events',
+    's_appointments',
+
+    # Classes that should not be here... but are here by compatibility (not
+    # following our "s_" conventions correctly).
+    's_process_step', 's_process_step_svg_defs', 's_number', 's_tabs_common',
+    's_process_steps_connector_line', 's_tabs_nav', 's_tabs_main',
+    's_tabs_nav_vertical', 's_tabs_nav_with_descriptions', 's_tabs_content',
+    's_carousel', 's_carousel_default', 's_carousel_boxed', 's_carousel_intro',
+    's_carousel_rounded', 's_carousel_cards', 's_carousel_indicators_numbers',
+    's_carousel_indicators_dots', 's_quotes_carousel', 's_rating_no_title',
+    's_carousel_indicators_hidden', 's_blog_post_big_picture',
+    's_newsletter_list', 's_event_upcoming_snippet', 's_event_event_picture',
+    's_newsletter_subscribe_form',
+
+    # FIXME those classes have no reason to be here... missing data-snippet?
+    's_hr', 's_accordion', 's_accordion_highlight', 's_media_list_item',
+    's_media_list_img_wrapper', 's_media_list_body', 's_media_list_img',
+    's_website_form_datetime',
+]
 
 
 @tagged('post_install', '-at_install')
@@ -186,7 +184,7 @@ class TestNewPageTemplates(TransactionCase):
                         html_text = self.env['ir.qweb']._render(view.id)
                         if not html_text:
                             continue
-                        html_tree = html.fromstring(html_text)
+                        html_tree = html.fromstring(f'<wrap>{html_text}</wrap>')
                         blocks_el = html_tree.xpath("//*[@id='o_scroll']")
                         if blocks_el:
                             # Only look at blocks in website.snippets
@@ -214,6 +212,46 @@ class TestNewPageTemplates(TransactionCase):
                                     errors.append(
                                         "Using %r, view %r contains conflicting classes: %r in %r (according to pattern %r)"
                                         % (theme_name, view.key, conflict, classes, conflicting_classes_re.pattern)
+                                    )
+
+                            # Special handling for snippet classes following
+                            # naming convention: if classes match the
+                            # 's_snippet_name_*' pattern, they are allowed.
+                            non_whitelisted_s_classes = {
+                                cl for cl in classes
+                                if cl.startswith('s_') and cl not in S_CLASSES_WHITELIST
+                            }
+                            if non_whitelisted_s_classes:
+                                all_parent_s_classes = set()
+                                parent_el = el
+                                is_in_snippet = view.key.startswith('website.configurator_')
+                                # Find all parent elements classes that start
+                                # with 's_' (including on the current element).
+                                while parent_el is not None:
+                                    parent_classes = set(parent_el.attrib.get('class', '').split())
+                                    all_parent_s_classes.update({cl for cl in parent_classes if cl.startswith('s_')})
+                                    if parent_el.attrib.get('data-snippet'):
+                                        is_in_snippet = True
+                                        break
+                                    parent_el = parent_el.getparent()
+                                if is_in_snippet:
+                                    # Accept classes that are prefixed by such a
+                                    # parent class (+ '_').
+                                    non_whitelisted_s_classes = {
+                                        cl for cl in non_whitelisted_s_classes
+                                        if not any(cl.startswith(f'{parent_cls}_') for parent_cls in all_parent_s_classes)
+                                    }
+                                    is_snippet_root = el.attrib.get('data-snippet') \
+                                        or el.getparent().tag == 'wrap' and view.key.startswith('website.configurator_')
+                                    if len(non_whitelisted_s_classes) > (1 if is_snippet_root else 0):
+                                        errors.append(
+                                            "Using %r, view %r contains 's_' classes that do not respect our conventions: %r in %r"
+                                            % (theme_name, view.key, non_whitelisted_s_classes, classes)
+                                        )
+                                else:
+                                    errors.append(
+                                        "Using %r, view %r contains 's_' classes (%r) that are not in a snippet"
+                                        % (theme_name, view.key, non_whitelisted_s_classes)
                                     )
 
                         for el in html_tree.xpath('//*[@style]'):
