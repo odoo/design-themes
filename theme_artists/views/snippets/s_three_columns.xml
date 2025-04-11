@@ -24,7 +24,7 @@
     </xpath>
     <!-- Column #1 - Add a button -->
     <xpath expr="//div[hasclass('card-body')]//p" position="after">
-        <p><a href="#" class="btn btn-primary">More details</a></p>
+        <p><a href="#" class="btn btn-primary o_translate_inline">More details</a></p>
     </xpath>
     <!-- Column #2 -->
     <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
@@ -44,7 +44,7 @@
     </xpath>
     <!-- Column #2 - Add a button -->
     <xpath expr="(//div[hasclass('card-body')])[2]//p" position="after">
-        <p><a href="#" class="btn btn-primary">Discover</a></p>
+        <p><a href="#" class="btn btn-primary o_translate_inline">Discover</a></p>
     </xpath>
     <!-- Column #3 -->
     <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
@@ -64,7 +64,7 @@
     </xpath>
     <!-- Column #3 - Add a button -->
     <xpath expr="(//div[hasclass('card-body')])[3]//p" position="after">
-        <p><a href="/contactus" class="btn btn-primary">Contact me</a></p>
+        <p><a href="/contactus" class="btn btn-primary o_translate_inline">Contact me</a></p>
     </xpath>
 </template>
 
