@@ -21,7 +21,7 @@
     </xpath>
 
     <xpath expr="//p[2]" position="replace" mode="inner">
-        <a t-att-href="cta_btn_href" class="btn btn-lg btn-primary"><t t-out="cta_btn_text">Get Started</t></a>
+        <a t-att-href="cta_btn_href" class="btn btn-lg btn-primary o_translate_inline"><t t-out="cta_btn_text">Get Started</t></a>
     </xpath>
 
 </template>
