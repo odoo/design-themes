@@ -155,6 +155,7 @@ class TestNewPageTemplates(TransactionCase):
         self.assertGreater(len(view_ids), 1250, "Test should have encountered a lot of views")
         self.assertFalse(errors, "No error should have been collected")
 
+    # TODO should handle the fact that grid items can't have padding classes
     def test_render_applied_templates(self):
         View = self.env['ir.ui.view']
         errors = []
