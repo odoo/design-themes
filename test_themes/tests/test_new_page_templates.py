@@ -149,8 +149,8 @@ class TestNewPageTemplates(TransactionCase):
                 for view in views:
                     try:
                         self.env['ir.qweb']._render(view.id)
-                    except Exception:
-                        errors.append("View %s cannot be rendered" % view.key)
+                    except Exception as e:  # noqa: BLE001
+                        errors.append("View %s cannot be rendered (%r)" % (view.key, e))
         _logger.info("Tested %s views", len(view_ids))
         self.assertGreater(len(view_ids), 1250, "Test should have encountered a lot of views")
         self.assertFalse(errors, "No error should have been collected")
@@ -186,30 +186,47 @@ class TestNewPageTemplates(TransactionCase):
                         if blocks_el:
                             # Only look at blocks in website.snippets
                             html_tree = blocks_el[0]
+
                         for el in html_tree.xpath('//*[@class]'):
                             classes = el.attrib['class'].split()
                             classes_inventory.update(classes)
                             if len(classes) != len(set(classes)):
-                                errors.append("Using %r, view %r contains duplicate classes: %r" % (theme_name, view.key, classes))
+                                errors.append(
+                                    "Using %r, view %r contains duplicate classes: %r"
+                                    % (theme_name, view.key, classes)
+                                )
                             for conflicting_classes in CONFLICTUAL_CLASSES:
                                 conflict = set(classes).intersection(conflicting_classes)
                                 if len(conflict) > 1:
-                                    errors.append("Using %r, view %r contains conflicting classes: %r in %r" % (theme_name, view.key, conflict, classes))
-                            for conflicting_classes_re in CONFLICTUAL_CLASSES_RE:
-                                conflict = {cl for cl in filter(conflicting_classes_re.findall, set(classes))}
-                                white_list = CONFLICTUAL_CLASSES_RE[conflicting_classes_re]
+                                    errors.append(
+                                        "Using %r, view %r contains conflicting classes: %r in %r"
+                                        % (theme_name, view.key, conflict, classes)
+                                    )
+                            for conflicting_classes_re, white_list in CONFLICTUAL_CLASSES_RE.items():
+                                conflict = set(filter(conflicting_classes_re.findall, set(classes)))
                                 conflict.difference_update(white_list)
                                 if len(conflict) > 1:
-                                    errors.append("Using %r, view %r contains conflicting classes: %r in %r (according to pattern %r)" % (theme_name, view.key, conflict, classes, conflicting_classes_re.pattern))
+                                    errors.append(
+                                        "Using %r, view %r contains conflicting classes: %r in %r (according to pattern %r)"
+                                        % (theme_name, view.key, conflict, classes, conflicting_classes_re.pattern)
+                                    )
+
                         for el in html_tree.xpath('//*[@style]'):
                             styles = el.attrib['style'].split(';')
                             non_empty_styles = filter(lambda style: style, styles)
-                            property_names = list(map(lambda style: style.split(':')[0].strip(), non_empty_styles))
+                            property_names = [style.split(':')[0].strip() for style in non_empty_styles]
                             if len(property_names) != len(set(property_names)):
-                                errors.append("Using %r, view %r contains duplicate style properties: %r" % (theme_name, view.key, el.attrib['style']))
+                                errors.append(
+                                    "Using %r, view %r contains duplicate style properties: %r"
+                                    % (theme_name, view.key, el.attrib['style'])
+                                )
+
                         for grid_el in html_tree.xpath("//div[contains(concat(' ', normalize-space(@class), ' '), ' o_grid_mode ')]"):
                             if 'data-row-count' not in grid_el.attrib:
-                                errors.append("Using %r, view %r defines a grid mode row without row count" % (theme_name, view.key))
+                                errors.append(
+                                    "Using %r, view %r defines a grid mode row without row count"
+                                    % (theme_name, view.key)
+                                )
                                 continue
                             row_count = int(grid_el.attrib['data-row-count'])
                             max_row = 0
@@ -218,32 +235,54 @@ class TestNewPageTemplates(TransactionCase):
                                 styles = item_el.attrib['style'].split(';')
                                 grid_area_style = list(filter(lambda style: style.strip().startswith('grid-area:'), styles))
                                 if not grid_area_style:
-                                    errors.append("Using %r, view %r does not specify a grid-area for its grid item" % (theme_name, view.key))
+                                    errors.append(
+                                        "Using %r, view %r does not specify a grid-area for its grid item"
+                                        % (theme_name, view.key)
+                                    )
                                     continue
                                 grid_area = grid_area_style[0].split(':')[1].strip()
                                 top, left, bottom, right = map(int, grid_area.split('/'))
                                 max_row = max(max_row, bottom)
                                 height_class = f'g-height-{bottom - top}'
                                 if height_class not in classes:
-                                    errors.append("Using %r, view %r does not specify %r for grid item %r (%r)" % (theme_name, view.key, height_class, grid_area, classes))
+                                    errors.append(
+                                        "Using %r, view %r does not specify %r for grid item %r (%r)"
+                                        % (theme_name, view.key, height_class, grid_area, classes)
+                                    )
                                 width_class = f'g-col-lg-{right - left}'
                                 if width_class not in classes:
-                                    errors.append("Using %r, view %r does not specify %r for grid item %r (%r)" % (theme_name, view.key, width_class, grid_area, classes))
+                                    errors.append(
+                                        "Using %r, view %r does not specify %r for grid item %r (%r)"
+                                        % (theme_name, view.key, width_class, grid_area, classes)
+                                    )
                                 non_grid_width_class = f'col-lg-{right - left}'
                                 if non_grid_width_class not in classes:
-                                    errors.append("Using %r, view %r does not specify %r for grid item %r (%r)" % (theme_name, view.key, non_grid_width_class, grid_area, classes))
-                                padding_classes = list(filter(lambda klass: klass.startswith('pb') or klass.startswith('pt'), classes))
+                                    errors.append(
+                                        "Using %r, view %r does not specify %r for grid item %r (%r)"
+                                        % (theme_name, view.key, non_grid_width_class, grid_area, classes)
+                                    )
+                                padding_classes = list(filter(lambda klass: klass.startswith(('pb', 'pt')), classes))
                                 if padding_classes:
-                                    errors.append("Using %r, view %r specifies unnecessary padding classes on grid item %r" % (theme_name, view.key, padding_classes))
+                                    errors.append(
+                                        "Using %r, view %r specifies unnecessary padding classes on grid item %r"
+                                        % (theme_name, view.key, padding_classes)
+                                    )
                             if row_count != max_row - 1:
-                                errors.append("Using %r, view %r defines %r as row count while %r is reached" % (theme_name, view.key, row_count, max_row))
+                                errors.append(
+                                    "Using %r, view %r defines %r as row count while %r is reached"
+                                    % (theme_name, view.key, row_count, max_row)
+                                )
+
                         for el in html_tree.xpath('//*[@data-row-count]'):
                             classes = el.attrib['class'].split()
                             if 'o_grid_mode' not in classes:
-                                errors.append("Using %r, view %r defines a row count on a non-grid mode row" % (theme_name, view.key))
-                    except Exception:
-                        _logger.error("Using %r, view %r cannot be rendered", theme_name, view.key)
-                        errors.append("Using %r, view %r cannot be rendered" % (theme_name, view.key))
+                                errors.append(
+                                    "Using %r, view %r defines a row count on a non-grid mode row"
+                                    % (theme_name, view.key)
+                                )
+                    except Exception as e:  # noqa: BLE001
+                        _logger.error("Using %r, view %r cannot be rendered (%r)", theme_name, view.key, e)
+                        errors.append("Using %r, view %r cannot be rendered (%r)" % (theme_name, view.key, e))
                 return len(views)
 
         view_count += check('no theme', self.env.ref('website.default_website'))
@@ -258,8 +297,8 @@ class TestNewPageTemplates(TransactionCase):
         for known_classes in CONFLICTUAL_CLASSES_RE.values():
             classes_inventory.difference_update(known_classes)
         for known_classes_re in CONFLICTUAL_CLASSES_RE:
-            classes_inventory = [cl for cl in filter(lambda cl: not known_classes_re.findall(cl), classes_inventory)]
-        _logger.info("Unknown classes encountered: %r", sorted(list(classes_inventory)))
+            classes_inventory = list(filter(lambda cl: not known_classes_re.findall(cl), classes_inventory))
+        _logger.info("Unknown classes encountered: %r", sorted(classes_inventory))
         self.assertFalse(errors, "No error should have been collected")
 
     def test_attribute_separator(self):
@@ -273,7 +312,7 @@ class TestNewPageTemplates(TransactionCase):
         errors = []
         view_count = 0
 
-        for module_name in ['website', *map(lambda website: website.theme_id.name, self.env['website'].get_test_themes_websites())]:
+        for module_name in ['website', *(website.theme_id.name for website in self.env['website'].get_test_themes_websites())]:
             views = View.search([
                 '|', '|',
                 ('key', 'like', escape_psql(f'{module_name}.s_')),
@@ -293,7 +332,10 @@ class TestNewPageTemplates(TransactionCase):
                         current_separator = el.attrib.get('separator', ',')
                         expected_separator = ATTRIBUTE_SEPARATORS[attribute_name]
                         if current_separator != expected_separator:
-                            errors.append("Using %r, view %r uses separator %r to modify attribute %r" % (module_name, view.key, current_separator, attribute_name))
+                            errors.append(
+                                "Using %r, view %r uses separator %r to modify attribute %r"
+                                % (module_name, view.key, current_separator, attribute_name)
+                            )
             view_count += len(views)
 
         _logger.info("Tested %s views", view_count)
