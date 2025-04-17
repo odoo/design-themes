@@ -37,7 +37,12 @@ CONFLICTUAL_CLASSES = [
 CONFLICTUAL_CLASSES_RE = {
     # Align
     re.compile(r'^align-(?!(self|items)-).+'): [],
-    re.compile(r'^align-self-.+'): [],
+    re.compile(r'^align-self-(?:start|center|end)$'): [],
+    re.compile(r'^align-self-sm-(?:start|center|end)$'): [],
+    re.compile(r'^align-self-md-(?:start|center|end)$'): [],
+    re.compile(r'^align-self-lg-(?:start|center|end)$'): [],
+    re.compile(r'^align-self-xl-(?:start|center|end)$'): [],
+    re.compile(r'^align-self-xxl-(?:start|center|end)$'): [],
     re.compile(r'^align-items-.+'): [],
     # BG
     re.compile(r'^bg(-|_)'): [
