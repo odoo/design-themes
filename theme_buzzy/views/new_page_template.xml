@@ -209,7 +209,7 @@
 
 <template id="new_page_template_landing_s_features" inherit_id="website.new_page_template_landing_s_features">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" separator=" "/>
+        <attribute name="class" add="o_cc2" remove="o_cc5" separator=" "/>
         <attribute name="data-oe-shape-data"/>
     </xpath>
     <!-- Remove shape -->
