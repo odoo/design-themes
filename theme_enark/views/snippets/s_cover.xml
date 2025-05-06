@@ -2,7 +2,7 @@
 <odoo>
 
 <template id="s_cover" inherit_id="website.s_cover">
-    <xpath expr="//a[@t-att-href='cta_btn_href'][2]" position="replace"/>
+    <xpath expr="//a[@href='/contactus']" position="replace"/>
 </template>
 
 </odoo>
