@@ -48,13 +48,13 @@
         <h2 style="text-align: center;"><span class="display-5-fs">24-26.06.2025 // Harleem, Netherlands<br/><br/></span></h2>
     </xpath>
     <!-- Button -->
-    <xpath expr="//a[@t-att-href='cta_btn_href'][1]" position="attributes">
+    <xpath expr="//a[@t-att-href='cta_btn_href']" position="attributes">
         <attribute name="class" add="btn-lg" separator=" "/>
     </xpath>
-    <xpath expr="//a[@t-att-href='cta_btn_href'][1]" position="replace" mode="inner">
+    <xpath expr="//a[@t-att-href='cta_btn_href']" position="replace" mode="inner">
         GET TICKETS NOW
     </xpath>
-    <xpath expr="//a[@t-att-href='cta_btn_href'][2]" position="replace"/>
+    <xpath expr="//a[@href='/contactus']" position="replace"/>
 </template>
 
 <!-- ======== NUMBERS GRID ======== -->

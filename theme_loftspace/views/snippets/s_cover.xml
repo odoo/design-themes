@@ -18,13 +18,13 @@
         <p><br/></p>
     </xpath>
     <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+    <xpath expr="//a[@t-att-href='cta_btn_href']/t" position="replace" mode="inner">
         Discover More
     </xpath>
-    <xpath expr="//a[@t-att-href='cta_btn_href'][1]" position="attributes">
+    <xpath expr="//a[@t-att-href='cta_btn_href']" position="attributes">
         <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
     </xpath>
-    <xpath expr="//a[@t-att-href='cta_btn_href'][2]" position="replace"/>
+    <xpath expr="//a[@href='/contactus']" position="replace"/>
 </template>
 
 </odoo>

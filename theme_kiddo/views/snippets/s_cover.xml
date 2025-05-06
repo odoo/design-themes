@@ -47,7 +47,7 @@
     <xpath expr="//a[@t-att-href='cta_btn_href'][1]" position="attributes">
         <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
     </xpath>
-    <xpath expr="//a[@t-att-href='cta_btn_href'][2]" position="replace"/>
+    <xpath expr="//a[@href='/contactus']" position="replace"/>
 </template>
 
 </odoo>
