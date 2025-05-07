@@ -5,8 +5,8 @@ import { registry } from "@web/core/registry";
 registry.category("web_tour.tours").add("website_theme_preview", {
     test: true,
     url: "/web#action=website.action_website_configuration",
-},
-[{
+    steps: () => [
+{
     content: "Click on create new website",
     trigger: 'button[name="action_website_create_new"]',
 }, {
@@ -38,4 +38,4 @@ registry.category("web_tour.tours").add("website_theme_preview", {
     content: "Check that the desktop view is active",
     trigger: ".o_view_form_theme_preview_controller .o_field_iframe > div:not(.is_mobile):visible",
     run: () => null, // it's a check
-}]);
+}]});
