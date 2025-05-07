@@ -78,6 +78,7 @@
         'views/snippets/s_kickoff.xml',
         'views/snippets/s_discovery.xml',
         'views/snippets/s_ecomm_cols_info_h.xml',
+        'views/snippets/s_ecomm_cols_info_v.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_key_images.xml',

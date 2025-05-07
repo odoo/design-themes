@@ -49,6 +49,7 @@
         'views/snippets/s_empowerment.xml',
         'views/snippets/s_discovery.xml',
         'views/snippets/s_ecomm_cols_info_h.xml',
+        'views/snippets/s_ecomm_cols_info_v.xml',
         'views/snippets/s_numbers.xml',
         'views/snippets/s_image_text_overlap.xml',
         'views/snippets/s_company_team_basic.xml',
