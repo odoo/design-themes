@@ -12,6 +12,8 @@
         'views/images.xml',
 
         'views/snippets/s_cta_box.xml',
+        'views/snippets/s_ecomm_cols_info_h.xml',
+        'views/snippets/s_ecomm_cols_info_v.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_cards_grid.xml',
         'views/snippets/s_striped_top.xml',
