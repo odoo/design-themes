@@ -13,7 +13,7 @@ registry.category("web_tour.tours").add("website_theme_preview", {
 }, {
     content: "insert website name",
     trigger: '[name="name"] input',
-    run: "text Website Test",
+    run: "edit Website Test",
 }, {
     content: "Validate the website creation modal",
     trigger: "button.btn-primary",
@@ -28,6 +28,7 @@ registry.category("web_tour.tours").add("website_theme_preview", {
     content: "Click on the Live preview of a theme",
     trigger: ".o_theme_preview .o_button_area .btn-secondary:contains('Live Preview')",
     run: "click",
+    allowInvisible: true,
 }, {
     content: "Switch from desktop to mobile preview",
     trigger: ".btn[for=themeViewerMobile]",
