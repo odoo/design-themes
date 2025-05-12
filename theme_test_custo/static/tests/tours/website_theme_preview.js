@@ -3,7 +3,6 @@
 import { registry } from "@web/core/registry";
 
 registry.category("web_tour.tours").add("website_theme_preview", {
-    test: true,
     url: "/web#action=website.action_website_configuration",
     steps: () => [
 {
@@ -13,10 +12,10 @@ registry.category("web_tour.tours").add("website_theme_preview", {
 }, {
     content: "insert website name",
     trigger: '[name="name"] input',
-    run: "text Website Test",
+    run: "edit Website Test",
 }, {
     content: "Validate the website creation modal",
-    trigger: "button.btn-primary",
+    trigger: ".modal button.btn-primary",
     run: "click",
 },
 // Configurator first screen
@@ -26,7 +25,7 @@ registry.category("web_tour.tours").add("website_theme_preview", {
     run: "click",
 }, {
     content: "Click on the Live preview of a theme",
-    trigger: ".o_theme_preview .o_button_area .btn-secondary:contains('Live Preview')",
+    trigger: ".o_theme_preview button:not(:visible)",
     run: "click",
 }, {
     content: "Switch from desktop to mobile preview",
