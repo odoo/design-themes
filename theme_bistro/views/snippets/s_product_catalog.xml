@@ -13,7 +13,8 @@
         <div class="o_we_bg_filter bg-black-50"/>
     </xpath>
     <!-- Remove Title & lead -->
-    <xpath expr="//div[hasclass('row')]" position="replace"/>
+    <xpath expr="//section/div/h2" position="replace"/>
+    <xpath expr="//section/div/p" position="replace"/>
 </template>
 
 <template id="configurator_s_product_catalog" inherit_id="website.configurator_s_product_catalog">
