@@ -8,9 +8,6 @@
         <attribute name="style"/>
     </xpath>
     <!-- Title container -->
-    <xpath expr="//div[hasclass('text-center')]" position="attributes">
-        <attribute name="class" remove="text-center pb48" separator=" "/>
-    </xpath>
     <xpath expr="//h2" position="replace">
         <h2 style="text-align: left !important;">Upcoming Exhibitions</h2>
     </xpath>
