@@ -26,6 +26,9 @@ registry.category("web_tour.tours").add("website_theme_preview", {
 }, {
     content: "Click on the Live preview of a theme",
     trigger: ".o_theme_preview button:not(:visible)",
+/*
+TODO The feature that the following steps are testing is currently disabled.
+It will either be restored or entirely removed at some point. See task-3454790.
     run: "click",
 }, {
     content: "Switch from desktop to mobile preview",
@@ -43,4 +46,5 @@ registry.category("web_tour.tours").add("website_theme_preview", {
     content: "Check that the desktop view is active",
     trigger: ".o_view_form_theme_preview_controller .o_field_iframe > div:not(.is_mobile):visible",
     run: () => null, // it's a check
+*/
 }]});
