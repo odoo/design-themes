@@ -16,6 +16,9 @@
         'web.assets_tests': [
             'theme_test_custo/static/tests/tours/**/*',
         ],
+        'html_builder.assets': [
+            'theme_test_custo/static/src/builder/**/*',
+        ],
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',

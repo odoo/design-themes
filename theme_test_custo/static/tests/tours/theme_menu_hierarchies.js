@@ -39,7 +39,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom footer template should be listed and selected',
-        trigger: 'we-select[data-variable="footer-template"] we-toggler img[src*="/theme_test_custo"]',
+        trigger: '[data-container-title="Footer"] [data-label="Template"] button.btn-primary img[src*="/theme_test_custo"]',
         run: () => null, // It's a check.
     }, {
         content: 'Click on header',
@@ -47,7 +47,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom header template should be listed and selected',
-        trigger: 'we-select[data-variable="header-template"] we-toggler img[src*="/theme_test_custo"]',
+        trigger: '[data-container-title="Header"] [data-label="Template"] button.btn-primary img[src*="/theme_test_custo"]',
         run: () => null, // It's a check.
     }, {
         content: 'Click on image which has a shape',
@@ -55,7 +55,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom "Blob 01" shape should be listed and selected',
-        trigger: 'we-select[data-name="shape_img_opt"] we-toggler:contains("Blob 01")',
+        trigger: '[data-container-title="Image"] [data-label="Shape"] div.dropdown:contains("Blob 01")',
         run: () => null, // It's a check.
     }, {
         content: 'Click on section which has a bg shape',
@@ -63,7 +63,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom "Curve 01" shape should be listed and selected',
-        trigger: 'we-select[data-name="bg_shape_opt"] we-toggler:contains("Curve 01")',
+        trigger: '[data-container-title="Text"] [data-label="Shape"] button.btn-primary:contains("Curve 01")',
         run: () => null, // It's a check.
     },
 ]);
