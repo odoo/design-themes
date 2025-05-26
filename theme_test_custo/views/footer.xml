@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- Theme Footer - Option -->
-<template id="template_footer_opt" inherit_id="website.snippet_options" name="Test Theme Custom Footer Template - Option">
-    <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
-        <we-button title="Custom Theme"
-            data-customize-website-views="theme_test_custo.template_footer_custom"
-            data-customize-website-variable="'custom-theme'"
-            data-img="/theme_test_custo/static/src/img/template_footer_opt.svg"/>
-    </xpath>
-</template>
-
 <!-- Theme Footer - Layout -->
 <template id="template_footer_custom" inherit_id="website.layout" name="Test Theme Custom Footer Template">
     <xpath expr="//div[@id='footer']" position="replace">

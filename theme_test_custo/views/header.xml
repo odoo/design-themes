@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- Theme Header - Option -->
-<template id="template_header_opt" inherit_id="website.snippet_options" name="Test Theme Custom Header Template - Option">
-    <xpath expr="//we-select[@data-variable='header-template']" position="inside">
-        <we-button title="Custom Theme"
-            data-customize-website-views="theme_test_custo.template_header_custom"
-            data-customize-website-variable="'custom-theme'"
-            data-img="/theme_test_custo/static/src/img/template_header_opt.svg"/>
-    </xpath>
-</template>
-
 <!-- Theme Header - Layout -->
 <template id="template_header_custom" inherit_id="website.layout" name="Test Theme Custom Header Template">
     <xpath expr="//header//nav" position="replace">
