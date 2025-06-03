@@ -36,6 +36,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_numbers_grid', 's_company_team_shapes', 's_text_block', 's_freegrid', 's_cta_box', 's_shape_image', 's_title', 's_images_wall', 's_faq_collapse', 's_references'],
+        'homepage_website_sale': ['s_cover', 's_numbers_grid', 's_company_team_shapes', 's_text_block', 's_freegrid', 's_cta_box', 's_shape_image', 'website_sale.s_dynamic_snippet_products', 's_title', 's_images_wall', 's_faq_collapse', 's_references'],
     },
     'new_page_templates': {
         'about': {

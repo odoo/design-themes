@@ -82,6 +82,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_intro_pill', 's_masonry_block_mosaic_template', 's_pricelist_boxed', 's_features_wall', 's_image_frame', 's_call_to_action'],
+        'homepage_website_sale': ['s_intro_pill', 's_masonry_block_mosaic_template', 's_pricelist_boxed', 's_features_wall', 'website_sale.s_dynamic_snippet_products', 's_image_frame', 's_call_to_action'],
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
