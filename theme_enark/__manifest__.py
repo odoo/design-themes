@@ -74,6 +74,13 @@
     'configurator_snippets': {
         'homepage': ['s_freegrid', 's_features_wall', 's_numbers_list', 's_title', 's_images_wall', 's_references', 's_cta_box'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_products', 'after', 's_features_wall'),
+            ],
+        },
+    },
     'new_page_templates': {
         'about': {
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],

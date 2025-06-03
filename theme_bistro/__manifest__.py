@@ -81,6 +81,39 @@
         'homepage': ['s_image_title', 's_key_images', 's_pricelist_cafe', 's_quotes_carousel', 's_quadrant'],
         'pricing': ["s_text_image", "s_product_catalog"],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_products', 'after', 's_key_images'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_products': {
+            'data_attributes': {
+                'number-of-records': '6',
+                'carousel-interval': '3000',
+            },
+            'background': {
+                'color': 'o_cc3',
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Wavy/07","flip":["x"]}',
+                    'element': """<div class="o_we_shape o_web_editor_Airy_07_001" style="background-image: url(&quot;/web_editor/shape/web_editor/Airy/07_001.svg?c5=rgba(255,255,255,0.25)&quot;); left: -0.165px; right: -0.165px; background-position: 50% 0%;"/>""",
+                },
+            },
+            'add_classes': [
+                'o_wsale_products_opt_design_grid',
+                'o_wsale_products_opt_has_comparison',
+            ],
+            'remove_classes': [
+                'o_wsale_products_opt_design_thumbs',
+                'o_wsale_products_opt_has_description',
+            ],
+            'style': {
+                'color': 'brown',
+            },
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-bistro.odoo.com',

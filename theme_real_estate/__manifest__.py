@@ -71,6 +71,60 @@
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_image_text', 's_three_columns', 's_title', 's_references', 's_numbers_showcase', 's_quotes_carousel', 's_call_to_action'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_products', 'after', 's_cover'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_text_image'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_products': {
+            'data_attributes': {
+                'number-of-records': '7',
+                'carousel-interval': '3000',
+            },
+            'background': {
+                'color': 'o_cc3',
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Wavy/07","flip":["x"]}',
+                    'element': """<div class="o_we_shape o_web_editor_Airy_07_001" style="background-image: url(&quot;/web_editor/shape/web_editor/Airy/07_001.svg?c5=rgba(255,255,255,0.25)&quot;); left: -0.165px; right: -0.165px; background-position: 50% 0%;"/>""",
+                },
+            },
+            'add_classes': [
+                'o_wsale_products_opt_design_chips',
+                'o_wsale_products_opt_rounded_4',
+                'o_wsale_products_opt_has_comparison',
+                'o_wsale_products_opt_actions_inline',
+                'o_wsale_products_opt_actions_promote',
+                'o_wsale_products_opt_wishlist_inline',
+                'o_wsale_products_opt_cc',
+                'o_wsale_products_opt_cc1',
+            ],
+            'remove_classes': [
+                'o_wsale_products_opt_design_thumbs',
+                'o_wsale_products_opt_has_description',
+                'o_wsale_products_opt_actions_onhover',
+                'o_wsale_products_opt_actions_subtle',
+                'o_wsale_products_opt_wishlist_fixed',
+            ],
+            'style': {
+                '--o-wsale-products-grid-gap': '16px',
+                'color': 'green',
+            },
+        },
+        'website_sale.s_dynamic_snippet_category_list': {
+            'background': {
+                'color': 'o_cc4',
+                'image': 'background-image: url(&quot;/web_editor/shape/web_editor/Airy/07_001.svg?c5=rgba(255,255,255,0.25)&quot;); left: -0.165px; right: -0.165px;',
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Wavy/07","flip":["x"]}',
+                    'element': """<div class="o_we_shape o_web_editor_Wavy_07" style="background-image: url('/web_editor/shape/web_editor/Wavy/07.svg?&amp;flip=x'); background-position: 50% 0%;"/>""",
+                },
+            },
+        },
+    },
     'new_page_templates': {
         'about': {
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],

@@ -83,6 +83,13 @@
     'configurator_snippets': {
         'homepage': ['s_intro_pill', 's_masonry_block_mosaic_template', 's_pricelist_boxed', 's_features_wall', 's_image_frame', 's_call_to_action'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_products', 'after', 's_masonry_block_mosaic_template'),
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-beauty.odoo.com',
