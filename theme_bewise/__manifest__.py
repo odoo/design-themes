@@ -25,6 +25,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_striped_center_top', 's_title', 's_color_blocks_2', 's_faq_collapse', 's_masonry_block_default_template', 's_company_team_shapes'],
+        'homepage_website_sale': ['s_striped_center_top', 's_title', 's_color_blocks_2', 's_faq_collapse', 's_masonry_block_default_template', 'website_sale.s_dynamic_snippet_products', 's_company_team_shapes'],
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
