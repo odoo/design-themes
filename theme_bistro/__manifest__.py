@@ -81,6 +81,13 @@
         'homepage': ['s_image_title', 's_key_images', 's_pricelist_cafe', 's_quotes_carousel', 's_quadrant'],
         'pricing': ["s_text_image", "s_product_catalog"],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_products', 'after', 's_key_images'),
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-bistro.odoo.com',
