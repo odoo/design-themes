@@ -33,6 +33,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_title', 's_three_columns', 's_picture', 's_key_images', 's_numbers_charts', 's_media_list'],
+        'homepage_website_sale': ['website_sale.s_dynamic_snippet_products', 's_cover', 's_title', 's_three_columns', 's_picture', 's_key_images', 's_numbers_charts', 's_media_list'],
     },
     'new_page_templates': {
         'about': {

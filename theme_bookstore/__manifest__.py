@@ -82,6 +82,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_banner', 's_key_images', 's_title', 's_accordion_image', 's_cta_box'],
+        'homepage_website_sale': ['s_banner', 'website_sale.s_dynamic_snippet_products', 's_key_images', 's_title', 's_accordion_image', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {

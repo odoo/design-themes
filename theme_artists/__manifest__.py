@@ -131,6 +131,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_sidegrid', 's_product_catalog', 's_cta_box', 's_title', 's_image_frame', 's_images_wall', 's_shape_image'],
+        'homepage_website_sale': ['s_sidegrid', 'website_sale.s_dynamic_snippet_products', 's_product_catalog', 's_cta_box', 's_title', 's_image_frame', 's_images_wall', 's_shape_image'],
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',

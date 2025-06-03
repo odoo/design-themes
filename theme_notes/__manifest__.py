@@ -95,6 +95,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_framed_intro', 's_image_text', 's_three_columns', 's_images_wall', 's_text_image', 's_company_team_shapes', 's_title', 's_call_to_action'],
+        'homepage_website_sale': ['s_framed_intro', 's_image_text', 's_three_columns', 'website_sale.s_dynamic_snippet_products', 's_images_wall', 's_text_image', 's_company_team_shapes', 's_title', 's_call_to_action'],
     },
     'new_page_templates': {
         'about': {

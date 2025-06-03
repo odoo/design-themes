@@ -70,6 +70,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_image_text', 's_three_columns', 's_title', 's_references', 's_numbers_showcase', 's_quotes_carousel', 's_call_to_action'],
+        'homepage_website_sale': ['s_cover', 'website_sale.s_dynamic_snippet_products', 'website_blog.s_blog_posts', 'website_event.s_events', 'website_appointment.s_appointments'],
     },
     'new_page_templates': {
         'about': {

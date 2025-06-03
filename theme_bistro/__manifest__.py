@@ -79,6 +79,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_image_title', 's_key_images', 's_pricelist_cafe', 's_quotes_carousel', 's_quadrant'],
+        'homepage_website_sale': ['website_sale.s_dynamic_snippet_products', 's_image_title', 's_key_images', 's_pricelist_cafe', 's_quotes_carousel', 's_quadrant'],
         'pricing': ["s_text_image", "s_product_catalog"],
     },
     'author': 'Odoo S.A.',
