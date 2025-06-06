@@ -79,6 +79,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_sidegrid', 's_numbers_list', 's_color_blocks_2', 's_references', 's_freegrid'],
+        'homepage_website_sale': ['s_sidegrid', 'website_sale.s_dynamic_snippet_products', 's_numbers_list', 's_color_blocks_2', 's_references', 's_freegrid'],
     },
     'new_page_templates': {
         'about': {

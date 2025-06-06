@@ -71,6 +71,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_mockup_image', 's_references', 's_image_text', 's_text_image', 's_showcase', 's_faq_collapse', 's_cta_box'],
+        'homepage_website_sale': ['website_sale.s_dynamic_snippet_products', 's_mockup_image', 's_references', 's_image_text', 's_text_image', 's_showcase', 's_faq_collapse', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {

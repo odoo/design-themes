@@ -19,6 +19,7 @@
     ],
     'configurator_snippets': {
         'homepage': ['s_banner', 's_image_text', 's_key_images', 's_text_image', 's_company_team_detail', 's_references_grid'],
+        'homepage_website_sale': ['s_banner', 's_image_text', 's_key_images', 's_text_image', 'website_sale.s_dynamic_snippet_products', 's_company_team_detail', 's_references_grid'],
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
