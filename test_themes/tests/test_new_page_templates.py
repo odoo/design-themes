@@ -5,7 +5,7 @@ from lxml import etree, html
 import logging
 import re
 
-from odoo.addons.website.tools import MockRequest
+from odoo.addons.http_routing.tests.common import MockRequest
 from odoo.tests import tagged, TransactionCase
 from odoo.tools import escape_psql
 
