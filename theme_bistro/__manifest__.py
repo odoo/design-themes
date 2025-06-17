@@ -64,18 +64,18 @@
 
     ],
     'images': [
-        'static/description/bistro_cover.jpg',
-        'static/description/bistro_screenshot.jpg',
+        'static/description/bistro_cover.webp',
+        'static/description/bistro_screenshot.webp',
     ],
     'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_bistro/static/src/img/backgrounds/17.jpg',
-        'website.s_media_list_default_image_1': '/theme_bistro/static/src/img/content/media_list_01.jpg',
-        'website.s_image_text_default_image': '/theme_bistro/static/src/img/content/image_text.jpg',
-        'website.s_media_list_default_image_2': '/theme_bistro/static/src/img/content/media_list_02.jpg',
-        'website.s_text_image_default_image': '/theme_bistro/static/src/img/content/text_image.jpg',
-        'website.s_quotes_carousel_demo_image_1': '/theme_bistro/static/src/img/backgrounds/s_quotes_carousel_background.jpg',
-        'website.library_image_10': '/theme_bistro/static/src/img/backgrounds/07.jpg',
-        'website.library_image_05': '/theme_bistro/static/src/img/backgrounds/11.jpg',
+        'website.s_cover_default_image': '/theme_bistro/static/src/img/backgrounds/17.webp',
+        'website.s_media_list_default_image_1': '/theme_bistro/static/src/img/content/media_list_01.webp',
+        'website.s_image_text_default_image': '/theme_bistro/static/src/img/content/image_text.webp',
+        'website.s_media_list_default_image_2': '/theme_bistro/static/src/img/content/media_list_02.webp',
+        'website.s_text_image_default_image': '/theme_bistro/static/src/img/content/text_image.webp',
+        'website.s_quotes_carousel_demo_image_1': '/theme_bistro/static/src/img/backgrounds/s_quotes_carousel_background.webp',
+        'website.library_image_10': '/theme_bistro/static/src/img/backgrounds/07.webp',
+        'website.library_image_05': '/theme_bistro/static/src/img/backgrounds/11.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_image_title', 's_key_images', 's_pricelist_cafe', 's_quotes_carousel', 's_quadrant'],

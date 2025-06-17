@@ -72,8 +72,8 @@
         'views/new_page_template.xml',
     ],
     'images': [
-        'static/description/buzzy_cover.jpg',
-        'static/description/buzzy_screenshot.jpg',
+        'static/description/buzzy_cover.webp',
+        'static/description/buzzy_screenshot.webp',
     ],
     'configurator_snippets': {
         'homepage': ['s_banner', 's_discovery', 's_showcase', 's_key_benefits', 's_accordion_image', 's_cta_box'],
