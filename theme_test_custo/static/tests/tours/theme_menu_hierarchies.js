@@ -39,7 +39,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom footer template should be listed and selected',
-        trigger: '[data-container-title="Footer"] [data-label="Template"] button.btn-primary img[src*="/theme_test_custo"]',
+        trigger: '[data-container-title="Footer"] [data-label="Template"] button.btn-secondary svg.theme_test_custo_footer',
         run: () => null, // It's a check.
     }, {
         content: 'Click on header',
@@ -47,7 +47,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom header template should be listed and selected',
-        trigger: '[data-container-title="Header"] [data-label="Template"] button.btn-primary img[src*="/theme_test_custo"]',
+        trigger: '[data-container-title="Header"] [data-label="Template"] button.btn-secondary svg.theme_test_custo_header',
         run: () => null, // It's a check.
     }, {
         content: 'Click on image which has a shape',
@@ -63,7 +63,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom "Curve 01" shape should be listed and selected',
-        trigger: '[data-container-title="Text"] [data-label="Shape"] button.btn-primary:contains("Curve 01")',
+        trigger: '[data-container-title="Text"] [data-label="Shape"] button.btn-secondary:contains("Curve 01")',
         run: () => null, // It's a check.
     },
 ]);
