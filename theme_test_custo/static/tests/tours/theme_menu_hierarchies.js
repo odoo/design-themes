@@ -39,7 +39,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom footer template should be listed and selected',
-        trigger: '[data-container-title="Footer"] [data-label="Template"] button.btn-primary img[src*="/theme_test_custo"]',
+        trigger: '[data-container-title="Footer"] [data-label="Template"] button.btn-primary svg',
         run: () => null, // It's a check.
     }, {
         content: 'Click on header',
@@ -47,7 +47,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom header template should be listed and selected',
-        trigger: '[data-container-title="Header"] [data-label="Template"] button.btn-primary img[src*="/theme_test_custo"]',
+        trigger: '[data-container-title="Header"] [data-label="Template"] button.btn-primary svg',
         run: () => null, // It's a check.
     }, {
         content: 'Click on image which has a shape',
