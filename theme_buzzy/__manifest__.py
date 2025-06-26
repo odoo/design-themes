@@ -77,6 +77,7 @@
     ],
     'configurator_snippets': {
         'homepage': ['s_banner', 's_discovery', 's_showcase', 's_key_benefits', 's_accordion_image', 's_cta_box'],
+        'homepage_website_sale': ['s_banner', 's_discovery', 's_showcase', 'website_sale.s_dynamic_snippet_products', 's_key_benefits', 's_accordion_image', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {

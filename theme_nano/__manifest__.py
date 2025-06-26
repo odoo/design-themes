@@ -85,6 +85,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_discovery', 's_parallax', 's_text_block', 's_key_images', 's_image_text_overlap', 's_company_team_basic', 's_references', 's_numbers', 's_cta_box'],
+        'homepage_website_sale': ['s_discovery', 's_parallax', 's_text_block', 's_key_images', 'website_sale.s_dynamic_snippet_products', 's_image_text_overlap', 's_company_team_basic', 's_references', 's_numbers', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {
