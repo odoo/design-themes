@@ -58,15 +58,15 @@
     ],
     'images': [
         'static/description/zap_cover.gif',
-        'static/description/zap_screenshot.jpg',
+        'static/description/zap_screenshot.webp',
     ],
     'images_preview_theme': {
-        'website.s_image_text_default_image': '/theme_zap/static/src/img/content/s_image_text.jpg',
-        'website.s_media_list_default_image_1': '/theme_zap/static/src/img/content/media_list_01.jpg',
-        'website.s_media_list_default_image_2': '/theme_zap/static/src/img/content/media_list_02.jpg',
-        'website.s_text_cover_default_image': '/theme_zap/static/src/img/snippets/s_cover.jpg',
-        'website.s_text_image_default_image': '/theme_zap/static/src/img/content/s_text_image.jpg',
-        'website.s_three_columns_default_image_3': '/theme_zap/static/src/img/content/three_columns_03.jpg',
+        'website.s_image_text_default_image': '/theme_zap/static/src/img/content/s_image_text.webp',
+        'website.s_media_list_default_image_1': '/theme_zap/static/src/img/content/media_list_01.webp',
+        'website.s_media_list_default_image_2': '/theme_zap/static/src/img/content/media_list_02.webp',
+        'website.s_text_cover_default_image': '/theme_zap/static/src/img/snippets/s_cover.webp',
+        'website.s_text_image_default_image': '/theme_zap/static/src/img/content/s_text_image.webp',
+        'website.s_three_columns_default_image_3': '/theme_zap/static/src/img/content/three_columns_03.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_discovery', 's_key_images', 's_striped', 's_showcase', 's_image_title', 's_numbers_charts', 's_cta_card'],

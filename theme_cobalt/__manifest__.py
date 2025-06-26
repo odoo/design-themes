@@ -14,8 +14,8 @@
         'views/new_page_template.xml',
     ],
     'images': [
-        'static/description/cobalt_poster.jpg',
-        'static/description/cobalt_screenshot.jpg',
+        'static/description/cobalt_poster.webp',
+        'static/description/cobalt_screenshot.webp',
     ],
     'configurator_snippets': {
         'homepage': ['s_banner', 's_image_text', 's_key_images', 's_text_image', 's_company_team_detail', 's_references_grid'],

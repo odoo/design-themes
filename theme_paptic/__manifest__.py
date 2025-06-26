@@ -14,8 +14,8 @@
         'views/new_page_template.xml',
     ],
     'images': [
-        'static/description/paptic_poster.jpg',
-        'static/description/paptic_screenshot.jpg',
+        'static/description/paptic_poster.webp',
+        'static/description/paptic_screenshot.webp',
     ],
     'configurator_snippets': {
         'homepage': ['s_cover', 's_references', 's_image_text', 's_text_image', 's_masonry_block_images_template', 's_faq_list', 's_cta_box'],
