@@ -13,14 +13,14 @@
         'views/new_page_template.xml',
     ],
     'images': [
-        'static/description/poster.jpg',
-        'static/description/avantgarde_screenshot.jpg',
+        'static/description/poster.webp',
+        'static/description/avantgarde_screenshot.webp',
     ],
     'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_avantgarde/static/src/img/pictures/bg_image_08.jpg',
-        'website.library_image_13': '/theme_avantgarde/static/src/img/pictures/library_image_13.jpg',
-        'website.library_image_03': '/theme_avantgarde/static/src/img/pictures/library_image_03.jpg',
-        'website.library_image_16': '/theme_avantgarde/static/src/img/pictures/library_image_16.jpg',
+        'website.s_cover_default_image': '/theme_avantgarde/static/src/img/pictures/bg_image_08.webp',
+        'website.library_image_13': '/theme_avantgarde/static/src/img/pictures/library_image_13.webp',
+        'website.library_image_03': '/theme_avantgarde/static/src/img/pictures/library_image_03.webp',
+        'website.library_image_16': '/theme_avantgarde/static/src/img/pictures/library_image_16.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_sidegrid', 's_features_wall', 's_carousel', 's_timeline', 's_quadrant'],
