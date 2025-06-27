@@ -13,11 +13,11 @@
         'views/new_page_template.xml',
     ],
     'images': [
-        'static/description/graphene_poster.jpg',
-        'static/description/graphene_screenshot.jpg',
+        'static/description/graphene_poster.webp',
+        'static/description/graphene_screenshot.webp',
     ],
     'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_graphene/static/src/img/pictures/bg_image_08.jpg',
+        'website.s_cover_default_image': '/theme_graphene/static/src/img/pictures/bg_image_08.webp',
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_numbers_grid', 's_mockup_image', 's_comparisons', 's_references'],
