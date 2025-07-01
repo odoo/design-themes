@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~18.2\n"
+"Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-20 13:38+0000\n"
-"PO-Revision-Date: 2025-02-20 13:38+0000\n"
+"POT-Creation-Date: 2025-07-01 13:00+0000\n"
+"PO-Revision-Date: 2025-07-01 13:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -84,6 +84,13 @@ msgid ""
 msgstr ""
 
 #. module: theme_vehicle
+#: model_terms:theme.ir.ui.view,arch:theme_vehicle.configurator_s_three_columns
+msgid ""
+"<a href=\"#\" class=\"btn btn-primary btn-block mb-0 o_cc o_cc4 "
+"o_translate_inline\">Configure</a>"
+msgstr ""
+
+#. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_call_to_action
 msgid "<b>50,000 pre-orders</b> already registered."
 msgstr ""
@@ -117,7 +124,7 @@ msgstr ""
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_big_number
 msgid ""
-"<font class=\"text-gradient\" style=\"background-image: linear-gradient(0deg, rgb(29, 32, 48) 0%, rgb(222, 222, 222) 49%);\">\n"
+"<font class=\"text-gradient\" style=\"background-image: linear-gradient(0deg, var(--o-color-5) 0%, var(--o-color-4) 90%);\">\n"
 "            87%\n"
 "        </font>"
 msgstr ""
@@ -271,11 +278,6 @@ msgstr ""
 msgid ""
 "Comprehensive detailing service including exterior polishing, interior "
 "cleaning, and protective coatings for a showroom finish."
-msgstr ""
-
-#. module: theme_vehicle
-#: model_terms:theme.ir.ui.view,arch:theme_vehicle.configurator_s_three_columns
-msgid "Configure"
 msgstr ""
 
 #. module: theme_vehicle
