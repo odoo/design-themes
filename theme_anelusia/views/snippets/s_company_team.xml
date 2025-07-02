@@ -12,7 +12,7 @@
         <attribute name="class" remove="rounded-circle" separator=" "/>
     </xpath>
     <!-- Team #01 - Title -->
-    <xpath expr="//div[hasclass('col-lg-6')]//h4" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-6')]//h3" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-5) 100%);" class="text-gradient">Tony Fred</font>
     </xpath>
     <!-- Team #01 - Work Description -->
@@ -37,7 +37,7 @@
         <attribute name="class" remove="rounded-circle" separator=" "/>
     </xpath>
     <!-- Team #02 - Title -->
-    <xpath expr="//div[hasclass('col-lg-6')][2]//h4" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-6')][2]//h3" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-5) 100%);" class="text-gradient">Mich Stark</font>
         <br/>
     </xpath>
@@ -63,7 +63,7 @@
         <attribute name="class" remove="rounded-circle" separator=" "/>
     </xpath>
     <!-- Team #03 - Title -->
-    <xpath expr="//div[hasclass('col-lg-6')][3]//h4" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-6')][3]//h3" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-2) 0%, var(--o-color-5) 100%);" class="text-gradient">Aline Turner</font>
     </xpath>
     <!-- Team #03 - Work Description -->
@@ -88,7 +88,7 @@
         <attribute name="class" remove="rounded-circle" separator=" "/>
     </xpath>
     <!-- Team #04 - Title -->
-    <xpath expr="//div[hasclass('col-lg-6')][4]//h4" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-6')][4]//h3" position="replace" mode="inner">
         <font style="background-image: linear-gradient(135deg, var(--o-color-2) 0%, var(--o-color-5) 100%);" class="text-gradient">Iris Joe</font>
     </xpath>
     <!-- Team #04 - Work Description -->

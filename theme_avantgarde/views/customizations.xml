@@ -231,8 +231,8 @@
 
 <!-- ======== CALL TO ACTION ======== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Avantgarde s_call_to_action">
-    <xpath expr="//h3" position="replace">
-        <h3 style="text-align: right;"><b>Since 1992</b> creating around the world.</h3>
+    <xpath expr="//h2" position="replace">
+        <h2 class="h3-fs" style="text-align: right;"><b>Since 1992</b> creating around the world.</h2>
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
         We partner with ambitious clients. We’d love to hear from you.
@@ -570,7 +570,7 @@
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Innovative Design Meets Fine Art
     </xpath>
     <!-- Paragraph 1 -->
