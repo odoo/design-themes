@@ -13,6 +13,7 @@
 
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_attributes_horizontal.xml',
+        'views/snippets/s_attributes_vertical.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_cards_grid.xml',
         'views/snippets/s_striped_top.xml',
