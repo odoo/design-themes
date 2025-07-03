@@ -1,4 +1,4 @@
-import { ImageShapeOptionPlugin } from "@website/builder/plugins/image/image_shape_option_plugin";
+import { ImageShapeOptionPlugin } from "@html_builder/plugins/image/image_shape_option_plugin";
 import { patch } from "@web/core/utils/patch";
 import { _t } from "@web/core/l10n/translation";
 
