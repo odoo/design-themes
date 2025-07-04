@@ -75,6 +75,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_banner', 's_image_text', 's_three_columns', 's_product_list', 's_call_to_action'],
+        'homepage_website_sale': ['s_banner', 'website_sale.s_dynamic_snippet_products', 's_image_text', 's_three_columns', 's_product_list', 's_call_to_action'],
     },
     'new_page_templates': {
         'about': {
