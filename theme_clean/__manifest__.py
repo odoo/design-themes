@@ -63,6 +63,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_banner', 's_color_blocks_2', 's_title', 's_text_image', 's_image_text', 's_numbers_showcase', 's_company_team', 's_accordion_image', 's_cta_card'], 
+        'homepage_website_sale': ['s_banner', 's_color_blocks_2', 's_title', 'website_sale.s_dynamic_snippet_products', 's_text_image', 's_image_text', 's_numbers_showcase', 's_company_team', 's_accordion_image', 's_cta_card'],
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',

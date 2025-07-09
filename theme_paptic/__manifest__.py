@@ -19,6 +19,7 @@
     ],
     'configurator_snippets': {
         'homepage': ['s_cover', 's_references', 's_image_text', 's_text_image', 's_masonry_block_images_template', 's_faq_list', 's_cta_box'],
+        'homepage_website_sale': ['s_cover', 's_references', 's_image_text', 's_text_image', 's_masonry_block_images_template', 'website_sale.s_dynamic_snippet_products', 's_faq_list', 's_cta_box'],
     },
     'new_page_templates': {
         'about': {
