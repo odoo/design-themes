@@ -5,13 +5,13 @@
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
         <attribute name="data-scroll-background-ratio"/>
-        <attribute name="class" add="o_cc o_cc3" remove="parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" separator=" "/>
+        <attribute name="class" add="o_cc o_cc3" remove="parallax s_parallax_is_fixed" separator=" "/>
         <attribute name="data-oe-shape-data">{'shape':'html_builder/Rainy/08_001','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','animated':'true'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Rainy_08_001 o_we_animated"/>
     </xpath>
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
 
     <!-- Texts -->
     <xpath expr="//h2" position="replace" mode="inner">

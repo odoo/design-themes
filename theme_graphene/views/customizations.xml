@@ -4,11 +4,11 @@
 <!-- ======== COVER ======== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Graphene s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt160 pb192" remove="pt232 pb232 s_parallax_is_fixed s_parallax" separator=" "/>
+        <attribute name="class" add="pt160 pb192" remove="pt232 pb232 s_parallax_is_fixed" separator=" "/>
         <attribute name="data-scroll-background-ratio">0</attribute>
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image');</attribute>
     </xpath>
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
     <xpath expr="//h1" position="replace"/>
     <xpath expr="//p" position="replace"/>
     <xpath expr="//p" position="replace"/>
@@ -268,11 +268,13 @@
 <!-- ======== NUMBERS ======== -->
 <template id="s_numbers" inherit_id="website.s_numbers" name="Graphene s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="oe_img_bg o_bg_img_center pb56 pt56 s_parallax_no_overflow_hidden parallax s_parallax_is_fixed o_cc3" remove="pb80 pt80 o_cc1" separator=" "/>
+        <attribute name="class" add="oe_img_bg o_bg_img_center pb56 pt56 parallax s_parallax_is_fixed o_cc3" remove="pb80 pt80 o_cc1" separator=" "/>
         <attribute name="data-scroll-background-ratio">1</attribute>
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
-        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_parallax_default_image'); background-position: 50% 75%;"/>
+        <span class="s_parallax_bg_wrap">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_parallax_default_image'); background-position: 50% 75%;"/>
+        </span>
         <div class="o_we_bg_filter bg-black-75"></div>
     </xpath>
 </template>
@@ -423,7 +425,7 @@
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
         <attribute name="data-scroll-background-ratio"/>
-        <attribute name="class" add="o_cc o_cc2" remove="parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" separator=" "/>
+        <attribute name="class" add="o_cc o_cc2" remove="parallax s_parallax_is_fixed" separator=" "/>
         <attribute name="data-oe-shape-data">{'shape':'html_builder/Airy/11_001','colors':{'c5':'rgba(0,0,0,0.25)'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
@@ -432,7 +434,7 @@
     <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
         <attribute name="class" remove="rounded" separator=" "/>
     </xpath>
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
 
     <!-- Texts -->
     <xpath expr="//h2" position="replace" mode="inner">

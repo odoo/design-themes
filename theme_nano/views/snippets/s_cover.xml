@@ -8,7 +8,7 @@
         <attribute name="data-scroll-background-ratio">0</attribute>
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;</attribute>
     </xpath>
-    <xpath expr="//*[hasclass('s_parallax_bg')]" position="replace"/>
+    <xpath expr="//*[hasclass('s_parallax_bg_wrap')]" position="replace"/>
     <!-- Title & Text -->
     <xpath expr="//h1" position="replace" mode="inner">
         Creative Studio
