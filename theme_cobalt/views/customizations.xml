@@ -17,17 +17,17 @@
         <attribute name="data-row-count"/>
     </xpath>
     <!-- Jumbotron -->
-    <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
-        <attribute name="class" add="pt64" remove="o_grid_item g-height-10 g-col-lg-4" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="pt64" remove="o_grid_item g-height-10 g-col-lg-5" separator=" "/>
         <attribute name="style"/>
     </xpath>
     <!-- Remove grid images -->
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
-    <xpath expr="//div[hasclass('col-lg-5')]" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-5')][2]" position="replace"/>
     <!-- Image -->
-    <xpath expr="//div[hasclass('col-lg-4')]" position="after">
-        <div class="col-lg-8 d-lg-block d-none o_snippet_mobile_invisible">
+    <xpath expr="//div[hasclass('col-lg-5')]" position="after">
+        <div class="col-lg-7 d-lg-block d-none o_snippet_mobile_invisible">
             <img src="/web_editor/shape/theme_cobalt/s_banner_2.svg?c1=o-color-1" class="img img-fluid mx-auto" style="width: 100%;" alt=""/>
         </div>
     </xpath>
