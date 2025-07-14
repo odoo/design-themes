@@ -18,7 +18,7 @@
     <!-- Remove grid images -->
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
-    <xpath expr="//div[hasclass('col-lg-5')]" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-5')][2]" position="replace"/>
 
     <!-- Filter -->
     <xpath expr="//div[hasclass('container')]" position="before">
@@ -31,8 +31,8 @@
     </xpath>
 
     <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
-        <attribute name="class" add="col-lg-6 pt32 pb32" remove="o_grid_item g-height-10 g-col-lg-4 col-lg-4" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="col-lg-6 pt32 pb32" remove="o_grid_item g-height-10 g-col-lg-5 col-lg-5" separator=" "/>
         <attribute name="style"/>
     </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
