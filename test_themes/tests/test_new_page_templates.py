@@ -96,7 +96,7 @@ S_CLASSES_WHITELIST = [
     # Classes that rightfully belong here at the moment
     's_col_no_bgcolor', 's_col_no_resize', 's_allow_columns',
     's_nb_column_fixed', 's_dialog_preview',
-    's_parallax_is_fixed', 's_parallax_bg', 's_parallax_no_overflow_hidden',
+    's_parallax_is_fixed', 's_parallax_bg', 's_parallax_bg_wrap',
     's_carousel_cards_card', 's_timeline_card', 's_blog_posts', 's_events',
     's_appointments',
 

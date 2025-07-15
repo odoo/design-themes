@@ -8,7 +8,9 @@
         <attribute name="data-scroll-background-ratio">1</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
-        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_banner_default_image'); background-position: 50% 0;"/>
+        <span class="s_parallax_bg_wrap">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_banner_default_image'); background-position: 50% 0;"/>
+        </span>
     </xpath>
     <!-- Remove grid images -->
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
