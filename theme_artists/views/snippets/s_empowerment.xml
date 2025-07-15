@@ -12,8 +12,11 @@
     </xpath>
     <!-- Badge content -->
     <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
-        <i class="fa fa-fw fa-info-circle o_not-animable" role="img"/>&#160;&#160;Don't miss the final show ! &#160;&#160;&#160;&#160;
-        <a href="#">Grab your tickets&#160;&#160; <i class="fa fa-long-arrow-right" role="img"/></a>
+        <i class="fa fa-fw fa-info-circle o_not-animable" role="img"/>
+        <span>
+            <span>Don't miss the final show !</span>
+            <a href="#">Grab your tickets&#160;&#160; <i class="fa fa-long-arrow-right" role="img"/></a>
+        </span>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
