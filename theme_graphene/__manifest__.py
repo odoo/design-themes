@@ -21,6 +21,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_numbers_grid', 's_mockup_image', 's_comparisons', 's_references'],
+        'homepage_website_sale': ['s_cover', 's_text_image', 's_numbers_grid', 's_mockup_image', 's_comparisons', 'website_sale.s_dynamic_snippet_products', 's_references'],
     },
     'new_page_templates': {
         'about': {

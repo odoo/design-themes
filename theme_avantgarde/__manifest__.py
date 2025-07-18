@@ -24,6 +24,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_sidegrid', 's_features_wall', 's_carousel', 's_timeline', 's_quadrant'],
+        'homepage_website_sale': ['s_sidegrid', 's_features_wall', 'website_sale.s_dynamic_snippet_products', 's_carousel', 's_timeline', 's_quadrant'],
     },
     'depends': ['theme_common'],
     'author': 'Odoo S.A.',

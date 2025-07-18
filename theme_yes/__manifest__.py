@@ -90,6 +90,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_kickoff', 's_title', 's_company_team', 's_image_text_overlap', 's_features', 's_freegrid', 's_quotes_carousel', 's_call_to_action'],
+        'homepage_website_sale': ['s_kickoff', 's_title', 's_company_team', 's_image_text_overlap', 's_features', 's_freegrid', 'website_sale.s_dynamic_snippet_products', 's_quotes_carousel', 's_call_to_action'],
     },
     'new_page_templates': {
         'about': {

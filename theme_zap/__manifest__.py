@@ -70,6 +70,7 @@
     },
     'configurator_snippets': {
         'homepage': ['s_discovery', 's_key_images', 's_striped', 's_showcase', 's_image_title', 's_numbers_charts', 's_cta_card'],
+        'homepage_website_sale': ['s_discovery', 's_key_images', 's_striped', 'website_sale.s_dynamic_snippet_products', 's_showcase', 's_image_title', 's_numbers_charts', 's_cta_card'],
     },
     'new_page_templates': {
         'about': {
