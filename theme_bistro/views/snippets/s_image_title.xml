@@ -9,7 +9,9 @@
         <attribute name="data-scroll-background-ratio">-3</attribute>
     </xpath>
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="before">
-        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url('/web/image/website.s_image_title_default_image') !important;"/>
+        <span class="s_parallax_bg_wrap">
+            <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url('/web/image/website.s_image_title_default_image') !important;"/>
+        </span>
     </xpath>
 
     <!-- Texts -->
