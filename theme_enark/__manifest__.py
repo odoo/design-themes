@@ -9,7 +9,6 @@
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
-        'views/snippets_options.xml',
         'views/image_library.xml',
 
         'views/snippets/s_closer_look.xml',
