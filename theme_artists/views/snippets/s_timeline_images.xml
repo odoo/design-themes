@@ -10,21 +10,9 @@
     <xpath expr="//img" position="attributes">
         <attribute name="class" remove="rounded" separator=" "/>
     </xpath>
-    <xpath expr="//span[hasclass('o_dot')]" position="attributes">
-        <attribute name="class" add="text-o-color-4" remove="text-o-color-1" separator=" "/>
-    </xpath>
-    <xpath expr="//div[hasclass('o_dot_line')]" position="attributes">
-        <attribute name="style">border-color: var(--o-color-1) !important;</attribute>
-    </xpath>
     <!-- Milestone #2 -->
     <xpath expr="(//img)[2]" position="attributes">
         <attribute name="class" remove="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//span[hasclass('o_dot')])[2]" position="attributes">
-        <attribute name="class" add="text-o-color-4" remove="text-o-color-1" separator=" "/>
-    </xpath>
-    <xpath expr="(//div[hasclass('o_dot_line')])[2]" position="attributes">
-        <attribute name="style">border-color: var(--o-color-1) !important;</attribute>
     </xpath>
 </template>
 
