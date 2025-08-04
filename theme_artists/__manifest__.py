@@ -132,6 +132,13 @@
     'configurator_snippets': {
         'homepage': ['s_sidegrid', 's_product_catalog', 's_cta_box', 's_title', 's_image_frame', 's_images_wall', 's_shape_image'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_products', 'after', 's_product_catalog'),
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-artists.odoo.com',

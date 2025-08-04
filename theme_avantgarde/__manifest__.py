@@ -25,6 +25,13 @@
     'configurator_snippets': {
         'homepage': ['s_sidegrid', 's_features_wall', 's_carousel', 's_timeline', 's_quadrant'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_products', 'after', 's_features_wall'),
+            ],
+        },
+    },
     'depends': ['theme_common'],
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
