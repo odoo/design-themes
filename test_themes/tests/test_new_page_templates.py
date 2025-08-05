@@ -62,9 +62,10 @@ CONFLICTUAL_CLASSES_RE = {
     re.compile(r'^m(x|e)-\d$'): [],
     re.compile(r'^m(y|t)-\d$'): [],
     re.compile(r'^m(y|b)-\d$'): [],
-    re.compile(r'^(p(x|s)?-?\d+|padding-.+)$'): [],
-    re.compile(r'^(p(x|e)?-?\d+|padding-.+)$'): [],
-    re.compile(r'^(p(y|t)?-?\d+|padding-.+)$'): [],
+    re.compile(r'^p-?\d+$'): [],
+    re.compile(r'^(p(x|s)-?\d+|padding-.+)$'): [],
+    re.compile(r'^(p(x|e)-?\d+|padding-.+)$'): [],
+    re.compile(r'^(p(y|t)-?\d+|padding-.+)$'): [],
     # p0+pb32 appears in Bewise and Graphene
     re.compile(r'^(p(y|b)?-?\d+|padding-.+)$'): ['p0'],
     # Font awesome
@@ -108,9 +109,16 @@ S_CLASSES_WHITELIST = [
     's_carousel', 's_carousel_default', 's_carousel_boxed', 's_carousel_intro',
     's_carousel_rounded', 's_carousel_cards', 's_carousel_indicators_numbers',
     's_carousel_indicators_dots', 's_quotes_carousel', 's_rating_no_title',
-    's_carousel_indicators_hidden', 's_blog_post_big_picture',
-    's_newsletter_list', 's_event_upcoming_snippet', 's_event_event_picture',
-    's_newsletter_subscribe_form',
+    's_blog_post_big_picture', 's_blog_post_card', 's_blog_post_horizontal',
+    's_blog_post_list', 's_blog_post_single_aside', 's_blog_post_single_full',
+    's_blog_post_single_circle', 's_blog_post_single_badge',
+    's_event_event_picture', 's_event_event_card', 's_event_event_single_card',
+    's_event_event_single_entry', 's_event_event_single_offset',
+    's_event_event_single_badge', 's_event_event_single_aside',
+    's_appointment_type_card', 's_appointment_type_picture',
+    's_appointment_type_list', 's_newsletter_list', 's_event_upcoming_snippet',
+    's_event_event_picture', 's_newsletter_subscribe_form',
+    's_carousel_indicators_hidden',
 
     # FIXME those classes have no reason to be here... missing data-snippet?
     's_hr', 's_accordion', 's_accordion_highlight', 's_media_list_item',
