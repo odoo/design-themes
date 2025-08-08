@@ -97,7 +97,7 @@ S_CLASSES_WHITELIST = [
     # Classes that rightfully belong here at the moment
     's_col_no_bgcolor', 's_col_no_resize', 's_allow_columns',
     's_nb_column_fixed', 's_dialog_preview',
-    's_parallax_is_fixed', 's_parallax_bg', 's_parallax_no_overflow_hidden',
+    's_parallax_is_fixed', 's_parallax_bg', 's_parallax_bg_wrap',
     's_carousel_cards_card', 's_timeline_card', 's_blog_posts', 's_events',
     's_appointments',
 
@@ -330,6 +330,16 @@ class TestNewPageTemplates(TransactionCase):
                                 errors.append(
                                     "Using %r, view %r defines a row count on a non-grid mode row"
                                     % (theme_name, view.key)
+                                )
+
+                        for el in html_tree.xpath(".//*[contains(concat(' ', normalize-space(@class), ' '), ' s_parallax_bg ')]"):
+                            parent = el.getparent()
+                            parent_classes = parent.attrib.get('class', '').split()
+                            if 's_parallax_bg_wrap' not in parent_classes:
+                                errors.append(
+                                    "Using %r, view %r: element with class 's_parallax_bg' must have a direct "
+                                    "parent with 's_parallax_bg_wrap', found parent classes: %r"
+                                    % (theme_name, view.key, parent_classes)
                                 )
                     except Exception as e:  # noqa: BLE001
                         _logger.error("Using %r, view %r cannot be rendered (%r)", theme_name, view.key, e)
