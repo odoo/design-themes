@@ -5,7 +5,7 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_full_screen_height o_cc1" remove="bg-black-50 o_cc5" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/14"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Floats/14"}</attribute>
     </xpath>
 
     <!-- Filter -->
@@ -15,7 +15,7 @@
 
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_14"/>
+        <div class="o_we_shape o_html_builder_Floats_14"/>
     </xpath>
 
     <!-- Heading -->
