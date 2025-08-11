@@ -6,10 +6,10 @@
     <xpath expr="//section" position="attributes">
         <attribute name="data-scroll-background-ratio"/>
         <attribute name="class" add="o_cc o_cc2" remove="parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Blocks/04','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Blocks/04','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04"/>
+        <div class="o_we_shape o_html_builder_Blocks_04"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
         <attribute name="class" remove="rounded" separator=" "/>

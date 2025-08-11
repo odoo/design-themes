@@ -43,11 +43,11 @@
 <template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Connections/10","colors":{"c5":"o-color-1"},"flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/10","colors":{"c5":"o-color-1"},"flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Connections_10" style="background-image: url('/web_editor/shape/web_editor/Connections/10.svg?c5=o-color-1');"/>
+        <div class="o_we_shape o_html_builder_Connections_10" style="background-image: url('/web_editor/shape/html_builder/Connections/10.svg?c5=o-color-1');"/>
     </xpath>
 </template>
 

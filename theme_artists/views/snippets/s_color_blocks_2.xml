@@ -5,11 +5,11 @@
     <!-- Left column -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="pt208 pb208 text-center" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/27","flip":["x","y"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Wavy/27","flip":["x","y"]}</attribute>
     </xpath>
     <!-- Left column - Shape -->
     <xpath expr="//div[hasclass('col-lg-6')]//h2" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_27 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Wavy/27.svg?c1=o-color-5&amp;c2=o-color-5&amp;flip=xy'); background-position: 50% 50%;"/>
+        <div class="o_we_shape o_html_builder_Wavy_27 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/html_builder/Wavy/27.svg?c1=o-color-5&amp;c2=o-color-5&amp;flip=xy'); background-position: 50% 50%;"/>
     </xpath>
     <!-- Left column - Button -->
     <xpath expr="//div[hasclass('col-lg-6')]//a[hasclass('btn')]" position="attributes">
@@ -18,11 +18,11 @@
     <!-- Right column -->
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
         <attribute name="class" add="pt208 pb208 text-center" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/27","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Wavy/27","flip":[]}</attribute>
     </xpath>
     <!-- Right column - Shape -->
     <xpath expr="//div[hasclass('col-lg-6')][2]//h2" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_27"/>
+        <div class="o_we_shape o_html_builder_Wavy_27"/>
     </xpath>
     <!-- Right column - Button -->
     <xpath expr="//div[hasclass('col-lg-6')][2]//a[hasclass('btn')]" position="attributes">

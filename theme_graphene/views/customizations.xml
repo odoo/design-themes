@@ -31,10 +31,10 @@
 
 <template id="configurator_s_cover" inherit_id="website.configurator_s_cover" name="Graphene s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/13","colors":{"c5": "o-color-3"},"flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/13","colors":{"c5": "o-color-3"},"flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_13" style="background-image: url('/web_editor/shape/web_editor/Bold/13.svg?c5=o-color-3');"/>
+        <div class="o_we_shape o_html_builder_Bold_13" style="background-image: url('/web_editor/shape/html_builder/Bold/13.svg?c5=o-color-3');"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-7')]" position="attributes">
         <attribute name="class" add="pb128" separator=" "/>
@@ -81,10 +81,10 @@
 <template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image" name="Graphene s_text_image">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb96 pt0" remove="pb80 pt80" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/15','colors':{'c5': 'o-color-3'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/15','colors':{'c5': 'o-color-3'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_15" style="background-image: url('/web_editor/shape/web_editor/Bold/15.svg?c5=o-color-3');"/>
+        <div class="o_we_shape o_html_builder_Bold_15" style="background-image: url('/web_editor/shape/html_builder/Bold/15.svg?c5=o-color-3');"/>
     </xpath>
 </template>
 
@@ -126,11 +126,11 @@
 
 <template id="configurator_s_mockup_image" inherit_id="website.configurator_s_mockup_image" name="Graphene s_mockup_image">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/13','colors':{'c5':'o-color-3'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/13','colors':{'c5':'o-color-3'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Bold_13" style="background-image: url('/web_editor/shape/web_editor/Bold/13.svg?c5=o-color-3');"/>
+        <div class="o_we_shape o_html_builder_Bold_13" style="background-image: url('/web_editor/shape/html_builder/Bold/13.svg?c5=o-color-3');"/>
     </xpath>
 </template>
 
@@ -281,10 +281,10 @@
 <template id="s_numbers_grid" inherit_id="website.s_numbers_grid" name="Graphene s_numbers_grid">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5 pt96 pb96" remove="o_cc2 pb56 pt56" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/01_001","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Rainy/01_001","flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_01_001"/>
+        <div class="o_we_shape o_html_builder_Rainy_01_001"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[1]" position="attributes">
         <attribute name="class" add="o_cc5 bg-black-50" remove="o_cc1" separator=" "/>
@@ -315,10 +315,10 @@
 <template id="configurator_s_references" inherit_id="website.configurator_s_references" name="Graphene s_configurator_references">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt96 pb96" remove="pt80 pb80" separator=" "/>
-    <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/13','colors':{'c5':'o-color-3'},'flip':['x','y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/13','colors':{'c5':'o-color-3'},'flip':['x','y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Bold_13" style="background-image: url('/web_editor/shape/web_editor/Bold/13.svg?c5=o-color-3&amp;flip=xy'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_html_builder_Bold_13" style="background-image: url('/web_editor/shape/html_builder/Bold/13.svg?c5=o-color-3&amp;flip=xy'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 
@@ -326,10 +326,10 @@
 <template id="s_picture" inherit_id="website.s_picture" name="Graphene s_picture">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb0 pt48" remove="pb64 pt64" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/02_001","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Rainy/02_001","flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div[hasclass('o_container_small')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_02_001"/>
+        <div class="o_we_shape o_html_builder_Rainy_02_001"/>
     </xpath>
     <!-- Content -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -424,10 +424,10 @@
     <xpath expr="//section" position="attributes">
         <attribute name="data-scroll-background-ratio"/>
         <attribute name="class" add="o_cc o_cc2" remove="parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/11_001','colors':{'c5':'rgba(0,0,0,0.25)'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Airy/11_001','colors':{'c5':'rgba(0,0,0,0.25)'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Airy_11_001" style="background-image: url('/web_editor/shape/web_editor/Airy/11_001.svg?c5=rgba(0,0,0,0.25)');"/>
+        <div class="o_we_shape o_html_builder_Airy_11_001" style="background-image: url('/web_editor/shape/html_builder/Airy/11_001.svg?c5=rgba(0,0,0,0.25)');"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
         <attribute name="class" remove="rounded" separator=" "/>
@@ -534,10 +534,10 @@
 <template id="s_key_images" inherit_id="website.s_key_images" name="Graphene s_key_images">
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/20','colors':{'c5': 'o-color-3'},'flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/20','colors':{'c5': 'o-color-3'},'flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Connections_20" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0;"/>
+        <div class="o_we_shape o_html_builder_Connections_20" style="background-image: url('/web_editor/shape/html_builder/Connections/20.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0;"/>
     </xpath>
 
     <!-- Texts -->
@@ -577,13 +577,13 @@
 <template id="s_big_number" inherit_id="website.s_big_number">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/01_001"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blocks/01_001"}</attribute>
         <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
     </xpath>
 
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Blocks_01_001"/>
+        <div class="o_we_shape o_html_builder_Blocks_01_001"/>
     </xpath>
 
     <!-- Text -->

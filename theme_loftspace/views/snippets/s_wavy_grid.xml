@@ -5,10 +5,10 @@
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc5" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Airy/10_001','colors':{'c5':'o-color-1'},'flip':["y"],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Airy/10_001','colors':{'c5':'o-color-1'},'flip':["y"],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Airy_10_001" style="background-image: url('/web_editor/shape/web_editor/Airy/10_001.svg?c5=o-color-1&amp;flip=y'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_html_builder_Airy_10_001" style="background-image: url('/web_editor/shape/html_builder/Airy/10_001.svg?c5=o-color-1&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 
     <!-- Texts -->

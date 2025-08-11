@@ -4,11 +4,11 @@
 <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel">
     <!-- Carousel -->
     <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Floats/12","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('carousel-inner')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
+        <div class="o_we_shape o_html_builder_Floats_12"/>
     </xpath>
     <!-- Quote 1 -->
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">

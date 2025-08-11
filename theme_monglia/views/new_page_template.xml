@@ -19,10 +19,10 @@
 
 <template id="new_page_template_s_three_columns" inherit_id="website.new_page_template_s_three_columns">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blocks/04","flip":[]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04"></div>
+        <div class="o_we_shape o_html_builder_Blocks_04"></div>
     </xpath>
 </template>
 
@@ -84,10 +84,10 @@
     <xpath expr="//section" position="attributes">
         <!-- pt56 added by both theme and new page template -->
         <attribute name="class" add="pt56" remove="pt56 pb40" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":["y"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blocks/04","flip":["y"]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-3&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_html_builder_Blocks_04 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/html_builder/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-3&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 
@@ -110,10 +110,10 @@
     <xpath expr="//section" position="attributes">
         <!-- pt56 is added by both theme and new page template -->
         <attribute name="class" add="pt56" remove="pt56 pb40" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":["y"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blocks/04","flip":["y"]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-3&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_html_builder_Blocks_04 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/html_builder/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-3&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 
@@ -169,10 +169,10 @@
 <template id="new_page_template_services_s_text_image" inherit_id="website.new_page_template_services_s_text_image">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="pt56 pb56" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blocks/04","flip":["y"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blocks/04","flip":["y"]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blocks_04 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/web_editor/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-3&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_html_builder_Blocks_04 o_second_extra_shape_mapping" style="background-image: url('/web_editor/shape/html_builder/Blocks/04.svg?c1=o-color-1&amp;c2=o-color-2&amp;c3=o-color-3&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 
@@ -204,11 +204,11 @@
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="pt56 pb56" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/13","flip":["y"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Floats/13","flip":["y"]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_13" style="background-image: url('/web_editor/shape/web_editor/Floats/13.svg?c1=o-color-1&amp;c2=o-color-2&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 50%;"/>
+        <div class="o_we_shape o_html_builder_Floats_13" style="background-image: url('/web_editor/shape/html_builder/Floats/13.svg?c1=o-color-1&amp;c2=o-color-2&amp;c5=o-color-5&amp;flip=y'); background-position: 50% 50%;"/>
     </xpath>
 </template>
 

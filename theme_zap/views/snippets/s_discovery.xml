@@ -6,12 +6,12 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_colored_level oe_img_bg o_bg_img_center o_cc5 pb216" remove="o_cc1 pb136" separator=" "/>
         <attribute name="style">background-image: url('/web/image/website.s_kickoff_default_image'); background-position: 50% 75%;</attribute>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/14','colors':{'c1':'o-color-3','c5':'rgba(0,0,0,0)'}}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/14','colors':{'c1':'o-color-3','c5':'rgba(0,0,0,0)'}}</attribute>
     </xpath>
     <!-- Shape and Filter -->
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-black-50"/>
-        <div class="o_we_shape o_web_editor_Bold_14" style="background-image: url('/web_editor/shape/web_editor/Bold/14.svg?c1=o-color-3&amp;c5=rgba(0,0,0,0)');"/>
+        <div class="o_we_shape o_html_builder_Bold_14" style="background-image: url('/web_editor/shape/html_builder/Bold/14.svg?c1=o-color-3&amp;c5=rgba(0,0,0,0)');"/>
     </xpath>
     <!-- CTA -->
     <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">

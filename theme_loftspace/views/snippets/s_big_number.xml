@@ -4,13 +4,13 @@
 <template id="s_big_number" inherit_id="website.s_big_number">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/17","colors":{"c5":"o-color-3"}}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blobs/17","colors":{"c5":"o-color-3"}}</attribute>
         <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
     </xpath>
 
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Blobs_17" style="background-image: url('/web_editor/shape/web_editor/Blobs/17.svg?c5=o-color-3');"/>
+        <div class="o_we_shape o_html_builder_Blobs_17" style="background-image: url('/web_editor/shape/html_builder/Blobs/17.svg?c5=o-color-3');"/>
     </xpath>
 
     <!-- Text -->

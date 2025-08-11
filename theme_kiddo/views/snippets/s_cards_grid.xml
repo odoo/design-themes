@@ -4,10 +4,10 @@
 <template id="s_cards_grid" inherit_id="website.s_cards_grid">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Floats/5','flip':[],'showOnMobile':false,'animated':'true'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Floats/5','flip':[],'showOnMobile':false,'animated':'true'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_05 o_we_animated"/>
+        <div class="o_we_shape o_html_builder_Floats_05 o_we_animated"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">

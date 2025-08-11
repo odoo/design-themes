@@ -13,10 +13,10 @@
         <attribute name="class" remove="pt40 pb40" add="o_cc o_cc5 pt104 pb16" separator=" "/>
     </xpath>
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/14","colors":{"c5":"o-color-1","c1":"o-color-5"},"flip":["x"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/14","colors":{"c5":"o-color-1","c1":"o-color-5"},"flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_14" style="background-image: url('/web_editor/shape/web_editor/Bold/14.svg?c5=o-color-1&amp;c1=o-color-5&amp;flip=x');"/>
+        <div class="o_we_shape o_html_builder_Bold_14" style="background-image: url('/web_editor/shape/html_builder/Bold/14.svg?c5=o-color-1&amp;c1=o-color-5&amp;flip=x');"/>
     </xpath>
 </template>
 
@@ -244,10 +244,10 @@
 <template id="s_carousel_intro" inherit_id="website.s_carousel_intro" name="Monglia s_carousel_intro">
     <!-- Layout -->
     <xpath expr="//div[hasclass('carousel')]" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Wavy/08_001','colors':{'c5':'o-color-2'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Wavy/08_001','colors':{'c5':'o-color-2'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('carousel-inner')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_08_001" style="background-image: url('/web_editor/shape/web_editor/Wavy/08_001.svg?c5=o-color-2');"/>
+        <div class="o_we_shape o_html_builder_Wavy_08_001" style="background-image: url('/web_editor/shape/html_builder/Wavy/08_001.svg?c5=o-color-2');"/>
     </xpath>
     <xpath expr="//div[hasclass('carousel-item')]" position="attributes">
         <attribute name="class" remove="o_cc o_cc1" separator=" "/>
@@ -301,10 +301,10 @@
 <template id="s_quotes_carousel_minimal" inherit_id="website.s_quotes_carousel_minimal" name="Monglia s_quotes_carousel_minimal">
     <!-- Layout -->
     <xpath expr="//div[hasclass('carousel')]" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Floats/09','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','animated':'true'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Floats/09','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','animated':'true'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('carousel-inner')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_09 o_we_animated"/>
+        <div class="o_we_shape o_html_builder_Floats_09 o_we_animated"/>
     </xpath>
 
     <!-- Texts -->
@@ -365,10 +365,10 @@
 
 <template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box" name="Monglia s_cta_box">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/14","colors":{"c5":"o-color-4","c1":"o-color-1"}}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/14","colors":{"c5":"o-color-4","c1":"o-color-1"}}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_14" style="background-image: url('/web_editor/shape/web_editor/Bold/14.svg?c5=o-color-4&amp;c1=o-color-1');"/>
+        <div class="o_we_shape o_html_builder_Bold_14" style="background-image: url('/web_editor/shape/html_builder/Bold/14.svg?c5=o-color-4&amp;c1=o-color-1');"/>
     </xpath>
 </template>
 
@@ -520,10 +520,10 @@
     <xpath expr="//section" position="attributes">
         <attribute name="data-scroll-background-ratio"/>
         <attribute name="class" add="o_cc o_cc2" remove="parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/21','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/21','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_21"/>
+        <div class="o_we_shape o_html_builder_Bold_21"/>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
 
@@ -663,10 +663,10 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="oe_img_bg" separator=" "/>
         <attribute name="style"/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/01_001','colors':{'c5':'o-color-1'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/01_001','colors':{'c5':'o-color-1'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_01_001" style="background-image: url('/web_editor/shape/web_editor/Bold/01_001.svg?c5=o-color-1');"/>
+        <div class="o_we_shape o_html_builder_Bold_01_001" style="background-image: url('/web_editor/shape/html_builder/Bold/01_001.svg?c5=o-color-1');"/>
     </xpath>
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
     <xpath expr="//h1" position="replace" mode="inner">
@@ -681,10 +681,10 @@
 <template id="s_key_images" inherit_id="website.s_key_images" name="Monglia s_key_images">
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Bold/18','colors':{'c5':'o-color-2'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/18','colors':{'c5':'o-color-2'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_18" style="background-image: url('/web_editor/shape/web_editor/Bold/18.svg?c5=o-color-2');"/>
+        <div class="o_we_shape o_html_builder_Bold_18" style="background-image: url('/web_editor/shape/html_builder/Bold/18.svg?c5=o-color-2');"/>
     </xpath>
 
     <!-- Texts -->
@@ -754,10 +754,10 @@
 <template id="s_wavy_grid" inherit_id="website.s_wavy_grid">
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Wavy/08_001','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Wavy/08_001','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Wavy_08_001"/>
+        <div class="o_we_shape o_html_builder_Wavy_08_001"/>
     </xpath>
     <xpath expr="//h3" position="attributes">
         <attribute name="class" add="h4-fs" remove="h5-fs" separator=" "/>

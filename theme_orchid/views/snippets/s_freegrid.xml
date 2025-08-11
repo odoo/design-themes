@@ -19,12 +19,12 @@
 <template id="configurator_s_freegrid" inherit_id="website.configurator_s_freegrid">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Blobs/03','colors':{'c2':'o-color-2'},'flip':['x'],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Blobs/03','colors':{'c2':'o-color-2'},'flip':['x'],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
         <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
     </xpath>
      <!-- Section Shape -->
     <xpath expr="//section//div" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_03 o_shape_show_mobile" style="background-image: url('/web_editor/shape/web_editor%2FBlobs%2F03.svg?c2=o-color-2&amp;flip=x'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_html_builder_Blobs_03 o_shape_show_mobile" style="background-image: url('/web_editor/shape/html_builder%2FBlobs%2F03.svg?c2=o-color-2&amp;flip=x'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 </odoo>
