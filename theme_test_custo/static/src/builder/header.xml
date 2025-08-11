@@ -2,7 +2,7 @@
 <templates xml:space="preserve">
 
 <!-- Theme Header - Option -->
-<t t-name="theme_test_custo.headerTemplateOption" t-inherit="website.headerTemplateOption" t-inherit-mode="extension">
+<t t-name="theme_test_custo.headerTemplateOption" t-inherit="website.HeaderTemplateOption" t-inherit-mode="extension">
     <xpath expr="//BuilderSelect[@action=&quot;'reloadComposite'&quot;]" position="inside">
         <BuilderSelectItem title.translate="Custom Theme"
             actionParam="[
