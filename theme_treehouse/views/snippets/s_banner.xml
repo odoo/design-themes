@@ -5,11 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/12"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Floats/12"}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//*[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12"/>
+        <div class="o_we_shape o_html_builder_Floats_12"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">

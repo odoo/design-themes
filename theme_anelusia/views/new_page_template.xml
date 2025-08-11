@@ -6,11 +6,11 @@
 <template id="new_page_template_s_comparisons" inherit_id="website.new_page_template_s_comparisons">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Containers/06","colors":{"c5":"o-color-4"},"flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Containers/06","colors":{"c5":"o-color-4"},"flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Containers_06" style="background-image: url('/web_editor/shape/web_editor/Containers/06.svg?c5=o-color-4');"/>
+        <div class="o_we_shape o_html_builder_Containers_06" style="background-image: url('/web_editor/shape/html_builder/Containers/06.svg?c5=o-color-4');"/>
     </xpath>
 </template>
 

@@ -19,10 +19,10 @@
 
 <template id="new_page_template_s_references" inherit_id="website.new_page_template_s_references">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Bold/15","colors":{"c5":"o-color-3"},"flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/15","colors":{"c5":"o-color-3"},"flip":[]}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Bold_15" style="background-image: url('/web_editor/shape/web_editor/Bold/15.svg?c5=o-color-3');"/>
+        <div class="o_we_shape o_html_builder_Bold_15" style="background-image: url('/web_editor/shape/html_builder/Bold/15.svg?c5=o-color-3');"/>
     </xpath>
 </template>
 
@@ -65,11 +65,11 @@
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/09_001","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Rainy/09_001","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_09_001"/>
+        <div class="o_we_shape o_html_builder_Rainy_09_001"/>
     </xpath>
 </template>
 
@@ -83,11 +83,11 @@
 <template id="new_page_template_about_map_s_numbers" inherit_id="website.new_page_template_about_map_s_numbers">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Rainy/09_001","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Rainy/09_001","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Rainy_09_001"/>
+        <div class="o_we_shape o_html_builder_Rainy_09_001"/>
     </xpath>
 </template>
 

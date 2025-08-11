@@ -5,11 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt64 pb64" remove="pt32 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/01","flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Floats/01","flip":[]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_01"/>
+        <div class="o_we_shape o_html_builder_Floats_01"/>
     </xpath>
     <!-- Row 1 -->
     <xpath expr="(//div[hasclass('row')])[2]" position="attributes">

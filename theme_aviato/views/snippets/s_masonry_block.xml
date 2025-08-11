@@ -4,10 +4,10 @@
 <template id="s_masonry_block" inherit_id="website.s_masonry_block" name="Masonry">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc1 pt24 pb104" remove="pt48 pb48" separator=" "/>
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/20','colors':{'c5':'o-color-3'},'flip':['y'],'showOnMobile':true}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/20','colors':{'c5':'o-color-3'},'flip':['y'],'showOnMobile':true}</attribute>
     </xpath>
     <xpath expr="//section/div" position="before">
-        <div class="o_we_shape o_web_editor_Connections_20 o_shape_show_mobile" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_html_builder_Connections_20 o_shape_show_mobile" style="background-image: url('/web_editor/shape/html_builder/Connections/20.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 

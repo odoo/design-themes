@@ -5,11 +5,11 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc3" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/02"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Floats/02"}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_web_editor_Floats_02 o_we_animated"/>
+        <div class="o_we_shape o_html_builder_Floats_02 o_we_animated"/>
     </xpath>
     <!-- Card 1 -->
     <xpath expr="//div[hasclass('g-col-lg-3')]//h3" position="replace" mode="inner">
