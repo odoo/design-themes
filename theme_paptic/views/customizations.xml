@@ -44,7 +44,7 @@
         <div class="row">
             <div class="o_colored_level col-lg-5 pt32"/>
             <div class="o_colored_level col-lg-6 offset-lg-1">
-                <img class="img img-fluid" src="/web_editor/shape/theme_paptic/s_cover.svg?c1=o-color-1&amp;c2=o-color-2"/>
+                <img class="img img-fluid" src="/html_editor/shape/theme_paptic/s_cover.svg?c1=o-color-1&amp;c2=o-color-2"/>
             </div>
         </div>
     </xpath>
@@ -58,7 +58,7 @@
 <!-- ==== Image-Text ===== -->
 <template id="s_image_text" inherit_id="website.s_image_text" name="Paptic s_image_text">
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web_editor/shape/theme_paptic/s_image_text.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
+        <attribute name="src">/html_editor/shape/theme_paptic/s_image_text.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
     </xpath>
 
     <xpath expr="//h2" position="replace">
@@ -75,7 +75,7 @@
 <!-- ==== Text-Image ===== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Paptic s_text_image">
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web_editor/shape/theme_paptic/s_text_image.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
+        <attribute name="src">/html_editor/shape/theme_paptic/s_text_image.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
     </xpath>
     <xpath expr="//h2" position="replace">
         <h2>Communication is key!</h2>
@@ -265,7 +265,7 @@
         <attribute name="class" add="pt72 o_cc1" remove="pt64" separator=" "/>
     </xpath>
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web_editor/shape/theme_paptic/s_picture.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
+        <attribute name="src">/html_editor/shape/theme_paptic/s_picture.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
     </xpath>
 </template>
 
@@ -313,7 +313,7 @@
     </xpath>
     <!-- Image -->
     <xpath expr="//img" position="attributes">
-        <attribute name="src">/web_editor/shape/theme_paptic/s_cta_box.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
+        <attribute name="src">/html_editor/shape/theme_paptic/s_cta_box.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
         <attribute name="style">padding: 40px;</attribute>
     </xpath>
     <!-- Button -->
@@ -500,7 +500,7 @@
         <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/01_001','colors':{'c5':'o-color-2'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Bold_01_001" style="background-image: url('/web_editor/shape/html_builder/Bold/01_001.svg?c5=o-color-2');"/>
+        <div class="o_we_shape o_html_builder_Bold_01_001" style="background-image: url('/html_editor/shape/html_builder/Bold/01_001.svg?c5=o-color-2');"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
@@ -604,7 +604,7 @@
         <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/13','colors':{'c5':'o-color-4'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Bold_13" style="background-image: url('/web_editor/shape/html_builder/Bold/13.svg?c5=o-color-4');"/>
+        <div class="o_we_shape o_html_builder_Bold_13" style="background-image: url('/html_editor/shape/html_builder/Bold/13.svg?c5=o-color-4');"/>
     </xpath>
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
 </template>
@@ -770,7 +770,7 @@
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[1]/div[hasclass('o_we_bg_filter')]" position="replace"/>
     <xpath expr="(//div[hasclass('o_grid_item')])[1]/p" position="after">
-        <img class="img img-fluid" src="/web_editor/shape/theme_paptic/s_masonry_block_1.svg?c1=o-color-1&amp;c2=o-color-2"/>
+        <img class="img img-fluid" src="/html_editor/shape/theme_paptic/s_masonry_block_1.svg?c1=o-color-1&amp;c2=o-color-2"/>
     </xpath>
     <!-- Block 2 -->
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
@@ -779,7 +779,7 @@
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[2]/div[hasclass('o_we_bg_filter')]" position="replace"/>
     <xpath expr="(//div[hasclass('o_grid_item')])[2]/p" position="after">
-        <img class="img img-fluid" src="/web_editor/shape/theme_paptic/s_masonry_block_2.svg?c1=o-color-1&amp;c2=o-color-2"/>
+        <img class="img img-fluid" src="/html_editor/shape/theme_paptic/s_masonry_block_2.svg?c1=o-color-1&amp;c2=o-color-2"/>
     </xpath>
 </template>
 

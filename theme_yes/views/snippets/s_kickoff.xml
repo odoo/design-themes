@@ -12,7 +12,7 @@
         <!-- Remove Parallax + shape -->
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_html_builder_Connections_05" style="background-image: url('/web_editor/shape/html_builder/Connections/05.svg?c5=o-color-3');"/>
+        <div class="o_we_shape o_html_builder_Connections_05" style="background-image: url('/html_editor/shape/html_builder/Connections/05.svg?c5=o-color-3');"/>
     </xpath>
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
         <attribute name="class" add="bg-black-25" remove="bg-black-50" separator=" "/>
