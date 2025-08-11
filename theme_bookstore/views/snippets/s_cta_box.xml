@@ -23,11 +23,11 @@
 <template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
     <!-- Shape option -->
     <xpath expr="section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Connections/20', 'colors':{'c5':'o-color-4'},'flip':['y']}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/20', 'colors':{'c5':'o-color-4'},'flip':['y']}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Connections_20" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
+        <div class="o_we_shape o_html_builder_Connections_20" style="background-image: url('/web_editor/shape/html_builder/Connections/20.svg?c5=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 

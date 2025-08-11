@@ -77,7 +77,7 @@ CONFLICTUAL_CLASSES_RE = {
     # Shadow
     re.compile(r'^shadow-.+'): [],
     # Shapes
-    re.compile(r'^o_web_editor_[A-Z].+'): [],
+    re.compile(r'^o_html_builder_[A-Z].+'): [],
     # Text
     re.compile(r'^text-(?!(center|end|start|bg-|lg-)).*$'): [
         'text-break', 'text-decoration-none', 'text-reset',

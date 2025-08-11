@@ -4,11 +4,11 @@
 <template id="s_numbers_boxed" inherit_id="website.s_numbers_boxed">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Blobs/06_001", "flip":[], "showOnMobile":true}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blobs/06_001", "flip":[], "showOnMobile":true}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Blobs_06_001"/>
+        <div class="o_we_shape o_html_builder_Blobs_06_001"/>
     </xpath>
     <!-- Grid Item -->
     <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">

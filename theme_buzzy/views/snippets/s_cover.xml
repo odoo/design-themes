@@ -5,7 +5,7 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt112 pb112" remove="pt232 pb232 bg-black-50" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Airy/12_002","colors":{"c5":"rgba(255,255,255,0.25)","c3":"rgba(255,255,255,0)"},"flip":[]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Airy/12_002","colors":{"c5":"rgba(255,255,255,0.25)","c3":"rgba(255,255,255,0)"},"flip":[]}</attribute>
     </xpath>
     <!-- Filter -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
@@ -13,7 +13,7 @@
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="after">
-        <div class="o_we_shape o_web_editor_Airy_12_002 o_we_animated" style="background-image: url('/web_editor/shape/web_editor/Airy/12_002.svg?c5=rgba(255,255,255,0.25)&amp;c3=rgba(255,255,255,0)');"/>
+        <div class="o_we_shape o_html_builder_Airy_12_002 o_we_animated" style="background-image: url('/web_editor/shape/html_builder/Airy/12_002.svg?c5=rgba(255,255,255,0.25)&amp;c3=rgba(255,255,255,0)');"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">

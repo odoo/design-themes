@@ -32,11 +32,11 @@
 <template id="configurator_s_picture" inherit_id="website.configurator_s_picture">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Wavy/03","flip":["y"]}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Wavy/03","flip":["y"]}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_container_small')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_03" style="background-image: url('/web_editor/shape/web_editor/Wavy/03.svg?c1=o-color-1&amp;c2=o-color-2&amp;flip=y'); background-position: 50% 100%;"/>
+        <div class="o_we_shape o_html_builder_Wavy_03" style="background-image: url('/web_editor/shape/html_builder/Wavy/03.svg?c1=o-color-1&amp;c2=o-color-2&amp;flip=y'); background-position: 50% 100%;"/>
     </xpath>
 </template>
 

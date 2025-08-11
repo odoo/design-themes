@@ -37,12 +37,12 @@
 <template id="new_page_template_about_s_banner" inherit_id="website.new_page_template_about_s_banner">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Connections/08","colors":{"c5":"o-color-4"}}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/08","colors":{"c5":"o-color-4"}}</attribute>
         <attribute name="class" add="o_cc o_cc4" separator=" "/>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Connections_08" style="background-image: url('/web_editor/shape/web_editor/Connections/08.svg?c5=o-color-4');"/>
+        <div class="o_we_shape o_html_builder_Connections_08" style="background-image: url('/web_editor/shape/html_builder/Connections/08.svg?c5=o-color-4');"/>
     </xpath>
 </template>
 
@@ -87,12 +87,12 @@
 <template id="new_page_template_landing_1_s_banner" inherit_id="website.new_page_template_landing_1_s_banner">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"web_editor/Connections/08","colors":{"c5":"o-color-4"}}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/08","colors":{"c5":"o-color-4"}}</attribute>
         <attribute name="class" add="o_cc o_cc4" separator=" "/>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Connections_08" style="background-image: url('/web_editor/shape/web_editor/Connections/08.svg?c5=o-color-4');"/>
+        <div class="o_we_shape o_html_builder_Connections_08" style="background-image: url('/web_editor/shape/html_builder/Connections/08.svg?c5=o-color-4');"/>
     </xpath>
 </template>
 

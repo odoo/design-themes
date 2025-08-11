@@ -4,10 +4,10 @@
 <template id="s_sidegrid" inherit_id="website.s_sidegrid">
     <!-- Layout -->
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Wavy/22_001','colors':{'c5':'o-color-2'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Wavy/22_001','colors':{'c5':'o-color-2'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Wavy_22_001" style="background-image: url('/web_editor/shape/web_editor/Wavy/22_001.svg?c5=o-color-2');"/>
+        <div class="o_we_shape o_html_builder_Wavy_22_001" style="background-image: url('/web_editor/shape/html_builder/Wavy/22_001.svg?c5=o-color-2');"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">

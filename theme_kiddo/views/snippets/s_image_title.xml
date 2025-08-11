@@ -3,10 +3,10 @@
 
 <template id="s_image_title" inherit_id="website.s_image_title">
     <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'web_editor/Floats/12','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','animated':'true'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Floats/12','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','animated':'true'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_web_editor_Floats_12 o_we_animated"/>
+        <div class="o_we_shape o_html_builder_Floats_12 o_we_animated"/>
     </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
         A Deep Dive into Play and Learning
