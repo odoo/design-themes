@@ -7,7 +7,7 @@
         <attribute name="class" add="o_cc o_cc2 pb88" remove="pb64" separator=" "/>
     </xpath>
     <!-- Remove title and subtitle -->
-    <xpath expr="//div[hasclass('container')]/h3" position="replace"/>
+    <xpath expr="//div[hasclass('container')]/h2" position="replace"/>
     <xpath expr="//div[hasclass('container')]/p" position="replace"/>
     <!-- Column #01 -->
     <xpath expr="//div[hasclass('row')]/div[1]/div[hasclass('s_hr')]" position="replace"/>

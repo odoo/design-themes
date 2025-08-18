@@ -21,8 +21,8 @@
     <xpath expr="//div[hasclass('s_card')]" position="attributes">
         <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
-    <xpath expr="//div[hasclass('s_card')]//h5" position="replace">
-        <h4 class="card-title">Belgium Tour</h4>
+    <xpath expr="//div[hasclass('s_card')]//h2" position="replace">
+        <h2 class="card-title h4-fs">Belgium Tour</h2>
     </xpath>
     <xpath expr="//div[hasclass('s_card')]//p" position="replace">
         <p class="o_small_fs">24th AUGUST</p>
@@ -41,8 +41,8 @@
     <xpath expr="(//div[hasclass('s_card')])[2]//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_2</attribute>
     </xpath>
-    <xpath expr="(//div[hasclass('s_card')])[2]//h5" position="replace">
-        <h4 class="card-title">Barcelona Night</h4>
+    <xpath expr="(//div[hasclass('s_card')])[2]//h2" position="replace">
+        <h2 class="card-title h4-fs">Barcelona Night</h2>
     </xpath>
     <xpath expr="(//div[hasclass('s_card')])[2]//p" position="replace">
         <p class="o_small_fs">27th AUGUST</p>
@@ -58,8 +58,8 @@
     <xpath expr="(//div[hasclass('s_card')])[3]" position="attributes">
         <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
-    <xpath expr="(//div[hasclass('s_card')])[3]//h5" position="replace">
-        <h4 class="card-title">Amsterdam Tour</h4>
+    <xpath expr="(//div[hasclass('s_card')])[3]//h2" position="replace">
+        <h2 class="card-title h4-fs">Amsterdam Tour</h2>
     </xpath>
     <xpath expr="(//div[hasclass('s_card')])[3]//p" position="replace">
         <p class="o_small_fs">9th SEPTEMBER</p>
