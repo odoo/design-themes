@@ -230,11 +230,29 @@ class TestNewPageTemplates(TransactionCase):
                                 if cl.startswith('s_') and cl not in S_CLASSES_WHITELIST
                             }
                             if non_whitelisted_s_classes:
-                                all_parent_s_classes = set()
-                                parent_el = el
-                                is_in_snippet = view.key.startswith('website.configurator_')
+                                # Check the element classes itself first: if
+                                # there is a s_XXX class, s_something_XXX is
+                                # automatically accepted as it indicates a
+                                # variant of s_XXX (e.g. s_nice_popup being a
+                                # variant of s_popup).
+                                non_whitelisted_s_classes = {
+                                    cl for cl in non_whitelisted_s_classes
+                                    if not any(cl != other_cl and cl.endswith(f'_{other_cl[2:]}')
+                                                for other_cl in non_whitelisted_s_classes)
+                                }
+
                                 # Find all parent elements classes that start
                                 # with 's_' (including on the current element).
+                                # and only accept classes that are prefixed by
+                                # a parent class (+ '_') (e.g. s_table_item
+                                # would be accepted inside a s_table (as it is
+                                # a sub-element of s_table), and s_table_xs
+                                # would be accepted as an option of s_table)).
+                                all_parent_s_classes = set()
+                                parent_el = el
+                                # This also looks for the presence of non-
+                                # whitelisted 's_' classes in non-snippets.
+                                is_in_snippet = view.key.startswith('website.configurator_')
                                 while parent_el is not None:
                                     parent_classes = set(parent_el.attrib.get('class', '').split())
                                     all_parent_s_classes.update({cl for cl in parent_classes if cl.startswith('s_')})
@@ -242,9 +260,8 @@ class TestNewPageTemplates(TransactionCase):
                                         is_in_snippet = True
                                         break
                                     parent_el = parent_el.getparent()
+
                                 if is_in_snippet:
-                                    # Accept classes that are prefixed by such a
-                                    # parent class (+ '_').
                                     non_whitelisted_s_classes = {
                                         cl for cl in non_whitelisted_s_classes
                                         if not any(cl.startswith(f'{parent_cls}_') for parent_cls in all_parent_s_classes)
