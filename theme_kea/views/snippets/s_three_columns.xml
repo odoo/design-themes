@@ -10,7 +10,7 @@
     <xpath expr="//figure" position="attributes">
         <attribute name="class" remove="ratio-16x9" add="ratio-1x1" separator=" "/>
     </xpath>
-    <xpath expr="//h5" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Gaming
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
@@ -20,7 +20,7 @@
     <xpath expr="(//figure)[2]"  position="attributes">
         <attribute name="class" remove="ratio-16x9" add="ratio-1x1" separator=" "/>
     </xpath>
-    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
         Design
     </xpath>
     <xpath expr="(//p)[2]" position="replace" mode="inner">
@@ -30,7 +30,7 @@
     <xpath expr="(//figure)[3]"  position="attributes">
         <attribute name="class" remove="ratio-16x9" add="ratio-1x1" separator=" "/>
     </xpath>
-    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+    <xpath expr="(//h2)[3]" position="replace" mode="inner">
         Training
     </xpath>
     <xpath expr="(//p)[3]" position="replace" mode="inner">

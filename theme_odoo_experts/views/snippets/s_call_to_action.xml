@@ -18,8 +18,8 @@
         <attribute name="class" add="col-lg-12" remove="col-lg-3" separator=" "/>
     </xpath>
     <!-- Title & Paragraph -->
-    <xpath expr="//h3" position="replace">
-        <h3 style="text-align: center;">50,000+ clients trust us <br/>to protect their assets</h3>
+    <xpath expr="//h2" position="replace" mode="inner">
+        <h2 class="h3-fs" style="text-align: center;">50,000+ clients trust us <br/>to protect their assets</h2>
     </xpath>
     <xpath expr="//p" position="replace">
         <p style="text-align: center;">Contact us for a personalized meeting</p>

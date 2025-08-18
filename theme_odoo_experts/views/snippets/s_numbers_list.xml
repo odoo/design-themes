@@ -6,12 +6,12 @@
         <attribute name="class" add="col-lg-6" remove="col-lg-5" separator=" "/>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h3" position="replace">
+    <xpath expr="//h2" position="replace">
         <p class="o_small">SOME NUMBERS</p>
     </xpath>
     <!-- Paragraph -->
     <xpath expr="//p" position="replace">
-        <h3>Over the last decade, we've help many businesses to grow.</h3>
+        <h2 class="h3-fs">Over the last decade, we've help many businesses to grow.</h2>
     </xpath>
     <!-- KPI's -->
     <xpath expr="//div[hasclass('col-lg-3')]" position="replace">
