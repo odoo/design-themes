@@ -327,8 +327,8 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc5" separator=" "/>
     </xpath>
-    <xpath expr="//h3" position="replace">
-        <h3 style="text-align: left;"><b>APPLY FOR OUR V.I.P. CARD</b></h3>
+    <xpath expr="//h2" position="replace">
+        <h2 class="h3-fs" style="text-align: left;"><b>APPLY FOR OUR V.I.P. CARD</b></h2>
     </xpath>
     <xpath expr="//p" position="replace">
         <p style="text-align: left;">The vip card allows you to benefit from tickets before everyone else.</p>
@@ -377,13 +377,13 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb0 o_cc5" remove="pb32 o_cc2" separator=" "/>
     </xpath>
-    <xpath expr="//h5" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Wilson Holt
     </xpath>
-    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
         Theia Hayward
     </xpath>
-    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+    <xpath expr="(//h2)[3]" position="replace" mode="inner">
         Bruce Porter
     </xpath>
 </template>
@@ -816,7 +816,7 @@
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Unforgettable Events &amp; Entertainment
     </xpath>
     <!-- Paragraph 1 -->
@@ -832,32 +832,32 @@
 <!-- ======== CARDS GRID ======== -->
 <template id="s_cards_grid" inherit_id="website.s_cards_grid">
     <!-- Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Exquisite Cocktails to Elevate Your Experience
     </xpath>
     <!-- Card 1 -->
-    <xpath expr="(//h5)[1]" position="replace" mode="inner">
+    <xpath expr="(//h3)[1]" position="replace" mode="inner">
         Berry Bliss Sangria
     </xpath>
     <xpath expr="(//p)[1]" position="replace" mode="inner">
         A delightful mix of red wine, fresh berries, orange juice, and a hint of brandy, served chilled for a refreshing, fruity experience with every sip.
     </xpath>
     <!-- Card 2 -->
-    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
         Tropical Mojito
     </xpath>
     <xpath expr="(//p)[2]" position="replace" mode="inner">
         A refreshing mix of white rum, fresh mint, lime juice, and a splash of soda, perfect for a vibrant, tropical flavor that dances on the palate.
     </xpath>
     <!-- Card 3 -->
-    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
         Spicy Margarita
     </xpath>
     <xpath expr="(//p)[3]" position="replace" mode="inner">
         A zesty blend of tequila, lime juice, and a hint of jalapeño, balanced with a touch of agave syrup for a fiery twist on a classic favorite.
     </xpath>
     <!-- Card 4 -->
-    <xpath expr="(//h5)[4]" position="replace" mode="inner">
+    <xpath expr="(//h3)[4]" position="replace" mode="inner">
         Smoky Old Fashioned
     </xpath>
     <xpath expr="(//p)[4]" position="replace" mode="inner">
@@ -1022,11 +1022,11 @@
     <xpath expr="//div[hasclass('col-lg-7')]" position="attributes">
         <attribute name="class" add="col-lg-8 offset-lg-2" remove="col-lg-7 offset-lg-1" separator=" "/>
     </xpath>
-    <xpath expr="//h3" position="attributes">
+    <xpath expr="//h2" position="attributes">
         <attribute name="style" add="text-align: center;" separator=";"/>
     </xpath>
-    <xpath expr="//h3" position="replace">
-        <h2 style="text-align: center;">Frequently Asked Questions</h2>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Frequently Asked Questions
     </xpath>
     <xpath expr="//p" position="attributes">
         <attribute name="style" add="text-align: center;" separator=";"/>

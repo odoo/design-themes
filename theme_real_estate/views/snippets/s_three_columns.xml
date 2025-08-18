@@ -17,10 +17,10 @@
     <xpath expr="//div[hasclass('card')]" position="attributes">
         <attribute name="style">border-radius: 0px !important;</attribute>
     </xpath>
-    <xpath expr="//h5" position="before">
+    <xpath expr="//h2" position="before">
         <p class="h4-fs">$295,000</p>
     </xpath>
-    <xpath expr="//h5" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         House On The Hill
     </xpath>
     <xpath expr="//p[hasclass('card-text')]" position="replace" mode="inner">
@@ -34,10 +34,10 @@
     <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
         <attribute name="style">border-radius: 0px !important;</attribute>
     </xpath>
-    <xpath expr="(//h5)[2]" position="before">
+    <xpath expr="(//h2)[2]" position="before">
         <p class="h4-fs">$1,295,000,000</p>
     </xpath>
-    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
         Moutain View
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
@@ -51,10 +51,10 @@
     <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
         <attribute name="style">border-radius: 0px !important;</attribute>
     </xpath>
-    <xpath expr="(//h5)[3]" position="before">
+    <xpath expr="(//h2)[3]" position="before">
         <p class="h4-fs">$455,000</p>
     </xpath>
-    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+    <xpath expr="(//h2)[3]" position="replace" mode="inner">
         Paradise Residence
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">

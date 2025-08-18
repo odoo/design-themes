@@ -19,15 +19,15 @@
         <attribute name="data-shape-colors">;o-color-1;;;</attribute>
     </xpath>
     <!-- Column n°1 - Title -->
-    <xpath expr="//h5" position="attributes">
+    <xpath expr="//h2" position="attributes">
         <attribute name="style">text-align: center;</attribute>
     </xpath>
-    <xpath expr="//h5" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         <br/>
         Our mission
     </xpath>
     <!-- Column n°1 - Add separator -->
-    <xpath expr="//h5" position="after">
+    <xpath expr="//h2" position="after">
         <div class="s_hr pb32 pt8" data-snippet="s_hr" data-name="Separator">
             <hr class="w-25 mx-auto" style="border-top: 5px dotted var(--o-color-2) !important;"/>
         </div>
@@ -56,15 +56,15 @@
         <attribute name="data-shape-colors">;o-color-3;;;</attribute>
     </xpath>
     <!-- Column n°2 - Title -->
-    <xpath expr="(//h5)[2]" position="attributes">
+    <xpath expr="(//h2)[2]" position="attributes">
         <attribute name="style">text-align: center;</attribute>
     </xpath>
-    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
         <br/>
         For every kid
     </xpath>
     <!-- Column n°2 - Add separator -->
-    <xpath expr="(//h5)[2]" position="after">
+    <xpath expr="(//h2)[2]" position="after">
         <div class="s_hr pb32 pt8" data-snippet="s_hr" data-name="Separator">
             <hr class="w-25 mx-auto" style="border-top: 5px dotted var(--o-color-1) !important;"/>
         </div>
@@ -93,15 +93,15 @@
         <attribute name="data-shape-colors">;;;;o-color-2</attribute>
     </xpath>
     <!-- Column n°3 - Title -->
-    <xpath expr="(//h5)[3]" position="attributes">
+    <xpath expr="(//h2)[3]" position="attributes">
         <attribute name="style">text-align: center;</attribute>
     </xpath>
-    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+    <xpath expr="(//h2)[3]" position="replace" mode="inner">
         <br/>
         Open-door policy
     </xpath>
     <!-- Column n°3 - Add separator -->
-    <xpath expr="(//h5)[3]" position="after">
+    <xpath expr="(//h2)[3]" position="after">
         <div class="s_hr pb32 pt8" data-snippet="s_hr" data-name="Separator">
             <hr class="w-25 mx-auto" style="border-top: 5px dotted var(--o-color-2) !important;"/>
         </div>
