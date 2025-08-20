@@ -131,8 +131,6 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     )
 );
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'default-25');
-
 $o-color-palettes-compatibility-indexes: (
     1: 'anelusia-1',
     2: 'anelusia-2',
