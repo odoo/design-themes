@@ -4,7 +4,7 @@
 <template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
     <!-- Little block #01 -->
     <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-4')]/h3" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-4')]/h2" position="replace" mode="inner">
         Brussels
     </xpath>
     <!-- Paragraph -->
@@ -14,7 +14,7 @@
 
     <!-- Little block #02 -->
     <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-4')][2]/h3" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-4')][2]/h2" position="replace" mode="inner">
         Paris
     </xpath>
     <!-- Paragraph -->
@@ -24,7 +24,7 @@
 
     <!-- Little block #03 -->
     <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-3')]/h3" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-3')]/h2" position="replace" mode="inner">
         Barcelona
     </xpath>
     <!-- Paragraph -->
@@ -34,7 +34,7 @@
 
     <!-- Little block #04 -->
     <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-3')][2]/h3" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('col-lg-3')][2]/h2" position="replace" mode="inner">
         Amsterdam
     </xpath>
     <!-- Paragraph -->

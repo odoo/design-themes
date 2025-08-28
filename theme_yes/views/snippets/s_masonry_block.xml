@@ -4,7 +4,7 @@
 <template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
     <!-- Little Blocks -->
     <!-- Little block #01 - Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Caterers
     </xpath>
     <!-- Little block #01 - Text -->
@@ -14,7 +14,7 @@
     </xpath>
 
     <!-- Bigger block #02 - Title -->
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
         Venues
     </xpath>
     <!-- Bigger block #02 - Text -->
@@ -24,7 +24,7 @@
     </xpath>
 
     <!-- Bigger block #03 - Title -->
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+    <xpath expr="(//h2)[3]" position="replace" mode="inner">
         Attire
     </xpath>
     <!-- Bigger block #03 - Text -->
@@ -34,7 +34,7 @@
     </xpath>
 
     <!-- Little block #04 - Title -->
-    <xpath expr="(//h3)[4]" position="replace" mode="inner">
+    <xpath expr="(//h2)[4]" position="replace" mode="inner">
         FAQ
     </xpath>
     <!-- Little block #04 - Text -->

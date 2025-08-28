@@ -15,7 +15,7 @@
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
     </xpath>
     <!-- Column #1 - Title -->
-    <xpath expr="//div[hasclass('card-body')]//h5" position="replace" mode="inner">
+    <xpath expr="//div[hasclass('card-body')]//h2" position="replace" mode="inner">
         My artistic process
     </xpath>
     <!-- Column #1 - Paragraph -->
@@ -35,7 +35,7 @@
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
     </xpath>
     <!-- Column #2 - Title -->
-    <xpath expr="(//div[hasclass('card-body')])[2]//h5" position="replace" mode="inner">
+    <xpath expr="(//div[hasclass('card-body')])[2]//h2" position="replace" mode="inner">
         My work
     </xpath>
     <!-- Column #2 - Paragraph -->
@@ -55,7 +55,7 @@
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
     </xpath>
     <!-- Column #3 - Title -->
-    <xpath expr="(//div[hasclass('card-body')])[3]//h5" position="replace" mode="inner">
+    <xpath expr="(//div[hasclass('card-body')])[3]//h2" position="replace" mode="inner">
         About me
     </xpath>
     <!-- Column #3 - Paragraph -->
