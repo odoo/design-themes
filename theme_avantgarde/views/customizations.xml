@@ -12,7 +12,8 @@
 <!-- ======== COVER ======== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Avantgarde s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="s_parallax_no_overflow_hidden o_full_screen_height" remove="s_parallax_is_fixed s_parallax" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" remove="s_parallax_is_fixed" separator=" "/>
+        <attribute name="data-scroll-background-ratio" add="1.5" remove="1"/>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
         <attribute name="style" remove="background-position: 50% 75%;" add="background-position: 50% 80%;" separator=";"/>

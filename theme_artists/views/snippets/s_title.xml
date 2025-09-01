@@ -9,7 +9,9 @@
     </xpath>
     <!-- Parallax background & filter -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image');"/>
+        <span class="s_parallax_bg_wrap">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image');"/>
+        </span>
         <div class="o_we_bg_filter" style="background-color: rgba(17, 13, 22, 0.85) !important;"/>
     </xpath>
     <!-- Title -->
@@ -27,7 +29,7 @@
     <xpath expr="//h2" position="attributes">
         <attribute name="class" remove="display-3-fs" separator=" "/>
     </xpath>
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
 </template>
 
