@@ -12,7 +12,7 @@
         <attribute name="style" add="--card-img-ratio-align: 20%;" separator=";"/>
     </xpath>
     <!-- Column 1 - Title -->
-    <xpath expr="//h5" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Local Producers
     </xpath>
     <!-- Column 1 - Paragraph -->
@@ -29,7 +29,7 @@
         <attribute name="style" add="--card-img-ratio-align: 20%;" separator=";"/>
     </xpath>
     <!-- Column 2 - Title -->
-    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
         Bio Flowers
     </xpath>
     <!-- Column 2 - Paragraph -->
@@ -46,7 +46,7 @@
         <attribute name="style" add="--card-img-ratio-align: 20%;" separator=";"/>
     </xpath>
     <!-- Column 3 - Title -->
-    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+    <xpath expr="(//h2)[3]" position="replace" mode="inner">
         Eco-Friendly Packaging
     </xpath>
     <!-- Column 3 - Paragraph -->

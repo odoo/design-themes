@@ -15,10 +15,10 @@
     <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
         <attribute name="class" add="col-lg-12" remove="col-lg-9" separator=" "/>
     </xpath>
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Be yourself, create your own style
     </xpath>
-    <xpath expr="//h3" position="attributes">
+    <xpath expr="//h2" position="attributes">
         <attribute name="style">text-align: center;</attribute>
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">

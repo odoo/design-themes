@@ -206,7 +206,7 @@
         <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <!-- Card #1 - Title & text -->
-    <xpath expr="//h5[hasclass('card-title')]" position="replace" mode="inner">
+    <xpath expr="//h2[hasclass('card-title')]" position="replace" mode="inner">
         HeyNosf Inc. Digital Transformation
     </xpath>
     <xpath expr="//p[hasclass('card-text')]" position="replace" mode="inner">
@@ -225,7 +225,7 @@
         <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <!-- Card #2 - Title & text -->
-    <xpath expr="(//h5[hasclass('card-title')])[2]" position="replace" mode="inner">
+    <xpath expr="(//h2[hasclass('card-title')])[2]" position="replace" mode="inner">
         Fallanzy Integration Explained
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
@@ -244,7 +244,7 @@
         <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
     <!-- Card #3 - Title & text -->
-    <xpath expr="(//h5[hasclass('card-title')])[3]" position="replace" mode="inner">
+    <xpath expr="(//h2[hasclass('card-title')])[3]" position="replace" mode="inner">
         Hotels Improvement Study
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
@@ -287,7 +287,7 @@
         <attribute name="class" add="pt120 pb120 o_cc1" remove="pt64 pb64 o_cc5" separator=" "/>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         50,000+ companies run Paptic to grow their businesses.
     </xpath>
 </template>
@@ -650,7 +650,7 @@
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Expert Consultancy in Tech &amp; Design
     </xpath>
     <!-- Paragraph 1 -->

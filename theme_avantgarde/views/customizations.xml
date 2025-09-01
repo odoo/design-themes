@@ -146,7 +146,7 @@
         <attribute name="class" add="shadow border" separator=" "/>
         <attribute name="style">border-color: var(--o-color-2) !important; box-shadow: var(--o-color-2) -25px -25px 0px 0px !important; border-width: 8px !important;</attribute>
     </xpath>
-    <xpath expr="//h5" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         <span style="font-weight: bolder;">Excellence</span>
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[1]" position="replace" mode="inner">
@@ -155,7 +155,7 @@
         <attribute name="class" add="shadow border" separator=" "/>
         <attribute name="style">border-color: var(--o-color-4) !important; border-width: 8px !important; box-shadow: var(--o-color-5) 0px 0px 100px -40px !important;</attribute>
     </xpath>
-    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
         <span style="font-weight: bolder;">Collaboration</span>
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
@@ -165,7 +165,7 @@
         <attribute name="class" add="shadow border" separator=" "/>
         <attribute name="style">box-shadow: var(--o-color-1) 25px 25px 0px 0px !important; border-color: var(--o-color-1) !important; border-width: 8px !important;</attribute>
     </xpath>
-    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+    <xpath expr="(//h2)[3]" position="replace" mode="inner">
         <span style="font-weight: bolder;">Sustainability</span>
     </xpath>
     <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
@@ -231,8 +231,8 @@
 
 <!-- ======== CALL TO ACTION ======== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Avantgarde s_call_to_action">
-    <xpath expr="//h3" position="replace">
-        <h3 style="text-align: right;"><b>Since 1992</b> creating around the world.</h3>
+    <xpath expr="//h2" position="replace">
+        <h2 style="text-align: right;"><b>Since 1992</b> creating around the world.</h2>
     </xpath>
     <xpath expr="//p" position="replace" mode="inner">
         We partner with ambitious clients. We’d love to hear from you.
@@ -570,7 +570,7 @@
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h3" position="replace" mode="inner">
+    <xpath expr="//h2" position="replace" mode="inner">
         Innovative Design Meets Fine Art
     </xpath>
     <!-- Paragraph 1 -->
