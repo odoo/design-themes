@@ -133,6 +133,32 @@
     'configurator_snippets': {
         'homepage': ['s_sidegrid', 's_product_catalog', 's_cta_box', 's_title', 's_image_frame', 's_images_wall', 's_shape_image'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_sidegrid'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'template_key': (
+                'website_sale.dynamic_filter_template_product_public_category_default'
+            ),
+            'data_attributes': {
+                'rounded': '0',
+            },
+            'background': {
+                'color': 'o_cc5',
+            },
+            'add_classes': [
+                'pb104',
+            ],
+            'remove_classes': [
+                's_dynamic_category_clickable_items', 'pb64',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-artists.odoo.com',
