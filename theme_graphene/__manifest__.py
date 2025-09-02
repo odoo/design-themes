@@ -27,6 +27,35 @@
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
         },
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_mockup_image'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'alignment': 'left',
+            },
+            'template_key': (
+                'website_sale.dynamic_filter_template_product_public_category_default'
+            ),
+            'background': {
+                'color': 'o_cc2',
+            },
+            'add_classes': [
+                'pt96', 'pb96',
+                {
+                    's_dynamic_snippet_title': 'd-none',
+                },
+            ],
+            'remove_classes': [
+                's_dynamic_category_clickable_items', 'pt64', 'pb64',
+            ],
+        },
+    },
     'depends': ['theme_common'],
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
