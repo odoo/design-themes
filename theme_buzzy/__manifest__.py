@@ -77,6 +77,26 @@
     'configurator_snippets': {
         'homepage': ['s_banner', 's_discovery', 's_showcase', 's_key_benefits', 's_accordion_image', 's_cta_box'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_banner'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '3',
+                'rounded': '3',
+            },
+            'add_classes': [
+                {
+                    's_dynamic_snippet_title': 'd-none',
+                },
+            ],
+        },
+    },
     'new_page_templates': {
         'about': {
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
