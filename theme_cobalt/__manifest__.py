@@ -20,6 +20,30 @@
     'configurator_snippets': {
         'homepage': ['s_banner', 's_image_text', 's_key_images', 's_text_image', 's_company_team_detail', 's_references_grid'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_banner'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '3',
+                'alignment': 'right',
+            },
+            'background': {
+                'color': 'o_cc2',
+            },
+            'add_classes': [
+                'pt48', 'pb48',
+            ],
+            'remove_classes': [
+                'pt64', 'pb64', 's_dynamic_category_no_arrows',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-cobalt.odoo.com',
