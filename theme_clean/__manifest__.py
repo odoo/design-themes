@@ -64,6 +64,33 @@
     'configurator_snippets': {
         'homepage': ['s_banner', 's_color_blocks_2', 's_title', 's_text_image', 's_image_text', 's_numbers_showcase', 's_company_team', 's_accordion_image', 's_cta_card'], 
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_banner'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '3',
+                'columns': '2',
+            },
+            'background': {
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Bold/20", "colors":{"c1":"o-color-4", "c5":"o-color-1"}}',
+                    'element': """<div class="o_we_shape o_web_editor_Bold_20" style="background-image: url('/web_editor/shape/web_editor/Bold/20.svg?c1=o-color-4&c5=o-color-1');""",
+                },
+            },
+            'add_classes': [
+                'pb128',
+            ],
+            'remove_classes': [
+                'pt64', 'pb64',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-clean.odoo.com',
