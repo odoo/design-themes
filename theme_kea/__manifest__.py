@@ -80,6 +80,40 @@
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
         },
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_cover'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'size': 'small',
+                'columns': '2',
+                'rounded': '5',
+                'gap': '4',
+            },
+            'background': {
+                'color': 'o_cc2',
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Grids/04", "colors":{"c5":"o-color-1"}}',
+                    'element': """<div class="o_we_shape o_web_editor_Grids_04" style="background-image: url('/web_editor/shape/web_editor/Grids/04.svg?c5=o-color-1');""",
+                },
+            },
+
+            'add_classes': [
+                'pt88', 'pb88',
+                {
+                    's_dynamic_snippet_title': 'd-none',
+                },
+            ],
+            'remove_classes': [
+                'pt64', 'pb64',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-kea.odoo.com',
