@@ -87,6 +87,31 @@
     'configurator_snippets': {
         'homepage': ['s_discovery', 's_parallax', 's_text_block', 's_key_images', 's_image_text_overlap', 's_company_team_basic', 's_references', 's_numbers', 's_cta_box'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_key_images'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'rounded': '4',
+                'gap': '4',
+                'alignment': 'left',
+            },
+            'background': {
+                'color': 'o_cc5',
+            },
+            'add_classes': [
+                'pt88', 'pb112'
+            ],
+            'remove_classes': [
+                'pt64', 'pb64', 's_dynamic_category_no_arrows',
+            ],
+        },
+    },
     'new_page_templates': {
         'about': {
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
