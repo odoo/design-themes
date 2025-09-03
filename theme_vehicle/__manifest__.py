@@ -34,6 +34,33 @@
     'configurator_snippets': {
         'homepage': ['s_cover', 's_title', 's_three_columns', 's_picture', 's_key_images', 's_numbers_charts', 's_media_list'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_picture'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'template_key': (
+                'website_sale.dynamic_filter_template_product_public_category_default'
+            ),
+            'data_attributes': {
+                'gap': '4',
+                'alignment': 'left',
+            },
+            'background': {
+                'color': 'o_cc2',
+            },
+            'add_classes': [
+                'pt80', 'pb88',
+            ],
+            'remove_classes': [
+                'pt64', 'pb64',
+            ],
+        },
+    },
     'new_page_templates': {
         'about': {
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
