@@ -92,6 +92,29 @@
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
         },
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_key_images'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '4',
+                'rounded': '0',
+                'size': 'small',
+                'alignment': 'right',
+            },
+            'add_classes': [
+                'pt48', 'pb80',
+            ],
+            'remove_classes': [
+                'pt64', 'pb64',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-loftspace.odoo.com',
