@@ -87,6 +87,37 @@
             '2': ['s_text_cover', 's_image_text', 's_text_image', 's_image_text_2nd', 's_call_to_action'],
         },
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_freegrid'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '3',
+                'rounded': '0',
+                'size': 'small',
+            },
+            'background': {
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Connections/20","flip":["y"],"colors":{"c5":"o-color-5"}}',
+                    'element': """<div class="o_we_shape o_web_editor_Connections_20" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-5'); background-position: 50% 0%;""",
+                },
+            },
+            'add_classes': [
+                'pb48', 'pt88',
+                {
+                    's_dynamic_snippet_title': 'd-none',
+                },
+            ],
+            'remove_classes': [
+                'pb64', 'pt64',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-enark.odoo.com',
