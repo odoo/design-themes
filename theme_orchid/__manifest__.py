@@ -73,6 +73,38 @@
     'configurator_snippets': {
         'homepage': ['s_kickoff', 's_key_images', 's_process_steps', 's_freegrid', 's_image_text_overlap', 's_company_team_basic', 's_title', 's_images_wall', 's_references'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_image_text_overlap'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'columns': '2',
+                'gap': '3',
+                'size': 'small',
+                'alignment': 'left',
+            },
+            'background': {
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Connections/01", "colors":{"c5":"o-color-3"}, "flip":["x"]}',
+                    'element': """<div class="o_we_shape o_web_editor_Connections_01" style="background-image: url('/web_editor/shape/web_editor/Connections/01.svg?c5=o-color-3&amp;flip=x');""",
+                },
+            },
+            'add_classes': [
+                'pt104', 'pb152',
+                {
+                    's_dynamic_snippet_title': 's_dynamic_snippet_title_aside col-lg-3 flex-lg-column justify-content-lg-start'
+                },
+            ],
+            'remove_classes': [
+                'pt64', 'pb64',
+            ],
+        },
+    },
     'new_page_templates': {
         'about': {
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
