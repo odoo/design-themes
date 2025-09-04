@@ -83,6 +83,33 @@
     'configurator_snippets': {
         'homepage': ['s_intro_pill', 's_masonry_block_mosaic_template', 's_pricelist_boxed', 's_features_wall', 's_image_frame', 's_call_to_action'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_masonry_block_mosaic_template'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '3',
+            },
+            'background': {
+                'color': 'o_cc2',
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Bold/13", "colors":{"c5":"o-color-4"}}',
+                    'element': """<div class="o_we_shape o_web_editor_Bold_13" style="background-image: url('/web_editor/shape/web_editor/Bold/13.svg?c5=o-color-4');""",
+                },
+            },
+            'add_classes': [
+                'pt80', 'pb104',
+            ],
+            'remove_classes': [
+                'pt64', 'pb64',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-beauty.odoo.com',

@@ -20,6 +20,29 @@
     'configurator_snippets': {
         'homepage': ['s_cover', 's_references', 's_image_text', 's_text_image', 's_masonry_block_images_template', 's_faq_list', 's_cta_box'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_image_text'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'template_key': (
+                'website_sale.dynamic_filter_template_product_public_category_default'
+            ),
+            'data_attributes': {
+                'rounded': '3',
+                'gap': '3',
+                'size': 'small',
+                'alignment': 'left',
+            },
+            'remove_classes': [
+                's_dynamic_category_clickable_items',
+            ],
+        },
+    },
     'new_page_templates': {
         'about': {
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],

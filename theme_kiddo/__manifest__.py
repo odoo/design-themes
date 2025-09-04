@@ -81,6 +81,28 @@
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
         },
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_banner'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'rounded': '4',
+                'gap': '3',
+                'alignment': 'left',
+            },
+            'background': {
+                'color': 'o_cc2',
+            },
+            'remove_classes': [
+                's_dynamic_category_no_arrows',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-kiddo.odoo.com',

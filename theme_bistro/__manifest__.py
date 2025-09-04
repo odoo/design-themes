@@ -81,6 +81,30 @@
         'homepage': ['s_image_title', 's_key_images', 's_pricelist_cafe', 's_quotes_carousel', 's_quadrant'],
         'pricing': ["s_text_image", "s_product_catalog"],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_image_title'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '3',
+                'alignment': 'left',
+            },
+            'background': {
+                'color': 'o_cc5',
+            },
+            'add_classes': [
+                'pt80', 'pb112',
+            ],
+            'remove_classes': [
+                'pt64', 'pb64',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-bistro.odoo.com',

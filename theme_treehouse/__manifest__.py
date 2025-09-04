@@ -80,6 +80,35 @@
     'configurator_snippets': {
         'homepage': ['s_sidegrid', 's_numbers_list', 's_color_blocks_2', 's_references', 's_freegrid'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_color_blocks_2'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '3',
+                'size': 'small',
+                'alignment': 'left',
+            },
+            'background': {
+                'color': 'o_cc2',
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Connections/09", "colors":{"c5":"o-color-4"}, "flip":["x"]}',
+                    'element': """<div class="o_we_shape o_web_editor_Connections_09" style="background-image: url('/web_editor/shape/web_editor/Connections/09.svg?c5=o-color-4&amp;flip=x');""",
+                },
+            },
+            'add_classes': [
+                'pt88', 'pb144',
+            ],
+            'remove_classes': [
+                'pt64', 'pb64',
+            ],
+        },
+    },
     'new_page_templates': {
         'about': {
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],

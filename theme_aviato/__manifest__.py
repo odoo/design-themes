@@ -80,6 +80,32 @@
     'configurator_snippets': {
         'homepage': ['s_banner', 's_text_image', 's_image_text', 's_picture', 's_title', 's_masonry_block_default_template', 's_company_team', 's_showcase', 's_quotes_carousel'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_image_text'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '3',
+            },
+            'background': {
+                'shape': {
+                    'data-oe-shape-data': '{"shape":"web_editor/Connections/20", "colors":{"c5":"o-color-3"}}',
+                    'element': """<div class="o_we_shape o_web_editor_Connections_20" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-3');""",
+                },
+            },
+            'add_classes': [
+                'pb80',
+            ],
+            'remove_classes': [
+                'pb64',
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-aviato.odoo.com',
