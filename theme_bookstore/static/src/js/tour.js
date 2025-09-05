@@ -41,6 +41,6 @@ wTourUtils.registerThemeHomepageTour("bookstore_tour", () => [
     ...wTourUtils.insertSnippet(snippets[3]),
     ...wTourUtils.insertSnippet(snippets[4]),
     ...wTourUtils.clickOnSnippet(snippets[4]),
-    wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
+    wTourUtils.changeOption('Box Call to Action', 'setContainerWidth', _t('width')),
     wTourUtils.goBackToBlocks(),
 ]);
