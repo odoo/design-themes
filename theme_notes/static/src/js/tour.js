@@ -54,7 +54,7 @@ wTourUtils.registerThemeHomepageTour("notes_tour", () => [
     ...wTourUtils.insertSnippet(snippets[1]),
     ...wTourUtils.insertSnippet(snippets[2]),
     ...wTourUtils.clickOnSnippet(snippets[2]),
-    wTourUtils.changeOption('ContainerWidth', 'we-button-group.o_we_user_value_widget', _t('width')),
+    wTourUtils.changeOption('Columns', 'setContainerWidth', _t('width')),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[3]),
     ...wTourUtils.insertSnippet(snippets[4]),
