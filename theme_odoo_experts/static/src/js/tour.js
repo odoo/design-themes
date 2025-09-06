@@ -52,8 +52,8 @@ wTourUtils.registerThemeHomepageTour("odoo_experts_tour", () => [
     ...wTourUtils.insertSnippet(snippets[4]),
     ...wTourUtils.insertSnippet(snippets[5]),
     ...wTourUtils.clickOnSnippet(snippets[5], 'top'),
-    wTourUtils.changeOption('ColoredLevelBackground', 'we-button[data-toggle-bg-shape]', _t('Background Shape')),
-    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
+    wTourUtils.changeOption('FAQ Block', 'toggleBgShape', _t('Background Shape')),
+    wTourUtils.clickOnElement("shape", ".builder_select_page [data-action-id='setBackgroundShape']"),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[6]),
 ]);
