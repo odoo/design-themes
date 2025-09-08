@@ -169,17 +169,17 @@ $o-theme-color-palettes-compatibility-indexes: (
 // Shapes
 //------------------------------------------------------------------------------
 
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/22', (3: 3));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/02', (1: 4, 2: 3, 3: 2, 4: 3, 5: 5));
-$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Wavy/22', 'second', (3: 3));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/03', (1: 4, 2: 3));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Floats/01', (1: 4, 2: 3, 3: 3, 4: 1, 5: 5));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/14_001', (3: 1, 4: 1));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Wavy/22', (3: 3));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Floats/02', (1: 4, 2: 3, 3: 2, 4: 3, 5: 5));
+$o-bg-shapes: add-extra-shape-colors-mapping('html_builder', 'Wavy/22', 'second', (3: 3));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Wavy/03', (1: 4, 2: 3));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Floats/01', (1: 4, 2: 3, 3: 3, 4: 1, 5: 5));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Origins/14_001', (3: 1, 4: 1));
 
 // Keep for compatibility
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/03', (3: 5));
-$o-bg-shapes: add-header-shape-colors-mapping('web_editor', 'Origins/07_001', (3: 'menu'));
-$o-bg-shapes: add-header-shape-colors-mapping('web_editor', 'Origins/07_002', (3: 'menu', 4: rgba(255, 255, 255, 0)));
-$o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Origins/14', (4: 'footer'));
-$o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Origins/14_001', (3: 'footer', 4: rgba(255, 255, 255, 0)));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/02_001', (4: 5, 5: rgba(255, 255, 255, 0)));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Origins/03', (3: 5));
+$o-bg-shapes: add-header-shape-colors-mapping('html_builder', 'Origins/07_001', (3: 'menu'));
+$o-bg-shapes: add-header-shape-colors-mapping('html_builder', 'Origins/07_002', (3: 'menu', 4: rgba(255, 255, 255, 0)));
+$o-bg-shapes: add-footer-shape-colors-mapping('html_builder', 'Origins/14', (4: 'footer'));
+$o-bg-shapes: add-footer-shape-colors-mapping('html_builder', 'Origins/14_001', (3: 'footer', 4: rgba(255, 255, 255, 0)));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Origins/02_001', (4: 5, 5: rgba(255, 255, 255, 0)));

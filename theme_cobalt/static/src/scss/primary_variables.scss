@@ -76,8 +76,8 @@ $o-color-palettes-compatibility-indexes: (
 // Shapes
 //------------------------------------------------------------------------------
 // Keep for compatibility
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Blobs/03', (2: 2));
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Bold/01', (2: 2));
-$o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Bold/01', (2: 'footer'));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Blobs/03', (2: 2));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Bold/01', (2: 2));
+$o-bg-shapes: add-footer-shape-colors-mapping('html_builder', 'Bold/01', (2: 'footer'));
 // New
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Origins/11_001', (3: 1));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Origins/11_001', (3: 1));
