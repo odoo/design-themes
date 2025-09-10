@@ -139,6 +139,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$default-16: map-get($o-color-palettes, 'default-16');
+$default-16: map-merge($default-16, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('default-16': $default-16));
+
 $o-color-palettes-compatibility-indexes: (
     1: 'kiddo-3',
     2: 'kiddo-2',

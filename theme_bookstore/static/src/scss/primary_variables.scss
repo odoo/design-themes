@@ -74,6 +74,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$default-26: map-get($o-color-palettes, 'default-26');
+$default-26: map-merge($default-26, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('default-26': $default-26));
+
 $o-color-palettes-compatibility-indexes: (
     1: 'bookstore-1',
     2: 'bookstore-2',
