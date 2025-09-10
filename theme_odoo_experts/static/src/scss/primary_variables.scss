@@ -93,6 +93,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$default-11: map-get($o-color-palettes, 'default-11');
+$default-11: map-merge($default-11, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('default-11': $default-11));
+
 $o-palette-priority-prefix: 'odoo-experts';
 
 $o-color-palettes-compatibility-indexes: (
