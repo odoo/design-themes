@@ -156,6 +156,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$default-light-12: map-get($o-color-palettes, 'default-light-12');
+$default-light-12: map-merge($default-light-12, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('default-light-12': $default-light-12));
+
 $o-color-palettes-compatibility-indexes: (
     1: 'enark-1',
     2: 'enark-2',
