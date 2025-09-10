@@ -32,6 +32,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$default-24: map-get($o-color-palettes, 'default-24');
+$default-24: map-merge($default-24, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('default-24': $default-24));
+
 //------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------

@@ -51,6 +51,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$default-8: map-get($o-color-palettes, 'default-8');
+$default-8: map-merge($default-8, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('default-8': $default-8));
+
 $o-color-palettes-compatibility-indexes: (
     1: 'cobalt-1',
     2: 'generic-1',

@@ -67,6 +67,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$default-light-9: map-get($o-color-palettes, 'default-light-9');
+$default-light-9: map-merge($default-light-9, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('default-light-9': $default-light-9));
+
 $o-color-palettes-compatibility-indexes: (
     1: 'orchid-1',
     2: 'orchid-2',

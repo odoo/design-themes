@@ -186,6 +186,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$default-15: map-get($o-color-palettes, 'default-15');
+$default-15: map-merge($default-15, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('default-15': $default-15));
+
 $o-color-palettes-compatibility-indexes: (
     1: 'avantgarde-1',
     2: 'avantgarde-2',

@@ -120,6 +120,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$artists-1: map-get($o-color-palettes, 'artists-1');
+$artists-1: map-merge($artists-1, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('artists-1': $artists-1));
+
 $o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'artists-1');
 
 $o-color-palettes-compatibility-indexes: (

@@ -111,6 +111,10 @@ $o-website-values-palettes: (
     ),
 );
 
+$base-1: map-get($o-color-palettes, 'base-1');
+$base-1: map-merge($base-1, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('base-1': $base-1));
+
 $o-color-palettes-compatibility-indexes: (
     1: 'graphene-1',
     2: 'graphene-2',
