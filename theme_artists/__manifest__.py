@@ -113,6 +113,7 @@
         'views/snippets/s_split_intro.xml',
         'views/snippets/s_form_aside.xml',
         'views/snippets/s_numbers_framed.xml',
+        'views/snippets/s_company_team_card.xml',
         'views/new_page_template.xml',
     ],
     'images': [
