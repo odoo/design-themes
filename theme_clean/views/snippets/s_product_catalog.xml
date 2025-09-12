@@ -10,7 +10,9 @@
     </xpath>
     <!-- Filter & Parallax -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
-        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_product_catalog_default_image');"/>
+        <span class="s_parallax_bg_wrap">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_product_catalog_default_image');"/>
+        </span>
         <div class="o_we_bg_filter bg-black-50"/>
     </xpath>
 </template>
