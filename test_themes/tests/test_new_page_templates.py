@@ -13,7 +13,6 @@ _logger = logging.getLogger(__name__)
 
 CONFLICTUAL_CLASSES = [
     ['btn-outline-primary', 'btn-primary', 'btn-secondary'],
-    ['btn-block', 'btn-outline-primary'],
     ['container', 'container-fluid', 'o_container_small'],
     ['d-block', 'd-flex', 'd-inline-block', 'd-none'],
     ['d-block', 'd-lg-block', 'd-md-block'],
