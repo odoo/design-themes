@@ -18,7 +18,7 @@
             </h1>
             <p>With over 15 years of proven success, we deliver expert guidance and strategic insights for your business’s future.</p>
             <p><br/></p>
-            <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg"><t t-esc="cta_btn_text">Learn more</t></a>
+            <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg"><t t-out="cta_btn_text">Learn more</t></a>
         </div>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
