@@ -19,7 +19,7 @@
     </xpath>
     <!-- CTA -->
     <xpath expr="//p" position="after">
-        <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg"><t t-esc="cta_btn_text">Contact us</t></a>
+        <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg"><t t-out="cta_btn_text">Contact us</t></a>
     </xpath>
     <!-- Remove right-side button -->
     <xpath expr="//div[hasclass('col-lg-3')]" position="replace"/>
