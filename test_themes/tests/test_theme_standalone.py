@@ -1,6 +1,6 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo.addons.http_routing.tests.common import MockRequest
+from unittest.mock import patch
 from odoo.tests import standalone
 
 
@@ -22,8 +22,22 @@ def test_01_theme_install_generate_primary_templates(env):
     env['ir.ui.view'].with_context(_force_unlink=True).search([('key', '=', 'website.configurator_s_cover')]).unlink()
     theme_buzzy.button_immediate_install()
 
+
 @standalone('website_standalone')
 def test_02_theme_default_generate_primary_templates(env):
+
+    def fake_website_api(self, path, payload):
+        # Only the configurator custom_resources endpoint is used here
+        assert path.startswith("/api/website/2/configurator/custom_resources")
+        return {'images': {}}
+
+    def fake_olg_api(self, path, payload):
+        # Placeholder generator used by configurator
+        assert path == "/api/olg/1/generate_placeholder"
+        placeholders = payload.get("placeholders", [])
+        mapping = {key: key for key in placeholders}
+        return mapping
+
     # Verify that theme default's configurator templates are created
     # on website update.
     theme_default = env.ref('base.module_theme_default')
@@ -33,25 +47,28 @@ def test_02_theme_default_generate_primary_templates(env):
         theme_default.button_immediate_uninstall()
     env['ir.ui.view'].with_context(_force_unlink=True).search([('key', 'like', 'website.configurator_')]).unlink()
 
-    if website_module.state == 'installed':
-        website_module.button_immediate_upgrade()
-    else:
-        website_module.button_immediate_install()
+    with patch("odoo.addons.website.models.website.Website._website_api_rpc", autospec=True, side_effect=fake_website_api), \
+         patch("odoo.addons.website.models.website.Website._OLG_api_rpc", autospec=True, side_effect=fake_olg_api):
 
-    template_keys = env['ir.ui.view'].search([('key', 'like', 'website.configurator')]).mapped('key')
-    manifest = env['ir.module.module'].get_module_info('theme_default')
-    snippets_per_page = manifest.get('configurator_snippets')
-    for page in snippets_per_page:
-        for snippet in snippets_per_page[page]:
-            template_key = f'website.configurator_{page}_{snippet}'
-            assert template_key in template_keys, f"{template_key} should exist"
+        if website_module.state == 'installed':
+            website_module.button_immediate_upgrade()
+        else:
+            website_module.button_immediate_install()
 
-    env['website'].with_context(website_id=1).configurator_apply(
-        selected_features=[1, 2, 3, 4],
-        industry_id=2836,
-        industry_name='private university',
-        selected_palette='default-15',
-        theme_name='theme_bewise',
-        website_purpose='get_leads',
-        website_type='business',
-    )
+        template_keys = env['ir.ui.view'].search([('key', 'like', 'website.configurator')]).mapped('key')
+        manifest = env['ir.module.module'].get_module_info('theme_default')
+        snippets_per_page = manifest.get('configurator_snippets')
+        for page in snippets_per_page:
+            for snippet in snippets_per_page[page]:
+                template_key = f'website.configurator_{page}_{snippet}'
+                assert template_key in template_keys, f"{template_key} should exist"
+
+        env['website'].with_context(website_id=1).configurator_apply(
+            selected_features=[1, 2, 3, 4],
+            industry_id=2836,
+            industry_name='private university',
+            selected_palette='default-15',
+            theme_name='theme_bewise',
+            website_purpose='get_leads',
+            website_type='business',
+        )
