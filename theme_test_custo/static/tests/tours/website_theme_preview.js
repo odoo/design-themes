@@ -15,6 +15,7 @@ registry.category("web_tour.tours").add("website_theme_preview", {
     content: "Validate the website creation modal",
     trigger: ".modal button.btn-primary",
     run: "click",
+    expectUnloadPage: true,
 },
 // Configurator first screen
 {
