@@ -1,6 +1,8 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from unittest.mock import patch
+
+from odoo.addons.http_routing.tests.common import MockRequest
 from odoo.tests import standalone
 
 
@@ -63,12 +65,15 @@ def test_02_theme_default_generate_primary_templates(env):
                 template_key = f'website.configurator_{page}_{snippet}'
                 assert template_key in template_keys, f"{template_key} should exist"
 
-        env['website'].with_context(website_id=1).configurator_apply(
-            selected_features=[1, 2, 3, 4],
-            industry_id=2836,
-            industry_name='private university',
-            selected_palette='default-15',
-            theme_name='theme_bewise',
-            website_purpose='get_leads',
-            website_type='business',
-        )
+        website = env['website'].search([], limit=1)
+        website.ensure_one()
+        with MockRequest(env, website=website):
+            website.configurator_apply(
+                selected_features=[1, 2, 3, 4],
+                industry_id=2836,
+                industry_name='private university',
+                selected_palette='default-15',
+                theme_name='theme_bewise',
+                website_purpose='get_leads',
+                website_type='business',
+            )
