@@ -23,5 +23,4 @@
     ],
     'price': 199,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-kiddo.odoo.com/page/demo'
 }

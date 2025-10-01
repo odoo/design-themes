@@ -48,5 +48,4 @@
     ],
     'price': 199,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-zap.odoo.com/page/demo_page_home'
 }

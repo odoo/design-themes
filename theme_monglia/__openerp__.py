@@ -23,5 +23,4 @@
     ],
     'price': 195,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-monglia.odoo.com',
 }
