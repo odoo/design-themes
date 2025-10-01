@@ -29,7 +29,6 @@
     },
     'depends': ['theme_common'],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-avantgarde.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_avantgarde/static/src/js/tour.js',

@@ -45,7 +45,6 @@
         'homepage': ['s_cover', 's_text_image', 's_title', 's_product_list', 's_company_team', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-beauty.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_beauty/static/src/js/tour.js',

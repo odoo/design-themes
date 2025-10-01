@@ -31,7 +31,6 @@
         '_': ['s_image_text', 's_three_columns', 's_picture'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-cobalt.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_cobalt/static/src/js/tour.js',
