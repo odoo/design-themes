@@ -4,13 +4,15 @@
 <template id="s_product_catalog" inherit_id="website.s_product_catalog">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc3 pb160 pt160 parallax s_parallax_is_fixed s_parallax_no_overflow_hidden o_full_screen_height" remove="pb64 pt64" separator=" "/>
+        <attribute name="class" add="o_cc o_cc3 pb160 pt160 parallax s_parallax_is_fixed o_full_screen_height" remove="pb64 pt64" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"html_builder/Wavy/10","colors":{"c1":"o-color-2","c2":"o-color-2"},"flip":[]}</attribute>
         <attribute name="data-scroll-background-ratio">1</attribute>
     </xpath>
     <!-- Shape & Background image -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
-        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url('/web/image/website.s_product_catalog_default_image');"/>
+        <span class="s_parallax_bg_wrap">
+            <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url('/web/image/website.s_product_catalog_default_image');"/>
+        </span>
         <div class="o_we_bg_filter bg-black-50"/>
         <div class="o_we_shape o_html_builder_Wavy_10" style="background-image: url('/html_editor/shape/html_builder/Wavy/10.svg?c1=o-color-2&amp;c2=o-color-2');"/>
     </xpath>

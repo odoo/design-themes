@@ -14,7 +14,7 @@
         <div class="o_we_shape o_html_builder_Rainy_08_001"/>
     </xpath>
     <!-- Remove the background image for parallax -->
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
         Always at the top

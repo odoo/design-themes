@@ -15,7 +15,7 @@
     </xpath>
 
     <!-- Remove the parallax effect: the background image has been already set in the main <section> tag -->
-    <xpath expr="//span[hasclass('s_parallax_bg')]" position="replace"/>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
 
     <!-- Text -->
     <xpath expr="//p" position="replace" mode="inner">
