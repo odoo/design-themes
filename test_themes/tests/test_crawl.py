@@ -49,11 +49,4 @@ class Crawler(HttpCase):
         Website = self.env['website']
         websites_themes = Website.get_test_themes_websites()
         for website in websites_themes:
-            # TODO: remove this invalidation and invalidation in theme feature.
-            # They are missing invalidations of template ormcache and others.
-            # The configurator_apply method and various methods used for theme
-            # added on `ir.module.module` from website write directly on
-            # `ir.model.data` and update attachments, views, xmlids.
-            self.env.registry.clear_cache('templates')
-
             self.start_tour(f"/web?fw={website.id}", 'homepage', login='admin')
