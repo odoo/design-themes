@@ -22,8 +22,8 @@
         <attribute name="src">/web/image/website.library_image_16</attribute>
     </xpath>
     <!-- Item #2 - Indicator -->
-    <xpath expr="//div[hasclass('carousel-indicators')]//button[3]" position="attributes">
-        <attribute name="style">background-image: url(/web/image/website.library_image_16)</attribute>
+    <xpath expr="//div[hasclass('carousel-indicators')]//button[2]//img" position="attributes">
+        <attribute name="src">/web/image/website.library_image_16</attribute>
     </xpath>
 </template>
 
