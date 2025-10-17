@@ -1,6 +1,5 @@
 {
     'name': 'Themes Testing Module',
-    'version': '1.0',
     'category': 'Hidden',
     'sequence': 9877,
     'summary': 'Create a new website for each Odoo theme for an easy preview.',
@@ -41,7 +40,6 @@
         'theme_yes',
         'theme_zap',
     ],
-    'installable': True,
     'post_init_hook': 'post_init_hook',
     'assets': {
         'website.assets_editor': [
