@@ -54,7 +54,7 @@
     <xpath expr="//a[@t-att-href='cta_btn_href']" position="replace" mode="inner">
         GET TICKETS NOW
     </xpath>
-    <xpath expr="//a[@href='/contactus']" position="replace"/>
+    <xpath expr="//t[@t-set='contact_us_label']/following-sibling::a[1]" position="replace"/>
 </template>
 
 <!-- ======== NUMBERS GRID ======== -->
