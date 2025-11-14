@@ -5,7 +5,7 @@
     'summary': 'Vehicle, Cars, Motorbikes, Bikes, Tires, Transports, Repair, Mechanics, Garages, Sports, Services',
     'sequence': 300,
     'version': '2.0.0',
-    'depends': ['theme_common'],
+    'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',

@@ -5,7 +5,7 @@
     'summary': 'Artist, Arts, Galleries, Creative, Paintings, Photography, Shows, Stores',
     'sequence': 310,
     'version': '2.1.0',
-    'depends': ['theme_common'],
+    'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',

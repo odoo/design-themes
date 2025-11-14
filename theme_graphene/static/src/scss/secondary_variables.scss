@@ -1,3 +1,19 @@
+// From old theme common.
+@function o-theme-common-add-color-variations($from, $to, $variations: ('light': 10%, 'dark': -10%)) {
+    $color-variations: ();
+    @each $color-name in ('alpha', 'beta', 'gamma', 'delta', 'epsilon') {
+        $color: map-get($from, $color-name);
+        @if $color != null {
+            @each $variation-name, $amount in $variations {
+                $color-variations: map-merge($color-variations, (
+                    '#{$color-name}-#{$variation-name}': adjust-color($color, $lightness: $amount),
+                ));
+            }
+        }
+    }
+    @return map-merge($color-variations, $to);
+}
+
 // TODO Maybe we should handle light/dark variation in standard in such a way no
 // extra classes are created (border-alpha-light, btn-epsilon-dark, ...)
 $-palettes: $o-theme-color-palettes;

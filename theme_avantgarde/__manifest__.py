@@ -49,7 +49,7 @@
             ],
         },
     },
-    'depends': ['theme_common'],
+    'depends': ['website'],
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
     'live_test_url': 'https://theme-avantgarde.odoo.com',
