@@ -11,7 +11,7 @@
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
     </xpath>
     <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
-        <i class="fa fa-fw fa-circle text-success o_not-animable" aria-hidden="true"/><span class="o_small-fs">&#160;&#160;AVAILABLE FOR NEW PROJECTS</span>
+        <i class="fa fa-fw fa-circle text-success o_not-animable" aria-hidden="true"/><span class="o_small-fs">&#160;AVAILABLE FOR NEW PROJECTS</span>
     </xpath>
 
     <xpath expr="//h1" position="replace">
@@ -29,7 +29,7 @@
 <template id="configurator_s_discovery" inherit_id="website.configurator_s_discovery">
     <!-- CTA -->
     <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
-        <i class="fa fa-circle text-success" aria-hidden="true"/>&#160;&#160;AVAILABLE FOR NEW PROJECTS&#160;&#160;&#160;&#160;<a href="#">Contact us&#160;&#160;<i class="fa fa-long-arrow-right" aria-hidden="true"/></a>
+        <i class="fa fa-circle text-success" aria-hidden="true"/> AVAILABLE FOR NEW PROJECTS&#160;<a href="#">Contact us&#160;<i class="fa fa-long-arrow-right" aria-hidden="true"/></a>
     </xpath>
 </template>
 
