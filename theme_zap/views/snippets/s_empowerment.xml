@@ -4,8 +4,8 @@
 <template id="s_empowerment" inherit_id="website.s_empowerment">
     <!-- Badge content -->
     <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
-        <i class="fa fa-fw fa-info-circle o_not-animable" role="img"/>&#160;&#160;Innovative solutions&#160;&#160;&#160;&#160;
-        <a href="#">See our projects&#160;&#160; <i class="fa fa-long-arrow-right" role="img"/></a>
+        <i class="fa fa-fw fa-info-circle o_not-animable" role="img"/> Innovative solutions&#160;
+        <a href="#">See our projects&#160;<i class="fa fa-long-arrow-right" role="img"/></a>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
