@@ -4,13 +4,15 @@
 #
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# DeepL <noreply-mt-deepl@weblate.org>, 2025.
+# Odoo Turkish Import <dyki+tr@odoo.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-09 10:57+0000\n"
-"PO-Revision-Date: 2025-11-08 19:40+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"PO-Revision-Date: 2025-11-22 19:40+0000\n"
+"Last-Translator: Odoo Turkish Import <dyki+tr@odoo.com>\n"
 "Language-Team: Turkish <https://translate.odoo.com/projects/odoo-19/"
 "theme_vehicle/tr/>\n"
 "Language: tr\n"
@@ -93,6 +95,8 @@ msgid ""
 "75% of our clients choose to upgrade to the latest models every 3 years, "
 "showcasing strong brand loyalty and trust."
 msgstr ""
+"75% oMüşterilerimiz her 3 yılda bir en yeni modellere geçmeyi tercih ederek "
+"güçlü bir marka sadakati ve güveni sergiliyor."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.configurator_s_three_columns
@@ -100,21 +104,24 @@ msgid ""
 "<a href=\"#\" class=\"btn btn-primary btn-block mb-0 o_cc o_cc4 "
 "o_translate_inline\">Configure</a>"
 msgstr ""
+"<a href=\"#\" class="
+"\"btn btn-primary btn-block mb-0 o_cc o_cc4 o_translate_inline\""
+">Yapılandırma</a>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_call_to_action
 msgid "<b>50,000 pre-orders</b> already registered."
-msgstr ""
+msgstr "<b>50.000 ön sipariş</b> şimdiden kaydedildi."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_image_text
 msgid "<b>A greener lifestyle</b>"
-msgstr ""
+msgstr "<b>Daha yeşil bir yaşam tarzı</b>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_text_image
 msgid "<b>The world is yours</b>"
-msgstr ""
+msgstr "<b>Dünya senin</b>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_split_intro
@@ -124,6 +131,11 @@ msgid ""
 "help you find the perfect car. Whether you want a sedan, SUV, or truck, we "
 "make your car-buying experience easy and satisfying.<br/><br/>"
 msgstr ""
+"<br/>Yaşam tarzınıza uygun geniş araç yelpazemizi keşfedin. Güvenilir "
+"otomobil bayiniz olarak, mükemmel otomobili bulmanıza yardımcı olmak için "
+"kişiselleştirilmiş hizmet ve rekabetçi fiyatlar sunuyoruz. İster sedan, "
+"ister SUV veya kamyonet olsun, araba satın alma deneyiminizi kolay ve tatmin "
+"edici hale getiriyoruz.<br/><br/>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_empowerment
@@ -142,6 +154,10 @@ msgid ""
 "            87%\n"
 "        </font>"
 msgstr ""
+"<font class=\"text-gradient\" style=\"background-image: linear-gradient("
+"0deg, var(--o-color-5) 0%, var(--o-color-4) 90%);\">%);\">\n"
+"            87%\n"
+"        </font>"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_empowerment
@@ -213,7 +229,7 @@ msgstr "Aerodinamik Tasarım"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_title
 msgid "All our models"
-msgstr ""
+msgstr "Tüm modellerimiz"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_wall
@@ -227,19 +243,19 @@ msgstr ""
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid "Bespoke Automotive Solutions"
-msgstr ""
+msgstr "Ismarlama Otomotiv Çözümleri"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_freegrid
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_quadrant
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_striped_center_top
 msgid "Book a Service"
-msgstr ""
+msgstr "Servis Rezervasyonu Yapın"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_empowerment
 msgid "Book a test drive"
-msgstr ""
+msgstr "Test sürüşü için rezervasyon yaptırın"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_product_list
@@ -308,7 +324,7 @@ msgstr ""
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
 msgid "Comprehensive Support"
-msgstr ""
+msgstr "Kapsamlı Destek"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
@@ -327,12 +343,12 @@ msgstr "Bize Ulaşın"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Custom Interior Upgrades"
-msgstr ""
+msgstr "Özel İç Yükseltmeler"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
 msgid "Custom Vehicle Options"
-msgstr ""
+msgstr "Özel Araç Seçenekleri"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_three_columns
@@ -357,6 +373,8 @@ msgid ""
 "provide unparalleled quality and sophistication. Experience excellence on "
 "every drive."
 msgstr ""
+"Benzersiz kalite ve incelik sağlamak üzere tasarlanmış lüks araçlara yönelik "
+"özel hizmet yelpazemizi keşfedin. Her sürüşte mükemmelliği yaşayın."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
@@ -389,27 +407,27 @@ msgstr "Hayalinizdeki Aracı Kullanın: Her Yolculuk İçin Kaliteli Otomobiller
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_split_intro
 msgid "Drive away in<br/>your dream car"
-msgstr ""
+msgstr "Hayalinizdeki arabayı<br/>adresinde sürün"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_striped_center_top
 msgid "Drive with Confidence and Style"
-msgstr ""
+msgstr "Güven ve Stil Sahibi Sürüş"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_card_offset
 msgid "Drive with confidence."
-msgstr ""
+msgstr "Güvenle sürün."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_unveil
 msgid "Drive your Passion"
-msgstr ""
+msgstr "Tutkunuzu Yönlendirin"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_carousel_intro
 msgid "Driving excellence with luxury vehicles"
-msgstr ""
+msgstr "Lüks araçlarla mükemmellik sürüşü"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features
@@ -441,12 +459,12 @@ msgstr ""
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid "Excellence and Craftsmanship"
-msgstr ""
+msgstr "Mükemmellik ve Ustalık"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Exclusive Exterior Customization"
-msgstr ""
+msgstr "Özel Dış Özelleştirme"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
@@ -460,16 +478,19 @@ msgid ""
 "performance engine, designed for an exhilarating driving experience on both "
 "the track and the road."
 msgstr ""
+"Hem pistte hem de yolda heyecan verici bir sürüş deneyimi için tasarlanan "
+"spor otomobilimizin yüksek performanslı motoru ile heyecan verici hızlanma "
+"ve en yüksek hızları deneyimleyin."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_carousel_intro
 msgid "Experience top-tier luxury"
-msgstr ""
+msgstr "Üst düzey lüksü deneyimleyin"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_wall
 msgid "Expert Vehicle Service"
-msgstr ""
+msgstr "Uzman Araç Servisi"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
@@ -497,6 +518,8 @@ msgid ""
 "Explore our extensive inventory of new and pre-owned cars to find the "
 "perfect vehicle that fits your needs and budget."
 msgstr ""
+"İhtiyaçlarınıza ve bütçenize uygun mükemmel aracı bulmak için yeni ve ikinci "
+"el otomobillerden oluşan kapsamlı envanterimizi keşfedin."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_images_mosaic
@@ -512,7 +535,7 @@ msgstr "Premium araç satışlarıyla <br/> hayalinizdeki aracı bulun"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_wall
 msgid "Flexible Financing Options"
-msgstr ""
+msgstr "Esnek Finansman Seçenekleri"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
@@ -541,11 +564,14 @@ msgid ""
 "controls, and premium materials, all crafted to enhance your driving "
 "pleasure and comfort."
 msgstr ""
+"Sürüş keyfinizi ve konforunuzu artırmak için hazırlanmış spor koltuklar, "
+"sezgisel kontroller ve birinci sınıf malzemelerle kendinizi sürücü odaklı "
+"bir kokpite bırakın."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid "Innovation and Performance"
-msgstr ""
+msgstr "İnovasyon ve Performans"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_call_to_action
@@ -569,6 +595,9 @@ msgid ""
 "maintenance services. From cars to motorbikes, we offer expert solutions to "
 "ensure safe and smooth rides."
 msgstr ""
+"Kapsamlı onarım ve bakım hizmetlerimizle aracınızı en iyi durumda tutun. "
+"Otomobillerden motosikletlere kadar, güvenli ve sorunsuz sürüşler sağlamak "
+"için uzman çözümler sunuyoruz."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_quadrant
@@ -577,6 +606,9 @@ msgid ""
 "services. From cars to motorbikes, we’ve got you covered.<br/><br/> Drive "
 "with confidence and style."
 msgstr ""
+"Uzman onarım ve bakım hizmetlerimizle aracınızı en iyi durumda tutun. "
+"Otomobillerden motosikletlere kadar her şey elimizin altında.<br/><br/> "
+"Güvenle ve tarzınızla sürün."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_striped_center_top
@@ -590,7 +622,7 @@ msgstr ""
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_numbers_charts
 msgid "Key Metrics of our Achievements"
-msgstr ""
+msgstr "Başarılarımızın Temel Ölçütleri"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_three_columns
@@ -623,7 +655,7 @@ msgstr ""
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Luxury Vehicle Servicing"
-msgstr ""
+msgstr "Lüks Araç Servisi"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_media_list
@@ -639,7 +671,7 @@ msgstr "Taviz yok"
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_images_mosaic
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Our Luxury Vehicle Services"
-msgstr ""
+msgstr "Lüks Araç Hizmetlerimiz"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_references
@@ -658,6 +690,9 @@ msgid ""
 "forward, enabling us to deliver excellence across all categories of the "
 "automotive industry."
 msgstr ""
+"İnovasyon, performans ve sürdürülebilirliğe olan bağlılığımız bizi ileriye "
+"taşıyor ve otomotiv endüstrisinin tüm kategorilerinde mükemmellik sunmamızı "
+"sağlıyor."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_benefits
@@ -680,6 +715,9 @@ msgid ""
 "super car. No compromises were made to keep the pleasure of driving despite "
 "those constraints."
 msgstr ""
+"Bu süper otomobilin tasarlanması sırasında performans ve tasarım anahtar "
+"kelimelerdi. Bu kısıtlamalara rağmen sürüş keyfini korumak için hiçbir ödün "
+"verilmedi."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
@@ -712,12 +750,12 @@ msgstr "Hassas Sürüş"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_striped_center_top
 msgid "Precision in every detail"
-msgstr ""
+msgstr "Her ayrıntıda hassasiyet"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "Premium Detailing Package"
-msgstr ""
+msgstr "Premium Detaylandırma Paketi"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
@@ -727,17 +765,17 @@ msgstr "Yüksek Segment Otomobil İhtiyaçlarınız İçin Premium Hizmetler"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_carousel_intro
 msgid "Premium automotive services"
-msgstr ""
+msgstr "Premium otomotiv hizmetleri"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_card_offset
 msgid "Reliable Vehicle Services &amp; Repairs"
-msgstr ""
+msgstr "Güvenilir Araç Hizmetleri &amp; Onarımlar"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_freegrid
 msgid "Reliable Vehicle Services and Maintenance"
-msgstr ""
+msgstr "Güvenilir Araç Servis ve Bakım"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
@@ -761,7 +799,7 @@ msgstr "Motoru çalıştır"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
 msgid "State-of-the-art facilities for superior maintenance"
-msgstr ""
+msgstr "Üstün bakım için son teknoloji tesisler"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
@@ -791,7 +829,7 @@ msgstr "Hepsini alın. İltifatları da. <br/><br/>"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cover
 msgid "The New KORAN X"
-msgstr ""
+msgstr "Yeni KORAN X"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_cta_box
@@ -815,6 +853,9 @@ msgid ""
 "opulence meets cutting-edge technology. Elevate your journey with vehicles "
 "that blend sophistication and performance seamlessly."
 msgstr ""
+"Zenginliğin en son teknolojiyle buluştuğu özel koleksiyonumuzla sürüş "
+"deneyiminizi dönüştürün. Sofistike ve performansı kusursuz bir şekilde "
+"harmanlayan araçlarla yolculuğunuzu yükseltin."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_key_images
@@ -853,6 +894,8 @@ msgid ""
 "We offer personalized vehicle configurations to match your preferences and "
 "needs, ensuring you get the perfect fit for your lifestyle."
 msgstr ""
+"Tercihlerinize ve ihtiyaçlarınıza uygun kişiselleştirilmiş araç "
+"konfigürasyonları sunarak yaşam tarzınıza en uygun aracı almanızı sağlıyoruz."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
@@ -861,6 +904,9 @@ msgid ""
 "Leveraging cutting-edge features, we ensure every vehicle provides "
 "exceptional performance and sophistication."
 msgstr ""
+"Otomotiv teknolojisi ve tasarımındaki en son gelişmeleri sunuyoruz. En yeni "
+"özelliklerden yararlanarak, her aracın olağanüstü performans ve sofistike "
+"olmasını sağlıyoruz."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_numbers_charts
@@ -879,12 +925,12 @@ msgstr ""
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
 msgid "What we offer to our clients"
-msgstr ""
+msgstr "Müşterilerimize ne sunuyoruz"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_wall
 msgid "Wide Vehicle Selection"
-msgstr ""
+msgstr "Geniş Araç Seçimi"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_wavy_grid
@@ -893,6 +939,8 @@ msgid ""
 "vehicles that deliver unmatched performance and style, ensuring a luxurious "
 "driving experience."
 msgstr ""
+"Kapsamlı deneyim ve üstün işçilikle, eşsiz performans ve stil sunan, lüks "
+"bir sürüş deneyimi sağlayan üst düzey araçlar sunuyoruz."
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_features_grid
@@ -912,9 +960,9 @@ msgstr "müşteri memnuniyeti"
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "✽  Customization &amp; Upgrades"
-msgstr ""
+msgstr "✽ Özelleştirme &amp; Yükseltmeler"
 
 #. module: theme_vehicle
 #: model_terms:theme.ir.ui.view,arch:theme_vehicle.s_pricelist_boxed
 msgid "✽  Maintenance &amp; Care"
-msgstr ""
+msgstr "✽ Bakım &amp; Bakım"
