@@ -1,7 +1,6 @@
 /** @odoo-module */
 
 import * as wTourUtils from '@website/js/tours/tour_utils';
-import { _t } from "@web/core/l10n/translation";
 
 const snippets = [
     {
@@ -52,8 +51,7 @@ wTourUtils.registerThemeHomepageTour("odoo_experts_tour", () => [
     ...wTourUtils.insertSnippet(snippets[4]),
     ...wTourUtils.insertSnippet(snippets[5]),
     ...wTourUtils.clickOnSnippet(snippets[5], 'top'),
-    wTourUtils.changeOption('FAQ Block', 'toggleBgShape', _t('Background Shape')),
-    wTourUtils.clickOnElement("shape", ".builder_select_page [data-action-id='setBackgroundShape']"),
+    ...wTourUtils.changeBackgroundShape(),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[6]),
 ]);

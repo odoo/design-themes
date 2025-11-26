@@ -47,7 +47,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom "Blob 01" shape should be listed and selected',
-        trigger: '[data-container-title="Image"] [data-label="Shape"] div.dropdown:contains("Blob 01")',
+        trigger: '[data-container-title="Image"] [data-label="Shape"] button.btn-secondary:contains("Blob 01")',
     }, {
         content: 'Click on section which has a bg shape',
         trigger: ':iframe #wrap .s_text_block[data-oe-shape-data]',
