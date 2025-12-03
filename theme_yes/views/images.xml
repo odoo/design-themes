@@ -531,4 +531,11 @@ Check in theme_kea's primary_variables.scss, theme.scss and theme_common's mixin
     <field name="url">/theme_yes/static/src/img/snippets/s_kickoff_default_image.webp</field>
 </record>
 
+<!-- // Splash Intro // -->
+<record id="s_splash_intro_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_splash_intro_default_image</field>
+    <field name="name">website.s_splash_intro_default_image</field>
+    <field name="url">/theme_yes/static/src/img/snippets/s_splash_intro_default_image.webp</field>
+</record>
+
 </odoo>
