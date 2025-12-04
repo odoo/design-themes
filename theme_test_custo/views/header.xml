@@ -10,22 +10,17 @@
                 <t t-call="website.navbar_nav">
                     <!-- Menu -->
                     <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                        <t t-call="website.submenu">
-                            <t t-set="item_class" t-valuef="nav-item"/>
-                            <t t-set="link_class" t-valuef="nav-link"/>
-                        </t>
+                        <t t-call="website.submenu" item_class.f="nav-item" link_class.f="nav-link"/>
                     </t>
                     <!-- Sign In -->
-                    <t t-call="portal.placeholder_user_sign_in">
-                        <t t-set="_item_class" t-valuef="nav-item"/>
-                        <t t-set="_link_class" t-valuef="nav-link text-900"/>
-                    </t>
+                    <t t-call="portal.placeholder_user_sign_in"
+                        _item_class.f="nav-item"
+                        _link_class.f="nav-link text-900"/>
                     <!-- User Dropdown -->
-                    <t t-call="portal.user_dropdown">
-                        <t t-set="_user_name" t-value="true"/>
-                        <t t-set="_item_class" t-valuef="nav-item dropdown ml-auto"/>
-                        <t t-set="_link_class" t-valuef="nav-link text-900"/>
-                    </t>
+                    <t t-call="portal.user_dropdown"
+                        _user_name="true"
+                        _item_class.f="nav-item dropdown ml-auto"
+                        _link_class.f="nav-link text-900"/>
                 </t>
             </div>
         </nav>
