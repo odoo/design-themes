@@ -26,5 +26,4 @@
     'depends': ['theme_common', 'snippet_google_map', 'snippet_latest_posts'],
     'price': 199,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-avantgarde.odoo.com',
 }

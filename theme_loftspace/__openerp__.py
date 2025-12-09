@@ -27,5 +27,4 @@
     ],
     'price': 195,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-loftspace.odoo.com/page/demo',
 }
