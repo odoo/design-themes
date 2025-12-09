@@ -26,5 +26,4 @@
     ],
     'price': 149,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-bewise.odoo.com/page/demo_page_demo_1',
 }
