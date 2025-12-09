@@ -22,5 +22,4 @@
         'static/description/monglia_screenshot.jpeg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-monglia.odoo.com',
 }

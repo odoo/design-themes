@@ -23,5 +23,4 @@
         'static/description/orchid_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-orchid.odoo.com',
 }

@@ -17,5 +17,4 @@
         'static/description/paptic_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-paptic.odoo.com'
 }

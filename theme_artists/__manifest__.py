@@ -24,5 +24,4 @@
         'static/description/artists_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-artists.odoo.com',
 }

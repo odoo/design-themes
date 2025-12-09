@@ -24,5 +24,4 @@
         'static/description/kiddo_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-kiddo.odoo.com'
 }

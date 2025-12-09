@@ -32,5 +32,4 @@
         'static/description/treehouse_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-treehouse.odoo.com',
 }
