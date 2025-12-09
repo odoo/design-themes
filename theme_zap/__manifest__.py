@@ -46,7 +46,6 @@
         },
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-zap.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_zap/static/src/js/tour.js',

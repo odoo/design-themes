@@ -63,7 +63,6 @@
         },
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-bookstore.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_bookstore/static/src/js/tour.js',
