@@ -72,7 +72,6 @@
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-monglia.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_monglia/static/src/js/tour.js',

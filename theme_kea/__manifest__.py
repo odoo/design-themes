@@ -116,7 +116,6 @@
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-kea.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_kea/static/src/js/tour.js',

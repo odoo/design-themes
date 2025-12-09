@@ -111,7 +111,6 @@
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-buzzy.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_buzzy/static/src/js/tour.js',
