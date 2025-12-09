@@ -107,7 +107,6 @@
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-aviato.odoo.com',
 
     'assets': {
         'website.assets_editor': [
