@@ -18,6 +18,5 @@
     ],
     'price': 195,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-kea.odoo.com/page/demo1',
     'license': 'LGPL-3',
 }

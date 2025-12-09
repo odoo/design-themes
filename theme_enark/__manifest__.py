@@ -20,6 +20,5 @@
     ],
     'price': 199,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-enark.odoo.com/page/demo_page_home_1',
     'license': 'LGPL-3',
 }

@@ -20,6 +20,5 @@
     'depends': ['theme_common'],
     'price': 199,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-avantgarde.odoo.com',
     'license': 'LGPL-3',
 }

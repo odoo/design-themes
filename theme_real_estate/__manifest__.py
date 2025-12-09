@@ -17,6 +17,5 @@
     ],
     'price': 4,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-real-estate.odoo.com',
     'license': 'LGPL-3',
 }
