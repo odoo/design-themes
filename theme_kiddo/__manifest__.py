@@ -83,7 +83,6 @@
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-kiddo.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_kiddo/static/src/js/tour.js',
