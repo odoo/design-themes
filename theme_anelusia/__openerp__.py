@@ -26,5 +26,4 @@
     ],
     'price': 199,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-anelusia.odoo.com/page/demo1',
 }
