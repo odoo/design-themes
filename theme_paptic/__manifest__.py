@@ -26,7 +26,6 @@
         },
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-paptic.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_paptic/static/src/js/tour.js',

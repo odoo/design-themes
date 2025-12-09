@@ -79,7 +79,6 @@
         'homepage': ['s_intro_pill', 's_masonry_block', 's_pricelist_boxed', 's_features_wall', 's_image_frame', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-beauty.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_beauty/static/src/js/tour.js',

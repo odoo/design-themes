@@ -75,7 +75,6 @@
         'homepage': ['s_banner', 's_text_image', 's_image_text', 's_picture', 's_title', 's_masonry_block', 's_company_team', 's_showcase', 's_quotes_carousel'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-aviato.odoo.com',
 
     'assets': {
         'website.assets_editor': [
