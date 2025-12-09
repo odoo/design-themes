@@ -28,7 +28,6 @@
         'homepage': ['s_cover', 's_call_to_action', 's_text_image', 's_numbers', 's_image_text', 's_quotes_carousel', 's_color_blocks_2'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-bewise.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_bewise/static/src/js/tour.js',

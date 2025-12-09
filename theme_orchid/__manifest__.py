@@ -38,7 +38,6 @@
         'homepage': ['s_cover', 's_image_text', 's_text_image', 's_three_columns', 's_quotes_carousel', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-orchid.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_orchid/static/src/js/tour.js',

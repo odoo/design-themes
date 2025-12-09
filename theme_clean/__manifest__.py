@@ -44,7 +44,6 @@
                      's_three_columns', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-clean.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_clean/static/src/js/tour.js',

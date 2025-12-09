@@ -56,7 +56,6 @@
         'homepage': ['s_carousel', 's_text_image', 's_three_columns', 's_title', 's_images_wall', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-artists.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_artists/static/src/js/tour.js',
