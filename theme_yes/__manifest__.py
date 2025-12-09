@@ -16,5 +16,4 @@
         'static/description/yes_screenshot.jpeg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-yes.odoo.com',
 }

@@ -17,5 +17,4 @@
         'static/description/notes_screenshot.jpeg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-notes.odoo.com/page/demo',
 }

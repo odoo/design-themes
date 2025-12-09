@@ -17,5 +17,4 @@
         'static/description/kiddo_screenshot.jpeg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-kiddo.odoo.com/page/demo'
 }

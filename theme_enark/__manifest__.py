@@ -18,5 +18,4 @@
         'static/description/enark_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-enark.odoo.com/page/demo_page_home_1',
 }

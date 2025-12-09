@@ -16,5 +16,4 @@
         'static/description/odoo_experts_screenshot.jpeg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-odoo-experts.odoo.com',
 }

@@ -19,5 +19,4 @@
     ],
     'depends': ['theme_common', 'website_animate'],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-graphene.odoo.com'
 }

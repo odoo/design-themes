@@ -16,5 +16,4 @@
         'static/description/real_estate_screenshot.jpeg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-real-estate.odoo.com',
 }

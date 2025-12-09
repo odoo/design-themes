@@ -17,5 +17,4 @@
         'static/description/kea_screenshot.jpeg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-kea.odoo.com/page/demo1',
 }

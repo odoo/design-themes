@@ -15,5 +15,4 @@
         'static/description/beauty_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-beauty.odoo.com',
 }

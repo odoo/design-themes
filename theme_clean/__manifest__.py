@@ -18,5 +18,4 @@
         'static/description/clean_screenshot.jpg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-clean.odoo.com/page/demo_page_home',
 }

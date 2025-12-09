@@ -20,5 +20,4 @@
         'static/description/nano_screenshot.jpeg',
     ],
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-nano.odoo.com/page/demo_page_01'
 }
