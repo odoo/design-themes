@@ -115,7 +115,6 @@
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-loftspace.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_loftspace/static/src/js/tour.js',
