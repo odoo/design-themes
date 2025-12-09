@@ -86,7 +86,6 @@
         'homepage': ['s_text_cover', 's_images_wall', 's_color_blocks_2', 's_references', 's_media_list','s_key_images', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-anelusia.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_anelusia/static/src/js/tour.js',

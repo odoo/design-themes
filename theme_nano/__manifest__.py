@@ -95,7 +95,6 @@
         },
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-nano.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_nano/static/src/js/tour.js',

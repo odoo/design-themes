@@ -127,7 +127,6 @@
         'homepage': ['s_sidegrid', 's_product_catalog', 's_cta_box', 's_title', 's_image_frame', 's_images_wall', 's_shape_image'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-artists.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_artists/static/src/js/tour.js',
