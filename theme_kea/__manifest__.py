@@ -41,7 +41,6 @@
         'homepage': ['s_cover', 's_text_image', 's_picture', 's_image_text', 's_color_blocks_2', 's_media_list'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-kea.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_kea/static/src/js/tour.js',

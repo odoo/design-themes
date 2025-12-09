@@ -50,7 +50,6 @@
                      's_media_list', 's_company_team', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-anelusia.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_anelusia/static/src/js/tour.js',

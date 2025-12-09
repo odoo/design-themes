@@ -48,7 +48,6 @@
         'homepage': ['s_carousel', 's_masonry_block', 's_text_image', 's_product_catalog', 's_media_list', 's_company_team'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-notes.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_notes/static/src/js/tour.js',
