@@ -47,7 +47,6 @@
         'homepage': ['s_cover', 's_masonry_block', 's_image_text', 's_picture', 's_product_list', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-bookstore.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_bookstore/static/src/js/tour.js',

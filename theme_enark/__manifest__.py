@@ -41,7 +41,6 @@
         'homepage': ['s_banner', 's_picture', 's_numbers', 's_text_image', 's_images_wall', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-enark.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_enark/static/src/js/tour.js',

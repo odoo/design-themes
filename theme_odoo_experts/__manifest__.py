@@ -43,7 +43,6 @@
         'homepage': ['s_cover', 's_image_text', 's_media_list', 's_company_team', 's_references', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-odoo-experts.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_odoo_experts/static/src/js/tour.js',

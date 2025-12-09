@@ -28,7 +28,6 @@
         'homepage': ['s_cover', 's_text_image', 's_image_text', 's_picture', 's_masonry_block', 's_call_to_action'],
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-vehicle.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_vehicle/static/src/js/tour.js',
