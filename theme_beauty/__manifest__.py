@@ -20,5 +20,4 @@
     ],
     'price': 4,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-beauty.odoo.com',
 }

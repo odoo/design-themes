@@ -25,5 +25,4 @@
     'depends': ['theme_common', 'snippet_google_map', 'website_animate'],
     'price': 199,
     'currency': 'EUR',
-    'live_test_url': 'https://theme-graphene.odoo.com'
 }
