@@ -90,7 +90,6 @@
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-enark.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_enark/static/src/js/tour.js',

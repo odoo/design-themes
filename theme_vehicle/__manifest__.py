@@ -44,7 +44,6 @@
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-vehicle.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_vehicle/static/src/js/tour.js',

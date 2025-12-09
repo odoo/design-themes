@@ -28,7 +28,6 @@
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-bewise.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_bewise/static/src/js/tour.js',
