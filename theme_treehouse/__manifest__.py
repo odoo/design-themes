@@ -81,7 +81,6 @@
         },
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-treehouse.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_treehouse/static/src/js/tour.js',
