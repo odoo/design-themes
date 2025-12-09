@@ -63,7 +63,6 @@
         'homepage': ['s_banner', 's_color_blocks_2', 's_title', 's_text_image', 's_image_text', 's_numbers_showcase', 's_company_team', 's_accordion_image', 's_cta_card'], 
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-clean.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_clean/static/src/js/tour.js',

@@ -84,7 +84,6 @@
         },
     },
     'license': 'LGPL-3',
-    'live_test_url': 'https://theme-orchid.odoo.com',
     'assets': {
         'website.assets_editor': [
             'theme_orchid/static/src/js/tour.js',
