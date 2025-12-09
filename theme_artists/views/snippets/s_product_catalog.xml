@@ -21,21 +21,18 @@
     <!-- List -->
     <xpath expr="//div[hasclass('col-lg-6')]/ul[hasclass('list-unstyled')]" position="replace">
         <ul class="list-unstyled my-3">
-            <t t-call="website.s_product_catalog_dish">
-                <t t-set="name">New York</t>
-                <t t-set="price">02.08.2025</t>
-                <t t-set="description">The Museum of Modern Art (MoMA)</t>
-            </t>
-            <t t-call="website.s_product_catalog_dish">
-                <t t-set="name">Paris</t>
-                <t t-set="price">09.09.2025</t>
-                <t t-set="description">Digital Art Paris</t>
-            </t>
-            <t t-call="website.s_product_catalog_dish">
-                <t t-set="name">Brussels</t>
-                <t t-set="price">12.11.2025</t>
-                <t t-set="description">Royal Museums of Fine Arts of Belgium</t>
-            </t>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="New York"
+                price.translate="02.08.2025"
+                description.translate="The Museum of Modern Art (MoMA)"/>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="Paris"
+                price.translate="09.09.2025"
+                description.translate="Digital Art Paris"/>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="Brussels"
+                price.translate="12.11.2025"
+                description.translate="Royal Museums of Fine Arts of Belgium"/>
         </ul>
     </xpath>
     <!-- Title -->
@@ -43,21 +40,18 @@
     <!-- List -->
     <xpath expr="//div[hasclass('col-lg-6')][2]/ul[hasclass('list-unstyled')]" position="replace">
         <ul class="list-unstyled my-3">
-            <t t-call="website.s_product_catalog_dish">
-                <t t-set="name">Amsterdam</t>
-                <t t-set="price">02.08.2025</t>
-                <t t-set="description">Comput'Art</t>
-            </t>
-            <t t-call="website.s_product_catalog_dish">
-                <t t-set="name">Berlin</t>
-                <t t-set="price">12.12.2025</t>
-                <t t-set="description">Berlin Art Week</t>
-            </t>
-            <t t-call="website.s_product_catalog_dish">
-                <t t-set="name">London</t>
-                <t t-set="price">03.01.2026</t>
-                <t t-set="description">Abstract Vision</t>
-            </t>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="Amsterdam"
+                price.translate="02.08.2025"
+                description.translate="Comput'Art"/>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="Berlin"
+                price.translate="12.12.2025"
+                description.translate="Berlin Art Week"/>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="London"
+                price.translate="03.01.2026"
+                description.translate="Abstract Vision"/>
         </ul>
     </xpath>
 </template>
