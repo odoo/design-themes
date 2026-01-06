@@ -3,11 +3,12 @@
 
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt232 pb232" add="pt176 pb176" separator=" "/>
-    </xpath>
         <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
         <attribute name="class" add="bg-black-15" remove="bg-black-50" separator=" "/>
+    </xpath>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt104 pb104" remove="pt160 pb160" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace">

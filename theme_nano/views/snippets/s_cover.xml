@@ -4,11 +4,15 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt200 pb200" remove="parallax s_parallax_is_fixed bg-black-50 pt232 pb232" separator=" "/>
+        <attribute name="class" remove="parallax s_parallax_is_fixed bg-black-50" separator=" "/>
         <attribute name="data-scroll-background-ratio">0</attribute>
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;</attribute>
     </xpath>
     <xpath expr="//*[hasclass('s_parallax_bg_wrap')]" position="replace"/>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt128 pb128" remove="pt160 pb160" separator=" "/>
+    </xpath>
     <!-- Title & Text -->
     <xpath expr="//h1" position="replace" mode="inner">
         Creative Studio

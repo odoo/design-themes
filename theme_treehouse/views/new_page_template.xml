@@ -53,8 +53,8 @@
 </template>
 
 <template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt40 pb40" remove="pt88 pb88" separator=" "/>
     </xpath>
 </template>
 
@@ -68,14 +68,23 @@
 </template>
 
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt160 pb160" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" remove="pt88 pb88" separator=" "/>
     </xpath>
 </template>
 
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_three_quarter_height" remove="o_full_screen_height" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt40 pb40" remove="pt88 pb88" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" remove="pt88 pb88" separator=" "/>
     </xpath>
 </template>
 
@@ -106,6 +115,9 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_three_quarter_height" remove="o_full_screen_height" separator=" "/>
     </xpath>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt40 pb40" remove="pt88 pb88" separator=" "/>
+    </xpath>
 </template>
 
 <template id="new_page_template_gallery_s_image_text_2nd" inherit_id="website.new_page_template_gallery_s_image_text_2nd">
@@ -134,6 +146,9 @@
 <template id="new_page_template_pricing_s_cover" inherit_id="website.new_page_template_pricing_s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_three_quarter_height" remove="o_full_screen_height" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt40 pb40" remove="pt88 pb88" separator=" "/>
     </xpath>
 </template>
 

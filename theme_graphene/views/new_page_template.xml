@@ -79,8 +79,8 @@
 </template>
 
 <template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-7')]" position="attributes">
+        <attribute name="class" add="pt120 pb120" remove="pt88 pb88" separator=" "/>
     </xpath>
 </template>
 
@@ -131,8 +131,8 @@
 </template>
 
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt160 pb160" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-7')]" position="attributes">
+        <attribute name="class" remove="pt88 pb88" separator=" "/>
     </xpath>
 </template>
 
@@ -142,6 +142,12 @@
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Bold_13" style="background-image: url('/html_editor/shape/html_builder/Bold/13.svg?c5=o-color-3');"/>
+    </xpath>
+</template>
+
+<template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
+    <xpath expr="//div[hasclass('col-lg-7')]" position="attributes">
+        <attribute name="class" remove="pt88 pb88" separator=" "/>
     </xpath>
 </template>
 

@@ -16,7 +16,7 @@
 <template id="s_cover" inherit_id="website.s_cover" name="Paptic s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc1 pt80 pb56" remove="o_cc5 pt232 pb232" separator=" "/>
+        <attribute name="class" add="o_cc1 pt80 pb56" remove="o_cc5 pt72 pb72" separator=" "/>
     </xpath>
 
     <!-- Remove the parallax background -->
@@ -40,18 +40,13 @@
     </xpath>
 
     <!-- Create Structure -->
-    <xpath expr="//div[hasclass('container')]" position="inside">
-        <div class="row">
-            <div class="o_colored_level col-lg-5 pt32"/>
-            <div class="o_colored_level col-lg-6 offset-lg-1">
-                <img class="img img-fluid" src="/html_editor/shape/theme_paptic/s_cover.svg?c1=o-color-1&amp;c2=o-color-2"/>
-            </div>
-        </div>
+    <xpath expr="//div[hasclass('container')]//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="o_colored_level col-lg-5 pt32" remove="col-lg-12 pt160 pb160" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-5')]" position="inside">
-        <xpath expr="//div[hasclass('container')]/h1" position="move"/>
-        <xpath expr="//div[hasclass('container')]/p"  position="move"/>
-        <xpath expr="//div[hasclass('container')]/p"  position="move"/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="after">
+        <div class="o_colored_level col-lg-6 offset-lg-1">
+            <img class="img img-fluid" src="/html_editor/shape/theme_paptic/s_cover.svg?c1=o-color-1&amp;c2=o-color-2"/>
+        </div>
     </xpath>
 </template>
 

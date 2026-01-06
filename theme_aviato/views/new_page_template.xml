@@ -41,8 +41,8 @@
 </template>
 
 <template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pb40 pt40" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt152 pb152" remove="pt120 pb120" separator=" "/>
     </xpath>
 </template>
 
@@ -55,8 +55,8 @@
 <!-- Snippet customization Landing Pages -->
 
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt192 pb192" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" remove="pt120 pb120" separator=" "/>
     </xpath>
 </template>
 
@@ -67,6 +67,9 @@
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Connections_09" style="background-image: url('/html_editor/shape/html_builder/Connections/09.svg?c5=o-color-4');"/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt48 pb48" remove="pt120 pb120" separator=" "/>
     </xpath>
 </template>
 
@@ -88,6 +91,9 @@
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Connections_09" style="background-image: url('/html_editor/shape/html_builder/Connections/09.svg?c5=o-color-4');"/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt48 pb48" remove="pt40 pb40 pt120 pb120" separator=" "/>
     </xpath>
 </template>
 

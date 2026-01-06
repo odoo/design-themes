@@ -4,7 +4,7 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt224 pb200" remove="pt232 pb232 parallax s_parallax_is_fixed bg-black-50" separator=" "/>
+        <attribute name="class" remove="parallax s_parallax_is_fixed bg-black-50" separator=" "/>
         <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/20','colors':{'c5': 'o-color-1'},'flip':['y'], 'showOnMobile':true}</attribute>
     </xpath>
     <!-- Shape -->
@@ -14,6 +14,10 @@
     <!-- Remove filter & parallax -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
     <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt152 pb128" remove="pt160 pb160" separator=" "/>
+    </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
         Emotions <br/>through the colors

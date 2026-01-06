@@ -4,8 +4,11 @@
 <!-- ======== COVER ======== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Vehicle s_cover">
     <xpath expr="section" position="attributes">
-        <attribute name="class" remove="s_parallax_is_fixed o_full_screen_height pt232 pb232" add="o_three_quarter_height pt0 pb0" separator=" "/>
+        <attribute name="class" remove="s_parallax_is_fixed o_full_screen_height pt72 pb72" add="o_three_quarter_height pt0 pb0" separator=" "/>
         <attribute name="data-scroll-background-ratio">1.5</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" remove="pt160 pb160" separator=" "/>
     </xpath>
     <xpath expr="//h1" position="replace">
         <h1 style="text-align: center;">The New KORAN X</h1>
