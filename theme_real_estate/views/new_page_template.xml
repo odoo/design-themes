@@ -110,8 +110,8 @@
 </template>
 
 <template id="new_page_template_s_cover" inherit_id="website.new_page_template_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt176 pb176" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" remove="pt104 pb104" separator=" "/>
     </xpath>
 </template>
 

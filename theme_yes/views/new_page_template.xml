@@ -121,7 +121,7 @@
 <template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
     <xpath expr="//section" position="attributes">
         <!-- Defined in both theme and new page template -->
-        <attribute name="class" add="o_three_quarter_height" remove="pt40 pb40 o_three_quarter_height" separator=" "/>
+        <attribute name="class" add="o_three_quarter_height" remove="o_three_quarter_height" separator=" "/>
     </xpath>
 </template>
 
@@ -146,9 +146,8 @@
 </template>
 
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
-    <xpath expr="//section" position="attributes">
-        <!-- pb256 is defined by both theme and new page template -->
-        <attribute name="class" add="pb256" remove="pt208 pb256" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt64 pb64" remove="pt56 pb104 pt184 pb184" separator=" "/>
     </xpath>
 </template>
 
@@ -196,6 +195,10 @@
     <!-- Shape -->
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Connections_06" style="background-image: url('/html_editor/shape/html_builder/Connections/06.svg?c5=o-color-4');"/>
+    </xpath>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" remove="pt40 pb40" separator=" "/>
     </xpath>
 </template>
 

@@ -4,41 +4,39 @@
 <!-- ======== COVER ======== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Graphene s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt160 pb160" remove="pt232 pb232 s_parallax_is_fixed" separator=" "/>
+        <attribute name="class" remove="s_parallax_is_fixed" separator=" "/>
         <attribute name="data-scroll-background-ratio">0</attribute>
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image');</attribute>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
-    <xpath expr="//h1" position="replace"/>
-    <xpath expr="//p" position="replace"/>
-    <xpath expr="//p" position="replace"/>
-    <xpath expr="//section/div[hasclass('container')]" position="inside">
-        <div class="row">
-            <div class="col col-lg-7">
-                <h1>
-                    Making the difference.
-                </h1>
-                <p class="lead">
-                    Our mission is to give customers the best experience.<br/>Extensive documentation &amp; guides, an active community,<br/>24/7 support make it a pleasure to work with us.
-                </p>
-                <p>
-                    <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg o_translate_inline"><t t-out="cta_btn_text">Contact us</t></a>
-                </p>
-            </div>
-        </div>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="col-lg-7 pt88 pb88" remove="col-lg-12 pt160 pb160" separator=" "/>
+    </xpath>
+    <xpath expr="//h1" position="replace">
+        <h1>Making the difference.</h1>
+    </xpath>
+    <xpath expr="//p" position="replace">
+        <p class="lead">
+            Our mission is to give customers the best experience.<br/>Extensive documentation &amp; guides, an active community,<br/>24/7 support make it a pleasure to work with us.
+        </p>
+    </xpath>
+    <xpath expr="//p[2]" position="replace">
+        <p>
+            <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg o_translate_inline"><t t-out="cta_btn_text">Contact us</t></a>
+        </p>
     </xpath>
 </template>
 
 <template id="configurator_s_cover" inherit_id="website.configurator_s_cover" name="Graphene s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt96 pb48" remove="pt160 pb160" separator=" "/>
+        <attribute name="class" add="pt96 pb48" remove="pt72 pb72" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/01","colors":{"c5": "o-color-3"},"flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Connections_01" style="background-image: url('/html_editor/shape/html_builder/Connections/01.svg?c5=o-color-3');"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-7')]" position="attributes">
-        <attribute name="class" add="pb56" separator=" "/>
+        <attribute name="class" add="pb56" remove="pt88 pb88" separator=" "/>
     </xpath>
 </template>
 

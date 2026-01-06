@@ -113,8 +113,14 @@
 </template>
 
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt256 pb256" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" remove="pt184 pb184" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
+    <xpath expr="//div[hasclass('row')]/div" position="attributes">
+        <attribute name="class" remove="pt40 pb40" separator=" "/>
     </xpath>
 </template>
 

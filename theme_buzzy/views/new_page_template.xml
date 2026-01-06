@@ -177,8 +177,8 @@
 </template>
 
 <template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt72 pb72" remove="pt40 pb40" separator=" "/>
     </xpath>
 </template>
 
@@ -242,11 +242,14 @@
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
     <!-- Remove shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt112 pb112" separator=" "/>
         <attribute name="data-oe-shape-data"/>
     </xpath>
     <!-- Remove shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    </xpath>
 </template>
 
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
@@ -277,6 +280,10 @@
     </xpath>
     <!-- Remove shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt32 pb32" remove="pt40 pb40" separator=" "/>
+    </xpath>
 </template>
 
 <!-- Snippet customization Gallery Pages -->

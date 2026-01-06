@@ -162,8 +162,8 @@
 </template>
 
 <template id="new_page_template_about_mini_s_cover" inherit_id="website.new_page_template_about_mini_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt120 pb120" remove="pt128 pb128" separator=" "/>
     </xpath>
 </template>
 
@@ -227,11 +227,14 @@
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
     <!-- Shape option -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt200 pb200" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/25","flip":["x"]}</attribute>
     </xpath>
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Bold_25" style="background-image: url('/html_editor/shape/html_builder/Bold/25.svg?c5=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
+    </xpath>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" remove="pt128 pb128" separator=" "/>
     </xpath>
 </template>
 
@@ -243,6 +246,10 @@
     </xpath>
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Bold_25" style="background-image: url('/html_editor/shape/html_builder/Bold/25.svg?c5=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
+    </xpath>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt48 pb48" remove="pt128 pb128" separator=" "/>
     </xpath>
 </template>
 
@@ -266,6 +273,10 @@
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Bold_25" style="background-image: url('/html_editor/shape/html_builder/Bold/25.svg?c5=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt48 pb48" remove="pt40 pb40 pt128 pb128" separator=" "/>
+    </xpath>
 </template>
 
 <template id="new_page_template_landing_4_s_text_block_h2" inherit_id="website.new_page_template_landing_4_s_text_block_h2">
@@ -284,6 +295,10 @@
     </xpath>
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Bold_25" style="background-image: url('/html_editor/shape/html_builder/Bold/25.svg?c5=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
+    </xpath>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt48 pb48" remove="pt128 pb128" separator=" "/>
     </xpath>
 </template>
 
@@ -348,6 +363,10 @@
     </xpath>
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Bold_25" style="background-image: url('/html_editor/shape/html_builder/Bold/25.svg?c5=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
+    </xpath>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt48 pb48" remove="pt128 pb128" separator=" "/>
     </xpath>
 </template>
 

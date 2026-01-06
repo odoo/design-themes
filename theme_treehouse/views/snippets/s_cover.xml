@@ -2,9 +2,9 @@
 <odoo>
 
 <template id="s_cover" inherit_id="website.s_cover">
-    <!-- Section -->
-    <xpath expr="section" position="attributes">
-        <attribute name="class" add="pt160 pb160" remove="pt232 pb232" separator=" "/>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt88 pb88" remove="pt160 pb160" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="before">

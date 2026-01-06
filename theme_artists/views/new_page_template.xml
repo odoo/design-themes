@@ -103,7 +103,16 @@
 
 <template id="new_page_template_about_s_cover" inherit_id="website.new_page_template_about_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_three_quarter_height" remove="o_full_screen_height pt40 pb40" separator=" "/>
+        <attribute name="class" add="o_three_quarter_height" remove="o_full_screen_height" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt56 pb32" remove="pt152 pb128" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt56 pb32" remove="pt40 pb40 pt152 pb128" separator=" "/>
     </xpath>
 </template>
 
@@ -158,8 +167,8 @@
 </template>
 
 <template id="new_page_template_landing_0_s_cover" inherit_id="website.new_page_template_landing_0_s_cover">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt224 pb200" separator=" "/>
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt160" remove="pt184 pt152 pb128" separator=" "/>
     </xpath>
 </template>
 

@@ -4,7 +4,11 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_three_quarter_height pt128 pb128" remove="pt232 pb232" separator=" "/>
+        <attribute name="class" add="o_three_quarter_height" separator=" "/>
+    </xpath>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt32 pb32" remove="pt160 pb160" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">

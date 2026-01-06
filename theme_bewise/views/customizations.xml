@@ -4,7 +4,7 @@
 <!-- ======== COVER ======== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Be Wise s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt200 pb200 oe_img_bg o_bg_img_center" remove="bg-black-50 s_parallax_is_fixed parallax pt232 pb232" separator=" "/>
+        <attribute name="class" add="oe_img_bg o_bg_img_center" remove="parallax s_parallax_is_fixed bg-black-50" separator=" "/>
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 50%;</attribute>
         <attribute name="data-oe-shape-data">{"shape":"html_builder/Rainy/08_001","flip":[]}</attribute>
         <attribute name="data-scroll-background-ratio">0</attribute>
@@ -15,6 +15,10 @@
     </xpath>
     <!-- Remove the background image for parallax -->
     <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="pt128 pb128" remove="pt160 pb160" separator=" "/>
+    </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
         Always at the top
