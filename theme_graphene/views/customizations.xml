@@ -9,12 +9,9 @@
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image');</attribute>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
-    <xpath expr="//h1" position="replace"/>
-    <xpath expr="//p" position="replace"/>
-    <xpath expr="//p" position="replace"/>
-    <xpath expr="//section/div[hasclass('container')]" position="inside">
-        <div class="row">
-            <div class="col col-lg-7">
+    <xpath expr="//div[hasclass('container')]//div[hasclass('row')]" position="replace">
+        <div class="row o_grid_mode" data-row-count="6">
+            <div class="col o_grid_item g-height-6 g-col-lg-7 col-lg-7" style="z-index: 1; grid-area: 1 / 1 / 7 / 8;">
                 <h1>
                     Making the difference.
                 </h1>
@@ -35,9 +32,6 @@
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Bold_13" style="background-image: url('/html_editor/shape/html_builder/Bold/13.svg?c5=o-color-3');"/>
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-7')]" position="attributes">
-        <attribute name="class" add="pb128" separator=" "/>
     </xpath>
 </template>
 
