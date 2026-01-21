@@ -5,3 +5,9 @@
 $box-shadow-sm:               0 0 .3125rem rgba(0,0,0,.25) !default;
 $box-shadow:                  0 0 .3125rem rgba(0,0,0,.25) !default;
 $box-shadow-lg:               0 0 .3125rem rgba(0,0,0,.25) !default;
+
+.monetary_field,
+span[data-oe-type="monetary"],
+.oe_currency_value {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Helvetica Neue", Arial, sans-serif !important;
+}
