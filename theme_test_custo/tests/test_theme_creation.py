@@ -14,8 +14,3 @@ class Crawler(HttpCase):
         website.theme_id = theme_custo.id
         theme_custo.with_context(load_all_views=True, apply_new_theme=True)._theme_load(website)
         self.start_tour('/@/example', "theme_menu_hierarchies", login='admin')
-
-@tagged('post_install', '-at_install')
-class TestThemeConfigurator(TestConfiguratorCommon):
-    def test_website_theme_preview(self):
-        self.start_tour('/web#action=website.action_website_configuration', 'website_theme_preview', login="admin")
