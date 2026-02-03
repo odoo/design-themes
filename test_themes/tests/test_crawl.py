@@ -1,4 +1,6 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
+import re
+
 
 from odoo.tests import HttpCase, tagged
 
@@ -19,15 +21,18 @@ class Crawler(HttpCase):
                 # Ensure theme is rendering without crashing
                 r = self.url_open('/?fw=%s&debug=assets' % website.id)
                 self.assertEqual(r.status_code, 200, "Ensure theme is rendering without crashing")
+
                 # Ensure correct theme is actually loaded, see commit message
-                theme_asset_url = self.env['ir.asset']._get_asset_bundle_url('web.assets_frontend.css', 'debug', {'website_id': website.id})
-                self.assertTrue(theme_asset_url in r.text)
+                theme_asset_url = self.env['ir.asset']._get_asset_bundle_url('web.assets_frontend.css', 'debug', assets_params={'website_id': website.id})
+                self.assertIn('web.assets_frontend.css', r.text)
+                self.assertEqual(theme_asset_url, r.text.split('web.assets_frontend.css')[0].split('"')[-1] + 'web.assets_frontend.css')
+
                 r = self.url_open(theme_asset_url)
-                self.assertTrue('/%s/static/src' % website.theme_id.name in r.text, "Ensure theme is actually loaded")
+                self.assertIn('/%s/static/src' % website.theme_id.name, r.text, "Ensure theme is actually loaded")
                 # Ensure other website/themes are not loaded
                 for name in websites_themes_names:
                     if name != website.theme_id.name:
-                        self.assertFalse('/%s/static/src' % name in r.text, "Ensure other themes do not pollute current one")
+                        self.assertNotIn('/%s/static/src' % name, r.text, "Ensure other themes do not pollute current one")
 
         # 1. Test as public user
         test_crawling()
@@ -48,6 +53,7 @@ class Crawler(HttpCase):
         # when designing a theme at the moment.
         Website = self.env['website']
         websites_themes = Website.get_test_themes_websites()
+
         for website in websites_themes:
             # TODO: remove this invalidation and invalidation in theme feature.
             # They are missing invalidations of template ormcache and others.
@@ -55,5 +61,18 @@ class Crawler(HttpCase):
             # added on `ir.module.module` from website write directly on
             # `ir.model.data` and update attachments, views, xmlids.
             self.env.registry.clear_cache('templates')
+            self.start_tour(f"/odoo/action-website.website_preview?website_id={website.id}", 'homepage', login='admin')
 
-            self.start_tour(f"/odoo/action-website.website_preview?fw={website.id}", 'homepage', login='admin')
+    def test_03_website_theme_asset(self):
+        website_theme_yes = self.env['website'].search([('theme_id.name', '=', 'theme_yes')])[-1]
+        r = self.url_open('/web/assets/%s/debug/web.assets_frontend.css' % website_theme_yes.id)
+        self.assertIn('--color-palettes-name', r.text)
+        self.assertEqual('yes-3', r.text.split("--color-palettes-name: '")[1].split("';")[0])
+
+        website_theme_anelusia = self.env['website'].search([('theme_id.name', '=', 'theme_anelusia')])[-1]
+
+        self.authenticate('admin', 'admin', session_extra={'force_website_id': website_theme_anelusia.id})
+
+        r = self.url_open('/?debug=assets,tests')
+        self.assertEqual(str(website_theme_anelusia.id), r.text.split('data-website-id="')[1].split('"')[0])
+        self.assertTrue(all(f == str(website_theme_anelusia.id) for f in re.findall(r'"/web/assets/([^/"]*)/', r.text)))
