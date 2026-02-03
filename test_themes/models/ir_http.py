@@ -12,6 +12,6 @@ class IrHttp(models.AbstractModel):
         # Allow public user to use `fw` query string in test mode to ease tests
         force_website_id = request.httprequest.args.get('fw')
         if modules.module.current_test and force_website_id:
-            request.env['website']._force_website(force_website_id)
+            request.env['website'].browse(int(force_website_id))._force()
 
         super()._pre_dispatch(rule, args)
