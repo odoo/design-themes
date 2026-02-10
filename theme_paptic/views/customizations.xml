@@ -19,8 +19,8 @@
         <attribute name="class" add="o_cc1 pt80 pb56" remove="o_cc5 pt232 pb232" separator=" "/>
     </xpath>
 
-    <!-- Remove image -->
-    <xpath expr="//span[hasclass('oe_img_bg')]" position="replace"/>
+    <!-- Remove the background image for parallax -->
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
 
     <!-- Remove color filter -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
