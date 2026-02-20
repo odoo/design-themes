@@ -10,7 +10,7 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'Check Mega Menu content',
-        trigger: ":iframe .top_menu div.o_mega_menu.show .fa-cube",
+        trigger: ":iframe .top_menu div.o_mega_menu.show [data-icon='deployed_code']",
     }, {
         content: 'Check new top level menu is correctly created',
         trigger: ':iframe .top_menu .nav-item.dropdown .dropdown-toggle:contains("Example 1")',
