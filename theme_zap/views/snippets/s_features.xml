@@ -13,7 +13,7 @@
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[1]/div[hasclass('s_hr')]" position="replace"/>
     <xpath expr="//i" position="replace">
-        <i class="s_features_icon d-block mx-auto fa fa-2x fa-lock bg-o-color-1 mb-3 rounded-circle" role="img"/>
+        <i class="s_features_icon d-block mx-auto oi oi-2x bg-o-color-1 mb-3 rounded-circle" data-icon="lock" role="img"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[1]/div/h3" position="replace" mode="inner">
         Security
@@ -28,7 +28,7 @@
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/div[hasclass('s_hr')]" position="replace"/>
     <xpath expr="(//i)[2]" position="replace">
-        <i class="s_features_icon d-block mx-auto fa fa-2x fa-file-text bg-o-color-1 mb-3 rounded-circle" role="img"/>
+        <i class="s_features_icon d-block mx-auto oi oi-2x oi-filled bg-o-color-1 mb-3 rounded-circle" data-icon="article" role="img"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/div/h3" position="replace" mode="inner">
         Support
@@ -43,7 +43,7 @@
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/div[hasclass('s_hr')]" position="replace"/>
     <xpath expr="(//i)[3]" position="replace">
-        <i class="s_features_icon d-block mx-auto fa fa-2x fa-leaf bg-o-color-1 mb-3 rounded-circle" role="img"/>
+        <i class="s_features_icon d-block mx-auto oi oi-2x bg-o-color-1 mb-3 rounded-circle" data-icon="eco" role="img"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/div/h3" position="replace" mode="inner">
         Eco-Friendly

@@ -8,7 +8,8 @@
     </xpath>
     <!-- First column : icon -->
     <xpath expr="//div[hasclass('row')]//div//i" position="attributes">
-        <attribute name="class" add="bg-o-color-4 fa-shield" remove="bg-o-color-3 fa-paper-plane-o" separator=" "/>
+        <attribute name="class" add="bg-o-color-4" remove="bg-o-color-3" separator=" "/>
+        <attribute name="data-icon" add="security" remove="send" separator=" "/>
     </xpath>
     <!-- First column : title -->
     <xpath expr="//div[hasclass('row')]//div//h3" position="replace" mode="inner">
@@ -16,7 +17,8 @@
     </xpath>
     <!-- Second column : icon -->
     <xpath expr="//div[hasclass('row')]//div[2]//i" position="attributes">
-        <attribute name="class" add="bg-o-color-4 fa-laptop" remove="bg-o-color-3 fa-credit-card" separator=" "/>
+        <attribute name="class" add="bg-o-color-4" remove="bg-o-color-3" separator=" "/>
+        <attribute name="data-icon" add="laptop" remove="credit_card" separator=" "/>
     </xpath>
     <!-- Second column : title -->
     <xpath expr="//div[hasclass('row')]//div[2]//h3" position="replace" mode="inner">
@@ -24,7 +26,8 @@
     </xpath>
     <!-- Third column : icon -->
     <xpath expr="//div[hasclass('row')]//div[3]//i" position="attributes">
-        <attribute name="class" add="bg-o-color-4 fa-star" remove="bg-o-color-3 fa-flag-o" separator=" "/>
+        <attribute name="class" add="bg-o-color-4 oi-filled" remove="bg-o-color-3" separator=" "/>
+        <attribute name="data-icon" add="star" remove="flag" separator=" "/>
     </xpath>
     <!-- Third column : title -->
     <xpath expr="//div[hasclass('row')]//div[3]//h3" position="replace" mode="inner">

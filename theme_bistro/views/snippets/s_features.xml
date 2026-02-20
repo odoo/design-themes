@@ -4,7 +4,7 @@
 <template id="s_features" inherit_id="website.s_features">
     <!-- Column #01 -->
     <xpath expr="//i" position="replace">
-        <i class="fa fa-coffee rounded bg-primary mb-3" role="img"/>
+        <i class="oi rounded bg-primary mb-3" data-icon="coffee" role="img"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[1]/div/h3" position="replace" mode="inner">
         Breakfast
@@ -14,7 +14,7 @@
     </xpath>
     <!-- Column #02 -->
     <xpath expr="(//i)[2]" position="replace">
-        <i class="fa fa-cutlery rounded bg-primary mb-3" role="img"/>
+        <i class="oi rounded bg-primary mb-3" data-icon="restaurant" role="img"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/div/h3" position="replace" mode="inner">
         Lunch
@@ -24,7 +24,7 @@
     </xpath>
     <!-- Column #03 -->
     <xpath expr="(//i)[3]" position="replace">
-        <i class="fa fa-glass rounded bg-primary mb-3" role="img"/>
+        <i class="oi rounded bg-primary mb-3" data-icon="local_bar" role="img"/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/div/h3" position="replace" mode="inner">
         Dinner

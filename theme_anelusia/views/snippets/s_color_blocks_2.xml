@@ -8,7 +8,7 @@
     </xpath>
     <!-- Column #1 - Icon -->
     <xpath expr="//h2" position="before">
-        <i class="fa fa-5x m-3 fa-venus"/>
+        <i class="oi oi-5x m-3" data-icon="female"/>
     </xpath>
     <!-- Column #1 - Title -->
     <xpath expr="//h2" position="replace" mode="inner">
@@ -29,7 +29,7 @@
     </xpath>
     <!-- Column #2 - Icon -->
     <xpath expr="(//h2)[2]" position="before">
-        <i class="fa fa-5x m-3 fa-mars"/>
+        <i class="oi oi-5x m-3" data-icon="male"/>
     </xpath>
     <!-- Column #2 - Title -->
     <xpath expr="(//h2)[2]" position="replace" mode="inner">
@@ -47,7 +47,7 @@
     <!-- Add a 3rd column -->
     <xpath expr="(//div[hasclass('col-lg-4')])[2]" position="after">
         <div class="col-lg-4 o_cc o_cc5 text-center">
-            <i class="fa fa-venus-mars fa-5x m-3"/>
+            <i class="oi oi-5x m-3" data-icon="oi_venus-mars"/>
             <h2 class="h3-fs">Fancy for them</h2>
             <p>Are you looking for sustainable clothing for men or women? Discover our exclusive fashion brand for both of you.</p>
             <a href="#" class="btn btn-primary btn-lg">More Details</a>
