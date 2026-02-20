@@ -3,7 +3,6 @@
 import * as wTourUtils from '@website/js/tours/tour_utils';
 
 wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
-    url: '/example',
 }, () => [
     {
         content: 'Check Mega Menu is correctly created',
