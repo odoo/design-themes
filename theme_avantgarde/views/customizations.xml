@@ -125,7 +125,7 @@
         The Boston Public Library's exhibit features lovely bird and flower paintings, bringing together nature, art, and science.
     </xpath>
     <xpath expr="//p[hasclass('lead')]" position="after">
-        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-ticket"/> Book your tickets</a>
+        <a href="#" class="btn btn-secondary btn-lg"><i class="oi" data-icon="confirmation_number"/> Book your tickets</a>
     </xpath>
     <!-- Feature 1 -->
     <xpath expr="(//img)[1]" position="attributes">
