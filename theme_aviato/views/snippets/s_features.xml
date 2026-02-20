@@ -18,13 +18,13 @@
     </xpath>
     <!-- Icons -->
     <xpath expr="//div[hasclass('row')]/div[1]/i" position="attributes">
-        <attribute name="class" add="fa-hotel" remove="fa-paper-plane-o" separator=" "/>
+        <attribute name="data-icon" add="bed" remove="send" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/i" position="attributes">
-        <attribute name="class" add="fa-plane" remove="fa-credit-card" separator=" "/>
+        <attribute name="data-icon" add="travel" remove="credit_card" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/i" position="attributes">
-        <attribute name="class" add="fa-ticket" remove="fa-flag-o" separator=" "/>
+        <attribute name="data-icon" add="confirmation_number" remove="flag" separator=" "/>
     </xpath>
 </template>
 

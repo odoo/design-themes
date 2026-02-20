@@ -9,7 +9,7 @@
     </xpath>
     <!-- Block #02 -->
     <xpath expr="//h2" position="before">
-        <i class="fa fa-2x fa-star text-o-color-2 rounded-circle shadow mx-auto my-3"/>
+        <i class="oi oi-filled oi-2x text-o-color-2 rounded-circle shadow mx-auto my-3" data-icon="star"/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         Super <b>Easy</b>
@@ -20,7 +20,7 @@
     <xpath expr="(//p)[2]" position="replace" mode="inner"/>
     <!-- Block #03 -->
     <xpath expr="(//h2)[2]" position="before">
-        <i class="fa fa-2x fa-rocket text-o-color-1 rounded-circle shadow mx-auto my-3"/>
+        <i class="oi oi-2x text-o-color-1 rounded-circle shadow mx-auto my-3" data-icon="rocket_launch"/>
     </xpath>
     <xpath expr="(//h2)[2]" position="replace" mode="inner">
         Super <b>Fast</b>

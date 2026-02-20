@@ -332,7 +332,7 @@
     <!-- Left block -->
     <!-- Icon -->
     <xpath expr="//i" position="attributes">
-        <attribute name="class" add="fa-automobile" remove="fa-paper-plane-o" separator=" "/>
+        <attribute name="data-icon" add="directions_car" remove="send" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//div[hasclass('row')]/div[1]/div/h3" position="replace" mode="inner">
@@ -341,7 +341,7 @@
     <!-- Center block -->
     <!-- Icon -->
     <xpath expr="(//i)[2]" position="attributes">
-        <attribute name="class" add="fa-battery-full" remove="fa-credit-card" separator=" "/>
+        <attribute name="data-icon" add="battery_full" remove="credit_card" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//div[hasclass('row')]/div[2]/div/h3" position="replace" mode="inner">
@@ -350,7 +350,8 @@
     <!-- Right block -->
     <!-- Icon -->
     <xpath expr="(//i)[3]" position="attributes">
-        <attribute name="class" add="fa-cog" remove="fa-flag-o" separator=" "/>
+        <attribute name="class" add="oi-filled" separator=" "/>
+        <attribute name="data-icon" add="settings" remove="flag" separator=" "/>
     </xpath>
     <!-- Title -->
     <xpath expr="//div[hasclass('row')]/div[3]/div/h3" position="replace" mode="inner">
@@ -870,8 +871,8 @@
 <template id="s_empowerment" inherit_id="website.s_empowerment">
     <!-- Badge content -->
     <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
-        <i class="fa fa-fw fa-info-circle o_not-animable" role="img"/> Top-rated vehicles&#160;
-        <a href="#">Browse our inventory&#160;<i class="fa fa-long-arrow-right" role="img"/></a>
+        <i class="oi oi-fw o_not-animable" data-icon="info" role="img"/> Top-rated vehicles&#160;
+        <a href="#">Browse our inventory&#160;<i class="oi" data-icon="east" role="img"/></a>
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace" mode="inner">
