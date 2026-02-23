@@ -59,7 +59,7 @@
 
 <template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="o_cc3 o_half_screen_height" separator=" "/>
+        <attribute name="class" remove="o_cc3" separator=" "/>
     </xpath>
 </template>
 
@@ -80,7 +80,7 @@
 <template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
     <xpath expr="//section" position="attributes">
         <!-- Added by both theme and new page template -->
-        <attribute name="class" add="o_half_screen_height" remove="o_half_screen_height" separator=" "/>
+        <attribute name="class" add="o_three_quarter_height" remove="o_three_quarter_height" separator=" "/>
     </xpath>
 </template>
 

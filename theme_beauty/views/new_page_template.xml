@@ -41,7 +41,7 @@
 
 <template id="new_page_template_s_cover" inherit_id="website.new_page_template_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_half_screen_height" remove="o_full_screen_height" separator=" "/>
+        <attribute name="class" add="o_three_quarter_height" remove="o_full_screen_height" separator=" "/>
     </xpath>
 </template>
 
@@ -111,7 +111,7 @@
 <template id="new_page_template_landing_4_s_cover" inherit_id="website.new_page_template_landing_4_s_cover">
     <xpath expr="//section" position="attributes">
         <!-- Added on all new page template s_cover by theme and on generic landing 4 -->
-        <attribute name="class" add="o_half_screen_height" remove="o_half_screen_height" separator=" "/>
+        <attribute name="class" add="o_three_quarter_height" remove="o_three_quarter_height" separator=" "/>
     </xpath>
 </template>
 

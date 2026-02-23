@@ -44,7 +44,7 @@
 
 <template id="new_page_template_about_s_cover" inherit_id="website.new_page_template_about_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_full_screen_height" remove="o_half_screen_height" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" remove="o_three_quarter_height" separator=" "/>
     </xpath>
 </template>
 
@@ -114,7 +114,7 @@
 
 <template id="new_page_template_s_cover" inherit_id="website.new_page_template_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="o_half_screen_height" separator=" "/>
+        <attribute name="class" remove="o_three_quarter_height" separator=" "/>
     </xpath>
 </template>
 
@@ -134,7 +134,7 @@
 
 <template id="new_page_template_landing_2_s_cover" inherit_id="website.new_page_template_landing_2_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_full_screen_height" remove="o_half_screen_height" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" remove="o_three_quarter_height" separator=" "/>
     </xpath>
 </template>
 
@@ -160,7 +160,7 @@
 
 <template id="new_page_template_gallery_s_cover" inherit_id="website.new_page_template_gallery_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_full_screen_height" remove="o_half_screen_height" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" remove="o_three_quarter_height" separator=" "/>
     </xpath>
 </template>
 
@@ -184,7 +184,7 @@
 
 <template id="new_page_template_pricing_s_cover" inherit_id="website.new_page_template_pricing_s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_full_screen_height" remove="o_half_screen_height" separator=" "/>
+        <attribute name="class" add="o_full_screen_height" remove="o_three_quarter_height" separator=" "/>
     </xpath>
 </template>
 
