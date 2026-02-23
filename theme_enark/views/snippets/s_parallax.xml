@@ -4,7 +4,7 @@
 <template id="s_parallax" inherit_id="website.s_parallax">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_full_screen_height justify-content-center" remove="o_half_screen_height" separator=" "/>
+        <attribute name="class" add="o_full_screen_height justify-content-center" remove="o_three_quarter_height" separator=" "/>
     </xpath>
     <!-- Text -->
     <xpath expr="//div[hasclass('oe_empty')]" position="after">
