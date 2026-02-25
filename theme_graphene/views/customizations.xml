@@ -22,7 +22,7 @@
     </xpath>
     <xpath expr="//p[2]" position="replace">
         <p>
-            <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg o_translate_inline"><t t-out="cta_btn_text">Contact us</t></a>
+            <a t-att-href="cta_btn_href" class="btn btn-primary btn-lg"><t t-out="cta_btn_text">Contact us</t></a>
         </p>
     </xpath>
 </template>
