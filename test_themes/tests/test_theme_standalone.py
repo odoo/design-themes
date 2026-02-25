@@ -20,8 +20,8 @@ def test_01_theme_install_generate_primary_templates(env):
     # Because "theme_buzzy" was installed before through "test_themes" dependencies, removing
     # those views is needed to replicate the bug: if the configurator views are not generated,
     # the theme install will fail because some of the imported views inherit them.
-    env['ir.ui.view'].with_context(_force_unlink=True).search([('key', '=', 'website.configurator_s_banner')]).unlink()
-    env['ir.ui.view'].with_context(_force_unlink=True).search([('key', '=', 'website.configurator_s_cover')]).unlink()
+    env['ir.ui.view'].with_context(force_delete=True).search([('key', '=', 'website.configurator_s_banner')]).unlink()
+    env['ir.ui.view'].with_context(force_delete=True).search([('key', '=', 'website.configurator_s_cover')]).unlink()
     theme_buzzy.button_immediate_install()
 
 
@@ -47,7 +47,7 @@ def test_02_theme_default_generate_primary_templates(env):
 
     if theme_default.state == 'installed':
         theme_default.button_immediate_uninstall()
-    env['ir.ui.view'].with_context(_force_unlink=True).search([('key', 'like', 'website.configurator_')]).unlink()
+    env['ir.ui.view'].with_context(force_delete=True).search([('key', 'like', 'website.configurator_')]).unlink()
 
     with patch("odoo.addons.website.models.website.Website._website_api_rpc", autospec=True, side_effect=fake_website_api), \
          patch("odoo.addons.website.models.website.Website._OLG_api_rpc", autospec=True, side_effect=fake_olg_api):
