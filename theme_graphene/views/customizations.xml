@@ -4,7 +4,7 @@
 <!-- ======== COVER ======== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Graphene s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt160 pb192" remove="pt232 pb232 s_parallax_is_fixed" separator=" "/>
+        <attribute name="class" add="pt160 pb160" remove="pt232 pb232 s_parallax_is_fixed" separator=" "/>
         <attribute name="data-scroll-background-ratio">0</attribute>
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image');</attribute>
     </xpath>
@@ -31,13 +31,14 @@
 
 <template id="configurator_s_cover" inherit_id="website.configurator_s_cover" name="Graphene s_cover">
     <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt96 pb48" remove="pt160 pb160" separator=" "/>
         <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/13","colors":{"c5": "o-color-3"},"flip":[]}</attribute>
     </xpath>
     <xpath expr="//section/div[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Bold_13" style="background-image: url('/html_editor/shape/html_builder/Bold/13.svg?c5=o-color-3');"/>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-7')]" position="attributes">
-        <attribute name="class" add="pb128" separator=" "/>
+        <attribute name="class" add="pb56" separator=" "/>
     </xpath>
 </template>
 
