@@ -56,4 +56,4 @@ class Crawler(HttpCase):
             # `ir.model.data` and update attachments, views, xmlids.
             self.env.registry.clear_cache('templates')
 
-            self.start_tour(f"/web?fw={website.id}", 'homepage', login='admin')
+            self.start_tour(f"/odoo/action-website.website_preview?fw={website.id}", 'homepage', login='admin')
