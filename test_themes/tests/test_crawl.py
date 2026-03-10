@@ -19,15 +19,19 @@ class Crawler(HttpCase):
                 # Ensure theme is rendering without crashing
                 r = self.url_open('/?fw=%s&debug=assets' % website.id)
                 self.assertEqual(r.status_code, 200, "Ensure theme is rendering without crashing")
+
                 # Ensure correct theme is actually loaded, see commit message
-                theme_asset_url = self.env['ir.asset']._get_asset_bundle_url('web.assets_frontend.css', 'debug', {'website_id': website.id})
-                self.assertTrue(theme_asset_url in r.text)
+                theme_asset_url = self.env['ir.asset']._get_asset_bundle_url('web.assets_frontend.css', 'debug', assets_params={'website_id': website.id})
+                self.assertIn('web.assets_frontend.css', r.text)
+                self.assertEqual(theme_asset_url, r.text.split('web.assets_frontend.css')[0].split('"')[-1] + 'web.assets_frontend.css')
+                self.assertIn('/%s/static/src' % website.theme_id.name, r.text, "Ensure theme is actually loaded")
+
                 r = self.url_open(theme_asset_url)
-                self.assertTrue('/%s/static/src' % website.theme_id.name in r.text, "Ensure theme is actually loaded")
+                self.assertIn('/%s/static/src' % website.theme_id.name, r.text, "Ensure theme is actually loaded")
                 # Ensure other website/themes are not loaded
                 for name in websites_themes_names:
                     if name != website.theme_id.name:
-                        self.assertFalse('/%s/static/src' % name in r.text, "Ensure other themes do not pollute current one")
+                        self.assertNotIn('/%s/static/src' % name, r.text, "Ensure other themes do not pollute current one")
 
         # 1. Test as public user
         test_crawling()
