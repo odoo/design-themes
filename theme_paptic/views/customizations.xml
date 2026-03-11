@@ -25,34 +25,24 @@
     <!-- Remove color filter -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
 
-    <xpath expr="//h1" position="replace">
-        <h1 class="display-3-fs">Plan, build, deliver insane value</h1>
-    </xpath>
-    <xpath expr="//p" position="replace">
-        <p class="lead" style="text-align: left;"><br/>Offering tailored strategies to drive growth and success.</p>
-    </xpath>
-
-    <xpath expr="//p[2]" position="replace">
-        <p>
-            <br/>
-            <a href="#" class="btn btn-lg btn-primary o_translate_inline">Our solutions</a>
-        </p>
-    </xpath>
-
     <!-- Create Structure -->
     <xpath expr="//div[hasclass('container')]" position="inside">
-        <div class="row">
-            <div class="o_colored_level col-lg-5 pt32"/>
-            <div class="o_colored_level col-lg-6 offset-lg-1">
+        <div class="row o_grid_mode" data-row-count="10">
+            <div class="o_colored_level o_grid_item g-col-lg-5 g-height-10 col-lg-5" style="z-index: 1; grid-area: 1 / 1 / 11 / 6;">
+                <h1 class="display-3-fs">Plan, build, deliver insane value</h1>
+                <p class="lead" style="text-align: left;"><br/>Offering tailored strategies to drive growth and success.</p>
+                <p>
+                    <br/>
+                    <a href="#" class="btn btn-lg btn-primary o_translate_inline">Our solutions</a>
+                </p>
+            </div>
+            <div class="o_colored_level o_grid_item g-col-lg-6 g-height-10 col-lg-6 offset-lg-1" style="z-index: 1; grid-area: 1 / 7 / 11 / 13;">
                 <img class="img img-fluid" src="/html_editor/shape/theme_paptic/s_cover.svg?c1=o-color-1&amp;c2=o-color-2"/>
             </div>
         </div>
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-5')]" position="inside">
-        <xpath expr="//div[hasclass('container')]/h1" position="move"/>
-        <xpath expr="//div[hasclass('container')]/p"  position="move"/>
-        <xpath expr="//div[hasclass('container')]/p"  position="move"/>
-    </xpath>
+
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="replace"/>
 </template>
 
 <!-- ==== Image-Text ===== -->
