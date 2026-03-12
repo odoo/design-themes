@@ -20,7 +20,7 @@ CONFLICTUAL_CLASSES = [
     ['flex-column', 'flex-column-reverse', 'flex-row', 'flex-row-reverse'],
     ['g-0', 'g-col-lg-2', 'g-col-lg-3', 'g-col-lg-4', 'g-col-lg-5', 'g-col-lg-6'],
     ['g-0', 'g-height-5', 'g-height-8', 'g-height-10'],
-    ['h-100', 'o_half_screen_height', 'o_full_screen_height'],
+    ['h-100', 'o_three_quarter_height', 'o_full_screen_height'],
     ['justify-content-center', 'justify-content-start'],
     ['nav-link', 'nav-pills', 'nav-tabs'],
     ['o_cc1', 'o_cc2', 'o_cc3', 'o_cc4', 'o_cc5'],
