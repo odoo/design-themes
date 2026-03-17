@@ -4,19 +4,21 @@
 <template id="s_title" inherit_id="website.s_title">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt64 pb64 o_half_screen_height parallax s_parallax_is_fixed o_cc o_cc5" remove="pt40 pb40" separator=" "/>
-        <attribute name="data-scroll-background-ratio">1</attribute>
-    </xpath>
-    <!-- Parallax background & filter -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <span class="s_parallax_bg_wrap">
-            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_banner_default_image'); background-position: 50% 50%;"/>
-        </span>
-        <div class="o_we_bg_filter bg-black-50"/>
+        <attribute name="class" add="pt72" remove="pt40" separator=" "/>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        <b>Everything is designed.<br/> Few things are designed well.</b>
+    <xpath expr="//h2" position="before">
+        <p>New in Store</p>
+    </xpath>
+    <xpath expr="//h2" position="replace">
+        <h2 class="h3-fs">Creating pieces that resonate with enduring quality,<br/>elegant simplicity, and sustainable innovation.</h2>
+    </xpath>
+</template>
+
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb0" remove="pb40" separator=" "/>
     </xpath>
 </template>
 
