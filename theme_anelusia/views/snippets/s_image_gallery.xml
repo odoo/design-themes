@@ -15,11 +15,7 @@
 <template id="s_image_gallery" inherit_id="website.s_image_gallery">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt80 pb80" remove="pt24 pb24" separator=" "/>
-    </xpath>
-    <!-- Item #2 - Img -->
-    <xpath expr="//div[hasclass('carousel-item')][2]/img" position="attributes">
-        <attribute name="src">/web/image/website.library_image_16</attribute>
+        <attribute name="class" add="s_image_gallery_indicators_hidden pt64 pb64" remove="s_image_gallery_indicators_dots s_image_gallery_controllers_outside s_image_gallery_controllers_outside_arrows_right pt24 pb24" separator=" "/>
     </xpath>
     <!-- Item #2 - Indicator -->
     <xpath expr="//div[hasclass('carousel-indicators')]//button[3]" position="attributes">

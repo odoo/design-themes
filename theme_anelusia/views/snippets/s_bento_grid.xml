@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_bento_grid" inherit_id="website.s_bento_grid">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt32 pb32 o_cc o_cc2" remove="pt64 pb64" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
+        <attribute name="data-row-count">10</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="replace"/>
+    <!-- First item -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]" position="attributes">
+        <attribute name="style" add="grid-area: 1 / 1 / 11 / 5;--box-border-bottom-left-radius: 16px; --box-border-bottom-right-radius: 16px; --box-border-top-right-radius: 16px; --box-border-top-left-radius: 16px;" remove="grid-area: 1 / 1 / 7 / 7;border-radius: 6.4px !important;" separator=";"/>
+        <attribute name="class" add="col-lg-4 g-col-lg-4 g-height-10" remove="g-col-lg-6 g-height-6 col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]/h2" position="replace" mode="inner">
+        Women Fashion
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]/p" position="replace">
+        <p class="lead">Explore elegant and modern styles designed to express your personality.</p>
+        <p>
+            <a class="o_translate_inline btn btn-primary" t-att-href="shop_btn_href">
+                Shop Now
+            </a>
+            <br/>
+        </p>
+    </xpath>
+    <!-- Second item -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="style" add="grid-area: 7 / 9 / 11 / 13;z-index: 4;--box-border-bottom-left-radius: 16px; --box-border-bottom-right-radius: 16px; --box-border-top-right-radius: 16px; --box-border-top-left-radius: 16px;" remove="grid-area: 17 / 1 / 20 / 7;z-index: 3;border-radius: 6.4px !important;" separator=";"/>
+        <attribute name="class" add="col-lg-4 g-col-lg-4 g-height-4 justify-content-center" remove="g-col-lg-6 g-height-3 col-lg-6 justify-content-start" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="replace" mode="inner">
+        <h2 class="h3-fs" style="text-align: center;">
+            <a t-att-href="shop_btn_href" class="o_translate_inline">See all clothing&#160;<span class="fa fa-long-arrow-right"></span></a>
+        </h2>
+    </xpath>
+    <!-- Third item -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
+        <attribute name="style" add="grid-area: 1 / 5 / 11 / 9;z-index: 2;--box-border-bottom-left-radius: 16px; --box-border-bottom-right-radius: 16px; --box-border-top-right-radius: 16px; --box-border-top-left-radius: 16px;" remove="grid-area: 7 / 1 / 17 / 7;z-index: 4;border-radius: 6.4px !important;" separator=";"/>
+        <attribute name="class" add="col-lg-4 g-col-lg-4" remove="g-col-lg-6 col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/h2" position="replace" mode="inner">
+        Men Fashion
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/p" position="replace">
+        <p class="lead">Discover bold and stylish designs crafted for the modern man.</p>
+        <p>
+            <a class="o_translate_inline btn btn-primary" t-att-href="shop_btn_href">
+                Shop Now
+            </a>
+            <br/>
+        </p>
+    </xpath>
+    <!-- Fourth item -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
+        <attribute name="style" add="grid-area: 1 / 9 / 7 / 13;z-index: 3;--box-border-bottom-left-radius: 16px; --box-border-bottom-right-radius: 16px; --box-border-top-right-radius: 16px; --box-border-top-left-radius: 16px;" remove="grid-area: 6 / 7 / 20 / 13;z-index: 5;border-radius: 6.4px !important;" separator=";"/>
+        <attribute name="class" add="col-lg-4 g-col-lg-4 g-height-6" remove="g-col-lg-6 g-height-14 col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]/blockquote" position="replace">
+        <h2 class="h3-fs">Kids Fashion</h2>
+        <p class="lead">Discover playful and stylish designs crafted for kids.</p>
+        <p>
+            <a class="o_translate_inline btn btn-primary" t-att-href="shop_btn_href">
+                Shop Now
+            </a>
+            <br/>
+        </p>
+    </xpath>
+</template>
+
+</odoo>
