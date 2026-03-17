@@ -13,7 +13,6 @@
 
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_attributes_horizontal.xml',
-        'views/snippets/s_attributes_vertical.xml',
         'views/snippets/s_cover.xml',
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_card_offset.xml',
@@ -28,6 +27,7 @@
         'views/snippets/s_cards_grid.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_image_text.xml',
+        'views/snippets/s_image_text_box.xml',
         'views/snippets/s_image_title.xml',
         'views/snippets/s_images_mosaic.xml',
         'views/snippets/s_numbers.xml',
@@ -83,34 +83,11 @@
         'website.library_image_13': '/theme_loftspace/static/src/img/snippets/s_images_wall_03.webp',
     },
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_text_block', 's_striped', 's_key_images', 's_features', 's_quotes_carousel', 's_faq_collapse', 's_cta_box',],
+        'homepage': ['s_banner', 's_text_block', 's_striped', 's_title', 's_ecomm_categories_showcase', 's_image_text_box', 's_reviews_wall', 's_faq_collapse', 's_cta_box',],
     },
     'new_page_templates': {
         'about': {
             'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
-        },
-    },
-    'configurator_snippets_addons': {
-        'website_sale': {
-            'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_key_images'),
-            ],
-        },
-    },
-    'theme_customizations': {
-        'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'gap': '4',
-                'rounded': '0',
-                'size': 'small',
-                'alignment': 'right',
-            },
-            'add_classes': [
-                'pt48', 'pb80',
-            ],
-            'remove_classes': [
-                'pt64', 'pb64',
-            ],
         },
     },
     'author': 'Odoo S.A.',
