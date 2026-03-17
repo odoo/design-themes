@@ -6,7 +6,7 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_full_screen_height oe_img_bg o_bg_img_center pb216 pt72 o_cc o_cc5" remove="pt96 pb96" separator=" "/>
         <attribute name="style">background-image: url("/web/image/website.s_banner_default_image");</attribute>
-        <attribute name="data-oe-shape-data">{'shape':'html_builder/Wavy/22_001','colors':{'c5':'o-color-3'},'flip':['x'],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/02','colors':{'c5':'o-color-3'},'flip':['x'],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
 
     <!-- Row - remove grid mode -->
@@ -27,7 +27,7 @@
 
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="after">
-        <div class="o_we_shape o_html_builder_Wavy_22_001 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Wavy/22_001.svg?c5=o-color-3&amp;flip=x'); background-position: 50% 100%;"/>
+        <div class="o_we_shape o_html_builder_Connections_02 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Connections/02.svg?c5=o-color-3&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
 
     <!-- Paragraph -->
@@ -39,21 +39,10 @@
         A little place <br/>of paradise
     </xpath>
     <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        Our goal is to create a safe and nurturing environment for your child to learn and grow. We believe that every child is unique and should be treated as such.
     </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]//p[2]" position="attributes">
         <attribute name="class" add="mb-0" separator=" "/>
-    </xpath>
-</template>
-
-<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"html_builder/Wavy/22_001","flip":["x"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Wavy_22_001" style="background-image: url('/html_editor/shape/html_builder/Wavy/22_001.svg?c3=o-color-3&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
 </template>
 

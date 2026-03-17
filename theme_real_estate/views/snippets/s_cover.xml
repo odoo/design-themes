@@ -6,6 +6,9 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="pt232 pb232" add="pt176 pb176" separator=" "/>
     </xpath>
+        <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
+        <attribute name="class" add="bg-black-15" remove="bg-black-50" separator=" "/>
+    </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace">
         <h1 class="display-1-fs" style="text-align: center;"><font class="text-o-color-2">ESTATE ®</font><br/>Your easy home search, all in one</h1>
