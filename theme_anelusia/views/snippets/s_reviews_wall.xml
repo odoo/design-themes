@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_reviews_wall" inherit_id="website.s_reviews_wall">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt32 pb32" remove="pt80 pb80" separator=" "/>
+    </xpath>
+    <!-- Blockquote + remove extra -->
+    <xpath expr="//blockquote" position="attributes">
+        <attribute name="style" add="border-radius: 16px !important;" remove="border-radius: 6.4px !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//blockquote)[2]" position="attributes">
+        <attribute name="style" add="border-radius: 16px !important;" remove="border-radius: 6.4px !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//blockquote)[3]" position="attributes">
+        <attribute name="style" add="border-radius: 16px !important;" remove="border-radius: 6.4px !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-12')])[4]" position="replace"/>
+    <xpath expr="(//div[hasclass('col-12')])[4]" position="replace"/>
+    <xpath expr="(//div[hasclass('col-12')])[4]" position="replace"/>
+    <!-- Rating icons color -->
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[1]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-5" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[2]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-5" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[3]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-5" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

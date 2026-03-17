@@ -4,38 +4,33 @@ import * as wTourUtils from '@website/js/tours/tour_utils';
 
 const snippets = [
     {
-        id: 's_text_cover',
-        name: 'Text Cover',
+        id: 's_splash_intro',
+        name: 'Splash Intro',
         groupName: "Intro",
     },
     {
-        id: 's_images_wall',
-        name: 'Images Wall',
-        groupName: "Images",
+        id: 's_announcement_scroll',
+        name: 'Announcement Scroll',
+        groupName: "Catalog",
     },
     {
-        id: 's_color_blocks_2',
-        name: 'Big Boxes',
-        groupName: "Content",
+        id: 's_bento_grid',
+        name: 'Bento Grid',
+        groupName: "Catalog",
     },
     {
-        id: 's_references',
-        name: 'References',
+        id: 's_ecomm_categories_showcase',
+        name: 'Categories Showcase',
+        groupName: "Catalog",
+    },
+    {
+        id: 's_reviews_wall',
+        name: 'Reviews Wall',
         groupName: "People",
     },
     {
-        id: 's_media_list',
-        name: 'Media List',
-        groupName: "Content",
-    },
-    {
-        id: 's_key_images',
-        name: 'Key Images',
-        groupName: "Columns",
-    },
-    {
-        id: 's_call_to_action',
-        name: 'Call to Action',
+        id: 's_cta_box',
+        name: 'Box Call to Action',
         groupName: "Content",
     },
 ];
@@ -54,5 +49,4 @@ wTourUtils.registerThemeHomepageTour("anelusia_tour", () => [
     wTourUtils.selectColorPalette(),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[5]),
-    ...wTourUtils.insertSnippet(snippets[6]),
 ]);

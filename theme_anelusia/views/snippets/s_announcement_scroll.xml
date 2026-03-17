@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_announcement_scroll" inherit_id="website.s_announcement_scroll">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2" remove="s_announcement_scroll_parallax" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

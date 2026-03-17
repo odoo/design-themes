@@ -2,17 +2,22 @@
 <odoo>
 
 <template id="s_cta_box" inherit_id="website.s_cta_box">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt32 pb72 o_colored_level o_cc o_cc2" remove="pt80 pb80" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_card_img_horizontal')]" position="attributes">
+        <attribute name="style" add="--card-img-size-h: 50%;border-radius: 16px !important;" separator=";"/>
+    </xpath>
+    <xpath expr="//figure[hasclass('o_card_img_wrapper')]" position="attributes">
+        <attribute name="class" remove="ratio ratio-1x1" separator=" "/>
+    </xpath>
     <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Discover our new collection,<br/>shop our bestsellers today!
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Unveil the latest, shop the best!<br/><br/>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
-        Shop now
+    <xpath expr="//div[hasclass('card-body')]" position="replace">
+        <div class="card-body">
+            <h2 class="card-title"><span class="display-4-fs">Black Friday Sale Live Now!</span></h2>
+            <p class="card-text">Shop now and get 50% off on all products.</p>
+            <a t-att-href="shop_btn_href" class="o_translate_inline btn btn-lg btn-primary">Shop Now</a>
+        </div>
     </xpath>
 </template>
 

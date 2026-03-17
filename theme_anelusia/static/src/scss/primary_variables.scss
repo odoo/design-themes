@@ -7,25 +7,15 @@ $o-website-values-palettes: (
         'color-palettes-name': 'default-25',
 
         // Header
-        'header-font-size':                 1rem,
+        'header-template':                  'hamburger',
+        'menu-shadow-class':                '',
 
         // Font
-        'font':                             'Source Sans Pro',
-        'headings-font':                    'Spartan',
+        'font':                             'Inter',
+        'headings-font':                    'DM Sans',
 
         // Links
         'link-underline':                   'never',
-
-        // Buttons
-        'btn-padding-y':                    .45rem,
-        'btn-padding-x':                    1.35rem,
-        'btn-padding-y-sm':                 .3rem,
-        'btn-padding-x-sm':                 .9rem,
-        'btn-padding-y-lg':                 .6rem,
-        'btn-padding-x-lg':                 1.8rem,
-        'btn-border-radius':                10rem,
-        'btn-border-radius-sm':             10rem,
-        'btn-border-radius-lg':             10rem,
 
         // Footer
         'footer-template':                  'headline',
@@ -33,7 +23,7 @@ $o-website-values-palettes: (
 );
 
 $default-25: map-get($o-color-palettes, 'default-25');
-$default-25: map-merge($default-25, ('footer': 5));
+$default-25: map-merge($default-25, ('menu': 2, 'footer': 5, 'header-sales_four': 2, 'o-color-3': #F3F2F2));
 $o-color-palettes: map-merge($o-color-palettes, ('default-25': $default-25));
 
 //------------------------------------------------------------------------------//
@@ -46,12 +36,12 @@ $o-theme-h3-font-size-multiplier: (28 / 16);
 $o-theme-h4-font-size-multiplier: (24 / 16);
 $o-theme-h5-font-size-multiplier: (21 / 16);
 
-$o-theme-headings-font-weight: 700;
+$o-theme-headings-font-weight: 500;
 
 $o-theme-font-configs: (
-    'Source Sans Pro': (
-        'family': ('Source Sans Pro', sans-serif),
-        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,700,700i',
     ),
     'Forum': (
         'family': ('Forum', cursive),
@@ -77,9 +67,9 @@ $o-theme-font-configs: (
         'family': ('EB Garamond', serif),
         'url': 'EB+Garamond:300,300i,400,400i,700,700i',
     ),
-    'Spartan': (
-        'family': ('Spartan', sans-serif),
-        'url': 'Spartan:300,300i,400,400i,700,700i',
+    'DM Sans': (
+        'family': ('DM Sans', serif),
+        'url': 'DM+Sans:300,300i,400,400i,500,500i,700,700i',
     ),
 );
 

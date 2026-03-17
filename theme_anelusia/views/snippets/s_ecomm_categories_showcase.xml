@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_ecomm_categories_showcase" inherit_id="website.s_ecomm_categories_showcase">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt32 pb32 o_cc2" remove="pt48 pb48 o_cc1" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_title')]" position="attributes">
+        <attribute name="class" remove="d-none" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_title')]//h2" position="replace" mode="inner">
+        Discover our Winter essentials
+    </xpath>
+    <!-- Blocks -->
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_block')][1]" position="attributes">
+        <attribute name="class" add="rounded-4" remove="rounded-2" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_block')][2]" position="attributes">
+        <attribute name="class" add="rounded-4" remove="rounded-2" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_block')][3]" position="attributes">
+        <attribute name="class" add="rounded-4" remove="rounded-2" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_block')][4]" position="attributes">
+        <attribute name="class" add="rounded-4" remove="rounded-2" separator=" "/>
+    </xpath>
+    <!-- Content -->
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[1]" position="replace" mode="inner">
+        <h2 class="h3-fs">Gilets and Jackets</h2>
+        <p>
+            <a href="#" role="button" class="btn btn-primary o_translate_inline">View All</a>
+        </p>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[2]" position="replace" mode="inner">
+        <h2 class="h3-fs">Beanies and Hats</h2>
+        <p>
+            <a href="#" role="button" class="btn btn-primary o_translate_inline">View All</a>
+        </p>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[3]" position="replace" mode="inner">
+        <h2 class="h3-fs">Boots</h2>
+        <p>
+            <a href="#" role="button" class="btn btn-primary o_translate_inline">View All</a>
+        </p>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[4]" position="replace" mode="inner">
+        <h2 class="h3-fs">Sweaters and Pullovers</h2>
+        <p>
+            <a href="#" role="button" class="btn btn-primary o_translate_inline">View All</a>
+        </p>
+    </xpath>
+</template>
+
+</odoo>

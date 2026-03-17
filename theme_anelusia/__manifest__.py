@@ -64,6 +64,11 @@
         'views/snippets/s_empowerment.xml',
         'views/snippets/s_numbers_boxed.xml',
         'views/snippets/s_split_intro.xml',
+        'views/snippets/s_bento_grid.xml',
+        'views/snippets/s_splash_intro.xml',
+        'views/snippets/s_announcement_scroll.xml',
+        'views/snippets/s_ecomm_categories_showcase.xml',
+        'views/snippets/s_reviews_wall.xml',
         'views/new_page_template.xml',
     ],
     'images': [
@@ -84,28 +89,25 @@
         'website.s_text_image_default_image': '/theme_anelusia/static/src/img/snippets/s_text_image.webp',
     },
     'configurator_snippets': {
-        'homepage': ['s_text_cover', 's_images_wall', 's_color_blocks_2', 's_references', 's_media_list','s_key_images', 's_call_to_action'],
+        'homepage': ['s_splash_intro', 's_announcement_scroll', 's_bento_grid', 's_ecomm_categories_showcase', 's_reviews_wall', 's_cta_box'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_color_blocks_2'),
+                ('website_sale.s_dynamic_snippet_category_list', 'replace', 's_ecomm_categories_showcase'),
             ],
         },
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
             'data_attributes': {
-                'rounded': '0',
-                'gap': '1',
-                'size': 'large',
+                'rounded': '4',
+                'gap': '4',
+                'columns': '3',
             },
-            'add_classes': [
-                'pt88',
-            ],
-            'remove_classes': [
-                'pt64',
-            ],
+            'background': {
+                'color': 'o_cc2',
+            },
         },
     },
     'author': 'Odoo S.A.',
