@@ -23,7 +23,7 @@
     <xpath expr="//h1" position="replace">
         <h1 class="display-1" style="text-align: center;">Generation<br/>Furniture Co.</h1>
     </xpath>
-    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p[hasclass('lead')]" position="replace"/>
     <xpath expr="//a[hasclass('btn')]" position="replace"/>
 
     <!-- Second item -->

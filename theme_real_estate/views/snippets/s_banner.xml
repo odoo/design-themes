@@ -8,8 +8,8 @@
     </xpath>
 
     <!-- Paragraph -->
-    <xpath expr="//p" position="replace">
-        <p class="lead">Now you can find more than 5,000+ property choices with our professional agents!<br/></p>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Now you can find more than 5,000+ property choices with our professional agents!<br/>
     </xpath>
 
     <!-- Button -->
