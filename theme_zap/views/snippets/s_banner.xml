@@ -34,8 +34,8 @@
     <xpath expr="//h1" position="attributes">
         <attribute name="class" remove="display-1" separator=" "/>
     </xpath>
-    <xpath expr="//p" position="replace">
-        <p class="lead">Harness the power of disruptive technologies to increase<br/> your day-to-day business operations.</p>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Harness the power of disruptive technologies to increase<br/> your day-to-day business operations.
     </xpath>
     <xpath expr="//div[hasclass('col-lg-8')]//p[2]" position="attributes">
         <attribute name="class" add="mb-0" separator=" "/>
