@@ -20,6 +20,26 @@ $o-theme-font-configs: (
         'family': ('Poppins', sans-serif),
         'url': 'Poppins:300,300i,400,400i,700,700i',
     ),
+    'Bitter': (
+        'family': ('Bitter', serif),
+        'url': 'Bitter:300,300i,400,400i,700,700i',
+    ),
+    'Quattrocento': (
+        'family': ('Quattrocento', serif),
+        'url': 'Quattrocento:300,300i,400,400i,700,700i',
+    ),
+    'PT Sans': (
+        'family': ('PT Sans', sans-serif),
+        'url': 'PT+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Vollkorn': (
+        'family': ('Vollkorn', serif),
+        'url': 'Vollkorn:300,300i,400,400i,700,700i',
+    ),
+    'Oxygen': (
+        'family': ('Oxygen', sans-serif),
+        'url': 'Oxygen:300,400,700',
+    ),
 );
 
 
@@ -30,9 +50,13 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'default-8',
+        'recommended-palette-name': ('default-8', 'default-10', 'default-11', 'default-12'),
 
         'font': 'Inter',
         'headings-font': 'Poppins',
+        'alternative-fonts': ('Abril Fatface', 'Quattrocento', 'Bitter'),
+        'alternative-headings-fonts': ('Oxygen', 'Vollkorn', 'PT Sans'),
+
 
         'headings-line-height': 1.1,
 
