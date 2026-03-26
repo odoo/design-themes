@@ -22,6 +22,7 @@
         'theme_bookstore',
         'theme_brutalist',
         'theme_buzzy',
+        'theme_care',
         'theme_clean',
         'theme_cobalt',
         'theme_enark',

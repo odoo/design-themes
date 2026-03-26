@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ==== SPLASH INTRO ===== -->
+<template id="s_splash_intro" inherit_id="website.s_splash_intro">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb64" remove="pb88" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ==== NUMBERS LITE ===== -->
+<template id="s_numbers_lite" inherit_id="website.s_numbers_lite">
+    <!-- First Number -->
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-4" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][1]//h2" position="replace" mode="inner">
+        <font class="text-o-color-1">250+</font>
+    </xpath>
+    <!-- Second Number -->
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-4" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][2]//h2" position="replace" mode="inner">
+        <font class="text-o-color-1">730</font>
+    </xpath>
+    <!-- Third Number -->
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-4" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][3]//h2" position="replace" mode="inner">
+        <font class="text-o-color-1">400+</font>
+    </xpath>
+    <!-- Remove extra number -->
+    <xpath expr="//div[hasclass('col-lg-3')]" position="replace"/>
+</template>
+
+<!-- ==== FLOATING BLOCKS ===== -->
+<template id="s_floating_blocks" inherit_id="website.s_floating_blocks">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb64" remove="pb32 o_cc o_cc2" separator=" "/>
+    </xpath>
+
+    <!-- First Card -->
+    <xpath expr="//section[hasclass('s_floating_blocks_block')]" position="attributes">
+        <attribute name="class" add="o_cc4" remove="parallax o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][1]//div[hasclass('s_floating_blocks_block_grid')]//div[hasclass('o_grid_item')]" position="attributes">
+        <attribute name="style" add="grid-area: 1 / 1 / 5 / 7;" remove="grid-area: 1 / 1 / 5 / 9;" separator=";"/>
+        <attribute name="class" add="col-lg-6 g-col-lg-6" remove="col-lg-8 g-col-lg-8" separator=" "/>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][1]//div[hasclass('s_floating_blocks_block_grid')]//a[hasclass('btn')]" position="replace">
+        <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary"><t t-out="cta_btn_text">Learn more</t></a>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][1]//div[hasclass('s_floating_blocks_block_grid')]" position="inside">
+        <div class="o_grid_item o_grid_item_image g-height-8 g-col-lg-6 col-lg-6" style="grid-area: 1 / 7 / 9 / 13; z-index: 3;">
+            <img src="/web/image/website.landscape_md_1" alt="" class="img img-fluid"/>
+        </div>
+    </xpath>
+
+    <!-- Second Card -->
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][2]" position="attributes">
+        <attribute name="class" add="o_cc3" remove="parallax o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][2]//div[hasclass('s_floating_blocks_block_grid')]//div[hasclass('o_grid_item')]" position="attributes">
+        <attribute name="style" add="grid-area: 1 / 1 / 5 / 7;" remove="grid-area: 1 / 1 / 5 / 9;" separator=";"/>
+        <attribute name="class" add="col-lg-6 g-col-lg-6" remove="col-lg-8 g-col-lg-8" separator=" "/>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][2]//div[hasclass('s_floating_blocks_block_grid')]//a[hasclass('btn')]" position="replace">
+        <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary"><t t-out="cta_btn_text">Learn more</t></a>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][2]//div[hasclass('s_floating_blocks_block_grid')]" position="inside">
+        <div class="o_grid_item o_grid_item_image g-height-8 g-col-lg-6 col-lg-6" style="grid-area: 1 / 7 / 9 / 13; z-index: 3;">
+            <img src="/web/image/website.landscape_md_2" alt="" class="img img-fluid"/>
+        </div>
+    </xpath>
+
+    <!-- Third Card -->
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]" position="attributes">
+        <attribute name="class" remove="parallax" separator=" "/>
+    </xpath>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]//div[hasclass('o_grid_item')]" position="attributes">
+        <attribute name="style" add="grid-area: 1 / 1 / 5 / 7;" remove="grid-area: 1 / 1 / 5 / 9;" separator=";"/>
+        <attribute name="class" add="col-lg-6 g-col-lg-6" remove="col-lg-8 g-col-lg-8" separator=" "/>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]//p" position="replace"/>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]//h2" position="before">
+        <p class="lead">Tailored Furniture</p>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]//a[hasclass('btn')]" position="replace">
+        <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary"><t t-out="cta_btn_text">Learn more</t></a>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]" position="inside">
+        <div class="o_grid_item o_grid_item_image g-height-8 g-col-lg-6 col-lg-6" style="grid-area: 1 / 7 / 9 / 13; z-index: 3;">
+            <img src="/web/image/website.landscape_md_3" alt="" class="img img-fluid"/>
+        </div>
+    </xpath>
+</template>
+
+<!-- ==== REVIEWS WALL ===== -->
+<template id="s_reviews_wall" inherit_id="website.s_reviews_wall">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc2" separator=" "/>
+    </xpath>
+    <!-- Blockquote -->
+    <xpath expr="//blockquote" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//blockquote)[2]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//blockquote)[3]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//blockquote)[4]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//blockquote)[5]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//blockquote)[6]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Rating icons color -->
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[1]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[2]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[3]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[4]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[5]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[6]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
