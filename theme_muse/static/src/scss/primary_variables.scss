@@ -1,0 +1,47 @@
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'muse',
+
+        // Font
+        'font': 'Inter',
+        'headings-font': 'Geist',
+
+        // Footer
+        'footer-template': 'mega',
+    ),
+);
+
+// Main palette
+$o-color-palettes: map-merge($o-color-palettes, (
+    'muse': (
+        'o-color-1': #121212,
+        'o-color-2': #2c2c2c,
+        'o-color-3': #f8f8f8,
+        'o-color-4': #ffffff,
+        'o-color-5': #121212,
+
+        'menu': 5,
+        'footer': 5,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'muse');
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Geist': (
+        'family': ('Geist', serif),
+        'url': 'Geist:400,400i,500,500i,700,700i',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,500,500i,700,700i',
+    ),
+);
