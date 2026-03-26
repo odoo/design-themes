@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== FAQ COLLAPSE ======== -->
+<template id="configurator_s_faq_collapse" inherit_id="website.configurator_s_faq_collapse">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt80 pb80" remove="pt32 pb32" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

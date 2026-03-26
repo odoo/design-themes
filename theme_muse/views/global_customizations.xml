@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== FAQ COLLAPSE ======== -->
+<template id="s_faq_collapse" inherit_id="website.s_faq_collapse">
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" add="display-3-fs" remove="h3-fs" separator=" "/>
+    </xpath>
+    <xpath expr="//t[@t-call='website.s_accordion']" position="attributes">
+        <attribute name="extra_classes.f">accordion-flush s_accordion_highlight</attribute>
+    </xpath>
+</template>
+
+</odoo>

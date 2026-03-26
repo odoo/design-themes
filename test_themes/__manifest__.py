@@ -29,6 +29,7 @@
         'theme_kiddo',
         'theme_loftspace',
         'theme_monglia',
+        'theme_muse',
         'theme_nano',
         'theme_notes',
         'theme_odoo_experts',
