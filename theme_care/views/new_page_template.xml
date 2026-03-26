@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="new_page_template_s_text_block_h1" inherit_id="website.new_page_template_s_text_block_h1">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb32" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_s_text_block_h2" inherit_id="website.new_page_template_s_text_block_h2">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb32" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_s_text_block_h2_contact" inherit_id="website.new_page_template_s_text_block_h2_contact">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb32" separator=" "/>
+    </xpath>
+</template>
+
+<template id="new_page_template_about_personal_s_numbers" inherit_id="website.new_page_template_about_personal_s_numbers">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt24" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

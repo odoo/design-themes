@@ -1,0 +1,90 @@
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (62 / 16);
+$o-theme-h2-font-size-multiplier: (48 / 16);
+$o-theme-h3-font-size-multiplier: (36 / 16);
+$o-theme-h4-font-size-multiplier: (28 / 16);
+$o-theme-h5-font-size-multiplier: (24 / 16);
+$o-theme-h6-font-size-multiplier: (20 / 16);
+
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'care-1',
+
+        // Header
+        'header-template': 'boxed',
+        'menu-shadow-class': '',
+        'menu-border-radius': 1rem,
+        'logo-height': 3rem,
+        'fixed-logo-height': 2rem,
+
+        // Font
+        'font': 'Inter',
+        'headings-font': 'Mona Sans',
+
+        // Footer
+        'footer-template': 'call_to_action',
+    ),
+);
+
+$care-1: map-get($o-color-palettes, 'care-1');
+$care-1: map-merge($care-1, ('menu': 2, 'footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('care-1': $care-1));
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,500,500i',
+    ),
+    'Libre Baskerville': (
+        'family': ('Libre Baskerville', cursive),
+        'url': 'Libre+Baskerville:400,400i,700',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,700,700i',
+    ),
+    'Mona Sans': (
+        'family': ('Mona Sans', sans-serif),
+        'url': 'Mona+Sans:400,400i,500,500i,700,700i',
+    ),
+    'Advent Pro': (
+        'family': ('Advent Pro', sans-serif),
+        'url': 'Advent+Pro:300,300i,400,400i,600,600i',
+        'base': (
+            'font-size-base':               1.125rem,
+        ),
+    ),
+    'Oswald': (
+        'family': ('Oswald', sans-serif),
+        'url': 'Oswald:200,200i,400,400i,500,500i',
+        'base': (
+            'font-size-base':               1.25rem,
+        ),
+    ),
+    'Oxygen': (
+        'family': ('Oxygen', sans-serif),
+        'url': 'Oxygen:300,300i,400,400i,700,700i',
+    ),
+    'Open Sans': (
+        'family': ('Open Sans', sans-serif),
+        'url': 'Open+Sans:300,300i,400,400i,600,600i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Background Shapes
+//------------------------------------------------------------------------------
+
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Wavy/21', (2: 1));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Bold/07_001', (2: 3));

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_masonry_block" inherit_id="website.s_masonry_block" name="Masonry">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt80" remove="pt48" separator=" "/>
+    </xpath>
+</template>
+
+<template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="data-row-count">14</attribute>
+    </xpath>
+    <!--Block #1 -->
+    <xpath expr="//div[hasclass('o_grid_item')]" position="replace">
+        <div class="o_grid_item o_cc o_cc3 g-height-7 g-col-lg-5 col-lg-5 justify-content-end rounded-4" data-name="Block" style="-grid-item-padding-y: 20px; --grid-item-padding-x: 20px; z-index: 1; grid-area: 1 / 1 / 8 / 6;">
+            <h2 class="display-2-fs">Expert<br class="d-none d-lg-inline"/>Team</h2>
+        </div>
+    </xpath>
+
+    <!-- Block #2 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="replace">
+        <div class="o_grid_item o_grid_item_image g-height-7 g-col-lg-7 col-lg-7 rounded-4" data-name="Block" style="z-index: 2; grid-area: 1 / 6 / 8 / 13;">
+            <img src="/web/image/website.s_masonry_block_default_image_1" class="img img-fluid mx-auto" alt=""/>
+        </div>
+    </xpath>
+
+    <!-- Block #3 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="replace">
+        <div class="o_grid_item o_grid_item_image g-height-7 g-col-lg-7 col-lg-7 rounded-4" data-name="Block" style="z-index: 3; grid-area: 8 / 1 / 15 / 8;">
+            <img src="/web/image/website.s_masonry_block_default_image_2" class="img img-fluid mx-auto" alt=""/>
+        </div>
+    </xpath>
+
+    <!-- Block #4 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="replace">
+        <div class="o_grid_item g-height-7 g-col-lg-5 col-lg-5 rounded-4 o_cc o_cc3 justify-content-end" data-name="Block" style="z-index: 4; grid-area: 8 / 8 / 15 / 13;-grid-item-padding-y: 20px; --grid-item-padding-x: 20px;">
+            <h2 class="display-2-fs">Modern<br class="d-none d-lg-inline"/>Clinic</h2>
+        </div>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="replace"/>
+</template>
+
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_company_team_grid" inherit_id="website.s_company_team_grid">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Meet our specialists
+    </xpath>
+    <!-- Team #01 -->
+    <xpath expr="(//p)[1]"  position="replace" mode="inner">
+        Lead Physiotherapist
+    </xpath>
+    <!-- Team #02 -->
+    <xpath expr="(//p)[2]"  position="replace" mode="inner">
+        Registered Osteopath
+    </xpath>
+    <!-- Team #03 -->
+    <xpath expr="(//p)[3]"  position="replace" mode="inner">
+        Sports Massage Therapist
+    </xpath>
+    <!-- Team #04 -->
+    <xpath expr="(//p)[4]"  position="replace" mode="inner">
+        Pediatric Physiotherapist
+    </xpath>
+    <!-- Team #05 -->
+    <xpath expr="(//p)[5]"  position="replace" mode="inner">
+        Orthopedic Rehab Specialist
+    </xpath>
+    <!-- Team #06 -->
+    <xpath expr="(//p)[6]"  position="replace" mode="inner">
+        Clinic Manager
+    </xpath>
+</template>
+
+</odoo>

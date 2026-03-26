@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_reviews_wall" inherit_id="website.s_reviews_wall">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc2" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Patient Success Stories
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        How we've helped our patients live pain-free.
+    </xpath>
+    <!-- Blockquote + remove extra -->
+    <xpath expr="//blockquote" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//blockquote)[2]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+
+    </xpath>
+    <xpath expr="(//blockquote)[3]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//blockquote)[4]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//blockquote)[5]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//blockquote)[6]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Rating icons color -->
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[1]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[2]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[3]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[4]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[5]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[6]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

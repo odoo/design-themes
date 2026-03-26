@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_numbers" inherit_id="website.s_numbers">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt24" remove="pt80" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-5')]" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-2')]" position="replace">
+        <div class="col-lg-4">
+            <div class="s_hr pt0 pb24" data-snippet="s_hr" data-name="Separator">
+                <hr class="w-100 mx-auto"/>
+            </div>
+            <h2><span class="display-1-fs"><font class="text-o-color-1">15+</font></span></h2>
+            <p><span class="h5-fs">Years of experience</span></p>
+        </div>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')]" position="replace">
+        <div class="col-lg-4">
+            <div class="s_hr pt0 pb24" data-snippet="s_hr" data-name="Separator">
+                <hr class="w-100 mx-auto"/>
+            </div>
+            <h2><span class="display-1-fs"><font class="text-o-color-1">500+</font></span></h2>
+            <p><span class="h5-fs">Patients accompanied</span></p>
+        </div>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-2')]" position="replace">
+        <div class="col-lg-4">
+            <div class="s_hr pt0 pb24" data-snippet="s_hr" data-name="Separator">
+                <hr class="w-100 mx-auto"/>
+            </div>
+            <h2><span class="display-1-fs"><font class="text-o-color-1">5+</font></span></h2>
+            <p><span class="h5-fs">Medical specialties</span></p>
+        </div>
+    </xpath>
+</template>
+
+</odoo>
