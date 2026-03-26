@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ==== NUMBERS LITE ===== -->
+<template id="configurator_s_numbers_lite" inherit_id="website.configurator_s_numbers_lite">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt24 pb24" remove="pt80 pb80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ==== COMPANY TEAM GRID ===== -->
+<template id="configurator_s_company_team_grid" inherit_id="website.configurator_s_company_team_grid">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb80" remove="pb48" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
