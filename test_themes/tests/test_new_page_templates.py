@@ -357,6 +357,18 @@ class TestNewPageTemplates(TransactionCase):
                                     "parent with 's_parallax_bg_wrap', found parent classes: %r"
                                     % (theme_name, view.key, parent_classes)
                                 )
+
+                        for el in html_tree.xpath(
+                            ".//*[contains(concat(' ', normalize-space(@class), ' '), ' s_parallax_bg_wrap ')]"
+                        ):
+                            if not el.xpath(
+                                ".//*[contains(concat(' ', normalize-space(@class), ' '), ' s_parallax_bg ')]"
+                            ):
+                                errors.append(
+                                    "Using %r, view %r: element with class 's_parallax_bg_wrap' must not be empty "
+                                    "(it must contain a child with 's_parallax_bg')"
+                                    % (theme_name, view.key)
+                                )
                     except Exception as e:  # noqa: BLE001
                         _logger.error("Using %r, view %r cannot be rendered (%r)", theme_name, view.key, e)
                         errors.append("Using %r, view %r cannot be rendered (%r)" % (theme_name, view.key, e))
