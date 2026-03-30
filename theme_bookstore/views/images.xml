@@ -130,12 +130,6 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="name">website.library_image_02</field>
     <field name="url">/theme_bookstore/static/src/img/snippets/library_image_02.webp</field>
 </record>
-
-<record id="s_masonry_block_default_image_1" model="theme.ir.attachment">
-    <field name="key">website.s_masonry_block_default_image_1</field>
-    <field name="name">website.s_masonry_block_default_image_1</field>
-    <field name="url">/theme_bookstore/static/src/img/snippets/s_masonry_block.webp</field>
-</record>
 <record id="s_carousel_default_image_1" model="theme.ir.attachment">
     <field name="key">website.s_carousel_default_image_1</field>
     <field name="name">website.s_carousel_default_image_1</field>
@@ -154,12 +148,12 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
 <record id="s_carousel_intro_default_image_1" model="theme.ir.attachment">
     <field name="key">website.s_carousel_intro_default_image_1</field>
     <field name="name">website.s_carousel_intro_default_image_1</field>
-    <field name="url">/theme_bookstore/static/src/img/snippets/s_quotes_carousel_2.webp</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_carousel_intro_1.webp</field>
 </record>
 <record id="s_carousel_intro_default_image_2" model="theme.ir.attachment">
     <field name="key">website.s_carousel_intro_default_image_2</field>
     <field name="name">website.s_carousel_intro_default_image_2</field>
-    <field name="url">/theme_bookstore/static/src/img/snippets/s_quotes_carousel_1.webp</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_carousel_intro_2.webp</field>
 </record>
 <record id="s_carousel_intro_default_image_3" model="theme.ir.attachment">
     <field name="key">website.s_carousel_intro_default_image_3</field>
@@ -711,5 +705,4 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="name">website.ultrawide_lg_6</field>
     <field name="url">/theme_bookstore/static/src/img/configurator/ultrawide_lg_6.webp</field>
 </record>
-
 </odoo>

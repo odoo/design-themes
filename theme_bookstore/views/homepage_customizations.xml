@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ======== BENTO GRID ======== -->
+    <template id="configurator_s_bento_grid" inherit_id="website.configurator_s_bento_grid">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt96" remove="pt64" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- ======== TITLE ======== -->
+    <template id="configurator_s_title" inherit_id="website.configurator_s_title">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc1 pt40 pb16" remove="pt40 pb40" separator=" "/>
+        </xpath>
+        <xpath expr="//h2" position="attributes">
+            <attribute name="class" remove="display-3-fs" separator=" "/>
+            <attribute name="style">text-align: start;</attribute>
+        </xpath>
+    </template>
+
+    <!-- ======== CATEGORY AND PRODUCTS ======== -->
+    <template id="configurator_s_category_and_products" inherit_id="website.configurator_s_category_and_products">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc1 pt0 pb88" remove="o_cc2 pt32 pb32" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- ======== ANNOUNCEMENT SCROLL ======== -->
+    <template id="configurator_s_announcement_scroll" inherit_id="website.configurator_s_announcement_scroll">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc2 pt32 pb32" remove="pt24 pb24" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- ======== PRODUCTS & ADVANTAGES ======== -->
+    <template id="configurator_s_products_and_advantages" inherit_id="website.configurator_s_products_and_advantages">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc1 pt80 pb80" remove="o_cc2 pt48 pb48" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- ======== CALL TO ACTION COUNTDOWN ======== -->
+    <template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt136 pb112" remove="pt64 pb64" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- ======== TEXT BOLD ======== -->
+    <template id="configurator_s_text_bold" inherit_id="website.configurator_s_text_bold">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc2 pb40" remove="pb112" separator=" "/>
+        </xpath>
+    </template>
+
+</odoo>
