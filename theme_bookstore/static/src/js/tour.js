@@ -32,7 +32,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("bookstore_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"default-26"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-19"'),
     ...wTourUtils.insertSnippet(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),

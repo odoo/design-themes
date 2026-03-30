@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Carousel intro -->
+    <template id="s_carousel_intro" inherit_id="website.s_carousel_intro">
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('carousel-inner')]" position="before">
+            <div class="o_we_shape o_html_builder_Bold_17" style="background-image: url(&quot;/html_editor/shape/html_builder%2FBold%2F17.svg?c5=o-color-2&amp;flip=xy&quot;); background-position: 50% 50%;" contenteditable="false"></div>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro')]" position="attributes">
+            <attribute name="class" add="s_carousel_boxed s_carousel_rounded bg-white o_cc2" remove="s_carousel_default carousel-dark" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/17","colors":{"c5":"o-color-2"},"flip":["y","x"],"showOnMobile":false,"shapeAnimationSpeed":"0","selectedColor":true}</attribute>
+            <attribute name="style">--position: relative;</attribute>
+        </xpath>
+        <!-- All slides: remove o_cc o_cc1 -->
+        <xpath expr="//div[hasclass('s_carousel_intro_item')]" position="attributes">
+            <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][2]" position="attributes">
+            <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][3]" position="attributes">
+            <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+        </xpath>
+        <!-- Slider 1 -->
+        <xpath expr="//div[hasclass('o_grid_item')][1]" position="replace" mode="inner">
+            <h1 class="display-3-fs"><font class="text-o-color-1">Gideon Schwartz Collection</font></h1>
+            <p><br/>Use this snippet to presents your content in a slideshow-like format.</p>
+            <p><a href="#top" class="o_translate_inline btn btn-primary btn-lg">Shop now</a></p>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item_image')][1]" position="attributes">
+            <attribute name="class" remove="o_cc o_cc1 g-col-lg-6 col-lg-6 g-height-4" add="g-col-lg-7 col-lg-7 g-height-8 o_grid_item_image_contain" separator=" "/>
+            <attribute name="style">z-index: 3; grid-area: 1 / 6 / 9 / 13;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][2]" position="replace"/>
+        <!-- Slider 2 -->
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('o_grid_item')][1]" position="attributes">
+            <attribute name="class" add="g-height-4" remove="g-height-5" separator=" "/>
+            <attribute name="style">z-index: 1; grid-area: 1 / 1 / 5 / 7;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//h2" position="replace" mode="inner">
+            <font class="text-o-color-1">Books You Can't Miss</font>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('o_grid_item')][2]" position="attributes">
+            <attribute name="class" add="g-col-lg-6 col-lg-6 g-height-4" remove="g-height-2 g-col-lg-4 col-lg-4" separator=" "/>
+            <attribute name="style">z-index: 2; --grid-item-padding-y: 20px; grid-area: 5 / 1 / 9 / 7;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('o_grid_item')][2]" position="replace" mode="inner">
+            <p class="lead">Discover our most popular books, loved by readers everywhere. Find your next great read among our top bestsellers.</p>
+            <p><a class="btn btn-primary btn-lg" href="#">Browse Bestsellers</a></p>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('o_grid_item')][3]" position="attributes">
+            <attribute name="class" add="g-height-8 g-col-lg-6 col-lg-6" remove="g-height-7 g-col-lg-5 col-lg-5" separator=" "/>
+            <attribute name="style">z-index: 3; grid-area: 1 / 7 / 9 / 13;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//img" position="attributes">
+            <attribute name="data-shape">html_builder/geometric_round/geo_round_star_16pin</attribute>
+            <attribute name="src">/html_editor/image_shape/website.s_carousel_intro_default_image_2/html_builder/geometric_round/geo_round_star_16pin.svg</attribute>
+            <attribute name="data-format-mimetype">image/webp</attribute>
+            <attribute name="data-aspect-ratio">1/1</attribute>
+            <attribute name="data-file-name">s_carousel_intro_2.svg</attribute>
+            <attribute name="data-shape-colors">;;;;</attribute>
+            <attribute name="data-shape-flip">x</attribute>
+        </xpath>
+        <!-- Slider 3 -->
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][1]" position="attributes">
+            <attribute name="class" add="g-height-4" remove="g-height-8" separator=" "/>
+            <attribute name="style">z-index: 1; grid-area: 1 / 1 / 5 / 6;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][1]" position="replace" mode="inner">
+            <h2><span class="h1-fs"><font class="text-o-color-1">Your Destination for Books and More</font></span></h2>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][2]" position="attributes">
+            <attribute name="class" add="g-height-3 o_colored_level g-col-lg-5 col-lg-5" remove="g-height-4 g-col-lg-4 col-lg-4" separator=" "/>
+            <attribute name="style">z-index: 2; grid-area: 5 / 1 / 8 / 6;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][2]" position="replace" mode="inner">
+            <p class="lead"><span class="h6-fs"><font class="text-black">We offer a curated selection of books and literary resources to inspire readers and foster a love for reading in our vibrant community.</font></span></p>
+            <p><a class="btn btn-primary btn-lg" href="/contactus">Explore categories</a></p>
+        </xpath>
+        <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][3]" position="attributes">
+            <attribute name="class" add="g-col-lg-6 col-lg-6" remove="g-col-lg-3 col-lg-3" separator=" "/>
+            <attribute name="style">z-index: 3; grid-area: 1 / 7 / 9 / 13; --grid-item-padding-x: 0px; --grid-item-padding-y: 0px;</attribute>
+        </xpath>
+        <!-- Controllers -->
+        <xpath expr="//div[hasclass('s_carousel_indicators_numbers')]" position="attributes">
+            <attribute name="class" add="s_carousel_indicators_hidden" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_horizontal_controllers_row')]" position="attributes">
+            <attribute name="class" remove="flex-row-reverse" separator=" "/>
+        </xpath>
+    </template>
+
+
+    <!-- Announcement scroll -->
+    <template id="s_announcement_scroll" inherit_id="website.s_announcement_scroll">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc3" separator=" "/>
+            <attribute name="style">--marquee-animation-speed: 5s; --marquee-item-font-size: 40;</attribute>
+        </xpath>
+    </template>
+
+    <!-- Attributes horizontal -->
+    <template id="s_attributes_horizontal" inherit_id="website.s_attributes_horizontal">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc2" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Call to action countdown -->
+    <template id="s_call_to_action" inherit_id="website.s_call_to_action">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="oe_img_bg o_bg_img_center o_bg_img_origin_border_box" separator=" "/>
+            <attribute name="style">background-image: url('/website/static/src/img/backgrounds/peak.jpg')</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_bg_filter bg-black-75" contenteditable="false"></div>
+        </xpath>
+        <xpath expr="//div[hasclass('row')]" position="replace" mode="inner">
+            <div class="pb16 col-lg-12 text-center o_colored_level">
+                <h2>Black friday sales</h2>
+            </div>
+            <div class="col-lg-12 o_colored_level">
+                <section class="s_countdown pt0 pb24" data-display="dhms" data-end-action="nothing" data-layout="text" data-layout-background="none" data-progress-bar-style="none" data-progress-bar-weight="thin" data-text-color="o-color-1" data-layout-background-color="400" data-progress-bar-color="o-color-1" data-end-time="1774589340" data-snippet="s_countdown" data-name="Countdown" data-size="80" contenteditable="false">
+                    <div class="container" contenteditable="true">
+                        <div class="s_countdown_canvas_wrapper text-center justify-content-center d-none">
+                            <div class="s_countdown_canvas_flex"><canvas class="w-100"></canvas></div>
+                            <div class="s_countdown_canvas_flex"><canvas class="w-100"></canvas></div>
+                            <div class="s_countdown_canvas_flex"><canvas class="w-100"></canvas></div>
+                            <div class="s_countdown_canvas_flex"><canvas class="w-100"></canvas></div>
+                            <div class="s_countdown_canvas_flex" contenteditable="false"><canvas class="w-100"></canvas></div>
+                            <div class="s_countdown_canvas_flex" contenteditable="false"><canvas class="w-100"></canvas></div>
+                            <div class="s_countdown_canvas_flex" contenteditable="false"><canvas class="w-100"></canvas></div>
+                            <div class="s_countdown_canvas_flex" contenteditable="false"><canvas class="w-100"></canvas></div>
+                        </div>
+                        <div class="s_countdown_inline d-flex flex-column align-items-start o_countdown_default">
+                            <div class="s_countdown_inline_wrapper align-self-center text-center">
+                                <div class="o_template_big_numbers">
+                                    <div class="o_not_editable oe_unremovable d-inline-flex gap-1" contenteditable="false">
+                                        <span class="o_count_item d-flex gap-1">
+                                            <span class="d-flex flex-column align-items-center">
+                                                <span class="o_count_item_nbs o_colored_text fs-3 fw-bold">02</span>
+                                                <span class="o_count_item_label small"><span class="o_first_letter">D</span><span class="o_other_letters">ays</span></span>
+                                            </span>
+                                        </span>
+                                        <span class="o_count_separator fs-3 fw-bold">:</span>
+                                        <span class="o_count_item d-flex gap-1">
+                                            <span class="d-flex flex-column align-items-center">
+                                                <span class="o_count_item_nbs o_colored_text fs-3 fw-bold">15</span>
+                                                <span class="o_count_item_label small"><span class="o_first_letter">H</span><span class="o_other_letters">ours</span></span>
+                                            </span>
+                                        </span>
+                                        <span class="o_count_separator fs-3 fw-bold">:</span>
+                                        <span class="o_count_item d-flex gap-1">
+                                            <span class="d-flex flex-column align-items-center">
+                                                <span class="o_count_item_nbs o_colored_text fs-3 fw-bold">07</span>
+                                                <span class="o_count_item_label small"><span class="o_first_letter">M</span><span class="o_other_letters">inutes</span></span>
+                                            </span>
+                                        </span>
+                                        <span class="o_count_separator fs-3 fw-bold">:</span>
+                                        <span class="o_count_item d-flex gap-1">
+                                            <span class="d-flex flex-column align-items-center">
+                                                <span class="o_count_item_nbs o_colored_text fs-3 fw-bold">38</span>
+                                                <span class="o_count_item_label small"><span class="o_first_letter">S</span><span class="o_other_letters">econds</span></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p style="text-align: center;">
+                    <a class="o_translate_inline btn btn-lg btn-secondary" href="/contactus">See All Offers</a>
+                </p>
+            </div>
+        </xpath>
+        <xpath expr="//a[hasclass('btn')]" position="attributes">
+            <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Category and products -->
+    <template id="s_category_and_products" inherit_id="website.s_category_and_products">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" remove="o_cc3" separator=" "/>
+        </xpath>
+        <!-- Card 1 -->
+        <xpath expr="//div[hasclass('col-lg-3')][1]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="o_cc3" remove="o_cc4" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][1]//h2" position="replace" mode="inner">
+            <span class="h3-fs">Trending Category</span>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][1]//a" position="attributes">
+            <attribute name="class" add="btn-lg" separator=" "/>
+        </xpath>
+        <!-- Card 2 -->
+        <xpath expr="//div[hasclass('col-lg-3')][2]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="bg-100 border" remove="o_cc1" separator=" "/>
+            <attribute name="style">--box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <!-- Card 3 -->
+        <xpath expr="//div[hasclass('col-lg-3')][3]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="bg-100 border" remove="o_cc1" separator=" "/>
+            <attribute name="style">--box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][3]//p" position="replace" mode="inner">
+            <strong>$ 35</strong>
+        </xpath>
+        <!-- Card 4 -->
+        <xpath expr="//div[hasclass('col-lg-3')][4]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="bg-100 border" remove="o_cc1" separator=" "/>
+            <attribute name="style">--box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][4]//p" position="replace" mode="inner">
+            <strong>$ 18</strong>
+        </xpath>
+    </template>
+
+    <!-- Products & advantages -->
+    <template id="s_products_and_advantages" inherit_id="website.s_products_and_advantages">
+        <!-- Card 1 -->
+        <xpath expr="//div[hasclass('g-col-lg-8')]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style">--card-img-size-h: 55%; --box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <!-- Card 2 -->
+        <xpath expr="//div[hasclass('g-col-lg-4')]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style">--card-img-size-h: 55%; --box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <!-- Card 3 -->
+        <xpath expr="//div[hasclass('g-col-lg-6')][1]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="o_cc3" remove="o_cc4" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('g-col-lg-6')][1]//a" position="attributes">
+            <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
+        </xpath>
+        <!-- Card 4 -->
+        <xpath expr="//div[hasclass('g-col-lg-6')][2]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="o_cc3" remove="o_cc4" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('g-col-lg-6')][2]//a" position="attributes">
+            <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Bento grid -->
+    <template id="s_bento_grid" inherit_id="website.s_bento_grid">
+
+        <!-- Grid container -->
+        <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
+            <attribute name="data-row-count">11</attribute>
+            <attribute name="style">gap: 24px 24px;</attribute>
+        </xpath>
+
+        <!-- Card 1 -->
+        <xpath expr="//div[hasclass('o_grid_item')][1]" position="attributes">
+            <attribute name="class" add="justify-content-center" remove="justify-content-start" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][1]//div[hasclass('o_we_bg_filter')]" position="attributes">
+            <attribute name="class" add="bg-black-25" remove="bg-black-25" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][1]//h2" position="attributes">
+            <attribute name="style">text-align: center;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][1]//p[hasclass('lead')]" position="replace">
+            <p class="lead" style="text-align: center;"><span class="o_small-fs">Discover<strong class="text-o-color-1"> -&gt;</strong></span></p>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][1]" position="attributes">
+            <attribute name="class" add="g-col-lg-4 col-lg-4 o_bg_img_origin_border_box" remove="g-col-lg-6 col-lg-6" separator=" "/>
+            <attribute name="style" add="grid-area: 1 / 1 / 7 / 5;" separator=" " />
+        </xpath>
+
+        <!-- Card 2 -->
+        <xpath expr="//div[hasclass('o_grid_item')][2]" position="replace" mode="inner">
+            <div class="o_we_bg_filter bg-black-25" contenteditable="false"></div>
+            <h2 class="h3-fs" style="text-align: center;"><br/>Kids' Books</h2>
+            <p class="lead" style="text-align: center;"><span class="o_small-fs">Discover<strong class="text-o-color-1"> -&gt;</strong></span></p>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
+            <attribute name="class" add="g-col-lg-8 col-lg-8 justify-content-center o_bg_img_origin_border_box" remove="g-col-lg-6 col-lg-6 justify-content-start" separator=" "/>
+            <attribute name="style" add="grid-area: 1 / 5 / 6 / 13;" separator=" " />
+        </xpath>
+
+        <!-- Card 3 (CTA) -->
+        <xpath expr="//div[hasclass('o_grid_item')][3]" position="attributes">
+            <attribute name="class" add="o_cc4 justify-content-center" remove="o_cc5" separator=" " />
+            <attribute name="style" add="grid-area: 7 / 1 / 12 / 5;" separator=" " />
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][3]//h2" position="attributes">
+            <attribute name="class" add="h4-fs" remove="h3-fs" separator=" "/>
+            <attribute name="style">text-align: center;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][3]//p[2]" position="attributes">
+            <attribute name="style">text-align: center;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][3]//a" position="attributes">
+            <attribute name="class" add="btn-outline-secondary" remove="btn-secondary" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][3]//p" position="replace"/>
+
+        <!-- Card 4 -->
+        <xpath expr="//div[hasclass('o_grid_item')][4]" position="attributes">
+            <attribute name="class" add="o_bg_img_origin_border_box g-col-lg-4 g-height-6 col-lg-4 justify-content-center" remove="g-col-lg-6 g-height-10 col-lg-6 justify-content-start" separator=" "/>
+            <attribute name="style" add="grid-area: 6 / 5 / 12 / 9;" separator=" " />
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][4]//div[hasclass('o_we_bg_filter')]" position="attributes">
+            <attribute name="class" add="bg-black-25" remove="bg-black-25" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][4]//h2" position="before">
+            <br/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][4]//h2" position="attributes">
+            <attribute name="style">text-align: center;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][4]//p[hasclass('lead')]" position="replace">
+            <p class="lead" style="text-align: center;"><span class="o_small-fs">Discover<strong class="text-o-color-1"> -&gt;</strong></span></p>
+        </xpath>
+
+        <!-- Card 5 -->
+        <xpath expr="//div[hasclass('o_grid_item')][5]" position="attributes">
+            <attribute name="class" add="o_bg_img_origin_border_box g-height-6 g-col-lg-4 col-lg-4 justify-content-center" remove="g-col-lg-6 g-height-14 col-lg-6 justify-content-start" separator=" "/>
+            <attribute name="style" add="grid-area: 6 / 9 / 12 / 13;" separator=" " />
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][5]//div[hasclass('o_we_bg_filter')]" position="attributes">
+            <attribute name="class" add="bg-black-25" remove="bg-black-25" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_grid_item')][5]//blockquote" position="replace"/>
+        <xpath expr="//div[hasclass('o_grid_item')][5]//div[hasclass('o_we_bg_filter')]" position="after">
+            <h2 class="h3-fs" style="text-align: center;"><br/>Kids' Books</h2>
+            <p class="lead" style="text-align: center;"><span class="o_small-fs">Discover<strong class="text-o-color-1"> -&gt;</strong></span></p>
+        </xpath>
+    </template>
+
+    <!-- Store locator -->
+    <template id="s_store_locator" inherit_id="website.s_store_locator">
+        <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
+            <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
+        </xpath>
+        <xpath expr="//a" position="attributes">
+            <attribute name="class" add="btn-outline-secondary" remove="btn-primary" separator=" "/>
+        </xpath>
+    </template>
+
+</odoo>

@@ -11,11 +11,8 @@
         'data/ir_asset.xml',
         'views/images.xml',
 
-        'views/snippets/s_cta_box.xml',
-        'views/snippets/s_title.xml',
-        'views/snippets/s_key_images.xml',
-        'views/snippets/s_banner.xml',
-        'views/snippets/s_accordion_image.xml',
+        'views/global_customizations.xml',
+        'views/homepage_customizations.xml',
     ],
     'images': [
         'static/description/bookstore_description.webp',
@@ -31,7 +28,7 @@
         'website.s_text_image_default_image': '/theme_bookstore/static/src/img/snippets/s_text_image.webp',
     },
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_key_images', 's_title', 's_accordion_image', 's_cta_box'],
+        'homepage': ['s_carousel_intro', 's_attributes_horizontal', 's_bento_grid', 's_category_and_products', 's_announcement_scroll', 's_products_and_advantages', 's_call_to_action', 's_reviews', 's_store_locator'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
