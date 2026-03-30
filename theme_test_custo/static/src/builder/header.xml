@@ -3,11 +3,11 @@
 
 <!-- Theme Header - Option -->
 <t t-name="theme_test_custo.headerTemplateOption" t-inherit="website.HeaderTemplateOption" t-inherit-mode="extension">
-    <xpath expr="//BuilderSelect[@action=&quot;'reloadComposite'&quot;]" position="inside">
+    <xpath expr="(//BuilderSelectItem[@action=&quot;'headerTemplateConfig'&quot;])[last()]" position="after">
         <BuilderSelectItem title.translate="Custom Theme"
             actionParam="[
                     {
-                        action: 'websiteConfig',
+                        action: 'headerTemplateConfig',
                         actionParam: {
                             views: ['theme_test_custo.template_header_custom'],
                             vars: {'header-links-style': 'default', 'header-template': 'custom-theme'},
