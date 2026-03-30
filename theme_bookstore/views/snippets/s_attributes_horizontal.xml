@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_attributes_horizontal" inherit_id="website.s_attributes_horizontal">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt0 pb0 o_cc o_cc2" remove="pt24 pb24" separator=" "/>
+    </xpath>
+    <!-- Card 1 -->
+    <xpath expr="//div[hasclass('s_attributes_horizontal_col')][1]//h2[hasclass('h6-fs')]" position="replace" mode="inner">
+        Easy returns
+    </xpath>
+    <xpath expr="//div[hasclass('s_attributes_horizontal_col')][1]//small[hasclass('text-muted')]" position="replace" mode="inner">
+        Hassle-Free Returns
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="//div[hasclass('s_attributes_horizontal_col')][2]//small[hasclass('text-muted')]" position="replace" mode="inner">
+        Free Shipping on Every Order!
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="//div[hasclass('s_attributes_horizontal_col')][3]//small[hasclass('text-muted')]" position="replace" mode="inner">
+        Your Peace of Mind Matters
+    </xpath>
+    <!-- Card 4 -->
+    <xpath expr="//div[hasclass('s_attributes_horizontal_col')][4]//small[hasclass('text-muted')]" position="replace" mode="inner">
+        Elevating Your Expectations
+    </xpath>
+</template>
+
+</odoo>

@@ -2,23 +2,120 @@
 <odoo>
 
 <template id="s_carousel_intro" inherit_id="website.s_carousel_intro">
-    <xpath expr="//h1" position="replace" mode="inner">
-        Explore a world of literature
+    <!-- Slider Shape -->
+    <xpath expr="//div[hasclass('carousel-inner')]" position="before">
+        <div class="o_we_shape o_html_builder_Airy_15" style="background-image: url('/html_editor/shape/html_builder%2FAiry%2F15.svg?c5=%23E5E1E5');"></div>
     </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Books and genres curated for you
+    <xpath expr="//div[hasclass('s_carousel_intro')]" position="attributes">
+        <attribute name="class" add="s_carousel_boxed s_carousel_rounded bg-white" remove="s_carousel_default" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Airy/15','colors':{'c5':'#E5E1E5'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','selectedColor':true,'howOnMobile':true,'shapeAnimationSpeed':'0','selectedColor':true}</attribute>
+        <attribute name="style">--position: relative;</attribute>
     </xpath>
-    <xpath expr="(//h2)[2]" position="replace" mode="inner">
-        Discover your next read
+    <!-- Slider 1 -->
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][1]//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Bold_22" style="background-image: url('/html_editor/shape/html_builder%2FBold%2F22.svg?c5=o-color-2&amp;flip=y'); background-position: 100% 100%;"></div>
     </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Immerse yourself in a vast selection of books that spark imagination and offer insight, tailored to every reader's taste.
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][1]//div[hasclass('container')]" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/22','colors':{'c5':'o-color-2'},'flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0','selectedColor':true}</attribute>
     </xpath>
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Refresh your collection with our diverse genres and expert recommendations.
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][1]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
     </xpath>
-    <xpath expr="(//p[hasclass('lead')])[3]" position="replace" mode="inner">
-        Explore more and find books that match your interests, curated for enriching your reading journey and expanding your horizons.
+    <xpath expr="//div[hasclass('o_grid_item')][1]" position="replace" mode="inner">
+        <h1 class="display-3-fs">Gideon Schwartz Collection</h1>
+        <p><br/>Use this snippet to presents your content in a slideshow-like format.</p>
+        <p><a href="#top" class="o_translate_inline btn btn-primary btn-lg">Shop now</a></p>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item_image')][1]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+        <attribute name="class" remove="g-col-lg-6 col-lg-6 g-height-4" add="g-col-lg-7 col-lg-7 g-height-8 o_grid_item_image_contain" separator=" "/>
+        <attribute name="style">z-index: 3; grid-area: 1 / 6 / 9 / 13;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="replace"/>
+    <!-- Slider 2 -->
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Bold_22" style="background-image: url(&quot;/html_editor/shape/html_builder%2FBold%2F22.svg?c5=o-color-2&amp;flip=x&quot;); background-position: 0% 0%;"></div>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('container')]" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/22','colors':{'c5':'o-color-2'},'flip':['x'],'showOnMobile':false,'shapeAnimationSpeed':'0','selectedColor':true}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][2]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('o_grid_item')][1]" position="attributes">
+        <attribute name="class" add="g-height-4" remove="g-height-5" separator=" "/>
+        <attribute name="style">z-index: 1; grid-area: 1 / 7 / 5 / 13;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//h2" position="replace" mode="inner">
+        <font class="text-o-color-1">Books You Can't Miss</font>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="class" add="g-col-lg-6 col-lg-6 g-height-4" remove="g-height-2 g-col-lg-4 col-lg-4" separator=" "/>
+        <attribute name="style">z-index: 2; --grid-item-padding-y: 20px; grid-area: 5 / 7 / 9 / 13;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('o_grid_item')][2]" position="replace" mode="inner">
+        <p class="lead">Discover our most popular books, loved by readers everywhere. Find your next great read among our top bestsellers.</p>
+        <p><a class="btn btn-primary btn-lg" href="#">Browse Bestsellers</a></p>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//div[hasclass('o_grid_item')][3]" position="attributes">
+        <attribute name="class" add="g-height-8 g-col-lg-6 col-lg-6" remove="g-height-7 g-col-lg-5 col-lg-5" separator=" "/>
+        <attribute name="style">z-index: 3; grid-area: 1 / 1 / 9 / 7;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][2]//img" position="attributes">
+        <attribute name="data-shape">html_builder/geometric_round/geo_round_star_16pin</attribute>
+        <attribute name="src">/html_editor/image_shape/website.s_carousel_intro_default_image_2/html_builder/geometric_round/geo_round_star_16pin.svg</attribute>
+        <attribute name="data-format-mimetype">image/webp</attribute>
+        <attribute name="data-file-name">s_carousel_intro_2.svg</attribute>
+        <attribute name="data-shape-colors">;;;;</attribute>
+        <attribute name="data-shape-flip">x</attribute>
+    </xpath>
+    <!-- Slider 3 -->
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Blobs_02"></div>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('container')]" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Blobs/02','colors':{'c1':'#FAB803','c2':'#1A1423'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0','selectedColor':false}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][3]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][1]" position="attributes">
+        <attribute name="class" add="g-height-4" remove="g-height-8" separator=" "/>
+        <attribute name="style">z-index: 1; grid-area: 1 / 1 / 5 / 6;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][1]" position="replace" mode="inner">
+        <h2><span class="h1-fs"><font class="text-800">Your Destination for Books and More</font></span></h2>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="class" add="g-height-3 o_colored_level g-col-lg-5 col-lg-5" remove="g-height-4 g-col-lg-4 col-lg-4" separator=" "/>
+        <attribute name="style">z-index: 2; grid-area: 5 / 1 / 8 / 6;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][2]" position="replace" mode="inner">
+        <p class="lead"><span class="h6-fs"><font class="text-black">We offer a curated selection of books and literary resources to inspire readers and foster a love for reading in our vibrant community.</font></span></p>
+        <p><a class="btn btn-primary btn-lg" href="/contactus">Explore categories</a></p>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//div[hasclass('o_grid_item')][3]" position="attributes">
+        <attribute name="class" add="g-col-lg-6 col-lg-6" remove="g-col-lg-3 col-lg-3" separator=" "/>
+        <attribute name="style">z-index: 3; grid-area: 1 / 7 / 9 / 13; --grid-item-padding-x: 0px; --grid-item-padding-y: 0px;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro_item')][3]//img" position="attributes">
+        <attribute name="src">/html_editor/image_shape/website.s_carousel_intro_default_image_3/html_builder/geometric/geo_tear.svg</attribute>
+        <attribute name="class" add="o_we_custom_image" separator=" "/>
+        <attribute name="data-shape">html_builder/geometric/geo_tear</attribute>
+        <attribute name="data-format-mimetype">image/webp</attribute>
+        <attribute name="data-file-name">s_carousel_intro_3.svg</attribute>
+        <attribute name="data-shape-colors">;;;;</attribute>
+        <attribute name="data-shape-flip">x</attribute>
+    </xpath>
+    <!-- Controllers -->
+    <xpath expr="//div[hasclass('s_carousel_indicators_numbers')]" position="attributes">
+        <attribute name="class" add="s_carousel_indicators_hidden" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_horizontal_controllers_row')]" position="attributes">
+        <attribute name="class" remove="flex-row-reverse" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_carousel_intro')]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="carousel-dark" separator=" "/>
     </xpath>
 </template>
 

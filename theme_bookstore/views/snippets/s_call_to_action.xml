@@ -4,23 +4,75 @@
 <template id="s_call_to_action" inherit_id="website.s_call_to_action">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc4 pt128 pb128" remove="o_cc5 pt64 pb64" separator=" "/>
+        <attribute name="class" add="o_cc3 pt128 pb128 oe_img_bg o_bg_img_center o_bg_img_origin_border_box" remove="o_cc5 pt64 pb64" separator=" "/>
+        <attribute name="style">background-image: url('/website/static/src/img/backgrounds/peak.jpg')</attribute>
     </xpath>
-    <!-- Paragraph #1 -->
-    <xpath expr="//div[hasclass('col-lg-9')]" position="replace">
-        <div class="pb16 col-lg-12 text-center">
-            <h2>Browse through <br/>our complete library</h2>
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_bg_filter bg-black-75" contenteditable="false"></div>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]" position="replace" mode="inner">
+        <div class="pb16 col-lg-12 text-center o_colored_level">
+            <h2>Black friday sales</h2>
+        </div>
+        <div class="col-lg-12 o_colored_level">
+            <section class="s_countdown pt0 pb24" data-display="dhms" data-end-action="nothing" data-layout="text" data-layout-background="none" data-progress-bar-style="none" data-progress-bar-weight="thin" data-text-color="o-color-1" data-layout-background-color="400" data-progress-bar-color="o-color-1" data-end-time="1774589340" data-snippet="s_countdown" data-name="Countdown" data-size="80" contenteditable="false">
+                <div class="container" contenteditable="true">
+                    <div class="s_countdown_canvas_wrapper text-center justify-content-center d-none">
+                        <div class="s_countdown_canvas_flex"><canvas class="w-100"></canvas></div>
+                        <div class="s_countdown_canvas_flex"><canvas class="w-100"></canvas></div>
+                        <div class="s_countdown_canvas_flex"><canvas class="w-100"></canvas></div>
+                        <div class="s_countdown_canvas_flex"><canvas class="w-100"></canvas></div>
+                        <div class="s_countdown_canvas_flex" contenteditable="false"><canvas class="w-100"></canvas></div>
+                        <div class="s_countdown_canvas_flex" contenteditable="false"><canvas class="w-100"></canvas></div>
+                        <div class="s_countdown_canvas_flex" contenteditable="false"><canvas class="w-100"></canvas></div>
+                        <div class="s_countdown_canvas_flex" contenteditable="false"><canvas class="w-100"></canvas></div>
+                    </div>
+                    <div class="s_countdown_inline d-flex flex-column align-items-start o_countdown_default">
+                        <div class="s_countdown_inline_wrapper align-self-center text-center">
+                            <div class="o_template_big_numbers">
+                                <div class="o_not_editable oe_unremovable d-inline-flex gap-1" contenteditable="false">
+                                    <span class="o_count_item d-flex gap-1">
+                                        <span class="d-flex flex-column align-items-center">
+                                            <span class="o_count_item_nbs o_colored_text fs-3 fw-bold">02</span>
+                                            <span class="o_count_item_label small"><span class="o_first_letter">D</span><span class="o_other_letters">ays</span></span>
+                                        </span>
+                                    </span>
+                                    <span class="o_count_separator fs-3 fw-bold">:</span>
+                                    <span class="o_count_item d-flex gap-1">
+                                        <span class="d-flex flex-column align-items-center">
+                                            <span class="o_count_item_nbs o_colored_text fs-3 fw-bold">15</span>
+                                            <span class="o_count_item_label small"><span class="o_first_letter">H</span><span class="o_other_letters">ours</span></span>
+                                        </span>
+                                    </span>
+                                    <span class="o_count_separator fs-3 fw-bold">:</span>
+                                    <span class="o_count_item d-flex gap-1">
+                                        <span class="d-flex flex-column align-items-center">
+                                            <span class="o_count_item_nbs o_colored_text fs-3 fw-bold">07</span>
+                                            <span class="o_count_item_label small"><span class="o_first_letter">M</span><span class="o_other_letters">inutes</span></span>
+                                        </span>
+                                    </span>
+                                    <span class="o_count_separator fs-3 fw-bold">:</span>
+                                    <span class="o_count_item d-flex gap-1">
+                                        <span class="d-flex flex-column align-items-center">
+                                            <span class="o_count_item_nbs o_colored_text fs-3 fw-bold">38</span>
+                                            <span class="o_count_item_label small"><span class="o_first_letter">S</span><span class="o_other_letters">econds</span></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <br/>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p style="text-align: center;">
+                <a class="o_translate_inline btn btn-lg btn-secondary" href="/contactus">See All Offers</a>
+            </p>
         </div>
     </xpath>
-    <!-- Paragraph #2 -->
-    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
-        <attribute name="class" add="col-lg-12" remove="col-lg-3" separator=" "/>
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-12')][2]/p" position="attributes">
-        <attribute name="style">text-align: center;</attribute>
-    </xpath>
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Browse collection
+    <xpath expr="//a[hasclass('btn')]" position="attributes">
+        <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
     </xpath>
 </template>
 

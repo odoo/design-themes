@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_company_team_basic" inherit_id="website.s_company_team_basic">
+        <!-- Title -->
+        <xpath expr="//h2[hasclass('h3-fs')]" position="replace" mode="inner">
+            Our top authors
+        </xpath>
+        <!-- Author 1 -->
+        <xpath expr="//div[hasclass('col-lg-3')][1]" position="attributes">
+            <attribute name="class" add="col-6 col-lg-4" remove="col-lg-3 col-6" separator=" "/>
+            <attribute name="style">text-align: center;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-6')][1]//h3" position="replace" mode="inner">
+            Stephen King
+        </xpath>
+        <xpath expr="//div[hasclass('col-6')][1]//h3" position="after">
+            <div class="s_badge badge o_animable text-bg-primary" data-name="Badge" data-vxml="001" data-snippet="s_badge"><em>Americanah</em></div>
+            <div class="s_badge badge o_animable text-bg-primary" data-name="Badge" data-vxml="001" data-snippet="s_badge"><em>L’hibiscus pourpre</em></div>
+            <div class="s_badge badge o_animable text-bg-primary" data-name="Badge" data-vxml="001" data-snippet="s_badge"><em>L’hibiscus pourpre</em></div>
+            <p><span class="o_small-fs"><font class="text-o-color-2">All his books</font><font class="text-o-color-1"> -&gt;</font></span></p>
+        </xpath>
+        <xpath expr="//div[hasclass('col-6')][1]//p[hasclass('o_small-fs')]" position="replace" />
+
+        <!-- Author 2 -->
+        <xpath expr="//div[hasclass('col-lg-3')][1]" position="attributes">
+            <attribute name="class" add="col-6 col-lg-4" remove="col-lg-3 col-6" separator=" "/>
+            <attribute name="style">text-align: center;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-6')][2]//h3" position="replace" mode="inner">
+            Maxime Chattam
+        </xpath>
+        <xpath expr="//div[hasclass('col-6')][2]//h3" position="after">
+            <div class="s_badge badge o_animable text-bg-primary" data-name="Badge" data-vxml="001" data-snippet="s_badge"><em>La Trilogie du mal</em></div>
+            <div class="s_badge badge o_animable text-bg-primary" data-name="Badge" data-vxml="001" data-snippet="s_badge"><em>8,2 secondes</em></div>
+            <div class="s_badge badge o_animable text-bg-primary" data-name="Badge" data-vxml="001" data-snippet="s_badge"><em>Le 5ème règne</em></div>
+            <p><span class="o_small-fs"><font class="text-o-color-2">All his books</font><font class="text-o-color-1"> -&gt;</font></span></p>
+        </xpath>
+        <xpath expr="//div[hasclass('col-6')][2]//p[hasclass('o_small-fs')]" position="replace" />
+
+        <!-- Author 3 -->
+        <xpath expr="//div[hasclass('col-lg-3')][1]" position="attributes">
+            <attribute name="class" add="col-6 col-lg-4" remove="col-lg-3 col-6" separator=" "/>
+            <attribute name="style">text-align: center;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-6')][3]//h3" position="replace" mode="inner">
+            Franck Thilliez
+        </xpath>
+        <xpath expr="//div[hasclass('col-6')][3]//h3" position="after">
+            <div class="s_badge badge o_animable text-bg-primary" data-name="Badge" data-vxml="001" data-snippet="s_badge"><em>La Chambre des morts</em></div>
+            <div class="s_badge badge o_animable text-bg-primary" data-name="Badge" data-vxml="001" data-snippet="s_badge"><em>L'Autre moi</em></div>
+            <div class="s_badge badge o_animable text-bg-primary" data-name="Badge" data-vxml="001" data-snippet="s_badge"><em>Le 5ème règne</em></div>
+            <p><span class="o_small-fs"><font class="text-o-color-2">All his books</font><font class="text-o-color-1"> -&gt;</font></span></p>
+        </xpath>
+        <xpath expr="//div[hasclass('col-6')][3]//p[hasclass('o_small-fs')]" position="replace" />
+
+        <xpath expr="//div[hasclass('col-lg-3')][1]" position="replace" />
+
+    </template>
+
+</odoo>

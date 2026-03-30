@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_products_and_advantages" inherit_id="website.s_products_and_advantages">
+        <xpath expr="section" position="attributes">
+            <attribute name="class" add="pt72 pb72" remove="pt48 pb48" separator=" "/>
+        </xpath>
+        <!-- Card 1 -->
+        <xpath expr="//div[hasclass('g-col-lg-8')]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style">--card-img-size-h: 55%; --box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <!-- Card 2 -->
+        <xpath expr="//div[hasclass('g-col-lg-4')]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="border" separator=" "/>
+            <attribute name="style">--card-img-size-h: 55%; --box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <!-- Card 3 -->
+        <xpath expr="//div[hasclass('g-col-lg-6')][1]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="o_cc3" remove="o_cc4" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('g-col-lg-6')][1]//a" position="attributes">
+            <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
+        </xpath>
+        <!-- Card 4 -->
+        <xpath expr="//div[hasclass('g-col-lg-6')][2]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="o_cc3" remove="o_cc4" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('g-col-lg-6')][2]//a" position="attributes">
+            <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
+        </xpath>
+    </template>
+
+</odoo>

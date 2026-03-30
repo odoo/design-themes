@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_category_and_products" inherit_id="website.s_category_and_products">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt72 pb72" remove="o_cc3 pt32 pb32" separator=" "/>
+        </xpath>
+        <!-- Card 1 -->
+        <xpath expr="//div[hasclass('col-lg-3')][1]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="o_cc3" remove="o_cc4" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][1]//h2" position="replace" mode="inner">
+            <span class="h3-fs">Trending Category</span>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][1]//a" position="attributes">
+            <attribute name="class" add="btn-lg" separator=" "/>
+        </xpath>
+        <!-- Card 2 -->
+        <xpath expr="//div[hasclass('col-lg-3')][2]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="bg-100 border" remove="o_cc1" separator=" "/>
+            <attribute name="style">--box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][2]//h2" position="replace" mode="inner">
+            Discover Your Next Favorite Read
+        </xpath>
+        <!-- Card 3 -->
+        <xpath expr="//div[hasclass('col-lg-3')][3]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="bg-100 border" remove="o_cc1" separator=" "/>
+            <attribute name="style">--box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][3]//h2" position="replace" mode="inner">
+            A Guide to Inclusive Literature
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][3]//p" position="replace" mode="inner">
+            <strong>$ 35</strong>
+        </xpath>
+        <!-- Card 4 -->
+        <xpath expr="//div[hasclass('col-lg-3')][4]//div[hasclass('s_card')]" position="attributes">
+            <attribute name="class" add="bg-100 border" remove="o_cc1" separator=" "/>
+            <attribute name="style">--box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][4]//h2" position="replace" mode="inner">
+            Essential Tips for Book Lovers
+        </xpath>
+        <xpath expr="//div[hasclass('col-lg-3')][4]//p" position="replace" mode="inner">
+            <strong>$ 18</strong>
+        </xpath>
+    </template>
+
+</odoo>

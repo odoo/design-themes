@@ -27,15 +27,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
-    <!-- Shape option -->
-    <xpath expr="section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/06', 'colors':{'c5':'o-color-3'}, 'flip':[]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Connections_06" style="background-image: url('/html_editor/shape/html_builder/Connections/06.svg?c5=o-color-3')"/>
-    </xpath>
-</template>
-
 </odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_announcement_scroll" inherit_id="website.s_announcement_scroll">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc3 pt32 pb32" remove="pt24 pb24" separator=" "/>
+        <attribute name="style">--marquee-animation-speed: 5s; --marquee-item-font-size: 40;</attribute>
+    </xpath>
+</template>
+
+</odoo>
