@@ -32,14 +32,14 @@ wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
         run: "click",
     }, {
         content: 'The theme custom footer template should be listed and selected',
-        trigger: '[data-container-title="Footer"] [data-label="Template"] button.btn-secondary svg.theme_test_custo_footer',
+        trigger: '[data-container-title="Footer"] [data-label="Template"]:has(.o-dropdown-item.active[data-action-param*="custom-theme"])',
     }, {
         content: 'Click on header',
         trigger: ':iframe header',
         run: "click",
     }, {
         content: 'The theme custom header template should be listed and selected',
-        trigger: '[data-container-title="Header"] [data-label="Template"] button.btn-secondary svg.theme_test_custo_header',
+        trigger: '[data-container-title="Header"] [data-label="Template"]:has(.o-dropdown-item.active[data-action-param*="custom-theme"])',
     }, {
         content: 'Click on image which has a shape',
         trigger: ':iframe #wrap .s_text_image img[data-shape]',

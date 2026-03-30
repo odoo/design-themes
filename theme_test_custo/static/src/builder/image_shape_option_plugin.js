@@ -1,20 +1,26 @@
-import { ImageShapeOptionPlugin } from "@html_builder/plugins/image/image_shape_option_plugin";
-import { patch } from "@web/core/utils/patch";
+import { Plugin } from "@html_editor/plugin";
+import { withSequence } from "@html_editor/utils/resource";
+import { registry } from "@web/core/registry";
 import { _t } from "@web/core/l10n/translation";
 
-patch(ImageShapeOptionPlugin.prototype, {
-    getImageShapeGroups() {
-        const imageShapeGroups = super.getImageShapeGroups();
-        imageShapeGroups.basic.subgroups["custom_shape"] = {
-            label: "Custom Shapes",
-            shapes: {
-                "theme_test_custo/blob/01": {
-                    selectLabel: _t("Blob 01"),
-                    transform: false,
-                    togglableRatio: true,
+class ThemeTestCustoImageShapeOptionPlugin extends Plugin {
+    static id = "themeTestCustoImageShapeOption";
+    resources = {
+        image_shape_groups_providers: withSequence(10, (shapeGroups) => {
+            shapeGroups.basic.subgroups.custom_shape = {
+                label: _t("Custom Shapes"),
+                shapes: {
+                    "theme_test_custo/blob/01": {
+                        selectLabel: _t("Blob 01"),
+                        transform: false,
+                        togglableRatio: true,
+                    },
                 },
-            },
-        };
-        return imageShapeGroups;
-    },
-});
+            };
+        }),
+    };
+}
+
+registry
+    .category("builder-plugins")
+    .add(ThemeTestCustoImageShapeOptionPlugin.id, ThemeTestCustoImageShapeOptionPlugin);

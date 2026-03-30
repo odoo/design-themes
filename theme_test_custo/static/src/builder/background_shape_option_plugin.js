@@ -1,20 +1,26 @@
-import { BackgroundShapeOptionPlugin } from "@html_builder/plugins/background_option/background_shape_option_plugin";
-import { patch } from "@web/core/utils/patch";
+import { Plugin } from "@html_editor/plugin";
+import { withSequence } from "@html_editor/utils/resource";
+import { registry } from "@web/core/registry";
 import { _t } from "@web/core/l10n/translation";
 
-patch(BackgroundShapeOptionPlugin.prototype, {
-    getBackgroundShapeGroups() {
-        const bgShapeGroups = super.getBackgroundShapeGroups();
-        bgShapeGroups.basic.subgroups["custom_shape"] = {
-            label: "Custom Shapes",
-            shapes: {
-                "theme_test_custo/curves/01": {
-                    selectLabel: _t("Curve 01"),
-                    transform: false,
-                    togglableRatio: true,
+class ThemeTestCustoBackgroundShapeOptionPlugin extends Plugin {
+    static id = "themeTestCustoBackgroundShapeOption";
+    resources = {
+        background_shape_groups_providers: withSequence(10, (shapeGroups) => {
+            shapeGroups.basic.subgroups.custom_shape = {
+                label: _t("Custom Shapes"),
+                shapes: {
+                    "theme_test_custo/curves/01": {
+                        selectLabel: _t("Curve 01"),
+                        transform: false,
+                        togglableRatio: true,
+                    },
                 },
-            },
-        };
-        return bgShapeGroups;
-    },
-});
+            };
+        }),
+    };
+}
+
+registry
+    .category("builder-plugins")
+    .add(ThemeTestCustoBackgroundShapeOptionPlugin.id, ThemeTestCustoBackgroundShapeOptionPlugin);
