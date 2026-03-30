@@ -3,6 +3,10 @@
 //------------------------------------------------------------------------------
 
 $o-theme-font-configs: (
+    'Libre Baskerville': (
+        'family': ('Libre Baskerville', serif),
+        'url': 'Libre+Baskerville:300,300i,400,400i,700,700i',
+    ),
     'Heebo': (
         'family': ('Heebo', sans-serif),
         'url': 'Heebo:300,300i,400,400i,700,700i',
@@ -59,24 +63,27 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-26',
+        'color-palettes-name': 'default-19',
         'header-font-size': 1rem,
-        'btn-border-radius': 8px,
+        'btn-border-radius': 6px,
         'btn-border-radius-sm': 4px,
         'btn-border-radius-lg': 12px,
         'btn-padding-x': 16px,
-        'btn-padding-x-lg': 20px,
-        'btn-padding-y-lg': 12px,
+        'btn-padding-x-lg': 40px,
+        'btn-padding-y-lg': 16px,
         'font': 'Inter',
-        'headings-font': 'DM Serif Display',
+        'headings-font': 'Libre Baskerville',
         'header-template': 'search',
         'link-underline': 'never',
+        'menu-border-width': 1px,
+        'menu-border-color': '700',
+        'menu-shadow-class': '',
     ),
 );
 
-$default-26: map-get($o-color-palettes, 'default-26');
-$default-26: map-merge($default-26, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-26': $default-26));
+$default-19: map-get($o-color-palettes, 'default-19');
+$default-19: map-merge($default-19, ('footer': 3,));
+$o-color-palettes: map-merge($o-color-palettes, ('default-19': $default-19));
 
 $o-color-palettes-compatibility-indexes: (
     1: 'bookstore-1',
