@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_icon_list" inherit_id="website.s_icon_list">
+    <!-- List Items -->
+    <xpath expr="(//li)[1]" position="replace" mode="inner">Attractive Salary</xpath>
+    <xpath expr="(//li)[2]" position="replace" mode="inner">Continuous Learning</xpath>
+    <xpath expr="(//li)[3]" position="replace" mode="inner">Healthy Environment</xpath>
+</template>
+
+</odoo>
