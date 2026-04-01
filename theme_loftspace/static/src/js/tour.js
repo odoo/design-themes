@@ -19,18 +19,23 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_key_images',
-        name: 'Key Images',
-        groupName: "Columns",
+        id: 's_title',
+        name: 'Title',
+        groupName: "Text",
     },
     {
-        id: 's_features',
-        name: 'Features',
+        id: 's_ecomm_categories_showcase',
+        name: 'Categories Showcase',
+        groupName: "Catalog",
+    },
+    {
+        id: 's_image_text_box',
+        name: 'Image Text Box',
         groupName: "Content",
     },
     {
-        id: 's_quotes_carousel',
-        name: 'Quotes',
+        id: 's_reviews_wall',
+        name: 'Reviews Wall',
         groupName: "People",
     },
     {
@@ -57,6 +62,7 @@ wTourUtils.registerThemeHomepageTour("loftspace_tour", () => [
     ...wTourUtils.insertSnippet(snippets[5]),
     ...wTourUtils.insertSnippet(snippets[6]),
     ...wTourUtils.insertSnippet(snippets[7]),
+    ...wTourUtils.insertSnippet(snippets[8]),
     ...wTourUtils.clickOnSnippet(snippets[4]),
     wTourUtils.changeBackgroundColor(),
     wTourUtils.selectColorPalette(),
