@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Cover -->
+<record id="s_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_cover_default_image</field>
+    <field name="name">website.s_cover_default_image</field>
+    <field name="url">/theme_eclipse/static/src/img/content/s_cover.webp</field>
+</record>
+
+<!-- CTA Mobile -->
+<record id="s_cta_mockups_default_image_1" model="theme.ir.attachment">
+    <field name="key">website.s_cta_mockups_default_image_1</field>
+    <field name="name">website.s_cta_mockups_default_image_1</field>
+    <field name="url">/theme_eclipse/static/src/img/snippets/s_cta_mobile.png</field>
+</record>
+
+<!-- Closer Look -->
+<record id="s_closer_look_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_closer_look_default_image</field>
+    <field name="name">website.s_closer_look_default_image</field>
+    <field name="url">/theme_eclipse/static/src/img/snippets/s_closer_look.png</field>
+</record>
+
+<!-- Key Images -->
+<record id="s_key_images_default_image_1" model="theme.ir.attachment">
+    <field name="key">website.s_key_images_default_image_1</field>
+    <field name="name">website.s_key_images_default_image_1</field>
+    <field name="url">/theme_eclipse/static/src/img/snippets/s_key_images_default_image_1.webp</field>
+</record>
+<record id="s_key_images_default_image_2" model="theme.ir.attachment">
+    <field name="key">website.s_key_images_default_image_2</field>
+    <field name="name">website.s_key_images_default_image_2</field>
+    <field name="url">/theme_eclipse/static/src/img/snippets/s_key_images_default_image_2.webp</field>
+</record>
+<record id="s_key_images_default_image_3" model="theme.ir.attachment">
+    <field name="key">website.s_key_images_default_image_3</field>
+    <field name="name">website.s_key_images_default_image_3</field>
+    <field name="url">/theme_eclipse/static/src/img/snippets/s_key_images_default_image_3.webp</field>
+</record>
+<record id="s_key_images_default_image_4" model="theme.ir.attachment">
+    <field name="key">website.s_key_images_default_image_4</field>
+    <field name="name">website.s_key_images_default_image_4</field>
+    <field name="url">/theme_eclipse/static/src/img/snippets/s_key_images_default_image_4.webp</field>
+</record>
+
+</odoo>
