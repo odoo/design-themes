@@ -1,0 +1,95 @@
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'eclipse',
+
+        'font': 'Inter',
+        'headings-font': 'Stack Sans Headline',
+
+        'btn-padding-y-lg': 0.75rem,
+        'btn-padding-x-lg': 2rem,
+
+        // Header
+        'menu-shadow-class': '',
+
+        // Footer
+        'footer-template': 'mega_links',
+    ),
+);
+
+// Main palette
+$o-color-palettes: map-merge($o-color-palettes, (
+    'eclipse': (
+        'o-color-1': #E9E8F0,
+        'o-color-2': #4E4B55,
+        'o-color-3': #403E47,
+        'o-color-4': #121113,
+        'o-color-5': #F5F4F8,
+
+        'o-cc4-link': 'o-color-4',
+        'o-cc4-btn-primary': 'o-color-4',
+        'o-cc5-link': 'o-color-4',
+        'o-cc5-btn-primary': 'o-color-4',
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'eclipse');
+$o-dark-color-palette-names: append($o-dark-color-palette-names, 'eclipse');
+
+// Second palette — neon green
+$o-color-palettes: map-merge($o-color-palettes, (
+    'eclipse-2': (
+        'o-color-1': #cffe25,
+        'o-color-2': #4A4A4A,
+        'o-color-3': #272727,
+        'o-color-4': #060606,
+        'o-color-5': #F7F7F7,
+
+        'o-cc4-link': 'o-color-4',
+        'o-cc4-btn-primary': 'o-color-4',
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'eclipse-2');
+$o-dark-color-palette-names: append($o-dark-color-palette-names, 'eclipse-2');
+
+// Third palette — dark blue
+$o-color-palettes: map-merge($o-color-palettes, (
+    'eclipse-3': (
+        'o-color-1': #0066FF,
+        'o-color-2': #454A5C,
+        'o-color-3': #242530,
+        'o-color-4': #05060B,
+        'o-color-5': #F4F5FC,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'eclipse-3');
+$o-dark-color-palette-names: append($o-dark-color-palette-names, 'eclipse-3');
+
+@each $-name, $-palette in $o-color-palettes {
+    $o-color-palettes: map-merge($o-color-palettes, (
+        $-name: map-merge($-palette, (
+            'menu': 1,
+            'footer': 1,
+            'copyright': 1,
+        )),
+    ));
+}
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+$o-theme-font-configs: (
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:400,500,600,700',
+    ),
+    'Stack Sans Headline': (
+        'family': ('Stack Sans Headline', sans-serif),
+        'url': 'Stack+Sans+Headline:400,500',
+    ),
+);
