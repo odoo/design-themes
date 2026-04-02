@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== REFERENCES ======== -->
+<template id="configurator_s_references" inherit_id="website.configurator_s_references" name="Eclipse s_references">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt40 pb40" remove="pt80 pb80" separator=" "/>
+    </xpath>
+    <!-- Text -->
+    <xpath expr="//h2" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+</template>
+
+<!-- ======== HR ======== -->
+<template id="configurator_s_hr" inherit_id="website.configurator_s_hr" name="Eclipse s_hr">
+    <xpath expr="//div[hasclass('s_hr')]" position="attributes">
+        <attribute name="class" add="pt0" remove="pt32" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== FEATURES ======== -->
+<template id="configurator_s_features" inherit_id="website.configurator_s_features" name="Eclipse s_features">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb88" remove="pb64" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== TEXT CHART ======== -->
+<template id="configurator_s_text_chart" inherit_id="website.configurator_s_text_chart" name="Eclipse s_text_chart">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt56 pb56" remove="pt80 pb80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== QUOTES CAROUSEL COMPACT ======== -->
+<template id="configurator_s_quotes_carousel_compact" inherit_id="website.configurator_s_quotes_carousel_compact" name="Eclipse s_quotes_carousel_compact">
+    <!-- Carousel -->
+    <xpath expr="//div[hasclass('s_quotes_carousel_compact')]" position="attributes">
+        <attribute name="class" remove="s_carousel_default" add="s_carousel_arrows_hidden" separator=" "/>
+    </xpath>
+    <!-- Slides -->
+    <xpath expr="//div[hasclass('carousel-item')][1]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2 pt40" add="pt96" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-item')][2]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2 pt40" add="pt96" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-item')][3]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2 pt40" add="pt96" separator=" "/>
+    </xpath>
+    <!-- Controllers -->
+    <xpath expr="//div[hasclass('o_horizontal_controllers_row')]" position="attributes">
+        <attribute name="class" remove="flex-row-reverse" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== CHART TEXT ======== -->
+<template id="configurator_s_chart_text" inherit_id="website.configurator_s_chart_text" name="Eclipse s_chart_text">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt112 pb160" remove="pt80 pb80" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blurry/10","colors":{"c1":"o-color-1"}}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Blurry_10" style="background-image: url('/html_editor/shape/html_builder/Blurry/10.svg?c1=o-color-1');"/>
+    </xpath>
+    <!-- Chart col -->
+    <xpath expr="//div[hasclass('s_chart')]/.." position="attributes">
+        <attribute name="class" add="o_cc o_cc1" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== KEY IMAGES ======== -->
+<template id="configurator_s_key_images" inherit_id="website.configurator_s_key_images" name="Eclipse s_key_images">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt88 pb112" remove="pt72 pb72" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== CTA MOBILE ======== -->
+<template id="configurator_s_cta_mobile" inherit_id="website.configurator_s_cta_mobile" name="Eclipse s_cta_mobile">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt128 pb128" remove="pt80 pb80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== ANNOUNCEMENT SCROLL ======== -->
+<template id="configurator_s_announcement_scroll" inherit_id="website.configurator_s_announcement_scroll" name="Eclipse s_announcement_scroll">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt120 pb224" remove="pt24 pb24" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
