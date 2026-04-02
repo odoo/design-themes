@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_closer_look" inherit_id="website.s_closer_look">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt88 pb72" remove="pt96" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blurry/03","colors":{"c1":"o-color-3","c2":"o-color-3","c3":"o-color-3","c4":"o-color-3"}}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Blurry_03" style="background-image: url('/html_editor/shape/html_builder/Blurry/03.svg?c1=o-color-3&amp;c2=o-color-3&amp;c3=o-color-3&amp;c4=o-color-3');"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="attributes">
+        <attribute name="class" add="display-1" remove="display-3" separator=" "/>
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="inside">
+        <br/>
+    </xpath>
+    <!-- Buttons -->
+    <xpath expr="//a[hasclass('btn-primary')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn-outline-primary')]" position="replace"/>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" add="img-thumbnail rounded shadow" separator=" "/>
+        <attribute name="style">width: 80% !important; padding: 8px;</attribute>
+        <attribute name="data-shape"/>
+        <attribute name="src">/web/image/website.s_closer_look_default_image</attribute>
+    </xpath>
+</template>
+
+</odoo>

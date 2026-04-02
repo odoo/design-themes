@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_features" inherit_id="website.s_features">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt96 pb88" remove="pt64 pb64" separator=" "/>
+    </xpath>
+    <!-- Cols -->
+    <xpath expr="(//div[hasclass('s_hr')])" position="replace"/>
+    <xpath expr="(//div[hasclass('s_hr')])" position="replace"/>
+    <xpath expr="(//div[hasclass('s_hr')])" position="replace"/>
+    <xpath expr="(//div[hasclass('col-lg-4')])[1]" position="attributes">
+        <attribute name="class" add="pt32" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]" position="attributes">
+        <attribute name="class" add="pt32" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[3]" position="attributes">
+        <attribute name="class" add="pt32" separator=" "/>
+    </xpath>
+    <!-- Icons -->
+    <xpath expr="//i[hasclass('s_features_icon')]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+    </xpath>
+    <xpath expr="(//i[hasclass('s_features_icon')])[2]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+    </xpath>
+    <xpath expr="(//i[hasclass('s_features_icon')])[3]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+    </xpath>
+    <!-- Second row -->
+    <xpath expr="//div[hasclass('row')]" position="after">
+        <div class="row">
+            <div class="col-lg-4 pt32">
+                <i class="s_features_icon fa fa-lock mb-3 rounded bg-o-color-3 border" role="img"/>
+                <div class="overflow-hidden">
+                    <h3 class="h5-fs">Security</h3>
+                    <p>Advanced encryption and proactive threat detection keep your data safe, ensuring privacy and compliance at every level.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 pt32">
+                <i class="s_features_icon fa fa-cogs mb-3 rounded bg-o-color-3 border" role="img"/>
+                <div class="overflow-hidden">
+                    <h3 class="h5-fs">Automation</h3>
+                    <p>Streamline repetitive tasks with intelligent workflows that save time, reduce errors, and let your team focus on what matters.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 pt32">
+                <i class="s_features_icon fa fa-line-chart mb-3 rounded bg-o-color-3 border" role="img"/>
+                <div class="overflow-hidden">
+                    <h3 class="h5-fs">Analytics</h3>
+                    <p>Real-time dashboards and detailed reports give you actionable insights to make smarter decisions and track progress effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</template>
+
+</odoo>
