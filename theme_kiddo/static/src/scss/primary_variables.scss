@@ -82,7 +82,7 @@ $o-theme-font-configs: (
         'url': 'Eagle+Lake:300,300i,400,400i,700,700i',
     ),
     'Marcellus': (
-        'family': ('Marcellus', sans-serif),   // font update - Fecske -> Marcellus
+        'family': ('Marcellus', serif),   // font update - Fecske -> Marcellus
         'url': 'Marcellus:300,300i,400,400i,700,700i',
     ),
     'Roboto': (  //  stable ! Din -> Roboto
@@ -113,6 +113,14 @@ $o-theme-font-configs: (
         'family': ('Noto Sans', sans-serif),
         'url': 'Noto+Sans:300,300i,400,400i,700,700i',
     ),
+    'Fredoka': (
+        'family': ('Fredoka', sans-serif),
+        'url': 'Fredoka:300,300i,400,400i,700,700i',
+    ),
+    'Nunito': (
+        'family': ('Nunito', sans-serif),
+        'url': 'Nunito:300,300i,400,400i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -132,6 +140,8 @@ $o-website-values-palettes: (
         'btn-padding-x-lg': 1.5rem,
         'font': 'Montserrat',
         'headings-font': 'Varela Round',
+        'alternative-fonts': ('Cabin', 'Mulish', 'Nunito'),
+        'alternative-headings-fonts': ('Bubblegum Sans', 'Eagle Lake', 'Fredoka'),
         'navbar-font': 'Varela Round',
         'buttons-font': 'Varela Round',
         'link-underline': 'never',

@@ -78,10 +78,6 @@ $o-theme-font-configs: (
         'family': ('Source Sans Pro', sans-serif),
         'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
     ),
-    'Amatic SC': (
-        'family': ('Amatic SC', cursive),
-        'url': 'Amatic+SC:300,300i,400,400i,700,700i',
-    ),
     'Open Sans Condensed': (
         'family': ('Open Sans Condensed', sans-serif),
         'url': 'Open+Sans+Condensed:300,300i,400,400i,700,700i',
@@ -89,6 +85,22 @@ $o-theme-font-configs: (
     'Roboto': (
         'family': ('Roboto', sans-serif),
         'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'Arimo': (
+        'family': ('Arimo', sans-serif),
+        'url': 'Arimo:300,300i,400,400i,700,700i',
+    ),
+    'Bebas Neue': (
+        'family': ('Bebas Neue', sans-serif),
+        'url': 'Bebas+Neue:400,700',
+    ),
+    'Exo 2': (
+        'family': ('Exo 2', sans-serif),
+        'url': 'Exo+2:300,300i,400,400i,700,700i',
+    ),
+    'Barlow Condensed': (
+        'family': ('Barlow Condensed', sans-serif),
+        'url': 'Barlow+Condensed:300,300i,400,400i,700,700i',
     ),
 );
 
@@ -102,6 +114,8 @@ $o-website-values-palettes: (
 
         'font': 'Inter',
         'headings-font': 'Oswald',
+        'alternative-fonts': ('Roboto', 'Arimo', 'Source Sans Pro'),
+        'alternative-headings-fonts': ('Bebas Neue', 'Exo 2', 'Barlow Condensed'),
         'navbar-font': 'Inter',
 
         'buttons-font': 'Inter',

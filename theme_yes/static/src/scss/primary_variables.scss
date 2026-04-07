@@ -5,12 +5,12 @@ $o-theme-h5-font-size-multiplier: (14 / 12);
 
 $o-theme-font-configs: (
     'Playfair Display': (
-        'family': ('Playfair Display', script),
+        'family': ('Playfair Display', serif),
         'url': 'Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i',
 
     ),
     'Bodoni Moda': (
-        'family': ('Bodoni Moda', script),
+        'family': ('Bodoni Moda', serif),
         'url': 'Bodoni+Moda:400,400i,600,600i,800,800i',
     ),
     'Petit Formal Script': (
@@ -41,6 +41,10 @@ $o-theme-font-configs: (
         'family': ('Quicksand', sans-serif),
         'url': 'Quicksand:300,300i,400,400i,700,700i',
     ),
+    'EB Garamond': (
+        'family': ('EB Garamond', serif),
+        'url': 'EB+Garamond:300,300i,400,400i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -52,6 +56,8 @@ $o-website-values-palettes: (
         'color-palettes-name':              'yes-3',
         'font':                             'Quicksand',
         'headings-font':                    'Playfair Display',
+        'alternative-fonts':                ('Lato', 'Raleway', 'EB Garamond'),
+        'alternative-headings-fonts':       ('Dancing Script', 'Bodoni Moda', 'Petit Formal Script'),
         'footer-template':                  'descriptive',
         'btn-padding-y-lg':                 .5rem,
         'btn-padding-x-lg':                 2rem,

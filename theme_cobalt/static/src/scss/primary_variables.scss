@@ -8,7 +8,7 @@ $o-theme-h6-font-size-multiplier: 1.1;
 
 $o-theme-font-configs: (
     'Inter': (
-        'family': ('Inter', serif),
+        'family': ('Inter', sans-serif),
         'url': 'Inter:300,300i,400,400i,600,600i,800,800i',
     ),
 
@@ -20,25 +20,21 @@ $o-theme-font-configs: (
         'family': ('Poppins', sans-serif),
         'url': 'Poppins:300,300i,400,400i,700,700i',
     ),
-    'Bitter': (
-        'family': ('Bitter', serif),
-        'url': 'Bitter:300,300i,400,400i,700,700i',
+    'Manrope': (
+        'family': ('Manrope', sans-serif),
+        'url': 'Manrope:300,300i,400,400i,700,700i',
     ),
-    'Quattrocento': (
-        'family': ('Quattrocento', serif),
-        'url': 'Quattrocento:300,300i,400,400i,700,700i',
+    'DM Sans': (
+        'family': ('DM Sans', serif),
+        'url': 'DM+Sans:300,300i,400,400i,700,700i',
     ),
-    'PT Sans': (
-        'family': ('PT Sans', sans-serif),
-        'url': 'PT+Sans:300,300i,400,400i,700,700i',
+    'Epilogue': (
+        'family': ('Epilogue', sans-serif),
+        'url': 'Epilogue:300,300i,400,400i,700,700i',
     ),
-    'Vollkorn': (
-        'family': ('Vollkorn', serif),
-        'url': 'Vollkorn:300,300i,400,400i,700,700i',
-    ),
-    'Oxygen': (
-        'family': ('Oxygen', sans-serif),
-        'url': 'Oxygen:300,400,700',
+    'Space Grotesk': (
+        'family': ('Space Grotesk', sans-serif),
+        'url': 'Space+Grotesk:300,300i,400,400i,700,700i',
     ),
 );
 
@@ -54,8 +50,8 @@ $o-website-values-palettes: (
 
         'font': 'Inter',
         'headings-font': 'Poppins',
-        'alternative-fonts': ('Abril Fatface', 'Quattrocento', 'Bitter'),
-        'alternative-headings-fonts': ('Oxygen', 'Vollkorn', 'PT Sans'),
+        'alternative-fonts': ('Inter', 'Manrope', 'DM Sans'),
+        'alternative-headings-fonts': ('Space Grotesk', 'Abril Fatface', 'Epilogue'),
 
 
         'headings-line-height': 1.1,
