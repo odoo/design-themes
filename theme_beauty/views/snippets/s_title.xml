@@ -12,15 +12,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_title" inherit_id="website.configurator_s_title">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/10","colors":{"c5":"o-color-2"},"flip":["y"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Connections_10" style="background-image: url('/html_editor/shape/html_builder/Connections/10.svg?c5=o-color-2&amp;flip=y'); background-position: 50% 0%;"/>
-    </xpath>
-</template>
-
 </odoo>

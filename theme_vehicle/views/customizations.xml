@@ -51,12 +51,6 @@
     </xpath>
 </template>
 
-<template id="configurator_s_title" inherit_id="website.configurator_s_title">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc2 pt64 pb0" remove="pt40 pb40" separator=" "/>
-    </xpath>
-</template>
-
 <!-- ======== TEXT - IMAGE ======== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Vehicle s_text_image">
     <xpath expr="//section" position="attributes">
@@ -294,33 +288,6 @@
     </xpath>
         <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
         Designed for the thrill-seeker, the Koran GT brings race-inspired performance to the streets. Precision-tuned for speed, it promises an driving experience.
-    </xpath>
-</template>
-
-<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt0 pb64" remove="pt32 pb32" separator=" "/>
-    </xpath>
-    <!-- Column 1 -->
-    <xpath expr="//p[hasclass('card-text')]" position="after">
-        <p><a href="#" class="btn btn-primary mb-0 o_cc o_cc4 o_translate_inline">Configure</a></p>
-    </xpath>
-    <xpath expr="//p[hasclass('card-text')]" position="after">
-        <span class="d-inline-block mb-4"><b>From $14,000</b></span>
-    </xpath>
-    <!-- Column 2 -->
-    <xpath expr="(//p[hasclass('card-text')])[2]" position="after">
-        <p><a href="#" class="btn btn-primary mb-0 o_cc o_cc4 o_translate_inline">Configure</a></p>
-    </xpath>
-    <xpath expr="(//p[hasclass('card-text')])[2]" position="after">
-        <span class="d-inline-block mb-4"><b>From $19,000</b></span>
-    </xpath>
-    <!-- Column 3 -->
-    <xpath expr="(//p[hasclass('card-text')])[3]" position="after">
-        <p><a href="#" class="btn btn-primary mb-0 o_cc o_cc4 o_translate_inline">Configure</a></p>
-    </xpath>
-    <xpath expr="(//p[hasclass('card-text')])[3]" position="after">
-        <span class="d-inline-block mb-4"><b>From $25,000</b></span>
     </xpath>
 </template>
 
