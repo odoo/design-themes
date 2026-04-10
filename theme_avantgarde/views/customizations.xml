@@ -12,14 +12,11 @@
 <!-- ======== COVER ======== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Avantgarde s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_full_screen_height" remove="s_parallax_is_fixed" separator=" "/>
+        <attribute name="class" add="o_full_screen_height o_cc3" remove="s_parallax_is_fixed o_cc5" separator=" "/>
         <attribute name="data-scroll-background-ratio" add="1.5" remove="1"/>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
         <attribute name="style" remove="background-position: 50% 75%;" add="background-position: 50% 80%;" separator=";"/>
-    </xpath>
-    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
-        <attribute name="class" remove="bg-black-50" add="bg-black-75" separator=" "/>
     </xpath>
     <xpath expr="//h1" position="replace" mode="inner">
         We are Avantgarde.
@@ -284,14 +281,11 @@
     <xpath expr="(//div[hasclass('carousel-item')])[2]" position="attributes">
         <attribute name="class" add="o_cc o_cc5" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('carousel-item')]//div[hasclass('o_we_bg_filter')]" position="replace">
-        <div class="o_we_bg_filter bg-black-50"/>
-    </xpath>
     <xpath expr="(//div[hasclass('carousel-item')])[2]//div[hasclass('container')]" position="before">
-        <div class="o_we_bg_filter bg-black-50"/>
+        <div class="o_we_bg_filter bg-black-25"/>
     </xpath>
     <xpath expr="(//div[hasclass('carousel-item')])[3]//div[hasclass('container')]" position="before">
-        <div class="o_we_bg_filter bg-black-50"/>
+        <div class="o_we_bg_filter bg-black-25"/>
     </xpath>
 
     <xpath expr="//h2" position="replace" mode="inner">

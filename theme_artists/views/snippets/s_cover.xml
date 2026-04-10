@@ -4,7 +4,7 @@
 <template id="s_cover" inherit_id="website.s_cover">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt224 pb200" remove="pt232 pb232 parallax s_parallax_is_fixed bg-black-50" separator=" "/>
+        <attribute name="class" add="pt224 pb200" remove="pt232 pb232 parallax s_parallax_is_fixed bg-black-25" separator=" "/>
         <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/20','colors':{'c5': 'o-color-1'},'flip':['y'], 'showOnMobile':true}</attribute>
     </xpath>
     <!-- Shape -->
@@ -20,10 +20,6 @@
     </xpath>
     <xpath expr="//h1" position="after">
         <p><br/></p>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn-secondary')]" position="attributes">
-        <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
     </xpath>
 </template>
 

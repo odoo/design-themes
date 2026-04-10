@@ -13,9 +13,6 @@
             <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url('/web/image/website.s_image_title_default_image') !important;"/>
         </span>
     </xpath>
-    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
-        <attribute name="class" add="bg-black-25" remove="bg-black-50" separator=" "/>
-    </xpath>
 
     <!-- Texts -->
     <xpath expr="//h1" position="replace" mode="inner">

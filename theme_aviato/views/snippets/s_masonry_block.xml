@@ -21,7 +21,7 @@
     <xpath expr="//img" position="replace"/>
     <!-- Add Text -->
     <xpath expr="//div[hasclass('o_grid_item')]" position="inside">
-        <div class="o_we_bg_filter bg-black-50"></div>
+        <div class="o_we_bg_filter bg-black-25"></div>
         <h2 class="h3-fs" style="text-align: left;">Brazil</h2>
         <p style="text-align: left;">From $699</p>
     </xpath>
@@ -33,7 +33,7 @@
         <attribute name="style" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_carousel_default_image_1');" remove="--grid-item-padding-y: 20px" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[2]/h2" position="before">
-        <div class="o_we_bg_filter bg-black-50"></div>
+        <div class="o_we_bg_filter bg-black-25"></div>
     </xpath>
     <!-- Title -->
     <xpath expr="(//div[hasclass('o_grid_item')])[2]/h2" position="replace" mode="inner">
@@ -51,7 +51,7 @@
         <attribute name="style" remove="--grid-item-padding-y: 20px; background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-2) 100%);" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_quotes_carousel_demo_image_2');" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[3]/h2" position="before">
-        <div class="o_we_bg_filter bg-black-50"></div>
+        <div class="o_we_bg_filter bg-black-25"></div>
     </xpath>
     <!-- Title -->
     <xpath expr="(//div[hasclass('o_grid_item')])[3]/h2" position="replace" mode="inner">
@@ -69,7 +69,7 @@
         <attribute name="style" remove="--grid-item-padding-y: 20px; background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-1) 100%);" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_key_images_default_image_4');" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[4]/h2" position="before">
-        <div class="o_we_bg_filter bg-black-50"></div>
+        <div class="o_we_bg_filter bg-black-25"></div>
     </xpath>
     <!-- Title -->
     <xpath expr="(//div[hasclass('o_grid_item')])[4]/h2" position="replace" mode="inner">
@@ -87,7 +87,7 @@
         <attribute name="style" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_three_columns_default_image_1');" remove="--grid-item-padding-y: 20px" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[5]/h2" position="before">
-        <div class="o_we_bg_filter bg-black-50"></div>
+        <div class="o_we_bg_filter bg-black-25"></div>
     </xpath>
     <!-- Title -->
     <xpath expr="(//div[hasclass('o_grid_item')])[5]/h2" position="replace" mode="inner">
