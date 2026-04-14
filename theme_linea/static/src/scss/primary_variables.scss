@@ -1,0 +1,56 @@
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'default-light-13',
+        'layout': 'full',
+        'link-underline': 'always',
+
+        // Header
+        'menu-shadow-class': '',
+        'logo-height': 2.5rem,
+        'fixed-logo-height': 2.5rem,
+
+        // Font
+        'font': 'Inter',
+        'headings-font': 'Urbanist',
+
+        // Buttons
+        'btn-primary-flat':     true,
+        'btn-secondary-flat':   true,
+
+        // Footer
+        'footer-template': 'centered',
+    ),
+);
+
+$default-light-13: map-get($o-color-palettes, 'default-light-13');
+$default-light-13: map-merge($default-light-13, ('footer': 1));
+$o-color-palettes: map-merge($o-color-palettes, ('default-light-13': $default-light-13));
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Urbanist': (
+        'family': ('Urbanist', sans-serif),
+        'url': 'Urbanist:300,300i,400,400i,500,500i',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,700,700i',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Background Shapes
+//------------------------------------------------------------------------------
+

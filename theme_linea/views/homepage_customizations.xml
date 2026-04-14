@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="configurator_s_banner_product" inherit_id="website.configurator_s_banner_product">
+    <!-- Layout -->
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
+        <attribute name="class" remove="bg-black-15" separator=" "/>
+        <attribute name="style">background-image: linear-gradient(rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.5) 85%);</attribute>
+    </xpath>
+    <!-- Grid item #1 -->
+    <xpath expr="//div[hasclass('o_grid_item')]" position="attributes">
+        <attribute name="class">o_grid_item g-col-lg-4 col-lg-4 g-height-3</attribute>
+        <attribute name="style">grid-area: 12 / 1 / 15 / 5; --grid-item-padding-y: 32px; --grid-item-padding-x: 32px; z-index: 2;</attribute>
+    </xpath>
+    <xpath expr="//h2" position="replace"/>
+    <xpath expr="//p" position="replace" mode="inner">
+        Discover the latest trends thoughtfully designed to elevate your everyday style.
+    </xpath>
+    <xpath expr="//p" position="attributes">
+        <attribute name="class" add="lead" separator=" "/>
+    </xpath>
+    <!-- Grid item #2 -->
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="style" remove="z-index: 2;" add="z-index: 3;" separator=";"/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Explore now
+    </xpath>
+    <!-- Add extra grid item with new title -->
+    <xpath expr="//div[hasclass('o_grid_item')]" position="before">
+        <div class="o_grid_item g-col-lg-6 g-height-5 col-lg-6" style="--grid-item-padding-x: 32px; --grid-item-padding-y: 32px; z-index: 1; grid-area: 1 / 1 / 6 / 7;">
+            <h2 class="display-3">Make every look <br/>your signature</h2>
+        </div>
+    </xpath>
+</template>
+
+<template id="configurator_s_announcement_scroll" inherit_id="website.configurator_s_announcement_scroll">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt24 pb24 s_announcement_scroll_parallax" add="pt16 pb48" separator=" "/>
+        <attribute name="style" remove="--marquee-item-font-size: 80" add="--marquee-item-font-size: 40" separator=";"/>
+    </xpath>
+</template>
+
+<template id="configurator_s_ecomm_categories_showcase" inherit_id="website.configurator_s_ecomm_categories_showcase">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" add="pt0 pb0" separator=" "/>
+    </xpath>
+    <!-- Block #1 -->
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_content')]//h2" position="attributes">
+        <attribute name="class" add="h4-fs" remove="h3-fs" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_content')]//h2" position="replace" mode="inner">
+        Underground
+    </xpath>
+    <!-- Block #2 -->
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[2]//h2" position="attributes">
+        <attribute name="class" add="h4-fs" remove="h3-fs" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[2]//h2" position="replace" mode="inner">
+        Streetwear
+    </xpath>
+    <!-- Block #3 -->
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[3]//h2" position="attributes">
+        <attribute name="class" add="h4-fs" remove="h3-fs" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[3]//h2" position="replace" mode="inner">
+        Casual
+    </xpath>
+    <!-- Block #4 -->
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[4]//h2" position="attributes">
+        <attribute name="class" add="h4-fs" remove="h3-fs" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[4]//h2" position="replace" mode="inner">
+        Elegant Chic
+    </xpath>
+</template>
+
+<template id="configurator_s_masonry_block_images_template" inherit_id="website.configurator_s_masonry_block_images_template">
+    <!-- Layout -->
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
+        <attribute name="style">gap: 30px;</attribute>
+    </xpath>
+    <!-- Grid Item #1 -->
+    <xpath expr="//div[hasclass('o_grid_item')]//h2" position="replace" mode="inner">
+        Rule<br/> your style
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace"/>
+    <!-- Grid Item #2 -->
+    <xpath expr="//div[hasclass('o_grid_item')][2]//h2" position="replace" mode="inner">
+        Define your <br/>glow
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace"/>
+</template>
+
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40 pb40" add="pt32 pb32" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" add="h3-fs" separator=" "/>
+        <attribute name="style" separator=";">text-align: center;</attribute>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Find your style, define your story
+    </xpath>
+</template>
+
+<template id="configurator_s_image_title" inherit_id="website.configurator_s_image_title">
+    <xpath expr="//h1" position="replace" mode="inner">
+        A New Expression of Style and Confidence
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        Step into our latest collection, where modern design meets effortless elegance. Elevate your wardrobe with pieces that blend style, comfort, and individuality.
+    </xpath>
+</template>
+
+</odoo>
