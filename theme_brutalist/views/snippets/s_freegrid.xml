@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_freegrid" inherit_id="website.s_freegrid" name="Brutalist s_freegrid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb56 pt96" remove="pt64 pb64" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
