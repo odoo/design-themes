@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== TITLE ======== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title" name="Brutalist s_title">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb96 pt128" remove="pt40 pb40" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== WAVY GRID ======== -->
+<template id="configurator_s_wavy_grid" inherit_id="website.configurator_s_wavy_grid" name="Brutalist s_wavy_grid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt88 pb72" remove="pt32 pb32" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== FREE GRID ======== -->
+<template id="configurator_s_freegrid" inherit_id="website.configurator_s_freegrid" name="Brutalist s_freegrid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb56 pt96" remove="pt64 pb64" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE PUNCHY ======== -->
+<template id="configurator_s_image_punchy" inherit_id="website.configurator_s_image_punchy" name="Brutalist s_image_punchy">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb112 pt96" remove="pt64 pb64" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== FRAMED INTRO ======== -->
+<template id="s_framed_intro" inherit_id="website.s_framed_intro" name="Brutalist s_framed_intro">
+    <!-- Grid -->
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="data-row-count">13</attribute>
+    </xpath>
+    <!-- Heading -->
+    <xpath expr="//div[hasclass('o_grid_item')][1]" position="attributes">
+        <attribute name="class" add="g-col-lg-8 g-height-13 col-lg-8" remove="g-col-lg-6 g-height-10 col-lg-6" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 0; --grid-item-padding-x: 0; grid-area: 1 / 1 / 14 / 9; order: 2; z-index: 1;</attribute>
+    </xpath>
+    <xpath expr="//h1" position="attributes">
+        <attribute name="class" remove="display-4" separator=" "/>
+    </xpath>
+    <xpath expr="//h1" position="replace" mode="inner">
+        <span style="font-size: clamp(8px, 1em + 6vw, 400px);">Emma<br/>Anderson</span>
+    </xpath>
+    <!-- Text -->
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="class" add="g-col-lg-4 g-height-3 col-lg-4" remove="g-col-lg-6 g-height-4 col-lg-6 align-content-end" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 0; --grid-item-padding-x: 0; grid-area: 3 / 9 / 6 / 13; order: 3; z-index: 3;</attribute>
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="attributes">
+        <attribute name="style">text-align: end;</attribute>
+    </xpath>
+    <!-- CTA -->
+    <xpath expr="//p[last()]" position="replace"/>
+    <!-- Image -->
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="attributes">
+        <attribute name="class" add="g-col-lg-3 g-height-8 col-lg-3 border" remove="g-col-lg-5 g-height-14 col-lg-5 o_cc o_cc2" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 0; --grid-item-padding-x: 0; --box-border-left-width: 16px; --box-border-bottom-width: 16px; --box-border-right-width: 16px; --box-border-top-width: 16px; grid-area: 6 / 10 / 14 / 13; border-color: var(--secondary) !important; order: 1; z-index: 2;</attribute>
+    </xpath>
+</template>
+
+<!-- ======== TITLE ======== -->
+<template id="s_title" inherit_id="website.s_title" name="Brutalist s_title">
+    <!-- Heading -->
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" add="display-2-fs" remove="display-3-fs" separator=" "/>
+        <attribute name="style">text-align: end;</attribute>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">A product is only a starting point. What shapes the work is vision, craft, and an obsession with the smallest detail.&#160;</xpath>
+</template>
+
+<!-- ======== WAVY GRID ======== -->
+<template id="s_wavy_grid" inherit_id="website.s_wavy_grid" name="Brutalist s_wavy_grid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+    <!-- Grid -->
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="data-row-count">29</attribute>
+    </xpath>
+    <!-- Grid Item 1 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]" position="attributes">
+        <attribute name="class" add="g-height-5 g-col-lg-6 col-lg-6" remove="g-height-3 g-col-lg-4 col-lg-4" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 40px; grid-area: 12 / 4 / 17 / 10; z-index: 1;</attribute>
+    </xpath>
+    <!-- Grid Item 1 heading -->
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" add="display-3-fs" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner"><em>Designed</em> for<br/><font class="bg-o-color-2">Modern Living</font></xpath>
+    <!-- Grid Item Image 1 -->
+    <xpath expr="(//img)[1]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Grid Item Caption 1 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
+        <attribute name="class" add="g-height-2" remove="g-height-3" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 16px; grid-area: 11 / 1 / 13 / 8; z-index: 3;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="replace" mode="inner">
+        <p>Urban Studio</p>
+    </xpath>
+    <!-- Grid Item Image 2 -->
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[2]" position="attributes">
+        <attribute name="style">--grid-item-padding-y: 0; grid-area: 1 / 10 / 10 / 13; z-index: 4;</attribute>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Grid Item Caption 2 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="attributes">
+        <attribute name="class" add="g-height-2" remove="g-height-3" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 16px; grid-area: 10 / 10 / 12 / 13; z-index: 5;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="replace" mode="inner">
+        <p>The Design Lab</p>
+    </xpath>
+    <!-- Grid Item Image 3 -->
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[3]" position="attributes">
+        <attribute name="style">--grid-item-padding-y: 0; grid-area: 18 / 1 / 27 / 4; z-index: 6;</attribute>
+    </xpath>
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Grid Item Caption 3 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[7]" position="attributes">
+        <attribute name="class" add="g-height-2" remove="g-height-3" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 16px; grid-area: 27 / 1 / 29 / 4; z-index: 7;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[7]" position="replace" mode="inner">
+        <p>Launch Edition</p>
+    </xpath>
+    <!-- Grid Item Image 4 -->
+    <xpath expr="(//img)[4]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Grid Item Caption 4 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[9]" position="attributes">
+        <attribute name="class" add="g-height-2" remove="g-height-3" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 16px; grid-area: 28 / 6 / 30 / 13; z-index: 9;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[9]" position="replace" mode="inner">
+        <p>Core Series</p>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE PUNCHY ======== -->
+<template id="s_image_punchy" inherit_id="website.s_image_punchy" name="Brutalist s_image_punchy">
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc2" separator=" "/>
+    </xpath>
+    <xpath expr="//font" position="attributes">
+        <attribute name="class">bg-o-color-2</attribute>
+    </xpath>
+</template>
+
+</odoo>
