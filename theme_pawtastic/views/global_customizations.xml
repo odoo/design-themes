@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== DISCOVERY ======== -->
+<template id="s_discovery" inherit_id="website.s_discovery">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2" separator=" "/>
+        <attribute name="style">background-color: transparent; background-image: linear-gradient(0deg, var(--o-color-3) 0%, var(--o-color-4) 100%);"</attribute>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Floats/13','colors':{'c1':'o-color-1','c2':'o-color-1','c5':'o-color-1'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Floats_13" style="background-image: url('/html_editor/shape/html_builder/Floats/13.svg?c1=o-color-1&amp;c2=o-color-1&amp;c5=o-color-1');"/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn-primary')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn-secondary')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== FREE GRID ======== -->
+<template id="s_freegrid" inherit_id="website.s_freegrid">
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
+        <attribute name="style">gap: 12px;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')]" position="attributes">
+        <attribute name="class" add="rounded border o_cc o_cc2" separator=" "/>
+        <attribute name="style" add="--box-border-bottom-left-radius: 0px; --box-border-bottom-right-radius: 96px; --box-border-top-right-radius: 96px; --box-border-top-left-radius: 0px; --box-border-left-width: 2px; --box-border-bottom-width: 2px; --box-border-right-width: 2px; --box-border-top-width: 2px; border-color: var(--o-color-1) !important;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')]/img" position="attributes">
+        <attribute name="style" add="padding: 4px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="class" add="rounded border o_cc o_cc2" separator=" "/>
+        <attribute name="style" remove="--grid-item-padding-y: 8px; --grid-item-padding-x: 16px;" add="--grid-item-padding-y: 0px; --grid-item-padding-x: 0px; --box-border-bottom-left-radius: 16px; --box-border-bottom-right-radius: 96px; --box-border-top-right-radius: 16px; --box-border-top-left-radius: 96px; --box-border-left-width: 2px; --box-border-bottom-width: 2px; --box-border-right-width: 2px; --box-border-top-width: 2px; border-color: var(--o-color-1) !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]/img" position="attributes">
+        <attribute name="style" add="padding: 4px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
+        <attribute name="class" add="rounded border o_cc o_cc2" separator=" "/>
+        <attribute name="style" remove="--grid-item-padding-y: 8px; --grid-item-padding-x: 16px;" add="--grid-item-padding-y: 0px; --grid-item-padding-x: 0px; --box-border-bottom-left-radius: 96px; --box-border-bottom-right-radius: 16px; --box-border-top-right-radius: 96px; --box-border-top-left-radius: 16px; --box-border-left-width: 2px; --box-border-bottom-width: 2px; --box-border-right-width: 2px; --box-border-top-width: 2px; border-color: var(--o-color-1) !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/img" position="attributes">
+        <attribute name="style" add="padding: 4px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
+        <attribute name="class" add="rounded border o_cc o_cc2" separator=" "/>
+        <attribute name="style" add="--box-border-bottom-left-radius: 96px; --box-border-bottom-right-radius: 96px; --box-border-top-right-radius: 96px; --box-border-top-left-radius: 96px; --box-border-left-width: 2px; --box-border-bottom-width: 2px; --box-border-right-width: 2px; --box-border-top-width: 2px; border-color: var(--o-color-1) !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]/img" position="attributes">
+        <attribute name="style" add="padding: 4px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="attributes">
+        <attribute name="class" add="rounded border o_cc o_cc2" separator=" "/>
+        <attribute name="style" remove="--grid-item-padding-y: 8px; --grid-item-padding-x: 16px;" add="--grid-item-padding-y: 0px; --grid-item-padding-x: 0px; --box-border-bottom-left-radius: 96px; --box-border-bottom-right-radius: 16px; --box-border-top-right-radius: 96px; --box-border-top-left-radius: 16px; --box-border-left-width: 2px; --box-border-bottom-width: 2px; --box-border-right-width: 2px; --box-border-top-width: 2px; border-color: var(--o-color-1) !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]/img" position="attributes">
+        <attribute name="style" add="padding: 4px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[6]" position="attributes">
+        <attribute name="class" add="rounded border o_cc o_cc2" separator=" "/>
+        <attribute name="style" add="--box-border-bottom-left-radius: 96px; --box-border-bottom-right-radius: 0px; --box-border-top-right-radius: 0px; --box-border-top-left-radius: 96px; --box-border-left-width: 2px; --box-border-bottom-width: 2px; --box-border-right-width: 2px; --box-border-top-width: 2px; border-color: var(--o-color-1) !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[6]/img" position="attributes">
+        <attribute name="style" add="padding: 4px;" separator=";"/>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE - TEXT OVERLAP ======== -->
+<template id="s_image_text_overlap" inherit_id="website.s_image_text_overlap">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc4" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
+        <attribute name="data-row-count">7</attribute>
+        <attribute name="style">row-gap: 32px;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')]" position="attributes">
+        <attribute name="class" remove="g-height-9" add="g-height-7 rounded o-shadow-custom border" separator=" "/>
+        <attribute name="style" remove="grid-area: 1 / 1 / 10 / 8;" add="--grid-item-padding-x: 0px; --box-border-bottom-left-radius: 48px; --box-border-bottom-right-radius: 48px; --box-border-top-right-radius: 48px; --box-border-top-left-radius: 48px; --box-border-left-width: 2px; --box-border-bottom-width: 2px; --box-border-right-width: 2px; --box-border-top-width: 2px; border-color: var(--o-color-4) !important; grid-area: 1 / 1 / 8 / 8;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="class" remove="g-height-7" add="g-height-5" separator=" "/>
+        <attribute name="style" remove="grid-area: 2 / 7 / 9 / 13;" add="border-radius: 48px !important; grid-area: 2 / 7 / 7 / 13;" separator=";"/>
+    </xpath>
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+        <attribute name="style" add="padding: 4px;" separator=";"/>
+    </xpath>
+</template>
+
+<!-- ======== STEPS ======== -->
+<template id="s_process_steps" inherit_id="website.s_process_steps">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="s_process_steps_connector_line" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" remove="h3-fs" add="h1-fs" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_process_step_number')]" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" remove="bg-primary-light" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_process_step_number')])[2]" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" remove="bg-primary-light" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_process_step_number')])[3]" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" remove="bg-primary-light" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_process_step_number')])[4]" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" remove="bg-primary-light" separator=" "/>
+    </xpath>
+    <xpath expr="//svg[hasclass('s_process_step_connector')]/path" position="attributes">
+        <attribute name="d" separator=" "/>
+    </xpath>
+    <xpath expr="(//svg[hasclass('s_process_step_connector')])[2]/path" position="attributes">
+        <attribute name="d" separator=" "/>
+    </xpath>
+    <xpath expr="(//svg[hasclass('s_process_step_connector')])[3]/path" position="attributes">
+        <attribute name="d" separator=" "/>
+    </xpath>
+    <xpath expr="(//svg[hasclass('s_process_step_connector')])[4]/path" position="attributes">
+        <attribute name="d" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== BENTO GRID ======== -->
+<template id="s_bento_grid" inherit_id="website.s_bento_grid">
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
+        <attribute name="data-row-count">14</attribute>
+        <attribute name="style">gap: 48px;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')]" position="attributes">
+        <attribute name="class" remove="justify-content-start" add="o-shadow-custom border justify-content-end" separator=" "/>
+        <attribute name="style" remove="--grid-item-padding-x: 32px; --grid-item-padding-y: 32px; border-radius: 6.4px !important;" add="--box-border-bottom-left-radius: 16px; --box-border-bottom-right-radius: 96px; --box-border-top-right-radius: 16px; --box-border-top-left-radius: 96px; --grid-item-padding-y: 48px; --grid-item-padding-x: 48px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-5) 0px 0px 0px 2px !important; border-color: var(--o-color-4) !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="class" add="o-shadow-custom border" separator=" "/>
+        <attribute name="style" remove="border-radius: 6.4px !important;" add="--box-border-bottom-left-radius: 96px; --box-border-bottom-right-radius: 16px; --box-border-top-right-radius: 96px; --box-border-top-left-radius: 16px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-5) 0px 0px 0px 2px !important; border-color: var(--o-color-4) !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
+        <attribute name="class" remove="g-col-lg-6 col-lg-6 justify-content-start" add="g-col-lg-7 col-lg-7 justify-content-end" separator=" "/>
+        <attribute name="style" remove="border-radius: 6.4px !important; grid-area: 17 / 1 / 20 / 7;" add="grid-area: 12 / 1 / 15 / 8; --box-border-bottom-left-radius: 96px; --box-border-bottom-right-radius: 16px; --box-border-top-right-radius: 16px; --box-border-top-left-radius: 16px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/h2" position="attributes">
+        <attribute name="style">text-align: center;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/p" position="attributes">
+        <attribute name="style">text-align: center;</attribute>
+    </xpath>
+    <xpath expr="((//div[hasclass('o_grid_item')])[3]/p)[2]" position="attributes">
+        <attribute name="style">text-align: center;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
+        <attribute name="class" remove="g-col-lg-6 g-height-10 col-lg-6 justify-content-start" add="g-col-lg-7 col-lg-7 g-height-5 justify-content-end o-shadow-custom border" separator=" "/>
+        <attribute name="style" remove="--grid-item-padding-x: 32px; --grid-item-padding-y: 32px; border-radius: 6.4px !important; grid-area: 7 / 1 / 17 / 7;" add="grid-area: 7 / 1 / 12 / 8; --grid-item-padding-y: 48px; --grid-item-padding-x: 48px; --box-border-bottom-left-radius: 16px; --box-border-bottom-right-radius: 16px; --box-border-top-right-radius: 96px; --box-border-top-left-radius: 16px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-5) 0px 0px 0px 2px !important; border-color: var(--o-color-4) !important;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="attributes">
+        <attribute name="class" remove="g-col-lg-6 g-height-14 col-lg-6" add="g-col-lg-5 g-height-9 col-lg-5 o-shadow-custom border" separator=" "/>
+        <attribute name="style" remove="border-radius: 6.4px !important; grid-area: 6 / 7 / 20 / 13; --grid-item-padding-x: 32px; --grid-item-padding-y: 32px;" add="grid-area: 6 / 8 / 15 / 13; --grid-item-padding-y: 48px; --grid-item-padding-x: 48px; --box-border-bottom-left-radius: 16px; --box-border-bottom-right-radius: 96px; --box-border-top-right-radius: 16px; --box-border-top-left-radius: 96px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-5) 0px 0px 0px 2px !important; border-color: var(--o-color-4) !important;" separator=";"/>
+    </xpath>
+    <!-- Remove <br/> from the text to apply the correct alignment -->
+    <xpath expr="//div[hasclass('o_grid_item')]/p" position="replace">
+        <p class="lead">Elevate your living space with furniture that blends modern aesthetics and classic charm, crafted to bring both comfort and style to your home.</p>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]/p" position="replace">
+        <p class="lead">Elevate your living space with furniture that blends modern aesthetics and classic charm, crafted to bring both comfort and style to your home.</p>
+    </xpath>
+</template>
+
+<!-- ======== REVIEWS WALL ======== -->
+<template id="s_reviews_wall" inherit_id="website.s_reviews_wall">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc2" add="o_cc4" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Containers/02','colors':{'c5':'o-color-4'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Containers_02" style="background-image: url('/html_editor/shape/html_builder/Containers/02.svg?c5=o-color-4');"/>
+    </xpath>
+    <xpath expr="//blockquote" position="attributes">
+        <attribute name="class" add="o-shadow-custom border" separator=" "/>
+        <attribute name="style">--box-border-bottom-left-radius: 24px; --box-border-bottom-right-radius: 24px; --box-border-top-right-radius: 24px; --box-border-top-left-radius: 24px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-4) 0px 0px 0px 2px !important; border-color: var(--o-color-1) !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[2]" position="attributes">
+        <attribute name="class" add="o-shadow-custom border" separator=" "/>
+        <attribute name="style">--box-border-bottom-left-radius: 24px; --box-border-bottom-right-radius: 24px; --box-border-top-right-radius: 24px; --box-border-top-left-radius: 24px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-4) 0px 0px 0px 2px !important; border-color: var(--o-color-1) !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[3]" position="attributes">
+        <attribute name="class" add="o-shadow-custom border" separator=" "/>
+        <attribute name="style">--box-border-bottom-left-radius: 24px; --box-border-bottom-right-radius: 24px; --box-border-top-right-radius: 24px; --box-border-top-left-radius: 24px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-4) 0px 0px 0px 2px !important; border-color: var(--o-color-1) !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[4]" position="attributes">
+        <attribute name="class" add="o-shadow-custom border" separator=" "/>
+        <attribute name="style">--box-border-bottom-left-radius: 24px; --box-border-bottom-right-radius: 24px; --box-border-top-right-radius: 24px; --box-border-top-left-radius: 24px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-4) 0px 0px 0px 2px !important; border-color: var(--o-color-1) !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[5]" position="attributes">
+        <attribute name="class" add="o-shadow-custom border" separator=" "/>
+        <attribute name="style">--box-border-bottom-left-radius: 24px; --box-border-bottom-right-radius: 24px; --box-border-top-right-radius: 24px; --box-border-top-left-radius: 24px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-4) 0px 0px 0px 2px !important; border-color: var(--o-color-1) !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[6]" position="attributes">
+        <attribute name="class" add="o-shadow-custom border" separator=" "/>
+        <attribute name="style">--box-border-bottom-left-radius: 24px; --box-border-bottom-right-radius: 24px; --box-border-top-right-radius: 24px; --box-border-top-left-radius: 24px; --box-border-left-width: 4px; --box-border-bottom-width: 4px; --box-border-right-width: 4px; --box-border-top-width: 4px; box-shadow: var(--o-color-4) 0px 0px 0px 2px !important; border-color: var(--o-color-1) !important;</attribute>
+    </xpath>
+</template>
+
+<!-- ======== FAQ ======== -->
+<template id="s_faq_collapse" inherit_id="website.s_faq_collapse">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Floats/13','colors':{'c1':'o-color-1','c2':'o-color-1','c5':'o-color-4'},'flip':['y','x'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Floats_13" style="background-image: url('/html_editor/shape/html_builder/Floats/13.svg?c1=o-color-1&amp;c2=o-color-1&amp;c5=o-color-4&amp;flip=xy'); background-position: 50% 50%;"/>
+    </xpath>
+</template>
+
+<!-- ======== HORIZONTAL ATTRIBUTES ======== -->
+<template id="s_attributes_horizontal" inherit_id="website.s_attributes_horizontal">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pt64 pb64" remove="pt24 pb24" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Containers/03","colors":{"c5":"o-color-4"},"flip":[],"showOnMobile":true,"shapeAnimationSpeed":"0"}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Containers_03 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Containers/03.svg?c5=o-color-4');"/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_attributes_horizontal_col')]" position="attributes">
+        <attribute name="class" add="col-10 offset-1 offset-lg-0" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_attributes_horizontal_col')])[2]" position="attributes">
+        <attribute name="class" add="col-10 offset-1 offset-lg-0" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_attributes_horizontal_col')])[3]" position="attributes">
+        <attribute name="class" add="col-10 offset-1 offset-lg-0" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_attributes_horizontal_col')])[4]" position="attributes">
+        <attribute name="class" add="col-10 offset-1 offset-lg-0" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

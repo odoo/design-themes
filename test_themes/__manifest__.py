@@ -38,6 +38,7 @@
         'theme_odoo_experts',
         'theme_orchid',
         'theme_paptic',
+        'theme_pawtastic',
         'theme_real_estate',
         'theme_treehouse',
         'theme_vehicle',
