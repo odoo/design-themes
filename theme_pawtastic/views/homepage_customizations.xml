@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== DISCOVERY ======== -->
+<template id="configurator_s_discovery" inherit_id="website.configurator_s_discovery">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb136" add="pb96" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== FREE GRID ======== -->
+<template id="configurator_s_freegrid" inherit_id="website.configurator_s_freegrid">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt64 o_cc1" add="pt0 o_cc2" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/20','colors':{'c5':'o-color-1'},'flip':[],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Connections_20 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Connections/20.svg?c5=o-color-1');"/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
+        <attribute name="data-row-count">10</attribute>
+    </xpath>
+    <!-- Remove text & button items -->
+    <xpath expr="//div[hasclass('o_grid_item')][last()]" position="replace"/>
+    <xpath expr="//div[hasclass('o_grid_item')][last()]" position="replace"/>
+</template>
+
+<!-- ======== STEPS ======== -->
+<template id="configurator_s_process_steps" inherit_id="website.configurator_s_process_steps">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb72" add="pb0" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/14','colors':{'c5':'o-color-1'},'flip':['y'],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//section/svg" position="before">
+        <div class="o_we_shape o_html_builder_Connections_14" style="background-image: url('/html_editor/shape/html_builder/Connections/14.svg?c5=o-color-1&amp;flip=y'); background-position: 50% 0%;"/>
+    </xpath>
+</template>
+
+<!-- ======== BENTO GRID ======== -->
+<template id="configurator_s_bento_grid" inherit_id="website.configurator_s_bento_grid">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb64" add="pb56" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== REVIEWS WALL ======== -->
+<template id="configurator_s_reviews_wall" inherit_id="website.configurator_s_reviews_wall">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb80" add="pb64" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== FAQ ======== -->
+<template id="configurator_s_faq_collapse" inherit_id="website.configurator_s_faq_collapse">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt32 pb32" add="pt64 pb64" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
