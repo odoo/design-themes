@@ -1,0 +1,118 @@
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        // Palette
+        'color-palettes-name': 'brutalist',
+
+        // Fonts
+        'font': 'Inter Tight',
+        'headings-font': 'Instrument Serif',
+
+        // Buttons
+        'btn-padding-y-lg': 0.75rem,
+        'btn-padding-x-lg': 2rem,
+        'btn-border-radius': 50rem,
+        'btn-border-radius-sm': 50rem,
+        'btn-border-radius-lg': 50rem,
+
+        // Header
+        'menu-shadow-class': '',
+
+        // Footer
+        'footer-template': 'headline',
+    ),
+);
+
+// Main palette
+$o-color-palettes: map-merge($o-color-palettes, (
+    'brutalist': (
+        'o-color-1': #000000,
+        'o-color-2': #FFFF01,
+        'o-color-3': #FDFCFC,
+        'o-color-4': #F3F1ED,
+        'o-color-5': #000000,
+
+        'o-cc4-btn-primary': 'o-color-2',
+        'o-cc5-btn-primary': 'o-color-2',
+
+        'footer': 1,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'brutalist');
+
+// Second palette
+$o-color-palettes: map-merge($o-color-palettes, (
+    'brutalist-2': (
+        'o-color-1': #000000,
+        'o-color-2': #1D56CF,
+        'o-color-3': #F1F1F1,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #000000,
+
+        'o-cc4-btn-primary': 'o-color-2',
+        'o-cc5-btn-primary': 'o-color-2',
+
+        'footer': 1,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'brutalist-2');
+
+// Third palette
+$o-color-palettes: map-merge($o-color-palettes, (
+    'brutalist-3': (
+        'o-color-1': #F5F5F6,
+        'o-color-2': #FFFF01,
+        'o-color-3': #3D30F3,
+        'o-color-4': #1A0CDE,
+        'o-color-5': #F5F5F6,
+
+        'o-cc4-btn-primary': 'o-color-2',
+        'o-cc5-btn-primary': 'o-color-2',
+
+        'footer': 1,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'brutalist-3');
+
+// Fourth palette
+$o-color-palettes: map-merge($o-color-palettes, (
+    'brutalist-4': (
+        'o-color-1': #F3F1ED,
+        'o-color-2': #FFFF01,
+        'o-color-3': #494847,
+        'o-color-4': #181818,
+        'o-color-5': #F3F1ED,
+
+        'o-cc4-btn-primary': 'o-color-2',
+        'o-cc5-btn-primary': 'o-color-2',
+
+        'footer': 1,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'brutalist-4');
+
+$o-gray-color-palettes: map-merge($o-gray-color-palettes, (
+    'brutalist-4': map-get($o-gray-color-palettes, 'brutalist'),
+));
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Inter Tight': (
+        'family': ('Inter Tight', sans-serif),
+        'url': 'Inter+Tight:400,400i,500,600,700',
+    ),
+    'Instrument Serif': (
+        'family': ('Instrument Serif', serif),
+        'url': 'Instrument+Serif:400,400i',
+    ),
+);
