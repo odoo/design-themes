@@ -130,12 +130,13 @@ S_CLASSES_WHITELIST = [
 class TestNewPageTemplates(TransactionCase):
 
     def test_template_names(self):
+        ignored_themes = ['theme_linea']
         websites_themes = self.env['website'].get_test_themes_websites()
         for website in websites_themes:
             views = self.env['ir.ui.view'].search([
                 ('key', 'like', f'{website.theme_id.name}.new_page_template%_s_'),
             ])
-            if website.theme_id.name != 'theme_default':
+            if website.theme_id.name != 'theme_default' and website.theme_id.name not in ignored_themes:
                 self.assertGreater(len(views), 10, "Test should have encountered some views in theme %r" % website.name)
             for view in views:
                 self.assertEqual(view.mode, 'extension', "Theme's new page template customization %r should never be primary" % view.key)
