@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== ANNOUNCEMENT SCROLL ======== -->
+<template id="configurator_s_announcement_scroll" inherit_id="website.configurator_s_announcement_scroll">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt24 pb24" add="pt16 pb48" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== CATEGORIES GRID ======== -->
+<template id="configurator_s_ecomm_categories_showcase" inherit_id="website.configurator_s_ecomm_categories_showcase">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" add="pt0 pb0" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== TITLE ======== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40 pb40" add="pt32 pb32" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== REFERENCES LITE ======== -->
+<template id="configurator_s_references_lite" inherit_id="website.configurator_s_references_lite">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt0 pb0" remove="pt32 pb32" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

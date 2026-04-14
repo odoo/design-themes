@@ -1,0 +1,61 @@
+//------------------------------------------------------------------------------
+// Theme
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'default-light-13',
+        'layout': 'full',
+        'link-underline': 'always',
+
+        // Header
+        'menu-shadow-class': '',
+        'logo-height': 2.5rem,
+        'fixed-logo-height': 2.5rem,
+
+        // Font
+        'font': 'Inter',
+        'headings-font': 'Urbanist',
+
+        // Buttons
+        'btn-primary-flat':     true,
+        'btn-secondary-flat':   true,
+        // Buttons
+        'btn-border-radius': 0,
+        'btn-border-radius-sm': 0,
+        'btn-border-radius-lg': 0,
+
+        // Inputs
+        'input-border-radius': 0,
+        'input-border-radius-lg': 0,
+        'input-border-radius-sm': 0,
+        'input-padding-y': .75rem,
+        'input-padding-x': .75rem,
+        'input-padding-y-lg': 1rem,
+        'input-padding-x-lg': 1rem,
+        'input-padding-y-sm': .5rem,
+        'input-padding-x-sm': .5rem,
+
+        // Footer
+        'footer-template': 'centered',
+    ),
+);
+
+$default-light-13: map-get($o-color-palettes, 'default-light-13');
+$default-light-13: map-merge($default-light-13, ('footer': 1));
+$o-color-palettes: map-merge($o-color-palettes, ('default-light-13': $default-light-13));
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Urbanist': (
+        'family': ('Urbanist', sans-serif),
+        'url': 'Urbanist:300,300i,400,400i,500,500i',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,700,700i',
+    ),
+);

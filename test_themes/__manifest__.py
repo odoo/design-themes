@@ -29,6 +29,7 @@
         'theme_graphene',
         'theme_kea',
         'theme_kiddo',
+        'theme_linea',
         'theme_loftspace',
         'theme_monglia',
         'theme_muse',
