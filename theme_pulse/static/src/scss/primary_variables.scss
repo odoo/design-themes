@@ -1,0 +1,116 @@
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        // Palette
+        'color-palettes-name': 'pulse',
+
+        // Fonts
+        'font': 'Inter',
+        'headings-font': 'Inter Tight',
+
+        // Buttons
+        'btn-padding-y-lg': 0.75rem,
+        'btn-padding-x-lg': 2rem,
+        'btn-border-radius': 50rem,
+        'btn-border-radius-sm': 50rem,
+        'btn-border-radius-lg': 50rem,
+
+        // Header
+        'menu-shadow-class': '',
+
+        // Footer
+        'footer-template': 'headline',
+    ),
+);
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'pulse': (
+        'o-color-1': #123A6B,
+        'o-color-2': #A8C7FA,
+        'o-color-3': #EEF2F7,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #0A1F3C,
+
+        'o-cc4-btn-primary': 'o-color-2',
+        'o-cc5-btn-primary': 'o-color-2',
+
+        'footer': 1,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'pulse');
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'pulse-2': (
+        'o-color-1': #0F5F55,
+        'o-color-2': #F5B841,
+        'o-color-3': #EFF4F1,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #08332E,
+
+        'o-cc4-btn-primary': 'o-color-2',
+        'o-cc5-btn-primary': 'o-color-2',
+
+        'footer': 1,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'pulse-2');
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'pulse-3': (
+        'o-color-1': #1C1A17,
+        'o-color-2': #C9A227,
+        'o-color-3': #F2EDE3,
+        'o-color-4': #FBF9F5,
+        'o-color-5': #0E0D0B,
+
+        'o-cc4-btn-primary': 'o-color-2',
+        'o-cc5-btn-primary': 'o-color-2',
+
+        'footer': 1,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'pulse-3');
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'pulse-4': (
+        'o-color-1': #EDE6D6,
+        'o-color-2': #C9A227,
+        'o-color-3': #23211D,
+        'o-color-4': #141311,
+        'o-color-5': #EDE6D6,
+
+        'o-cc4-btn-primary': 'o-color-2',
+        'o-cc5-btn-primary': 'o-color-2',
+
+        'footer': 1,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'pulse-4');
+
+$o-gray-color-palettes: map-merge($o-gray-color-palettes, (
+    'pulse-4': map-get($o-gray-color-palettes, 'pulse'),
+));
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-headings-font-weight: 700;
+
+$o-theme-font-configs: (
+    'Inter Tight': (
+        'family': ('Inter Tight', sans-serif),
+        'url': 'Inter+Tight:400,400i,500,600,700',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,500,600,700',
+    ),
+);
