@@ -20,7 +20,7 @@
     <xpath expr="(//div[hasclass('o_grid_item')])[1]/p" position="replace">
         <p class="lead">Explore elegant and modern styles designed to express your personality.</p>
         <p>
-            <a class="o_translate_inline btn btn-primary" t-att-href="shop_btn_href">
+            <a class="btn btn-primary" t-att-href="shop_btn_href">
                 Shop Now
             </a>
             <br/>
@@ -33,7 +33,7 @@
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="replace" mode="inner">
         <h2 class="h3-fs" style="text-align: center;">
-            <a t-att-href="shop_btn_href" class="o_translate_inline">See all clothing&#160;<span class="fa fa-long-arrow-right"></span></a>
+            <a t-att-href="shop_btn_href">See all clothing&#160;<span class="fa fa-long-arrow-right"></span></a>
         </h2>
     </xpath>
     <!-- Third item -->
@@ -47,7 +47,7 @@
     <xpath expr="(//div[hasclass('o_grid_item')])[3]/p" position="replace">
         <p class="lead">Discover bold and stylish designs crafted for the modern man.</p>
         <p>
-            <a class="o_translate_inline btn btn-primary" t-att-href="shop_btn_href">
+            <a class="btn btn-primary" t-att-href="shop_btn_href">
                 Shop Now
             </a>
             <br/>
@@ -62,7 +62,7 @@
         <h2 class="h3-fs">Kids Fashion</h2>
         <p class="lead">Discover playful and stylish designs crafted for kids.</p>
         <p>
-            <a class="o_translate_inline btn btn-primary" t-att-href="shop_btn_href">
+            <a class="btn btn-primary" t-att-href="shop_btn_href">
                 Shop Now
             </a>
             <br/>
