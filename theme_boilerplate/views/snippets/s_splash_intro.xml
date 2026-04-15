@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_splash_intro" inherit_id="website.s_splash_intro">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_three_quarter_height o_cc o_cc4" remove="o_full_screen_height" separator=" "/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//div[hasclass('row')]" position="replace">
+        <div class="col-lg-7">
+            <h1 class="display-3">Built for Impact.</h1>
+            <p>
+                <a href="#" class="btn btn-lg btn-secondary o_translate_inline">Discover Impact™</a>
+            </p>
+        </div>
+    </xpath>
+    <xpath expr="//a[hasclass('o_scroll_button')]" position="replace"/>
+</template>
+
+</odoo>
