@@ -59,7 +59,6 @@
         'views/snippets/s_empowerment.xml',
         'views/snippets/s_split_intro.xml',
         'views/snippets/s_numbers_framed.xml',
-        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/loftspace_description.webp',
@@ -84,11 +83,6 @@
     },
     'configurator_snippets': {
         'homepage': ['s_banner', 's_text_block', 's_striped', 's_title', 's_ecomm_categories_showcase', 's_image_text_box', 's_reviews_wall', 's_faq_collapse', 's_cta_box',],
-    },
-    'new_page_templates': {
-        'about': {
-            'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
-        },
     },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',

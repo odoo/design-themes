@@ -55,7 +55,6 @@
         'views/snippets/s_numbers_boxed.xml',
         'views/snippets/s_company_team_card.xml',
         'views/snippets/s_numbers_framed.xml',
-        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/odoo_experts_description.webp',
@@ -95,11 +94,6 @@
             'remove_classes': [
                 's_dynamic_category_clickable_items', 'pt64',
             ],
-        },
-    },
-    'new_page_templates': {
-        'about': {
-            'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
         },
     },
     'author': 'Odoo S.A.',

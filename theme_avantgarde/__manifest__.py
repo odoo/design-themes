@@ -10,7 +10,6 @@
         'data/ir_asset.xml',
         'views/images_library.xml',
         'views/customizations.xml',
-        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/poster.webp',

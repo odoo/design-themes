@@ -69,7 +69,6 @@
         'views/snippets/s_announcement_scroll.xml',
         'views/snippets/s_ecomm_categories_showcase.xml',
         'views/snippets/s_reviews_wall.xml',
-        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/anelusia_description.webp',
