@@ -21,6 +21,7 @@
         'views/snippets/s_text_image.xml',
         'views/snippets/s_company_team.xml',
         'views/snippets/s_references.xml',
+        'views/snippets/s_references_lite.xml',
         'views/snippets/s_references_social.xml',
         'views/snippets/s_references_grid.xml',
         'views/snippets/s_freegrid.xml',
@@ -54,7 +55,6 @@
         'views/snippets/s_numbers_boxed.xml',
         'views/snippets/s_company_team_card.xml',
         'views/snippets/s_numbers_framed.xml',
-        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/odoo_experts_description.webp',
@@ -69,7 +69,7 @@
         'website.s_picture_default_image': '/theme_odoo_experts/static/src/img/snippets/s_picture.webp',
     },
     'configurator_snippets': {
-        'homepage': ['s_mockup_image', 's_references', 's_image_text', 's_text_image', 's_showcase', 's_faq_collapse', 's_cta_box'],
+        'homepage': ['s_mockup_image', 's_references_lite', 's_image_text', 's_text_image', 's_showcase', 's_faq_collapse', 's_cta_box'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
@@ -94,11 +94,6 @@
             'remove_classes': [
                 's_dynamic_category_clickable_items', 'pt64',
             ],
-        },
-    },
-    'new_page_templates': {
-        'about': {
-            'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
         },
     },
     'author': 'Odoo S.A.',

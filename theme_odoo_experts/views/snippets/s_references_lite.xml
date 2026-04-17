@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_references_lite" inherit_id="website.s_references_lite">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt0 pb56" remove="pt32 pb32" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="class" add="o_grid_mode" remove="align-items-center" separator=" "/>
+        <attribute name="data-row-count">2</attribute>
+        <attribute name="style" add="column-gap: 24px;" separator=";"/>
+    </xpath>
+</template>
+</odoo>

@@ -11,7 +11,6 @@
         'data/ir_asset.xml',
         'views/image_content.xml',
         'views/customizations.xml',
-        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/bewise_description.webp',

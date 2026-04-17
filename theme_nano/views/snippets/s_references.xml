@@ -11,6 +11,9 @@
     </xpath>
     <xpath expr="//p" position="replace"/>
     <xpath expr="//p" position="replace"/>
+</template>
+
+<template id="s_references_columns" inherit_id="website.s_references_columns">
     <xpath expr="//div[hasclass('col-lg-2')]" position="attributes">
         <attribute name="class" add="offset-lg-1" separator=" "/>
     </xpath>
