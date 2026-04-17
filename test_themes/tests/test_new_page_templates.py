@@ -135,8 +135,6 @@ class TestNewPageTemplates(TransactionCase):
             views = self.env['ir.ui.view'].search([
                 ('key', 'like', f'{website.theme_id.name}.new_page_template%_s_'),
             ])
-            if website.theme_id.name != 'theme_default':
-                self.assertGreater(len(views), 10, "Test should have encountered some views in theme %r" % website.name)
             for view in views:
                 self.assertEqual(view.mode, 'extension', "Theme's new page template customization %r should never be primary" % view.key)
                 name = view.key.split('.')[1]
@@ -423,5 +421,5 @@ class TestNewPageTemplates(TransactionCase):
             view_count += len(views)
 
         _logger.info("Tested %s views", view_count)
-        self.assertGreater(view_count, 2500, "Test should have checked many views")
+        self.assertGreater(view_count, 1900, "Test should have checked many views")
         self.assertFalse(errors, "No error should have been collected")

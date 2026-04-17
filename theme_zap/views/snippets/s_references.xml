@@ -16,6 +16,9 @@
     </xpath>
     <!-- Link -->
     <xpath expr="//a" position="replace"/>
+</template>
+
+<template id="s_references_columns" inherit_id="website.s_references_columns">
     <!-- Column #01 -->
     <xpath expr="//div[hasclass('col-lg-2')][1]" position="attributes">
         <attribute name="class" add="o_cc o_cc1 rounded pt48 pb48 border" remove="pt16 pb16" separator=" "/>

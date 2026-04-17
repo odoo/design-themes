@@ -11,7 +11,6 @@
         'data/ir_asset.xml',
         'views/images.xml',
         'views/customizations.xml',
-        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/cobalt_poster.webp',

@@ -10,7 +10,6 @@
         'data/ir_asset.xml',
         'views/images_library.xml',
         'views/customizations.xml',
-        'views/new_page_template.xml',
     ],
     'images': [
         'static/description/graphene_poster.webp',
@@ -21,11 +20,6 @@
     },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_numbers_grid', 's_mockup_image', 's_comparisons', 's_references'],
-    },
-    'new_page_templates': {
-        'about': {
-            'personal': ['s_text_cover', 's_image_text', 's_text_block_h2', 's_numbers', 's_features', 's_call_to_action'],
-        },
     },
     'configurator_snippets_addons': {
         'website_sale': {
