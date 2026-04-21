@@ -27,14 +27,6 @@
     <xpath expr="//div[hasclass('s_media_list_body')]" position="attributes">
         <attribute name="class" add="col-lg-6" remove="col-lg-8" separator=" "/>
     </xpath>
-    <!-- Media #01 - Title -->
-    <xpath expr="//div[hasclass('s_media_list_item')]//h3" position="replace" mode="inner">
-        World's top Hidden gems
-    </xpath>
-    <!-- Media #01 - Paragraph -->
-    <xpath expr="//div[hasclass('s_media_list_item')]//p" position="replace" mode="inner">
-        Go off beaten track and discover unexpected and curious places. Here’s our ultimate guide to the best-kept secret spots that you simply must visit!
-    </xpath>
 
     <!-- Media #02 -->
     <xpath expr="//div[hasclass('s_media_list_item')][2]/div" position="attributes">
@@ -55,18 +47,6 @@
     <!-- Media #02 - Body -->
     <xpath expr="(//div[hasclass('s_media_list_body')])[2]" position="attributes">
         <attribute name="class" add="col-lg-6" remove="col-lg-8" separator=" "/>
-    </xpath>
-    <!-- Media #02 - Title -->
-    <xpath expr="//div[hasclass('s_media_list_item')][2]//h3" position="replace" mode="inner">
-        Summer Essentials
-    </xpath>
-    <!-- Media #02 - Paragraph -->
-    <xpath expr="//div[hasclass('s_media_list_item')][2]//p" position="replace" mode="inner">
-        The right summer essentials can make the difference between a good time and a stand-out great time. Discover our selection for everyday wear during the warm summer months.
-    </xpath>
-    <!-- Media #02 - Add a button -->
-    <xpath expr="//div[hasclass('s_media_list_item')][2]//p" position="after">
-        <a href="#" class="btn btn-primary">Read more</a>
     </xpath>
 
     <!-- Remove Media #03 -->
