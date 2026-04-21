@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_floating_blocks" inherit_id="website.s_floating_blocks">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb64" remove="pb32 o_cc2" separator=" "/>
+    </xpath>
+
+    <!-- First Card -->
+    <xpath expr="//section[hasclass('s_floating_blocks_block')]" position="attributes">
+        <attribute name="data-bg-video-src"/>
+        <attribute name="style"/>
+        <attribute name="class" add="o_cc4" remove="oe_img_bg o_bg_img_center o_background_video o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][1]//div[hasclass('s_floating_blocks_block_grid')]//p[hasclass('lead')]" position="replace" mode="inner">
+        01.
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][1]//div[hasclass('s_floating_blocks_block_grid')]//h2" position="replace" mode="inner">
+        Physiotherapy<br/>&amp; Rehabilitation
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][1]//div[hasclass('s_floating_blocks_block_grid')]//a[hasclass('btn')]" position="replace">
+        <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary"><t t-out="cta_btn_text">Learn more</t></a>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][1]//div[hasclass('s_floating_blocks_block_grid')]" position="inside">
+        <div class="o_grid_item o_grid_item_image o_colored_level g-height-8 g-col-lg-6 col-lg-6" style="grid-area: 1 / 7 / 9 / 13; z-index: 3;">
+            <img src="/web/image/website.s_floating_blocks_1" alt="" class="img img-fluid"/>
+        </div>
+    </xpath>
+
+    <!-- Second Card -->
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][2]" position="attributes">
+        <attribute name="data-bg-video-src"/>
+        <attribute name="style"/>
+        <attribute name="class" add="o_cc3" remove="parallax o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][2]//div[hasclass('s_floating_blocks_block_grid')]//p" position="replace" mode="inner">
+        02.
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][2]//div[hasclass('s_floating_blocks_block_grid')]//h2" position="replace" mode="inner">
+        Osteopathy<br/>&amp; Alignment
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][2]//div[hasclass('s_floating_blocks_block_grid')]//a[hasclass('btn')]" position="replace">
+        <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary"><t t-out="cta_btn_text">Learn more</t></a>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][2]//div[hasclass('s_floating_blocks_block_grid')]" position="inside">
+        <div class="o_grid_item o_grid_item_image o_colored_level g-height-8 g-col-lg-6 col-lg-6" style="grid-area: 1 / 7 / 9 / 13; z-index: 3;">
+            <img src="/web/image/website.s_floating_blocks_2" alt="" class="img img-fluid"/>
+        </div>
+    </xpath>
+
+    <!-- Third Card -->
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]" position="attributes">
+        <attribute name="class" add="border" remove="parallax" separator=" "/>
+    </xpath>
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]//p" position="replace"/>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]//h2" position="before">
+        03.
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]//h2" position="replace" mode="inner">
+        Sports Therapy<br/>&amp; Performance
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]//a[hasclass('btn')]" position="replace">
+        <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary"><t t-out="cta_btn_text">Learn more</t></a>
+    </xpath>
+    <xpath expr="//section[hasclass('s_floating_blocks_block')][3]//div[hasclass('s_floating_blocks_block_grid')]" position="inside">
+        <div class="o_grid_item o_grid_item_image o_colored_level g-height-8 g-col-lg-6 col-lg-6" style="grid-area: 1 / 7 / 9 / 13; z-index: 3;">
+            <img src="/web/image/website.s_floating_blocks_1" alt="" class="img img-fluid"/>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

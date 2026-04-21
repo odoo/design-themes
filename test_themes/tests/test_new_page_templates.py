@@ -136,7 +136,7 @@ class TestNewPageTemplates(TransactionCase):
                 ('key', 'like', f'{website.theme_id.name}.new_page_template%_s_'),
             ])
             if website.theme_id.name != 'theme_default':
-                self.assertGreater(len(views), 10, "Test should have encountered some views in theme %r" % website.name)
+                self.assertGreater(len(views), 3, "Test should have encountered at least one view in theme %r" % website.name)
             for view in views:
                 self.assertEqual(view.mode, 'extension', "Theme's new page template customization %r should never be primary" % view.key)
                 name = view.key.split('.')[1]

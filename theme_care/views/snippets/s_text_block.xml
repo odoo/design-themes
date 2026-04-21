@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_text_block" inherit_id="website.s_text_block">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt80 pb32" remove="pt40 pb40" separator=" "/>
+    </xpath>
+    <!-- Container -->
+    <xpath expr="//div[hasclass('container')]" position="replace">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 pb16">
+                    <p>Our story</p>
+                </div>
+                <div class="col-lg-8 pb16">
+                    <h2 class="h3-fs">Founded in 2012, our medical cabinet has grown on the values of trust and care. We welcome every patient as part of our family, prioritizing comfort and health always.</h2>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

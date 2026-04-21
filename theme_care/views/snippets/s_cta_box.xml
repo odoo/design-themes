@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cta_box" inherit_id="website.s_cta_box">
+    <xpath expr="//div[hasclass('s_card')]" position="attributes">
+        <attribute name="class" remove="o_card_img_horizontal flex-lg-row-reverse" separator=" "/>
+        <attribute name="style" add="border-radius: 32px !important;" separator=";"/>
+    </xpath>
+    <xpath expr="//figure" position="replace"/>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" >
+        <h2 class="card-title" style="text-align: center;">Don't let pain hold you back<br/>from doing what you love.</h2>
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace">
+        <p class="card-text" style="text-align: center;">Reach out to our specialists to find the right treatment plan for you.</p>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace">
+        <p style="text-align: center;">
+            <a t-att-href="cta_btn_href" class="btn btn-lg btn-primary mb-2 o_translate_inline">Contact us</a>
+            <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary mb-2 o_translate_inline"><t t-out="cta_btn_text">Our services</t></a>
+        </p>
+    </xpath>
+</template>
+
+</odoo>
