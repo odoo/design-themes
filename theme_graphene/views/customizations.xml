@@ -4,7 +4,7 @@
 <!-- ======== COVER ======== -->
 <template id="s_cover" inherit_id="website.s_cover" name="Graphene s_cover">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt160 pb192" remove="pt232 pb232 s_parallax_is_fixed s_parallax" separator=" "/>
+        <attribute name="class" add="oe_img_bg pt160 pb192" remove="pt232 pb232 s_parallax_is_fixed s_parallax" separator=" "/>
         <attribute name="data-scroll-background-ratio">0</attribute>
         <attribute name="style">background-image: url('/web/image/website.s_cover_default_image');</attribute>
     </xpath>
