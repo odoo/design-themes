@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-light-14',
+        'color-palettes-name': 'soft-04',
         'layout': 'full',
 
         // Header
@@ -47,10 +47,10 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-light-14: map-get($o-color-palettes, 'default-light-14');
-$default-light-14: map-merge($default-light-14, ('footer': 5, 'menu-border-color': 5));
-$default-light-14: map-merge($default-light-14, ('o-cc4-btn-primary': 'o-color-4', 'o-cc1-btn-secondary': 'o-color-5', 'o-cc2-btn-secondary': 'o-color-5', 'o-cc3-btn-secondary': 'o-color-4', 'o-cc4-btn-secondary': 'o-color-4', 'o-cc5-btn-secondary': 'o-color-4'));
-$o-color-palettes: map-merge($o-color-palettes, ('default-light-14': $default-light-14));
+$soft-04: map-get($o-color-palettes, 'soft-04');
+$soft-04: map-merge($soft-04, ('footer': 5, 'menu-border-color': 5));
+$soft-04: map-merge($soft-04, ('o-cc4-btn-primary': 'o-color-4', 'o-cc1-btn-secondary': 'o-color-5', 'o-cc2-btn-secondary': 'o-color-5', 'o-cc3-btn-secondary': 'o-color-4', 'o-cc4-btn-secondary': 'o-color-4', 'o-cc5-btn-secondary': 'o-color-4'));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-04': $soft-04));
 
 //------------------------------------------------------------------------------
 // Fonts

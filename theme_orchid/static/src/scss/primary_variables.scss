@@ -59,7 +59,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-light-9',
+        'color-palettes-name': 'soft-07',
         'font': 'DM Sans',
         'headings-font': 'Elsie',
         'header-template': 'sales_four',
@@ -67,9 +67,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-light-9: map-get($o-color-palettes, 'default-light-9');
-$default-light-9: map-merge($default-light-9, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-light-9': $default-light-9));
+$soft-07: map-get($o-color-palettes, 'soft-07');
+$soft-07: map-merge($soft-07, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-07': $soft-07));
 
 $o-color-palettes-compatibility-indexes: (
     1: 'orchid-1',

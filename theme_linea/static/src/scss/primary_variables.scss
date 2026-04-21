@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-light-13',
+        'color-palettes-name': 'elegant-03',
         'layout': 'full',
         'link-underline': 'always',
 
@@ -41,9 +41,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-light-13: map-get($o-color-palettes, 'default-light-13');
-$default-light-13: map-merge($default-light-13, ('footer': 1));
-$o-color-palettes: map-merge($o-color-palettes, ('default-light-13': $default-light-13));
+$elegant-03: map-get($o-color-palettes, 'elegant-03');
+$elegant-03: map-merge($elegant-03, ('footer': 1));
+$o-color-palettes: map-merge($o-color-palettes, ('elegant-03': $elegant-03));
 
 //------------------------------------------------------------------------------
 // Fonts

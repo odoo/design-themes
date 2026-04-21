@@ -143,7 +143,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':  'default-light-12',
+        'color-palettes-name':  'elegant-01',
         'header-font-size':     1rem,
         'font':                 'Inter',
         'headings-font':        'Oxygen',
@@ -156,9 +156,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-light-12: map-get($o-color-palettes, 'default-light-12');
-$default-light-12: map-merge($default-light-12, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-light-12': $default-light-12));
+$elegant-01: map-get($o-color-palettes, 'elegant-01');
+$elegant-01: map-merge($elegant-01, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('elegant-01': $elegant-01));
 
 $o-color-palettes-compatibility-indexes: (
     1: 'enark-1',

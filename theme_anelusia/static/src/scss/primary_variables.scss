@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-25',
+        'color-palettes-name': 'soft-13',
 
         // Header
         'header-template':                  'hamburger',
@@ -22,9 +22,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-25: map-get($o-color-palettes, 'default-25');
-$default-25: map-merge($default-25, ('menu': 2, 'footer': 5, 'header-sales_four': 2, 'o-color-3': #F3F2F2));
-$o-color-palettes: map-merge($o-color-palettes, ('default-25': $default-25));
+$soft-13: map-get($o-color-palettes, 'soft-13');
+$soft-13: map-merge($soft-13, ('menu': 2, 'footer': 5, 'header-sales_four': 2));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-13': $soft-13));
 
 //------------------------------------------------------------------------------//
 // Fonts

@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'nano-1',
+        'color-palettes-name':              'inverted-01',
 
         // Header
         'header-font-size':                 1rem,
@@ -171,7 +171,7 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     )
 );
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'nano-1');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'inverted-01');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'nano-1',

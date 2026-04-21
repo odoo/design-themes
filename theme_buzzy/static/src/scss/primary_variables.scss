@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'default-24',
+        'color-palettes-name':              'soft-02',
 
         // Header
         'logo-height':                      2.75rem,
@@ -32,9 +32,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-24: map-get($o-color-palettes, 'default-24');
-$default-24: map-merge($default-24, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-24': $default-24));
+$soft-02: map-get($o-color-palettes, 'soft-02');
+$soft-02: map-merge($soft-02, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-02': $soft-02));
 
 //------------------------------------------------------------------------------
 // Fonts

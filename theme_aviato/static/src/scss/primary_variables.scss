@@ -15,7 +15,7 @@ $o-theme-h6-font-size-multiplier: (20 / 16);
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-16',
+        'color-palettes-name': 'earthy-05',
 
         // Header
         'logo-height': 3rem,
@@ -47,9 +47,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-16: map-get($o-color-palettes, 'default-16');
-$default-16: map-merge($default-16, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-16': $default-16));
+$earthy-05: map-get($o-color-palettes, 'earthy-05');
+$earthy-05: map-merge($earthy-05, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('earthy-05': $earthy-05));
 
 //------------------------------------------------------------------------------
 // Fonts

@@ -29,7 +29,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-8',
+        'color-palettes-name': 'soft-08',
 
         'font': 'Inter',
         'headings-font': 'Poppins',
@@ -51,9 +51,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-8: map-get($o-color-palettes, 'default-8');
-$default-8: map-merge($default-8, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-8': $default-8));
+$soft-08: map-get($o-color-palettes, 'soft-08');
+$soft-08: map-merge($soft-08, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-08': $soft-08));
 
 $o-color-palettes-compatibility-indexes: (
     1: 'cobalt-1',

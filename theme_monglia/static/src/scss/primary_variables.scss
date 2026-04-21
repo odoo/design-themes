@@ -4,9 +4,9 @@
 //------------------------------------------------------------------------------
 
 // Theme colors
-$default-light-3: map-get($o-color-palettes, 'default-light-3');
-$default-light-3: map-merge($default-light-3, ('body': 'o-color-2'));
-$o-color-palettes: map-merge($o-color-palettes, ('default-light-3': $default-light-3));
+$soft-13: map-get($o-color-palettes, 'soft-13');
+$soft-13: map-merge($soft-13, ('body': 'o-color-2'));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-13': $soft-13));
 
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
@@ -141,7 +141,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-light-3',
+        'color-palettes-name': 'soft-13',
 
         'layout': 'boxed',
         'font': 'Roboto Mono',
@@ -156,9 +156,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-light-3: map-get($o-color-palettes, 'default-light-3');
-$default-light-3: map-merge($default-light-3, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-light-3': $default-light-3));
+$soft-13: map-get($o-color-palettes, 'soft-13');
+$soft-13: map-merge($soft-13, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-13': $soft-13));
 
 $o-color-palettes-compatibility-indexes: (
     1: 'monglia-1',

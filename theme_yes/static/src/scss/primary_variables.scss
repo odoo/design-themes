@@ -49,7 +49,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'yes-3',
+        'color-palettes-name':              'soft-14',
         'font':                             'Quicksand',
         'headings-font':                    'Playfair Display',
         'footer-template':                  'descriptive',
@@ -62,11 +62,11 @@ $o-website-values-palettes: (
     ),
 );
 
-$yes-3: map-get($o-color-palettes, 'yes-3');
-$yes-3: map-merge($yes-3, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('yes-3': $yes-3));
+$soft-14: map-get($o-color-palettes, 'soft-14');
+$soft-14: map-merge($soft-14, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-14': $soft-14));
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'yes-3');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'soft-14');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'yes-1',

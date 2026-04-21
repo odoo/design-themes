@@ -78,7 +78,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-28',
+        'color-palettes-name': 'earthy-10',
         // Font
         'font': 'Roboto',
         'headings-font': 'IBM Plex Sans',
@@ -93,9 +93,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-28: map-get($o-color-palettes, 'default-28');
-$default-28: map-merge($default-28, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-28': $default-28));
+$earthy-10: map-get($o-color-palettes, 'earthy-10');
+$earthy-10: map-merge($earthy-10, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('earthy-10': $earthy-10));
 
 $o-color-palettes-compatibility-indexes: (
     1: 'real-estate-1',

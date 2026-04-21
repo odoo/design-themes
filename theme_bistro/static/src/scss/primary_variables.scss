@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'default-22',
+        'color-palettes-name':              'earthy-02',
 
         // Header
         'header-template':                  'vertical',
@@ -39,9 +39,12 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-22: map-get($o-color-palettes, 'default-22');
-$default-22: map-merge($default-22, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-22': $default-22));
+$earthy-02: map-get($o-color-palettes, 'earthy-02');
+$earthy-02: map-merge($earthy-02, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('earthy-02': $earthy-02));
+
+// Register 'earthy-02' for display in the website builder palette picker.
+$o-theme-palettes-selection: append($o-theme-palettes-selection, 'earthy-02');
 
 //------------------------------------------------------------------------------
 // Fonts

@@ -71,7 +71,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-11',
+        'color-palettes-name': 'soft-13',
         'logo-height': (52 / 16) * 1rem,
         'fixed-logo-height': (52 / 16) * 1rem,
         'header-font-size': 1rem,
@@ -93,9 +93,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-11: map-get($o-color-palettes, 'default-11');
-$default-11: map-merge($default-11, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-11': $default-11));
+$soft-13: map-get($o-color-palettes, 'soft-13');
+$soft-13: map-merge($soft-13, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-13': $soft-13));
 
 $o-palette-priority-prefix: 'odoo-experts';
 

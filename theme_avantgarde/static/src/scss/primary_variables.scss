@@ -173,7 +173,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-15',
+        'color-palettes-name': 'earthy-02',
 
         'font': 'Open Sans',
         'headings-font': 'Syne',
@@ -186,9 +186,9 @@ $o-website-values-palettes: (
     ),
 );
 
-$default-15: map-get($o-color-palettes, 'default-15');
-$default-15: map-merge($default-15, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-15': $default-15));
+$earthy-02: map-get($o-color-palettes, 'earthy-02');
+$earthy-02: map-merge($earthy-02, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('earthy-02': $earthy-02));
 
 $o-color-palettes-compatibility-indexes: (
     1: 'avantgarde-1',

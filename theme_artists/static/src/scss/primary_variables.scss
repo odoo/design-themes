@@ -97,7 +97,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'artists-1',
+        'color-palettes-name': 'vibrant-10',
         'header-font-size': (13 / 16) * 1rem,
         'font': 'Montserrat',
         'headings-font': 'Bebas Neue',
@@ -120,11 +120,11 @@ $o-website-values-palettes: (
     ),
 );
 
-$artists-1: map-get($o-color-palettes, 'artists-1');
-$artists-1: map-merge($artists-1, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('artists-1': $artists-1));
+$vibrant-10: map-get($o-color-palettes, 'vibrant-10');
+$vibrant-10: map-merge($vibrant-10, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('vibrant-10': $vibrant-10));
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'artists-1');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'vibrant-10');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'artists-1',

@@ -121,7 +121,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'graphene-2',
+        'color-palettes-name': 'soft-03',
         'header-font-size': .95rem,
         'btn-border-radius': 5px,
         'btn-border-radius-lg': 5px,
@@ -139,11 +139,11 @@ $o-website-values-palettes: (
     ),
 );
 
-$graphene-2: map-get($o-color-palettes, 'graphene-2');
-$graphene-2: map-merge($graphene-2, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('graphene-2': $graphene-2));
+$soft-03: map-get($o-color-palettes, 'soft-03');
+$soft-03: map-merge($soft-03, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('soft-03': $soft-03));
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'graphene-2');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'soft-03');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'loftspace-1',
