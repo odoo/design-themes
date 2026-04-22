@@ -14,10 +14,6 @@
     </xpath>
     <!-- Disable Parallax -->
     <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        The Revolution <br/> in Virtual Reality
-    </xpath>
     <!-- Paragraph -->
     <xpath expr="//p[hasclass('lead')]" position="replace">
         <p class="lead"><br/></p>

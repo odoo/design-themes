@@ -10,18 +10,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Virtual Reality: Redefining Experience
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Immerse yourself in a world of possibilities with our cutting-edge virtual reality technology. We provide tools and solutions that redefine how you interact with the digital world.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Step into the future today.
-    </xpath>
 </template>
 
 </odoo>
