@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_banner ===== -->
+<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace">
+        <h1 class="display-3">Unleash your <strong><span class="o_text_highlight o_translate_inline o_text_highlight_freehand_1" style="--text-highlight-width: 6px; --text-highlight-color: var(--o-color-1);">potential</span>.</strong></h1>
+    </xpath>
+</template>
+
+<!-- ===== s_color_blocks_2 ===== -->
+<template id="configurator_s_color_blocks_2" inherit_id="website.configurator_s_color_blocks_2">
+    <!-- Column #1 -->
+    <xpath expr="//div[hasclass('col-lg-6')]" position="replace">
+        <div class="col-lg-6 o_cc o_cc4">
+            <h2>We are committed to helping you achieve success with unparalleled support and expert guidance, every step of the way.</h2>
+        </div>
+    </xpath>
+</template>
+
+<!-- ===== s_title ===== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        We create the perfect <br/>tailored solution for you
+    </xpath>
+</template>
+
+<!-- ===== s_text_image ===== -->
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Everything you need, <br/>totally free
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace" mode="inner">
+        <br/>
+    </xpath>
+    <xpath expr="//p[2]" position="replace" mode="inner">
+        Track every expenses, uncover new ways to save, choose the right credit cards. <br/>All those advices and much more are included and totally free of charge.
+    </xpath>
+</template>
+
+<!-- ===== s_company_team ===== -->
+<template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt0 pb16" remove="pt48 pb48" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
+
