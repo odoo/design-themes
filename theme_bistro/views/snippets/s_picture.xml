@@ -10,18 +10,6 @@
     <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
         <attribute name="class" add="col-lg-8 offset-lg-2" remove="col-lg-12" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Today's special
-    </xpath>
-    <!-- Text -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Taste our chef's special, an almond macaroon with orange blossom buttercream.
-    </xpath>
-    <!-- Caption -->
-    <xpath expr="//figcaption" position="replace" mode="inner">
-        The perfect dessert to share for the table.
-    </xpath>
 </template>
 
 </odoo>

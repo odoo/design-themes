@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_image_title ===== -->
+<template id="configurator_s_image_title" inherit_id="website.configurator_s_image_title">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        A Deep Dive into Flavor and Innovation
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Transform your dining experience with our new menu, where classic dishes meet modern creativity. Elevate your palate with flavors that blend tradition and innovation seamlessly.
+    </xpath>
+</template>
+
+<!-- ===== s_key_images ===== -->
+<template id="configurator_s_key_images" inherit_id="website.configurator_s_key_images">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Savor the Flavors of Our Bistro
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Delight in Every Bite, Every Moment
+    </xpath>
+    <!-- Caption 1 -->
+    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
+        Fresh ingredients, deliciously prepared
+    </xpath>
+    <!-- Caption 2 -->
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
+        A cozy ambiance for any occasion
+    </xpath>
+    <!-- Caption 3 -->
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
+        Gourmet dishes that will tempt your taste buds
+    </xpath>
+    <!-- Caption 4 -->
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
+        Experience our passion for great food and service
+    </xpath>
+</template>
+
+<!-- ===== s_quotes_carousel ===== -->
+<template id="configurator_s_quotes_carousel" inherit_id="website.configurator_s_quotes_carousel">
+    <!-- Slide #01 -->
+    <xpath expr="//p[1]" position="replace" mode="inner">
+        Cosy and friendly, good atmosphere and super food. Especially the spiced fruit crumble.
+    </xpath>
+    <!-- Slide #02 -->
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        This place is perfect for groups or a casual date night.
+    </xpath>
+    <!-- Slide #03 -->
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        A truly exquisite dining experience. I highly recommend the Mustard Sauce, out of this world.
+    </xpath>
+</template>
+
+<!-- ===== s_quadrant ===== -->
+<template id="configurator_s_quadrant" inherit_id="website.configurator_s_quadrant">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Taste &amp; Enjoy
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Experience the finest in dining with our carefully curated menus. Whether you're at a bistro, bar, or cafe, our culinary offerings are sure to delight.<br/><br/> Taste the difference in every dish.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Reserve a Table
+    </xpath>
+</template>
+
+</odoo>
+
