@@ -4,12 +4,13 @@
     'category': 'Theme/Corporate',
     'summary': 'Service, Corporate, Design, Technology, Robotics, Computers, IT, Blogs',
     'sequence': 110,
-    'version': '2.0.0',
+    'version': '2.1.0',
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
         'views/images_library.xml',
         'views/customizations.xml',
+        'views/homepage_customizations.xml',
         'views/new_page_template.xml',
     ],
     'images': [
