@@ -30,22 +30,13 @@
     <xpath expr="//h1" position="attributes">
         <attribute name="class" remove="display-1" separator=" "/>
     </xpath>
-    <xpath expr="//h1" position="replace" mode="inner">
-        A Different Viewpoint.
-    </xpath>
     <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        We are a contemporary architecture firm working mainly in the residential, commercial and office sectors. Our projects are built all over the world, in urban and rural environments.
-    </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]//p[2]" position="attributes">
         <attribute name="class" add="mb-0" separator=" "/>
     </xpath>
     <!-- Button -->
     <xpath expr="//a[@t-att-href='cta_btn_href']" position="attributes">
         <attribute name="class" remove="btn-lg" separator=" "/>
-    </xpath>
-    <xpath expr="//a[@t-att-href='cta_btn_href']" position="replace" mode="inner">
-        Discover More
     </xpath>
 </template>
 
