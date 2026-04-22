@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_banner ===== -->
+<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace">
+        <h1>The <br/><font class="text-o-color-1">ultimate</font> <br/>marketing platform</h1>
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace">
+        <p class="lead">
+            <br/>
+            Building game-changing digital experiences designed to set your brand apart.
+            <br/>
+        </p>
+    </xpath>
+</template>
+
+<!-- ===== s_image_text ===== -->
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace">
+        <h2>Strategy synchronising multiple channels</h2>
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        <br/>
+        We create a consistent customer experience through a detailed digital strategy built on precise customer research.
+    </xpath>
+</template>
+
+<!-- ===== s_text_image ===== -->
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace">
+        <h2>Unlock the possibilities of what we can offer you</h2>
+    </xpath>
+    <!-- Content -->
+    <xpath expr="//p" position="replace">
+        <p><br/></p>
+        <h5>Digital Transformation</h5>
+        <p>Leader in digital business, we're helping companies of all sizes to thrive in an ever-changing landscape.</p>
+        <br/>
+        <h5>Web &amp; App Development</h5>
+        <p>We have collected solid experience in building native and cross-platform mobile applications and websites. Check our portfolio from clients around the world.</p>
+        <br/>
+        <p><a href="#" class="btn btn-secondary o_translate_inline">Learn more</a></p>
+    </xpath>
+</template>
+
+</odoo>
+
