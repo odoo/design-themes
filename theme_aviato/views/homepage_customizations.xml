@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_banner ===== -->
+<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace">
+        <h1 class="display-3">Let's <br/>travel the world</h1>
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        <br/>Enjoy breathtaking views of nature. Relax and embrace your dreams.<br/><br/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Explore Now
+    </xpath>
+    <!-- Blockquote -->
+    <xpath expr="//p[hasclass('s_blockquote_quote')]" position="replace" mode="inner">
+        An unforgettable experience! Every destination was stunning, and the service was exceptional.
+    </xpath>
+    <xpath expr="//div[hasclass('s_blockquote_author')]//span//span" position="replace" mode="inner">
+        Explored Peru in 2024
+    </xpath>
+</template>
+
+<!-- ===== s_text_image ===== -->
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        What we can do, <b>for you</b>
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p[1]" position="replace" mode="inner">
+        Our team travels widely the globe to bring our clients first-hand knowledge of upcoming destinations, new "hot" hotels and ships, local restaurants, neighborhood hangouts, bars, pubs, the best beaches and places to visit and not to see.
+    </xpath>
+    <xpath expr="//p[2]" position="replace">
+        <p><br/></p>
+    </xpath>
+    <xpath expr="//p[3]" position="replace"/>
+</template>
+
+<!-- ===== s_image_text ===== -->
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Itinerary Planning
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p[1]" position="replace" mode="inner">
+        Our vision is to make travel planning stress free and make travel more fun. No matter the type of trip you have in mind, we have the resources and expertise necessary to create the perfect trip
+    </xpath>
+    <xpath expr="//p[2]" position="replace">
+        <p><br/></p>
+    </xpath>
+    <xpath expr="//p[3]" position="replace"/>
+</template>
+
+<!-- ===== s_picture ===== -->
+<template id="configurator_s_picture" inherit_id="website.configurator_s_picture">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Explore World's Hidden Gems
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        Set off on an unforgettable adventure to the world's most breathtaking locations, thoughtfully curated just for you.
+    </xpath>
+    <xpath expr="//figcaption" position="replace" mode="inner">
+        Old Harry Rocks, Isle of Purbeck
+    </xpath>
+</template>
+
+<!-- ===== s_title ===== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <xpath expr="//h2" position="replace">
+        <h2 class="text-align: left;">Top Destinations</h2>
+    </xpath>
+</template>
+
+<!-- ===== s_masonry_block_default_template ===== -->
+<template id="configurator_s_masonry_block_default_template" inherit_id="website.configurator_s_masonry_block_default_template">
+    <!-- Main block #0 content -->
+    <xpath expr="//div[hasclass('o_grid_item')]" position="inside">
+        <div class="o_we_bg_filter bg-black-50"></div>
+        <h2 class="h3-fs" style="text-align: left;">Brazil</h2>
+        <p style="text-align: left;">From $699</p>
+    </xpath>
+    <!-- Block #1 title & price -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]/h2" position="replace" mode="inner">
+        Greece
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]/p" position="replace" mode="inner">
+        From $349
+    </xpath>
+    <!-- Block #2 title & price -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/h2" position="replace" mode="inner">
+        Italy
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/p" position="replace" mode="inner">
+        From $299
+    </xpath>
+    <!-- Block #3 title & price -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]/h2" position="replace" mode="inner">
+        Romania
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]/p" position="replace" mode="inner">
+        From $149
+    </xpath>
+    <!-- Block #4 title & price -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]/h2" position="replace" mode="inner">
+        France
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]/p" position="replace" mode="inner">
+        From $119
+    </xpath>
+</template>
+
+<!-- ===== s_company_team ===== -->
+<template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Meet our travel agents
+    </xpath>
+    <!-- Agent bios -->
+    <xpath expr="//div[hasclass('col-lg-9')]//p[1]" position="replace" mode="inner">
+        Tony is dedicated to crafting personalized travel experiences, ensuring every client's journey is tailored to their unique preferences.
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-9')])[2]//p[1]" position="replace" mode="inner">
+        Mich ensures the smooth execution of all travel plans, leveraging his industry expertise to guarantee a seamless client experience.
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-9')])[3]//p[1]" position="replace" mode="inner">
+        Aline designs bespoke travel itineraries, collaborating with a global network of experts to deliver unique experiences tailored to each client's needs.
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-9')])[4]//p[1]" position="replace" mode="inner">
+        Iris is responsible for creating cost-effective travel packages, ensuring clients can enjoy their adventures without compromising on quality.
+    </xpath>
+</template>
+
+<!-- ===== s_showcase ===== -->
+<template id="configurator_s_showcase" inherit_id="website.configurator_s_showcase">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Why Choose Us
+    </xpath>
+    <!-- Features -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Expertly Curated Trips
+    </xpath>
+    <xpath expr="//div[hasclass('col-12')][2]//p" position="replace" mode="inner">
+        We select only the best destinations, ensuring your travel experience is nothing short of extraordinary.
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Personalized Itineraries
+    </xpath>
+    <xpath expr="//div[hasclass('col-12')][3]//p" position="replace" mode="inner">
+        Your journey is tailored to match your preferences, making every trip uniquely yours.
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Seamless Travel Experience
+    </xpath>
+    <xpath expr="//div[hasclass('col-12')][4]//p" position="replace" mode="inner">
+        From booking to departure, we handle all the details so you can focus on enjoying your adventure.
+    </xpath>
+</template>
+
+<!-- ===== s_quotes_carousel ===== -->
+<template id="configurator_s_quotes_carousel" inherit_id="website.configurator_s_quotes_carousel">
+    <!-- Quote 1 -->
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[1]" position="replace" mode="inner">
+        It would take too long to describe day by day the sights, sounds, and people that we came across. Ireland was fantastic.
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//strong" position="replace" mode="inner">
+        Linda and Paulo
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//span//span" position="replace" mode="inner">
+        From Italy
+    </xpath>
+    <!-- Quote 2 -->
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[2]" position="replace" mode="inner">
+        The parts of the country we visited were beautiful, people were friendly, everything we ate was delicious, and there were many fun things to see and do.
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//strong" position="replace" mode="inner">
+        Jacques and Marie
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//span//span" position="replace" mode="inner">
+        From France
+    </xpath>
+    <!-- Quote 3 -->
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
+        Everything was very well organised. Thank you very much for everything!
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//strong" position="replace" mode="inner">
+        Rose and Peter
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//span//span" position="replace" mode="inner">
+        From United Kingdom
+    </xpath>
+</template>
+
+</odoo>
+

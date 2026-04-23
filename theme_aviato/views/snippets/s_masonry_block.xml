@@ -19,15 +19,7 @@
     </xpath>
     <!-- Remove img -->
     <xpath expr="//img" position="replace"/>
-    <!-- Add Text -->
-    <xpath expr="//div[hasclass('o_grid_item')]" position="inside">
-        <div class="o_we_bg_filter bg-black-50"></div>
-        <h2 class="h3-fs" style="text-align: left;">Brazil</h2>
-        <p style="text-align: left;">From $699</p>
-    </xpath>
-
     <!-- Little block #1 -->
-    <!-- Main div -->
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc o_cc5 overflow-hidden rounded" remove="o_cc o_cc2 rounded-4" separator=" "/>
         <attribute name="style" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_carousel_default_image_1');" remove="--grid-item-padding-y: 20px" separator=";"/>
@@ -35,17 +27,7 @@
     <xpath expr="(//div[hasclass('o_grid_item')])[2]/h2" position="before">
         <div class="o_we_bg_filter bg-black-50"></div>
     </xpath>
-    <!-- Title -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[2]/h2" position="replace" mode="inner">
-        Greece
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[2]/p" position="replace" mode="inner">
-        From $349
-    </xpath>
-
     <!-- Little block #2 -->
-    <!-- Main div -->
     <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc o_cc5 overflow-hidden rounded" remove="o_cc o_cc3 rounded-4" separator=" "/>
         <attribute name="style" remove="--grid-item-padding-y: 20px; background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-2) 100%);" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_quotes_carousel_demo_image_2');" separator=";"/>
@@ -53,17 +35,7 @@
     <xpath expr="(//div[hasclass('o_grid_item')])[3]/h2" position="before">
         <div class="o_we_bg_filter bg-black-50"></div>
     </xpath>
-    <!-- Title -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[3]/h2" position="replace" mode="inner">
-        Italy
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[3]/p" position="replace" mode="inner">
-        From $299
-    </xpath>
-
     <!-- Little block #3 -->
-    <!-- Main div -->
     <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc o_cc5 overflow-hidden rounded" remove="o_cc o_cc4 rounded-4" separator=" "/>
         <attribute name="style" remove="--grid-item-padding-y: 20px; background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-1) 100%);" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_key_images_default_image_4');" separator=";"/>
@@ -71,31 +43,13 @@
     <xpath expr="(//div[hasclass('o_grid_item')])[4]/h2" position="before">
         <div class="o_we_bg_filter bg-black-50"></div>
     </xpath>
-    <!-- Title -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[4]/h2" position="replace" mode="inner">
-        Romania
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[4]/p" position="replace" mode="inner">
-        From $149
-    </xpath>
-
     <!-- Little block #4 -->
-    <!-- Main div -->
     <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc o_cc5 overflow-hidden rounded" remove="o_cc o_cc2 rounded-4" separator=" "/>
         <attribute name="style" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_three_columns_default_image_1');" remove="--grid-item-padding-y: 20px" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[5]/h2" position="before">
         <div class="o_we_bg_filter bg-black-50"></div>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[5]/h2" position="replace" mode="inner">
-        France
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[5]/p" position="replace" mode="inner">
-        From $119
     </xpath>
 </template>
 
