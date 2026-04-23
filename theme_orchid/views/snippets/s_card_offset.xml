@@ -10,18 +10,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Bringing Nature to Your Doorstep
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Surround yourself with the beauty of nature with our exquisite floral arrangements and garden designs. Perfect for any occasion, our creations bring elegance and freshness into your life.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Celebrate nature’s beauty with us.
-    </xpath>
 </template>
 
 </odoo>
