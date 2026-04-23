@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_cta_box ===== -->
+<template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+       Leverage your workflow<br/>with our services<br/>
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+       Get in touch with us and see how we can help you.
+    </xpath>
+</template>
+
+</odoo>
+
