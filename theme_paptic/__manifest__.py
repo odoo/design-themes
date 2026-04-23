@@ -4,13 +4,14 @@
     'category': 'Theme/Corporate',
     'summary': 'Consultancy, Design, Tech, Computers, IT, Blogs',
     'sequence': 110,
-    'version': '2.1.0',
+    'version': '2.2.0',
     'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
         'views/images.xml',
         'views/customizations.xml',
+        'views/homepage_customizations.xml',
         'views/new_page_template.xml',
     ],
     'images': [
