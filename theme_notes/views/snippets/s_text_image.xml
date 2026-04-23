@@ -10,17 +10,6 @@
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Wavy_11_001" style="background-image: url('/html_editor/shape/html_builder/Wavy/11_001.svg?c5=o-color-1&amp;flip=x'); background-position: 50% 100%;"/>
     </xpath>
-    <!-- Title & Paragraph -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        <span class="o_text_highlight o_translate_inline o_text_highlight_underline" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-1);">Our History</span>
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        <br/>
-    </xpath>
-    <xpath expr="//p[2]" position="replace" mode="inner">
-        <p>Their early days were spent playing small gigs at local clubs, where they rapidly gained a reputation for their high-energy performances and innovative sound. As they honed their craft, their fanbase grew, fueled by word-of-mouth buzz and their undeniable chemistry on stage.</p>
-        <p>With each new release, Nova Pulse has continued to evolve, experimenting with different genres while staying true to their unique style. Their relentless drive and commitment to making authentic, powerful music have brought them to where they are today—a band on the brink of rock stardom.</p>
-    </xpath>
     <!-- Remove the button -->
     <xpath expr="//a[hasclass('btn')]" position="replace"/>
     <!-- Image wrapper -->

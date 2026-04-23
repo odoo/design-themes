@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ===== s_framed_intro ===== -->
+    <template id="configurator_s_framed_intro" inherit_id="website.configurator_s_framed_intro">
+        <!-- Title -->
+        <xpath expr="//h1" position="replace" mode="inner">
+            Unplug &amp; Unwind: The <span class="o_text_highlight o_translate_inline o_text_highlight_underline" style="--text-highlight-width: 6px; --text-highlight-color: var(--o-color-1);">Ultimate</span> Music Experience
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace" mode="inner">
+            A groundbreaking force in modern rock, bringing an electrifying blend of high-energy performances and innovative sound
+        </xpath>
+    </template>
+
+    <!-- ===== s_image_text ===== -->
+    <template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            <span class="o_text_highlight o_translate_inline o_text_highlight_underline" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-1);">Redefining modern rocks</span>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace" mode="inner">
+            <br/>
+        </xpath>
+    </template>
+
+    <!-- ===== s_text_image ===== -->
+    <template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            <span class="o_text_highlight o_translate_inline o_text_highlight_underline" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-1);">Our History</span>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace" mode="inner">
+            <br/>
+        </xpath>
+        <!-- Paragraph 2 -->
+        <xpath expr="//p[2]" position="replace" mode="inner">
+            <p>Their early days were spent playing small gigs at local clubs, where they rapidly gained a reputation for their high-energy performances and innovative sound. As they honed their craft, their fanbase grew, fueled by word-of-mouth buzz and their undeniable chemistry on stage.</p>
+            <p>With each new release, Nova Pulse has continued to evolve, experimenting with different genres while staying true to their unique style. Their relentless drive and commitment to making authentic, powerful music have brought them to where they are today—a band on the brink of rock stardom.</p>
+        </xpath>
+    </template>
+
+    <!-- ===== s_call_to_action ===== -->
+    <template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            Live the Miraillet <br/>Festival experience
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace" mode="inner">
+            Join us and make this weekend unforgettable!
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+            Get your ticket
+        </xpath>
+    </template>
+
+</odoo>
+

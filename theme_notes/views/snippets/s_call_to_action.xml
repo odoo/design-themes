@@ -11,18 +11,6 @@
     <xpath expr="//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-black-50"/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Live the Miraillet <br/>Festival experience
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Join us and make this weekend unforgettable!
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
-        Get your ticket
-    </xpath>
 </template>
 
 </odoo>
