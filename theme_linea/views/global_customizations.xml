@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_ecomm_categories_showcase" inherit_id="website.s_ecomm_categories_showcase">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="first-large-layout" add="equal-layout" separator=" "/>
+    </xpath>
+    <xpath expr="//section//div" position="attributes">
+        <attribute name="class" remove="container" add="container-fluid" separator=" "/>
+    </xpath>
+    <!-- Block #1 -->
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_block')]" position="attributes">
+        <attribute name="class" remove="rounded-2" add="rounded-0" separator=" "/>
+    </xpath>
+    <!-- Block #2 -->
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_block')][2]" position="attributes">
+        <attribute name="class" remove="rounded-2" add="rounded-0" separator=" "/>
+    </xpath>
+    <!-- Block #3 -->
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_block')][3]" position="attributes">
+        <attribute name="class" remove="rounded-2" add="rounded-0" separator=" "/>
+    </xpath>
+    <!-- Block #4 -->
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_block')][4]" position="attributes">
+        <attribute name="class" remove="rounded-2" add="rounded-0" separator=" "/>
+    </xpath>
+</template>
+
+<template id="s_masonry_block" inherit_id="website.s_masonry_block" name="Masonry">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" add="pt32 pb32" separator=" "/>
+    </xpath>
+    <xpath expr="//t[@t-set='container_class']" position="attributes">
+        <attribute name="t-value">"container-fluid"</attribute>
+    </xpath>
+</template>
+
+<template id="s_masonry_block_images_template" inherit_id="website.s_masonry_block_images_template">
+    <!-- Layout -->
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
+        <attribute name="style">gap: 30px;</attribute>
+    </xpath>
+    <!-- Grid Item #1 -->
+    <xpath expr="//div[hasclass('o_grid_item')]" position="attributes">
+        <attribute name="class" remove="justify-content-start" add="justify-content-end" separator=" "/>
+        <attribute name="style" remove="--grid-item-padding-y: 30px; --grid-item-padding-x: 30px;" add="--grid-item-padding-y: 32px; --grid-item-padding-x: 32px; --box-border-bottom-left-radius: 0px; --box-border-bottom-right-radius: 0px; --box-border-top-right-radius: 0px; --box-border-top-left-radius: 0px;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')]//h2" position="attributes">
+        <attribute name="style" add="text-align: end" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')]//p" position="attributes">
+        <attribute name="style" add="text-align: end" separator=";"/>
+    </xpath>
+    <!-- Grid Item #2 -->
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="style" remove="--grid-item-padding-y: 30px; --grid-item-padding-x: 30px;" add="--grid-item-padding-y: 32px; --grid-item-padding-x: 32px; --box-border-bottom-left-radius: 0px; --box-border-bottom-right-radius: 0px; --box-border-top-right-radius: 0px; --box-border-top-left-radius: 0px;" separator=";"/>
+    </xpath>
+</template>
+
+<template id="s_image_title" inherit_id="website.s_image_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_full_screen_height" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
+        <attribute name="class" add="bg-black-25" remove="bg-black-50" separator=" "/>
+    </xpath>
+</template>
+
+<template id="configurator_s_references_lite" inherit_id="website.configurator_s_references_lite">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt0 pb0" remove="pt32 pb32" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
