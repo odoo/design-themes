@@ -13,13 +13,6 @@
     <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
         <attribute name="class" add="pt128 pb128" remove="pt160 pb160" separator=" "/>
     </xpath>
-    <!-- Title & Text -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Creative Studio
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        We combine smart design with rich technology <br/>to craft innovative products.
-    </xpath>
 </template>
 
 </odoo>
