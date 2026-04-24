@@ -6,10 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="pt48 pb48" add="pt72 pb72" separator=" "/>
     </xpath>
-    <!-- Lead -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Check out our flexible pricing plans with no hidden fees. Contact us for a custom quote.
-    </xpath>
     <!-- Card 1 -->
     <xpath expr="(//div[hasclass('col-lg-4')])[1]" position="attributes">
         <attribute name="class" add="pt32" separator=" "/>

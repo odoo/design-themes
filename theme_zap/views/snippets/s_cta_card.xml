@@ -15,10 +15,6 @@
    <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
       <attribute name="class" remove="col-lg-8" add="col-lg-5" separator=" "/>
    </xpath>
-   <!-- Title -->
-   <xpath expr="//h2" position="replace" mode="inner">
-      We’re seeking exceptional talent to join our team
-   </xpath>
    <!-- Card Col -->
    <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
       <attribute name="class" remove="col-lg-4" add="col-lg-6 offset-lg-1" separator=" "/>
