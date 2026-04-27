@@ -130,12 +130,6 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="name">website.library_image_02</field>
     <field name="url">/theme_bookstore/static/src/img/snippets/library_image_02.webp</field>
 </record>
-
-<record id="s_masonry_block_default_image_1" model="theme.ir.attachment">
-    <field name="key">website.s_masonry_block_default_image_1</field>
-    <field name="name">website.s_masonry_block_default_image_1</field>
-    <field name="url">/theme_bookstore/static/src/img/snippets/s_masonry_block.webp</field>
-</record>
 <record id="s_carousel_default_image_1" model="theme.ir.attachment">
     <field name="key">website.s_carousel_default_image_1</field>
     <field name="name">website.s_carousel_default_image_1</field>
@@ -154,12 +148,12 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
 <record id="s_carousel_intro_default_image_1" model="theme.ir.attachment">
     <field name="key">website.s_carousel_intro_default_image_1</field>
     <field name="name">website.s_carousel_intro_default_image_1</field>
-    <field name="url">/theme_bookstore/static/src/img/snippets/s_quotes_carousel_2.webp</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_carousel_intro_1.webp</field>
 </record>
 <record id="s_carousel_intro_default_image_2" model="theme.ir.attachment">
     <field name="key">website.s_carousel_intro_default_image_2</field>
     <field name="name">website.s_carousel_intro_default_image_2</field>
-    <field name="url">/theme_bookstore/static/src/img/snippets/s_quotes_carousel_1.webp</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_carousel_intro_2.webp</field>
 </record>
 <record id="s_carousel_intro_default_image_3" model="theme.ir.attachment">
     <field name="key">website.s_carousel_intro_default_image_3</field>
@@ -458,4 +452,83 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="url">/theme_bookstore/static/src/img/snippets/s_splash_intro_default_image.webp</field>
 </record>
 
+<!-- Masonry Block -->
+<record id="s_masonry_block_default_image_1" model="theme.ir.attachment">
+    <field name="key">website.s_masonry_block_default_image_1</field>
+    <field name="name">website.s_masonry_block_default_image_1</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_masonry_block_default_1.webp</field>
+</record>
+<record id="s_masonry_block_default_image_2" model="theme.ir.attachment">
+    <field name="key">website.s_masonry_block_default_image_2</field>
+    <field name="name">website.s_masonry_block_default_image_2</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_masonry_block_default_2.webp</field>
+</record>
+<record id="s_masonry_block_default_image_3" model="theme.ir.attachment">
+    <field name="key">website.s_masonry_block_default_image_3</field>
+    <field name="name">website.s_masonry_block_default_image_3</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_masonry_block_default_3.webp</field>
+</record>
+<record id="s_masonry_block_default_image_4" model="theme.ir.attachment">
+    <field name="key">website.s_masonry_block_default_image_4</field>
+    <field name="name">website.s_masonry_block_default_image_4</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_masonry_block_default_4.webp</field>
+</record>
+
+<!-- Category and products -->
+<record id="shop_category_3_4x3" model="theme.ir.attachment">
+    <field name="key">website.shop_category_3_4x3</field>
+    <field name="name">website.shop_category_3_4x3</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_category_and_products_category.webp</field>
+</record>
+<record id="s_three_columns_default_image_1" model="theme.ir.attachment">
+    <field name="key">website.s_three_columns_default_image_1</field>
+    <field name="name">website.s_three_columns_default_image_1</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_category_and_products_product_1.webp</field>
+</record>
+<record id="s_three_columns_default_image_2" model="theme.ir.attachment">
+    <field name="key">website.s_three_columns_default_image_2</field>
+    <field name="name">website.s_three_columns_default_image_2</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_category_and_products_product_2.webp</field>
+</record>
+<record id="s_three_columns_default_image_3" model="theme.ir.attachment">
+    <field name="key">website.s_three_columns_default_image_3</field>
+    <field name="name">website.s_three_columns_default_image_3</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_category_and_products_product_3.webp</field>
+</record>
+
+<!-- Company team basic -->
+<record id="s_company_team_image_1" model="theme.ir.attachment">
+    <field name="key">website.s_company_team_image_1</field>
+    <field name="name">website.s_company_team_image_1</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_company_team_basic_1.webp</field>
+</record>
+<record id="s_company_team_image_2" model="theme.ir.attachment">
+    <field name="key">website.s_company_team_image_2</field>
+    <field name="name">website.s_company_team_image_2</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_company_team_basic_2.webp</field>
+</record>
+<record id="s_company_team_image_3" model="theme.ir.attachment">
+    <field name="key">website.s_company_team_image_3</field>
+    <field name="name">website.s_company_team_image_3</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_company_team_basic_3.webp</field>
+</record>
+
+<!-- Products and advantages -->
+<record id="library_image_06" model="theme.ir.attachment">
+    <field name="key">website.library_image_06</field>
+    <field name="name">website.library_image_06</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_products_and_advantages_advantage_1.webp</field>
+</record>
+<record id="s_product_list_default_image_1" model="theme.ir.attachment">
+    <field name="key">website.s_product_list_default_image_1</field>
+    <field name="name">website.s_product_list_default_image_1</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_products_and_advantages_product_1.webp</field>
+</record>
+
+<!-- CTA -->
+<record id="s_background_image_01" model="theme.ir.attachment">
+    <field name="key">website.s_background_image_01</field>
+    <field name="name">Background Image 01</field>
+    <field name="url">/theme_bookstore/static/src/img/snippets/s_call_to_action_bg.webp</field>
+</record>
 </odoo>

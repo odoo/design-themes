@@ -12,6 +12,11 @@
         'views/images.xml',
 
         'views/snippets/s_cta_box.xml',
+        'views/snippets/s_announcement_scroll.xml',
+        'views/snippets/s_attributes_horizontal.xml',
+        'views/snippets/s_category_and_products.xml',
+        'views/snippets/s_products_and_advantages.xml',
+        'views/snippets/s_company_team_basic.xml',
         'views/snippets/s_striped_top.xml',
         'views/snippets/s_title.xml',
         'views/snippets/s_three_columns.xml',
@@ -80,30 +85,7 @@
         'website.s_text_image_default_image': '/theme_bookstore/static/src/img/snippets/s_text_image.webp',
     },
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_key_images', 's_title', 's_accordion_image', 's_cta_box'],
-    },
-    'configurator_snippets_addons': {
-        'website_sale': {
-            'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_banner'),
-            ],
-        },
-    },
-    'theme_customizations': {
-        'website_sale.s_dynamic_snippet_category_list': {
-            'template_key': (
-                'website_sale.dynamic_filter_template_product_public_category_default'
-            ),
-            'data_attributes': {
-                'gap': '4',
-            },
-            'background': {
-                'color': 'o_cc2',
-            },
-            'remove_classes': [
-                's_dynamic_category_clickable_items',
-            ],
-        },
+        'homepage': ['s_carousel_intro', 's_attributes_horizontal', 's_masonry_block_default_template', 's_category_and_products', 's_announcement_scroll', 's_company_team_basic', 's_products_and_advantages', 's_call_to_action', 's_reviews', 's_cards_grid'],
     },
     'new_page_templates': {
         'about': {

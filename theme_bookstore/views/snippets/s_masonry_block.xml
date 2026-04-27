@@ -2,67 +2,69 @@
 <odoo>
 
 <template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
-    <!-- Image -->
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
+        <attribute name="data-row-count">11</attribute>
+    </xpath>
+    <!-- Card 1 -->
     <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
-        <attribute name="class" add="rounded" remove="rounded-4" separator=" "/>
+        <attribute name="class" add="o_cc o_cc2 col-lg-4 g-col-lg-4 g-height-6 border rounded rounded-1 o_colored_level justify-content-center" remove="o_grid_item_image g-height-8 g-col-lg-5 col-lg-5 order-lg-0 rounded-4" separator=" "/>
     </xpath>
-    <!-- Little block #1 -->
-    <!-- Main div -->
-    <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
-        <attribute name="class" add="rounded" remove="rounded-4" separator=" "/>
-        <attribute name="style" remove="background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-2) 100%);" separator=";"/>
+    <xpath expr="//div[hasclass('col-lg-4')][1]" position="attributes">
+        <attribute name="style">z-index: 1; grid-area: 1 / 1 / 7 / 5; position: relative; --grid-item-padding-y: 5px; --grid-item-padding-x: 15px; --box-border-bottom-left-radius: 8px; --box-border-bottom-right-radius: 8px; --box-border-top-right-radius: 8px; --box-border-top-left-radius: 8px; --box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-4')]/h2" position="replace" mode="inner">
-        Science fiction
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-4')]/p" position="replace" mode="inner">
-        Discover unknown universes
+    <xpath expr="//div[hasclass('col-lg-4')][1]//img" position="after">
+        <h2 class="h3-fs pt8 pb8" style="text-align: center;"><span class="h4-fs"><font class="text-o-color-2">Fiction</font></span></h2>
+        <p class="lead"><span class="o_small-fs"><font class="text-o-color-2">Explore</font><font class="text-o-color-1"> -&gt;</font></span></p>
     </xpath>
 
-    <!-- Little block #2 -->
-    <!-- Main div -->
+    <!-- Card 2 -->
+    <xpath expr="//div[hasclass('col-lg-3')][1]" position="attributes">
+        <attribute name="class" add="g-col-lg-8 col-lg-8" remove="g-col-lg-3 col-lg-3 o_cc2 justify-content-end order-lg-0 rounded-4" separator=" "/>
+        <attribute name="style">z-index: 7; grid-area: 1 / 5 / 5 / 13; --grid-item-padding-y: 0px; --grid-item-padding-x: 0px;</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-8')][1]" position="replace" mode="inner">
+        <div class="s_card card o_cc mt-0 o_colored_level rounded flex-lg-row o_card_img_horizontal border o_cc3" data-vxml="001" data-snippet="s_card" data-name="Card" style="--box-border-bottom-left-radius: 8px; --box-border-bottom-right-radius: 8px; --box-border-top-right-radius: 8px; --box-border-top-left-radius: 8px; max-width: 100%; margin: 0px; --card-img-size-h: 66.667%; --box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;">
+        <figure class="o_card_img_wrapper mb-0 ratio ratio-1x1" contenteditable="false">
+            <img src="/web/image/website.s_masonry_block_default_image_2" alt="" data-attachment-id="932" class="o_card_img o_editable_media img img-fluid o_we_custom_image rounded-start" style="padding: 30px;" data-format-mimetype="image/webp" data-original-id="932" data-mimetype-before-conversion="image/png" data-resize-width="680" data-mimetype="image/webp" loading="lazy"/>
+        </figure>
+        <div class="card-body">
+            <h3 class="card-title h5-fs"><br/></h3><h3 class="card-title h5-fs"><br/></h3><h3 class="card-title h5-fs"><span class="h4-fs">Children's</span></h3><h3 class="card-title h5-fs"><span class="h4-fs">Books</span></h3><p class="lead"><span class="h6-fs">Explore<font class="text-o-color-1"> -&gt;</font></span></p></div>
+        </div>
+    </xpath>
+
+    <!-- Card 3 -->
     <xpath expr="//div[hasclass('col-lg-4')][2]" position="attributes">
-        <attribute name="class" add="rounded" remove="rounded-4" separator=" "/>
-        <attribute name="style" remove="background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-1) 100%);" separator=";"/>
+        <attribute name="class" add="o_cc2 rounded-1 g-height-7" remove="o_cc3 g-height-4 justify-content-end rounded-4" separator=" "/>
+        <attribute name="style">z-index: 9; --grid-item-padding-y: 5px; --grid-item-padding-x: 15px; grid-area: 5 / 5 / 12 / 9; --box-border-bottom-left-radius: 8px; --box-border-bottom-right-radius: 8px; --box-border-top-right-radius: 8px; --box-border-top-left-radius: 8px; --box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-4')][2]/h2" position="replace" mode="inner">
-        Biographies
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
-        Meet great people
+    <xpath expr="//div[hasclass('col-lg-4')][2]" position="replace" mode="inner">
+        <img src="/web/image/website.s_masonry_block_default_image_3" alt="" data-attachment-id="939" class="img img-fluid o_we_custom_image" data-format-mimetype="image/webp" data-original-id="939" data-mimetype-before-conversion="image/png" data-resize-width="610" data-mimetype="image/webp" loading="lazy" />
+        <h2 class="h3-fs pt8 pb8" style="text-align: center;"><span class="h4-fs"><font class="text-o-color-2"><span class="o_animated_text o_animate o_anim_fade_in o_visible o_animated" style="visibility: visible; animation-play-state: running;">Cookbooks</span></font></span></h2>
+        <p class="lead" style="text-align: center;"><span class="h6-fs"><font class="text-o-color-2">Explore</font></span><font class="text-o-color-2"><font class="text-o-color-1"> -&gt;</font></font><br/></p>
     </xpath>
 
-    <!-- Little block #3 -->
-    <!-- Main div -->
-    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
-        <attribute name="class" add="rounded" remove="rounded-4" separator=" "/>
+    <!-- Card 4 -->
+    <xpath expr="//div[hasclass('col-lg-4')][3]" position="attributes">
+        <attribute name="class" add="o_cc2 justify-content-center rounded-1 g-height-7" remove="o_cc4 justify-content-end rounded-4" separator=" "/>
+        <attribute name="style">z-index: 10; --grid-item-padding-y: 5px; --grid-item-padding-x: 15px; grid-area: 5 / 9 / 12 / 13; --box-border-bottom-left-radius: 8px; --box-border-bottom-right-radius: 8px; --box-border-top-right-radius: 8px; --box-border-top-left-radius: 8px; --box-border-left-width: 0px; --box-border-bottom-width: 0px; --box-border-right-width: 0px; --box-border-top-width: 0px;</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-3')]/h2" position="replace" mode="inner">
-        Horror
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-3')]/p" position="replace" mode="inner">
-        Enjoy your fears
+    <xpath expr="//div[hasclass('col-lg-4')][3]" position="replace" mode="inner">
+        <img src="/web/image/website.s_masonry_block_default_image_4" alt="" data-attachment-id="939" class="img img-fluid o_we_custom_image" data-format-mimetype="image/webp" data-original-id="939" data-mimetype-before-conversion="image/png" data-resize-width="610" data-mimetype="image/webp" loading="lazy" />
+        <h2 class="h3-fs pt8 pb8" style="text-align: center;"><span class="h4-fs"><font class="text-o-color-2"><span class="o_animated_text o_animate o_anim_fade_in o_visible o_animated" style="visibility: visible; animation-play-state: running;">Self-Help</span></font></span></h2>
+        <p class="lead" style="text-align: center;"><span class="h6-fs"><font class="text-o-color-2">Explore</font></span><font class="text-o-color-2"><font class="text-o-color-1"> -&gt;</font></font><br/></p>
     </xpath>
 
-    <!-- Little block #4 -->
-    <!-- Main div -->
-    <xpath expr="//div[hasclass('col-lg-3')][2]" position="attributes">
-        <attribute name="class" add="rounded" remove="rounded-4" separator=" "/>
+    <!-- Card 5 -->
+    <xpath expr="//div[hasclass('col-lg-3')][1]" position="attributes">
+        <attribute name="class" add="o_cc4 g-col-lg-4 col-lg-4 g-height-5 justify-content-center rounded-1" remove="o_cc2 g-col-lg-3 col-lg-3 justify-content-end rounded-4 g-height-4" separator=" "/>
+        <attribute name="style">z-index: 4; grid-area: 7 / 1 / 12 / 5;</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//div[hasclass('col-lg-3')][2]/h2" position="replace" mode="inner">
-        Romance
+        <xpath expr="//div[hasclass('col-lg-4')][4]" position="replace" mode="inner">
+        <h4 style="text-align: center;"><span class="h4"><span class="h4-fs">Enjoy 10% off<br/>your first purchase</span></span></h4>
+        <p style="text-align: center;"><a href="#top" class="o_translate_inline btn btn-outline-secondary">Shop now</a></p>
+        <p style="text-align: center;" class="small mb-0">valid until: 31.12.24</p>
     </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//div[hasclass('col-lg-3')][2]/p" position="replace" mode="inner">
-        Read the best love stories
-    </xpath>
+
 </template>
 
 </odoo>
