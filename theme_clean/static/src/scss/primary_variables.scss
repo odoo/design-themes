@@ -158,7 +158,11 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'clean-1',
+        'recommended-palette-name': ('clean-1', 'clean-2', 'clean-3', 'clean-4'),
+        'font': 'PT Sans',
         'headings-font': 'IBM Plex Sans',
+        'alternative-fonts': ('Inter', 'Open Sans', 'Lato'),
+        'alternative-headings-fonts': ('Dosis', 'Noto Serif', 'Josefin Slab'),
         'navbar-font': 'Inter',
         'buttons-font': 'Inter',
         'header-template': 'default',

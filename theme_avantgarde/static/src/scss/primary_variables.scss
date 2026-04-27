@@ -165,6 +165,10 @@ $o-theme-font-configs: (
         'family': ('Syne', serif),
         'url': 'Syne:300,300i,400,400i,700,700i',
     ),
+    'Lora': (
+        'family': ('Lora', serif),
+        'url': 'Lora:300,300i,400,400i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -174,9 +178,12 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'default-15',
+        'recommended-palette-name': ('default-15', 'avantgarde-1', 'avantgarde-2', 'avantgarde-3'),
 
         'font': 'Open Sans',
         'headings-font': 'Syne',
+        'alternative-fonts': ('Lato', 'Vollkorn', 'Lora'),
+        'alternative-headings-fonts': ('Abril Fatface', 'Raleway', 'Playfair Display'),
 
         'header-template': 'hamburger',
 

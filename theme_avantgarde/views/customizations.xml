@@ -174,15 +174,6 @@
     </xpath>
 </template>
 
-<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns" name="Avantgarde s_three_columns">
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/02","colors":{"c5":"o-color-1"}}</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Connections_02" style="background-image: url('/html_editor/shape/html_builder/Connections/02.svg?c5=o-color-1');"/>
-    </xpath>
-</template>
-
 <!-- ======== TEXT-IMAGE ======== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Avantgarde s_text_image">
     <xpath expr="//section" position="attributes">

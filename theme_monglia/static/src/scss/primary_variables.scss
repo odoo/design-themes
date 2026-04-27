@@ -65,10 +65,6 @@ $o-theme-font-configs: (
         'family': ('Bungee', sans-serif),
         'url': 'Bungee:400',
     ),
-    'Roboto Mono': (
-        'family': ('Roboto Mono', monospace),
-        'url': 'Roboto+Mono:300,300i,400,400i,700,700i',
-    ),
     'Handlee': (
         'family': ('Handlee', cursive),
         'url': 'Handlee:300,300i,400,400i,700,700i',
@@ -133,6 +129,10 @@ $o-theme-font-configs: (
         'family': ('Playfair Display SC', serif),
         'url': 'Playfair+Display+SC:300,300i,400,400i,700,700i',
     ),
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -142,12 +142,13 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'default-light-3',
+        'recommended-palette-name': ('default-light-3', 'monglia-1', 'monglia-2', 'monglia-3'),
 
         'layout': 'boxed',
-        'font': 'Roboto Mono',
+        'font': 'Lato',
         'headings-font': 'Bungee',
-        'navbar-font': 'Roboto Mono',
-        'buttons-font': 'Roboto Mono',
+        'alternative-fonts': ('Nunito', 'Roboto', 'Source Sans Pro'),
+        'alternative-headings-fonts': ('Playfair Display', 'Pacifico', 'Oswald'),
         'footer-template': 'minimalist',
 
         'btn-border-radius': 0,

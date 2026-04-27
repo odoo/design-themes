@@ -15,11 +15,4 @@
     </xpath>
 </template>
 
-<template id="configurator_s_title" inherit_id="website.configurator_s_title">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0" remove="pb40" separator=" "/>
-    </xpath>
-</template>
-
 </odoo>

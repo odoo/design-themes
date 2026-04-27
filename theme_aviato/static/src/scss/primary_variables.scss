@@ -16,6 +16,7 @@ $o-theme-h6-font-size-multiplier: (20 / 16);
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'default-16',
+        'recommended-palette-name': ('default-16', 'aviato-1', 'aviato-2', 'aviato-3'),
 
         // Header
         'logo-height': 3rem,
@@ -24,6 +25,8 @@ $o-website-values-palettes: (
         // Font
         'font': 'Lato',
         'headings-font': 'Playfair Display',
+        'alternative-fonts': ('Roboto', 'Inter', 'Merriweather'),
+        'alternative-headings-fonts': ('Oswald', 'Big Shoulder Display', 'Libre Baskerville'),
 
         // Buttons
         'btn-padding-y': .45rem,
@@ -61,7 +64,7 @@ $o-theme-font-configs: (
         'url': 'Roboto:300,300i,400,400i,500,500i',
     ),
     'Libre Baskerville': (
-        'family': ('Libre Baskerville', cursive),
+        'family': ('Libre Baskerville', serif),
         'url': 'Libre+Baskerville:400,400i,700',
     ),
     'Lato': (
@@ -93,6 +96,18 @@ $o-theme-font-configs: (
     'Open Sans': (
         'family': ('Open Sans', sans-serif),
         'url': 'Open+Sans:300,300i,400,400i,600,600i',
+    ),
+    'Merriweather': (
+        'family': ('Merriweather', serif),
+        'url': 'Merriweather:300,300i,400,400i,700,700i',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,700,700i',
+    ),
+    'Big Shoulder Display': (
+        'family': ('Big Shoulder Display', sans-serif),
+        'url': 'Big+Shoulders:300,300i,400,400i,700,700i',
     ),
 );
 

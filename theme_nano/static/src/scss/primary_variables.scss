@@ -5,6 +5,7 @@
 $o-website-values-palettes: (
     (
         'color-palettes-name':              'nano-1',
+        'recommended-palette-name':         ('nano-1', 'nano-2', 'nano-3', 'nano-4'),
 
         // Header
         'header-font-size':                 1rem,
@@ -13,7 +14,9 @@ $o-website-values-palettes: (
 
         // Font
         'font':                             'Inter',
-        'headings-font':                    'Manrope',
+        'headings-font':                    'Advent Pro',
+        'alternative-fonts':                ('Roboto', 'Merriweather', 'Lato'),
+        'alternative-headings-fonts':       ('Montserrat', 'Oswald', 'Roboto Slab'),
         'buttons-font':                     'Manrope',
 
         // Buttons

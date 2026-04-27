@@ -60,6 +60,7 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'default-26',
+        'recommended-palette-name': ('default-22', 'bookstore-1', 'bookstore-2', 'bookstore-3'),
         'header-font-size': 1rem,
         'btn-border-radius': 8px,
         'btn-border-radius-sm': 4px,
@@ -69,6 +70,8 @@ $o-website-values-palettes: (
         'btn-padding-y-lg': 12px,
         'font': 'Inter',
         'headings-font': 'DM Serif Display',
+        'alternative-fonts': ('Heebo', 'Roboto', 'Source Sans Pro'),
+        'alternative-headings-fonts': ('Cormorant', 'Raleway', 'Poppins'),
         'header-template': 'search',
         'link-underline': 'never',
     ),

@@ -5,6 +5,7 @@
 $o-website-values-palettes: (
     (
         'color-palettes-name':              'default-24',
+        'recommended-palette-name':         ('default-24', 'buzzy-1', 'buzzy-2', 'buzzy-3'),
 
         // Header
         'logo-height':                      2.75rem,
@@ -13,6 +14,8 @@ $o-website-values-palettes: (
         // Font
         'font':                             'Montserrat',
         'headings-font':                    'Quicksand',
+        'alternative-fonts':                ('Lato', 'Karla', 'Source Sans Pro'),
+        'alternative-headings-fonts':       ('Raleway', 'Poppins', 'Laila'),
 
         // Buttons
         'btn-padding-x':                    1rem,
@@ -90,7 +93,7 @@ $o-theme-font-configs: (
         'url': 'Raleway:300,300i,400,400i,700,700i',
     ),
     'Montserrat': (
-        'family': ('Montserrat', serif),
+        'family': ('Montserrat', sans-serif),
         'url': 'Montserrat:300,300i,400,400i,600,600i',
         'properties': (
             'base': (
@@ -101,6 +104,10 @@ $o-theme-font-configs: (
     'Quicksand': (
         'family': ('Quicksand', sans-serif),
         'url': 'Quicksand:300,400,600',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
     ),
 );
 

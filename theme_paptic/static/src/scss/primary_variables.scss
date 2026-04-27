@@ -14,13 +14,33 @@ $o-theme-font-configs: (
     ),
 
     'Nunito': (
-        'family': ('Nunito', serif),
+        'family': ('Nunito', sans-serif),
         'url': 'Nunito:300,300i,400,400i,700,700i',
     ),
 
     'Abril Fatface': (
         'family': ('Abril Fatface', serif),
         'url': 'Abril+Fatface:300,300i,400,400i,700,700i',
+    ),
+    'Syne': (
+        'family': ('Syne', serif),
+        'url': 'Syne:300,300i,400,400i,700,700i',
+    ),
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'DM Sans': (
+        'family': ('DM Sans', serif),
+        'url': 'DM+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Space Grotesk': (
+        'family': ('Space Grotesk', sans-serif),
+        'url': 'Space+Grotesk:300,300i,400,400i,700,700i',
+    ),
+    'Fraunces': (
+        'family': ('Fraunces', serif),
+        'url': 'Fraunces:300,300i,400,400i,700,700i',
     ),
 );
 
@@ -32,9 +52,12 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'base-2',
+        'recommended-palette-name': ('base-2', 'paptic-1', 'paptic-2', 'paptic-3'),
 
         'font': 'Inter',
-        'headings-font': 'Inter Tight',
+        'headings-font': 'Syne',
+        'alternative-fonts': ('Nunito', 'Lato', 'DM Sans'),
+        'alternative-headings-fonts': ('Space Grotesk', 'Fraunces', 'Abril Fatface'),
 
         'footer-template': 'headline',
 

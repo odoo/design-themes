@@ -98,9 +98,15 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'artists-1',
+        'recommended-palette-name': ('artists-1', 'artists-2', 'artists-3', 'artists-4'),
+
         'header-font-size': (13 / 16) * 1rem,
+
         'font': 'Montserrat',
         'headings-font': 'Bebas Neue',
+        'alternative-fonts': ('Roboto', 'Nunito', 'Raleway'),
+        'alternative-headings-fonts': ('Playfair Display', 'Oswald', 'Playfair Display SC'),
+
         'btn-ripple': true,
         'header-template': 'vertical',
         'footer-template': 'centered',

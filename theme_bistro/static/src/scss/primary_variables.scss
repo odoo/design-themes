@@ -5,6 +5,7 @@
 $o-website-values-palettes: (
     (
         'color-palettes-name':              'default-22',
+        'recommended-palette-name': ('default-22', 'bistro-1', 'bistro-2', 'bistro-3'),
 
         // Header
         'header-template':                  'vertical',
@@ -15,6 +16,9 @@ $o-website-values-palettes: (
 
         // Font
         'font':                             'Poppins',
+        'headings-font':                    'Abel',
+        'alternative-fonts':                ('Lato', 'Karla', 'Nunito'),
+        'alternative-headings-fonts':       ('Laila', 'Raleway', 'Dosis'),
 
         // Buttons
         'btn-padding-y':                    .5rem,
@@ -93,6 +97,10 @@ $o-theme-font-configs: (
     'Raleway': (
         'family': ('Raleway', sans-serif),
         'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+    'Nunito': (
+        'family': ('Nunito', serif),
+        'url': 'Nunito:300,300i,400,400i,700,700i',
     ),
 );
 

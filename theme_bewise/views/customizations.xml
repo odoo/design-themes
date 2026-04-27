@@ -216,17 +216,6 @@
     </xpath>
 </template>
 
-<template id="configurator_s_quotes_carousel" inherit_id="website.configurator_s_quotes_carousel" name="Be Wise s_quotes_carousel">
-    <!-- Shape option -->
-    <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/06","colors":{"c5": "o-color-3"},"flip":["y"]}</attribute>
-    </xpath>
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('carousel-indicators')]" position="before">
-        <div class="o_we_shape o_html_builder_Connections_06" style="background-image: url('/html_editor/shape/html_builder/Connections/06.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0%;"/>
-    </xpath>
-</template>
-
 <!-- ===== QUOTES MINIMAL ======== -->
 <template id="s_quotes_carousel_minimal" inherit_id="website.s_quotes_carousel_minimal" name="Be Wise s_quotes_carousel_minimal">
     <xpath expr="//p[hasclass('s_blockquote_quote')]" position="replace" mode="inner">
