@@ -117,7 +117,9 @@ S_CLASSES_WHITELIST = [
     's_appointment_type_card', 's_appointment_type_picture',
     's_appointment_type_list', 's_newsletter_list', 's_event_upcoming_snippet',
     's_event_event_picture', 's_newsletter_subscribe_form',
-    's_carousel_indicators_hidden',
+    's_carousel_indicators_hidden', 's_blog_posts_carousel', 's_events_carousel',
+    's_dynamic', 's_blog_posts_post', 's_blog_posts_effect_marley',
+    's_blog_posts_post_picture_size_default', 's_appointments_carousel', 's_events_event',
 
     # FIXME those classes have no reason to be here... missing data-snippet?
     's_hr', 's_accordion', 's_accordion_highlight', 's_media_list_item',
