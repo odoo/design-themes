@@ -21,7 +21,7 @@ const snippets = [
     {
         id: 's_product_list',
         name: 'Items',
-        groupName: "Columns",
+        groupName: "Catalog",
     },
     {
         id: 's_call_to_action',
