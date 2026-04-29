@@ -60,7 +60,7 @@ class Crawler(HttpCase):
             # The configurator_apply method and various methods used for theme
             # added on `ir.module.module` from website write directly on
             # `ir.model.data` and update attachments, views, xmlids.
-            self.env.registry.clear_cache('templates')
+            self.env.transaction.invalidate_ormcache('templates')
             self.start_tour(f"/odoo/action-website.website_preview?website_id={website.id}", 'homepage', login='admin')
 
     def test_03_website_theme_asset(self):
