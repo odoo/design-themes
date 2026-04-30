@@ -19,26 +19,6 @@
         <attribute name="class" add="g-height-3" remove="g-height-2" separator=" "/>
         <attribute name="style" add="grid-area: 6 / 7 / 9 / 11;" remove="grid-area: 7 / 7 / 9 / 11;" separator=";"/>
     </xpath>
-
-    <!-- Texts -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Experience the energy of rock
-    </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Epic rock concerts
-    </xpath>
-    <xpath expr="(//h2)[2]" position="replace" mode="inner">
-        Feel the rock vibe
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Dive into electrifying performances and powerful music with our rock concerts that promise unforgettable moments and pure energy.
-    </xpath>
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Amplify your night with our lineup of top rock bands and thrilling shows, combining high energy with a rock 'n' roll experience.
-    </xpath>
-    <xpath expr="(//p[hasclass('lead')])[3]" position="replace" mode="inner">
-        Explore more and find the ultimate rock concert experience, crafted to deliver adrenaline-pumping performances and lasting memories.
-    </xpath>
 </template>
 
 </odoo>

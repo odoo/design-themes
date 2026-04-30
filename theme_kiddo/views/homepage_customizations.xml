@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ===== s_banner ===== -->
+    <template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
+        <!-- Heading -->
+        <xpath expr="//h1" position="replace" mode="inner">
+            A little place <br/>of paradise
+        </xpath>
+        <!-- Lead -->
+        <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+            Our goal is to create a safe and nurturing environment for your child to learn and grow. We believe that every child is unique and should be treated as such.
+        </xpath>
+    </template>
+
+    <!-- ===== s_image_text ===== -->
+    <template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            Activities
+        </xpath>
+        <!-- Paragraphs -->
+        <xpath expr="//p" position="replace" mode="inner">
+            Our team is composed of experienced nursery nurses.
+        </xpath>
+        <xpath expr="//p[2]" position="replace" mode="inner">
+            They will propose to your children educational activities, playful, varied and adapted to the stage of development.
+        </xpath>
+        <xpath expr="//p[2]" position="after">
+            <p><br/></p>
+        </xpath>
+    </template>
+
+    <!-- ===== s_three_columns ===== -->
+    <template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
+        <!-- Shape option -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/06','colors':{'c5':'o-color-3'},'flip':['y'],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+        </xpath>
+        <!-- Shape -->
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_html_builder_Connections_06 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Connections/06.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0%;"/>
+        </xpath>
+        <!-- Column n1 - Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            <br/>
+            Our mission
+        </xpath>
+        <!-- Column n1 - Paragraph -->
+        <xpath expr="//p" position="replace" mode="inner">
+            Our aim is to make the early years of your child's life as enjoyable, rewarding and positive as possible.
+        </xpath>
+        <!-- Column n2 - Title -->
+        <xpath expr="(//h2)[2]" position="replace" mode="inner">
+            <br/>
+            For every kid
+        </xpath>
+        <!-- Column n2 - Paragraph -->
+        <xpath expr="(//p)[2]" position="replace" mode="inner">
+            All activities are planned to meet each child's individual needs. This approach will help your child to develop to the best of their ability.
+        </xpath>
+        <!-- Column n3 - Title -->
+        <xpath expr="(//h2)[3]" position="replace" mode="inner">
+            <br/>
+            Open-door policy
+        </xpath>
+        <!-- Column n3 - Paragraph -->
+        <xpath expr="(//p)[3]" position="replace" mode="inner">
+            You are welcome to come and see the nursery and meet the team at any time convenient to you.
+        </xpath>
+    </template>
+
+    <!-- ===== s_product_list ===== -->
+    <template id="configurator_s_product_list" inherit_id="website.configurator_s_product_list">
+        <!-- Item n1 -->
+        <xpath expr="//div[hasclass('col-lg-2')]//h3" position="replace" mode="inner">
+            About us
+        </xpath>
+        <!-- Item n2 -->
+        <xpath expr="(//div[hasclass('col-lg-2')])[2]//h3" position="replace" mode="inner">
+            Our team
+        </xpath>
+        <!-- Item n3 -->
+        <xpath expr="(//div[hasclass('col-lg-2')])[3]//h3" position="replace" mode="inner">
+            Playground
+        </xpath>
+        <!-- Item n4 -->
+        <xpath expr="(//div[hasclass('col-lg-2')])[4]//h3" position="replace" mode="inner">
+            Events
+        </xpath>
+        <!-- Item n5 -->
+        <xpath expr="(//div[hasclass('col-lg-2')])[5]//h3" position="replace" mode="inner">
+            Visit us
+        </xpath>
+    </template>
+
+</odoo>
+

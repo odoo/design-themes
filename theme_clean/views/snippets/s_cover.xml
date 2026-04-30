@@ -10,13 +10,6 @@
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
         <div class="o_we_bg_filter bg-black-50"/>
     </xpath>
-    <!-- Title & Paragraph -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Sell from your couch
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Make your finances reach a new level with our online management system. <br/>Track every penny, directly from the comfort of your home.
-    </xpath>
     <!-- Remove the button -->
     <xpath expr="//p[2]" position="replace"/>
 </template>

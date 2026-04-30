@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ===== s_banner ===== -->
+    <template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
+        <!-- Heading -->
+        <xpath expr="//h1" position="replace" mode="inner">
+            Generation<br/>Furniture Co.
+        </xpath>
+    </template>
+
+    <!-- ===== s_text_block ===== -->
+    <template id="configurator_s_text_block" inherit_id="website.configurator_s_text_block" name="Loftspace s_text_block">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="o_cc o_cc5 pt112" remove="pt40" separator=" "/>
+        </xpath>
+        <!-- Container -->
+        <xpath expr="//div[hasclass('container')]" position="replace">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-2 pb16">
+                        <p class="o_small">&#9135; &amp;nbsp;OUR PHILOSOPHY</p>
+                    </div>
+                    <div class="col-lg-10 offset-lg-2 pb16">
+                        <h2>Design innovation<br/>meeting function</h2>
+                    </div>
+                    <!-- Column #01 -->
+                    <div class="col-lg-4 offset-lg-2">
+                        <p>
+                            Design Innovation meets function in our family-run furniture company, where every creation blends cutting-edge style with practical usability. Our commitment is to deliver designs that enhance your living spaces with both beauty and practicality. Each piece reflects our dedication to craftsmanship and functionality, making your home more elegant and functional.
+                        </p>
+                    </div>
+                    <!-- Column #02 -->
+                    <div class="col-lg-4 offset-lg-1">
+                        <p>
+                            With a rich family heritage in furniture making, we bring together innovative design and everyday functionality. Our focus is on crafting pieces that not only look stunning but also serve practical purposes. Each item is thoughtfully designed to meet your needs while adding a touch of elegance to your home.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- ===== s_title ===== -->
+    <template id="configurator_s_title" inherit_id="website.configurator_s_title">
+        <!-- Section -->
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pb0" remove="pb40" separator=" "/>
+        </xpath>
+        <!-- Label -->
+        <xpath expr="//h2" position="before">
+            <p>New in Store</p>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2 class="h3-fs">Creating pieces that resonate with enduring quality,<br/>elegant simplicity, and sustainable innovation.</h2>
+        </xpath>
+    </template>
+
+    <!-- ===== s_image_text_box ===== -->
+    <template id="configurator_s_image_text_box" inherit_id="website.configurator_s_image_text_box">
+        <!-- Paragraph 1 -->
+        <xpath expr="//p" position="replace" mode="inner">
+            Our furniture is made with the best materials and the most skilled craftsmen. We are a family-owned business that has been in the furniture business for over 100 years.
+        </xpath>
+        <!-- Paragraph 2 -->
+        <xpath expr="//p[2]" position="replace" mode="inner">
+            Learn more about our furniture and our mission to bring the best furniture to the world.
+        </xpath>
+    </template>
+
+    <!-- ===== s_faq_collapse ===== -->
+    <template id="configurator_s_faq_collapse" inherit_id="website.configurator_s_faq_collapse">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            Frequently asked question
+        </xpath>
+    </template>
+
+    <!-- ===== s_cta_box ===== -->
+    <template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            Transform your space with<br/>our furniture. Contact us<br/>to bring your vision to life!<br/>
+        </xpath>
+    </template>
+
+</odoo>
+

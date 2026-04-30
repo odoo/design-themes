@@ -20,12 +20,6 @@
     <xpath expr="//blockquote[hasclass('s_blockquote')][1]" position="attributes">
         <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
     </xpath>
-    <xpath expr="(//p[hasclass('s_blockquote_quote')])[1]" position="replace" mode="inner">
-        "Dining set is top quality<br/>and fits perfectly!"
-    </xpath>
-    <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//strong" position="replace" mode="inner">
-        Linda
-    </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//span//span" position="replace"/>
 
     <!-- Quote 2 -->
@@ -36,12 +30,6 @@
     <xpath expr="(//blockquote[hasclass('s_blockquote')])[2]" position="attributes">
         <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
     </xpath>
-    <xpath expr="(//p[hasclass('s_blockquote_quote')])[2]" position="replace" mode="inner">
-        "Desk is stylish and built to last!"
-    </xpath>
-    <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//strong" position="replace" mode="inner">
-        Jack
-    </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//span//span" position="replace"/>
 
     <!-- Quote 3 -->
@@ -51,12 +39,6 @@
     </xpath>
     <xpath expr="(//blockquote[hasclass('s_blockquote')])[3]" position="attributes">
         <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
-    </xpath>
-    <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
-        "Sofa is both chic and super comfy!"
-    </xpath>
-    <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//strong" position="replace" mode="inner">
-        Rose
     </xpath>
     <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//span//span" position="replace"/>
 </template>

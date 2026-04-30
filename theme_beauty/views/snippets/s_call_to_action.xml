@@ -13,14 +13,7 @@
     <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
         <attribute name="class" add="col-lg-12" remove="col-lg-3" separator=" "/>
     </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//h2" position="replace">
-        <h2>Beauty without <br/>expression is boring</h2>
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        Join us and enjoy the pleasure of caring for yourself.
-    </xpath>
-    <!-- Button -->
+    <!-- Button alignment -->
     <xpath expr="(//div[hasclass('col-lg-12')])[2]/p" position="attributes">
         <attribute name="style" add="text-align: center;" remove="text-align: right;" separator=";"/>
     </xpath>

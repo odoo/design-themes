@@ -10,18 +10,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Discover Art that Inspires Your Soul
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Explore a curated selection of artwork from emerging and established artists. Our galleries are designed to ignite creativity and connect you with timeless pieces.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Let art be the language of your space.
-    </xpath>
 </template>
 
 </odoo>

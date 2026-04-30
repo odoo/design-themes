@@ -13,21 +13,15 @@
     </xpath>
     <!-- Subtitle -->
     <xpath expr="//h1" position="before">
-        <p class="lead">Bloom with Joy:</p>
+        <p class="lead">Subtitle</p>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Fresh Flowers Delivered to Your Doorstep! Hello
-    </xpath>
     <xpath expr="//h1" position="attributes">
         <attribute name="class" add="display-2" remove="display-4"  separator=" "/>
     </xpath>
     <!-- CTA -->
     <xpath expr="//a" position="before">
-        <a href="#" class="btn btn-lg btn-secondary o_translate_inline">See the Full Bloom</a>
-    </xpath>
-    <xpath expr="//a" position="replace" mode="inner">
-        About Us
+        <a href="#" class="btn btn-lg btn-secondary o_translate_inline">See more</a>
     </xpath>
     <!-- Image -->
     <xpath expr="//img" position="attributes">

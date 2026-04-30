@@ -6,18 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('row')]/div/h3" position="replace" mode="inner">
-        Barbershop
-    </xpath>
-    <xpath expr="//div[hasclass('row')]/div[2]/h3" position="replace" mode="inner">
-        Oceandor
-    </xpath>
-    <xpath expr="//div[hasclass('row')]/div[3]/h3" position="replace" mode="inner">
-        Mountain
-    </xpath>
-    <xpath expr="//div[hasclass('row')]/div[4]/h3" position="replace" mode="inner">
-        Hosoren
-    </xpath>
     <!-- Column #1 -->
     <xpath expr="(//div[hasclass('col-lg-3')])//i[hasclass('fa-facebook')]" position="attributes">
         <attribute name="class" remove="rounded shadow-sm" separator=" "/>

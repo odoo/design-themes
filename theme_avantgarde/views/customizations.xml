@@ -21,13 +21,6 @@
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
         <attribute name="class" remove="bg-black-50" add="bg-black-75" separator=" "/>
     </xpath>
-    <xpath expr="//h1" position="replace" mode="inner">
-        We are Avantgarde.
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        We create architecture, landscapes, interiors, product design and graphic design.<br/>
-        Our methods allow us to explore a future that is equitable, data-driven, and green.
-    </xpath>
 </template>
 
 <!-- ======== SIDEGRID ======== -->
@@ -41,17 +34,11 @@
         <attribute name="class" add="container-fluid" remove="container" separator=" "/>
     </xpath>
     <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        <div class="d-inline text-o-color-1">Avantgarde</div>
-    </xpath>
     <xpath expr="//h1" position="attributes">
         <attribute name="class" remove="display-4" add="display-1" separator=" "/>
         <attribute name="style">text-align: right;</attribute>
     </xpath>
     <!-- Pararaph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Art gallery
-    </xpath>
     <xpath expr="//p[hasclass('lead')]" position="attributes">
         <attribute name="class" add="h2-fs" separator=" "/>
         <attribute name="style">text-align: right;</attribute>
@@ -87,10 +74,6 @@
         <attribute name="style" add="--grid-item-padding-y: 40px; --grid-item-padding-x: 40px;" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[5]//img" position="replace"/>
-    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="inside">
-        <h2 class="display-2-fs">✴ San Francisco</h2>
-        <p class="lead">Come visit us from Tuesday 9 AM to Saturday 6 PM</p>
-    </xpath>
 </template>
 
 <!-- ======== STRIPED TOP ======== -->
@@ -106,7 +89,7 @@
 </template>
 
 <!-- ======== PICTURE ======== -->
-<template id="s_picture" inherit_id="website.s_picture" name="Avantgarde s_cover">
+<template id="s_picture" inherit_id="website.s_picture" name="Avantgarde s_picture">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt144 pb128" remove="pt64 pb64" separator=" "/>
     </xpath>
@@ -114,15 +97,8 @@
         <attribute name="style" remove="text-align: center;" separator=";"/>
         <attribute name="class" add="text-break" separator=" "/>
     </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Design Methodology
-    </xpath>
     <xpath expr="//p" position="attributes">
         <attribute name="style" remove="text-align: center;" separator=";"/>
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        Our design methodology is rooted in our core values.<br/>
-        We combine a wide spectrum of technologies with a good portion of creativity.
     </xpath>
     <xpath expr="//img" position="attributes">
         <attribute name="src">/html_editor/image_shape/website.s_picture_default_image/html_builder/panel/panel_duo_step.svg</attribute>
@@ -132,9 +108,6 @@
     </xpath>
     <xpath expr="//figcaption" position="attributes">
         <attribute name="style" add="text-align: right;" separator=";"/>
-    </xpath>
-    <xpath expr="//figcaption" position="replace" mode="inner">
-        We carry out an interdisciplinary design process.
     </xpath>
 </template>
 
@@ -147,30 +120,13 @@
         <attribute name="class" add="shadow border" separator=" "/>
         <attribute name="style">border-color: var(--o-color-2) !important; box-shadow: var(--o-color-2) -25px -25px 0px 0px !important; border-width: 8px !important;</attribute>
     </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        <span style="font-weight: bolder;">Excellence</span>
-    </xpath>
-    <xpath expr="(//p[hasclass('card-text')])[1]" position="replace" mode="inner">
-        We conduct state-of-the-art research and development to solve complex design challenges, taking the latest advances out of the lab and into the hands of architects and engineers.</xpath>
     <xpath expr="(//*[hasclass('card')])[2]" position="attributes">
         <attribute name="class" add="shadow border" separator=" "/>
         <attribute name="style">border-color: var(--o-color-4) !important; border-width: 8px !important; box-shadow: var(--o-color-5) 0px 0px 100px -40px !important;</attribute>
     </xpath>
-    <xpath expr="(//h2)[2]" position="replace" mode="inner">
-        <span style="font-weight: bolder;">Collaboration</span>
-    </xpath>
-    <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
-        We thrive on rich collaborations to push our thinking. A continuous state of reinvention, driven by our partners in the process, is essential to our work.
-    </xpath>
     <xpath expr="(//*[hasclass('card')])[3]" position="attributes">
         <attribute name="class" add="shadow border" separator=" "/>
         <attribute name="style">box-shadow: var(--o-color-1) 25px 25px 0px 0px !important; border-color: var(--o-color-1) !important; border-width: 8px !important;</attribute>
-    </xpath>
-    <xpath expr="(//h2)[3]" position="replace" mode="inner">
-        <span style="font-weight: bolder;">Sustainability</span>
-    </xpath>
-    <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
-        Sustainability is at the heart of our design approach. We audit projects against global standards as well as our own, more comprehensive, responsibility framework.
     </xpath>
 </template>
 
@@ -191,17 +147,8 @@
     <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
         <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-5" separator=" "/>
     </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        <span class="text-break" style="font-size: 62px; font-weight: bolder;">Our R&amp;D Approach</span>
-    </xpath>
     <xpath expr="//p" position="before">
         <p><br/></p>
-    </xpath>
-    <xpath expr="//p[2]" position="replace" mode="inner">
-        Making innovative design requires us to push the limits of technological possibilities. As a group of in-house specialists, we develop and implement computational workflows and new technologies.
-    </xpath>
-    <xpath expr="//p[3]" position="replace" mode="inner">
-        Through a mixture of project-based work and standalone research, we make efficient projects, adaptable in the face of change.
     </xpath>
     <xpath expr="//a[hasclass('btn')]" position="before">
         <p><br/></p>
@@ -232,12 +179,6 @@
 
 <!-- ======== CALL TO ACTION ======== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Avantgarde s_call_to_action">
-    <xpath expr="//h2" position="replace">
-        <h2 style="text-align: right;"><b>Since 1992</b> creating around the world.</h2>
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        We partner with ambitious clients. We’d love to hear from you.
-    </xpath>
     <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
         <attribute name="class" add="col-lg-8" remove="col-lg-9" separator=" "/>
     </xpath>
@@ -252,27 +193,15 @@
     </xpath>
 </template>
 
-<!-- ======== CTA Box ======== -->
+<!-- ======== CTA BOX ======== -->
 <template id="s_cta_box" inherit_id="website.s_cta_box">
     <!-- Card -->
     <xpath expr="//div[hasclass('card')]" position="attributes">
         <attribute name="class" add="o_cc2" remove="o_cc4" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Discover what innovation<br/>looks like !
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Explore our large collection of disruptive products<br/><br/>
-    </xpath>
     <!-- Image -->
     <xpath expr="//img" position="attributes">
         <attribute name="src">/theme_avantgarde/static/src/img/pictures/bg_image_07.webp</attribute>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
-        Learn more
     </xpath>
 </template>
 
@@ -293,38 +222,10 @@
     <xpath expr="(//div[hasclass('carousel-item')])[3]//div[hasclass('container')]" position="before">
         <div class="o_we_bg_filter bg-black-50"/>
     </xpath>
-
-    <xpath expr="//h2" position="replace" mode="inner">
-        ARTWORK
-    </xpath>
-    <xpath expr="//div[hasclass('carousel-item')]//p[2]" position="replace"/>
-    <xpath expr="(//div[hasclass('carousel-item')])[2]//p[2]" position="replace"/>
-</template>
-
-<!-- ======== CAROUSEL INTRO ======== -->
-<template id="s_carousel_intro" inherit_id="website.s_carousel_intro" name="Avantgarde s_carousel_intro">
-    <xpath expr="//h1" position="replace" mode="inner">
-        Defining the future of creativity
-    </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Innovative concepts tailored for you
-    </xpath>
-    <xpath expr="(//h2)[2]" position="replace" mode="inner">
-        Unleash your vision
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Embrace cutting-edge ideas that challenge norms and redefine the boundaries of modern creativity, every single day.
-    </xpath>
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Transform your approach with our forward-thinking strategies.
-    </xpath>
-    <xpath expr="(//p[hasclass('lead')])[3]" position="replace" mode="inner">
-        Explore more and discover innovative projects that align with your avant-garde vision, crafted for impact and disruption.
-    </xpath>
 </template>
 
 <!-- ======== QUOTES ======== -->
- <template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Avantgarde s_quotes_carousel">
+<template id="s_quotes_carousel" inherit_id="website.s_quotes_carousel" name="Avantgarde s_quotes_carousel">
     <!-- Assign slide2 as 'active' and move it in first position -->
     <xpath expr="//div[hasclass('carousel-inner')]/div" position="attributes">
         <attribute name="class" remove="active" separator=" "/>
@@ -337,26 +238,10 @@
     </xpath>
 </template>
 
-<!-- ======== PRICELIST ======== -->
+<!-- ======== PRODUCT CATALOG ======== -->
 <template id="s_product_catalog" inherit_id="website.s_product_catalog">
     <!-- Remove filter -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
-</template>
-
-<!-- ======== QUADRANT ======== -->
-<template id="s_quadrant" inherit_id="website.s_quadrant">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Avantgarde Gallery
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        250 Executive Park Blvd, Suite 3400<br/>San Francisco CA 94134<br/>United States
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Get Directions
-    </xpath>
 </template>
 
 <!-- ======== UNVEIL ======== -->
@@ -364,335 +249,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc2" separator=" "/>
-    </xpath>
-</template>
-
-<!-- ======== FREE GRID ======== -->
-<template id="s_freegrid" inherit_id="website.s_freegrid">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Innovative Design and Art That Inspire Change
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Dive into the world of design and fine art with our collection of forward-thinking pieces. Discover how creativity drives change in the art world through our exclusive exhibitions and publications.
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a" position="replace" mode="inner">
-        Discover More
-    </xpath>
-</template>
-
-<!-- ======== KEY BENEFITS ======== -->
-<template id="s_key_benefits" inherit_id="website.s_key_benefits">
-    <!-- Titles -->
-    <xpath expr="(//h3)[1]" position="replace" mode="inner">
-        Tailored Pricing
-    </xpath>
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        Continuous Support
-    </xpath>
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
-        Tax-Free Services
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//div[hasclass('col-lg-4')][1]/p" position="replace" mode="inner">
-        We provide custom pricing based on the unique needs of your project, ensuring you receive exceptional design services that fit your budget.
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
-        Our team is here to assist you at every stage of your project, ensuring a smooth and stress-free process for your project.
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-4')][3]/p" position="replace" mode="inner">
-        We maximize value by offering tax-efficient design services, helping you achieve your vision while keeping your project financially streamlined.
-    </xpath>
-</template>
-
-<!-- ======== PRICELIST BOXED ======== -->
-<template id="s_pricelist_boxed" inherit_id="website.s_pricelist_boxed">
-    <xpath expr="//h2" position="replace" mode="inner">
-        Our Photography Services
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Capture your moments with our range of professional photography services. Expertly crafted to make every memory unforgettable.
-    </xpath>
-    <xpath expr="//h3" position="replace" mode="inner">
-        ✽&#160;&#160;Event Photography
-    </xpath>
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        ✽&#160;&#160;Portrait Photography
-    </xpath>
-    <xpath expr="//t[@t-set='name']" position="replace" mode="inner">
-        Wedding Day Coverage
-    </xpath>
-    <xpath expr="//t[@t-set='price']" position="replace" mode="inner">
-        $2,000.00
-    </xpath>
-    <xpath expr="//t[@t-set='description']" position="replace" mode="inner">
-        Comprehensive wedding day photography service capturing every special moment, from the ceremony to the reception.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[2]" position="replace" mode="inner">
-        Corporate Event Package
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[2]" position="replace" mode="inner">
-        $1,500.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[2]" position="replace" mode="inner">
-        Professional coverage for corporate events, including conferences, award ceremonies, and networking events.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[3]" position="replace" mode="inner">
-        Concert Photography
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[3]" position="replace" mode="inner">
-        $1,800.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[3]" position="replace" mode="inner">
-        Dynamic concert photography capturing the energy of live performances with high-quality images of artists and audience.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[4]" position="replace" mode="inner">
-        Family Portrait Session
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[4]" position="replace" mode="inner">
-        $500.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[4]" position="replace" mode="inner">
-        A relaxed portrait session for families, capturing genuine moments and smiles in a comfortable setting.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[5]" position="replace" mode="inner">
-        Professional Headshots
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[5]" position="replace" mode="inner">
-        $250.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[5]" position="replace" mode="inner">
-        High-quality headshots perfect for business profiles, LinkedIn, or personal branding, taken in our studio or on location.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[6]" position="replace" mode="inner">
-        Creative Portrait Session
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[6]" position="replace" mode="inner">
-        $700.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[6]" position="replace" mode="inner">
-        Artistic portrait photography with creative lighting and backgrounds, ideal for personal projects or portfolio work.
-    </xpath>
-</template>
- <!-- ======== STRIPED CENTER TOP ======== -->
-<template id="s_striped_center_top" inherit_id="website.s_striped_center_top">
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Design Your World with Creativity
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Stay ahead with cutting-edge design trends, fine art, and creative inspirations that shape the future of galleries, shows, and digital media.
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Discover More
-    </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_image_title_default_image</attribute>
-    </xpath>
-    <!-- Figcaption -->
-    <xpath expr="//figcaption" position="replace" mode="inner">
-        Where creativity knows no bounds
-    </xpath>
-</template>
-
-<!-- ======== IMAGE TITLE ======== -->
-<template id="s_image_title" inherit_id="website.s_image_title">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
-    </xpath>
-    <xpath expr="//h1" position="replace" mode="inner">
-        A Deep Dive into Boldness and Innovation
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Transform your perspective with our groundbreaking collection, where unconventional meets visionary. Elevate your style with pieces that challenge norms and redefine creativity effortlessly.
-    </xpath>
-</template>
-
-<!-- ======== KEY IMAGES ======== -->
-<template id="s_key_images" inherit_id="website.s_key_images" name="Avantgarde s_key_images">
-    <xpath expr="//h2" position="replace" mode="inner">
-        Unleash Your Imagination with Avant-Garde Designs
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Pushing Boundaries, Redefining Possibilities
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
-        Where innovation meets artistry
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
-        Breaking the mold with bold, daring concepts
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
-        Crafting the future, one unique idea at a time
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
-        Experience the power of original thought
-    </xpath>
-</template>
-<!-- ======== IMAGES MOSAIC ======== -->
-<template id="s_images_mosaic" inherit_id="website.s_images_mosaic">
-    <xpath expr="//h2" position="replace" mode="inner">
-        Unveiling Our Bold New Innovations
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        Discover our cutting-edge solutions pushing creative boundaries.
-    </xpath>
-</template>
-
-<!-- ======== IMAGE FRAME ======== -->
-<template id="s_image_frame" inherit_id="website.s_image_frame">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="o_cc1" add="o_cc5" separator=" "/>
-    </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
-    </xpath>
-</template>
-
-<!-- ======== CARD OFFSET ======== -->
-<template id="s_card_offset" inherit_id="website.s_card_offset">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
-    </xpath>
-    <!-- Grid items -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
-        <attribute name="style" add="--grid-item-padding-y: 56px;" remove="--grid-item-padding-y: 40px;" separator=";"/>
-    </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Innovative Design Meets Fine Art
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Stay ahead of the curve with our insights on design and fine art. Explore the intersection of creativity and innovation through our galleries, shows, and digital media.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Discover the future of design today.
-    </xpath>
-</template>
-
-<!-- ======== BIG NUMBER ======== -->
-<template id="s_big_number" inherit_id="website.s_big_number">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blocks/04"}</attribute>
-        <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
-    </xpath>
-
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
-        <div class="o_we_shape o_html_builder_Blocks_04"/>
-    </xpath>
-
-    <!-- Text -->
-    <xpath expr="//h2/span" position="replace" mode="inner">
-        <font class="text-gradient" style="background-image: linear-gradient(0deg, var(--o-color-1) 0%, var(--o-color-4) 90%);">
-            50+
-        </font>
-    </xpath>
-    <xpath expr="//p/span" position="replace" mode="inner">
-        projects shipped
-    </xpath>
-</template>
-
-<!-- ===== WAVY GRID ======== -->
-<template id="s_wavy_grid" inherit_id="website.s_wavy_grid">
-    <xpath expr="//h2" position="replace" mode="inner">
-        What we envision for our clients
-    </xpath>
-    <xpath expr="//h3" position="replace" mode="inner">
-        Revolutionary Concepts
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        We design groundbreaking solutions that push the boundaries of creativity. Our team collaborates with you to bring visionary ideas to life from start to finish.
-    </xpath>
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        Sustainable Innovation
-    </xpath>
-    <xpath expr="(//p)[2]" position="replace" mode="inner">
-        Your satisfaction fuels our drive. Our support team is ever-ready to guide you, ensuring a seamless and impactful experience.
-    </xpath>
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
-        Excellence and Innovation
-    </xpath>
-    <xpath expr="(//p)[3]" position="replace" mode="inner">
-        With profound expertise and forward-thinking strategies, we deliver insights that keep you ahead of the curve.
-    </xpath>
-    <xpath expr="(//h3)[4]" position="replace" mode="inner">
-        Expertise and Vision
-    </xpath>
-    <xpath expr="(//p)[4]" position="replace" mode="inner">
-        We offer cutting-edge innovations to tackle modern challenges. Embracing the latest advancements, we help you redefine success.
-    </xpath>
-</template>
-
-<!-- ======== EMPOWERMENT ======== -->
-<template id="s_empowerment" inherit_id="website.s_empowerment">
-    <!-- Badge content -->
-    <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
-        <i class="fa fa-fw fa-info-circle o_not-animable" role="img"/> Award-Winning Designs&#160;
-        <a href="#">See Our Achievements&#160;<i class="fa fa-long-arrow-right" role="img"/></a>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-       Crafting spaces<br/>for everyday life
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        <br/>Crafting spaces where creativity meets functionality,<br/>one design at a time.<br/><br/>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')][1]" position="replace" mode="inner">
-        Our Projects
-    </xpath>
-    <!-- Second Button -->
-    <xpath expr="//a[hasclass('btn')][2]" position="replace" mode="inner">
-        Book an appointment
-    </xpath>
-</template>
-
-<!-- ======== SHAPE IMAGE ======== -->
-<template id="s_shape_image" inherit_id="website.s_shape_image">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Designing the future
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Our architectural vision shapes spaces that inspire. We blend innovation with sustainability to create designs that stand the test of time. Let us build your dream, one blueprint at a time.
-    </xpath>
-    <xpath expr="//p[2]" position="replace"/>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
-        Explore our projects
-    </xpath>
-</template>
-
-<!-- ======== TEXT COVER ======== -->
-<template id="s_text_cover" inherit_id="website.s_text_cover">
-    <xpath expr="//h1" position="replace" mode="inner">
-        Design Online. <br/>Effortlessly.
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        <br/>Present your architectural projects online with a user-friendly platform that streamlines all the steps, from setup to project showcase, making it easy to share your vision with clients.<br/>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Learn more
     </xpath>
 </template>
 
@@ -705,94 +261,17 @@
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
-    <!-- Text -->
-    <xpath expr="//h2" position="before">
-        <p>From 12th September to 20th February</p>
-    </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        The Boston Public Library Collection
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        The Boston Public Library's exhibit features lovely bird and flower paintings, bringing together nature, art, and science.
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="after">
-        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-ticket"/> Book your tickets</a>
-    </xpath>
     <!-- Feature 1 -->
     <xpath expr="(//img)[1]" position="attributes">
         <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//h3)[1]" position="replace" mode="inner">
-        Diverse Wildlife
-    </xpath>
-    <xpath expr="(//p)[3]" position="replace" mode="inner">
-        Discover a variety of animals from around the world, beautifully captured in these detailed, scientific paintings.
     </xpath>
     <!-- Feature 2 -->
     <xpath expr="(//img)[2]" position="attributes">
         <attribute name="class" add="rounded" separator=" "/>
     </xpath>
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        Vintage Style
-    </xpath>
-    <xpath expr="(//p)[4]" position="replace" mode="inner">
-        Step back in time with classic, hand-painted illustrations that showcase the charm of old-world artistry.
-    </xpath>
     <!-- Feature 3 -->
     <xpath expr="(//img)[3]" position="attributes">
         <attribute name="class" add="rounded" separator=" "/>
-    </xpath>
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
-        For all the family
-    </xpath>
-    <xpath expr="(//p)[5]" position="replace" mode="inner">
-        This exhibition offers something for everyone, with fascinating artwork that will captivate both kids and adults alike.
-    </xpath>
-</template>
-
-<!-- ======== TIMELINE ======== -->
-<template id="s_timeline" inherit_id="website.s_timeline">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Our history
-    </xpath>
-    <!-- Lead -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Discover the journey that made us the most popular gallery in town.
-    </xpath>
-    <!-- Event 1 -->
-    <xpath expr="(//div[hasclass('card')])[1]//small" position="replace" mode="inner">
-        13/06/2024
-    </xpath>
-    <xpath expr="(//div[hasclass('card')])[1]//h3" position="replace" mode="inner">
-        First Culture Award ®
-    </xpath>
-    <!-- Event 2 -->
-    <xpath expr="(//div[hasclass('card')])[2]//small" position="replace" mode="inner">
-        25/10/2019
-    </xpath>
-    <xpath expr="(//div[hasclass('card')])[2]//h3" position="replace" mode="inner">
-        We open the cafeteria!
-    </xpath>
-    <!-- Event 3 -->
-    <xpath expr="(//div[hasclass('card')])[3]//small" position="replace" mode="inner">
-        25/06/2019
-    </xpath>
-    <xpath expr="(//div[hasclass('card')])[3]//h3" position="replace" mode="inner">
-        Arrival of Aline Turner at the head of the Gallery
-    </xpath>
-    <xpath expr="(//div[hasclass('card')])[3]//p" position="after">
-        <img alt="" src="/web/image/website.s_company_team_image_3" class="img img-fluid rounded"/>
-    </xpath>
-    <!-- Event 4 -->
-    <xpath expr="(//div[hasclass('card')])[4]//small" position="replace" mode="inner">
-        23/10/2015
-    </xpath>
-    <xpath expr="(//div[hasclass('card')])[4]//h3" position="replace" mode="inner">
-        Purchase of the building
-    </xpath>
-    <xpath expr="(//div[hasclass('card')])[4]//p" position="after">
-        <img alt="" src="/web/image/website.s_banner_default_image" class="img img-fluid rounded"/>
     </xpath>
 </template>
 
@@ -878,41 +357,76 @@
     </xpath>
 </template>
 
-<!-- ======== Numbers boxed ======== -->
+<!-- ======== NUMBERS BOXED ======== -->
 <template id="s_numbers_boxed" inherit_id="website.s_numbers_boxed">
     <!-- Grid Item -->
     <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
         <attribute name="class" add="o_cc o_cc4" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('o_grid_item')][2]//h3" position="replace" mode="inner">
-        30+
-    </xpath>
     <!-- Grid Item 2 -->
     <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
         <attribute name="class" add="o_cc o_cc4" separator=" "/>
-    </xpath>
-    <xpath expr="(//div[hasclass('o_grid_item')])[3]//h3" position="replace" mode="inner">
-        45%
     </xpath>
     <!-- Grid Item 3 -->
     <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
         <attribute name="class" add="o_cc o_cc4" separator=" "/>
     </xpath>
-    <xpath expr="(//div[hasclass('o_grid_item')])[4]//h3" position="replace" mode="inner">
-        8+
-    </xpath>
 
 </template>
 
-<!-- ======== SPLIT INTRO ======== -->
-<template id="s_split_intro" inherit_id="website.s_split_intro">
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Transform your<br/>architectural vision
+<!-- ======== STRIPED CENTER TOP ======== -->
+<template id="s_striped_center_top" inherit_id="website.s_striped_center_top">
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_image_title_default_image</attribute>
     </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p" position="replace" mode="inner">
-        <br/>Step into the future with our cutting-edge solutions tailored to enhance your architectural projects. From optimizing designs to driving innovative outcomes, our tools provide the foundation for sustainable success. Don’t let traditional methods limit your creative potential any longer.<br/><br/>
+</template>
+
+<!-- ======== IMAGE TITLE ======== -->
+<template id="s_image_title" inherit_id="website.s_image_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc3" remove="o_cc5" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE FRAME ======== -->
+<template id="s_image_frame" inherit_id="website.s_image_frame">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc1" add="o_cc5" separator=" "/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
+    </xpath>
+</template>
+
+<!-- ======== CARD OFFSET ======== -->
+<template id="s_card_offset" inherit_id="website.s_card_offset">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="style" add="--grid-item-padding-y: 56px;" remove="--grid-item-padding-y: 40px;" separator=";"/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
+    </xpath>
+</template>
+
+<!-- ======== BIG NUMBER ======== -->
+<template id="s_big_number" inherit_id="website.s_big_number">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blocks/04"}</attribute>
+        <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
+    </xpath>
+
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_html_builder_Blocks_04"/>
     </xpath>
 </template>
 

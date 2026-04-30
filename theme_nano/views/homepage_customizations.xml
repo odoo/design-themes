@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ===== s_discovery ===== -->
+    <template id="configurator_s_discovery" inherit_id="website.configurator_s_discovery">
+        <!-- CTA -->
+        <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
+            <i class="fa fa-circle text-success" aria-hidden="true"/> AVAILABLE FOR NEW PROJECTS&#160;<a href="#">Contact us&#160;<i class="fa fa-long-arrow-right" aria-hidden="true"/></a>
+        </xpath>
+
+        <xpath expr="//h1" position="replace">
+            <h1 style="text-align: center">
+                <strong>We are CreativeAgency.</strong>
+            </h1>
+        </xpath>
+
+        <xpath expr="//p[2]" position="replace" mode="inner">
+            <a t-att-href="cta_btn_href" class="btn btn-lg btn-primary o_translate_inline"><t t-out="cta_btn_text">Get Started</t></a>
+        </xpath>
+    </template>
+
+    <!-- ===== s_company_team_basic ===== -->
+    <template id="configurator_s_company_team_basic" inherit_id="website.configurator_s_company_team_basic">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            Our talented crew
+        </xpath>
+        <xpath expr="//h2" position="after">
+            <p class="lead" style="text-align: center;">Meet the masterminds behind our agency. With them, your project is in good hands for sure.</p>
+        </xpath>
+        <!-- Profile #1 -->
+        <xpath expr="(//h3)[1]" position="replace" mode="inner">
+            Evan Ray
+        </xpath>
+        <xpath expr="(//p[hasclass('o_small-fs')])[1]" position="replace" mode="inner">
+            Creative Director
+        </xpath>
+        <!-- Profile #2 -->
+        <xpath expr="(//h3)[2]" position="replace" mode="inner">
+            Ben Cole
+        </xpath>
+        <xpath expr="(//p[hasclass('o_small-fs')])[2]" position="replace" mode="inner">
+            Account Manager
+        </xpath>
+        <!-- Profile #3 -->
+        <xpath expr="(//h3)[3]" position="replace" mode="inner">
+            Jane Ford
+        </xpath>
+        <xpath expr="(//p[hasclass('o_small-fs')])[3]" position="replace" mode="inner">
+            Media Strategist
+        </xpath>
+        <!-- Profile #4 -->
+        <xpath expr="(//h3)[4]" position="replace" mode="inner">
+            Mia Lee
+        </xpath>
+        <xpath expr="(//p[hasclass('o_small-fs')])[4]" position="replace" mode="inner">
+            Marketing Analyst
+        </xpath>
+    </template>
+
+</odoo>
+

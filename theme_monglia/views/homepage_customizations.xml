@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ===== s_cover ===== -->
+    <template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
+        <!-- Button -->
+        <xpath expr="//a[@t-att-href='cta_btn_href']" position="replace" mode="inner">
+            GET TICKETS NOW
+        </xpath>
+    </template>
+
+    <!-- ===== s_numbers_grid ===== -->
+    <template id="configurator_s_numbers_grid" inherit_id="website.configurator_s_numbers_grid">
+        <!-- Card #1 -->
+        <xpath expr="//div[hasclass('o_grid_item')]" position="replace" mode="inner">
+            <h3 style="text-align: center;"><span class="h4-fs">DAYS</span></h3>
+            <h3 class="display-4-fs" style="text-align: center;">24</h3>
+        </xpath>
+        <!-- Card #2 -->
+        <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="replace" mode="inner">
+            <h3 style="text-align: center;"><span class="h4-fs">ARTISTS</span></h3>
+            <h3 class="display-4-fs" style="text-align: center;">30+</h3>
+        </xpath>
+        <!-- Card #3 -->
+        <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="replace" mode="inner">
+            <h3 style="text-align: center;"><span class="h4-fs">STAGES</span></h3>
+            <h3 class="display-4-fs" style="text-align: center;">5</h3>
+        </xpath>
+        <!-- Card #4 -->
+        <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="replace" mode="inner">
+            <h3 style="text-align: center;"><span class="h4-fs">VENDORS</span></h3>
+            <h3 class="display-4-fs" style="text-align: center;">120+</h3>
+        </xpath>
+    </template>
+
+    <!-- ===== s_company_team_shapes ===== -->
+    <template id="configurator_s_company_team_shapes" inherit_id="website.configurator_s_company_team_shapes">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            MAIN LINE-UP
+        </xpath>
+    </template>
+
+    <!-- ===== s_text_block ===== -->
+    <template id="configurator_s_text_block" inherit_id="website.configurator_s_text_block" name="Monglia s_text_block">
+        <xpath expr="//p" position="replace">
+            <p style="text-align: center;"><span class="h3-fs">Kori Thill / Chana / Smithwick Cira / Sherard Elfriede / Ogan Mariko / Yonker Bella Maday / Shaneka Wilkerson / Raina Planck / Micaela Labonte / Chadwick Cottman / Emile Hornung / Genevie Mehaffey / Dottie Hinkson / Mariah Nurse / Velda Caster / Rossie Cranfield / Iva Madrid / Flossie Freitas / Tina Gregerson / Quiana Tassin</span></p>
+        </xpath>
+        <xpath expr="//p[2]" position="replace"/>
+    </template>
+
+    <!-- ===== s_cta_box ===== -->
+    <template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box" name="Monglia s_cta_box">
+        <xpath expr="//section" position="attributes">
+            <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/14","colors":{"c5":"o-color-4","c1":"o-color-1"}}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_html_builder_Bold_14" style="background-image: url('/html_editor/shape/html_builder/Bold/14.svg?c5=o-color-4&amp;c1=o-color-1');"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            GET READY FOR MONGLIA '25
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace" mode="inner">
+            Experience an unforgettable weekend of live music, fun, and entertainment with performances from some of the best artists.<br/><br/>
+            Explore the schedule to make the most out of every moment.<br/><br/>
+        </xpath>
+        <!-- Button -->
+        <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+            View the schedule
+        </xpath>
+    </template>
+
+    <!-- ===== s_shape_image ===== -->
+    <template id="configurator_s_shape_image" inherit_id="website.configurator_s_shape_image">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace">
+            <h2>Group Experience Packages</h2>
+        </xpath>
+        <!-- Paragraph -->
+        <xpath expr="//p" position="replace" mode="inner">
+            We offer curated festival experiences tailored just for your group. Whether you're planning a special group celebration, a corporate outing, or a custom VIP experience, our team is here to elevate your time at the festival. Let us handle all the details while you focus on enjoying the event, with exclusive access, personalized itineraries, and premium amenities.
+        </xpath>
+    </template>
+
+    <!-- ===== s_title ===== -->
+    <template id="configurator_s_title" inherit_id="website.configurator_s_title" name="Monglia s_title">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" remove="pt40 pb40" add="o_cc o_cc5 pt104 pb16" separator=" "/>
+            <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/14","colors":{"c5":"o-color-1","c1":"o-color-5"},"flip":["x"]}</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('container')]" position="before">
+            <div class="o_we_shape o_html_builder_Bold_14" style="background-image: url('/html_editor/shape/html_builder/Bold/14.svg?c5=o-color-1&amp;c1=o-color-5&amp;flip=x');"/>
+        </xpath>
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            <h2 style="text-align: center;">MONGLIA 2024</h2>
+        </xpath>
+    </template>
+
+    <!-- ===== s_faq_collapse ===== -->
+    <template id="configurator_s_faq_collapse" inherit_id="website.configurator_s_faq_collapse">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            Frequently Asked Questions
+        </xpath>
+    </template>
+
+    <!-- ===== s_references ===== -->
+    <template id="configurator_s_references" inherit_id="website.configurator_s_references">
+        <!-- Title -->
+        <xpath expr="//h2" position="replace" mode="inner">
+            OUR SPONSORS
+        </xpath>
+    </template>
+
+</odoo>
+

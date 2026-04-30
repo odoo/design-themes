@@ -14,18 +14,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Elegant Furniture for Modern Living
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Transform your home with our exquisite furniture collection. Combining style and functionality, our pieces are crafted to enhance the beauty and comfort of any space.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Redefine your living space.
-    </xpath>
 </template>
 
 </odoo>

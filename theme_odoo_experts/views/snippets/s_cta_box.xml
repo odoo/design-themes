@@ -14,14 +14,6 @@
     <xpath expr="//div[hasclass('card')]" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc4" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-       Leverage your workflow<br/>with our services<br/>
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p" position="replace" mode="inner">
-       Get in touch with us and see how we can help you.
-    </xpath>
     <!-- Button -->
     <xpath expr="//a[hasclass('btn')]" position="attributes">
         <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>

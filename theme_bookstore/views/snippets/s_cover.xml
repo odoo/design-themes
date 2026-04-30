@@ -15,14 +15,6 @@
     </xpath>
     <!-- Disable Parallax -->
     <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Immerse yourself <br/>in original universes
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        <br/>
-    </xpath>
 </template>
 
 </odoo>
