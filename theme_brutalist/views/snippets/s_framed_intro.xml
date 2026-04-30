@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_framed_intro" inherit_id="website.s_framed_intro" name="Brutalist s_framed_intro">
+    <!-- Grid -->
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="data-row-count">13</attribute>
+    </xpath>
+    <!-- Heading -->
+    <xpath expr="//div[hasclass('o_grid_item')][1]" position="attributes">
+        <attribute name="class" add="g-col-lg-8 g-height-13 col-lg-8" remove="g-col-lg-6 g-height-10 col-lg-6" separator=" "/>
+        <attribute name="style">z-index: 1; grid-area: 1 / 1 / 14 / 9; --grid-item-padding-y: 0px; order: 2;</attribute>
+    </xpath>
+    <xpath expr="//h1" position="replace">
+        <h1><span style="font-size: clamp(8px, 1em + 7.6402vw, 400px);">Emma<br/>Sophia Lee</span></h1>
+    </xpath>
+    <!-- Text -->
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="class" add="g-col-lg-4 g-height-2 col-lg-4" remove="g-col-lg-6 g-height-4 col-lg-6 align-content-end" separator=" "/>
+        <attribute name="style">z-index: 2; --grid-item-padding-y: 0px; grid-area: 3 / 9 / 5 / 13; order: 3;</attribute>
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="attributes">
+        <attribute name="style">text-align: end;</attribute>
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">Empowering artists to collaborate and innovate, creating impactful works that inspire and resonate with audiences.</xpath>
+    <!-- CTA -->
+    <xpath expr="//p[last()]" position="replace"/>
+    <!-- Image -->
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="attributes">
+        <attribute name="class" add="g-col-lg-3 g-height-8 col-lg-3 o_we_padding_highlight border" remove="g-col-lg-5 g-height-14 col-lg-5 o_cc o_cc2 order-lg-0" separator=" "/>
+        <attribute name="style">z-index: 3; grid-area: 5 / 10 / 13 / 13; --grid-item-padding-y: 0px; --grid-item-padding-x: 0px; border-left-color: var(--o-color-2) !important; border-bottom-color: var(--o-color-2) !important; border-right-color: var(--o-color-2) !important; border-top-color: var(--o-color-2) !important; --box-border-left-width: 16px; --box-border-bottom-width: 16px; --box-border-right-width: 16px; --box-border-top-width: 16px; order: 1;</attribute>
+    </xpath>
+</template>
+
+</odoo>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_wavy_grid" inherit_id="website.s_wavy_grid" name="Brutalist s_wavy_grid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt88 pb72" remove="pt32 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+    <!-- Grid -->
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="data-row-count">28</attribute>
+    </xpath>
+
+    <!-- Heading -->
+    <xpath expr="//div[hasclass('o_grid_item')][1]" position="attributes">
+        <attribute name="class" add="g-height-5 g-col-lg-6 col-lg-6" remove="g-height-3 g-col-lg-4 col-lg-4" separator=" "/>
+        <attribute name="style">z-index: 1; grid-area: 12 / 4 / 17 / 10; --grid-item-padding-y: 40px;</attribute>
+    </xpath>
+    <xpath expr="//h2" position="replace">
+        <h2 class="display-3-fs" style="text-align: center;"><em>Memories</em> from<br/><font class="bg-o-color-2">North America</font></h2>
+    </xpath>
+
+    <!-- Image 1 -->
+    <xpath expr="(//img)[1]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Caption 1 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
+        <attribute name="class" add="g-height-1" remove="g-height-3" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 16px; grid-area: 11 / 1 / 12 / 8; z-index: 3;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="replace" mode="inner">
+        <p>Tampa Center</p>
+    </xpath>
+
+    <!-- Image 2 -->
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[2]" position="attributes">
+        <attribute name="style">--grid-item-padding-y: 0px; z-index: 4; grid-area: 1 / 10 / 10 / 13;</attribute>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Caption 2 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="attributes">
+        <attribute name="class" add="g-height-1" remove="g-height-3" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 16px; z-index: 5; grid-area: 10 / 10 / 11 / 13;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="replace" mode="inner">
+        <p>Hospital St Louis</p>
+    </xpath>
+
+    <!-- Image 3 -->
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[3]" position="attributes">
+        <attribute name="style">--grid-item-padding-y: 0px; z-index: 6; grid-area: 18 / 1 / 27 / 4;</attribute>
+    </xpath>
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Caption 3 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[7]" position="attributes">
+        <attribute name="class" add="g-height-1" remove="g-height-3" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 16px; z-index: 7; grid-area: 27 / 1 / 28 / 4;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[7]" position="replace" mode="inner">
+        <p>Hotel Mercurial</p>
+    </xpath>
+
+    <!-- Image 4 -->
+    <xpath expr="(//img)[4]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Caption 4 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[9]" position="attributes">
+        <attribute name="class" add="g-height-1" remove="g-height-3" separator=" "/>
+        <attribute name="style">--grid-item-padding-y: 16px; grid-area: 28 / 6 / 29 / 13; z-index: 9;</attribute>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[9]" position="replace" mode="inner">
+        <p>American Bank</p>
+    </xpath>
+</template>
+
+</odoo>

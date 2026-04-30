@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_image_punchy" inherit_id="website.s_image_punchy" name="Brutalist s_image_punchy">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc1 pb112 pt96" remove="o_cc2 pt64 pb64" separator=" "/>
+    </xpath>
+    <!-- Grid -->
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="data-row-count">14</attribute>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Heading -->
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="class" add="g-col-lg-9 g-height-6 col-lg-9" remove="g-col-lg-7 g-height-5 col-lg-7" separator=" "/>
+        <attribute name="style">grid-area: 9 / 4 / 15 / 13; z-index: 2; --grid-item-padding-x: 32px; --grid-item-padding-y: 0px;</attribute>
+    </xpath>
+    <xpath expr="//h2" position="replace">
+        <h2 style="text-align: end;"><span class="o_rfs text-white" style="font-size: clamp(8px, 1em + 4.4362vw, 400px);">Mid-Century</span><br/><span class="o_rfs" style="font-size: clamp(8px, 1em + 4.4362vw, 400px);">Brutalism</span></h2>
+    </xpath>
+</template>
+
+</odoo>

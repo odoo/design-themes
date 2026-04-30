@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_title" inherit_id="website.s_title" name="Brutalist s_title">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb96 pt128" remove="pt40 pb40" separator=" "/>
+    </xpath>
+    <!-- Heading -->
+    <xpath expr="//h2" position="replace">
+        <h2 class="display-3-fs" style="text-align: end;"><span class="display-2-fs">A camera is only a starting point. What shapes the work is curiosity, patience, and an obsession with the decisive moment.&#160;</span></h2>
+    </xpath>
+</template>
+
+</odoo>

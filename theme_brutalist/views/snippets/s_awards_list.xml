@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_awards_list" inherit_id="website.s_awards_list" name="Brutalist s_awards_list">
+    <!-- Awards -->
+    <xpath expr="(//h2)[1]//span" position="replace" mode="inner">Academy Award 2019</xpath>
+    <xpath expr="(//h2)[2]//span" position="replace" mode="inner">2X Picture of the Year 2022 &amp; 2024</xpath>
+    <xpath expr="(//h2)[3]//span" position="replace" mode="inner">Member of "The Daily Picture" Jury</xpath>
+    <!-- Text -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">Every shot tells a story. Our work has been honored for capturing moments that move, inspire, and endure beyond the frame.</xpath>
+    <!-- Alignment -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="style">text-align: end;</attribute>
+    </xpath>
+</template>
+
+</odoo>
