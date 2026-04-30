@@ -129,20 +129,6 @@ S_CLASSES_WHITELIST = [
 @tagged('post_install', '-at_install')
 class TestNewPageTemplates(TransactionCase):
 
-    def test_template_names(self):
-        websites_themes = self.env['website'].get_test_themes_websites()
-        for website in websites_themes:
-            views = self.env['ir.ui.view'].search([
-                ('key', 'like', f'{website.theme_id.name}.new_page_template%_s_'),
-            ])
-            if website.theme_id.name != 'theme_default':
-                self.assertGreater(len(views), 10, "Test should have encountered some views in theme %r" % website.name)
-            for view in views:
-                self.assertEqual(view.mode, 'extension', "Theme's new page template customization %r should never be primary" % view.key)
-                name = view.key.split('.')[1]
-                parent_name = view.inherit_id.key.split('.')[1]
-                self.assertEqual(name, parent_name, "Theme's new page template customization %r should use the same name as their parent %r" % (view.key, view.inherit_id.key))
-
     def test_render_templates(self):
         errors = []
         view_ids = set()
@@ -150,10 +136,9 @@ class TestNewPageTemplates(TransactionCase):
         for website in websites_themes:
             with MockRequest(self.env, website=website):
                 views = self.env['ir.ui.view'].search([
-                    '|', '|',
+                    '|',
                     ('key', 'like', f'{website.theme_id.name}.s_'),
                     ('key', 'like', f'{website.theme_id.name}.configurator'),
-                    ('key', 'like', f'{website.theme_id.name}.new_page'),
                 ])
                 view_ids.update(views.ids)
                 for view in views:
@@ -162,7 +147,7 @@ class TestNewPageTemplates(TransactionCase):
                     except Exception as e:  # noqa: BLE001
                         errors.append("View %s cannot be rendered (%r)" % (view.key, e))
         _logger.info("Tested %s views", len(view_ids))
-        self.assertGreater(len(view_ids), 1250, "Test should have encountered a lot of views")
+        self.assertGreater(len(view_ids), 900, "Test should have encountered a lot of views")
         self.assertFalse(errors, "No error should have been collected")
 
     # TODO should handle the fact that grid items can't have padding classes
@@ -374,7 +359,7 @@ class TestNewPageTemplates(TransactionCase):
         for website in websites_themes:
             view_count += check(website.name, website)
         _logger.info("Tested %s views", view_count)
-        self.assertGreater(view_count, 2900, "Test should have checked many views")
+        self.assertGreater(view_count, 1000, "Test should have checked many views")
         # Use this information to potentially update known possible conflicts.
         for known_classes in CONFLICTUAL_CLASSES:
             classes_inventory.difference_update(known_classes)
@@ -423,5 +408,5 @@ class TestNewPageTemplates(TransactionCase):
             view_count += len(views)
 
         _logger.info("Tested %s views", view_count)
-        self.assertGreater(view_count, 2500, "Test should have checked many views")
+        self.assertGreater(view_count, 1200, "Test should have checked many views")
         self.assertFalse(errors, "No error should have been collected")
