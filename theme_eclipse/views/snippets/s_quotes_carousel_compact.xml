@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_quotes_carousel_compact" inherit_id="website.s_quotes_carousel_compact">
+    <!-- Carousel -->
+    <xpath expr="//div[hasclass('s_quotes_carousel_compact')]" position="attributes">
+        <attribute name="class" remove="s_carousel_default carousel-dark" add="s_carousel_arrows_hidden" separator=" "/>
+    </xpath>
+    <!-- Slides -->
+    <xpath expr="//div[hasclass('carousel-item')][1]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2 pt40" add="pt96" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-item')][2]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2 pt40" add="pt96" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-item')][3]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2 pt40" add="pt96" separator=" "/>
+    </xpath>
+    <xpath expr="//p[hasclass('s_blockquote_quote')]" position="replace">
+        <h2 class="s_blockquote_quote my-auto">" This company transformed our business.<br/>Their solutions are innovative and reliable. "</h2>
+    </xpath>
+    <xpath expr="//p[hasclass('s_blockquote_quote')]" position="replace">
+        <h2 class="s_blockquote_quote my-auto">" A trusted partner for growth.<br/>Professional, efficient, and always ahead of the curve. "</h2>
+    </xpath>
+    <xpath expr="//p[hasclass('s_blockquote_quote')]" position="replace">
+        <h2 class="s_blockquote_quote my-auto">" Outstanding service and results!<br/>They exceeded our expectations in every project. "</h2>
+    </xpath>
+    <!-- Controllers -->
+    <xpath expr="//div[hasclass('o_horizontal_controllers_row')]" position="attributes">
+        <attribute name="class" remove="flex-row-reverse" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

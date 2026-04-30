@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_key_images" inherit_id="website.s_key_images">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt120 pb112" remove="pt72 pb72" separator=" "/>
+    </xpath>
+    <!-- Caption -->
+    <xpath expr="//div[hasclass('col-6')]/p[3]" position="inside">
+        <br/><br/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-6')]/p[3])[2]" position="inside">
+        <br/><br/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-6')]/p[3])[3]" position="inside">
+        <br/><br/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-6')]/p[3])[4]" position="inside">
+        <br/><br/>
+    </xpath>
+    <!-- Columns -->
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-3" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

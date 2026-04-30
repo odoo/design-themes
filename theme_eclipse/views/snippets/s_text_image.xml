@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Customizations only for the configurator snippet since `s_chart` is not rendered in the snippet modal -->
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt56 pb56" remove="pt80 pb80" separator=" "/>
+    </xpath>
+    <!-- Columns -->
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-5" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
+        <attribute name="class" add="col-lg-5 border pt40 pb40 rounded" remove="col-lg-6 pt16 pb16" separator=" "/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace"/>
+    <!-- Chart -->
+    <xpath expr="//img" position="replace">
+        <div class="s_chart" data-type="doughnut" data-legend-position="none" data-tooltip-display="false" data-stacked="false" data-border-width="2"
+                data-data='{"labels":["First","Second"],"datasets":[{"label":"One","data":["25","75"],"backgroundColor":["o-color-3","o-color-1"],"borderColor":["",""]}]}'>
+            <canvas/>
+        </div>
+        <p><br/></p>
+        <p class="display-4-fs" style="text-align: center;"><strong>75%</strong></p>
+        <p class="o_small-fs text-600" style="text-align: center;">75% of clients have been using the service<br/> for over a decade consistently.</p>
+    </xpath>
+</template>
+
+</odoo>

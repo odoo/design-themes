@@ -1,0 +1,115 @@
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'eclipse',
+
+        'font': 'Inter',
+        'headings-font': 'Stack Sans Headline',
+
+        'body-image': '/theme_eclipse/static/src/img/noise.svg',
+        'body-image-type': 'pattern',
+
+        'btn-padding-y-lg': 0.75rem,
+        'btn-padding-x-lg': 2rem,
+
+        // Header
+        'menu-shadow-class': '',
+
+        // Footer
+        'footer-template': 'descriptive',
+    ),
+);
+
+// Main palette
+$o-color-palettes: map-merge($o-color-palettes, (
+    'eclipse': (
+        'o-color-1': #F5F4F8,
+        'o-color-2': #4E4B55,
+        'o-color-3': #343239,
+        'o-color-4': #121113,
+        'o-color-5': #F5F4F8,
+    )
+));
+
+$eclipse: map-get($o-color-palettes, 'eclipse');
+$eclipse: map-merge($eclipse, ('footer': 1));
+$o-color-palettes: map-merge($o-color-palettes, ('eclipse': $eclipse));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'eclipse');
+
+// Second palette
+$o-color-palettes: map-merge($o-color-palettes, (
+    'eclipse-2': (
+        'o-color-1': #F7F8F8,
+        'o-color-2': #28282c,
+        'o-color-3': #323639,
+        'o-color-4': #08090A,
+        'o-color-5': #F7F8F8,
+    )
+));
+
+$eclipse-2: map-get($o-color-palettes, 'eclipse-2');
+$eclipse-2: map-merge($eclipse-2, ('footer': 1));
+$o-color-palettes: map-merge($o-color-palettes, ('eclipse-2': $eclipse-2));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'eclipse-2');
+
+// Third palette — neon green
+$o-color-palettes: map-merge($o-color-palettes, (
+    'eclipse-3': (
+        'o-color-1': #cffe25,
+        'o-color-2': #141414,
+        'o-color-3': #1A1A1A,
+        'o-color-4': #060606,
+        'o-color-5': #F7F7F7,
+    )
+));
+
+$eclipse-3: map-get($o-color-palettes, 'eclipse-3');
+$eclipse-3: map-merge($eclipse-3, ('footer': 1));
+$o-color-palettes: map-merge($o-color-palettes, ('eclipse-3': $eclipse-3));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'eclipse-3');
+
+// Fourth palette — dark blue
+$o-color-palettes: map-merge($o-color-palettes, (
+    'eclipse-4': (
+        'o-color-1': #0066FF,
+        'o-color-2': #13141A,
+        'o-color-3': #191A21,
+        'o-color-4': #05060B,
+        'o-color-5': #F4F5FC,
+    )
+));
+
+$eclipse-4: map-get($o-color-palettes, 'eclipse-4');
+$eclipse-4: map-merge($eclipse-4, ('footer': 1));
+$o-color-palettes: map-merge($o-color-palettes, ('eclipse-4': $eclipse-4));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'eclipse-4');
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,500,500i',
+    ),
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:400,500,600,700',
+    ),
+    'Stack Sans Headline': (
+        'family': ('Stack Sans Headline', sans-serif),
+        'url': 'Stack+Sans+Headline:400,500',
+    ),
+);

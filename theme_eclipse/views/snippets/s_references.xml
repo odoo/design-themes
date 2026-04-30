@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_references" inherit_id="website.s_references">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt40 pb40" remove="pt80 pb80" separator=" "/>
+    </xpath>
+    <!-- Text -->
+    <xpath expr="//h2" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+</template>
+
+</odoo>
