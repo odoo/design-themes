@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_kickoff ===== -->
+<template id="configurator_s_kickoff" inherit_id="website.configurator_s_kickoff">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="oe_img_bg" remove="parallax s_parallax_is_fixed" separator=" "/>
+        <attribute name="style" add="background-image: url('/web/image/website.s_kickoff_default_image'); background-position: 100% 100%;" separator=";"/>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/06','colors':{'c5':'o-color-3'},'showOnMobile':true}</attribute>
+    </xpath>
+
+    <!-- Refine shape's colors -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="attributes">
+        <attribute name="style">background-image: url('/html_editor/shape/html_builder/Connections/06.svg?c5=o-color-3');</attribute>
+    </xpath>
+
+    <!-- Remove the parallax effect: the background image has been already set in the main <section> tag -->
+    <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
+
+    <!-- Text -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Bloom with Joy:
+    </xpath>
+    <xpath expr="//h1" position="replace" mode="inner">
+        Fresh Flowers Delivered to Your Doorstep!
+    </xpath>
+</template>
+
+<!-- ===== s_key_images ===== -->
+<template id="configurator_s_key_images" inherit_id="website.configurator_s_key_images">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pb96 pt96" remove="pb72 pt72" separator=" "/>
+    </xpath>
+
+    <!-- Texts -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Discover Our Most Loved Arrangements
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Celebrate with Our Best-Selling Bouquets, perfect for every occasion.
+    </xpath>
+
+    <!-- Col 1 -->
+    <xpath expr="//div[hasclass('col-lg-3')]//p" position="attributes">
+        <attribute name="class" add="h4-fs" remove="h1-fs" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="before">
+        <h3 class="h4-fs">Sunset Serenade</h3>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
+        Vibrant hues of orange and red capture the warmth and beauty of a summer evening.
+    </xpath>
+
+    <!-- Col 2 -->
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p" position="attributes">
+        <attribute name="class" add="h4-fs" remove="h1-fs" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="before">
+        <h3 class="h4-fs">Elegant Simplicity</h3>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
+        Minimalist white florals in a sleek vase, embodying sophistication and grace.
+    </xpath>
+
+    <!-- Col 3 -->
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p" position="attributes">
+        <attribute name="class" add="h4-fs" remove="h1-fs" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="before">
+        <h3 class="h4-fs">Petal Poetry</h3>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
+        Light pink blossoms with golden leaves, bringing a touch of springtime charm to any space.
+    </xpath>
+
+    <!-- Col 4 -->
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p" position="attributes">
+        <attribute name="class" add="h4-fs" remove="h1-fs" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="before">
+        <h3 class="h4-fs">Blushing Harmony</h3>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
+        A delicate blend of soft pink roses and baby's breath, perfect for expressing love and gratitude.
+    </xpath>
+</template>
+
+<!-- ===== s_process_steps ===== -->
+<template id="configurator_s_process_steps" inherit_id="website.configurator_s_process_steps">
+    <!-- Section Colors -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc5" separator=" "/>
+    </xpath>
+
+    <!-- Steps 1 -->
+    <xpath expr="//div[hasclass('s_process_step_number')]" position="attributes">
+        <attribute name="class" add="bg-o-color-2" remove="bg-primary-light" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('s_process_step_number')]//h3" position="attributes">
+        <attribute name="class" remove="text-primary" add="text-o-color-5" separator=" "/>
+    </xpath>
+
+    <!-- Steps 2 -->
+    <xpath expr="(//div[hasclass('s_process_step_number')])[2]" position="attributes">
+        <attribute name="class" add="bg-o-color-2" remove="bg-primary-light" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_process_step_number')]//h3)[2]" position="attributes">
+        <attribute name="class" remove="text-primary" add="text-o-color-5" separator=" "/>
+    </xpath>
+
+    <!-- Steps 3 -->
+    <xpath expr="(//div[hasclass('s_process_step_number')])[3]" position="attributes">
+        <attribute name="class" add="bg-o-color-2" remove="bg-primary-light" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_process_step_number')]//h3)[3]" position="attributes">
+        <attribute name="class" remove="text-primary" add="text-o-color-5" separator=" "/>
+    </xpath>
+
+    <!-- Steps 4 -->
+    <xpath expr="(//div[hasclass('s_process_step_number')])[4]" position="attributes">
+        <attribute name="class" add="bg-o-color-2" remove="bg-primary-light" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_process_step_number')]//h3)[4]" position="attributes">
+        <attribute name="class" remove="text-primary" add="text-o-color-5" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ===== s_freegrid ===== -->
+<template id="configurator_s_freegrid" inherit_id="website.configurator_s_freegrid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Blobs/03','colors':{'c2':'o-color-2'},'flip':['x'],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+    </xpath>
+    <!-- Section Shape -->
+    <xpath expr="//section//div" position="before">
+        <div class="o_we_shape o_html_builder_Blobs_03 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder%2FBlobs%2F03.svg?c2=o-color-2&amp;flip=x'); background-position: 50% 0%;"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Bringing the Beauty of Nature to Your Space
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Enhance your surroundings with our exquisite floral arrangements and garden designs. We offer a variety of options that bring the serenity and beauty of nature into your home or workspace.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Explore Our Gardens
+    </xpath>
+</template>
+
+<!-- ===== s_image_text_overlap ===== -->
+<template id="configurator_s_image_text_overlap" inherit_id="website.configurator_s_image_text_overlap">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/16','flip':[],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+        <attribute name="class" add="o_cc3" remove="o_cc2" separator=" "/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Bold_16 o_shape_show_mobile"/>
+    </xpath>
+
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="class" add="o_cc2" remove="o_cc5" separator=" "/>
+    </xpath>
+
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/theme_orchid/static/src/img/snippets/configurator_s_image_text_overlap.webp</attribute>
+        <attribute name="class" add="img-thumbnail" separator=" "/>
+        <attribute name="style" add="padding: 16px" separator=";"/>
+    </xpath>
+
+    <xpath expr="//h2" position="before">
+        <p class="lead">Global 24-Hour Flower Delivery</p>
+    </xpath>
+
+    <xpath expr="//h2" position="replace" mode="inner">
+        Brighten any corner of the globe with our express 24-hour worldwide flower delivery service.
+    </xpath>
+
+    <xpath expr="//p[2]" position="replace"/>
+    <xpath expr="//p[2]" position="replace"/>
+    <xpath expr="//p[2]" position="replace"/>
+</template>
+
+<!-- ===== s_company_team_basic ===== -->
+<template id="configurator_s_company_team_basic" inherit_id="website.configurator_s_company_team_basic">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Meet the Team
+    </xpath>
+    <!-- Person 1 -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Tony Fred, Floral Director
+    </xpath>
+    <xpath expr="//p[2]" position="replace" mode="inner">
+        Tony leads the creative vision for the shop.
+    </xpath>
+    <!-- Person 2 -->
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Mich Stark, Operations Manager
+    </xpath>
+    <xpath expr="(//p[hasclass('o_small-fs')])[2]" position="replace" mode="inner">
+        Mich makes sure everything runs smoothly.
+    </xpath>
+    <!-- Person 3 -->
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Aline Turner, Bouquet Designer
+    </xpath>
+    <xpath expr="(//p[hasclass('o_small-fs')])[3]" position="replace" mode="inner">
+        Aline is the mastermind behind our bespoke floral arrangements.
+    </xpath>
+    <!-- Person 4 -->
+    <xpath expr="(//h3)[4]" position="replace" mode="inner">
+        Iris Joe, Customer Relations
+    </xpath>
+    <xpath expr="(//p[hasclass('o_small-fs')])[4]" position="replace" mode="inner">
+        Iris ensures that each customer has a delightful experience.
+    </xpath>
+</template>
+
+<!-- ===== s_title ===== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5 o_colored_level pt160" remove="pt40" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/14','colors':{'c5':'o-color-3','c1':'o-color-5'},'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Bold_14 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Bold/14.svg?c5=o-color-3&amp;c1=o-color-5'); background-position: 50% 50%;"/>
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" remove="display-3-fs" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our Creations
+    </xpath>
+    <xpath expr="//h2" position="after">
+        <p class="lead" style="text-align: center">Explore our handcrafted floral arrangements, each meticulously designed to convey beauty, elegance, and a touch of nature's artistry.</p>
+    </xpath>
+</template>
+
+<!-- ===== s_references ===== -->
+<template id="configurator_s_references" inherit_id="website.configurator_s_references">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc2 o_colored_level pt136" remove="o_cc1 pt40 pt80" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/14','colors':{'c5':'o-color-5','c1':'o-color-5'},'flip':['x'],'showOnMobile':true}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Bold_14 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Bold/14.svg?c5=o-color-5&amp;c1=o-color-5&amp;flip=x');"></div>
+    </xpath>
+</template>
+
+</odoo>
+

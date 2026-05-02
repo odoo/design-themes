@@ -6,14 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc2" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Discover Your Next Favorite Book
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Explore our vast collection and find your next great read.
-    </xpath>
     <!-- Images -->
     <xpath expr="(//img)[1]" position="attributes">
         <attribute name="src">/web/image/website.s_unveil_bookstore_1</attribute>

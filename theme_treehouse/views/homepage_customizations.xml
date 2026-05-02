@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="configurator_s_sidegrid" inherit_id="website.configurator_s_sidegrid">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Protect <br/>the planet <br/>for future generations
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        <br/>
+        Every step we take towards sustainability is a commitment to preserving nature's beauty and resources, for today and tomorrow.
+    </xpath>
+</template>
+
+<template id="configurator_s_numbers_list" inherit_id="website.configurator_s_numbers_list">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Key milestones in our environmental impact
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        <br/>
+        From carbon footprint reduction to renewable energy adoption and biodiversity preservation, our key milestones reflect our commitment to creating a sustainable future for all.
+    </xpath>
+    <!-- Numbers -->
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        <span class="h2-fs">45%</span><br/>
+        Reduction in carbon emissions
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        <span class="h2-fs">85%</span><br/>
+        Waste diversion rate
+    </xpath>
+    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        <span class="h2-fs">60%</span><br/>
+        Renewable Energy usage
+    </xpath>
+    <xpath expr="(//p)[5]" position="replace" mode="inner">
+        <span class="h2-fs">2 Million</span><br/>
+        Trees Planted
+    </xpath>
+    <xpath expr="(//p)[6]" position="replace" mode="inner">
+        <span class="h2-fs">1.2 Billion</span><br/>
+        Liters of water saved
+    </xpath>
+    <xpath expr="(//p)[7]" position="replace" mode="inner">
+        <span class="h2-fs">500,000</span><br/>
+        Tons of materials recycled
+    </xpath>
+</template>
+
+<template id="configurator_s_color_blocks_2" inherit_id="website.configurator_s_color_blocks_2">
+    <!-- Column #01 -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        A Call for Environmental Protection
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        <br/>
+        Environmental protection is the practice of safeguarding the natural world from harmful human activities and preserving ecosystems for future generations. It involves efforts to reduce pollution, conserve biodiversity, and sustainably manage natural resources such as air, water, and soil.
+        <br/>
+    </xpath>
+</template>
+
+<template id="configurator_s_references" inherit_id="website.configurator_s_references">
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Together, we collaborate with leading organizations committed to protecting the environment and building a greener future.
+    </xpath>
+    <!-- Link -->
+    <xpath expr="//a" position="replace" mode="inner">
+        More details <i class="fa fa-long-arrow-right ms-2"/>
+    </xpath>
+</template>
+
+<template id="configurator_s_freegrid" inherit_id="website.configurator_s_freegrid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Sustainability for a Better Tomorrow
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Join us in our mission to protect the environment and promote sustainable development. We focus on creating a greener future through innovative ecological solutions.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Be Part of the Change
+    </xpath>
+</template>
+
+</odoo>
+

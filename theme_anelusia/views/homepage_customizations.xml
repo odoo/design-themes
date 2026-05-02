@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_splash_intro ===== -->
+<template id="configurator_s_splash_intro" inherit_id="website.configurator_s_splash_intro">
+    <!-- Lead paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace">
+        <p class="lead">Spring Essentials</p>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Discover our<br/>latest collection
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace">
+        <a t-att-href="shop_btn_href" class="o_translate_inline btn btn-lg btn-primary">Shop Now</a>
+    </xpath>
+</template>
+
+<!-- ===== s_bento_grid ===== -->
+<template id="configurator_s_bento_grid" inherit_id="website.configurator_s_bento_grid">
+    <!-- First item -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]/h2" position="replace" mode="inner">
+        Women Fashion
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]/p" position="replace">
+        <p class="lead">Explore elegant and modern styles designed to express your personality.</p>
+        <p>
+            <a class="o_translate_inline btn btn-primary" t-att-href="shop_btn_href">
+                Shop Now
+            </a>
+            <br/>
+        </p>
+    </xpath>
+    <!-- Second item -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="replace" mode="inner">
+        <h2 class="h3-fs" style="text-align: center;">
+            <a t-att-href="shop_btn_href" class="o_translate_inline">See all clothing&#160;<span class="fa fa-long-arrow-right"></span></a>
+        </h2>
+    </xpath>
+    <!-- Third item -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/h2" position="replace" mode="inner">
+        Men Fashion
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]/p" position="replace">
+        <p class="lead">Discover bold and stylish designs crafted for the modern man.</p>
+        <p>
+            <a class="o_translate_inline btn btn-primary" t-att-href="shop_btn_href">
+                Shop Now
+            </a>
+            <br/>
+        </p>
+    </xpath>
+    <!-- Fourth item -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]/blockquote" position="replace">
+        <h2 class="h3-fs">Kids Fashion</h2>
+        <p class="lead">Discover playful and stylish designs crafted for kids.</p>
+        <p>
+            <a class="o_translate_inline btn btn-primary" t-att-href="shop_btn_href">
+                Shop Now
+            </a>
+            <br/>
+        </p>
+    </xpath>
+</template>
+
+<!-- ===== s_ecomm_categories_showcase ===== -->
+<template id="configurator_s_ecomm_categories_showcase" inherit_id="website.configurator_s_ecomm_categories_showcase">
+    <!-- Title -->
+    <xpath expr="//div[hasclass('s_ecomm_categories_showcase_title')]//h2" position="replace" mode="inner">
+        Discover our Winter essentials
+    </xpath>
+    <!-- Block contents -->
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[1]" position="replace" mode="inner">
+        <h2 class="h3-fs">Gilets and Jackets</h2>
+        <p>
+            <a href="#" role="button" class="btn btn-primary o_translate_inline">View All</a>
+        </p>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[2]" position="replace" mode="inner">
+        <h2 class="h3-fs">Beanies and Hats</h2>
+        <p>
+            <a href="#" role="button" class="btn btn-primary o_translate_inline">View All</a>
+        </p>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[3]" position="replace" mode="inner">
+        <h2 class="h3-fs">Boots</h2>
+        <p>
+            <a href="#" role="button" class="btn btn-primary o_translate_inline">View All</a>
+        </p>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_ecomm_categories_showcase_content')])[4]" position="replace" mode="inner">
+        <h2 class="h3-fs">Sweaters and Pullovers</h2>
+        <p>
+            <a href="#" role="button" class="btn btn-primary o_translate_inline">View All</a>
+        </p>
+    </xpath>
+</template>
+
+<!-- ===== s_cta_box ===== -->
+<template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
+    <!-- Card body text content -->
+    <xpath expr="//div[hasclass('card-body')]" position="replace">
+        <div class="card-body">
+            <h2 class="card-title"><span class="display-4-fs">Black Friday Sale Live Now!</span></h2>
+            <p class="card-text">Shop now and get 50% off on all products.</p>
+            <a t-att-href="shop_btn_href" class="o_translate_inline btn btn-lg btn-primary">Shop Now</a>
+        </div>
+    </xpath>
+</template>
+
+</odoo>
+

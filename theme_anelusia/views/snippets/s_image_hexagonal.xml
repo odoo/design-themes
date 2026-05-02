@@ -14,12 +14,6 @@
     <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
         <attribute name="class" remove="o_snippet_mobile_invisible d-none d-lg-block" separator=" "/>
     </xpath>
-    <xpath expr="//h2" position="replace">
-        <h1 class="display-4-fs">Unvail our <br/>Exclusive <br/>Collections</h1>
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        Discover timeless elegance and modern style with our exclusive fashion collections. Elevate your wardrobe with unique pieces crafted to make a statement.
-    </xpath>
     <xpath expr="(//p)[2]" position="replace"/>
 </template>
 

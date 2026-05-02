@@ -18,13 +18,6 @@
     <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
         <attribute name="class" add="pt152 pb128" remove="pt160 pb160" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Emotions <br/>through the colors
-    </xpath>
-    <xpath expr="//h1" position="after">
-        <p><br/></p>
-    </xpath>
     <!-- Button -->
     <xpath expr="//a[hasclass('btn-secondary')]" position="attributes">
         <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>

@@ -6,20 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt72" remove="pt40" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="before">
-        <p>New in Store</p>
-    </xpath>
-    <xpath expr="//h2" position="replace">
-        <h2 class="h3-fs">Creating pieces that resonate with enduring quality,<br/>elegant simplicity, and sustainable innovation.</h2>
-    </xpath>
-</template>
-
-<template id="configurator_s_title" inherit_id="website.configurator_s_title">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0" remove="pb40" separator=" "/>
-    </xpath>
 </template>
 
 </odoo>

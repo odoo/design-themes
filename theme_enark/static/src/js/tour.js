@@ -43,7 +43,7 @@ const snippets = [
 wTourUtils.registerThemeHomepageTour("enark_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"default-light-12"'),
     ...wTourUtils.insertSnippet(snippets[0]),
-    ...wTourUtils.clickOnText(snippets[0], 'h1'),
+    ...wTourUtils.clickOnText(snippets[0], 'p'),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[1]),
     ...wTourUtils.insertSnippet(snippets[2]),

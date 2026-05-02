@@ -4,13 +4,14 @@
     'category': 'Theme/Services',
     'summary': 'Vehicle, Cars, Motorbikes, Bikes, Tires, Transports, Repair, Mechanics, Garages, Sports, Services',
     'sequence': 300,
-    'version': '2.0.0',
+    'version': '2.1.0',
     'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
         'views/images.xml',
         'views/customizations.xml',
+        'views/homepage_customizations.xml',
         'views/new_page_template.xml',
     ],
     'images': [

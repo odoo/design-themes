@@ -14,18 +14,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.library_image_03</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Creativity Meets Cutting-Edge Technology
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Unlock your creative potential with our innovative design and IT services. We offer a blend of creativity and technology that brings your vision to life in new and exciting ways.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Let’s innovate together.
-    </xpath>
 </template>
 
 </odoo>

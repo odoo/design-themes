@@ -14,13 +14,7 @@
     <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
         <attribute name="class" add="offset-lg-2" remove="offset-lg-1" separator=" "/>
     </xpath>
-    <!-- Title & Paragraph -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        <span class="o_text_highlight o_translate_inline o_text_highlight_underline" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-1);">Redefining modern rocks</span>
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        <br/>
-    </xpath>
+    <!-- Paragraph -->
     <xpath expr="//p[2]" position="replace">
         <p>With electrifying performances and a sound that's both raw and innovative, they bring an energy that keeps fans captivated from start to finish.</p>
         <p>Their music isn't just heard—it's felt, combining powerful melodies with deeply relatable lyrics. Each song connects on a personal level, while their unmatched musicianship drives every note forward.</p>

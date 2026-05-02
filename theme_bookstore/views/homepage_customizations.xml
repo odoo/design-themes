@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_banner ===== -->
+<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
+    <!-- Shape option -->
+    <xpath expr="section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/06', 'colors':{'c5':'o-color-3'}, 'flip':[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Connections_06" style="background-image: url('/html_editor/shape/html_builder/Connections/06.svg?c5=o-color-3')"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Adventure awaits at the Bookstore
+    </xpath>
+    <!-- Text -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Discover an extensive collection of books, from bestsellers to hidden gems, curated to ignite your imagination and inspire reading.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Come Visit Us <i class="fa fa-angle-right"/>
+    </xpath>
+    <!-- Blockquote -->
+    <xpath expr="//blockquote/p" position="replace" mode="inner">
+        "I've never found a bookstore with such variety and charm. Every visit feels like uncovering a hidden treasure!"
+    </xpath>
+    <xpath expr="//blockquote//span/span" position="replace" mode="inner">
+        Sci-fi Enthusiast
+    </xpath>
+</template>
+
+<!-- ===== s_key_images ===== -->
+<template id="configurator_s_key_images" inherit_id="website.configurator_s_key_images">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our bestsellers of the moment
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Finely hand-picked by our most avid readers
+    </xpath>
+    <!-- Item 1 -->
+    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace">
+        <h3 class="h5-fs">Boundless</h3>
+        <p class="text-muted">by <em>Frantzou Fleurine</em></p>
+    </xpath>
+    <!-- Item 2 -->
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace">
+        <h3 class="h5-fs">Romans</h3>
+        <p class="text-muted">by <em>Steve Backwood</em></p>
+    </xpath>
+    <!-- Item 3 -->
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace">
+        <h3 class="h5-fs">101 Essays That Will Change the Way You Think</h3>
+        <p class="text-muted">by <em>Brianna Wiest</em></p>
+    </xpath>
+    <!-- Item 4 -->
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace">
+        <h3 class="h5-fs">What I Didn't Post On Instagram</h3>
+        <p class="text-muted">by <em>Chrissy Stockton</em></p>
+    </xpath>
+</template>
+
+<!-- ===== s_title ===== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <!-- Shape option -->
+    <xpath expr="section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/05','colors':{'c5':'o-color-4'},'flip':[]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Connections_05" style="background-image: url('/html_editor/shape/html_builder/Connections/05.svg?c5=o-color-4');"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace">
+        <h2 class="display-3-fs">The most beautiful things in the world cannot be seen or touched, they are felt with the heart.</h2>
+        <p>— Antoine de Saint-Exupéry</p>
+    </xpath>
+</template>
+
+<!-- ===== s_accordion_image ===== -->
+<template id="configurator_s_accordion_image" inherit_id="website.configurator_s_accordion_image">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Frequently Asked Questions
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Find quick answers to common questions about our books, services and policies.
+    </xpath>
+</template>
+
+<!-- ===== s_cta_box ===== -->
+<template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
+    <!-- Shape option -->
+    <xpath expr="section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/20', 'colors':{'c5':'o-color-4'},'flip':['y']}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Connections_20" style="background-image: url('/html_editor/shape/html_builder/Connections/20.svg?c5=o-color-4&amp;flip=y'); background-position: 50% 0%;"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace">
+        <h2 class="card-title h1-fs">Discover new reads,<br/> shop our bestsellers today!</h2>
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Uncover hidden gems, indulge in literary adventures now<br/><br/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace">
+        <a t-att-href="cta_btn_href" class="btn btn-lg btn-secondary">Start Now<i class="fa fa-angle-right ms-2" role="img"/></a>
+    </xpath>
+</template>
+
+</odoo>
+

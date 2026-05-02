@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_striped_center_top ===== -->
+<template id="configurator_s_striped_center_top" inherit_id="website.configurator_s_striped_center_top">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Shaping Tomorrow's <br/>Game Changers
+    </xpath>
+    <xpath expr="//h1" position="attributes">
+        <attribute name="class" add="display-3-fs" separator=" "/>
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Empower young minds with quality education and engaging learning experiences that nurture creativity, play, and academic excellence.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Enroll Today
+    </xpath>
+    <!-- Figcaption -->
+    <xpath expr="//figcaption" position="replace" mode="inner">
+        Where tradition meets innovation – a legacy of excellence in education.
+    </xpath>
+</template>
+
+<!-- ===== s_title ===== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Empower young minds
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" remove="display-3-fs" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ===== s_color_blocks_2 ===== -->
+<template id="configurator_s_color_blocks_2" inherit_id="website.configurator_s_color_blocks_2">
+    <!-- Left column - Title -->
+    <xpath expr="//div[hasclass('col-lg-6')]//h2" position="replace" mode="inner">
+        Programmes
+    </xpath>
+    <!-- Left column - Text -->
+    <xpath expr="//div[hasclass('col-lg-6')]//p" position="replace" mode="inner">
+        <br/>
+        Are you searching for a school where cutting-edge programmes are taught, in a continually evolving environment and located in the heart of a dynamic city? You have just found it!
+        <br/>
+        <br/>
+    </xpath>
+    <!-- Right column - Title -->
+    <xpath expr="//div[hasclass('col-lg-6')][2]//h2" position="replace" mode="inner">
+        The campus
+    </xpath>
+    <!-- Right column - Text -->
+    <xpath expr="//div[hasclass('col-lg-6')][2]//p" position="replace" mode="inner">
+        <br/>
+        The small and modern campus is only a 10-minute walk away from the city centre and is easily accessible by car and public transport. It is also close to the train stations.
+        <br/>
+        <br/>
+    </xpath>
+</template>
+
+<!-- ===== s_company_team_shapes ===== -->
+<template id="configurator_s_company_team_shapes" inherit_id="website.configurator_s_company_team_shapes">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/15", "colors":{"c5": "o-color-4"}}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_container_small')]" position="before">
+        <div class="o_we_shape o_html_builder_Bold_15" style="background-image: url('/html_editor/shape/html_builder/Bold/15.svg?c5=o-color-4');"/>
+    </xpath>
+</template>
+
+</odoo>
+

@@ -10,27 +10,6 @@
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Floats_12"/>
     </xpath>
-    <!-- Column #01 -->
-    <xpath expr="//div[hasclass('row')]/div[1]/div/h3" position="replace" mode="inner">
-        Intuitive
-    </xpath>
-    <xpath expr="//div[hasclass('row')]/div[1]/div/p" position="replace" mode="inner">
-        We create easy-to-use products.
-    </xpath>
-    <!-- Column #02 -->
-    <xpath expr="//div[hasclass('row')]/div[2]/div/h3" position="replace" mode="inner">
-        Adaptable
-    </xpath>
-    <xpath expr="//div[hasclass('row')]/div[2]/div/p" position="replace" mode="inner">
-        We build modular solutions.
-    </xpath>
-    <!-- Column #03 -->
-    <xpath expr="//div[hasclass('row')]/div[3]/div/h3" position="replace" mode="inner">
-        Durable
-    </xpath>
-    <xpath expr="//div[hasclass('row')]/div[3]/div/p" position="replace" mode="inner">
-        We craft long-lasting goods.
-    </xpath>
 </template>
 
 </odoo>

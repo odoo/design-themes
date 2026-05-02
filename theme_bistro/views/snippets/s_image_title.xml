@@ -16,14 +16,6 @@
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
         <attribute name="class" add="bg-black-25" remove="bg-black-50" separator=" "/>
     </xpath>
-
-    <!-- Texts -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        A Deep Dive into Flavor and Innovation
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Transform your dining experience with our new menu, where classic dishes meet modern creativity. Elevate your palate with flavors that blend tradition and innovation seamlessly.
-    </xpath>
 </template>
 
 </odoo>

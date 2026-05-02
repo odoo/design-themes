@@ -13,12 +13,6 @@
     <xpath expr="//h1" position="replace">
         <h1 style="text-align: center;">The New KORAN X</h1>
     </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        Take it all. Compliments too. <br/><br/>
-    </xpath>
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Start the engine
-    </xpath>
     <xpath expr="(//a[hasclass('btn')])[2]" position="replace"/>
 </template>
 
@@ -31,10 +25,6 @@
 
 <!-- ======== FRAMED INTRO ======== -->
 <template id="s_framed_intro" inherit_id="website.s_framed_intro">
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Drive Your Dream: Quality Cars for Every Journey
-    </xpath>
     <!-- Image -->
     <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc2" separator=" "/>
@@ -75,15 +65,6 @@
     <xpath expr="//h2" position="before">
         <h4 class="text-o-color-1"><b>The world is yours</b></h4>
     </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        No compromise
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        Performance and design were the key words during the conception of this super car. No compromises were made to keep the pleasure of driving despite those constraints.
-    </xpath>
-    <xpath expr="//p[2]" position="replace" mode="inner">
-        Take advantage of a free track trial to discover it.
-    </xpath>
 </template>
 
 <!-- ======== IMAGE - TEXT ======== -->
@@ -101,9 +82,6 @@
     <xpath expr="//h2" position="before">
         <h4 class="text-o-color-1"><b>A greener lifestyle</b></h4>
     </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Electric Driving
-    </xpath>
 </template>
 
 <!-- ======== IMAGE HEXAGONAL ======== -->
@@ -111,31 +89,6 @@
     <!-- Title -->
     <xpath expr="(//img)[2]" position="attributes">
         <attribute name="src">/web/image/website.s_cover_default_image</attribute>
-    </xpath>
-</template>
-
-<!-- ======== FEATURES WALL ======== -->
-<template id="s_features_wall" inherit_id="website.s_features_wall">
-    <!-- Card 1 -->
-    <xpath expr="//div[hasclass('g-col-lg-3')]//h3" position="replace" mode="inner">
-        Wide Vehicle Selection
-    </xpath>
-    <xpath expr="//div[hasclass('g-col-lg-3')]//p" position="replace" mode="inner">
-        Explore our extensive inventory of new and pre-owned cars to find the perfect vehicle that fits your needs and budget.
-    </xpath>
-    <!-- Card 2 -->
-    <xpath expr="//div[hasclass('g-col-lg-3')][4]//h3" position="replace" mode="inner">
-        Flexible Financing Options
-    </xpath>
-    <xpath expr="//div[hasclass('g-col-lg-3')][4]//p" position="replace" mode="inner">
-        Benefit from competitive financing plans and leasing options designed to make your car purchase as affordable as possible.
-    </xpath>
-    <!-- Card 3 -->
-    <xpath expr="//div[hasclass('g-col-lg-3')][6]//h3" position="replace" mode="inner">
-        Expert Vehicle Service
-    </xpath>
-    <xpath expr="//div[hasclass('g-col-lg-3')][6]//p" position="replace" mode="inner">
-        Keep your car in top condition with our comprehensive service and maintenance options, handled by skilled technicians.
     </xpath>
 </template>
 
@@ -163,9 +116,6 @@
 <template id="s_references" inherit_id="website.s_references" name="Vehicle s_references">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt120 pb112" remove="pt80 pb80" separator=" "/>
-    </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Our Partners
     </xpath>
     <xpath expr="//p" position="replace"/>
 </template>
@@ -205,21 +155,9 @@
     <xpath expr="//div[hasclass('card')]" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc4" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-       The best car dealer<br/>in your local area
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Looking for a leasing plan or a brand new car ? We got you covered<br/><br/>
-    </xpath>
     <!-- Image -->
     <xpath expr="//img" position="attributes">
         <attribute name="src">/theme_vehicle/static/src/img/content/content_img_02.webp</attribute>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
-        Contact us
     </xpath>
 </template>
 
@@ -237,17 +175,10 @@
     <xpath expr="//h2" position="replace">
         <h2 class="text-center">View the all-new KORAN in 3D wherever you are</h2>
     </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Bring the KORAN to life on your smartphone or tablet so you can visualise it for yourself
-    </xpath>
     <!-- Image + Shape -->
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_picture_default_image</attribute>
         <attribute name="data-file-name">01.svg</attribute>
-    </xpath>
-    <xpath expr="//figcaption" position="replace" mode="inner">
-        <span class="text-o-color-3">Our uniquely designed LED headlights are not only gorgeous but powerfully light your way.</span>
     </xpath>
     <!-- Filter -->
     <xpath expr="//div[hasclass('container')]" position="before">
@@ -272,65 +203,12 @@
     </xpath>
 </template>
 
-<!-- ======== THREE COLUMNS ======== -->
-<template id="s_three_columns" inherit_id="website.s_three_columns">
-    <!-- Column 1 -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Koran Mini
-    </xpath>
-        <xpath expr="//p[hasclass('card-text')]" position="replace" mode="inner">
-        Unleashing power with elegance, the Koran Mini blends advanced engineering with classic design, delivering a thrilling ride that’s both swift and smooth.
-    </xpath>
-    <!-- Column 2 -->
-    <xpath expr="(//h2)[2]" position="replace" mode="inner">
-        Koran X
-    </xpath>
-        <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
-        A bold statement in every detail, the Koran X captures the spirit of modern adventure. Built for those who refuse to compromise on performance and style.
-    </xpath>
-    <!-- Column 3 -->
-    <xpath expr="(//h2)[3]" position="replace" mode="inner">
-        Koran GT
-    </xpath>
-        <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
-        Designed for the thrill-seeker, the Koran GT brings race-inspired performance to the streets. Precision-tuned for speed, it promises an driving experience.
-    </xpath>
-</template>
-
-<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt0 pb64" remove="pt32 pb32" separator=" "/>
-    </xpath>
-    <!-- Column 1 -->
-    <xpath expr="//p[hasclass('card-text')]" position="after">
-        <p><a href="#" class="btn btn-primary mb-0 o_cc o_cc4 o_translate_inline">Configure</a></p>
-    </xpath>
-    <xpath expr="//p[hasclass('card-text')]" position="after">
-        <span class="d-inline-block mb-4"><b>From $14,000</b></span>
-    </xpath>
-    <!-- Column 2 -->
-    <xpath expr="(//p[hasclass('card-text')])[2]" position="after">
-        <p><a href="#" class="btn btn-primary mb-0 o_cc o_cc4 o_translate_inline">Configure</a></p>
-    </xpath>
-    <xpath expr="(//p[hasclass('card-text')])[2]" position="after">
-        <span class="d-inline-block mb-4"><b>From $19,000</b></span>
-    </xpath>
-    <!-- Column 3 -->
-    <xpath expr="(//p[hasclass('card-text')])[3]" position="after">
-        <p><a href="#" class="btn btn-primary mb-0 o_cc o_cc4 o_translate_inline">Configure</a></p>
-    </xpath>
-    <xpath expr="(//p[hasclass('card-text')])[3]" position="after">
-        <span class="d-inline-block mb-4"><b>From $25,000</b></span>
-    </xpath>
-</template>
-
 <!-- ======== FEATURES ======== -->
 <template id="s_features" inherit_id="website.s_features">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc1" remove="pt64 pb64" separator=" "/>
     </xpath>
     <!-- Left block -->
-    <!-- Icon -->
     <xpath expr="//i" position="attributes">
         <attribute name="class" add="fa-automobile" remove="fa-paper-plane-o" separator=" "/>
     </xpath>
@@ -339,7 +217,6 @@
         Top Speed
     </xpath>
     <!-- Center block -->
-    <!-- Icon -->
     <xpath expr="(//i)[2]" position="attributes">
         <attribute name="class" add="fa-battery-full" remove="fa-credit-card" separator=" "/>
     </xpath>
@@ -348,7 +225,6 @@
         Long Range
     </xpath>
     <!-- Right block -->
-    <!-- Icon -->
     <xpath expr="(//i)[3]" position="attributes">
         <attribute name="class" add="fa-cog" remove="fa-flag-o" separator=" "/>
     </xpath>
@@ -363,14 +239,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc1" separator=" "/>
     </xpath>
-    <!-- Left Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Your advantages
-    </xpath>
-    <!-- Right Title -->
-    <xpath expr="(//h2)[2]" position="replace" mode="inner">
-        Our web store
-    </xpath>
     <!-- Item #1 -->
     <xpath expr="//i" position="attributes">
         <attribute name="class" add="text-o-color-1" separator=" "/>
@@ -379,7 +247,7 @@
     <xpath expr="(//i)[2]" position="attributes">
         <attribute name="class" add="text-o-color-1" separator=" "/>
     </xpath>
-        <!-- Item #3 -->
+    <!-- Item #3 -->
     <xpath expr="(//i)[3]" position="attributes">
         <attribute name="class" add="text-o-color-1" separator=" "/>
     </xpath>
@@ -394,28 +262,6 @@
     <!-- Item #6 -->
     <xpath expr="(//i)[6]" position="attributes">
         <attribute name="class" add="text-o-color-1" separator=" "/>
-    </xpath>
-</template>
-
-<!-- ======== PRODUCT LIST ======== -->
-<template id="s_product_list" inherit_id="website.s_product_list">
-    <xpath expr="//div[hasclass('col-lg-2')]//h3" position="replace" mode="inner">
-        Brakes #1
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-2')][2]//h3" position="replace" mode="inner">
-        Brakes #2
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-2')][3]//h3" position="replace" mode="inner">
-        Brakes #3
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-2')][4]//h3" position="replace"  mode="inner">
-        Brakes #4
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-2')][5]//h3" position="replace"  mode="inner">
-        Brakes #5
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-2')][6]//h3" position="replace"  mode="inner">
-        Brakes #6
     </xpath>
 </template>
 
@@ -441,22 +287,6 @@
     </xpath>
 </template>
 
-<!-- ======== FREE GRID ======== -->
-<template id="s_freegrid" inherit_id="website.s_freegrid">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Reliable Vehicle Services and Maintenance
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Keep your vehicle in top condition with our comprehensive repair and maintenance services. From cars to motorbikes, we offer expert solutions to ensure safe and smooth rides.
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a" position="replace" mode="inner">
-        Book a Service
-    </xpath>
-</template>
-
 <!-- ==== MOTTO ===== -->
 <template id="s_motto" inherit_id="website.s_motto">
     <!-- Section -->
@@ -470,54 +300,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc2" separator=" "/>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Drive your Passion
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Explore our exceptional range of cars designed for performance and luxury.
-    </xpath>
-</template>
-
-<!-- ======== QUADRANT ======== -->
-<template id="s_quadrant" inherit_id="website.s_quadrant">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Vehicle Services
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Keep your vehicle in top condition with our expert repair and maintenance services. From cars to motorbikes, we’ve got you covered.<br/><br/> Drive with confidence and style.
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Book a Service
-    </xpath>
-</template>
-
-<!-- ======== KEY BENEFITS ======== -->
-<template id="s_key_benefits" inherit_id="website.s_key_benefits">
-    <!-- Titles -->
-    <xpath expr="(//h3)[1]" position="replace" mode="inner">
-        Custom Vehicle Options
-    </xpath>
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        Comprehensive Support
-    </xpath>
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
-        Exclusive Features
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//div[hasclass('col-lg-4')][1]/p" position="replace" mode="inner">
-        We offer personalized vehicle configurations to match your preferences and needs, ensuring you get the perfect fit for your lifestyle.
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
-        Our team provides full support throughout your vehicle purchase and ownership experience, from initial consultation to ongoing service.
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-4')][3]/p" position="replace" mode="inner">
-        Discover unique and advanced features that set our vehicles apart, providing you with exceptional performance and cutting-edge technology.
     </xpath>
 </template>
 
@@ -540,24 +322,6 @@
         <attribute name="class" add="g-height-3" remove="g-height-2" separator=" "/>
         <attribute name="style" add="grid-area: 6 / 7 / 9 / 11;" remove="grid-area: 7 / 7 / 9 / 11;" separator=";"/>
     </xpath>
-    <xpath expr="//h1" position="replace" mode="inner">
-        Driving excellence with luxury vehicles
-    </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Premium automotive services
-    </xpath>
-    <xpath expr="(//h2)[2]" position="replace" mode="inner">
-        Experience top-tier luxury
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Discover unparalleled automotive care with our expert services that blend precision, luxury, and exceptional performance.
-    </xpath>
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Elevate your driving experience with our bespoke maintenance and repair solutions.
-    </xpath>
-    <xpath expr="(//p[hasclass('lead')])[3]" position="replace" mode="inner">
-        Explore more and find premium services for your luxury vehicle, crafted to ensure unrivaled quality and customer satisfaction.
-    </xpath>
 </template>
 
 <!-- ======== PRICELIST BOXED ======== -->
@@ -566,106 +330,12 @@
     <xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
         <attribute name="class" remove="rounded" separator=" "/>
     </xpath>
-
-    <!-- Texts -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Our Luxury Vehicle Services
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Discover our exclusive range of services for luxury vehicles, designed to provide unparalleled quality and sophistication. Experience excellence on every drive.
-    </xpath>
-    <xpath expr="//h3" position="replace" mode="inner">
-        ✽&#160;&#160;Maintenance &amp; Care
-    </xpath>
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        ✽&#160;&#160;Customization &amp; Upgrades
-    </xpath>
-    <xpath expr="//t[@t-set='name']" position="replace" mode="inner">
-        Premium Detailing Package
-    </xpath>
-    <xpath expr="//t[@t-set='price']" position="replace" mode="inner">
-        $450.00
-    </xpath>
-    <xpath expr="//t[@t-set='description']" position="replace" mode="inner">
-        Comprehensive detailing service including exterior polishing, interior cleaning, and protective coatings for a showroom finish.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[2]" position="replace" mode="inner">
-        Full-Service Maintenance
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[2]" position="replace" mode="inner">
-        $800.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[2]" position="replace" mode="inner">
-        Complete maintenance service covering engine check, transmission fluid change, brake inspection, and system diagnostics for optimal performance.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[3]" position="replace" mode="inner">
-        Luxury Vehicle Servicing
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[3]" position="replace" mode="inner">
-        $1,200.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[3]" position="replace" mode="inner">
-        Specialized servicing tailored for high-end vehicles, including advanced diagnostics, custom parts, and manufacturer-recommended procedures.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[4]" position="replace" mode="inner">
-        Custom Interior Upgrades
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[4]" position="replace" mode="inner">
-        $2,500.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[4]" position="replace" mode="inner">
-        Tailored interior enhancements including premium leather upholstery, bespoke trims, and advanced infotainment systems for a unique driving experience.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[5]" position="replace" mode="inner">
-        High-Performance Tuning
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[5]" position="replace" mode="inner">
-        $3,000.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[5]" position="replace" mode="inner">
-        Performance tuning service including engine optimization, suspension upgrades, and exhaust modifications to enhance driving dynamics and power.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[6]" position="replace" mode="inner">
-        Exclusive Exterior Customization
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[6]" position="replace" mode="inner">
-        $4,000.00
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[6]" position="replace" mode="inner">
-        Personalized exterior modifications such as custom paint jobs, aerodynamic enhancements, and bespoke alloy wheels to reflect your style.
-    </xpath>
-</template>
-
-<!-- ======== STRIPED CENTER TOP ======== -->
-<template id="s_striped_center_top" inherit_id="website.s_striped_center_top">
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Drive with Confidence and Style
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Keep your vehicles running smoothly with our expert repair and maintenance services, designed for performance and reliability.
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Book a Service
-    </xpath>
-    <!-- Figcaption -->
-    <xpath expr="//figcaption" position="replace" mode="inner">
-        Precision in every detail
-    </xpath>
 </template>
 
 <!-- ======== IMAGE TITLE ======== -->
 <template id="s_image_title" inherit_id="website.s_image_title">
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
         <attribute name="class" add="bg-black-75" remove="bg-black-50" separator=" "/>
-    </xpath>
-    <xpath expr="//h1" position="replace" mode="inner">
-        A Deep Dive into Luxury and Innovation
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Transform your driving experience with our exclusive collection, where opulence meets cutting-edge technology. Elevate your journey with vehicles that blend sophistication and performance seamlessly.
     </xpath>
     <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes" mode="inner">
         <attribute name="style" add="--grid-item-padding-y: 12px;" remove="--grid-item-padding-y: 24px;" separator=";"/>
@@ -677,34 +347,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pb0" remove="pb72" separator=" "/>
     </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        Discover Excellence in Luxury Vehicle Care
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Premium Services for Your High-End Automotive Needs
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
-        State-of-the-art facilities for superior maintenance
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
-        Expert technicians specializing in luxury and exotic vehicles
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
-        Personalized service to ensure your vehicle's optimal performance
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
-        Trust us to keep your luxury vehicle in pristine condition
-    </xpath>
-</template>
-
-<!-- ======== IMAGES MOSAIC ======== -->
-<template id="s_images_mosaic" inherit_id="website.s_images_mosaic">
-    <xpath expr="//h2" position="replace" mode="inner">
-        Our Luxury Vehicle Services
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        Explore premium maintenance and bespoke care for your high-end car.
-    </xpath>
 </template>
 
 <!-- ======== BIG NUMBER ======== -->
@@ -713,20 +355,9 @@
     <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/01_001","colors":{"c5":"o-color-1"}}</attribute>
     </xpath>
-
     <!-- Shape -->
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
         <div class="o_we_shape o_html_builder_Bold_01_001" style="background-image: url('/html_editor/shape/html_builder/Bold/01_001.svg?c5=o-color-1');"/>
-    </xpath>
-
-    <!-- Text -->
-    <xpath expr="//h2/span" position="replace" mode="inner">
-        <font class="text-gradient" style="background-image: linear-gradient(0deg, var(--o-color-5) 0%, var(--o-color-4) 90%);">
-            87%
-        </font>
-    </xpath>
-    <xpath expr="//p/span" position="replace" mode="inner">
-        customer satisfaction
     </xpath>
 </template>
 
@@ -748,18 +379,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.library_image_05</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Reliable Vehicle Services &amp; Repairs
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Keep your vehicle in top condition with our comprehensive repair and maintenance services. From cars to motorbikes, we offer expert solutions to ensure safe and smooth rides.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Drive with confidence.
-    </xpath>
 </template>
 
 <!-- ===== WAVY GRID ======== -->
@@ -769,71 +388,6 @@
         <attribute name="data-oe-shape-data"/>
     </xpath>
     <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
-
-    <!-- Texts -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        What we offer to our clients
-    </xpath>
-    <xpath expr="//h3" position="replace" mode="inner">
-        Bespoke Automotive Solutions
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        We provide tailored luxury vehicles designed to meet your specific preferences.
-    </xpath>
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        Sustainable Luxury
-    </xpath>
-    <xpath expr="(//p)[2]" position="replace" mode="inner">
-        Your satisfaction and environmental impact are our priorities.
-    </xpath>
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
-        Excellence and Craftsmanship
-    </xpath>
-    <xpath expr="(//p)[3]" position="replace" mode="inner">
-        With extensive experience and superior craftsmanship, we provide high-end vehicles that deliver unmatched performance and style, ensuring a luxurious driving experience.
-    </xpath>
-    <xpath expr="(//h3)[4]" position="replace" mode="inner">
-        Innovation and Performance
-    </xpath>
-    <xpath expr="(//p)[4]" position="replace" mode="inner">
-        We offer the latest advancements in automotive technology and design. Leveraging cutting-edge features, we ensure every vehicle provides exceptional performance and sophistication.
-    </xpath>
-</template>
-
-<!-- ======== CARDS GRID ======== -->
-<template id="s_cards_grid" inherit_id="website.s_cards_grid">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Unleash the Power of Our Sports Cars
-    </xpath>
-    <!-- Card 1 -->
-    <xpath expr="(//h3)[1]" position="replace" mode="inner">
-        High-Performance Engine
-    </xpath>
-    <xpath expr="(//p)[1]" position="replace" mode="inner">
-        Experience thrilling acceleration and top speeds with our sports car’s high-performance engine, designed for an exhilarating driving experience on both the track and the road.
-    </xpath>
-    <!-- Card 2 -->
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        Sporty Interior
-    </xpath>
-    <xpath expr="(//p)[2]" position="replace" mode="inner">
-        Immerse yourself in a driver-focused cockpit with sport seats, intuitive controls, and premium materials, all crafted to enhance your driving pleasure and comfort.
-    </xpath>
-    <!-- Card 3 -->
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
-        Precision Handling
-    </xpath>
-    <xpath expr="(//p)[3]" position="replace" mode="inner">
-        Enjoy exceptional control and responsiveness with advanced suspension systems and precise steering, offering unmatched agility and cornering capabilities.
-    </xpath>
-    <!-- Card 4 -->
-    <xpath expr="(//h3)[4]" position="replace" mode="inner">
-        Aerodynamic Design
-    </xpath>
-    <xpath expr="(//p)[4]" position="replace" mode="inner">
-        Achieve optimal performance with a sleek, aerodynamic design that reduces drag and enhances stability, ensuring superior speed and efficiency.
-    </xpath>
 </template>
 
 <!-- ===== QUOTES MINIMAL ======== -->
@@ -844,17 +398,6 @@
     </xpath>
     <xpath expr="//div[hasclass('carousel-inner')]" position="before">
         <div class="o_we_shape o_html_builder_Bold_26" style="background-image: url('/html_editor/shape/html_builder/Bold/26.svg?c5=o-color-3');"/>
-    </xpath>
-
-    <!-- Texts -->
-    <xpath expr="//p[hasclass('s_blockquote_quote')]" position="replace" mode="inner">
-        " Their service is exceptional. <br/>Premium care, top-notch quality, and unparalleled attention to detail. "
-    </xpath>
-    <xpath expr="(//p[hasclass('s_blockquote_quote')])[2]" position="replace" mode="inner">
-        " A premier choice for luxury cars. <br/>Expert maintenance, exquisite service, and utmost professionalism. "
-    </xpath>
-    <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
-        " Outstanding service and craftsmanship! <br/>They ensure every luxury vehicle is in perfect condition. "
     </xpath>
 </template>
 
@@ -873,49 +416,12 @@
         <i class="fa fa-fw fa-info-circle o_not-animable" role="img"/> Top-rated vehicles&#160;
         <a href="#">Browse our inventory&#160;<i class="fa fa-long-arrow-right" role="img"/></a>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-       Find your perfect ride<br/>with premium car sales
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        <br/>Offering a wide selection of quality cars to suit every need and budget.<br/><br/>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')][1]" position="replace" mode="inner">
-        Our cars
-    </xpath>
-    <!-- Second Button -->
-    <xpath expr="//a[hasclass('btn')][2]" position="replace" mode="inner">
-        Book a test drive
-    </xpath>
 </template>
 
 <!-- ======== NUMBERS CHARTS ======== -->
 <template id="s_numbers_charts" inherit_id="website.s_numbers_charts" name="Vehicle s_numbers_charts">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt88 pb88" remove="pt48 pb48" separator=" "/>
-    </xpath>
-    <xpath expr="//div[hasclass('o_grid_item')]//h2" position="replace" mode="inner">
-        Key Metrics of our Achievements
-    </xpath>
-    <xpath expr="//div[hasclass('o_grid_item')]//p" position="replace" mode="inner">
-        Our commitment to innovation, performance, and sustainability drives us forward, enabling us to deliver excellence across all categories of the automotive industry.
-    </xpath>
-    <xpath expr="(//div[hasclass('o_grid_item')])[2]//p" position="replace" mode="inner">
-        $ 2.4B
-    </xpath>
-    <xpath expr="(//div[hasclass('o_grid_item')])[2]//p[2]" position="replace" mode="inner">
-        Clients saved $2.4 billion by choosing our eco-efficient and cost-effective vehicles.
-    </xpath>
-    <xpath expr="(//div[hasclass('o_grid_item')])[3]//p" position="replace" mode="inner">
-        +300,000
-    </xpath>
-    <xpath expr="(//div[hasclass('o_grid_item')])[3]//p[2]" position="replace" mode="inner">
-        We proudly serve over 300,000 satisfied customers.
-    </xpath>
-    <xpath expr="(//div[hasclass('o_grid_item')])[4]//p[3]" position="replace" mode="inner">
-        75% of our clients choose to upgrade to the latest models every 3 years, showcasing strong brand loyalty and trust.
     </xpath>
 </template>
 
@@ -945,13 +451,6 @@
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
-    </xpath>
-    <!-- Left column -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Drive away in<br/>your dream car
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        <br/>Discover our wide range of vehicles tailored to your lifestyle. As your trusted car dealer, we offer personalized service and competitive pricing to help you find the perfect car. Whether you want a sedan, SUV, or truck, we make your car-buying experience easy and satisfying.<br/><br/>
     </xpath>
 </template>
 
