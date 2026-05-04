@@ -67,10 +67,8 @@ CONFLICTUAL_CLASSES_RE = {
     re.compile(r'^(p(y|t)-?\d+|padding-.+)$'): [],
     # p0+pb32 appears in Bewise and Graphene
     re.compile(r'^(p(y|b)?-?\d+|padding-.+)$'): ['p0'],
-    # Font awesome
-    re.compile(r'^fa-\dx$'): [],
-    # Whitelist workaround for s_social_media inner snippet Layout: None
-    re.compile(r'^fa-...+'): ['fa-stack'],
+    # Oi icons
+    re.compile(r'^oi-\dx$'): [],
     # Rounded
     re.compile(r'^rounded-.+'): [],
     # Shadow

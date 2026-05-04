@@ -8,13 +8,16 @@
     </xpath>
     <!-- Icons -->
     <xpath expr="(//i)[1]" position="attributes">
-        <attribute name="class" add="fa-leaf mb-4 rounded-circle" remove="fa-paper-plane-o mb-3 rounded" separator=" "/>
+        <attribute name="class" add="mb-4 rounded-circle" remove="mb-3 rounded" separator=" "/>
+        <attribute name="data-icon" add="eco" remove="send" separator=" "/>
     </xpath>
     <xpath expr="(//i)[2]" position="attributes">
-        <attribute name="class" add="fa-flash mb-4 rounded-circle" remove="fa-credit-card mb-3 rounded" separator=" "/>
+        <attribute name="class" add="mb-4 rounded-circle" remove="mb-3 rounded" separator=" "/>
+        <attribute name="data-icon" add="flash_on" remove="credit_card" separator=" "/>
     </xpath>
     <xpath expr="(//i)[3]" position="attributes">
-        <attribute name="class" add="fa-tint mb-4 rounded-circle" remove="fa-flag-o mb-3 rounded" separator=" "/>
+        <attribute name="class" add="mb-4 rounded-circle" remove="mb-3 rounded" separator=" "/>
+        <attribute name="data-icon" add="water_drop" remove="flag" separator=" "/>
     </xpath>
 </template>
 
