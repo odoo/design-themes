@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_masonry_block" inherit_id="website.s_masonry_block">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt104 pb104" remove="pt48 pb48" separator=" "/>
+    </xpath>
+</template>
+
+<template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template">
+    <xpath expr="//div[hasclass('row')]" position="replace" mode="inner">
+        <div class="o_grid_item o_grid_item_image g-height-8 g-col-lg-5 col-lg-5 text-center order-lg-0 rounded-4" data-name="Block" style="order: 0; z-index: 1; grid-area: 1 / 1 / 9 / 6;">
+            <img src="/web/image/website.s_masonry_block_default_image_1" class="img img-fluid mx-auto" alt=""/>
+        </div>
+        <div class="o_grid_item oe_img_bg o_bg_img_center o_bg_img_origin_border_box o_cc o_cc2 g-height-4 g-col-lg-3 col-lg-3 justify-content-end order-lg-0 rounded-4" data-name="Block" style="order: 2; background-image: url(/web/image/website.s_masonry_block_default_image_2); --grid-item-padding-y: 20px; --grid-item-padding-x: 20px; z-index: 2; grid-area: 1 / 6 / 5 / 9;">
+            <h2 class="h3-fs">PowerLift™</h2>
+            <p>
+                <a href="#" class="o_translate_inline text-reset">Shop PowerLift™ →</a>
+            </p>
+        </div>
+        <div class="o_grid_item oe_img_bg o_bg_img_center o_bg_img_origin_border_box o_cc o_cc4 g-height-4 g-col-lg-4 col-lg-4 justify-content-end order-lg-0 rounded-4" data-name="Block" style="order: 1; --grid-item-padding-y: 20px; --grid-item-padding-x: 20px; z-index: 3; grid-area: 1 / 9 / 5 / 13; background-image: url(/web/image/website.s_masonry_block_default_image_3);">
+            <h2 class="h3-fs">ActiveCore™</h2>
+            <p>
+                <a href="#" class="o_translate_inline text-reset">Shop ActiveCore™ →</a>
+            </p>
+        </div>
+        <div class="o_grid_item oe_img_bg o_bg_img_center o_bg_img_origin_border_box o_cc o_cc4 g-height-4 g-col-lg-4 col-lg-4 justify-content-end order-lg-0 rounded-4" data-name="Block" style="order: 3; --grid-item-padding-y: 20px; --grid-item-padding-x: 20px; z-index: 4; grid-area: 5 / 6 / 9 / 10; background-image: url(/web/image/website.s_masonry_block_default_image_4);">
+            <h2 class="h3-fs">Accessories</h2>
+            <p>
+                <a href="#" class="o_translate_inline text-reset">Shop Accessories →</a>
+            </p>
+        </div>
+        <div class="o_grid_item oe_img_bg o_bg_img_center o_bg_img_origin_border_box o_cc o_cc2 g-height-4 g-col-lg-3 col-lg-3 justify-content-end order-lg-0 rounded-4" data-name="Block" style="order: 4; background-image: url(/web/image/website.s_masonry_block_default_image_5); --grid-item-padding-y: 20px; --grid-item-padding-x: 20px; z-index: 5; grid-area: 5 / 10 / 9 / 13;">
+            <h2 class="h3-fs">Gift Cards</h2>
+            <p>
+                <a href="#" class="o_translate_inline text-reset">Shop Gift Cards →</a>
+            </p>
+        </div>
+    </xpath>
+</template>
+
+<template id="s_masonry_block_images_template" inherit_id="website.s_masonry_block_images_template">
+    <xpath expr="//div[hasclass('row')]" position="replace" mode="inner">
+        <div class="o_grid_item o_cc o_cc5 g-height-8 g-col-lg-6 col-lg-6 justify-content-start shadow rounded-3 oe_img_bg o_bg_img_center" data-name="Block" style="z-index: 1; grid-area: 1 / 1 / 9 / 7; background-image: url(/web/image/website.s_masonry_block_default_image_6); --grid-item-padding-y: 30px; --grid-item-padding-x: 30px;">
+            <div class="o_we_bg_filter bg-black-50"/>
+            <h2 class="display-4-fs">StrideFlow™</h2>
+            <p class="lead">Smooth movement for every mile</p>
+            <p>
+                <a href="#" class="btn btn-secondary">Shop StrideFlow™</a>
+            </p>
+        </div>
+        <div class="o_grid_item o_cc o_cc5 g-height-8 g-col-lg-6 col-lg-6 justify-content-start shadow rounded-3 oe_img_bg o_bg_img_center" data-name="Block" style="z-index: 2; grid-area: 1 / 7 / 9 / 13; background-image: url(/web/image/website.s_masonry_block_default_image_7); --grid-item-padding-y: 30px; --grid-item-padding-x: 30px;">
+            <div class="o_we_bg_filter bg-black-50"/>
+            <h2 class="display-4-fs">RideForm™</h2>
+            <p class="lead">Built for endurance, made to go the distance</p>
+            <p>
+                <a href="#" class="btn btn-secondary">Shop RideForm™</a>
+            </p>
+        </div>
+    </xpath>
+</template>
+
+<template id="s_masonry_block_alternation_text_image_template" inherit_id="website.s_masonry_block_alternation_text_image_template">
+    <xpath expr="//div[hasclass('row')]" position="replace" mode="inner">
+        <div class="o_grid_item o_grid_item_image g-height-4 g-col-lg-3 col-lg-3 rounded" data-name="Block" style="z-index: 1; grid-area: 1 / 1 / 5 / 4; --grid-item-padding-y: 20px; --grid-item-padding-x: 20px;">
+            <img src="/web/image/website.s_masonry_block_default_image_8" class="img img-fluid mx-auto" alt=""/>
+        </div>
+        <div class="o_grid_item o_grid_item_image g-height-4 g-col-lg-3 col-lg-3 rounded" data-name="Block" style="z-index: 2; grid-area: 1 / 4 / 5 / 7;">
+            <img src="/web/image/website.s_masonry_block_default_image_9" class="img img-fluid mx-auto" alt=""/>
+        </div>
+        <div class="o_grid_item o_grid_item_image g-height-4 g-col-lg-3 col-lg-3 rounded" data-name="Block" style="z-index: 3; grid-area: 1 / 7 / 5 / 10; --grid-item-padding-y: 20px; --grid-item-padding-x: 20px;">
+            <img src="/web/image/website.s_masonry_block_default_image_10" class="img img-fluid mx-auto" alt=""/>
+        </div>
+        <div class="o_grid_item o_grid_item_image g-height-4 g-col-lg-3 col-lg-3 rounded" data-name="Block" style="z-index: 4; grid-area: 1 / 10 / 5 / 13;">
+            <img src="/web/image/website.s_masonry_block_default_image_11" class="img img-fluid mx-auto" alt=""/>
+        </div>
+        <div class="o_grid_item o_grid_item_image g-height-4 g-col-lg-3 col-lg-3 rounded" data-name="Block" style="z-index: 7; grid-area: 1 / 5 / 2 / 9;">
+            <h2 style="text-align: center;">
+                <font class="text-o-color-1">Featured in</font>
+            </h2>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

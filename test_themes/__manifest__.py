@@ -17,6 +17,7 @@
         'theme_avantgarde',
         'theme_aviato',
         'theme_beauty',
+        'theme_boilerplate',
         'theme_bewise',
         'theme_bistro',
         'theme_bookstore',

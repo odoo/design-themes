@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_text_block" inherit_id="website.s_text_block">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="replace">
+        <div class="o_container_small s_allow_columns">
+            <p style="text-align: center;">Clothes designed to combine performance, comfort, and everyday style. Technical pieces that support every movement, from intense training sessions to recovery moments. An inspiring universe that encourages everyone to push their limits and feel confident in their body.</p>
+            <p style="text-align: center;">
+                <a t-att-href="cta_btn_href" class="btn btn-secondary"><t t-out="cta_btn_text">Shop all</t></a>
+            </p>
+        </div>
+    </xpath>
+</template>
+
+</odoo>
