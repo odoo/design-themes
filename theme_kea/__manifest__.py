@@ -1,6 +1,6 @@
 {
     'name': 'Kea Theme',
-    'description': 'Kea Theme',
+    'description': 'Cover hero feeds into alternating text-and-image rows, a featured picture, color-blocked information, and a media list — with organic blob crops on the picture and media images as the visual signature, layered over wavy line and floating shape motifs. Image-and-narrative driven / suited for technology companies, IT services, computer stores, and virtual-reality product sites',
     'category': 'Theme/Technology',
     'summary': 'Technology, Tech, IT, Computers, Stores, Virtual Reality',
     'sequence': 200,

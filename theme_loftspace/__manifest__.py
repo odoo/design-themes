@@ -1,6 +1,6 @@
 {
     'name': 'Loftspace Theme',
-    'description': 'Loftspace Fashion Theme',
+    'description': 'Search-led header above a banner hero flows into striped intro sections, an e-commerce category showcase, a reviews wall, and a collapsible FAQ before a CTA, kept clean and photo-driven without background shape decoration. Catalog-discovery driven with social proof / suited for furniture retail, home goods stores, and lifestyle e-commerce',
     'category': 'Theme/Retail',
     'summary': 'Furniture, Toys, Games, Kids, Boys, Girls, Stores',
     'sequence': 130,

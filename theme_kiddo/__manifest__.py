@@ -1,6 +1,6 @@
 {
     'name': 'Kiddo Theme',
-    'description': 'Kiddo theme for Odoo Website',
+    'description': 'Banner hero opens onto an activities text-image section and three service-pillar columns with mixed image-shape crops (solid blob, organic-outlined frame, rounded-square), then a services icon grid and a CTA, with floating and connection line motifs across the content rows. Warm and service-storytelling driven / suited for nurseries, childcare centers, kids activity programs, and family-oriented education services',
     'category': 'Theme/Retail',
     'summary': 'Nursery, Toys, Games, Kids, Boys, Girls, Stores',
     'sequence': 290,

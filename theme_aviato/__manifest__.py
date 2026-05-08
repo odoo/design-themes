@@ -1,6 +1,6 @@
 {
     'name': 'Aviato Theme',
-    'description': 'Aviato Theme - Responsive Bootstrap Theme for Odoo CMS',
+    'description': 'Banner-led layout alternating text-and-image rows with a featured picture block, masonry gallery, team and testimonials, with connection line motifs accenting the banner. Narrative and image-forward / suited for travel agencies, tour operators, excursion booking, and destination marketing sites',
     'category': 'Theme/Creative',
     'summary': 'Travel, Excursion, Plane, Tour, Agency ',
     'sequence': 130,

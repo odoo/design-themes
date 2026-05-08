@@ -1,6 +1,6 @@
 {
     'name': 'Zap Theme',
-    'description': 'Zap Theme - Corporate, Business, Marketing, Copywriting',
+    'description': 'Sales-led header above a discovery exploration block flows into key visuals, striped sections, a feature showcase, an image-titled hero, and charted KPIs before a CTA card, with bold geometric shape motifs woven across the major sections. Pitch-forward / suited for digital marketing agencies, copywriting services, media companies, and event-driven corporate sites',
     'category': 'Theme/Corporate',
     'summary': 'Digital, Marketing, Copywriting, Media, Events, Non Profit, NGO, Corporate, Business, Services',
     'sequence': 160,

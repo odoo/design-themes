@@ -1,6 +1,6 @@
 {
     'name': 'Buzzy Theme',
-    'description': 'Buzzy Theme - Responsive Bootstrap Theme for Odoo CMS',
+    'description': 'Illustrative banner opens onto a discovery exploration block, product showcase, key-benefit grids, and accordion-with-image FAQ, with shaped containers and organic blob motifs throughout and recurring scribble-and-marker highlights on key heading words. Content-heavy and benefit-driven, leaning illustrative rather than photo-led / suited for corporate services, technology companies, and SaaS-style product marketing sites',
     'category': 'Theme/Corporate',
     'summary': 'Corporate, Services, Technology, Shapes, Illustrations',
     'sequence': 140,

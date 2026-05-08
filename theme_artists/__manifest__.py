@@ -1,6 +1,6 @@
 {
     'name': 'Artists Theme',
-    'description': 'Artists Theme - Art Galleries, Photography, Painting',
+    'description': 'Vertical sidebar navigation flanks an asymmetric side-grid layout, building toward image walls and gallery-style catalogs through framed and shape-cropped artwork. Image-forward with sparse copy / suited for art galleries, photographers, painters, and creative shows',
     'category': 'Theme/Creative',
     'summary': 'Artist, Arts, Galleries, Creative, Paintings, Photography, Shows, Stores',
     'sequence': 310,

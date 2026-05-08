@@ -1,6 +1,6 @@
 {
     'name': 'Nano Theme',
-    'description': 'Nano Theme - Responsive Bootstrap Theme for Odoo CMS',
+    'description': 'Discovery block opens onto a parallax scene, text-driven sections, key visuals, an image-text-overlap layout, and a basic team grid before references and KPIs, kept photo-driven with restrained styling. Story-led and image-forward / suited for creative agencies, makers, design studios, and creative-IT services',
     'category': 'Theme/Lifestyle',
     'summary': 'Maker, Agencies, Creative, Design, IT, Services, Fancy',
     'sequence': 270,

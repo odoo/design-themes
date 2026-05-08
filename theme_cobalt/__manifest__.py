@@ -1,6 +1,6 @@
 {
     'name': 'Cobalt Theme',
-    'description': 'Clean and sharp design.',
+    'description': 'Banner hero leads into alternating image-text rows, key visuals, detailed team profiles, and a references grid for client logos, with connection line motifs woven across the sections. Communicates credibility through structure and showcased work / suited for IT and software development studios, design agencies, and technology consultancies',
     'category': 'Theme/Corporate',
     'summary': 'Development, IT development, Design, Tech, Computers, IT, Blogs',
     'sequence': 110,

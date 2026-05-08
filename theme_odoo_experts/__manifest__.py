@@ -1,6 +1,6 @@
 {
     'name': 'Experts Theme',
-    'description': 'Experts Business Theme',
+    'description': 'Mockup hero leads into client references, alternating image-and-text proof rows, a feature showcase, and a collapsible FAQ before a CTA with device-mockup framing (phone, browser, tablet, laptop) running across the proof rows and underline highlights on key headings, accented by connection line motifs at the closing block. Credentials-and-proof driven / suited for business advisors, corporate consultancies, finance services, and IT advisory firms',
     'category': 'Theme/Corporate',
     'summary': 'Advisor, Corporate, Service, Business, Finance, IT',
     'sequence': 210,

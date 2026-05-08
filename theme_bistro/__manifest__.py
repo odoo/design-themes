@@ -1,6 +1,6 @@
 {
     'name': 'Bistro Theme',
-    'description': 'Bistro Theme - Restaurant, Food/Drink, Catering, Food trucks',
+    'description': 'Vertical sidebar navigation paired with an image-titled hero, key visuals, a cafe-style price list, and a testimonial carousel framed by a quadrant block, with bold geometric shapes accenting the testimonials. Menu-and-pricing forward with little long-form copy / suited for bistros, restaurants, bars, pubs, cafes, and catering services',
     'category': 'Theme/Food',
     'summary': 'Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering',
     'sequence': 220,
