@@ -1,6 +1,6 @@
 {
     'name': 'Real Estate Theme',
-    'description': 'Real Estate Theme - Houses, Appartments, Real Estate Agencies',
+    'description': 'Cover hero leads into stepped duo-panel text-and-image rows, a three-column listing layout, references, a numbers showcase, and a testimonial carousel before a call-to-action, with restrained airy floating motifs marking the title block. Listing-and-trust driven / suited for real estate agencies, construction services, vacation rentals, and accommodation listings',
     'category': 'Theme/Services',
     'summary': 'Real Estate, Agencies, Construction, Services, Accomodations, Lodging, Hosting, Houses, Appartments, Vacations, Holidays, Travels',
     'sequence': 320,

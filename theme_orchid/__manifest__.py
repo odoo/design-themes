@@ -1,6 +1,6 @@
 {
     'name': 'Orchid Theme',
-    'description': 'Orchid Theme - Flowers, Beauty',
+    'description': 'Sales-led header above a kickoff hero opens onto key visuals, a process-steps narrative, a freegrid showcase, an image-text-overlap layout, and a basic team block before an image wall and references, accented by a varied vocabulary of connection, organic blob, and bold geometric motifs. Process-and-image driven / suited for florists, garden centers, beauty boutiques, and nature-led retail',
     'category': 'Theme/Retail',
     'summary': 'Florist, Gardens, Flowers, Nature, Green, Beauty, Stores',
     'sequence': 230,

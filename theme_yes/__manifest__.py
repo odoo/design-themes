@@ -1,6 +1,6 @@
 {
     'name': 'Yes Theme',
-    'description': 'Yes Theme - Wedding',
+    'description': 'Kickoff hero leads into a title block, a featured team, an image-text-overlap layout, a feature highlight, and a freegrid before a testimonial carousel and call-to-action, accented by connection and floating motifs. Image-forward and emotion-driven / suited for wedding planners, love-themed services, photographers, and personal celebration sites',
     'category': 'Theme/Personal',
     'summary': 'Wedding, Love, Photography, Services',
     'sequence': 330,

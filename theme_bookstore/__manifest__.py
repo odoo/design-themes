@@ -1,6 +1,6 @@
 {
     'name': 'Bookstore Theme',
-    'description': 'Books, Magazines, Music',
+    'description': 'Search-led header above a banner hero, curated key images, a title block, and accordion-with-image collapsible chapters, with heavily-rounded containers, circular image accents, and connection line motifs throughout. Catalog-discovery driven, balancing image presentation with browseable text / suited for bookstores, libraries, magazine archives, and music or media retailers',
     'category': 'Theme/Retail',
     'summary': 'Library, Books, Magazines, Literature, Musics, Media, Store',
     'sequence': 250,

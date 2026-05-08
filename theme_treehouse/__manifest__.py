@@ -1,6 +1,6 @@
 {
     'name': 'Treehouse Theme',
-    'description': 'Treehouse Theme - Responsive Bootstrap Theme for Odoo CMS',
+    'description': 'Asymmetric side-grid layout opens with numbered impact stats, color-blocked sections, partner references, and a freegrid showcase, with wavy line motifs accenting the side-grid hero. Image-led with stats and partner proof / suited for environmental NGOs, sustainable development non-profits, ecology initiatives, and conscious travel organizations',
     'category': 'Theme/Environment',
     'summary': 'Environment, Nature, Ecology, Sustainable Development, Non Profit, NGO, Travels',
     'sequence': 140,

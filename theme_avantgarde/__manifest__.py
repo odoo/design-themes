@@ -1,6 +1,6 @@
 {
     'name': 'Avantgarde Theme',
-    'description': 'Avantgarde is a sophisticated theme to inspire and impress',
+    'description': 'Editorial side-grid layout under a hamburger nav, flowing into a dense features wall, carousel showcase, and chronological timeline before a quadrant block. Feature-heavy with editorial pacing rather than long-form passages / suited for design studios, art and culture magazines, creative agencies, and trend-driven blogs',
     'category': 'Theme/Creative',
     'summary': 'Design, Fine Art, Artwork, Creative, Creativity, Galleries, Trends, Shows, Magazines, Blogs',
     'sequence': 150,
