@@ -369,7 +369,7 @@ class TestNewPageTemplates(TransactionCase):
                         errors.append("Using %r, view %r cannot be rendered (%r)" % (theme_name, view.key, e))
                 return len(views)
 
-        view_count += check('no theme', self.env.ref('website.default_website'))
+        view_count += check('no theme', self.env.ref('base.default_website'))
         websites_themes = self.env['website'].get_test_themes_websites()
         for website in websites_themes:
             view_count += check(website.name, website)
