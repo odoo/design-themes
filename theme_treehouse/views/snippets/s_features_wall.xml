@@ -3,9 +3,6 @@
 
 <template id="s_features_wall" inherit_id="website.s_features_wall">
     <!-- Card 1 -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_three_columns_default_image_1</attribute>
-    </xpath>
     <xpath expr="//div[hasclass('g-col-lg-3')]//h3" position="replace" mode="inner">
         Environmental Conservation Efforts
     </xpath>
@@ -20,9 +17,6 @@
         Participate in local programs focused on sustainable living, recycling, and reducing environmental footprints.
     </xpath>
     <!-- Card 3 -->
-    <xpath expr="(//img)[3]" position="attributes">
-        <attribute name="src">/web/image/website.s_three_columns_default_image_3</attribute>
-    </xpath>
     <xpath expr="//div[hasclass('g-col-lg-3')][6]//h3" position="replace" mode="inner">
         Green Advocacy &amp; Education
     </xpath>

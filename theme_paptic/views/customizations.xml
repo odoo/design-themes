@@ -270,10 +270,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc2" add="o_cc4" separator=" "/>
     </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_parallax_default_image</attribute>
-    </xpath>
 </template>
 
 <!-- ==== Call to action ===== -->
@@ -357,18 +353,6 @@
     <!-- Column #3 -->
     <xpath expr="//div[hasclass('col-lg-4')][3]" position="attributes">
         <attribute name="class" add="o_cc o_cc2" separator=" "/>
-    </xpath>
-</template>
-
-<!-- ======== Features Wall ======== -->
-<template id="s_features_wall" inherit_id="website.s_features_wall">
-    <!-- Card 1 Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_three_columns_default_image_1</attribute>
-    </xpath>
-    <!-- Card 2 Image-->
-    <xpath expr="(//img)[2]" position="attributes">
-        <attribute name="src">/web/image/website.s_three_columns_default_image_3</attribute>
     </xpath>
 </template>
 
@@ -626,23 +610,11 @@
     </xpath>
 </template>
 
-<!-- ======== IMAGE FRAME ======== -->
-<template id="s_image_frame" inherit_id="website.s_image_frame">
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
-    </xpath>
-</template>
-
 <!-- ======== CARD OFFSET ======== -->
 <template id="s_card_offset" inherit_id="website.s_card_offset">
     <!-- Grid items -->
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
         <attribute name="style" add="--grid-item-padding-y: 64px;" remove="--grid-item-padding-y: 40px;" separator=";"/>
-    </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">

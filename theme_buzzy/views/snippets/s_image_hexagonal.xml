@@ -6,10 +6,6 @@
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
         <attribute name="style" add="--grid-item-padding-x: 32px;" separator=";"/>
     </xpath>
-    <!-- Images -->
-    <xpath expr="(//img)[2]" position="attributes">
-        <attribute name="src">/web/image/website.s_cover_default_image</attribute>
-    </xpath>
 </template>
 
 </odoo>

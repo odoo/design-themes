@@ -58,7 +58,6 @@
         'views/snippets/s_timeline_images.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_big_number.xml',
-        'views/snippets/s_image_frame.xml',
         'views/snippets/s_wavy_grid.xml',
         'views/snippets/s_shape_image.xml',
         'views/snippets/s_empowerment.xml',
