@@ -49,10 +49,6 @@
     <xpath expr="//p" position="replace" mode="inner">
         Discover our program in details
     </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_picture_default_image</attribute>
-    </xpath>
 </template>
 
 <!-- ======== TITLE ======== -->
@@ -125,10 +121,6 @@
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
         Plan the brightest future with us
-    </xpath>
-    <!-- Images -->
-    <xpath expr="(//img)[2]" position="attributes">
-        <attribute name="src">/web/image/website.s_cover_default_image</attribute>
     </xpath>
 </template>
 
@@ -443,10 +435,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc2" add="o_cc3" separator=" "/>
     </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_carousel_default_image_1</attribute>
-    </xpath>
 </template>
 
 <!-- ======== FEATURES ======== -->
@@ -460,20 +448,6 @@
     </xpath>
     <xpath expr="(//i)[3]" position="attributes">
         <attribute name="class" add="bg-o-color-4" remove="bg-o-color-3" separator=" "/>
-    </xpath>
-</template>
-
-<!-- ======== SIDEGRID ======== -->
-<template id="s_sidegrid" inherit_id="website.s_sidegrid">
-    <!-- Images -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_text_image_default_image</attribute>
-    </xpath>
-    <xpath expr="(//img)[2]" position="attributes">
-        <attribute name="src">/web/image/website.s_banner_default_image_2</attribute>
-    </xpath>
-    <xpath expr="(//img)[3]" position="attributes">
-        <attribute name="src">/web/image/website.s_banner_default_image</attribute>
     </xpath>
 </template>
 
@@ -880,10 +854,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc1" add="o_cc4" separator=" "/>
     </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_quotes_carousel_demo_image_1</attribute>
-    </xpath>
 </template>
 
 <!-- ======== INTRO PILL ======== -->
@@ -960,10 +930,6 @@
 </template>
 <!-- ======== CARD OFFSET ======== -->
 <template id="s_card_offset" inherit_id="website.s_card_offset">
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_carousel_default_image_2</attribute>
-    </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
         Shaping Tomorrow's Leaders

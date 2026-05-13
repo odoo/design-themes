@@ -10,10 +10,6 @@
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
         <attribute name="style" add="--grid-item-padding-y: 60px;" remove="--grid-item-padding-y: 40px;" separator=";"/>
     </xpath>
-    <!-- Image -->
-    <xpath expr="//img" position="attributes">
-        <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
-    </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
         A Culinary Journey Awaits You
