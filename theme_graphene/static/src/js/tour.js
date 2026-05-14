@@ -45,9 +45,9 @@ wTourUtils.registerThemeHomepageTour("graphene_tour", () => [
     ...wTourUtils.insertSnippet(snippets[1]),
 
     ...wTourUtils.insertSnippet(snippets[2]),
-    ...wTourUtils.insertSnippet(snippets[3], 'top'),
+    ...wTourUtils.insertSnippet(snippets[3], { position: "top" }),
 
-    ...wTourUtils.insertSnippet(snippets[4], 'top'),
+    ...wTourUtils.insertSnippet(snippets[4], { position: "top" }),
     ...wTourUtils.clickOnSnippet(snippets[4], 'top'),
     wTourUtils.changeBackgroundColor('left'),
     wTourUtils.selectColorPalette(),
