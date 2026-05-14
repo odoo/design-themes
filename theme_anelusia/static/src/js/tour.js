@@ -41,7 +41,7 @@ wTourUtils.registerThemeHomepageTour("anelusia_tour", () => [
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[1]),
-    ...wTourUtils.insertSnippet(snippets[2], 'top'),
+    ...wTourUtils.insertSnippet(snippets[2], { position: "top" }),
     ...wTourUtils.insertSnippet(snippets[3]),
     ...wTourUtils.insertSnippet(snippets[4]),
     ...wTourUtils.clickOnSnippet(snippets[4], 'top'),
