@@ -7,7 +7,7 @@ import re
 
 from odoo.addons.http_routing.tests.common import MockRequest
 from odoo.tests import tagged, TransactionCase
-from odoo.tools import escape_psql
+from odoo.tools.sql import escape_like_value
 
 _logger = logging.getLogger(__name__)
 
@@ -180,8 +180,8 @@ class TestNewPageTemplates(TransactionCase):
                         'website.snippets',
                         'website.new_page_template_groups',
                     ]),
-                    ('key', 'like', escape_psql('website.configurator_')),
-                    ('key', 'like', escape_psql('website.new_page_template_sections_')),
+                    ('key', 'like', escape_like_value('website.configurator_')),
+                    ('key', 'like', escape_like_value('website.new_page_template_sections_')),
                 ])
                 for view in views:
                     try:
@@ -399,9 +399,9 @@ class TestNewPageTemplates(TransactionCase):
         for module_name in ['website', *(website.theme_id.name for website in self.env['website'].get_test_themes_websites())]:
             views = View.search([
                 '|', '|',
-                ('key', 'like', escape_psql(f'{module_name}.s_')),
-                ('key', 'like', escape_psql(f'{module_name}.configurator')),
-                ('key', 'like', escape_psql(f'{module_name}.new_page')),
+                ('key', 'like', escape_like_value(f'{module_name}.s_')),
+                ('key', 'like', escape_like_value(f'{module_name}.configurator')),
+                ('key', 'like', escape_like_value(f'{module_name}.new_page')),
             ])
             for view in views:
                 try:
