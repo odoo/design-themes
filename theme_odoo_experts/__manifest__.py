@@ -46,10 +46,14 @@
             'template_key': (
                 'website_sale.dynamic_filter_template_product_public_category_default'
             ),
-            'data_attributes': {
-                'rounded': '4',
-                'gap': '4',
-                'button': 'Explore Now'
+            'dynamic_snippet_args': {
+                'content_data': {
+                    'button_text': 'Explore Now',
+                },
+                'wrapper_data': {
+                    'rounded': 4,
+                    'gap': 4,
+                },
             },
             'add_classes': [
                 'pt40',

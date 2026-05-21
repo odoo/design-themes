@@ -45,10 +45,12 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'columns': '2',
-                'rounded': '4',
-                'gap': '4',
+            'dynamic_snippet_args': {
+                'wrapper_data': {
+                    'rounded': 4,
+                    'gap': 4,
+                    'cols_count': 2,
+                },
             },
             'background': {
                 'color': 'o_cc4',

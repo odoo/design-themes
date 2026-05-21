@@ -54,11 +54,16 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'columns': '2',
-                'gap': '3',
-                'size': 'small',
-                'alignment': 'left',
+            'dynamic_snippet_args': {
+                'content_data': {
+                    'alignment': 'left',
+                    'size': 'small',
+                },
+                'wrapper_data': {
+                    'rounded': 2,
+                    'gap': 3,
+                    'size': 'small',
+                },
             },
             'background': {
                 'color': 'o_cc2',
