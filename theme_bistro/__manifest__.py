@@ -31,10 +31,14 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'gap': '3',
-                'rounded': '1',
-                'alignment': 'left',
+            'dynamic_snippet_args': {
+                'content_data': {
+                    'alignment': 'left',
+                },
+                'wrapper_data': {
+                    'gap': 3,
+                    'rounded': 1,
+                },
             },
             'background': {
                 'color': 'o_cc2',
