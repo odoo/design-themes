@@ -50,8 +50,10 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'gap': '4',
+            'dynamic_snippet_args': {
+                'wrapper_data': {
+                    'gap': 4,
+                },
             },
             'add_classes': [
                 'pb48',

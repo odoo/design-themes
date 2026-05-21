@@ -49,8 +49,10 @@
             'template_key': (
                 'website_sale.dynamic_filter_template_product_public_category_default'
             ),
-            'data_attributes': {
-                'rounded': '0',
+            'dynamic_snippet_args': {
+                'wrapper_data': {
+                    'rounded': 0,
+                },
             },
             'background': {
                 'color': 'o_cc5',

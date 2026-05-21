@@ -44,10 +44,15 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'gap': '3',
-                'rounded': '0',
-                'size': 'small',
+            'dynamic_snippet_args': {
+                'content_data': {
+                    'size': 'small',
+                },
+                'wrapper_data': {
+                    'rounded': 0,
+                    'gap': 3,
+                    'size': 'small',
+                },
             },
             'background': {
                 'shape': {
