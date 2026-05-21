@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== NUMBERS INLINE ======== -->
+<template id="s_numbers_inline" inherit_id="website.s_numbers_inline">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blurry/08"}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Blurry_08"/>
+    </xpath>
+</template>
+
+<!-- ======== COMPARISONS ======== -->
+<template id="s_comparisons" inherit_id="website.s_comparisons">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Blurry/03','flip':[],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_shape_show_mobile o_html_builder_Blurry_03"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+        <attribute name="class" remove="h3-fs" separator=" "/>
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <!-- Card 1 -->
+    <xpath expr="(//div[hasclass('s_card')])[1]" position="attributes">
+        <attribute name="class" remove="" add="border" separator=" "/>
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="(//div[hasclass('s_card')])[2]" position="attributes">
+        <attribute name="class" remove="" add="border" separator=" "/>
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="(//div[hasclass('s_card')])[3]" position="attributes">
+        <attribute name="class" remove="" add="border" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== DISCOVERY ======== -->
+<template id="s_discovery" inherit_id="website.s_discovery">
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Blurry/07','flip':[],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <!-- Shape and Filter -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_shape_show_mobile o_html_builder_Blurry_07"/>
+    </xpath>
+    <!-- Buttons -->
+    <xpath expr="(//p)[3]//a[1]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+    <xpath expr="(//p)[3]//a[2]" position="replace"/>
+</template>
+
+<!-- ======== COMPANY TEAM SPOTLIGHT ======== -->
+<template id="s_company_team_spotlight" inherit_id="website.s_company_team_spotlight">
+    <xpath expr="//h2" position="after">
+        <p class="lead" style="text-align: center;">Write one or two sentences about your team.</p>
+    </xpath>
+    <!-- Container -->
+    <xpath expr="//div[hasclass('container')]" position="attributes">
+        <attribute name="class" add="o_container_small" remove="container" separator=" "/>
+    </xpath>
+    <!-- Team Member 1 -->
+    <xpath expr="//div[hasclass('col-6')][1]" position="attributes">
+        <attribute name="class" remove="col-lg-3" add="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-6')][1]//h3" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-6')][1]//p" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <!-- Team Member 2 -->
+    <xpath expr="//div[hasclass('col-6')][2]" position="attributes">
+        <attribute name="class" remove="col-lg-3" add="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-6')][2]//h3" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-6')][2]//p" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <!-- Team Member 3 -->
+    <xpath expr="//div[hasclass('col-6')][3]" position="attributes">
+        <attribute name="class" remove="col-lg-3" add="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-6')][3]//h3" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-6')][3]//p" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <!-- Team Member 4 -->
+    <xpath expr="//div[hasclass('col-6')][4]" position="attributes">
+        <attribute name="class" remove="col-lg-3" add="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-6')][4]//h3" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-6')][4]//p" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+</template>
+
+</odoo>

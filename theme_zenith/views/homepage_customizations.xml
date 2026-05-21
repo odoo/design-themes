@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- global_customizations.xml -->
+<odoo>
+
+<!-- ======== FREE GRID ======== -->
+<template id="configurator_s_freegrid" inherit_id="website.configurator_s_freegrid">
+    <!-- Remove title and CTA. Reposition remaining items accordingly.-->
+
+    <xpath expr="//div[hasclass('row')]" position="attributes">
+        <attribute name="data-row-count">12</attribute>
+    </xpath>
+    <!-- Item #1 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]" position="attributes">
+        <attribute name="style" add="grid-area: 3 / 1 / 11 / 2;" remove="grid-area: 2 / 1 / 10 / 2" separator=";"/>
+    </xpath>
+    <!-- Item #2 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="class" add="g-col-lg-4 col-lg-4 g-height-12" remove="g-col-lg-3 col-lg-3 g-height-5" separator=" "/>
+        <attribute name="style" add="grid-area: 1 / 5 / 13 / 9;" remove="grid-area: 1 / 2 / 6 / 5" separator=";"/>
+        <attribute name="style" add="--grid-item-padding-x: 0px; --grid-item-padding-y: 0px;" remove="--grid-item-padding-y: 8px; --grid-item-padding-x: 16px;" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]/img" position="attributes">
+        <attribute name="src">/web/image/website.portrait_lg_3</attribute>
+    </xpath>
+    <!-- Item #3 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
+        <attribute name="class" add="g-col-lg-1 col-lg-1 g-height-8" remove="g-col-lg-3 col-lg-3 g-height-5" separator=" "/>
+        <attribute name="style" add="grid-area: 3 / 12 / 11 / 13;" remove="grid-area: 6 / 2 / 11 / 5" separator=";"/>
+        <attribute name="style" add="--grid-item-padding-y: 0px; --grid-item-padding-x: 0px;" remove="--grid-item-padding-x: 16px; --grid-item-padding-y: 8px;" separator=";"/>
+    </xpath>
+    <!-- Item #4 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
+        <attribute name="class" add="g-height-5" remove="g-height-8" separator=" "/>
+        <attribute name="style" add="grid-area: 7 / 2 / 12 / 5;" remove="grid-area: 2 / 5 / 10 / 8" separator=";"/>
+        <attribute name="style" add="--grid-item-padding-y: 8px; --grid-item-padding-x: 16px;" remove="--grid-item-padding-x: 0px; --grid-item-padding-y: 0px;" separator=";"/>
+    </xpath>
+    <!-- Item #5 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="attributes">
+        <attribute name="class" add="g-height-5" remove="g-height-10" separator=" "/>
+        <attribute name="style" add="grid-area: 2 / 2 / 7 / 5;" remove="grid-area: 1 / 8 / 11 / 11" separator=";"/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]/img" position="attributes">
+        <attribute name="src">/web/image/website.set_1_landscape_md_2</attribute>
+    </xpath>
+    <!-- Item #6 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[6]" position="attributes">
+        <attribute name="class" add="g-col-lg-3 col-lg-3 g-height-5" remove="g-col-lg-2 col-lg-2 g-height-8" separator=" "/>
+        <attribute name="style" add="grid-area: 7 / 9 / 12 / 12;" remove="grid-area: 2 / 11 / 10 / 13" separator=";"/>
+        <attribute name="style" add="--grid-item-padding-y: 8px; --grid-item-padding-x: 16px;" remove="--grid-item-padding-x: 0px; --grid-item-padding-y: 0px;" separator=";"/>
+    </xpath>
+    <!-- Item #7 Extra items -->
+    <xpath expr="//div[hasclass('o_grid_mode')]" position="inside">
+        <div class="o_grid_item o_grid_item_image g-col-lg-3 g-height-5 col-lg-3 d-lg-block d-none o_snippet_mobile_invisible" style="z-index: 7; grid-area: 2 / 9 / 7 / 12; --grid-item-padding-y: 8px; --grid-item-padding-x: 16px;">
+            <img class="img img-fluid mx-auto" src="/web/image/website.landscape_md_7" alt=""/>
+        </div>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[7]" position="replace"/>
+    <xpath expr="(//div[hasclass('o_grid_item')])[7]" position="replace"/>
+</template>
+
+<!-- ======== DISCOVERY ======== -->
+<template id="configurator_s_discovery" inherit_id="website.configurator_s_discovery">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb128 pt200" remove="pb136 pt136" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== TITLE ======== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb0" remove="pb40" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" remove="display-3-fs" separator=" "/>
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//h2" position="after">
+        <p class="lead" style="text-align: center;">Write one or two sentences about your services.</p>
+    </xpath>
+</template>
+
+<!-- ======== FLOATING BLOCKS ======== -->
+<template id="configurator_s_floating_blocks" inherit_id="website.configurator_s_floating_blocks">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc2" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== ANNOUNCEMENT SCROLL ======== -->
+<template id="configurator_s_announcement_scroll" inherit_id="website.configurator_s_announcement_scroll">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt128 pb88" remove="pt24 pb24" separator=" "/>
+        <attribute name="style">--marquee-animation-speed: 5s; --marquee-item-font-size: 200;</attribute>
+    </xpath>
+</template>
+
+<!-- ======== NUMBERS_INLINE ======== -->
+<template id="configurator_s_numbers_inline" inherit_id="website.configurator_s_numbers_inline">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt32 pb40" remove="pt80 pb 80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== COMPANY TEAM SPOTLIGHT ======== -->
+<template id="configurator_s_company_team_spotlight" inherit_id="website.configurator_s_company_team_spotlight">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt80 pb40" remove="pt48 pb48" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== COMPARISONS ======== -->
+<template id="configurator_s_comparisons" inherit_id="website.configurator_s_comparisons">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt48 pb48" add="pt80 pb128" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== FAQ COLLAPSE ======== -->
+<template id="configurator_s_faq_collapse" inherit_id="website.configurator_s_faq_collapse">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt32" add="pt96 o_cc o_cc2" separator=" "/>
+    </xpath>
+    <xpath expr="//p" position="replace"/>
+</template>
+    
+</odoo>

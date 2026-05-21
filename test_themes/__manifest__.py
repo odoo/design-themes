@@ -44,6 +44,7 @@
         'theme_vehicle',
         'theme_yes',
         'theme_zap',
+        'theme_zenith',
     ],
     'post_init_hook': 'post_init_hook',
     'assets': {
