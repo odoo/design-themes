@@ -28,9 +28,13 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'gap': '3',
-                'alignment': 'right',
+            'dynamic_snippet_args': {
+                'content_data': {
+                    'alignment': 'right',
+                },
+                'wrapper_data': {
+                    'gap': 3,
+                },
             },
             'background': {
                 'color': 'o_cc2',

@@ -31,11 +31,16 @@
             'template_key': (
                 'website_sale.dynamic_filter_template_product_public_category_default'
             ),
-            'data_attributes': {
-                'rounded': '3',
-                'gap': '3',
-                'size': 'small',
-                'alignment': 'left',
+            'dynamic_snippet_args': {
+                'content_data': {
+                    'alignment': 'left',
+                    'size': 'small',
+                },
+                'wrapper_data': {
+                    'rounded': 3,
+                    'gap': 3,
+                    'size': 'small',
+                },
             },
             'remove_classes': [
                 's_dynamic_category_clickable_items',

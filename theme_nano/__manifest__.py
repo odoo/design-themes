@@ -36,10 +36,14 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'rounded': '4',
-                'gap': '4',
-                'alignment': 'left',
+            'dynamic_snippet_args': {
+                'content_data': {
+                    'alignment': 'left',
+                },
+                'wrapper_data': {
+                    'rounded': 4,
+                    'gap': 4,
+                },
             },
             'add_classes': [
                 'pt88', 'pb112'
