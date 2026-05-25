@@ -2,10 +2,6 @@
 <odoo>
 
 <template id="s_picture" inherit_id="website.s_picture">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Working Together
-    </xpath>
     <!-- Image + Shape -->
     <xpath expr="//img" position="attributes">
         <attribute name="src">/html_editor/image_shape/website.s_picture_default_image/html_builder/special/special_filter.svg</attribute>

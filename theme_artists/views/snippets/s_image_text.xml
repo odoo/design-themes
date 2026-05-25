@@ -6,13 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc5 pt128" remove="pt80" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Discover <br/>my works
-    </xpath>
-    <xpath expr="//h2" position="after">
-        <p><br/></p>
-    </xpath>
     <!-- Picture -->
     <xpath expr="//img" position="attributes">
         <attribute name="src">/html_editor/image_shape/website.s_image_text_default_image/html_builder/geometric/geo_square_3.svg</attribute>

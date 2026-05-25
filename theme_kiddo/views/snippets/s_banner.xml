@@ -35,12 +35,6 @@
         <attribute name="class" add="col-lg-6 pt32 pb32" remove="o_grid_item g-height-10 g-col-lg-5 col-lg-5" separator=" "/>
         <attribute name="style"/>
     </xpath>
-    <xpath expr="//h1" position="replace" mode="inner">
-        A little place <br/>of paradise
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Our goal is to create a safe and nurturing environment for your child to learn and grow. We believe that every child is unique and should be treated as such.
-    </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]//p[2]" position="attributes">
         <attribute name="class" add="mb-0" separator=" "/>
     </xpath>

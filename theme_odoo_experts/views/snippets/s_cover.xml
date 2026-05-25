@@ -14,15 +14,6 @@
     <xpath expr="//div[hasclass('container')]" position="attributes">
         <attribute name="class" add="o_container_small" remove="container" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        We care <br/>about results
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        <br/>
-        Guided by expertise gained over 20 years of achieving success for clients, we practice with passion and strategic focus on the future.
-    </xpath>
 </template>
 
 </odoo>

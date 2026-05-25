@@ -10,10 +10,6 @@
     <xpath expr="//div[hasclass('o_grid_mode')]" position="attributes">
         <attribute name="style" add="gap: 8px;" separator=";"/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Our <strong>References</strong>
-    </xpath>
     <!-- Column #01 -->
     <xpath expr="//div[hasclass('col-lg-2')][1]" position="attributes">
         <attribute name="class" add="o_cc o_cc1" separator=" "/>

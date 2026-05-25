@@ -22,15 +22,6 @@
     <xpath expr="//div[hasclass('s_media_list_body')]" position="attributes">
         <attribute name="class" add="col-lg-6" remove="col-lg-8" separator=" "/>
     </xpath>
-    <!-- Row #1 - Title -->
-    <xpath expr="//div[hasclass('s_media_list_body')]//h3" position="replace" mode="inner">
-        Go to the <br/>Miraillet Festival
-    </xpath>
-    <!-- Row #1 - Paragraph -->
-    <xpath expr="//div[hasclass('s_media_list_body')]//p" position="replace" mode="inner">
-        <br/>
-        You will find here the different means of transport to get to the festival. The festival is accessible by bike. Be careful, you will be riding in the city centre where there are a lot of cars. Please make sure to park your bike in the designated areas of the city.
-    </xpath>
 
     <!-- Row #2 -->
     <xpath expr="//div[hasclass('s_media_list_item')][2]" position="attributes">
@@ -46,15 +37,6 @@
     <!-- Row #2 - Body -->
     <xpath expr="(//div[hasclass('s_media_list_body')])[2]" position="attributes">
         <attribute name="class" add="col-lg-6" remove="col-lg-8" separator=" "/>
-    </xpath>
-    <!-- Row #2 - Title -->
-    <xpath expr="(//div[hasclass('s_media_list_body')])[2]//h3" position="replace" mode="inner">
-        Ticketing <br/>&amp; timetables
-    </xpath>
-    <!-- Row #2 - Paragraph -->
-    <xpath expr="(//div[hasclass('s_media_list_body')])[2]//p" position="replace" mode="inner">
-        <br/>
-        Where and when to exchange your festival bracelets? Where to buy food and drink tickets? What is the price for children? The answer can be found here!
     </xpath>
     <!-- Row #2 - Add a button -->
     <xpath expr="(//div[hasclass('s_media_list_body')])[2]//p" position="after">
@@ -75,15 +57,6 @@
     <!-- Row #3 - Body -->
     <xpath expr="(//div[hasclass('s_media_list_body')])[3]" position="attributes">
         <attribute name="class" add="col-lg-6" remove="col-lg-8" separator=" "/>
-    </xpath>
-    <!-- Row #3 - Title -->
-    <xpath expr="(//div[hasclass('s_media_list_body')])[3]//h3" position="replace" mode="inner">
-        Wheelchair <br/>accessibility
-    </xpath>
-    <!-- Row #3 - Paragraph -->
-    <xpath expr="(//div[hasclass('s_media_list_body')])[3]//p" position="replace" mode="inner">
-        <br/>
-        Once again this year, the festival, with the support of the non-profit organisations that implement the necessary means to facilitate access to the event for people with reduced mobility and people affected by or carrying a disability.
     </xpath>
     <!-- Row #3 - Add a button -->
     <xpath expr="(//div[hasclass('s_media_list_body')])[3]//a" position="replace">

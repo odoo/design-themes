@@ -13,23 +13,11 @@
         <div class="o_we_shape o_html_builder_Floats_13" style="background-image: url('/html_editor/shape/html_builder/Floats/13.svg?c1=o-color-1&amp;c2=o-color-2&amp;c5=o-color-5&amp;flip=x'); background-position: 50% 50%;"/>
     </xpath>
 
-    <!-- Title & Paragraphs -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Activities
-    </xpath>
+    <!-- Add separator after h2 -->
     <xpath expr="//h2" position="after">
         <div class="s_hr pb32 pt8" data-snippet="s_hr" data-name="Separator">
             <hr class="w-50 me-auto" style="border-top: 4px dotted var(--o-color-2) !important;"/>
         </div>
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        Our team is composed of experienced nursery nurses.
-    </xpath>
-    <xpath expr="//p[2]" position="replace" mode="inner">
-        They will propose to your children educational activities, playful, varied and adapted to the stage of development.
-    </xpath>
-    <xpath expr="//p[2]" position="after">
-        <p><br/></p>
     </xpath>
 
     <!-- Img -->

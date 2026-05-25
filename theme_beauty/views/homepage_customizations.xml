@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_intro_pill ===== -->
+<template id="configurator_s_intro_pill" inherit_id="website.configurator_s_intro_pill">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Confidence and<br/>Timeless Elegance
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Discover our products
+    </xpath>
+</template>
+
+<!-- ===== s_pricelist_boxed ===== -->
+<template id="configurator_s_pricelist_boxed" inherit_id="website.configurator_s_pricelist_boxed">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our Beauty Collection
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Enhance your natural beauty with our range of luxurious cosmetic services and products. Expertly crafted for every skin type and style.
+    </xpath>
+    <xpath expr="//h3" position="replace" mode="inner">
+        ✽&#160;&#160;Facial Treatments
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        ✽&#160;&#160;Makeup Products
+    </xpath>
+    <xpath expr="//t[@t-set='name']" position="replace" mode="inner">
+        Anti-Aging Facial
+    </xpath>
+    <xpath expr="//t[@t-set='price']" position="replace" mode="inner">
+        $120.00
+    </xpath>
+    <xpath expr="//t[@t-set='description']" position="replace" mode="inner">
+        A rejuvenating facial treatment designed to reduce wrinkles and fine lines, leaving your skin looking fresh and youthful.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[2]" position="replace" mode="inner">
+        Hydrating Facial
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[2]" position="replace" mode="inner">
+        $100.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[2]" position="replace" mode="inner">
+        Deeply hydrating facial treatment that restores moisture and balances your skin, perfect for dry or sensitive skin types.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[3]" position="replace" mode="inner">
+        Brightening Facial
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[3]" position="replace" mode="inner">
+        $110.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[3]" position="replace" mode="inner">
+        A revitalizing facial that uses vitamin C and natural extracts to enhance radiance and even out skin tone.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[4]" position="replace" mode="inner">
+        Long-Lasting Foundation
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[4]" position="replace" mode="inner">
+        $50.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[4]" position="replace" mode="inner">
+        A lightweight, long-lasting foundation that provides full coverage while allowing your skin to breathe.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[5]" position="replace" mode="inner">
+        Volumizing Mascara
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[5]" position="replace" mode="inner">
+        $30.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[5]" position="replace" mode="inner">
+        High-quality mascara that adds volume and length to your lashes, with a smudge-proof and long-lasting formula.
+    </xpath>
+    <xpath expr="(//t[@t-set='name'])[6]" position="replace" mode="inner">
+        Velvet Matte Lipstick
+    </xpath>
+    <xpath expr="(//t[@t-set='price'])[6]" position="replace" mode="inner">
+        $25.00
+    </xpath>
+    <xpath expr="(//t[@t-set='description'])[6]" position="replace" mode="inner">
+        Richly pigmented matte lipstick available in various shades, providing a bold, long-lasting finish without drying out your lips.
+    </xpath>
+</template>
+
+<!-- ===== s_features_wall ===== -->
+<template id="configurator_s_features_wall" inherit_id="website.configurator_s_features_wall">
+    <!-- Card 1 -->
+    <xpath expr="//div[hasclass('g-col-lg-3')]//h3" position="replace" mode="inner">
+        Natural Skincare Products
+    </xpath>
+    <xpath expr="//div[hasclass('g-col-lg-3')]//p" position="replace" mode="inner">
+        Revitalize your skin with our range of organic, chemical-free skincare products designed for all skin types.
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="//div[hasclass('g-col-lg-3')][4]//h3" position="replace" mode="inner">
+        Premium Makeup Collection
+    </xpath>
+    <xpath expr="//div[hasclass('g-col-lg-3')][4]//p" position="replace" mode="inner">
+        Explore our luxurious makeup selection, offering vibrant colors and long-lasting formulas for a flawless look every day.
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="//div[hasclass('g-col-lg-3')][6]//h3" position="replace" mode="inner">
+        Fragrances and Scents
+    </xpath>
+    <xpath expr="//div[hasclass('g-col-lg-3')][6]//p" position="replace" mode="inner">
+        Find your signature scent with our exclusive range of perfumes, crafted to leave a lasting impression all day long.
+    </xpath>
+</template>
+
+<!-- ===== s_call_to_action ===== -->
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Beauty without <br/>expression is boring
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Join us and enjoy the pleasure of caring for yourself.
+    </xpath>
+</template>
+
+</odoo>
+

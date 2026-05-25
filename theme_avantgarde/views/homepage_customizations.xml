@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_sidegrid ===== -->
+<template id="configurator_s_sidegrid" inherit_id="website.configurator_s_sidegrid">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        <div class="d-inline text-o-color-1">Avantgarde</div>
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Art gallery
+    </xpath>
+    <!-- Grid Item 5 content -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="inside">
+        <h2 class="display-2-fs">✴ San Francisco</h2>
+        <p class="lead">Come visit us from Tuesday 9 AM to Saturday 6 PM</p>
+    </xpath>
+</template>
+
+<!-- ===== s_features_wall ===== -->
+<template id="configurator_s_features_wall" inherit_id="website.configurator_s_features_wall">
+    <!-- Date intro -->
+    <xpath expr="//h2" position="before">
+        <p>From 12th September to 20th February</p>
+    </xpath>
+    <!-- Section title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        The Boston Public Library Collection
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        The Boston Public Library's exhibit features lovely bird and flower paintings, bringing together nature, art, and science.
+    </xpath>
+    <!-- Ticket button -->
+    <xpath expr="//p[hasclass('lead')]" position="after">
+        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-ticket"/> Book your tickets</a>
+    </xpath>
+    <!-- Feature 1 -->
+    <xpath expr="(//h3)[1]" position="replace" mode="inner">
+        Diverse Wildlife
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        Discover a variety of animals from around the world, beautifully captured in these detailed, scientific paintings.
+    </xpath>
+    <!-- Feature 2 -->
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Vintage Style
+    </xpath>
+    <xpath expr="(//p)[4]" position="replace" mode="inner">
+        Step back in time with classic, hand-painted illustrations that showcase the charm of old-world artistry.
+    </xpath>
+    <!-- Feature 3 -->
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        For all the family
+    </xpath>
+    <xpath expr="(//p)[5]" position="replace" mode="inner">
+        This exhibition offers something for everyone, with fascinating artwork that will captivate both kids and adults alike.
+    </xpath>
+</template>
+
+<!-- ===== s_carousel ===== -->
+<template id="configurator_s_carousel" inherit_id="website.configurator_s_carousel">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        ARTWORK
+    </xpath>
+    <!-- Remove extra paragraphs -->
+    <xpath expr="//div[hasclass('carousel-item')]//p[2]" position="replace"/>
+    <xpath expr="(//div[hasclass('carousel-item')])[2]//p[2]" position="replace"/>
+</template>
+
+<!-- ===== s_timeline ===== -->
+<template id="configurator_s_timeline" inherit_id="website.configurator_s_timeline">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our history
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Discover the journey that made us the most popular gallery in town.
+    </xpath>
+    <!-- Event 1 -->
+    <xpath expr="(//div[hasclass('card')])[1]//small" position="replace" mode="inner">
+        13/06/2024
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[1]//h3" position="replace" mode="inner">
+        First Culture Award
+    </xpath>
+    <!-- Event 2 -->
+    <xpath expr="(//div[hasclass('card')])[2]//small" position="replace" mode="inner">
+        25/10/2019
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[2]//h3" position="replace" mode="inner">
+        We open the cafeteria!
+    </xpath>
+    <!-- Event 3 -->
+    <xpath expr="(//div[hasclass('card')])[3]//small" position="replace" mode="inner">
+        25/06/2019
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[3]//h3" position="replace" mode="inner">
+        Arrival of Aline Turner at the head of the Gallery
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[3]//p" position="after">
+        <img alt="" src="/web/image/website.s_company_team_image_3" class="img img-fluid rounded"/>
+    </xpath>
+    <!-- Event 4 -->
+    <xpath expr="(//div[hasclass('card')])[4]//small" position="replace" mode="inner">
+        23/10/2015
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[4]//h3" position="replace" mode="inner">
+        Purchase of the building
+    </xpath>
+    <xpath expr="(//div[hasclass('card')])[4]//p" position="after">
+        <img alt="" src="/web/image/website.s_banner_default_image" class="img img-fluid rounded"/>
+    </xpath>
+</template>
+
+<!-- ===== s_quadrant ===== -->
+<template id="configurator_s_quadrant" inherit_id="website.configurator_s_quadrant">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Avantgarde Gallery
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        250 Executive Park Blvd, Suite 3400<br/>San Francisco CA 94134<br/>United States
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
+        Get Directions
+    </xpath>
+</template>
+
+</odoo>
+

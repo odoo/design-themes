@@ -22,10 +22,6 @@
     <xpath expr="//h2" position="attributes">
         <attribute name="style">text-align: center;</attribute>
     </xpath>
-    <xpath expr="//h2" position="replace" mode="inner">
-        <br/>
-        Our mission
-    </xpath>
     <!-- Column n°1 - Add separator -->
     <xpath expr="//h2" position="after">
         <div class="s_hr pb32 pt8" data-snippet="s_hr" data-name="Separator">
@@ -35,9 +31,6 @@
     <!-- Column n°1 - Paragraph -->
     <xpath expr="//p" position="attributes">
         <attribute name="style">text-align: center;</attribute>
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        Our aim is to make the early years of your child’s life as enjoyable, rewarding and positive as possible.
     </xpath>
     <!-- Column n°1 - Image -->
     <xpath expr="//figure" position="attributes">
@@ -59,10 +52,6 @@
     <xpath expr="(//h2)[2]" position="attributes">
         <attribute name="style">text-align: center;</attribute>
     </xpath>
-    <xpath expr="(//h2)[2]" position="replace" mode="inner">
-        <br/>
-        For every kid
-    </xpath>
     <!-- Column n°2 - Add separator -->
     <xpath expr="(//h2)[2]" position="after">
         <div class="s_hr pb32 pt8" data-snippet="s_hr" data-name="Separator">
@@ -72,9 +61,6 @@
     <!-- Column n°2 - Paragraph -->
     <xpath expr="(//p)[2]" position="attributes">
         <attribute name="style">text-align: center;</attribute>
-    </xpath>
-    <xpath expr="(//p)[2]" position="replace" mode="inner">
-        All activities are planned to meet each child’s individual needs. This approach will help your child to develop to the best of their ability.
     </xpath>
     <!-- Column n°2 - Image -->
     <xpath expr="(//figure)[2]" position="attributes">
@@ -96,10 +82,6 @@
     <xpath expr="(//h2)[3]" position="attributes">
         <attribute name="style">text-align: center;</attribute>
     </xpath>
-    <xpath expr="(//h2)[3]" position="replace" mode="inner">
-        <br/>
-        Open-door policy
-    </xpath>
     <!-- Column n°3 - Add separator -->
     <xpath expr="(//h2)[3]" position="after">
         <div class="s_hr pb32 pt8" data-snippet="s_hr" data-name="Separator">
@@ -110,24 +92,9 @@
     <xpath expr="(//p)[3]" position="attributes">
         <attribute name="style">text-align: center;</attribute>
     </xpath>
-    <xpath expr="(//p)[3]" position="replace" mode="inner">
-        You are welcome to come and see the nursery and meet the team at any time convenient to you.
-    </xpath>
     <!-- Column n°3 - Image -->
     <xpath expr="(//figure)[3]" position="attributes">
         <attribute name="class" add="ratio-1x1" remove="ratio-16x9" separator=" "/>
-    </xpath>
-</template>
-
-<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
-    <!-- Shape option -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/06','colors':{'c5':'o-color-3'},'flip':['y'],'showOnMobile':true,'shapeAnimationSpeed':'0'}</attribute>
-    </xpath>
-
-    <!-- Shape -->
-    <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Connections_06 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Connections/06.svg?c5=o-color-3&amp;flip=y'); background-position: 50% 0%;"/>
     </xpath>
 </template>
 

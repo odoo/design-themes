@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_image_text ===== -->
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        <p><br/>Our code is built for performance, scalability, and reliability. With meticulous attention to detail, we create clean, maintainable, and efficient solutions that power your business forward.</p>
+    </xpath>
+</template>
+
+<!-- ===== s_text_image ===== -->
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        <p><br/>Clear, consistent communication drives success. We prioritize open dialogue, ensuring alignment with your goals and seamless collaboration throughout every project.</p>
+    </xpath>
+</template>
+
+<!-- ===== s_cta_box ===== -->
+<template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Join our tech team for innovation<br/>and growth!
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Join our dynamic tech team focused on innovation and growth.<br/><br/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Contact us
+    </xpath>
+</template>
+
+</odoo>
+

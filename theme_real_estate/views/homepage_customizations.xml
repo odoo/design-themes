@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
+    <!-- Lead -->
+    <xpath expr="//p" position="replace" mode="inner">
+        With a simple click, finding your dream home has never been easier.<br/><br/>
+    </xpath>
+    <!-- Button 1 -->
+    <xpath expr="(//a)[1]" position="replace" mode="inner">
+        Search Now
+    </xpath>
+</template>
+
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Are you thinking of selling?
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[1]" position="replace" mode="inner">
+        Make an appointment for a free valuation of your property. We visit the property, advise you on a realistic asking price and we explain our way of working. <br/>
+        You can decide in all freedom whether or not you would like to work with us for the sale of your property.
+    </xpath>
+</template>
+
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Bored with your interior?
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[1]" position="replace" mode="inner">
+        Our decoration experts are at your disposal to guide you step by step in the design of your interior and will give you the best advice for your interior design.
+    </xpath>
+    <xpath expr="//p[2]" position="replace" mode="inner">
+        Discover our tailor-made services to embellish the decoration of your home.
+    </xpath>
+</template>
+
+<template id="configurator_s_three_columns" inherit_id="website.configurator_s_three_columns">
+    <!-- Column #1 -->
+    <xpath expr="(//h2)[2]" position="replace" mode="inner">
+        House On The Hill
+    </xpath>
+    <xpath expr="//p[hasclass('card-text')]" position="replace" mode="inner">
+        Waste no time in viewing this truly stunning property. The property's surroundings really set it apart, offering idyllic sea views overlooking a park.
+    </xpath>
+    <!-- Column #2 -->
+    <xpath expr="(//h2)[3]" position="replace" mode="inner">
+        Moutain View
+    </xpath>
+    <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
+        The house is surrounded by garden terraces that create an intimate ambience. With no overlooking neighbours, the garden offers real privacy.
+    </xpath>
+    <!-- Column #3 -->
+    <xpath expr="(//h2)[4]" position="replace" mode="inner">
+        Paradise Residence
+    </xpath>
+    <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
+        Elegant, modern sophisticated architecture with an impressive in large scale home designed with the finest imported finishes. Marble and wood floors...
+    </xpath>
+</template>
+
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Where every house becomes a home.
+    </xpath>
+</template>
+
+<template id="configurator_s_quotes_carousel" inherit_id="website.configurator_s_quotes_carousel">
+    <!-- Quote 1 -->
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[1]" position="replace" mode="inner">
+        Amazing team! smiling, always nice to talk with, they always have the best advices for you, adapted to your needs!
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//span//span" position="replace" mode="inner">
+        Customer, bought a house
+    </xpath>
+    <!-- Quote 2 -->
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[2]" position="replace" mode="inner">
+        From start to finish, they were extremely professional, friendly, helpful and easy to do business with. Very happy with the experience and the company.
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//span//span" position="replace" mode="inner">
+        Customer, bought an appartement
+    </xpath>
+    <!-- Quote 3 -->
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
+        Positive energy, great team spirit, hard workers and awesome people! I warmly recommend them!
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//span//span" position="replace" mode="inner">
+        Customer, sold an appartement
+    </xpath>
+</template>
+
+<template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Want To Become A Real Estate Agent?
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        We'll help you to grow your career and growth.
+    </xpath>
+</template>
+
+</odoo>
+

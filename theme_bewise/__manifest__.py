@@ -4,13 +4,14 @@
     'category': 'Theme/Education',
     'summary': 'University, Education, Schools, Young, Play, Kids',
     'sequence': 240,
-    'version': '3.0.0',
+    'version': '3.1.0',
     'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
         'views/image_content.xml',
         'views/customizations.xml',
+        'views/homepage_customizations.xml',
         'views/new_page_template.xml',
     ],
     'images': [

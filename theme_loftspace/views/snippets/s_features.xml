@@ -6,12 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt72 pb128" remove="pt64 pb64" separator=" "/>
     </xpath>
-    <xpath expr="//div[hasclass('container')]/h2" position="replace" mode="inner">
-        Customer benefits
-    </xpath>
-    <xpath expr="//div[hasclass('container')]/p" position="replace" mode="inner">
-        Enjoy these added advantages with every purchase
-    </xpath>
     <!-- Column #01 -->
     <xpath expr="//div[hasclass('row')]/div[1]" position="replace">
         <div class="col-lg-3">

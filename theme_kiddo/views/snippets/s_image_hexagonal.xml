@@ -2,10 +2,6 @@
 <odoo>
 
 <template id="s_image_hexagonal" inherit_id="website.s_image_hexagonal">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        A little place of paradise
-    </xpath>
     <!-- Columns -->
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="attributes">
         <attribute name="class" remove="g-col-lg-4 col-lg-4" add="g-col-lg-3 col-lg-3" separator=" "/>

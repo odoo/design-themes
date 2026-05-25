@@ -13,19 +13,6 @@
     <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
         <attribute name="class" add="pt120 pb120" remove="pt160 pb160" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Travel to any corner <br/>of the world
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        <b>A travel agent helps you to plan your <br/> trip from start to finish.</b>
-        <br/>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a" position="replace" mode="inner">
-        Plan your trip with us
-    </xpath>
 </template>
 
 <template id="configurator_s_cover" inherit_id="website.configurator_s_cover">

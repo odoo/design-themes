@@ -6,10 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_three_quarter_height" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Live life in full bloom
-    </xpath>
     <!-- Remove paragraphs & button -->
     <xpath expr="//p[hasclass('lead')]" position="replace"/>
     <xpath expr="//p" position="replace"/>

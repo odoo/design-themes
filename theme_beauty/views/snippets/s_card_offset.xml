@@ -14,18 +14,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Unveil Your Natural Beauty
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Enhance your natural beauty with our range of skincare and cosmetic products. Our experts provide personalized care to help you look and feel your best every day.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Discover the beauty within you.
-    </xpath>
 </template>
 
 </odoo>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="configurator_s_company_team" inherit_id="website.configurator_s_company_team">
+    <!-- Row #1 - Col #1 -->
+    <xpath expr="//div[hasclass('col-lg-9')]//h3" position="replace" mode="inner">
+        Livia Sailor
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-9')]//p" position="replace" mode="inner">
+        <font style="font-weight: bolder;" class="text-o-color-1">The Planner</font>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-9')]//p[2]" position="replace" mode="inner">
+        Livia is our head wedding coordinator and stylist, she'll turn any of your ideas into reality, making sure your wedding day is smooth and looks better than anything you have ever seen on Pinterest.
+    </xpath>
+    <!-- Row #1 - Col #2 -->
+    <xpath expr="(//div[hasclass('col-lg-9')])[2]//h3" position="replace" mode="inner">
+        Clair Stark
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-9')])[2]//p" position="replace" mode="inner">
+        <font style="font-weight: bolder;" class="text-o-color-1">The Designer</font>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-9')])[2]//p[2]" position="replace" mode="inner">
+        Clair has a background in both design and photography. With these strong skills in his toolbox, he will take care of the decoration of the place, as well as create lifelong memories for you and your soulmate.
+    </xpath>
+</template>
+
+<template id="configurator_s_quotes_carousel" inherit_id="website.configurator_s_quotes_carousel">
+    <!-- Quote 1 -->
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[1]" position="replace" mode="inner">
+        They turned our dream into reality with ease and professionalism!
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//strong" position="replace" mode="inner">
+        Linda and Paul
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[1]//span//span" position="replace" mode="inner">
+        Married in 2020
+    </xpath>
+    <!-- Quote 2 -->
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[2]" position="replace" mode="inner">
+        They made our big day stree-free and absolutely beautiful!
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//strong" position="replace" mode="inner">
+        Jack and Mary
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[2]//span//span" position="replace" mode="inner">
+        Married in 2019
+    </xpath>
+    <!-- Quote 3 -->
+    <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
+        Everything was so well-coordinated, we couldn't have asked for more!
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//strong" position="replace" mode="inner">
+        Rose and Peter
+    </xpath>
+    <xpath expr="(//div[hasclass('s_blockquote_author')])[3]//span//span" position="replace" mode="inner">
+        Renewed their vows in 2021
+    </xpath>
+</template>
+
+</odoo>
+

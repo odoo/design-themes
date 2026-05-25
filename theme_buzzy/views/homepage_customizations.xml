@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_banner ===== -->
+<template id="configurator_s_banner" inherit_id="website.configurator_s_banner">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Unleash your <strong><span class="o_text_highlight o_translate_inline o_text_highlight_scribble_3 o_text_highlight_fill">potential</span>.</strong>
+    </xpath>
+</template>
+
+<!-- ===== s_discovery ===== -->
+<template id="configurator_s_discovery" inherit_id="website.configurator_s_discovery">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace">
+        <h2 class="display-4-fs" style="text-align: center;"><span style="font-weight: normal;">Discover our solutions</span></h2>
+    </xpath>
+</template>
+
+<!-- ===== s_showcase ===== -->
+<template id="configurator_s_showcase" inherit_id="website.configurator_s_showcase">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Features <span class="o_text_highlight o_translate_inline o_text_highlight_scribble_3 o_text_highlight_fill">showcase</span>
+    </xpath>
+</template>
+
+<!-- ===== s_key_benefits ===== -->
+<template id="configurator_s_key_benefits" inherit_id="website.configurator_s_key_benefits">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        <span style="font-weight: normal;">Discover our</span><br/><span style="font-weight: normal;">main <span class="o_text_highlight o_translate_inline o_text_highlight_bold_2 o_text_highlight_fill">three benefits</span></span>
+    </xpath>
+    <!-- Titles -->
+    <xpath expr="(//h3)[1]" position="replace" mode="inner">
+        Strategic Solutions
+    </xpath>
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Dedicated Support
+    </xpath>
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Exclusive Partnerships
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//div[hasclass('col-lg-4')][1]/p" position="replace" mode="inner">
+        We offer tailored strategies that align with your business goals, driving growth and maximizing efficiency.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
+        Our team provides continuous support, ensuring your projects run smoothly and challenges are addressed promptly.
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-4')][3]/p" position="replace" mode="inner">
+        Benefit from unique collaborations and partnerships that give your business a competitive edge in the market.
+    </xpath>
+</template>
+
+<!-- ===== s_accordion_image ===== -->
+<template id="configurator_s_accordion_image" inherit_id="website.configurator_s_accordion_image">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Top <span class="o_text_highlight o_translate_inline o_text_highlight_scribble_4 o_text_highlight_fill">questions</span> answered
+    </xpath>
+</template>
+
+<!-- ===== s_cta_box ===== -->
+<template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
+    <xpath expr="//div[hasclass('card')]" position="attributes">
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Blobs/10_002','colors':{'c5':'o-color-1'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_html_builder_Blobs_10_002" style="background-image: url('/html_editor/shape/html_builder/Blobs/10_002.svg?c5=o-color-1');"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Discover our<br/>different open-spaces
+    </xpath>
+    <!-- Paragraphs -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Looking for a place to work ? We got you covered<br/><br/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Learn more
+    </xpath>
+</template>
+
+</odoo>
+

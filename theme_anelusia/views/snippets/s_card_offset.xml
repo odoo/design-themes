@@ -10,18 +10,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Redefining Style with Every Step
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Discover the latest trends in fashion and sportswear, designed to elevate your style and performance. Our collection offers a blend of innovation, comfort, and flair.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Shop the looks that define the season.
-    </xpath>
 </template>
 
 </odoo>

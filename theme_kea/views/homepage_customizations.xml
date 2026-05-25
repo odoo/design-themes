@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_cover ===== -->
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        The Revolution <br/> in Virtual Reality
+    </xpath>
+</template>
+
+<!-- ===== s_text_image ===== -->
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pb232" remove="pb80" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Wavy/22_001","colors":{"c5":"o-color-2"},"flip":["x"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Wavy_22_001" style="background-image: url('/html_editor/shape/html_builder/Wavy/22_001.svg?c5=o-color-2&amp;flip=x'); background-position: 50% 100%;"/>
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.
+    </xpath>
+</template>
+
+<!-- ===== s_picture ===== -->
+<template id="configurator_s_picture" inherit_id="website.configurator_s_picture">
+    <!-- Shape option -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Wavy/03","flip":["y"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_container_small')]" position="before">
+        <div class="o_we_shape o_html_builder_Wavy_03" style="background-image: url('/html_editor/shape/html_builder/Wavy/03.svg?c1=o-color-1&amp;c2=o-color-2&amp;flip=y'); background-position: 50% 100%;"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Experience a new world
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Put yourself at the center of an extraordinary gaming universe with exclusive games.
+    </xpath>
+</template>
+
+<!-- ===== s_image_text ===== -->
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pt232" remove="pt80" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Wavy/22_001","colors":{"c5":"o-color-2"},"flip":["y"]}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Wavy_22_001" style="background-image: url('/html_editor/shape/html_builder/Wavy/22_001.svg?c5=o-color-2&amp;flip=y'); background-position: 50% 0%;"/>
+    </xpath>
+</template>
+
+<!-- ===== s_color_blocks_2 ===== -->
+<template id="configurator_s_color_blocks_2" inherit_id="website.configurator_s_color_blocks_2">
+    <!-- Box #1 - Title -->
+    <xpath expr="//div[hasclass('col-lg-6')]//h2" position="replace" mode="inner">
+        Multiplayer
+    </xpath>
+    <!-- Box #1 - Text -->
+    <xpath expr="//div[hasclass('col-lg-6')]//p" position="replace" mode="inner">
+        Conquer leaderboards, crush workouts, create with friends and more. Get lost in a growing library of VR classics and all-new experiences.
+    </xpath>
+    <!-- Box #2 - Title -->
+    <xpath expr="//div[hasclass('col-lg-6')][2]//h2" position="replace" mode="inner">
+        Freedom
+    </xpath>
+    <!-- Box #2 - Text -->
+    <xpath expr="//div[hasclass('col-lg-6')][2]//p" position="replace" mode="inner">
+        No matter who you are, with a growing library of games and experiences there is no limit to where you can go and what you can do in virtual reality.
+    </xpath>
+</template>
+
+<!-- ===== s_media_list ===== -->
+<template id="configurator_s_media_list" inherit_id="website.configurator_s_media_list">
+    <!-- Text 1 -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Comfort &amp; Ease
+    </xpath>
+    <xpath expr="//p" position="replace" mode="inner">
+        We only use original parts or parts of equivalent quality. ​We make sure you get the best quality available on the market at the best price. All our interventions are guaranteed for a period of one year.
+    </xpath>
+    <!-- Text 2 -->
+    <xpath expr="(//h3)[2]" position="replace" mode="inner">
+        Fitting design
+    </xpath>
+    <xpath expr="(//p)[2]" position="replace" mode="inner">
+        We only use original parts or parts of equivalent quality. ​We make sure you get the best quality available on the market at the best price. All our interventions are guaranteed for a period of one year.
+    </xpath>
+    <!-- Text 3 -->
+    <xpath expr="(//h3)[3]" position="replace" mode="inner">
+        Natural control
+    </xpath>
+    <xpath expr="(//p)[3]" position="replace" mode="inner">
+        Use this snippet to build various types of components that feature a left- or right-aligned image alongside textual content. Duplicate the element to create a list that fits your needs.
+    </xpath>
+</template>
+
+</odoo>
+

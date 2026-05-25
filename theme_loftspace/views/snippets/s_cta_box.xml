@@ -10,10 +10,6 @@
     <xpath expr="//div[hasclass('card')]" position="attributes">
         <attribute name="class" add="o_cc1" remove="o_cc4" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Transform your space with<br/>our furniture. Contact us<br/>to bring your vision to life!<br/>
-    </xpath>
     <!-- Paragraph -->
     <xpath expr="//p" position="replace">
         <p><br/></p>

@@ -11,16 +11,7 @@
         <div class="o_we_shape o_html_builder_Wavy_22_001" style="background-image: url('/html_editor/shape/html_builder/Wavy/22_001.svg?c5=o-color-3');"/>
     </xpath>
 
-    <!-- Texts -->
-    <xpath expr="//p[hasclass('s_blockquote_quote')]" position="replace" mode="inner">
-        " Their care and learning are wonderful. Safe, nurturing, and full of creativity. "
-    </xpath>
-    <xpath expr="(//p[hasclass('s_blockquote_quote')])[2]" position="replace" mode="inner">
-        " A perfect place for early growth. <br/>Supportive staff, fun activities, and a loving environment. "
-    </xpath>
-    <xpath expr="(//p[hasclass('s_blockquote_quote')])[3]" position="replace" mode="inner">
-        " Exceptional teachers and care! <br/>They foster learning and joy every single day. "
-    </xpath>
+    <!-- Remove author lines -->
     <xpath expr="//span[hasclass('text-muted')]" position="replace"/>
     <xpath expr="//span[hasclass('text-muted')]" position="replace"/>
     <xpath expr="//span[hasclass('text-muted')]" position="replace"/>

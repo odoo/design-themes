@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_sidegrid ===== -->
+<template id="configurator_s_sidegrid" inherit_id="website.configurator_s_sidegrid">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace">
+        <h1 class="display-4">Join the artistic<br/>revolution</h1>
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace">
+        <p class="lead"><br/>Art is a journey of expression, where every stroke and color tells a story waiting to be unveiled.<br/><br/></p>
+    </xpath>
+</template>
+
+<!-- ===== s_product_catalog ===== -->
+<template id="configurator_s_product_catalog" inherit_id="website.configurator_s_product_catalog">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace">
+        <h2 style="text-align: left !important;">Upcoming Exhibitions</h2>
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace">
+        <p class="lead" style="text-align: left !important;">Artistic journey around the world</p>
+    </xpath>
+    <!-- Remove column titles -->
+    <xpath expr="//div[hasclass('col-lg-6')]/h3[hasclass('h4-fs')]" position="replace"/>
+    <xpath expr="//div[hasclass('col-lg-6')][2]/h3[hasclass('h4-fs')]" position="replace"/>
+    <!-- Exhibition lists -->
+    <xpath expr="//div[hasclass('col-lg-6')]/ul[hasclass('list-unstyled')]" position="replace">
+        <ul class="list-unstyled my-3">
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="New York"
+                price.translate="02.08.2025"
+                description.translate="The Museum of Modern Art (MoMA)"/>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="Paris"
+                price.translate="09.09.2025"
+                description.translate="Digital Art Paris"/>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="Brussels"
+                price.translate="12.11.2025"
+                description.translate="Royal Museums of Fine Arts of Belgium"/>
+        </ul>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][2]/ul[hasclass('list-unstyled')]" position="replace">
+        <ul class="list-unstyled my-3">
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="Amsterdam"
+                price.translate="02.08.2025"
+                description.translate="Comput'Art"/>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="Berlin"
+                price.translate="12.12.2025"
+                description.translate="Berlin Art Week"/>
+            <t t-call="website.s_product_catalog_dish"
+                name.translate="London"
+                price.translate="03.01.2026"
+                description.translate="Abstract Vision"/>
+        </ul>
+    </xpath>
+</template>
+
+<!-- ===== s_cta_box ===== -->
+<template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Discover new creations<br/>and artistic masterpieces !
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Elevate your space with the unique wonders of artistic craftsmanship.<br/><br/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Discover
+    </xpath>
+</template>
+
+<!-- ===== s_shape_image ===== -->
+<template id="configurator_s_shape_image" inherit_id="website.configurator_s_shape_image">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Dylan Doe
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Dylan Doe is a 3D artist known for his vibrant and immersive digital creations that captivate audiences worldwide.
+    </xpath>
+    <xpath expr="//p[2]" position="replace"/>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Contact Me
+    </xpath>
+</template>
+
+</odoo>
+

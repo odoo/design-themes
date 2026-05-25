@@ -10,21 +10,11 @@
     <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
         <attribute name="class" add="pt40 pb40" remove="pt160 pb160" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Bringing life to your interior
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Discover our unique pieces of furniture selected for you.
-    </xpath>
+    <!-- Add empty paragraph after lead -->
     <xpath expr="//p[hasclass('lead')]" position="after">
         <p><br/></p>
     </xpath>
     <!-- Button -->
-    <xpath expr="//a[@t-att-href='cta_btn_href']/t" position="replace" mode="inner">
-        Discover More
-    </xpath>
     <xpath expr="//a[@t-att-href='cta_btn_href']" position="attributes">
         <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
     </xpath>

@@ -4,11 +4,12 @@
     'category': 'Theme/Creative',
     'summary': 'Design, Fine Art, Artwork, Creative, Creativity, Galleries, Trends, Shows, Magazines, Blogs',
     'sequence': 150,
-    'version': '2.0.0',
+    'version': '2.1.0',
     'data': [
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
         'views/images_library.xml',
+        'views/homepage_customizations.xml',
         'views/customizations.xml',
         'views/new_page_template.xml',
     ],

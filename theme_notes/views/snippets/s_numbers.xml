@@ -18,9 +18,6 @@
     <xpath expr="(//div[hasclass('col-lg-2')])[1]" position="attributes">
         <attribute name="class" add="pt104 pb104 o_cc o_cc1" remove="pt24 pb24" separator=" "/>
     </xpath>
-   <xpath expr="//span[hasclass('h5-fs')]" position="replace" mode="inner">
-        Editions through the Europe
-    </xpath>
     <!-- Second KPI -->
     <xpath expr="(//div[hasclass('col-lg-2')])[2]" position="attributes">
         <attribute name="class" add="pt104 pb104 o_cc o_cc4" remove="pt24 pb24" separator=" "/>
@@ -28,15 +25,9 @@
     <xpath expr="(//span[hasclass('s_number')])[2]" position="replace" mode="inner">
         72
     </xpath>
-    <xpath expr="(//span[hasclass('h5-fs')])[2]" position="replace" mode="inner">
-        Artists from around the world
-    </xpath>
     <!-- Third KPI -->
     <xpath expr="(//div[hasclass('col-lg-2')])[3]" position="attributes">
         <attribute name="class" add="pt104 pb104 o_cc o_cc2" remove="pt24 pb24" separator=" "/>
-    </xpath>
-    <xpath expr="(//span[hasclass('h5-fs')])[3]" position="replace" mode="inner">
-        Scenes outdoor &amp; indoor
     </xpath>
 </template>
 

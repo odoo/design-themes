@@ -60,9 +60,6 @@
         <h2>Top quality code</h2>
     </xpath>
 
-    <xpath expr="//p" position="replace" mode="inner">
-        <p><br/>Our code is built for performance, scalability, and reliability. With meticulous attention to detail, we create clean, maintainable, and efficient solutions that power your business forward.</p>
-    </xpath>
 
     <xpath expr="//a" position="replace"/>
 </template>
@@ -74,9 +71,6 @@
     </xpath>
     <xpath expr="//h2" position="replace">
         <h2>Communication is key!</h2>
-    </xpath>
-    <xpath expr="//p" position="replace" mode="inner">
-        <p><br/>Clear, consistent communication drives success. We prioritize open dialogue, ensuring alignment with your goals and seamless collaboration throughout every project.</p>
     </xpath>
     <xpath expr="//a" position="replace"/>
 </template>
@@ -98,9 +92,6 @@
 <template id="s_title" inherit_id="website.s_title" name="Paptic s_title">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt96 pb80" remove="pt40 pb40" separator=" "/>
-    </xpath>
-     <xpath expr="//h2" position="replace" mode="inner">
-        Unique experiences.
     </xpath>
 </template>
 
@@ -171,9 +162,6 @@
     </xpath>
 
     <!-- Texts -->
-    <xpath expr="(//h2)[2]" position="replace" mode="inner">
-        Leading the future with innovation
-    </xpath>
 </template>
 
 <!-- ==== References ===== -->
@@ -200,13 +188,6 @@
     <xpath expr="//div[hasclass('card')]" position="attributes">
         <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
-    <!-- Card #1 - Title & text -->
-    <xpath expr="//h2[hasclass('card-title')]" position="replace" mode="inner">
-        HeyNosf Inc. Digital Transformation
-    </xpath>
-    <xpath expr="//p[hasclass('card-text')]" position="replace" mode="inner">
-        HeyNosf Inc. is a communication agency that was founded in 2006, by Jean-Louis Dewinter. He always had a strong interest in languages and decided to create a company reflecting his own interests.
-    </xpath>
     <!-- Card #1 - Image -->
     <xpath expr="(//figure)[1]"  position="attributes">
         <attribute name="class" remove="ratio-16x9" add="ratio-1x1" separator=" "/>
@@ -219,13 +200,6 @@
     <xpath expr="(//div[hasclass('card')])[2]" position="attributes">
         <attribute name="style" add="border-width: 0px !important;" separator=";"/>
     </xpath>
-    <!-- Card #2 - Title & text -->
-    <xpath expr="(//h2[hasclass('card-title')])[2]" position="replace" mode="inner">
-        Fallanzy Integration Explained
-    </xpath>
-    <xpath expr="(//p[hasclass('card-text')])[2]" position="replace" mode="inner">
-        Fallanzy has been active in the workspace design and ergonomics consulting business for over 20 years. Discover how we answered to the challenges of this company.
-    </xpath>
     <!-- Card #2 - Image -->
     <xpath expr="(//figure)[2]"  position="attributes">
         <attribute name="class" remove="ratio-16x9" add="ratio-1x1" separator=" "/>
@@ -237,13 +211,6 @@
     <!-- Card #3 -->
     <xpath expr="(//div[hasclass('card')])[3]" position="attributes">
         <attribute name="style" add="border-width: 0px !important;" separator=";"/>
-    </xpath>
-    <!-- Card #3 - Title & text -->
-    <xpath expr="(//h2[hasclass('card-title')])[3]" position="replace" mode="inner">
-        Hotels Improvement Study
-    </xpath>
-    <xpath expr="(//p[hasclass('card-text')])[3]" position="replace" mode="inner">
-        Our solution is suitable for Hotels as well. We help management to optimize their time and employee to be more efficient and more productive. Discover our study.
     </xpath>
     <!-- Card #3 - Image -->
     <xpath expr="(//figure)[3]"  position="attributes">
@@ -281,10 +248,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt120 pb120 o_cc1" remove="pt64 pb64 o_cc5" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        50,000+ companies run Paptic to grow their businesses.
-    </xpath>
 </template>
 
 <!-- ==== CTA Box ===== -->
@@ -293,14 +256,6 @@
     <xpath expr="//div[hasclass('card')]" position="attributes">
         <attribute name="class" add="flex-lg-row" remove="flex-lg-row-reverse" separator=" "/>
         <attribute name="style" add="border-radius: 24px !important; -card-img-size-h: 33.33333%;" separator=";"/>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Join our tech team for innovation<br/>and growth!
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Join our dynamic tech team focused on innovation and growth.<br/><br/>
     </xpath>
     <!-- Figure -->
     <xpath expr="//figure" position="attributes">
@@ -311,13 +266,7 @@
         <attribute name="src">/html_editor/shape/theme_paptic/s_cta_box.svg?c1=o-color-1&amp;c2=o-color-2</attribute>
         <attribute name="style">padding: 40px;</attribute>
     </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
-        Contact us
-    </xpath>
 </template>
-
-<!-- ==== Numbers ===== -->
 <template id="s_numbers" inherit_id="website.s_numbers" name="Paptic s_numbers">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
@@ -407,51 +356,11 @@
     </xpath>
 </template>
 
-<!-- ======== FREE GRID ======== -->
-<template id="s_freegrid" inherit_id="website.s_freegrid">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Expert Consultancy in Tech and Design
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Optimize your business with our consultancy services in technology and design. We provide strategic advice and innovative solutions to help you stay ahead in the digital age.
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a" position="replace" mode="inner">
-        Unlock Your Potential
-    </xpath>
-</template>
-
 <!-- ======== UNVEIL ======== -->
 <template id="s_unveil" inherit_id="website.s_unveil">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc3" separator=" "/>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Accelerate your success
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p" position="replace" mode="inner">
-        Fuel your business growth with cutting-edge technology and collaborative spaces.
-    </xpath>
-</template>
-
-<!-- ======== QUADRANT ======== -->
-<template id="s_quadrant" inherit_id="website.s_quadrant">
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        IT Consultancy
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Unlock your business potential with our IT consultancy services. We offer strategic advice and cutting-edge solutions to keep you ahead in the tech world.<br/><br/> Let us guide your digital transformation.
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Get Started
     </xpath>
 </template>
 
@@ -459,30 +368,6 @@
 <template id="s_accordion_image" inherit_id="website.s_accordion_image" name="Paptic s_accordion_image">
     <xpath expr="//section" position="attributes">
         <attribute name="class" remove="o_cc o_cc2" separator=" "/>
-    </xpath>
-</template>
-
-<!-- ======== KEY BENEFITS ======== -->
-<template id="s_key_benefits" inherit_id="website.s_key_benefits">
-    <!-- Titles -->
-    <xpath expr="(//h3)[1]" position="replace" mode="inner">
-        Bespoke Solutions
-    </xpath>
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        Dedicated Support
-    </xpath>
-    <xpath expr="(//h3)[3]" position="replace" mode="inner">
-        Exclusive Insights
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//div[hasclass('col-lg-4')][1]/p" position="replace" mode="inner">
-        We provide tailored consulting strategies that address your unique challenges and objectives, ensuring effective and practical outcomes.
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-4')][2]/p" position="replace" mode="inner">
-        Our consultants offer ongoing support and expert advice, guiding you through each phase of your project with personalized attention.
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-4')][3]/p" position="replace" mode="inner">
-        Access cutting-edge insights and industry expertise that give you a strategic advantage and enhance your decision-making process.
     </xpath>
 </template>
 
@@ -501,94 +386,6 @@
         <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
     </xpath>
     <xpath expr="//span[hasclass('s_parallax_bg_wrap')]" position="replace"/>
-
-    <!-- Texts -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Our Corporate Services
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Enhance your business operations with our comprehensive suite of professional services, tailored to meet your corporate needs.
-    </xpath>
-    <xpath expr="//h3" position="replace" mode="inner">
-        ✽&#160;&#160;Consulting Services
-    </xpath>
-    <xpath expr="(//h3)[2]" position="replace" mode="inner">
-        ✽&#160;&#160;Technology Solutions
-    </xpath>
-    <xpath expr="//t[@t-set='name']" position="replace" mode="inner">
-        Business Strategy Consulting
-    </xpath>
-    <xpath expr="//t[@t-set='price']" position="replace" mode="inner">
-        Starting at $2,500
-    </xpath>
-    <xpath expr="//t[@t-set='description']" position="replace" mode="inner">
-        Expert advice on business planning, market analysis, and competitive strategy to help your company achieve its goals.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[2]" position="replace" mode="inner">
-        Financial Advisory Services
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[2]" position="replace" mode="inner">
-        Starting at $3,000
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[2]" position="replace" mode="inner">
-        Comprehensive financial planning, including risk assessment, investment strategy, and tax optimization for your business.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[3]" position="replace" mode="inner">
-        Human Resources Management
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[3]" position="replace" mode="inner">
-        Starting at $1,800
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[3]" position="replace" mode="inner">
-        Customized HR solutions, including talent acquisition, employee training, and performance management to boost productivity.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[4]" position="replace" mode="inner">
-        IT Support Services
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[4]" position="replace" mode="inner">
-        Starting at $2,000
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[4]" position="replace" mode="inner">
-        Reliable IT support, network management, and cybersecurity solutions to safeguard your business operations and data integrity.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[5]" position="replace" mode="inner">
-        Cloud Computing Solutions
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[5]" position="replace" mode="inner">
-        Starting at $2,500
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[5]" position="replace" mode="inner">
-        Scalable cloud services to enhance your business’s flexibility and data accessibility, supporting remote work and collaboration.
-    </xpath>
-    <xpath expr="(//t[@t-set='name'])[6]" position="replace" mode="inner">
-        Digital Marketing Services
-    </xpath>
-    <xpath expr="(//t[@t-set='price'])[6]" position="replace" mode="inner">
-        Starting at $1,500
-    </xpath>
-    <xpath expr="(//t[@t-set='description'])[6]" position="replace" mode="inner">
-        Strategic online marketing, SEO optimization, and social media management to boost your brand visibility and customer engagement.
-    </xpath>
-</template>
-
-<!-- ==== Striped Center Top ===== -->
-<template id="s_striped_center_top" inherit_id="website.s_striped_center_top">
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Expert Consultancy for Digital Success
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Leverage our expertise in design and technology to drive innovation and digital transformation in your business.
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')]/t" position="replace" mode="inner">
-        Get Expert Advice
-    </xpath>
-    <!-- Figcaption -->
-    <xpath expr="//figcaption" position="replace" mode="inner">
-        Expertise that transforms ideas
-    </xpath>
 </template>
 
 <!-- ==== Image Title ===== -->
@@ -604,27 +401,6 @@
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace"/>
 </template>
 
-<!-- ==== KEY IMAGES ===== -->
-<template id="s_key_images" inherit_id="website.s_key_images" name="Paptic s_key_images">
-    <xpath expr="//h2" position="replace" mode="inner">
-        Driving Success Through Innovation
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Empowering Businesses to Reach New Heights
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
-        Customized solutions for your business needs
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
-        Expert advice to navigate complex challenges
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
-        Proven strategies for sustainable growth
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
-        Partner with us to unlock your potential
-    </xpath>
-</template>
 
 <!-- ======== IMAGE FRAME ======== -->
 <template id="s_image_frame" inherit_id="website.s_image_frame">
@@ -644,18 +420,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Expert Consultancy in Tech &amp; Design
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Optimize your business with our consultancy services in technology and design. We provide strategic advice and innovative solutions to help you stay ahead in the digital age.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Unlock your business potential.
-    </xpath>
 </template>
 
 <!-- ==== Big Number ===== -->
@@ -674,12 +438,6 @@
     <!-- Text -->
     <xpath expr="//h2/span" position="attributes">
         <attribute name="style" add="font-size: 9.375rem;" remove="font-size: 10.75rem;" separator=";"/>
-    </xpath>
-    <xpath expr="//h2/span" position="replace" mode="inner">
-        85%
-    </xpath>
-    <xpath expr="//p/span" position="replace" mode="inner">
-        customers satisfaction
     </xpath>
 </template>
 
@@ -716,30 +474,6 @@
     </xpath>
 </template>
 
-<!-- ==== EMPOWERMENT ===== -->
-<template id="s_empowerment" inherit_id="website.s_empowerment">
-    <!-- Badge content -->
-    <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
-        <i class="fa fa-fw fa-info-circle o_not-animable" role="img"/> Strategic insights&#160;
-        <a href="#">Explore our case studies&#160;<i class="fa fa-long-arrow-right" role="img"/></a>
-    </xpath>
-    <!-- Title -->
-    <xpath expr="//h1" position="replace" mode="inner">
-        Elevate your business<br/>with expert consultancy services
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        <br/>Offering tailored strategies to drive growth and success.<br/><br/>
-    </xpath>
-    <!-- Button -->
-    <xpath expr="//a[hasclass('btn')][1]" position="replace" mode="inner">
-        Our solutions
-    </xpath>
-    <!-- Second Button -->
-    <xpath expr="//a[hasclass('btn')][2]" position="replace" mode="inner">
-        Book a call
-    </xpath>
-</template>
 
 <!-- ==== FORM COVER ===== -->
 <template id="s_website_form_cover" inherit_id="website.s_website_form_cover">

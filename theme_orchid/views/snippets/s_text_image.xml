@@ -14,18 +14,6 @@
     <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
         <attribute name="class" add="col-lg-4 px-5 o_cc o_cc5 rounded pt56 pb56" remove="col-lg-5 pt16 pb16" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Our Mission
-    </xpath>
-    <!-- Paragraphs -->
-    <xpath expr="//p" position="replace" mode="inner">
-        <br/>
-        Deliver flowers to live up to your dedication for your loved ones.
-    </xpath>
-    <xpath expr="//p[2]" position="replace" mode="inner">
-        To do so, we collaborate with local producers who care about the environment and cultivate their flowers with love.
-    </xpath>
     <!-- Img wrapper -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="col-lg-7" remove="col-lg-6" separator=" "/>

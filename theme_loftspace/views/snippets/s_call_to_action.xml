@@ -13,10 +13,7 @@
     <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
         <attribute name="class" add="col-lg-12" remove="col-lg-3" separator=" "/>
     </xpath>
-    <!-- Title & paragraph -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Would you like more information <br/>about a product?
-    </xpath>
+    <!-- Paragraph -->
     <xpath expr="//p" position="replace"/>
     <!-- Button -->
     <xpath expr="//div[hasclass('col-lg-12')]/p" position="attributes">

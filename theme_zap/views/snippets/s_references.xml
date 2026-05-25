@@ -6,14 +6,6 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Our References
-    </xpath>
-    <!-- Paragraph -->
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        We're excited to have the opportunity to collaborate with these outstanding companies!
-    </xpath>
     <!-- Link -->
     <xpath expr="//a" position="replace"/>
     <!-- Column #01 -->

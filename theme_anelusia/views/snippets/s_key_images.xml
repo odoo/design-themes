@@ -20,26 +20,6 @@
         <attribute name="data-file-name">s_key_images_default_image_4.svg</attribute>
         <attribute name="data-shape-colors">;;;;</attribute>
     </xpath>
-
-    <!-- Texts -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        Discover Our Latest Fashion Collection
-    </xpath>
-    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
-        Explore the Trends that Define Style
-    </xpath>
-    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
-        A glimpse of elegance and comfort in every piece
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
-        Perfect outfits for every occasion
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
-        Quality that speaks for itself
-    </xpath>
-    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
-        Redefine your wardrobe with our latest styles
-    </xpath>
 </template>
 
 </odoo>

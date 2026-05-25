@@ -14,16 +14,9 @@
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="col-lg-5" remove="col-lg-6" separator=" "/>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">        
-        Building Castle in Cloud
-    </xpath>
     <!-- Paragraphs -->
     <xpath expr="//p" position="replace" />
-    <xpath expr="//p[1]" position="replace" mode="inner">        
-        When designing an architectural concept, we take into account the nine criteria that Zumthor considers to be important in creating an architectural atmosphere.
-    </xpath>
-    <xpath expr="//p[2]" position="replace" />        
+    <xpath expr="//p[2]" position="replace" />
 </template>
 
 </odoo>

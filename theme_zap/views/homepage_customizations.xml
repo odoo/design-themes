@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="configurator_s_discovery" inherit_id="website.configurator_s_discovery">
+    <!-- CTA -->
+    <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
+        <i class="fa fa-circle text-success" role="presentation"/> We're hiring now!&#160;<a href="#">See more&#160;<i class="fa fa-long-arrow-right" role="presentation"/></a>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Experience the real<br/>innovation
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Experience top-tier software solutions designed to streamline operations,<br/> boost efficiency, and drive innovation for your business.
+    </xpath>
+    <!-- Buttons -->
+    <xpath expr="(//a)[2]" position="replace" mode="inner">
+        Get a Quote
+    </xpath>
+    <xpath expr="(//a)[3]" position="replace" mode="inner">
+        Contact Us
+    </xpath>
+</template>
+
+<template id="configurator_s_key_images" inherit_id="website.configurator_s_key_images">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Driving Success Through Innovation
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Empowering Businesses to Reach New Heights
+    </xpath>
+    <!-- Captions -->
+    <xpath expr="//div[hasclass('col-lg-3')]//p[3]" position="replace" mode="inner">
+        Customized solutions for your business needs
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[2]//p[3]" position="replace" mode="inner">
+        Expert advice to navigate complex challenges
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[3]//p[3]" position="replace" mode="inner">
+        Proven strategies for sustainable growth
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-3')])[4]//p[3]" position="replace" mode="inner">
+        Partner with us to unlock your potential
+    </xpath>
+</template>
+
+<template id="configurator_s_striped" inherit_id="website.configurator_s_striped">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        We deliver powerful solutions
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p" position="replace" mode="inner">
+        We provide innovative, tailored strategies that drive results and enhance business performance effectively.
+    </xpath>
+</template>
+
+<template id="configurator_s_showcase" inherit_id="website.configurator_s_showcase">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Meet Our Specialists
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Our specialists bring a wealth of knowledge and experience to deliver top-quality solutions every time.
+    </xpath>
+    <!-- Feature 1 -->
+    <xpath expr="(//div[hasclass('col-12')])[2]//h3" position="replace" mode="inner">
+        Coding Excellence
+    </xpath>
+    <xpath expr="(//div[hasclass('col-12')])[2]//p" position="replace" mode="inner">
+        We focus on writing clean, efficient code, ensuring scalable and high-performance software that meets industry standards.
+    </xpath>
+    <!-- Feature 2 -->
+    <xpath expr="(//div[hasclass('col-12')])[3]//h3" position="replace" mode="inner">
+        Agile Approach
+    </xpath>
+    <xpath expr="(//div[hasclass('col-12')])[3]//p" position="replace" mode="inner">
+        Using agile methods, we deliver flexible, iterative solutions that adapt quickly to changing business needs and feedback.
+    </xpath>
+    <!-- Feature 3 -->
+    <xpath expr="(//div[hasclass('col-12')])[4]//h3" position="replace" mode="inner">
+        Security First
+    </xpath>
+    <xpath expr="(//div[hasclass('col-12')])[4]//p" position="replace" mode="inner">
+        We integrate strong security measures at every stage, protecting your software and data from vulnerabilities and threats.
+    </xpath>
+    <!-- Link -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Book an appointment
+    </xpath>
+</template>
+
+<template id="configurator_s_cta_card" inherit_id="website.configurator_s_cta_card">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        We're seeking exceptional talent to join our team
+    </xpath>
+</template>
+
+</odoo>
+

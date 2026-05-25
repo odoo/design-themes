@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ===== s_freegrid ===== -->
+<template id="configurator_s_freegrid" inherit_id="website.configurator_s_freegrid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace">
+        <h1 class="display-4">Architectural Excellence for Corporate Success</h1>
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Our architectural solutions combine design excellence with business acumen, creating spaces that inspire and support your corporate goals. Transform your workspace with our expertise.
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a" position="replace" mode="inner">
+        Start a Project
+    </xpath>
+</template>
+
+<!-- ===== s_features_wall ===== -->
+<template id="configurator_s_features_wall" inherit_id="website.configurator_s_features_wall">
+    <!-- Intro paragraph -->
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Discover our latest collection: sustainable, innovative designs that blend modern elegance with timeless architectural beauty.
+    </xpath>
+    <!-- Card 1 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]//h3" position="replace" mode="inner">
+        Innovative Design Solutions
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[3]//p" position="replace" mode="inner">
+        Transform your vision into reality with cutting-edge architectural designs tailored to your unique needs and aesthetic preferences.
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]//h3" position="replace" mode="inner">
+        Sustainable Building Practices
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]//p" position="replace" mode="inner">
+        Embrace eco-friendly architecture with sustainable design solutions that reduce environmental impact.
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="//div[hasclass('o_grid_item')][7]//h3" position="replace" mode="inner">
+        Detailed Project Management
+    </xpath>
+    <xpath expr="//div[hasclass('o_grid_item')][7]//p" position="replace" mode="inner">
+        Experience seamless project execution with meticulous planning, budgeting, and oversight from concept to completion.
+    </xpath>
+</template>
+
+<!-- ===== s_title ===== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Innovative architecture <br/>and sustainable design solutions
+    </xpath>
+</template>
+
+<!-- ===== s_cta_box ===== -->
+<template id="configurator_s_cta_box" inherit_id="website.configurator_s_cta_box">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace" mode="inner">
+        Still hesitating ?<br/>Contact us, it's free
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="replace" mode="inner">
+        Book an appointment and see how we can unlock your potential<br/><br/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace" mode="inner">
+        Book now
+    </xpath>
+</template>
+
+</odoo>
+

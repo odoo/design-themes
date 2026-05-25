@@ -12,18 +12,6 @@
     <xpath expr="//*[hasclass('container')]" position="before">
         <div class="o_we_shape o_html_builder_Connections_12" style="background-image: url('/html_editor/shape/html_builder/Connections/12.svg?c5=o-color-4');"/>
     </xpath>
-    <!-- Column 1 -->
-    <xpath expr="//*[hasclass('card-title')]" position="replace" mode="inner">
-        Accomodations
-    </xpath>
-    <!-- Column 2 -->
-    <xpath expr="(//*[hasclass('card-title')])[2]" position="replace" mode="inner">
-        Car Rental
-    </xpath>
-    <!-- Column 3 -->
-    <xpath expr="(//*[hasclass('card-title')])[3]" position="replace" mode="inner">
-        Make up &amp;amp; Hair
-    </xpath>
 </template>
 
 </odoo>

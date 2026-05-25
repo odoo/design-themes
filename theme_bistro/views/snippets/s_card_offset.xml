@@ -14,18 +14,6 @@
     <xpath expr="//img" position="attributes">
         <attribute name="src">/web/image/website.s_carousel_default_image_3</attribute>
     </xpath>
-    <!-- Title -->
-    <xpath expr="//h2" position="replace" mode="inner">
-        A Culinary Journey Awaits You
-    </xpath>
-    <!-- Paragraph 1 -->
-    <xpath expr="(//p[hasclass('lead')])[1]" position="replace" mode="inner">
-        Experience culinary excellence at our bistros and cafes. Our menu is crafted to delight your senses, offering a unique blend of flavors that celebrate the art of dining.
-    </xpath>
-    <!-- Paragraph 2 -->
-    <xpath expr="(//p[hasclass('lead')])[2]" position="replace" mode="inner">
-        Reserve your table today.
-    </xpath>
 </template>
 
 </odoo>
