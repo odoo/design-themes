@@ -5,7 +5,7 @@
 <template id="s_cover" inherit_id="website.s_cover" name="Be Wise s_cover">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center" remove="parallax s_parallax_is_fixed bg-black-50" separator=" "/>
-        <attribute name="style">background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 50%;</attribute>
+        <attribute name="style">background-image: url('/web/image/website.landscape_xl_1'); background-position: 50% 50%;</attribute>
         <attribute name="data-oe-shape-data">{"shape":"html_builder/Rainy/08_001","flip":[]}</attribute>
         <attribute name="data-scroll-background-ratio">0</attribute>
     </xpath>
@@ -152,7 +152,7 @@
     <!-- Section : Add a main background to the carousel -->
     <xpath expr="//div[hasclass('s_quotes_carousel')]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center s_carousel_rounded" remove="o_cc o_cc2 s_carousel_boxed" separator=" "/>
-        <attribute name="style">background-image: url('/web/image/website.s_quotes_carousel_demo_image_2');</attribute>
+        <attribute name="style">background-image: url('/web/image/website.ultrawide_lg_2');</attribute>
     </xpath>
     <!-- Filter -->
     <xpath expr="//div[hasclass('carousel-inner')]" position="before">
@@ -350,7 +350,7 @@
     <!-- Left column -->
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc5" remove="o_cc4" separator=" "/>
-        <attribute name="style">background-image: url('/web/image/website.s_media_list_default_image_1');</attribute>
+        <attribute name="style">background-image: url('/web/image/website.set_1_landscape_md_1');</attribute>
     </xpath>
     <!-- Left column - Filter -->
     <xpath expr="//div[hasclass('col-lg-6')]//h2" position="before">
@@ -374,7 +374,7 @@
     <!-- Right column -->
     <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center" separator=" "/>
-        <attribute name="style">background-image: url('/web/image/website.s_media_list_default_image_2');</attribute>
+        <attribute name="style">background-image: url('/web/image/website.set_1_landscape_md_2');</attribute>
     </xpath>
     <!-- Right column - Filter -->
     <xpath expr="//div[hasclass('col-lg-6')][2]//h2" position="before">
