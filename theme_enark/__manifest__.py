@@ -41,7 +41,6 @@
         'views/snippets/s_references.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_key_benefits.xml',
-        'views/snippets/s_carousel.xml',
         'views/snippets/s_carousel_intro.xml',
         'views/snippets/s_striped_center_top.xml',
         'views/snippets/s_intro_pill.xml',

@@ -14,7 +14,6 @@
         'views/snippets/s_cta_box.xml',
         'views/snippets/s_banner.xml',
         'views/snippets/s_call_to_action.xml',
-        'views/snippets/s_carousel.xml',
         'views/snippets/s_cards_grid.xml',
         'views/snippets/s_carousel_intro.xml',
         'views/snippets/s_color_blocks_2.xml',

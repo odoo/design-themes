@@ -40,7 +40,6 @@
         'views/snippets/s_quadrant.xml',
         'views/snippets/s_unveil.xml',
         'views/snippets/s_key_benefits.xml',
-        'views/snippets/s_carousel.xml',
         'views/snippets/s_carousel_intro.xml',
         'views/snippets/s_pricelist_boxed.xml',
         'views/snippets/s_key_images.xml',
