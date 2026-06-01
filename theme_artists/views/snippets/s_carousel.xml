@@ -15,11 +15,7 @@
 
     <!-- Carousel-item #02 -->
     <xpath expr="//div[hasclass('carousel-item')][2]" position="attributes">
-        <attribute name="class" add="o_cc o_cc5 pt152 pb152" remove="pt96 pb96" separator=" "/>
-    </xpath>
-    <!-- Shape & filter -->
-    <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('container')]" position="before">
-        <div class="o_we_bg_filter bg-black-25"/>
+        <attribute name="class" add="pt152 pb152" remove="pt96 pb96" separator=" "/>
     </xpath>
     <!-- Content -->
     <xpath expr="//div[hasclass('carousel-item')][2]//div[hasclass('carousel-content')]" position="replace">
@@ -35,10 +31,6 @@
     <!-- Carousel-item #03 -->
     <xpath expr="//div[hasclass('carousel-item')][3]" position="attributes">
         <attribute name="class" add="pt152 pb152" remove="pb128 pt128" separator=" "/>
-    </xpath>
-    <!-- Shape & filter -->
-    <xpath expr="//div[hasclass('carousel-item')][3]//div[hasclass('container')]" position="before">
-        <div class="o_we_bg_filter bg-black-25"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//div[hasclass('carousel-item')][3]//div[hasclass('carousel-content')]" position="replace">
