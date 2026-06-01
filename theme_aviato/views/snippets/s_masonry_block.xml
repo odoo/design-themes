@@ -15,7 +15,7 @@
     <!-- Main block #0 -->
     <xpath expr="//div[hasclass('o_grid_item')]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc o_cc5 overflow-hidden justify-content-end rounded" remove="rounded-4" separator=" "/>
-        <attribute name="style" add="--grid-item-padding-y: 0px; --grid-item-padding-x: 20px; background-image: url('/web/image/website.s_key_images_default_image_1');" separator=";"/>
+        <attribute name="style" add="--grid-item-padding-y: 0px; --grid-item-padding-x: 20px; background-image: url('/web/image/website.set_2_square_md_4');" separator=";"/>
     </xpath>
     <!-- Remove img -->
     <xpath expr="//img" position="replace"/>
@@ -30,7 +30,7 @@
     <!-- Main div -->
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc o_cc5 overflow-hidden rounded" remove="o_cc o_cc2 rounded-4" separator=" "/>
-        <attribute name="style" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_carousel_default_image_1');" remove="--grid-item-padding-y: 20px" separator=";"/>
+        <attribute name="style" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.ultrawide_lg_5');" remove="--grid-item-padding-y: 20px" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[2]/h2" position="before">
         <div class="o_we_bg_filter bg-black-50"></div>
@@ -48,7 +48,7 @@
     <!-- Main div -->
     <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc o_cc5 overflow-hidden rounded" remove="o_cc o_cc3 rounded-4" separator=" "/>
-        <attribute name="style" remove="--grid-item-padding-y: 20px; background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-2) 100%);" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_quotes_carousel_demo_image_2');" separator=";"/>
+        <attribute name="style" remove="--grid-item-padding-y: 20px; background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-2) 100%);" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.ultrawide_lg_2');" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[3]/h2" position="before">
         <div class="o_we_bg_filter bg-black-50"></div>
@@ -66,7 +66,7 @@
     <!-- Main div -->
     <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc o_cc5 overflow-hidden rounded" remove="o_cc o_cc4 rounded-4" separator=" "/>
-        <attribute name="style" remove="--grid-item-padding-y: 20px; background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-1) 100%);" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_key_images_default_image_4');" separator=";"/>
+        <attribute name="style" remove="--grid-item-padding-y: 20px; background-image: linear-gradient(135deg, var(--o-color-4) -400%, var(--o-color-1) 100%);" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.portrait_lg_2');" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[4]/h2" position="before">
         <div class="o_we_bg_filter bg-black-50"></div>
@@ -84,7 +84,7 @@
     <!-- Main div -->
     <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="attributes">
         <attribute name="class" add="oe_img_bg o_bg_img_center o_cc o_cc5 overflow-hidden rounded" remove="o_cc o_cc2 rounded-4" separator=" "/>
-        <attribute name="style" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.s_three_columns_default_image_1');" remove="--grid-item-padding-y: 20px" separator=";"/>
+        <attribute name="style" add="--grid-item-padding-y: 0px; background-image: url('/web/image/website.set_1_landscape_md_1');" remove="--grid-item-padding-y: 20px" separator=";"/>
     </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[5]/h2" position="before">
         <div class="o_we_bg_filter bg-black-50"></div>
