@@ -14,7 +14,7 @@
     <xpath expr="//div[hasclass('row')]" position="attributes">
         <attribute name="class" add="o_grid_mode" separator=" "/>
         <attribute name="data-row-count">2</attribute>
-        <attribute name="style" add="column-gap: 24px;"/>
+        <attribute name="style" add="column-gap: 24px;" separator=";"/>
     </xpath>
 </template>
 
