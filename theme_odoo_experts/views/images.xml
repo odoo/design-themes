@@ -375,12 +375,6 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
     <field name="name">website.s_showcase_default_image</field>
     <field name="url">/theme_odoo_experts/static/src/img/snippets/s_showcase_default_image.webp</field>
 </record>
-<record id="s_mockup_image_default_image" model="theme.ir.attachment">
-    <field name="key">website.s_mockup_image_default_image</field>
-    <field name="name">website.s_mockup_image_default_image</field>
-    <field name="url">/theme_odoo_experts/static/src/img/snippets/s_mockup_image_default_image.jpg</field>
-</record>
-
 <!-- Use custom records to prevent some images from changing by the Configurator -->
 <record id="s_image_text_device" model="theme.ir.attachment">
     <field name="key">website.s_image_text_device</field>
@@ -415,7 +409,7 @@ Check in theme_loftspace's primary_variables.scss and theme.scss -->
 <record id="s_website_form_cover_default_image" model="theme.ir.attachment">
     <field name="key">website.s_website_form_cover_default_image</field>
     <field name="name">website.s_website_form_cover_default_image</field>
-    <field name="url">/theme_odoo_experts/static/src/img/content/s_cover.webp</field>
+    <field name="url">/theme_odoo_experts/static/src/img/snippets/s_cover.webp</field>
 </record>
 
 <!-- SETS -->
