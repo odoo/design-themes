@@ -7,6 +7,14 @@ from odoo.tests import HttpCase, tagged
 
 @tagged('post_install', '-at_install')
 class Crawler(HttpCase):
+
+    def before_crawl_website(self):
+        # Ease the pressure on testing environment as we crawl for each website
+        # and there can be many installed for this test.
+        transaction = self.env.transaction
+        transaction.invalidate_ormcache('assets')
+        transaction.invalidate_ormcache('routing')
+
     def test_01_crawl_every_themes(self):
         """ Crawl every website (and so every themes) to ensure all themes can
             be rendered and do not crash.
@@ -18,6 +26,7 @@ class Crawler(HttpCase):
 
         def test_crawling():
             for website in websites_themes.filtered(lambda w: w.theme_id.name != 'theme_default'):
+                self.before_crawl_website()
                 # Ensure theme is rendering without crashing
                 r = self.url_open('/?fw=%s&debug=assets' % website.id)
                 self.assertEqual(r.status_code, 200, "Ensure theme is rendering without crashing")
@@ -55,6 +64,7 @@ class Crawler(HttpCase):
         websites_themes = Website.get_test_themes_websites()
 
         for website in websites_themes:
+            self.before_crawl_website()
             # TODO: remove this invalidation and invalidation in theme feature.
             # They are missing invalidations of template ormcache and others.
             # The configurator_apply method and various methods used for theme
