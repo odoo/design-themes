@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== BANNER GLOW ======== -->
+<template id="configurator_s_banner_glow" inherit_id="website.configurator_s_banner_glow">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb0" remove="pb96" separator=" "/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="attributes">
+        <attribute name="style" add="--box-border-bottom-right-radius: 0px; --box-border-bottom-left-radius: 0px;" separator=";"/>
+    </xpath>
+</template>
+
+<!-- ======== ATTRIBUTES HORIZONTAL ======== -->
+<template id="configurator_s_attributes_horizontal" inherit_id="website.configurator_s_attributes_horizontal">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc4" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== CARDS SOFT ======== -->
+<template id="configurator_s_cards_soft" inherit_id="website.configurator_s_cards_soft">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt112 pb184" remove="pt48 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/14","flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Connections_14"/>
+    </xpath>
+</template>
+
+<!-- ======== ANNOUNCEMENT SCROLL ======== -->
+<template id="configurator_s_announcement_scroll" inherit_id="website.configurator_s_announcement_scroll">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt112" remove="pt24" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== CARD OFFSET ======== -->
+<template id="configurator_s_card_offset" inherit_id="website.configurator_s_card_offset">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt88 pb168" remove="pt64 pb64" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/14","colors":{"c5":"o-color-4"},"flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Connections_14" style="background-image: url('/html_editor/shape/html_builder/Connections/14.svg?c5=o-color-4');"/>
+    </xpath>
+</template>
+
+<!-- ======== PROCESS STEPS ======== -->
+<template id="configurator_s_process_steps" inherit_id="website.configurator_s_process_steps">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt160 pb232" remove="pt72 pb72" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/13","flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//svg[hasclass('s_process_step_svg_defs')]" position="before">
+        <div class="o_we_shape o_html_builder_Connections_13"/>
+    </xpath>
+</template>
+
+<!-- ======== TITLE ======== -->
+<template id="configurator_s_title" inherit_id="website.configurator_s_title">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt96 pb56" remove="pt40 pb40" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== BENTO GRID ======== -->
+<template id="configurator_s_bento_grid" inherit_id="website.configurator_s_bento_grid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb232" remove="pt64 pb64" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

@@ -1,8 +1,8 @@
 {
     'name': 'Kea Theme',
-    'description': 'Cover hero feeds into alternating text-and-image rows, a featured picture, color-blocked information, and a media list — with organic blob crops on the picture and media images as the visual signature, layered over wavy line and floating shape motifs. Image-and-narrative driven / suited for technology companies, IT services, computer stores, and virtual-reality product sites',
+    'description': 'A dark, glowing hero feeds into horizontal shopping attributes, soft cards, a scrolling announcement, an offset feature, process steps, a bento grid, and opening hours — with a warm burnt-orange, beige and near-black palette, a signature colored glow behind the hero image, and connection-line and blurry shape motifs as the visual signature. Product- and store-driven / suited for technology companies, IT services, computer and electronics stores, and gadget shops',
     'category': 'Theme/Technology',
-    'summary': 'Technology, Tech, IT, Computers, Stores, Virtual Reality',
+    'summary': 'Electronics, Gadgets, Devices, Tech, Technology, Store, Shop, Ecommerce',
     'sequence': 200,
     'version': '2.0.0',
     'depends': ['website'],
@@ -11,60 +11,33 @@
         'data/ir_asset.xml',
         'views/images_content.xml',
 
-        'views/snippets/s_cover.xml',
-        'views/snippets/s_image_text.xml',
-        'views/snippets/s_text_image.xml',
-        'views/snippets/s_media_list.xml',
-        'views/snippets/s_color_blocks_2.xml',
-        'views/snippets/s_picture.xml',
+        'views/global_customizations.xml',
+        'views/homepage_customizations.xml',
     ],
     'images': [
-        'static/description/kea_description.png',
+        'static/description/kea_description.webp',
         'static/description/kea_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_kea/static/src/img/snippets/s_cover.webp',
-        'website.s_picture_default_image': '/theme_kea/static/src/img/snippets/s_picture.webp',
-        'website.s_quotes_carousel_demo_image_1': '/theme_kea/static/src/img/snippets/s_quotes_carousel_1.webp',
-        'website.s_quotes_carousel_demo_image_2': '/theme_kea/static/src/img/snippets/s_quotes_carousel_2.webp',
-        'website.s_media_list_default_image_1': '/theme_kea/static/src/img/snippets/s_media_list_1.webp',
-        'website.s_media_list_default_image_2': '/theme_kea/static/src/img/snippets/s_media_list_2.webp',
-        'website.s_media_list_default_image_3': '/theme_kea/static/src/img/snippets/s_media_list_3.webp',
-    },
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_text_image', 's_picture', 's_image_text', 's_color_blocks_2', 's_media_list'],
+        'homepage': ['s_banner_glow', 's_attributes_horizontal', 's_cards_soft', 's_announcement_scroll', 's_card_offset', 's_process_steps', 's_title', 's_bento_grid', 's_opening_hours'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_cover'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_attributes_horizontal'),
             ],
         },
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
             'data_attributes': {
-                'size': 'small',
-                'columns': '2',
-                'rounded': '5',
-                'gap': '4',
+                'rounded': '1',
             },
-            'background': {
-                'color': 'o_cc2',
-                'shape': {
-                    'data-oe-shape-data': '{"shape":"web_editor/Grids/04", "colors":{"c5":"o-color-1"}}',
-                    'element': """<div class="o_we_shape o_web_editor_Grids_04" style="background-image: url('/web_editor/shape/web_editor/Grids/04.svg?c5=o-color-1');""",
-                },
-            },
-
             'add_classes': [
-                'pt88', 'pb88',
-                {
-                    's_dynamic_snippet_title': 'd-none',
-                },
+                'pt112'
             ],
             'remove_classes': [
-                'pt64', 'pb64',
+                'pt64'
             ],
         },
     },
