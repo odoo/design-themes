@@ -57,6 +57,34 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     )
 );
 
+$o-color-palettes: map-merge($o-color-palettes, (
+    'kea': (
+        'o-color-1': #CC4F18,
+        'o-color-2': #6B6560,
+        'o-color-3': #e1dbd3,
+        'o-color-4': #ECE8E2,
+        'o-color-5': #0E0E0E,
+
+        'menu': 5,
+        'header-sales_one': 4,
+        'footer': 4,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'kea');
+
+// Header/footer colors are part of this theme's layout, so lock them for
+// every palette instead of letting the selected palette decide.
+@each $-name, $-palette in $o-color-palettes {
+    $o-color-palettes: map-merge($o-color-palettes, (
+        $-name: map-merge($-palette, (
+            'menu': 5,
+            'header-sales_one': 4,
+            'footer': 4,
+        )),
+    ))
+}
+
 //------------------------------------------------------------------------------
 // Fonts
 //------------------------------------------------------------------------------
@@ -66,9 +94,15 @@ $o-theme-h2-font-size-multiplier: (48 / 16);
 $o-theme-h3-font-size-multiplier: (36 / 16);
 $o-theme-h6-font-size-multiplier: (18 / 16);
 
-$headings-font-weight:700;
-
 $o-theme-font-configs: (
+    'Instrument Sans': (
+        'family': ('Instrument Sans', sans-serif),
+        'url': 'Instrument+Sans:400,400i,500,500i,600,600i,700,700i',
+    ),
+    'IBM Plex Sans': (
+        'family': ('IBM Plex Sans', sans-serif),
+        'url': 'IBM+Plex+Sans:300,300i,400,400i,500,500i,600,600i,700,700i',
+    ),
     'Poppins': (
         'family': ('Poppins', sans-serif),
         'url': 'Poppins:300,300i,400,400i,700,700i',
@@ -109,28 +143,22 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'bewise-2',
+        'color-palettes-name': 'kea',
         // Fonts
-        'font': 'Roboto',
-        'headings-font': 'Poppins',
-        'navbar-font': 'Poppins',
-        'buttons-font': 'Poppins',
+        'font': 'IBM Plex Sans',
+        'headings-font': 'Instrument Sans',
         // Links / Buttons
         'link-underline': 'never',
         'btn-padding-y': .5rem,
         'btn-padding-x': 1rem,
         'btn-padding-y-lg': .75rem,
         'btn-padding-x-lg': 1.5rem,
-        'btn-border-radius': 10rem,
-        'btn-border-radius-lg': 10rem,
+        // Header
+        'header-template': 'sales_one',
         // Footer
-        'footer-template': 'minimalist',
-        'footer-effect': 'slideout_slide_hover',
-        'footer-scrolltop': true,
+        'footer-template': 'headline',
     ),
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'bewise-2');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'kea-1',
