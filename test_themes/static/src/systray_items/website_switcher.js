@@ -3,14 +3,14 @@
 import { patch } from "@web/core/utils/patch";
 import { useService } from '@web/core/utils/hooks';
 import { WebsiteSwitcherSystrayItem } from "@website/client_actions/website_preview/website_switcher_systray_item";
-import { onMounted, useState } from "@odoo/owl";
+import { onMounted, proxy } from "@odoo/owl";
 
 patch(WebsiteSwitcherSystrayItem.prototype, {
     setup() {
         super.setup();
 
         this.orm = useService('orm');
-        this.tooltips = useState({});
+        this.tooltips = proxy({});
         // Disable the notification service to avoid having a notification for each theme.
         this.notificationService = { add: () => () => null };
 
