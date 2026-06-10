@@ -47,7 +47,6 @@
         'views/snippets/s_process_steps.xml',
         'views/snippets/s_quotes_carousel.xml',
         'views/snippets/s_quotes_carousel_minimal.xml',
-        'views/snippets/s_countdown.xml',
         'views/snippets/s_text_highlight.xml',
         'views/snippets/s_blockquote.xml',
         'views/snippets/s_numbers_showcase.xml',
