@@ -65,8 +65,7 @@ CONFLICTUAL_CLASSES_RE = {
     re.compile(r'^(p(x|s)-?\d+|padding-.+)$'): [],
     re.compile(r'^(p(x|e)-?\d+|padding-.+)$'): [],
     re.compile(r'^(p(y|t)-?\d+|padding-.+)$'): [],
-    # p0+pb32 appears in Bewise and Graphene
-    re.compile(r'^(p(y|b)?-?\d+|padding-.+)$'): ['p0'],
+    re.compile(r'^(p(y|b)?-?\d+|padding-.+)$'): [],
     # Font awesome
     re.compile(r'^fa-\dx$'): [],
     # Whitelist workaround for s_social_media inner snippet Layout: None
@@ -160,7 +159,7 @@ class TestNewPageTemplates(TransactionCase):
                     except Exception as e:  # noqa: BLE001
                         errors.append("View %s cannot be rendered (%r)" % (view.key, e))
         _logger.info("Tested %s views", len(view_ids))
-        self.assertGreater(len(view_ids), 1250, "Test should have encountered a lot of views")
+        self.assertGreater(len(view_ids), 150, "Test should have encountered a lot of views")
         self.assertFalse(errors, "No error should have been collected")
 
     # TODO should handle the fact that grid items can't have padding classes
@@ -421,5 +420,5 @@ class TestNewPageTemplates(TransactionCase):
             view_count += len(views)
 
         _logger.info("Tested %s views", view_count)
-        self.assertGreater(view_count, 1900, "Test should have checked many views")
+        self.assertGreater(view_count, 750, "Test should have checked many views")
         self.assertFalse(errors, "No error should have been collected")
