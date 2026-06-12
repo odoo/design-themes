@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Closer Look -->
+<template id="configurator_s_closer_look" inherit_id="website.configurator_s_closer_look">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt88 pb72" remove="pt96" separator=" "/>
+    </xpath>
+</template>
+
+<!-- References -->
+<template id="configurator_s_references" inherit_id="website.configurator_s_references">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt40 pb40" remove="pt80 pb80" separator=" "/>
+    </xpath>
+    <!-- Text -->
+    <xpath expr="//h2" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//p" position="replace"/>
+</template>
+
+<!-- HR -->
+<template id="configurator_s_hr" inherit_id="website.configurator_s_hr">
+    <!-- Section -->
+    <xpath expr="//div[hasclass('s_hr')]" position="attributes">
+        <attribute name="class" add="pt0 pb0" remove="pt32 pb32" separator=" "/>
+    </xpath>
+</template>
+
+<!-- Features -->
+<template id="configurator_s_features" inherit_id="website.configurator_s_features">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt96 pb88" remove="pt64 pb64" separator=" "/>
+    </xpath>
+</template>
+
+<!-- Text Image -->
+<!-- Customizations only for the configurator snippet since `s_chart` is not rendered in the snippet modal -->
+<template id="configurator_s_text_image" inherit_id="website.configurator_s_text_image">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt56 pb56" remove="pt80 pb80" separator=" "/>
+    </xpath>
+    <!-- Columns -->
+    <xpath expr="//div[hasclass('col-lg-5')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-5" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][2]" position="attributes">
+        <attribute name="class" add="col-lg-5 border pt40 pb40 rounded" remove="col-lg-6 pt16 pb16" separator=" "/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace"/>
+    <!-- Chart -->
+    <xpath expr="//img" position="replace">
+        <div class="s_chart" data-type="doughnut" data-legend-position="none" data-tooltip-display="false" data-stacked="false" data-border-width="2"
+                data-data='{"labels":["First","Second"],"datasets":[{"label":"One","data":["25","75"],"backgroundColor":["o-color-3","o-color-1"],"borderColor":["",""]}]}'>
+            <canvas/>
+        </div>
+        <p><br/></p>
+        <p class="display-4-fs" style="text-align: center;"><strong>75%</strong></p>
+        <p class="o_small-fs text-600" style="text-align: center;">75% of clients have been using the service<br/> for over a decade consistently.</p>
+    </xpath>
+</template>
+
+<!-- Quotes Carousel Compact -->
+<template id="configurator_s_quotes_carousel_compact" inherit_id="website.configurator_s_quotes_carousel_compact">
+    <!-- Carousel -->
+    <xpath expr="//div[hasclass('s_quotes_carousel_compact')]" position="attributes">
+        <attribute name="class" remove="s_carousel_default carousel-dark" add="s_carousel_arrows_hidden" separator=" "/>
+    </xpath>
+    <!-- Slides -->
+    <xpath expr="//div[hasclass('carousel-item')][1]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2 pt40" add="pt96" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-item')][2]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2 pt40" add="pt96" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('carousel-item')][3]" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2 pt40" add="pt96" separator=" "/>
+    </xpath>
+    <!-- Controllers -->
+    <xpath expr="//div[hasclass('o_horizontal_controllers_row')]" position="attributes">
+        <attribute name="class" remove="flex-row-reverse" separator=" "/>
+    </xpath>
+</template>
+
+<!-- Image Text -->
+<!-- Customizations only for the configurator snippet since `s_chart` is not rendered in the snippet modal -->
+<template id="configurator_s_image_text" inherit_id="website.configurator_s_image_text">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt112 pb160" remove="pt80 pb80" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Grids/01","colors":{"c5":"o-color-3"}}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Grids_01" style="background-image: url('/html_editor/shape/html_builder/Grids/01.svg?c5=o-color-3');"/>
+    </xpath>
+    <!-- Columns -->
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="col-lg-5 o_cc o_cc1 border pt40 pb40 rounded" remove="col-lg-6 pt16 pb16" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-5')][2]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-5" separator=" "/>
+    </xpath>
+    <!-- Button -->
+    <xpath expr="//a[hasclass('btn')]" position="replace"/>
+    <!-- Replace image with chart -->
+    <xpath expr="//img" position="replace">
+        <div class="s_chart" data-snippet="s_chart" data-type="line" data-stacked="false" data-border-width="2" data-legend-position="none"
+                data-data="{&quot;labels&quot;:[&quot;First&quot;,&quot;Second&quot;,&quot;Third&quot;,&quot;Fourth&quot;,&quot;Fifth&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;One&quot;,&quot;data&quot;:[&quot;12&quot;,&quot;24&quot;,&quot;18&quot;,&quot;17&quot;,&quot;10&quot;],&quot;backgroundColor&quot;:&quot;o-color-1&quot;,&quot;borderColor&quot;:&quot;o-color-1&quot;}]}">
+            <canvas/>
+        </div>
+        <p><br/></p>
+        <p class="o_small-fs text-600" style="text-align: center;">75% of clients have been using the service<br/> for over a decade consistently.</p>
+    </xpath>
+</template>
+
+<!-- Key Images -->
+<template id="configurator_s_key_images" inherit_id="website.configurator_s_key_images">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt120 pb112" remove="pt72 pb72" separator=" "/>
+    </xpath>
+</template>
+
+<!-- CTA Mobile -->
+<template id="configurator_s_cta_mobile" inherit_id="website.configurator_s_cta_mobile">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt160 pb128" remove="pt80 pb80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- Announcement Scroll -->
+<template id="configurator_s_announcement_scroll" inherit_id="website.configurator_s_announcement_scroll">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt72 pb88" remove="pt24 pb24" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

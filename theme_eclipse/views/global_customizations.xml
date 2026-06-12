@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Footer -->
+<template id="template_footer_descriptive" inherit_id="website.template_footer_descriptive">
+    <!-- Shape -->
+    <xpath expr="//section[hasclass('s_text_block')]" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Grids/01","colors":{"c5":"o-color-3"},"flip":[],"showOnMobile":true,"shapeAnimationSpeed":"0"}</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace">
+        <div class="o_we_shape o_html_builder_Grids_01 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Grids/01.svg?c5=o-color-3');"/>
+    </xpath>
+</template>
+
+<!-- Closer Look -->
+<template id="s_closer_look" inherit_id="website.s_closer_look">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blurry/03","colors":{"c1":"o-color-3","c2":"o-color-3","c3":"o-color-3","c4":"o-color-3"}}</attribute>
+    </xpath>
+    <xpath expr="//section/div" position="before">
+        <div class="o_we_shape o_html_builder_Blurry_03" style="background-image: url('/html_editor/shape/html_builder/Blurry/03.svg?c1=o-color-3&amp;c2=o-color-3&amp;c3=o-color-3&amp;c4=o-color-3');"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="attributes">
+        <attribute name="class" add="display-1" remove="display-3" separator=" "/>
+    </xpath>
+    <!-- Buttons -->
+    <xpath expr="//a[hasclass('btn-primary')]" position="attributes">
+        <attribute name="class" add="btn-lg" separator=" "/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn-outline-primary')]" position="replace"/>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" add="img-thumbnail rounded shadow" separator=" "/>
+        <attribute name="style">width: 80% !important; padding: 8px;</attribute>
+        <attribute name="data-shape"/>
+        <attribute name="src">/web/image/website.s_closer_look_default_image</attribute>
+    </xpath>
+</template>
+
+<!-- Features -->
+<template id="s_features" inherit_id="website.s_features">
+    <!-- Cols -->
+    <xpath expr="(//div[hasclass('s_hr')])" position="replace"/>
+    <xpath expr="(//div[hasclass('s_hr')])" position="replace"/>
+    <xpath expr="(//div[hasclass('s_hr')])" position="replace"/>
+    <xpath expr="(//div[hasclass('col-lg-4')])[1]" position="attributes">
+        <attribute name="class" add="pt32" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]" position="attributes">
+        <attribute name="class" add="pt32" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[3]" position="attributes">
+        <attribute name="class" add="pt32" separator=" "/>
+    </xpath>
+    <!-- Icons -->
+    <xpath expr="//i[hasclass('s_features_icon')]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+    </xpath>
+    <xpath expr="(//i[hasclass('s_features_icon')])[2]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+    </xpath>
+    <xpath expr="(//i[hasclass('s_features_icon')])[3]" position="attributes">
+        <attribute name="class" add="border" separator=" "/>
+    </xpath>
+    <!-- Second row -->
+    <xpath expr="//div[hasclass('row')]" position="after">
+        <div class="row">
+            <div class="col-lg-4 pt32">
+                <i class="s_features_icon fa fa-lock mb-3 rounded bg-o-color-3 border" role="img"/>
+                <div class="overflow-hidden">
+                    <h3 class="h5-fs">Security</h3>
+                    <p>Advanced encryption and proactive threat detection keep your data safe, ensuring privacy and compliance at every level.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 pt32">
+                <i class="s_features_icon fa fa-cogs mb-3 rounded bg-o-color-3 border" role="img"/>
+                <div class="overflow-hidden">
+                    <h3 class="h5-fs">Automation</h3>
+                    <p>Streamline repetitive tasks with intelligent workflows that save time, reduce errors, and let your team focus on what matters.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 pt32">
+                <i class="s_features_icon fa fa-line-chart mb-3 rounded bg-o-color-3 border" role="img"/>
+                <div class="overflow-hidden">
+                    <h3 class="h5-fs">Analytics</h3>
+                    <p>Real-time dashboards and detailed reports give you actionable insights to make smarter decisions and track progress effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</template>
+
+<!-- Key Images -->
+<template id="s_key_images" inherit_id="website.s_key_images">
+    <!-- Caption -->
+    <xpath expr="//div[hasclass('col-6')]/p[3]" position="inside">
+        <br/><br/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-6')]/p[3])[2]" position="inside">
+        <br/><br/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-6')]/p[3])[3]" position="inside">
+        <br/><br/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-6')]/p[3])[4]" position="inside">
+        <br/><br/>
+    </xpath>
+    <!-- Columns -->
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-3" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-3')]" position="attributes">
+        <attribute name="class" add="col-lg-6" remove="col-lg-3" separator=" "/>
+    </xpath>
+</template>
+
+<!-- Announcement Scroll -->
+<template id="s_announcement_scroll" inherit_id="website.s_announcement_scroll">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="style">--marquee-animation-speed: 1s; --marquee-item-font-size: 320;</attribute>
+    </xpath>
+</template>
+
+</odoo>

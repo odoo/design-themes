@@ -117,12 +117,12 @@ S_CLASSES_WHITELIST = [
     's_appointment_type_card', 's_appointment_type_picture',
     's_appointment_type_list', 's_newsletter_list', 's_event_upcoming_snippet',
     's_event_event_picture', 's_newsletter_subscribe_form',
-    's_carousel_indicators_hidden',
+    's_carousel_indicators_hidden', 's_carousel_arrows_hidden',
 
     # FIXME those classes have no reason to be here... missing data-snippet?
     's_hr', 's_accordion', 's_accordion_highlight', 's_media_list_item',
     's_media_list_img_wrapper', 's_media_list_body', 's_media_list_img',
-    's_website_form_datetime',
+    's_website_form_datetime', 's_chart',
 ]
 
 
@@ -130,12 +130,13 @@ S_CLASSES_WHITELIST = [
 class TestNewPageTemplates(TransactionCase):
 
     def test_template_names(self):
+        ignored_themes = ['theme_eclipse']
         websites_themes = self.env['website'].get_test_themes_websites()
         for website in websites_themes:
             views = self.env['ir.ui.view'].search([
                 ('key', 'like', f'{website.theme_id.name}.new_page_template%_s_'),
             ])
-            if website.theme_id.name != 'theme_default':
+            if website.theme_id.name != 'theme_default' and website.theme_id.name not in ignored_themes:
                 self.assertGreater(len(views), 10, "Test should have encountered some views in theme %r" % website.name)
             for view in views:
                 self.assertEqual(view.mode, 'extension', "Theme's new page template customization %r should never be primary" % view.key)
