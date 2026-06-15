@@ -43,12 +43,12 @@ const snippets = [
 
 wTourUtils.registerThemeHomepageTour("paptic_tour", () => [
     wTourUtils.assertCssVariable('--color-palettes-name', '"base-2"'),
-    ...wTourUtils.insertSnippet(snippets[0], 'top'),
+    ...wTourUtils.insertSnippet(snippets[0], { position: "top" }),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
-    ...wTourUtils.insertSnippet(snippets[1], 'top'),
-    ...wTourUtils.insertSnippet(snippets[2], 'top'),
-    ...wTourUtils.insertSnippet(snippets[3], 'top'),
-    ...wTourUtils.insertSnippet(snippets[4], 'top'),
-    ...wTourUtils.insertSnippet(snippets[5], 'top'),
+    ...wTourUtils.insertSnippet(snippets[1], { position: "top" }),
+    ...wTourUtils.insertSnippet(snippets[2], { position: "top" }),
+    ...wTourUtils.insertSnippet(snippets[3], { position: "top" }),
+    ...wTourUtils.insertSnippet(snippets[4], { position: "top" }),
+    ...wTourUtils.insertSnippet(snippets[5], { position: "top" }),
 ]);
