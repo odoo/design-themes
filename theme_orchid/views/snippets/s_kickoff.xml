@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<template id="configurator_s_kickoff" inherit_id="website.configurator_s_kickoff">
+<template id="s_kickoff" inherit_id="website.s_kickoff">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="oe_img_bg" remove="parallax s_parallax_is_fixed" separator=" "/>
