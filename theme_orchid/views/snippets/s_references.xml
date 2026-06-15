@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<template id="configurator_s_references" inherit_id="website.configurator_s_references">
+<template id="s_references" inherit_id="website.s_references">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc2 o_colored_level pt136" remove="o_cc1 pt40 pt80" separator=" "/>

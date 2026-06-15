@@ -94,7 +94,7 @@
 </template>
 
 <!-- ======== COMPANY TEAM SHAPES ======== -->
-<template id="configurator_s_company_team_shapes" inherit_id="website.configurator_s_company_team_shapes">
+<template id="s_company_team_shapes" inherit_id="website.s_company_team_shapes">
     <xpath expr="//section" position="attributes">
         <attribute name="data-oe-shape-data">{"shape":"html_builder/Bold/15", "colors":{"c5": "o-color-4"}}</attribute>
     </xpath>

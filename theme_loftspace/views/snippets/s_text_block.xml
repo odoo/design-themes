@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<template id="configurator_s_text_block" inherit_id="website.configurator_s_text_block" name="Loftspace s_text_block">
+<template id="s_text_block" inherit_id="website.s_text_block" name="Loftspace s_text_block">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc5 pt112" remove="pt40" separator=" "/>
