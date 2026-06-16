@@ -466,6 +466,26 @@ def remove_animation_classes(soup):
             tag.attrs.pop("class", None)
 
 
+def fix_floating_blocks_preview(soup):
+    # counter s_floating_blocks opacity:0 on each block plus some CSS magic to
+    # reproduce the overlapping stack effect without requiring JS.
+    if not soup.select_one(".s_floating_blocks"):
+        return
+    style = soup.new_tag("style")
+    style["id"] = "preview-floating-blocks"
+    style.string = (
+        ".s_floating_blocks .s_floating_blocks_block"
+        "{opacity:1!important;position:relative!important}"
+        ".s_floating_blocks .s_floating_blocks_block:nth-child(1)"
+        "{z-index:1;transform:scale(.96)!important}"
+        ".s_floating_blocks .s_floating_blocks_block:nth-child(2)"
+        "{z-index:2;transform:scale(.98)!important;margin-top:-45%!important}"
+        ".s_floating_blocks .s_floating_blocks_block:nth-child(3)"
+        "{z-index:3;margin-top:-45%!important}"
+    )
+    soup.head.append(style)
+
+
 def _skip_string(css, position):
     quote = css[position]
     position += 1
@@ -601,6 +621,7 @@ def download_static_html(url, output_path):
     remove_javascript(soup)
     remove_animation_classes(soup)
     purge_unused_css(soup)
+    fix_floating_blocks_preview(soup)
     inject_palette_variables(soup)
     inject_color_combination_text_overrides(soup)
 
