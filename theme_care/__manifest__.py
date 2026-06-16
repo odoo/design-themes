@@ -3,7 +3,7 @@
     'description': 'Banner hero leads into a story block, a numbers grid, and a color-blocked featured picture, then a detailed team grid, a masonry block with key visuals and features and a testimonials wall before a collapsible FAQ, kept clean and photo-driven without background shape decoration. Credentials-and-team driven / suited for medical clinics, dental practices, hospitals, and healthcare providers',
     'category': 'Theme/Creative',
     'summary': 'Care, Health, Wellness, Fitness, Gym, Yoga, Spa, Massage, Therapy ',
-    'sequence': 177,
+    'sequence': 10,
     'version': '1.0.0',
     'depends': ['website'],
     'data': [

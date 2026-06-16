@@ -3,7 +3,7 @@
     'description': 'Abstract gradient hero with oversized marquee text leads into an editorial intro block, an alternating image-text row, and a stacked services list, then a references grid and a testimonial carousel before a collapsible FAQ, with oversized typography as the recurring visual signature. Typography-driven and minimalist / suited for design agencies, branding studios, UX/UI consultancies, and creative tech firms',
     'category': 'Theme/Creative',
     'summary': 'Design, Freelance, Creative, Technology IT, Consulting',
-    'sequence': 167,
+    'sequence': 60,
     'version': '1.0.0',
     'depends': ['website'],
     'data': [
