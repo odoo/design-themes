@@ -3,7 +3,7 @@
     'description': 'Intro opens onto image-and-text storytelling, a three-column rhythm, a full image wall, and a shape-cropped team block before a strong call-to-action, with recurring underline highlights running across every section heading. Image-forward and event-driven / suited for bands, music labels, concert venues, record stores, and artist showcases',
     'category': 'Theme/Retail',
     'summary': 'Band, Musics, Sound, Concerts, Artists, Records, Event, Food, Stores',
-    'sequence': 280,
+    'sequence': 30,
     'version': '2.1.0',
     'depends': ['website'],
     'data': [
