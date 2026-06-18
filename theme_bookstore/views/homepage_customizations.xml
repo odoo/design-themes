@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Announcement scroll -->
+    <template id="configurator_s_announcement_scroll" inherit_id="website.configurator_s_announcement_scroll">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt32 pb32" remove="pt24 pb24" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Attributes horizontal -->
+    <template id="configurator_s_attributes_horizontal" inherit_id="website.configurator_s_attributes_horizontal">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt0 pb0" remove="pt24 pb24" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Call to action countdown -->
+    <template id="configurator_s_call_to_action" inherit_id="website.configurator_s_call_to_action">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt128 pb128" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Category and products -->
+    <template id="configurator_s_category_and_products" inherit_id="website.configurator_s_category_and_products">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt72 pb72" remove="pt32 pb32" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Products & advantages -->
+    <template id="configurator_s_products_and_advantages" inherit_id="website.configurator_s_products_and_advantages">
+        <xpath expr="section" position="attributes">
+            <attribute name="class" add="pt72 pb72" remove="pt48 pb48" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Store locator -->
+    <template id="configurator_s_store_locator" inherit_id="website.configurator_s_store_locator">
+        <xpath expr="//section" position="attributes">
+            <attribute name="class" add="pt64 pb64" remove="pt80 pb80" separator=" "/>
+        </xpath>
+    </template>
+
+</odoo>
