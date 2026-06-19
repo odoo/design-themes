@@ -5,6 +5,7 @@
 $o-website-values-palettes: (
     (
         'color-palettes-name':              'default-28',
+        'recommended-palette-name':         ('default-28', 'treehouse-1', 'treehouse-2', 'treehouse-3'),
 
         // Header
         'logo-height':                      2.75rem,
@@ -12,6 +13,9 @@ $o-website-values-palettes: (
 
         // Font
         'font':                             'Poppins',
+        'headings-font':                    'Dosis',
+        'alternative-fonts':                ('Karla', 'Cabin', 'Lato'),
+        'alternative-headings-fonts':       ('Zilla Slab', 'Laila', 'Raleway'),
 
         // Buttons
         'btn-padding-y':                    .45rem,
@@ -91,6 +95,14 @@ $o-theme-font-configs: (
     'Raleway': (
         'family': ('Raleway', sans-serif),
         'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+    'Cabin': (
+        'family': ('Cabin', sans-serif),
+        'url': 'Cabin:300,300i,400,400i,700,700i',
+    ),
+    'Zilla Slab': (
+        'family': ('Zilla Slab', sans-serif),
+        'url': 'Zilla+Slab:300,300i,400,400i,700,700i',
     ),
 );
 

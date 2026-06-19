@@ -135,6 +135,10 @@ $o-theme-font-configs: (
         'family': ('Oxygen', sans-serif),
         'url': 'Oxygen:300,400,700',
     ),
+    'Bebas Neue': (
+        'family': ('Bebas Neue', sans-serif),
+        'url': 'Bebas+Neue:400,700',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -144,9 +148,12 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name':  'default-light-12',
+        'recommended-palette-name': ('default-light-12', 'enark-1', 'enark-2', 'enark-3'),
         'header-font-size':     1rem,
         'font':                 'Inter',
-        'headings-font':        'Oxygen',
+        'headings-font':        'Raleway',
+        'alternative-fonts':    ('PT Sans', 'Quattrocento', 'Mulish'),
+        'alternative-headings-fonts': ('Bebas Neue', 'Alegreya Sans SC', 'Bitter'),
         'footer-template':      'descriptive',
         'header-links-style':   'flat',
         'btn-primary-flat':     true,

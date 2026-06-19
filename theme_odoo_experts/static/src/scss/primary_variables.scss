@@ -63,6 +63,10 @@ $o-theme-font-configs: (
         'family': ('Manrope', sans-serif),
         'url': 'Manrope:300,300i,400,400i,700,700i',
     ),
+    'Libre Baskerville': (
+        'family': ('Libre Baskerville', serif),
+        'url': 'Libre+Baskerville:300,300i,400,400i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -72,6 +76,7 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'default-11',
+        'recommended-palette-name': ('default-11', 'odoo-experts-1', 'odoo-experts-2', 'odoo-experts-3'),
         'logo-height': (52 / 16) * 1rem,
         'fixed-logo-height': (52 / 16) * 1rem,
         'header-font-size': 1rem,
@@ -85,7 +90,9 @@ $o-website-values-palettes: (
         'btn-padding-y-lg': .6rem,
         'btn-padding-x-lg': 1.8rem,
         'font': 'Inter',
-        'headings-font': 'Manrope',
+        'headings-font': 'Rajdhani',
+        'alternative-fonts': ('Roboto', 'Source Sans Pro', 'Mulish'),
+        'alternative-headings-fonts': ('Anton', 'Libre Baskerville', 'Oswald'),
         'navbar-font': 'Inter',
         'header-template': 'default',
         'footer-template': 'contact',

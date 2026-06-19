@@ -48,7 +48,7 @@ $o-theme-font-configs: (
         'url': 'Elsie:400,900',
     ),
     'DM Sans': (
-        'family': ('DM Sans', serif),
+        'family': ('DM Sans', sans-serif),
         'url': 'DM+Sans:300,300i,400,400i,700,700i',
     ),
 );
@@ -60,8 +60,11 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'default-light-9',
+        'recommended-palette-name': ('default-light-9', 'orchid-1', 'orchid-2', 'orchid-3'),
         'font': 'DM Sans',
         'headings-font': 'Elsie',
+        'alternative-fonts': ('Mulish', 'Heebo', 'Roboto'),
+        'alternative-headings-fonts': ('Cormorant Garamond', 'Raleway', 'Poppins'),
         'header-template': 'sales_four',
         'footer-template': 'descriptive',
     ),

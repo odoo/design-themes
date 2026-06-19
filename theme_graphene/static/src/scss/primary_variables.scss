@@ -84,6 +84,34 @@ $o-theme-font-configs: (
         'family': ('Source Sans Pro', sans-serif),
         'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
     ),
+    'Barlow Semi Condensed': (
+        'family': ('Barlow Semi Condensed', sans-serif),
+        'url': 'Barlow+Semi+Condensed:300,300i,400,400i,700,700i',
+    ),
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'DM Sans': (
+        'family': ('DM Sans', serif),
+        'url': 'DM+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Barlow': (
+        'family': ('Barlow', sans-serif),
+        'url': 'Barlow:300,300i,400,400i,700,700i',
+    ),
+    'Chakra Petch': (
+        'family': ('Chakra Petch', sans-serif),
+        'url': 'Chakra+Petch:300,300i,400,400i,700,700i',
+    ),
+    'Yeseva One': (
+        'family': ('Yeseva One', serif),
+        'url': 'Yeseva+One:300,300i,400,400i,700,700i',
+    ),
+    'Exo 2': (
+        'family': ('Exo 2', sans-serif),
+        'url': 'Exo+2:300,300i,400,400i,700,700i',
+    ),
 );
 
 
@@ -94,9 +122,12 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'base-1',
+        'recommended-palette-name': ('base-1', 'graphene-1', 'graphene-2', 'graphene-3'),
 
         'font': 'Source Sans Pro',
-        'headings-font': 'Assistant',
+        'headings-font': 'Barlow Semi Condensed',
+        'alternative-fonts': ('Roboto', 'DM Sans', 'Barlow'),
+        'alternative-headings-fonts': ('Chakra Petch', 'Yeseva One', 'Exo 2'),
 
         'btn-ripple': true,
         'header-template': 'stretch',

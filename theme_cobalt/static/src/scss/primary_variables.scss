@@ -8,7 +8,7 @@ $o-theme-h6-font-size-multiplier: 1.1;
 
 $o-theme-font-configs: (
     'Inter': (
-        'family': ('Inter', serif),
+        'family': ('Inter', sans-serif),
         'url': 'Inter:300,300i,400,400i,600,600i,800,800i',
     ),
 
@@ -20,6 +20,22 @@ $o-theme-font-configs: (
         'family': ('Poppins', sans-serif),
         'url': 'Poppins:300,300i,400,400i,700,700i',
     ),
+    'Manrope': (
+        'family': ('Manrope', sans-serif),
+        'url': 'Manrope:300,300i,400,400i,700,700i',
+    ),
+    'DM Sans': (
+        'family': ('DM Sans', serif),
+        'url': 'DM+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Epilogue': (
+        'family': ('Epilogue', sans-serif),
+        'url': 'Epilogue:300,300i,400,400i,700,700i',
+    ),
+    'Space Grotesk': (
+        'family': ('Space Grotesk', sans-serif),
+        'url': 'Space+Grotesk:300,300i,400,400i,700,700i',
+    ),
 );
 
 
@@ -30,9 +46,13 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'default-8',
+        'recommended-palette-name': ('default-8', 'cobalt-1', 'cobalt-2', 'cobalt-3'),
 
         'font': 'Inter',
         'headings-font': 'Poppins',
+        'alternative-fonts': ('Inter', 'Manrope', 'DM Sans'),
+        'alternative-headings-fonts': ('Space Grotesk', 'Abril Fatface', 'Epilogue'),
+
 
         'headings-line-height': 1.1,
 
