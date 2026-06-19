@@ -111,4 +111,25 @@
     </xpath>
 </template>
 
+<!-- Cancelling the customization to make it work in the new page templates. -->
+<!-- TODO: find a way to remove this -->
+<template id="new_page_template_s_company_team_spotlight" inherit_id="website.new_page_template_s_company_team_spotlight">
+    <xpath expr="//p" position="replace"/>
+    <xpath expr="//div[hasclass('o_container_small')]" position="attributes">
+        <attribute name="class" add="container" remove="o_container_small" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-3" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-3" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-3" remove="col-lg-6" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-6')][1]" position="attributes">
+        <attribute name="class" add="col-lg-3" remove="col-lg-6" separator=" "/>
+    </xpath>
+</template>
+
 </odoo>
