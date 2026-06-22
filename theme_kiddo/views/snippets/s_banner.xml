@@ -41,9 +41,6 @@
     <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
         Our goal is to create a safe and nurturing environment for your child to learn and grow. We believe that every child is unique and should be treated as such.
     </xpath>
-    <xpath expr="//div[hasclass('col-lg-6')]//p[2]" position="attributes">
-        <attribute name="class" add="mb-0" separator=" "/>
-    </xpath>
 </template>
 
 </odoo>
