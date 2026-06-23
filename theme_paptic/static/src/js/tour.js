@@ -9,7 +9,7 @@ const snippets = [
         groupName: "Intro",
     },
     {
-        id: 's_references',
+        id: 's_references_lite',
         name: 'References',
         groupName: "People",
     },

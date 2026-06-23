@@ -17,7 +17,7 @@
         'static/description/paptic_screenshot.webp',
     ],
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_references', 's_image_text', 's_text_image', 's_masonry_block_images_template', 's_faq_list', 's_cta_box'],
+        'homepage': ['s_cover', 's_references_lite', 's_image_text', 's_text_image', 's_masonry_block_images_template', 's_faq_list', 's_cta_box'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
