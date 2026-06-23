@@ -6,10 +6,7 @@
         <attribute name="class" add="pt32 pb72 o_colored_level o_cc o_cc2" remove="pt80 pb80" separator=" "/>
     </xpath>
     <xpath expr="//div[hasclass('o_card_img_horizontal')]" position="attributes">
-        <attribute name="style" add="--card-img-size-h: 50%;border-radius: 16px !important;" separator=";"/>
-    </xpath>
-    <xpath expr="//figure[hasclass('o_card_img_wrapper')]" position="attributes">
-        <attribute name="class" remove="ratio ratio-1x1" separator=" "/>
+        <attribute name="style" add="--card-img-size-h: 30%;border-radius: 16px !important;" separator=";"/>
     </xpath>
     <!-- Title -->
     <xpath expr="//div[hasclass('card-body')]" position="replace">

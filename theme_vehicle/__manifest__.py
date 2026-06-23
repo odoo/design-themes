@@ -13,8 +13,8 @@
         'views/customizations.xml',
     ],
     'images': [
-        'static/description/vehicle_description.png',
-        'static/description/vehicle_screenshot.png',
+        'static/description/vehicle_description.webp',
+        'static/description/vehicle_screenshot.webp',
     ],
     'images_preview_theme': {
         'website.s_cover_default_image': '/theme_vehicle/static/src/img/snippets/s_cover.webp',

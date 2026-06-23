@@ -16,6 +16,7 @@
         'views/snippets/s_sidegrid.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_image_frame.xml',
+        'views/snippets/s_image_gallery.xml',
         'views/snippets/s_shape_image.xml',
     ],
     'images': [

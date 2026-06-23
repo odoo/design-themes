@@ -70,16 +70,6 @@
     <xpath expr="//a" position="replace"/>
 </template>
 
-<!-- ==== References ===== -->
-<template id="s_references" inherit_id="website.s_references" name="Paptic s_references">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt80 pb80" separator=" "/>
-    </xpath>
-    <xpath expr="//h2" position="replace"/>
-    <xpath expr="//p" position="replace"/>
-    <xpath expr="//p" position="replace"/>
-</template>
-
 <!-- ==== CTA Box ===== -->
 <template id="s_cta_box" inherit_id="website.s_cta_box">
     <!-- Card -->

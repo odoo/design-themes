@@ -3,6 +3,9 @@
 
 <!-- ======== TITLE ======== -->
 <template id="s_title" inherit_id="website.s_title" name="Monglia s_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc5" separator=" "/>
+    </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         <h2 style="text-align: center;">MONGLIA 2024</h2>
     </xpath>
@@ -218,7 +221,7 @@
     </xpath>
     <!-- Member 1 -->
     <xpath expr="//h3" position="replace">
-        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold o_text_highlight_fill" style="--text-highlight-width: 3px; --text-highlight-color: #AFF8C8;">Tony Fred</span></h3>
+        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold o_text_highlight_fill" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-2);">Tony Fred</span></h3>
     </xpath>
     <xpath expr="//img" position="attributes">
         <attribute name="src">/html_editor/image_shape/website.set_avatars_square_md_1/html_builder/geometric_round/geo_round_diamond.svg</attribute>
@@ -229,7 +232,7 @@
     </xpath>
     <!-- Member 2 -->
     <xpath expr="(//h3)[2]" position="replace">
-        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold_1 o_text_highlight_fill" style="--text-highlight-width: 3px;">Mich Stark</span></h3>
+        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold_1 o_text_highlight_fill" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-1);">Mich Stark</span></h3>
     </xpath>
 
     <xpath expr="(//img)[2]" position="attributes">
@@ -241,7 +244,7 @@
     </xpath>
     <!-- Member 3 -->
     <xpath expr="(//h3)[3]" position="replace">
-        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold_1 o_text_highlight_fill" style="--text-highlight-width: 3px; --text-highlight-color: #AFF8C8;">Aline Turner</span></h3>
+        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold_1 o_text_highlight_fill" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-2);">Aline Turner</span></h3>
     </xpath>
     <xpath expr="(//img)[3]" position="attributes">
         <attribute name="src">/html_editor/image_shape/website.set_avatars_square_md_3/html_builder/geometric_round/geo_round_diamond.svg</attribute>
@@ -252,7 +255,7 @@
     </xpath>
     <!-- Member 4 -->
     <xpath expr="(//h3)[4]" position="replace">
-        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold o_text_highlight_fill" style="--text-highlight-width: 3px;">Iris Joe</span></h3>
+        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold o_text_highlight_fill" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-1);">Iris Joe</span></h3>
     </xpath>
     <xpath expr="(//img)[4]" position="attributes">
         <attribute name="src">/html_editor/image_shape/website.set_avatars_square_md_4/html_builder/geometric_round/geo_round_diamond.svg</attribute>
@@ -263,7 +266,7 @@
     </xpath>
     <!-- Member 5 -->
     <xpath expr="(//h3)[5]" position="replace">
-        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold o_text_highlight_fill" style="--text-highlight-width: 3px; --text-highlight-color: #AFF8C8;">Pete Bluestork</span></h3>
+        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold o_text_highlight_fill" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-2);">Pete Bluestork</span></h3>
     </xpath>
     <xpath expr="(//img)[5]" position="attributes">
         <attribute name="src">/html_editor/image_shape/website.set_avatars_square_md_5/html_builder/geometric_round/geo_round_diamond.svg</attribute>
@@ -274,7 +277,7 @@
     </xpath>
     <!-- Member 6 -->
     <xpath expr="(//h3)[6]" position="replace">
-        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold o_text_highlight_fill" style="--text-highlight-width: 3px;">Sophia Langston</span></h3>
+        <h3 style="text-align: center;"><span class="o_text_highlight o_translate_inline o_text_highlight_bold o_text_highlight_fill" style="--text-highlight-width: 3px; --text-highlight-color: var(--o-color-1);">Sophia Langston</span></h3>
     </xpath>
     <xpath expr="(//img)[6]" position="attributes">
         <attribute name="src">/html_editor/image_shape/website.set_avatars_square_md_6/html_builder/geometric_round/geo_round_diamond.svg</attribute>
