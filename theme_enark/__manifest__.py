@@ -15,6 +15,7 @@
         'views/snippets/s_title.xml',
         'views/snippets/s_freegrid.xml',
         'views/snippets/s_numbers_list.xml',
+        'views/snippets/s_image_gallery.xml',
         'views/snippets/s_features_wall.xml',
         'views/snippets/s_references.xml',
     ],
