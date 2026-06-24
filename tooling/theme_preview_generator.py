@@ -82,7 +82,6 @@ def build_odoo_args():
 CONFIGURATOR_VALUES = {
     "industry_id": 0,
     "industry_name": "business",
-    "selected_features": [],
     "selected_palette": "base-1",
     "website_purpose": "general",
     "website_type": "business",
