@@ -46,10 +46,14 @@
             'template_key': (
                 'website_sale.dynamic_filter_template_product_public_category_default'
             ),
-            'data_attributes': {
-                'rounded': '0',
-                'gap': '4',
-                'alignment': 'left',
+            'dynamic_snippet_args': {
+                'content_data': {
+                    'alignment': 'left',
+                },
+                'wrapper_data': {
+                    'rounded': 0,
+                    'gap': 4,
+                },
             },
             'add_classes': [
                 'pt0',

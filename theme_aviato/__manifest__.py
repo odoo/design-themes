@@ -48,8 +48,10 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'gap': '3',
+            'dynamic_snippet_args': {
+                'wrapper_data': {
+                    'gap': 3,
+                },
             },
             'background': {
                 'shape': {

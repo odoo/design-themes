@@ -33,9 +33,13 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'columns': '2',
-                'alignment': 'right',
+            'dynamic_snippet_args': {
+                'content_data': {
+                    'alignment': 'right',
+                },
+                'wrapper_data': {
+                    'cols_count': 2,
+                },
             },
             'add_classes': [
                 'pt88', 'pb88',

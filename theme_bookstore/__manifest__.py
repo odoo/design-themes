@@ -45,8 +45,10 @@
             'template_key': (
                 'website_sale.dynamic_filter_template_product_public_category_default'
             ),
-            'data_attributes': {
-                'gap': '4',
+            'dynamic_snippet_args': {
+                'wrapper_data': {
+                    'gap': 4,
+                },
             },
             'background': {
                 'color': 'o_cc2',
