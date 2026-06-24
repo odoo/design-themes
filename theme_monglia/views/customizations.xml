@@ -3,9 +3,6 @@
 
 <!-- ======== TITLE ======== -->
 <template id="s_title" inherit_id="website.s_title" name="Monglia s_title">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5" separator=" "/>
-    </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         <h2 style="text-align: center;">MONGLIA 2024</h2>
     </xpath>
