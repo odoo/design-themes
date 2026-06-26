@@ -56,6 +56,11 @@ DOWNLOAD_SESSION.headers["User-Agent"] = (
     "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 )
 PSEUDO_RE = re.compile(r'::?[a-zA-Z-]+(\([^)]*\))?')
+CSS_URL_RE = re.compile(
+    r'url\(\s*'
+    r'(?:"([^"]*)"|\'([^\']*)\'|([^)]*))'
+    r'\s*\)'
+)
 VH_RE = re.compile(r"(-?(?:\d+(?:\.\d+)?|\.\d+))s?vh")
 PALETTE_COLORS = {
     "--o-color-1": ("#714B67",),
@@ -77,6 +82,7 @@ FONT_ASSET_URLS = {
     "web.odoo_ui_icons.min.woff2": "/web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2",
     "web.odoo_ui_icons.min.woff": "/web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff",
 }
+COLOR_TOKEN_END = r"(?![0-9a-zA-Z_-])"
 VH_TO_VW_RATIO = 10 / 16
 
 
@@ -237,7 +243,7 @@ def resolve_css_imports(css, base_url):
 
 def resolve_css_urls(css, base_url):
     def replace(match):
-        raw_url = next(group for group in match.groups() if group is not None).strip()
+        raw_url, _quote = get_css_url(match)
         if raw_url.startswith("data:"):
             return match.group(0)
         font_asset_url = get_stable_font_asset_url(raw_url)
@@ -249,7 +255,7 @@ def resolve_css_urls(css, base_url):
             return f'url("{root_relative_url(raw_url, base_url)}")'
         return f'url("{root_relative_url(raw_url, base_url)}")'
 
-    return re.sub(r'url\(\s*(?:"([^"]*)"|\'([^\']*)\'|([^)]*))\s*\)', replace, css)
+    return CSS_URL_RE.sub(replace, css)
 
 
 def get_stable_font_asset_url(url):
@@ -257,38 +263,73 @@ def get_stable_font_asset_url(url):
     return FONT_ASSET_URLS.get(filename)
 
 
+def get_css_url(match):
+    double_quoted_url, single_quoted_url, unquoted_url = match.groups()
+    if double_quoted_url is not None:
+        return double_quoted_url, '"'
+    if single_quoted_url is not None:
+        return single_quoted_url, "'"
+    return unquoted_url.strip(), ""
+
+
+def replace_color_token(text, color, replacement):
+    # Do not replace #FFF inside #FFF3CD or %23FFF inside %23FFF3CD.
+    return re.sub(
+        rf"{re.escape(color)}{COLOR_TOKEN_END}",
+        replacement,
+        text,
+        flags=re.I,
+    )
+
+
 def replace_palette_colors_in_css(css_text):
     protected = {}
     for css_var, colors in PALETTE_COLORS.items():
         for color in colors:
             placeholder = f"__KEEP_{css_var.strip('-').replace('-', '_')}_{len(protected)}__"
-            pattern = re.compile(rf"({re.escape(css_var)}\s*:\s*){re.escape(color)}", re.I)
-            css_text = pattern.sub(rf"\1{placeholder}", css_text)
+            pattern = re.compile(
+                rf"({re.escape(css_var)}\s*:\s*)"
+                rf"{re.escape(color)}{COLOR_TOKEN_END}",
+                re.I,
+            )
+            css_text = pattern.sub(lambda match: f"{match.group(1)}{placeholder}", css_text)
             protected[placeholder] = color
 
     for css_var, colors in PALETTE_COLORS.items():
         for color in colors:
-            css_text = re.sub(re.escape(color), f"var({css_var})", css_text, flags=re.I)
+            css_text = replace_color_token(css_text, color, f"var({css_var})")
 
     for placeholder, color in protected.items():
         css_text = css_text.replace(placeholder, color)
     return css_text
 
 
-def replace_palette_colors_in_urls(text):
+def replace_palette_colors_in_url(url):
     for css_var, colors in PALETTE_COLORS.items():
         color_token = css_var.removeprefix("--")
         for color in colors:
             encoded_color = "%23" + color.lstrip("#")
-            text = re.sub(re.escape(encoded_color), color_token, text, flags=re.I)
-    return text
+            url = replace_color_token(url, encoded_color, color_token)
+    return url
+
+
+def replace_palette_colors_in_urls(text):
+    def replace(match):
+        raw_url, quote = get_css_url(match)
+        if raw_url.startswith("data:"):
+            # Inline SVG icons need real colors, not palette tokens.
+            return match.group(0)
+        url = replace_palette_colors_in_url(raw_url)
+        return f"url({quote}{url}{quote})"
+
+    return CSS_URL_RE.sub(replace, text)
 
 
 def replace_palette_colors_in_style(style_text):
     style_text = replace_palette_colors_in_urls(style_text)
     for css_var, colors in PALETTE_COLORS.items():
         for color in colors:
-            style_text = re.sub(re.escape(color), f"var({css_var})", style_text, flags=re.I)
+            style_text = replace_color_token(style_text, color, f"var({css_var})")
     return style_text
 
 
