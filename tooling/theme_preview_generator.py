@@ -82,6 +82,8 @@ FONT_ASSET_URLS = {
     "web.odoo_ui_icons.min.woff2": "/web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2",
     "web.odoo_ui_icons.min.woff": "/web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff",
 }
+DEFAULT_WEBSITE_LOGO_URL = "/website/static/src/img/website_logo.svg"
+WEBSITE_LOGO_URL_RE = re.compile(r"^/web/image/website/\d+/logo(?:[/?#].*)?$")
 COLOR_TOKEN_END = r"(?![0-9a-zA-Z_-])"
 VH_TO_VW_RATIO = 10 / 16
 
@@ -439,7 +441,10 @@ def inline_images(soup, base_url):
     for image in soup.find_all("img"):
         src = image.get("src", "")
         if src:
-            image["src"] = root_relative_url(src, base_url)
+            src = root_relative_url(src, base_url)
+            if WEBSITE_LOGO_URL_RE.match(src):
+                src = DEFAULT_WEBSITE_LOGO_URL
+            image["src"] = src
         image.attrs.pop("srcset", None)
 
     for source in soup.find_all("source"):
