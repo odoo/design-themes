@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_color_blocks_2" inherit_id="website.s_color_blocks_2">
+    <xpath expr="//div[hasclass('row')]" position="replace" mode="inner">
+        <div class="col-lg-6 o_cc o_cc4 oe_img_bg o_bg_img_center o_bg_img_origin_border_box" style="background-image: url(/web/image/website.s_color_blocks_default_image);">
+            <h2 class="h3-fs">About Us</h2>
+            <p>We are more than a sportswear brand — we are a mindset built around movement, discipline, and self-growth. Our mission is to create pieces that not only perform, but inspire confidence in every moment, from training to everyday life. Through design, community, and purpose, we aim to empower people to move better, feel stronger, and become their best version.</p>
+            <a href="#" class="btn btn-primary">More Details</a>
+        </div>
+        <div class="col-lg-6 o_cc o_cc5">
+            <h2 class="h3-fs">Transparency</h2>
+            <p>We believe in transparency at every step — from how our products are made to the values we stand for. We are committed to honest sourcing, clear communication, and continuous improvement, without overpromising. Our goal is to build trust by sharing the reality behind the brand, not just the highlights.</p>
+            <a href="#" class="btn btn-primary">More Details</a>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

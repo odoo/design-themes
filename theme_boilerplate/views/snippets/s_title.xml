@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_title" inherit_id="website.s_title">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pt40 pb40" separator=" "/>
+    </xpath>
+    <xpath expr="//h2" position="replace">
+        <h2 class="display-3-fs" style="text-align: center;">Your best buddy</h2>
+    </xpath>
+</template>
+
+</odoo>

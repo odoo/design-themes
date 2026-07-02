@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_key_images" inherit_id="website.s_key_images">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb104" remove="pt72 pb72" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('container')]" position="replace" mode="inner">
+        <h2>We wrote our story. Now it's your turn.</h2>
+        <p class="lead">More than an activewear brand. A community built to grow, move, and evolve together.</p>
+        <p><br/></p>
+        <div class="row">
+            <div class="col-6 col-lg-3">
+                <p><img src="/web/image/website.s_key_images_default_image_1" class="img img-fluid rounded" alt="" style="width: 100% !important;"/></p>
+                <h3>Sponsorships</h3>
+                <p>Supporting athletes and creators who embody our vision.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+                <p><img src="/web/image/website.s_key_images_default_image_2" class="img img-fluid rounded" alt="" style="width: 100% !important;"/></p>
+                <h3>Run Clubs</h3>
+                <p>Bringing people together through movement and shared miles.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+                <p><img src="/web/image/website.s_key_images_default_image_3" class="img img-fluid rounded" alt="" style="width: 100% !important;"/></p>
+                <h3>Community Events</h3>
+                <p>Real-life moments to connect, train, and grow.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+                <p><img src="/web/image/website.s_key_images_default_image_4" class="img img-fluid rounded" alt="" style="width: 100% !important;"/></p>
+                <h3>Ambassador Program</h3>
+                <p>Join us and represent the mindset beyond the brand.</p>
+            </div>
+        </div>
+    </xpath>
+</template>
+
+</odoo>
