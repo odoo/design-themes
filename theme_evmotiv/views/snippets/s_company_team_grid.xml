@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_company_team_grid" inherit_id="website.s_company_team_grid">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Our Technology Partners
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][1]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_team_shapes_img_1.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][1]//h3" position="replace" mode="inner">
+        Battery Innovation
+    </xpath>
+
+        <xpath expr="//div[@data-name='Team Member'][1]//p[hasclass('card-text')]" position="replace" mode="inner">
+            Advanced lithium-ion technology
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][2]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_team_shapes_img_2.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][2]//h3" position="replace" mode="inner">
+        Charging Solutions
+    </xpath>
+
+        <xpath expr="//div[@data-name='Team Member'][2]//p[hasclass('card-text')]" position="replace" mode="inner">
+            Ultra-fast charging infrastructure
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][3]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_team_shapes_img_3.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][3]//h3" position="replace" mode="inner">
+        Smart Systems
+    </xpath>
+
+        <xpath expr="//div[@data-name='Team Member'][3]//p[hasclass('card-text')]" position="replace" mode="inner">
+            Intelligent vehicle management
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][4]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_team_shapes_img_4.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][4]//h3" position="replace" mode="inner">
+        Autonomous Tech
+    </xpath>
+
+        <xpath expr="//div[@data-name='Team Member'][4]//p[hasclass('card-text')]" position="replace" mode="inner">
+            Self-driving capabilities
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][5]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_team_shapes_img_5.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][5]//h3" position="replace" mode="inner">
+        Energy Management
+    </xpath>
+
+        <xpath expr="//div[@data-name='Team Member'][5]//p[hasclass('card-text')]" position="replace" mode="inner">
+            Optimized power distribution
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][6]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_team_shapes_img_6.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Team Member'][6]//h3" position="replace" mode="inner">
+        Connectivity Platform
+    </xpath>
+
+        <xpath expr="//div[@data-name='Team Member'][6]//p[hasclass('card-text')]" position="replace" mode="inner">
+            Seamless digital integration
+        </xpath>
+    
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blobs/06","colors":{"c2": "o-color-3"},"flip":["y"],"showOnMobile":false}</attribute>
+    </xpath>
+</template>
+
+</odoo>
