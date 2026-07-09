@@ -50,6 +50,8 @@ CONFIGURATOR_VALUES = {
     "skip_ai": True,
 }
 
+MENU_TITLES = ["Shop", "Event"]
+
 DOWNLOAD_SESSION = requests.Session()
 DOWNLOAD_SESSION.headers["User-Agent"] = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
@@ -191,6 +193,37 @@ def generate_website(session, context, theme_name):
             },
         },
         timeout=600,
+    )
+
+
+def create_menu_items(session, context, website_id):
+    website = jsonrpc(
+        session,
+        f"{BASE_URL}/web/dataset/call_kw/website/read",
+        {
+            "model": "website",
+            "method": "read",
+            "args": [[website_id], ["menu_id"]],
+            "kwargs": {"context": context},
+        },
+    )[0]
+    jsonrpc(
+        session,
+        f"{BASE_URL}/web/dataset/call_kw/website.menu/create",
+        {
+            "model": "website.menu",
+            "method": "create",
+            "args": [[
+                {
+                    "name": title,
+                    "url": "/",
+                    "website_id": website_id,
+                    "parent_id": website["menu_id"][0],
+                }
+                for title in MENU_TITLES
+            ]],
+            "kwargs": {"context": context},
+        },
     )
 
 
@@ -503,13 +536,17 @@ def remove_javascript(soup):
         link["href"] = "#"
 
 
-def remove_animation_classes(soup):
-    for tag in soup.select(".o_animate"):
-        classes = [class_name for class_name in tag.get("class", []) if class_name != "o_animate"]
-        if classes:
-            tag["class"] = classes
-        else:
-            tag.attrs.pop("class", None)
+def remove_javascript_dependent_classes(soup):
+    # These classes keep elements invisible until frontend JS reveals them
+    # (o_animate: animation start state, o_menu_loading: menu auto-hide
+    # computation); the preview has no JS, so strip them.
+    for removed_class in ("o_animate", "o_menu_loading"):
+        for tag in soup.select(f".{removed_class}"):
+            classes = [class_name for class_name in tag.get("class", []) if class_name != removed_class]
+            if classes:
+                tag["class"] = classes
+            else:
+                tag.attrs.pop("class", None)
 
 
 def fix_floating_blocks_preview(soup):
@@ -665,7 +702,7 @@ def download_static_html(url, output_path):
     remove_preview_metadata(soup)
     replace_palette_colors_in_attributes(soup)
     remove_javascript(soup)
-    remove_animation_classes(soup)
+    remove_javascript_dependent_classes(soup)
     purge_unused_css(soup)
     fix_floating_blocks_preview(soup)
     inject_palette_variables(soup)
@@ -699,7 +736,9 @@ def generate_theme_preview(theme_dir):
     try:
         wait_for_odoo(server)
         session_info = login(session)
-        result = generate_website(session, session_info.get("user_context", {}), theme_name)
+        context = session_info.get("user_context", {})
+        result = generate_website(session, context, theme_name)
+        create_menu_items(session, context, result["website_id"])
         download_static_html(get_generated_page_url(result), output_path)
         print(f"Saved {output_path}")
     finally:
