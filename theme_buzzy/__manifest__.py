@@ -43,6 +43,11 @@
                     's_dynamic_snippet_title': 'd-none',
                 },
             ],
+            'remove_classes': [
+                {
+                    's_dynamic_snippet_title': 'd-flex',
+                },
+            ],
         },
     },
     'author': 'Odoo S.A.',

@@ -39,7 +39,7 @@
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_cover'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_title'),
             ],
         },
     },
@@ -51,9 +51,6 @@
                 'size': 'small',
                 'alignment': 'left',
             },
-            'background': {
-                'color': 'o_cc2',
-            },
             'add_classes': [
                 'pt96', 'pb96',
                 {
@@ -62,6 +59,9 @@
             ],
             'remove_classes': [
                 'pt64', 'pb64',
+                {
+                    's_dynamic_snippet_title': 'd-flex',
+                },
             ],
         },
     },

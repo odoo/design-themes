@@ -21,6 +21,13 @@
     'configurator_snippets': {
         'homepage': ['s_animated_cover', 's_about_bold', 's_projects_list', 's_references_tiles', 's_manifesto', 's_quotes_carousel_compact', 's_faq_collapse'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_projects_list'),
+            ],
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
 
