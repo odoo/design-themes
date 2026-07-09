@@ -20,6 +20,20 @@
     'configurator_snippets': {
         'homepage': ['s_discovery', 's_freegrid', 's_title', 's_floating_blocks', 's_announcement_scroll', 's_numbers_inline', 's_company_team_spotlight', 's_comparisons', 's_faq_collapse'],
     },
+    'configurator_snippets_addons': {
+        'website_sale': {
+            'homepage': [
+                ('website_sale.s_dynamic_snippet_category_list', 'before', 's_numbers_inline'),
+            ],
+        },
+    },
+    'theme_customizations': {
+        'website_sale.s_dynamic_snippet_category_list': {
+            'data_attributes': {
+                'gap': '3',
+            },
+        },
+    },
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
 

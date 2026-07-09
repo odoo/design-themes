@@ -63,6 +63,9 @@
             ],
             'remove_classes': [
                 'pb64', 'pt64',
+                {
+                    's_dynamic_snippet_title': 'd-flex',
+                },
             ],
         },
     },

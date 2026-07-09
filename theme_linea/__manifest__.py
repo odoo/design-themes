@@ -52,7 +52,6 @@
                 's_dynamic_category_no_arrows',
                 {
                     's_dynamic_snippet_title': 'd-flex',
-                    's_dynamic_snippet_title': 'justify-content-between',
                     's_dynamic_snippet_container': 'container',
                 },
             ],

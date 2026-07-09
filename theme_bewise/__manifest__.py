@@ -39,13 +39,16 @@
                 'size': 'small',
             },
             'add_classes': [
-                'pb128',
+                'pt96', 'pb96',
                 {
                     's_dynamic_snippet_title': 'd-none'
                 },
             ],
             'remove_classes': [
                 'pt64', 'pb64',
+                {
+                    's_dynamic_snippet_title': 'd-flex',
+                },
             ],
         },
     },
