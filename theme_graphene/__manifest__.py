@@ -1,6 +1,6 @@
 {
     'name': 'Graphene Theme',
-    'description': 'Cover hero opens onto alternating text-and-image rows, a numbers grid, mockup showcase, and side-by-side comparisons before client references, accented by connection, bold geometric, and rain-line motifs. Mockup-and-stats forward with credibility cues / suited for technology companies, robotics, IT services, and product-led corporate sites',
+    'description': 'A minimalist hero opens onto a split text block, a three-column services grid, a square feature showcase, client reference tiles, a full-width parallax image and a centered FAQ — with an acid-lime, off-white and near-black palette and a geometric, technical type pairing. Structured and product-led with credibility cues / suited for technology companies, robotics, IT services, and corporate sites',
     'category': 'Theme/Corporate',
     'summary': 'Service, Corporate, Design, Technology, Robotics, Computers, IT, Blogs',
     'sequence': 110,
@@ -9,22 +9,21 @@
         'data/generate_primary_template.xml',
         'data/ir_asset.xml',
         'views/images_library.xml',
-        'views/customizations.xml',
+
+        'views/global_customizations.xml',
+        'views/homepage_customizations.xml',
     ],
     'images': [
         'static/description/graphene_poster.webp',
         'static/description/graphene_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_graphene/static/src/img/pictures/bg_image_08.webp',
-    },
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_text_image', 's_numbers_grid', 's_mockup_image', 's_comparisons', 's_references'],
+        'homepage': ['s_hero_minimalist', 's_text_block_split', 's_services_grid', 's_showcase_square', 's_references_tiles', 's_parallax', 's_faq_collapse_centered'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_mockup_image'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_showcase_square'),
             ],
         },
     },
@@ -36,9 +35,6 @@
             'template_key': (
                 'website_sale.dynamic_filter_template_product_public_category_default'
             ),
-            'background': {
-                'color': 'o_cc2',
-            },
             'add_classes': [
                 'pt96', 'pb96',
                 {
@@ -47,6 +43,9 @@
             ],
             'remove_classes': [
                 's_dynamic_category_clickable_items', 'pt64', 'pb64',
+                {
+                    's_dynamic_snippet_title': 'd-flex',
+                },
             ],
         },
     },
