@@ -1,9 +1,38 @@
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'graphene',
+
+        'font': 'Geist',
+        'headings-font': 'Mona Sans',
+
+        'header-template': 'default',
+        'footer-template': 'links',
+    ),
+);
+
+// Main palette
+$o-color-palettes: map-merge($o-color-palettes, (
+    'graphene': (
+        'o-color-1': #bde74e,
+        'o-color-2': #1c1c1c,
+        'o-color-3': #f0f0eb,
+        'o-color-4': #ffffff,
+        'o-color-5': #1c1c1c,
+
+        'footer': 5,
+    ),
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'graphene');
 
 //------------------------------------------------------------------------------
-// Colors
+// Legacy theme colors (pre-13.4 / numeric palette indexes)
 //------------------------------------------------------------------------------
 
-// Theme colors
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'graphene-1': (
@@ -56,17 +85,14 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (62 / 16);
-$o-theme-h2-font-size-multiplier: (48 / 16);
-$o-theme-h3-font-size-multiplier: (36 / 16);
-$o-theme-h4-font-size-multiplier: (28 / 16);
-$o-theme-h5-font-size-multiplier: (24 / 16);
-$o-theme-h6-font-size-multiplier: (20 / 16);
-
 $o-theme-font-configs: (
     'Assistant': (
         'family': ('Assistant', sans-serif),
         'url': 'Assistant:300,300i,400,400i,700,700i',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
     ),
     'Abel': (
         'family': ('Abel', sans-serif),
@@ -80,34 +106,13 @@ $o-theme-font-configs: (
         'family': ('Old Standard TT', serif),
         'url': 'Old+Standard+TT:300,300i,400,400i,700,700i',
     ),
-    'Source Sans Pro': (
-        'family': ('Source Sans Pro', sans-serif),
-        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    'Mona Sans': (
+        'family': ('Mona Sans', sans-serif),
+        'url': 'Mona+Sans:400,400i,500,500i,700,700i',
     ),
-);
-
-
-//------------------------------------------------------------------------------
-// Website customizations
-//------------------------------------------------------------------------------
-
-$o-website-values-palettes: (
-    (
-        'color-palettes-name': 'base-1',
-
-        'font': 'Source Sans Pro',
-        'headings-font': 'Assistant',
-
-        'btn-ripple': true,
-        'header-template': 'stretch',
-        'footer-template': 'centered',
-
-        'btn-font-size-lg': 1rem,
-        'btn-padding-y-lg': .6rem,
-        'btn-padding-x-lg': 2.2rem,
-        'btn-border-radius': 2px,
-        'btn-border-radius-sm': 2px,
-        'btn-border-radius-lg': 4px,
+    'Geist': (
+        'family': ('Geist', sans-serif),
+        'url': 'Geist:300,300i,400,400i,700,700i',
     ),
 );
 

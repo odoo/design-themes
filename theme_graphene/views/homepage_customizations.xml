@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== TEXT BLOCK SPLIT ======== -->
+<template id="configurator_s_text_block_split" inherit_id="website.configurator_s_text_block_split" name="Graphene s_text_block_split">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb0" remove="pb80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== PARALLAX ======== -->
+<template id="configurator_s_parallax" inherit_id="website.configurator_s_parallax" name="Graphene s_parallax">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-scroll-background-ratio">3</attribute>
+        <attribute name="class" remove="s_parallax_is_fixed" separator=" "/>
+    </xpath>
+    <!-- Background -->
+    <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
+        <attribute name="style">background-image: url('/web/image/website.landscape_xl_2'); background-position: 50% 75%;</attribute>
+    </xpath>
+</template>
+
+</odoo>

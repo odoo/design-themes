@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== SERVICES GRID ======== -->
+<template id="s_services_grid" inherit_id="website.s_services_grid" name="Graphene s_services_grid">
+    <!-- Title -->
+    <xpath expr="//h2" position="replace"/>
+    <!-- Subtitle -->
+    <xpath expr="//p[hasclass('lead')]" position="replace"/>
+</template>
+
+<!-- ======== SHOWCASE SQUARE ======== -->
+<template id="s_showcase_square" inherit_id="website.s_showcase_square" name="Graphene s_showcase_square">
+    <!-- Icons -->
+    <xpath expr="(//div[@data-name='Feature'])[1]/i[hasclass('s_showcase_icon')]" position="attributes">
+        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[@data-name='Feature'])[2]/i[hasclass('s_showcase_icon')]" position="attributes">
+        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[@data-name='Feature'])[3]/i[hasclass('s_showcase_icon')]" position="attributes">
+        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[@data-name='Feature'])[4]/i[hasclass('s_showcase_icon')]" position="attributes">
+        <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
