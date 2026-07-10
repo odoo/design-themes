@@ -549,6 +549,23 @@ def remove_javascript_dependent_classes(soup):
                 tag.attrs.pop("class", None)
 
 
+# Copied from the s_numbers_charts template of website: the static chart
+# shown by the builder's snippet dialog, which cannot run Chart.js either.
+CHART_PLACEHOLDER_SVG = """
+<svg class="d-block mt-3 mx-auto" width="450" height="230" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40" fill="transparent" stroke="transparent" stroke-width="25"/>
+    <circle cx="50" cy="55" r="40" fill="transparent" stroke="var(--o-color-5)" stroke-width="25" stroke-dasharray="251.2" stroke-dashoffset="62.8"/>
+</svg>
+"""
+
+
+def replace_chart_canvases(soup):
+    # The s_chart canvas is painted by Chart.js at runtime; the preview has no
+    # JS, so show the same static placeholder as the builder's snippet dialog.
+    for canvas in soup.select(".s_chart canvas"):
+        canvas.replace_with(BeautifulSoup(CHART_PLACEHOLDER_SVG, "html.parser").find("svg"))
+
+
 def fix_floating_blocks_preview(soup):
     # counter s_floating_blocks opacity:0 on each block plus some CSS magic to
     # reproduce the overlapping stack effect without requiring JS.
@@ -703,6 +720,7 @@ def download_static_html(url, output_path):
     replace_palette_colors_in_attributes(soup)
     remove_javascript(soup)
     remove_javascript_dependent_classes(soup)
+    replace_chart_canvases(soup)
     purge_unused_css(soup)
     fix_floating_blocks_preview(soup)
     inject_palette_variables(soup)
