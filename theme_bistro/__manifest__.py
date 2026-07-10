@@ -1,6 +1,6 @@
 {
     'name': 'Bistro Theme',
-    'description': 'Vertical sidebar navigation paired with an image-titled hero, key visuals, a cafe-style price list, and a testimonial carousel framed by a quadrant block, with bold geometric shapes accenting the testimonials. Menu-and-pricing forward with little long-form copy / suited for bistros, restaurants, bars, pubs, cafes, and catering services',
+    'description': 'Horizontal navigation above a full-screen image hero carrying an oversized serif wordmark, a two-column bold statement, a split cafe-style price list on a deep colored panel, a six-card review wall with star ratings, a sharp-cornered image and text box, and opening hours over a full-width dish visual. Menu-and-pricing forward with little long-form copy / suited for bistros, restaurants, bars, pubs, cafes, and catering services',
     'category': 'Theme/Food',
     'summary': 'Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering',
     'sequence': 220,
@@ -11,36 +11,21 @@
         'data/ir_asset.xml',
         'views/images_library.xml',
 
-        'views/layout.xml',
-
-        'views/snippets/s_image_title.xml',
-        'views/snippets/s_quotes_carousel.xml',
-        'views/snippets/s_key_images.xml',
-        'views/snippets/s_quadrant.xml',
-
+        'views/global_customizations.xml',
+        'views/homepage_customizations.xml',
     ],
     'images': [
         'static/description/bistro_cover.webp',
         'static/description/bistro_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_bistro/static/src/img/backgrounds/17.webp',
-        'website.s_media_list_default_image_1': '/theme_bistro/static/src/img/content/media_list_01.webp',
-        'website.s_image_text_default_image': '/theme_bistro/static/src/img/content/image_text.webp',
-        'website.s_media_list_default_image_2': '/theme_bistro/static/src/img/content/media_list_02.webp',
-        'website.s_text_image_default_image': '/theme_bistro/static/src/img/content/text_image.webp',
-        'website.s_quotes_carousel_demo_image_1': '/theme_bistro/static/src/img/backgrounds/s_quotes_carousel_background.webp',
-        'website.library_image_10': '/theme_bistro/static/src/img/backgrounds/07.webp',
-        'website.library_image_05': '/theme_bistro/static/src/img/backgrounds/11.webp',
-    },
     'configurator_snippets': {
-        'homepage': ['s_image_title', 's_key_images', 's_pricelist_cafe', 's_quotes_carousel', 's_quadrant'],
+        'homepage': ['s_cover', 's_about_bold', 's_pricelist_cafe', 's_reviews_wall', 's_image_text_box', 's_opening_hours_alt'],
         'pricing': ["s_text_image", "s_product_catalog"],
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_image_title'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_pricelist_cafe'),
             ],
         },
     },
@@ -48,13 +33,14 @@
         'website_sale.s_dynamic_snippet_category_list': {
             'data_attributes': {
                 'gap': '3',
+                'rounded': '1',
                 'alignment': 'left',
             },
             'background': {
-                'color': 'o_cc5',
+                'color': 'o_cc2',
             },
             'add_classes': [
-                'pt80', 'pb112',
+                'pt96', 'pb0',
             ],
             'remove_classes': [
                 'pt64', 'pb64',

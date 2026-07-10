@@ -4,34 +4,39 @@ import * as wTourUtils from '@website/js/tours/tour_utils';
 
 const snippets = [
     {
-        id: 's_image_title',
-        name: 'Image Title',
-        groupName: "Images",
+        id: 's_cover',
+        name: 'Cover',
+        groupName: "Intro",
     },
     {
-        id: 's_key_images',
-        name: 'Key Images',
+        id: 's_about_bold',
+        name: 'About Bold',
         groupName: "Columns",
     },
     {
         id: 's_pricelist_cafe',
-        name: 'Pricelist cafe',
+        name: 'Pricelist Cafe',
         groupName: "Text",
     },
     {
-        id: 's_quotes_carousel',
-        name: 'Quotes',
+        id: 's_reviews_wall',
+        name: 'Reviews Wall',
         groupName: "People",
     },
     {
-        id: 's_quadrant',
-        name: 'Quadrant',
-        groupName: "Images",
+        id: 's_image_text_box',
+        name: 'Image Text Box',
+        groupName: "Content",
+    },
+    {
+        id: 's_opening_hours_alt',
+        name: 'Opening Hours Alt',
+        groupName: "Contact & Forms",
     },
 ];
 
 wTourUtils.registerThemeHomepageTour("bistro_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"default-22"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"bistro"'),
     ...wTourUtils.insertSnippet(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
@@ -43,4 +48,5 @@ wTourUtils.registerThemeHomepageTour("bistro_tour", () => [
     wTourUtils.goBackToBlocks(),
     ...wTourUtils.insertSnippet(snippets[3]),
     ...wTourUtils.insertSnippet(snippets[4]),
+    ...wTourUtils.insertSnippet(snippets[5]),
 ]);
