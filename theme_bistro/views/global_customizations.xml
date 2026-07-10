@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== COVER ======== -->
+<template id="s_cover" inherit_id="website.s_cover" name="Bistro s_cover">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_full_screen_height" separator=" "/>
+    </xpath>
+    <!-- Column -->
+    <xpath expr="//div[hasclass('col-lg-12')]" position="attributes">
+        <attribute name="class" add="col-lg-8 offset-lg-2" remove="col-lg-12" separator=" "/>
+    </xpath>
+    <!-- Scroll button -->
+    <xpath expr="//div[hasclass('s_allow_columns')]" position="after">
+        <a class="o_scroll_button mb-3 rounded-circle align-items-center justify-content-center o_cc o_cc4 mx-auto o_not_editable anim-heartbeat" href="#" title="Scroll down to next section"><i class="oi oi-2x" data-icon="keyboard_arrow_down"/></a>
+    </xpath>
+</template>
+
+<!-- ======== REVIEWS WALL ======== -->
+<template id="s_reviews_wall" inherit_id="website.s_reviews_wall" name="Bistro s_reviews_wall">
+    <!-- Review -->
+    <xpath expr="(//blockquote)[1]" position="attributes">
+        <attribute name="style">border-radius: 2px !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[2]" position="attributes">
+        <attribute name="style">border-radius: 2px !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[3]" position="attributes">
+        <attribute name="style">border-radius: 2px !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[4]" position="attributes">
+        <attribute name="style">border-radius: 2px !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[5]" position="attributes">
+        <attribute name="style">border-radius: 2px !important;</attribute>
+    </xpath>
+    <xpath expr="(//blockquote)[6]" position="attributes">
+        <attribute name="style">border-radius: 2px !important;</attribute>
+    </xpath>
+    <!-- Rating -->
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[1]" position="attributes">
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+        <attribute name="style"/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[2]" position="attributes">
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+        <attribute name="style"/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[3]" position="attributes">
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+        <attribute name="style"/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[4]" position="attributes">
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+        <attribute name="style"/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[5]" position="attributes">
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+        <attribute name="style"/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[6]" position="attributes">
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+        <attribute name="style"/>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE TEXT BOX ======== -->
+<template id="s_image_text_box" inherit_id="website.s_image_text_box" name="Bistro s_image_text_box">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2" separator=" "/>
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+    <!-- Image -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <!-- Text -->
+    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc2 rounded" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

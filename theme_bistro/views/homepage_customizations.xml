@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== COVER ======== -->
+<template id="configurator_s_cover" inherit_id="website.configurator_s_cover" name="Bistro s_cover">
+    <!-- Heading -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        <span class="o_rfs" style="font-size: clamp(8px, 1em + 5.5556vw, 400px);">BISTRO</span>
+    </xpath>
+    <!-- CTA -->
+    <xpath expr="//p[not(hasclass('lead'))]" position="replace">
+        <p class="lead" style="text-align: center;">
+            <a href="#" class="btn btn-primary o_translate_inline">Book a table</a>
+        </p>
+    </xpath>
+</template>
+
+<!-- ======== ABOUT BOLD ======== -->
+<template id="configurator_s_about_bold" inherit_id="website.configurator_s_about_bold" name="Bistro s_about_bold">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb152" remove="pb88" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== REVIEWS WALL ======== -->
+<template id="configurator_s_reviews_wall" inherit_id="website.configurator_s_reviews_wall" name="Bistro s_reviews_wall">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt120 pb56" remove="pt80 pb80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE TEXT BOX ======== -->
+<template id="configurator_s_image_text_box" inherit_id="website.configurator_s_image_text_box" name="Bistro s_image_text_box">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pb120" remove="pt80 pb80" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
