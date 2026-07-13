@@ -36,7 +36,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("buzzy_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"default-24"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"default-21"'),
     ...wTourUtils.insertSnippet(snippets[0]),
     ...wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),

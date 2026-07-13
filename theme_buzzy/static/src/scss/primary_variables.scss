@@ -4,15 +4,17 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'default-24',
+        // Palette
+        'color-palettes-name':              'default-21',
 
         // Header
         'logo-height':                      2.75rem,
         'fixed-logo-height':                2rem,
+        'menu-shadow-class':                '',
 
         // Font
         'font':                             'Montserrat',
-        'headings-font':                    'Quicksand',
+        'headings-font':                    'Quando',
 
         // Buttons
         'btn-padding-x':                    1rem,
@@ -27,14 +29,16 @@ $o-website-values-palettes: (
 
         // Footer
         'footer-template':                  'headline',
-        'footer-effect':                    'slideout_slide_hover',
-        'footer-scrolltop':                 true,
     ),
 );
 
-$default-24: map-get($o-color-palettes, 'default-24');
-$default-24: map-merge($default-24, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('default-24': $default-24));
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+$default-21: map-get($o-color-palettes, 'default-21');
+$default-21: map-merge($default-21, ('footer': 5));
+$o-color-palettes: map-merge($o-color-palettes, ('default-21': $default-21));
 
 //------------------------------------------------------------------------------
 // Fonts
@@ -101,6 +105,10 @@ $o-theme-font-configs: (
     'Quicksand': (
         'family': ('Quicksand', sans-serif),
         'url': 'Quicksand:300,400,600',
+    ),
+    'Quando': (
+        'family': ('Quando', serif),
+        'url': 'Quando',
     ),
 );
 
