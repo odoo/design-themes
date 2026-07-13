@@ -44,11 +44,6 @@ const snippets = [
         name: 'Images Wall',
         groupName: "Images",
     },
-    {
-        id: 's_references',
-        name: 'References',
-        groupName: "People",
-    },
 ];
 
 wTourUtils.registerThemeHomepageTour("orchid_tour", () => [
@@ -63,5 +58,4 @@ wTourUtils.registerThemeHomepageTour("orchid_tour", () => [
     ...wTourUtils.insertSnippet(snippets[5]),
     ...wTourUtils.insertSnippet(snippets[6]),
     ...wTourUtils.insertSnippet(snippets[7]),
-    ...wTourUtils.insertSnippet(snippets[8]),
 ]);
