@@ -14,11 +14,6 @@ const snippets = [
         groupName: "Columns",
     },
     {
-        id: 's_projects_list',
-        name: 'Projects List',
-        groupName: "Content",
-    },
-    {
         id: 's_references_tiles',
         name: 'References Tiles',
         groupName: "People",
@@ -29,14 +24,24 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_quotes_carousel_compact',
-        name: 'Quotes Compact',
+        id: 's_projects_grid_minimal',
+        name: 'Projects Grid Minimal',
+        groupName: "Content",
+    },
+    {
+        id: 's_reviews_wall',
+        name: 'Reviews Wall',
         groupName: "People",
     },
     {
-        id: 's_faq_collapse',
-        name: 'FAQ Collapse',
+        id: 's_faq_collapse_centered',
+        name: 'FAQ Centered',
         groupName: "Text",
+    },
+    {
+        id: 's_cta_centered',
+        name: 'Centered Call to Action',
+        groupName: "Content",
     },
 ];
 
@@ -51,4 +56,5 @@ wTourUtils.registerThemeHomepageTour("muse_tour", () => [
     ...wTourUtils.insertSnippet(snippets[4]),
     ...wTourUtils.insertSnippet(snippets[5]),
     ...wTourUtils.insertSnippet(snippets[6]),
+    ...wTourUtils.insertSnippet(snippets[7]),
 ]);
