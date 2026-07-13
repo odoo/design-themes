@@ -3,7 +3,7 @@
 
 <template id="s_company_team_basic" inherit_id="website.s_company_team_basic">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
+        <attribute name="class" add="o_cc2 pb96" remove="o_cc1 pb64" separator=" "/>
     </xpath>
     <xpath expr="//h2" position="replace" mode="inner">
         Meet the Team
