@@ -3,7 +3,7 @@
 
 <template id="s_image_frame" inherit_id="website.s_image_frame">
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc4" remove="o_cc1" separator=" "/>
+        <attribute name="class" add="o_cc2" remove="o_cc1" separator=" "/>
         <attribute name="data-oe-shape-data">{'shape':'html_builder/Bold/13','flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}</attribute>
     </xpath>
     <xpath expr="//div[hasclass('container')]" position="before">
