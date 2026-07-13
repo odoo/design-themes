@@ -9,8 +9,8 @@ const snippets = [
         groupName: "Intro",
     },
     {
-        id: 's_image_text',
-        name: 'Image - Text',
+        id: 's_text_image',
+        name: 'Text - Image',
         groupName: "Content",
     },
     {
@@ -19,8 +19,8 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_three_columns',
-        name: 'Columns',
+        id: 's_cards_soft',
+        name: 'Cards Soft',
         groupName: "Columns",
     },
     {
@@ -29,8 +29,8 @@ const snippets = [
         groupName: "Text",
     },
     {
-        id: 's_references',
-        name: 'References',
+        id: 's_company_team_grid',
+        name: 'Company Team Grid',
         groupName: "People",
     },
     {

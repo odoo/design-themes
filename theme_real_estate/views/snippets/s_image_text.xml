@@ -2,6 +2,10 @@
 <odoo>
 
 <template id="s_image_text" inherit_id="website.s_image_text">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt0" remove="pt80" separator=" "/>
+    </xpath>
     <!-- Title -->
     <xpath expr="//h2" position="replace" mode="inner">
         Bored with your interior?

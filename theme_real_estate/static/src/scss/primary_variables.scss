@@ -79,15 +79,20 @@ $o-theme-font-configs: (
 $o-website-values-palettes: (
     (
         'color-palettes-name': 'default-28',
+
         // Font
         'font': 'Roboto',
         'headings-font': 'IBM Plex Sans',
 
+        // Header
+        'header-template': 'boxed',
+
         // Buttons
-        'btn-border-radius': 0px,
-        'btn-border-radius-sm': 0px,
-        'btn-border-radius-lg': 0px,
-        'btn-padding-y-lg': 0.75rem,
+        'btn-border-radius': 0.75rem,
+        'btn-border-radius-lg': 1rem,
+        'btn-padding-y': 0.75rem,
+        'btn-padding-x': 1.25rem,
+        'btn-padding-y-lg': 1rem,
         'btn-padding-x-lg': 1.75rem,
         'btn-ripple': true,
     ),

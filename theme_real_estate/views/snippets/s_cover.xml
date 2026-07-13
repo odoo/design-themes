@@ -12,11 +12,11 @@
     </xpath>
     <!-- Title -->
     <xpath expr="//h1" position="replace">
-        <h1 class="display-1-fs" style="text-align: center;"><font class="text-o-color-2">ESTATE ®</font><br/>Your easy home search, all in one</h1>
+        <h1 class="display-1-fs" style="text-align: center;"><span class="text-o-color-2" data-text-effect="{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}" style="text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px;">ESTATE</span><br/><span data-text-effect="{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}" style="text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px;">Your easy home search, all in one</span></h1>
     </xpath>
     <!-- Lead -->
-    <xpath expr="//p" position="replace" mode="inner">
-        With a simple click, finding your dream home has never been easier.<br/><br/>
+    <xpath expr="//p" position="replace">
+        <p><br/></p>
     </xpath>
     <!-- Button 1 -->
     <xpath expr="(//a)[1]" position="attributes">
