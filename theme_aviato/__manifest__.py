@@ -1,6 +1,6 @@
 {
     'name': 'Aviato Theme',
-    'description': 'Banner-led layout alternating text-and-image rows with a featured picture block, masonry gallery, team and testimonials, with connection line motifs accenting the banner. Narrative and image-forward / suited for travel agencies, tour operators, excursion booking, and destination marketing sites',
+    'description': 'Contained banner hero opens onto a centered text intro, a free-form image grid, and a split title introducing a full image wall, then a square-icon feature showcase and a reviews wall before an image-backed call-to-action, with light serif headings and a rounded boxed header as the recurring visual signature. Narrative and image-forward / suited for travel agencies, tour operators, excursion booking, and destination marketing sites',
     'category': 'Theme/Creative',
     'summary': 'Travel, Excursion, Plane, Tour, Agency ',
     'sequence': 20,
@@ -11,38 +11,20 @@
         'data/ir_asset.xml',
         'views/images_library.xml',
 
-        'views/snippets/s_banner.xml',
-        'views/snippets/s_company_team.xml',
-        'views/snippets/s_image_text.xml',
-        'views/snippets/s_text_image.xml',
-        'views/snippets/s_masonry_block.xml',
-        'views/snippets/s_picture.xml',
-        'views/snippets/s_title.xml',
-        'views/snippets/s_quotes_carousel.xml',
-        'views/snippets/s_showcase.xml',
+        'views/global_customizations.xml',
+        'views/homepage_customizations.xml',
     ],
     'images': [
         'static/description/aviato_cover.webp',
         'static/description/aviato_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.s_image_text_default_image': '/theme_aviato/static/src/img/content/s_banner_2.webp',
-        'website.s_product_list_default_image_1': '/theme_aviato/static/src/img/content/s_banner_3.webp',
-        'website.s_picture_default_image': '/theme_aviato/static/src/img/content/s_popup.webp',
-        'website.s_media_list_default_image_1': '/theme_aviato/static/src/img/content/s_wall_01.webp',
-        'website.s_carousel_default_image_1': '/theme_aviato/static/src/img/content/s_carousel_1.webp',
-        'website.s_quotes_carousel_demo_image_2': '/theme_aviato/static/src/img/content/s_quote_bg_3.webp',
-        'website.s_text_image_default_image': '/theme_aviato/static/src/img/content/s_wall_05.webp',
-        'website.s_three_columns_default_image_1': '/theme_aviato/static/src/img/content/s_three_columns_1.webp',
-        'website.s_quotes_carousel_demo_image_0': '/theme_aviato/static/src/img/content/s_quote_bg_1.webp',
-    },
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_text_image', 's_image_text', 's_picture', 's_title', 's_masonry_block_default_template', 's_company_team', 's_showcase', 's_quotes_carousel'],
+        'homepage': ['s_banner_contained', 's_text_block_split', 's_freegrid', 's_title_split', 's_images_wall', 's_showcase_square', 's_reviews_wall', 's_cta_centered'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_image_text'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_freegrid'),
             ],
         },
     },
@@ -50,12 +32,6 @@
         'website_sale.s_dynamic_snippet_category_list': {
             'data_attributes': {
                 'gap': '3',
-            },
-            'background': {
-                'shape': {
-                    'data-oe-shape-data': '{"shape":"web_editor/Connections/20", "colors":{"c5":"o-color-3"}}',
-                    'element': """<div class="o_we_shape o_web_editor_Connections_20" style="background-image: url('/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-3');""",
-                },
             },
             'add_classes': [
                 'pb80',
