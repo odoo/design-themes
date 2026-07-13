@@ -5,8 +5,6 @@ class ThemeUtils(models.AbstractModel):
     _inherit = 'theme.utils'
 
     def _theme_aviato_post_copy(self, mod):
-        self.enable_view('website.template_footer_contact')
-        self.enable_view('website.template_footer_slideout')
-
-        self.enable_asset("website.ripple_effect_scss")
-        self.enable_asset("website.ripple_effect_js")
+        self.enable_view('website.template_header_boxed')
+        self.set_page_option('header_overlay', True)
+        self.enable_view('website.template_footer_mega_links')

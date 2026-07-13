@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== TEXT BLOCK SPLIT ======== -->
+<template id="s_text_block_split" inherit_id="website.s_text_block_split">
+    <!-- Container -->
+    <xpath expr="//div[hasclass('container')]" position="attributes">
+        <attribute name="class">o_container_small</attribute>
+    </xpath>
+    <!-- Columns -->
+    <xpath expr="//div[hasclass('col-lg-2')]" position="attributes">
+        <attribute name="class">col-lg-12</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('col-lg-7')]" position="attributes">
+        <attribute name="class">col-lg-12</attribute>
+    </xpath>
+    <!-- Paragraph -->
+    <xpath expr="//p" position="attributes">
+        <attribute name="style">text-align: center;</attribute>
+    </xpath>
+    <!-- Heading -->
+    <xpath expr="//h2" position="attributes">
+        <attribute name="style">text-align: center;</attribute>
+        <attribute name="class">h4-fs</attribute>
+    </xpath>
+</template>
+
+<!-- ======== FREE GRID ======== -->
+<template id="s_freegrid" inherit_id="website.s_freegrid">
+    <!-- Images -->
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[1]" position="attributes">
+        <attribute name="class" add="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[2]" position="attributes">
+        <attribute name="class" add="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[3]" position="attributes">
+        <attribute name="class" add="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[4]" position="attributes">
+        <attribute name="class" add="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[5]" position="attributes">
+        <attribute name="class" add="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item_image')])[6]" position="attributes">
+        <attribute name="class" add="rounded" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== SHOWCASE SQUARE ======== -->
+<template id="s_showcase_square" inherit_id="website.s_showcase_square">
+    <!-- Icons -->
+    <xpath expr="(//div[@data-name='Feature'])[1]/i[hasclass('s_showcase_icon')]" position="attributes">
+        <attribute name="class" add="bg-o-color-5" remove="bg-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[@data-name='Feature'])[2]/i[hasclass('s_showcase_icon')]" position="attributes">
+        <attribute name="class" add="bg-o-color-5" remove="bg-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[@data-name='Feature'])[3]/i[hasclass('s_showcase_icon')]" position="attributes">
+        <attribute name="class" add="bg-o-color-5" remove="bg-o-color-3" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[@data-name='Feature'])[4]/i[hasclass('s_showcase_icon')]" position="attributes">
+        <attribute name="class" add="bg-o-color-5" remove="bg-o-color-3" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== CTA CENTERED ======== -->
+<template id="s_cta_centered" inherit_id="website.s_cta_centered">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_colored_level o_cc o_cc2" separator=" "/>
+    </xpath>
+    <!-- Card -->
+    <xpath expr="//div[hasclass('s_card')]" position="attributes">
+        <attribute name="class" add="oe_img_bg o_bg_img_center o_bg_img_origin_border_box o_cc5" remove="o_cc4" separator=" "/>
+        <attribute name="style" add="background-image: url('/web/image/website.ultrawide_lg_6')" separator=";"/>
+    </xpath>
+    <xpath expr="//div[hasclass('card-body')]" position="before">
+        <div class="o_we_bg_filter bg-black-50"/>
+    </xpath>
+</template>
+
+</odoo>

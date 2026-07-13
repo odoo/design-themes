@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== BANNER CONTAINED ======== -->
+<template id="configurator_s_banner_contained" inherit_id="website.configurator_s_banner_contained">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data"/>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('o_we_shape')]" position="replace"/>
+</template>
+
+<!-- ======== SHOWCASE SQUARE ======== -->
+<template id="configurator_s_showcase_square" inherit_id="website.configurator_s_showcase_square">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt96 pb120" remove="pt80 pb80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== CTA CENTERED ======== -->
+<template id="configurator_s_cta_centered" inherit_id="website.configurator_s_cta_centered">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt24" remove="pt80" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
