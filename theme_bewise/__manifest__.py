@@ -1,6 +1,6 @@
 {
     'name': 'Be Wise Theme',
-    'description': 'Centered striped hero leads into color-blocked information, a collapsible FAQ, and shape-cropped team cards, with bold geometric shape motifs accenting the team block. Information-driven / suited for universities, schools, kids education programs, and learning platforms',
+    'description': 'Spotlight intro hero with oversized heading leads into color-blocked information, a collapsible FAQ, and shape-cropped team cards, with bold geometric shape motifs accenting the team block. Information-driven / suited for universities, schools, kids education programs, and learning platforms',
     'category': 'Theme/Education',
     'summary': 'University, Education, Schools, Young, Play, Kids',
     'sequence': 240,
@@ -23,12 +23,12 @@
         'website.s_masonry_block_default_image_1': '/theme_bewise/static/src/img/content/content_img_25.webp',
     },
     'configurator_snippets': {
-        'homepage': ['s_striped_center_top', 's_title', 's_color_blocks_2', 's_faq_collapse', 's_masonry_block_default_template', 's_company_team_shapes'],
+        'homepage': ['s_intro_spotlight', 's_title', 's_color_blocks_2', 's_faq_collapse', 's_masonry_block_default_template', 's_company_team_shapes'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_striped_center_top'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_color_blocks_2'),
             ],
         },
     },
