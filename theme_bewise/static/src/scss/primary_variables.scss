@@ -90,6 +90,10 @@ $o-theme-font-configs: (
         'family': ('Crete Round', serif),
         'url': 'Crete+Round:300,300i,400,400i,700,700i',
     ),
+    'EB Garamond': (
+        'family': ('EB Garamond', serif),
+        'url': 'EB+Garamond:400,400i,500,500i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -98,10 +102,10 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-19',
+        'color-palettes-name': 'default-7',
 
         'font': 'Source Sans Pro',
-        'headings-font': 'Darker Grotesque',
+        'headings-font': 'EB Garamond',
 
         'footer-template': 'headline',
     ),
