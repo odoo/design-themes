@@ -1,6 +1,6 @@
 {
     'name': 'Muse Theme',
-    'description': 'Abstract gradient hero with oversized marquee text leads into an editorial intro block, an alternating image-text row, and a stacked services list, then a references grid and a testimonial carousel before a collapsible FAQ, with oversized typography as the recurring visual signature. Typography-driven and minimalist / suited for design agencies, branding studios, UX/UI consultancies, and creative tech firms',
+    'description': 'Abstract gradient hero with oversized marquee text leads into a bold editorial intro block, a references tile grid, a manifesto statement, and a minimal projects grid, then a reviews wall and a centered collapsible FAQ before a centered call-to-action, with oversized typography as the recurring visual signature. Typography-driven and minimalist / suited for design agencies, branding studios, UX/UI consultancies, and creative tech firms',
     'category': 'Theme/Creative',
     'summary': 'Design, Freelance, Creative, Technology IT, Consulting',
     'sequence': 60,
@@ -19,12 +19,12 @@
         'static/description/muse_screenshot.webp',
     ],
     'configurator_snippets': {
-        'homepage': ['s_animated_cover', 's_about_bold', 's_projects_list', 's_references_tiles', 's_manifesto', 's_quotes_carousel_compact', 's_faq_collapse'],
+        'homepage': ['s_animated_cover', 's_about_bold', 's_references_tiles', 's_manifesto', 's_projects_grid_minimal', 's_reviews_wall', 's_faq_collapse_centered', 's_cta_centered'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_projects_list'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_references_tiles'),
             ],
         },
     },

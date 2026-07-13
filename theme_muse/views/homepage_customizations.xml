@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- ======== FAQ COLLAPSE ======== -->
-<template id="configurator_s_faq_collapse" inherit_id="website.configurator_s_faq_collapse">
+<!-- ======== FAQ COLLAPSE CENTERED ======== -->
+<template id="configurator_s_faq_collapse_centered" inherit_id="website.configurator_s_faq_collapse_centered">
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="pt80 pb80" remove="pt32 pb32" separator=" "/>
     </xpath>
