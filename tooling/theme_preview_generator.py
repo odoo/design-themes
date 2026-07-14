@@ -227,6 +227,58 @@ def create_menu_items(session, context, website_id):
     )
 
 
+def fetch_theme_image_urls(session, context):
+    """Map theme attachment keys to their static image URLs.
+
+    The ``theme.ir.attachment`` records resolving the ``/web/image/<key>``
+    URLs of the generated page only exist once the theme is installed, so
+    the preview must carry the static URLs itself. The keys must stay in
+    the preview too (in ``industry_image_key`` attributes): they are
+    matched against the IAP industry images when the configurator renders
+    it.
+    """
+    records = jsonrpc(
+        session,
+        f"{BASE_URL}/web/dataset/call_kw/theme.ir.attachment/search_read",
+        {
+            "model": "theme.ir.attachment",
+            "method": "search_read",
+            "args": [
+                [["key", "!=", False], ["url", "!=", False]],
+                ["key", "url"],
+            ],
+            "kwargs": {"context": context},
+        },
+    )
+    return {record["key"]: record["url"] for record in records}
+
+
+WEB_IMAGE_KEY_RE = re.compile(r"/web/image/([\w-]+\.[\w.-]+)")
+
+
+def embed_theme_image_urls(soup, image_urls):
+    """Replace theme attachment image URLs by their static URLs.
+
+    The ``src`` (or ``url()`` in a ``style``) is rewritten to the theme
+    static image URL, and the attachment key is kept in an
+    ``industry_image_key`` attribute: the website controller replaces the
+    image with the IAP industry image matching the key, if any. Shape URLs
+    (``/html_editor/image_shape/...``) are left untouched.
+    """
+    for tag in soup.find_all(True):
+        for attribute in ("src", "style"):
+            value = tag.get(attribute)
+            if not value:
+                continue
+            for key in WEB_IMAGE_KEY_RE.findall(value):
+                static_url = image_urls.get(key)
+                if not static_url:
+                    continue
+                value = value.replace(f"/web/image/{key}", static_url)
+                tag["industry_image_key"] = key
+            tag[attribute] = value
+
+
 def fetch(url):
     try:
         response = DOWNLOAD_SESSION.get(url, timeout=30)
@@ -703,7 +755,7 @@ def purge_unused_css(soup):
             style.decompose()
 
 
-def download_static_html(url, output_path):
+def download_static_html(url, output_path, theme_image_urls):
     print(f"Downloading {url} -> {output_path}")
     raw, _ = fetch(url)
     if not raw:
@@ -718,6 +770,7 @@ def download_static_html(url, output_path):
     inline_font_preloads(soup, url)
     remove_preview_metadata(soup)
     replace_palette_colors_in_attributes(soup)
+    embed_theme_image_urls(soup, theme_image_urls)
     remove_javascript(soup)
     remove_javascript_dependent_classes(soup)
     replace_chart_canvases(soup)
@@ -757,7 +810,8 @@ def generate_theme_preview(theme_dir):
         context = session_info.get("user_context", {})
         result = generate_website(session, context, theme_name)
         create_menu_items(session, context, result["website_id"])
-        download_static_html(get_generated_page_url(result), output_path)
+        theme_image_urls = fetch_theme_image_urls(session, context)
+        download_static_html(get_generated_page_url(result), output_path, theme_image_urls)
         print(f"Saved {output_path}")
     finally:
         session.close()
