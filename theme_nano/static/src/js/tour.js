@@ -29,8 +29,8 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_company_team',
-        name: 'Team',
+        id: 's_company_team_basic',
+        name: 'Team Basic',
         groupName: "People",
     },
     {
@@ -44,8 +44,8 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_cta_box',
-        name: 'Box Call to Action',
+        id: 's_cta_centered',
+        name: 'Centered Call to Action',
         groupName: "Content",
     },
 ];
@@ -64,4 +64,7 @@ wTourUtils.registerThemeHomepageTour("nano_tour", () => [
     ...wTourUtils.insertSnippet(snippets[3]),
     ...wTourUtils.insertSnippet(snippets[4]),
     ...wTourUtils.insertSnippet(snippets[5]),
+    ...wTourUtils.insertSnippet(snippets[6]),
+    ...wTourUtils.insertSnippet(snippets[7]),
+    ...wTourUtils.insertSnippet(snippets[8]),
 ]);
