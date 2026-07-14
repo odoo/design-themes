@@ -40,8 +40,11 @@ $o-website-values-palettes: (
 );
 
 $default-22: map-get($o-color-palettes, 'default-22');
-$default-22: map-merge($default-22, ('footer': 5));
+$default-22: map-merge($default-22, ('footer': 5, 'category': 'theme'));
 $o-color-palettes: map-merge($o-color-palettes, ('default-22': $default-22));
+
+// Register 'default-22' for display in the website builder palette picker.
+$o-theme-palettes-selection: append($o-theme-palettes-selection, 'default-22');
 
 //------------------------------------------------------------------------------
 // Fonts
