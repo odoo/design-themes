@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== SPLIT INTRO ======== -->
+<template id="s_split_intro" inherit_id="website.s_split_intro" name="Notes s_split_intro">
+    <!-- Text -->
+    <xpath expr="//h1" position="before">
+        <p class="small" style="text-align: center;"><font class="text-o-color-2">DISCOVER</font></p>
+    </xpath>
+    <xpath expr="//h1" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//a[hasclass('btn')]/.." position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+</template>
+
+<!-- ======== SERVICES GRID ======== -->
+<template id="s_services_grid" inherit_id="website.s_services_grid" name="Notes s_services_grid">
+    <!-- Heading -->
+    <xpath expr="//h2" position="before">
+        <p class="small"><font class="text-o-color-2">STAY UP TO DATE</font></p>
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" remove="h3-fs" separator=" "/>
+    </xpath>
+    <!-- Images -->
+    <xpath expr="(//img)[1]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[4]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[5]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[6]" position="attributes">
+        <attribute name="class" remove="rounded" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== TEAM DETAIL ======== -->
+<template id="s_company_team_detail" inherit_id="website.s_company_team_detail" name="Notes s_company_team_detail">
+    <!-- Heading -->
+    <xpath expr="//h2" position="before">
+        <p class="small" style="text-align: center;"><font class="text-o-color-2">TEAMWORK</font></p>
+    </xpath>
+    <xpath expr="//h2" position="attributes">
+        <attribute name="style">text-align: center;</attribute>
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="attributes">
+        <attribute name="style">text-align: center;</attribute>
+    </xpath>
+    <!-- Images -->
+    <xpath expr="(//img)[1]" position="attributes">
+        <attribute name="class" add="d-block mx-auto" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="class" add="d-block mx-auto" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="class" add="d-block mx-auto" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[4]" position="attributes">
+        <attribute name="class" add="d-block mx-auto" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[5]" position="attributes">
+        <attribute name="class" add="d-block mx-auto" separator=" "/>
+    </xpath>
+    <xpath expr="(//img)[6]" position="attributes">
+        <attribute name="class" add="d-block mx-auto" separator=" "/>
+    </xpath>
+    <!-- Members -->
+    <xpath expr="(//div[hasclass('col-lg-4')])[1]" position="attributes">
+        <attribute name="class" add="text-center" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[2]" position="attributes">
+        <attribute name="class" add="text-center" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[3]" position="attributes">
+        <attribute name="class" add="text-center" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[4]" position="attributes">
+        <attribute name="class" add="text-center" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[5]" position="attributes">
+        <attribute name="class" add="text-center" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('col-lg-4')])[6]" position="attributes">
+        <attribute name="class" add="text-center" separator=" "/>
+    </xpath>
+    <!-- Social -->
+    <xpath expr="(//div[hasclass('s_social_media')])[1]" position="attributes">
+        <attribute name="class" add="text-center" remove="text-start" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_social_media')])[2]" position="attributes">
+        <attribute name="class" add="text-center" remove="text-start" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_social_media')])[3]" position="attributes">
+        <attribute name="class" add="text-center" remove="text-start" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_social_media')])[4]" position="attributes">
+        <attribute name="class" add="text-center" remove="text-start" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_social_media')])[5]" position="attributes">
+        <attribute name="class" add="text-center" remove="text-start" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('s_social_media')])[6]" position="attributes">
+        <attribute name="class" add="text-center" remove="text-start" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== CENTERED CALL TO ACTION ======== -->
+<template id="s_cta_centered" inherit_id="website.s_cta_centered" name="Notes s_cta_centered">
+    <!-- Card -->
+    <xpath expr="//div[hasclass('s_card')]" position="attributes">
+        <attribute name="class" add="oe_img_bg o_bg_img_center o_bg_img_origin_border_box rounded" separator=" "/>
+        <attribute name="style" add="background-image: url('/web/image/website.landscape_xl_1'); border-radius: 2px !important;" separator=";"/>
+    </xpath>
+    <!-- Filter -->
+    <xpath expr="//div[hasclass('card-body')]" position="before">
+        <div class="o_we_bg_filter bg-black-50"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h2" position="attributes">
+        <attribute name="class" add="display-4-fs" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>

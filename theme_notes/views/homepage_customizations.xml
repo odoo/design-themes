@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== SPLIT INTRO ======== -->
+<template id="configurator_s_split_intro" inherit_id="website.configurator_s_split_intro" name="Notes s_split_intro">
+    <!-- Text -->
+    <xpath expr="//div[hasclass('col-lg-4')]" position="attributes">
+        <attribute name="class" add="pt144 pb152" remove="pt120 pb120" separator=" "/>
+    </xpath>
+    <!-- Image -->
+    <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
+        <attribute name="class" add="pb160" remove="pb120" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== SERVICES GRID ======== -->
+<template id="configurator_s_services_grid" inherit_id="website.configurator_s_services_grid" name="Notes s_services_grid">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt40" remove="pt64" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== TEXT IMAGE FULL ======== -->
+<template id="configurator_s_text_image_full" inherit_id="website.configurator_s_text_image_full" name="Notes s_text_image_full">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt80 pb80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== IMAGE TEXT FULL ======== -->
+<template id="configurator_s_image_text_full" inherit_id="website.configurator_s_image_text_full" name="Notes s_image_text_full">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="pt80 pb80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== TEAM DETAIL ======== -->
+<template id="configurator_s_company_team_detail" inherit_id="website.configurator_s_company_team_detail" name="Notes s_company_team_detail">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="pb64" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
