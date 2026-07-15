@@ -1,8 +1,8 @@
 {
     'name': 'Notes & Play Theme',
-    'description': 'Intro opens onto image-and-text storytelling, a three-column rhythm, a full image wall, and a shape-cropped team block before a strong call-to-action, with recurring underline highlights running across every section heading. Image-forward and event-driven / suited for bands, music labels, concert venues, record stores, and artist showcases',
+    'description': 'Split intro pairs a full-height image with centered copy, then a client logo strip, a three-column services grid, and two full-width image-and-text rows framing a bold statement, before a detailed team block and an image-backed call-to-action. Image-forward and event-driven / suited for opera houses, orchestras, concert halls, classical ensembles, and music conservatories',
     'category': 'Theme/Retail',
-    'summary': 'Band, Musics, Sound, Concerts, Artists, Records, Event, Food, Stores',
+    'summary': 'Opera, Classical Music, Orchestra, Symphony, Concert Hall, Philharmonic, Musicians, Live Music Venue, Theatre, Auditorium, Performances, Shows, Concerts, Events, Ticketing',
     'sequence': 30,
     'version': '2.1.0',
     'depends': ['website'],
@@ -11,54 +11,34 @@
         'data/ir_asset.xml',
         'views/images_library.xml',
 
-        'views/snippets/s_image_text.xml',
-        'views/snippets/s_title.xml',
-        'views/snippets/s_text_image.xml',
-        'views/snippets/s_framed_intro.xml',
-        'views/snippets/s_three_columns.xml',
-        'views/snippets/s_company_team_shapes.xml',
-        'views/snippets/s_image_gallery.xml',
-        'views/snippets/s_call_to_action.xml',
+        'views/global_customizations.xml',
+        'views/homepage_customizations.xml',
     ],
     'images': [
         'static/description/notes_description.webp',
         'static/description/notes_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.library_image_03': '/theme_notes/static/src/img/content/library_image_19.webp',
-        'website.library_image_05': '/theme_notes/static/src/img/content/library_image_05.webp',
-        'website.library_image_10': '/theme_notes/static/src/img/content/library_image_10.webp',
-        'website.library_image_14': '/theme_notes/static/src/img/content/library_image_14.webp',
-        'website.library_image_16': '/theme_notes/static/src/img/content/library_image_16.webp',
-        'website.s_carousel_default_image_2': '/theme_notes/static/src/img/content/content_img_23.webp',
-        'website.s_cover_default_image': '/theme_notes/static/src/img/content/content_img_14.webp',
-        'website.s_image_text_default_image': '/theme_notes/static/src/img/content/content_img_16.webp',
-        'website.s_three_columns_default_image_1': '/theme_notes/static/src/img/content/content_img_18.webp',
-        'website.s_three_columns_default_image_2': '/theme_notes/static/src/img/content/content_img_19.webp',
-        'website.s_three_columns_default_image_3': '/theme_notes/static/src/img/content/content_img_20.webp',
-        'website.s_text_image_default_image': '/theme_notes/static/src/img/content/content_img_15.webp',
-    },
     'configurator_snippets': {
-        'homepage': ['s_framed_intro', 's_image_text', 's_three_columns', 's_images_wall', 's_text_image', 's_company_team_shapes', 's_title', 's_call_to_action'],
+        'homepage': ['s_split_intro', 's_references_lite', 's_services_grid', 's_hr', 's_text_image_full', 's_text_bold', 's_image_text_full', 's_company_team_detail', 's_cta_centered'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_company_team_shapes'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_references_lite'),
             ],
         },
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
             'data_attributes': {
+                'columns': '3',
                 'gap': '4',
+                'rounded': '1',
             },
             'add_classes': [
-                'pb48',
+                {'s_dynamic_snippet_title': 's_dynamic_snippet_title_aside col-lg-3 flex-lg-column justify-content-lg-start'},
             ],
-            'remove_classes': [
-                'pt64', 'pb64',
-            ],
+            'remove_classes': ['s_dynamic_category_no_arrows'],
         },
     },
     'author': 'Odoo S.A.',

@@ -58,8 +58,6 @@ $o-theme-h1-font-size-multiplier: (62 / 16);
 $o-theme-h2-font-size-multiplier: (36 / 16);
 $o-theme-h3-font-size-multiplier: (28 / 16);
 
-$o-theme-headings-font-weight: 700;
-
 $o-theme-font-configs: (
     'Cuprum': (
         'family': ('Cuprum', sans-serif),
@@ -112,6 +110,10 @@ $o-theme-font-configs: (
         'family': ('Open Sans', sans-serif),
         'url': 'Open+Sans:300,300i,400,400i,600,600i',
     ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:300,300i,400,400i,600,600i,700,700i',
+    ),
 );
 
 //------------------------------------------------------------------------------
@@ -120,18 +122,30 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'default-19',
+        'color-palettes-name': 'default-21',
+        'header-template': 'hamburger',
         'header-font-size': 1rem,
         'logo-height': 3rem,
         'fixed-logo-height': 3rem,
-        'font': 'Open Sans',
-        'headings-font': 'Montserrat',
-        'navbar-font': 'Montserrat',
-        'buttons-font': 'Montserrat',
-        'link-underline': 'never',
-        'footer-template': 'descriptive',
+        'menu-shadow-class': '',
+        'menu-border-width': 1px,
+        'font': 'Inter',
+        'headings-font': 'Crimson Text',
+        'link-underline': 'always',
+        'btn-border-radius': .125rem,
+        'btn-border-radius-sm': .125rem,
+        'btn-border-radius-lg': .125rem,
+        'footer-template': 'headline',
     ),
 );
+
+// The header and footer colors are part of this theme's layout, so lock them
+// for every palette instead of letting the selected palette decide.
+@each $-name, $-palette in $o-color-palettes {
+    $o-color-palettes: map-merge($o-color-palettes, (
+        $-name: map-merge($-palette, ('menu': 1, 'footer': 1)),
+    ));
+}
 
 $o-color-palettes-compatibility-indexes: (
     1: 'notes-1',
