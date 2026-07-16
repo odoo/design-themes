@@ -126,6 +126,17 @@ $o-color-palettes: map-merge($o-color-palettes, ('artists-1': $artists-1));
 
 $o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'artists-1');
 
+// Header/footer colors are part of this theme's layout, so lock them for
+// every palette instead of letting the selected palette decide.
+@each $-name, $-palette in $o-color-palettes {
+    $o-color-palettes: map-merge($o-color-palettes, (
+        $-name: map-merge($-palette, (
+            'menu': 5,
+            'footer': 5,
+        )),
+    ));
+}
+
 $o-color-palettes-compatibility-indexes: (
     1: 'artists-1',
     2: 'artists-2',

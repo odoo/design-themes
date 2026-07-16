@@ -33,6 +33,17 @@ $o-website-values-palettes: (
     ),
 );
 
+// Header/footer colors are part of this theme's layout, so lock them for
+// every palette instead of letting the selected palette decide.
+@each $-name, $-palette in $o-color-palettes {
+    $o-color-palettes: map-merge($o-color-palettes, (
+        $-name: map-merge($-palette, (
+            'menu': 5,
+            'footer': 5,
+        )),
+    ));
+}
+
 //------------------------------------------------------------------------------//
 // Fonts
 //------------------------------------------------------------------------------//
