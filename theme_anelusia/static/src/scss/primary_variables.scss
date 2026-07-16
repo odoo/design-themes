@@ -26,6 +26,17 @@ $default-25: map-get($o-color-palettes, 'default-25');
 $default-25: map-merge($default-25, ('menu': 2, 'footer': 5, 'header-sales_four': 2, 'o-color-3': #F3F2F2));
 $o-color-palettes: map-merge($o-color-palettes, ('default-25': $default-25));
 
+// The header color is part of this theme's layout, so lock it for every
+// palette instead of letting the selected palette decide.
+@each $-name, $-palette in $o-color-palettes {
+    $o-color-palettes: map-merge($o-color-palettes, (
+        $-name: map-merge($-palette, (
+            'menu': 2,
+            'header-sales_four': 2,
+        )),
+    ));
+}
+
 //------------------------------------------------------------------------------//
 // Fonts
 //------------------------------------------------------------------------------//
