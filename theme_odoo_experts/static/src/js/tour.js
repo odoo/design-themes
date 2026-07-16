@@ -9,12 +9,12 @@ const snippets = [
         groupName: "Content",
     },
     {
-        id: 's_references',
-        name: 'References',
+        id: 's_references_lite',
+        name: 'References Lite',
         groupName: "People",
     },
     {
-        id: 's_text_image',
+        id: 's_image_text',
         name: 'Image - Text',
         groupName: "Content",
     },
