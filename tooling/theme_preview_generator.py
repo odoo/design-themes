@@ -328,19 +328,19 @@ def resolve_css_imports(css, base_url):
     )
 
 
-def resolve_css_urls(css, base_url):
+def resolve_css_urls(css, base_url, quote='"'):
     def replace(match):
         raw_url, _quote = get_css_url(match)
         if raw_url.startswith("data:"):
             return match.group(0)
         font_asset_url = get_stable_font_asset_url(raw_url)
         if font_asset_url:
-            return f'url("{font_asset_url}")'
+            return f'url({quote}{font_asset_url}{quote})'
         if get_font_mime_type(raw_url):
             if is_external_url(raw_url, base_url):
-                return f'url("{urljoin(base_url, raw_url)}")'
-            return f'url("{root_relative_url(raw_url, base_url)}")'
-        return f'url("{root_relative_url(raw_url, base_url)}")'
+                return f'url({quote}{urljoin(base_url, raw_url)}{quote})'
+            return f'url({quote}{root_relative_url(raw_url, base_url)}{quote})'
+        return f'url({quote}{root_relative_url(raw_url, base_url)}{quote})'
 
     return CSS_URL_RE.sub(replace, css)
 
@@ -517,7 +517,8 @@ def inline_style_blocks(soup, base_url):
 
 def inline_inline_styles(soup, base_url):
     for tag in soup.find_all(style=True):
-        style = resolve_css_urls(tag["style"], base_url)
+        # Single quotes: the url() ends up in a double-quoted style attribute.
+        style = resolve_css_urls(tag["style"], base_url, quote="'")
         style = convert_vh_to_vw(style)
         tag["style"] = replace_palette_colors_in_style(style)
 
