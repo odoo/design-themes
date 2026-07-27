@@ -10,8 +10,8 @@ const snippets = [
     },
     {
         id: 's_freegrid',
-        name: 'Freegrid',
-        groupName: "Images",
+        name: 'Free grid',
+        groupName: "Columns",
     },
     {
         id: 's_title',
