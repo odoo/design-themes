@@ -50,7 +50,7 @@ CONFIGURATOR_VALUES = {
     "skip_ai": True,
 }
 
-MENU_TITLES = ["Shop", "Event"]
+MENU_ITEMS = [("Shop", "/shop"), ("Event", "/event")]
 
 DOWNLOAD_SESSION = requests.Session()
 DOWNLOAD_SESSION.headers["User-Agent"] = (
@@ -216,11 +216,11 @@ def create_menu_items(session, context, website_id):
             "args": [[
                 {
                     "name": title,
-                    "url": "/",
+                    "url": url,
                     "website_id": website_id,
                     "parent_id": website["menu_id"][0],
                 }
-                for title in MENU_TITLES
+                for title, url in MENU_ITEMS
             ]],
             "kwargs": {"context": context},
         },
