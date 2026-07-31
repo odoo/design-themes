@@ -1,6 +1,6 @@
 {
     'name': 'Zenith Theme',
-    'description': 'Discovery hero with a blurry shape backdrop flows into a freegrid showcase, floating image blocks, a marquee announcement bar, inline impact stats, an instructor team spotlight, a membership-plan comparison, and a collapsible FAQ, with pill-shaped buttons and bold condensed Anton headings as the typographic signature. Energy-forward yet serene / suited for fitness studios, yoga and pilates centers, gym memberships, personal training services, and wellness brands',
+    'description': 'Discovery hero with a blurry shape backdrop flows into a freegrid showcase, floating image blocks, a marquee announcement bar, inline impact stats, an instructor team spotlight, a reviews wall, and a collapsible FAQ, with pill-shaped buttons and bold condensed Anton headings as the typographic signature. Energy-forward yet serene / suited for fitness studios, yoga and pilates centers, gym memberships, personal training services, and wellness brands',
     'category': 'Theme/Sport',
     'summary': 'Fitness, Yoga, Pilates, Gym, Wellness, Sport, Health, Training',
     'sequence': 167,
@@ -18,7 +18,7 @@
         'static/description/zenith_screenshot.webp',
     ],
     'configurator_snippets': {
-        'homepage': ['s_discovery', 's_freegrid', 's_title', 's_floating_blocks', 's_announcement_scroll', 's_numbers_inline', 's_company_team_spotlight', 's_comparisons', 's_faq_collapse'],
+        'homepage': ['s_discovery', 's_freegrid', 's_title', 's_floating_blocks', 's_announcement_scroll', 's_numbers_inline', 's_company_team_spotlight', 's_reviews_wall', 's_faq_collapse'],
     },
     'configurator_snippets_addons': {
         'website_sale': {
