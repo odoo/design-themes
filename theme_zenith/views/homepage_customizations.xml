@@ -108,13 +108,6 @@
     </xpath>
 </template>
 
-<!-- ======== COMPARISONS ======== -->
-<template id="configurator_s_comparisons" inherit_id="website.configurator_s_comparisons">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt48 pb48" add="pt80 pb128" separator=" "/>
-    </xpath>
-</template>
-
 <!-- ======== FAQ COLLAPSE ======== -->
 <template id="configurator_s_faq_collapse" inherit_id="website.configurator_s_faq_collapse">
     <xpath expr="//section" position="attributes">

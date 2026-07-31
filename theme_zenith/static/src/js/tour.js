@@ -39,9 +39,9 @@ const snippets = [
         groupName: "People",
     },
     {
-        id: 's_comparisons',
-        name: 'Comparisons',
-        groupName: "Content",
+        id: 's_reviews_wall',
+        name: 'Reviews Wall',
+        groupName: "People",
     },
     {
         id: 's_faq_collapse',
