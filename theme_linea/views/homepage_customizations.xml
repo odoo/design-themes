@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- ======== ANNOUNCEMENT SCROLL ======== -->
-<template id="configurator_s_announcement_scroll" inherit_id="website.configurator_s_announcement_scroll">
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="pt24 pb24" add="pt16 pb48" separator=" "/>
-    </xpath>
-</template>
-
 <!-- ======== CATEGORIES GRID ======== -->
 <template id="configurator_s_ecomm_categories_showcase" inherit_id="website.configurator_s_ecomm_categories_showcase">
     <xpath expr="//section" position="attributes">
