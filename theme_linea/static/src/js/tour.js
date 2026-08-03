@@ -24,9 +24,9 @@ const snippets = [
         groupName: "Images",
     },
     {
-        id: 's_announcement_scroll',
-        name: 'Announcement Scroll',
-        groupName: "Catalog",
+        id: 's_reviews_wall',
+        name: 'Reviews Wall',
+        groupName: "People",
     },
     {
         id: 's_image_title',
