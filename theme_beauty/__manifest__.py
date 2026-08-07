@@ -1,6 +1,6 @@
 {
     'name': 'Beauty Theme',
-    'description': 'Hero opens onto a mosaic masonry gallery, boxed price lists, and a features wall closing on a strong call-to-action, with circular image crops, bold geometric shapes, and grid-pattern accents throughout. Balances product browsing with explicit pricing and CTA-focused conversion / suited for cosmetics shops, makeup brands, hair salons, and personal-care services',
+    'description': 'Beauty-and-care style with bold geometric shapes and circular image crops. Best for hair salons and hairdressers, cosmetics, makeup, and personal-care services. Signature: mosaic gallery, boxed price lists, and a strong CTA, combining product browsing with visible pricing. Avoid for medical or clinical businesses that need a trust-and-credentials tone. Mood: elegant, feminine, refined, upscale.',
     'category': 'Theme/Retail',
     'summary': 'Beauty, Health, Care, Make Up, Cosmetics, Hair Dressers, Stores',
     'sequence': 170,

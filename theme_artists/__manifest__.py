@@ -1,6 +1,6 @@
 {
     'name': 'Artists Theme',
-    'description': 'Vertical sidebar navigation flanks an asymmetric side-grid layout, building toward image walls and gallery-style catalogs through framed and shape-cropped artwork. Image-forward with sparse copy / suited for art galleries, photographers, painters, and creative shows',
+    'description': 'Gallery-style, image-forward with sparse copy and a vertical sidebar nav. Best for art galleries, photographers, painters, and creative shows. Signature: asymmetric side-grid layout and shape-cropped image walls. Avoid for text-heavy or corporate content; this is a sparse, gallery-first layout. Mood: bold, vibrant, edgy, creative.',
     'category': 'Theme/Creative',
     'summary': 'Artist, Arts, Galleries, Creative, Paintings, Photography, Shows, Stores',
     'sequence': 40,

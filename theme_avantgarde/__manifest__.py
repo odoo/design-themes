@@ -1,6 +1,6 @@
 {
     'name': 'Avantgarde Theme',
-    'description': 'Editorial side-grid layout under a hamburger nav, flowing into a dense features wall, carousel showcase, and chronological timeline before a quadrant block. Feature-heavy with editorial pacing rather than long-form passages / suited for design studios, art and culture magazines, creative agencies, and trend-driven blogs',
+    'description': 'Editorial and feature-heavy with magazine pacing. Best for design studios, art and culture magazines, creative agencies, and trend-driven blogs. Signature: dense features wall, carousel showcase, and a chronological timeline. Avoid if you want a clean, minimal layout; this is dense, editorial and feature-heavy. Mood: editorial, curated, refined, artistic.',
     'category': 'Theme/Creative',
     'summary': 'Design, Fine Art, Artwork, Creative, Creativity, Galleries, Trends, Shows, Magazines, Blogs',
     'sequence': 150,

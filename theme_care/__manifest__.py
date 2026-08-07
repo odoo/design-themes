@@ -1,6 +1,6 @@
 {
     'name': 'Care Theme',
-    'description': 'Banner hero leads into a story block, a numbers grid, and a color-blocked featured picture, then a detailed team grid, a masonry block with key visuals and features and a testimonials wall before a collapsible FAQ, kept clean and photo-driven without background shape decoration. Credentials-and-team driven / suited for medical clinics, dental practices, hospitals, and healthcare providers',
+    'description': 'Clean, clinical and photo-driven, focused on credentials and team. Best for medical clinics, dental practices, hospitals, and healthcare providers. Signature: story block, numbers grid, detailed team grid, and FAQ. Avoid for energetic fitness or wellness brands built around membership plans. Mood: clean, calm, trustworthy, professional.',
     'category': 'Theme/Creative',
     'summary': 'Care, Health, Wellness, Fitness, Gym, Yoga, Spa, Massage, Therapy ',
     'sequence': 10,

@@ -1,6 +1,6 @@
 {
     'name': 'Nano Theme',
-    'description': 'Discovery block opens onto a parallax scene, text-driven sections, key visuals, an image-text-overlap layout, and a basic team grid before references and KPIs, kept photo-driven with restrained styling. Story-led and image-forward / suited for creative agencies, makers, design studios, and creative-IT services',
+    'description': 'Story-led and image-forward with restrained styling and parallax. Best for creative agencies, makers, design studios, and creative-IT services. Signature: parallax scene, image-text-overlap layout, team grid, and references and KPIs. Avoid if you need a bold, decorative or typography-driven look; this stays understated and photo-led. Mood: dark, refined, minimal, understated.',
     'category': 'Theme/Lifestyle',
     'summary': 'Maker, Agencies, Creative, Design, IT, Services, Fancy',
     'sequence': 270,

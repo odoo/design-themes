@@ -1,6 +1,6 @@
 {
     'name': 'Buzzy Theme',
-    'description': 'Illustrative banner opens onto a discovery exploration block, product showcase, key-benefit grids, and accordion-with-image FAQ, with shaped containers and organic blob motifs throughout and recurring scribble-and-marker highlights on key heading words. Content-heavy and benefit-driven, leaning illustrative rather than photo-led / suited for corporate services, technology companies, and SaaS-style product marketing sites',
+    'description': 'Illustrative and benefit-driven with organic blob motifs and scribble and marker highlights. Best for corporate services, technology companies, and SaaS-style product marketing. Signature: discovery block, product showcase, benefit grids, and accordion FAQ. Avoid if you need real photography; this is illustration and blob-motif driven. Mood: friendly, approachable, soft, playful.',
     'category': 'Theme/Corporate',
     'summary': 'Corporate, Services, Technology, Shapes, Illustrations',
     'sequence': 140,

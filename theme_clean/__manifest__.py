@@ -1,6 +1,6 @@
 {
     'name': 'Clean Theme',
-    'description': 'Vertically-rhythmic layout pairing a banner with a color-blocked section, alternating text-and-image rows, a numbers showcase, basic team block, and accordion FAQ with patterned and line image-shape crops (sketched oval ring, dot pattern, labyrinth) carrying the visual signature across the hero and content rows. Text-driven and information-dense with generous whitespace / suited for legal practices, business consultancies, technology companies, and professional services',
+    'description': 'Text-driven and information-dense with generous whitespace and sketched shape crops. Best for legal practices, business consultancies, technology companies, and professional services. Signature: alternating text-and-image rows, numbers showcase, and FAQ. Avoid for image-forward brands; this is text-dense and information-heavy. Mood: professional, corporate, structured, approachable.',
     'category': 'Theme/Services',
     'summary': 'Legal, Corporate, Business, Tech, Services',
     'sequence': 120,

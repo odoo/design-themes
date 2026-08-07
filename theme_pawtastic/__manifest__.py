@@ -1,6 +1,6 @@
 {
     'name': 'Pawtastic Theme',
-    'description': 'A search-led header above a playful hero with scribble and shape doodles leads into a colorful bento photo grid, a featured picture block, and a numbered process steps row, then a rounded-card image showcase and testimonials wall before a trust-badges strip and collapsible FAQ, with rounded-corner cards and hand-drawn doodle accents as the recurring visual signature. Image-forward and playful, e-commerce-driven / suited for pet supply stores, pet grooming services, veterinary clinics, and pet care brands',
+    'description': 'Playful, colorful and image-forward with hand-drawn doodles, e-commerce driven. Best for pet supply stores, pet grooming, veterinary clinics, and pet care brands. Signature: colorful photo bento grid, rounded cards, numbered process steps, and trust badges. Mood: playful, cheerful, warm, colorful.',
     'category': 'Theme/Retail',
     'summary': 'Animals, Pets, E-commerce, Safari, Nature',
     'sequence': 101,

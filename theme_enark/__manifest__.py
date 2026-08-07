@@ -1,6 +1,6 @@
 {
     'name': 'Enark Theme',
-    'description': 'Free-grid hero opens an asymmetric, portfolio-like layout flowing into a features wall, numbered KPIs, and a full image wall before referenced work, with airy floating and connection motifs accenting the early sections. Balances structured authority with image-led project showcase / suited for architecture firms, finance and corporate practices, and high-trust business services',
+    'description': 'Structured authority with an image-led project showcase, airy and asymmetric. Best for architecture firms, finance and corporate practices, and high-trust business services. Signature: free-grid hero, numbered KPIs, full image wall, and referenced work. Avoid for a raw or minimal portfolio look; this leans corporate and high-trust. Mood: refined, sophisticated, airy, architectural.',
     'category': 'Theme/Corporate',
     'summary': 'Architect, Corporate, Business, Finance, Services',
     'sequence': 50,
