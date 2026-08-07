@@ -1,6 +1,6 @@
 {
     'name': 'Vehicle Theme',
-    'description': 'Clean, photo-and-stats forward with technical credibility. Best for car dealerships, garages, motorbike retailers, tire shops, mechanics, and vehicle repair. Signature: three-column lineup, charted KPIs, and a media list.',
+    'description': 'Clean, photo-and-stats forward with technical credibility. Best for car dealerships, garages, motorbike retailers, tire shops, mechanics, and vehicle repair. Signature: three-column lineup, charted KPIs, and a media list. Mood: dark, dramatic, premium, cinematic.',
     'category': 'Theme/Services',
     'summary': 'Vehicle, Cars, Motorbikes, Bikes, Tires, Transports, Repair, Mechanics, Garages, Sports, Services',
     'sequence': 300,

@@ -1,6 +1,6 @@
 {
     'name': 'Yes Theme',
-    'description': 'Emotion-driven and image-forward, romantic. Best for wedding planners, love-themed services, photographers, and personal celebration sites. Signature: featured team, image-text-overlap layout, and a testimonial carousel.',
+    'description': 'Emotion-driven and image-forward, romantic. Best for wedding planners, love-themed services, photographers, and personal celebration sites. Signature: featured team, image-text-overlap layout, and a testimonial carousel. Mood: romantic, warm, elegant, soft.',
     'category': 'Theme/Personal',
     'summary': 'Wedding, Love, Photography, Services',
     'sequence': 330,

@@ -1,6 +1,6 @@
 {
     'name': 'Enark Theme',
-    'description': 'Structured authority with an image-led project showcase, airy and asymmetric. Best for architecture firms, finance and corporate practices, and high-trust business services. Signature: free-grid hero, numbered KPIs, full image wall, and referenced work. Avoid for a raw or minimal portfolio look; this leans corporate and high-trust.',
+    'description': 'Structured authority with an image-led project showcase, airy and asymmetric. Best for architecture firms, finance and corporate practices, and high-trust business services. Signature: free-grid hero, numbered KPIs, full image wall, and referenced work. Avoid for a raw or minimal portfolio look; this leans corporate and high-trust. Mood: refined, sophisticated, airy, architectural.',
     'category': 'Theme/Corporate',
     'summary': 'Architect, Corporate, Business, Finance, Services',
     'sequence': 50,

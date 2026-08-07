@@ -1,6 +1,6 @@
 {
     'name': 'Treehouse Theme',
-    'description': 'Image-led with impact stats and partner proof, accented by wavy line motifs. Best for environmental NGOs, sustainable development non-profits, ecology initiatives, and conscious travel. Signature: numbered impact stats, color-blocked sections, and partner references.',
+    'description': 'Image-led with impact stats and partner proof, accented by wavy line motifs. Best for environmental NGOs, sustainable development non-profits, ecology initiatives, and conscious travel. Signature: numbered impact stats, color-blocked sections, and partner references. Mood: natural, fresh, hopeful, earthy.',
     'category': 'Theme/Environment',
     'summary': 'Environment, Nature, Ecology, Sustainable Development, Non Profit, NGO, Travels',
     'sequence': 140,

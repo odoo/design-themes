@@ -1,6 +1,6 @@
 {
     'name': 'Zenith Theme',
-    'description': 'Energetic yet serene with bold condensed Anton headings and pill-shaped buttons. Best for fitness studios, yoga and pilates centers, gyms, personal training, and wellness brands. Signature: marquee bar, inline impact stats, instructor spotlight, and a membership-plan comparison. Avoid for spas or salons focused on treatments and pricing rather than memberships.',
+    'description': 'Energetic yet serene with bold condensed Anton headings and pill-shaped buttons. Best for fitness studios, yoga and pilates centers, gyms, personal training, and wellness brands. Signature: marquee bar, inline impact stats, instructor spotlight, and a membership-plan comparison. Avoid for spas or salons focused on treatments and pricing rather than memberships. Mood: energetic yet serene, modern, athletic.',
     'category': 'Theme/Sport',
     'summary': 'Fitness, Yoga, Pilates, Gym, Wellness, Sport, Health, Training',
     'sequence': 167,

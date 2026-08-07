@@ -1,6 +1,6 @@
 {
     'name': 'Cobalt Theme',
-    'description': 'Credibility through structure and showcased work. Best for IT and software development studios, design agencies, and technology consultancies. Signature: detailed team profiles and a client-logo references grid. Avoid if you have little work or team to showcase; it relies on portfolios and client logos.',
+    'description': 'Credibility through structure and showcased work. Best for IT and software development studios, design agencies, and technology consultancies. Signature: detailed team profiles and a client-logo references grid. Avoid if you have little work or team to showcase; it relies on portfolios and client logos. Mood: friendly, energetic, approachable, modern-tech.',
     'category': 'Theme/Corporate',
     'summary': 'Development, IT development, Design, Tech, Computers, IT, Blogs',
     'sequence': 110,

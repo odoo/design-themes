@@ -1,6 +1,6 @@
 {
     'name': 'Notes & Play Theme',
-    'description': 'Image-forward and event-driven, elegant. Best for opera houses, orchestras, concert halls, classical ensembles, and music conservatories. Signature: split full-height image intro, client-logo strip, and a detailed team block.',
+    'description': 'Image-forward and event-driven, elegant. Best for opera houses, orchestras, concert halls, classical ensembles, and music conservatories. Signature: split full-height image intro, client-logo strip, and a detailed team block. Mood: elegant, cultured, refined, editorial.',
     'category': 'Theme/Retail',
     'summary': 'Opera, Classical Music, Orchestra, Symphony, Concert Hall, Philharmonic, Musicians, Live Music Venue, Theatre, Auditorium, Performances, Shows, Concerts, Events, Ticketing',
     'sequence': 30,

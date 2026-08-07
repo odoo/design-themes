@@ -1,6 +1,6 @@
 {
     'name': 'Linea Theme',
-    'description': 'Editorial fashion style, clean and full-bleed with no background decoration. Best for streetwear, independent clothing boutiques, footwear, and accessories. Signature: full-bleed imagery and a four-column category grid, more premium and minimal than Anelusia. Avoid if you need cart-forward browsing across a large product catalog.',
+    'description': 'Editorial fashion style, clean and full-bleed with no background decoration. Best for streetwear, independent clothing boutiques, footwear, and accessories. Signature: full-bleed imagery and a four-column category grid, more premium and minimal than Anelusia. Avoid if you need cart-forward browsing across a large product catalog. Mood: edgy, urban, cool-toned, high-fashion.',
     'category': 'Theme/Retail',
     'summary': 'Diversity, Fashions, Trends, Clothes, Shoes, Sports, Fitness, Stores',
     'sequence': 100,

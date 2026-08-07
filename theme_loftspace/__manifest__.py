@@ -1,6 +1,6 @@
 {
     'name': 'Loftspace Theme',
-    'description': 'Clean and photo-driven with no background decoration, catalog-discovery focused. Best for furniture, home goods, and lifestyle e-commerce. Signature: search-led header, e-commerce category showcase, reviews wall, and FAQ. Avoid if promoting a service rather than selling from a product catalog.',
+    'description': 'Clean and photo-driven with no background decoration, catalog-discovery focused. Best for furniture, home goods, and lifestyle e-commerce. Signature: search-led header, e-commerce category showcase, reviews wall, and FAQ. Avoid if promoting a service rather than selling from a product catalog. Mood: warm, sophisticated, moody, premium.',
     'category': 'Theme/Retail',
     'summary': 'Furniture, Toys, Games, Kids, Boys, Girls, Stores',
     'sequence': 130,

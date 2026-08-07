@@ -1,6 +1,6 @@
 {
     'name': 'Muse Theme',
-    'description': 'Minimalist and typography-driven with an abstract gradient hero. Best for design agencies, branding studios, UX/UI consultancies, and creative tech firms. Signature: oversized marquee text, stacked services list, and a testimonial carousel. Avoid if you need rich photography or a product catalog; this is minimalist and typography-led.',
+    'description': 'Minimalist and typography-driven with an abstract gradient hero. Best for design agencies, branding studios, UX/UI consultancies, and creative tech firms. Signature: oversized marquee text, stacked services list, and a testimonial carousel. Avoid if you need rich photography or a product catalog; this is minimalist and typography-led. Mood: sleek, minimalist, dramatic, artistic.',
     'category': 'Theme/Creative',
     'summary': 'Design, Freelance, Creative, Technology IT, Consulting',
     'sequence': 60,

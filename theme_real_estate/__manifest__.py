@@ -1,6 +1,6 @@
 {
     'name': 'Real Estate Theme',
-    'description': 'Listing-and-trust driven, airy. Best for real estate agencies, construction services, vacation rentals, and accommodation listings. Signature: three-column listing layout, testimonial carousel, and KPIs.',
+    'description': 'Listing-and-trust driven, airy. Best for real estate agencies, construction services, vacation rentals, and accommodation listings. Signature: three-column listing layout, testimonial carousel, and KPIs. Mood: sophisticated, calm, premium, aspirational.',
     'category': 'Theme/Services',
     'summary': 'Real Estate, Agencies, Construction, Services, Accomodations, Lodging, Hosting, Houses, Appartments, Vacations, Holidays, Travels',
     'sequence': 320,

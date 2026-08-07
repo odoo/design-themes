@@ -1,6 +1,6 @@
 {
     'name': 'Aviato Theme',
-    'description': 'Narrative and image-forward with connection-line motifs. Best for travel agencies, tour operators, excursion booking, and destination marketing. Signature: alternating text-and-image rows, masonry gallery, and team and testimonials.',
+    'description': 'Narrative and image-forward with connection-line motifs. Best for travel agencies, tour operators, excursion booking, and destination marketing. Signature: alternating text-and-image rows, masonry gallery, and team and testimonials. Mood: warm, adventurous, inviting, friendly.',
     'category': 'Theme/Creative',
     'summary': 'Travel, Excursion, Plane, Tour, Agency ',
     'sequence': 20,

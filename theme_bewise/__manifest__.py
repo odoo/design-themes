@@ -1,6 +1,6 @@
 {
     'name': 'Be Wise Theme',
-    'description': 'Information-driven with bold geometric shapes and color-blocking. Best for universities, schools, kids education programs, and learning platforms. Signature: centered striped hero, collapsible FAQ, and shape-cropped team cards. Avoid for nursery or young-children services; this suits older students and formal institutions.',
+    'description': 'Information-driven with bold geometric shapes and color-blocking. Best for universities, schools, kids education programs, and learning platforms. Signature: centered striped hero, collapsible FAQ, and shape-cropped team cards. Avoid for nursery or young-children services; this suits older students and formal institutions. Mood: academic, trustworthy, structured, welcoming.',
     'category': 'Theme/Education',
     'summary': 'University, Education, Schools, Young, Play, Kids',
     'sequence': 240,

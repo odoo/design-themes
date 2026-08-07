@@ -1,6 +1,6 @@
 {
     'name': 'Care Theme',
-    'description': 'Clean, clinical and photo-driven, focused on credentials and team. Best for medical clinics, dental practices, hospitals, and healthcare providers. Signature: story block, numbers grid, detailed team grid, and FAQ. Avoid for energetic fitness or wellness brands built around membership plans.',
+    'description': 'Clean, clinical and photo-driven, focused on credentials and team. Best for medical clinics, dental practices, hospitals, and healthcare providers. Signature: story block, numbers grid, detailed team grid, and FAQ. Avoid for energetic fitness or wellness brands built around membership plans. Mood: clean, calm, trustworthy, professional.',
     'category': 'Theme/Creative',
     'summary': 'Care, Health, Wellness, Fitness, Gym, Yoga, Spa, Massage, Therapy ',
     'sequence': 10,

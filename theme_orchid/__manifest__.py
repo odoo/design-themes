@@ -1,6 +1,6 @@
 {
     'name': 'Orchid Theme',
-    'description': 'Nature-led, soft, process-and-image driven. Best for florists, garden centers, beauty boutiques, and nature-led retail. Signature: process-steps narrative with organic blob and geometric motifs. Avoid for beauty salons or cosmetics that need boxed price lists and product browsing.',
+    'description': 'Nature-led, soft, process-and-image driven. Best for florists, garden centers, beauty boutiques, and nature-led retail. Signature: process-steps narrative with organic blob and geometric motifs. Avoid for beauty salons or cosmetics that need boxed price lists and product browsing. Mood: natural, elegant, warm, botanical.',
     'category': 'Theme/Retail',
     'summary': 'Florist, Gardens, Flowers, Nature, Green, Beauty, Stores',
     'sequence': 230,

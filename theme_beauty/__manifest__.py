@@ -1,6 +1,6 @@
 {
     'name': 'Beauty Theme',
-    'description': 'Beauty-and-care style with bold geometric shapes and circular image crops. Best for hair salons and hairdressers, cosmetics, makeup, and personal-care services. Signature: mosaic gallery, boxed price lists, and a strong CTA, combining product browsing with visible pricing. Avoid for medical or clinical businesses that need a trust-and-credentials tone.',
+    'description': 'Beauty-and-care style with bold geometric shapes and circular image crops. Best for hair salons and hairdressers, cosmetics, makeup, and personal-care services. Signature: mosaic gallery, boxed price lists, and a strong CTA, combining product browsing with visible pricing. Avoid for medical or clinical businesses that need a trust-and-credentials tone. Mood: elegant, feminine, refined, upscale.',
     'category': 'Theme/Retail',
     'summary': 'Beauty, Health, Care, Make Up, Cosmetics, Hair Dressers, Stores',
     'sequence': 170,

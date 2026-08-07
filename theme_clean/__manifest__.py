@@ -1,6 +1,6 @@
 {
     'name': 'Clean Theme',
-    'description': 'Text-driven and information-dense with generous whitespace and sketched shape crops. Best for legal practices, business consultancies, technology companies, and professional services. Signature: alternating text-and-image rows, numbers showcase, and FAQ. Avoid for image-forward brands; this is text-dense and information-heavy.',
+    'description': 'Text-driven and information-dense with generous whitespace and sketched shape crops. Best for legal practices, business consultancies, technology companies, and professional services. Signature: alternating text-and-image rows, numbers showcase, and FAQ. Avoid for image-forward brands; this is text-dense and information-heavy. Mood: professional, corporate, structured, approachable.',
     'category': 'Theme/Services',
     'summary': 'Legal, Corporate, Business, Tech, Services',
     'sequence': 120,
