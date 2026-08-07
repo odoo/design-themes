@@ -1,6 +1,6 @@
 {
     'name': 'Vehicle Theme',
-    'description': 'Cover hero opens onto a title block, a three-column lineup, a featured picture, key visuals, charted KPIs, and a media list, kept clean and photo-driven throughout. Image-and-stats forward with technical credibility - suited for car dealerships, motorbike retailers, tire shops, mechanics, and vehicle repair services',
+    'description': 'Clean, photo-and-stats forward with technical credibility. Best for car dealerships, garages, motorbike retailers, tire shops, mechanics, and vehicle repair. Signature: three-column lineup, charted KPIs, and a media list.',
     'category': 'Theme/Services',
     'summary': 'Vehicle, Cars, Motorbikes, Bikes, Tires, Transports, Repair, Mechanics, Garages, Sports, Services',
     'sequence': 300,

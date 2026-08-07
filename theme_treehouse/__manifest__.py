@@ -1,6 +1,6 @@
 {
     'name': 'Treehouse Theme',
-    'description': 'Asymmetric side-grid layout opens with numbered impact stats, color-blocked sections, partner references, and a freegrid showcase, with wavy line motifs accenting the side-grid hero. Image-led with stats and partner proof / suited for environmental NGOs, sustainable development non-profits, ecology initiatives, and conscious travel organizations',
+    'description': 'Image-led with impact stats and partner proof, accented by wavy line motifs. Best for environmental NGOs, sustainable development non-profits, ecology initiatives, and conscious travel. Signature: numbered impact stats, color-blocked sections, and partner references.',
     'category': 'Theme/Environment',
     'summary': 'Environment, Nature, Ecology, Sustainable Development, Non Profit, NGO, Travels',
     'sequence': 140,

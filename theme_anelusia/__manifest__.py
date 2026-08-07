@@ -1,6 +1,6 @@
 {
     'name': 'Anelusia Theme',
-    'description': 'Shaped-container splash hero with a hamburger nav leads into a scrolling announcement strip and a fashion-category bento grid, then an e-commerce category showcase, a reviews wall, and a CTA. Image-forward and e-commerce-driven / suited for fashion, sportswear, footwear, and lifestyle retail brands',
+    'description': 'Fashion-forward, dynamic and image-led, built for e-commerce. Best for ready-to-wear, sportswear, footwear, and lifestyle brands. Signature: category bento grid, e-commerce category showcase, and a reviews wall, designed to sell products with a cart.',
     'category': 'Theme/Retail',
     'summary': 'Diversity, Fashions, Trends, Clothes, Shoes, Sports, Fitness, Stores',
     'sequence': 180,

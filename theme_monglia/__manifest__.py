@@ -1,6 +1,6 @@
 {
     'name': 'Monglia Theme',
-    'description': 'Cover hero leads into a numbers grid, a diamond-cropped team block with highlighted artist names, a freegrid showcase, image wall, and collapsible FAQ before client references, with bold geometric shape motifs accenting key sections. Event-and-showcase driven with photos and credentials cues / suited for catering services, restaurants, bars, concert venues, and event organizers',
+    'description': 'Event-and-showcase driven with bold geometric shape motifs. Best for catering services, restaurants, bars, concert venues, and event organizers. Signature: diamond-cropped team block with artist names, freegrid, image wall, and references.',
     'category': 'Theme/Services',
     'summary': 'Event, Restaurants, Bars, Pubs, Cafes, Catering, Food, Drinks, Concerts, Shows, Musics, Dance, Party',
     'sequence': 260,

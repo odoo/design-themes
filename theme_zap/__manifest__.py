@@ -1,6 +1,6 @@
 {
     'name': 'Zap Theme',
-    'description': 'Sales-led header above a discovery exploration block flows into key visuals, striped sections, a feature showcase, an image-titled hero, and charted KPIs before a CTA card, with bold geometric shape motifs woven across the major sections. Pitch-forward / suited for digital marketing agencies, copywriting services, media companies, and event-driven corporate sites',
+    'description': 'Pitch-forward with bold geometric shape motifs. Best for digital marketing agencies, copywriting services, media companies, and event-driven corporate sites. Signature: discovery exploration block, striped sections, charted KPIs, and a CTA card.',
     'category': 'Theme/Corporate',
     'summary': 'Digital, Marketing, Copywriting, Media, Events, Non Profit, NGO, Corporate, Business, Services',
     'sequence': 160,

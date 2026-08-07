@@ -1,6 +1,6 @@
 {
     'name': 'Linea Theme',
-    'description': 'A hamburger nav with centered logo and sign-in link opens onto a full-bleed splash hero with overlaid headline and a bottom-anchored CTA, leading into a labeled four-column category grid, flowing into an asymmetric two-panel editorial showcase with full-bleed imagery and inset headlines, then a marquee trust-bar strip, building toward a dark full-bleed banner CTA with centered copy, followed by a references/logos grid, before closing on a split contact block pairing a full-bleed editorial photo with an inline contact details and opening-hours panel, with clean photo-driven full-bleed imagery throughout and no recurring background shape decoration. Image-forward and fashion-editorial-driven / suited for streetwear brands, independent clothing boutiques, urban lifestyle retailers, footwear labels, and accessories e-commerce stores.',
+    'description': 'Editorial fashion style, clean and full-bleed with no background decoration. Best for streetwear, independent clothing boutiques, footwear, and accessories. Signature: full-bleed imagery and a four-column category grid, more premium and minimal than Anelusia.',
     'category': 'Theme/Retail',
     'summary': 'Diversity, Fashions, Trends, Clothes, Shoes, Sports, Fitness, Stores',
     'sequence': 100,
