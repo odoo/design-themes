@@ -1,6 +1,6 @@
 {
     'name': 'Anelusia Theme',
-    'description': 'Fashion-forward, dynamic and image-led, built for e-commerce. Best for ready-to-wear, sportswear, footwear, and lifestyle brands. Signature: category bento grid, e-commerce category showcase, and a reviews wall, designed to sell products with a cart.',
+    'description': 'Fashion-forward, dynamic and image-led, built for e-commerce. Best for ready-to-wear, sportswear, footwear, and lifestyle brands. Signature: category bento grid, e-commerce category showcase, and a reviews wall, designed to sell products with a cart. Avoid if the brand wants a minimal, premium editorial feel with few products.',
     'category': 'Theme/Retail',
     'summary': 'Diversity, Fashions, Trends, Clothes, Shoes, Sports, Fitness, Stores',
     'sequence': 180,

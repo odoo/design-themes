@@ -1,6 +1,6 @@
 {
     'name': 'Paptic Theme',
-    'description': 'Illustration-driven with custom line art, credentials-forward. Best for consultancies, design studios, technology firms, and IT or blog-driven corporate sites. Signature: line-art illustrations as the primary visual and illustrated proof rows.',
+    'description': 'Illustration-driven with custom line art, credentials-forward. Best for consultancies, design studios, technology firms, and IT or blog-driven corporate sites. Signature: line-art illustrations as the primary visual and illustrated proof rows. Avoid if you need photographic imagery; this is built around custom line-art illustrations.',
     'category': 'Theme/Corporate',
     'summary': 'Consultancy, Design, Tech, Computers, IT, Blogs',
     'sequence': 110,

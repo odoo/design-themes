@@ -1,6 +1,6 @@
 {
     'name': 'Experts Theme',
-    'description': 'Credentials-and-proof driven with device mockups (phone, tablet, laptop). Best for business advisors, corporate consultancies, finance services, and IT advisory firms. Signature: mockup hero, mockup-framed proof rows, and FAQ.',
+    'description': 'Credentials-and-proof driven with device mockups (phone, tablet, laptop). Best for business advisors, corporate consultancies, finance services, and IT advisory firms. Signature: mockup hero, mockup-framed proof rows, and FAQ. Avoid if you have no digital product to frame; it leans on device mockups (phone, tablet, laptop).',
     'category': 'Theme/Corporate',
     'summary': 'Advisor, Corporate, Service, Business, Finance, IT',
     'sequence': 210,

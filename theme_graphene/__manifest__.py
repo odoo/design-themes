@@ -1,6 +1,6 @@
 {
     'name': 'Graphene Theme',
-    'description': 'Corporate tech style leading with mockups and stats, accented by line motifs. Best for technology companies, robotics, IT services, and product-led corporate sites. Signature: mockup showcase, side-by-side comparisons, and client references.',
+    'description': 'Corporate tech style leading with mockups and stats, accented by line motifs. Best for technology companies, robotics, IT services, and product-led corporate sites. Signature: mockup showcase, side-by-side comparisons, and client references. Avoid if you have no product to present; it centers on device mockups and stats.',
     'category': 'Theme/Corporate',
     'summary': 'Service, Corporate, Design, Technology, Robotics, Computers, IT, Blogs',
     'sequence': 110,

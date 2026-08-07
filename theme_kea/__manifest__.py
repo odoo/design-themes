@@ -1,6 +1,6 @@
 {
     'name': 'Kea Theme',
-    'description': 'Dark, store-driven style with a warm burnt-orange, beige and near-black palette and a signature glow. Best for technology companies, IT services, computer and electronics stores, and gadget shops. Signature: glowing hero, horizontal shopping attributes, bento grid, and opening hours.',
+    'description': 'Dark, store-driven style with a warm burnt-orange, beige and near-black palette and a signature glow. Best for technology companies, IT services, computer and electronics stores, and gadget shops. Signature: glowing hero, horizontal shopping attributes, bento grid, and opening hours. Avoid if there is no online store; this one is product and e-commerce driven.',
     'category': 'Theme/Technology',
     'summary': 'Electronics, Gadgets, Devices, Tech, Technology, Store, Shop, Ecommerce',
     'sequence': 200,

@@ -1,6 +1,6 @@
 {
     'name': 'Bookstore Theme',
-    'description': 'Catalog-discovery style with heavily rounded containers and circular accents. Best for bookstores, libraries, magazine archives, and music or media retailers. Signature: search-led header and accordion-with-image collapsible chapters.',
+    'description': 'Catalog-discovery style with heavily rounded containers and circular accents. Best for bookstores, libraries, magazine archives, and music or media retailers. Signature: search-led header and accordion-with-image collapsible chapters. Avoid for fashion or image-led retail; this centers on searchable, browseable catalog content.',
     'category': 'Theme/Retail',
     'summary': 'Library, Books, Magazines, Literature, Musics, Media, Store',
     'sequence': 250,

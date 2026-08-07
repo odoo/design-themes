@@ -1,6 +1,6 @@
 {
     'name': 'Brutalist Theme',
-    'description': 'Raw, high-contrast style with oversized serif type, yellow accents, and black-and-white imagery. Best for architecture firms, photographers, design studios, and personal portfolios. Signature: personal-brand hero, asymmetric black-and-white image grids, and a full image wall.',
+    'description': 'Raw, high-contrast style with oversized serif type, yellow accents, and black-and-white imagery. Best for architecture firms, photographers, design studios, and personal portfolios. Signature: personal-brand hero, asymmetric black-and-white image grids, and a full image wall. Avoid if you need a corporate or finance authority tone rather than a raw personal portfolio.',
     'category': 'Theme/Creative',
     'summary': 'Brutalist, Bold, Raw, Monospace, High Contrast, Modern, Minimal',
     'sequence': 170,

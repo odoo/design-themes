@@ -1,6 +1,6 @@
 {
     'name': 'Nano Theme',
-    'description': 'Story-led and image-forward with restrained styling and parallax. Best for creative agencies, makers, design studios, and creative-IT services. Signature: parallax scene, image-text-overlap layout, team grid, and references and KPIs.',
+    'description': 'Story-led and image-forward with restrained styling and parallax. Best for creative agencies, makers, design studios, and creative-IT services. Signature: parallax scene, image-text-overlap layout, team grid, and references and KPIs. Avoid if you need a bold, decorative or typography-driven look; this stays understated and photo-led.',
     'category': 'Theme/Lifestyle',
     'summary': 'Maker, Agencies, Creative, Design, IT, Services, Fancy',
     'sequence': 270,

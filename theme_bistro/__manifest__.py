@@ -1,6 +1,6 @@
 {
     'name': 'Bistro Theme',
-    'description': 'Menu-and-pricing forward with little long-form copy and a vertical sidebar nav. Best for bistros, restaurants, bars, pubs, cafes, and catering. Signature: cafe-style price list and a testimonial carousel.',
+    'description': 'Menu-and-pricing forward with little long-form copy and a vertical sidebar nav. Best for bistros, restaurants, bars, pubs, cafes, and catering. Signature: cafe-style price list and a testimonial carousel. Avoid if the venue is event-driven, such as concerts, large catering, or shows with featured artists.',
     'category': 'Theme/Food',
     'summary': 'Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering',
     'sequence': 220,

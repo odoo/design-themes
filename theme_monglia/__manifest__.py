@@ -1,6 +1,6 @@
 {
     'name': 'Monglia Theme',
-    'description': 'Event-and-showcase driven with bold geometric shape motifs. Best for catering services, restaurants, bars, concert venues, and event organizers. Signature: diamond-cropped team block with artist names, freegrid, image wall, and references.',
+    'description': 'Event-and-showcase driven with bold geometric shape motifs. Best for catering services, restaurants, bars, concert venues, and event organizers. Signature: diamond-cropped team block with artist names, freegrid, image wall, and references. Avoid for a simple sit-down restaurant or cafe that mainly needs a menu and price list.',
     'category': 'Theme/Services',
     'summary': 'Event, Restaurants, Bars, Pubs, Cafes, Catering, Food, Drinks, Concerts, Shows, Musics, Dance, Party',
     'sequence': 260,

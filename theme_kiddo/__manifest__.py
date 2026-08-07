@@ -1,6 +1,6 @@
 {
     'name': 'Kiddo Theme',
-    'description': 'Warm and playful, service-storytelling driven with organic blob shapes. Best for nurseries, childcare centers, kids activity programs, and family-oriented education. Signature: service-pillar columns and a services icon grid, service-led rather than catalog.',
+    'description': 'Warm and playful, service-storytelling driven with organic blob shapes. Best for nurseries, childcare centers, kids activity programs, and family-oriented education. Signature: service-pillar columns and a services icon grid, service-led rather than catalog. Avoid if the goal is selling toys or products online, since this is service-led rather than a shop.',
     'category': 'Theme/Retail',
     'summary': 'Nursery, Toys, Games, Kids, Boys, Girls, Stores',
     'sequence': 290,

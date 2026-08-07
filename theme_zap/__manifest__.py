@@ -1,6 +1,6 @@
 {
     'name': 'Zap Theme',
-    'description': 'Pitch-forward with bold geometric shape motifs. Best for digital marketing agencies, copywriting services, media companies, and event-driven corporate sites. Signature: discovery exploration block, striped sections, charted KPIs, and a CTA card.',
+    'description': 'Pitch-forward with bold geometric shape motifs. Best for digital marketing agencies, copywriting services, media companies, and event-driven corporate sites. Signature: discovery exploration block, striped sections, charted KPIs, and a CTA card. Avoid for reserved, understated corporate tones; this is bold and pitch-forward.',
     'category': 'Theme/Corporate',
     'summary': 'Digital, Marketing, Copywriting, Media, Events, Non Profit, NGO, Corporate, Business, Services',
     'sequence': 160,

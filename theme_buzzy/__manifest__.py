@@ -1,6 +1,6 @@
 {
     'name': 'Buzzy Theme',
-    'description': 'Illustrative and benefit-driven with organic blob motifs and scribble and marker highlights. Best for corporate services, technology companies, and SaaS-style product marketing. Signature: discovery block, product showcase, benefit grids, and accordion FAQ.',
+    'description': 'Illustrative and benefit-driven with organic blob motifs and scribble and marker highlights. Best for corporate services, technology companies, and SaaS-style product marketing. Signature: discovery block, product showcase, benefit grids, and accordion FAQ. Avoid if you need real photography; this is illustration and blob-motif driven.',
     'category': 'Theme/Corporate',
     'summary': 'Corporate, Services, Technology, Shapes, Illustrations',
     'sequence': 140,
