@@ -23,17 +23,6 @@
         'static/description/artists_description.webp',
         'static/description/artists_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.library_image_02': '/theme_artists/static/src/img/snippets/library_image_02.webp',
-        'website.library_image_03': '/theme_artists/static/src/img/snippets/s_text_image.webp',
-        'website.library_image_05': '/theme_artists/static/src/img/snippets/library_image_08.webp',
-        'website.library_image_10': '/theme_artists/static/src/img/snippets/s_banner_2.webp',
-        'website.library_image_13': '/theme_artists/static/src/img/snippets/s_banner.webp',
-        'website.s_carousel_default_image_2': '/theme_artists/static/src/img/snippets/s_cover.webp',
-        'website.library_image_14': '/theme_artists/static/src/img/snippets/library_image_14.webp',
-        'website.library_image_16': '/theme_artists/static/src/img/snippets/library_image_16.webp',
-        'website.s_image_text_default_image': '/theme_artists/static/src/img/snippets/s_shape_image_default_image.webp',
-    },
     'configurator_snippets': {
         'homepage': ['s_sidegrid', 's_product_catalog', 's_cta_box', 's_title', 's_image_frame', 's_images_wall', 's_shape_image'],
     },

@@ -22,17 +22,6 @@
         'static/description/beauty_description.webp',
         'static/description/beauty_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.library_image_10': '/theme_beauty/static/src/img/snippets/library_image_10.webp',
-        'website.library_image_14': '/theme_beauty/static/src/img/snippets/library_image_14.webp',
-        'website.s_masonry_block_default_image_1': '/theme_beauty/static/src/img/snippets/s_masonry_block.webp',
-        'website.s_text_image_default_image': '/theme_beauty/static/src/img/snippets/s_text_image.webp',
-        'website.s_product_catalog_default_image': '/theme_beauty/static/src/img/snippets/s_product_catalog.webp',
-        'website.library_image_16': '/theme_beauty/static/src/img/snippets/library_image_16.webp',
-        'website.library_image_03': '/theme_beauty/static/src/img/snippets/library_image_03.webp',
-        'website.library_image_13': '/theme_beauty/static/src/img/snippets/library_image_13.webp',
-        'website.s_carousel_default_image_2': '/theme_beauty/static/src/img/snippets/s_carousel_2.webp',
-    },
     'configurator_snippets': {
         'homepage': ['s_intro_pill', 's_masonry_block_mosaic_template', 's_pricelist_boxed', 's_features_wall', 's_image_frame', 's_call_to_action'],
     },

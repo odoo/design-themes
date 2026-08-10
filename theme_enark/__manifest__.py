@@ -23,15 +23,6 @@
         'static/description/enark_description.webp',
         'static/description/enark_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.library_image_03': '/theme_enark/static/src/img/snippets/library_image_03.webp',
-        'website.library_image_13': '/theme_enark/static/src/img/snippets/library_image_13.webp',
-        'website.library_image_10': '/theme_enark/static/src/img/snippets/library_image_10.webp',
-        'website.library_image_05': '/theme_enark/static/src/img/snippets/library_image_05.webp',
-        'website.library_image_14': '/theme_enark/static/src/img/snippets/library_image_14.webp',
-        'website.library_image_16': '/theme_enark/static/src/img/snippets/library_image_16.webp',
-        'website.library_image_02': '/theme_enark/static/src/img/snippets/library_image_02.webp',
-    },
     'configurator_snippets': {
         'homepage': ['s_freegrid', 's_features_wall', 's_numbers_list', 's_title', 's_images_wall', 's_references', 's_cta_box'],
     },
