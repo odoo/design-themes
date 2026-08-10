@@ -108,7 +108,7 @@
 <template id="s_reviews_wall" inherit_id="website.s_reviews_wall">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" remove="o_cc2" separator=" "/>
+        <attribute name="class" remove="o_cc o_cc2" separator=" "/>
     </xpath>
     <!-- Blockquote -->
     <xpath expr="//blockquote" position="attributes">
