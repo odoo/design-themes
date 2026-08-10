@@ -32,7 +32,7 @@ def test_02_theme_default_generate_primary_templates(env):
         assert path.startswith("/api/website/2/configurator/custom_resources")
         return {'images': {}}
 
-    def fake_olg_api(self, path, payload):
+    def fake_olg_api(self, path, payload, **kwargs):
         # Placeholder generator used by configurator
         assert path == "/api/olg/1/generate_placeholder"
         placeholders = payload.get("placeholders", [])
