@@ -118,10 +118,9 @@ FONT_MIME_TYPES = {
     ".eot": "application/vnd.ms-fontobject",
 }
 FONT_ASSET_URLS = {
-    "web.fontawesome.min.woff2": "/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2",
-    "web.fontawesome.min.woff": "/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff",
+    "web.material_symbols_outlined.min.woff2": "/web/static/src/libs/materialsymbols/material_symbols_outlined_subset.woff2",
+    "web.material_symbols_sharp.min.woff2": "/web/static/src/libs/materialsymbols/material_symbols_sharp_subset.woff2",
     "web.odoo_ui_icons.min.woff2": "/web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2",
-    "web.odoo_ui_icons.min.woff": "/web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff",
 }
 DEFAULT_WEBSITE_LOGO_URL = "/website/static/src/img/website_logo.svg"
 WEBSITE_LOGO_URL_RE = re.compile(r"^/web/image/website/\d+/logo(?:[/?#].*)?$")
