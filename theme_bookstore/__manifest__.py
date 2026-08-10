@@ -21,15 +21,6 @@
         'static/description/bookstore_description.webp',
         'static/description/bookstore_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.s_product_list_default_image_1': '/theme_bookstore/static/src/img/snippets/s_product_1.webp',
-        'website.s_image_text_default_image': '/theme_bookstore/static/src/img/snippets/s_image_text.webp',
-        'website.library_image_02': '/theme_bookstore/static/src/img/snippets/library_image_02.webp',
-        'website.s_cover_default_image': '/theme_bookstore/static/src/img/snippets/s_cover.webp',
-        'website.s_media_list_default_image_1': '/theme_bookstore/static/src/img/snippets/s_media_list_1.webp',
-        'website.s_media_list_default_image_2': '/theme_bookstore/static/src/img/snippets/s_media_list_2.webp',
-        'website.s_text_image_default_image': '/theme_bookstore/static/src/img/snippets/s_text_image.webp',
-    },
     'configurator_snippets': {
         'homepage': ['s_banner', 's_key_images', 's_title', 's_accordion_image', 's_cta_box'],
     },

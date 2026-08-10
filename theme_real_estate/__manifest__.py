@@ -25,15 +25,6 @@
         'static/description/real_estate_description.png',
         'static/description/real_estate_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_real_estate/static/src/img/snippets/s_cover.webp',
-        'website.s_text_image_default_image': '/theme_real_estate/static/src/img/snippets/s_text_image.webp',
-        'website.s_image_text_default_image': '/theme_real_estate/static/src/img/snippets/s_image_text.webp',
-        'website.s_three_columns_default_image_1': '/theme_real_estate/static/src/img/snippets/library_image_11.webp',
-        'website.s_three_columns_default_image_2': '/theme_real_estate/static/src/img/snippets/library_image_13.webp',
-        'website.s_three_columns_default_image_3': '/theme_real_estate/static/src/img/snippets/library_image_07.webp',
-        'website.s_quotes_carousel_demo_image_0': '/theme_real_estate/static/src/img/snippets/s_quotes_carousel_1.webp',
-    },
     'configurator_snippets': {
         'homepage': ['s_cover', 's_text_image', 's_image_text', 's_cards_soft', 's_title', 's_company_team_grid', 's_numbers_showcase', 's_quotes_carousel', 's_call_to_action'],
     },

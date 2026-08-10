@@ -16,12 +16,6 @@
         'static/description/bewise_description.webp',
         'static/description/bewise_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.s_picture_default_image': '/theme_bewise/static/src/img/content/college_library.webp',
-        'website.s_media_list_default_image_1': '/theme_bewise/static/src/img/content/college_media_1.webp',
-        'website.s_media_list_default_image_2': '/theme_bewise/static/src/img/content/college_media_2.webp',
-        'website.s_masonry_block_default_image_1': '/theme_bewise/static/src/img/content/content_img_25.webp',
-    },
     'configurator_snippets': {
         'homepage': ['s_intro_spotlight', 's_title', 's_color_blocks_2', 's_faq_collapse', 's_masonry_block_default_template', 's_company_team_shapes'],
     },

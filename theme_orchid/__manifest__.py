@@ -23,9 +23,6 @@
         'static/description/orchid_description.webp',
         'static/description/orchid_screenshot.webp',
     ],
-    'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_orchid/static/src/img/snippets/s_parallax.webp',
-    },
     'configurator_snippets': {
         'homepage': ['s_kickoff', 's_key_images', 's_process_steps', 's_freegrid', 's_image_text_overlap', 's_company_team_basic', 's_title', 's_images_wall'],
     },
