@@ -39,6 +39,9 @@
             'remove_classes': [
                 'pt64'
             ],
+            'background': {
+                'color': 'o_cc5',
+            },
         },
     },
     'author': 'Odoo S.A.',

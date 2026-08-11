@@ -5,7 +5,7 @@
 <template id="configurator_s_banner_glow" inherit_id="website.configurator_s_banner_glow">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pb0" remove="pb96" separator=" "/>
+        <attribute name="class" add="o_cc1 pb0" remove="o_cc5 pb96" separator=" "/>
     </xpath>
     <!-- Image -->
     <xpath expr="//div[hasclass('o_grid_item_image')]" position="attributes">
@@ -25,12 +25,12 @@
 <template id="configurator_s_cards_soft" inherit_id="website.configurator_s_cards_soft">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt112 pb184" remove="pt48 pb32" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/14","flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
+        <attribute name="class" add="o_colored_level o_cc5 pt112 pb184" remove="o_cc1 pt48 pb32" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/14","colors":{"c5":"o-color-4"},"flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Connections_14"/>
+        <div class="o_we_shape o_html_builder_Connections_14" style="background-image: url('/html_editor/shape/html_builder/Connections/14.svg?c5=o-color-4');"/>
     </xpath>
 </template>
 
@@ -46,12 +46,12 @@
 <template id="configurator_s_card_offset" inherit_id="website.configurator_s_card_offset">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt88 pb168" remove="pt64 pb64" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/14","colors":{"c5":"o-color-4"},"flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
+        <attribute name="class" add="pt88 pb168" remove="pt64 pb64 o_cc o_cc5" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/14","colors":{"c5":"o-color-5"},"flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Connections_14" style="background-image: url('/html_editor/shape/html_builder/Connections/14.svg?c5=o-color-4');"/>
+        <div class="o_we_shape o_html_builder_Connections_14" style="background-image: url('/html_editor/shape/html_builder/Connections/14.svg?c5=o-color-5');"/>
     </xpath>
 </template>
 
@@ -59,12 +59,12 @@
 <template id="configurator_s_process_steps" inherit_id="website.configurator_s_process_steps">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="pt160 pb232" remove="pt72 pb72" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/13","flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
+        <attribute name="class" add="o_cc o_cc5 pt160 pb232" remove="pt72 pb72" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/13","colors":{"c5":"o-color-4"},"flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//svg[hasclass('s_process_step_svg_defs')]" position="before">
-        <div class="o_we_shape o_html_builder_Connections_13"/>
+        <div class="o_we_shape o_html_builder_Connections_13" style="background-image: url('/html_editor/shape/html_builder/Connections/13.svg?c5=o-color-4');"/>
     </xpath>
 </template>
 

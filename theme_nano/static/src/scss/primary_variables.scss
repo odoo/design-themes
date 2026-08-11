@@ -4,7 +4,7 @@
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name':              'nano-1',
+        'color-palettes-name':              'nano',
 
         // Header
         'header-font-size':                 1rem,
@@ -35,13 +35,33 @@ $o-website-values-palettes: (
     ),
 );
 
+//------------------------------------------------------------------------------//
+// Colors
+//------------------------------------------------------------------------------//
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'nano': (
+        'o-color-1': #e33a07,
+        'o-color-2': #74bcc5,
+        'o-color-3': adjust-color(#0d0d0d, $lightness: 5%),
+        'o-color-4': #0d0d0d,
+        'o-color-5': #ffffff,
+
+        'o-cc5-btn-secondary': 'o-color-2',
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'nano');
+$o-dark-color-palette-names: append($o-dark-color-palette-names, 'nano');
+
 // Header/footer colors are part of this theme's layout, so lock them for
 // every palette instead of letting the selected palette decide.
 @each $-name, $-palette in $o-color-palettes {
     $o-color-palettes: map-merge($o-color-palettes, (
         $-name: map-merge($-palette, (
-            'menu': 5,
-            'footer': 5,
+            'menu': 1,
+            'footer': 1,
+            'copyright': 1,
         )),
     ));
 }
@@ -133,10 +153,9 @@ $o-theme-font-weight-bold:                  700;
 $o-theme-btn-font-weight:                   400;
 
 //------------------------------------------------------------------------------//
-// Colors
+// Colors compatibility
 //------------------------------------------------------------------------------//
 
-// Compatibility
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'nano-1': (
@@ -183,8 +202,6 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
         ),
     )
 );
-
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'nano-1');
 
 $o-color-palettes-compatibility-indexes: (
     1: 'nano-1',

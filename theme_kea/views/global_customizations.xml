@@ -5,16 +5,7 @@
 <template id="s_announcement_scroll" inherit_id="website.s_announcement_scroll">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5" separator=" "/>
         <attribute name="style">--marquee-animation-speed: 5s; --marquee-item-font-size: 152;</attribute>
-    </xpath>
-</template>
-
-<!-- ======== TITLE ======== -->
-<template id="s_title" inherit_id="website.s_title">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5" separator=" "/>
     </xpath>
 </template>
 
@@ -22,14 +13,26 @@
 <template id="s_bento_grid" inherit_id="website.s_bento_grid">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5" separator=" "/>
-        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blurry/03","colors":{"c1":"o-color-1","c2":"o-color-5","c3":"o-color-5","c4":"o-color-1"},"flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Blurry/03","colors":{"c1":"o-color-1","c2":"o-color-4","c3":"o-color-4","c4":"o-color-1"},"flip":[],"showOnMobile":false,"shapeAnimationSpeed":"0"}</attribute>
     </xpath>
     <!-- Shape -->
     <xpath expr="//div[hasclass('container')]" position="before">
-        <div class="o_we_shape o_html_builder_Blurry_03" style="background-image: url('/html_editor/shape/html_builder/Blurry/03.svg?c1=o-color-1&amp;c2=o-color-5&amp;c3=o-color-5&amp;c4=o-color-1');"/>
+        <div class="o_we_shape o_html_builder_Blurry_03" style="background-image: url('/html_editor/shape/html_builder/Blurry/03.svg?c1=o-color-1&amp;c2=o-color-4&amp;c3=o-color-4&amp;c4=o-color-1');"/>
     </xpath>
-    <!-- Discount box -->
+    <!-- Image Boxes -->
+    <xpath expr="(//div[hasclass('o_grid_item')])[1]" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
+    </xpath>
+    <xpath expr="(//div[hasclass('o_grid_item')])[5]" position="attributes">
+        <attribute name="class" add="o_cc1" remove="o_cc5" separator=" "/>
+    </xpath>
+    <!-- Discount Box -->
     <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
         <attribute name="class" add="o_cc4" remove="o_cc5" separator=" "/>
     </xpath>
@@ -39,24 +42,21 @@
 <template id="s_opening_hours" inherit_id="website.s_opening_hours">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5 pt184 pb96" remove="pt256" separator=" "/>
+        <attribute name="class" add="pt184 pb96" remove="pt256" separator=" "/>
     </xpath>
     <!-- Dialog preview -->
     <xpath expr="(//div[hasclass('o_grid_item')])[1]" position="attributes">
-        <attribute name="class" add="o_cc5 g-col-lg-4 col-lg-4 o-shadow-custom" remove="o_cc1 g-col-lg-10 col-lg-10" separator=" "/>
-        <attribute name="style" add="grid-area: 1 / 8 / 8 / 12; box-shadow: var(--o-color-5) -10px 0px 0px 0px !important;" remove="grid-area: 1 / 2 / 8 / 12;" separator=";"/>
+        <attribute name="class" add="g-col-lg-4 col-lg-4 o-shadow-custom" remove="g-col-lg-10 col-lg-10" separator=" "/>
+        <attribute name="style" add="grid-area: 1 / 8 / 8 / 12; box-shadow: var(--o-color-1) -10px 0px 0px 0px !important;" remove="grid-area: 1 / 2 / 8 / 12;" separator=";"/>
     </xpath>
     <!-- Title -->
     <xpath expr="(//div[hasclass('o_grid_item')])[2]" position="attributes">
-        <attribute name="class" add="o_cc5 o_bg_blur_option border rounded" remove="o_cc1" separator=" "/>
+        <attribute name="class" add="o_bg_blur_option border rounded" separator=" "/>
         <attribute name="style" add="background-color: rgba(0, 0, 0, 0.75); --o-bg-blur: 10; --box-border-right-width: 0px; --box-border-bottom-right-radius: 0px; --box-border-top-right-radius: 0px;" separator=";"/>
     </xpath>
     <!-- Hours columns -->
-    <xpath expr="(//div[hasclass('o_grid_item')])[3]" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
-    </xpath>
     <xpath expr="(//div[hasclass('o_grid_item')])[4]" position="attributes">
-        <attribute name="class" add="o_cc5 rounded" remove="o_cc1" separator=" "/>
+        <attribute name="class" add="rounded" separator=" "/>
         <attribute name="style" add="--box-border-bottom-left-radius: 0px; --box-border-top-left-radius: 0px;" separator=";"/>
     </xpath>
 </template>

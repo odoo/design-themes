@@ -11,7 +11,6 @@
         'data/ir_asset.xml',
         'views/images_library.xml',
 
-        'views/snippets/s_cta_centered.xml',
         'views/snippets/s_key_images.xml',
         'views/snippets/s_parallax.xml',
         'views/snippets/s_references.xml',
@@ -41,9 +40,6 @@
                 'rounded': '4',
                 'gap': '4',
                 'alignment': 'left',
-            },
-            'background': {
-                'color': 'o_cc5',
             },
             'add_classes': [
                 'pt88', 'pb112'

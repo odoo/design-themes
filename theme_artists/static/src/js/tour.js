@@ -41,7 +41,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("artists_tour", () => [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"artists-1"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"artists"'),
     ...wTourUtils.insertSnippet(snippets[0], { position: "top" }),
     ...wTourUtils.insertSnippet(snippets[1]),
     ...wTourUtils.clickOnText(snippets[1], 'h2'),
