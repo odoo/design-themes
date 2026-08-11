@@ -2,10 +2,6 @@
 <odoo>
 
 <template id="s_numbers" inherit_id="website.s_numbers">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
-    </xpath>
     <xpath expr="//div[hasclass('col-lg-5')]" position="replace"/>
     <xpath expr="//div[hasclass('col-lg-2')]" position="replace">
         <div class="col-lg-4 pt24 pb24">

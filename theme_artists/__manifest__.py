@@ -41,9 +41,6 @@
             'data_attributes': {
                 'rounded': '0',
             },
-            'background': {
-                'color': 'o_cc5',
-            },
             'add_classes': [
                 'pb104',
             ],

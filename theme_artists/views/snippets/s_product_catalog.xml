@@ -4,7 +4,7 @@
 <template id="s_product_catalog" inherit_id="website.s_product_catalog">
     <!-- Section -->
     <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5 pt0 pb40" remove="pb64 pt64" separator=" "/>
+        <attribute name="class" add="pt0 pb40" remove="pb64 pt64" separator=" "/>
         <attribute name="style"/>
     </xpath>
     <!-- Title container -->

@@ -97,7 +97,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'artists-1',
+        'color-palettes-name': 'artists',
         'header-font-size': (13 / 16) * 1rem,
         'font': 'Montserrat',
         'headings-font': 'Bebas Neue',
@@ -121,19 +121,26 @@ $o-website-values-palettes: (
     ),
 );
 
-$artists-1: map-get($o-color-palettes, 'artists-1');
-$artists-1: map-merge($artists-1, ('footer': 5));
-$o-color-palettes: map-merge($o-color-palettes, ('artists-1': $artists-1));
+$o-color-palettes: map-merge($o-color-palettes, (
+    'artists': (
+        'o-color-1': #6930C3,
+        'o-color-2': #ffffff,
+        'o-color-3': adjust-color(#110d16, $lightness: 10%),
+        'o-color-4': #110d16,
+        'o-color-5': #F6F5F8,
+    )
+));
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'artists-1');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'artists');
+$o-dark-color-palette-names: append($o-dark-color-palette-names, 'artists');
 
 // Header/footer colors are part of this theme's layout, so lock them for
 // every palette instead of letting the selected palette decide.
 @each $-name, $-palette in $o-color-palettes {
     $o-color-palettes: map-merge($o-color-palettes, (
         $-name: map-merge($-palette, (
-            'menu': 5,
-            'footer': 5,
+            'menu': 1,
+            'footer': 1,
         )),
     ));
 }

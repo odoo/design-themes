@@ -2,14 +2,7 @@
 <odoo>
 
 <template id="s_discovery" inherit_id="website.s_discovery">
-    <!-- Section -->
-    <xpath expr="//section" position="attributes">
-        <attribute name="class" add="o_cc o_cc5" separator=" "/>
-    </xpath>
     <!-- CTA -->
-    <xpath expr="//span[hasclass('s_cta_badge')]" position="attributes">
-        <attribute name="class" add="o_cc5" remove="o_cc1" separator=" "/>
-    </xpath>
     <xpath expr="//span[hasclass('s_cta_badge')]" position="replace" mode="inner">
         <i class="oi oi-filled text-success" data-icon="circle" aria-hidden="true"/> AVAILABLE FOR NEW PROJECTS&#160;<a href="#">Contact us&#160;<i class="oi" data-icon="east" aria-hidden="true"/></a>
     </xpath>

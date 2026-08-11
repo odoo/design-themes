@@ -61,24 +61,21 @@ $o-color-palettes: map-merge($o-color-palettes, (
     'kea': (
         'o-color-1': #CC4F18,
         'o-color-2': #6B6560,
-        'o-color-3': #e1dbd3,
-        'o-color-4': #ECE8E2,
-        'o-color-5': #0E0E0E,
-
-        'menu': 5,
-        'header-sales_one': 4,
-        'footer': 4,
+        'o-color-3': adjust-color(#0E0E0E, $lightness: 5%),
+        'o-color-4': #0E0E0E,
+        'o-color-5': #ECE8E2,
     )
 ));
 
 $o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'kea');
+$o-dark-color-palette-names: append($o-dark-color-palette-names, 'kea');
 
 // Header/footer colors are part of this theme's layout, so lock them for
 // every palette instead of letting the selected palette decide.
 @each $-name, $-palette in $o-color-palettes {
     $o-color-palettes: map-merge($o-color-palettes, (
         $-name: map-merge($-palette, (
-            'menu': 5,
+            'menu': 1,
             'header-sales_one': 4,
             'footer': 4,
         )),
