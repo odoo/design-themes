@@ -4,9 +4,9 @@ import * as wTourUtils from '@website/js/tours/tour_utils';
 
 const snippets = [
     {
-        id: 's_banner',
-        name: 'Banner',
-        groupName: "Intro",
+        id: 's_shape_image',
+        name: 'Shape image',
+        groupName: "Content",
     },
     {
         id: 's_color_blocks_2',
