@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_shape_image" inherit_id="website.s_shape_image">
+    <!-- Section -->
+    <xpath expr="///section" position="attributes">
+        <attribute name="class" add="o_full_screen_height pt96 pb96" remove="pt32 pb32" separator=" "/>
+    </xpath>
+
+    <!-- 1st Column -->
+    <xpath expr="//div[hasclass('col-lg-5')]" position="replace">
+        <div class="col-lg-6 pt16 pb16">
+            <h1 class="display-3">Unleash your <strong><span class="o_text_highlight o_translate_inline o_text_highlight_freehand_1" style="--text-highlight-width: 6px; --text-highlight-color: var(--o-color-1);">potential</span>.</strong></h1>
+            <p><br/></p>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p><br/></p>
+            <p>
+                <a t-att-href="cta_btn_href" class="btn btn-lg btn-primary o_translate_inline">Start Now <span class="oi ms-2" data-icon="keyboard_arrow_right"/></a>
+            </p>
+        </div>
+    </xpath>
+
+    <!-- 2nd Column -->
+    <xpath expr="//div[hasclass('col-lg-6')][2]" position="replace">
+        <div class="col-lg-5 offset-lg-1 pt16 pb16">
+            <img src="/html_editor/image_shape/website.set_2_square_md_4/html_builder/composition/composition_oval_line.svg?c2=o-color-2" class="img-fluid" data-shape="html_builder/composition/composition_oval_line" data-format-mimetype="image/webp" data-file-name="set_2_square_md_4.svg" data-shape-colors=";o-color-2;;;" alt=""/>
+        </div>
+    </xpath>
+</template>
+
+</odoo>

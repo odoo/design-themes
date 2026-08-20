@@ -13,7 +13,7 @@
 
         'views/snippets/s_cta_card.xml',
         'views/snippets/s_accordion_image.xml',
-        'views/snippets/s_banner.xml',
+        'views/snippets/s_shape_image.xml',
         'views/snippets/s_text_image.xml',
         'views/snippets/s_company_team.xml',
         'views/snippets/s_title.xml',
@@ -26,12 +26,12 @@
         'static/description/clean_screenshot.webp',
     ],
     'configurator_snippets': {
-        'homepage': ['s_banner', 's_color_blocks_2', 's_title', 's_text_image', 's_image_text', 's_numbers_showcase', 's_company_team', 's_accordion_image', 's_cta_card'], 
+        'homepage': ['s_shape_image', 's_color_blocks_2', 's_title', 's_text_image', 's_image_text', 's_numbers_showcase', 's_company_team', 's_accordion_image', 's_cta_card'], 
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_banner'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_shape_image'),
             ],
         },
     },
