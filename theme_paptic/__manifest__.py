@@ -1,6 +1,6 @@
 {
     'name': 'Paptic Theme',
-    'description': 'Split cover hero leads into client references, alternating illustration-based proof rows, a two-panel masonry block, and a collapsible FAQ before an illustrated CTA, with custom line art illustrations as the primary visual throughout. Credentials-forward and illustration-driven / suited for consultancies, design studios, technology firms, and IT or blog-driven corporate sites',
+    'description': 'Theme with illustration instead of images. Split cover hero leads into client references, alternating illustration-based proof rows, a two-panel masonry block, and a collapsible FAQ before an illustrated CTA, with custom line art illustrations as the primary visual throughout. Credentials-forward and illustration-driven / suited for consultancies, design studios, technology firms, and IT or blog-driven corporate sites. Only for service businesses selling expertise; never recommend for shops or makers of physical goods (furniture, retail, e-commerce, food, construction, repair, craftsmen, etc.).',
     'category': 'Theme/Corporate',
     'summary': 'Consultancy, Design, Tech, Computers, IT, Blogs',
     'sequence': 110,

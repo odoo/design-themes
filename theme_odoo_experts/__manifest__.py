@@ -1,6 +1,6 @@
 {
     'name': 'Experts Theme',
-    'description': 'Mockup hero leads into client references, alternating image-and-text proof rows, a feature showcase, and a collapsible FAQ before a CTA with device-mockup framing (phone, browser, tablet, laptop) running across the proof rows and underline highlights on key headings, accented by connection line motifs at the closing block. Credentials-and-proof driven / suited for business advisors, corporate consultancies, finance services, and IT advisory firms',
+    'description': 'Theme with illustration and device mockups instead of photos. Mockup hero leads into client references, alternating image-and-text proof rows, a feature showcase, and a collapsible FAQ before a CTA with device-mockup framing (phone, browser, tablet, laptop) running across the proof rows and underline highlights on key headings, accented by connection line motifs at the closing block. Credentials-and-proof driven / suited for business advisors, corporate consultancies, finance services, and IT advisory firms. Only for service businesses selling expertise; never recommend for shops or makers of physical goods (furniture, retail, e-commerce, food, construction, repair, craftsmen, etc.). The device mockups need a digital product or interface to show on screen (app, dashboard, software UI).',
     'category': 'Theme/Corporate',
     'summary': 'Advisor, Corporate, Service, Business, Finance, IT',
     'sequence': 210,

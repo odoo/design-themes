@@ -1,6 +1,6 @@
 {
     'name': 'Graphene Theme',
-    'description': 'Cover hero opens onto alternating text-and-image rows, a numbers grid, mockup showcase, and side-by-side comparisons before client references, accented by connection, bold geometric, and rain-line motifs. Mockup-and-stats forward with credibility cues / suited for technology companies, robotics, IT services, and product-led corporate sites',
+    'description': 'Theme with device mockups instead of plain photos. Cover hero opens onto alternating text-and-image rows, a numbers grid, mockup showcase, and side-by-side comparisons before client references, accented by connection, bold geometric, and rain-line motifs. Mockup-and-stats forward with credibility cues / suited for technology companies, robotics, IT services, and product-led corporate sites. Visuals are framed in device mockups (phone, tablet, browser, laptop), so it needs a digital product or interface to show on screen (app, dashboard, software UI); never recommend for businesses with nothing screen-based to display.',
     'category': 'Theme/Corporate',
     'summary': 'Service, Corporate, Design, Technology, Robotics, Computers, IT, Blogs',
     'sequence': 110,

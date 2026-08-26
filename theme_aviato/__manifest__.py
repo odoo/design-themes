@@ -1,6 +1,6 @@
 {
     'name': 'Aviato Theme',
-    'description': 'Banner-led layout alternating text-and-image rows with a featured picture block, masonry gallery, team and testimonials, with connection line motifs accenting the banner. Narrative and image-forward / suited for travel agencies, tour operators, excursion booking, and destination marketing sites',
+    'description': 'Partly illustration-based: the text-image rows and the showcase use line-art illustrations instead of photos, the rest of the theme is photographic. Banner-led layout alternating text-and-image rows with a featured picture block, masonry gallery, team and testimonials, with connection line motifs accenting the banner. Narrative and image-forward / suited for travel agencies, tour operators, excursion booking, and destination marketing sites. Only for travel service businesses.',
     'category': 'Theme/Creative',
     'summary': 'Travel, Excursion, Plane, Tour, Agency ',
     'sequence': 20,
