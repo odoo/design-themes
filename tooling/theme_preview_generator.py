@@ -64,6 +64,10 @@ CSS_URL_RE = re.compile(
     r'\s*\)'
 )
 VH_RE = re.compile(r"(-?(?:\d+(?:\.\d+)?|\.\d+))s?vh")
+CSS_RULE_RE = re.compile(r"([^{}]+)\{([^{}]*)\}")
+# Matches the `color` property only, never `--btn-color` or `background-color`.
+TEXT_COLOR_RE = re.compile(r"(?<![-\w])(color\s*:\s*)[^;!}]+", re.I)
+BUTTON_TEXT_PROPERTIES = ("color", "hover-color", "active-color", "disabled-color")
 PALETTE_COLORS = {
     "--o-color-1": ("#714B67",),
     "--o-color-2": ("#F0CDA8",),
@@ -461,6 +465,72 @@ def inject_color_combination_text_overrides(soup):
     soup.head.append(style)
 
 
+def get_color_combination_text_variables(css_text):
+    """Map each palette color to the text variable of the color combination
+    using it as a background, e.g. ``o-color-3`` -> ``--o-cc2-text``.
+    """
+    text_variables = {}
+    for index, color in re.findall(
+        r"--o-cc([1-5])-bg\s*:\s*var\(--(o-color-[1-5])\)", css_text,
+    ):
+        text_variables.setdefault(color, f"--o-cc{index}-text")
+    return text_variables
+
+
+def replace_muted_text_colors_in_css(css_text):
+    """Make ``.text-muted`` follow the text color it is rendered on.
+
+    ``mute-color`` is a 70% alpha of the surrounding text color, which
+    ``currentColor`` resolves to when used in the ``color`` property itself.
+    """
+    def replace(match):
+        selectors, declarations = match.group(1), match.group(2)
+        if not all(".text-muted" in selector for selector in selectors.split(",")):
+            return match.group(0)
+        declarations = TEXT_COLOR_RE.sub(
+            r"\1color-mix(in srgb, currentColor 70%, transparent)", declarations,
+        )
+        return f"{selectors}{{{declarations}}}"
+
+    return CSS_RULE_RE.sub(replace, css_text)
+
+
+def replace_button_text_colors_in_css(css_text, text_variables):
+    """Make button text colors follow the palette color of their background."""
+    def replace(match):
+        selectors, declarations = match.group(1), match.group(2)
+        background = re.search(r"--btn-bg\s*:\s*var\(--(o-color-[1-5])\)", declarations)
+        text_variable = text_variables.get(background.group(1)) if background else None
+        if not text_variable:
+            return match.group(0)
+        for name in BUTTON_TEXT_PROPERTIES:
+            declarations = re.sub(
+                rf"(--btn-{name}\s*:\s*)#[0-9a-fA-F]{{3,8}}",
+                rf"\1var({text_variable})",
+                declarations,
+            )
+        return f"{selectors}{{{declarations}}}"
+
+    return CSS_RULE_RE.sub(replace, css_text)
+
+
+def replace_frozen_text_colors(soup):
+    """Unfreeze the text colors SCSS resolved against the theme's own palette.
+
+    Those colors are baked into the downloaded CSS, so they stay dark when the
+    configurator previews the theme with a dark palette.
+    """
+    styles = soup.find_all("style")
+    text_variables = get_color_combination_text_variables(
+        "".join(style.string or "" for style in styles),
+    )
+    for style in styles:
+        if not style.string:
+            continue
+        css_text = replace_muted_text_colors_in_css(style.string)
+        style.string = replace_button_text_colors_in_css(css_text, text_variables)
+
+
 def convert_vh_to_vw(css_text, ratio=VH_TO_VW_RATIO):
     if "vh" not in css_text:
         return css_text
@@ -776,6 +846,7 @@ def download_static_html(url, output_path, theme_image_urls):
     remove_javascript_dependent_classes(soup)
     replace_chart_canvases(soup)
     purge_unused_css(soup)
+    replace_frozen_text_colors(soup)
     fix_floating_blocks_preview(soup)
     inject_palette_variables(soup)
     inject_color_combination_text_overrides(soup)
