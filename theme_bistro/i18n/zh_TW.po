@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-09-17 02:51+0000\n"
 "Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://translate.odoo.com/"
@@ -20,33 +20,27 @@ msgstr ""
 "X-Generator: Weblate 5.12.2\n"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid "A Deep Dive into Flavor and Innovation"
-msgstr "深入美味與創新之旅"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "A cozy ambiance for any occasion"
-msgstr "適合任何場合的舒適氛圍"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"A truly exquisite dining experience. I highly recommend the Mustard Sauce, "
-"out of this world."
-msgstr "真正精緻的用餐體驗。我強烈推薦芥末醬，真是世界頂級。"
+"<a href=\"#\" class=\"btn btn-primary o_translate_inline\">Book a table</a>"
+msgstr ""
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"Cosy and friendly, good atmosphere and super food. Especially the spiced "
-"fruit crumble."
-msgstr "舒適友善，氣氛融和，食物超級棒。尤其是五香果脆。"
+"<span class=\"o_rfs\" style=\"font-size: clamp(8px, 1em + 5.5556vw, 400px);"
+"\">BISTRO</span>"
+msgstr ""
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Delight in Every Bite, Every Moment"
-msgstr "每一口、每一刻，都充滿喜悅"
+#: model:ir.module.module,shortdesc:base.module_theme_bistro
+msgid "Bistro Theme"
+msgstr ""
+
+#. module: theme_bistro
+#: model:ir.module.module,summary:base.module_theme_bistro
+msgid "Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__display_name
@@ -54,29 +48,15 @@ msgid "Display Name"
 msgstr "顯示名稱"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Experience our passion for great food and service"
-msgstr "感受我們對美食及服務的熱情"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
+#: model:ir.module.module,description:base.module_theme_bistro
 msgid ""
-"Experience the finest in dining with our carefully curated menus. Whether "
-"you’re at a bistro, bar, or cafe, our culinary offerings are sure to delight."
-"<br/><br/> Taste the difference in every dish."
+"Horizontal navigation above a full-screen image hero carrying an oversized "
+"serif wordmark, a two-column bold statement, a split cafe-style price list "
+"on a deep colored panel, a six-card review wall with star ratings, a sharp-"
+"cornered image and text box, and opening hours over a full-width dish "
+"visual. Menu-and-pricing forward with little long-form copy / suited for "
+"bistros, restaurants, bars, pubs, cafes, and catering services"
 msgstr ""
-"享用我們精心設計的菜單，體驗最頂級的美食。無論處身在小酒館、酒吧還是咖啡廳，"
-"都能大飽口福。<br/><br/>細品我們每道菜的過人之處。"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Fresh ingredients, deliciously prepared"
-msgstr "新鮮食材，精心烹調"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Gourmet dishes that will tempt your taste buds"
-msgstr "美味菜式，誘惑你的味蕾"
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__id
@@ -84,39 +64,70 @@ msgid "ID"
 msgstr "識別碼"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Reserve a Table"
-msgstr "訂枱"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Savor the Flavors of Our Bistro"
-msgstr "品嚐我們小酒館的美味"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Taste &amp; Enjoy"
-msgstr "細味與享受"
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
+msgid "Scroll down to next section"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model,name:theme_bistro.model_theme_utils
 msgid "Theme Utils"
 msgstr "主題"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
-msgid "This place is perfect for groups or a casual date night."
-msgstr "這個地方最適合團體或平日約會之夜。"
+#~ msgid "A Deep Dive into Flavor and Innovation"
+#~ msgstr "深入美味與創新之旅"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid ""
-"Transform your dining experience with our new menu, where classic dishes "
-"meet modern creativity. Elevate your palate with flavors that blend "
-"tradition and innovation seamlessly."
-msgstr ""
-"我們的新菜單融合經典菜餚與現代創意，徹底改變你的用餐體驗。品嚐完美結合傳統與"
-"創新的口味，昇華味蕾享受。"
+#~ msgid "A cozy ambiance for any occasion"
+#~ msgstr "適合任何場合的舒適氛圍"
+
+#~ msgid ""
+#~ "A truly exquisite dining experience. I highly recommend the Mustard "
+#~ "Sauce, out of this world."
+#~ msgstr "真正精緻的用餐體驗。我強烈推薦芥末醬，真是世界頂級。"
+
+#~ msgid ""
+#~ "Cosy and friendly, good atmosphere and super food. Especially the spiced "
+#~ "fruit crumble."
+#~ msgstr "舒適友善，氣氛融和，食物超級棒。尤其是五香果脆。"
+
+#~ msgid "Delight in Every Bite, Every Moment"
+#~ msgstr "每一口、每一刻，都充滿喜悅"
+
+#~ msgid "Experience our passion for great food and service"
+#~ msgstr "感受我們對美食及服務的熱情"
+
+#~ msgid ""
+#~ "Experience the finest in dining with our carefully curated menus. Whether "
+#~ "you’re at a bistro, bar, or cafe, our culinary offerings are sure to "
+#~ "delight.<br/><br/> Taste the difference in every dish."
+#~ msgstr ""
+#~ "享用我們精心設計的菜單，體驗最頂級的美食。無論處身在小酒館、酒吧還是咖啡"
+#~ "廳，都能大飽口福。<br/><br/>細品我們每道菜的過人之處。"
+
+#~ msgid "Fresh ingredients, deliciously prepared"
+#~ msgstr "新鮮食材，精心烹調"
+
+#~ msgid "Gourmet dishes that will tempt your taste buds"
+#~ msgstr "美味菜式，誘惑你的味蕾"
+
+#~ msgid "Reserve a Table"
+#~ msgstr "訂枱"
+
+#~ msgid "Savor the Flavors of Our Bistro"
+#~ msgstr "品嚐我們小酒館的美味"
+
+#~ msgid "Taste &amp; Enjoy"
+#~ msgstr "細味與享受"
+
+#~ msgid "This place is perfect for groups or a casual date night."
+#~ msgstr "這個地方最適合團體或平日約會之夜。"
+
+#~ msgid ""
+#~ "Transform your dining experience with our new menu, where classic dishes "
+#~ "meet modern creativity. Elevate your palate with flavors that blend "
+#~ "tradition and innovation seamlessly."
+#~ msgstr ""
+#~ "我們的新菜單融合經典菜餚與現代創意，徹底改變你的用餐體驗。品嚐完美結合傳統"
+#~ "與創新的口味，昇華味蕾享受。"
 
 #~ msgid ""
 #~ "\" A perfect spot for great food. <br/>Cozy atmosphere, excellent "

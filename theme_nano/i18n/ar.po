@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-09-17 02:50+0000\n"
 "Last-Translator: \"Tiffany Chang (tic)\" <tic@odoo.com>\n"
 "Language-Team: Arabic <https://translate.odoo.com/projects/odoo-19/"
@@ -46,8 +46,8 @@ msgstr ""
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
 msgid ""
-"<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> AVAILABLE FOR "
-"NEW PROJECTS"
+"<i class=\"oi oi-filled text-success\" data-icon=\"circle\" aria-"
+"hidden=\"true\"/> AVAILABLE FOR NEW PROJECTS"
 msgstr ""
 
 #. module: theme_nano
@@ -111,13 +111,23 @@ msgstr "Ben Cole"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
-msgid "Contact us <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
+msgid "Contact us <i class=\"oi\" data-icon=\"east\" aria-hidden=\"true\"/>"
 msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Creative Director"
 msgstr "المدير الإبداعي"
+
+#. module: theme_nano
+#: model:ir.module.module,description:base.module_theme_nano
+msgid ""
+"Discovery block opens onto a parallax scene, text-driven sections, key "
+"visuals, an image-text-overlap layout, and a basic team grid before "
+"references, KPIs, and a centered call-to-action, kept photo-driven with "
+"restrained styling. Story-led and image-forward / suited for creative "
+"agencies, makers, design studios, and creative-IT services"
+msgstr ""
 
 #. module: theme_nano
 #: model:ir.model.fields,field_description:theme_nano.field_theme_utils__display_name
@@ -140,19 +150,14 @@ msgid "ID"
 msgstr "المُعرف"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Interested in our services?"
-msgstr "أأنت مهتم بخدماتنا؟"
-
-#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Jane Ford"
 msgstr "Jane Ford"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Let's discuss how we can help your business<br/><br/>"
-msgstr "دعنا نناقش كيف يمكننا مساعدة شركتك<br/><br/>"
+#: model:ir.module.module,summary:base.module_theme_nano
+msgid "Maker, Agencies, Creative, Design, IT, Services, Fancy"
+msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
@@ -178,6 +183,11 @@ msgid "Mia Lee"
 msgstr "Mia Lee"
 
 #. module: theme_nano
+#: model:ir.module.module,shortdesc:base.module_theme_nano
+msgid "Nano Theme"
+msgstr ""
+
+#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
 msgid "Our case studies"
 msgstr "دراسات الحالات"
@@ -198,11 +208,6 @@ msgid "Our talented crew"
 msgstr "فريق عملنا الموهوب"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Schedule a call"
-msgstr "حدد موعداً لمكالمة هاتفية"
-
-#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
 msgid "Some of the latest projects we had the pleasure to work on"
 msgstr "بعض أحدث المشاريع التي سعدنا بالعمل عليها"
@@ -216,6 +221,15 @@ msgstr "أدوات السمة"
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_references
 msgid "Trusted by industry leaders"
 msgstr "يثق به رواد قطاع الأعمال"
+
+#~ msgid "Interested in our services?"
+#~ msgstr "أأنت مهتم بخدماتنا؟"
+
+#~ msgid "Let's discuss how we can help your business<br/><br/>"
+#~ msgstr "دعنا نناقش كيف يمكننا مساعدة شركتك<br/><br/>"
+
+#~ msgid "Schedule a call"
+#~ msgstr "حدد موعداً لمكالمة هاتفية"
 
 #~ msgid ""
 #~ "<br/>Explore the world of creation with our maker services. We provide "

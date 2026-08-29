@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-09-17 02:51+0000\n"
 "Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://translate.odoo.com/"
@@ -18,6 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.12.2\n"
+
+#. module: theme_bewise
+#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_masonry_block_default_template
+msgid ""
+"<a href=\"#\" class=\"o_translate_inline btn btn-primary\">Learn More</a>"
+msgstr ""
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_color_blocks_2
@@ -52,6 +58,11 @@ msgstr ""
 "        <br/>"
 
 #. module: theme_bewise
+#: model:ir.module.module,shortdesc:base.module_theme_bewise
+msgid "Be Wise Theme"
+msgstr ""
+
+#. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils__display_name
 msgid "Display Name"
 msgstr "顯示名稱"
@@ -60,20 +71,6 @@ msgstr "顯示名稱"
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_title
 msgid "Empower young minds"
 msgstr "啟發青年思想"
-
-#. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid ""
-"Empower young minds with quality education and engaging learning experiences "
-"that nurture creativity, play, and academic excellence."
-msgstr ""
-"透過優質教育及引人入勝的學習體驗，為年輕人的思想提供動力，培養創意、樂趣及卓"
-"越學術成就。"
-
-#. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid "Enroll Today"
-msgstr "立即報名"
 
 #. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils__id
@@ -86,9 +83,13 @@ msgid "Programmes"
 msgstr "課程"
 
 #. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid "Shaping Tomorrow's <br/>Game Changers"
-msgstr "塑造明日的<br/>遊戲規則改變者"
+#: model:ir.module.module,description:base.module_theme_bewise
+msgid ""
+"Spotlight intro hero with oversized heading leads into color-blocked "
+"information, a collapsible FAQ, and shape-cropped team cards, with bold "
+"geometric shape motifs accenting the team block. Information-driven / suited "
+"for universities, schools, kids education programs, and learning platforms"
+msgstr ""
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_color_blocks_2
@@ -101,9 +102,26 @@ msgid "Theme Utils"
 msgstr "主題"
 
 #. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid "Where tradition meets innovation – a legacy of excellence in education."
-msgstr "揉合傳統與創新，傳承卓越教育。"
+#: model:ir.module.module,summary:base.module_theme_bewise
+msgid "University, Education, Schools, Young, Play, Kids"
+msgstr ""
+
+#~ msgid ""
+#~ "Empower young minds with quality education and engaging learning "
+#~ "experiences that nurture creativity, play, and academic excellence."
+#~ msgstr ""
+#~ "透過優質教育及引人入勝的學習體驗，為年輕人的思想提供動力，培養創意、樂趣及"
+#~ "卓越學術成就。"
+
+#~ msgid "Enroll Today"
+#~ msgstr "立即報名"
+
+#~ msgid "Shaping Tomorrow's <br/>Game Changers"
+#~ msgstr "塑造明日的<br/>遊戲規則改變者"
+
+#~ msgid ""
+#~ "Where tradition meets innovation – a legacy of excellence in education."
+#~ msgstr "揉合傳統與創新，傳承卓越教育。"
 
 #~ msgid ""
 #~ "\" A leading institution for growth. <br/>Supportive, forward-thinking, "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2026-04-05 01:52+0000\n"
 "Last-Translator: \"Junko Augias (juau)\" <juau@odoo.com>\n"
 "Language-Team: Japanese <https://translate.odoo.com/projects/odoo-s19-2/"
@@ -19,6 +19,12 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.16.2\n"
+
+#. module: theme_bewise
+#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_masonry_block_default_template
+msgid ""
+"<a href=\"#\" class=\"o_translate_inline btn btn-primary\">Learn More</a>"
+msgstr ""
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_color_blocks_2
@@ -55,6 +61,11 @@ msgstr ""
 "        <br/>"
 
 #. module: theme_bewise
+#: model:ir.module.module,shortdesc:base.module_theme_bewise
+msgid "Be Wise Theme"
+msgstr ""
+
+#. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils__display_name
 msgid "Display Name"
 msgstr "表示名"
@@ -63,20 +74,6 @@ msgstr "表示名"
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_title
 msgid "Empower young minds"
 msgstr "若い才能を育てる"
-
-#. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid ""
-"Empower young minds with quality education and engaging learning experiences "
-"that nurture creativity, play, and academic excellence."
-msgstr ""
-"創造性、遊び、学業の卓越性を育む質の高い教育と魅力的な学習体験で、若い才能を"
-"育てます。"
-
-#. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid "Enroll Today"
-msgstr "今すぐ登録"
 
 #. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils__id
@@ -89,9 +86,13 @@ msgid "Programmes"
 msgstr "プログラム"
 
 #. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid "Shaping Tomorrow's <br/>Game Changers"
-msgstr "未来の <br/>ゲーム・チェンジャーを輩出"
+#: model:ir.module.module,description:base.module_theme_bewise
+msgid ""
+"Spotlight intro hero with oversized heading leads into color-blocked "
+"information, a collapsible FAQ, and shape-cropped team cards, with bold "
+"geometric shape motifs accenting the team block. Information-driven / suited "
+"for universities, schools, kids education programs, and learning platforms"
+msgstr ""
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_color_blocks_2
@@ -104,9 +105,26 @@ msgid "Theme Utils"
 msgstr "テーマユーティリティ"
 
 #. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid "Where tradition meets innovation – a legacy of excellence in education."
-msgstr "伝統と革新が出会う場所―卓越した教育遺産。"
+#: model:ir.module.module,summary:base.module_theme_bewise
+msgid "University, Education, Schools, Young, Play, Kids"
+msgstr ""
+
+#~ msgid ""
+#~ "Empower young minds with quality education and engaging learning "
+#~ "experiences that nurture creativity, play, and academic excellence."
+#~ msgstr ""
+#~ "創造性、遊び、学業の卓越性を育む質の高い教育と魅力的な学習体験で、若い才能"
+#~ "を育てます。"
+
+#~ msgid "Enroll Today"
+#~ msgstr "今すぐ登録"
+
+#~ msgid "Shaping Tomorrow's <br/>Game Changers"
+#~ msgstr "未来の <br/>ゲーム・チェンジャーを輩出"
+
+#~ msgid ""
+#~ "Where tradition meets innovation – a legacy of excellence in education."
+#~ msgstr "伝統と革新が出会う場所―卓越した教育遺産。"
 
 #~ msgid ""
 #~ "\" A leading institution for growth. <br/>Supportive, forward-thinking, "

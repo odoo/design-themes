@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2026-03-01 01:58+0000\n"
 "Last-Translator: \"Manon Rondou (ronm)\" <ronm@odoo.com>\n"
 "Language-Team: French <https://translate.odoo.com/projects/odoo-s19-2/"
@@ -33,11 +33,14 @@ msgstr ""
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
-"all in one"
+"<span class=\"text-o-color-2\" data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">ESTATE</span><br/><span data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">Your easy home search, all in one</span>"
 msgstr ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>Une recherche de logement "
-"facile et tout-en-un"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -59,9 +62,15 @@ msgid "Bored with your interior?"
 msgstr "Vous en avez assez de votre intérieur ?"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Carefully handpicked by our experts"
-msgstr "Sélectionnés avec soin par nos experts"
+#: model:ir.module.module,description:base.module_theme_real_estate
+msgid ""
+"Cover hero leads into stepped duo-panel text-and-image rows, a three-column "
+"listing layout, a team description grid, a numbers showcase, and a "
+"testimonial carousel before a call-to-action, with restrained airy styling "
+"and no recurring background shape decoration. Listing-and-trust driven / "
+"suited for real estate agencies, construction services, vacation rentals, "
+"and accommodation listings"
+msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -79,11 +88,6 @@ msgid "Customer, sold an appartement"
 msgstr "Client, a vendu un appartement"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Discover our latest properties"
-msgstr "Découvrez nos dernières acquisitions"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
@@ -97,16 +101,6 @@ msgid "Display Name"
 msgstr "Nom d'affichage"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Elegant, modern sophisticated architecture with an impressive in large scale "
-"home designed with the finest imported finishes. Marble and wood floors..."
-msgstr ""
-"Une architecture élégante, moderne et sophistiquée avec une impressionnante "
-"maison à grande échelle conçue avec les finitions importées les plus "
-"raffinées. Du marbre et des planchers en bois..."
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid ""
 "From start to finish, they were extremely professional, friendly, helpful "
@@ -115,11 +109,6 @@ msgstr ""
 "Du début à la fin, ils ont été extrêmement professionnels, sympathiques, "
 "serviables et il a été facile de faire des affaires avec eux. Je suis très "
 "satisfait de l'expérience et de l'entreprise."
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "House On The Hill"
-msgstr "La maison sur la colline"
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__id
@@ -142,11 +131,6 @@ msgstr ""
 "avec nous pour la vente de votre bien."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Moutain View"
-msgstr "Vue montagne"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Our decoration experts are at your disposal to guide you step by step in the "
@@ -158,11 +142,6 @@ msgstr ""
 "conseils pour votre décoration d'intérieur."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Paradise Residence"
-msgstr "Résidence Paradis"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid ""
 "Positive energy, great team spirit, hard workers and awesome people! I "
@@ -172,18 +151,21 @@ msgstr ""
 "des gens formidables ! Je les recommande vivement !"
 
 #. module: theme_real_estate
+#: model:ir.module.module,shortdesc:base.module_theme_real_estate
+msgid "Real Estate Theme"
+msgstr ""
+
+#. module: theme_real_estate
+#: model:ir.module.module,summary:base.module_theme_real_estate
+msgid ""
+"Real Estate, Agencies, Construction, Services, Accomodations, Lodging, "
+"Hosting, Houses, Appartments, Vacations, Holidays, Travels"
+msgstr ""
+
+#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid "Search Now"
 msgstr "Rechercher maintenant"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"The house is surrounded by garden terraces that create an intimate ambience. "
-"With no overlooking neighbours, the garden offers real privacy."
-msgstr ""
-"La maison est entourée de terrasses qui créent une ambiance intime. Sans vis-"
-"à-vis, le jardin offre une réelle intimité."
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
@@ -191,25 +173,9 @@ msgid "Theme Utils"
 msgstr "Thèmes utiles"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "View details"
-msgstr "Voir les détails"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "Want To Become A Real Estate Agent?"
 msgstr "Vous voulez devenir agent immobilier ?"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Waste no time in viewing this truly stunning property. The property's "
-"surroundings really set it apart, offering idyllic sea views overlooking a "
-"park."
-msgstr ""
-"Ne perdez pas de temps à visiter cette superbe propriété. Les environs de la "
-"propriété la distinguent vraiment, offrant des vues idylliques sur la mer et "
-"sur un parc."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
@@ -221,12 +187,61 @@ msgstr "Nous vous aiderons à développer votre carrière et votre croissance."
 msgid "Where every house becomes a home."
 msgstr "Nous faisons de chaque maison un foyer."
 
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
-msgid ""
-"With a simple click, finding your dream home has never been easier.<br/><br/>"
-msgstr ""
-"Il suffit d'un simple clic pour trouver la maison de vos rêves.<br/><br/>"
+#~ msgid ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
+#~ "all in one"
+#~ msgstr ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>Une recherche de "
+#~ "logement facile et tout-en-un"
+
+#~ msgid "Carefully handpicked by our experts"
+#~ msgstr "Sélectionnés avec soin par nos experts"
+
+#~ msgid "Discover our latest properties"
+#~ msgstr "Découvrez nos dernières acquisitions"
+
+#~ msgid ""
+#~ "Elegant, modern sophisticated architecture with an impressive in large "
+#~ "scale home designed with the finest imported finishes. Marble and wood "
+#~ "floors..."
+#~ msgstr ""
+#~ "Une architecture élégante, moderne et sophistiquée avec une "
+#~ "impressionnante maison à grande échelle conçue avec les finitions "
+#~ "importées les plus raffinées. Du marbre et des planchers en bois..."
+
+#~ msgid "House On The Hill"
+#~ msgstr "La maison sur la colline"
+
+#~ msgid "Moutain View"
+#~ msgstr "Vue montagne"
+
+#~ msgid "Paradise Residence"
+#~ msgstr "Résidence Paradis"
+
+#~ msgid ""
+#~ "The house is surrounded by garden terraces that create an intimate "
+#~ "ambience. With no overlooking neighbours, the garden offers real privacy."
+#~ msgstr ""
+#~ "La maison est entourée de terrasses qui créent une ambiance intime. Sans "
+#~ "vis-à-vis, le jardin offre une réelle intimité."
+
+#~ msgid "View details"
+#~ msgstr "Voir les détails"
+
+#~ msgid ""
+#~ "Waste no time in viewing this truly stunning property. The property's "
+#~ "surroundings really set it apart, offering idyllic sea views overlooking "
+#~ "a park."
+#~ msgstr ""
+#~ "Ne perdez pas de temps à visiter cette superbe propriété. Les environs de "
+#~ "la propriété la distinguent vraiment, offrant des vues idylliques sur la "
+#~ "mer et sur un parc."
+
+#~ msgid ""
+#~ "With a simple click, finding your dream home has never been easier.<br/"
+#~ "><br/>"
+#~ msgstr ""
+#~ "Il suffit d'un simple clic pour trouver la maison de vos rêves.<br/><br/>"
 
 #~ msgid ""
 #~ "\" A top choice for real estate. <br/>Expert guidance, great deals, and "

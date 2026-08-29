@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.2a1+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2026-01-06 10:10+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,6 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: theme_bewise
+#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_masonry_block_default_template
+msgid ""
+"<a href=\"#\" class=\"o_translate_inline btn btn-primary\">Learn More</a>"
+msgstr ""
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_color_blocks_2
@@ -39,6 +45,11 @@ msgid ""
 msgstr ""
 
 #. module: theme_bewise
+#: model:ir.module.module,shortdesc:base.module_theme_bewise
+msgid "Be Wise Theme"
+msgstr ""
+
+#. module: theme_bewise
 #: model:ir.model.fields,field_description:theme_bewise.field_theme_utils__display_name
 msgid "Display Name"
 msgstr ""
@@ -46,18 +57,6 @@ msgstr ""
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_title
 msgid "Empower young minds"
-msgstr ""
-
-#. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid ""
-"Empower young minds with quality education and engaging learning experiences "
-"that nurture creativity, play, and academic excellence."
-msgstr ""
-
-#. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid "Enroll Today"
 msgstr ""
 
 #. module: theme_bewise
@@ -71,8 +70,12 @@ msgid "Programmes"
 msgstr ""
 
 #. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid "Shaping Tomorrow's <br/>Game Changers"
+#: model:ir.module.module,description:base.module_theme_bewise
+msgid ""
+"Spotlight intro hero with oversized heading leads into color-blocked "
+"information, a collapsible FAQ, and shape-cropped team cards, with bold "
+"geometric shape motifs accenting the team block. Information-driven / suited "
+"for universities, schools, kids education programs, and learning platforms"
 msgstr ""
 
 #. module: theme_bewise
@@ -86,6 +89,6 @@ msgid "Theme Utils"
 msgstr ""
 
 #. module: theme_bewise
-#: model_terms:theme.ir.ui.view,arch:theme_bewise.s_striped_center_top
-msgid "Where tradition meets innovation – a legacy of excellence in education."
+#: model:ir.module.module,summary:base.module_theme_bewise
+msgid "University, Education, Schools, Young, Play, Kids"
 msgstr ""

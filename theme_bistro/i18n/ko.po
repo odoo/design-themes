@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-09-17 02:51+0000\n"
 "Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
 "Language-Team: Korean <https://translate.odoo.com/projects/odoo-19/"
@@ -20,37 +20,27 @@ msgstr ""
 "X-Generator: Weblate 5.12.2\n"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid "A Deep Dive into Flavor and Innovation"
-msgstr "맛과 혁신에 대한 심층 분석"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "A cozy ambiance for any occasion"
-msgstr "어떤 상황에도 어울리는 아늑한 분위기의 공간"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"A truly exquisite dining experience. I highly recommend the Mustard Sauce, "
-"out of this world."
+"<a href=\"#\" class=\"btn btn-primary o_translate_inline\">Book a table</a>"
 msgstr ""
-"정말로 강렬한 디너 시간을 경험해 보세요. 천상의 맛을 지닌 머스타드 소스를 강"
-"력히 추천합니다."
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"Cosy and friendly, good atmosphere and super food. Especially the spiced "
-"fruit crumble."
+"<span class=\"o_rfs\" style=\"font-size: clamp(8px, 1em + 5.5556vw, 400px);"
+"\">BISTRO</span>"
 msgstr ""
-"편안하고 친근한, 훌륭한 분위기와 슈퍼 푸드. 특히 풍미 깊은 과일 크럼블을 맛보"
-"세요."
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Delight in Every Bite, Every Moment"
-msgstr "모든 순간, 모든 음식의 즐거움"
+#: model:ir.module.module,shortdesc:base.module_theme_bistro
+msgid "Bistro Theme"
+msgstr ""
+
+#. module: theme_bistro
+#: model:ir.module.module,summary:base.module_theme_bistro
+msgid "Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__display_name
@@ -58,30 +48,15 @@ msgid "Display Name"
 msgstr "표시명"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Experience our passion for great food and service"
-msgstr "훌륭한 음식과 서비스에 대한 열정을 경험하세요"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
+#: model:ir.module.module,description:base.module_theme_bistro
 msgid ""
-"Experience the finest in dining with our carefully curated menus. Whether "
-"you’re at a bistro, bar, or cafe, our culinary offerings are sure to delight."
-"<br/><br/> Taste the difference in every dish."
+"Horizontal navigation above a full-screen image hero carrying an oversized "
+"serif wordmark, a two-column bold statement, a split cafe-style price list "
+"on a deep colored panel, a six-card review wall with star ratings, a sharp-"
+"cornered image and text box, and opening hours over a full-width dish "
+"visual. Menu-and-pricing forward with little long-form copy / suited for "
+"bistros, restaurants, bars, pubs, cafes, and catering services"
 msgstr ""
-"엄선된 메뉴로 최고의 다이닝을 경험해 보세요. 비스트로, 바, 카페 등 어느 곳에"
-"서든 만족스러운 경험을 선사할 것입니다. <br/><br/>모든 요리의 차이를 느껴보세"
-"요."
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Fresh ingredients, deliciously prepared"
-msgstr "신선한 재료, 맛있게 조리된 요리"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Gourmet dishes that will tempt your taste buds"
-msgstr "입맛을 사로잡는 미식 요리"
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__id
@@ -89,40 +64,76 @@ msgid "ID"
 msgstr "ID"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Reserve a Table"
-msgstr "테이블 예약"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Savor the Flavors of Our Bistro"
-msgstr "비스트로의 맛을 음미하기"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Taste &amp; Enjoy"
-msgstr "맛보기 &amp; 즐기기"
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
+msgid "Scroll down to next section"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model,name:theme_bistro.model_theme_utils
 msgid "Theme Utils"
 msgstr "테마 유틸"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
-msgid "This place is perfect for groups or a casual date night."
-msgstr "단체 모임이나 캐주얼한 데이트용으로 완벽한 장소입니다."
+#~ msgid "A Deep Dive into Flavor and Innovation"
+#~ msgstr "맛과 혁신에 대한 심층 분석"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid ""
-"Transform your dining experience with our new menu, where classic dishes "
-"meet modern creativity. Elevate your palate with flavors that blend "
-"tradition and innovation seamlessly."
-msgstr ""
-"클래식한 요리와 현대적인 창의성이 조화를 이룬 새로운 메뉴로 다이닝 경험을 새"
-"롭게 바꿔보세요. 전통과 혁신이 완벽하게 어우러진 풍미로 미각의 품격을 높여보"
-"세요."
+#~ msgid "A cozy ambiance for any occasion"
+#~ msgstr "어떤 상황에도 어울리는 아늑한 분위기의 공간"
+
+#~ msgid ""
+#~ "A truly exquisite dining experience. I highly recommend the Mustard "
+#~ "Sauce, out of this world."
+#~ msgstr ""
+#~ "정말로 강렬한 디너 시간을 경험해 보세요. 천상의 맛을 지닌 머스타드 소스를 "
+#~ "강력히 추천합니다."
+
+#~ msgid ""
+#~ "Cosy and friendly, good atmosphere and super food. Especially the spiced "
+#~ "fruit crumble."
+#~ msgstr ""
+#~ "편안하고 친근한, 훌륭한 분위기와 슈퍼 푸드. 특히 풍미 깊은 과일 크럼블을 "
+#~ "맛보세요."
+
+#~ msgid "Delight in Every Bite, Every Moment"
+#~ msgstr "모든 순간, 모든 음식의 즐거움"
+
+#~ msgid "Experience our passion for great food and service"
+#~ msgstr "훌륭한 음식과 서비스에 대한 열정을 경험하세요"
+
+#~ msgid ""
+#~ "Experience the finest in dining with our carefully curated menus. Whether "
+#~ "you’re at a bistro, bar, or cafe, our culinary offerings are sure to "
+#~ "delight.<br/><br/> Taste the difference in every dish."
+#~ msgstr ""
+#~ "엄선된 메뉴로 최고의 다이닝을 경험해 보세요. 비스트로, 바, 카페 등 어느 곳"
+#~ "에서든 만족스러운 경험을 선사할 것입니다. <br/><br/>모든 요리의 차이를 느"
+#~ "껴보세요."
+
+#~ msgid "Fresh ingredients, deliciously prepared"
+#~ msgstr "신선한 재료, 맛있게 조리된 요리"
+
+#~ msgid "Gourmet dishes that will tempt your taste buds"
+#~ msgstr "입맛을 사로잡는 미식 요리"
+
+#~ msgid "Reserve a Table"
+#~ msgstr "테이블 예약"
+
+#~ msgid "Savor the Flavors of Our Bistro"
+#~ msgstr "비스트로의 맛을 음미하기"
+
+#~ msgid "Taste &amp; Enjoy"
+#~ msgstr "맛보기 &amp; 즐기기"
+
+#~ msgid "This place is perfect for groups or a casual date night."
+#~ msgstr "단체 모임이나 캐주얼한 데이트용으로 완벽한 장소입니다."
+
+#~ msgid ""
+#~ "Transform your dining experience with our new menu, where classic dishes "
+#~ "meet modern creativity. Elevate your palate with flavors that blend "
+#~ "tradition and innovation seamlessly."
+#~ msgstr ""
+#~ "클래식한 요리와 현대적인 창의성이 조화를 이룬 새로운 메뉴로 다이닝 경험을 "
+#~ "새롭게 바꿔보세요. 전통과 혁신이 완벽하게 어우러진 풍미로 미각의 품격을 높"
+#~ "여보세요."
 
 #~ msgid ""
 #~ "\" A perfect spot for great food. <br/>Cozy atmosphere, excellent "

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-12-03 13:06+0000\n"
 "Last-Translator: \"Anastasiia Koroleva (koan)\" <koan@odoo.com>\n"
 "Language-Team: Russian <https://translate.odoo.com/projects/odoo-19/"
@@ -23,37 +23,27 @@ msgstr ""
 "X-Generator: Weblate 5.14.3\n"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid "A Deep Dive into Flavor and Innovation"
-msgstr "Полное погружение в мир вкуса и инноваций"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "A cozy ambiance for any occasion"
-msgstr "Уютная атмосфера для любого случая"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"A truly exquisite dining experience. I highly recommend the Mustard Sauce, "
-"out of this world."
+"<a href=\"#\" class=\"btn btn-primary o_translate_inline\">Book a table</a>"
 msgstr ""
-"По-настоящему изысканный обед. Я очень рекомендую горчичный соус, это нечто "
-"из ряда вон выходящее."
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"Cosy and friendly, good atmosphere and super food. Especially the spiced "
-"fruit crumble."
+"<span class=\"o_rfs\" style=\"font-size: clamp(8px, 1em + 5.5556vw, 400px);"
+"\">BISTRO</span>"
 msgstr ""
-"Уютный и дружелюбный ресторан, хорошая атмосфера и превосходная еда. "
-"Особенно фруктовый крамбл со специями."
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Delight in Every Bite, Every Moment"
-msgstr "Наслаждение в каждом кусочке, в каждом моменте"
+#: model:ir.module.module,shortdesc:base.module_theme_bistro
+msgid "Bistro Theme"
+msgstr ""
+
+#. module: theme_bistro
+#: model:ir.module.module,summary:base.module_theme_bistro
+msgid "Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__display_name
@@ -61,30 +51,15 @@ msgid "Display Name"
 msgstr ""
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Experience our passion for great food and service"
-msgstr "Оцените нашу страсть к отличной еде и сервису"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
+#: model:ir.module.module,description:base.module_theme_bistro
 msgid ""
-"Experience the finest in dining with our carefully curated menus. Whether "
-"you’re at a bistro, bar, or cafe, our culinary offerings are sure to delight."
-"<br/><br/> Taste the difference in every dish."
+"Horizontal navigation above a full-screen image hero carrying an oversized "
+"serif wordmark, a two-column bold statement, a split cafe-style price list "
+"on a deep colored panel, a six-card review wall with star ratings, a sharp-"
+"cornered image and text box, and opening hours over a full-width dish "
+"visual. Menu-and-pricing forward with little long-form copy / suited for "
+"bistros, restaurants, bars, pubs, cafes, and catering services"
 msgstr ""
-"Оцените лучшее в гастрономии с нашими тщательно подобранными меню. В бистро, "
-"баре или кафе – наши блюда непременно порадуют вас.<br/><br/> Почувствуйте "
-"разницу в каждом блюде."
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Fresh ingredients, deliciously prepared"
-msgstr "Свежие ингредиенты, изысканная подача"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Gourmet dishes that will tempt your taste buds"
-msgstr "Изысканные блюда, которые покорят ваши вкусовые рецепторы"
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__id
@@ -92,42 +67,78 @@ msgid "ID"
 msgstr "ID"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Reserve a Table"
-msgstr "Забронировать столик"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Savor the Flavors of Our Bistro"
-msgstr "Насладитесь вкусами нашего бистро"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Taste &amp; Enjoy"
-msgstr "Оцените вкус и насладитесь моментом"
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
+msgid "Scroll down to next section"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model,name:theme_bistro.model_theme_utils
 msgid "Theme Utils"
 msgstr "Тематические утилиты"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
-msgid "This place is perfect for groups or a casual date night."
-msgstr ""
-"Это место идеально подходит как для групповых встреч, так и для "
-"неформального свидания."
+#~ msgid "A Deep Dive into Flavor and Innovation"
+#~ msgstr "Полное погружение в мир вкуса и инноваций"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid ""
-"Transform your dining experience with our new menu, where classic dishes "
-"meet modern creativity. Elevate your palate with flavors that blend "
-"tradition and innovation seamlessly."
-msgstr ""
-"Преобразите свое восприятие вкуса с нашим новым меню, где классические блюда "
-"встречаются с современным творческим подходом. Почувствуйте гармонию "
-"традиций и инноваций."
+#~ msgid "A cozy ambiance for any occasion"
+#~ msgstr "Уютная атмосфера для любого случая"
+
+#~ msgid ""
+#~ "A truly exquisite dining experience. I highly recommend the Mustard "
+#~ "Sauce, out of this world."
+#~ msgstr ""
+#~ "По-настоящему изысканный обед. Я очень рекомендую горчичный соус, это "
+#~ "нечто из ряда вон выходящее."
+
+#~ msgid ""
+#~ "Cosy and friendly, good atmosphere and super food. Especially the spiced "
+#~ "fruit crumble."
+#~ msgstr ""
+#~ "Уютный и дружелюбный ресторан, хорошая атмосфера и превосходная еда. "
+#~ "Особенно фруктовый крамбл со специями."
+
+#~ msgid "Delight in Every Bite, Every Moment"
+#~ msgstr "Наслаждение в каждом кусочке, в каждом моменте"
+
+#~ msgid "Experience our passion for great food and service"
+#~ msgstr "Оцените нашу страсть к отличной еде и сервису"
+
+#~ msgid ""
+#~ "Experience the finest in dining with our carefully curated menus. Whether "
+#~ "you’re at a bistro, bar, or cafe, our culinary offerings are sure to "
+#~ "delight.<br/><br/> Taste the difference in every dish."
+#~ msgstr ""
+#~ "Оцените лучшее в гастрономии с нашими тщательно подобранными меню. В "
+#~ "бистро, баре или кафе – наши блюда непременно порадуют вас.<br/><br/> "
+#~ "Почувствуйте разницу в каждом блюде."
+
+#~ msgid "Fresh ingredients, deliciously prepared"
+#~ msgstr "Свежие ингредиенты, изысканная подача"
+
+#~ msgid "Gourmet dishes that will tempt your taste buds"
+#~ msgstr "Изысканные блюда, которые покорят ваши вкусовые рецепторы"
+
+#~ msgid "Reserve a Table"
+#~ msgstr "Забронировать столик"
+
+#~ msgid "Savor the Flavors of Our Bistro"
+#~ msgstr "Насладитесь вкусами нашего бистро"
+
+#~ msgid "Taste &amp; Enjoy"
+#~ msgstr "Оцените вкус и насладитесь моментом"
+
+#~ msgid "This place is perfect for groups or a casual date night."
+#~ msgstr ""
+#~ "Это место идеально подходит как для групповых встреч, так и для "
+#~ "неформального свидания."
+
+#~ msgid ""
+#~ "Transform your dining experience with our new menu, where classic dishes "
+#~ "meet modern creativity. Elevate your palate with flavors that blend "
+#~ "tradition and innovation seamlessly."
+#~ msgstr ""
+#~ "Преобразите свое восприятие вкуса с нашим новым меню, где классические "
+#~ "блюда встречаются с современным творческим подходом. Почувствуйте "
+#~ "гармонию традиций и инноваций."
 
 #~ msgid ""
 #~ "\" A perfect spot for great food. <br/>Cozy atmosphere, excellent "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2026-03-01 01:58+0000\n"
 "Last-Translator: \"Kwanghee Park (kwpa)\" <kwpa@odoo.com>\n"
 "Language-Team: Korean <https://translate.odoo.com/projects/odoo-s19-2/"
@@ -32,11 +32,14 @@ msgstr ""
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
-"all in one"
+"<span class=\"text-o-color-2\" data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">ESTATE</span><br/><span data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">Your easy home search, all in one</span>"
 msgstr ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>간편한 주택 검색을 한 번"
-"에."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -58,9 +61,15 @@ msgid "Bored with your interior?"
 msgstr "인테리어가 따분하게 느껴지시나요?"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Carefully handpicked by our experts"
-msgstr "전문가가 엄선한 매물"
+#: model:ir.module.module,description:base.module_theme_real_estate
+msgid ""
+"Cover hero leads into stepped duo-panel text-and-image rows, a three-column "
+"listing layout, a team description grid, a numbers showcase, and a "
+"testimonial carousel before a call-to-action, with restrained airy styling "
+"and no recurring background shape decoration. Listing-and-trust driven / "
+"suited for real estate agencies, construction services, vacation rentals, "
+"and accommodation listings"
+msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -78,11 +87,6 @@ msgid "Customer, sold an appartement"
 msgstr "아파트를 판매한 고객"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Discover our latest properties"
-msgstr "최신 부동산 알아보기"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
@@ -94,15 +98,6 @@ msgid "Display Name"
 msgstr "표시명"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Elegant, modern sophisticated architecture with an impressive in large scale "
-"home designed with the finest imported finishes. Marble and wood floors..."
-msgstr ""
-"최고급의 수입 마감재를 사용하여 우아하고 현대적으로 세련되게 디자인된 인상적"
-"인 대저택입니다. 대리석과 나무 바닥을 확인해 보세요."
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid ""
 "From start to finish, they were extremely professional, friendly, helpful "
@@ -110,11 +105,6 @@ msgid ""
 msgstr ""
 "처음부터 끝까지, 굉장히 전문적이고 친절하면서도 많은 도움을 주셔서 함께 사업"
 "하기가 편했습니다. 경험한 내용과 회사에 아주 만족합니다."
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "House On The Hill"
-msgstr "언덕 위의 저택"
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__id
@@ -136,11 +126,6 @@ msgstr ""
 "다."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Moutain View"
-msgstr "마운틴 뷰"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Our decoration experts are at your disposal to guide you step by step in the "
@@ -149,11 +134,6 @@ msgid ""
 msgstr ""
 "실내 건축 장식 전문가가 고객의 인테리어 디자인을 단계별로 안내해 드리며, 인테"
 "리어 디자인에 대해서 최고의 조언을 해 드립니다."
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Paradise Residence"
-msgstr "천국에서의 삶"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -165,18 +145,21 @@ msgstr ""
 "게 추천합니다!"
 
 #. module: theme_real_estate
+#: model:ir.module.module,shortdesc:base.module_theme_real_estate
+msgid "Real Estate Theme"
+msgstr ""
+
+#. module: theme_real_estate
+#: model:ir.module.module,summary:base.module_theme_real_estate
+msgid ""
+"Real Estate, Agencies, Construction, Services, Accomodations, Lodging, "
+"Hosting, Houses, Appartments, Vacations, Holidays, Travels"
+msgstr ""
+
+#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid "Search Now"
 msgstr "지금 검색"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"The house is surrounded by garden terraces that create an intimate ambience. "
-"With no overlooking neighbours, the garden offers real privacy."
-msgstr ""
-"집은 친밀한 분위기를 조성하는 정원 테라스로 둘러싸여 있습니다. 정원에서 내려"
-"다보이는 이웃 건물이 없어 진정한 프라이버시를 누릴 수 있습니다."
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
@@ -184,24 +167,9 @@ msgid "Theme Utils"
 msgstr "테마 유틸"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "View details"
-msgstr "자세히 보기"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "Want To Become A Real Estate Agent?"
 msgstr "부동산 중개사가 되고 싶으신가요?"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Waste no time in viewing this truly stunning property. The property's "
-"surroundings really set it apart, offering idyllic sea views overlooking a "
-"park."
-msgstr ""
-"정말 아름다운 이 건물을 감상하기 위해 아낌없이 시간을 투자해 보세요. 공원이 "
-"내려다보이는 목가적인 바다 전망과 함께 건물의 주변 환경을 진정 차별화됩니다."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
@@ -213,13 +181,61 @@ msgstr "커리어를 개발하고 발전하시도록 도와드립니다."
 msgid "Where every house becomes a home."
 msgstr "모든 집이 내 집처럼 변하는 곳."
 
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
-msgid ""
-"With a simple click, finding your dream home has never been easier.<br/><br/>"
-msgstr ""
-"클릭 한 번으로 꿈에 그리던 집을 찾는 일이 그 어느 때보다 쉬워졌습니다.<br/"
-"><br/>"
+#~ msgid ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
+#~ "all in one"
+#~ msgstr ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>간편한 주택 검색을 한 "
+#~ "번에."
+
+#~ msgid "Carefully handpicked by our experts"
+#~ msgstr "전문가가 엄선한 매물"
+
+#~ msgid "Discover our latest properties"
+#~ msgstr "최신 부동산 알아보기"
+
+#~ msgid ""
+#~ "Elegant, modern sophisticated architecture with an impressive in large "
+#~ "scale home designed with the finest imported finishes. Marble and wood "
+#~ "floors..."
+#~ msgstr ""
+#~ "최고급의 수입 마감재를 사용하여 우아하고 현대적으로 세련되게 디자인된 인상"
+#~ "적인 대저택입니다. 대리석과 나무 바닥을 확인해 보세요."
+
+#~ msgid "House On The Hill"
+#~ msgstr "언덕 위의 저택"
+
+#~ msgid "Moutain View"
+#~ msgstr "마운틴 뷰"
+
+#~ msgid "Paradise Residence"
+#~ msgstr "천국에서의 삶"
+
+#~ msgid ""
+#~ "The house is surrounded by garden terraces that create an intimate "
+#~ "ambience. With no overlooking neighbours, the garden offers real privacy."
+#~ msgstr ""
+#~ "집은 친밀한 분위기를 조성하는 정원 테라스로 둘러싸여 있습니다. 정원에서 내"
+#~ "려다보이는 이웃 건물이 없어 진정한 프라이버시를 누릴 수 있습니다."
+
+#~ msgid "View details"
+#~ msgstr "자세히 보기"
+
+#~ msgid ""
+#~ "Waste no time in viewing this truly stunning property. The property's "
+#~ "surroundings really set it apart, offering idyllic sea views overlooking "
+#~ "a park."
+#~ msgstr ""
+#~ "정말 아름다운 이 건물을 감상하기 위해 아낌없이 시간을 투자해 보세요. 공원"
+#~ "이 내려다보이는 목가적인 바다 전망과 함께 건물의 주변 환경을 진정 차별화됩"
+#~ "니다."
+
+#~ msgid ""
+#~ "With a simple click, finding your dream home has never been easier.<br/"
+#~ "><br/>"
+#~ msgstr ""
+#~ "클릭 한 번으로 꿈에 그리던 집을 찾는 일이 그 어느 때보다 쉬워졌습니다.<br/"
+#~ "><br/>"
 
 #~ msgid ""
 #~ "\" A top choice for real estate. <br/>Expert guidance, great deals, and "

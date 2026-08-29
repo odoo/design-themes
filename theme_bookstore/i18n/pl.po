@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-09-18 02:51+0000\n"
 "Last-Translator: \"Tiffany Chang (tic)\" <tic@odoo.com>\n"
 "Language-Team: Polish <https://translate.odoo.com/projects/odoo-19/"
@@ -40,14 +40,19 @@ msgid "Adventure awaits at the Bookstore"
 msgstr "Przygoda czeka w Księgarni"
 
 #. module: theme_bookstore
+#: model:ir.module.module,shortdesc:base.module_theme_bookstore
+msgid "Bookstore Theme"
+msgstr ""
+
+#. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_key_images
 msgid "Boundless"
 msgstr "Bezgraniczny"
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_banner
-msgid "Come Visit Us <i class=\"fa fa-angle-right\"/>"
-msgstr "Odwiedź nas <i class=\"fa fa-angle-right\"/>"
+msgid "Come Visit Us <i class=\"oi\" data-icon=\"keyboard_arrow_right\"/>"
+msgstr ""
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_banner
@@ -94,6 +99,11 @@ msgid "ID"
 msgstr "ID"
 
 #. module: theme_bookstore
+#: model:ir.module.module,summary:base.module_theme_bookstore
+msgid "Library, Books, Magazines, Literature, Musics, Media, Store"
+msgstr ""
+
+#. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_key_images
 msgid "Our bestsellers of the moment"
 msgstr "Nasze bestsellery na ten moment"
@@ -109,9 +119,22 @@ msgid "Sci-fi Enthusiast"
 msgstr "Entuzjasta Sci-fi"
 
 #. module: theme_bookstore
+#: model:ir.module.module,description:base.module_theme_bookstore
+msgid ""
+"Search-led header above a banner hero, curated key images, a title block, "
+"and accordion-with-image collapsible chapters, with heavily-rounded "
+"containers, circular image accents, and connection line motifs throughout. "
+"Catalog-discovery driven, balancing image presentation with browseable "
+"text / suited for bookstores, libraries, magazine archives, and music or "
+"media retailers"
+msgstr ""
+
+#. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_cta_box
-msgid "Start Now<i class=\"fa fa-angle-right ms-2\" role=\"img\"/>"
-msgstr "Zacznij teraz<i class=\"fa fa-angle-right ms-2\" role=\"img\"/>"
+msgid ""
+"Start Now<i class=\"oi ms-2\" data-icon=\"keyboard_arrow_right\" "
+"role=\"img\"/>"
+msgstr ""
 
 #. module: theme_bookstore
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_title
@@ -168,6 +191,12 @@ msgstr "szerokość"
 #: model_terms:theme.ir.ui.view,arch:theme_bookstore.s_title
 msgid "— Antoine de Saint-Exupéry"
 msgstr "— Antoine de Saint-Exupéry"
+
+#~ msgid "Come Visit Us <i class=\"fa fa-angle-right\"/>"
+#~ msgstr "Odwiedź nas <i class=\"fa fa-angle-right\"/>"
+
+#~ msgid "Start Now<i class=\"fa fa-angle-right ms-2\" role=\"img\"/>"
+#~ msgstr "Zacznij teraz<i class=\"fa fa-angle-right ms-2\" role=\"img\"/>"
 
 #~ msgid ""
 #~ "\" A haven for book lovers. <br/>Warm, inviting atmosphere with "

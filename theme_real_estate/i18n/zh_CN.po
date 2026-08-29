@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-10-02 02:51+0000\n"
 "Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://translate.odoo.com/"
@@ -34,9 +34,14 @@ msgstr ""
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
-"all in one"
-msgstr "<font class=\"text-o-color-2\">ESTATE ®</font><br/>一站式轻松搜索房屋"
+"<span class=\"text-o-color-2\" data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">ESTATE</span><br/><span data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">Your easy home search, all in one</span>"
+msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -58,9 +63,15 @@ msgid "Bored with your interior?"
 msgstr "厌倦了室内装饰？"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Carefully handpicked by our experts"
-msgstr "由我们的专家精心挑选"
+#: model:ir.module.module,description:base.module_theme_real_estate
+msgid ""
+"Cover hero leads into stepped duo-panel text-and-image rows, a three-column "
+"listing layout, a team description grid, a numbers showcase, and a "
+"testimonial carousel before a call-to-action, with restrained airy styling "
+"and no recurring background shape decoration. Listing-and-trust driven / "
+"suited for real estate agencies, construction services, vacation rentals, "
+"and accommodation listings"
+msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -78,11 +89,6 @@ msgid "Customer, sold an appartement"
 msgstr "客户，出售了一套公寓"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Discover our latest properties"
-msgstr "了解我们的最新房产"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
@@ -94,15 +100,6 @@ msgid "Display Name"
 msgstr "显示名称"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Elegant, modern sophisticated architecture with an impressive in large scale "
-"home designed with the finest imported finishes. Marble and wood floors..."
-msgstr ""
-"优雅、现代、精致的建筑风格，令人印象深刻的大尺度住宅设计，采用最优质的进口饰"
-"面。大理石和木地板..."
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid ""
 "From start to finish, they were extremely professional, friendly, helpful "
@@ -110,11 +107,6 @@ msgid ""
 msgstr ""
 "自始至终，他们都非常专业、友好、乐于助人，而且很容易打交道。我对这次经历和这"
 "家公司都非常满意。"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "House On The Hill"
-msgstr "山上的房子"
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__id
@@ -135,11 +127,6 @@ msgstr ""
 "        您可以自由决定是否与我们合作出售您的房产。"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Moutain View"
-msgstr "山景"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Our decoration experts are at your disposal to guide you step by step in the "
@@ -150,11 +137,6 @@ msgstr ""
 "议。"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Paradise Residence"
-msgstr "天堂公寓"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid ""
 "Positive energy, great team spirit, hard workers and awesome people! I "
@@ -163,18 +145,21 @@ msgstr ""
 "他们充满正能量，具有很强的团队精神，工作勤奋，是了不起的人！我热忱推荐他们！"
 
 #. module: theme_real_estate
+#: model:ir.module.module,shortdesc:base.module_theme_real_estate
+msgid "Real Estate Theme"
+msgstr ""
+
+#. module: theme_real_estate
+#: model:ir.module.module,summary:base.module_theme_real_estate
+msgid ""
+"Real Estate, Agencies, Construction, Services, Accomodations, Lodging, "
+"Hosting, Houses, Appartments, Vacations, Holidays, Travels"
+msgstr ""
+
+#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid "Search Now"
 msgstr "立即搜索"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"The house is surrounded by garden terraces that create an intimate ambience. "
-"With no overlooking neighbours, the garden offers real privacy."
-msgstr ""
-"房屋四周环绕着花园露台，营造出一种私密的氛围。周围没有高楼林立，花园私密度"
-"高。"
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
@@ -182,24 +167,9 @@ msgid "Theme Utils"
 msgstr "主题用途"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "View details"
-msgstr "查看详情"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "Want To Become A Real Estate Agent?"
 msgstr "想成为房地产经纪人？"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Waste no time in viewing this truly stunning property. The property's "
-"surroundings really set it apart, offering idyllic sea views overlooking a "
-"park."
-msgstr ""
-"请不要浪费任何时间来观赏这处真正令人惊叹的房产。该房产周围的环境使其与众不"
-"同，可以俯瞰公园的田园海景。"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
@@ -211,11 +181,57 @@ msgstr "我们将帮助您实现职业发展和成长。"
 msgid "Where every house becomes a home."
 msgstr "在这里，将每栋房子打造成家。"
 
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
-msgid ""
-"With a simple click, finding your dream home has never been easier.<br/><br/>"
-msgstr "只需轻轻点击，寻找梦中情房从未如此简单。<br/><br/>"
+#~ msgid ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
+#~ "all in one"
+#~ msgstr ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>一站式轻松搜索房屋"
+
+#~ msgid "Carefully handpicked by our experts"
+#~ msgstr "由我们的专家精心挑选"
+
+#~ msgid "Discover our latest properties"
+#~ msgstr "了解我们的最新房产"
+
+#~ msgid ""
+#~ "Elegant, modern sophisticated architecture with an impressive in large "
+#~ "scale home designed with the finest imported finishes. Marble and wood "
+#~ "floors..."
+#~ msgstr ""
+#~ "优雅、现代、精致的建筑风格，令人印象深刻的大尺度住宅设计，采用最优质的进口"
+#~ "饰面。大理石和木地板..."
+
+#~ msgid "House On The Hill"
+#~ msgstr "山上的房子"
+
+#~ msgid "Moutain View"
+#~ msgstr "山景"
+
+#~ msgid "Paradise Residence"
+#~ msgstr "天堂公寓"
+
+#~ msgid ""
+#~ "The house is surrounded by garden terraces that create an intimate "
+#~ "ambience. With no overlooking neighbours, the garden offers real privacy."
+#~ msgstr ""
+#~ "房屋四周环绕着花园露台，营造出一种私密的氛围。周围没有高楼林立，花园私密度"
+#~ "高。"
+
+#~ msgid "View details"
+#~ msgstr "查看详情"
+
+#~ msgid ""
+#~ "Waste no time in viewing this truly stunning property. The property's "
+#~ "surroundings really set it apart, offering idyllic sea views overlooking "
+#~ "a park."
+#~ msgstr ""
+#~ "请不要浪费任何时间来观赏这处真正令人惊叹的房产。该房产周围的环境使其与众不"
+#~ "同，可以俯瞰公园的田园海景。"
+
+#~ msgid ""
+#~ "With a simple click, finding your dream home has never been easier.<br/"
+#~ "><br/>"
+#~ msgstr "只需轻轻点击，寻找梦中情房从未如此简单。<br/><br/>"
 
 #~ msgid ""
 #~ "\" A top choice for real estate. <br/>Expert guidance, great deals, and "

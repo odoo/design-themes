@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-10-02 02:50+0000\n"
 "Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
 "Language-Team: Spanish <https://translate.odoo.com/projects/odoo-19/"
@@ -24,37 +24,27 @@ msgstr ""
 "X-Generator: Weblate 5.12.2\n"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid "A Deep Dive into Flavor and Innovation"
-msgstr "Una inmersión profunda en el sabor y la innovación"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "A cozy ambiance for any occasion"
-msgstr "Un ambiente agradable para cualquier ocasión"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"A truly exquisite dining experience. I highly recommend the Mustard Sauce, "
-"out of this world."
+"<a href=\"#\" class=\"btn btn-primary o_translate_inline\">Book a table</a>"
 msgstr ""
-"Una experiencia culinaria exquisita. Recomiendo la salsa de mostaza, es "
-"deliciosa."
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"Cosy and friendly, good atmosphere and super food. Especially the spiced "
-"fruit crumble."
+"<span class=\"o_rfs\" style=\"font-size: clamp(8px, 1em + 5.5556vw, 400px);"
+"\">BISTRO</span>"
 msgstr ""
-"Este es un restaurante íntimo y agradable, con un maravilloso ambiente y "
-"comida deliciosa. Lo mejor es el pastel de fruta."
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Delight in Every Bite, Every Moment"
-msgstr "Deléitese en cada bocado, en cada momento"
+#: model:ir.module.module,shortdesc:base.module_theme_bistro
+msgid "Bistro Theme"
+msgstr ""
+
+#. module: theme_bistro
+#: model:ir.module.module,summary:base.module_theme_bistro
+msgid "Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__display_name
@@ -62,30 +52,15 @@ msgid "Display Name"
 msgstr "Nombre para mostrar"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Experience our passion for great food and service"
-msgstr "Experimente nuestra pasión por la buena comida y un buen servicio"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
+#: model:ir.module.module,description:base.module_theme_bistro
 msgid ""
-"Experience the finest in dining with our carefully curated menus. Whether "
-"you’re at a bistro, bar, or cafe, our culinary offerings are sure to delight."
-"<br/><br/> Taste the difference in every dish."
+"Horizontal navigation above a full-screen image hero carrying an oversized "
+"serif wordmark, a two-column bold statement, a split cafe-style price list "
+"on a deep colored panel, a six-card review wall with star ratings, a sharp-"
+"cornered image and text box, and opening hours over a full-width dish "
+"visual. Menu-and-pricing forward with little long-form copy / suited for "
+"bistros, restaurants, bars, pubs, cafes, and catering services"
 msgstr ""
-"Nuestros menús están pensados cuidadosamente para que experimente lo mejor "
-"de la gastronomía. La oferta de nuestros restaurantes, bares y cafés lo "
-"deleitarán.<br/><br/>Conozca a qué sabe la diferencia en cada bocado."
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Fresh ingredients, deliciously prepared"
-msgstr "Ingredientes frescos preparados de la mejor manera"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Gourmet dishes that will tempt your taste buds"
-msgstr "Platos gourmet que deleitarán a su paladar"
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__id
@@ -93,41 +68,79 @@ msgid "ID"
 msgstr "ID"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Reserve a Table"
-msgstr "Reserve una mesa"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Savor the Flavors of Our Bistro"
-msgstr "Pruebe los sabores de nuestro restaurante"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Taste &amp; Enjoy"
-msgstr "Pruebe y disfrute"
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
+msgid "Scroll down to next section"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model,name:theme_bistro.model_theme_utils
 msgid "Theme Utils"
 msgstr "Herramientas del tema"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
-msgid "This place is perfect for groups or a casual date night."
-msgstr ""
-"Este es el lugar perfecto para cenar con tus amigos o para una cita casual."
+#~ msgid "A Deep Dive into Flavor and Innovation"
+#~ msgstr "Una inmersión profunda en el sabor y la innovación"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid ""
-"Transform your dining experience with our new menu, where classic dishes "
-"meet modern creativity. Elevate your palate with flavors that blend "
-"tradition and innovation seamlessly."
-msgstr ""
-"Transforme su experiencia gastronómica con nuestro nuevo menú, donde los "
-"platos clásicos y la creatividad moderna se unen. Haga que su paladar "
-"saboree la combinación entre tradición e innovación a la perfección."
+#~ msgid "A cozy ambiance for any occasion"
+#~ msgstr "Un ambiente agradable para cualquier ocasión"
+
+#~ msgid ""
+#~ "A truly exquisite dining experience. I highly recommend the Mustard "
+#~ "Sauce, out of this world."
+#~ msgstr ""
+#~ "Una experiencia culinaria exquisita. Recomiendo la salsa de mostaza, es "
+#~ "deliciosa."
+
+#~ msgid ""
+#~ "Cosy and friendly, good atmosphere and super food. Especially the spiced "
+#~ "fruit crumble."
+#~ msgstr ""
+#~ "Este es un restaurante íntimo y agradable, con un maravilloso ambiente y "
+#~ "comida deliciosa. Lo mejor es el pastel de fruta."
+
+#~ msgid "Delight in Every Bite, Every Moment"
+#~ msgstr "Deléitese en cada bocado, en cada momento"
+
+#~ msgid "Experience our passion for great food and service"
+#~ msgstr "Experimente nuestra pasión por la buena comida y un buen servicio"
+
+#~ msgid ""
+#~ "Experience the finest in dining with our carefully curated menus. Whether "
+#~ "you’re at a bistro, bar, or cafe, our culinary offerings are sure to "
+#~ "delight.<br/><br/> Taste the difference in every dish."
+#~ msgstr ""
+#~ "Nuestros menús están pensados cuidadosamente para que experimente lo "
+#~ "mejor de la gastronomía. La oferta de nuestros restaurantes, bares y "
+#~ "cafés lo deleitarán.<br/><br/>Conozca a qué sabe la diferencia en cada "
+#~ "bocado."
+
+#~ msgid "Fresh ingredients, deliciously prepared"
+#~ msgstr "Ingredientes frescos preparados de la mejor manera"
+
+#~ msgid "Gourmet dishes that will tempt your taste buds"
+#~ msgstr "Platos gourmet que deleitarán a su paladar"
+
+#~ msgid "Reserve a Table"
+#~ msgstr "Reserve una mesa"
+
+#~ msgid "Savor the Flavors of Our Bistro"
+#~ msgstr "Pruebe los sabores de nuestro restaurante"
+
+#~ msgid "Taste &amp; Enjoy"
+#~ msgstr "Pruebe y disfrute"
+
+#~ msgid "This place is perfect for groups or a casual date night."
+#~ msgstr ""
+#~ "Este es el lugar perfecto para cenar con tus amigos o para una cita "
+#~ "casual."
+
+#~ msgid ""
+#~ "Transform your dining experience with our new menu, where classic dishes "
+#~ "meet modern creativity. Elevate your palate with flavors that blend "
+#~ "tradition and innovation seamlessly."
+#~ msgstr ""
+#~ "Transforme su experiencia gastronómica con nuestro nuevo menú, donde los "
+#~ "platos clásicos y la creatividad moderna se unen. Haga que su paladar "
+#~ "saboree la combinación entre tradición e innovación a la perfección."
 
 #~ msgid ""
 #~ "\" A perfect spot for great food. <br/>Cozy atmosphere, excellent "

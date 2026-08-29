@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-10-02 02:51+0000\n"
 "Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://translate.odoo.com/"
@@ -23,45 +23,16 @@ msgstr ""
 "X-Generator: Weblate 5.12.2\n"
 
 #. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_cover
+#: model:ir.module.module,description:base.module_theme_kea
 msgid ""
-"<a href=\"#0\" class=\"btn btn-primary btn-lg o_translate_inline\">Discover "
-"more</a>"
+"A dark, glowing hero feeds into horizontal shopping attributes, soft cards, "
+"a scrolling announcement, an offset feature, process steps, a bento grid, "
+"and opening hours — with a warm burnt-orange, beige and near-black palette, "
+"a signature colored glow behind the hero image, and connection-line and "
+"blurry shape motifs as the visual signature. Product- and store-driven / "
+"suited for technology companies, IT services, computer and electronics "
+"stores, and gadget shops"
 msgstr ""
-"<a href=\"#0\" class=\"btn btn-primary btn-lg o_translate_inline\">发现更多</"
-"a>"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_image_text
-msgid ""
-"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
-"var(--o-color-2) 100%);\" class=\"text-gradient\">Enter in a new world</font>"
-msgstr ""
-"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
-"var(--o-color-2) 100%);\" class=\"text-gradient\">进入新世界</font>"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_text_image
-msgid ""
-"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
-"var(--o-color-2) 100%);\" class=\"text-gradient\">Full immersion</font>"
-msgstr ""
-"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
-"var(--o-color-2) 100%);\" class=\"text-gradient\">完全沉浸</font>"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
-msgid "Comfort &amp; Ease"
-msgstr "舒适与轻松"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_color_blocks_2
-msgid ""
-"Conquer leaderboards, crush workouts, create with friends and more. Get lost "
-"in a growing library of VR classics and all-new experiences."
-msgstr ""
-"在排行榜上一决高下，挑战极限，与朋友一起创作等等。迷失在不断增加的 VR 经典和"
-"全新体验库中。"
 
 #. module: theme_kea
 #: model:ir.model.fields,field_description:theme_kea.field_theme_utils__display_name
@@ -69,19 +40,9 @@ msgid "Display Name"
 msgstr "显示名称"
 
 #. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_picture
-msgid "Experience a new world"
-msgstr "体验新世界"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
-msgid "Fitting design"
-msgstr "配件设计"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_color_blocks_2
-msgid "Freedom"
-msgstr "自由"
+#: model:ir.module.module,summary:base.module_theme_kea
+msgid "Electronics, Gadgets, Devices, Tech, Technology, Store, Shop, Ecommerce"
+msgstr ""
 
 #. module: theme_kea
 #: model:ir.model.fields,field_description:theme_kea.field_theme_utils__id
@@ -89,74 +50,105 @@ msgid "ID"
 msgstr "ID"
 
 #. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_color_blocks_2
-msgid "Multiplayer"
-msgstr "多人游戏"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
-msgid "Natural control"
-msgstr "自然控制"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_color_blocks_2
-msgid ""
-"No matter who you are, with a growing library of games and experiences there "
-"is no limit to where you can go and what you can do in virtual reality."
+#: model:ir.module.module,shortdesc:base.module_theme_kea
+msgid "Kea Theme"
 msgstr ""
-"无论你是谁，随着游戏和体验库的不断扩大，你在虚拟现实中可以去的地方和可以做的"
-"事情将不受限制。"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_picture
-msgid ""
-"Put yourself at the center of an extraordinary gaming universe with "
-"exclusive games."
-msgstr "通过独家游戏，让自己置身于非凡游戏世界的中心。"
-
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_cover
-msgid "The Revolution <br/> in Virtual Reality"
-msgstr "<br/> 虚拟现实革命"
 
 #. module: theme_kea
 #: model:ir.model,name:theme_kea.model_theme_utils
 msgid "Theme Utils"
 msgstr "主题用途"
 
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
-msgid ""
-"Use this snippet to build various types of components that feature a left- "
-"or right-aligned image alongside textual content. Duplicate the element to "
-"create a list that fits your needs."
-msgstr ""
-"使用此代码段构建各种类型的组件，这些组件具有左对齐或右对齐的图像以及文本内"
-"容。复制元素以创建适合您需要的列表。"
+#~ msgid ""
+#~ "<a href=\"#0\" class=\"btn btn-primary btn-lg "
+#~ "o_translate_inline\">Discover more</a>"
+#~ msgstr ""
+#~ "<a href=\"#0\" class=\"btn btn-primary btn-lg o_translate_inline\">发现更"
+#~ "多</a>"
 
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_picture
-msgid ""
-"Watch as a living game world comes alive all around you, with a seamless "
-"field of view wherever you look."
-msgstr "看着周围活灵活现的游戏世界，无论你看哪里，都能看到无缝视野。"
+#~ msgid ""
+#~ "<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) "
+#~ "0%, var(--o-color-2) 100%);\" class=\"text-gradient\">Enter in a new "
+#~ "world</font>"
+#~ msgstr ""
+#~ "<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) "
+#~ "0%, var(--o-color-2) 100%);\" class=\"text-gradient\">进入新世界</font>"
 
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_media_list
-msgid ""
-"We only use original parts or parts of equivalent quality. ​We make sure you "
-"get the best quality available on the market at the best price. All our "
-"interventions are guaranteed for a period of one year."
-msgstr ""
-"我们只使用原装配件或同等质量的配件。我们确保您以最优惠的价格获得市场上最好的"
-"质量。我们的所有干预措施都有一年的质量保证。"
+#~ msgid ""
+#~ "<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) "
+#~ "0%, var(--o-color-2) 100%);\" class=\"text-gradient\">Full immersion</"
+#~ "font>"
+#~ msgstr ""
+#~ "<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) "
+#~ "0%, var(--o-color-2) 100%);\" class=\"text-gradient\">完全沉浸</font>"
 
-#. module: theme_kea
-#: model_terms:theme.ir.ui.view,arch:theme_kea.s_text_image
-msgid ""
-"Write one or two paragraphs describing your product or services. To be "
-"successful your content needs to be useful to your readers."
-msgstr "写一两段描述你的产品或服务。为了取得成功，您的内容需要对您的读者有用。"
+#~ msgid "Comfort &amp; Ease"
+#~ msgstr "舒适与轻松"
+
+#~ msgid ""
+#~ "Conquer leaderboards, crush workouts, create with friends and more. Get "
+#~ "lost in a growing library of VR classics and all-new experiences."
+#~ msgstr ""
+#~ "在排行榜上一决高下，挑战极限，与朋友一起创作等等。迷失在不断增加的 VR 经典"
+#~ "和全新体验库中。"
+
+#~ msgid "Experience a new world"
+#~ msgstr "体验新世界"
+
+#~ msgid "Fitting design"
+#~ msgstr "配件设计"
+
+#~ msgid "Freedom"
+#~ msgstr "自由"
+
+#~ msgid "Multiplayer"
+#~ msgstr "多人游戏"
+
+#~ msgid "Natural control"
+#~ msgstr "自然控制"
+
+#~ msgid ""
+#~ "No matter who you are, with a growing library of games and experiences "
+#~ "there is no limit to where you can go and what you can do in virtual "
+#~ "reality."
+#~ msgstr ""
+#~ "无论你是谁，随着游戏和体验库的不断扩大，你在虚拟现实中可以去的地方和可以做"
+#~ "的事情将不受限制。"
+
+#~ msgid ""
+#~ "Put yourself at the center of an extraordinary gaming universe with "
+#~ "exclusive games."
+#~ msgstr "通过独家游戏，让自己置身于非凡游戏世界的中心。"
+
+#~ msgid "The Revolution <br/> in Virtual Reality"
+#~ msgstr "<br/> 虚拟现实革命"
+
+#~ msgid ""
+#~ "Use this snippet to build various types of components that feature a "
+#~ "left- or right-aligned image alongside textual content. Duplicate the "
+#~ "element to create a list that fits your needs."
+#~ msgstr ""
+#~ "使用此代码段构建各种类型的组件，这些组件具有左对齐或右对齐的图像以及文本内"
+#~ "容。复制元素以创建适合您需要的列表。"
+
+#~ msgid ""
+#~ "Watch as a living game world comes alive all around you, with a seamless "
+#~ "field of view wherever you look."
+#~ msgstr "看着周围活灵活现的游戏世界，无论你看哪里，都能看到无缝视野。"
+
+#~ msgid ""
+#~ "We only use original parts or parts of equivalent quality. ​We make sure "
+#~ "you get the best quality available on the market at the best price. All "
+#~ "our interventions are guaranteed for a period of one year."
+#~ msgstr ""
+#~ "我们只使用原装配件或同等质量的配件。我们确保您以最优惠的价格获得市场上最好"
+#~ "的质量。我们的所有干预措施都有一年的质量保证。"
+
+#~ msgid ""
+#~ "Write one or two paragraphs describing your product or services. To be "
+#~ "successful your content needs to be useful to your readers."
+#~ msgstr ""
+#~ "写一两段描述你的产品或服务。为了取得成功，您的内容需要对您的读者有用。"
 
 #~ msgid ""
 #~ "\" A leader in virtual innovation. <br/>Engaging, realistic, and always "

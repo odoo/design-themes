@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2026-04-19 01:51+0000\n"
 "Last-Translator: \"Junko Augias (juau)\" <juau@odoo.com>\n"
 "Language-Team: Japanese <https://translate.odoo.com/projects/odoo-s19-2/"
@@ -32,9 +32,14 @@ msgstr ""
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
-"all in one"
-msgstr "<font class=\"text-o-color-2\">ESTATE ®</font><br/>物件を簡単に検索"
+"<span class=\"text-o-color-2\" data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">ESTATE</span><br/><span data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">Your easy home search, all in one</span>"
+msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -56,9 +61,15 @@ msgid "Bored with your interior?"
 msgstr "インテリアに飽きてきましたか？"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Carefully handpicked by our experts"
-msgstr "当社のエキスパートによる厳選セレクション"
+#: model:ir.module.module,description:base.module_theme_real_estate
+msgid ""
+"Cover hero leads into stepped duo-panel text-and-image rows, a three-column "
+"listing layout, a team description grid, a numbers showcase, and a "
+"testimonial carousel before a call-to-action, with restrained airy styling "
+"and no recurring background shape decoration. Listing-and-trust driven / "
+"suited for real estate agencies, construction services, vacation rentals, "
+"and accommodation listings"
+msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -76,11 +87,6 @@ msgid "Customer, sold an appartement"
 msgstr "顧客、アパート売却"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Discover our latest properties"
-msgstr "最新物件を見る"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
@@ -92,15 +98,6 @@ msgid "Display Name"
 msgstr "表示名"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Elegant, modern sophisticated architecture with an impressive in large scale "
-"home designed with the finest imported finishes. Marble and wood floors..."
-msgstr ""
-"エレガントでモダンな洗練された建築で、最高級の輸入仕上げでデザインされた大規"
-"模な住宅が印象的。大理石と木の床..."
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid ""
 "From start to finish, they were extremely professional, friendly, helpful "
@@ -108,11 +105,6 @@ msgid ""
 msgstr ""
 "最初から最後まで、非常にプロフェッショナルで、フレンドリーで、親切で、スムー"
 "ズに取引できました。経験にも会社にもとても満足しています。"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "House On The Hill"
-msgstr "丘の上の家"
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__id
@@ -133,11 +125,6 @@ msgstr ""
 "当社と不動産売却を行われるかどうかは、ご自由にお決め下さい。"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Moutain View"
-msgstr "マウンテンビュー"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Our decoration experts are at your disposal to guide you step by step in the "
@@ -146,11 +133,6 @@ msgid ""
 msgstr ""
 "当社のインテリア専門家が、お客様のインテリアデザインを一つ一つご提案し、最適"
 "なアドバイスを致します。"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Paradise Residence"
-msgstr "パラダイス・レジデンス"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -162,18 +144,21 @@ msgstr ""
 "晴らしい人々！彼らを心から推薦します！"
 
 #. module: theme_real_estate
+#: model:ir.module.module,shortdesc:base.module_theme_real_estate
+msgid "Real Estate Theme"
+msgstr ""
+
+#. module: theme_real_estate
+#: model:ir.module.module,summary:base.module_theme_real_estate
+msgid ""
+"Real Estate, Agencies, Construction, Services, Accomodations, Lodging, "
+"Hosting, Houses, Appartments, Vacations, Holidays, Travels"
+msgstr ""
+
+#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid "Search Now"
 msgstr "今すぐ検索"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"The house is surrounded by garden terraces that create an intimate ambience. "
-"With no overlooking neighbours, the garden offers real privacy."
-msgstr ""
-"この家は、プライベートな雰囲気のガーデンテラスに囲まれています。隣家から見下"
-"ろされることもなく、プライバシーがしっかりと守られています。"
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
@@ -181,24 +166,9 @@ msgid "Theme Utils"
 msgstr "テーマユーティリティ"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "View details"
-msgstr "詳細を表示"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "Want To Become A Real Estate Agent?"
 msgstr "不動産業者になりたいですか？"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Waste no time in viewing this truly stunning property. The property's "
-"surroundings really set it apart, offering idyllic sea views overlooking a "
-"park."
-msgstr ""
-"この非常に素晴らしい物件の内覧はお早めに。周囲には公園があり、のどかな海の景"
-"色を見渡すことができます。"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
@@ -210,11 +180,56 @@ msgstr "私たちは、あなたのキャリアアップと成長を支援しま
 msgid "Where every house becomes a home."
 msgstr "あらゆる家がホームになる場所。"
 
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
-msgid ""
-"With a simple click, finding your dream home has never been easier.<br/><br/>"
-msgstr "クリックするだけで、理想の家を簡単に検索。<br/><br/>"
+#~ msgid ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
+#~ "all in one"
+#~ msgstr "<font class=\"text-o-color-2\">ESTATE ®</font><br/>物件を簡単に検索"
+
+#~ msgid "Carefully handpicked by our experts"
+#~ msgstr "当社のエキスパートによる厳選セレクション"
+
+#~ msgid "Discover our latest properties"
+#~ msgstr "最新物件を見る"
+
+#~ msgid ""
+#~ "Elegant, modern sophisticated architecture with an impressive in large "
+#~ "scale home designed with the finest imported finishes. Marble and wood "
+#~ "floors..."
+#~ msgstr ""
+#~ "エレガントでモダンな洗練された建築で、最高級の輸入仕上げでデザインされた大"
+#~ "規模な住宅が印象的。大理石と木の床..."
+
+#~ msgid "House On The Hill"
+#~ msgstr "丘の上の家"
+
+#~ msgid "Moutain View"
+#~ msgstr "マウンテンビュー"
+
+#~ msgid "Paradise Residence"
+#~ msgstr "パラダイス・レジデンス"
+
+#~ msgid ""
+#~ "The house is surrounded by garden terraces that create an intimate "
+#~ "ambience. With no overlooking neighbours, the garden offers real privacy."
+#~ msgstr ""
+#~ "この家は、プライベートな雰囲気のガーデンテラスに囲まれています。隣家から見"
+#~ "下ろされることもなく、プライバシーがしっかりと守られています。"
+
+#~ msgid "View details"
+#~ msgstr "詳細を表示"
+
+#~ msgid ""
+#~ "Waste no time in viewing this truly stunning property. The property's "
+#~ "surroundings really set it apart, offering idyllic sea views overlooking "
+#~ "a park."
+#~ msgstr ""
+#~ "この非常に素晴らしい物件の内覧はお早めに。周囲には公園があり、のどかな海の"
+#~ "景色を見渡すことができます。"
+
+#~ msgid ""
+#~ "With a simple click, finding your dream home has never been easier.<br/"
+#~ "><br/>"
+#~ msgstr "クリックするだけで、理想の家を簡単に検索。<br/><br/>"
 
 #~ msgid ""
 #~ "\" A top choice for real estate. <br/>Expert guidance, great deals, and "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-09-17 02:51+0000\n"
 "Last-Translator: \"Tiffany Chang (tic)\" <tic@odoo.com>\n"
 "Language-Team: Arabic <https://translate.odoo.com/projects/odoo-19/"
@@ -21,33 +21,27 @@ msgstr ""
 "X-Generator: Weblate 5.12.2\n"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid "A Deep Dive into Flavor and Innovation"
-msgstr "رحلة في أعماق المذاق والابتكار"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "A cozy ambiance for any occasion"
-msgstr "أجواء مريحة لأي مناسبة"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"A truly exquisite dining experience. I highly recommend the Mustard Sauce, "
-"out of this world."
-msgstr "تجربة طعام رائعة حقا. أوصي بشدة بصلصة الخردل، خارج هذا العالم."
+"<a href=\"#\" class=\"btn btn-primary o_translate_inline\">Book a table</a>"
+msgstr ""
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"Cosy and friendly, good atmosphere and super food. Especially the spiced "
-"fruit crumble."
-msgstr "جو مريح وودود، وطعام ممتاز. وخاصة كرامبل الفاكهة المتبلة."
+"<span class=\"o_rfs\" style=\"font-size: clamp(8px, 1em + 5.5556vw, 400px);"
+"\">BISTRO</span>"
+msgstr ""
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Delight in Every Bite, Every Moment"
-msgstr "تلذّذ بكل قضمة وكل لحظة"
+#: model:ir.module.module,shortdesc:base.module_theme_bistro
+msgid "Bistro Theme"
+msgstr ""
+
+#. module: theme_bistro
+#: model:ir.module.module,summary:base.module_theme_bistro
+msgid "Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__display_name
@@ -55,30 +49,15 @@ msgid "Display Name"
 msgstr "اسم العرض"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Experience our passion for great food and service"
-msgstr "اختبر شغفنا بالطعام والخدمة الرائعة"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
+#: model:ir.module.module,description:base.module_theme_bistro
 msgid ""
-"Experience the finest in dining with our carefully curated menus. Whether "
-"you’re at a bistro, bar, or cafe, our culinary offerings are sure to delight."
-"<br/><br/> Taste the difference in every dish."
+"Horizontal navigation above a full-screen image hero carrying an oversized "
+"serif wordmark, a two-column bold statement, a split cafe-style price list "
+"on a deep colored panel, a six-card review wall with star ratings, a sharp-"
+"cornered image and text box, and opening hours over a full-width dish "
+"visual. Menu-and-pricing forward with little long-form copy / suited for "
+"bistros, restaurants, bars, pubs, cafes, and catering services"
 msgstr ""
-"جرّب أرقى أنواع الطعام مع قوائم الطعام المنتقاة بعناية. سواءً كنت في حانة "
-"صغيرة أو بار أو مقهى، فمن المؤكد أن ما نقدمه من أطباقنا سيبهجك. <br/><br/"
-">تذوّق الفرق في كل طبق."
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Fresh ingredients, deliciously prepared"
-msgstr "مكونات طازجة، محضّرة بشكل لذيذ"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Gourmet dishes that will tempt your taste buds"
-msgstr "أطباق شهية ستغري حواسك الذواقة"
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__id
@@ -86,40 +65,72 @@ msgid "ID"
 msgstr "المُعرف"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Reserve a Table"
-msgstr "قم بحجز طاولة"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Savor the Flavors of Our Bistro"
-msgstr "تذوّق النكهات التي يقدمها مطعمنا"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Taste &amp; Enjoy"
-msgstr "تذوّق واستمتع"
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
+msgid "Scroll down to next section"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model,name:theme_bistro.model_theme_utils
 msgid "Theme Utils"
 msgstr "أدوات السمة"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
-msgid "This place is perfect for groups or a casual date night."
-msgstr "هذا المكان مثالي للمجموعات أو لموعد غرامي عادي."
+#~ msgid "A Deep Dive into Flavor and Innovation"
+#~ msgstr "رحلة في أعماق المذاق والابتكار"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid ""
-"Transform your dining experience with our new menu, where classic dishes "
-"meet modern creativity. Elevate your palate with flavors that blend "
-"tradition and innovation seamlessly."
-msgstr ""
-"حوّل تجربة تناول الطعام الخاصة بك مع قائمة الطعام الجديدة لدينا، حيث تلتقي "
-"الأطباق الكلاسيكية مع الإبداع الحديث. ارتقِ بذوقك مع النكهات التي تمزج بين "
-"الأصالة والابتكار بسلاسة."
+#~ msgid "A cozy ambiance for any occasion"
+#~ msgstr "أجواء مريحة لأي مناسبة"
+
+#~ msgid ""
+#~ "A truly exquisite dining experience. I highly recommend the Mustard "
+#~ "Sauce, out of this world."
+#~ msgstr "تجربة طعام رائعة حقا. أوصي بشدة بصلصة الخردل، خارج هذا العالم."
+
+#~ msgid ""
+#~ "Cosy and friendly, good atmosphere and super food. Especially the spiced "
+#~ "fruit crumble."
+#~ msgstr "جو مريح وودود، وطعام ممتاز. وخاصة كرامبل الفاكهة المتبلة."
+
+#~ msgid "Delight in Every Bite, Every Moment"
+#~ msgstr "تلذّذ بكل قضمة وكل لحظة"
+
+#~ msgid "Experience our passion for great food and service"
+#~ msgstr "اختبر شغفنا بالطعام والخدمة الرائعة"
+
+#~ msgid ""
+#~ "Experience the finest in dining with our carefully curated menus. Whether "
+#~ "you’re at a bistro, bar, or cafe, our culinary offerings are sure to "
+#~ "delight.<br/><br/> Taste the difference in every dish."
+#~ msgstr ""
+#~ "جرّب أرقى أنواع الطعام مع قوائم الطعام المنتقاة بعناية. سواءً كنت في حانة "
+#~ "صغيرة أو بار أو مقهى، فمن المؤكد أن ما نقدمه من أطباقنا سيبهجك. <br/><br/"
+#~ ">تذوّق الفرق في كل طبق."
+
+#~ msgid "Fresh ingredients, deliciously prepared"
+#~ msgstr "مكونات طازجة، محضّرة بشكل لذيذ"
+
+#~ msgid "Gourmet dishes that will tempt your taste buds"
+#~ msgstr "أطباق شهية ستغري حواسك الذواقة"
+
+#~ msgid "Reserve a Table"
+#~ msgstr "قم بحجز طاولة"
+
+#~ msgid "Savor the Flavors of Our Bistro"
+#~ msgstr "تذوّق النكهات التي يقدمها مطعمنا"
+
+#~ msgid "Taste &amp; Enjoy"
+#~ msgstr "تذوّق واستمتع"
+
+#~ msgid "This place is perfect for groups or a casual date night."
+#~ msgstr "هذا المكان مثالي للمجموعات أو لموعد غرامي عادي."
+
+#~ msgid ""
+#~ "Transform your dining experience with our new menu, where classic dishes "
+#~ "meet modern creativity. Elevate your palate with flavors that blend "
+#~ "tradition and innovation seamlessly."
+#~ msgstr ""
+#~ "حوّل تجربة تناول الطعام الخاصة بك مع قائمة الطعام الجديدة لدينا، حيث تلتقي "
+#~ "الأطباق الكلاسيكية مع الإبداع الحديث. ارتقِ بذوقك مع النكهات التي تمزج بين "
+#~ "الأصالة والابتكار بسلاسة."
 
 #~ msgid ""
 #~ "\" A perfect spot for great food. <br/>Cozy atmosphere, excellent "

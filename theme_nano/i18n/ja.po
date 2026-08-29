@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2026-03-29 01:53+0000\n"
 "Last-Translator: \"Junko Augias (juau)\" <juau@odoo.com>\n"
 "Language-Team: Japanese <https://translate.odoo.com/projects/odoo-s19-2/"
@@ -43,11 +43,9 @@ msgstr "<font class=\"text-o-color-1\">Skylineブランド戦略</font>"
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
 msgid ""
-"<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> AVAILABLE FOR "
-"NEW PROJECTS"
+"<i class=\"oi oi-filled text-success\" data-icon=\"circle\" aria-"
+"hidden=\"true\"/> AVAILABLE FOR NEW PROJECTS"
 msgstr ""
-"<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> 新規プロジェク"
-"ト向け"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_text_block
@@ -112,14 +110,23 @@ msgstr "Ben Cole"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
-msgid "Contact us <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
+msgid "Contact us <i class=\"oi\" data-icon=\"east\" aria-hidden=\"true\"/>"
 msgstr ""
-"お問い合わせ <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Creative Director"
 msgstr "クリエイティブディレクター"
+
+#. module: theme_nano
+#: model:ir.module.module,description:base.module_theme_nano
+msgid ""
+"Discovery block opens onto a parallax scene, text-driven sections, key "
+"visuals, an image-text-overlap layout, and a basic team grid before "
+"references, KPIs, and a centered call-to-action, kept photo-driven with "
+"restrained styling. Story-led and image-forward / suited for creative "
+"agencies, makers, design studios, and creative-IT services"
+msgstr ""
 
 #. module: theme_nano
 #: model:ir.model.fields,field_description:theme_nano.field_theme_utils__display_name
@@ -142,19 +149,14 @@ msgid "ID"
 msgstr "ID"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Interested in our services?"
-msgstr "当社のサービスをご検討中の方へ"
-
-#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Jane Ford"
 msgstr "Jane Ford"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Let's discuss how we can help your business<br/><br/>"
-msgstr "当社がお手伝いさせて頂きます<br/><br/>"
+#: model:ir.module.module,summary:base.module_theme_nano
+msgid "Maker, Agencies, Creative, Design, IT, Services, Fancy"
+msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
@@ -181,6 +183,11 @@ msgid "Mia Lee"
 msgstr "Mia Lee"
 
 #. module: theme_nano
+#: model:ir.module.module,shortdesc:base.module_theme_nano
+msgid "Nano Theme"
+msgstr ""
+
+#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
 msgid "Our case studies"
 msgstr "当社のケーススタディー"
@@ -202,11 +209,6 @@ msgid "Our talented crew"
 msgstr "有能なスタッフ"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Schedule a call"
-msgstr "電話ミーティングをスケジュール"
-
-#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
 msgid "Some of the latest projects we had the pleasure to work on"
 msgstr "当社が携わった最新のプロジェクトの一部をご紹介します。"
@@ -220,6 +222,27 @@ msgstr "テーマユーティリティ"
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_references
 msgid "Trusted by industry leaders"
 msgstr "業界リーダーからの信頼"
+
+#~ msgid ""
+#~ "<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> AVAILABLE "
+#~ "FOR NEW PROJECTS"
+#~ msgstr ""
+#~ "<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> 新規プロジェ"
+#~ "クト向け"
+
+#~ msgid ""
+#~ "Contact us <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
+#~ msgstr ""
+#~ "お問い合わせ <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
+
+#~ msgid "Interested in our services?"
+#~ msgstr "当社のサービスをご検討中の方へ"
+
+#~ msgid "Let's discuss how we can help your business<br/><br/>"
+#~ msgstr "当社がお手伝いさせて頂きます<br/><br/>"
+
+#~ msgid "Schedule a call"
+#~ msgstr "電話ミーティングをスケジュール"
 
 #~ msgid ""
 #~ "<br/>Explore the world of creation with our maker services. We provide "

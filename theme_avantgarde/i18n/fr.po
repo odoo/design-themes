@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2026-03-01 01:58+0000\n"
 "Last-Translator: \"Manon Rondou (ronm)\" <ronm@odoo.com>\n"
 "Language-Team: French <https://translate.odoo.com/projects/odoo-s19-2/"
@@ -38,8 +38,8 @@ msgstr ""
 
 #. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_features_wall
-msgid "<i class=\"fa fa-ticket\"/> Book your tickets"
-msgstr "<i class=\"fa fa-ticket\"/> Réservez vos billets"
+msgid "<i class=\"oi\" data-icon=\"confirmation_number\"/> Book your tickets"
+msgstr ""
 
 #. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_carousel
@@ -67,9 +67,21 @@ msgid "Avantgarde Gallery"
 msgstr "Avantgarde Gallery"
 
 #. module: theme_avantgarde
+#: model:ir.module.module,shortdesc:base.module_theme_avantgarde
+msgid "Avantgarde Theme"
+msgstr ""
+
+#. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_sidegrid
 msgid "Come visit us from Tuesday 9 AM to Saturday 6 PM"
 msgstr "Venez nous rendre visite du mardi 9 heures au samedi 18 heures."
+
+#. module: theme_avantgarde
+#: model:ir.module.module,summary:base.module_theme_avantgarde
+msgid ""
+"Design, Fine Art, Artwork, Creative, Creativity, Galleries, Trends, Shows, "
+"Magazines, Blogs"
+msgstr ""
 
 #. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_features_wall
@@ -96,6 +108,16 @@ msgstr "Nom d'affichage"
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_features_wall
 msgid "Diverse Wildlife"
 msgstr "Diversité de la faune et de la flore"
+
+#. module: theme_avantgarde
+#: model:ir.module.module,description:base.module_theme_avantgarde
+msgid ""
+"Editorial side-grid layout under a hamburger nav, flowing into a dense "
+"features wall, carousel showcase, and chronological timeline before a "
+"quadrant block. Feature-heavy with editorial pacing rather than long-form "
+"passages / suited for design studios, art and culture magazines, creative "
+"agencies, and trend-driven blogs"
+msgstr ""
 
 #. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_timeline
@@ -183,6 +205,9 @@ msgstr "Nous ouvrons la cafétéria !"
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_sidegrid
 msgid "✴ San Francisco"
 msgstr "✴ San Francisco"
+
+#~ msgid "<i class=\"fa fa-ticket\"/> Book your tickets"
+#~ msgstr "<i class=\"fa fa-ticket\"/> Réservez vos billets"
 
 #~ msgid "<b>Since 1992</b> creating around the world."
 #~ msgstr "<b>Depuis 1992</b> nous créons dans le monde entier."

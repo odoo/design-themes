@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2026-03-08 01:51+0000\n"
 "Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
@@ -44,11 +44,9 @@ msgstr "<font class=\"text-o-color-1\">Estrategia de marca de Skyline</font>"
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
 msgid ""
-"<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> AVAILABLE FOR "
-"NEW PROJECTS"
+"<i class=\"oi oi-filled text-success\" data-icon=\"circle\" aria-"
+"hidden=\"true\"/> AVAILABLE FOR NEW PROJECTS"
 msgstr ""
-"<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> DISPONIBLE "
-"PARA NUEVOS PROYECTOS"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_text_block
@@ -112,13 +110,23 @@ msgstr "Ben Cole"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
-msgid "Contact us <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
-msgstr "Contáctanos <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
+msgid "Contact us <i class=\"oi\" data-icon=\"east\" aria-hidden=\"true\"/>"
+msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Creative Director"
 msgstr "Director creativo"
+
+#. module: theme_nano
+#: model:ir.module.module,description:base.module_theme_nano
+msgid ""
+"Discovery block opens onto a parallax scene, text-driven sections, key "
+"visuals, an image-text-overlap layout, and a basic team grid before "
+"references, KPIs, and a centered call-to-action, kept photo-driven with "
+"restrained styling. Story-led and image-forward / suited for creative "
+"agencies, makers, design studios, and creative-IT services"
+msgstr ""
 
 #. module: theme_nano
 #: model:ir.model.fields,field_description:theme_nano.field_theme_utils__display_name
@@ -141,19 +149,14 @@ msgid "ID"
 msgstr "ID"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Interested in our services?"
-msgstr "¿Te interesan nuestros servicios?"
-
-#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Jane Ford"
 msgstr "Jane Ford"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Let's discuss how we can help your business<br/><br/>"
-msgstr "Veamos cómo podemos ayudar a su empresa<br/><br/>"
+#: model:ir.module.module,summary:base.module_theme_nano
+msgid "Maker, Agencies, Creative, Design, IT, Services, Fancy"
+msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
@@ -180,6 +183,11 @@ msgid "Mia Lee"
 msgstr "Mia Lee"
 
 #. module: theme_nano
+#: model:ir.module.module,shortdesc:base.module_theme_nano
+msgid "Nano Theme"
+msgstr ""
+
+#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
 msgid "Our case studies"
 msgstr "Nuestros casos de estudio"
@@ -202,11 +210,6 @@ msgid "Our talented crew"
 msgstr "Nuestro talentoso equipo"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Schedule a call"
-msgstr "Programar una llamada"
-
-#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
 msgid "Some of the latest projects we had the pleasure to work on"
 msgstr "Algunos de los proyectos más recientes con los que hemos trabajado"
@@ -220,6 +223,27 @@ msgstr "Herramientas del tema"
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_references
 msgid "Trusted by industry leaders"
 msgstr "Los líderes del sector confían en nosotros"
+
+#~ msgid ""
+#~ "<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> AVAILABLE "
+#~ "FOR NEW PROJECTS"
+#~ msgstr ""
+#~ "<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> DISPONIBLE "
+#~ "PARA NUEVOS PROYECTOS"
+
+#~ msgid ""
+#~ "Contact us <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
+#~ msgstr ""
+#~ "Contáctanos <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
+
+#~ msgid "Interested in our services?"
+#~ msgstr "¿Te interesan nuestros servicios?"
+
+#~ msgid "Let's discuss how we can help your business<br/><br/>"
+#~ msgstr "Veamos cómo podemos ayudar a su empresa<br/><br/>"
+
+#~ msgid "Schedule a call"
+#~ msgstr "Programar una llamada"
 
 #~ msgid ""
 #~ "<br/>Explore the world of creation with our maker services. We provide "

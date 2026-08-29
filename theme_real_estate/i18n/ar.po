@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-09-17 02:51+0000\n"
 "Last-Translator: \"Tiffany Chang (tic)\" <tic@odoo.com>\n"
 "Language-Team: Arabic <https://translate.odoo.com/projects/odoo-19/"
@@ -32,11 +32,14 @@ msgstr ""
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
-"all in one"
+"<span class=\"text-o-color-2\" data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">ESTATE</span><br/><span data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">Your easy home search, all in one</span>"
 msgstr ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>البحث عن منزلك بسهولة في "
-"مكان واحد"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -58,9 +61,15 @@ msgid "Bored with your interior?"
 msgstr "مللت من التصميم الداخلي لمنزلك؟"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Carefully handpicked by our experts"
-msgstr "منتقاة بعناية من قبل خبرائنا"
+#: model:ir.module.module,description:base.module_theme_real_estate
+msgid ""
+"Cover hero leads into stepped duo-panel text-and-image rows, a three-column "
+"listing layout, a team description grid, a numbers showcase, and a "
+"testimonial carousel before a call-to-action, with restrained airy styling "
+"and no recurring background shape decoration. Listing-and-trust driven / "
+"suited for real estate agencies, construction services, vacation rentals, "
+"and accommodation listings"
+msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -78,11 +87,6 @@ msgid "Customer, sold an appartement"
 msgstr "عميل، باع شقة سكنية"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Discover our latest properties"
-msgstr "اكتشف أحدث عقاراتنا"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
@@ -94,15 +98,6 @@ msgid "Display Name"
 msgstr "اسم العرض"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Elegant, modern sophisticated architecture with an impressive in large scale "
-"home designed with the finest imported finishes. Marble and wood floors..."
-msgstr ""
-"تصاميم معمارية أنيقة وحديثة ومتطورة، مع منزل كبير مثير للإعجاب مصمم بأرقى "
-"التشطيبات المستوردة. أرضيات رخام وخشب..."
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid ""
 "From start to finish, they were extremely professional, friendly, helpful "
@@ -110,11 +105,6 @@ msgid ""
 msgstr ""
 "من البداية إلى النهاية، كانوا محترفين للغاية وودودين ومفيدين وسهل التعامل "
 "معهم. سعيد جدا بالتجربة والشركة."
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "House On The Hill"
-msgstr "منزل على التلة"
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__id
@@ -136,11 +126,6 @@ msgstr ""
 "الخاصة بك أم لا."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Moutain View"
-msgstr "مطل على الجبال"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Our decoration experts are at your disposal to guide you step by step in the "
@@ -151,11 +136,6 @@ msgstr ""
 "وسيقدمون لك أفضل النصائح لتصميمك الداخلي."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Paradise Residence"
-msgstr "Paradise Residence"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid ""
 "Positive energy, great team spirit, hard workers and awesome people! I "
@@ -163,18 +143,21 @@ msgid ""
 msgstr "طاقة إيجابية وروح فريق رائعة وأفراد مجتهدون ورائعون! أوصي بهم بحرارة!"
 
 #. module: theme_real_estate
+#: model:ir.module.module,shortdesc:base.module_theme_real_estate
+msgid "Real Estate Theme"
+msgstr ""
+
+#. module: theme_real_estate
+#: model:ir.module.module,summary:base.module_theme_real_estate
+msgid ""
+"Real Estate, Agencies, Construction, Services, Accomodations, Lodging, "
+"Hosting, Houses, Appartments, Vacations, Holidays, Travels"
+msgstr ""
+
+#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid "Search Now"
 msgstr "ابحث الآن"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"The house is surrounded by garden terraces that create an intimate ambience. "
-"With no overlooking neighbours, the garden offers real privacy."
-msgstr ""
-"المنزل محاط بشرفات الحديقة التي تخلق أجواءً دافئة. مع عدم وجود جيران مطلين "
-"على الحديقة، توفر الحديقة خصوصية تامة."
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
@@ -182,24 +165,9 @@ msgid "Theme Utils"
 msgstr "أدوات السمة"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "View details"
-msgstr "عرض التفاصيل"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "Want To Become A Real Estate Agent?"
 msgstr "هل تريد أن تصبح وكيل عقارات؟"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Waste no time in viewing this truly stunning property. The property's "
-"surroundings really set it apart, offering idyllic sea views overlooking a "
-"park."
-msgstr ""
-"لا تضيع الوقت في تفقد هذا العقار المذهل حقاً. المناطق المحيطة به تميزه حقاً، "
-"وتمنحك إطلالات مثالية على البحر وتطل على المنتزه."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
@@ -211,11 +179,59 @@ msgstr "سنساعدك على تنمية حياتك المهنية."
 msgid "Where every house becomes a home."
 msgstr "حيث يصبح كل منزل بيتاً دافئاً."
 
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
-msgid ""
-"With a simple click, finding your dream home has never been easier.<br/><br/>"
-msgstr "بنقرة بسيطة، أصبح العثور على منزل أحلامك أسهل من أي وقت مضى.<br/><br/>"
+#~ msgid ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
+#~ "all in one"
+#~ msgstr ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>البحث عن منزلك بسهولة "
+#~ "في مكان واحد"
+
+#~ msgid "Carefully handpicked by our experts"
+#~ msgstr "منتقاة بعناية من قبل خبرائنا"
+
+#~ msgid "Discover our latest properties"
+#~ msgstr "اكتشف أحدث عقاراتنا"
+
+#~ msgid ""
+#~ "Elegant, modern sophisticated architecture with an impressive in large "
+#~ "scale home designed with the finest imported finishes. Marble and wood "
+#~ "floors..."
+#~ msgstr ""
+#~ "تصاميم معمارية أنيقة وحديثة ومتطورة، مع منزل كبير مثير للإعجاب مصمم بأرقى "
+#~ "التشطيبات المستوردة. أرضيات رخام وخشب..."
+
+#~ msgid "House On The Hill"
+#~ msgstr "منزل على التلة"
+
+#~ msgid "Moutain View"
+#~ msgstr "مطل على الجبال"
+
+#~ msgid "Paradise Residence"
+#~ msgstr "Paradise Residence"
+
+#~ msgid ""
+#~ "The house is surrounded by garden terraces that create an intimate "
+#~ "ambience. With no overlooking neighbours, the garden offers real privacy."
+#~ msgstr ""
+#~ "المنزل محاط بشرفات الحديقة التي تخلق أجواءً دافئة. مع عدم وجود جيران مطلين "
+#~ "على الحديقة، توفر الحديقة خصوصية تامة."
+
+#~ msgid "View details"
+#~ msgstr "عرض التفاصيل"
+
+#~ msgid ""
+#~ "Waste no time in viewing this truly stunning property. The property's "
+#~ "surroundings really set it apart, offering idyllic sea views overlooking "
+#~ "a park."
+#~ msgstr ""
+#~ "لا تضيع الوقت في تفقد هذا العقار المذهل حقاً. المناطق المحيطة به تميزه "
+#~ "حقاً، وتمنحك إطلالات مثالية على البحر وتطل على المنتزه."
+
+#~ msgid ""
+#~ "With a simple click, finding your dream home has never been easier.<br/"
+#~ "><br/>"
+#~ msgstr ""
+#~ "بنقرة بسيطة، أصبح العثور على منزل أحلامك أسهل من أي وقت مضى.<br/><br/>"
 
 #~ msgid ""
 #~ "\" A top choice for real estate. <br/>Expert guidance, great deals, and "

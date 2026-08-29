@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-12-20 19:40+0000\n"
 "Last-Translator: Saara Hakanen <sahak@odoo.com>\n"
 "Language-Team: Finnish <https://translate.odoo.com/projects/odoo-19/"
@@ -32,11 +32,14 @@ msgstr ""
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
-"all in one"
+"<span class=\"text-o-color-2\" data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">ESTATE</span><br/><span data-text-"
+"effect=\"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:"
+"[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">Your easy home search, all in one</span>"
 msgstr ""
-"<font class=\"text-o-color-2\">ESTATE ®</font><br/>Helppo kotihaku, "
-"kaikenkattava"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -58,9 +61,15 @@ msgid "Bored with your interior?"
 msgstr "Oletko kyllästynyt sisustukseesi?"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Carefully handpicked by our experts"
-msgstr "Asiantuntijoidemme huolellisesti valitsemat"
+#: model:ir.module.module,description:base.module_theme_real_estate
+msgid ""
+"Cover hero leads into stepped duo-panel text-and-image rows, a three-column "
+"listing layout, a team description grid, a numbers showcase, and a "
+"testimonial carousel before a call-to-action, with restrained airy styling "
+"and no recurring background shape decoration. Listing-and-trust driven / "
+"suited for real estate agencies, construction services, vacation rentals, "
+"and accommodation listings"
+msgstr ""
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -78,11 +87,6 @@ msgid "Customer, sold an appartement"
 msgstr "Asiakas, myi huoneiston"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Discover our latest properties"
-msgstr "Tutustu uusimpiin kohteisiimme"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
@@ -95,16 +99,6 @@ msgid "Display Name"
 msgstr "Näyttönimi"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Elegant, modern sophisticated architecture with an impressive in large scale "
-"home designed with the finest imported finishes. Marble and wood floors..."
-msgstr ""
-"Elegantti, moderni hienostunut arkkitehtuuri, avaran tilan mittakaava ja "
-"suunnittelu, joka hyödyntää vain parhaimpia maahantuotuja viimeistelyjä. "
-"Marmori ja puulattiat..."
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid ""
 "From start to finish, they were extremely professional, friendly, helpful "
@@ -113,11 +107,6 @@ msgstr ""
 "Alusta loppuun he olivat erittäin ammattitaitoisia, ystävällisiä, avuliaita, "
 "mikä teki asioimisesta helppoa. Kokemus oli erittäin miellyttävä ja "
 "yrityksestä jäi hyvä maku suuhun."
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "House On The Hill"
-msgstr "Talo mäen päällä"
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__id
@@ -140,11 +129,6 @@ msgstr ""
 "kiinteistösi myynnissä vai et."
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Moutain View"
-msgstr "Vuoristonäkymä"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Our decoration experts are at your disposal to guide you step by step in the "
@@ -153,11 +137,6 @@ msgid ""
 msgstr ""
 "Sisustusasiantuntijamme opastavat sinua askel askeleelta sisussuunnittelussa "
 "ja antavat sinulle parhaat neuvot sisustukseen."
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "Paradise Residence"
-msgstr "Paratiisiasunto"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -169,19 +148,21 @@ msgstr ""
 "mahtavia persoonia! Suosittelen heitä lämpimästi!"
 
 #. module: theme_real_estate
+#: model:ir.module.module,shortdesc:base.module_theme_real_estate
+msgid "Real Estate Theme"
+msgstr ""
+
+#. module: theme_real_estate
+#: model:ir.module.module,summary:base.module_theme_real_estate
+msgid ""
+"Real Estate, Agencies, Construction, Services, Accomodations, Lodging, "
+"Hosting, Houses, Appartments, Vacations, Holidays, Travels"
+msgstr ""
+
+#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid "Search Now"
 msgstr "Etsi nyt"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"The house is surrounded by garden terraces that create an intimate ambience. "
-"With no overlooking neighbours, the garden offers real privacy."
-msgstr ""
-"Taloa ympäröivät puutarhaterassit, jotka luovat intiimin tunnelman. Puutarha "
-"tarjoaa todellista yksityisyyttä, koska naapurit tai ohikulkijat eivät näe "
-"pihaasi."
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
@@ -189,24 +170,9 @@ msgid "Theme Utils"
 msgstr "Teematyökalut"
 
 #. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid "View details"
-msgstr "Tarkemmat tiedot"
-
-#. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "Want To Become A Real Estate Agent?"
 msgstr "Haluatko kiinteistönvälittäjäksi?"
-
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_three_columns
-msgid ""
-"Waste no time in viewing this truly stunning property. The property's "
-"surroundings really set it apart, offering idyllic sea views overlooking a "
-"park."
-msgstr ""
-"Älä tuhlaa aikaa vain katsellaksesi tätä upeaa kiinteistöä. Kiinteistön "
-"ympäristö tekee siitä uniikin tarjoamalla idyllisen merinäköalan puistoon."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
@@ -218,13 +184,62 @@ msgstr "Autamme sinua kasvattamaan uraasi ja kasvamaan."
 msgid "Where every house becomes a home."
 msgstr "Jossa jokaisesta talosta tulee koti."
 
-#. module: theme_real_estate
-#: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
-msgid ""
-"With a simple click, finding your dream home has never been easier.<br/><br/>"
-msgstr ""
-"Unelmakotisi löytäminen yhdellä klikkauksella ei ole koskaan ollut helpompaa."
-"<br/><br/>"
+#~ msgid ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>Your easy home search, "
+#~ "all in one"
+#~ msgstr ""
+#~ "<font class=\"text-o-color-2\">ESTATE ®</font><br/>Helppo kotihaku, "
+#~ "kaikenkattava"
+
+#~ msgid "Carefully handpicked by our experts"
+#~ msgstr "Asiantuntijoidemme huolellisesti valitsemat"
+
+#~ msgid "Discover our latest properties"
+#~ msgstr "Tutustu uusimpiin kohteisiimme"
+
+#~ msgid ""
+#~ "Elegant, modern sophisticated architecture with an impressive in large "
+#~ "scale home designed with the finest imported finishes. Marble and wood "
+#~ "floors..."
+#~ msgstr ""
+#~ "Elegantti, moderni hienostunut arkkitehtuuri, avaran tilan mittakaava ja "
+#~ "suunnittelu, joka hyödyntää vain parhaimpia maahantuotuja viimeistelyjä. "
+#~ "Marmori ja puulattiat..."
+
+#~ msgid "House On The Hill"
+#~ msgstr "Talo mäen päällä"
+
+#~ msgid "Moutain View"
+#~ msgstr "Vuoristonäkymä"
+
+#~ msgid "Paradise Residence"
+#~ msgstr "Paratiisiasunto"
+
+#~ msgid ""
+#~ "The house is surrounded by garden terraces that create an intimate "
+#~ "ambience. With no overlooking neighbours, the garden offers real privacy."
+#~ msgstr ""
+#~ "Taloa ympäröivät puutarhaterassit, jotka luovat intiimin tunnelman. "
+#~ "Puutarha tarjoaa todellista yksityisyyttä, koska naapurit tai ohikulkijat "
+#~ "eivät näe pihaasi."
+
+#~ msgid "View details"
+#~ msgstr "Tarkemmat tiedot"
+
+#~ msgid ""
+#~ "Waste no time in viewing this truly stunning property. The property's "
+#~ "surroundings really set it apart, offering idyllic sea views overlooking "
+#~ "a park."
+#~ msgstr ""
+#~ "Älä tuhlaa aikaa vain katsellaksesi tätä upeaa kiinteistöä. Kiinteistön "
+#~ "ympäristö tekee siitä uniikin tarjoamalla idyllisen merinäköalan puistoon."
+
+#~ msgid ""
+#~ "With a simple click, finding your dream home has never been easier.<br/"
+#~ "><br/>"
+#~ msgstr ""
+#~ "Unelmakotisi löytäminen yhdellä klikkauksella ei ole koskaan ollut "
+#~ "helpompaa.<br/><br/>"
 
 #~ msgid ""
 #~ "\" A top choice for real estate. <br/>Expert guidance, great deals, and "

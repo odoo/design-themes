@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2026-03-15 01:51+0000\n"
 "Last-Translator: \"Larissa Manderfeld (lman)\" <lman@odoo.com>\n"
 "Language-Team: German <https://translate.odoo.com/projects/odoo-s19-2/"
@@ -36,8 +36,8 @@ msgstr ""
 
 #. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_features_wall
-msgid "<i class=\"fa fa-ticket\"/> Book your tickets"
-msgstr "<i class=\"fa fa-ticket\"/> Tickets buchen"
+msgid "<i class=\"oi\" data-icon=\"confirmation_number\"/> Book your tickets"
+msgstr ""
 
 #. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_carousel
@@ -65,9 +65,21 @@ msgid "Avantgarde Gallery"
 msgstr "Avantgarde-Galerie"
 
 #. module: theme_avantgarde
+#: model:ir.module.module,shortdesc:base.module_theme_avantgarde
+msgid "Avantgarde Theme"
+msgstr ""
+
+#. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_sidegrid
 msgid "Come visit us from Tuesday 9 AM to Saturday 6 PM"
 msgstr "Besuchen Sie uns von Dienstag, 9:00 Uhr, bis Samstag, 18:00 Uhr"
+
+#. module: theme_avantgarde
+#: model:ir.module.module,summary:base.module_theme_avantgarde
+msgid ""
+"Design, Fine Art, Artwork, Creative, Creativity, Galleries, Trends, Shows, "
+"Magazines, Blogs"
+msgstr ""
 
 #. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_features_wall
@@ -92,6 +104,16 @@ msgstr "Anzeigename"
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_features_wall
 msgid "Diverse Wildlife"
 msgstr "Vielfältige Tierwelt"
+
+#. module: theme_avantgarde
+#: model:ir.module.module,description:base.module_theme_avantgarde
+msgid ""
+"Editorial side-grid layout under a hamburger nav, flowing into a dense "
+"features wall, carousel showcase, and chronological timeline before a "
+"quadrant block. Feature-heavy with editorial pacing rather than long-form "
+"passages / suited for design studios, art and culture magazines, creative "
+"agencies, and trend-driven blogs"
+msgstr ""
 
 #. module: theme_avantgarde
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_timeline
@@ -179,6 +201,9 @@ msgstr "Wir eröffnen die Cafeteria!"
 #: model_terms:theme.ir.ui.view,arch:theme_avantgarde.s_sidegrid
 msgid "✴ San Francisco"
 msgstr "✴ San Francisco"
+
+#~ msgid "<i class=\"fa fa-ticket\"/> Book your tickets"
+#~ msgstr "<i class=\"fa fa-ticket\"/> Tickets buchen"
 
 #~ msgid "<b>Since 1992</b> creating around the world."
 #~ msgstr "Gestaltung in der ganzen Welt <b>seit 1992</b>"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-09-17 02:51+0000\n"
 "Last-Translator: \"Tiffany Chang (tic)\" <tic@odoo.com>\n"
 "Language-Team: Finnish <https://translate.odoo.com/projects/odoo-19/"
@@ -20,37 +20,27 @@ msgstr ""
 "X-Generator: Weblate 5.12.2\n"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid "A Deep Dive into Flavor and Innovation"
-msgstr "Syväsukellus makuihin ja innovaatioihin"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "A cozy ambiance for any occasion"
-msgstr "Viihtyisä tunnelma kaikkiin tilaisuuksiin"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"A truly exquisite dining experience. I highly recommend the Mustard Sauce, "
-"out of this world."
+"<a href=\"#\" class=\"btn btn-primary o_translate_inline\">Book a table</a>"
 msgstr ""
-"Todella hieno ruokailukokemus. Suosittelen lämpimästi sinappikastiketta; "
-"aivan mieletön."
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
-"Cosy and friendly, good atmosphere and super food. Especially the spiced "
-"fruit crumble."
+"<span class=\"o_rfs\" style=\"font-size: clamp(8px, 1em + 5.5556vw, 400px);"
+"\">BISTRO</span>"
 msgstr ""
-"Viihtyisä ja ystävällinen, hyvä ilmapiiri ja hyvää ruokaa. Erityisesti "
-"maustettu hedelmähyve."
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Delight in Every Bite, Every Moment"
-msgstr "Nauti jokaisesta suupalasta, jokaisesta hetkestä"
+#: model:ir.module.module,shortdesc:base.module_theme_bistro
+msgid "Bistro Theme"
+msgstr ""
+
+#. module: theme_bistro
+#: model:ir.module.module,summary:base.module_theme_bistro
+msgid "Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__display_name
@@ -58,30 +48,15 @@ msgid "Display Name"
 msgstr "Näyttönimi"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Experience our passion for great food and service"
-msgstr "Koe intohimomme hyvää ruokaa ja palvelua kohtaan"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
+#: model:ir.module.module,description:base.module_theme_bistro
 msgid ""
-"Experience the finest in dining with our carefully curated menus. Whether "
-"you’re at a bistro, bar, or cafe, our culinary offerings are sure to delight."
-"<br/><br/> Taste the difference in every dish."
+"Horizontal navigation above a full-screen image hero carrying an oversized "
+"serif wordmark, a two-column bold statement, a split cafe-style price list "
+"on a deep colored panel, a six-card review wall with star ratings, a sharp-"
+"cornered image and text box, and opening hours over a full-width dish "
+"visual. Menu-and-pricing forward with little long-form copy / suited for "
+"bistros, restaurants, bars, pubs, cafes, and catering services"
 msgstr ""
-"Koe ruokailun huippu huolellisesti kuratoitujen menujemme avulla. Olitpa "
-"sitten bistrossa, baarissa tai kahvilassa, kulinaarinen tarjonta varmasti "
-"ihastuttaa.<br/><br/> Maista ero jokaisessa ruokalajissa."
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Fresh ingredients, deliciously prepared"
-msgstr "Tuoreet raaka-aineet, herkullisesti valmistettu"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Gourmet dishes that will tempt your taste buds"
-msgstr "Gourmet-ruokalajeja, jotka kutkuttelevat makunystyröitäsi"
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__id
@@ -89,40 +64,76 @@ msgid "ID"
 msgstr "Tunnus"
 
 #. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Reserve a Table"
-msgstr "Pöydän varaaminen"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_key_images
-msgid "Savor the Flavors of Our Bistro"
-msgstr "Nauti Bistromme mauista"
-
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quadrant
-msgid "Taste &amp; Enjoy"
-msgstr "Maista &amp; nauti"
+#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
+msgid "Scroll down to next section"
+msgstr ""
 
 #. module: theme_bistro
 #: model:ir.model,name:theme_bistro.model_theme_utils
 msgid "Theme Utils"
 msgstr "Suunnittelutyökalut"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_quotes_carousel
-msgid "This place is perfect for groups or a casual date night."
-msgstr "Tämä paikka sopii täydellisesti ryhmille tai rentoon treffi-iltaan."
+#~ msgid "A Deep Dive into Flavor and Innovation"
+#~ msgstr "Syväsukellus makuihin ja innovaatioihin"
 
-#. module: theme_bistro
-#: model_terms:theme.ir.ui.view,arch:theme_bistro.s_image_title
-msgid ""
-"Transform your dining experience with our new menu, where classic dishes "
-"meet modern creativity. Elevate your palate with flavors that blend "
-"tradition and innovation seamlessly."
-msgstr ""
-"Muunna ruokailukokemuksesi uudella ruokalistallamme, jossa klassiset "
-"ruokalajit kohtaavat modernin luovuuden. Laajenna makumaailmaasi mauilla, "
-"joissa perinteet ja innovaatiot yhdistyvät saumattomasti."
+#~ msgid "A cozy ambiance for any occasion"
+#~ msgstr "Viihtyisä tunnelma kaikkiin tilaisuuksiin"
+
+#~ msgid ""
+#~ "A truly exquisite dining experience. I highly recommend the Mustard "
+#~ "Sauce, out of this world."
+#~ msgstr ""
+#~ "Todella hieno ruokailukokemus. Suosittelen lämpimästi sinappikastiketta; "
+#~ "aivan mieletön."
+
+#~ msgid ""
+#~ "Cosy and friendly, good atmosphere and super food. Especially the spiced "
+#~ "fruit crumble."
+#~ msgstr ""
+#~ "Viihtyisä ja ystävällinen, hyvä ilmapiiri ja hyvää ruokaa. Erityisesti "
+#~ "maustettu hedelmähyve."
+
+#~ msgid "Delight in Every Bite, Every Moment"
+#~ msgstr "Nauti jokaisesta suupalasta, jokaisesta hetkestä"
+
+#~ msgid "Experience our passion for great food and service"
+#~ msgstr "Koe intohimomme hyvää ruokaa ja palvelua kohtaan"
+
+#~ msgid ""
+#~ "Experience the finest in dining with our carefully curated menus. Whether "
+#~ "you’re at a bistro, bar, or cafe, our culinary offerings are sure to "
+#~ "delight.<br/><br/> Taste the difference in every dish."
+#~ msgstr ""
+#~ "Koe ruokailun huippu huolellisesti kuratoitujen menujemme avulla. Olitpa "
+#~ "sitten bistrossa, baarissa tai kahvilassa, kulinaarinen tarjonta varmasti "
+#~ "ihastuttaa.<br/><br/> Maista ero jokaisessa ruokalajissa."
+
+#~ msgid "Fresh ingredients, deliciously prepared"
+#~ msgstr "Tuoreet raaka-aineet, herkullisesti valmistettu"
+
+#~ msgid "Gourmet dishes that will tempt your taste buds"
+#~ msgstr "Gourmet-ruokalajeja, jotka kutkuttelevat makunystyröitäsi"
+
+#~ msgid "Reserve a Table"
+#~ msgstr "Pöydän varaaminen"
+
+#~ msgid "Savor the Flavors of Our Bistro"
+#~ msgstr "Nauti Bistromme mauista"
+
+#~ msgid "Taste &amp; Enjoy"
+#~ msgstr "Maista &amp; nauti"
+
+#~ msgid "This place is perfect for groups or a casual date night."
+#~ msgstr "Tämä paikka sopii täydellisesti ryhmille tai rentoon treffi-iltaan."
+
+#~ msgid ""
+#~ "Transform your dining experience with our new menu, where classic dishes "
+#~ "meet modern creativity. Elevate your palate with flavors that blend "
+#~ "tradition and innovation seamlessly."
+#~ msgstr ""
+#~ "Muunna ruokailukokemuksesi uudella ruokalistallamme, jossa klassiset "
+#~ "ruokalajit kohtaavat modernin luovuuden. Laajenna makumaailmaasi mauilla, "
+#~ "joissa perinteet ja innovaatiot yhdistyvät saumattomasti."
 
 #~ msgid ""
 #~ "\" A perfect spot for great food. <br/>Cozy atmosphere, excellent "

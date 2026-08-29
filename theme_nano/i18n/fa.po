@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-02-20 13:38+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -39,8 +39,8 @@ msgstr ""
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
 msgid ""
-"<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> AVAILABLE FOR "
-"NEW PROJECTS"
+"<i class=\"oi oi-filled text-success\" data-icon=\"circle\" aria-"
+"hidden=\"true\"/> AVAILABLE FOR NEW PROJECTS"
 msgstr ""
 
 #. module: theme_nano
@@ -95,12 +95,22 @@ msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
-msgid "Contact us <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
+msgid "Contact us <i class=\"oi\" data-icon=\"east\" aria-hidden=\"true\"/>"
 msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Creative Director"
+msgstr ""
+
+#. module: theme_nano
+#: model:ir.module.module,description:base.module_theme_nano
+msgid ""
+"Discovery block opens onto a parallax scene, text-driven sections, key "
+"visuals, an image-text-overlap layout, and a basic team grid before "
+"references, KPIs, and a centered call-to-action, kept photo-driven with "
+"restrained styling. Story-led and image-forward / suited for creative "
+"agencies, makers, design studios, and creative-IT services"
 msgstr ""
 
 #. module: theme_nano
@@ -124,18 +134,13 @@ msgid "ID"
 msgstr ""
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Interested in our services?"
-msgstr ""
-
-#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Jane Ford"
 msgstr ""
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Let's discuss how we can help your business<br/><br/>"
+#: model:ir.module.module,summary:base.module_theme_nano
+msgid "Maker, Agencies, Creative, Design, IT, Services, Fancy"
 msgstr ""
 
 #. module: theme_nano
@@ -161,6 +166,11 @@ msgid "Mia Lee"
 msgstr ""
 
 #. module: theme_nano
+#: model:ir.module.module,shortdesc:base.module_theme_nano
+msgid "Nano Theme"
+msgstr ""
+
+#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
 msgid "Our case studies"
 msgstr ""
@@ -176,11 +186,6 @@ msgstr ""
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Our talented crew"
-msgstr ""
-
-#. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Schedule a call"
 msgstr ""
 
 #. module: theme_nano

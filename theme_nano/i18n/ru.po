@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 17:42+0000\n"
+"POT-Creation-Date: 2026-08-28 17:44+0000\n"
 "PO-Revision-Date: 2025-12-03 13:06+0000\n"
 "Last-Translator: \"Anastasiia Koroleva (koan)\" <koan@odoo.com>\n"
 "Language-Team: Russian <https://translate.odoo.com/projects/odoo-19/"
@@ -45,8 +45,8 @@ msgstr "<font class=\"text-o-color-1\">Бренд-стратегия Skyline</fo
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
 msgid ""
-"<i class=\"fa fa-circle text-success\" aria-hidden=\"true\"/> AVAILABLE FOR "
-"NEW PROJECTS"
+"<i class=\"oi oi-filled text-success\" data-icon=\"circle\" aria-"
+"hidden=\"true\"/> AVAILABLE FOR NEW PROJECTS"
 msgstr ""
 
 #. module: theme_nano
@@ -111,13 +111,23 @@ msgstr "Бен Коул"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
-msgid "Contact us <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"/>"
+msgid "Contact us <i class=\"oi\" data-icon=\"east\" aria-hidden=\"true\"/>"
 msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Creative Director"
 msgstr "Креативный директор"
+
+#. module: theme_nano
+#: model:ir.module.module,description:base.module_theme_nano
+msgid ""
+"Discovery block opens onto a parallax scene, text-driven sections, key "
+"visuals, an image-text-overlap layout, and a basic team grid before "
+"references, KPIs, and a centered call-to-action, kept photo-driven with "
+"restrained styling. Story-led and image-forward / suited for creative "
+"agencies, makers, design studios, and creative-IT services"
+msgstr ""
 
 #. module: theme_nano
 #: model:ir.model.fields,field_description:theme_nano.field_theme_utils__display_name
@@ -140,19 +150,14 @@ msgid "ID"
 msgstr "ID"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Interested in our services?"
-msgstr "Заинтересованы в наших услугах?"
-
-#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
 msgid "Jane Ford"
 msgstr "Джейн Форд"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Let's discuss how we can help your business<br/><br/>"
-msgstr "Давайте обсудим, как мы можем помочь вашему бизнесу<br/><br/>"
+#: model:ir.module.module,summary:base.module_theme_nano
+msgid "Maker, Agencies, Creative, Design, IT, Services, Fancy"
+msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
@@ -179,6 +184,11 @@ msgid "Mia Lee"
 msgstr "Миа Ли"
 
 #. module: theme_nano
+#: model:ir.module.module,shortdesc:base.module_theme_nano
+msgid "Nano Theme"
+msgstr ""
+
+#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
 msgid "Our case studies"
 msgstr "Наши кейсы"
@@ -200,11 +210,6 @@ msgid "Our talented crew"
 msgstr "Наша талантливая команда"
 
 #. module: theme_nano
-#: model_terms:theme.ir.ui.view,arch:theme_nano.s_cta_box
-msgid "Schedule a call"
-msgstr "Запланировать звонок"
-
-#. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
 msgid "Some of the latest projects we had the pleasure to work on"
 msgstr ""
@@ -219,6 +224,15 @@ msgstr "Тематические утилиты"
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_references
 msgid "Trusted by industry leaders"
 msgstr "Нам доверяют лидеры индустрии"
+
+#~ msgid "Interested in our services?"
+#~ msgstr "Заинтересованы в наших услугах?"
+
+#~ msgid "Let's discuss how we can help your business<br/><br/>"
+#~ msgstr "Давайте обсудим, как мы можем помочь вашему бизнесу<br/><br/>"
+
+#~ msgid "Schedule a call"
+#~ msgstr "Запланировать звонок"
 
 #~ msgid ""
 #~ "<br/>Transforming ideas into tangible creations with precision and flair."
