@@ -1,0 +1,116 @@
+//-------------------------------------------------------------------------//
+// EVMotiv — Website Theme Configuration
+// Presets, fonts, headings/text weights and color palette for the theme.
+// Override via SCSS maps below — same pattern the Website Builder expects.
+//-------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------//
+// Presets
+//-------------------------------------------------------------------------//
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name':              'EVMotiv-1',
+
+        // Header
+        'header-template':                  'default',
+        'hamburger-position':               'right',
+        'logo-height':                      2.5rem,
+        'fixed-logo-height':                2rem,
+        'header-links-style':               'block',
+
+        // Font
+        'font':                             'Space Grotesk',
+
+        // Buttons
+        'btn-padding-y':                    .6rem,
+        'btn-padding-x':                    1.5rem,
+        'input-padding-y':                  .5rem,
+        'input-padding-y-sm':               .35rem,
+        'input-padding-y-lg':               .65rem,
+
+        // Footer
+        'footer-template':                  'centered',
+        'footer-effect':                    'disappear',
+        'footer-scrolltop':                 true,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts — self-hosted and fetched from URL.
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Varela Round': (
+        'family': ('Varela Round', sans-serif),
+        'url': 'Varela+Round:300,300i,400,400i,600,600i',
+    ),
+    'Orbitron': (
+        'family': ('Orbitron', sans-serif),
+        'url': false,
+    ),
+    'Space Grotesk': (
+        'family': ('Space Grotesk', sans-serif),
+        'url': false,
+        'properties': (
+            'base': (
+                'font-size-base': 1rem,
+            ),
+        ),
+    ),
+);
+
+// Headings
+$o-theme-h4-font-size-multiplier:           1.5;
+$o-theme-h5-font-size-multiplier:           1.25;
+$o-theme-h6-font-size-multiplier:           1.1;
+
+$o-theme-headings-font-weight:              700;
+
+// Texts
+
+$o-theme-font-size-lg-multiplier:           1.2;
+$o-theme-font-size-sm-multiplier:           .875;
+
+$o-theme-font-weight-light:                 400;
+$o-theme-font-weight-normal:                500;
+$o-theme-font-weight-bold:                  700;
+
+// Buttons
+
+$o-theme-btn-font-weight:                   600;
+
+//-------------------------------------------------------------------------//
+// Colors
+//-------------------------------------------------------------------------//
+
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'EVMotiv-1': (
+            'o-color-1': #00F0C0, // Neon Teal
+            'o-color-2': #6E5BFF, // Electric Indigo accents
+            'o-color-3': #101823, // Deep Space Navy
+            'o-color-4': #EAF6F6, // Frost White
+            'o-color-5': #05080A, // Void Black
+        ),
+        'EVMotiv-2': (
+            'o-color-1': #E10600, // Racing Red
+            'o-color-2': #3B82F6, // Electric Blue
+            'o-color-3': #1C2331, // Gunmetal Navy
+            'o-color-4': #F5F7FA, // Arctic White
+            'o-color-5': #0A0D12, // Carbon Black
+        ),
+        'EVMotiv-3': (
+            'o-color-1': #FF6B00, // Performance Orange
+            'o-color-2': #00C2FF, // Cyan Blue
+            'o-color-3': #1B1F27, // Titanium Gray
+            'o-color-4': #F4F6F8, // Snow White
+            'o-color-5': #050608, // Jet Black
+        ),
+    )
+);
+
+// Add the created palette to list of palettes offered by the Website Builder.
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'EVMotiv-1');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'EVMotiv-2');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'EVMotiv-3');
