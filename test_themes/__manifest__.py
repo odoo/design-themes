@@ -25,6 +25,7 @@
         'theme_care',
         'theme_clean',
         'theme_cobalt',
+        'theme_eclipse',
         'theme_enark',
         'theme_graphene',
         'theme_kea',
