@@ -40,8 +40,8 @@
             'background': {
                 'color': 'o_cc2',
                 'shape': {
-                    'data-oe-shape-data': '{"shape":"web_editor/Bold/13", "colors":{"c5":"o-color-4"}}',
-                    'element': """<div class="o_we_shape o_web_editor_Bold_13" style="background-image: url('/web_editor/shape/web_editor/Bold/13.svg?c5=o-color-4');""",
+                    'data-oe-shape-data': '{"shape":"html_builder/Bold/13", "colors":{"c5":"o-color-4"}}',
+                    'element': """<div class="o_we_shape o_html_builder_Bold_13" style="background-image: url('/html_editor/shape/html_builder/Bold/13.svg?c5=o-color-4');""",
                 },
             },
             'add_classes': [
