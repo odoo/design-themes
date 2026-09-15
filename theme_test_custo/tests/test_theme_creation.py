@@ -11,5 +11,5 @@ class Crawler(HttpCase):
         theme_custo = self.env.ref('base.module_theme_test_custo')
         website = self.env.ref('base.default_website')
         website.theme_id = theme_custo.id
-        theme_custo.with_context(load_all_views=True, apply_new_theme=True)._theme_load(website)
+        self.env['theme.engine'].with_context(load_all_views=True, apply_new_theme=True)._theme_load(theme_custo, website)
         self.start_tour(self.env["website"].get_client_action_url('/example'), "theme_menu_hierarchies", login='admin')
