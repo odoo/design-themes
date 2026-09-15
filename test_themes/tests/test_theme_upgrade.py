@@ -5,9 +5,9 @@ from odoo.tests import standalone
 
 @standalone('theme_upgrade', 'website_standalone')
 def test_01_theme_upgrade_post_copy(env):
-    """ This test ensures the theme `_post_copy()` method is only called when a
-    theme is installed for the first time on a website and not when the theme is
-    updated on that website.
+    """ This test ensures the theme `_apply_theme_config()` method is only
+    called when a theme is applied on a website and not when the theme module is
+    updated.
     """
     # 1. Setup
     website = env['website'].search([], limit=1)
