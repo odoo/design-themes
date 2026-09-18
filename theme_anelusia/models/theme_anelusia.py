@@ -4,7 +4,7 @@ from odoo import models
 class ThemeUtils(models.AbstractModel):
     _inherit = 'theme.utils'
 
-    def _theme_anelusia_post_copy(self, mod):
+    def _theme_anelusia_apply_config(self, mod):
         self.enable_view('website.template_footer_headline')
 
         if self.env['ir.module.module']._installed().get('website_sale'):
