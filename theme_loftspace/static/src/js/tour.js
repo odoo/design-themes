@@ -26,7 +26,7 @@ const snippets = [
     {
         id: 's_ecomm_categories_showcase',
         name: 'Categories Showcase',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_image_text_box',

@@ -21,7 +21,7 @@ const snippets = [
     {
         id: 's_floating_blocks',
         name: 'Floating Cards',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_company_team_grid',
