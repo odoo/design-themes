@@ -6,7 +6,7 @@ const snippets = [
     {
         id: 's_banner_product',
         name: 'Collection Banner',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_title',
@@ -16,7 +16,7 @@ const snippets = [
     {
         id: 's_ecomm_categories_showcase',
         name: 'Categories Grid',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_masonry_block_images_template',
