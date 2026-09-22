@@ -8,6 +8,7 @@ it into a self-contained ``static/description/preview.html`` suitable for those
 pre-installation previews.
 """
 
+import colorsys
 import json
 import os
 import re
@@ -103,13 +104,26 @@ CSS_URL_RE = re.compile(
     r'\s*\)'
 )
 VH_RE = re.compile(r"(-?(?:\d+(?:\.\d+)?|\.\d+))s?vh")
-PALETTE_COLORS = {
+LIGHT_PALETTE_COLORS = {
     "--o-color-1": ("#714B67",),
     "--o-color-2": ("#F0CDA8",),
     "--o-color-3": ("#F6F5F4",),
     "--o-color-4": ("#FFFFFF", "#FFF"),
     "--o-color-5": ("#1B1319",),
 }
+# default-dark-2: a saturated primary keeps its shades apart from the surfaces.
+DARK_PALETTE_COLORS = {
+    "--o-color-1": ("#A78BFA",),
+    "--o-color-2": ("#E68CB5",),
+    "--o-color-3": ("#251C40",),
+    "--o-color-4": ("#1B142E",),
+    "--o-color-5": ("#FFFFFF", "#FFF"),
+}
+PALETTE_COLORS = LIGHT_PALETTE_COLORS
+PREVIEW_VARIANTS = (
+    ("preview.html", "", LIGHT_PALETTE_COLORS, "base-1", False),
+    ("preview_dark.html", "-dark", DARK_PALETTE_COLORS, "default-dark-2", True),
+)
 FONT_MIME_TYPES = {
     ".woff2": "font/woff2",
     ".woff": "font/woff",
@@ -125,6 +139,10 @@ FONT_ASSET_URLS = {
 DEFAULT_WEBSITE_LOGO_URL = "/website/static/src/img/website_logo.svg"
 WEBSITE_LOGO_URL_RE = re.compile(r"^/web/image/website/\d+/logo(?:[/?#].*)?$")
 COLOR_TOKEN_END = r"(?![0-9a-zA-Z_-])"
+PALETTE_RGB_RE = re.compile(
+    r"(-rgb:\s*|rgba?\(\s*)([0-9.]+)\s*,\s*([0-9.]+)\s*,\s*([0-9.]+)"
+)
+DERIVED_COLOR_RE = re.compile(r"url\([^)]*\)|#[0-9a-fA-F]{6}(?![0-9a-zA-Z_-])")
 VH_TO_VW_RATIO = 10 / 16
 
 
@@ -143,12 +161,12 @@ def get_theme_dirs():
     return theme_dirs
 
 
-def get_preview_output_path(theme_dir):
+def get_preview_output_path(theme_dir, filename):
     description_dir = theme_dir / "static" / "description"
     svg_paths = sorted(description_dir.glob("*.svg"))
     if svg_paths:
-        return svg_paths[0].with_name("preview.html")
-    return description_dir / "preview.html"
+        return svg_paths[0].with_name(filename)
+    return description_dir / filename
 
 
 def prepare_base_database():
@@ -269,7 +287,15 @@ def create_website(session, name, domain):
     )
 
 
-def generate_website(session, context, theme_name, website_id):
+def generate_website(session, context, theme_name, website_id, selected_palette, is_dark_palette):
+    kwargs = {
+        **CONFIGURATOR_VALUES,
+        "theme_name": theme_name,
+        "selected_palette": selected_palette,
+        "context": {**context, "website_id": website_id},
+    }
+    if is_dark_palette:
+        kwargs["is_dark_palette"] = True
     return jsonrpc(
         session,
         f"{BASE_URL}/web/dataset/call_kw/website/configurator_apply",
@@ -277,11 +303,7 @@ def generate_website(session, context, theme_name, website_id):
             "model": "website",
             "method": "configurator_apply",
             "args": [],
-            "kwargs": {
-                **CONFIGURATOR_VALUES,
-                "theme_name": theme_name,
-                "context": {**context, "website_id": website_id},
-            },
+            "kwargs": kwargs,
         },
         timeout=600,
     )
@@ -455,6 +477,95 @@ def get_css_url(match):
     return unquoted_url.strip(), ""
 
 
+def hex_to_rgb(color):
+    color = color.lstrip("#")
+    return tuple(int(color[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def tokenize_bootstrap_rgb_triplets(css_text):
+    # Rounded: dark palettes compile to fractional channels.
+    palette_rgb = {hex_to_rgb(colors[0]): css_var for css_var, colors in PALETTE_COLORS.items()}
+
+    def replace(match):
+        triplet = tuple(round(float(component)) for component in match.groups()[1:])
+        css_var = palette_rgb.get(triplet)
+        return f"{match.group(1)}var({css_var}-rgb)" if css_var else match.group(0)
+
+    return PALETTE_RGB_RE.sub(replace, css_text)
+
+
+def hex_to_hls(color):
+    hue, lightness, saturation = colorsys.rgb_to_hls(*(channel / 255 for channel in hex_to_rgb(color)))
+    return hue * 360, lightness * 100, saturation * 100
+
+
+def apply_scss_color_shades(css_text):
+    palette = [(css_var, colors[0].upper()) for css_var, colors in PALETTE_COLORS.items()]
+
+    def replace(match):
+        color = match.group(0)
+        if color.startswith("url(") or color.upper() in {palette_color for _var, palette_color in palette}:
+            return color
+        rgb = hex_to_rgb(color)
+        hue, lightness, saturation = hex_to_hls(color)
+        hsl_matches = []
+        for css_var, palette_color in palette:
+            palette_rgb = hex_to_rgb(palette_color)
+            palette_hue, palette_lightness, palette_saturation = hex_to_hls(palette_color)
+            if palette_saturation < 5:
+                continue
+            for mixed_with, target in (("white", 255), ("black", 0)):
+                spread = [channel - target for channel in palette_rgb]
+                weight = sum((c - target) * d for c, d in zip(rgb, spread)) / sum(d * d for d in spread)
+                if 0.02 < weight < 0.98 and all(abs(target + d * weight - c) <= 1 for c, d in zip(rgb, spread)):
+                    return f"color-mix(in srgb, var({css_var}) {weight * 100:.1f}%, {mixed_with})"
+            hue_gap = min(abs(hue - palette_hue), 360 - abs(hue - palette_hue))
+            if hue_gap <= 3 and abs(saturation - palette_saturation) <= 3:
+                hsl_matches.append((hue_gap + abs(saturation - palette_saturation), css_var, lightness - palette_lightness))
+        if not hsl_matches:
+            return color
+        _gap, css_var, lightness_delta = min(hsl_matches)
+        if abs(lightness_delta) < 0.5:
+            return f"var({css_var})"
+        return f"hsl(from var({css_var}) h s calc(l {'+' if lightness_delta > 0 else '-'} {abs(lightness_delta):.2f}))"
+
+    return DERIVED_COLOR_RE.sub(replace, css_text)
+
+
+def apply_bootstrap_text_contrast(css_text):
+    # Bootstrap picks white or #212529 text for a background at compile time
+    # (white while contrast > $min-contrast-ratio 2.9, i.e. CIELAB L < 62.7):
+    # redo that pick in CSS so it follows the selected palette's background.
+    white = {"#FFFFFF", "#FFF", "WHITE"} | {f"VAR({css_var})".upper() for css_var, colors in PALETTE_COLORS.items() if colors[0] == "#FFFFFF"}
+
+    def contrast_background_name(name):
+        if name in ("color", "--color"):
+            return name.replace("color", "background-color")
+        if name.startswith("--btn") and name.endswith("-color"):
+            return name.removesuffix("color") + "bg"
+        if re.fullmatch(r"--o-cc\d-btn-(primary|secondary)-text", name):
+            return name.removesuffix("-text")
+        return None
+
+    def replace_block(block):
+        declarations = dict(re.findall(r"([-\w]+)\s*:\s*([^;{}]+)", block.group(0)))
+
+        def replace_declaration(declaration):
+            name, value = declaration.group(1), declaration.group(2)
+            text, important = value.removesuffix("!important").strip(), value.strip().endswith("!important")
+            background = declarations.get(contrast_background_name(name) or "", "").removesuffix("!important").strip()
+            is_pick = text.upper() == "#212529" or (text.upper() in white and name not in ("color", "--color"))
+            if not is_pick or "var(--" not in background:
+                return declaration.group(0)
+            pick = "(62.7 - l) * infinity"
+            contrast = f"lab(from {background} clamp(14.4, {pick}, 100) clamp(-1.07, {pick}, 0) clamp(-3.32, {pick}, 0) / 1)"
+            return f"{name}: {contrast}{' !important' if important else ''}"
+
+        return re.sub(r"([-\w]+)\s*:\s*([^;{}]+)", replace_declaration, block.group(0))
+
+    return re.sub(r"\{[^{}]*\}", replace_block, css_text)
+
+
 def replace_color_token(text, color, replacement):
     # Do not replace #FFF inside #FFF3CD or %23FFF inside %23FFF3CD.
     return re.sub(
@@ -525,13 +636,22 @@ def replace_palette_colors_in_attributes(soup):
             tag[attribute] = replace_palette_colors_in_style(value)
 
 
+def check_palette_compiled_as_expected(soup):
+    css_text = "".join(style.string or "" for style in soup.find_all("style"))
+    for css_var, colors in PALETTE_COLORS.items():
+        color = colors[0]
+        if not re.search(rf"{re.escape(css_var)}\s*:\s*{re.escape(color)}{COLOR_TOKEN_END}", css_text, re.I):
+            raise RuntimeError(f"{css_var}: {color} not found in the compiled :root CSS.")
+
+
 def inject_palette_variables(soup):
     if soup.head is None:
         soup.html.insert(0, soup.new_tag("head"))
     style = soup.new_tag("style")
     style["id"] = "preview-palette-vars"
     style.string = ":root{" + " ".join(
-        f"{css_var}: {colors[0]};" for css_var, colors in PALETTE_COLORS.items()
+        f"{css_var}: {colors[0]}; {css_var}-rgb: {', '.join(map(str, hex_to_rgb(colors[0])))};"
+        for css_var, colors in PALETTE_COLORS.items()
     ) + "}"
     soup.head.append(style)
 
@@ -586,7 +706,10 @@ def process_css(css_text, base_url):
     css_text = convert_vh_to_vw(css_text)
     css_text = remove_parallax_fixed_background(css_text)
     css_text = replace_palette_colors_in_urls(css_text)
-    return replace_palette_colors_in_css(css_text)
+    css_text = replace_palette_colors_in_css(css_text)
+    css_text = tokenize_bootstrap_rgb_triplets(css_text)
+    css_text = apply_scss_color_shades(css_text)
+    return apply_bootstrap_text_contrast(css_text)
 
 
 def inline_stylesheets(soup, base_url):
@@ -882,6 +1005,7 @@ def download_static_html(url, output_path, theme_image_urls):
     replace_chart_canvases(soup)
     purge_unused_css(soup)
     fix_floating_blocks_preview(soup)
+    check_palette_compiled_as_expected(soup)
     inject_palette_variables(soup)
     inject_color_combination_text_overrides(soup)
 
@@ -903,30 +1027,33 @@ def get_generated_page_url(result):
     return urljoin(f"{BASE_URL}/", path)
 
 
-def theme_host(theme_name):
+def theme_host(theme_name, suffix=""):
     # A unique, valid hostname per theme (hyphens, not underscores) matching the
     # website's ``domain`` so the anonymous download resolves the right website.
     parsed = urlparse(BASE_URL)
-    return f"{theme_name.replace('_', '-')}.localhost:{parsed.port or 80}"
+    return f"{theme_name.replace('_', '-')}{suffix}.localhost:{parsed.port or 80}"
 
 
 def generate_theme_preview(session, context, theme_dir):
     theme_name = theme_dir.name
-    output_path = get_preview_output_path(theme_dir)
-    print(f"Generating {theme_name}")
-
-    host = theme_host(theme_name)
-    website_id = create_website(session, theme_name, f"http://{host}")
-    result = generate_website(session, context, theme_name, website_id)
-    create_menu_items(session, context, website_id)
-    
-    # Download over the anonymous session, pinned to this website via the Host
-    # header, so the preview is exactly the public (logged-out) page.
-    global PREVIEW_HOST
-    PREVIEW_HOST = host
+    global PALETTE_COLORS, PREVIEW_HOST
     theme_image_urls = fetch_theme_image_urls(session, context)
-    download_static_html(get_generated_page_url(result), output_path, theme_image_urls)
-    print(f"Saved {output_path}")
+
+    for filename, suffix, palette, selected_palette, is_dark_palette in PREVIEW_VARIANTS:
+        print(f"Generating {theme_name} ({filename})")
+        output_path = get_preview_output_path(theme_dir, filename)
+        PALETTE_COLORS = palette
+
+        host = theme_host(theme_name, suffix)
+        website_id = create_website(session, f"{theme_name}{suffix}", f"http://{host}")
+        result = generate_website(session, context, theme_name, website_id, selected_palette, is_dark_palette)
+        create_menu_items(session, context, website_id)
+
+        # Download over the anonymous session, pinned to this website via the Host
+        # header, so the preview is exactly the public (logged-out) page.
+        PREVIEW_HOST = host
+        download_static_html(get_generated_page_url(result), output_path, theme_image_urls)
+        print(f"Saved {output_path}")
 
 
 def worker_database(worker_index):
