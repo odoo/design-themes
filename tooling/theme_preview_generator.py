@@ -4,8 +4,8 @@ The website configurator needs theme previews before a theme is installed, so it
 cannot rely on pages, attachments, or assets created only during theme
 application. This script starts a temporary Odoo database, applies each theme
 through the website configurator, downloads the generated homepage, and rewrites
-it into a self-contained ``static/description/preview.html`` suitable for those
-pre-installation previews.
+it into self-contained ``static/description/preview.html`` (light) and
+``preview_dark.html`` (dark) files suitable for those pre-installation previews.
 """
 
 import json
@@ -64,13 +64,22 @@ CSS_URL_RE = re.compile(
     r'\s*\)'
 )
 VH_RE = re.compile(r"(-?(?:\d+(?:\.\d+)?|\.\d+))s?vh")
-PALETTE_COLORS = {
+LIGHT_PALETTE_COLORS = {
     "--o-color-1": ("#714B67",),
     "--o-color-2": ("#F0CDA8",),
     "--o-color-3": ("#F6F5F4",),
     "--o-color-4": ("#FFFFFF", "#FFF"),
     "--o-color-5": ("#1B1319",),
 }
+# default-dark-7
+DARK_PALETTE_COLORS = {
+    "--o-color-1": ("#9C9288",),
+    "--o-color-2": ("#D6CEC5",),
+    "--o-color-3": ("#322E2A",),
+    "--o-color-4": ("#24211E",),
+    "--o-color-5": ("#FFFFFF", "#FFF"),
+}
+PALETTE_COLORS = LIGHT_PALETTE_COLORS
 FONT_MIME_TYPES = {
     ".woff2": "font/woff2",
     ".woff": "font/woff",
@@ -88,6 +97,9 @@ DEFAULT_WEBSITE_LOGO_URL = "/website/static/src/img/website_logo.svg"
 WEBSITE_LOGO_URL_RE = re.compile(r"^/web/image/website/\d+/logo(?:[/?#].*)?$")
 COLOR_TOKEN_END = r"(?![0-9a-zA-Z_-])"
 VH_TO_VW_RATIO = 10 / 16
+PALETTE_RGB_RE = re.compile(
+    r"(-rgb:\s*|rgba?\(\s*)([0-9.]+)\s*,\s*([0-9.]+)\s*,\s*([0-9.]+)"
+)
 
 
 def get_theme_dirs():
@@ -105,12 +117,12 @@ def get_theme_dirs():
     return theme_dirs
 
 
-def get_preview_output_path(theme_dir):
+def get_preview_output_path(theme_dir, filename):
     description_dir = theme_dir / "static" / "description"
     svg_paths = sorted(description_dir.glob("*.svg"))
     if svg_paths:
-        return svg_paths[0].with_name("preview.html")
-    return description_dir / "preview.html"
+        return svg_paths[0].with_name(filename)
+    return description_dir / filename
 
 
 def start_odoo():
@@ -178,7 +190,11 @@ def login(session):
     return session_info
 
 
-def generate_website(session, context, theme_name):
+def generate_website(session, context, theme_name, is_dark=False):
+    configurator_values = dict(CONFIGURATOR_VALUES)
+    if is_dark:
+        configurator_values["selected_palette"] = "default-dark-7"
+        configurator_values["is_dark_palette"] = True
     return jsonrpc(
         session,
         f"{BASE_URL}/web/dataset/call_kw/website/configurator_apply",
@@ -187,7 +203,7 @@ def generate_website(session, context, theme_name):
             "method": "configurator_apply",
             "args": [],
             "kwargs": {
-                **CONFIGURATOR_VALUES,
+                **configurator_values,
                 "theme_name": theme_name,
                 "context": context,
             },
@@ -369,6 +385,11 @@ def replace_color_token(text, color, replacement):
     )
 
 
+def hex_to_rgb(color):
+    color = color.lstrip("#")
+    return tuple(int(color[i:i + 2], 16) for i in (0, 2, 4))
+
+
 def replace_palette_colors_in_css(css_text):
     protected = {}
     for css_var, colors in PALETTE_COLORS.items():
@@ -389,6 +410,18 @@ def replace_palette_colors_in_css(css_text):
     for placeholder, color in protected.items():
         css_text = css_text.replace(placeholder, color)
     return css_text
+
+
+def replace_palette_colors_in_rgb_triplets(css_text):
+    # Rounded: dark palettes compile to fractional channels.
+    palette_rgb = {hex_to_rgb(colors[0]): css_var for css_var, colors in PALETTE_COLORS.items()}
+
+    def replace(match):
+        triplet = tuple(round(float(component)) for component in match.groups()[1:])
+        css_var = palette_rgb.get(triplet)
+        return f"{match.group(1)}var({css_var}-rgb)" if css_var else match.group(0)
+
+    return PALETTE_RGB_RE.sub(replace, css_text)
 
 
 def replace_palette_colors_in_url(url):
@@ -436,6 +469,9 @@ def inject_palette_variables(soup):
     style["id"] = "preview-palette-vars"
     style.string = ":root{" + " ".join(
         f"{css_var}: {colors[0]};" for css_var, colors in PALETTE_COLORS.items()
+    ) + "".join(
+        f"{css_var}-rgb: {', '.join(map(str, hex_to_rgb(colors[0])))};"
+        for css_var, colors in PALETTE_COLORS.items()
     ) + "}"
     soup.head.append(style)
 
@@ -490,7 +526,8 @@ def process_css(css_text, base_url):
     css_text = convert_vh_to_vw(css_text)
     css_text = remove_parallax_fixed_background(css_text)
     css_text = replace_palette_colors_in_urls(css_text)
-    return replace_palette_colors_in_css(css_text)
+    css_text = replace_palette_colors_in_css(css_text)
+    return replace_palette_colors_in_rgb_triplets(css_text)
 
 
 def inline_stylesheets(soup, base_url):
@@ -756,6 +793,14 @@ def purge_unused_css(soup):
             style.decompose()
 
 
+def check_palette_colors_applied(soup):
+    css_text = "".join(style.string or "" for style in soup.find_all("style"))
+    for css_var, colors in PALETTE_COLORS.items():
+        color = colors[0]
+        if not re.search(rf"{re.escape(css_var)}\s*:\s*{re.escape(color)}{COLOR_TOKEN_END}", css_text, re.I):
+            raise RuntimeError(f"{css_var}: {color} not found in the compiled :root CSS; check PALETTE_COLORS.")
+
+
 def download_static_html(url, output_path, theme_image_urls):
     print(f"Downloading {url} -> {output_path}")
     raw, _ = fetch(url)
@@ -766,6 +811,7 @@ def download_static_html(url, output_path, theme_image_urls):
     inline_stylesheets(soup, url)
     inline_style_blocks(soup, url)
     inline_inline_styles(soup, url)
+    check_palette_colors_applied(soup)
     inline_images(soup, url)
     inline_favicons(soup, url)
     inline_font_preloads(soup, url)
@@ -798,18 +844,20 @@ def get_generated_page_url(result):
     return urljoin(f"{BASE_URL}/", path)
 
 
-def generate_theme_preview(theme_dir):
-    theme_name = theme_dir.name
-    output_path = get_preview_output_path(theme_dir)
-    print(f"Generating {theme_name}")
+def generate_theme_preview_variant(theme_dir, theme_name, is_dark):
+    global PALETTE_COLORS
+    PALETTE_COLORS = DARK_PALETTE_COLORS if is_dark else LIGHT_PALETTE_COLORS
+    output_path = get_preview_output_path(theme_dir, "preview_dark.html" if is_dark else "preview.html")
+    print(f"Generating {theme_name} ({'dark' if is_dark else 'light'})")
 
+    # configurator_apply() consumes the database: one boot per variant.
     server = start_odoo()
     session = requests.Session()
     try:
         wait_for_odoo(server)
         session_info = login(session)
         context = session_info.get("user_context", {})
-        result = generate_website(session, context, theme_name)
+        result = generate_website(session, context, theme_name, is_dark=is_dark)
         create_menu_items(session, context, result["website_id"])
         theme_image_urls = fetch_theme_image_urls(session, context)
         download_static_html(get_generated_page_url(result), output_path, theme_image_urls)
@@ -817,6 +865,12 @@ def generate_theme_preview(theme_dir):
     finally:
         session.close()
         stop_odoo(server)
+
+
+def generate_theme_preview(theme_dir):
+    theme_name = theme_dir.name
+    generate_theme_preview_variant(theme_dir, theme_name, is_dark=False)
+    generate_theme_preview_variant(theme_dir, theme_name, is_dark=True)
 
 
 def main():
