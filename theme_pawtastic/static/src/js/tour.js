@@ -26,7 +26,7 @@ const snippets = [
     {
         id: 's_bento_grid',
         name: 'Bento Grid',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_reviews_wall',
@@ -36,7 +36,7 @@ const snippets = [
     {
         id: 's_attributes_horizontal',
         name: 'Horizontal Attributes',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_faq_collapse',

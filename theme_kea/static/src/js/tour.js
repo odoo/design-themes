@@ -11,7 +11,7 @@ const snippets = [
     {
         id: 's_attributes_horizontal',
         name: 'Horizontal Attributes',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_cards_soft',
@@ -21,7 +21,7 @@ const snippets = [
     {
         id: 's_announcement_scroll',
         name: 'Announcement Scroll',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_card_offset',
@@ -41,7 +41,7 @@ const snippets = [
     {
         id: 's_bento_grid',
         name: 'Bento Grid',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_opening_hours',

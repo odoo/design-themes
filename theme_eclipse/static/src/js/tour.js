@@ -50,7 +50,7 @@ const snippets = [
     {
         id: 's_announcement_scroll',
         name: 'Announcement Scroll',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
 ];
 
