@@ -11,17 +11,17 @@ const snippets = [
     {
         id: 's_announcement_scroll',
         name: 'Announcement Scroll',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_bento_grid',
         name: 'Bento Grid',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_ecomm_categories_showcase',
         name: 'Categories Showcase',
-        groupName: "Catalog",
+        groupName: "eCommerce",
     },
     {
         id: 's_reviews_wall',
