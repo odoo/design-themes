@@ -44,8 +44,8 @@
             'background': {
                 'color': 'o_cc2',
                 'shape': {
-                    'data-oe-shape-data': '{"shape":"web_editor/Connections/01", "colors":{"c5":"o-color-3"}, "flip":["x"]}',
-                    'element': """<div class="o_we_shape o_web_editor_Connections_01" style="background-image: url('/web_editor/shape/web_editor/Connections/01.svg?c5=o-color-3&amp;flip=x');""",
+                    'data-oe-shape-data': '{"shape":"html_builder/Connections/01", "colors":{"c5":"o-color-3"}, "flip":["x"]}',
+                    'element': """<div class="o_we_shape o_html_builder_Connections_01" style="background-image: url('/html_editor/shape/html_builder/Connections/01.svg?c5=o-color-3&amp;flip=x');""",
                 },
             },
             'add_classes': [
