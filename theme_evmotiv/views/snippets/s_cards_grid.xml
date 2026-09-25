@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cards_grid" inherit_id="website.s_cards_grid">
+    <xpath expr="//h2" position="replace" mode="inner">
+        Electric Vehicle Features
+    </xpath>
+    
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_animating_text" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Connections/06","colors":{"c3": "o-color-1"},"flip":[],"showOnMobile":true}</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Card'][1]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_card_grid_block_1.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Card'][1]//h3" position="replace" mode="inner">
+        Zero Emissions
+    </xpath>
+
+        <xpath expr="//div[@data-name='Card'][1]//p[hasclass('card-text')]" position="replace" mode="inner">
+            Drive clean with our fully electric powertrain. Reduce your carbon footprint while enjoying superior performance and efficiency.
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Card'][2]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_card_grid_block_2.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Card'][2]//h3" position="replace" mode="inner">
+        Fast Charging
+    </xpath>
+
+        <xpath expr="//div[@data-name='Card'][2]//p[hasclass('card-text')]" position="replace" mode="inner">
+            Get 80% charge in just 30 minutes with our ultra-fast charging technology. Compatible with all major charging networks worldwide.
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Card'][3]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_card_grid_block_3.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Card'][3]//h3" position="replace" mode="inner">
+        Extended Range
+    </xpath>
+
+        <xpath expr="//div[@data-name='Card'][3]//p[hasclass('card-text')]" position="replace" mode="inner">
+            Travel up to 500km on a single charge. Advanced battery management ensures optimal range in all weather conditions.
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Card'][4]//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_card_grid_block_4.png</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Card'][4]//h3" position="replace" mode="inner">
+        Smart Technology
+    </xpath>
+
+        <xpath expr="//div[@data-name='Card'][4]//p[hasclass('card-text')]" position="replace" mode="inner">
+            AI-powered driving assistance, over-the-air updates, and seamless smartphone integration for the ultimate connected experience.
+        </xpath>
+</template>
+
+</odoo>
