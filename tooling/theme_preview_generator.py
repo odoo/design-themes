@@ -103,13 +103,26 @@ CSS_URL_RE = re.compile(
     r'\s*\)'
 )
 VH_RE = re.compile(r"(-?(?:\d+(?:\.\d+)?|\.\d+))s?vh")
-PALETTE_COLORS = {
+LIGHT_PALETTE_COLORS = {
     "--o-color-1": ("#714B67",),
     "--o-color-2": ("#F0CDA8",),
     "--o-color-3": ("#F6F5F4",),
     "--o-color-4": ("#FFFFFF", "#FFF"),
     "--o-color-5": ("#1B1319",),
 }
+# default-dark-7
+DARK_PALETTE_COLORS = {
+    "--o-color-1": ("#9C9288",),
+    "--o-color-2": ("#D6CEC5",),
+    "--o-color-3": ("#322E2A",),
+    "--o-color-4": ("#24211E",),
+    "--o-color-5": ("#FFFFFF", "#FFF"),
+}
+PALETTE_COLORS = LIGHT_PALETTE_COLORS
+PREVIEW_VARIANTS = (
+    ("preview.html", "", LIGHT_PALETTE_COLORS, "base-1", False),
+    ("preview_dark.html", "-dark", DARK_PALETTE_COLORS, "default-dark-7", True),
+)
 FONT_MIME_TYPES = {
     ".woff2": "font/woff2",
     ".woff": "font/woff",
@@ -125,6 +138,9 @@ FONT_ASSET_URLS = {
 DEFAULT_WEBSITE_LOGO_URL = "/website/static/src/img/website_logo.svg"
 WEBSITE_LOGO_URL_RE = re.compile(r"^/web/image/website/\d+/logo(?:[/?#].*)?$")
 COLOR_TOKEN_END = r"(?![0-9a-zA-Z_-])"
+PALETTE_RGB_RE = re.compile(
+    r"(-rgb:\s*|rgba?\(\s*)([0-9.]+)\s*,\s*([0-9.]+)\s*,\s*([0-9.]+)"
+)
 VH_TO_VW_RATIO = 10 / 16
 
 
@@ -143,12 +159,12 @@ def get_theme_dirs():
     return theme_dirs
 
 
-def get_preview_output_path(theme_dir):
+def get_preview_output_path(theme_dir, filename):
     description_dir = theme_dir / "static" / "description"
     svg_paths = sorted(description_dir.glob("*.svg"))
     if svg_paths:
-        return svg_paths[0].with_name("preview.html")
-    return description_dir / "preview.html"
+        return svg_paths[0].with_name(filename)
+    return description_dir / filename
 
 
 def prepare_base_database():
@@ -269,7 +285,15 @@ def create_website(session, name, domain):
     )
 
 
-def generate_website(session, context, theme_name, website_id):
+def generate_website(session, context, theme_name, website_id, selected_palette, is_dark_palette):
+    kwargs = {
+        **CONFIGURATOR_VALUES,
+        "theme_name": theme_name,
+        "selected_palette": selected_palette,
+        "context": {**context, "website_id": website_id},
+    }
+    if is_dark_palette:
+        kwargs["is_dark_palette"] = True
     return jsonrpc(
         session,
         f"{BASE_URL}/web/dataset/call_kw/website/configurator_apply",
@@ -277,11 +301,7 @@ def generate_website(session, context, theme_name, website_id):
             "model": "website",
             "method": "configurator_apply",
             "args": [],
-            "kwargs": {
-                **CONFIGURATOR_VALUES,
-                "theme_name": theme_name,
-                "context": {**context, "website_id": website_id},
-            },
+            "kwargs": kwargs,
         },
         timeout=600,
     )
@@ -455,6 +475,23 @@ def get_css_url(match):
     return unquoted_url.strip(), ""
 
 
+def hex_to_rgb(color):
+    color = color.lstrip("#")
+    return tuple(int(color[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def replace_palette_colors_in_rgb_triplets(css_text):
+    # Rounded: dark palettes compile to fractional channels.
+    palette_rgb = {hex_to_rgb(colors[0]): css_var for css_var, colors in PALETTE_COLORS.items()}
+
+    def replace(match):
+        triplet = tuple(round(float(component)) for component in match.groups()[1:])
+        css_var = palette_rgb.get(triplet)
+        return f"{match.group(1)}var({css_var}-rgb)" if css_var else match.group(0)
+
+    return PALETTE_RGB_RE.sub(replace, css_text)
+
+
 def replace_color_token(text, color, replacement):
     # Do not replace #FFF inside #FFF3CD or %23FFF inside %23FFF3CD.
     return re.sub(
@@ -525,13 +562,22 @@ def replace_palette_colors_in_attributes(soup):
             tag[attribute] = replace_palette_colors_in_style(value)
 
 
+def check_active_palette_present(soup):
+    css_text = "".join(style.string or "" for style in soup.find_all("style"))
+    for css_var, colors in PALETTE_COLORS.items():
+        color = colors[0]
+        if not re.search(rf"{re.escape(css_var)}\s*:\s*{re.escape(color)}{COLOR_TOKEN_END}", css_text, re.I):
+            raise RuntimeError(f"{css_var}: {color} not found in the compiled :root CSS.")
+
+
 def inject_palette_variables(soup):
     if soup.head is None:
         soup.html.insert(0, soup.new_tag("head"))
     style = soup.new_tag("style")
     style["id"] = "preview-palette-vars"
     style.string = ":root{" + " ".join(
-        f"{css_var}: {colors[0]};" for css_var, colors in PALETTE_COLORS.items()
+        f"{css_var}: {colors[0]}; {css_var}-rgb: {', '.join(map(str, hex_to_rgb(colors[0])))};"
+        for css_var, colors in PALETTE_COLORS.items()
     ) + "}"
     soup.head.append(style)
 
@@ -586,7 +632,8 @@ def process_css(css_text, base_url):
     css_text = convert_vh_to_vw(css_text)
     css_text = remove_parallax_fixed_background(css_text)
     css_text = replace_palette_colors_in_urls(css_text)
-    return replace_palette_colors_in_css(css_text)
+    css_text = replace_palette_colors_in_css(css_text)
+    return replace_palette_colors_in_rgb_triplets(css_text)
 
 
 def inline_stylesheets(soup, base_url):
@@ -882,6 +929,7 @@ def download_static_html(url, output_path, theme_image_urls):
     replace_chart_canvases(soup)
     purge_unused_css(soup)
     fix_floating_blocks_preview(soup)
+    check_active_palette_present(soup)
     inject_palette_variables(soup)
     inject_color_combination_text_overrides(soup)
 
@@ -903,30 +951,33 @@ def get_generated_page_url(result):
     return urljoin(f"{BASE_URL}/", path)
 
 
-def theme_host(theme_name):
+def theme_host(theme_name, suffix=""):
     # A unique, valid hostname per theme (hyphens, not underscores) matching the
     # website's ``domain`` so the anonymous download resolves the right website.
     parsed = urlparse(BASE_URL)
-    return f"{theme_name.replace('_', '-')}.localhost:{parsed.port or 80}"
+    return f"{theme_name.replace('_', '-')}{suffix}.localhost:{parsed.port or 80}"
 
 
 def generate_theme_preview(session, context, theme_dir):
     theme_name = theme_dir.name
-    output_path = get_preview_output_path(theme_dir)
-    print(f"Generating {theme_name}")
-
-    host = theme_host(theme_name)
-    website_id = create_website(session, theme_name, f"http://{host}")
-    result = generate_website(session, context, theme_name, website_id)
-    create_menu_items(session, context, website_id)
-    
-    # Download over the anonymous session, pinned to this website via the Host
-    # header, so the preview is exactly the public (logged-out) page.
-    global PREVIEW_HOST
-    PREVIEW_HOST = host
+    global PALETTE_COLORS, PREVIEW_HOST
     theme_image_urls = fetch_theme_image_urls(session, context)
-    download_static_html(get_generated_page_url(result), output_path, theme_image_urls)
-    print(f"Saved {output_path}")
+
+    for filename, suffix, palette, selected_palette, is_dark_palette in PREVIEW_VARIANTS:
+        print(f"Generating {theme_name} ({filename})")
+        output_path = get_preview_output_path(theme_dir, filename)
+        PALETTE_COLORS = palette
+
+        host = theme_host(theme_name, suffix)
+        website_id = create_website(session, f"{theme_name}{suffix}", f"http://{host}")
+        result = generate_website(session, context, theme_name, website_id, selected_palette, is_dark_palette)
+        create_menu_items(session, context, website_id)
+
+        # Download over the anonymous session, pinned to this website via the Host
+        # header, so the preview is exactly the public (logged-out) page.
+        PREVIEW_HOST = host
+        download_static_html(get_generated_page_url(result), output_path, theme_image_urls)
+        print(f"Saved {output_path}")
 
 
 def worker_database(worker_index):
