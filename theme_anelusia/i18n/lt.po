@@ -3,13 +3,14 @@
 # * theme_anelusia
 #
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# Ulevičienė <vilma.uleviciene@mededu.lt>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-17 17:38+0000\n"
-"PO-Revision-Date: 2025-11-19 10:30+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-05 23:37+0000\n"
+"Last-Translator: Ulevičienė <vilma.uleviciene@mededu.lt>\n"
 "Language-Team: Lithuanian <https://translate.odoo.com/projects/odoo-19/"
 "theme_anelusia/lt/>\n"
 "Language: lt\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
 "19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
 "1 : 2);\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_quotes_carousel_minimal
@@ -61,7 +62,7 @@ msgstr ""
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_empowerment
 msgid "<br/>Unveil the latest, shop the best!<br/><br/>"
-msgstr ""
+msgstr "<br/>Atrask naujausius produktus, pirk geriausius!<br/><br/>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_big_number
@@ -71,6 +72,10 @@ msgid ""
 "            100+\n"
 "        </font>"
 msgstr ""
+"<font class=\"text-gradient\" style=\"background-image: linear-gradient"
+"(15deg, var(--o-color-1) 25%, var(--o-color-5) 100%);\">\n"
+"            100+\n"
+"       </font>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_text_cover
@@ -83,6 +88,13 @@ msgid ""
 "gradient(135deg, var(--o-color-1) 0%, var(--o-color-2) 100%);\" class=\"text-"
 "gradient\"> <strong>collection</strong></font>"
 msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
+"var(--o-color-2) 100%);\" class=\"text-gradient\"><strong>Kitas „</strong></"
+"font> “ „<br/><font style=\"background-image: linear-gradient(135deg, var(--"
+"o-color-1) 0%, var(--o-color-2) 100%);\" class=\"text-gradient\"> “ „ "
+"<strong>“ vasaros „</strong></font> “ „<br/><font style=\"background-image: "
+"linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-2) 100%);\" "
+"class=\"text-gradient\"> “ „ <strong>“ kolekcija</strong></font>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_comparisons_horizontal
@@ -90,6 +102,8 @@ msgid ""
 "<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
 "var(--o-color-2) 100%);\" class=\"text-gradient\">Our Style Plans</font>"
 msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
+"var(--o-color-2) 100%);\" class=\"text-gradient\">Mūsų stiliaus planai</font>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_timeline_images
@@ -97,6 +111,8 @@ msgid ""
 "<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
 "var(--o-color-2) 100%);\" class=\"text-gradient\">Our journey</font>"
 msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
+"var(--o-color-2) 100%);\" class=\"text-gradient\">Mūsų kelionė</font>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_references
@@ -106,6 +122,9 @@ msgid ""
 "<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
 "var(--o-color-2) 100%);\" class=\"text-gradient\">Our top brands</font>"
 msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
+"var(--o-color-2) 100%);\" class=\"text-gradient\">Mūsų populiariausi prekių "
+"ženklai</font>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
@@ -114,6 +133,9 @@ msgid ""
 "var(--o-color-5) 100%);\" class=\"text-gradient\">Mich Stark</font>\n"
 "        <br/>"
 msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
+"var(--o-color-5) 100%);\" class=\"text-gradient\">Mich Stark</font>\n"
+"        <br/>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
@@ -121,6 +143,8 @@ msgid ""
 "<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
 "var(--o-color-5) 100%);\" class=\"text-gradient\">Tony Fred</font>"
 msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-1) 0%, "
+"var(--o-color-5) 100%);\" class=\"text-gradient\">Tony Fred</font>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
@@ -128,6 +152,8 @@ msgid ""
 "<font style=\"background-image: linear-gradient(135deg, var(--o-color-2) 0%, "
 "var(--o-color-5) 100%);\" class=\"text-gradient\">Aline Turner</font>"
 msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-2) 0%, "
+"var(--o-color-5) 100%);\" class=\"text-gradient\">Aline Turner</font>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team
@@ -135,6 +161,8 @@ msgid ""
 "<font style=\"background-image: linear-gradient(135deg, var(--o-color-2) 0%, "
 "var(--o-color-5) 100%);\" class=\"text-gradient\">Iris Joe</font>"
 msgstr ""
+"<font style=\"background-image: linear-gradient(135deg, var(--o-color-2) 0%, "
+"var(--o-color-5) 100%);\" class=\"text-gradient\">Iris Joe</font>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_empowerment
@@ -258,7 +286,7 @@ msgstr "Atrasti"
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_key_images
 msgid "Discover Our Latest Fashion Collection"
-msgstr ""
+msgstr "Atraskite mūsų naujausią mados kolekciją"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_call_to_action
@@ -282,6 +310,8 @@ msgid ""
 "Discover our latest fashion pieces with a modern touch. Perfectly crafted "
 "for every style!"
 msgstr ""
+"Atraskite mūsų naujausius mados kūrinius su šiuolaikišku akcentu. Puikiai "
+"pritaikyti kiekvienam stiliui!"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_cta_box
@@ -292,7 +322,7 @@ msgstr ""
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_freegrid
 msgid "Discover the Latest Fashion and Fitness Trends"
-msgstr ""
+msgstr "Atraskite naujausias mados ir fitneso tendencijas"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_quadrant
@@ -302,6 +332,10 @@ msgid ""
 "your active lifestyle.<br/><br/> Experience the perfect blend of form and "
 "function."
 msgstr ""
+"Atraskite naujausias mados ir sportinės aprangos tendencijas, kur stilius "
+"susilieja su funkcionalumu. Mūsų kruopščiai atrinktos kolekcijos sukurtos "
+"tam, kad įkvėptų ir suteiktų jėgų jūsų aktyviam gyvenimo būdui.<br/><br/> "
+"Patirkite tobulą formos ir funkcionalumo derinį."
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_card_offset
@@ -310,6 +344,9 @@ msgid ""
 "your style and performance. Our collection offers a blend of innovation, "
 "comfort, and flair."
 msgstr ""
+"Atraskite naujausias mados ir sportinės aprangos tendencijas, sukurtas tam, "
+"kad pabrėžtų jūsų stilių ir padidintų jūsų pasiekimus. Mūsų kolekcija siūlo "
+"naujovių, komforto ir stiliaus derinį."
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_striped_center_top
@@ -317,6 +354,8 @@ msgid ""
 "Discover the latest trends in fashion, sports, and fitness, designed to "
 "empower your unique style and elevate your active lifestyle."
 msgstr ""
+"Atraskite naujausias mados, sporto ir fitneso tendencijas, sukurtas tam, kad "
+"sustiprintų jūsų unikalų stilių ir praturtintų jūsų aktyvų gyvenimo būdą."
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_call_to_action
@@ -492,7 +531,7 @@ msgstr ""
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_images_mosaic
 msgid "Introducing Our Latest Fashion Trends"
-msgstr ""
+msgstr "Pristatome naujausias mados tendencijas"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_company_team_basic
@@ -560,6 +599,8 @@ msgid ""
 "Perfectly combined by fashion experts. Get fresh outfit ideas for the new "
 "season and every occasion. Discover what's made for him."
 msgstr ""
+"Mados ekspertų puikiai suderinti deriniai. Raskite naujų aprangos idėjų "
+"naujam sezonui ir bet kuriai progai. Atraskite, kas skirta jam."
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_features_wall
@@ -603,7 +644,7 @@ msgstr "Skaitykite toliau"
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_key_images
 msgid "Redefine your wardrobe with our latest styles"
-msgstr ""
+msgstr "Atnaujinkite savo garderobą su mūsų naujausiais stiliais"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_cards_grid
@@ -762,6 +803,9 @@ msgid ""
 "meets versatility. Elevate your style with pieces that blend sophistication "
 "and comfort effortlessly."
 msgstr ""
+"Atnaujinkite savo garderobą su mūsų naujausia mados kolekcija, kurioje "
+"elegancija susilieja su universalumu. Pagerinkite savo stilių drabužiais, "
+"kuriuose rafinuotumas ir patogumas dera be jokių pastangų."
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_references_social
@@ -786,7 +830,7 @@ msgstr ""
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_cta_box
 msgid "Unveil the latest, shop the best!<br/><br/>"
-msgstr ""
+msgstr "Atrask naujausius produktus, pirk geriausius!<br/><br/>"
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_cards_grid
@@ -813,6 +857,9 @@ msgid ""
 "We deliver innovative fashion solutions for today’s demands. Harnessing the "
 "latest trends, we help you set new standards."
 msgstr ""
+"Siūlome novatoriškus mados sprendimus, atitinkančius šių dienų poreikius. "
+"Pasinaudodami naujausiomis tendencijomis, padedame jums nustatyti naujus "
+"standartus."
 
 #. module: theme_anelusia
 #: model_terms:theme.ir.ui.view,arch:theme_anelusia.s_wavy_grid
