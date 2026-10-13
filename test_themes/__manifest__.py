@@ -26,6 +26,7 @@
         'theme_clean',
         'theme_cobalt',
         'theme_enark',
+        'theme_evmotiv',
         'theme_graphene',
         'theme_kea',
         'theme_kiddo',
