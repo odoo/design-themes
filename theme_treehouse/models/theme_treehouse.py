@@ -4,7 +4,7 @@ from odoo import models
 class ThemeUtils(models.AbstractModel):
     _inherit = 'theme.utils'
 
-    def _theme_treehouse_post_copy(self, mod):
+    def _theme_treehouse_apply_config(self, mod):
         self.disable_view('website.header_visibility_standard')
         self.enable_view('website.header_visibility_fixed')
         self.enable_view('website.template_header_vertical')
