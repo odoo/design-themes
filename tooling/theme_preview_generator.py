@@ -707,21 +707,20 @@ def remove_javascript_dependent_classes(soup):
                 tag.attrs.pop("class", None)
 
 
-# Copied from the s_numbers_charts template of website: the static chart
-# shown by the builder's snippet dialog, which cannot run Chart.js either.
-CHART_PLACEHOLDER_SVG = """
-<svg class="d-block mt-3 mx-auto" width="450" height="230" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="40" fill="transparent" stroke="transparent" stroke-width="25"/>
-    <circle cx="50" cy="55" r="40" fill="transparent" stroke="var(--o-color-5)" stroke-width="25" stroke-dasharray="251.2" stroke-dashoffset="62.8"/>
-</svg>
-"""
-
-
 def replace_chart_canvases(soup):
     # The s_chart canvas is painted by Chart.js at runtime; the preview has no
-    # JS, so show the same static placeholder as the builder's snippet dialog.
+    # JS, so show the static chart the snippet ships for the builder's dialog
+    # (stripped from the page by configurator_apply).
     for canvas in soup.select(".s_chart canvas"):
-        canvas.replace_with(BeautifulSoup(CHART_PLACEHOLDER_SVG, "html.parser").find("svg"))
+        snippet = canvas.find_parent(lambda tag: tag.get("data-snippet") not in (None, "s_chart"))
+        template = snippet and ODOO_DIR / "addons/website/views/snippets" / f"{snippet['data-snippet']}.xml"
+        if not template or not template.exists():
+            continue
+        match = re.search(r'<svg class="s_dialog_preview.*?</svg>', template.read_text(encoding="utf-8"), re.S)
+        if match:
+            svg = BeautifulSoup(match.group(0), "html.parser").svg
+            svg["class"].remove("s_dialog_preview")
+            canvas.replace_with(svg)
 
 
 def fix_floating_blocks_preview(soup):
