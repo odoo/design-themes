@@ -30,8 +30,10 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'rounded': '1',
+            'dynamic_snippet_args': {
+                'wrapper_data': {
+                    'rounded': 1,
+                },
             },
             'add_classes': [
                 'pt112'
