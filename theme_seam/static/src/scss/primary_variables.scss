@@ -1,0 +1,115 @@
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'seam',
+
+        // Fonts
+        'font': 'Instrument Sans',
+        'headings-font': 'Parkinsans',
+        'buttons-font': 'Parkinsans',
+        'headings-font-weight': 700,
+        'display-font-weight': 800,
+        'btn-font-weight': 600,
+        'headings-line-height': 1.05,
+
+        // Buttons
+        'btn-padding-y-lg': 0.75rem,
+        'btn-padding-x-lg': 2rem,
+        'btn-border-radius': 0.5rem,
+        'btn-border-radius-sm': 0.5rem,
+        'btn-border-radius-lg': 0.5rem,
+
+        // Header
+        'header-template': 'boxed',
+        'menu-shadow-class': '',
+
+        // Footer
+        'footer-template': 'descriptive',
+    ),
+);
+
+// Main palette, built like o-make-dark-palette(): background tinted with the
+// primary hue, colour 3 = background + 5% lightness, white text. The background
+// stays near-black so the blue keeps its contrast against it.
+$o-color-palettes: map-merge($o-color-palettes, (
+    'seam': (
+        'o-color-1': #3958E3,
+        'o-color-2': #8DE0C3,
+        'o-color-3': #161822,
+        'o-color-4': #0C0D12,
+        'o-color-5': #FFFFFF,
+
+        // Blue links fail on the dark backgrounds and on Mint
+        'o-cc1-link': 'o-color-2',
+        'o-cc2-link': 'o-color-2',
+        'o-cc3-link': 'o-color-4',
+
+        'menu': 5,
+        'footer': 2,
+        'copyright': 2,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'seam');
+$o-dark-color-palette-names: append($o-dark-color-palette-names, 'seam');
+
+// Alternative palettes under review (2026-10-29): light accent first, Indigo second
+$-seam-candidates: (
+    'seam-2': (#8DE0C3, #3958E3, #232324, #101011, #E7EBF2), // Mint
+    'seam-3': (#9CE428, #3958E3, #232324, #101011, #E7EBF2), // Lime (first version)
+    'seam-4': (#AFB8FF, #3958E3, #232324, #101011, #E7EBF2), // Periwinkle
+    'seam-5': (#E9D8B4, #3958E3, #232324, #101011, #E7EBF2), // Sand
+    'seam-6': (#E6FF55, #005236, #163029, #0C1E18, #F2F0E6), // Green (previous direction)
+);
+@each $-name, $-colors in $-seam-candidates {
+    $o-color-palettes: map-merge($o-color-palettes, (
+        $-name: (
+            'o-color-1': nth($-colors, 1),
+            'o-color-2': nth($-colors, 2),
+            'o-color-3': nth($-colors, 3),
+            'o-color-4': nth($-colors, 4),
+            'o-color-5': nth($-colors, 5),
+
+            'o-cc3-link': 'o-color-5',
+            'o-cc4-link': 'o-color-4',
+            'o-cc4-btn-primary': 'o-color-4',
+            'o-cc5-link': 'o-color-2',
+            'o-cc5-btn-primary': 'o-color-2',
+
+            'menu': 5,
+            'footer': 2,
+            'copyright': 2,
+        ),
+    ));
+    $o-selected-color-palettes-names: append($o-selected-color-palettes-names, $-name);
+    $o-dark-color-palette-names: append($o-dark-color-palette-names, $-name);
+}
+
+//------------------------------------------------------------------------------
+// Shapes
+//------------------------------------------------------------------------------
+
+// Third tile colour follows cc5 (Light) instead of cc2 (Graphite, invisible on the page background)
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Geometric/01', (3: 5));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Geometric/02', (3: 5));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Geometric/03', (3: 5));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Geometric/04', (3: 5));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Geometric/05', (3: 5));
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Instrument Sans': (
+        'family': ('Instrument Sans', sans-serif),
+        'url': 'Instrument+Sans:400,400i,500,600',
+    ),
+    'Parkinsans': (
+        'family': ('Parkinsans', sans-serif),
+        'url': 'Parkinsans:500,600,700,800',
+    ),
+);
