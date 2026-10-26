@@ -1,0 +1,64 @@
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'seam',
+
+        // Fonts
+        'font': 'Instrument Sans',
+        'headings-font': 'Parkinsans',
+
+        // Buttons
+        'btn-padding-y-lg': 0.75rem,
+        'btn-padding-x-lg': 2rem,
+        'btn-border-radius': 0.5rem,
+        'btn-border-radius-sm': 0.5rem,
+        'btn-border-radius-lg': 0.5rem,
+
+        // Header
+        'header-template': 'boxed',
+        'menu-border-radius': 1rem,
+
+        // Footer
+        'footer-template': 'headline',
+    ),
+);
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'seam': (
+        'o-color-1': #3958E3,
+        'o-color-2': #8DE0C3,
+        'o-color-3': #1E212E,
+        'o-color-4': #0C0D12,
+        'o-color-5': #FFFFFF,
+
+        // Blue links fail on the dark backgrounds and on Mint
+        'o-cc1-link': 'o-color-2',
+        'o-cc2-link': 'o-color-2',
+        'o-cc3-link': 'o-color-4',
+
+        'menu': 5,
+        'footer': 2,
+        'copyright': 2,
+    )
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'seam');
+$o-dark-color-palette-names: append($o-dark-color-palette-names, 'seam');
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Instrument Sans': (
+        'family': ('Instrument Sans', sans-serif),
+        'url': 'Instrument+Sans:400,400i,500,600',
+    ),
+    'Parkinsans': (
+        'family': ('Parkinsans', sans-serif),
+        'url': 'Parkinsans:500,600,700,800',
+    ),
+);
