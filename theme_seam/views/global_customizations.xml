@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== TEXT BOLD ======== -->
+<template id="s_text_bold" inherit_id="website.s_text_bold" name="Seam s_text_bold">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Lines/09","colors":{"c1":"o-color-1"},"flip":[],"showOnMobile":false}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Lines_09" style="background-image: url('/html_editor/shape/html_builder/Lines/09.svg?c1=o-color-1');"/>
+    </xpath>
+    <!-- Title: centred and shortened to sit inside the ribbon's loop -->
+    <xpath expr="//h2" position="attributes">
+        <attribute name="style" add="text-align: center;" separator=";"/>
+    </xpath>
+    <xpath expr="//h2" position="replace" mode="inner">
+        Your trusted partner in navigating today's challenges.
+    </xpath>
+</template>
+
+<!-- ======== PROJECTS GRID ======== -->
+<template id="s_projects_grid" inherit_id="website.s_projects_grid" name="Seam s_projects_grid">
+    <!-- Title -->
+    <xpath expr="//div[hasclass('row')]" position="before">
+        <h2>Our projects</h2>
+        <p class="lead">A selection of our recent work.</p>
+    </xpath>
+    <!-- Columns: three equal landscape projects on one row -->
+    <xpath expr="//div[hasclass('row')]/div[1]" position="attributes">
+        <attribute name="class" add="col-lg-4" remove="col-lg-7" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[2]" position="attributes">
+        <attribute name="class" remove="offset-lg-1" separator=" "/>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[2]//img" position="attributes">
+        <attribute name="src">/web/image/website.landscape_md_3</attribute>
+    </xpath>
+    <xpath expr="//div[hasclass('row')]/div[3]" position="attributes">
+        <attribute name="class" add="col-lg-4 pt40" remove="col-lg-12 pt80" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ==== REVIEWS WALL ===== -->
+<template id="s_reviews_wall" inherit_id="website.s_reviews_wall" name="Seam s_reviews_wall">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" remove="o_cc o_cc2" separator=" "/>
+    </xpath>
+    <!-- Blockquotes: translucent Graphite cards blurring the line behind them -->
+    <xpath expr="(//blockquote)[1]" position="attributes">
+        <attribute name="class" add="o_cc2 o_bg_blur_option border" remove="o_cc1" separator=" "/>
+        <attribute name="style" add="background-color: rgba(22, 24, 34, 0.75); --o-bg-blur: 10;" separator=";"/>
+    </xpath>
+    <xpath expr="(//blockquote)[2]" position="attributes">
+        <attribute name="class" add="o_cc2 o_bg_blur_option border" remove="o_cc1" separator=" "/>
+        <attribute name="style" add="background-color: rgba(22, 24, 34, 0.75); --o-bg-blur: 10;" separator=";"/>
+    </xpath>
+    <xpath expr="(//blockquote)[3]" position="attributes">
+        <attribute name="class" add="o_cc2 o_bg_blur_option border" remove="o_cc1" separator=" "/>
+        <attribute name="style" add="background-color: rgba(22, 24, 34, 0.75); --o-bg-blur: 10;" separator=";"/>
+    </xpath>
+    <xpath expr="(//blockquote)[4]" position="attributes">
+        <attribute name="class" add="o_cc2 o_bg_blur_option border" remove="o_cc1" separator=" "/>
+        <attribute name="style" add="background-color: rgba(22, 24, 34, 0.75); --o-bg-blur: 10;" separator=";"/>
+    </xpath>
+    <xpath expr="(//blockquote)[5]" position="attributes">
+        <attribute name="class" add="o_cc2 o_bg_blur_option border" remove="o_cc1" separator=" "/>
+        <attribute name="style" add="background-color: rgba(22, 24, 34, 0.75); --o-bg-blur: 10;" separator=";"/>
+    </xpath>
+    <xpath expr="(//blockquote)[6]" position="attributes">
+        <attribute name="class" add="o_cc2 o_bg_blur_option border" remove="o_cc1" separator=" "/>
+        <attribute name="style" add="background-color: rgba(22, 24, 34, 0.75); --o-bg-blur: 10;" separator=";"/>
+    </xpath>
+    <!-- Rating icons -->
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[1]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[2]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[3]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[4]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[5]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+    <xpath expr="(//span[hasclass('s_rating_active_icons')])[6]" position="attributes">
+        <attribute name="style"/>
+        <attribute name="class" add="text-o-color-1" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== CTA CENTERED ======== -->
+<template id="s_cta_centered" inherit_id="website.s_cta_centered" name="Seam s_cta_centered">
+    <!-- Card -->
+    <xpath expr="//div[hasclass('s_card')]" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Lines/11","colors":{"c1":"o-color-2"},"flip":[],"showOnMobile":false}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('card-body')]" position="before">
+        <div class="o_we_shape o_html_builder_Lines_11" style="background-image: url('/html_editor/shape/html_builder/Lines/11.svg?c1=o-color-2');"/>
+    </xpath>
+</template>
+
+</odoo>
