@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== TEXT BOLD ======== -->
+<template id="configurator_s_text_bold" inherit_id="website.configurator_s_text_bold" name="Seam s_text_bold">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_three_quarter_height" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
