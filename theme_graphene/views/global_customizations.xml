@@ -12,16 +12,16 @@
 <!-- ======== SHOWCASE SQUARE ======== -->
 <template id="s_showcase_square" inherit_id="website.s_showcase_square" name="Graphene s_showcase_square">
     <!-- Icons -->
-    <xpath expr="(//div[@data-name='Feature'])[1]/i[hasclass('s_showcase_icon')]" position="attributes">
+    <xpath expr="(//div[@data-builder-name='feature'])[1]/i[hasclass('s_showcase_icon')]" position="attributes">
         <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
     </xpath>
-    <xpath expr="(//div[@data-name='Feature'])[2]/i[hasclass('s_showcase_icon')]" position="attributes">
+    <xpath expr="(//div[@data-builder-name='feature'])[2]/i[hasclass('s_showcase_icon')]" position="attributes">
         <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
     </xpath>
-    <xpath expr="(//div[@data-name='Feature'])[3]/i[hasclass('s_showcase_icon')]" position="attributes">
+    <xpath expr="(//div[@data-builder-name='feature'])[3]/i[hasclass('s_showcase_icon')]" position="attributes">
         <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
     </xpath>
-    <xpath expr="(//div[@data-name='Feature'])[4]/i[hasclass('s_showcase_icon')]" position="attributes">
+    <xpath expr="(//div[@data-builder-name='feature'])[4]/i[hasclass('s_showcase_icon')]" position="attributes">
         <attribute name="class" add="bg-o-color-1" remove="bg-o-color-3" separator=" "/>
     </xpath>
 </template>
