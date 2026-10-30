@@ -35,10 +35,4 @@
     </t>
 </template>
 
-<record id="page_example" model="theme.website.page">
-    <field name="view_id" ref="view_example"/>
-    <field name="is_published" eval="True"/>
-    <field name="url">/example</field>
-</record>
-
 </odoo>
