@@ -41,6 +41,7 @@
         'theme_paptic',
         'theme_pawtastic',
         'theme_real_estate',
+        'theme_seam',
         'theme_treehouse',
         'theme_vehicle',
         'theme_yes',
