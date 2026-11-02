@@ -20,12 +20,12 @@ class TestThemeScope(TransactionCase):
             theme_module = self.env['ir.module.module'].search([
                 ('name', '=', website.theme_id.name),
             ])
-            assets = theme_module._get_module_data('ir.asset')
+            assets = self.env['theme.engine']._get_module_data(theme_module, 'ir.asset')
             for asset in assets:
                 if not asset.path.startswith(prefix) and not asset.path.startswith(slash_prefix):
                     fails.append(f"Asset {asset.id} {asset.key} references outside of theme {website.theme_id.name}: {asset.path}")
             assets_count += len(assets)
-            attachments = theme_module._get_module_data('ir.attachment')
+            attachments = self.env['theme.engine']._get_module_data(theme_module, 'ir.attachment')
             for attachment in attachments:
                 if not attachment.url.startswith(slash_prefix):
                     fails.append(f"Attachment {attachment.id} {attachment.key} references outside of theme {website.theme_id.name}: {attachment.url}")

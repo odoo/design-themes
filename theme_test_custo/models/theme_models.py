@@ -14,6 +14,6 @@ class ThemeUtils(models.AbstractModel):
     def _footer_templates(self):
         return ['theme_test_custo.template_footer_custom'] + super()._footer_templates
 
-    def _theme_test_custo_post_copy(self, mod):
+    def _theme_test_custo_apply_config(self, mod):
         self.enable_view('theme_test_custo.template_header_custom')
         self.enable_view('theme_test_custo.template_footer_custom')
