@@ -34,9 +34,11 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'gap': '3',
-                'rounded': '3',
+            'dynamic_snippet_args': {
+                'wrapper_data': {
+                    'rounded': 3,
+                    'gap': 3,
+                },
             },
             'add_classes': [
                 {
