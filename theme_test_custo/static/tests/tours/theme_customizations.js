@@ -2,29 +2,8 @@
 
 import * as wTourUtils from '@website/js/tours/tour_utils';
 
-wTourUtils.registerWebsitePreviewTour('theme_menu_hierarchies', {
+wTourUtils.registerWebsitePreviewTour('theme_customizations', {
 }, () => [
-    {
-        content: 'Check Mega Menu is correctly created',
-        trigger: ":iframe .top_menu a.o_mega_menu_toggle",
-        run: "click",
-    }, {
-        content: 'Check Mega Menu content',
-        trigger: ":iframe .top_menu div.o_mega_menu.show [data-icon='deployed_code']",
-    }, {
-        content: 'Check new top level menu is correctly created',
-        trigger: ':iframe .top_menu .nav-item.dropdown .dropdown-toggle:contains("Example 1")',
-        run: "click",
-    }, {
-        content: 'Check sub menu are correctly created',
-        trigger: ':iframe .top_menu .dropdown-menu.show a.dropdown-item:contains("Item 1")',
-    }, {
-        content: 'The new menu hierarchy should not be included in the navbar',
-        trigger: ':iframe body:not(:has(.top_menu a[href="/dogs"]))',
-    }, {
-        content: 'The new menu hierarchy should be inside the footer',
-        trigger: ':iframe footer ul li a[href="/dogs"]',
-    },
     ...wTourUtils.clickOnEditAndWaitEditMode(),
     {
         content: 'Click on footer',
