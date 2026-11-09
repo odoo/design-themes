@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_carousel" inherit_id="website.s_carousel">
+    <xpath expr="//div[@data-name='Slide'][1]" position="attributes">
+        <attribute name="style">background-image: url('/theme_evmotiv/static/src/img/snippets/s_carousel_1.png');</attribute>
+        <attribute name="class" add="o_animating_text" separator=" "/>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Slide'][1]//h2" position="replace" mode="inner">
+        Electrify Your Drive
+    </xpath>
+
+        <xpath expr="//div[@data-name='Slide'][1]//p[hasclass('lead')]" position="replace" mode="inner">
+            Embrace the power of electric mobility. Our vehicles deliver exceptional range, rapid charging, and cutting-edge technology.
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Slide'][2]" position="attributes">
+        <attribute name="style">background-image: url('/theme_evmotiv/static/src/img/snippets/s_carousel_2.png');</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Slide'][2]//h2" position="replace" mode="inner">
+        Sustainable Future
+    </xpath>
+
+        <xpath expr="//div[@data-name='Slide'][2]//p[hasclass('lead')]" position="replace" mode="inner">
+        Join the revolution in eco-friendly transportation.<br/> Zero emissions without compromising performance.
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Slide'][3]" position="attributes">
+        <attribute name="style">background-image: url('/theme_evmotiv/static/src/img/snippets/s_carousel_3.png');</attribute>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Waves/01","colors":{"c3": "o-color-2"},"flip":[],"showOnMobile":true}</attribute>
+    </xpath>
+    
+    <xpath expr="//div[@data-name='Slide'][3]//h2" position="replace" mode="inner">
+        Innovation on Wheels
+    </xpath>
+
+        <xpath expr="//div[@data-name='Slide'][3]//p[hasclass('lead')]" position="replace" mode="inner">
+            Experience advanced autonomous features, intelligent connectivity, and seamless integration with your digital lifestyle.
+        </xpath>
+    
+    <xpath expr="//div[@data-name='Slide'][3]" position="inside">
+        <div class="o_we_shape o_html_builder_Waves_01" style="background-image: url('/html_editor/shape/html_builder/Waves/01.svg?c3=o-color-2');"/>
+    </xpath>
+</template>
+
+</odoo>

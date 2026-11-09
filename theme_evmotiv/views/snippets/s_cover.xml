@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cover" inherit_id="website.s_cover">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 o_full_screen_height" remove="pt232 pb232" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Connections/02','colors':{'c2': 'o-color-1'},'flip':[],'showOnMobile':true}</attribute>
+        <attribute name="data-scroll-background-ratio" add="0" separator=" "/>
+    </xpath>
+    
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Connections_02 o_we_animated" style="background-image: url('/html_editor/shape/html_builder/Connections/02.svg?c2=o-color-1'); background-position: 50% 50%;"/>
+    </xpath>
+    
+    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
+        <div class="o_we_bg_filter bg-black-75"/>
+    </xpath>
+    
+    <xpath expr="//span[hasclass('s_parallax_bg')]" position="attributes">
+        <attribute name="style">background-image: url('/theme_evmotiv/static/src/img/background/s_cover_bg.png'); background-position: center;</attribute>
+    </xpath>
+    
+    <xpath expr="//h1" position="replace" mode="inner">
+        Power Your <br/>Journey
+    </xpath>
+    
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Experience the future of sustainable mobility with our cutting-edge electric vehicles. Zero emissions, maximum performance.
+    </xpath>
+</template>
+
+</odoo>
