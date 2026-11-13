@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ======== INTRO SPOTLIGHT ======== -->
+<template id="configurator_s_intro_spotlight" inherit_id="website.configurator_s_intro_spotlight" name="Seam s_intro_spotlight">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc4" remove="o_cc5" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Lines/10","colors":{"c1":"o-color-2"},"flip":[],"showOnMobile":false}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Lines_10" style="background-image: url('/html_editor/shape/html_builder/Lines/10.svg?c1=o-color-2');"/>
+    </xpath>
+</template>
+
+<!-- ======== TEXT BOLD ======== -->
+<template id="configurator_s_text_bold" inherit_id="website.configurator_s_text_bold" name="Seam s_text_bold">
+    <!-- Section: tall enough to show the whole ribbon -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_three_quarter_height" separator=" "/>
+    </xpath>
+</template>
+
+<!-- ======== REVIEWS WALL ======== -->
+<template id="configurator_s_reviews_wall" inherit_id="website.configurator_s_reviews_wall" name="Seam s_reviews_wall">
+    <!-- Section: bold line running behind the blurred cards -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="data-oe-shape-data">{"shape":"html_builder/Lines/12","colors":{"c1":"o-color-1"},"flip":[],"showOnMobile":false}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Lines_12" style="background-image: url('/html_editor/shape/html_builder/Lines/12.svg?c1=o-color-1');"/>
+    </xpath>
+</template>
+
+</odoo>
