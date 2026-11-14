@@ -6,7 +6,6 @@
     'data': [
         'data/images.xml',
         'data/ir_asset.xml',
-        'data/menu.xml',
         'data/pages.xml',
         'data/shapes.xml',
         'views/footer.xml',
