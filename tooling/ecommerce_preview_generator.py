@@ -1,25 +1,58 @@
 """Regenerate the eCommerce configurator previews: one self-contained, JS-free
 page per shop and product page style, written in ``ecommerce_previews`` where
 ``website_sale/const.py`` points its ``preview_url``. Sibling of
-``theme_preview_generator``; expects odoo checked out next to design-themes.
+``theme_preview_generator``, whose processing it shares; expects odoo checked
+out next to design-themes.
+
+Like the themes, each style is rendered with a light and a dark palette, and
+only the light page is written as HTML, without its ``<style>``: its CSS is in
+``<layout>.scss``, followed by an ``@if $o-preview-dark`` block of the
+declarations that reproduce the dark page (see
+``theme_preview_generator.write_preview``).
 
 Run: ``python tooling/ecommerce_preview_generator.py``
 """
 
 import base64
-import json
 import os
 import re
 import shutil
 import subprocess
 import sys
 import time
-from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor, as_completed
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urljoin
 
 import requests
+import theme_preview_generator
 from bs4 import BeautifulSoup
+from theme_preview_generator import (
+    COLOR_TOKEN_END,
+    PREVIEW_VARIANTS,
+    _parse_css_declarations,
+    build_dark_css_diff,
+    check_palette_compiled_as_expected,
+    collect_style_css,
+    fetch,
+    hex_to_rgb,
+    inject_color_combination_text_overrides,
+    inject_palette_variables,
+    inline_font_preloads,
+    inline_images,
+    inline_inline_styles,
+    inline_style_blocks,
+    inline_stylesheets,
+    jsonrpc,
+    purge_unused_css,
+    remove_javascript,
+    remove_javascript_dependent_classes,
+    remove_preview_metadata,
+    remove_unused_font_faces,
+    replace_color_token,
+    replace_palette_colors_in_attributes,
+    write_preview,
+)
 
 
 THEMES_DIR = Path(__file__).resolve().parents[1]
@@ -35,7 +68,6 @@ BASE_DATABASE = "generate-ecommerce-html"
 BASE_HTTP_PORT = 8889
 NUM_WORKERS = int(os.environ.get("PREVIEW_WORKERS", min(4, os.cpu_count() or 1)))
 BOOT_STAGGER_SECONDS = 3
-STYLESHEET_FETCH_WORKERS = 6
 
 GENERIC_ODOO_ARGS = [
     f"--addons-path={ADDONS_DIR}",
@@ -54,62 +86,19 @@ def build_odoo_args(database, port, *extra_args):
     ]
 
 
-# The palette must stay the one ``PALETTE_COLORS`` tokenizes.
 CONFIGURATOR_VALUES = {
     "industry_id": 0,
     "industry_name": "business",
     "selected_features": [],
-    "selected_palette": "base-1",
     "website_purpose": "general",
     "website_type": "ecommerce",
     "skip_ai": True,
     "theme_name": "theme_default",
 }
 
-DOWNLOAD_SESSION = requests.Session()
-DOWNLOAD_SESSION.headers["User-Agent"] = (
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-)
-
-PSEUDO_RE = re.compile(r'::?[a-zA-Z-]+(\([^)]*\))?')
-
-
-CSS_URL_RE = re.compile(
-    r'url\(\s*'
-    r'(?:"([^"]*)"|\'([^\']*)\'|([^)]*))'
-    r'\s*\)'
-)
-
-
-VH_RE = re.compile(r"(-?(?:\d+(?:\.\d+)?|\.\d+))s?vh")
-
-
-COLOR_TOKEN_END = r"(?![0-9a-zA-Z_-])"
-
-
-PALETTE_COLORS = {
-    "--o-color-1": ("#714B67",),
-    "--o-color-2": ("#F0CDA8",),
-    "--o-color-3": ("#F6F5F4",),
-    "--o-color-4": ("#FFFFFF", "#FFF"),
-    "--o-color-5": ("#1B1319",),
-}
-
-
-def hex_to_rgb(color):
-    color = color.lstrip("#")
-    return tuple(int(color[index:index + 2], 16) for index in (0, 2, 4))
-
-
 # The text color ``color-contrast()`` froze against the generation palette.
 CONTRAST_TEXT_VAR = "--o-cc1-text"
 CONTRAST_TEXT_COLOR = "#212529"
-
-# The same colors as bare RGB components, out of reach of the hex tokenization.
-PALETTE_RGB_COLORS = {
-    hex_to_rgb(colors[0]): css_var for css_var, colors in PALETTE_COLORS.items()
-} | {hex_to_rgb(CONTRAST_TEXT_COLOR): CONTRAST_TEXT_VAR}
 
 # How far a mix may go before it stops being recognizable as its palette color.
 MIX_RATIO_RANGE = (0.05, 0.98)
@@ -129,32 +118,6 @@ RGBA_RE = re.compile(
     re.I,
 )
 HEX_COLOR_RE = re.compile(rf"#([0-9a-fA-F]{{6}}|[0-9a-fA-F]{{3}}){COLOR_TOKEN_END}")
-
-
-FONT_MIME_TYPES = {
-    ".woff2": "font/woff2",
-    ".woff": "font/woff",
-    ".ttf": "font/ttf",
-    ".otf": "font/otf",
-    ".eot": "application/vnd.ms-fontobject",
-}
-
-
-FONT_ASSET_URLS = {
-    "web.material_symbols_outlined.min.woff2": "/web/static/src/libs/materialsymbols/material_symbols_outlined_subset.woff2",
-    "web.material_symbols_sharp.min.woff2": "/web/static/src/libs/materialsymbols/material_symbols_sharp_subset.woff2",
-    "web.odoo_ui_icons.min.woff2": "/web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2",
-}
-
-
-DEFAULT_WEBSITE_LOGO_URL = "/website/static/src/img/website_logo.svg"
-
-
-WEBSITE_LOGO_URL_RE = re.compile(r"/web/image/website/\d+/logo(?:[/?#].*)?")
-
-
-VH_TO_VW_RATIO = 10 / 16
-
 
 # Previews are shown at about a third of their width, where a hairline border
 # falls under one device pixel and vanishes. Zero stays zero: it means no border.
@@ -337,136 +300,23 @@ def stop_odoo(server):
         server.wait()
 
 
-def jsonrpc(session, url, params, timeout=30):
-    response = session.post(
-        url,
-        json={
-            "jsonrpc": "2.0",
-            "method": "call",
-            "params": params,
-            "id": 1,
-        },
-        timeout=timeout,
-    )
-    response.raise_for_status()
-    payload = response.json()
-    if payload.get("error"):
-        raise RuntimeError(json.dumps(payload["error"], indent=2))
-    return payload["result"]
-
-
-def root_relative_url(url, base_url):
-    if not url or url.startswith(("data:", "#")):
-        return url
-    parsed = urlsplit(urljoin(base_url, url))
-    path = parsed.path or "/"
-    if parsed.query:
-        path += f"?{parsed.query}"
-    if parsed.fragment:
-        path += f"#{parsed.fragment}"
-    return path
-
-
-def is_external_url(url, base_url):
-    parsed = urlsplit(urljoin(base_url, url))
-    base = urlsplit(base_url)
-    return bool(parsed.netloc and parsed.netloc != base.netloc)
-
-
-def get_font_mime_type(url):
-    suffix = Path(urlsplit(url).path).suffix.lower()
-    return FONT_MIME_TYPES.get(suffix)
-
-
-def resolve_css_imports(css, base_url):
-    def replace(match):
-        url = match.group(1) or match.group(2)
-        if not url:
-            return ""
-        raw, _ = fetch(urljoin(base_url, url))
-        if not raw:
-            return ""
-        return resolve_css_imports(raw.decode("utf-8", errors="replace"), urljoin(base_url, url))
-
-    return re.sub(
-        r'@import\s+(?:url\(["\']?([^)"\']+)["\']?\)|["\']([^"\']+)["\'])\s*;',
-        replace,
-        css,
-    )
-
-
-def resolve_css_urls(css, base_url, quote='"'):
-    def replace(match):
-        raw_url, _quote = get_css_url(match)
-        if raw_url.startswith("data:"):
-            return match.group(0)
-        font_asset_url = get_stable_font_asset_url(raw_url)
-        if font_asset_url:
-            return f'url({quote}{font_asset_url}{quote})'
-        if get_font_mime_type(raw_url):
-            if is_external_url(raw_url, base_url):
-                return f'url({quote}{urljoin(base_url, raw_url)}{quote})'
-            return f'url({quote}{root_relative_url(raw_url, base_url)}{quote})'
-        return f'url({quote}{root_relative_url(raw_url, base_url)}{quote})'
-
-    return CSS_URL_RE.sub(replace, css)
-
-
-def get_stable_font_asset_url(url):
-    filename = Path(urlsplit(url).path).name
-    return FONT_ASSET_URLS.get(filename)
-
-
-def get_css_url(match):
-    double_quoted_url, single_quoted_url, unquoted_url = match.groups()
-    if double_quoted_url is not None:
-        return double_quoted_url, '"'
-    if single_quoted_url is not None:
-        return single_quoted_url, "'"
-    return unquoted_url.strip(), ""
-
-
-def replace_color_token(text, color, replacement):
-    # Do not replace #FFF inside #FFF3CD or %23FFF inside %23FFF3CD.
-    return re.sub(
-        rf"{re.escape(color)}{COLOR_TOKEN_END}",
-        replacement,
-        text,
-        flags=re.I,
-    )
-
-
-def replace_palette_colors_in_css(css_text):
-    protected = {}
-    for css_var, colors in PALETTE_COLORS.items():
-        for color in colors:
-            placeholder = f"__KEEP_{css_var.strip('-').replace('-', '_')}_{len(protected)}__"
-            pattern = re.compile(
-                rf"({re.escape(css_var)}\s*:\s*)"
-                rf"{re.escape(color)}{COLOR_TOKEN_END}",
-                re.I,
-            )
-            css_text = pattern.sub(lambda match: f"{match.group(1)}{placeholder}", css_text)
-            protected[placeholder] = color
-
-    for css_var, colors in PALETTE_COLORS.items():
-        for color in colors:
-            css_text = replace_color_token(css_text, color, f"var({css_var})")
-
-    for placeholder, color in protected.items():
-        css_text = css_text.replace(placeholder, color)
-    return css_text
+def palette_rgb_colors():
+    """The palette colors as bare RGB components, out of reach of the hex tokenization."""
+    return {
+        hex_to_rgb(colors[0]): css_var
+        for css_var, colors in theme_preview_generator.PALETTE_COLORS.items()
+    } | {hex_to_rgb(CONTRAST_TEXT_COLOR): CONTRAST_TEXT_VAR}
 
 
 def palette_color(rgb):
-    css_var = PALETTE_RGB_COLORS.get(tuple(round(component) for component in rgb))
+    css_var = palette_rgb_colors().get(tuple(round(component) for component in rgb))
     return f"var({css_var})" if css_var else None
 
 
 def palette_color_mix(rgb):
     """Rebuild a color Bootstrap froze by mixing a palette color with black or white."""
     minimum, maximum = MIX_RATIO_RANGE
-    for palette_rgb, css_var in PALETTE_RGB_COLORS.items():
+    for palette_rgb, css_var in palette_rgb_colors().items():
         for mixed, components, palette_components in (
             ("black", rgb, palette_rgb),
             ("white", [255 - c for c in rgb], [255 - c for c in palette_rgb]),
@@ -533,76 +383,6 @@ def replace_derived_palette_colors_in_css(css_text):
     return css_text.replace("__KEEP_CONTRAST_TEXT__", declaration)
 
 
-def replace_palette_colors_in_url(url):
-    for css_var, colors in PALETTE_COLORS.items():
-        color_token = css_var.removeprefix("--")
-        for color in colors:
-            encoded_color = "%23" + color.lstrip("#")
-            url = replace_color_token(url, encoded_color, color_token)
-    return url
-
-
-def replace_palette_colors_in_urls(text):
-    def replace(match):
-        raw_url, quote = get_css_url(match)
-        if raw_url.startswith("data:"):
-            # Inline SVG icons need real colors, not palette tokens.
-            return match.group(0)
-        url = replace_palette_colors_in_url(raw_url)
-        return f"url({quote}{url}{quote})"
-
-    return CSS_URL_RE.sub(replace, text)
-
-
-def replace_palette_colors_in_style(style_text):
-    style_text = replace_palette_colors_in_urls(style_text)
-    for css_var, colors in PALETTE_COLORS.items():
-        for color in colors:
-            style_text = replace_color_token(style_text, color, f"var({css_var})")
-    return style_text
-
-
-def replace_palette_colors_in_attributes(soup):
-    for tag in soup.find_all(True):
-        for attribute in ("fill", "stroke", "stop-color", "color"):
-            value = tag.get(attribute)
-            if not value:
-                continue
-            tag[attribute] = replace_palette_colors_in_style(value)
-
-
-def inject_palette_variables(soup):
-    if soup.head is None:
-        soup.html.insert(0, soup.new_tag("head"))
-    style = soup.new_tag("style")
-    style["id"] = "preview-palette-vars"
-    style.string = ":root{" + " ".join(
-        f"{css_var}: {colors[0]};" for css_var, colors in PALETTE_COLORS.items()
-    ) + "}"
-    soup.head.append(style)
-
-
-def inject_color_combination_text_overrides(soup):
-    if soup.head is None:
-        soup.html.insert(0, soup.new_tag("head"))
-
-    heading_selectors = "h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6"
-    rules = []
-    for index in range(1, 6):
-        text_color = f"var(--o-cc{index}-text)"
-        rules.append(f".o_cc{index}{{--color:{text_color};color:{text_color};}}")
-        rules.append(
-            f".o_cc{index} :is({heading_selectors}),"
-            f".o_colored_level .o_cc{index} :is({heading_selectors})"
-            f"{{color:{text_color};}}"
-        )
-
-    style = soup.new_tag("style")
-    style["id"] = "preview-color-combination-text-overrides"
-    style.string = "".join(rules)
-    soup.head.append(style)
-
-
 def inject_image_overlay_text_overrides(soup):
     """Keep a label printed over an image white, whatever the palette does to ``$white``."""
     if soup.head is None:
@@ -620,17 +400,6 @@ def inject_image_overlay_text_overrides(soup):
     soup.head.append(style)
 
 
-def convert_vh_to_vw(css_text, ratio=VH_TO_VW_RATIO):
-    if "vh" not in css_text:
-        return css_text
-
-    def replace(match):
-        vw = float(match.group(1)) * ratio
-        return f"{vw:g}vw"
-
-    return VH_RE.sub(replace, css_text)
-
-
 def enforce_minimum_border_width(css_text):
     def widen(match):
         width = float(match.group(1))
@@ -643,255 +412,6 @@ def enforce_minimum_border_width(css_text):
         return property_name + BORDER_LENGTH_RE.sub(widen, value)
 
     return BORDER_DECLARATION_RE.sub(replace, css_text)
-
-
-def remove_parallax_fixed_background(css_text):
-    def replace(match):
-        selector = match.group(1)
-        body = match.group(2)
-        if ".s_parallax_bg" not in selector:
-            return match.group(0)
-        body = re.sub(r"\s*background-attachment\s*:\s*fixed\s*;?", "", body, flags=re.I)
-        return f"{selector}{{{body}}}"
-
-    return re.sub(r"([^{}]+)\{([^{}]*)\}", replace, css_text)
-
-
-def process_css(css_text, base_url):
-    css_text = resolve_css_imports(css_text, base_url)
-    css_text = resolve_css_urls(css_text, base_url)
-    css_text = convert_vh_to_vw(css_text)
-    css_text = enforce_minimum_border_width(css_text)
-    css_text = remove_parallax_fixed_background(css_text)
-    css_text = replace_palette_colors_in_urls(css_text)
-    css_text = replace_palette_colors_in_css(css_text)
-    return replace_derived_palette_colors_in_css(css_text)
-
-
-def inline_stylesheets(soup, base_url):
-    links = soup.find_all("link", rel=lambda rel: rel and "stylesheet" in rel)
-
-    def fetch_link(link):
-        href = link.get("href")
-        if not href:
-            return link, None, None
-        abs_url = urljoin(base_url, href)
-        raw, _ = fetch(abs_url)
-        return link, abs_url, raw
-
-    # Pure network I/O; the CPU-bound ``process_css`` stays sequential below.
-    with ThreadPoolExecutor(max_workers=STYLESHEET_FETCH_WORKERS) as executor:
-        fetched = list(executor.map(fetch_link, links))
-
-    for link, abs_url, raw in fetched:
-        if not raw:
-            link.decompose()
-            continue
-        style = soup.new_tag("style")
-        style.string = process_css(raw.decode("utf-8", errors="replace"), abs_url)
-        link.replace_with(style)
-
-
-def inline_style_blocks(soup, base_url):
-    for style in soup.find_all("style"):
-        if style.string:
-            style.string = process_css(style.string, base_url)
-
-
-def inline_inline_styles(soup, base_url):
-    for tag in soup.find_all(style=True):
-        # Single quotes: the url() ends up in a double-quoted style attribute.
-        style = resolve_css_urls(tag["style"], base_url, quote="'")
-        style = convert_vh_to_vw(style)
-        tag["style"] = replace_palette_colors_in_style(style)
-
-
-def inline_images(soup, base_url):
-    for image in soup.find_all("img"):
-        src = image.get("src", "")
-        if src:
-            src = root_relative_url(src, base_url)
-            if WEBSITE_LOGO_URL_RE.fullmatch(src):
-                src = DEFAULT_WEBSITE_LOGO_URL
-            image["src"] = src
-        image.attrs.pop("srcset", None)
-
-    for source in soup.find_all("source"):
-        source.attrs.pop("srcset", None)
-
-
-def inline_font_preloads(soup, base_url):
-    for link in soup.find_all("link", attrs={"as": "font"}):
-        href = link.get("href")
-        if not href:
-            continue
-        font_asset_url = get_stable_font_asset_url(href)
-        if font_asset_url:
-            link["href"] = font_asset_url
-            continue
-        if is_external_url(href, base_url):
-            link["href"] = urljoin(base_url, href)
-            continue
-        link["href"] = root_relative_url(href, base_url)
-
-
-def remove_preview_metadata(soup):
-    for tag in soup.find_all("meta", property=lambda value: value in ("og:url", "og:image")):
-        tag.decompose()
-    for tag in soup.find_all("meta", attrs={"name": "twitter:image"}):
-        tag.decompose()
-
-    for link in soup.find_all("link"):
-        rel = link.get("rel", [])
-        rel = [rel] if isinstance(rel, str) else rel
-        rel = {value.lower() for value in rel}
-        if rel & {"canonical", "apple-touch-icon", "icon"}:
-            link.decompose()
-
-
-def remove_javascript(soup):
-    for script in soup.find_all("script"):
-        script.decompose()
-
-    for noscript in soup.find_all("noscript"):
-        noscript.unwrap()
-
-    for tag in soup.find_all(True):
-        for attribute in list(tag.attrs):
-            if attribute.lower().startswith("on"):
-                del tag[attribute]
-
-    for link in soup.find_all("a", href=re.compile(r"^\s*javascript:", re.I)):
-        link["href"] = "#"
-
-
-def remove_javascript_dependent_classes(soup):
-    # These keep an element invisible until frontend JS reveals it, and there is none.
-    for removed_class in ("o_animate", "o_menu_loading"):
-        for tag in soup.select(f".{removed_class}"):
-            classes = [class_name for class_name in tag.get("class", []) if class_name != removed_class]
-            if classes:
-                tag["class"] = classes
-            else:
-                tag.attrs.pop("class", None)
-
-
-def _skip_string(css, position):
-    quote = css[position]
-    position += 1
-    while position < len(css):
-        if css[position] == "\\":
-            position += 2
-            continue
-        if css[position] == quote:
-            return position + 1
-        position += 1
-    return position
-
-
-def _skip_comment(css, position):
-    end = css.find("*/", position + 2)
-    return end + 2 if end != -1 else len(css)
-
-
-def _find_block_end(css, start):
-    depth = 1
-    position = start + 1
-    while position < len(css) and depth > 0:
-        char = css[position]
-        if char in ('"', "'"):
-            position = _skip_string(css, position)
-        elif char == "/" and position + 1 < len(css) and css[position + 1] == "*":
-            position = _skip_comment(css, position)
-        elif char == "{":
-            depth += 1
-            position += 1
-        elif char == "}":
-            depth -= 1
-            position += 1
-        else:
-            position += 1
-    return position
-
-
-def _selector_is_used(soup, selector_text):
-    for part in selector_text.split(","):
-        cleaned = PSEUDO_RE.sub("", part).strip()
-        if not cleaned:
-            return True
-        try:
-            if soup.select_one(cleaned):
-                return True
-        except Exception:  # noqa: BLE001
-            # An unparsable selector is kept: dropping its rule would break the page.
-            return True
-    return False
-
-
-def _purge_css_text(css, soup):
-    result = []
-    position = 0
-    while position < len(css):
-        whitespace_start = position
-        while position < len(css) and css[position] in " \t\n\r\f":
-            position += 1
-        if position >= len(css):
-            result.append(css[whitespace_start:position])
-            break
-
-        if css[position:position + 2] == "/*":
-            end = _skip_comment(css, position)
-            result.append(css[whitespace_start:end])
-            position = end
-            continue
-
-        if css[position] == "@":
-            at_start = position
-            position += 1
-            while position < len(css) and (css[position].isalpha() or css[position] == "-"):
-                position += 1
-            keyword = css[at_start + 1:position].strip().lower()
-            if keyword in ("import", "charset", "namespace"):
-                end = css.find(";", position)
-                if end == -1:
-                    result.append(css[whitespace_start:])
-                    break
-                result.append(css[whitespace_start:end + 1])
-                position = end + 1
-            else:
-                brace = css.find("{", position)
-                if brace == -1:
-                    result.append(css[whitespace_start:])
-                    break
-                end = _find_block_end(css, brace)
-                result.append(css[whitespace_start:end])
-                position = end
-            continue
-
-        brace = css.find("{", position)
-        if brace == -1:
-            result.append(css[whitespace_start:])
-            break
-
-        selector = css[position:brace].strip()
-        end = _find_block_end(css, brace)
-        rule_text = css[whitespace_start:end]
-        if not selector or _selector_is_used(soup, selector):
-            result.append(rule_text)
-        position = end
-
-    return "".join(result)
-
-
-def purge_unused_css(soup):
-    for style in soup.find_all("style"):
-        if not style.string:
-            continue
-        cleaned = _purge_css_text(style.string, soup)
-        if cleaned.strip():
-            style.string = cleaned
-        else:
-            style.decompose()
 
 
 def add_odoo_to_path():
@@ -996,16 +516,6 @@ def call_kw(session, base_url, context, model, method, args, timeout=30):
     )
 
 
-def fetch(url):
-    try:
-        response = DOWNLOAD_SESSION.get(url, timeout=30)
-        response.raise_for_status()
-        return response.content, response.headers.get("Content-Type", "")
-    except requests.RequestException as error:
-        print(f"  WARN: {url} - {error}", file=sys.stderr)  # noqa: T201
-        return None, None
-
-
 def encode_image(url):
     return base64.b64encode((ADDONS_DIR / url.lstrip("/")).read_bytes()).decode()
 
@@ -1049,7 +559,7 @@ def set_product_page_images(session, base_url, context, product_id, images):
     }], timeout=120)
 
 
-def apply_configurator(session, base_url, context, style_keyword, option):
+def apply_configurator(session, base_url, context, style_keyword, option, selected_palette, is_dark_palette):
     return jsonrpc(
         session,
         f"{base_url}/web/dataset/call_kw/website/configurator_apply",
@@ -1057,7 +567,13 @@ def apply_configurator(session, base_url, context, style_keyword, option):
             "model": "website",
             "method": "configurator_apply",
             "args": [],
-            "kwargs": {**CONFIGURATOR_VALUES, style_keyword: option, "context": context},
+            "kwargs": {
+                **CONFIGURATOR_VALUES,
+                style_keyword: option,
+                "selected_palette": selected_palette,
+                "is_dark_palette": is_dark_palette,
+                "context": context,
+            },
         },
         timeout=900,
     )
@@ -1191,8 +707,8 @@ def warn_unstamped_texts(soup, preview_texts, output_path):
 
 
 def download_static_html(url, output_path, stamp):
-    print(f"Downloading {url} -> {output_path}")  # noqa: T201
-    raw, _ = fetch(url)
+    print(f"Downloading {url}")  # noqa: T201
+    raw = fetch(url)
     if not raw:
         raise RuntimeError("Could not download the generated page.")
 
@@ -1201,6 +717,9 @@ def download_static_html(url, output_path, stamp):
     stamp(soup)
     inline_stylesheets(soup, url)
     inline_style_blocks(soup, url)
+    for style in soup.find_all("style"):
+        if style.string:
+            style.string = enforce_minimum_border_width(replace_derived_palette_colors_in_css(style.string))
     inline_inline_styles(soup, url)
     inline_images(soup, url)
     inline_font_preloads(soup, url)
@@ -1209,21 +728,15 @@ def download_static_html(url, output_path, stamp):
     remove_javascript(soup)
     remove_javascript_dependent_classes(soup)
     purge_unused_css(soup)
+    check_palette_compiled_as_expected(soup)
     inject_palette_variables(soup)
     inject_color_combination_text_overrides(soup)
     inject_image_overlay_text_overrides(soup)
     warn_unresolved_record_images(soup, output_path)
-
-    for meta in soup.find_all("meta", attrs={"http-equiv": True}):
-        if meta["http-equiv"].lower() in ("refresh", "content-security-policy"):
-            meta.decompose()
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(str(soup), encoding="utf-8")
+    return soup
 
 
-def generate_style_preview(database, port, style_keyword, option, output_path, product_id):
-    print(f"Generating {option}")  # noqa: T201
+def render_style(database, port, style_keyword, option, output_path, product_id, selected_palette, is_dark_palette):
     is_shop_page = style_keyword == "shop_page_style_option"
     base_url = f"http://localhost:{port}"
 
@@ -1233,7 +746,9 @@ def generate_style_preview(database, port, style_keyword, option, output_path, p
     try:
         wait_for_odoo(server, base_url)
         context = login(session, base_url, database).get("user_context", {})
-        result = apply_configurator(session, base_url, context, style_keyword, option)
+        result = apply_configurator(
+            session, base_url, context, style_keyword, option, selected_palette, is_dark_palette,
+        )
         set_shop_page_size(session, base_url, context, result["website_id"])
         if is_shop_page:
             image_keys = get_shop_image_keys(option)
@@ -1249,11 +764,36 @@ def generate_style_preview(database, port, style_keyword, option, output_path, p
             def stamp(soup):
                 stamp_product_page(soup, page_images, output_path)
 
-        download_static_html(urljoin(base_url, path), output_path, stamp)
-        print(f"Saved {output_path}")  # noqa: T201
+        return download_static_html(urljoin(base_url, path), output_path, stamp)
     finally:
         session.close()
         stop_odoo(server)
+
+
+def generate_style_preview(database, port, style_keyword, option, output_path, product_id):
+    print(f"Generating {option}")  # noqa: T201
+    soups = []
+    for _suffix, palette, selected_palette, is_dark_palette in PREVIEW_VARIANTS:
+        theme_preview_generator.PALETTE_COLORS = palette
+        soups.append(render_style(
+            database, port, style_keyword, option, output_path, product_id, selected_palette, is_dark_palette,
+        ))
+
+    light_soup, dark_soup = soups
+    light_css = collect_style_css(light_soup)
+    css_diff = build_dark_css_diff(light_css, collect_style_css(dark_soup), dark_soup)
+    style_tags = [style for style in light_soup.find_all("style") if style.string]
+    *light_texts, css_diff = remove_unused_font_faces(
+        [style.string for style in style_tags] + [css_diff],
+        _parse_css_declarations(light_css) + _parse_css_declarations(css_diff),
+        [light_soup, dark_soup],
+    )
+    for style, text in zip(style_tags, light_texts, strict=True):
+        style.string = text
+
+    scss_path = output_path.with_suffix(".scss")
+    write_preview(light_soup, output_path, scss_path, css_diff)
+    print(f"Saved {output_path} and {scss_path}")  # noqa: T201
 
 
 def worker_database(worker_index):
