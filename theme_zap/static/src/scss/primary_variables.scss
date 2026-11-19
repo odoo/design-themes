@@ -13,6 +13,11 @@ $o-website-values-palettes: (
         'font':                             'Open Sans',
         'headings-font':                    'Manrope',
 
+        // Borders
+        'border-radius':                    .125rem,
+        'border-radius-sm':                 0,
+        'border-radius-lg':                 .25rem,
+
         // Buttons
         'btn-padding-y':                    .625rem,
         'btn-padding-x':                    1.5rem,
@@ -26,6 +31,9 @@ $o-website-values-palettes: (
         'input-padding-y':                  .75rem,
         'input-padding-y-sm':               .375rem,
         'input-padding-y-lg':               .75rem,
+
+        // Cards
+        'card-border-radius':               .25rem,
 
         // Footer
         'footer-template':                  'links',
