@@ -18,7 +18,7 @@
         Discover our<br/>latest collection
     </xpath>
     <xpath expr="//a[hasclass('btn')]" position="replace">
-        <a t-att-href="shop_btn_href" class="o_translate_inline btn btn-lg btn-primary">Shop Now</a>
+        <a t-att-href="shop_btn_href" class="btn btn-lg btn-primary">Shop Now</a>
     </xpath>
 </template>
 
