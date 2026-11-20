@@ -1,0 +1,85 @@
+<odoo>
+    <data>
+        <template id="custom_footer" inherit_id="website.layout">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div id="footer"
+                    class="oe_structure oe_structure_solo pt48 pb40"
+                    style="background:linear-gradient(180deg,#101823 0%,#05080A 100%); border-top:1px solid rgba(0,240,192,0.12);">
+                    <div class="container-fluid px-lg-5">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-12 mb-4">
+                                <img src="/theme_evmotiv/static/src/img/logo/theme_logo.png"
+                                    alt="EVMotiv Logo"
+                                    style="height:72px;"
+                                    class="mb-3" />
+                                <h3 class="fw-bold mb-2" style="color:#EAF6F6; letter-spacing:3px;">EVMotiv</h3>
+                                <p class="lead mb-0" style="color:#AEBCC8;"> Electric Motion — Driving the Future with Intelligent Electric Mobility.</p>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <h4 class="fw-semibold mb-3" style="color:#00F0C0;">Company</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">About EVMotiv</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">Our Technology</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">Innovation Lab</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">Careers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <h4 class="fw-semibold mb-3" style="color:#6E5BFF;">Explore</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">Vehicle Lineup</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">Charging Network</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">Ownership</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <h4 class="fw-semibold mb-3" style="color:#00F0C0;">Connect</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">Instagram</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">LinkedIn</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">YouTube</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="color:#C8D7E0; text-decoration:none;">X</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+                <div class="col-12 mt-3 d-flex justify-content-center align-items-center" style="border-top:1px solid rgba(255,255,255,0.08); padding-top:18px;">
+                    <p class="small mb-0 text-center w-100" style="color:#95A6B4;"> © 2026
+                        <span style="color:#EAF6F6; font-weight:600;">EVMotiv</span> — All Rights
+                        Reserved. <span style="color:#00F0C0;">
+                            Electric Motion.
+                        </span>
+                    </p>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

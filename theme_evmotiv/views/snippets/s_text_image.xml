@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_text_image" inherit_id="website.s_text_image">
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc1" separator=" "/>
+        <attribute name="data-scroll-background-ratio" add="0.5" separator=" "/>
+    </xpath>
+    
+    <xpath expr="//h2" position="replace" mode="inner">
+        Redefine Your <strong>Mobility</strong>
+    </xpath>
+
+        <xpath expr="//div[hasclass('col-lg-5', 'pt16', 'pb16')]/p[1]" position="replace" mode="inner">
+            Our electric vehicles combine state-of-the-art battery technology with sleek design. Experience unmatched efficiency, whisper-quiet operation, and instant torque delivery.
+        </xpath>
+
+        <xpath expr="//div[hasclass('col-lg-5', 'pt16', 'pb16')]/p[2]" position="replace" mode="inner">
+            With advanced regenerative braking and intelligent energy management, every journey maximizes your range while minimizing environmental impact.
+        </xpath>
+    
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/theme_evmotiv/static/src/img/snippets/s_text_image.png</attribute>
+        <attribute name="class" add="o_animating_img" separator=" "/>
+    </xpath>
+
+        <xpath expr="//a[hasclass('btn', 'btn-secondary', 'o_translate_inline')]" position="attributes">
+        <attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "/>
+    </xpath>
+</template>
+
+</odoo>
