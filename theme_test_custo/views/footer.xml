@@ -5,7 +5,7 @@
 <template id="template_footer_custom" inherit_id="website.layout" name="Test Theme Custom Footer Template">
     <xpath expr="//div[@id='footer']" position="replace">
         <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
-            <section class="s_text_block pt24 pb24" data-snippet="s_text_block" data-name="Text">
+            <section class="s_text_block pt24 pb24" data-snippet="s_text_block">
                 <div class="container-fluid px-lg-5">
                     <div class="row">
                         <div class="col-lg-1 offset-lg-2 pt24 pb24">
