@@ -68,16 +68,9 @@ def test_02_theme_default_generate_primary_templates(env):
         website.ensure_one()
         with MockRequest(env, website=website):
             website.configurator_apply(
-                selected_features=[
-                    env.ref('website.feature_page_about_us').id,
-                    env.ref('website.feature_page_our_services').id,
-                    env.ref('website.feature_page_pricing').id,
-                    env.ref('website.feature_module_news').id,
-                ],
                 industry_id=2836,
                 industry_name='private university',
                 selected_palette='default-15',
                 theme_name='theme_bewise',
-                website_purpose='get_leads',
                 website_type='business',
             )
