@@ -4,7 +4,9 @@ from odoo import models
 class ThemeUtils(models.AbstractModel):
     _inherit = 'theme.utils'
 
-    def _theme_eclipse_post_copy(self, mod):
+    def _apply_theme_config(self, module):
+        if module.name != 'theme_eclipse':
+            return super()._apply_theme_config(module)
         self.disable_view('website.header_call_to_action')
 
         self.enable_view('website.template_footer_mega_links')

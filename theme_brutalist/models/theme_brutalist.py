@@ -4,7 +4,9 @@ from odoo import models
 class ThemeUtils(models.AbstractModel):
     _inherit = 'theme.utils'
 
-    def _theme_brutalist_post_copy(self, mod):
+    def _apply_theme_config(self, module):
+        if module.name != 'theme_brutalist':
+            return super()._apply_theme_config(module)
         self.disable_view('website.option_header_brand_logo')
         self.disable_view('website.header_text_element')
         self.disable_view('website.header_search_box')

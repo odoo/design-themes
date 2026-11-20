@@ -4,7 +4,9 @@ from odoo import models
 class ThemeUtils(models.AbstractModel):
     _inherit = 'theme.utils'
 
-    def _theme_bistro_post_copy(self, mod):
+    def _apply_theme_config(self, module):
+        if module.name != 'theme_bistro':
+            return super()._apply_theme_config(module)
         self.set_page_option('header_overlay', True)
         self.set_page_option('header_color', 'bg-black-25')
         self.set_page_option(
