@@ -1,20 +1,24 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* theme_real_estate
+# * theme_real_estate
 #
+# Dorin Hongu <dhongu@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-28 17:44+0000\n"
-"PO-Revision-Date: 2025-07-01 12:56+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2026-11-21 10:23+0000\n"
+"Last-Translator: Dorin Hongu <dhongu@gmail.com>\n"
+"Language-Team: Romanian <https://translate.odoo.com/projects/odoo-20/"
+"theme_real_estate/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 2026.11.2\n"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
@@ -22,6 +26,8 @@ msgid ""
 "<a href=\"#\" class=\"btn btn-secondary o_translate_inline\">Explore our "
 "services</a>"
 msgstr ""
+"<a href=\"#\" class=\"btn btn-secondary o_translate_inline\">Descoperă "
+"serviciile noastre</a>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
@@ -34,6 +40,14 @@ msgid ""
 "[{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
 "0, 0, 0.5) 2px 2px 10px;\">Your easy home search, all in one</span>"
 msgstr ""
+"<span class=\"text-o-color-2\" data-text-effect=\""
+"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:["
+"{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">ESTATE</span><br/><span data-text-effect=\""
+"{&quot;preset&quot;:&quot;blurred_black&quot;,&quot;shadows&quot;:["
+"{&quot;shadowBlur&quot;:&quot;10px&quot;}]}\" style=\"text-shadow: rgba(0, "
+"0, 0, 0.5) 2px 2px 10px;\">Caută-ți ușor locuința, totul într-un singur loc</"
+"span>"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -41,16 +55,18 @@ msgid ""
 "Amazing team! smiling, always nice to talk with, they always have the best "
 "advices for you, adapted to your needs!"
 msgstr ""
+"O echipă extraordinară, mereu zâmbitoare și amabilă. Oferă cele mai bune "
+"sfaturi, adaptate nevoilor tale!"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_image
 msgid "Are you thinking of selling?"
-msgstr ""
+msgstr "Te gândești să vinzi?"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid "Bored with your interior?"
-msgstr ""
+msgstr "Te-ai plictisit de designul interior?"
 
 #. module: theme_real_estate
 #: model:ir.module.module,description:base.module_theme_real_estate
@@ -62,32 +78,39 @@ msgid ""
 "suited for real estate agencies, construction services, vacation rentals, "
 "and accommodation listings"
 msgstr ""
+"Imaginea principală continuă cu secțiuni alternante de text și imagine, "
+"listări pe trei coloane, prezentarea echipei, statistici și un carusel de "
+"testimoniale, urmate de un îndemn la acțiune. Stil aerisit, discret, fără "
+"forme decorative recurente în fundal. Axată pe listări și încredere; "
+"potrivită pentru agenții imobiliare, firme de construcții, închirieri de "
+"vacanță și unități de cazare."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid "Customer, bought a house"
-msgstr ""
+msgstr "Client care a cumpărat o casă"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid "Customer, bought an appartement"
-msgstr ""
+msgstr "Client care a cumpărat un apartament"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
 msgid "Customer, sold an appartement"
-msgstr ""
+msgstr "Client care a vândut un apartament"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
 msgid ""
 "Discover our tailor-made services to embellish the decoration of your home."
 msgstr ""
+"Descoperă serviciile noastre personalizate pentru a-ți înfrumuseța locuința."
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nume afișat"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -95,11 +118,14 @@ msgid ""
 "From start to finish, they were extremely professional, friendly, helpful "
 "and easy to do business with. Very happy with the experience and the company."
 msgstr ""
+"De la început până la sfârșit, au fost extrem de profesioniști, prietenoși, "
+"săritori și ușor de abordat. Suntem foarte mulțumiți de experiență și de "
+"companie."
 
 #. module: theme_real_estate
 #: model:ir.model.fields,field_description:theme_real_estate.field_theme_utils__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_text_image
@@ -110,6 +136,10 @@ msgid ""
 "        You can decide in all freedom whether or not you would like to work "
 "with us for the sale of your property."
 msgstr ""
+"Programează o evaluare gratuită a proprietății. O vizităm, îți recomandăm un "
+"preț realist și îți explicăm modul nostru de lucru. <br/>\n"
+"        Poți decide în deplină libertate dacă dorești sau nu să lucrăm "
+"împreună pentru vânzarea proprietății."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_image_text
@@ -118,6 +148,8 @@ msgid ""
 "design of your interior and will give you the best advice for your interior "
 "design."
 msgstr ""
+"Experții noștri în amenajări te îndrumă pas cu pas în proiectarea "
+"interiorului și îți oferă cele mai bune recomandări de design."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_quotes_carousel
@@ -125,11 +157,13 @@ msgid ""
 "Positive energy, great team spirit, hard workers and awesome people! I "
 "warmly recommend them!"
 msgstr ""
+"Energie pozitivă, spirit de echipă excelent și oameni minunați, muncitori. "
+"Îi recomand cu căldură!"
 
 #. module: theme_real_estate
 #: model:ir.module.module,shortdesc:base.module_theme_real_estate
 msgid "Real Estate Theme"
-msgstr ""
+msgstr "Temă pentru imobiliare"
 
 #. module: theme_real_estate
 #: model:ir.module.module,summary:base.module_theme_real_estate
@@ -137,28 +171,30 @@ msgid ""
 "Real Estate, Agencies, Construction, Services, Accomodations, Lodging, "
 "Hosting, Houses, Appartments, Vacations, Holidays, Travels"
 msgstr ""
+"Imobiliare, agenții, construcții, servicii, cazări, găzduire, case, "
+"apartamente, vacanțe, sărbători, călătorii"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_cover
 msgid "Search Now"
-msgstr ""
+msgstr "Caută acum"
 
 #. module: theme_real_estate
 #: model:ir.model,name:theme_real_estate.model_theme_utils
 msgid "Theme Utils"
-msgstr ""
+msgstr "Utile Temă"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "Want To Become A Real Estate Agent?"
-msgstr ""
+msgstr "Vrei să devii agent imobiliar?"
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_call_to_action
 msgid "We'll help you to grow your career and growth."
-msgstr ""
+msgstr "Te vom ajuta să-ți dezvolți cariera."
 
 #. module: theme_real_estate
 #: model_terms:theme.ir.ui.view,arch:theme_real_estate.s_title
 msgid "Where every house becomes a home."
-msgstr ""
+msgstr "Acolo unde fiecare casă devine acasă."

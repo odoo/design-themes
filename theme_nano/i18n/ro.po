@@ -3,7 +3,7 @@
 # * theme_nano
 #
 # Alin Ilie <alin.ilie@logit-solutions.com>, 2025.
-# Dorin Hongu <dhongu@gmail.com>, 2025.
+# Dorin Hongu <dhongu@gmail.com>, 2025, 2026.
 # Adrian Cocos <adrian.cocos@capps.ai>, 2025.
 # Weblate <noreply-mt-weblate@weblate.org>, 2026.
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-28 17:44+0000\n"
-"PO-Revision-Date: 2026-06-14 02:22+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
-"Language-Team: Romanian <https://translate.odoo.com/projects/odoo-s19-3/"
+"PO-Revision-Date: 2026-11-21 11:37+0000\n"
+"Last-Translator: Dorin Hongu <dhongu@gmail.com>\n"
+"Language-Team: Romanian <https://translate.odoo.com/projects/odoo-20/"
 "theme_nano/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.6.1\n"
+"X-Generator: Weblate 2026.11.2\n"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images
@@ -50,6 +50,8 @@ msgid ""
 "<i class=\"oi oi-filled text-success\" data-icon=\"circle\" aria-"
 "hidden=\"true\"/> AVAILABLE FOR NEW PROJECTS"
 msgstr ""
+"<i class=\"oi oi-filled text-success\" data-icon=\"circle\" aria-"
+"hidden=\"true\"/> DISPONIBILI PENTRU PROIECTE NOI"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_text_block
@@ -66,17 +68,15 @@ msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_numbers
-#, fuzzy
 msgid ""
 "<span class=\"s_number display-1-fs\">4.5</span><br/>\n"
 "                <span class=\"h5-fs\">Review Rate</span>"
 msgstr ""
 "<span class=\"s_number display-1-fs\">4.5</span><br/>\n"
-"                <span class=\"h5-fs\">Rată recenzii</span>"
+"                <span class=\"h5-fs\">Scorul recenziilor</span>"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_numbers
-#, fuzzy
 msgid ""
 "<span class=\"s_number display-1-fs\">40h</span><br/>\n"
 "                <span class=\"h5-fs\">Average shipping time</span>"
@@ -86,13 +86,12 @@ msgstr ""
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_numbers
-#, fuzzy
 msgid ""
 "<span class=\"s_number display-1-fs\">50+</span><br/>\n"
 "                <span class=\"h5-fs\">Happy customers</span>"
 msgstr ""
 "<span class=\"s_number display-1-fs\">50+</span><br/>\n"
-"                <span class=\"h5-fs\">Clienți fericiți</span>"
+"                <span class=\"h5-fs\">Clienți mulțumiți</span>"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_text_block
@@ -119,6 +118,7 @@ msgstr "Ben Cole"
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_discovery
 msgid "Contact us <i class=\"oi\" data-icon=\"east\" aria-hidden=\"true\"/>"
 msgstr ""
+"Contactează-ne <i class=\"oi\" data-icon=\"east\" aria-hidden=\"true\"/>"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
@@ -134,6 +134,12 @@ msgid ""
 "restrained styling. Story-led and image-forward / suited for creative "
 "agencies, makers, design studios, and creative-IT services"
 msgstr ""
+"O secțiune de explorare duce către o scenă cu efect de paralaxă, secțiuni "
+"axate pe text, imagini-cheie, o zonă cu imagini suprapuse peste text și o "
+"grilă simplă cu echipa. Urmează referințe, indicatori-cheie și un îndemn la "
+"acțiune centrat. Designul folosește fotografii și elemente grafice discrete, "
+"spune o poveste și pune accent pe imagini; se potrivește agențiilor "
+"creative, creatorilor, studiourilor de design și serviciilor IT creative."
 
 #. module: theme_nano
 #: model:ir.model.fields,field_description:theme_nano.field_theme_utils__display_name
@@ -163,7 +169,7 @@ msgstr "Jane Ford"
 #. module: theme_nano
 #: model:ir.module.module,summary:base.module_theme_nano
 msgid "Maker, Agencies, Creative, Design, IT, Services, Fancy"
-msgstr ""
+msgstr "Creatori, agenții, creativitate, design, IT, servicii, elegant"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_company_team_basic
@@ -192,7 +198,7 @@ msgstr "Mia Lee"
 #. module: theme_nano
 #: model:ir.module.module,shortdesc:base.module_theme_nano
 msgid "Nano Theme"
-msgstr ""
+msgstr "Temă Nano"
 
 #. module: theme_nano
 #: model_terms:theme.ir.ui.view,arch:theme_nano.s_key_images

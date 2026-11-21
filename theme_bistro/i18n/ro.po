@@ -1,26 +1,31 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* theme_bistro
+# * theme_bistro
 #
+# Dorin Hongu <dhongu@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-28 17:44+0000\n"
-"PO-Revision-Date: 2025-02-20 13:36+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2026-11-21 10:23+0000\n"
+"Last-Translator: Dorin Hongu <dhongu@gmail.com>\n"
+"Language-Team: Romanian <https://translate.odoo.com/projects/odoo-20/"
+"theme_bistro/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 2026.11.2\n"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
 msgid ""
 "<a href=\"#\" class=\"btn btn-primary o_translate_inline\">Book a table</a>"
 msgstr ""
+"<a href=\"#\" class=\"btn btn-primary o_translate_inline\">Rezervă o masă</a>"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.configurator_s_cover
@@ -28,21 +33,23 @@ msgid ""
 "<span class=\"o_rfs\" style=\"font-size: clamp(8px, 1em + 5.5556vw, 400px);"
 "\">BISTRO</span>"
 msgstr ""
+"<span class=\"o_rfs\" style=\"font-size: clamp(8px, 1em + 5.5556vw, 400px)"
+";\">BISTRO</span>"
 
 #. module: theme_bistro
 #: model:ir.module.module,shortdesc:base.module_theme_bistro
 msgid "Bistro Theme"
-msgstr ""
+msgstr "Tema Bistro"
 
 #. module: theme_bistro
 #: model:ir.module.module,summary:base.module_theme_bistro
 msgid "Bistro, Restaurant, Bar, Pub, Cafe, Food, Catering"
-msgstr ""
+msgstr "Bistro, restaurant, bar, pub, cafenea, mâncare, catering"
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nume afișat"
 
 #. module: theme_bistro
 #: model:ir.module.module,description:base.module_theme_bistro
@@ -54,18 +61,25 @@ msgid ""
 "visual. Menu-and-pricing forward with little long-form copy / suited for "
 "bistros, restaurants, bars, pubs, cafes, and catering services"
 msgstr ""
+"Navigația orizontală este urmată de un banner cu imagine pe tot ecranul și "
+"siglă serif supradimensionată, un mesaj îndrăzneț pe două coloane și o listă "
+"de prețuri în stil de cafenea, pe un panou închis la culoare. Urmează șase "
+"recenzii cu evaluări în stele, o secțiune cu imagine și text în colțuri "
+"drepte și programul de funcționare peste o imagine cu un preparat. Designul "
+"pune accent pe meniu și prețuri și se potrivește bistrourilor, "
+"restaurantelor, barurilor, puburilor, cafenelelor și serviciilor de catering."
 
 #. module: theme_bistro
 #: model:ir.model.fields,field_description:theme_bistro.field_theme_utils__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: theme_bistro
 #: model_terms:theme.ir.ui.view,arch:theme_bistro.s_cover
 msgid "Scroll down to next section"
-msgstr ""
+msgstr "Derulați în jos la secțiunea următoare"
 
 #. module: theme_bistro
 #: model:ir.model,name:theme_bistro.model_theme_utils
 msgid "Theme Utils"
-msgstr ""
+msgstr "Utile Temă"
