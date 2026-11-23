@@ -32,7 +32,7 @@
 <template id="s_cover" inherit_id="website.s_cover" name="Monglia s_cover">
     <!-- Customize elements -->
     <xpath expr="//div[hasclass('o_we_bg_filter')]" position="replace">
-        <div class="o_we_bg_filter" style="background-image: linear-gradient(135deg, rgba(203, 94, 238, 0.5) 0%, rgba(75, 225, 236, 0.5) 100%);"/>
+        <div class="o_we_bg_filter" style="background-image: linear-gradient(135deg, color-mix(in srgb, var(--o-color-1) 50%, transparent) 0%, color-mix(in srgb, var(--o-color-2) 50%, transparent) 100%), linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));"/>
     </xpath>
     <xpath expr="//h1" position="replace">
         <h1 style="text-align: center;"><span class="display-1-fs">MONGLIA FESTIVAL</span></h1>
