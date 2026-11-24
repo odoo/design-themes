@@ -76,19 +76,19 @@
 <!-- ======== MASONRY ======== -->
 <template id="s_masonry_block_default_template" inherit_id="website.s_masonry_block_default_template" name="Be Wise s_masonry_block">
     <xpath expr="(//div[hasclass('o_grid_item')])[2]//p" position="after">
-        <p><a href="#" class="o_translate_inline btn btn-primary">Learn More</a></p>
+        <p><a href="#" class="btn btn-primary">Learn More</a></p>
     </xpath>
     <!-- Impact block -->
     <xpath expr="(//div[hasclass('o_grid_item')])[3]//p" position="after">
-        <p><a href="#" class="o_translate_inline btn btn-primary">Learn More</a></p>
+        <p><a href="#" class="btn btn-primary">Learn More</a></p>
     </xpath>
     <!-- Hub block -->
     <xpath expr="(//div[hasclass('o_grid_item')])[4]//p" position="after">
-        <p><a href="#" class="o_translate_inline btn btn-primary">Learn More</a></p>
+        <p><a href="#" class="btn btn-primary">Learn More</a></p>
     </xpath>
     <!-- Community block -->
     <xpath expr="(//div[hasclass('o_grid_item')])[5]//p" position="after">
-        <p><a href="#" class="o_translate_inline btn btn-primary">Learn More</a></p>
+        <p><a href="#" class="btn btn-primary">Learn More</a></p>
     </xpath>
 </template>
 
