@@ -30,10 +30,12 @@
     },
     'theme_customizations': {
         'website_sale.s_dynamic_snippet_category_list': {
-            'data_attributes': {
-                'columns': '3',
-                'gap': '4',
-                'rounded': '1',
+            'dynamic_snippet_args': {
+                'wrapper_data': {
+                    'cols_count': 3,
+                    'gap': 4,
+                    'rounded': 1,
+                },
             },
             'add_classes': [
                 {'s_dynamic_snippet_title': 's_dynamic_snippet_title_aside col-lg-3 flex-lg-column justify-content-lg-start'},
