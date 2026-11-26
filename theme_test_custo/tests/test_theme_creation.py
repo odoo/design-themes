@@ -11,7 +11,7 @@ class Crawler(HttpCase):
         theme_custo = self.env.ref('base.module_theme_test_custo')
         website = self.env.ref('base.default_website')
         website.theme_id = theme_custo.id
-        theme_custo.with_context(load_all_views=True, apply_new_theme=True)._theme_load(website)
+        self.env['theme.utils'].with_context(load_all_views=True)._theme_apply(theme_custo, website)
         self.env['website.page'].create({
             'url': '/example',
             'view_id': website.with_context(website_id=website.id).viewref('theme_test_custo.view_example').id,
