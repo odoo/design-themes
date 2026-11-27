@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_discovery" inherit_id="website.s_discovery">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_three_quarter_height" separator=" "/>
+        <attribute name="data-oe-shape-data">{'shape':'html_builder/Geometric/01','flip':[],'showOnMobile':false}</attribute>
+    </xpath>
+    <!-- Shape -->
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <div class="o_we_shape o_html_builder_Geometric_01"/>
+    </xpath>
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        Unleash your <strong><span class="o_text_highlight o_translate_inline o_text_highlight_freehand_1" style="--text-highlight-width: 6px; --text-highlight-color: var(--o-color-1);">potential</span>.</strong>
+    </xpath>
+    <!-- Lead -->
+    <xpath expr="//p" position="replace" mode="inner">
+        This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+    </xpath>
+    <!-- Buttons -->
+    <xpath expr="(//a)[2]" position="replace" mode="inner">
+        Start Now <span class="oi ms-2" data-icon="keyboard_arrow_right"/>
+    </xpath>
+    <!-- Spacer, so the title highlight clears the lead. Kept last: the
+         "//p" xpath above targets the lead. -->
+    <xpath expr="//h1" position="after">
+        <p><br/></p>
+    </xpath>
+</template>
+
+</odoo>
