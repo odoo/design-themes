@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- ======== COLLECTION BANNER ======== -->
-<template id="s_banner_product" inherit_id="website.s_banner_product">
-    <xpath expr="//div[hasclass('o_we_bg_filter')]" position="attributes">
-        <attribute name="class" remove="bg-black-25" separator=" "/>
-        <attribute name="style">background-image: linear-gradient(rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.5) 85%);</attribute>
-    </xpath>
-    <xpath expr="//div[hasclass('o_grid_item')]" position="attributes">
-        <attribute name="class">o_grid_item g-col-lg-4 col-lg-4 g-height-3</attribute>
-        <attribute name="style">grid-area: 12 / 1 / 15 / 5; --grid-item-padding-y: 32px; --grid-item-padding-x: 32px; z-index: 2;</attribute>
-    </xpath>
-    <xpath expr="//p" position="attributes">
-        <attribute name="class" add="lead" separator=" "/>
-    </xpath>
-    <xpath expr="//div[hasclass('o_grid_item')][2]" position="attributes">
-        <attribute name="style" remove="z-index: 2;" add="z-index: 3;" separator=";"/>
-    </xpath>
-    <!-- Add extra grid item and move the title inside it -->
-    <xpath expr="//div[hasclass('o_grid_item')]" position="before">
-        <div class="o_grid_item g-col-lg-6 g-height-5 col-lg-6" style="--grid-item-padding-x: 32px; --grid-item-padding-y: 32px; z-index: 1; grid-area: 1 / 1 / 6 / 7;"/>
-    </xpath>
-    <xpath expr="//div[hasclass('o_grid_item')]" position="inside">
-        <xpath expr="//h2" position="move"/>
-    </xpath>
-    <xpath expr="//h2" position="attributes">
-        <attribute name="class" add="display-3-fs" separator=" "/>
-    </xpath>
-</template>
-
 <!-- ======== TITLE ======== -->
 <template id="s_title" inherit_id="website.s_title">
     <xpath expr="//h2" position="attributes">
