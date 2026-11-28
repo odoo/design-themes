@@ -1,6 +1,6 @@
 {
     'name': 'Clean Theme',
-    'description': 'Vertically-rhythmic layout pairing a banner with a color-blocked section, alternating text-and-image rows, a numbers showcase, basic team block, and accordion FAQ with patterned and line image-shape crops (sketched oval ring, dot pattern, labyrinth) carrying the visual signature across the hero and content rows. Text-driven and information-dense with generous whitespace / suited for legal practices, business consultancies, technology companies, and professional services',
+    'description': 'Vertically-rhythmic layout pairing a centered hero framed by geometric background shapes with a color-blocked section, alternating text-and-image rows, a numbers showcase, basic team block, and accordion FAQ with patterned image-shape crops (dot pattern, labyrinth) carrying the visual signature across the content rows. Text-driven and information-dense with generous whitespace / suited for legal practices, business consultancies, technology companies, and professional services',
     'category': 'Theme/Services',
     'summary': 'Legal, Corporate, Business, Tech, Services',
     'sequence': 120,
@@ -20,18 +20,19 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_color_blocks_2.xml',
         'views/snippets/s_numbers_showcase.xml',
+        'views/snippets/s_discovery.xml',
     ],
     'images': [
         'static/description/clean_description.webp',
         'static/description/clean_screenshot.webp',
     ],
     'configurator_snippets': {
-        'homepage': ['s_shape_image', 's_color_blocks_2', 's_title', 's_text_image', 's_image_text', 's_numbers_showcase', 's_company_team', 's_accordion_image', 's_cta_card'], 
+        'homepage': ['s_discovery', 's_color_blocks_2', 's_title', 's_text_image', 's_image_text', 's_numbers_showcase', 's_company_team', 's_accordion_image', 's_cta_card'], 
     },
     'configurator_snippets_addons': {
         'website_sale': {
             'homepage': [
-                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_shape_image'),
+                ('website_sale.s_dynamic_snippet_category_list', 'after', 's_discovery'),
             ],
         },
     },

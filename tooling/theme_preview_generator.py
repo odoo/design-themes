@@ -8,6 +8,7 @@ it into a self-contained ``static/description/preview.html`` suitable for those
 pre-installation previews.
 """
 
+import copy
 import json
 import os
 import re
@@ -121,6 +122,7 @@ FONT_ASSET_URLS = {
     "web.material_symbols_sharp.min.woff2": "/web/static/src/libs/materialsymbols/material_symbols_sharp_subset.woff2",
     "web.odoo_ui_icons.min.woff2": "/web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2",
 }
+ANNOUNCEMENT_SCROLL_COPIES = 7
 DEFAULT_WEBSITE_LOGO_URL = "/website/static/src/img/website_logo.svg"
 WEBSITE_LOGO_URL_RE = re.compile(r"^/web/image/website/\d+/logo(?:[/?#].*)?$")
 COLOR_TOKEN_END = r"(?![0-9a-zA-Z_-])"
@@ -721,6 +723,27 @@ def replace_chart_canvases(soup):
             canvas.replace_with(preview)
 
 
+def freeze_announcement_scroll(soup):
+    # The s_announcement_scroll interaction repeats the item over twice the
+    # width of the section and shifts the row left by half its width, so the
+    # text runs past both edges. The preview has no JS, so do it statically:
+    # otherwise the single item starts at the left edge of the section and
+    # leaves its right side empty. The interaction adds 2 * ceil(row width /
+    # item width) + 1 copies; ANNOUNCEMENT_SCROLL_COPIES covers items down to
+    # 480px wide in the 1440px preview, extra copies are clipped.
+    for row in soup.select(".s_announcement_scroll .s_announcement_scroll_marquee_container"):
+        item = row.select_one(".s_announcement_scroll_marquee_item")
+        if not item or row.select_one(".s_announcement_scroll_marquee_item_clone"):
+            continue
+        for _ in range(ANNOUNCEMENT_SCROLL_COPIES):
+            clone = copy.copy(item)
+            clone["class"] = [*item.get("class", []), "s_announcement_scroll_marquee_item_clone"]
+            clone.insert(0, "\N{NO-BREAK SPACE}")
+            row.append(clone)
+        style = row.get("style", "").strip().rstrip(";")
+        row["style"] = f"{style}; transform: translateX(-50%);" if style else "transform: translateX(-50%);"
+
+
 def fix_floating_blocks_preview(soup):
     # counter s_floating_blocks opacity:0 on each block plus some CSS magic to
     # reproduce the overlapping stack effect without requiring JS.
@@ -877,6 +900,7 @@ def download_static_html(url, output_path, theme_image_urls):
     remove_javascript(soup)
     remove_javascript_dependent_classes(soup)
     replace_chart_canvases(soup)
+    freeze_announcement_scroll(soup)
     purge_unused_css(soup)
     fix_floating_blocks_preview(soup)
     inject_palette_variables(soup)
